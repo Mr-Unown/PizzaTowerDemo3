@@ -1,0 +1,2 @@
+pipedirection = "right"
+shoot = true

@@ -1,0 +1,243 @@
+ini_open("saveData.ini")
+global.mastervolume = ini_read_real("Option", "mastervolume", 1)
+global.musicvolume = ini_read_real("Option", "musicvolume", 1)
+global.soundeffectsvolume = ini_read_real("Option", "soundeffectsvolume", 1)
+ini_close()
+var roomname = room_get_name(room)
+if (room != hub_room1)
+    fadeoff = audio_sound_get_track_position(global.music)
+else
+    fadeoff = 0
+if (global.panic == 1 && obj_pause.pause == 0)
+{
+
+    if (global.lapping == 0)
+    {
+        if ((!audio_is_playing(mu_pizzatime)) && (!audio_is_playing(mu_noiseescape)) && (!audio_is_playing(mu_snickescape)) && (!audio_is_playing(mu_vigiescape)))
+        {
+            scr_soundstopall()
+            if (obj_player1.character == "P")
+            {
+                scr_sound(74)
+                pausedmusic = 74
+            }
+            else if (obj_player1.character == "N")
+            {
+                scr_sound(97)
+                pausedmusic = 97
+            }
+            else if (obj_player1.character == "S")
+            {
+                scr_sound(104)
+                pausedmusic = 104
+            }
+            else if (obj_player1.character == "V")
+            {
+                scr_sound(123)
+                pausedmusic = 123
+            }
+        }
+    }
+    else if (global.lapping == 1)
+    {
+        if ((!audio_is_playing(mu_pizzatimeremix)) && (!audio_is_playing(mu_noiseescaperequiem)) && (!audio_is_playing(mu_snickescaperequiem)) && (!audio_is_playing(mu_vigiescaperequiem)) && (!audio_is_playing(mu_desertescape)) && (!audio_is_playing(mu_mansionescape)) && (!audio_is_playing(mu_factoryescape)) && (!audio_is_playing(mu_sewerescape)) && (!audio_is_playing(mu_freezerescape)))
+        {
+            scr_soundstopall()
+            if (string_letters(roomname) == "desert") 
+            {
+                scr_sound(132)
+                pausedmusic = 132
+            }
+            else if (string_letters(roomname) == "mansion" || string_letters(roomname) == "medieval")
+            {
+                scr_sound(133)
+                pausedmusic = 133
+            }
+            else if (string_letters(roomname) == "factory")
+            {
+                scr_sound(134)
+                pausedmusic = 134
+            }
+            else if (string_letters(roomname) == "sewer")
+            {
+                scr_sound(135)
+                pausedmusic = 135
+            }
+            else if (string_letters(roomname) == "freezer")
+            {
+                scr_sound(136)
+                pausedmusic = 136
+            }
+            else if (obj_player1.character == "P")
+            {
+                scr_sound(129)
+                pausedmusic = 129
+            }
+            else if (obj_player1.character == "N")
+            {
+                scr_sound(121)
+                pausedmusic = 121
+            }
+            else if (obj_player1.character == "S")
+            {
+                scr_sound(128)
+                pausedmusic = 128
+            }
+            else if (obj_player1.character == "V")
+            {
+                scr_sound(130)
+                pausedmusic = 130
+            }
+        }
+    }
+    else if (global.lapping == 2)
+    {
+        if ((!audio_is_playing(mu_pizzatimeremix)) && (!audio_is_playing(mu_noiseescaperequiem)) && (!audio_is_playing(mu_snickescaperequiem)) && (!audio_is_playing(mu_vigiescaperequiem)))
+        {
+            scr_soundstopall()
+            if (obj_player1.character == "P")
+            {
+                scr_sound(129)
+                pausedmusic = 129
+            }
+            else if (obj_player1.character == "N")
+            {
+                scr_sound(121)
+                pausedmusic = 121
+            }
+            else if (obj_player1.character == "S")
+            {
+                scr_sound(128)
+                pausedmusic = 128
+            }
+            else if (obj_player1.character == "V")
+            {
+                scr_sound(130)
+                pausedmusic = 130
+            }
+        }
+    }
+    else if (global.lapping >= 3)
+    {
+        if (!audio_is_playing(mu_pizzamayhem))
+        {
+            scr_soundstopall()
+            scr_sound(131)
+            pausedmusic = 131
+        }
+    }
+}
+audio_sound_gain(global.music, (0.6 * global.musicvolume), 0)
+audio_sound_gain(global.music2, (0.6 * global.musicvolume), 0)	
+/*
+if (global.miniboss == 0 && audio_is_playing(mu_miniboss))
+    audio_stop_sound(mu_miniboss)
+if ((!audio_is_playing(mu_snickchallenge)) && global.snickchallenge == 1 && obj_pause.pause == 0 && global.minutes >= 2 && obj_camera.ded == 0)
+{
+    scr_soundstopall()
+    scr_sound(94)
+    pausedmusic = 94
+}
+else if ((!audio_is_playing(mu_snickchallengeend)) && global.snickchallenge == 1 && obj_pause.pause == 0 && global.minutes < 2 && obj_camera.ded == 0)
+{
+    scr_soundstopall()
+    scr_sound(95)
+    pausedmusic = 95
+}
+if (room == strongcold_miniboss && global.miniboss == 1)
+{
+    if (!audio_is_playing(mu_miniboss))
+    {
+        scr_soundstopall()
+        scr_sound(72)
+        scr_soundeffect(44)
+        pausedmusic = 72
+    }
+}
+else if (room == strongcold_endscreen)
+{
+    if (!audio_is_playing(mu_entrance))
+    {
+        scr_soundstopall()
+        scr_sound(78)
+        pausedmusic = 78
+    }
+}
+if (room == mansion_miniboss)
+{
+    if instance_exists(obj_pepperman)
+    {
+        if (obj_pepperman.screamintro == 1)
+        {
+            if (!audio_is_playing(sfx_scream5))
+            {
+                if (obj_player.state != 4 && (!audio_is_playing(mu_timesup)))
+                {
+                    if (!audio_is_playing(mu_chase))
+                    {
+                        scr_soundstopall()
+                        scr_sound(77)
+                        pausedmusic = 77
+                    }
+                }
+            }
+        }
+    }
+    if audio_is_playing(sfx_scream5)
+        audio_stop_sound(mu_mansion)
+}
+if instance_exists(obj_johnpillar)
+{
+    if ((!audio_is_playing(mu_scary)) && obj_pause.pause == 0)
+    {
+        global.scarysound = audio_play_sound(mu_scary, 10, true)
+        audio_sound_gain(global.scarysound, (0 * global.musicvolume), 0)
+    }
+    if (audio_is_playing(mu_scary) && obj_pause.pause == 0)
+    {
+        with (obj_johnpillar)
+        {
+            var player = instance_nearest(x, y, obj_player)
+            if point_in_rectangle(player.x, player.y, (x - 424), (y - 64), (x + 424), (y + 288))
+            {
+                audio_sound_gain(global.music, (0 * global.musicvolume), 2000)
+                audio_sound_gain(global.scarysound, (0.6 * global.musicvolume), 2000)
+            }
+            else if point_in_rectangle(player.x, player.y, (x - 824), (y - 96), (x + 824), (y + 320))
+            {
+                audio_sound_gain(global.music, (0.15 * global.musicvolume), 2000)
+                audio_sound_gain(global.scarysound, (0.5 * global.musicvolume), 2000)
+            }
+            else
+            {
+                audio_sound_gain(global.music, (0.6 * global.musicvolume), 2000)
+                audio_sound_gain(global.scarysound, (0.15 * global.musicvolume), 2000)
+            }
+        }
+    }
+}
+else if audio_is_playing(global.scarysound)
+{
+    audio_sound_gain(global.scarysound, (0 * global.musicvolume), 2000)
+    if (audio_sound_get_gain(global.scarysound) == 0)
+    {
+        audio_stop_sound(global.scarysound)
+        scarysound = -4
+    }
+    audio_sound_gain(global.music, (0.6 * global.musicvolume), 2000)
+}
+else
+*/
+
+	
+if audio_is_playing(mu_ruin) && audio_is_playing(mu_ruinbmix)
+{
+	if global.ruinmusic = 0 {
+	audio_sound_gain(mu_ruin, (1), 0)					
+	audio_sound_gain(mu_ruinbmix, (0), 0)					
+	}
+	else if global.ruinmusic = 1 {
+	audio_sound_gain(mu_ruin, (0), 25000)					
+	audio_sound_gain(mu_ruinbmix, (1), 21000)					
+	}				
+}

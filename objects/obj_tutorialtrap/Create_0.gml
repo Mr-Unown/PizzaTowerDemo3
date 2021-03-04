@@ -1,0 +1,5 @@
+lay_id = layer_get_id("Assets_1")
+s = layer_sprite_get_id(lay_id, "trapscreenasset")
+ini_open("playerData_"+global.savefile+".ini")
+global.tutorialtrap = ini_read_string("Misc","tutorialtrap",false)
+ini_close()

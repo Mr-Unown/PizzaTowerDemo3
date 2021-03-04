@@ -1,0 +1,12 @@
+depth = 4
+collided = false
+throwdirection = 1
+vsp = 0
+hsp = 0
+grav = 0.5
+drawx = x
+drawy = y
+rot = 0
+angle = 0
+maxrot = 0
+grabbedby = noone

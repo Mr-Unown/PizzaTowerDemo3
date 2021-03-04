@@ -1,0 +1,172 @@
+if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
+{
+    if audio_is_playing(sfx_collecttoppin)
+        audio_stop_sound(sfx_collecttoppin)
+    scr_soundeffect(7)
+    if (content == obj_bigcollect)
+    {
+        instance_create(x, (y - 3), obj_bigcollect)
+        instance_create(x, y, obj_bangeffect)
+    }
+    if (content == obj_pizzakinshroom)
+    {
+        with (instance_create(x, y, obj_smallnumber))
+            number = "1000"
+        with instance_place(x, y, obj_player)
+            collectscore = (collectscore + 1000)
+        instance_create(x, y, obj_taunteffect)
+		if global.combotime < 60
+		global.combotime += 30
+		else
+		global.combotime = 60
+		global.pausecombotime = true
+		obj_tv.alarm[1] = 75
+        global.style = (global.style + 50)		
+        with (instance_create(x, (y - 25), content)) {
+            sprite_index = spr_toppinshroom_intro
+			//Follower Array
+			global.followerarray[global.followerqueue] = object_index
+			global.follower[object_index] = global.followerqueue
+			global.followerqueue += 1
+
+		}
+        if (global.toppintotal < 5)
+            obj_tv.message = (("YOU NEED " + string((5 - global.toppintotal))) + " MORE TOPPINS!")
+        if (global.toppintotal == 5)
+            obj_tv.message = "YOU HAVE ALL TOPPINS!"
+        obj_tv.showtext = 1
+        obj_tv.alarm[0] = 150
+        global.toppintotal = (global.toppintotal + 1)
+        global.shroomfollow = 1
+    }
+    if (content == obj_pizzakincheese)
+    {
+        with (instance_create(x, y, obj_smallnumber))
+            number = "1000"
+        with instance_place(x, y, obj_player)
+            collectscore = (collectscore + 1000)
+        with (instance_create(x, (y - 25), content)) {
+            sprite_index = spr_toppincheese_intro
+			//Follower Array
+			global.followerarray[global.followerqueue] = object_index
+			global.follower[object_index] = global.followerqueue
+			global.followerqueue += 1
+
+		}
+        instance_create(x, y, obj_taunteffect)
+		if global.combotime < 60
+		global.combotime += 30
+		else
+		global.combotime = 60
+		global.pausecombotime = true
+		obj_tv.alarm[1] = 75
+        global.style = (global.style + 50)		
+        if (global.toppintotal < 5)
+            obj_tv.message = (("YOU NEED " + string((5 - global.toppintotal))) + " MORE TOPPINS!")
+        if (global.toppintotal == 5)
+            obj_tv.message = "YOU HAVE ALL TOPPINS!"
+        obj_tv.showtext = 1
+        obj_tv.alarm[0] = 150
+        global.toppintotal = (global.toppintotal + 1)
+        global.cheesefollow = 1
+    }
+    if (content == obj_pizzakintomato)
+    {
+        with (instance_create(x, y, obj_smallnumber))
+            number = "1000"
+        with instance_place(x, y, obj_player)
+            collectscore = (collectscore + 1000)
+        with (instance_create(x, (y - 25), content)) {
+            sprite_index = spr_toppintomato_intro
+			//Follower Array
+			global.followerarray[global.followerqueue] = object_index
+			global.follower[object_index] = global.followerqueue
+			global.followerqueue += 1
+		}			
+        instance_create(x, y, obj_taunteffect)
+		if global.combotime < 60
+		global.combotime += 30
+		else
+		global.combotime = 60
+		global.pausecombotime = true
+		obj_tv.alarm[1] = 75
+        global.style = (global.style + 50)		
+        if (global.toppintotal < 5)
+            obj_tv.message = (("YOU NEED " + string((5 - global.toppintotal))) + " MORE TOPPINS!")
+        if (global.toppintotal == 5)
+            obj_tv.message = "YOU HAVE ALL TOPPINS!"
+        obj_tv.showtext = 1
+        obj_tv.alarm[0] = 150
+        global.toppintotal = (global.toppintotal + 1)
+        global.tomatofollow = 1
+    }
+    if (content == obj_pizzakinsausage)
+    {
+        with (instance_create(x, y, obj_smallnumber))
+            number = "1000"
+        with instance_place(x, y, obj_player)
+            collectscore = (collectscore + 1000)
+        with (instance_create(x, (y - 25), content)) {
+            sprite_index = spr_toppinsausage_intro
+			//Follower Array
+			global.followerarray[global.followerqueue] = object_index
+			global.follower[object_index] = global.followerqueue
+			global.followerqueue += 1
+		}
+        instance_create(x, y, obj_taunteffect)
+		if global.combotime < 60
+		global.combotime += 30
+		else
+		global.combotime = 60
+		global.pausecombotime = true
+		obj_tv.alarm[1] = 75
+        global.style = (global.style + 50)		
+        if (global.toppintotal < 5)
+            obj_tv.message = (("YOU NEED " + string((5 - global.toppintotal))) + " MORE TOPPINS!")
+        if (global.toppintotal == 5)
+            obj_tv.message = "YOU HAVE ALL TOPPINS!"
+        obj_tv.showtext = 1
+        obj_tv.alarm[0] = 150
+        global.toppintotal = (global.toppintotal + 1)
+        global.sausagefollow = 1	
+    }
+    if (content == obj_pizzakinpineapple)
+    {
+        with (instance_create(x, y, obj_smallnumber))
+            number = "1000"
+        with instance_place(x, y, obj_player)
+            collectscore = (collectscore + 1000)
+        with (instance_create(x, (y - 25), content)) {
+            sprite_index = spr_toppinpineapple_intro
+			//Follower Array
+			global.followerarray[global.followerqueue] = object_index
+			global.follower[object_index] = global.followerqueue
+			global.followerqueue += 1
+
+		}			
+
+        instance_create(x, y, obj_taunteffect)
+
+		if global.combotime < 60
+		global.combotime += 30
+		else
+		global.combotime = 60
+		global.pausecombotime = true
+		obj_tv.alarm[1] = 75
+        global.style = (global.style + 50)
+		
+        if (global.toppintotal < 5)
+            obj_tv.message = (("YOU NEED " + string((5 - global.toppintotal))) + " MORE TOPPINS!")
+        if (global.toppintotal == 5)
+            obj_tv.message = "YOU HAVE ALL TOPPINS!"
+        obj_tv.showtext = 1
+        obj_tv.alarm[0] = 150
+        global.toppintotal = (global.toppintotal + 1)
+        global.pineapplefollow = 1
+    }
+    sprite_index = spr_pizzaboxopen
+}
+if (sprite_index == spr_pizzaboxopen && floor(image_index) == 16)
+    instance_destroy()
+
+

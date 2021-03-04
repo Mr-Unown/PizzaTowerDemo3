@@ -1,0 +1,10 @@
+visible = false
+depth = -5
+image_speed = 0
+image_index = 0
+playerid = obj_player1
+activated = false
+selected = false
+selection = 0
+wait = false
+wwait = false

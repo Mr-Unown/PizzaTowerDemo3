@@ -1,0 +1,29 @@
+if surface_exists(surf_pallete) && !((paletteselect < 12 && character = "P") || (paletteselect < 11 && character != "P" && character != "PM")|| (paletteselect < 5 && character = "PM"))
+{
+	#region Surface
+	surface_set_target(surf_pallete);
+	pal_swap_draw_palette(spr_palette,0,0,0)
+	pal_swap_draw_palette(spr_palette,paletteselect,1,0)
+	for (var i = 0; i < sprite_get_height(spr_palette); i++) {
+	    draw_point_color(1,i,color[i]);
+	}
+	surface_reset_target();	
+	#endregion
+	pal_swap_set(surf_pallete, 1, true)
+}
+else if (paletteselect < 12 && character = "P") || (paletteselect < 11 && character != "P" && character != "PM")|| (paletteselect < 5 && character = "PM")
+	pal_swap_set(spr_palette, paletteselect, false)
+draw_sprite_ext(sprite_index, image_index, x, y, xscale, yscale, image_angle, image_blend, image_alpha)
+if (character == "P" && sprite_index == spr_taunt && floor(image_index) == 11)
+    draw_sprite_ext(spr_promotion, image_index, x, y, 1, yscale, image_angle, image_blend, image_alpha)
+shader_reset()
+if flash
+{
+    shader_set(shd_hit)
+    draw_sprite_ext(sprite_index, image_index, x, y, xscale, yscale, image_angle, image_blend, image_alpha)
+    if (character == "P" && sprite_index == spr_taunt && floor(image_index) == 11)
+        draw_sprite_ext(spr_promotion, image_index, x, y, 1, yscale, image_angle, image_blend, image_alpha)
+    shader_reset()
+}
+
+

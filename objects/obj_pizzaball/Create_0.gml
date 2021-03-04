@@ -1,0 +1,30 @@
+grav = 0.35
+image_speed = 0.35
+depth = -1
+hsp = 0
+vsp = 0
+movespeed = 0
+intensity = 0
+grabbed = 0
+grabbedby = 1
+state = 98
+thrown = 0
+grounded = 1
+bumpid = noone
+hit = 0
+poweringup = 0
+going_up = 1
+targetx = x
+targety = y
+ydraw = y
+xdraw = x
+angle = 0
+flash = 0
+birdcreated = 0
+stunned = 0
+important = 0
+railspeed = 0
+xback = x
+yback = y
+
+

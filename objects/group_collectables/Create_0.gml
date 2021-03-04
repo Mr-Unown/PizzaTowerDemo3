@@ -1,0 +1,2 @@
+collectvanish = false
+collectboxid = noone

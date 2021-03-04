@@ -1,0 +1,14 @@
+{
+    "id": "498f45da-3e57-493b-b726-5f6cf7e0e5e4",
+    "modelName": "GMSound",
+    "mvc": "1.0",
+    "name": "sfx_explosion",
+    "audioGroupGuid": "7b2c4976-1e09-44e5-8256-c527145e03bb",
+    "bitDepth": 1,
+    "bitRate": 192,
+    "kind": 0,
+    "preload": true,
+    "sampleRate": 44100,
+    "type": 1,
+    "volume": 1
+}
