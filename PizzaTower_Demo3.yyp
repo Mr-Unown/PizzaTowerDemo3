@@ -14194,14 +14194,6 @@
             }
         },
         {
-            "Key": "9f0e03d9-8359-4b80-823e-a818eda40777",
-            "Value": {
-                "id": "48655680-08e2-4166-b8b7-a44a650b7753",
-                "resourcePath": "datafiles_yy\\Asesprite.lnk.yy",
-                "resourceType": "GMIncludedFile"
-            }
-        },
-        {
             "Key": "9f162530-8a1e-4074-bdd5-2573b8b66a45",
             "Value": {
                 "id": "83e209ca-7993-4cf7-900c-f4605e5c280c",
