@@ -39,7 +39,7 @@ if (object_index == obj_player1)
                 else if (vertical == 1)
                     x = (obj_doorA.x + verticaloffset)
                 else
-                    x = (obj_doorA.x + 16)
+                    x = (obj_doorA.x + 16)	
                 y = (obj_doorA.y - 14)
             }
             if (targetDoor == "B")

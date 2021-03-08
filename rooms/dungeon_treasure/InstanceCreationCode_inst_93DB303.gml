@@ -1,2 +1,4 @@
-sprgot = spr_beantreasuregot
-spridle = spr_beantreasure
+sprgot = spr_foodtreasuregot
+spridle = spr_foodtreasure
+
+

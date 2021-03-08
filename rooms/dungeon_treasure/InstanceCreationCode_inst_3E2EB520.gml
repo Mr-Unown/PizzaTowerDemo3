@@ -1,2 +1,2 @@
-targetRoom = ruin_8
+targetRoom = dungeon_7
 visible = false

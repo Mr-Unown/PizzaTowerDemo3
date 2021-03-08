@@ -66,7 +66,7 @@ if (jumpertime == 0 && state == 94 && grounded && sprite_index == spr_indianchee
     sprite_index = spr_indiancheese_jump
     image_index = 0
     state = 102
-    jumptimer = 20
+    jumpertime = 20
     instance_create(x, y, obj_highjumpcloud2)
 }
 if ((!grounded) && sprite_index == spr_indiancheese_jump && floor(image_index) == (image_number - 1))
@@ -84,6 +84,9 @@ if (grounded && sprite_index == spr_indiancheese_land)
 		image_xscale = other.image_xscale
 	}	
     sprite_index = spr_indiancheese_walk
+}
+if sprite_index = spr_indiancheese_walk {
+	movespeed = 1	
 }
 if (hitboxcreate == 0 && state == 102)
 {

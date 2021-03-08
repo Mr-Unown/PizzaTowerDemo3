@@ -10610,6 +10610,14 @@
             }
         },
         {
+            "Key": "7630197a-379e-461f-a322-93fb1078fada",
+            "Value": {
+                "id": "afc84931-c2c8-42fb-b016-8220ad32f041",
+                "resourcePath": "rooms\\kungfu_3_1\\kungfu_3_1.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "765fd33d-6efc-454c-a1b2-35d158a8f99a",
             "Value": {
                 "id": "44e66424-be7b-454d-8f56-0fa69a952947",
@@ -22093,7 +22101,7 @@
             "Key": "f57d1379-7e43-445c-9e95-2abdc4659495",
             "Value": {
                 "id": "f4f3b334-a53f-46ac-9081-76f963b25486",
-                "resourcePath": "rooms\\kungfu_5a\\kungfu_5a.yy",
+                "resourcePath": "rooms\\kungfu_5_1\\kungfu_5_1.yy",
                 "resourceType": "GMRoom"
             }
         },

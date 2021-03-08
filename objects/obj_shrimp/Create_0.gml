@@ -1,6 +1,6 @@
 shrimptype = 0
 
-
+alarm[5] = 0
 bombreset = 0
 grav = 0.5
 hsp = 0

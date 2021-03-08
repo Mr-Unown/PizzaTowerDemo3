@@ -1,1 +1,1 @@
-targetRoom = kungfu_1
+targetRoom = kungfu_3_1
