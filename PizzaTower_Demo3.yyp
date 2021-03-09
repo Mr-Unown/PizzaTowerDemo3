@@ -20586,14 +20586,6 @@
             }
         },
         {
-            "Key": "e3a19470-2d48-4a74-b04f-c0a44764241d",
-            "Value": {
-                "id": "00aad74c-5aee-4c03-8457-2a6c31ffd990",
-                "resourcePath": "sprites\\dungeon\\dungeon.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "e3a58c33-6912-436d-b40e-29c54be212fd",
             "Value": {
                 "id": "0cd9a073-c04e-430e-8b3b-35f0cc7a8cf1",

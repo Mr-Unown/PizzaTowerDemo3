@@ -1,4 +1,4 @@
-/*if (room == PP_room1 && global.snickchallenge == 0)
+if (room == PP_room1 && global.snickchallenge == 0)
 {
     tvsprite = spr_tvdefault
     global.srank = 1005000
@@ -20,20 +20,6 @@ if (room == medieval_1 && global.snickchallenge == 0)
     global.brank = (global.srank - ((global.srank / 4) * 2))
     global.crank = (global.srank - ((global.srank / 4) * 3))
 }
-if (room == chateau_1 && global.snickchallenge == 0)
-{
-    global.srank = 10000
-    global.arank = (global.srank - (global.srank / 4))
-    global.brank = (global.srank - ((global.srank / 4) * 2))
-    global.crank = (global.srank - ((global.srank / 4) * 3))
-}
-if (room == medieval_1 && global.snickchallenge == 1)
-{
-    global.srank = 8300
-    global.arank = (global.srank - (global.srank / 4))
-    global.brank = (global.srank - ((global.srank / 4) * 2))
-    global.crank = (global.srank - ((global.srank / 4) * 3))
-}
 if (room == ruin_1 && global.snickchallenge == 0)
 {
     global.srank = 11800
@@ -48,6 +34,22 @@ if (room == dungeon_1 && global.snickchallenge == 0)
     global.brank = (global.srank - ((global.srank / 4) * 2))
     global.crank = (global.srank - ((global.srank / 4) * 3))
 }
+/*
+if (room == medieval_1 && global.snickchallenge == 1)
+{
+    global.srank = 8300
+    global.arank = (global.srank - (global.srank / 4))
+    global.brank = (global.srank - ((global.srank / 4) * 2))
+    global.crank = (global.srank - ((global.srank / 4) * 3))
+}
+if (room == chateau_1 && global.snickchallenge == 0)
+{
+    global.srank = 10000
+    global.arank = (global.srank - (global.srank / 4))
+    global.brank = (global.srank - ((global.srank / 4) * 2))
+    global.crank = (global.srank - ((global.srank / 4) * 3))
+}
+
 if (room == strongcold_10 && global.snickchallenge == 0)
 {
     global.srank = 9000
@@ -96,4 +98,4 @@ if (room == mansion_1 && global.snickchallenge == 0)
     global.arank = (global.srank - (global.srank / 4))
     global.brank = (global.srank - ((global.srank / 4) * 2))
     global.crank = (global.srank - ((global.srank / 4) * 3))
-}
+}*/

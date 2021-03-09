@@ -1,4 +1,3 @@
- /*
  switch room
     {
         case entrance_10:
@@ -17,6 +16,7 @@
             global.minutes = 3
             global.seconds = 30
             break
+		/*			
         case chateau_6:
             global.minutes = 2
             global.seconds = 15
@@ -52,7 +52,5 @@
         case kungfu_3:
             global.minutes = 1
             global.seconds = 35
-            break			
-} */
-            global.minutes = 1
-            global.seconds = 35
+            break									*/
+	}
