@@ -9,12 +9,6 @@ if (obj_player1.spotlight == 1)
 else
     playerid = obj_player2
 	
-//idk
-if global.geromefollowing = true
-	persistent = true;
-else
-	persistent = false;
-	
 	
 if global.geromefollowing = true && sprite_index = spr_gerome_walk {
 depth = -6	

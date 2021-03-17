@@ -8,5 +8,7 @@ movespeed = 3
 panic = 0
 playerid = obj_player1
 drawy = 0
-
+originalroom = room
+startx = xstart
+starty = ystart
 depth = 0

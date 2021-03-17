@@ -169,16 +169,6 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
                 if instance_exists(obj_player2)
                     obj_player2.targetDoor = "A"
             }
-            if (string_letters(roomname) == "chateau" || string_letters(roomname) == "chateausecret")
-            {
-                instance_activate_all()
-                room = chateau_1
-                scr_playerreset()
-                pause = 0
-                obj_player1.targetDoor = "A"
-                if instance_exists(obj_player2)
-                    obj_player2.targetDoor = "A"
-            }
             else if (string_letters(roomname) == "ruin" || string_letters(roomname) == "ruinsecret")
             {
                 instance_activate_all()
@@ -199,6 +189,26 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
                 if instance_exists(obj_player2)
                     obj_player2.targetDoor = "A"
             }
+            else if (string_letters(roomname) == "ancient" || string_letters(roomname) == "ancientsecret")
+            {
+                instance_activate_all()
+                room = ancient_1
+                scr_playerreset()
+                pause = 0
+                obj_player1.targetDoor = "A"
+                if instance_exists(obj_player2)
+                    obj_player2.targetDoor = "A"
+            }				
+            else if (string_letters(roomname) == "chateau" || string_letters(roomname) == "chateausecret")
+            {
+                instance_activate_all()
+                room = chateau_1
+                scr_playerreset()
+                pause = 0
+                obj_player1.targetDoor = "A"
+                if instance_exists(obj_player2)
+                    obj_player2.targetDoor = "A"
+            }			
             else if (string_letters(roomname) == "strongcold" || string_letters(roomname) == "strongcoldsecret")
             {
                 instance_activate_all()

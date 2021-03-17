@@ -2,6 +2,7 @@ if instance_exists(obj_pausefadeout)
     instance_destroy(obj_pausefadeout)
 if (fadealpha > 1)
 {
+	global.geromeopen = false;
 	#region Toppins
 	    if (global.shroomfollow == 1) && instance_exists(obj_pizzakinshroom) {
 		with obj_pizzakinshroom {

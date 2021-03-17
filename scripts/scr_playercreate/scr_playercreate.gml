@@ -49,4 +49,5 @@ global.tomatofollow = false;
 global.sausagefollow = false;
 global.pineapplefollow = false;
 global.geromefollowing = false;
+global.geromeopen = false;
 #endregion

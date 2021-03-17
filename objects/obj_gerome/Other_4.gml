@@ -5,3 +5,15 @@ ds_queue_clear(followQueue)
 ds_queue_enqueue(followQueue, obj_player1.x) 
 ds_queue_enqueue(followQueue, obj_player1.y)
 }
+else if room = originalroom && global.geromefollowing != true
+{
+	visible = true
+	x = startx
+	y = starty
+}
+else if global.geromefollowing != true
+{
+	visible = false
+	x = -500
+	y = -500
+}

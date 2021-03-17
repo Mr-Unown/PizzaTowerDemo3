@@ -176,7 +176,7 @@ switch room
 		message = "Pizza Tower of Hell!";
 		break;
 	case dungeon_2:
-		message = "Smell Like Death";
+		message = "Smells Like Death";
 		break;		
 	case dungeon_3:
 		message = "Pizza Cutter of Doom";
@@ -250,7 +250,7 @@ switch room
 		message = "Super Slump 2";
 		break;	
 	case ancient_8:
-		message = "An Ancient City";
+		message = "Deliveryboy Troubles";
 		break;	
 	case ancient_9:
 		message = "Sweden Hell";
@@ -259,7 +259,7 @@ switch room
 		message = "Revenge of John";
 		break;	
 	case ancient_11:
-		message = "Dare to Escape?";
+		message = "Wheres the elevator?";
 		break;		
 	case ancient_treasure:
 		message = "Beloved Treasure";

@@ -56,7 +56,7 @@ if (floor(image_index) == (image_number - 1) && sprite_index == spr_knightpepjum
 }
 if ((floor(image_index) == (image_number - 1) && sprite_index == spr_knightpepjump) || ((!grounded) && sprite_index != spr_knightpepjump && sprite_index != spr_knightpepthunder))
     sprite_index = spr_knightpepfall
-if (sprite_index == spr_knightpepfall && grounded && vsp > 0)
+if (sprite_index == spr_knightpepfall && !place_meeting(x,y,obj_destructibles) && grounded && vsp > 0)
 {
     with (obj_baddie)
     {
