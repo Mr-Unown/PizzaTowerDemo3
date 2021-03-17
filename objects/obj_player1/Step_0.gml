@@ -79,6 +79,42 @@ if (state == 55 && y > (room_height * 2))
         }
     }
 }
+
+if state != 55 && y > (room_height * 1.1)
+{
+	{
+		
+	global.pausecombotime = true
+	obj_tv.alarm[1] = 75		
+	x = roomstartx
+	y = roomstarty
+	visible = true
+	state = 73
+    alarm[8] = 80
+    alarm[7] = 50
+	hurted = 1
+    if (xscale == other.image_xscale)
+            sprite_index = spr_hurtjump
+    else
+            sprite_index = spr_hurt
+	with obj_tv {
+        message = choose("OW!", "OUCH!", "OH!", "WOH!")
+		chose = 0		
+	}
+    movespeed = 1
+    vsp = -5
+	timeuntilhpback = 300
+	grav = 0.5
+}
+repeat (3)
+{
+   with (instance_create((roomstartx + random_range(-32, 32)), (roomstarty + random_range(-32, 32) - 40), obj_balloonpop))
+      sprite_index = spr_shotgunimpact
+}
+
+instance_create(roomstartx,roomstarty - 50 ,obj_handgrabber)
+}
+
 if ((!instance_exists(baddiegrabbedID)) && (state == 46 || state == 43 || state == 10))
     state = 0
 if (!(state == 46 || state == 43 || state == 70))
