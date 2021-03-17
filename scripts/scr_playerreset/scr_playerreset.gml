@@ -6,7 +6,6 @@ if (string_letters(roomname) == "golf")
 if instance_exists(obj_endlevelfade)
     instance_destroy(obj_endlevelfade)
 
-
 //Goop Gone
 with obj_goop 
 instance_destroy(id,false)	
