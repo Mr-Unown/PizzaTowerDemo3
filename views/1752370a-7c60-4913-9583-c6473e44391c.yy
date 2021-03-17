@@ -1,0 +1,30 @@
+{
+    "id": "1752370a-7c60-4913-9583-c6473e44391c",
+    "modelName": "GMFolder",
+    "mvc": "1.1",
+    "name": "1752370a-7c60-4913-9583-c6473e44391c",
+    "children": [
+        "52235117-4b1e-4bd7-8f4c-589cf29edcb9",
+        "5bca4cf8-2482-4144-8413-3835f78e6e4a",
+        "236158ac-314c-4a8e-8230-b30c4c33fb9a",
+        "eb1a6fc0-030d-435e-ba80-9355a8a7d23d",
+        "a42055fb-7170-46b3-bc84-ab95988ded18",
+        "e5f408ae-d17e-41df-8008-15b8e9c1c6ef",
+        "e2123ed0-1058-49c5-8b14-a0fbeb1954e5",
+        "a49dedd6-4e6d-4892-a918-80710afbd125",
+        "0f543f89-45a3-4160-a026-431c7943a14b",
+        "ea9e3388-0110-437f-97a4-a5e58b305f04",
+        "628abcaa-1842-4e6b-b5ed-d5b88d363389",
+        "4010981e-a509-4e60-845f-e197dea6cc73",
+        "6e545525-085a-4bf8-a554-215af4204eb5",
+        "f04233de-2a3e-4008-80b7-edda4d61b1d9",
+        "c874bc4d-3503-411b-a07a-30b4d07071a3",
+        "d7ac0f8a-4a4a-4102-8225-056441c3784b",
+        "27c3e64d-6d7f-4910-9cd9-a149002acc15",
+        "f48a530b-3181-4827-99e0-8d7804118918"
+    ],
+    "filterType": "GMRoom",
+    "folderName": "Ancient",
+    "isDefaultView": false,
+    "localisedFolderName": ""
+}

@@ -20,8 +20,8 @@
         "b9f10773-b2b8-49da-8bf4-1b4726c08f19",
         "3c6c427e-3d53-4b85-8ec0-e3228c81adf5"
     ],
-    "filterType": "root",
+    "filterType": "user",
     "folderName": "Default",
-    "isDefaultView": true,
+    "isDefaultView": false,
     "localisedFolderName": ""
 }
