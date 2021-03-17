@@ -81,9 +81,9 @@ if (character != "S")
 {
     if (vsp > 5)
         fallinganimation++
-    if (fallinganimation >= 40 && fallinganimation < 80)
+    if (fallinganimation >= 40 && fallinganimation < 80) && sprite_index != spr_playerN_spinjump
         sprite_index = spr_facestomp
-    if (fallinganimation >= 80)
+    if (fallinganimation >= 80) && sprite_index != spr_playerN_spinjump
         sprite_index = spr_freefall
 }
 if (stompAnim == 0)

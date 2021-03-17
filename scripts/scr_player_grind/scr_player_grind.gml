@@ -2,25 +2,36 @@ vsp = 0
 machhitAnim = 0
 crouchslideAnim = 1
 hsp = (xscale * movespeed)
-if movespeed < 6
+if movespeed < 9
 {
 	movespeed += 0.5
 }
-else if (movespeed > 11) {
+else if (movespeed > 12) {
     movespeed -= 0.1
 }
-if (!grinding)
-    state = 70
 sprite_index = spr_player_grind	
-if key_jump
-{
-	if movespeed <= 6 {
+if (!grinding) {
+	if movespeed < 11 {
 		state = 70		
 		sprite_index = spr_secondjump1
 	}
 	else {
 		state = 91
+		sprite_index = spr_mach3jump		
+	}
+    grinding = 0
+    suplexmove = 0
+    image_index = 0
+}
 
+if key_jump
+{
+	if movespeed < 9 {
+		state = 70		
+		sprite_index = spr_secondjump1
+	}
+	else {
+		state = 91
 		sprite_index = spr_mach3jump		
 	}
     vsp = -10
@@ -30,6 +41,17 @@ if key_jump
     image_index = 0
     scr_soundeffect(0)
 }
+//Bump
+if place_meeting(x+xscale ,y, obj_solid)
+{
+	grinding = true
+	instance_create((x + (10 * sign(xscale))), (y + 10), obj_bumpeffect)
+	xscale *= -1
+}
 image_speed = 0.35
-if (!instance_exists(obj_grindeffect))
-    instance_create(x, y, obj_grindeffect)
+if (!instance_exists(grindeffect))
+    with instance_create(x, y, obj_grindeffect)
+	{
+		other.grindeffect = id
+		playerid = other.id
+	}

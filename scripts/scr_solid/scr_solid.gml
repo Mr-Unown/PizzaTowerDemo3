@@ -11,12 +11,14 @@ if place_meeting(x, y, obj_solid)
     y = old_y
     return 1;
 }
+/*
 if (y > old_y && (bbox_bottom % 16) == 0 && (!place_meeting(x, old_y, obj_grindrail)) && place_meeting(x, y, obj_grindrail))
 {
     x = old_x
     y = old_y
     return 1;
 }
+*/
 var platform = instance_place(x, y, obj_platform)
 if place_meeting(x, y, obj_platform)
 {
@@ -91,6 +93,7 @@ if slope
         }
     }
 }
+/*
 var grindslope = instance_place(x, y, obj_grindrailslope)
 if grindslope
 {
@@ -121,6 +124,7 @@ if grindslope
         }
     }
 }
+*/
 x = old_x
 y = old_y
 return 0;

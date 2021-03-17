@@ -2,6 +2,8 @@ if (grounded && (!place_meeting(x, (y + 1), obj_railh)) && (!place_meeting(x, (y
     hsp = (image_xscale * movespeed)
 else if ((sprite_index == spr_indiancheese_land || sprite_index == spr_indiancheese_jump) && (!place_meeting(x, (y + 1), obj_railh)) && (!place_meeting(x, (y + 1), obj_railh2)))
     hsp = (image_xscale * movespeed)
+else if object_index = obj_ufoolive
+	hsp = (image_xscale * movespeed)
 else if (grounded && place_meeting(x, (y + 1), obj_railh))
     hsp = ((image_xscale * movespeed) - 5)
 else if (grounded && place_meeting(x, (y + 1), obj_railh2))
@@ -30,8 +32,10 @@ if ((scr_solid((x + 1), y) && image_xscale == 1) || (scr_solid((x - 1), y) && im
         else if grounded
             image_xscale *= -1
     }
+	else if object_index = obj_ufoolive && (!place_meeting((x + sign(hsp)), y, obj_slope))
+		image_xscale *= -1
 }
-if (object_index != obj_ancho)
+if (object_index != obj_ancho) && object_index != obj_ufoolive
 {
     if (!(scr_solid((x + (image_xscale * 15)), (y + 31)) || place_meeting((x + (image_xscale * 15)), (y + 31), obj_platform)))
     {

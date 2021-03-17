@@ -4,6 +4,8 @@ if (other.object_index == obj_player1)
     {
         if (obj_player1.GshotgunAnim == 0 && obj_player1.Gbackupweapon == 0 && obj_player1.state == 22)
         {
+			global.pausecombotime = true
+			obj_tv.alarm[1] = 75
             obj_player1.GshotgunAnim = 1
             obj_player1.state = 38
             obj_player1.image_index = 0
@@ -14,6 +16,8 @@ if (other.object_index == obj_player1)
         }
         else if (obj_player1.GshotgunAnim == 1 && obj_player1.Gbackupweapon == 0 && obj_player1.state == 22)
         {
+			global.pausecombotime = true
+			obj_tv.alarm[1] = 75			
             obj_player1.Gbackupweapon = 1
             instance_destroy()
         }
@@ -25,6 +29,8 @@ if (other.object_index == obj_player2)
     {
         if (obj_player2.GshotgunAnim == 0 && obj_player2.Gbackupweapon == 0 && obj_player2.state == 22)
         {
+			global.pausecombotime = true
+			obj_tv.alarm[1] = 75
             obj_player2.GshotgunAnim = 1
             obj_player2.state = 38
             obj_player2.image_index = 0
@@ -35,6 +41,8 @@ if (other.object_index == obj_player2)
         }
         else if (obj_player2.GshotgunAnim == 1 && obj_player2.Gbackupweapon == 0 && obj_player2.state == 22)
         {
+			global.pausecombotime = true
+			obj_tv.alarm[1] = 75
             obj_player2.Gbackupweapon = 1
             instance_destroy()
         }

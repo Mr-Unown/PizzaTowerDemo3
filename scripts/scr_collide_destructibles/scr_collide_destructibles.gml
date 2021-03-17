@@ -127,7 +127,7 @@ with (obj_player1)
             {
                 with (obj_player1)
                 {
-                    if place_meeting(x, ((y + vsp) + 2), obj_bigdestructibles)
+                    if place_meeting(x, ((y + vsp) + 2), obj_bigdestructibles) && freefallsmash <= 10
                     {
                         if (shotgunAnim == 0)
                             sprite_index = spr_bodyslamland
@@ -197,20 +197,6 @@ with (obj_player1)
                 }
             }
         }
-    }
-    with (obj_baddie)
-    {
-        if (place_meeting((x + hsp), y, obj_destructibles) && thrown == 1)
-            instance_destroy(instance_place((x + hsp), y, obj_destructibles))
-        if (place_meeting(x, (y + vsp), obj_destructibles) && thrown == 1)
-            instance_destroy(instance_place(x, (y + vsp), obj_destructibles))
-    }
-    with (obj_breakabletv)
-    {
-        if (place_meeting((x + hsp), y, obj_destructibles) && thrown == 1)
-            instance_destroy(instance_place((x + hsp), y, obj_destructibles))
-        if (place_meeting(x, (y + vsp), obj_destructibles) && thrown == 1)
-            instance_destroy(instance_place(x, (y + vsp), obj_destructibles))
     }
 }
 with (obj_player2)
@@ -342,7 +328,7 @@ with (obj_player2)
             {
                 with (obj_player2)
                 {
-                    if place_meeting(x, ((y + vsp) + 2), obj_bigdestructibles)
+                    if place_meeting(x, ((y + vsp) + 2), obj_bigdestructibles) && freefallsmash <= 10
                     {
                         if (shotgunAnim == 0)
                             sprite_index = spr_bodyslamland
@@ -413,27 +399,6 @@ with (obj_player2)
             }
         }
     }
-    with (obj_baddie)
-    {
-        if (place_meeting((x + hsp), y, obj_destructibles) && thrown == 1)
-            instance_destroy(instance_place((x + hsp), y, obj_destructibles))
-        if (place_meeting(x, (y + vsp), obj_destructibles) && thrown == 1)
-            instance_destroy(instance_place(x, (y + vsp), obj_destructibles))
-    }
-    with (obj_breakabletv)
-    {
-        if (place_meeting((x + hsp), y, obj_destructibles) && thrown == 1)
-            instance_destroy(instance_place((x + hsp), y, obj_destructibles))
-        if (place_meeting(x, (y + vsp), obj_destructibles) && thrown == 1)
-            instance_destroy(instance_place(x, (y + vsp), obj_destructibles))
-    }
-	with (obj_mrcar)
-    {
-        if (place_meeting((drawx + hsp), drawy, obj_destructibles) && collided == true)
-            instance_destroy(instance_place((drawx + hsp), drawy, obj_destructibles))
-        if (place_meeting(drawx, (drawy + vsp), obj_destructibles) && collided == true)
-            instance_destroy(instance_place(drawx, (drawy + vsp), obj_destructibles))
-    }
 }
 with (obj_pizzaball)
 {
@@ -442,4 +407,25 @@ with (obj_pizzaball)
     if (place_meeting(x, (y + vsp), obj_destructibles) && thrown == 1 && movespeed >= 2 )
         instance_destroy(instance_place(x, (y + vsp), obj_destructibles))
 
+}
+with (obj_mrcar)
+{
+    if (place_meeting((drawx + hsp), drawy, obj_destructibles) && collided == true)
+        instance_destroy(instance_place((drawx + hsp), drawy, obj_destructibles))
+    if (place_meeting(drawx, (drawy + vsp), obj_destructibles) && collided == true)
+        instance_destroy(instance_place(drawx, (drawy + vsp), obj_destructibles))
+}
+with (obj_baddie)
+{
+    if (place_meeting((x + hsp), y, obj_destructibles) && thrown == 1)
+        instance_destroy(instance_place((x + hsp), y, obj_destructibles))
+    if (place_meeting(x, (y + vsp), obj_destructibles) && thrown == 1)
+        instance_destroy(instance_place(x, (y + vsp), obj_destructibles))
+}
+with (obj_throwableparent)
+{
+   if (place_meeting((x + hsp), y, obj_destructibles) && thrown == 1)
+       instance_destroy(instance_place((x + hsp), y, obj_destructibles))
+   if (place_meeting(x, (y + vsp), obj_destructibles) && thrown == 1)
+       instance_destroy(instance_place(x, (y + vsp), obj_destructibles))
 }

@@ -161,7 +161,8 @@ if (character == "P")
 	spr_shotgunduck = spr_shotgun_duck
 	spr_shotguncrawl = spr_shotgun_crawl
 	spr_shotgungoduck = spr_shotgun_goduck
-    spr_fightball = spr_player_fightball
+    spr_fightball1 = spr_player_fightball1
+	spr_fightball2 = spr_player_fightball2
     spr_squished = spr_player_squished
     spr_palette = spr_peppalette
     spr_tomatojump = spr_player_Sjump
@@ -354,7 +355,8 @@ if (character == "N")
 	spr_shotguncrawl = spr_playerN_miniguncrawl
 	spr_shotgungoduck = spr_playerN_minigungoduck
     spr_taunt = spr_playerN_taunt
-    spr_fightball = spr_playerN_fightball
+    spr_fightball1 = spr_playerN_fightball1
+	spr_fightball2 = spr_playerN_fightball2
     spr_squished = spr_playerN_squished
     spr_palette = spr_noisepalette
     spr_tomatojump = spr_playerN_glide
@@ -433,7 +435,7 @@ if (character == "S")
 	spr_climbwall = spr_snick_climbwall
 	spr_grab = spr_snick_idle
 	spr_mach2jump = spr_snick_jump
-	spr_Timesup = spr_snick_hurt
+	spr_Timesup = spr_snick_surprise
 	spr_deathstart = spr_snick_hurt
 	spr_deathend = spr_snick_stunned
 	spr_machpunch1 = spr_snick_mach3
@@ -482,7 +484,7 @@ if (character == "S")
 	spr_knightpepthunder = spr_snick_thunder
 	spr_knightpepland = spr_snick_robotland
 	spr_knightpepdownslope = spr_snick_robotslope
-	spr_knightpepstart =  spr_knightpep_start
+	spr_knightpepstart =  spr_snick_robotsword
 	spr_knightpepcharge = spr_snick_robotwalk
 	spr_crazyrun = spr_snick_superpeelout
 	spr_bodyslamstart = spr_snick_bodyslamstart
@@ -709,7 +711,8 @@ if (character == "V")
     spr_shotgunduck = spr_shotgun_duck
     spr_shotguncrawl = spr_shotgun_crawl
     spr_shotgungoduck = spr_shotgun_goduck
-    spr_fightball = spr_player_fightball
+    spr_fightball1 = spr_player_fightball1
+	spr_fightball2 = spr_player_fightball2
     spr_squished = spr_playerV_squished
     spr_palette = spr_vigipalette
     spr_tomatojump = spr_playerV_superjump
@@ -901,7 +904,8 @@ if (character == "PM")
     spr_shotguncrawl = spr_playerN_miniguncrawl
     spr_shotgungoduck = spr_playerN_minigungoduck
     spr_taunt = spr_playerP_taunt
-    spr_fightball = spr_player_fightball
+    spr_fightball1 = spr_player_fightball1
+	spr_fightball2 = spr_player_fightball2
     spr_squished = spr_playerV_squished
     spr_palette = spr_pepperpalette
     spr_tomatojump = spr_playerV_superjump

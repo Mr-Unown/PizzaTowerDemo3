@@ -1,5 +1,6 @@
 if (global.christmasend == 1)
 {
+	global.levelname = "none"
     global.fakepeppino = 0
     scr_playerreset()
     obj_player.state = 8
@@ -9,6 +10,7 @@ if (global.christmasend == 1)
 }
 else
 {
+	global.levelname = "none"
     global.fakepeppino = 0
     scr_playerreset()
     obj_player1.targetDoor = "start"

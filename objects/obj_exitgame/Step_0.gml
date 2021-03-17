@@ -19,6 +19,7 @@ if (obj_player.key_slap2 || keyboard_check_pressed(vk_escape) || (optionselected
 {
     scr_soundeffect(8)
     obj_mainmenuselect.selected = 0
+	obj_file3.sprite_index = spr_file3
     instance_destroy()
 }
 

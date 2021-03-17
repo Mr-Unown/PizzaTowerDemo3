@@ -61,46 +61,43 @@ if ((!pause) && (!instance_exists(obj_fadeout)))
             global.peppermode = 1
     }
 }
-if (keyboard_check_pressed(vk_f6) && global.debugmode == 0)
+if keyboard_check_pressed(vk_f6)
 {
-    global.debugmode = 1
+    global.debugmode = !global.debugmode
+	if global.debugmode = 1
     with (obj_tv)
     {
         message = "DEBUG MODE ON"
         showtext = 1
         alarm[0] = 100
     }
-}
-if (keyboard_check_pressed(vk_f7) && global.debugmode == 1)
-{
-    global.debugmode = 0
-    with (obj_tv)
+	else
+	with (obj_tv)
     {
         message = "DEBUG MODE OFF"
         showtext = 1
         alarm[0] = 100
     }
 }
-if (keyboard_check_pressed(vk_f8) && global.hudmode == 0)
+if keyboard_check_pressed(vk_f7)
 {
-    global.hudmode = 1
+    global.hudmode = !global.hudmode
+	if global.hudmode = 1
     with (obj_tv)
     {
         message = "HUD OFF"
         showtext = 1
         alarm[0] = 100
     }
-}
-if (keyboard_check_pressed(vk_f9) && global.hudmode == 1)
-{
-    global.hudmode = 0
-    with (obj_tv)
+	else
+	with (obj_tv)
     {
         message = "HUD ON"
         showtext = 1
         alarm[0] = 100
     }
 }
+
 if (instance_exists(obj_pausefadeout) && instance_exists(obj_fadeout))
     instance_destroy(obj_pausefadeout)
 if (pause == 1 && (!instance_exists(obj_mainconfig)))

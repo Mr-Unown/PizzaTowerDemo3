@@ -220,7 +220,7 @@ switch object_index
             sprite_index = spr_hurt
         else
         {
-            sprite_index = spr_fightball
+            sprite_index = spr_fightball2
             image_index = obj_player1.image_index
         }
         break
@@ -447,7 +447,7 @@ switch object_index
             sprite_index = spr_hurt
         else
         {
-            sprite_index = spr_fightball
+            sprite_index = spr_fightball2
             image_index = obj_player2.image_index
         }
         break

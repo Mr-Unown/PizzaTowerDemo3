@@ -18,7 +18,11 @@ if (ds_list_find_index(global.saveroom, id) == -1 && global.snickchallenge == 0)
         hsp = 2
     with (instance_create((x + 32), (y + 32), obj_pizzaslice))
         hsp = -2
-
+	with instance_create(x + 32, y + 16, obj_goop) {
+		vsp = random_range(-2,-8)
+		hsp = choose(2,-2)
+		_direction = choose(1,-1)
+	}	
     if (audio_is_playing(sfx_breakblock1) || audio_is_playing(sfx_breakblock2))
     {
         audio_stop_sound(sfx_breakblock1)

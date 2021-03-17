@@ -40,7 +40,7 @@ with (argument0)
         if (character != "V")
         {
             state = 73
-            alarm[8] = 100
+            alarm[8] = 80
             alarm[7] = 50
         }
         if (character == "V")
@@ -48,7 +48,7 @@ with (argument0)
             if (vigihealth != 0)
             {
                 state = 73
-                alarm[8] = 100
+                alarm[8] = 80
                 alarm[7] = 50
                 vigihealth -= 45
             }

@@ -69,12 +69,13 @@ if place_meeting(x, y, obj_platformside)
 }
 if (y > old_y && (bbox_bottom % 16) == 0 && (!place_meeting(x, old_y, obj_grindrail)) && place_meeting(x, y, obj_grindrail))
 {
-    if (state == 70 || state = 91 || state == 45)
-    {
-        x = old_x
-        y = old_y
-        return 1;
-    }
+	if !cutscene && !scr_transformationcheck(other)
+	{
+	grinding = true
+	x = old_x
+	y = old_y
+	return 1;
+	}
 }
 var slope = instance_place(x, y, obj_slope)
 if slope
@@ -129,10 +130,11 @@ if grindslope
         }
         var n = ((sign(image_xscale) * (bbox_bottom - bbox_top)) / (bbox_right - bbox_left))
         var grindsslope = (gslope_start - round((n * (gobject_side - bbox_left))))
-		if other.bbox_bottom >= grindsslope && (other.state == 70 || other.state = 91|| other.state == 45)
+		if  other.y >= old_y && other.bbox_bottom = grindsslope && other.bbox_top < grindsslope && gobject_side != grindsslope && !other.cutscene && !scr_transformationcheck(other)
         {
             other.x = old_x
             other.y = old_y
+			other.grinding = true
             return 1;
         }
     }

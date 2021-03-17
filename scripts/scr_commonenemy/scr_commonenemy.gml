@@ -4,6 +4,12 @@ scarebuffer--
 //Spaghetti Scare
 if scarebuffer > 0 && shake != 1 && state = 94 && state != 109 && thrown = 0 && state != 106 && markedfordeath != 1 {
     state = 94
+	if place_meeting(x, (y + 1), obj_railh)
+		hsp = -5
+	else if place_meeting(x, (y + 1), obj_railh2)
+		hsp = 5
+	else 
+		hsp = 0
 	if (sprite_index != scaredspr)
     {
        sprite_index = scaredspr

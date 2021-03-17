@@ -11,6 +11,7 @@ with (playerid)
     movespeed = 8
     with (obj_camera)
         zoom = 1
+	obj_camera.alarm[3] = 20		
 }
 alarm[0] = 3
 collided = 1

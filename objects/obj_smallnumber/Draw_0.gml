@@ -17,7 +17,7 @@ switch color
         break
 }
 
-draw_set_font(smallnumber)
+draw_set_font(global.smallnumber)
 draw_set_halign(fa_center)
 shader_reset()
 if flash

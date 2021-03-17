@@ -11,7 +11,7 @@ pogobounces = 0
 pogomovespeed = 0
 pogoed = true
 wallclingbuffer = 15
-
+grindeffect = noone
 //New Palette
 surf_width = 2
 surf_height = 6
@@ -24,22 +24,29 @@ custompalette = false
 
 
 global.pausecombotime = false
-global.geromefollowing = false
-//Follower Array
-global.followerqueue = 0
-//Default Arrangements
-//This is the Array to Handle Arrangements
-global.followerarray[0] = obj_pizzakinshroom;
-global.followerarray[1] = obj_pizzakincheese;
-global.followerarray[2] = obj_pizzakintomato;
-global.followerarray[3] = obj_pizzakinsausage;
-global.followerarray[4] = obj_pizzakinpineapple;
-global.followerarray[5] = obj_gerome;
-//This is the Array that handles object index
-global.follower[obj_pizzakinshroom] = 0;
-global.follower[obj_pizzakincheese] = 1;
-global.follower[obj_pizzakintomato] = 2;
-global.follower[obj_pizzakinsausage] = 3;
-global.follower[obj_pizzakinpineapple] = 4;
-global.follower[obj_gerome] = 5;
 
+
+#region Followers
+if instance_exists(obj_pizzakinshroom) 
+	instance_destroy(obj_pizzakinshroom)
+if instance_exists(obj_pizzakincheese) 
+	instance_destroy(obj_pizzakincheese)
+if instance_exists(obj_pizzakintomato) 
+	instance_destroy(obj_pizzakintomato)
+if instance_exists(obj_pizzakinsausage)
+	instance_destroy(obj_pizzakinsausage)
+if instance_exists(obj_pizzakinpineapple)
+	instance_destroy(obj_pizzakinpineapple)
+if instance_exists(obj_gerome)
+	instance_destroy(obj_gerome)
+	
+global.follower = ds_list_create();
+ds_list_clear(global.follower);
+
+global.shroomfollow = false;
+global.cheesefollow = false;
+global.tomatofollow = false;
+global.sausagefollow = false;
+global.pineapplefollow = false;
+global.geromefollowing = false;
+#endregion

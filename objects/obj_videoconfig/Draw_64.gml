@@ -1,3 +1,4 @@
+draw_set_font(global.font)
 draw_rectangle_color(-32, -32, 992, 572, c_black, c_black, c_black, c_black, 0)
 if (optionselected == -1)
     draw_text_colour(64, 25, "BACK", c_white, c_white, c_white, c_white, 1)

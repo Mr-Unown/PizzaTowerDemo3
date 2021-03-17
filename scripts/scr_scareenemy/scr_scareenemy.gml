@@ -10,10 +10,17 @@ if (state != 109)
             if (x != player.x)
                 image_xscale = (-sign((x - player.x)))
 			scarebuffer = 100
-			if (sprite_index != scaredspr)
+		if place_meeting(x, (y + 1), obj_railh)
+			hsp = -5
+		else if place_meeting(x, (y + 1), obj_railh2)
+			hsp = 5
+		else 
+			hsp = 0
+			if (sprite_index != scaredspr) 
 			{
 				sprite_index = scaredspr
-				vsp = -5
+				if grav != 0
+					vsp = -5
 			}			
         }
     }

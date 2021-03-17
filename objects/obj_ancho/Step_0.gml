@@ -32,6 +32,7 @@ switch state
         break
 }
 scr_commonenemy()
+scr_scareenemy()
 if (state == 106 && stunned > 100 && birdcreated == 0)
 {
     birdcreated = 1
@@ -52,21 +53,7 @@ if (flash == 1 && alarm[2] <= 0)
     alarm[2] = (0.15 * room_speed)
 if (state != 109)
     depth = 0
-var player = instance_nearest(x, y, obj_player)
-if (state != 109)
-{
-    if (player.x > (x - 400) && player.x < (x + 400) && y <= (player.y + 60) && y >= (player.y - 60))
-    {
-        if (state != 94 && state != 106 && (player.state == 91 || player.state == 10))
-        {
-            state = 94
-            if (x != player.x)
-                image_xscale = (-sign((x - player.x)))
-            if (sprite_index != scaredspr)
-                sprite_index = scaredspr
-        }
-    }
-}
+
 if (sprite_index == spr_ancho_chargestart && floor(image_index) == (image_number - 1))
 {
     if (hitboxcreate == 0 && state == 96)
@@ -78,32 +65,17 @@ if (sprite_index == spr_ancho_chargestart && floor(image_index) == (image_number
     sprite_index = spr_ancho_charge
     movespeed = 10
 }
-if (x != obj_player1.x && state != 96 && y == ystart)
+var player = instance_nearest(x,y, obj_player)
+if (x != player.x && state != 96 && y == ystart) && sprite_index != scaredspr
 {
-    if (obj_player1.x > (x - 200) && obj_player1.x < (x + 200) && y <= (obj_player1.y + 50) && y >= (obj_player1.y - 50))
+    if (player.x > (x - 200) && player.x < (x + 200) && y <= (player.y + 50) && y >= (player.y - 50))
     {
         if (state == 102)
         {
             image_index = 0
-            image_xscale = (-sign((x - obj_player.x)))
+            image_xscale = (-sign((x - player.x)))
             state = 96
             sprite_index = spr_ancho_chargestart
-        }
-    }
-}
-if instance_exists(obj_player2)
-{
-    if (x != obj_player2.x && state != 96 && y == ystart)
-    {
-        if (obj_player2.x > (x - 200) && obj_player2.x < (x + 200) && y <= (obj_player2.y + 50) && y >= (obj_player2.y - 50))
-        {
-            if (state == 102)
-            {
-                image_index = 0
-                image_xscale = (-sign((x - obj_player.x)))
-                state = 96
-                sprite_index = spr_ancho_chargestart
-            }
         }
     }
 }

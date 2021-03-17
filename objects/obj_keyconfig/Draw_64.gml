@@ -1,3 +1,4 @@
+draw_set_font(global.font)
 draw_rectangle_color(-32, -32, 992, 572, c_black, c_black, c_black, c_black, 0)
 if (player == 0)
 {

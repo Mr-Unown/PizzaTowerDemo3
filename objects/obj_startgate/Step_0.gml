@@ -72,6 +72,11 @@ if (distance_to_object(player) < 50)
 		            showtext = 1
 		            alarm[0] = 2
 			break;
+			case "ancient": 
+		            message = "ANCIENT PASSAGEWAY"
+		            showtext = 1
+		            alarm[0] = 2
+			break;			
 			case "medieval": 
 		            message = "PIZZASCAPE"
 		            showtext = 1

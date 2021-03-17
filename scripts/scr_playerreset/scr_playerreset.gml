@@ -6,6 +6,7 @@ if (string_letters(roomname) == "golf")
 if instance_exists(obj_endlevelfade)
     instance_destroy(obj_endlevelfade)
 
+
 //Goop Gone
 with obj_goop 
 instance_destroy(id,false)	
@@ -64,6 +65,8 @@ obj_player1.state = 61
 obj_player1.visible = true
 obj_player2.state = 61
 obj_player2.visible = true
+
+
 ds_list_clear(global.saveroom)
 ds_list_clear(global.baddieroom)
 global.ruinmusic = 0

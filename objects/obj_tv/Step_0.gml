@@ -22,6 +22,9 @@ if (player.character == "V")
 {
     tvsprite = spr_tvdefault
 }*/
+//Pause Combo
+if global.snickchallenge = true
+	global.pausecombotime = false
 if (global.hudmode == 0)
 {
     if (room == Realtitlescreen || room == Tutorialtrap ||  room == Titlescreen || room == rank_room || room == cowboytask || room == hub_room2 || room == hub_room1)

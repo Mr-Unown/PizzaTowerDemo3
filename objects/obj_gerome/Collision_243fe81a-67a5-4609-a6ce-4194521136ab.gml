@@ -1,7 +1,6 @@
 if global.geromefollowing = false && global.panic = true
 {
-	global.followerarray[global.followerqueue] = object_index
-	global.follower[object_index] = global.followerqueue
-	global.followerqueue += 1
+	//Follower DS_list
+	ds_list_add(global.follower, id);
 	global.geromefollowing = true
 }

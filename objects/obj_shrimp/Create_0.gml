@@ -1,5 +1,6 @@
 shrimptype = 0
-
+cautious = 1
+runbuffer = 0
 alarm[5] = 0
 bombreset = 0
 grav = 0.5

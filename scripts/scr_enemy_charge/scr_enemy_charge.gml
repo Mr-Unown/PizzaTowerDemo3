@@ -36,9 +36,10 @@ if (object_index == obj_fencer)
 }
 if (object_index == obj_minijohn || object_index == obj_piraneapple)
 {
-    var targetplayer = obj_player1
-    if (obj_player1.spotlight == 0)
-        targetplayer = obj_player2
+	if global.coop = true
+	var targetplayer = instance_nearest(x,y, obj_player)
+	else
+	var targetplayer = obj_player1
     var playerposition = (x - targetplayer.x)
     if (x != targetplayer.x && image_xscale != (-sign(playerposition)))
     {
@@ -63,11 +64,12 @@ if (object_index == obj_minijohn || object_index == obj_piraneapple)
             slide /= 2
     }
 }
-if object_index = obj_shrimp || object_index = obj_shrimpred || object_index = obj_shrimpblue
+if object_index = obj_shrimpred
 {
-    var targetplayer = obj_player1
-    if (obj_player1.spotlight == 0)
-        targetplayer = obj_player2
+	if global.coop = true
+	var targetplayer = instance_nearest(x,y, obj_player)
+	else
+	var targetplayer = obj_player1
     var playerposition = (x - targetplayer.x)
     if (x != targetplayer.x && image_xscale != (-sign(playerposition)))
     {
@@ -80,6 +82,41 @@ if object_index = obj_shrimp || object_index = obj_shrimpred || object_index = o
     else if (slide > 0)
         slide -= 0.1
     hsp = (image_xscale * movespeed) + slide
+} 
+if object_index = obj_shrimpblue
+{
+	if global.coop = true
+	var targetplayer = instance_nearest(x,y, obj_player)
+	else
+	var targetplayer = obj_player1
+    var playerposition = (x - targetplayer.x)
+	if (x != targetplayer.x && image_xscale != (-sign(playerposition)))
+    {
+        movespeed = 7
+		runbuffer = 100
+        image_xscale = (-sign(playerposition))
+		cautious = 1
+		slide = ((-image_xscale) * (movespeed + 4))
+	}
+	if distance_to_object(targetplayer) < 100 && runbuffer <= 0
+	{
+		movespeed = 7
+		runbuffer = 100
+		cautious = -1
+		slide = ((image_xscale) * (movespeed + 4))		
+	}
+	else if runbuffer <= 0 && distance_to_object(targetplayer) >= 300
+	{
+		movespeed = 7
+		runbuffer = 100
+		cautious = 1
+		slide = ((-image_xscale) * (movespeed + 4))
+	}
+	if (slide <= 0)
+        slide += 0.1
+    else if (slide > 0)
+        slide -= 0.1
+    hsp = (((image_xscale* cautious) * movespeed) + slide) 
 }
 if (object_index == obj_ancho)
 {

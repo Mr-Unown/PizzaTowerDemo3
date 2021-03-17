@@ -2,6 +2,7 @@ with (obj_player1)
 {
     if (place_meeting(x, y, other) && key_up && grounded && (state == 0 || state == 69 || state == 70 || state == 91) && (!instance_exists(obj_noisesatellite)) && (!instance_exists(obj_fadeout)) && state != 64 && state != 61 && obj_player1.spotlight == 1)
     {
+		global.levelname = other.level
         scr_soundstopall()
 		x = other.cplayer1x
         backtohubstartx = other.cplayerx
@@ -32,6 +33,7 @@ with (obj_player2)
 {
     if (place_meeting(x, y, other) && key_up && grounded && (state == 0 || state == 69 || state == 70 || state == 91) && (!instance_exists(obj_noisesatellite)) && (!instance_exists(obj_fadeout)) && state != 64 && state != 61 && obj_player1.spotlight == 0)
     {
+		global.levelname = other.level
         scr_soundstopall()
 		x = other.cplayer1x
         backtohubstartx = other.cplayerx

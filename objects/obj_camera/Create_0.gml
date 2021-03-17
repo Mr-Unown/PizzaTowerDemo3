@@ -1,3 +1,4 @@
+global.levelname = "none"
 global.tutorialtrap = 0
 collided = false
 n = 0

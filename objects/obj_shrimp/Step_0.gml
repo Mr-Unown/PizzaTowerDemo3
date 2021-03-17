@@ -48,8 +48,11 @@ if (state != 106)
 if (hitboxcreate == 0 && state == "punch" && sprite_index = spr_shrimp_punch && obj_player.state != 91 && obj_player.state != 70)
 {
     hitboxcreate = 1
-    with (instance_create(x, y, obj_forkhitbox))
+    with (instance_create(x, y, obj_forkhitbox)) {
+		sprite_index = spr_shrimp_punch
+		mask_index = spr_shrimp_punch
         ID = other.id
+	}
 }
 if state = 102 {
 	state = 96
@@ -78,7 +81,7 @@ if state = 96 && shrimptype = 0 && attack = 1 && bombreset == 0
 		image_index = 0
 		sprite_index = spr_shrimp_punch
 		state = "punch"
-		movespeed = 10
+		movespeed = 9
 		bombreset = 100
 		flash = 1
 		alarm[5] = 20
@@ -107,7 +110,8 @@ if state = "punch"
 		sprite_index = walkspr
 	}
 }
-
+if runbuffer > 0
+runbuffer--
 //Jump
 if ((scr_solid(x + image_xscale,y)) && (!place_meeting((x + sign(hsp)), y, obj_slope))) && grounded && state != "punch" && state = 96 { 
 	movespeed = 2

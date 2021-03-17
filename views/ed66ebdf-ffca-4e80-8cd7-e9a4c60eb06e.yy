@@ -13,7 +13,7 @@
         "97d668bd-b875-4afc-8021-24e69dec647e"
     ],
     "filterType": "GMObject",
-    "folderName": "objects",
+    "folderName": "Objects",
     "isDefaultView": false,
-    "localisedFolderName": "ResourceTree_Objects"
+    "localisedFolderName": ""
 }

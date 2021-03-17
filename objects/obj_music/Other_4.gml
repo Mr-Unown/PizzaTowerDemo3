@@ -64,7 +64,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
         }
     }
 
-    if (string_letters(roomname) == "entrance" && global.coop == 0)
+    if (string_letters(roomname) == "entrance" || string_letters(roomname) == "ancient") && global.coop == 0
     {
         if (obj_player1.character == "P")
         {
@@ -400,17 +400,17 @@ if (global.panic == 0 && global.snickchallenge == 0)
             pausedmusic = mu_ruinsecret
         }
     }
-	/*
+
     if (string_letters(roomname) == "strongcoldsecret" || string_letters(roomname) == "dungeonsecret")
     {
         if (!audio_is_playing(mu_dungeonsecret))
         {
             scr_soundstopall()
-            scr_sound(101)
+            scr_sound(mu_dungeonsecret)
             audio_sound_set_track_position(global.music, fadeoff)
-            pausedmusic = 101
+            pausedmusic = mu_dungeonsecret
         }
-    }*/
+    }
     if (string_letters(roomname) == "chateausecret" || string_letters(roomname) == "medievalsecret")
     {
         if (!audio_is_playing(mu_secret))
@@ -463,12 +463,12 @@ if (global.panic == 0 && global.snickchallenge == 0)
     }
 	if room = room_test1
 	{
-	            if (!audio_is_playing(mu_freezer2))
-                {
-                    scr_soundstopall()
-                    scr_sound(mu_freezer2)
-                    pausedmusic = mu_freezer2
-                }	
+	    if (!audio_is_playing(mu_freezer2))
+        {
+             scr_soundstopall()
+             scr_sound(mu_freezer2)
+             pausedmusic = mu_freezer2
+        }	
 	}
 	audio_sound_gain(global.music, (0.6 * global.musicvolume), 0)
 }

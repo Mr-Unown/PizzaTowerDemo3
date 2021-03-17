@@ -11,7 +11,7 @@ with other.id
         other.playerimageindex = image_index
         other.playerspriteindex = sprite_index
         other.playersmash = freefallsmash	  
-		alarm[8] = 100
+		alarm[8] = 80
 		alarm[7] = 60
         alarm[5] = 2
 		visible = false
@@ -39,7 +39,7 @@ with other.id
         other.player2imageindex = image_index
         other.player2spriteindex = sprite_index
         other.player2smash = freefallsmash	  
-		alarm[8] = 100
+		alarm[8] = 80
 		alarm[7] = 60
         alarm[5] = 2
 		visible = false

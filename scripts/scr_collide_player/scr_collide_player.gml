@@ -2,6 +2,7 @@
 grounded = false
 grinding = false
 
+
 // Vertical
 repeat(abs(vsp)) {
     if !scr_solid_player(x, y + sign(vsp))
@@ -30,11 +31,11 @@ repeat(abs(hsp)) {
     }
 }
 
+
 if vsp < 20
     vsp += grav;
 
 grounded |= scr_solid(x, y + 1)
 grounded |= !place_meeting(x, y, obj_platform) && place_meeting(x, y + 1, obj_platform)
 grounded |= !place_meeting(x, y, obj_water) && place_meeting(x, y + 1, obj_water)
-grinding = ((!place_meeting(x, y, obj_grindrail) && (place_meeting(x, y + 1, obj_grindrail) || place_meeting(x, y + 2, obj_grindrail))) || (place_meeting(x, y + 1, obj_grindrailslope)) || (place_meeting(x, y + 2, obj_grindrailslope)))
 grounded |= grinding

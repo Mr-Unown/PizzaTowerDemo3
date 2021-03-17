@@ -15,20 +15,14 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
         with instance_place(x, y, obj_player)
             collectscore = (collectscore + 1000)
         instance_create(x, y, obj_taunteffect)
-		if global.combotime < 60
-		global.combotime += 30
-		else
 		global.combotime = 60
 		global.pausecombotime = true
 		obj_tv.alarm[1] = 75
         global.style = (global.style + 50)		
         with (instance_create(x, (y - 25), content)) {
             sprite_index = spr_toppinshroom_intro
-			//Follower Array
-			global.followerarray[global.followerqueue] = object_index
-			global.follower[object_index] = global.followerqueue
-			global.followerqueue += 1
-
+			//Follower DS_list
+			ds_list_add(global.follower, id);
 		}
         if (global.toppintotal < 5)
             obj_tv.message = (("YOU NEED " + string((5 - global.toppintotal))) + " MORE TOPPINS!")
@@ -47,16 +41,11 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
             collectscore = (collectscore + 1000)
         with (instance_create(x, (y - 25), content)) {
             sprite_index = spr_toppincheese_intro
-			//Follower Array
-			global.followerarray[global.followerqueue] = object_index
-			global.follower[object_index] = global.followerqueue
-			global.followerqueue += 1
+			//Follower DS_list
+			ds_list_add(global.follower, id);
 
 		}
         instance_create(x, y, obj_taunteffect)
-		if global.combotime < 60
-		global.combotime += 30
-		else
 		global.combotime = 60
 		global.pausecombotime = true
 		obj_tv.alarm[1] = 75
@@ -78,15 +67,10 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
             collectscore = (collectscore + 1000)
         with (instance_create(x, (y - 25), content)) {
             sprite_index = spr_toppintomato_intro
-			//Follower Array
-			global.followerarray[global.followerqueue] = object_index
-			global.follower[object_index] = global.followerqueue
-			global.followerqueue += 1
+			//Follower DS_list
+			ds_list_add(global.follower, id);
 		}			
         instance_create(x, y, obj_taunteffect)
-		if global.combotime < 60
-		global.combotime += 30
-		else
 		global.combotime = 60
 		global.pausecombotime = true
 		obj_tv.alarm[1] = 75
@@ -108,15 +92,10 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
             collectscore = (collectscore + 1000)
         with (instance_create(x, (y - 25), content)) {
             sprite_index = spr_toppinsausage_intro
-			//Follower Array
-			global.followerarray[global.followerqueue] = object_index
-			global.follower[object_index] = global.followerqueue
-			global.followerqueue += 1
+			//Follower DS_list
+			ds_list_add(global.follower, id);
 		}
         instance_create(x, y, obj_taunteffect)
-		if global.combotime < 60
-		global.combotime += 30
-		else
 		global.combotime = 60
 		global.pausecombotime = true
 		obj_tv.alarm[1] = 75
@@ -138,18 +117,13 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
             collectscore = (collectscore + 1000)
         with (instance_create(x, (y - 25), content)) {
             sprite_index = spr_toppinpineapple_intro
-			//Follower Array
-			global.followerarray[global.followerqueue] = object_index
-			global.follower[object_index] = global.followerqueue
-			global.followerqueue += 1
+			//Follower DS_list
+			ds_list_add(global.follower, id);
 
 		}			
 
         instance_create(x, y, obj_taunteffect)
 
-		if global.combotime < 60
-		global.combotime += 30
-		else
 		global.combotime = 60
 		global.pausecombotime = true
 		obj_tv.alarm[1] = 75

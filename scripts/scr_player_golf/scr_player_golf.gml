@@ -71,3 +71,5 @@ if (move != 0 && (floor(image_index) == 3 || floor(image_index) == 8) && steppy 
     steppy = 1
 if (move != 0 && floor(image_index) != 3 && floor(image_index) != 8)
     steppy = 0
+global.pausecombotime = true
+obj_tv.alarm[1] = 75

@@ -21,14 +21,15 @@ if (global.pineapplefollow == 1 && sprite_index != spr_toppinpineapple_intro)
         sprite_index = spr_pizzakinpineapple
     depth = -6
 
-	if global.follower[object_index] = 0 {
-    ds_queue_enqueue(followQueue, playerid.x)
-    ds_queue_enqueue(followQueue, playerid.y)		
-	} else 
+	if ds_list_find_index(global.follower, id) = 0 {
+		ds_queue_enqueue(followQueue, playerid.x)
+		ds_queue_enqueue(followQueue, playerid.y)		
+	} 
+	else 
 	{
-	var leader = global.followerarray[global.follower[object_index] - 1]		
-    ds_queue_enqueue(followQueue, leader.x)
-    ds_queue_enqueue(followQueue, leader.y - 2)			
+		var leader = ds_list_find_value(global.follower, floor(ds_list_find_index(global.follower, id) - 1));		
+		ds_queue_enqueue(followQueue, leader.x)
+		ds_queue_enqueue(followQueue, leader.y - 2)			
 	}
     LAG_STEPS = 10
 	if (ds_queue_size(followQueue) > (LAG_STEPS * 2))
@@ -36,8 +37,15 @@ if (global.pineapplefollow == 1 && sprite_index != spr_toppinpineapple_intro)
 		targetx = (ds_queue_dequeue(followQueue) - (distance))
 		targety = (ds_queue_dequeue(followQueue) + 2)
 	}
-	x = targetx
-	y = targety
+if !instance_exists(obj_fadeout)
+{
+x = targetx
+y = targety
+}
+else {
+x = playerid.x
+y = playerid.y
+}
 if playerid.hsp = 0	&& playerid.grounded && image_xscale = playerid.xscale {
 	if magnitude < 32 && scr_solid(x, y + 1) && !scr_solid(x,y)  && !scr_solid(x - distance,y) 
 	 magnitude += 0.5

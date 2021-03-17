@@ -57,12 +57,12 @@ with (other.id)
         audio_stop_sound(tumble1snd)
         audio_sound_gain(tumble2snd, (1 * global.soundeffectsvolume), 0)
     }
-    if ((sprite_index == spr_tumble || sprite_index == spr_machroll) && (!audio_is_playing(sfx_tumble3)))
+    if ((sprite_index == spr_tumble || sprite_index == spr_playerN_jetpackslide || sprite_index == spr_machroll) && (!audio_is_playing(sfx_tumble3)))
     {
         tumble3snd = audio_play_sound(sfx_tumble3, 1, false)
         audio_sound_gain(tumble3snd, (1 * global.soundeffectsvolume), 0)
     }
-    if (state != 2 && sprite_index != spr_machroll)
+    if (state != 2 && sprite_index != spr_playerN_jetpackslide && sprite_index != spr_machroll)
     {
         audio_stop_sound(tumble1snd)
         audio_stop_sound(tumble2snd)

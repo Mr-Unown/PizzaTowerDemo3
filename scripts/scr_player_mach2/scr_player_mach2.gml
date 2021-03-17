@@ -170,7 +170,7 @@ if key_taunt2
         baddie = 0
     }
 }
-if (((!key_attack) && move != xscale && grounded) || (character == "S" && move == 0 && grounded))
+if (((!key_attack) && move != xscale && grounded) || (character == "S" && move == 0 && grounded)) && !grinding
 {
     image_index = 0
     state = 71
@@ -202,6 +202,8 @@ if ((object_index == obj_player1 && place_meeting(x, y, obj_player2) && obj_play
         scr_changetoppings()
         obj_player1.depth = -7
         obj_player2.depth = -6
+		obj_player1.sprite_index = obj_player1.spr_fightball1
+		obj_player2.sprite_index = obj_player2.spr_fightball2		
     }
     if (object_index == obj_player2)
     {
@@ -217,11 +219,11 @@ if ((object_index == obj_player1 && place_meeting(x, y, obj_player2) && obj_play
         scr_changetoppings()
         obj_player1.depth = -6
         obj_player2.depth = -7
+		obj_player1.sprite_index = obj_player1.spr_fightball2
+		obj_player2.sprite_index = obj_player2.spr_fightball1		
     }
     obj_player1.image_index = 0
     obj_player2.image_index = 0
-    obj_player1.sprite_index = obj_player1.spr_fightball
-    obj_player2.sprite_index = obj_player2.spr_fightball
     obj_player1.fightball = 1
     obj_player2.fightball = 1
 }

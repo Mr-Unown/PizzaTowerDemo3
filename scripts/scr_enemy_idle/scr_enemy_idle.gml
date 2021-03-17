@@ -10,7 +10,7 @@ if (vsp > 1 && (grounded || (grounded && (!place_meeting(x, y, obj_platform)))))
 }
 if (vsp >= 0 && sprite_index == scaredspr && scarebuffer = 0)
     state = 102
-if (object_index == obj_ancho && sprite_index == scaredspr && floor(image_index) == (image_number - 1))
+if (object_index == obj_ancho && sprite_index == scaredspr && scarebuffer = 0)
     state = 102
 if (object_index == obj_forknight && sprite_index == spr_forknight_turn && floor(image_index) == (image_number - 1))
     state = 102

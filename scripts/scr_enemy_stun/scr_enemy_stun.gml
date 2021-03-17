@@ -43,7 +43,7 @@ if (object_index == obj_bigcheese)
 }
 if (floor(image_index) == (image_number - 1) && stunned < 0)
 {
-    if (object_index != obj_ancho && object_index != obj_pizzaboy)
+    if (object_index != obj_ancho && object_index != obj_ufoolive && object_index != obj_pizzaboy)
         vsp = -4
     else
         vsp = 0

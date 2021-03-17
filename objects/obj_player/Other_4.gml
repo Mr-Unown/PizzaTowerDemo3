@@ -400,21 +400,57 @@ if (object_index == obj_player2)
     roomstartx = x
     roomstarty = y
 }
-    if (global.shroomfollow == 1) && !instance_exists(obj_pizzakinshroom) {
-        instance_create(x, y, obj_pizzakinshroom)
+    if (global.shroomfollow == 1) && instance_exists(obj_pizzakinshroom) {
+		with obj_pizzakinshroom {
+        x = obj_player1.x
+		y = obj_player1.y
+		ds_queue_clear(followQueue)
+		ds_queue_enqueue(followQueue, obj_player1.x) 
+		ds_queue_enqueue(followQueue, obj_player1.y)
+		}
 	}
-    if (global.cheesefollow == 1) && !instance_exists(obj_pizzakincheese) {
-        instance_create(x, y, obj_pizzakincheese)
+    if (global.cheesefollow == 1) && instance_exists(obj_pizzakincheese) {
+		with obj_pizzakincheese {
+        x = obj_player1.x
+		y = obj_player1.y
+		ds_queue_clear(followQueue)
+		ds_queue_enqueue(followQueue, obj_player1.x) 
+		ds_queue_enqueue(followQueue, obj_player1.y)
+		}
 	}
-    if (global.tomatofollow == 1) && !instance_exists(obj_pizzakintomato) {
-        instance_create(x, y, obj_pizzakintomato)
+    if (global.tomatofollow == 1) && instance_exists(obj_pizzakintomato) {
+		with obj_pizzakintomato {
+        x = obj_player1.x
+		y = obj_player1.y
+		ds_queue_clear(followQueue)
+		ds_queue_enqueue(followQueue, obj_player1.x) 
+		ds_queue_enqueue(followQueue, obj_player1.y)
+		}
 	}
-    if (global.sausagefollow == 1) && !instance_exists(obj_pizzakinsausage){
-        instance_create(x, y, obj_pizzakinsausage)
+    if (global.sausagefollow == 1) && instance_exists(obj_pizzakinsausage){
+		with obj_pizzakinsausage {
+        x = obj_player1.x
+		y = obj_player1.y
+		ds_queue_clear(followQueue)
+		ds_queue_enqueue(followQueue, obj_player1.x) 
+		ds_queue_enqueue(followQueue, obj_player1.y)
+		}
 	}
-    if (global.pineapplefollow == 1) && !instance_exists(obj_pizzakinpineapple){
-        instance_create(x, y, obj_pizzakinpineapple)
+    if (global.pineapplefollow == 1) && instance_exists(obj_pizzakinpineapple){
+		with obj_pizzakinpineapple {
+        x = obj_player1.x
+		y = obj_player1.y
+		ds_queue_clear(followQueue)
+		ds_queue_enqueue(followQueue, obj_player1.x) 
+		ds_queue_enqueue(followQueue, obj_player1.y)
+		}
 	}
-	if global.geromefollowing = true  && !instance_exists(obj_gerome){
-		instance_create(x,y, obj_gerome)	
+	if global.geromefollowing = true  && instance_exists(obj_gerome){
+		with obj_gerome {
+        x = obj_player1.x
+		y = obj_player1.y
+		ds_queue_clear(followQueue)
+		ds_queue_enqueue(followQueue, obj_player1.x) 
+		ds_queue_enqueue(followQueue, obj_player1.y)
+		}
 	}

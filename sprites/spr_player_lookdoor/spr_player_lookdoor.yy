@@ -104,6 +104,50 @@
             ]
         },
         {
+            "id": "39a45d18-c0d9-492a-b2cf-a9a35a7f1d73",
+            "modelName": "GMSpriteFrame",
+            "mvc": "1.0",
+            "SpriteId": "0c54359c-181e-47cb-99b2-4f55785a7766",
+            "compositeImage": {
+                "id": "33622459-7b22-487d-961d-7339b33f4816",
+                "modelName": "GMSpriteImage",
+                "mvc": "1.0",
+                "FrameId": "39a45d18-c0d9-492a-b2cf-a9a35a7f1d73",
+                "LayerId": "00000000-0000-0000-0000-000000000000"
+            },
+            "images": [
+                {
+                    "id": "258d71b2-234e-4fef-875e-43841cd5ca9b",
+                    "modelName": "GMSpriteImage",
+                    "mvc": "1.0",
+                    "FrameId": "39a45d18-c0d9-492a-b2cf-a9a35a7f1d73",
+                    "LayerId": "994119e9-424a-4288-8145-8a67b3cd01ee"
+                }
+            ]
+        },
+        {
+            "id": "a626f075-82aa-4060-98b3-d0d7126585cf",
+            "modelName": "GMSpriteFrame",
+            "mvc": "1.0",
+            "SpriteId": "0c54359c-181e-47cb-99b2-4f55785a7766",
+            "compositeImage": {
+                "id": "ed4c508c-5d4e-49c9-9b6f-ef594057946f",
+                "modelName": "GMSpriteImage",
+                "mvc": "1.0",
+                "FrameId": "a626f075-82aa-4060-98b3-d0d7126585cf",
+                "LayerId": "00000000-0000-0000-0000-000000000000"
+            },
+            "images": [
+                {
+                    "id": "19103b7c-0b86-49f1-86f9-8b34ceb325ac",
+                    "modelName": "GMSpriteImage",
+                    "mvc": "1.0",
+                    "FrameId": "a626f075-82aa-4060-98b3-d0d7126585cf",
+                    "LayerId": "994119e9-424a-4288-8145-8a67b3cd01ee"
+                }
+            ]
+        },
+        {
             "id": "3a406aea-9202-4a1a-a9ba-8ec0e92214ed",
             "modelName": "GMSpriteFrame",
             "mvc": "1.0",
@@ -121,6 +165,50 @@
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
                     "FrameId": "3a406aea-9202-4a1a-a9ba-8ec0e92214ed",
+                    "LayerId": "994119e9-424a-4288-8145-8a67b3cd01ee"
+                }
+            ]
+        },
+        {
+            "id": "eb1a8dd6-3158-4fe5-8e69-15ea7eaaccd2",
+            "modelName": "GMSpriteFrame",
+            "mvc": "1.0",
+            "SpriteId": "0c54359c-181e-47cb-99b2-4f55785a7766",
+            "compositeImage": {
+                "id": "9c3be492-8b3c-438f-a8ef-cb51fc171369",
+                "modelName": "GMSpriteImage",
+                "mvc": "1.0",
+                "FrameId": "eb1a8dd6-3158-4fe5-8e69-15ea7eaaccd2",
+                "LayerId": "00000000-0000-0000-0000-000000000000"
+            },
+            "images": [
+                {
+                    "id": "581c5148-c2ea-4a3b-976a-b11dcd824295",
+                    "modelName": "GMSpriteImage",
+                    "mvc": "1.0",
+                    "FrameId": "eb1a8dd6-3158-4fe5-8e69-15ea7eaaccd2",
+                    "LayerId": "994119e9-424a-4288-8145-8a67b3cd01ee"
+                }
+            ]
+        },
+        {
+            "id": "9a99426c-318f-43e3-ba3c-a8b6914aa127",
+            "modelName": "GMSpriteFrame",
+            "mvc": "1.0",
+            "SpriteId": "0c54359c-181e-47cb-99b2-4f55785a7766",
+            "compositeImage": {
+                "id": "edc8280b-4674-416f-b716-507f5adcd38d",
+                "modelName": "GMSpriteImage",
+                "mvc": "1.0",
+                "FrameId": "9a99426c-318f-43e3-ba3c-a8b6914aa127",
+                "LayerId": "00000000-0000-0000-0000-000000000000"
+            },
+            "images": [
+                {
+                    "id": "61d55c42-18f4-4e15-8611-08c35a4dc5fe",
+                    "modelName": "GMSpriteImage",
+                    "mvc": "1.0",
+                    "FrameId": "9a99426c-318f-43e3-ba3c-a8b6914aa127",
                     "LayerId": "994119e9-424a-4288-8145-8a67b3cd01ee"
                 }
             ]

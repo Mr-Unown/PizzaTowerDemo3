@@ -126,5 +126,3 @@ image_speed = 0.35
 if (stunned < 50)
     stunned++
 
-global.pausecombotime = true
-obj_tv.alarm[1] = 75

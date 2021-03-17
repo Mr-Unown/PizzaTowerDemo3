@@ -9,3 +9,4 @@ panic = 0
 playerid = obj_player1
 drawy = 0
 
+depth = 0

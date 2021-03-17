@@ -46,6 +46,7 @@ if (sprite_index != spr_player_jugglebash)
     hsp = 0
     with (obj_camera)
         zoom = 1
+	obj_camera.alarm[3] = 20		
 }
 else
 {

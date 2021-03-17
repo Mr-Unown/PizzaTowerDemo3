@@ -16,7 +16,8 @@
         "c9137412-445c-448b-9a31-14a70262f76b",
         "dfb475b0-fe41-4fa0-bcec-ed67e259c5ab",
         "bf7171a9-255c-4f1d-89de-681561c04b39",
-        "af6c56a6-453b-42a1-8cf2-bdb50d917c44"
+        "af6c56a6-453b-42a1-8cf2-bdb50d917c44",
+        "3bf0b6e4-1ed5-4459-a186-fd80e65e250c"
     ],
     "filterType": "GMObject",
     "folderName": "Enemy Interactables",

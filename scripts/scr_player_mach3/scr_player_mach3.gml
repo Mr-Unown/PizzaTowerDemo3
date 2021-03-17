@@ -93,7 +93,7 @@ if (machhitAnim == 1)
 if (input_buffer_jump < 8 && grounded && (!(move == 1 && xscale == -1)) && (!(move == -1 && xscale == 1)))
 {
     scr_soundeffect(0)
-    if (sprite_index != spr_fightball)
+    if (sprite_index != spr_fightball1 && sprite_index != spr_fightball2)
     {
         image_index = 0
         sprite_index = spr_mach3jump
@@ -134,7 +134,7 @@ if (sprite_index == spr_crazyrun && (!instance_exists(crazyruneffectid)))
         other.crazyruneffectid = id
     }
 }
-if (sprite_index == spr_mach4 || sprite_index == spr_fightball)
+if (sprite_index == spr_mach4 || (sprite_index == spr_fightball1 || sprite_index == spr_fightball2))
     image_speed = 0.4
 if (sprite_index == spr_crazyrun)
     image_speed = 0.75

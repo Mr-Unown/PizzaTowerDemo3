@@ -2,6 +2,62 @@ if instance_exists(obj_pausefadeout)
     instance_destroy(obj_pausefadeout)
 if (fadealpha > 1)
 {
+	#region Toppins
+	    if (global.shroomfollow == 1) && instance_exists(obj_pizzakinshroom) {
+		with obj_pizzakinshroom {
+        x = obj_player1.x
+		y = obj_player1.y
+		ds_queue_clear(followQueue)
+		ds_queue_enqueue(followQueue, obj_player1.x) 
+		ds_queue_enqueue(followQueue, obj_player1.y)
+		}
+	}
+    if (global.cheesefollow == 1) && instance_exists(obj_pizzakincheese) {
+		with obj_pizzakincheese {
+        x = obj_player1.x
+		y = obj_player1.y
+		ds_queue_clear(followQueue)
+		ds_queue_enqueue(followQueue, obj_player1.x) 
+		ds_queue_enqueue(followQueue, obj_player1.y)
+		}
+	}
+    if (global.tomatofollow == 1) && instance_exists(obj_pizzakintomato) {
+		with obj_pizzakintomato {
+        x = obj_player1.x
+		y = obj_player1.y
+		ds_queue_clear(followQueue)
+		ds_queue_enqueue(followQueue, obj_player1.x) 
+		ds_queue_enqueue(followQueue, obj_player1.y)
+		}
+	}
+    if (global.sausagefollow == 1) && instance_exists(obj_pizzakinsausage){
+		with obj_pizzakinsausage {
+        x = obj_player1.x
+		y = obj_player1.y
+		ds_queue_clear(followQueue)
+		ds_queue_enqueue(followQueue, obj_player1.x) 
+		ds_queue_enqueue(followQueue, obj_player1.y)
+		}
+	}
+    if (global.pineapplefollow == 1) && instance_exists(obj_pizzakinpineapple){
+		with obj_pizzakinpineapple {
+        x = obj_player1.x
+		y = obj_player1.y
+		ds_queue_clear(followQueue)
+		ds_queue_enqueue(followQueue, obj_player1.x) 
+		ds_queue_enqueue(followQueue, obj_player1.y)
+		}
+	}
+	if global.geromefollowing = true  && instance_exists(obj_gerome){
+		with obj_gerome {
+        x = obj_player1.x
+		y = obj_player1.y
+		ds_queue_clear(followQueue)
+		ds_queue_enqueue(followQueue, obj_player1.x) 
+		ds_queue_enqueue(followQueue, obj_player1.y)
+		}
+	}
+	#endregion
     fadein = 1
     if instance_exists(obj_player)
     {

@@ -6,7 +6,7 @@ with obj_player1
 	y = other.targety
 	visible = true
 	state = 73
-    alarm[8] = 100
+    alarm[8] = 80
     alarm[7] = 50
 	hurted = 1
     if (xscale == other.image_xscale)

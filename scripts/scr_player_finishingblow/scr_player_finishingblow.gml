@@ -10,6 +10,7 @@ if (floor(image_index) == 6 && (!instance_exists(obj_swordhitbox)))
         playerid = other.object_index
     with (obj_camera)
         zoom = 1
+	obj_camera.alarm[3] = 20
 }
 if (floor(image_index) == (image_number - 4))
 {

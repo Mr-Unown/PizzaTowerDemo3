@@ -43,27 +43,27 @@ if (global.panic == 1 && obj_pause.pause == 0)
         if ((!audio_is_playing(mu_pizzatimeremix)) && (!audio_is_playing(mu_noiseescaperequiem)) && (!audio_is_playing(mu_snickescaperequiem)) && (!audio_is_playing(mu_vigiescaperequiem)) && (!audio_is_playing(mu_desertescape)) && (!audio_is_playing(mu_mansionescape)) && (!audio_is_playing(mu_factoryescape)) && (!audio_is_playing(mu_sewerescape)) && (!audio_is_playing(mu_freezerescape)))
         {
             scr_soundstopall()
-            if (string_letters(roomname) == "desert") 
+            if (string_letters(roomname) == "desert") && global.extraescapemusic = 1
             {
                 scr_sound(132)
                 pausedmusic = 132
             }
-            else if (string_letters(roomname) == "mansion" || string_letters(roomname) == "medieval")
+            else if (string_letters(roomname) == "mansion" || string_letters(roomname) == "medieval") && global.extraescapemusic = 1
             {
                 scr_sound(133)
                 pausedmusic = 133
             }
-            else if (string_letters(roomname) == "factory")
+            else if (string_letters(roomname) == "factory") && global.extraescapemusic = 1
             {
                 scr_sound(134)
                 pausedmusic = 134
             }
-            else if (string_letters(roomname) == "sewer")
+            else if (string_letters(roomname) == "sewer") && global.extraescapemusic = 1
             {
                 scr_sound(135)
                 pausedmusic = 135
             }
-            else if (string_letters(roomname) == "freezer")
+            else if (string_letters(roomname) == "freezer") && global.extraescapemusic = 1
             {
                 scr_sound(136)
                 pausedmusic = 136
@@ -129,21 +129,22 @@ if (global.panic == 1 && obj_pause.pause == 0)
 }
 audio_sound_gain(global.music, (0.6 * global.musicvolume), 0)
 audio_sound_gain(global.music2, (0.6 * global.musicvolume), 0)	
-/*
+
 if (global.miniboss == 0 && audio_is_playing(mu_miniboss))
     audio_stop_sound(mu_miniboss)
 if ((!audio_is_playing(mu_snickchallenge)) && global.snickchallenge == 1 && obj_pause.pause == 0 && global.minutes >= 2 && obj_camera.ded == 0)
 {
     scr_soundstopall()
-    scr_sound(94)
-    pausedmusic = 94
+    scr_sound(mu_snickchallenge)
+    pausedmusic = mu_snickchallenge
 }
 else if ((!audio_is_playing(mu_snickchallengeend)) && global.snickchallenge == 1 && obj_pause.pause == 0 && global.minutes < 2 && obj_camera.ded == 0)
 {
     scr_soundstopall()
-    scr_sound(95)
-    pausedmusic = 95
+    scr_sound(mu_snickchallengeend)
+    pausedmusic = mu_snickchallengeend
 }
+/*
 if (room == strongcold_miniboss && global.miniboss == 1)
 {
     if (!audio_is_playing(mu_miniboss))
@@ -186,6 +187,7 @@ if (room == mansion_miniboss)
     if audio_is_playing(sfx_scream5)
         audio_stop_sound(mu_mansion)
 }
+//TODO: Make this Better
 if instance_exists(obj_johnpillar)
 {
     if ((!audio_is_playing(mu_scary)) && obj_pause.pause == 0)

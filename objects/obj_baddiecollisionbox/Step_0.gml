@@ -121,13 +121,11 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
 			if sprite_index = spr_player_shoryumineken && vsp < 0 && other.baddieID.hp > 0
 			{
 				#region Shoryoken Jump
-				prevsp = vsp
-				vsp = 0
 				flash = 1
 				sprite_index = spr_player_shoryumineken
 				image_index = 4
-				if prevsp > -20
-					prevsp += -1
+				if vsp > -20
+					vsp += -1
                 other.baddieID.blowdirection = 3
 				if other.baddieID.hp <= 1
                 other.baddieID.blowintensity = 1			
@@ -158,13 +156,12 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
 					obj_tv.alarm[1] = 75					
                     with (obj_camera)
                     {
-						alarm[3] = 4
+						obj_camera.alarm[3] = 5
 						zoom = 1
                         shake_mag = 3
                         shake_mag_acc = (3 / room_speed)
                     }
                 }	
-				vsp = prevsp
 				#endregion
 			}
 			else if sprite_index = spr_player_shoryumineken && other.baddieID.vsp > 0 && other.baddieID.dying = true && vsp < 0 {
@@ -201,7 +198,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
 					obj_tv.alarm[1] = 75					
                     with (obj_camera)
                     {
-						alarm[3] = 4
+						obj_camera.alarm[3] = 5
 						zoom = 1
                         shake_mag = 3
                         shake_mag_acc = (3 / room_speed)
@@ -239,7 +236,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
             }
             if (instance_exists(other.baddieID) && other.baddieID.state != "punch"  && other.baddieID.state != 97 && other.baddieID.vsp > 0 && state != 57 && state != 43 && state != 71 && state != 74 && state != 70 && state != 22)
             {
-                if (other.baddieID.state != 96) && other.baddieID.dying = false
+                if (other.baddieID.state != 96 && other.baddieID != obj_shrimp) && other.baddieID.dying = false
                 {
                     if (state != 73 && state != 12) 
                     {
@@ -440,13 +437,11 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player2) && obj_player2
 			if sprite_index = spr_player_shoryumineken && vsp < 0 && other.baddieID.hp > 0
 			{
 				#region Shoryoken Jump
-				prevsp = vsp
-				vsp = 0
 				flash = 1
 				sprite_index = spr_player_shoryumineken
 				image_index = 4
-				if prevsp > -20
-					prevsp += -1
+				if vsp > -20
+					vsp += -1
                 other.baddieID.blowdirection = 3
 				if other.baddieID.hp <= 1
                 other.baddieID.blowintensity = 1			
@@ -477,13 +472,13 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player2) && obj_player2
 					obj_tv.alarm[1] = 75					
                     with (obj_camera)
                     {
-						alarm[3] = 4
+						obj_camera.alarm[3] = 5
 						zoom = 1
                         shake_mag = 3
                         shake_mag_acc = (3 / room_speed)
                     }
                 }	
-				vsp = prevsp
+
 				#endregion
 			}
 			else if sprite_index = spr_player_shoryumineken && other.baddieID.vsp > 0 && other.baddieID.dying = true && other.baddieID.dying = true && vsp < 0 {
@@ -521,7 +516,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player2) && obj_player2
 					obj_tv.alarm[1] = 75					
                     with (obj_camera)
                     {
-						alarm[3] = 4
+						obj_camera.alarm[3] = 5
 						zoom = 1
                         shake_mag = 3
                         shake_mag_acc = (3 / room_speed)
@@ -559,7 +554,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player2) && obj_player2
             }
             if (instance_exists(other.baddieID) && other.baddieID.state != "punch"  && other.baddieID.state != 97 && other.baddieID.vsp > 0 && state != 57 && state != 43 && state != 71 && state != 74 && state != 70 && state != 22)
             {
-                if (other.baddieID.state != 96) && other.baddieID.dying = false
+                if (other.baddieID.state != 96 && other.baddieID != obj_shrimp) && other.baddieID.dying = false
                 {
                     if (state != 73 && state != 12)
                     {
