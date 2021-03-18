@@ -106,6 +106,21 @@ if state != 55 && y > (room_height * 1.1)
 	timeuntilhpback = 300
 	grav = 0.5
 }
+
+//dougie's super magic setter
+if character = "D"
+{
+	spellshowbuffer = 50
+	if key_shoot
+	{
+		if spellselect < 4
+			spellselect++
+		else
+			spellselect = 1
+	}
+}
+
+
 repeat (3)
 {
    with (instance_create((roomstartx + random_range(-32, 32)), (roomstarty + random_range(-32, 32) - 40), obj_balloonpop))
@@ -115,6 +130,7 @@ repeat (3)
 instance_create(roomstartx,roomstarty - 50 ,obj_handgrabber)
 }
 
+//i think this is where resetting variables starts
 if ((!instance_exists(baddiegrabbedID)) && (state == 46 || state == 43 || state == 10))
     state = 0
 if (!(state == 46 || state == 43 || state == 70))
@@ -300,4 +316,12 @@ else
 if (turnbuffer < 50)
     turnbuffer++
 
-
+//dougie's spell select mockery
+if spellshowbuffer > 0
+	spellshowbuffer--
+	
+if grounded
+{
+	floattimer = 50
+	floatbuffer = false
+}

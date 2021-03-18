@@ -75,6 +75,21 @@ if (grounded && vsp > 0 && (!key_attack))
     freefallstart = 0
     movespeed = 2
 }
+
+//dougie floating
+if character = "D"
+{
+	if vsp > -1 && !grounded
+		floatbuffer = true
+	if floatbuffer = true && key_jump2 && floattimer > 0
+	{
+		vsp = 0
+		floattimer--
+	}
+}
+
+
+
 if key_jump
     input_buffer_jump = 0
 if (character != "S")

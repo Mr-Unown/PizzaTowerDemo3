@@ -51,3 +51,11 @@ global.pineapplefollow = false;
 global.geromefollowing = false;
 global.geromeopen = false;
 #endregion
+
+
+//dougies super magic
+floatbuffer = false
+floattimer = 50
+spellselect = 1
+spellshowbuffer = 50
+
