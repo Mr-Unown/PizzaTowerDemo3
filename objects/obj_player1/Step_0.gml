@@ -79,7 +79,7 @@ if (state == 55 && y > (room_height * 2))
         }
     }
 }
-
+//Autopitfall
 if state != 55 && y > (room_height * 1.1)
 {
 	{
