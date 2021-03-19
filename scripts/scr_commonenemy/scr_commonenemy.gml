@@ -1,3 +1,19 @@
+#region Enum
+enum enemystates
+{
+	enemyidle = 94,
+	enemycharge = 96,	
+	enemythrow = 97,
+	enemyturn = 98,
+	enemywalk = 102,
+	enemyland = 104,
+	enemyhit = 105,
+	enemystun = 106,
+	enemygrabbed = 109,
+	enemyshake = 200
+}
+//Also added baddiestates enum
+#endregion
 //Drain Scare
 if scarebuffer > 0
 scarebuffer--

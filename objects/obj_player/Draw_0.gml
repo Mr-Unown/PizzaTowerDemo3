@@ -26,4 +26,9 @@ if flash
     shader_reset()
 }
 
-
+draw_set_font(global.smallnumber)
+if character = "D"
+{
+	if spellshowbuffer > 0
+		draw_sprite_ext(spr_dougieicons, (spellselect - 1), x, y - 50, 1, 1, 0, c_white, 0)
+}

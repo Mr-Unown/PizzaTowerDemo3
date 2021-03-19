@@ -14,7 +14,7 @@ else if place_meeting(x, (y + 1), obj_railh)
     hsp = ((move * movespeed) - 5)
 else if place_meeting(x, (y + 1), obj_railh2)
     hsp = ((move * movespeed) + 5)
-if (character == "P" || character == "N" || character == "PM" || character == "V")
+if (character == "P" || character == "N" || character == "PM" || character == "V" || character = "D")
 {
     if (machslideAnim == 0 && landAnim == 0 && shotgunAnim == 0)
     {
@@ -374,19 +374,19 @@ if (key_slap2 && character != "V" && character != "S")
 	        sprite_index = spr_shotgunsuplexdash
 	    else
 			sprite_index = spr_suplexdash
-		if (character == "P")
+		if (character == "P" || character = "D")
 	        movespeed = 6
 	    else
 			movespeed = 4
 	}
 }
 //Breakdance
-if (key_shoot2 && shotgunAnim == 0) && character != "V"
+if (key_shoot2 && shotgunAnim == 0) && character != "V" && character != "D"
 {
 	breakdancebuffer = 50
     scr_soundeffect(sfx_breakdance)
 	movespeed = 10
-    state = "breakdance"
+    state = states.breakdance
 	with instance_create(x, y, obj_dashcloud2)
        image_xscale = other.xscale
     image_index = 0
@@ -433,7 +433,7 @@ if (key_slap2 && character == "S")
     state = 12
     image_index = 0
 }
-if (key_attack && (!place_meeting((x + xscale), y, obj_solid)) && (character == "P" || (character == "N" && pogo != true)  || character == "V"))
+if (key_attack && (!place_meeting((x + xscale), y, obj_solid)) && (character == "P" || (character == "N" && pogo != true) || (character = "D" && spellselect = 2) || character == "V"))
 {
     movespeed = 6
     sprite_index = spr_mach1
@@ -444,7 +444,7 @@ if (key_attack && (!place_meeting((x + xscale), y, obj_solid)) && (character == 
 if key_attack && (character == "N" && pogo = true) && !key_slap2 && pogojetcharge = false
 {
     sprite_index = spr_playerN_pogostart
-    state = "pogo"
+    state = states.pogo
     image_index = 0
 	pogomovespeed = 6
 }
@@ -455,7 +455,7 @@ if key_attack2 && (character == "N" && pogo = true) && pogojetcharge = true
 	sprite_index = spr_playerN_jetpackstart
 	else
 	sprite_index = spr_superjumpprep
-    state = "jetpackstart"
+    state = states.jetpackstart
 	if move != 0
 	xscale = move
     hsp = 0

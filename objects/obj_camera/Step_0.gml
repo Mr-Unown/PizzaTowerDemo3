@@ -164,7 +164,7 @@ if (zoom == 1)
     targetzoom2 = 504
     __view_set(2, 0, 896)
     __view_set(3, 0, 504)
-    if (player.state == 91 || player.state == "jetpack" || player.state == 37)
+    if (player.state == 91 || player.state == states.jetpack || player.state == 37)
     {
         if (chargecamera > (player.xscale * 75))
             chargecamera -= 2
@@ -202,7 +202,7 @@ else if (zoom == 0)
     targetzoom2 = 540
     __view_set(2, 0, 960)
     __view_set(3, 0, 540)
-    if (player.state == 91 || player.state == "jetpack" || player.state == 37)
+    if (player.state == 91 || player.state == states.jetpack || player.state == 37)
     {
         if (chargecamera > (player.xscale * 100))
             chargecamera -= 2

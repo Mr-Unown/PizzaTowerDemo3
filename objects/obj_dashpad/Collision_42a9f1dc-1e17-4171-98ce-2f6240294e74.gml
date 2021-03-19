@@ -112,7 +112,7 @@ with (other.id)
 		instance_create(x, y, obj_jumpdust)
 		movespeed = 14
 	}
-	else if (state = "pogo") || (state = "jetpack" && key_attack && jetpacking = true) 
+	else if (state = states.pogo) || (state = states.jetpack && key_attack && jetpacking = true) 
 	{
 		jetpacking = false
 	    xscale = other.image_xscale

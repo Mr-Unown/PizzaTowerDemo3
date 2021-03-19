@@ -75,6 +75,21 @@ if (grounded && vsp > 0 && (!key_attack))
     freefallstart = 0
     movespeed = 2
 }
+
+//dougie floating
+if character = "D"
+{
+	if vsp > -1 && !grounded
+		floatbuffer = true
+	if floatbuffer = true && key_jump2 && floattimer > 0
+	{
+		vsp = 0
+		floattimer--
+	}
+}
+
+
+
 if key_jump
     input_buffer_jump = 0
 if (character != "S")
@@ -237,7 +252,7 @@ if (key_shoot2 && shotgunAnim == 0) && (!key_down) && character != "V"
     scr_soundeffect(sfx_breakdance)
 	movespeed = 10
 	vsp = -4
-    state = "breakdance"
+    state = states.breakdance
 	with instance_create(x, y, obj_dashcloud2)
        image_xscale = other.xscale
     image_index = 0
@@ -285,7 +300,7 @@ if (character == "N" && pogo = true)  {
 	if place_meeting(x + xscale,y, obj_solid) && key_jump && wallclingbuffer <= 0
 	{
 	scr_soundeffect(sfx_step)
-	state = "wallcling"
+	state = states.wallcling
 	sprite_index = spr_playerN_wallcling
 	image_index = 0
 	xscale *= -1
@@ -372,7 +387,7 @@ if (key_attack && grounded && fallinganimation < 40)  && !(character == "N" && p
 if key_attack && (character == "N" && pogo = true) && !key_slap2 && pogojetcharge = false
 {
     sprite_index = spr_playerN_pogostart
-    state = "pogo"
+    state = states.pogo
     image_index = 0
 	pogomovespeed = 6	
 }
@@ -383,7 +398,7 @@ if key_attack2 && (character == "N" && pogo = true) && pogojetcharge = true
 	sprite_index = spr_playerN_jetpackstart
 	else
 	sprite_index = spr_superjumpprep
-    state = "jetpackstart"
+    state = states.jetpackstart
 	if move != 0
 		xscale = move
     hsp = 0

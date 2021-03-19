@@ -180,7 +180,7 @@ if (key_particles == 1)
     instance_create(random_range((x + 25), (x - 25)), random_range((y + 35), (y - 25)), obj_keyeffect)
 if (inv_frames == 0 && hurted == 0)
     image_alpha = 1
-if (state == 70 || sprite_index = spr_player_shoryumineken ||  sprite_index = spr_playerN_spinjump || state == 10 || state == 44 || state == 24 || state == 15 || state == 13 || state == 18 || state == 25 || state == 27 || state == 34 || state == 40 || state == 34 || state == 37 || state == 91 || state == "pogo" || state == "jetpack" || state == 74 || state == 63)
+if (state == 70 || sprite_index = spr_player_shoryumineken ||  sprite_index = spr_playerN_spinjump || state == 10 || state == 44 || state == 24 || state == 15 || state == 13 || state == 18 || state == 25 || state == 27 || state == 34 || state == 40 || state == 34 || state == 37 || state == 91 || state == states.pogo || state == states.jetpack || state == 74 || state == 63)
     attacking = 1
 else
     attacking = 0
@@ -188,7 +188,8 @@ if (state == 41 || state == 47 || state == 48 || state == 50 || state == 49)
     grabbing = 1
 else
     grabbing = 0
-if (state == 91 || sprite_index = spr_swingding || sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump || state == 86 || state == "breakdance" || state == "jetpack" || state == "pogo" || state == 60 || (state == 73 && thrown == 1) || state == 70 || state == 17 || state == 74 || state == 2 || state == 6 || state == 7 || state == 9 || state == 44 || state == 35 || state == 63 || state == 37 || state == 40 || state == 10 || (state == 43 && sprite_index == spr_piledriver) || state == 24 || state == 25 || state == 18 || state == 15 || state == 13 || state == 11)
+
+if (state == 91 || sprite_index = spr_swingding || sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump || state == 86 || state == states.breakdance || state == states.jetpack || state == states.pogo || state == 60 || (state == 73 && thrown == 1) || state == 70 || state == 17 || state == 74 || state == 2 || state == 6 || state == 7 || state == 9 || state == 44 || state == 35 || state == 63 || state == 37 || state == 40 || state == 10 || (state == 43 && sprite_index == spr_piledriver) || state == 24 || state == 25 || state == 18 || state == 15 || state == 13 || state == 11)
     instakillmove = 1
 else
     instakillmove = 0
@@ -221,7 +222,7 @@ if (state != 58)
     ladderbuffer = 0
 if (state != 58)
     stompAnim = 0
-if ((state == 91 || (state != 51 && (sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump)) || state == "breakdance"  || (pogomovespeed >= 12  && state == "pogo") || state == "jetpack" || (state == 109 && instance_exists(obj_player1) && obj_player1.state == 91) || state == 114 || state == 70 || state == 17 || state == 9 || state == 37 || state == 10 || state == 22 || state == 71) && macheffect == 0)
+if ((state == 91 || (state != 51 && (sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump)) || state == states.breakdance  || (pogomovespeed >= 12  && state == states.pogo) || state == states.jetpack || (state == 109 && instance_exists(obj_player1) && obj_player1.state == 91) || state == 114 || state == 70 || state == 17 || state == 9 || state == 37 || state == 10 || state == 22 || state == 71) && macheffect == 0)
 {
     macheffect = 1
     toomuchalarm1 = 6
@@ -233,12 +234,12 @@ if ((state == 91 || (state != 51 && (sprite_index = spr_player_shoryumineken || 
         sprite_index = other.sprite_index
     }
 }
-if (!(state == 91 || (state != 51 && (sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump)) || state == "breakdance" || (pogomovespeed >= 12  && state == "pogo") ||  state == "jetpack" || (state == 109 && instance_exists(obj_player1) && obj_player1.state == 91) || state == 114 || state == 70 || state == 17 || state == 9 || state == 37 || state == 10 || state == 22 || state == 71))
+if (!(state == 91 || (state != 51 && (sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump)) || state == states.breakdance || (pogomovespeed >= 12  && state == states.pogo) ||  state == states.jetpack || (state == 109 && instance_exists(obj_player1) && obj_player1.state == 91) || state == 114 || state == 70 || state == 17 || state == 9 || state == 37 || state == 10 || state == 22 || state == 71))
     macheffect = 0
 if (toomuchalarm1 > 0)
 {
     toomuchalarm1 -= 1
-    if (toomuchalarm1 <= 0 && (state == 91 || (state != 51 && (sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump)) ||state == "breakdance" || (pogomovespeed >= 12  && state == "pogo") || state == "jetpack" || state == 111 || state == 114 || (state == 109 && instance_exists(obj_player1) && obj_player1.state == 91) || state == 17 || state == 9 || state == 70 || state == 10 || state == 71 || state == 37 || state == 22 || (state == 33 && mach2 >= 100)))
+    if (toomuchalarm1 <= 0 && (state == 91 || (state != 51 && (sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump)) ||state == states.breakdance || (pogomovespeed >= 12  && state == states.pogo) || state == states.jetpack || state == 111 || state == 114 || (state == 109 && instance_exists(obj_player1) && obj_player1.state == 91) || state == 17 || state == 9 || state == 70 || state == 10 || state == 71 || state == 37 || state == 22 || (state == 33 && mach2 >= 100)))
     {
         with (instance_create(x, y, obj_mach3effect))
         {
@@ -265,7 +266,7 @@ if (character == "S")
 }
 if (!place_meeting(x, y, obj_solid))
 {
-    if (state != 72 && state != "jetpackstart" && state != 86 && sprite_index != spr_breakdanceattack1  && sprite_index != spr_bombpepintro && sprite_index != spr_knightpepthunder && state != 2 && state != 6 && state != 66 && state != 15 && state != 39 && sprite_index != spr_player_crouchshoot && state != 65 && state != 33 && state != 37 && state != 73 && state != 68 && state != 67)
+    if (state != 72 && state != states.jetpackstart && state != 86 && sprite_index != spr_breakdanceattack1  && sprite_index != spr_bombpepintro && sprite_index != spr_knightpepthunder && state != 2 && state != 6 && state != 66 && state != 15 && state != 39 && sprite_index != spr_player_crouchshoot && state != 65 && state != 33 && state != 37 && state != 73 && state != 68 && state != 67)
         mask_index = spr_player_mask
     else
         mask_index = spr_crouchmask

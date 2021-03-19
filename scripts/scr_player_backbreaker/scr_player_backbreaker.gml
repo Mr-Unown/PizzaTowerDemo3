@@ -152,7 +152,13 @@ if (sprite_index == spr_taunt)
                 paletteselect = 0
                 tauntstoredsprite = spr_idle
             }
-            else if (character == "V")
+			else if (character == "V")
+            {
+                character = "D"
+                paletteselect = 0
+                tauntstoredsprite = spr_idle
+            }
+            else if (character == "D")
             {
                 if (global.peppermode == 0)
                 {
@@ -174,7 +180,7 @@ if (sprite_index == spr_taunt)
             }
             scr_characterspr()
             scr_changetoppings()
-            scr_soundeffect(60)
+            scr_soundeffect(sfx_taunt)
             taunttimer = 20
             state = 51
             image_index = random_range(0, sprite_get_number(spr_taunt))

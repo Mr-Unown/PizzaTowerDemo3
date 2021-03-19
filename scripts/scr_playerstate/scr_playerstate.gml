@@ -1,3 +1,114 @@
+#region Enum
+enum states
+{
+	normal = 0,
+	tumble = 2,
+	finishingblow = 3,
+	ejected = 4,
+	transitioncutscene = 5,
+	fireass = 6,
+	firemouth = 7,
+	titlescreen = 8,
+	Nhookshot = 9,
+	tacklecharge = 10,
+	cheeseball = 11,
+	slap = 12,
+	cheesepep = 13,
+	cheesepepstick = 14,
+	boxxedpep = 15,
+	pistolaim = 16,
+	climbwall = 17,
+	knightpepslopes = 18,
+	portal = 19,
+	secondjump = 20,
+	chainsawbump = 21,
+	handstandjump = 22,
+	gottreasure = 23,
+	knightpep = 24,
+	knightpepattack = 25,
+	meteorpep = 26,
+	bombpep = 27,
+	grabbing = 28,
+	chainsawpogo = 29,
+	shotgunjump = 30,
+	stunned = 31,
+	highjump = 32,
+	chainsaw = 33,
+	facestomp = 34,
+	timesup = 36,
+	machroll = 37,
+	shotgun = 38,
+	pistol = 39,
+	machfreefall = 40,
+	throw = 41,
+	slam = 42,
+	superslam = 43,
+	skateboard = 44,
+	grind = 45,
+	grab = 46,
+	punch = 47,
+	backkick = 48,
+	uppunch = 49,
+	shoulder= 50,
+	backbreaker = 51,
+	bossdefeat = 52,
+	pizzathrow = 53,
+	bossintro = 54,
+	gameover = 55,
+	keyget = 56,
+	tackle = 57,
+	jump = 58,
+	ladder = 59,
+	slipnslide = 60,
+	comingoutdoor = 61,
+	smirk = 62,
+	Sjump = 63,
+	victory = 64,
+	Sjumpprep = 65,
+	crouch = 66,
+	crouchjump = 67,
+	crouchslide = 68,
+	mach1 = 69,
+	mach2 = 70,
+	machslide = 71,
+	bump = 72,
+	hurt = 73,
+	freefall = 74,
+	hang = 75,
+	freefallland = 77,
+	door = 78,
+	barrelfloat = 80,
+	barrelmach2 = 81,
+	barrelmach1 = 82,
+	barrelfall = 83,
+	barrelnormal = 84,
+	barrelslipnslide = 85,
+	barrelroll = 86,
+	current = 87,
+	boulder = 88,
+	taxi = 89,
+	runonball = 90,
+	mach3 = 91,
+	freefallprep = 92,
+	Sjumpland = 93,
+	grabbed = 109,
+	throwdynamite = 110,
+	kingknightroll = 111,
+	golf = 112,
+	bashhit = 113,
+	parry = 114,
+	uppercut = 115,
+	pipe = 116,
+	jetpack = 117,
+	jetpackstart = 118,
+	pogo = 119,
+	wallcling = 120,
+	breakdance = 121 
+
+} 
+//I made some changes to it so that we can know at a glance what number it gets converted to.
+#endregion
+
 switch state
 {
     case 0:
@@ -6,25 +117,25 @@ switch state
     case 109:
         scr_player_grabbed()
         break
-	case "uppercut":
-		scr_player_uppunch()
+	case states.uppercut:
+		scr_player_uppunch() //Unused
 		break;
-	case "pipe":
+	case states.pipe:
         scr_player_pipe()
         break
-	case "jetpack":
+	case states.jetpack:
         scr_player_jetpack()
         break
-	case "jetpackstart":
+	case states.jetpackstart:
         scr_player_Sjumpjetpackprep()
         break;		
-	case "pogo":
+	case states.pogo:
         scr_player_pogo()
         break
-	case "wallcling":
+	case states.wallcling:
         scr_player_wallcling()
         break;		
-	case "breakdance":
+	case states.breakdance:
         scr_player_breakdance()
         break
     case 110:
