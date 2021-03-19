@@ -17,6 +17,8 @@ if (grabbedby == 1)
         else if (floor(obj_player1.image_index) == 3)
             y = (obj_player1.y - 30)
         image_xscale = (-obj_player1.xscale)
+		if obj_player1.sprite_index != obj_player1.spr_swingding && obj_player1.sprite_index != obj_player1.spr_piledriver
+			depth = 0
     }
     with (obj_player1)
     {
@@ -388,6 +390,8 @@ if (grabbedby == 2)
         else if (floor(obj_player2.image_index) == 3)
             y = (obj_player2.y - 30)
         image_xscale = (-obj_player2.xscale)
+		if obj_player2.sprite_index != obj_player2.spr_swingding && obj_player2.sprite_index != obj_player2.spr_piledriver
+			depth = 0		
     }
     with (obj_player2)
     {
