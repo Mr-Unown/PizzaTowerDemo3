@@ -17,6 +17,8 @@ if (fadealpha > 1 && fadein == 0)
         audio_resume_sound(obj_player.superjumpholdsnd)
         audio_resume_sound(obj_player.superjumpprepsnd)
         audio_resume_sound(obj_player.suplexdashsnd)
+		audio_resume_sound(sfx_smallvictory)
+		
         if (global.ruinmusic == 1 && global.snickchallenge == 0 && global.panic == 0 && global.timeattack == 0)
         {
             if audio_is_playing(mu_ruin)
