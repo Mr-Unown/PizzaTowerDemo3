@@ -38,7 +38,7 @@ if (markedfordeath == 1 && markedfordeathbuffer <= 0 && thrown == 1)
 if (thrown == 0 || markedfordeath == 0)
 {
     markedfordeath = 0
-    markedfordeathbuffer = 100
+    markedfordeathbuffer = 50
 }
 if (markedfordeath == 1)
     markedfordeathbuffer--

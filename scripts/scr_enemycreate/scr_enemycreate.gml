@@ -6,7 +6,7 @@ blowintensity = 1
 scarebuffer = 0
 parry = 0
 markedfordeath = 0
-markedfordeathbuffer = 100
+markedfordeathbuffer = 50
 deathbuffer = 100
 
 dying = false

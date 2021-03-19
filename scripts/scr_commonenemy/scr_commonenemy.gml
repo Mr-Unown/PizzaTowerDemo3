@@ -18,18 +18,22 @@ if scarebuffer > 0 && shake != 1 && state = 94 && state != 109 && thrown = 0 && 
 }
 else if !(state = 94 && scarebuffer > 0)
 	scarebuffer = 0
-//An attempt at preventing out of bound enemies
+//An stinky attempt at preventing out of bound enemies
 if (markedfordeath == 1 && markedfordeathbuffer <= 0 && thrown == 1)
     instance_destroy()
 if (thrown == 0 || markedfordeath == 0)
 {
     markedfordeath = 0
-    markedfordeathbuffer = 100
+    markedfordeathbuffer = 50
 }
 if (markedfordeath == 1)
     markedfordeathbuffer--
 if (thrown == 1 && place_meeting((x + hsp), (y + vsp), obj_hallway))
     markedfordeath = 1
+	
+//Pitfall Eenemy
+if y > (room_height * 1.1)
+	markedfordeath = 1
 //Lower the Stuntimer
 if hp > 1 && stunned > 70
 	stunned = 70
