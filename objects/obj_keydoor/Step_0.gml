@@ -14,6 +14,7 @@ if ((obj_player1.state == 0 || obj_player1.state == 69 || obj_player1.state == 7
     sprite_index = spr_doorkeyopen
     image_speed = 0.35
 	global.pausecombotime = true
+	global.combotime = 60
 	obj_tv.alarm[1] = 75	
     instance_create((x + 50), (y + 50), obj_lock)
     global.key_inv = 0
