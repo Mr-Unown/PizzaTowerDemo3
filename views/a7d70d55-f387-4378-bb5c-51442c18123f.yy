@@ -9,7 +9,7 @@
         "77bc7841-1308-4207-a40b-7483349b4df9"
     ],
     "filterType": "GMTileSet",
-    "folderName": "medieval",
+    "folderName": "Medieval",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

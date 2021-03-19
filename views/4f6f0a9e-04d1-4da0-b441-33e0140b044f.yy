@@ -7,7 +7,7 @@
         "9eab4835-50f9-40db-b632-d6b8f07534c0"
     ],
     "filterType": "GMTileSet",
-    "folderName": "golf",
+    "folderName": "Golf",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

@@ -7,7 +7,7 @@
         "c9225eb9-ff64-4352-ba49-7883370a293f"
     ],
     "filterType": "GMTileSet",
-    "folderName": "freezer",
+    "folderName": "Freezer",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

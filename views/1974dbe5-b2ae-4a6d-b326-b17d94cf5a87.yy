@@ -7,7 +7,7 @@
         "c0d18612-74f3-4944-8969-a195492bd8f6"
     ],
     "filterType": "GMTileSet",
-    "folderName": "farm",
+    "folderName": "Farm",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

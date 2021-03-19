@@ -7,7 +7,7 @@
         "3e215232-9502-4a3d-8f27-bcab78c87e53"
     ],
     "filterType": "GMTileSet",
-    "folderName": "secret",
+    "folderName": "Secret",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

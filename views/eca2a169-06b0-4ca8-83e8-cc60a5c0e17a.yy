@@ -7,7 +7,7 @@
         "ebe0c6b0-0780-4a3f-9ef5-9e6caf2240f7"
     ],
     "filterType": "GMTileSet",
-    "folderName": "title",
+    "folderName": "Title",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

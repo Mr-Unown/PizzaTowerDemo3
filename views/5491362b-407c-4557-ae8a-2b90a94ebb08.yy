@@ -7,7 +7,7 @@
         "3389ae6c-96a1-4b32-be17-b1076cf2d4ca"
     ],
     "filterType": "GMTileSet",
-    "folderName": "ball",
+    "folderName": "Ball",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

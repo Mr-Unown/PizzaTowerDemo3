@@ -11,7 +11,7 @@
         "588d2d9a-5771-4b16-9b7e-0f955a4b87ac"
     ],
     "filterType": "GMTileSet",
-    "folderName": "desert",
+    "folderName": "Desert",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

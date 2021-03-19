@@ -8,7 +8,7 @@
         "ef7770df-2e15-4046-92a0-44f7b8229f72"
     ],
     "filterType": "GMTileSet",
-    "folderName": "ruin",
+    "folderName": "Ruins",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

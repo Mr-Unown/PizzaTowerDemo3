@@ -10,7 +10,7 @@
         "39731095-27f4-4e10-963e-e523401f2a9b"
     ],
     "filterType": "GMTileSet",
-    "folderName": "entrance",
+    "folderName": "Entrance",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
