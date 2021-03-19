@@ -46,7 +46,7 @@ else {
 x = playerid.x
 y = playerid.y
 }
-if playerid.hsp = 0	&& playerid.grounded && image_xscale = playerid.xscale {
+if playerid.hsp = 0	&& playerid.state != states.door && playerid.grounded && image_xscale = playerid.xscale {
 	if magnitude < 32 && scr_solid(x, y + 1) && !scr_solid(x,y)  && !scr_solid(x - distance,y) 
 	 magnitude += 0.5
 }

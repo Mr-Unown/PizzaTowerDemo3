@@ -9346,6 +9346,14 @@
             }
         },
         {
+            "Key": "67873dfe-60ca-48f3-afe3-1b843a602411",
+            "Value": {
+                "id": "df1b05ff-9a6b-405b-9dc6-9972a396a2e7",
+                "resourcePath": "objects\\obj_collecteffect\\obj_collecteffect.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "67c967b5-6ae0-4731-8a4e-4c5b4eba2b31",
             "Value": {
                 "id": "1bed20d2-f017-4f40-ba41-95f28f1e18f7",
