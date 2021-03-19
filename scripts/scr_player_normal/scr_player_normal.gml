@@ -380,6 +380,8 @@ if (key_slap2 && character != "V" && character != "S")
 			movespeed = 4
 	}
 }
+if grounded
+	doublejump = 0
 //Breakdance
 if (key_shoot2 && shotgunAnim == 0) && character != "V"
 {

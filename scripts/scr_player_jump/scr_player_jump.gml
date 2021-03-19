@@ -194,6 +194,7 @@ if (grounded && (sprite_index == spr_facestomp || sprite_index == spr_freefall))
     image_index = 0
     sprite_index = spr_bodyslamland
     state = 77
+	doublejump = 0
 }
 if (key_slap2 && suplexmove == 0 && character != "V" && character != "S")
 {
@@ -363,6 +364,7 @@ if ((!key_attack) || move != xscale)
     mach2 = 0
 if (key_attack && grounded && fallinganimation < 40)  && !(character == "N" && pogo = true)
 {
+	doublejump = 0
     movespeed = 6
     sprite_index = spr_mach1
     jumpAnim = 1
