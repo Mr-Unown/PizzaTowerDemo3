@@ -1,4 +1,4 @@
-if global.geromefollowing = true && !alarm[0]
+if global.geromefollowing = true 
 {
 if audio_is_playing(sfx_collecttopping)
     audio_stop_sound(sfx_collecttopping)
@@ -17,5 +17,7 @@ global.pausecombotime = true
 obj_tv.alarm[1] = 75
 with instance_create(x, y, obj_smallnumber)
     number = "25"
+repeat 3
+	instance_create(x + random_range(-3,3),y + random_range(-3,3), obj_collecteffect)	
 instance_destroy()
 }

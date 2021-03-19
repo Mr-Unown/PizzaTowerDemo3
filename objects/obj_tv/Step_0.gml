@@ -8,6 +8,7 @@ collided = true
 else
 collided = false
 
+
 var player = obj_player1
 if (obj_player1.spotlight == 0)
     player = obj_player2
