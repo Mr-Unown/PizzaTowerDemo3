@@ -1,7 +1,17 @@
-if (golf == 0)
-{
+
     grav = 0.5
     move = (key_left + key_right)
+	
+		if sprite_index = spr_swingding 
+		{		
+        if ((!place_meeting(x, (y + 1), obj_railh)) && (!place_meeting(x, (y + 1), obj_railh2)))
+            hsp = (xscale * movespeed)
+        else if place_meeting(x, (y + 1), obj_railh)
+            hsp = ((xscale * movespeed) - 5)
+        else if place_meeting(x, (y + 1), obj_railh2)
+            hsp = ((xscale * movespeed) + 5)				
+		}
+		
     if grounded
     {
         if (dir != xscale && sprite_index != spr_swingding)
@@ -12,40 +22,29 @@ if (golf == 0)
         }
         jumpstop = 0
         anger = 100
+		if sprite_index != spr_swingding {
         if ((!place_meeting(x, (y + 1), obj_railh)) && (!place_meeting(x, (y + 1), obj_railh2)))
             hsp = (move * movespeed)
         else if place_meeting(x, (y + 1), obj_railh)
             hsp = ((move * movespeed) - 5)
         else if place_meeting(x, (y + 1), obj_railh2)
             hsp = ((move * movespeed) + 5)
-        if (heavy == 0)
-        {
-            if (move != 0)
-            {
-                if (movespeed < 6)
-                    movespeed += 0.5
-                else if (floor(movespeed) == 6)
-                    movespeed = 6
-            }
-            else
-                movespeed = 0
-            if (movespeed > 6)
-                movespeed -= 0.1
-        }
-        else
-        {
-            if (move != 0)
-            {
-                if (movespeed < 4)
-                    movespeed += 0.25
-                else if (floor(movespeed) == 4)
-                    movespeed = 4
-            }
-            else
-                movespeed = 0
-            if (movespeed > 4)
-                movespeed -= 0.1
-        }
+		}
+		var maxspeed = 6
+		if sprite_index = spr_swingding && heavy = 0
+		maxspeed = 9
+		else if sprite_index = spr_swingding && heavy = 1 || (sprite_index != spr_swingding && heavy = 0)
+		maxspeed = 6
+		else if heavy = 1
+		maxspeed = 4
+
+		if (movespeed < maxspeed)
+			movespeed += 0.5
+        else if (floor(movespeed) == maxspeed)
+            movespeed = maxspeed
+        if (movespeed > maxspeed)
+            movespeed -= 0.1
+
         if (move != 0 && sprite_index != spr_swingding)
             xscale = move
         if (move != 0)
@@ -60,7 +59,7 @@ if (golf == 0)
         else
             image_speed = 0.35
     }
-    if (!grounded)
+    if (!grounded) && sprite_index != spr_swingding
     {
         if (dir != xscale && sprite_index != spr_swingding)
         {
@@ -139,21 +138,35 @@ if (golf == 0)
     }
     if (sprite_index == spr_haulingland && floor(image_index) == (image_number - 1))
         sprite_index = spr_haulingidle
+/*
     if (move != 0 && move != lastmove && swingdingbuffer < 300)
     {
         lastmove = move
         swingdingbuffer += 50
     }
-    if (swingdingbuffer > 0)
-        swingdingbuffer -= 1
+
+	
     if (sprite_index == spr_swingding && swingdingbuffer < 150)
         state = 0
-    if (swingdingbuffer > 300 && sprite_index != spr_swingding)
+	*/	
+    if (swingdingbuffer > 0)
+        swingdingbuffer -= 1
+    if (sprite_index == spr_swingding && swingdingbuffer <= 25) {
+        sprite_index = spr_haulingstart;
+		image_index  = 0;
+		momemtum = true;
+	}
+    if (key_shoot2 && sprite_index != spr_swingding) && swingdingbuffer <= 10
     {
-        sprite_index = spr_swingding
+		if move != 0
+			xscale = move;
+		movespeed = 9;
+		swingdingbuffer = 50;
+		image_index  = 0;
+        sprite_index = spr_swingding;
         with (instance_create(x, y, obj_swingdinghitbox))
-            playerid = other.object_index
-        flash = 1
+            playerid = other.object_index;
+        flash = 1;
     }
     if key_slap2
     {
@@ -203,109 +216,5 @@ if (golf == 0)
     if (sprite_index != spr_swingding)
         image_speed = 0.35
     else
-        image_speed = (swingdingbuffer / 600)
-}
-if (golf == 1)
-{
-    move = (key_left + key_right)
-    grav = 0.5
-    anger = 100
-    jumpstop = 0
-    if ((!place_meeting(x, (y + 1), obj_railh)) && (!place_meeting(x, (y + 1), obj_railh2)))
-        hsp = (xscale * movespeed)
-    else if place_meeting(x, (y + 1), obj_railh)
-        hsp = ((xscale * movespeed) - 5)
-    else if place_meeting(x, (y + 1), obj_railh2)
-        hsp = ((xscale * movespeed) + 5)
-    if (movespeed > 0)
-        movespeed -= 1
-    image_speed = 0.35
-    if (move != 0)
-        xscale = move
-    if key_slap2
-    {
-        if (move != 0)
-            move = xscale
-        state = 3
-        if (sprite_index == spr_swingding)
-            sprite_index = spr_swingdingend
-        else if (!key_up)
-            sprite_index = choose(spr_finishingblow1, spr_finishingblow2, spr_finishingblow3, spr_finishingblow4, spr_finishingblow5)
-        else if key_up
-            sprite_index = spr_uppercutfinishingblow
-        image_index = 0
-        hsp = 0
-        movespeed = 0
-        golf = 0
-    }
-    if key_attack2
-    {
-        state = 10
-        sprite_index = spr_charge
-        with (instance_create(x, y, obj_jumpdust))
-            image_xscale = other.xscale
-        scr_soundeffect(33)
-        golf = 0
-    }
-    if (key_down && grounded)
-    {
-        state = 66
-        landAnim = 0
-        crouchAnim = 1
-        image_index = 0
-        idle = 0
-        golf = 0
-    }
-    landAnim = 0
-    if (key_down && (!grounded))
-    {
-        sprite_index = spr_piledriver
-        vsp = -6
-        state = 43
-        image_index = 0
-        image_speed = 0.35
-        golf = 0
-    }
-    if key_jump
-        input_buffer_jump = 0
-    if (move != 0 && move != lastmove && swingdingbuffer < 300)
-    {
-        lastmove = move
-        swingdingbuffer += 50
-    }
-    if (swingdingbuffer > 0)
-        swingdingbuffer -= 1
-    if (sprite_index == spr_swingding && swingdingbuffer < 150)
-        state = 0
-    if (swingdingbuffer > 300 && sprite_index != spr_swingding)
-    {
-        golf = 0
-        sprite_index = spr_swingding
-        with (instance_create(x, y, obj_swingdinghitbox))
-            playerid = other.object_index
-        flash = 1
-    }
-    if (grounded && input_buffer_jump < 8 && (!key_down) && (!key_attack) && vsp > 0 && sprite_index != spr_swingding)
-    {
-        scr_soundeffect(0)
-        sprite_index = spr_haulingjump
-        instance_create(x, y, obj_highjumpcloud2)
-        if (heavy == 0)
-            vsp = -11
-        else
-            vsp = -6
-        image_index = 0
-    }
-    if (grounded && move != 0 && sprite_index == spr_haulingidle && move != xscale)
-        sprite_index = spr_haulingwalk
-    else if (grounded && move == 0 && sprite_index == spr_haulingwalk)
-        sprite_index = spr_haulingidle
-    if (sprite_index == spr_haulingstart && floor(image_index) == (image_number - 1))
-        sprite_index = spr_haulingidle
-    if ((sprite_index == spr_haulingjump && floor(image_index) == (image_number - 1)) || ((!grounded) && (sprite_index == spr_haulingwalk || sprite_index == spr_haulingidle)))
-        sprite_index = spr_haulingfall
-    if (grounded && vsp > 0 && (sprite_index == spr_haulingfall || sprite_index == spr_haulingjump))
-        sprite_index = spr_haulingland
-    if (sprite_index == spr_haulingland && floor(image_index) == (image_number - 1))
-        sprite_index = spr_haulingidle
-}
+        image_speed = clamp(swingdingbuffer / 150, 0.6, 0.75)
+
