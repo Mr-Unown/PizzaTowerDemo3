@@ -76,7 +76,7 @@ if (superspringjump != 1)
     {
 		jetpacking = true		
 		scr_soundeffect(sfx_noisewoah)
-		state = "jetpackstart"
+		state = states.jetpackstart
 		image_index = 0
 		sprite_index = spr_playerN_jetpackstart
 		hsp = 0

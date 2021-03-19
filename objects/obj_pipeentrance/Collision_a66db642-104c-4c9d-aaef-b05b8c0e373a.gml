@@ -1,10 +1,10 @@
 with (other.id)
 {
-	if state != "pipe"
+	if state != states.pipe
 	{
 	x = other.centerX
 	y = other.centerY
-	state = "pipe"
+	state = states.pipe
 	pipedirection = other.pipedirection
 	}
 }

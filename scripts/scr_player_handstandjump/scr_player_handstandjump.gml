@@ -65,7 +65,7 @@ if (character != "S")
 		if (character == "N" && pogo = true) && !key_slap2 
 		{
 			sprite_index = spr_playerN_pogostart
-			state = "pogo"
+			state = states.pogo
 			image_index = 0
 			pogomovespeed = 9
 		}

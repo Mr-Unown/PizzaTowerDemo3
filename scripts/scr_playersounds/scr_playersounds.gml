@@ -14,12 +14,12 @@ with (other.id)
     }
     else if (sprite_index != spr_mach && state != 17 && sprite_index != spr_player_machhit)
         audio_stop_sound(mach2snd)
-    if (((state == 91 || sprite_index == spr_mach3boost) || (state = "jetpack")) && sprite_index != spr_jetpackcrazy && sprite_index != spr_crazyrun && (!audio_is_playing(sfx_mach3)))
+    if (((state == 91 || sprite_index == spr_mach3boost) || (state = states.jetpack)) && sprite_index != spr_jetpackcrazy && sprite_index != spr_crazyrun && (!audio_is_playing(sfx_mach3)))
     {
         mach3snd = audio_play_sound(sfx_mach3, 1, false)
         audio_sound_gain(mach3snd, (1 * global.soundeffectsvolume), 0)
     }
-    else if (((state != 91 && sprite_index != spr_mach3boost) && (state != "jetpack")) || (sprite_index == spr_crazyrun || sprite_index = spr_jetpackcrazy))
+    else if (((state != 91 && sprite_index != spr_mach3boost) && (state != states.jetpack)) || (sprite_index == spr_crazyrun || sprite_index = spr_jetpackcrazy))
         audio_stop_sound(mach3snd)
     if (state == 18 && (!audio_is_playing(sfx_knightslide)))
     {
@@ -42,9 +42,9 @@ with (other.id)
     }
     else if (sprite_index != spr_crazyrun) && sprite_index != spr_jetpackcrazy
         audio_stop_sound(mach4snd)
-    if (state != 65 && state != "jetpackstart"  && audio_is_playing(superjumpprepsnd))
+    if (state != 65 && state != states.jetpackstart  && audio_is_playing(superjumpprepsnd))
         audio_stop_sound(superjumpprepsnd)
-    if (state != 65 && state != "jetpackstart" && audio_is_playing(superjumpholdsnd))
+    if (state != 65 && state != states.jetpackstart && audio_is_playing(superjumpholdsnd))
         audio_stop_sound(superjumpholdsnd)
     if (sprite_index == spr_tumblestart && (!audio_is_playing(sfx_tumble1)) && floor(image_index) < 11)
     {

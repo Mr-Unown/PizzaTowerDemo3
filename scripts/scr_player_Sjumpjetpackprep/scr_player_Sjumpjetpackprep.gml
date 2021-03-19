@@ -23,7 +23,7 @@ if floor(image_index) = image_number - 1
 		scr_soundeffect(20)		
 		mach2 = 100
 		machhitAnim = 0
-		state = "jetpack"
+		state = states.jetpack
 		flash = 1
 		instance_create(x, y, obj_jumpdust)
 		movespeed = 14			

@@ -1,6 +1,6 @@
 with (obj_player1)
 {
-    if (state == 70 || state == 91 || state == "jetpack" || state == 37 || state == 18 || state == 2 || state == 10 || state == 9)
+    if (state == 70 || state == 91 || state == states.jetpack || state == 37 || state == 18 || state == 2 || state == 10 || state == 9)
     {
         if place_meeting((x + hsp), y, obj_destructibles)
         {
@@ -10,7 +10,7 @@ with (obj_player1)
                 machpunchAnim = 1
         }
     }
-	if state == "pogo" && movespeed > 6
+	if state == states.pogo && movespeed > 6
 	{
         if place_meeting((x + hsp), y + (vsp), obj_destructibles)
         {
@@ -52,7 +52,7 @@ with (obj_player1)
                 instance_destroy()
         }
     }
-	if state = "breakdance" 
+	if state = states.breakdance 
 	{
         if place_meeting((x + hsp), y, obj_destructibles)
         {
@@ -104,7 +104,7 @@ with (obj_player1)
                 image_speed = 0.35
         }
     }
-    if (vsp <= 0.5 && (state == 58 || state == 17 || state == 6 || state == 63 || state == 70 || state == 91 || state == "jetpack"))
+    if (vsp <= 0.5 && (state == 58 || state == 17 || state == 6 || state == 63 || state == 70 || state == 91 || state == states.jetpack))
     {
         if place_meeting(x, (y - 1), obj_destructibles)
         {
@@ -201,7 +201,7 @@ with (obj_player1)
 }
 with (obj_player2)
 {
-    if (state == 70 || state == 91 || state == "jetpack" || state == 37 || state == 18 || state == 2 || state == 10 || state == 9)
+    if (state == 70 || state == 91 || state == states.jetpack || state == 37 || state == 18 || state == 2 || state == 10 || state == 9)
     {
         if place_meeting((x + hsp), y, obj_destructibles)
         {
@@ -211,7 +211,7 @@ with (obj_player2)
                 machpunchAnim = 1
         }
     }
-	if state == "pogo" && movespeed > 7
+	if state == states.pogo && movespeed > 7
 	{
         if place_meeting((x + hsp), y, obj_destructibles)
         {
@@ -267,7 +267,7 @@ with (obj_player2)
                 instance_destroy()
         }		
 	}		
-	if state = "breakdance" 
+	if state = states.breakdance 
 	{
         if place_meeting((x + hsp), y, obj_destructibles)
         {
@@ -305,7 +305,7 @@ with (obj_player2)
                 image_speed = 0.35
         }
     }
-    if (vsp <= 0.5 && (state == 58 || state == 17 || state == 6 || state == 63 || state == 70 || state == 91 || state == "jetpack"))
+    if (vsp <= 0.5 && (state == 58 || state == 17 || state == 6 || state == 63 || state == 70 || state == 91 || state == states.jetpack))
     {
         if place_meeting(x, (y - 1), obj_destructibles)
         {
