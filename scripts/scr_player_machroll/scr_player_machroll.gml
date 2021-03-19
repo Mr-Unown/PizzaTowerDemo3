@@ -84,7 +84,7 @@ if (key_shoot2) && character != "V"
 	scr_soundeffect(sfx_breakdance)
 	movespeed = 13
 	sprite_index = spr_breakdanceattack1
-    state = "breakdance"
+    state = states.breakdance
 	with instance_create(x, y, obj_dashcloud2)
        image_xscale = other.xscale
     image_index = 0
@@ -139,7 +139,7 @@ if ((!key_down || !grounded) && (!scr_solid((x + 27), (y - 32))) && (!scr_solid(
 {
 	image_index = 0
 	scr_soundeffect(sfx_rollgetup)
-    state = "jetpack"
+    state = states.jetpack
 	sprite_index = spr_jetpack
 }
 if ((!instance_exists(dashcloudid)) && grounded)

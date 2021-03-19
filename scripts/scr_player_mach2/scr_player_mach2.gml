@@ -87,7 +87,7 @@ if grounded
 {
     if (movespeed < 12)
         movespeed += 0.1
-    if (movespeed >= 12 && global.coop == 0)
+    if (movespeed >= 12 && global.coop == 0) && character != "D"
     {
         movespeed = 12
         state = 91

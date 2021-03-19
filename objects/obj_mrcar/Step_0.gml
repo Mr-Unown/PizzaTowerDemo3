@@ -3,7 +3,7 @@ if collided = false
 	#region Smash
 	with (obj_player1)
 	{
-	    if ((place_meeting((x + hsp), y, other.id) || place_meeting((x + xscale), y, other.id)) && (obj_player1.state == 91 || obj_player1.state == "jetpack" || obj_player1.state == 18)) {
+	    if ((place_meeting((x + hsp), y, other.id) || place_meeting((x + xscale), y, other.id)) && (obj_player1.state == 91 || obj_player1.state == states.jetpack || obj_player1.state == 18)) {
 			other.drawx = other.x
 			other.drawy = other.y
 			other.collided = true
@@ -18,7 +18,7 @@ if collided = false
 	}
 	with (obj_player2)
 	{
-	    if ((place_meeting((x + hsp), y, other.id) || place_meeting((x + xscale), y, other.id)) && (obj_player2.state == 91 || obj_player2.state == "jetpack" || obj_player2.state == 18)) {
+	    if ((place_meeting((x + hsp), y, other.id) || place_meeting((x + xscale), y, other.id)) && (obj_player2.state == 91 || obj_player2.state == states.jetpack || obj_player2.state == 18)) {
 			other.drawx = other.x
 			other.drawy = other.y
 			other.collided = true

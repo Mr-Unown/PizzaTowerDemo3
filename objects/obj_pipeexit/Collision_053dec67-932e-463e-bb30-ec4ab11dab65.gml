@@ -1,6 +1,6 @@
 with other.id
 {
-	if state = "pipe"
+	if state = states.pipe
 	{	
 		x = other.centerX
 		y = other.centerY		
@@ -52,7 +52,7 @@ with other.id
 	        xscale = 1
 			mach2 = 100
 			machhitAnim = 0
-			state = "jetpack"
+			state = states.jetpack
 			flash = 1
 			instance_create(x, y, obj_jumpdust)
 			movespeed = 14	
@@ -80,7 +80,7 @@ with other.id
 	        xscale = -1
 			mach2 = 100
 			machhitAnim = 0
-			state = "jetpack"
+			state = states.jetpack
 			flash = 1
 			instance_create(x, y, obj_jumpdust)
 			movespeed = 14	

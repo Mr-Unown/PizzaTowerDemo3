@@ -54,7 +54,7 @@ if key_attack2 && jetpacking = true
 	jetpacking = false	
 	sprite_index = spr_playerN_pogostart
 	image_index = 0
-	state = "pogo"
+	state = states.pogo
 	pogomovespeed = movespeed
 }
 //Cancel into Spin

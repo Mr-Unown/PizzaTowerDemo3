@@ -48,7 +48,7 @@ if (grounded && key_attack && (!scr_solid((x + 27), (y - 32))) && (!scr_solid((x
 	else
 	{
 		sprite_index = spr_playerN_pogostart
-		state = "pogo"
+		state = states.pogo
 		image_index = 0
 		pogomovespeed = 9
 	}	

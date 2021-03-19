@@ -74,7 +74,7 @@ if (floor(image_index) == (image_number - 1) && key_attack && sprite_index != sp
 	if (character == "N" && pogo = true) && !key_slap2 
 	{
 		sprite_index = spr_playerN_pogostart
-		state = "pogo"
+		state = states.pogo
 		image_index = 0
 		pogomovespeed = 9
 	}
@@ -138,7 +138,7 @@ if (key_jump && grounded)
 	if (character == "N" && pogo = true) 
 	{
 		sprite_index = spr_playerN_pogostart
-		state = "pogo"
+		state = states.pogo
 		image_index = 0
 		pogomovespeed = 9
 		vsp = -11		
