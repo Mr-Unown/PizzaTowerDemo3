@@ -8,7 +8,7 @@
         "ca2d4c7c-2970-4f17-8621-4c0ef8253eb5"
     ],
     "filterType": "GMTileSet",
-    "folderName": "sewer",
+    "folderName": "Sewer",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

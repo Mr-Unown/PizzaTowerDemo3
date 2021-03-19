@@ -8,7 +8,7 @@
         "dc4f9cf6-1e11-4bc4-8d0e-84e6a29ed116"
     ],
     "filterType": "GMTileSet",
-    "folderName": "strongcold",
+    "folderName": "Strongcold",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

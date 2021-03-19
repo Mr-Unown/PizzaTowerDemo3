@@ -4130,14 +4130,6 @@
             }
         },
         {
-            "Key": "2f5cd9cb-fa5a-4bdd-badb-d82aff3b04e3",
-            "Value": {
-                "id": "19decf0c-a508-4360-b9a3-0e9d43b1fccf",
-                "resourcePath": "sprites\\bg_mansion8TILE\\bg_mansion8TILE.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "2f8ca10f-c8db-4e04-96ae-8b913ca0d595",
             "Value": {
                 "id": "811034cd-9394-4dc2-8c25-4a0169756136",
@@ -4310,14 +4302,6 @@
             "Value": {
                 "id": "b0d9af6a-cf40-4908-bf7f-5cca6e949574",
                 "resourcePath": "sprites\\spr_treasure1Hpick1\\spr_treasure1Hpick1.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "31712431-0793-415b-be62-456fa65cefea",
-            "Value": {
-                "id": "f7dfb9eb-63f9-47b7-9012-973d40fed6a3",
-                "resourcePath": "sprites\\bg_mansion17TILE\\bg_mansion17TILE.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -5282,14 +5266,6 @@
             }
         },
         {
-            "Key": "3b1bb12a-f83e-4fad-bf11-eb34a768ad40",
-            "Value": {
-                "id": "6d3db3a4-9187-4c59-a8f8-27fbd91b7a49",
-                "resourcePath": "tilesets\\tileset_pinball3\\tileset_pinball3.yy",
-                "resourceType": "GMTileSet"
-            }
-        },
-        {
             "Key": "3b261fae-6ad4-4238-a03d-6d94a8211b29",
             "Value": {
                 "id": "01788975-36da-4b8e-a081-72847604d4a2",
@@ -6050,14 +6026,6 @@
             }
         },
         {
-            "Key": "429c30ef-5e75-4d48-8945-3a8a27847e4d",
-            "Value": {
-                "id": "4b7649b0-e5ea-4837-8fdb-11f72fd0dd40",
-                "resourcePath": "sprites\\tile_graveyard2\\tile_graveyard2.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "42b78756-5f65-41f0-92be-efd03a52154f",
             "Value": {
                 "id": "a765846f-a629-465d-a948-bce09d21135e",
@@ -6102,14 +6070,6 @@
             "Value": {
                 "id": "9d2c63d5-681f-486c-adea-7916866b7b06",
                 "resourcePath": "sprites\\spr_playerV_bodyslamprep\\spr_playerV_bodyslamprep.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "433f71fd-69a5-4fbc-bec9-86436ea6c2ab",
-            "Value": {
-                "id": "b508ae6a-4236-47b7-8dae-8f2d43c35611",
-                "resourcePath": "sprites\\tile_graveyard1\\tile_graveyard1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -6447,14 +6407,6 @@
                 "id": "48bb56e1-cb40-4bad-b490-c2eab630b105",
                 "resourcePath": "rooms\\boss_room1\\boss_room1.yy",
                 "resourceType": "GMRoom"
-            }
-        },
-        {
-            "Key": "46e2191d-9f85-4ccf-abae-fc1a82dee009",
-            "Value": {
-                "id": "d60e8e27-97a5-496a-9fc3-a7621611ec2c",
-                "resourcePath": "sprites\\bg_sewer13TILE\\bg_sewer13TILE.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -7119,22 +7071,6 @@
                 "id": "1f67be17-0d66-4ec2-86fd-382c6d0f1ba0",
                 "resourcePath": "objects\\obj_shrimpblue\\obj_shrimpblue.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "4ee95df3-623d-4bc7-bc7f-3fb48d8731f9",
-            "Value": {
-                "id": "f7c622e9-740e-46ee-8e73-b9714ea5b3c1",
-                "resourcePath": "tilesets\\tileset_graveyardunderground\\tileset_graveyardunderground.yy",
-                "resourceType": "GMTileSet"
-            }
-        },
-        {
-            "Key": "4f06d6f7-fafe-433e-9a30-7a1de207ae83",
-            "Value": {
-                "id": "1dcc1da3-8055-4779-b91b-057e0b63a70f",
-                "resourcePath": "sprites\\bg_mansion10TILE\\bg_mansion10TILE.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -8250,14 +8186,6 @@
             }
         },
         {
-            "Key": "5a731b83-db30-407d-90fc-26de1aa92fbd",
-            "Value": {
-                "id": "d8815dc6-ff9a-4bd2-a4cf-68f06ea285c9",
-                "resourcePath": "sprites\\bg_factory4cTILE\\bg_factory4cTILE.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "5a84e06c-b120-4d38-94f5-a130d598612e",
             "Value": {
                 "id": "6048e86d-3082-4ed5-b91e-e849fbfc9350",
@@ -9178,14 +9106,6 @@
             }
         },
         {
-            "Key": "642ebba3-fac8-4f45-a65c-d30796f0ec42",
-            "Value": {
-                "id": "e407a484-dcfa-4aef-8b9e-f482da99d01d",
-                "resourcePath": "tilesets\\tileset_graveyardinterior\\tileset_graveyardinterior.yy",
-                "resourceType": "GMTileSet"
-            }
-        },
-        {
             "Key": "643439b5-4207-4c91-8bdb-cd1e23bd5dc7",
             "Value": {
                 "id": "a0d64690-4b2f-4c7c-b2ff-246315340381",
@@ -9270,14 +9190,6 @@
             "Value": {
                 "id": "d1fb3bee-ba06-4661-9f13-c49da5eebcaf",
                 "resourcePath": "sprites\\spr_player_bodyslamland\\spr_player_bodyslamland.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "64ce4b46-b9d1-477f-8ede-2128630e488c",
-            "Value": {
-                "id": "0f72cb72-bfdb-4f44-9c8b-bacfe74ef225",
-                "resourcePath": "sprites\\bg_mansion18TILE\\bg_mansion18TILE.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -9498,14 +9410,6 @@
             }
         },
         {
-            "Key": "684fe543-d3f9-4f2c-8a5f-c24fb1db3b40",
-            "Value": {
-                "id": "d63a5168-9523-4be3-ba8e-1dd0cd109e22",
-                "resourcePath": "sprites\\bg_mansion12TILE\\bg_mansion12TILE.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "68624d8b-c73e-4be2-af9d-d923c60e87ed",
             "Value": {
                 "id": "da48545d-7a39-4411-bc1b-95b5a8affb9d",
@@ -9590,14 +9494,6 @@
             "Value": {
                 "id": "2c9dcc5d-746a-4b09-a175-d5a151f03b1c",
                 "resourcePath": "views\\6931ca0b-64e5-410b-9167-ee13844ef513.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "693c81ce-d0a4-4b16-bbcc-e6c8c6ae7331",
-            "Value": {
-                "id": "871afed5-12bc-4694-a98a-f9ca77dd7444",
-                "resourcePath": "views\\693c81ce-d0a4-4b16-bbcc-e6c8c6ae7331.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -10418,14 +10314,6 @@
             }
         },
         {
-            "Key": "731a5767-d851-4c81-adef-7dfb9f4796a5",
-            "Value": {
-                "id": "7627c106-94dd-455b-b82a-ab411800d55b",
-                "resourcePath": "sprites\\bg_mansion20TILE\\bg_mansion20TILE.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "733af288-15a5-486a-ad4f-ce72d74c55ab",
             "Value": {
                 "id": "17d4a53c-ad19-4913-ab17-9ef19611b8f2",
@@ -10519,14 +10407,6 @@
                 "id": "5d8d41fa-d1ab-4d3f-b3c5-47ffc43b1a02",
                 "resourcePath": "objects\\obj_uparrow\\obj_uparrow.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "73cd9300-2bc0-4356-8f82-637a8cb20b31",
-            "Value": {
-                "id": "b2a65620-055d-4be2-84b8-069a3b096892",
-                "resourcePath": "sprites\\bg_mansion11TILE\\bg_mansion11TILE.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -11370,14 +11250,6 @@
             }
         },
         {
-            "Key": "7d586ef2-2d4a-496a-96b7-789b495db58f",
-            "Value": {
-                "id": "68cab1f9-e40a-464e-a41c-54b9f11357e6",
-                "resourcePath": "views\\7d586ef2-2d4a-496a-96b7-789b495db58f.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
             "Key": "7d599b29-af02-44a7-93b5-2be8b8192f9e",
             "Value": {
                 "id": "3d0c2fbd-be3e-4012-9580-56556c259983",
@@ -11558,14 +11430,6 @@
             "Value": {
                 "id": "0381aee6-18bb-47c7-a7c7-9edadd3da124",
                 "resourcePath": "sprites\\spr_player_mask\\spr_player_mask.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "7f4a5406-ce0f-4a0d-bf1e-815a78fd8e8c",
-            "Value": {
-                "id": "3a556aeb-bcb9-4064-b39e-e5862c6af484",
-                "resourcePath": "sprites\\bg_mansion2TILE\\bg_mansion2TILE.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -12378,14 +12242,6 @@
             }
         },
         {
-            "Key": "88f5a743-9bc0-43b2-ac93-6fedc32142de",
-            "Value": {
-                "id": "b42dbe08-23e9-4091-8b5b-e7400f8de83c",
-                "resourcePath": "sprites\\tile_pinball3\\tile_pinball3.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "8930a2aa-9dba-45b5-ade7-cd06a9a5f8c7",
             "Value": {
                 "id": "ced1f38e-dd0e-4427-b790-ea3d7ccabb83",
@@ -12446,14 +12302,6 @@
             "Value": {
                 "id": "78bc4df0-ef17-47d3-ae2a-cab00eb0b9ef",
                 "resourcePath": "sprites\\spr_swedishmonkey_scared\\spr_swedishmonkey_scared.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "899ed482-ffc9-43ab-a1a9-2d854a5a933f",
-            "Value": {
-                "id": "f4625a58-9f12-46dd-9c34-d325754e545d",
-                "resourcePath": "sprites\\bg_sewer5bTILE\\bg_sewer5bTILE.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -12830,14 +12678,6 @@
             "Value": {
                 "id": "0ba9c956-cff9-4cfb-96e9-9d1271a75216",
                 "resourcePath": "sprites\\spr_drip1\\spr_drip1.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "8d8a6307-bd86-4644-9a97-f31704aa9212",
-            "Value": {
-                "id": "5171c012-bdc9-4237-8852-9806ec7e3c16",
-                "resourcePath": "sprites\\bg_mansion14TILE\\bg_mansion14TILE.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -14202,14 +14042,6 @@
             }
         },
         {
-            "Key": "9bed0083-ce3f-4ff3-8cdf-1efff5c86a0b",
-            "Value": {
-                "id": "32f6603f-dd86-4b8b-ba8e-b23f1747a164",
-                "resourcePath": "sprites\\bg_mansion19TILE\\bg_mansion19TILE.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "9c104b6f-057b-49cc-96ca-df331c9c3c2a",
             "Value": {
                 "id": "02cff003-e478-469a-a6d4-84a7080716b1",
@@ -14279,6 +14111,14 @@
                 "id": "50820535-6184-4d7a-8a2a-8d9aade79800",
                 "resourcePath": "sprites\\spr_playerN_hurtjump\\spr_playerN_hurtjump.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9d464db5-6b2b-4e96-a79a-6ff4add5501c",
+            "Value": {
+                "id": "a1302cea-c9b2-443a-82c4-c21938254bb0",
+                "resourcePath": "tilesets\\tile_factory_tileset2\\tile_factory_tileset2.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
@@ -14586,14 +14426,6 @@
             }
         },
         {
-            "Key": "a0d89b36-dd95-4116-8fa7-9eec6f9078ef",
-            "Value": {
-                "id": "841e7772-aadb-4224-9c0e-201aeb8ea3c6",
-                "resourcePath": "sprites\\bg_mansion15TILE\\bg_mansion15TILE.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "a0ee5d9b-0373-46ca-bc43-677020ddc67c",
             "Value": {
                 "id": "4ddc0a7c-9730-4e10-89b4-523b8d24b512",
@@ -14726,14 +14558,6 @@
             "Value": {
                 "id": "11bb1eeb-6f1e-41a7-b175-617557dc39d3",
                 "resourcePath": "sprites\\spr_boxofpizza\\spr_boxofpizza.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "a24fd579-1b42-4c32-87ac-f7edcdf8e46c",
-            "Value": {
-                "id": "2c792db4-3520-4777-b3a1-e5df1956e113",
-                "resourcePath": "sprites\\bg_factory4bTILE\\bg_factory4bTILE.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -15350,14 +15174,6 @@
             "Value": {
                 "id": "01ae6f8b-b2de-49ee-99ea-2906cab0d1fe",
                 "resourcePath": "sprites\\spr_pizzagoblin_fall\\spr_pizzagoblin_fall.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "a92e5f24-58aa-499b-b1b7-3d51054dd48b",
-            "Value": {
-                "id": "9ed8495c-73cd-4c04-a3fd-4a134d68a604",
-                "resourcePath": "sprites\\bg_sewer14TILE\\bg_sewer14TILE.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -17306,14 +17122,6 @@
             }
         },
         {
-            "Key": "bef05141-f604-4b15-9401-0769ed758cbc",
-            "Value": {
-                "id": "b204f81b-9937-45ec-8a77-634d84dd0cf7",
-                "resourcePath": "sprites\\bg_mansion16TILE\\bg_mansion16TILE.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "bf014d38-17fe-4b9f-ba5d-df1a10b46df1",
             "Value": {
                 "id": "be498872-3e8c-4215-940a-3f36d32c7645",
@@ -17350,14 +17158,6 @@
             "Value": {
                 "id": "f3ff71df-6c93-44fd-bd44-48f6f3a2f5a5",
                 "resourcePath": "sprites\\spr_tvdesert\\spr_tvdesert.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "bf34ca68-a9f5-4d91-b85c-6f401f593eaa",
-            "Value": {
-                "id": "c4cb02f3-7029-4e8a-bcdd-816a529444a7",
-                "resourcePath": "sprites\\bg_mansion9TILE\\bg_mansion9TILE.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -17886,6 +17686,14 @@
             "Value": {
                 "id": "6bb55223-0755-4b64-a0a8-25740acd73bd",
                 "resourcePath": "sprites\\spr_peppermantile\\spr_peppermantile.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c5ad9378-ef58-4e19-9bae-f9a6a2014ecd",
+            "Value": {
+                "id": "0250d2ba-8e05-4df6-868d-764c80815a1d",
+                "resourcePath": "sprites\\tile_factory2\\tile_factory2.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -20018,14 +19826,6 @@
             }
         },
         {
-            "Key": "da62f0a7-efc9-4ce6-9c67-c8f69b5cc241",
-            "Value": {
-                "id": "9763c783-c8d6-4685-b551-fe543aef647f",
-                "resourcePath": "sprites\\tile_pinball2\\tile_pinball2.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "da79ae23-a3c5-4439-9f41-95ab153f5864",
             "Value": {
                 "id": "b52b7386-0251-44f4-a21f-1d5235e03632",
@@ -20698,14 +20498,6 @@
             }
         },
         {
-            "Key": "e1761bfb-3095-4719-a2f0-18406ad1ed73",
-            "Value": {
-                "id": "80b0607f-4f85-4349-bfa0-269ea57eba65",
-                "resourcePath": "tilesets\\tileset_pinball2\\tileset_pinball2.yy",
-                "resourceType": "GMTileSet"
-            }
-        },
-        {
             "Key": "e19d1e00-1969-41be-b415-f03fcb0806d6",
             "Value": {
                 "id": "76e11a2c-85bf-4098-928d-721f99acee8f",
@@ -20950,14 +20742,6 @@
             "Value": {
                 "id": "95e9eafd-de34-47ad-967a-a234c7910bd4",
                 "resourcePath": "sprites\\bg_ufo\\bg_ufo.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "e3c7f50c-5098-42e6-af50-477ed51f663e",
-            "Value": {
-                "id": "8bfb1c51-3cd8-422c-ba8a-c03aac72afc9",
-                "resourcePath": "sprites\\tile_graveyard3\\tile_graveyard3.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -21479,14 +21263,6 @@
                 "id": "21683c67-744d-4ea3-9e07-d5ac8a109854",
                 "resourcePath": "sprites\\spr_snick_robotjump\\spr_snick_robotjump.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "e9d1aa5a-271d-4792-92aa-11c53a3a890f",
-            "Value": {
-                "id": "9d2b17d9-287d-4768-a84e-64709c5c33a6",
-                "resourcePath": "tilesets\\tileset_graveyard\\tileset_graveyard.yy",
-                "resourceType": "GMTileSet"
             }
         },
         {
@@ -22498,14 +22274,6 @@
             }
         },
         {
-            "Key": "f5aa3269-4c38-4be7-bb81-3cc6e4e75241",
-            "Value": {
-                "id": "9987d781-ab4a-409e-ab54-5571b3830414",
-                "resourcePath": "sprites\\bg_mansion13TILE\\bg_mansion13TILE.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "f5c83fe5-0080-48db-b494-e55a683dd182",
             "Value": {
                 "id": "42dc104c-f96f-418e-b981-8b1e487a368e",
@@ -22527,6 +22295,14 @@
                 "id": "0ac48352-a801-4a11-82e9-faa905e6bc13",
                 "resourcePath": "views\\f5dd87f4-9368-4b5c-98f4-7512382b14a8.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f5de079f-8671-485f-9b75-980d1fd10476",
+            "Value": {
+                "id": "248c4a3e-fa6f-42c5-9be8-25ab912d8c52",
+                "resourcePath": "sprites\\tile_strongcolddecoration\\tile_strongcolddecoration.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -22970,14 +22746,6 @@
             }
         },
         {
-            "Key": "fb091ab6-3da4-4e2f-8681-802116f4c2d0",
-            "Value": {
-                "id": "1813b7e0-2107-4f0c-ab0e-844baeca3a96",
-                "resourcePath": "sprites\\bg_mansion7TILE\\bg_mansion7TILE.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "fb3a6ea2-03c9-46b8-9d58-30b6eea05c22",
             "Value": {
                 "id": "fe0c57ff-9773-49ec-b0a8-602dd776b059",
@@ -22991,14 +22759,6 @@
                 "id": "ecdab4e8-f3fd-4607-b4b7-155c44b467ef",
                 "resourcePath": "sprites\\spr_onoffswitch_redtoblue\\spr_onoffswitch_redtoblue.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "fb5e0a26-4ed7-4502-bacb-1d5f0a2df31a",
-            "Value": {
-                "id": "fadfaf65-7c06-4567-a12b-6ca144e90769",
-                "resourcePath": "tilesets\\tileset_pinball1\\tileset_pinball1.yy",
-                "resourceType": "GMTileSet"
             }
         },
         {
@@ -23150,14 +22910,6 @@
             "Value": {
                 "id": "411cebe2-0b73-4be3-bb0f-5512cc785ce4",
                 "resourcePath": "sprites\\spr_playerN_jetpack\\spr_playerN_jetpack.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "fe0940cb-9197-4022-b61a-47d3ae0e0a11",
-            "Value": {
-                "id": "c75352f1-cea2-4755-b05f-e53b459f7e67",
-                "resourcePath": "sprites\\tile_pinball1\\tile_pinball1.yy",
                 "resourceType": "GMSprite"
             }
         },

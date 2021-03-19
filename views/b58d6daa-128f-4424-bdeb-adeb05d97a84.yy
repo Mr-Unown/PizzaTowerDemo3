@@ -9,7 +9,7 @@
         "adebef67-931f-4938-89b4-f09ebfc42f6f"
     ],
     "filterType": "GMTileSet",
-    "folderName": "dungeon",
+    "folderName": "Dungeon",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

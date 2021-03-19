@@ -8,7 +8,7 @@
         "96298661-6d3c-4fcd-bd93-b1811b859247"
     ],
     "filterType": "GMTileSet",
-    "folderName": "chateau",
+    "folderName": "Chateau",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
