@@ -351,9 +351,22 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
             instance_activate_all()
             global.lapping = 0
             global.laptouched = 0
-            scr_playerreset()
-            obj_player.targetDoor = "A"
-            room = hub_room1
+			global.levelname = "none"
+			global.fakepeppino = 0
+			scr_playerreset()
+
+			if obj_player.backtohubroom != noone {
+			obj_player1.targetDoor = "start"
+			if instance_exists(obj_player2)			
+			obj_player2.targetDoor = "start"				
+			room = obj_player.backtohubroom		 
+			}
+			else {
+			obj_player1.targetDoor = "A"
+			if instance_exists(obj_player2)
+			obj_player2.targetDoor = "A"				
+			room = hub_room1
+			}
         }
     }
     if (key_jump2 && selected == 0)

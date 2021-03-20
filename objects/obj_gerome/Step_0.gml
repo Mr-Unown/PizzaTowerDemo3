@@ -8,7 +8,14 @@ if (obj_player1.spotlight == 1)
     playerid = obj_player1
 else
     playerid = obj_player2
-	
+//Out of Treasure
+if alreadytouched = true
+	if global.geromefollowing = false && room = originalroom && global.geromeopen = false && global.panic = true
+	{
+	//Follower DS_list
+		ds_list_add(global.follower, id);
+		global.geromefollowing = true
+	}
 	
 if global.geromefollowing = true && sprite_index = spr_gerome_walk {
 depth = -6	
@@ -19,7 +26,7 @@ if ds_list_find_index(global.follower, id) = 0 {
 {
 	var leader = ds_list_find_value(global.follower, floor(ds_list_find_index(global.follower, id) - 1));		
     ds_queue_enqueue(followQueue, leader.x)
-    ds_queue_enqueue(followQueue, leader.y - 2)			
+    ds_queue_enqueue(followQueue, leader.y)			
 }
 LAG_STEPS = 10
 if (ds_queue_size(followQueue) > (LAG_STEPS * 2))

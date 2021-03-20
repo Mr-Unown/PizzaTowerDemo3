@@ -3,4 +3,5 @@ if global.geromefollowing = false && room = originalroom && global.geromeopen = 
 	//Follower DS_list
 	ds_list_add(global.follower, id);
 	global.geromefollowing = true
+	alreadytouched = true;
 }

@@ -404,6 +404,7 @@ if (object_index == obj_player2)
 		with obj_pizzakinshroom {
         x = obj_player1.x
 		y = obj_player1.y
+		magnitude = 0;
 		ds_queue_clear(followQueue)
 		ds_queue_enqueue(followQueue, obj_player1.x) 
 		ds_queue_enqueue(followQueue, obj_player1.y)
@@ -413,6 +414,7 @@ if (object_index == obj_player2)
 		with obj_pizzakincheese {
         x = obj_player1.x
 		y = obj_player1.y
+		magnitude = 0;
 		ds_queue_clear(followQueue)
 		ds_queue_enqueue(followQueue, obj_player1.x) 
 		ds_queue_enqueue(followQueue, obj_player1.y)
@@ -422,6 +424,7 @@ if (object_index == obj_player2)
 		with obj_pizzakintomato {
         x = obj_player1.x
 		y = obj_player1.y
+		magnitude = 0;
 		ds_queue_clear(followQueue)
 		ds_queue_enqueue(followQueue, obj_player1.x) 
 		ds_queue_enqueue(followQueue, obj_player1.y)
@@ -431,6 +434,7 @@ if (object_index == obj_player2)
 		with obj_pizzakinsausage {
         x = obj_player1.x
 		y = obj_player1.y
+		magnitude = 0;
 		ds_queue_clear(followQueue)
 		ds_queue_enqueue(followQueue, obj_player1.x) 
 		ds_queue_enqueue(followQueue, obj_player1.y)
@@ -440,6 +444,7 @@ if (object_index == obj_player2)
 		with obj_pizzakinpineapple {
         x = obj_player1.x
 		y = obj_player1.y
+		magnitude = 0;
 		ds_queue_clear(followQueue)
 		ds_queue_enqueue(followQueue, obj_player1.x) 
 		ds_queue_enqueue(followQueue, obj_player1.y)
@@ -449,6 +454,7 @@ if (object_index == obj_player2)
 		with obj_gerome {
         x = obj_player1.x
 		y = obj_player1.y
+		magnitude = 0;
 		ds_queue_clear(followQueue)
 		ds_queue_enqueue(followQueue, obj_player1.x) 
 		ds_queue_enqueue(followQueue, obj_player1.y)

@@ -2,6 +2,8 @@ with other.id
 {
 	if (grounded && other.sprite_index == spr_swordstone && state == 22 && character != "S")
 	{
+	global.pausecombotime = true		
+	obj_tv.alarm[1] = 75		
     scr_soundeffect(sfx_knightsword)
     global.SAGEknighttaken = 1
     momentum = 0

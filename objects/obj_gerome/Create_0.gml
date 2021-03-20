@@ -12,3 +12,4 @@ originalroom = room
 startx = xstart
 starty = ystart
 depth = 0
+alreadytouched = false;

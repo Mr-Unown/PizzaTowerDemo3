@@ -63,6 +63,7 @@ with (obj_player)
 {
     if (place_meeting(x, y, obj_geromedoor) && other.sprite_index == spr_doorvisited && key_up && (state == 0 || state == 69 || state == 70 || state == 91) && y == (other.y + 50) && (!instance_exists(obj_noisesatellite)) && (!instance_exists(obj_fadeout)) && state != 78 && state != 64 && state != 61)
     {
+		global.geromeopen = true;		
 		with obj_gerome {	
 			originalroom = room;
 			startx = x

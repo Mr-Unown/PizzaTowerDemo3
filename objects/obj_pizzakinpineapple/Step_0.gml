@@ -29,7 +29,7 @@ if (global.pineapplefollow == 1 && sprite_index != spr_toppinpineapple_intro)
 	{
 		var leader = ds_list_find_value(global.follower, floor(ds_list_find_index(global.follower, id) - 1));		
 		ds_queue_enqueue(followQueue, leader.x)
-		ds_queue_enqueue(followQueue, leader.y - 2)			
+		ds_queue_enqueue(followQueue, leader.y)			
 	}
     LAG_STEPS = 10
 	if (ds_queue_size(followQueue) > (LAG_STEPS * 2))
