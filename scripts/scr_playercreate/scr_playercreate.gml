@@ -37,8 +37,12 @@ if instance_exists(obj_pizzakinsausage)
 	instance_destroy(obj_pizzakinsausage)
 if instance_exists(obj_pizzakinpineapple)
 	instance_destroy(obj_pizzakinpineapple)
+if instance_exists(obj_noisebomb)
+	instance_destroy(obj_noisebomb)	
 if instance_exists(obj_gerome)
 	instance_destroy(obj_gerome)
+if instance_exists(obj_peshino)
+	instance_destroy(obj_peshino)	
 	
 global.follower = ds_list_create();
 ds_list_clear(global.follower);
@@ -48,7 +52,9 @@ global.cheesefollow = false;
 global.tomatofollow = false;
 global.sausagefollow = false;
 global.pineapplefollow = false;
+global.noisebombfollow = false;
 global.geromefollowing = false;
+global.peshinofollowing = false;
 global.geromeopen = false;
 #endregion
 

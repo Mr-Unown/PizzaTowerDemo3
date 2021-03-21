@@ -34,19 +34,12 @@ if (global.tomatofollow == 1 && sprite_index != spr_toppintomato_intro)
 	if (ds_queue_size(followQueue) > (LAG_STEPS * 2))
 	{	
 		targetx = (ds_queue_dequeue(followQueue) - (distance))
-		targety = (ds_queue_dequeue(followQueue) + 2)
+		targety = (ds_queue_dequeue(followQueue))
 	}
-if !instance_exists(obj_fadeout)
-{
-x = targetx
-y = targety
-}
-else {
-x = playerid.x
-y = playerid.y
-}
-if playerid.hsp = 0	&& playerid.state != states.door && playerid.grounded && image_xscale = playerid.xscale {
-	if magnitude < 32 && scr_solid(x, y + 1) && !scr_solid(x,y)  && !scr_solid(x - distance,y) 
+	x = targetx
+	y = targety
+if playerid.hsp = 0 && playerid.state != states.door && playerid.grounded && image_xscale = playerid.xscale {
+	if magnitude < 32 && ((place_meeting(x, bbox_bottom + 1,obj_solid) || (!place_meeting(x, y, obj_platform) && place_meeting(x, bbox_bottom + 1, obj_platform)))) && !place_meeting(x - image_xscale, y, obj_solid) 
 	 magnitude += 0.5
 }
 else if magnitude > 0

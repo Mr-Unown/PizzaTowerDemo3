@@ -400,6 +400,7 @@ if (object_index == obj_player2)
     roomstartx = x
     roomstarty = y
 }
+/*
     if (global.shroomfollow == 1) && instance_exists(obj_pizzakinshroom) {
 		with obj_pizzakinshroom {
         x = obj_player1.x
@@ -450,6 +451,16 @@ if (object_index == obj_player2)
 		ds_queue_enqueue(followQueue, obj_player1.y)
 		}
 	}
+    if (global.noisebombfollow == 1) && instance_exists(obj_noisebomb) {
+		with obj_noisebomb {
+        x = obj_player1.x
+		y = obj_player1.y
+		magnitude = 0;
+		ds_queue_clear(followQueue)
+		ds_queue_enqueue(followQueue, obj_player1.x) 
+		ds_queue_enqueue(followQueue, obj_player1.y)
+		}
+	}	
 	if global.geromefollowing = true  && instance_exists(obj_gerome){
 		with obj_gerome {
         x = obj_player1.x
@@ -459,4 +470,4 @@ if (object_index == obj_player2)
 		ds_queue_enqueue(followQueue, obj_player1.x) 
 		ds_queue_enqueue(followQueue, obj_player1.y)
 		}
-	}
+	}*/

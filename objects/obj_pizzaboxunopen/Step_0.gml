@@ -138,6 +138,30 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
         global.toppintotal = (global.toppintotal + 1)
         global.pineapplefollow = 1
     }
+    if (content == obj_noisebomb)
+    {
+        with (instance_create(x, (y - 25), content)) {
+            sprite_index = spr_noisebomb_intro
+			//Follower DS_list
+			ds_list_add(global.follower, id);
+		}
+        instance_create(x, y, obj_taunteffect)
+		global.combotime = 60
+		global.pausecombotime = true
+		obj_tv.alarm[1] = 75
+        global.style = (global.style + 50)		
+        obj_tv.message = "UH OH..."
+        obj_tv.showtext = 1
+        obj_tv.alarm[0] = 150
+        global.noisebombfollow = 1
+		with (obj_player)
+		{
+		state = 51
+		sprite_index = spr_bossintro
+		image_index = 0
+		scr_soundeffect(44)
+		}			
+    }	
     sprite_index = spr_pizzaboxopen
 }
 if (sprite_index == spr_pizzaboxopen && floor(image_index) == 16)
