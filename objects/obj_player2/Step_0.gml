@@ -95,7 +95,7 @@ if (state == 55 && y > (room_height * 2))
     room = hub_room1
 }
 
-if state != 55 && y > (room_height * 1.1)
+if state != 55 && y > (room_height * 1.2)
 {
 	{
 		

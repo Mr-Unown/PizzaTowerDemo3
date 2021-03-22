@@ -23,7 +23,7 @@ if (grounded && (!place_meeting(x, (y + 1), obj_destructibles)) && sprite_index 
     bounce = 0
     with (instance_create(x, (y + 35), obj_bangeffect))
         xscale = obj_player.xscale
-			with instance_create(x, y, obj_landcloud)
+	with instance_create(x, y, obj_landcloud)
 	{
 		playerid = other.id
 		image_xscale = other.xscale

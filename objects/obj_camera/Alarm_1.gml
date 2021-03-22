@@ -1,5 +1,6 @@
 if (global.panic == 1 || global.snickchallenge == 1 || global.miniboss == 1)
 {
+	global.wave = (global.maxwave - (((global.minutes * 60) + global.seconds) * 60))	
     global.seconds -= 1
     if (obj_player1.collectscore >= 5)
         obj_player1.collectscore -= 5

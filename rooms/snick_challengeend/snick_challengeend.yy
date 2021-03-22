@@ -175,7 +175,7 @@
     ],
     "viewSettings":     {
         "id": "5fe8fa8a-7bff-444d-aa0e-6939dde7bfeb",
-        "clearDisplayBuffer": true,
+        "clearDisplayBuffer": false,
         "clearViewBackground": false,
         "enableViews": true,
         "inheritViewSettings": false,

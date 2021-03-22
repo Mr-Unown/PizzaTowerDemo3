@@ -30,9 +30,9 @@ with (obj_player1)
     }
     if ((state == 24 || state == 43 || state == 9) && vsp > 0)
     {
-        if place_meeting(x, (y + 1), obj_destructibles)
+        if place_meeting(x, (y + vsp), obj_destructibles)
         {
-            with (instance_place(x, (y + 1), obj_destructibles))
+            with (instance_place(x, (y + vsp), obj_destructibles))
                 instance_destroy()
         }
     }

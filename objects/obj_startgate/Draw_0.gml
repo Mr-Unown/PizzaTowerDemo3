@@ -1,5 +1,5 @@
 draw_self()
-//font = font_add_sprite_ext(spr_font, "ABCDEFGHIJKLMNOPQRSTUVWXYZ!.1234567890:", 1, 0)
+//font = font_add_sprite_ext(spr_font, "ABCDEFGHIJKLMNOPQRSTUVWXYZ!.1234567890:"_pause, 1, 0)
 draw_set_font(global.font)
 draw_set_halign(fa_center)
 draw_set_color(c_white)
@@ -12,29 +12,29 @@ if drawtext = true
 		draw_text(x, (y - 150), ini_read_string("Secret", string(level), 0) + " OF 6 SECRET")
 
 		if ini_read_string("Toppin", string(level) + "1", 0) == 1
-				draw_sprite(spr_pizzakinshroom, -1, (x - 75), (y - 200))
+				draw_sprite(spr_pizzakinshroom_pause, 1,(x - 75), (y - 200))
 			else
-	            draw_sprite(spr_pizzakinshroom_pause, -1, (x - 75), (y - 200))
+	            draw_sprite(spr_pizzakinshroom_pause, 0, (x - 75), (y - 200))
 
 		if ini_read_string("Toppin", string(level) + "2", 0) == 1
-				draw_sprite(spr_pizzakincheese, -1, (x - 35), (y - 200))
+				draw_sprite(spr_pizzakincheese_pause, 1,(x - 35), (y - 200))
 			else
-	            draw_sprite(spr_pizzakincheese_pause, -1, (x - 35), (y - 200))
+	            draw_sprite(spr_pizzakincheese_pause, 0, (x - 35), (y - 200))
 
 		if ini_read_string("Toppin", string(level) + "3", 0) == 1
-				draw_sprite(spr_pizzakintomato, -1, x, (y - 200))
+				draw_sprite(spr_pizzakintomato_pause, 1,x, (y - 200))
 			else
-	            draw_sprite(spr_pizzakintomato_pause, -1, x, (y - 200))
+	            draw_sprite(spr_pizzakintomato_pause, 0, x, (y - 200))
 
 		if ini_read_string("Toppin", string(level) + "4", 0) == 1
-				draw_sprite(spr_pizzakinsausage, -1, (x + 35), (y - 200))
+				draw_sprite(spr_pizzakinsausage_pause, 1,(x + 35), (y - 200))
 			else
-	            draw_sprite(spr_pizzakinsausage_pause, -1, (x + 35), (y - 200))
+	            draw_sprite(spr_pizzakinsausage_pause, 0, (x + 35), (y - 200))
 	
 		if ini_read_string("Toppin", string(level) + "5", 0) == 1
-				draw_sprite(spr_pizzakinpineapple, -1, (x + 75), (y - 200))
+				draw_sprite(spr_pizzakinpineapple_pause, 1,(x + 75), (y - 200))
 			else
-	            draw_sprite(spr_pizzakinpineapple_pause, -1, (x + 75), (y - 200))
+	            draw_sprite(spr_pizzakinpineapple_pause, 0, (x + 75), (y - 200))
 	}
 	else if (level == "snickchallenge")
     {

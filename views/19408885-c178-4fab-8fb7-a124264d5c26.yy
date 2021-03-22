@@ -79,7 +79,7 @@
         "11d042fe-0220-4b38-bf3d-bf285b5edb9f"
     ],
     "filterType": "GMScript",
-    "folderName": "scripts",
+    "folderName": "Scripts",
     "isDefaultView": false,
-    "localisedFolderName": "ResourceTree_Scripts"
+    "localisedFolderName": ""
 }
