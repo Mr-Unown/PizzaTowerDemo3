@@ -107,18 +107,7 @@ if state != 55 && y > (room_height * 1.1)
 	grav = 0.5
 }
 
-//dougie's super magic setter
-if character = "D"
-{
-	spellshowbuffer = 50
-	if key_shoot
-	{
-		if spellselect < 4
-			spellselect++
-		else
-			spellselect = 1
-	}
-}
+
 
 
 repeat (3)
@@ -317,6 +306,21 @@ else
 if (turnbuffer < 50)
     turnbuffer++
 
+
+//dougie's super magic setter
+if character = "D"
+{
+
+	if key_shoot
+	{
+		if spellselect < 4
+			spellselect++
+		else
+			spellselect = 1
+		spellshowbuffer = 50
+	}
+}
+
 //dougie's spell select mockery
 if spellshowbuffer > 0
 	spellshowbuffer--
@@ -326,3 +330,11 @@ if grounded
 	floattimer = 50
 	floatbuffer = false
 }
+	
+//this section
+if (global.magic > 200)
+    global.magic = 200
+if (global.magic < 0)
+    global.magic = 0
+if spellshowbuffer > 0
+	spellshowbuffer--

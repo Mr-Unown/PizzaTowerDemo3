@@ -57,5 +57,6 @@ global.geromeopen = false;
 floatbuffer = false
 floattimer = 50
 spellselect = 1
-spellshowbuffer = 50
+spellshowbuffer = 150
+global.magic = 50
 
