@@ -111,7 +111,7 @@ if character = "D"
 		{
 			with instance_create(x, y, obj_cannongoblinbomb)
 			{
-				hsp = 8 * other.xscale
+				image_xscale = other.xscale
 				friendly = true
 			}
 		}
