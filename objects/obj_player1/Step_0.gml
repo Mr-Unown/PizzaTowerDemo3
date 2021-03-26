@@ -310,20 +310,19 @@ if (turnbuffer < 50)
 //dougie's super magic setter
 if character = "D"
 {
-
-	if key_shoot
+	if key_shoot2
 	{
 		if spellselect < 4
-			spellselect++
+			spellselect += 1
 		else
 			spellselect = 1
-		spellshowbuffer = 50
+		spellshowbuffer = 150
 	}
 }
 
 //dougie's spell select mockery
 if spellshowbuffer > 0
-	spellshowbuffer--
+	spellshowbuffer -= 1
 	
 if grounded
 {
@@ -336,5 +335,3 @@ if (global.magic > 200)
     global.magic = 200
 if (global.magic < 0)
     global.magic = 0
-if spellshowbuffer > 0
-	spellshowbuffer--
