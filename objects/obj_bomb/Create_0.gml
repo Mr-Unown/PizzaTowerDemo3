@@ -7,4 +7,5 @@ drop = 1
 grounded = 0
 movespeed = 0
 playermode = 0
+flying = false // dougie
 
