@@ -60,8 +60,6 @@ if (key_start && global.coop == 1 && fightball == 0)
     repeat (6)
         instance_create(x, y, obj_baddiegibs)
     global.coop = 0
-    instance_destroy(obj_cooppointer)
-    instance_destroy(obj_coopflag)
     obj_player1.spotlight = 1
     obj_player1.depth = -7
     scr_soundeffect(2)
@@ -72,10 +70,6 @@ if (global.coop == 0)
     x = -1000
     y = 500
     state = 8
-    if instance_exists(obj_coopflag)
-        instance_destroy(obj_coopflag)
-    if instance_exists(obj_cooppointer)
-        instance_destroy(obj_cooppointer)
 }
 scr_playersounds()
 if (grounded && state != 22)
@@ -281,7 +275,7 @@ if (state == 23 || sprite_index == spr_knightpepstart || sprite_index == spr_kni
     cutscene = 1
 else
     cutscene = 0
-if ((place_meeting(x, y, obj_door) || place_meeting(x, y, obj_dresser) || place_meeting(x, y, obj_snick) || place_meeting(x, y, obj_keydoor) || (place_meeting(x, y, obj_exitgate) && global.panic == 1)) && (!instance_exists(obj_uparrow)) && scr_solid(x, (y + 1)) && state == 0 && obj_player1.spotlight == 0)
+if ((place_meeting(x, y, obj_door) || place_meeting(x, y, obj_dresser) || place_meeting(x, y, obj_snick) || place_meeting(x,y,obj_geromedoor) || place_meeting(x, y, obj_keydoor) || (place_meeting(x, y, obj_exitgate) && global.panic == 1)) && (!instance_exists(obj_uparrow)) && scr_solid(x, (y + 1)) && state == 0 && obj_player1.spotlight == 0)
 {
     with (instance_create(x, y, obj_uparrow))
         playerid = other.object_index
@@ -299,8 +293,6 @@ if (state != 8 && state != 109 && state != 78 && state != 63 && state != 4 && st
     scr_collide_player()
 if (state == 88)
     scr_collide_player()
-if (distance_to_object(obj_player1) > 500 && obj_player1.spotlight == 1 && global.coop == 1)
-    instance_create(x, y, obj_cooppointer)
 if (GshotgunAnim == 1 && character != "S" && character != "V")
     shotgunAnim = 1
 else

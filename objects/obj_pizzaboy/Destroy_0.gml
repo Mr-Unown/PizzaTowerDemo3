@@ -1,7 +1,7 @@
 if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
 {
     scr_soundeffect(11)
-    scr_sleep(50)
+    scr_sleep()
     instance_create(x, y, obj_slapstar)
     instance_create(x, y, obj_slapstar)
     instance_create(x, y, obj_slapstar)
@@ -19,7 +19,7 @@ if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
 }
 else if (ds_list_find_index(global.baddieroom, id) == -1 && important == 1)
 {
-    scr_sleep(50)
+    scr_sleep()
     instance_create(x, y, obj_slapstar)
     instance_create(x, y, obj_slapstar)
     instance_create(x, y, obj_slapstar)

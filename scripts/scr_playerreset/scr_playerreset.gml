@@ -33,8 +33,6 @@ obj_player2.state = 8
 obj_camera.golf = 0
 if instance_exists(obj_coopflag)
     instance_destroy(obj_coopflag)
-if instance_exists(obj_cooppointer)
-    instance_destroy(obj_cooppointer)
 global.miniboss = 0
 global.lapping = 0
 global.laptouched = 0

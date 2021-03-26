@@ -1,5 +1,8 @@
 breakdancebuffer = 50
 collectscore = 0
+global.freezeframetimer = 200;
+global.sleepScale = 1;
+global.sleepAcc = 0;
 global.collect = 0
 global.collectN = 0
 pogojetcharge = false

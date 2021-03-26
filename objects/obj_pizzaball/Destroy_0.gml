@@ -3,7 +3,7 @@ if (ds_list_find_index(global.baddieroom, id) == -1)
     ds_list_add(global.baddieroom, id)
     scr_soundeffect(11)
     obj_tv.image_index = random_range(0, 4)
-    scr_sleep(50)
+    scr_sleep()
     with (obj_camera)
     {
         shake_mag = 3

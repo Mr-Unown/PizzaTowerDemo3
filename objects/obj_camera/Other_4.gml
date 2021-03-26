@@ -1,5 +1,11 @@
 x = obj_player1.x
 y = obj_player1.y
+target_x = obj_player1.x
+target_y = obj_player1.y
+target_xold = obj_player1.x
+target_yold = obj_player1.y
+golfdistance = 0
+
 with (obj_camera)
 {
     shake_mag = 0
@@ -8,7 +14,7 @@ with (obj_camera)
 if ((global.panic == 1 || global.snickchallenge == 1) && global.panicbg)
     scr_panicbg_init()
 application_surface_draw_enable(1)
-global.wave = (global.maxwave - (((global.minutes * 60) + global.seconds) * 60))
+global.wave = (global.maxwave - (((global.minutes * 60) + global.seconds) * 60))-
 angle = 0
 
-
+global.freezeframetimer = clamp(global.freezeframetimer,50,185)
