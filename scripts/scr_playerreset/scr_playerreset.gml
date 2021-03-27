@@ -75,7 +75,7 @@ with (obj_player1)
 	grounded = true
 	grinding = false
 	pipedirection = "none"
-    tauntparry_max = 10
+    
     parry_id = -4
     parried_baddie = 0
     parry_max = 8
@@ -358,7 +358,7 @@ with (obj_player2)
     parry_id = -4
     parried_baddie = 0
     parry_max = 8
-    tauntparry_max = 10
+    
 	pipedirection = "none"
 	grounded = true
 	grinding = false

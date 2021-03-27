@@ -94,11 +94,12 @@ crouchslideAnim = 1
 crouchAnim = 1
 if character = "P"
 	sprite_index = spr_player_throw
-	
+//Dougie Spells
 if character = "D"
 {
-	if floor(image_index) = 5
+	if floor(image_index) = 5 && spellcastedonce = false
 	{
+		spellcastedonce = true
 		if spellselect = 1
 		{
 			with instance_create(x, y, obj_shotgunbullet)
@@ -118,6 +119,8 @@ if character = "D"
 	}
 }
 	
-if (floor(image_index) == (image_number - 1) || move == (-xscale))
+if (floor(image_index) == (image_number - 1) || move == (-xscale)) {
     state = 0
+	spellcastedonce = false;
+}
 image_speed = 0.35

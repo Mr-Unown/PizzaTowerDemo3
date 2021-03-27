@@ -58,5 +58,6 @@ floatbuffer = false
 floattimer = 50
 spellselect = 1
 spellshowbuffer = 150
+spellcastedonce = false;
 global.magic = 50
 

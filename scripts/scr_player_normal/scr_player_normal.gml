@@ -530,6 +530,7 @@ if character = "D"
 {
 	if key_slap && spellselect != 2 && spellselect != 4
 	{
+			spellcastedonce = false;
 			sprite_index = spr_pizzard_shoot
 			state = states.throw //i hope this works
 			image_index = 0

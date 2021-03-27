@@ -210,7 +210,7 @@ if (grounded && (sprite_index == spr_facestomp || sprite_index == spr_freefall))
     sprite_index = spr_bodyslamland
     state = 77
 }
-if (key_slap2 && (character = "P" || character = "N" || (character = "D" && spellselect = 2)))
+if (key_slap2 && suplexmove = 0 && (character = "P" || character = "N" || (character = "D" && spellselect = 2)))
 {
 	if key_up && character = "P" && doublejump = 0
 	{
@@ -429,6 +429,7 @@ if character = "D"
 {
 	if key_slap && spellselect != 2 && spellselect != 4
 	{
+			spellcastedonce = false;
 			sprite_index = spr_pizzard_shoot
 			state = states.throw //i hope this works
 			image_index = 0

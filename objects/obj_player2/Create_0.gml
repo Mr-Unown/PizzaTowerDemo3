@@ -5,7 +5,6 @@ pipedirection = "none"
 tauntcooleffect = noone
 parry_id = -4
 parried_baddie = 0
-tauntparry_max = 10
 parry_max = 8
 superspringjump = 0
 bufferslap = 8

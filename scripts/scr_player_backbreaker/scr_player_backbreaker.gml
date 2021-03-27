@@ -38,12 +38,12 @@ if (sprite_index == spr_taunt)
             image_xscale = other.xscale
         }
     }
-    if (taunttimer < tauntparry_max)
+    if (taunttimer < 10)
     {
         if instance_exists(parry_id)
         {
             instance_destroy(parry_id)
-            parry_inst = -4
+			parry_id = noone
         }
     }
     if (global.combo >= 3 && (!instance_exists(obj_tauntaftereffectspawner)) && character != "V")
