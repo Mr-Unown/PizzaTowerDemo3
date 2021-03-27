@@ -343,7 +343,7 @@ if (key_shoot2 && character == "V" && (!instance_exists(obj_vigidynamite)))
         playerid = other.id
     }
 }
-if (key_slap2 && character != "V" && character != "S")
+if (key_slap2 && (character = "P" || character = "N" || (character = "D" && spellselect = 2)))
 {
 	if key_up && character = "P"
 	{
@@ -524,3 +524,26 @@ if (gamepad_button_value(0, gp_shoulderlb) != 0 || (key_taunt2 && key_down2))
         sprite_index = spr_playerV_revolverstart
     }
 }
+
+// dougies bolt and bomb
+if character = "D"
+{
+	if key_slap && spellselect != 2 && spellselect != 4
+	{
+			spellcastedonce = false;
+			sprite_index = spr_pizzard_shoot
+			state = states.throw //i hope this works
+			image_index = 0
+	}
+	// superjump too lol
+	if key_slap2 && key_up && spellselect = 4 && floatbuffer = false
+	{
+		floatbuffer = true
+		sprite_index = spr_superjump
+		state = states.jump
+		vsp = -20
+		jumpstop = true
+		scr_soundeffect(sfx_superjumprelease)
+	}
+}
+

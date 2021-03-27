@@ -13,6 +13,7 @@ if surface_exists(surf_pallete) && !((paletteselect < 12 && character = "P") || 
 }
 else if (paletteselect < 12 && character = "P") || (paletteselect < 11 && character != "P" && character != "PM")|| (paletteselect < 5 && character = "PM")
 	pal_swap_set(spr_palette, paletteselect, false)
+	
 draw_sprite_ext(sprite_index, image_index, x, y, xscale, yscale, image_angle, image_blend, image_alpha)
 if (character == "P" && sprite_index == spr_taunt && floor(image_index) == 11)
     draw_sprite_ext(spr_promotion, image_index, x, y, 1, yscale, image_angle, image_blend, image_alpha)
@@ -26,9 +27,5 @@ if flash
     shader_reset()
 }
 
-draw_set_font(global.smallnumber)
-if character = "D"
-{
-	if spellshowbuffer > 0
-		draw_sprite_ext(spr_dougieicons, (spellselect - 1), x, y - 50, 1, 1, 0, c_white, 0)
-}
+if spellshowbuffer > 0
+		draw_sprite(spr_dougieicons, (spellselect - 1), x, y - 50)
