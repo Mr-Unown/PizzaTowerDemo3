@@ -1,6 +1,11 @@
 global.wateralpha = 0.85
 breakdancebuffer = 50
 collectscore = 0
+//Global Time Events
+global.timeevent = 0 //1 = Xmas 2 = April 3 = Halloween
+//Funny Peter
+global.draw_peter = false;
+
 //Up arrow
 uparrowid = noone
 //Super Taunts

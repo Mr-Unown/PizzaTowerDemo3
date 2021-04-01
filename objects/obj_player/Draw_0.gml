@@ -1,3 +1,4 @@
+
 if !surface_exists(surf_pallete) && (paletteselect >= sprite_get_width(spr_palette) - 1)
 {
 	//Surface
@@ -19,8 +20,17 @@ else if surface_exists(surf_pallete) && (paletteselect >= sprite_get_width(spr_p
 }
 else if (paletteselect < sprite_get_width(spr_palette) - 1)
 	pal_swap_set(spr_palette, paletteselect, false)
-	
+
+if global.draw_peter = true && (character == "P" || character == "N")
+{
+	if character == "P"
+	draw_sprite_ext(spr_peter, image_index, x, y, xscale, yscale, image_angle, image_blend, image_alpha)
+	else
+	draw_sprite_ext(spr_chungus, image_index, x, y, xscale, yscale, image_angle, image_blend, image_alpha)
+}
+else
 draw_sprite_ext(sprite_index, image_index, x, y, xscale, yscale, image_angle, image_blend, image_alpha)
+
 if (character == "P" && sprite_index == spr_taunt && floor(image_index) == 11)
     draw_sprite_ext(spr_promotion, image_index, x, y, 1, yscale, image_angle, image_blend, image_alpha)
 	
@@ -30,7 +40,17 @@ shader_reset()
 if flash
 {
     shader_set(shd_hit)
-    draw_sprite_ext(sprite_index, image_index, x, y, xscale, yscale, image_angle, image_blend, image_alpha)
+
+	if global.draw_peter = true && (character == "P" || character == "N")
+	{
+		if character == "P"
+		draw_sprite_ext(spr_peter, image_index, x, y, xscale, yscale, image_angle, image_blend, image_alpha)
+		else
+		draw_sprite_ext(spr_chungus, image_index, x, y, xscale, yscale, image_angle, image_blend, image_alpha)
+	}
+	else
+	draw_sprite_ext(sprite_index, image_index, x, y, xscale, yscale, image_angle, image_blend, image_alpha)
+
     if (character == "P" && sprite_index == spr_taunt && floor(image_index) == 11)
         draw_sprite_ext(spr_promotion, image_index, x, y, 1, yscale, image_angle, image_blend, image_alpha)
     shader_reset()

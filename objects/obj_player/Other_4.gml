@@ -1,4 +1,40 @@
 var yoffset = 160
+switch current_month
+{
+	case 4: //April
+	
+	if current_day = 1
+	{
+		global.timeevent = 2; //April fools
+		if global.has_drawnpeter = false && object_index = obj_player1
+		{
+			var chance = random_range(0,200);
+			//var yes = (chance >= 200 ? true : false);
+			var yes = true;
+			global.draw_peter = yes;
+		}
+	}
+	
+	break;
+	case 12: //December
+	
+		global.timeevent = 1; //Xmas
+		//Insert Christmas Event here
+	
+	break;
+	case 6: //June
+	
+		global.timeevent = 4; //Summer
+		
+	break;
+	case 10: //October
+	
+		global.timeevent = 3; //Halloween
+		//Insert Halloween Event here
+	
+	break;	
+}
+
 
 //Surface
 if !surface_exists(surf_pallete)

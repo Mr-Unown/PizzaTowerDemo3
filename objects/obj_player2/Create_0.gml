@@ -1,5 +1,6 @@
 scr_initinput2()
 scr_playercreate()
+global.has_drawnpeter = false;
 selectedcharacter = 1;
 pogo = false
 pipedirection = "none"
