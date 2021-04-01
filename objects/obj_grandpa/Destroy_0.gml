@@ -4,7 +4,6 @@ if (ds_list_find_index(global.saveroom, id) == -1)
     if (i >= 95)
         scr_soundeffect(40, 41, 42, 43, 44, 45, 46, 47, 48, 49)
     scr_soundeffect(11)
-    scr_sleep()
     instance_create(x, y, obj_slapstar)
     instance_create(x, y, obj_slapstar)
     instance_create(x, y, obj_slapstar)
@@ -25,6 +24,7 @@ if (ds_list_find_index(global.saveroom, id) == -1)
 
     with (obj_camera)
     {
+		
         shake_mag = 3
         shake_mag_acc = (3 / room_speed)
     }

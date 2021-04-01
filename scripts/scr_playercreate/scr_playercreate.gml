@@ -1,5 +1,6 @@
 breakdancebuffer = 50
 collectscore = 0
+global.freezeframe = false;
 global.freezeframetimer = 200;
 global.sleepScale = 1;
 global.sleepAcc = 0;
@@ -24,6 +25,18 @@ if !surface_exists(surf_pallete)
 surf_pallete = surface_create(surf_width,surf_height)
 
 custompalette = false
+
+//Stored Stuff
+frozenstate = 0;
+frozenspriteindex = spr_player_idle;
+frozenimageindex = 0;
+frozenimagespeed = 0.35;
+frozenmovespeed = 0;
+frozengrav = 0.35;
+frozensmash = 0;
+frozenhsp = 0;
+frozenvsp = 0;
+frozenjumpbuffer = 0;
 
 
 global.pausecombotime = false

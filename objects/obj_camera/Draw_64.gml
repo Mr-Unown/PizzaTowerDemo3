@@ -225,11 +225,9 @@ if (player.state != 55)
     if (global.key_inv == 1)
         draw_sprite_ext(spr_key, -1, 50, 30, 1, 1, 0, c_white, alpha)
     draw_sprite_ext(spr_inv, -1, 50, 30, 1, 1, 0, c_white, alpha)
-    if (global.freezeframecounter == 1)
-    {
-        draw_text(190, 97, debugmaxfreezeframe)
-        draw_text(190, 129, debugfreezeframe)
-    }
+
+   draw_text(190, 97, string(global.freezeframe))
+
 }
 draw_set_blend_mode(0)
 

@@ -165,7 +165,7 @@ if (angry == 1 && (!instance_exists(angryeffectid)) && state == 0)
         other.angryeffectid = id
     }
 }
-if (global.combotime > 0) && global.pausecombotime = false
+if (global.combotime > 0) && global.pausecombotime = false && global.freezeframe = false
     global.combotime = (global.combotime - 0.25)
 else if (global.combotime <= 0)
 	global.combotime = 0

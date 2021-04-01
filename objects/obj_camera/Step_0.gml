@@ -191,15 +191,15 @@ target_y +=  target.y - target_yold
 #region Camera
 //Zooming and Angles
 
-if angle != 0 
-	angle  -= min(abs(angle), 0.25) * sign(angle);
-if targetzoom1 < 960
+if angle != 0 && global.freezeframe = false
+	angle = approach(angle,0,0.25)
+if targetzoom1 < 960 && global.freezeframe = false
 	targetzoom1 += 16
-else
+else if global.freezeframe = false
 	targetzoom1 = 960
-if targetzoom2 < 540
+if targetzoom2 < 540 && global.freezeframe = false
 	targetzoom2 += 9
-else
+else if global.freezeframe = false
 	targetzoom2 = 540
 //Zoom and Angles 2	
 camera_set_view_angle(view_camera[0], angle)		
