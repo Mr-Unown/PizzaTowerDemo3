@@ -1,6 +1,7 @@
 //Variables
 var _cam_x = camera_get_view_x(view_camera[0])
 var _cam_y = camera_get_view_y(view_camera[0])
+zoom = 0
 var _drawx = 125 + _cam_x
 var _drawy = 100 + _cam_y
 //Maxangle

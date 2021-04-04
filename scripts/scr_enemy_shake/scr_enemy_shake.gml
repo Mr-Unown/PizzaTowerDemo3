@@ -2,11 +2,13 @@ if (grabbedby == 1)
     var player = obj_player1
 else if (grabbedby == 2)
     player = obj_player2
-if (global.freezeframe = false && shakebuffer > 0)
-    shakebuffer--
-if (shakebuffer <= 0)
+hsp = 0
+vsp = 0
+if global.freezeframe = false
     shake = 0
-if (shake == 0) && global.freezeframe = false
+else	
+	shake = 1
+if global.freezeframe = false
 {
     if (blowdirection == 3)
     {
@@ -64,7 +66,7 @@ if (shake == 0) && global.freezeframe = false
             sprite_index = spr_parryeffect
         thrown = 1
     }
-	else
+	else if (blowdirection == 5) && hp > 1
 	{
 		alarm[1] = 2
         shakebuffer = 2.5
@@ -77,6 +79,10 @@ if (shake == 0) && global.freezeframe = false
         with (instance_create(x, y, obj_bumpeffect))
             sprite_index = spr_parryeffect
         thrown = 1
+	}
+	else
+	{
+		instance_destroy()
 	}
     instance_create(x, y, obj_slapstar)
     instance_create(x, y, obj_slapstar)

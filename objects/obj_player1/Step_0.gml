@@ -79,7 +79,7 @@ if (state == 55 && y > (room_height * 2))
         }
     }
 }
-//Autopitfall
+//Autopitfall Might get removed
 if state != 55 && y > (room_height * 1.2)
 {
 	{
@@ -107,18 +107,7 @@ if state != 55 && y > (room_height * 1.2)
 	grav = 0.5
 }
 
-//dougie's super magic setter
-if character = "D"
-{
-	spellshowbuffer = 50
-	if key_shoot
-	{
-		if spellselect < 4
-			spellselect++
-		else
-			spellselect = 1
-	}
-}
+
 
 
 repeat (3)
@@ -133,8 +122,8 @@ instance_create(roomstartx,roomstarty - 50 ,obj_handgrabber)
 //i think this is where resetting variables starts
 if ((!instance_exists(baddiegrabbedID)) && (state == 46 || state == 43 || state == 10))
     state = 0
-if (!(state == 46 || state == 43 || state == 70))
-    baddiegrabbedID = 0
+if (!(state == 46 || state == states.frozen || state == 43 || state == 10))
+    baddiegrabbedID = noone
 if grinding && !cutscene && !scr_transformationcheck(id)
     state = 45
 if (anger == 0)

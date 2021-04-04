@@ -44,13 +44,6 @@ if (sprite_index != spr_player_jugglebash)
 {
     vsp = 0
     hsp = 0
-    with (obj_camera)
-        zoom = 1
-	obj_camera.alarm[3] = 20		
-}
-else
-{
-    with (obj_camera)
-        zoom = 0
+	scr_sleep();	
 }
 image_speed = 0.35

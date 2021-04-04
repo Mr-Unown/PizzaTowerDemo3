@@ -31,6 +31,7 @@ switch state
         scr_enemy_shake()
         break
 }
+grav = 0.5
 scr_commonenemy()
 if (state == 106 && stunned > 40 && birdcreated == 0)
 {

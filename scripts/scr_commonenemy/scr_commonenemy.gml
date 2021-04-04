@@ -72,7 +72,8 @@ if scarebuffer > 0 && shake != 1 && state = 94 && state != 109 && thrown = 0 && 
 	if (sprite_index != scaredspr)
     {
        sprite_index = scaredspr
-       vsp = -5
+       if grav != 0
+		vsp = -5
     }
 }
 else if !(state = 94 && scarebuffer > 0)

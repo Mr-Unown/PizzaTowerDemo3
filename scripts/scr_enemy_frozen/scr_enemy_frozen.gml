@@ -15,8 +15,5 @@ hsp = 0
 x = x
 y = y
 image_speed = 0
-grav = 0
-movespeed = 0
-	
-	
+movespeed = 0	
 }

@@ -36,16 +36,18 @@ else
 }
 if (bombpeptimer < 20 && bombpeptimer != 0)
     sprite_index = spr_bombpeprunabouttoexplode
-if (sprite_index == spr_bombpepend && floor(image_index) == (image_number - 1))
+if (sprite_index == spr_bombpepend)
 {
 	global.pausecombotime = true		
-	obj_tv.alarm[1] = 75		
-    alarm[5] = 2
-    alarm[7] = 60
-    hurted = 1
-    state = 0
-    sprite_index = spr_idle
-    image_index = 0
+	obj_tv.alarm[1] = 75	
+	if (floor(image_index) == (image_number - 1)) {
+		alarm[5] = 2
+		alarm[7] = 60
+		hurted = 1
+		state = 0
+		sprite_index = spr_idle
+		image_index = 0
+	}
 }
 if (bombpeptimer == 0 && sprite_index == spr_bombpeprunabouttoexplode)
 {

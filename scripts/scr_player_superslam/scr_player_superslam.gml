@@ -39,6 +39,45 @@ if (grounded && (!place_meeting(x, (y + 1), obj_destructibles)) && sprite_index 
         }
     }
 }
+if sprite_index = spr_piledriverland && floor(image_index) = image_number - 1 {
+    state = 58
+    vsp = -8
+    sprite_index = spr_machfreefall
+	if instance_exists(baddiegrabbedID)
+		with baddiegrabbedID
+		{
+			if object_index != obj_player {
+			instance_create(x, y, obj_slapstar)
+			instance_create(x, y, obj_baddiegibs)
+			flash = 1
+			global.combotime = 60
+			global.pausecombotime = true
+			obj_tv.alarm[1] = 75			
+			global.hit = (global.hit + 1)
+			hp -= 1
+			alarm[1] = 5
+			thrown = 1
+			x = other.x
+			y = other.y
+			state = 106
+			hsp = ((-image_xscale) * 10)
+			vsp = -10		
+			}
+			else {
+			thrown = 1
+            instance_create(x, y, obj_slapstar)
+            instance_create(x, y, obj_baddiegibs)
+            flash = 1
+            x = other.x
+            y = other.y
+            state = 73
+            hsp = ((-image_xscale) * 10)
+            vsp = -10
+            other.alarm[8] = 60
+            other.alarm[7] = 120	
+			}
+		}
+}
 jumpAnim = 1
 dashAnim = 1
 landAnim = 0

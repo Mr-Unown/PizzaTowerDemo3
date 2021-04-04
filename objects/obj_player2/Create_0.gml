@@ -107,7 +107,7 @@ suplexmove = 0
 suplexhavetomash = 0
 anger = 0
 angry = 0
-baddiegrabbedID = 0
+baddiegrabbedID = noone
 spr_palette = 372
 character = "N"
 scr_characterspr()

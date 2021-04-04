@@ -124,10 +124,10 @@ repeat (3)
 instance_create(roomstartx,roomstarty - 50 ,obj_handgrabber)
 }
 
-if ((!instance_exists(baddiegrabbedID)) && (state == 46 || state == 43 || state == 10))
+if ((!instance_exists(baddiegrabbedID)) && (state == 46 || state == states.golf || state == 43 || state == 10))
     state = 0
-if (!(state == 46 || state == 43 || state == 70))
-    baddiegrabbedID = 0
+if (!(state == 46 || state == states.frozen || state == 43 || state == states.golf || state == 10))
+    baddiegrabbedID = noone
 if grinding && !cutscene && !scr_transformationcheck(id)
     state = 45
 if (anger == 0)

@@ -1,2 +1,2 @@
-zoom = 0
+//zoom = 0
 global.freezeframe = false;

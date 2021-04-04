@@ -1,9 +1,10 @@
 /// @description Freezes time for the given time. 
-alarm[3] = round(global.freezeframetimer / room_speed) * 10;
+alarm[3] = round(global.freezeframetimer / room_speed) * 3;
 if global.freezeframe != true {
 		global.freezeframetimer = clamp(global.freezeframetimer - 50,0,185);
 		if global.can_freeze = true {
 		with obj_player {
+			if state != states.frozen {
 			frozenstate = state;
 			frozenspriteindex = sprite_index;
 			frozenimageindex = image_index;
@@ -15,8 +16,10 @@ if global.freezeframe != true {
 			frozenvsp = vsp;
 			frozenjumpbuffer = input_buffer_jump;
 			state = states.frozen;
+			}
 		}		
 		with obj_baddie {
+			if state != enemystates.enemyfrozen {
 			frozenstate = state;
 			frozenspriteindex = sprite_index;
 			frozenimageindex = image_index;
@@ -27,6 +30,7 @@ if global.freezeframe != true {
 			frozenvsp = vsp;
 			if state != enemystates.enemyshake
 				state = enemystates.enemyfrozen;
+			}
 		}
 		global.freezeframe = true;
 		#region Zoom in
