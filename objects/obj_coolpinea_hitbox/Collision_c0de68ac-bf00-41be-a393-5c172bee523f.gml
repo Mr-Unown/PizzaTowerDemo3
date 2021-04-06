@@ -1,5 +1,6 @@
-
+if instance_exists(ID)
 with (other.id)
+if other.ID.sprite_index = spr_coolpinea_taunt
 {
     if (instance_exists(baddieID) && baddieID != other.id && baddieID != other.ID)
     {

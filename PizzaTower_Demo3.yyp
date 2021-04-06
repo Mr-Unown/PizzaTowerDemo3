@@ -6381,7 +6381,7 @@
             "Key": "468ace82-96c0-4ff3-8dff-408da74b6c23",
             "Value": {
                 "id": "0579c955-c8e2-42c4-b59d-ff8b22fa4799",
-                "resourcePath": "scripts\\scr_pizzagoblin_throw\\scr_pizzagoblin_throw.yy",
+                "resourcePath": "scripts\\scr_enemy_throw\\scr_enemy_throw.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -22794,6 +22794,14 @@
             }
         },
         {
+            "Key": "fa54c751-c7de-49b9-b12c-931507dbd8fe",
+            "Value": {
+                "id": "2cf1ff1c-4e20-4ae7-9fb3-adfe835d7316",
+                "resourcePath": "scripts\\scr_enemystates\\scr_enemystates.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "fa601dfe-7afa-49fa-b23f-b81ce9a4107d",
             "Value": {
                 "id": "b8a4b4d1-afb8-4742-9079-d11ef98c3743",
@@ -23449,6 +23457,7 @@
         "45ba5e56-1ee0-433f-8f69-f1fc6172aa43",
         "95922115-5c4a-4394-8b8e-4f94028640e7",
         "274792e0-4c41-4502-b416-096e5fff32e7",
+        "fa54c751-c7de-49b9-b12c-931507dbd8fe",
         "4cb5f39b-9656-4891-a710-b253d7e7be94",
         "963564ec-b863-4bc7-85a6-ad306c3677b1",
         "711238e7-812a-4115-ba96-a0f87371866d",

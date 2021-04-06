@@ -2,7 +2,7 @@ with (other)
 {
     if (other.hurtplayer == 0)
     {
-        if (key_jump2 && cutscene == 0 && state != 114 && state != 113)
+        if (key_jump2 && !scr_transformationcheck(id) && cutscene == 0 && state != 114 && state != 113)
         {
             vsp = -20
             if (state == 0 || state == 58 || hsp == 0)

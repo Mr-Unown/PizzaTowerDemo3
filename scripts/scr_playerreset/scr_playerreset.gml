@@ -92,7 +92,7 @@ with (obj_player1)
     buttanim = 0
     firebutt = 0
     image_blend = make_colour_hsv(0, 0, 255)
-    c = 0
+    blackblend = 0
     heavy = 0
     image_index = 0
     sprite_index = spr_walkfront
@@ -218,7 +218,7 @@ with (obj_player1)
 	floatbuffer = false
 floattimer = 50
 spellselect = 1
-spellshowbuffer = 150
+spellshowbuffer = 0
 global.magic = 50
 }
 with (obj_player2)
@@ -231,7 +231,7 @@ with (obj_player2)
     buttanim = 0
     firebutt = 0
     image_blend = make_colour_hsv(0, 0, 255)
-    c = 0
+    blackblend = 0
     heavy = 0
     image_index = 0
     sprite_index = spr_walkfront

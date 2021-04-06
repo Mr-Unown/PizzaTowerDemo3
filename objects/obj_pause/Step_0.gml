@@ -11,7 +11,7 @@ if ((!pause) && (!instance_exists(obj_fadeout)))
         global.coop = 1
         with (obj_player2)
         {
-            c = 0
+            blackblend = 0
             image_blend = make_colour_hsv(0, 0, 255)
             x = obj_player1.x
             y = obj_player1.y
@@ -33,7 +33,7 @@ if ((!pause) && (!instance_exists(obj_fadeout)))
             global.coop = 1
             with (obj_player2)
             {
-                c = 0
+                blackblend = 0
                 image_blend = make_colour_hsv(0, 0, 255)
                 x = obj_player1.x
                 y = obj_player1.y

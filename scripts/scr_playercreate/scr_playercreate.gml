@@ -79,7 +79,7 @@ global.geromeopen = false;
 floatbuffer = false
 floattimer = 50
 spellselect = 1
-spellshowbuffer = 150
+spellshowbuffer = 0
 spellcastedonce = false;
 global.magic = 50
 

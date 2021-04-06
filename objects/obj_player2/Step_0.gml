@@ -1,6 +1,9 @@
 scr_getinput2()
 scr_playerstate()
-
+//No more Shadows
+if image_blend != make_colour_hsv(0, 0, 255) && state != states.comingoutdoor {
+	image_blend = make_colour_hsv(0, 0, 255)
+}
 
 //Heavy
 if heavy = 1 && state != 46
@@ -13,7 +16,7 @@ wallclingbuffer--
 else
 wallclingbuffer = 0
 //Jetpack Controls
-if jetpacking = true && !(state = 51 || sprite_index = spr_playerN_jetpackstart || sprite_index = spr_superjumpprep || sprite_index = spr_jetpack || sprite_index = spr_jetpackcrazy || sprite_index = spr_playerN_jetpackslide || sprite_index = spr_playerN_Sjump)	
+if jetpacking = true && state != states.frozen && !(state = 51 || sprite_index = spr_playerN_jetpackstart || sprite_index = spr_superjumpprep || sprite_index = spr_jetpack || sprite_index = spr_jetpackcrazy || sprite_index = spr_playerN_jetpackslide || sprite_index = spr_playerN_Sjump)	
 jetpacking = false
 
 //Pogo
@@ -89,7 +92,7 @@ if (state == 55 && y > (room_height * 2))
     room = hub_room1
 }
 //Autopitfall
-if state != 55 && y > (room_height * 1.5)
+if state != 55 && !instance_exists(obj_fadeout) && !place_meeting(x,y,obj_hallway) && !place_meeting(x,y,obj_pitfall) && !place_meeting(x,y,obj_pitcollider) && y > (room_height * 1.3)
 {
 	{
 		

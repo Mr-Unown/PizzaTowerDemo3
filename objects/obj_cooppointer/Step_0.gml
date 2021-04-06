@@ -37,7 +37,7 @@ break;
 //Track Playerid and get Coords
 with (playerid)
 {
-    if (!point_in_rectangle(x, y, _l - 64, _t - 64, _r + 64, _b + 64))
+    if (!point_in_rectangle(x, y, _l - 128, _t - 128, _r + 128, _b + 128))
     {
         var _x1 = (x - _view_center_x)
         var _y1 = (y - _view_center_y)
