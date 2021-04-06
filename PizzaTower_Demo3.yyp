@@ -5306,6 +5306,14 @@
             }
         },
         {
+            "Key": "3bb1b7b9-9cbf-4aa7-a329-cd979e476275",
+            "Value": {
+                "id": "a544bce2-1ae5-4cab-b944-d9f8d9a34961",
+                "resourcePath": "sprites\\spr_gerome_idle\\spr_gerome_idle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3bcd0140-13b5-4ee0-8bc5-9fcaf63a353b",
             "Value": {
                 "id": "ee82d5cc-a512-4297-b1d9-8b66d48ad34e",
@@ -9190,6 +9198,14 @@
             "Value": {
                 "id": "19467df1-2eac-44db-b7a4-5b887f8c2946",
                 "resourcePath": "sprites\\bg_chateautreasure1\\bg_chateautreasure1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6483be54-7b04-48e8-8885-1831d33a5540",
+            "Value": {
+                "id": "7e22ca76-e77b-44ac-b993-dbbbddf8e78e",
+                "resourcePath": "sprites\\spr_gerome_eating\\spr_gerome_eating.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -19622,6 +19638,14 @@
             "Value": {
                 "id": "94292c26-e26a-4046-9eb9-b6fb392d49a3",
                 "resourcePath": "sprites\\spr_pepperdoor_closed\\spr_pepperdoor_closed.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d7497b00-17f4-409c-abda-1d240b2b2e8c",
+            "Value": {
+                "id": "5cef400d-6aae-46a9-b41a-56a8e30d6d32",
+                "resourcePath": "sprites\\spr_gerome_sleeping\\spr_gerome_sleeping.yy",
                 "resourceType": "GMSprite"
             }
         },

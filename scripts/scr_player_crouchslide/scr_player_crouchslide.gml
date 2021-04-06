@@ -4,7 +4,7 @@ else if place_meeting(x, (y + 1), obj_railh)
     hsp = ((xscale * movespeed) - 5)
 else if place_meeting(x, (y + 1), obj_railh2)
     hsp = ((xscale * movespeed) + 5)
-if (movespeed >= 0)
+if (movespeed >= 0 && grounded)
     movespeed -= 0.2
 mask_index = spr_crouchmask
 if key_jump
@@ -14,8 +14,17 @@ if ((!key_jump2) && jumpstop == 0 && vsp < 0.5 && stompAnim == 0)
     vsp /= 10
     jumpstop = 1
 }
-if (input_buffer_jump < 8 && grounded && movespeed <= 13 && (!scr_solid((x + 27), (y - 32))) && (!scr_solid((x - 27), (y - 32))) && (!scr_solid(x, (y - 32))) && (!scr_solid(x, (y - 16))))
+if (input_buffer_jump < 8 && grounded && (!scr_solid((x + 27), (y - 32))) && (!scr_solid((x - 27), (y - 32))) && (!scr_solid(x, (y - 32))) && (!scr_solid(x, (y - 16))))
 {
+	sprite_index = spr_crouchslipjump
+	image_index = 0
+	vsp = -11
+	with (instance_create(x, y, obj_superdashcloud))
+    {
+        image_xscale = other.xscale
+        other.dashcloudid = id
+    }
+	/*
     scr_soundeffect(0)
     sprite_index = spr_jump
     if (shotgunAnim == 1)
@@ -29,7 +38,7 @@ if (input_buffer_jump < 8 && grounded && movespeed <= 13 && (!scr_solid((x + 27)
     momemtum = movespeed
     state = 58
     image_index = 0
-    jumpAnim = 1
+    jumpAnim = 1*/
 }
 if (grounded && key_attack && (!scr_solid((x + 27), (y - 32))) && (!scr_solid((x - 27), (y - 32))) && (!scr_solid(x, (y - 32))) && (!scr_solid(x, (y - 16))))
 {
@@ -53,7 +62,14 @@ if (grounded && key_attack && (!scr_solid((x + 27), (y - 32))) && (!scr_solid((x
 		pogomovespeed = 9
 	}	
 }
-
+if grounded && vsp > 0 && (sprite_index == spr_crouchslipjump || sprite_index == spr_crouchslipfall) 
+{
+	jumpstop = 0
+    sprite_index = spr_crouchslip
+    
+}
+if sprite_index == spr_crouchslipjump && floor(image_index) = image_number - 1
+    sprite_index = spr_crouchslipfall
 if (((hsp == 0 || (scr_solid((x + 1), y) && xscale == 1) || (scr_solid((x - 1), y) && xscale == -1)) && (!place_meeting((x + sign(hsp)), y, obj_slope))) || movespeed <= 0)
 {
     state = 66

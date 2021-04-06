@@ -61,7 +61,7 @@ switch state
 if scarebuffer > 0
 scarebuffer--
 //Spaghetti Scare
-if scarebuffer > 0 && shake != 1 && state = 94 && state != 109 && thrown = 0 && state != 106 && markedfordeath != 1 {
+if scarebuffer > 0 && shake != 1 && state = 94 && state != states.frozen && state != 109 && thrown = 0 && state != 106 && markedfordeath != 1 {
     state = 94
 	if place_meeting(x, (y + 1), obj_railh)
 		hsp = -5

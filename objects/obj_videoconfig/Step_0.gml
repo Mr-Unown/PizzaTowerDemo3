@@ -4,7 +4,7 @@ if ((key_up2 || keyboard_check_pressed(vk_up)) && optionselected > -1)
     optionselected -= 1
     scr_soundeffect(29)
 }
-if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 2)
+if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 3)
 {
     optionselected += 1
     scr_soundeffect(29)
@@ -83,7 +83,7 @@ if (optionselected == 2)
     {
         global.screenmelt = 0
         ini_open("saveData.ini")
-        global.screenmelt = ini_write_real("Option", "panicbg", 0)
+			ini_write_real("Option", "panicbg", 0)
         ini_close()
         selecting = -1
     }
@@ -91,10 +91,33 @@ if (optionselected == 2)
     {
         global.screenmelt = 1
         ini_open("saveData.ini")
-        global.screenmelt = ini_write_real("Option", "panicbg", 1)
+			ini_write_real("Option", "panicbg", 1)
+        ini_close()
+        selecting = -1
+    }
+}
+if (optionselected == 3)
+{
+    if ((key_right2 || keyboard_check_pressed(vk_right)) && optionsaved_hitstun == 1)
+        optionsaved_hitstun = 0
+    if (((-key_left2) || keyboard_check_pressed(vk_left)) && optionsaved_hitstun == 0)
+        optionsaved_hitstun = 1
+    if ((key_jump || keyboard_check_pressed(vk_return)) && optionsaved_hitstun == 0)
+    {
+        global.hitstunenabled = false
+        ini_open("saveData.ini")
+			ini_write_real("Option", "hitstun", 0)
+        ini_close()
+        selecting = -1
+    }
+    if ((key_jump || keyboard_check_pressed(vk_return)) && optionsaved_hitstun == 1)
+    {
+        global.hitstunenabled = true
+        ini_open("saveData.ini")
+			ini_write_real("Option", "hitstun", 1)
         ini_close()
         selecting = -1
     }
 }
 
-
+//global.hitstunenabled = true

@@ -1,8 +1,4 @@
-if global.sleepAcc > 0
-	global.sleepAcc -= 60;
-else
-	global.sleepAcc = 0
-	
+
 if global.freezeframetimer < 185
 	global.freezeframetimer += 0.25
 else
@@ -13,3 +9,4 @@ else {
 	global.can_freeze = false;
 	global.freezeframe = false;	
 }
+

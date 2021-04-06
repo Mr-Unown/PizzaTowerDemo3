@@ -5,7 +5,7 @@ if (drop == 0)
 		
         other.drop = 1
         other.vsp = -5
-		if state != 37
+		if state != 37 && !scr_transformationcheck(id)
 		{
         state = 60
         if (movespeed < 12)

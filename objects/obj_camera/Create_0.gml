@@ -1,3 +1,5 @@
+depth = -11
+global.hitstunenabled = true;
 global.levelname = "none"
 global.tutorialtrap = 0
 collided = false

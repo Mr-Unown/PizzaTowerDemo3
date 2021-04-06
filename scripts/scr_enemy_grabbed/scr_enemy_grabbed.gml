@@ -154,6 +154,7 @@ if (grabbedby == 1)
     }
     if place_meeting(x, y, obj_swordhitbox)
     {
+		scr_sleep();
         shakebuffer = 1
         shake = 1
         with (obj_camera)
@@ -522,6 +523,7 @@ if (grabbedby == 2)
     }
     if place_meeting(x, y, obj_swordhitbox)
     {
+		scr_sleep();
         shakebuffer = 1
         shake = 1
         with (obj_camera)

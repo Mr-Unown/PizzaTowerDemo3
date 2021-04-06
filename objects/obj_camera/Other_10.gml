@@ -2,7 +2,8 @@
 alarm[3] = round(global.freezeframetimer / room_speed) * 3;
 if global.freezeframe != true {
 		global.freezeframetimer = clamp(global.freezeframetimer - 50,0,185);
-		if global.can_freeze = true {
+		if global.can_freeze = true && global.hitstunenabled = true {
+		#region Frozen entities
 		with obj_player {
 			if state != states.frozen {
 			frozenstate = state;
@@ -32,6 +33,7 @@ if global.freezeframe != true {
 				state = enemystates.enemyfrozen;
 			}
 		}
+		#endregion
 		global.freezeframe = true;
 		#region Zoom in
 		with obj_camera {

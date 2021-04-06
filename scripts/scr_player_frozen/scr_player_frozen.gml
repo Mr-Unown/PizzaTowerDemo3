@@ -12,10 +12,10 @@ grav = frozengrav;
 freefallsmash =	frozensmash;
 hsp = frozenhsp;
 vsp = frozenvsp;
-if !key_jump {
+if !key_jump2 {
 	input_buffer_jump = frozenjumpbuffer;
 }
-else {
+else if key_jump2 {
 	input_buffer_jump = 0;
 	#region Jumping
 	if ((!grounded) && frozenstate != 74 && instakillmove = true) 
@@ -77,7 +77,7 @@ hsp = 0
 x = xx
 y = yy
 image_speed = 0
-grav = 0
+//grav = 0
 movespeed = 0
 //cutscene = true;
 	

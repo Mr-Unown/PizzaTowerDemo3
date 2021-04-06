@@ -99,6 +99,7 @@ with (argument0)
         flash = 1
         if (shotgunAnim == 0)
         {
+			global.style = (global.style - 10)
             global.hurtcounter = (global.hurtcounter + 1)
             if (object_index == obj_player1)
             {

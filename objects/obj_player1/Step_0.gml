@@ -79,8 +79,8 @@ if (state == 55 && y > (room_height * 2))
         }
     }
 }
-//Autopitfall Might get removed
-if state != 55 && y > (room_height * 1.2)
+//Autopitfall 
+if state != 55 && y > (room_height * 1.5)
 {
 	{
 		

@@ -9,7 +9,6 @@ if (floor(image_index) == 6 && (!instance_exists(obj_swordhitbox))) && onceonly 
     scr_soundeffect(14)
     with (instance_create(x, y, obj_swordhitbox))
         playerid = other.object_index
-	scr_sleep();
 	onceonly = true;
 }
 /*
@@ -23,7 +22,6 @@ if (floor(image_index) == 0 && (!instance_exists(obj_swordhitbox)) && sprite_ind
     scr_soundeffect(14)
     with (instance_create(x, y, obj_swordhitbox))
         playerid = other.object_index
-	scr_sleep();
 	onceonly = true;
 }
 if (sprite_index == spr_charge)

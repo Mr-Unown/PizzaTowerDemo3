@@ -50,7 +50,7 @@ if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
                 obj_player1.collectscore = (obj_player1.collectscore + 10)
             with (instance_create(x, y, obj_smallnumber))
                 number = "10"
-            global.style = (global.style + 5)
+            global.style += 5
         }
         if (global.combo == 2)
         {
@@ -62,7 +62,7 @@ if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
                 obj_player1.collectscore = (obj_player1.collectscore + 20)
             with (instance_create(x, y, obj_smallnumber))
                 number = "20"
-            global.style = (global.style + 10)
+            global.style += 5
         }
         if (global.combo == 3)
         {
@@ -74,7 +74,7 @@ if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
                 obj_player1.collectscore = (obj_player1.collectscore + 40)
             with (instance_create(x, y, obj_smallnumber))
                 number = "40"
-            global.style = (global.style + 15)
+            global.style += 5
         }
         if (global.combo >= 4)
         {
@@ -86,7 +86,7 @@ if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
                 obj_player1.collectscore = (obj_player1.collectscore + 80)
             with (instance_create(x, y, obj_smallnumber))
                 number = "80"
-            global.style = (global.style + 20)
+            global.style += 5
         }
     }
     global.combotime = 60

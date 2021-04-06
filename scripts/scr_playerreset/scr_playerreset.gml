@@ -10,6 +10,8 @@ if instance_exists(obj_endlevelfade)
 with obj_goop 
 instance_destroy(id,false)	
 
+global.style = 0
+global.stylethreshold = 0
 global.freezeframe = false;
 global.switchblock = 0
 global.soundposoffset = 0
