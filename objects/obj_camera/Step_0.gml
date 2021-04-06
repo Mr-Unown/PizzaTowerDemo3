@@ -1,8 +1,16 @@
-//Collided with Player
+//Variables
 var _cam_x = camera_get_view_x(view_camera[0])
 var _cam_y = camera_get_view_y(view_camera[0])
+zoom = 0
 var _drawx = 125 + _cam_x
 var _drawy = 100 + _cam_y
+//Maxangle
+
+maxangle = clamp(floor(arctan((room_height/room_width)/_cam_y)), 0, 3)
+
+
+
+//Collided with Player
 if point_in_rectangle(obj_player.x,obj_player.y, _drawx - 80, _drawy - 85,_drawx + 80,_drawy + 85)
 collided = true
 else
@@ -147,92 +155,85 @@ if (shake_mag > 0)
         shake_mag = 0
 }
 if (instance_exists(player) && player.state != 36 && player.state != 55)
-{
-    if (golf == 1 && instance_exists(obj_pizzaball))
-        target = obj_pizzaball
+    target = player
+if (golf == 1 && instance_exists(obj_pizzaball)) {
+	var factor = 1.5;
+	golfdistanced = point_distance(0, target.y, 0, obj_pizzaball.y)
+    golfdistance = point_distance(target.x, 0, obj_pizzaball.x, 0)
+	if point_distance(target.x,target.y,obj_pizzaball.x,obj_pizzaball.y) > 420 {
+	if factor > 1
+		factor -= 0.1
+	else
+		factor = 1
+	}
+	else if factor < 1.5
+		factor += 0.1
+	else
+		factor = 1.5
+	
+    if (target.x >= obj_pizzaball.x)
+		golfdistancex = ((-golfdistance) / factor)
     else
-        target = player
-    var coopdistance = (distance_to_object(obj_player2) / 2)
-}
-if (zoom == 1)
-{
-    maxangle = clamp(1, 0, (room_height - targetzoom2))
-    if (angle == 0)
-        angle = random_range((-maxangle), maxangle)
-    camera_set_view_angle(view_camera[0], angle)
-    targetzoom1 = 896
-    targetzoom2 = 504
-    __view_set(2, 0, 896)
-    __view_set(3, 0, 504)
-    if (player.state == 91 || player.state == states.jetpack || player.state == 37)
-    {
-        if (chargecamera > (player.xscale * 75))
-            chargecamera -= 2
-        if (chargecamera < (player.xscale * 75))
-            chargecamera += 2
-        __view_set(0, 0, (((target.x - (targetzoom1 / 2)) + chargecamera) + p2pdistancex))
-    }
+        golfdistancex = (golfdistance / factor)
+    if (target.y >= obj_pizzaball.y)
+        golfdistancey = ((-golfdistanced) / factor)
     else
-    {
-        if (chargecamera > 0)
-            chargecamera -= 2
-        if (chargecamera < 0)
-            chargecamera += 2
-        __view_set(0, 0, (((target.x - (targetzoom1 / 2)) + chargecamera) + p2pdistancex))
-    }
-    __view_set(0, 0, clamp(__view_get(0, 0), 0, (room_width - targetzoom1)))
-    __view_set(1, 0, (target.y - (targetzoom2 / 2)))
-    __view_set(1, 0, clamp(__view_get(1, 0), 0, (room_height - targetzoom2)))
-    if (shake_mag != 0)
-    {
-        __view_set(0, 0, (((target.x - (targetzoom1 / 2)) + chargecamera) + p2pdistancex))
-        __view_set(0, 0, clamp(__view_get(0, 0), 0, (room_width - targetzoom1)))
-        __view_set(1, 0, ((target.y - (targetzoom2 / 2)) + irandom_range((-shake_mag), shake_mag)))
-        __view_set(1, 0, clamp(__view_get(1, 0), (0 + irandom_range((-shake_mag), shake_mag)), ((room_height - targetzoom2) + irandom_range((-shake_mag), shake_mag))))
-    }
-    debugfreezeframe += (1 / room_speed)
-    debugmaxfreezeframe = 0
+        golfdistancey = (golfdistanced / factor)
 }
-else if (zoom == 0)
+else
 {
-    maxangle = 2.5
-    angle = 0
-    camera_set_view_angle(view_camera[0], 0)
-    targetzoom1 = 960
-    targetzoom2 = 540
-    __view_set(2, 0, 960)
-    __view_set(3, 0, 540)
-    if (player.state == 91 || player.state == states.jetpack || player.state == 37)
-    {
-        if (chargecamera > (player.xscale * 100))
-            chargecamera -= 2
-        if (chargecamera < (player.xscale * 100))
-            chargecamera += 2
-        __view_set(0, 0, (((target.x - (targetzoom1 / 2)) + chargecamera) + p2pdistancex))
-    }
-    else
-    {
-        if (chargecamera > 0)
-            chargecamera -= 2
-        if (chargecamera < 0)
-            chargecamera += 2
-        __view_set(0, 0, (((target.x - (targetzoom1 / 2)) + chargecamera) + p2pdistancex))
-    }
-    __view_set(0, 0, clamp(__view_get(0, 0), 0, (room_width - targetzoom1)))
-    __view_set(1, 0, (target.y - (targetzoom2 / 2)))
-    __view_set(1, 0, clamp(__view_get(1, 0), 0, (room_height - targetzoom2)))
-    if (shake_mag != 0)
-    {
-        __view_set(0, 0, (((target.x - (targetzoom1 / 2)) + chargecamera) + p2pdistancex))
-        __view_set(0, 0, clamp(__view_get(0, 0), 0, (room_width - targetzoom1)))
-        __view_set(1, 0, ((target.y - (targetzoom2 / 2)) + irandom_range((-shake_mag), shake_mag)))
-        __view_set(1, 0, clamp(__view_get(1, 0), (0 + irandom_range((-shake_mag), shake_mag)), ((room_height - targetzoom2) + irandom_range((-shake_mag), shake_mag))))
-    }
-    if (debugmaxfreezeframe != debugfreezeframe && debugfreezeframe != 0)
-    {
-        debugmaxfreezeframe = debugfreezeframe
-        debugfreezeframe = 0
-    }
+	if golfdistancex != 0 
+		golfdistancex  -= min(abs(golfdistancex), 9) * sign(golfdistancex);
+	if golfdistancey != 0 
+		golfdistancey  -= min(abs(golfdistancey), 9) * sign(golfdistancey);
 }
+target_x +=  target.x - target_xold
+target_y +=  target.y - target_yold
+#region Camera
+//Zooming and Angles
+
+if angle != 0 && global.freezeframe = false
+	angle = approach(angle,0,0.25)
+if targetzoom1 < 960 && global.freezeframe = false
+	targetzoom1 += 16
+else if global.freezeframe = false
+	targetzoom1 = 960
+if targetzoom2 < 540 && global.freezeframe = false
+	targetzoom2 += 9
+else if global.freezeframe = false
+	targetzoom2 = 540
+//Zoom and Angles 2	
+camera_set_view_angle(view_camera[0], angle)		
+camera_set_view_size(view_camera[0],targetzoom1,targetzoom2)
+//Charge Camera
+if target = player
+{
+	if (player.state == 91 || player.state == states.jetpack || player.state == 37)
+	{
+		if (chargecamera > (player.xscale * 100))
+			chargecamera -= 2
+		if (chargecamera < (player.xscale * 100))
+			chargecamera += 2
+	}
+	else
+	{
+	    if (chargecamera > 0)
+			chargecamera -= 2
+		if (chargecamera < 0)
+			chargecamera += 2
+	}
+	
+}
+
+//Camera X
+camera_set_view_pos(view_camera[0],target_x - (targetzoom1 / 2) + (chargecamera + golfdistancex + p2pdistancex)  + floor(irandom_range(-shake_mag, shake_mag)/2), camera_get_view_y(view_camera[0]))			
+camera_set_view_pos(view_camera[0],clamp(camera_get_view_x(view_camera[0]), 0 + floor(irandom_range(-shake_mag, shake_mag)/2), (room_width - targetzoom1)+ floor(irandom_range(-shake_mag, shake_mag)/2)),camera_get_view_y(view_camera[0]))
+//Camera Y	
+camera_set_view_pos(view_camera[0],camera_get_view_x(view_camera[0]), ((target_y - (targetzoom2 / 2)) + golfdistancey + p2pdistancey ) + irandom_range(-shake_mag, shake_mag))		
+camera_set_view_pos(view_camera[0],camera_get_view_x(view_camera[0]),clamp(camera_get_view_y(view_camera[0]), 0 + irandom_range(-shake_mag, shake_mag), (room_height - targetzoom2) + irandom_range(-shake_mag, shake_mag)))
+#endregion
+target_xold = target_x
+target_yold = target_y
+
 
 

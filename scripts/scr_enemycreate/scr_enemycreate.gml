@@ -8,5 +8,15 @@ parry = 0
 markedfordeath = 0
 markedfordeathbuffer = 50
 deathbuffer = 100
-
+playerxscale = obj_player1.xscale
 dying = false
+
+//Stored Stuff
+frozenstate = 0;
+frozenspriteindex = spr_player_idle;
+frozenimageindex = 0;
+frozenimagespeed = 0.35;
+frozenmovespeed = 0;
+frozengrav = 0.35;
+frozenhsp = 0;
+frozenvsp = 0;

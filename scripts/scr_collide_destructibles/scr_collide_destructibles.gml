@@ -417,9 +417,9 @@ with (obj_mrcar)
 }
 with (obj_baddie)
 {
-    if (place_meeting((x + hsp), y, obj_destructibles) && thrown == 1)
+    if (place_meeting((x + hsp), y, obj_destructibles) && (thrown = 1 || state = "punch"))
         instance_destroy(instance_place((x + hsp), y, obj_destructibles))
-    if (place_meeting(x, (y + vsp), obj_destructibles) && thrown == 1)
+    if (place_meeting(x, (y + vsp), obj_destructibles) && (thrown = 1 || state = "punch"))
         instance_destroy(instance_place(x, (y + vsp), obj_destructibles))
 }
 with (obj_throwableparent)

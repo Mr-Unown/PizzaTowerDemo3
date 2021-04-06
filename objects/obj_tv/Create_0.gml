@@ -1,4 +1,5 @@
 image_speed = 0.1
+depth = -11
 chose = 0
 message = ""
 showtext = 0

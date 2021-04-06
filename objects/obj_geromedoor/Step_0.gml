@@ -9,8 +9,10 @@ if ((obj_player1.state == 0 || obj_player1.state == 69 || obj_player1.state == 7
 	starty = y
 	ds_list_delete(global.follower, ds_list_find_index(global.follower, id));
 	global.geromefollowing = false;
-	}
-	
+	x = other.x + 50
+	y = other.y + 50
+	sprite_index = spr_gerome_door
+	}	
     obj_player1.state = 64
     obj_player1.image_index = 0
     if (instance_exists(obj_player2) && global.coop == 1)

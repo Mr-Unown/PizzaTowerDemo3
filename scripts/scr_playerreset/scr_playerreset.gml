@@ -10,6 +10,9 @@ if instance_exists(obj_endlevelfade)
 with obj_goop 
 instance_destroy(id,false)	
 
+global.style = 0
+global.stylethreshold = 0
+global.freezeframe = false;
 global.switchblock = 0
 global.soundposoffset = 0
 global.scrolloffset = 0
@@ -33,8 +36,6 @@ obj_player2.state = 8
 obj_camera.golf = 0
 if instance_exists(obj_coopflag)
     instance_destroy(obj_coopflag)
-if instance_exists(obj_cooppointer)
-    instance_destroy(obj_cooppointer)
 global.miniboss = 0
 global.lapping = 0
 global.laptouched = 0

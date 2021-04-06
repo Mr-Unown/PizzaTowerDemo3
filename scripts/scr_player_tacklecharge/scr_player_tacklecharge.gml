@@ -45,7 +45,7 @@ if key_jump
     input_buffer_jump = 0
 if (scr_solid((x + hsp), y) && (!place_meeting((x + hsp), y, obj_slope)) && (!place_meeting((x + hsp), y, obj_destructibles)))
 {
-    if (baddiegrabbedID != obj_null)
+    if (baddiegrabbedID != noone)
     {
         if (baddiegrabbedID.object_index == obj_player1 || baddiegrabbedID.object_index == obj_player2)
         {
@@ -64,10 +64,10 @@ if (scr_solid((x + hsp), y) && (!place_meeting((x + hsp), y, obj_slope)) && (!pl
                 vsp = -10
                 alarm[8] = 60
                 alarm[7] = 120
-                other.baddiegrabbedID = obj_null
+                other.baddiegrabbedID = noone
             }
         }
-        else if (baddiegrabbedID != obj_null)
+        else if (baddiegrabbedID != noone)
         {
             with (baddiegrabbedID)
             {
@@ -78,12 +78,6 @@ if (scr_solid((x + hsp), y) && (!place_meeting((x + hsp), y, obj_slope)) && (!pl
                 instance_create(x, y, obj_slapstar)
                 instance_create(x, y, obj_baddiegibs)
                 flash = 1
-                global.combotime = 60
-				global.pausecombotime = true
-				obj_tv.alarm[1] = 75				
-                global.hit = (global.hit + 1)
-                if (other.object_index == obj_pizzaball)
-                    global.golfhit = (global.golfhit + 1)
                 alarm[1] = 5
                 grav = 0.5
                 thrown = 1
@@ -92,7 +86,7 @@ if (scr_solid((x + hsp), y) && (!place_meeting((x + hsp), y, obj_slope)) && (!pl
                 state = 106
                 hsp = ((-image_xscale) * 10)
                 vsp = -10
-                other.baddiegrabbedID = 134
+                other.baddiegrabbedID = noone
                 with (obj_camera)
                 {
                     shake_mag = 3

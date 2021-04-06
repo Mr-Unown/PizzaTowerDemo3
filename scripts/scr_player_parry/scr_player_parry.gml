@@ -9,8 +9,6 @@ if (floor(image_index) == (image_number - 1))
     state = tauntstoredstate
     movespeed = tauntstoredmovespeed
     sprite_index = tauntstoredsprite
-    with (obj_camera)
-        zoom = 0
 }
 if (floor(image_index) == (image_number - 10))
 {

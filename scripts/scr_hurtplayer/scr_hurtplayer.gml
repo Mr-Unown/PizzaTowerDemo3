@@ -18,7 +18,7 @@ with (argument0)
     else if (state == 13 || state == 14)
     {
     }
-    else if (state == 113)
+    else if (state == 113) && state == states.frozen
     {
     }
     else if (image_index < 3 && state == 12 && sprite_index == spr_snick_jump)
@@ -99,6 +99,7 @@ with (argument0)
         flash = 1
         if (shotgunAnim == 0)
         {
+			global.style = (global.style - 10)
             global.hurtcounter = (global.hurtcounter + 1)
             if (object_index == obj_player1)
             {

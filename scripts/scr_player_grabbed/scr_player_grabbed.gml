@@ -46,7 +46,7 @@ switch object_index
             }
             if (!(state == 46 || (state == 91 && fightball == 1) || state == 3 || state == 28 || state == 41 || state == 42 || state == 47 || state == 43 || state == 10 || state == 48 || state == 49 || state == 50))
             {
-                baddiegrabbedID = 134
+                baddiegrabbedID = noone
                 obj_player2.x = obj_player1.x
                 obj_player2.y = obj_player1.y
                 other.state = 73
@@ -195,15 +195,9 @@ switch object_index
                 x = (obj_player1.x + (obj_player1.xscale * 50))
                 y = obj_player1.y
             }
-        }
+        }/*
         if (obj_player1.sprite_index == obj_player1.spr_piledriverland && floor(obj_player1.image_index) == (obj_player1.image_number - 1))
         {
-            with (obj_player1)
-            {
-                state = 58
-                vsp = -8
-                sprite_index = spr_machfreefall
-            }
             thrown = 1
             instance_create(x, y, obj_slapstar)
             instance_create(x, y, obj_baddiegibs)
@@ -215,7 +209,7 @@ switch object_index
             vsp = -10
             other.alarm[8] = 60
             other.alarm[7] = 120
-        }
+        }*/
         if (obj_player1.state != 91)
             sprite_index = spr_hurt
         else
@@ -270,7 +264,7 @@ switch object_index
             }
             if (!(state == 46 || (state == 91 && fightball == 1) || state == 3 || state == 28 || state == 41 || state == 42 || state == 47 || state == 43 || state == 10 || state == 48 || state == 49 || state == 50))
             {
-                baddiegrabbedID = 134
+                baddiegrabbedID = noone
                 obj_player1.x = obj_player2.x
                 obj_player1.y = obj_player2.y
                 other.state = 73
@@ -422,15 +416,9 @@ switch object_index
                 x = (obj_player2.x + (obj_player2.xscale * 50))
                 y = obj_player2.y
             }
-        }
+        }/*
         if (obj_player2.sprite_index == obj_player2.spr_piledriverland && floor(obj_player2.image_index) == (obj_player2.image_number - 1))
         {
-            with (obj_player2)
-            {
-                state = 58
-                vsp = -8
-                sprite_index = spr_machfreefall
-            }
             thrown = 1
             instance_create(x, y, obj_slapstar)
             instance_create(x, y, obj_baddiegibs)
@@ -442,7 +430,7 @@ switch object_index
             vsp = -10
             other.alarm[8] = 60
             other.alarm[7] = 120
-        }
+        }*/
         if (obj_player2.state != 91)
             sprite_index = spr_hurt
         else

@@ -103,7 +103,8 @@ enum states
 	jetpackstart = 118,
 	pogo = 119,
 	wallcling = 120,
-	breakdance = 121 
+	breakdance = 121,
+	frozen = 122
 
 } 
 //I made some changes to it so that we can know at a glance what number it gets converted to.
@@ -114,6 +115,9 @@ switch state
     case 0:
         scr_player_normal()
         break
+    case 122:
+        scr_player_frozen()
+        break		
     case 109:
         scr_player_grabbed()
         break

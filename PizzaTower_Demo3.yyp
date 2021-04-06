@@ -5306,6 +5306,14 @@
             }
         },
         {
+            "Key": "3bb1b7b9-9cbf-4aa7-a329-cd979e476275",
+            "Value": {
+                "id": "a544bce2-1ae5-4cab-b944-d9f8d9a34961",
+                "resourcePath": "sprites\\spr_gerome_idle\\spr_gerome_idle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3bcd0140-13b5-4ee0-8bc5-9fcaf63a353b",
             "Value": {
                 "id": "ee82d5cc-a512-4297-b1d9-8b66d48ad34e",
@@ -7482,6 +7490,14 @@
             }
         },
         {
+            "Key": "52e95d05-0796-434a-b29a-54cfe1b29464",
+            "Value": {
+                "id": "960b5601-7635-4c63-b15e-78255392159c",
+                "resourcePath": "scripts\\scr_player_frozen\\scr_player_frozen.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "52f7b689-f877-4aac-a86d-f617d7f948de",
             "Value": {
                 "id": "8e036e97-7024-4d45-831a-61f1d6b38912",
@@ -9182,6 +9198,14 @@
             "Value": {
                 "id": "19467df1-2eac-44db-b7a4-5b887f8c2946",
                 "resourcePath": "sprites\\bg_chateautreasure1\\bg_chateautreasure1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6483be54-7b04-48e8-8885-1831d33a5540",
+            "Value": {
+                "id": "7e22ca76-e77b-44ac-b993-dbbbddf8e78e",
+                "resourcePath": "sprites\\spr_gerome_eating\\spr_gerome_eating.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -12682,6 +12706,14 @@
             }
         },
         {
+            "Key": "8ce4f7a1-6b1f-4748-915f-aa2357703570",
+            "Value": {
+                "id": "204b4e70-0608-491b-ab49-748f64e2b2e1",
+                "resourcePath": "scripts\\scr_enemy_frozen\\scr_enemy_frozen.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8d1e2fe2-ea26-4949-8df5-42e29dfe4ba8",
             "Value": {
                 "id": "7e3531bb-53ee-4b65-a150-17efb4d71f8f",
@@ -14599,6 +14631,14 @@
                 "id": "11bb1eeb-6f1e-41a7-b175-617557dc39d3",
                 "resourcePath": "sprites\\spr_boxofpizza\\spr_boxofpizza.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a2527da5-5b55-4ad2-b5e8-fb8f46e14faa",
+            "Value": {
+                "id": "294cfa56-ed8e-4dc5-9f31-f2ff8b0347e3",
+                "resourcePath": "scripts\\approach\\approach.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -19602,6 +19642,14 @@
             }
         },
         {
+            "Key": "d7497b00-17f4-409c-abda-1d240b2b2e8c",
+            "Value": {
+                "id": "5cef400d-6aae-46a9-b41a-56a8e30d6d32",
+                "resourcePath": "sprites\\spr_gerome_sleeping\\spr_gerome_sleeping.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d75ebefd-8bd0-4955-bb8a-d32e1d7a2b1e",
             "Value": {
                 "id": "0a65d5b6-eca8-4321-9ece-949ce4523fbe",
@@ -19646,6 +19694,14 @@
             "Value": {
                 "id": "42affb24-79a5-4b0d-b9a6-9492ba95ca51",
                 "resourcePath": "sprites\\spr_playerN_knightarmor\\spr_playerN_knightarmor.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d7d29358-2536-455b-b4b1-b5025b92f812",
+            "Value": {
+                "id": "2940fc10-ca45-47a8-bac0-abd22d1ad899",
+                "resourcePath": "sprites\\bg_tower2\\bg_tower2.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -23356,6 +23412,7 @@
         "e5cbd798-0d4c-467c-bd17-d42015af0697",
         "7486084c-e6d8-414b-975c-2d60a9eda512",
         "c4e6fc06-3cb7-4473-81c6-df67b0cac69d",
+        "52e95d05-0796-434a-b29a-54cfe1b29464",
         "50daae4c-1aa0-49a1-891e-babbb6c4677c",
         "9a6f5c97-3878-4f31-9587-d5d81c113506",
         "d83f7043-0f32-43a4-801f-4639905480e0",
@@ -23400,6 +23457,7 @@
         "fe976e55-8fd2-4db6-84ba-f2df2f8bee90",
         "0a9c5188-2a77-4f02-ac6a-7eb7b11f18b6",
         "9329cee6-c040-48ef-9de2-f46a03d33af9",
+        "8ce4f7a1-6b1f-4748-915f-aa2357703570",
         "2f8ca10f-c8db-4e04-96ae-8b913ca0d595",
         "d70bc196-d37d-48d0-a66e-dc99dcdb3235",
         "94257dc3-817c-439e-82bd-87db19c7b488",
@@ -23423,7 +23481,8 @@
         "4e1e2c42-f69f-4b56-97e1-42ac7284e09e",
         "d839bb5c-2c79-43d8-9c20-9c7b204c85b6",
         "0f68d882-6293-4255-ab8d-6bd5457aa257",
-        "73cff51e-95d4-473c-9091-eae05f7a541f"
+        "73cff51e-95d4-473c-9091-eae05f7a541f",
+        "a2527da5-5b55-4ad2-b5e8-fb8f46e14faa"
     ],
     "tutorial": ""
 }

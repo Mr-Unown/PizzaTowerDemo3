@@ -3,7 +3,7 @@ var _cam_x = camera_get_view_x(view_camera[0])
 var _cam_y = camera_get_view_y(view_camera[0])
 var _drawx = 832 + _cam_x
 var _drawy = 74 + _cam_y
-if point_in_rectangle(obj_player.x,obj_player.y, _drawx - 80, _drawy - 85,_drawx + 80,_drawy + 85)
+if point_in_rectangle(obj_player.x,obj_player.y, _drawx - 80, _drawy - 85,_drawx + 80,_drawy + 101) //85)
 collided = true
 else
 collided = false

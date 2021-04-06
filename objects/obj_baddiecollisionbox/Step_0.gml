@@ -28,20 +28,29 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                     machpunchAnim = 1
                     image_index = 0
                 }
-                if (state != 73)
+                if (state != 73) && other.baddieID.state != enemystates.enemyfrozen && other.baddieID.state != enemystates.enemyshake
                     other.baddieID.grabbedby = 1
                 else
                     other.baddieID.grabbedby = 2
                 scr_soundeffect(34)
-				other.baddieID.dying = true
+				//New Hitstun
+				if other.baddieID.hp <= 1
+					other.baddieID.dying = true
 				other.baddieID.scarebuffer = 0
+				scr_sleep();
+				other.baddieID.blowdirection = 5;
+                other.baddieID.blowintensity = 1;
+				other.baddieID.playerxscale = xscale;
+				other.baddieID.state = enemystates.enemyshake;
+				/*
                 instance_destroy(other.baddieID)
                 instance_destroy(other.id)			
+				*/
                 global.hit = (global.hit + 1)
                 global.combotime = 60
 				global.pausecombotime = true
 				obj_tv.alarm[1] = 75
-                if ((!grounded) && state != 74 && key_jump2)
+                if ((!grounded) && state != 74 && key_jump2) 
                 {
                     if (state == 70 || (state == 91 && fightball == 0))
                     {
@@ -86,6 +95,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                     other.baddieID.blowdirection = 3
                     other.baddieID.blowintensity = 1
                 }
+				scr_sleep();
                 state = 113
                 image_index = 0
                 scr_soundeffect(14)
@@ -156,8 +166,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
 					obj_tv.alarm[1] = 75					
                     with (obj_camera)
                     {
-						obj_camera.alarm[3] = 5
-						zoom = 1
+						scr_sleep();
                         shake_mag = 3
                         shake_mag_acc = (3 / room_speed)
                     }
@@ -198,8 +207,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
 					obj_tv.alarm[1] = 75					
                     with (obj_camera)
                     {
-						obj_camera.alarm[3] = 5
-						zoom = 1
+						scr_sleep();
                         shake_mag = 3
                         shake_mag_acc = (3 / room_speed)
                     }
@@ -348,10 +356,15 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player2) && obj_player2
                 else
                     other.baddieID.grabbedby = 1
                 scr_soundeffect(34)
+				//New Hitstun
+				if other.baddieID.hp <= 1
+					other.baddieID.dying = true
 				other.baddieID.scarebuffer = 0
-				other.baddieID.dying = true				
-                instance_destroy(other.baddieID)
-                instance_destroy(other.id)
+				scr_sleep();
+				other.baddieID.blowdirection = 5;
+                other.baddieID.blowintensity = 1;
+				other.baddieID.playerxscale = xscale;
+				other.baddieID.state = enemystates.enemyshake;
 
                 global.hit = (global.hit + 1)
                 global.combotime = 60
@@ -472,8 +485,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player2) && obj_player2
 					obj_tv.alarm[1] = 75					
                     with (obj_camera)
                     {
-						obj_camera.alarm[3] = 5
-						zoom = 1
+						scr_sleep();
                         shake_mag = 3
                         shake_mag_acc = (3 / room_speed)
                     }
@@ -516,8 +528,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player2) && obj_player2
 					obj_tv.alarm[1] = 75					
                     with (obj_camera)
                     {
-						obj_camera.alarm[3] = 5
-						zoom = 1
+						scr_sleep();
                         shake_mag = 3
                         shake_mag_acc = (3 / room_speed)
                     }

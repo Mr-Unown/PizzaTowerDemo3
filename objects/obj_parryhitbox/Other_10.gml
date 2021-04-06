@@ -9,9 +9,7 @@ with (playerid)
     parried_baddie = 8
     flash = 1
     movespeed = 8
-    with (obj_camera)
-        zoom = 1
-	obj_camera.alarm[3] = 20		
+	scr_sleep();	
 }
 alarm[0] = 3
 collided = 1

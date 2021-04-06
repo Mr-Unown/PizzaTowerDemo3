@@ -43,5 +43,3 @@ back7 = layer_background_get_speed(back_id7)
 back8 = layer_background_get_speed(back_id8)
 back9 = layer_background_get_speed(back_id9)
 back10 =layer_background_get_speed(back_id10)
-
-

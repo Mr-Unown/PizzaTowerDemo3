@@ -1,5 +1,7 @@
-if (character == "P")
-{
+switch character {
+    case "P": //The Fat Italian Hero
+	#region Peppino
+    {
 	spr_idle = spr_player_idle
 	spr_move = spr_player_move
 	spr_crawl = spr_player_crawl
@@ -23,7 +25,9 @@ if (character == "P")
 	spr_laddermove = spr_player_laddermove
 	spr_ladderdown = spr_player_ladderdown
 	spr_keyget = spr_player_keyget
-	spr_crouchslip = spr_player_crouchslip    
+	spr_crouchslip = spr_player_crouchslip
+	spr_crouchslipjump = spr_player_crouchslip
+	spr_crouchslipfall = spr_player_crouchslip	
 	spr_mach1 = spr_player_mach1
 	spr_mach = spr_player_mach
 	spr_secondjump1 = spr_player_secondjump1
@@ -190,9 +194,12 @@ if (character == "P")
 	spr_breakdanceattack2 = spr_player_breakdance_bum
 	spr_breakdanceattack2ground = spr_player_breakdance_bumground
     paletteselect = 1
-}
-if (character == "N")
-{
+	}
+	#endregion
+    break;
+	case "N": //The Naughty Humanoid
+	#region Noise
+	{
     spr_idle = spr_playerN_idle
     spr_move = spr_playerN_move
     spr_crawl = spr_playerN_crawl
@@ -217,6 +224,8 @@ if (character == "N")
 	spr_ladderdown = spr_playerN_ladderdown
 	spr_keyget = spr_playerN_keyget
 	spr_crouchslip = spr_playerN_crouchslip
+    spr_crouchslipjump = spr_playerN_crouchslip
+	spr_crouchslipfall = spr_playerN_crouchslip	
 	spr_mach1 = spr_playerN_mach1
 	spr_mach = spr_playerN_mach
 	spr_secondjump1 = spr_playerN_secondjump1
@@ -384,9 +393,12 @@ if (character == "N")
 	spr_breakdanceattack2 = spr_player_breakdance_bum
 	spr_breakdanceattack2ground = spr_player_breakdance_bumground
     paletteselect = 0
-}
-if (character == "S")
-{
+	}	
+	#endregion
+	break;
+	case "S": //The Forgotten Mascot
+	#region Snick
+	{
 	spr_idle = spr_snick_idle
 	spr_move = spr_snick_walk
 	spr_crawl =  spr_snick_idle
@@ -411,6 +423,8 @@ if (character == "S")
 	spr_ladderdown = spr_snick_climbladder
 	spr_keyget = spr_snick_gotkey
 	spr_crouchslip = spr_snick_slide
+    spr_crouchslipjump = spr_player_crouchslip
+	spr_crouchslipfall = spr_player_crouchslip		
 	spr_mach1 = spr_snick_walk
 	spr_mach = spr_snick_mach2
 	spr_secondjump1 = spr_snick_jump
@@ -548,9 +562,12 @@ if (character == "S")
 	spr_breakdanceattack2 = spr_player_breakdance_bum
 	spr_breakdanceattack2ground = spr_player_breakdance_bumground
 	paletteselect = 0
-}
-if (character == "V")
-{
+	}	
+	#endregion
+	break;
+	case "V": //The Cowboy Cheeseslime
+	#region Vigilante
+	{
     spr_idle = spr_playerV_idle
     spr_move = spr_playerV_move
     spr_crawl = spr_playerV_crouchmove
@@ -574,6 +591,8 @@ if (character == "V")
     spr_laddermove = spr_playerV_climb
     spr_ladderdown = spr_playerV_downladder
     spr_crouchslip = spr_playerV_crouchmove
+    spr_crouchslipjump = spr_player_crouchslip
+	spr_crouchslipfall = spr_player_crouchslip		
     spr_mach1 = spr_playerV_mach1
     spr_mach = spr_playerV_bootsmove
     spr_secondjump1 = spr_playerV_bootsjump
@@ -740,9 +759,12 @@ if (character == "V")
 	spr_breakdanceattack2 = spr_player_breakdance_bum
 	spr_breakdanceattack2ground = spr_player_breakdance_bumground
     paletteselect = 0
-}
-if (character == "PM")
-{
+	}	
+	#endregion
+	break;
+	case "PM": //The Big, Bad, and the Ugly
+	#region Pepperman
+	{
     spr_idle = spr_playerP_idle
     spr_move = spr_playerP_move
     spr_crawl = spr_playerN_crawl
@@ -767,6 +789,8 @@ if (character == "PM")
     spr_ladderdown = spr_playerN_ladderdown
     spr_keyget = spr_playerP_key
     spr_crouchslip = spr_playerN_crouchslip
+	spr_crouchslipjump = spr_playerN_crouchslip
+	spr_crouchslipfall = spr_playerN_crouchslip	
     spr_mach1 = spr_playerP_dash
     spr_mach = spr_playerP_dash
     spr_secondjump1 = spr_playerN_secondjump1
@@ -933,5 +957,218 @@ if (character == "PM")
 	spr_breakdanceattack2 = spr_player_breakdance_bum
 	spr_breakdanceattack2ground = spr_player_breakdance_bumground
     paletteselect = 0
+	}	
+	#endregion
+	break;
+	case "D": //The Named One
+	#region Dougie
+	{
+    spr_idle = spr_pizzard_scared
+    spr_move = spr_pizzard_walk
+    spr_crawl = spr_playerN_crawl
+    spr_idle = spr_playerN_idle
+    spr_hurt = spr_playerN_hurt
+    spr_jump = spr_pizzard_stun
+    spr_jump2 = spr_player_jump2
+    spr_fall = spr_playerN_fall
+    spr_fall2 = spr_player_fall2
+    spr_crouch = spr_playerN_crouch
+    spr_crouchjump = spr_playerN_crouchjump
+	spr_crouchfall = spr_playerN_crouchfall
+	spr_couchstart = spr_playerN_crouchstart
+	spr_bump = spr_playerN_bump
+	spr_land = spr_playerN_land
+	spr_land2 = spr_playerN_land2
+	spr_lookdoor = spr_playerN_lookdoor
+	spr_walkfront = spr_playerN_walkfront
+	spr_victory = spr_playerN_victory
+	spr_Ladder = spr_playerN_ladder
+	spr_laddermove = spr_playerN_laddermove
+	spr_ladderdown = spr_playerN_ladderdown
+	spr_keyget = spr_playerN_keyget
+	spr_crouchslip = spr_playerN_crouchslip
+    spr_crouchslipjump = spr_playerN_crouchslip
+	spr_crouchslipfall = spr_playerN_crouchslip	
+	spr_mach1 = spr_playerN_mach1
+	spr_mach = spr_playerN_mach
+	spr_secondjump1 = spr_playerN_secondjump1
+	spr_secondjump2 = spr_playerN_secondjump2
+	spr_machslidestart = spr_playerN_machslidestart
+	spr_machslide = spr_playerN_machslide
+	spr_machslideend = spr_playerN_machslideend
+	spr_machslideboost = spr_playerN_machslideboost
+	spr_land2 = spr_playerN_land2
+	spr_punch = spr_playerN_punch
+	spr_backkick = spr_playerN_backkick
+	spr_shoulder = spr_playerN_shoulder
+	spr_uppunch = spr_playerN_uppunch
+	spr_stomp = spr_playerN_stomp
+	spr_stompprep = spr_playerN_stompprep
+	spr_crouchslide = spr_playerN_crouchslip
+	spr_crouch = spr_playerN_crouch
+	spr_bump = spr_playerN_bump
+	spr_victory = spr_playerN_victory
+	spr_hurt = spr_playerN_hurt
+	spr_climbwall = spr_playerN_climbwall
+	spr_grab = spr_playerN_grab
+	spr_mach2jump = spr_playerN_mach2jump
+	spr_Timesup = spr_playerN_timesup
+	spr_deathstart = spr_playerN_deathstart
+	spr_deathend = spr_playerN_deathend
+	spr_machpunch1 = spr_playerN_machpunch1
+	spr_machpunch2 = spr_playerN_machpunch2
+	spr_hurtjump = spr_playerN_hurtjump
+	spr_entergate = spr_playerN_entergate
+	spr_gottreasure = spr_playerN_gottreasure
+	spr_bossintro = spr_playerN_bossintro
+	spr_hurtidle = spr_playerN_hurtidle
+	spr_hurtwalk = spr_playerN_hurtwalk
+	spr_suplexmash1 = spr_playerN_suplexmash1
+	spr_suplexmash2 = spr_playerN_suplexmash2
+	spr_suplexmash3 = spr_playerN_suplexmash3
+	spr_suplexmash4 = spr_playerN_suplexmash4
+	spr_tackle = spr_playerN_tackle
+	spr_airdash1 = spr_playerN_airdash1
+	spr_airdash2 = spr_playerN_airdash2
+    spr_keyget = spr_playerN_keyget
+	spr_idle1 = spr_playerN_idleface
+	spr_idle2 = spr_playerN_idlegun
+	spr_idle3 = spr_playerN_idlesmoke
+	spr_idle4 = spr_playerN_idledance
+	spr_idle5 = spr_playerN_idleballoon
+	spr_idle6 = spr_playerN_idlemask
+	spr_piledriver = spr_playerN_piledriver
+	spr_piledriverland = spr_playerN_piledriverland
+	spr_charge = spr_playerN_charge
+	spr_mach3jump = spr_playerN_mach3jump
+	spr_mach4 = spr_playerN_mach3
+	spr_machclimbwall = spr_playerN_climbwall
+	spr_dive = spr_playerN_dive
+	spr_machroll = spr_playerN_machroll
+	spr_hitwall = spr_playerN_mach3hitwall
+	spr_superjumpland = spr_playerN_Sjumpland
+	spr_walljumpstart = spr_playerN_walljumpstart
+	spr_superjumpprep = spr_playerN_Sjumpstart
+	spr_superjump = spr_playerN_Sjump
+	spr_machfreefall = spr_playerN_fall
+	spr_mach3hit = spr_playerN_machpunch1
+	spr_knightpepwalk = spr_playerN_knightmove
+	spr_knightpepjump = spr_playerN_knightjump
+	spr_knightpepfall = spr_playerN_knightfall
+	spr_knightpepidle = spr_playerN_knightidle
+	spr_knightpepjumpstart = spr_playerN_knightjumpstart
+	spr_knightpepthunder = spr_playerN_knightstart
+	spr_knightpepland = spr_playerN_knightland
+	spr_knightpepdownslope = spr_playerN_knightdownslope
+	spr_knightpepstart = spr_playerN_knightsword
+	spr_knightpepcharge = spr_playerN_knightslide
+	spr_bodyslamstart = spr_playerN_bodyslamstart
+	spr_bodyslamfall = spr_playerN_bodyslam
+	spr_bodyslamland = spr_playerN_bodyslamland
+	spr_crazyrun = spr_playerN_crazyrun
+	spr_bombpeprun = spr_playerN_bomb
+	spr_bombpepintro = spr_playerN_bombstart
+	spr_bombpeprunabouttoexplode = spr_playerN_bombabouttoexplode
+	spr_bombpepend = spr_playerN_bombend
+	spr_fireass = spr_playerN_fireass
+	spr_fireassground = spr_playerN_fireassground
+	spr_fireassend = spr_playerN_fireassend
+	spr_tumblestart = spr_playerN_tumblestart
+	spr_tumbleend = spr_playerN_tumbleend
+	spr_tumble = spr_playerN_tumble
+	spr_stunned = spr_playerN_stunned
+	spr_downpizzabox = spr_playerN_downpizzabox
+	spr_uppizzabox = spr_playerN_uppizzabox
+	spr_taunt = spr_playerN_dab
+	spr_slipnslide = spr_playerN_slipnslide
+	spr_mach3boost = spr_playerN_mach3boost
+	spr_facehurtup = spr_playerN_facehurtup
+	spr_facehurt = spr_playerN_facehurt
+	spr_walljumpend = spr_playerN_walljumpend
+	spr_suplexdash = spr_playerN_suplexgrab
+	spr_suplexdashjumpstart = spr_playerN_suplexgrabjumpstart
+	spr_suplexdashjump = spr_playerN_suplexgrabjump
+	spr_shotgunsuplexdash = spr_playerN_minigundash
+    spr_rollgetup = spr_playerN_rollgetup
+	spr_superjumppreplight = spr_playerN_Sjumpprep
+	spr_superjumpright =  spr_playerN_Sjumpmoveright
+	spr_superjumpleft = spr_playerN_Sjumpmoveleft
+	spr_swingding = spr_playerN_swingding
+	spr_swingdingend = spr_playerN_swingdingend
+	spr_haulingjump = spr_playerN_haulingjump
+	spr_haulingidle = spr_playerN_haulingidle
+	spr_haulingwalk = spr_playerN_haulingmove
+	spr_haulingstart = spr_playerN_haulingstart
+	spr_haulingfall = spr_playerN_haulingfall
+	spr_haulingland = spr_playerN_haulingland
+	spr_uppercutfinishingblow = spr_playerN_uppercut
+	spr_finishingblow1 = spr_playerN_finishingblow1
+	spr_finishingblow2 = spr_playerN_finishingblow2
+	spr_finishingblow3 = spr_playerN_finishingblow3
+	spr_finishingblow4 = spr_playerN_finishingblow4
+	spr_finishingblow5 = spr_playerN_finishingblow5
+	spr_winding = spr_playerN_winding
+	spr_3hpwalk = spr_playerN_angrymove
+	spr_3hpidle = spr_playerN_angryidle
+	spr_panic = spr_playerN_panicidle
+	spr_facestomp = spr_playerN_machfreefall1
+	spr_freefall = spr_playerN_machfreefall2
+	spr_shotgunland = spr_playerN_minigunland
+	spr_shotgunshoot = spr_playerN_minigunshoot
+	spr_shotgunidle = spr_playerN_minigunidle
+	spr_shotgunwalk = spr_playerN_minigunmove
+	spr_shotgunfall = spr_playerN_minigunfall
+	spr_shotgunjump = spr_playerN_minigunjump
+	spr_shotgunjump1 = spr_playerN_minigunslamprep
+	spr_shotgunjump2 = spr_playerN_minigunslamland
+	spr_shotgunjump3 = spr_playerN_minigunslam
+	spr_shotgunpullout = spr_playerN_minigunstart
+	spr_shotgunduck = spr_playerN_minigunduck
+	spr_shotguncrawl = spr_playerN_miniguncrawl
+	spr_shotgungoduck = spr_playerN_minigungoduck
+    spr_taunt = spr_playerN_taunt
+    spr_fightball1 = spr_playerN_fightball1
+	spr_fightball2 = spr_playerN_fightball2
+    spr_squished = spr_playerN_squished
+    spr_palette = spr_noisepalette
+    spr_tomatojump = spr_playerN_glide
+    spr_boxxedair = spr_boxxednoise_air
+    spr_boxxedwalk = spr_boxxednoise_walk
+    spr_boxxedidle = spr_boxxednoise_idle
+    spr_boxxedintro = spr_boxxednoise_intro
+    spr_firemouthintro = spr_playerN_firemouthintro
+    spr_firemouthend = spr_playerN_firemouthend
+    spr_firemouth = spr_playerN_firemouth
+    spr_firemouthshoot = spr_playerN_firemouthshoot
+    spr_punchprep = spr_playerN_punchprep
+	spr_jetpack = spr_playerN_jetpack
+	spr_jetpackcrazy = spr_playerN_crazyrun
+	spr_golfwin = spr_playerN_victory
+	spr_grabcancel = spr_player_grabcancel
+	spr_grabcancelair = spr_player_grabcancelair
+	spr_parry1 = spr_player_parry1
+	spr_parry2 = spr_player_parry2
+	spr_parry3 = spr_player_breakdance
+	spr_breakdancestart = spr_player_breakdancestart
+	spr_breakdance = spr_player_breakdance
+	spr_breakdanceattack1 = spr_player_breakdance_attack
+	spr_breakdanceattack2start = spr_player_breakdance_bumstart
+	spr_breakdanceattack2 = spr_player_breakdance_bum
+	spr_breakdanceattack2ground = spr_player_breakdance_bumground
+    paletteselect = 0
+	}	
+	#endregion
+	break;
+	case "BF": //Getting Freaky on a Friday Night
+	#region Boyfriend
+	//Friday Night Funkin' is a free-to-play and open-source 
+	//rhythm game developed by a team of four Newgrounds users.
+	//The game has a play style reminiscent of 
+	//Dance Dance Revolution and PaRappa the Rapper 
+	//with an aesthetic reminiscent of 
+	//Flash games popular in the early-mid 2000s 
+	//on platforms such as Newgrounds.
+	#endregion
+	break;
 }
 scr_playercolors()

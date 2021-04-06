@@ -18,7 +18,7 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
 		global.combotime = 60
 		global.pausecombotime = true
 		obj_tv.alarm[1] = 75
-        global.style = (global.style + 50)		
+        //global.style = (global.style + 50)		
         with (instance_create(x, (y - 25), content)) {
             sprite_index = spr_toppinshroom_intro
 			//Follower DS_list
@@ -49,7 +49,7 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
 		global.combotime = 60
 		global.pausecombotime = true
 		obj_tv.alarm[1] = 75
-        global.style = (global.style + 50)		
+        //global.style = (global.style + 50)		
         if (global.toppintotal < 5)
             obj_tv.message = (("YOU NEED " + string((5 - global.toppintotal))) + " MORE TOPPINS!")
         if (global.toppintotal == 5)
@@ -74,7 +74,7 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
 		global.combotime = 60
 		global.pausecombotime = true
 		obj_tv.alarm[1] = 75
-        global.style = (global.style + 50)		
+        //global.style = (global.style + 50)		
         if (global.toppintotal < 5)
             obj_tv.message = (("YOU NEED " + string((5 - global.toppintotal))) + " MORE TOPPINS!")
         if (global.toppintotal == 5)
@@ -99,7 +99,7 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
 		global.combotime = 60
 		global.pausecombotime = true
 		obj_tv.alarm[1] = 75
-        global.style = (global.style + 50)		
+        //global.style = (global.style + 50)		
         if (global.toppintotal < 5)
             obj_tv.message = (("YOU NEED " + string((5 - global.toppintotal))) + " MORE TOPPINS!")
         if (global.toppintotal == 5)
@@ -127,7 +127,7 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
 		global.combotime = 60
 		global.pausecombotime = true
 		obj_tv.alarm[1] = 75
-        global.style = (global.style + 50)
+        //global.style = (global.style + 50)
 		
         if (global.toppintotal < 5)
             obj_tv.message = (("YOU NEED " + string((5 - global.toppintotal))) + " MORE TOPPINS!")
@@ -149,7 +149,7 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
 		global.combotime = 60
 		global.pausecombotime = true
 		obj_tv.alarm[1] = 75
-        global.style = (global.style + 50)		
+        //global.style = (global.style + 50)		
         obj_tv.message = "UH OH..."
         obj_tv.showtext = 1
         obj_tv.alarm[0] = 150

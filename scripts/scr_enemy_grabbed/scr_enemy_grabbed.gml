@@ -154,6 +154,7 @@ if (grabbedby == 1)
     }
     if place_meeting(x, y, obj_swordhitbox)
     {
+		scr_sleep();
         shakebuffer = 1
         shake = 1
         with (obj_camera)
@@ -294,15 +295,9 @@ if (grabbedby == 1)
             x = obj_player1.x
             y = (obj_player1.y - 40)
         }
-    }
+    }/*
     if (obj_player1.sprite_index == obj_player1.spr_piledriverland && floor(obj_player1.image_index) == (obj_player1.image_number - 1))
     {
-        with (obj_player1)
-        {
-            state = 58
-            vsp = -8
-            sprite_index = spr_machfreefall
-        }
         instance_create(x, y, obj_slapstar)
         instance_create(x, y, obj_baddiegibs)
         flash = 1
@@ -318,7 +313,7 @@ if (grabbedby == 1)
         state = 106
         hsp = ((-image_xscale) * 10)
         vsp = -10
-    }
+    }*/
     if (obj_player1.state == 46 && obj_player1.sprite_index == obj_player1.spr_swingding)
     {
         if (floor(obj_player1.image_index) == 0)
@@ -528,6 +523,7 @@ if (grabbedby == 2)
     }
     if place_meeting(x, y, obj_swordhitbox)
     {
+		scr_sleep();
         shakebuffer = 1
         shake = 1
         with (obj_camera)
@@ -668,15 +664,9 @@ if (grabbedby == 2)
             x = obj_player2.x
             y = (obj_player2.y - 40)
         }
-    }
+    }/*
     if (obj_player2.sprite_index == obj_player2.spr_piledriverland && floor(obj_player2.image_index) == (obj_player2.image_number - 1))
     {
-        with (obj_player2)
-        {
-            state = 58
-            vsp = -8
-            sprite_index = spr_machfreefall
-        }
         instance_create(x, y, obj_slapstar)
         instance_create(x, y, obj_baddiegibs)
         flash = 1
@@ -692,7 +682,7 @@ if (grabbedby == 2)
         state = 106
         hsp = ((-image_xscale) * 10)
         vsp = -10
-    }
+    }*/
     if (obj_player2.state == 46 && obj_player2.sprite_index == obj_player2.spr_swingding)
     {
         if (floor(obj_player2.image_index) == 0)

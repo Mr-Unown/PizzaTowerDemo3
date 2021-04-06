@@ -4,7 +4,7 @@ if (state != 109)
 {
     if (player.x > (x - 400) && player.x < (x + 400) && y <= (player.y + 60) && y >= (player.y - 60))
     {
-        if (state != 94 && state != 106 && (player.state == 91 || player.state = states.jetpack || player.state == 10))
+        if (state != 94 && state != states.frozen && state != 106 && (player.state == 91 || player.state = states.jetpack || player.state == 10))
         {
             state = 94
             if (x != player.x)

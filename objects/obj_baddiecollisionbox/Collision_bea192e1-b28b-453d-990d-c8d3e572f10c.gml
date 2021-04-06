@@ -2,7 +2,7 @@ if (bulletbuffer == 0)
 {
     with (other.id)
     {
-        if (instance_exists(baddieID) && instance_exists(other.baddieID) && baddieID != other.id)
+        if (instance_exists(baddieID) && instance_exists(other.baddieID) && baddieID != other.id) && baddieID.state != 109 && baddieID.state != 200
         {
             if (baddieID.state == 106 && baddieID.thrown == 1)
             {

@@ -1,8 +1,11 @@
+var _cam_x = camera_get_view_x(view_camera[0])
+var _cam_y = camera_get_view_y(view_camera[0])
 depth = -10
 image_speed = 0
 image_index = 0
 choosed = false;
-
+drawx = xstart - _cam_x
+drawy = ystart - _cam_y
 if choosed = false
 {
 	if ((obj_player1.character == "P" && obj_player1.spotlight == 1) || (obj_player2.character == "P" && obj_player1.spotlight == 0))

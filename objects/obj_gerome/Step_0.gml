@@ -8,6 +8,7 @@ if (obj_player1.spotlight == 1)
     playerid = obj_player1
 else
     playerid = obj_player2
+
 //Out of Treasure
 if alreadytouched = true
 	if global.geromefollowing = false && room = originalroom && global.geromeopen = false && global.panic = true
@@ -15,11 +16,21 @@ if alreadytouched = true
 	//Follower DS_list
 		ds_list_add(global.follower, id);
 		global.geromefollowing = true
+		sprite_index = spr_gerome_idle
 	}
+if sprite_index = spr_gerome_mop && global.geromefollowing = true && floor(image_index) = image_number -1
+	sprite_index = spr_gerome_idle
+if sprite_index = spr_gerome_door && floor(image_index) = image_number - 1
+	image_index = 19
+	
 if (ds_list_find_index(global.follower, id) != -1)	{
-if global.geromefollowing = true && sprite_index = spr_gerome_walk {
-depth = -6	
-
+if global.geromefollowing = true {
+	depth = -6	
+    image_alpha = playerid.image_alpha
+    if (playerid.hsp != 0) && sprite_index != spr_gerome_mop
+        sprite_index = spr_gerome_walk
+    else if sprite_index != spr_gerome_mop
+        sprite_index = spr_gerome_idle
 if ds_list_find_index(global.follower, id) = 0 {
     ds_queue_enqueue(followQueue, playerid.x)
     ds_queue_enqueue(followQueue, playerid.y)		
@@ -35,10 +46,10 @@ if (ds_queue_size(followQueue) > (LAG_STEPS * 2))
 	targetx = (ds_queue_dequeue(followQueue) - (distance))
 	targety = (ds_queue_dequeue(followQueue))
 }
-
+if sprite_index != spr_gerome_mop {
 x = targetx
 y = targety
-
+}
 if playerid.hsp = 0 && playerid.state != states.door && playerid.grounded && image_xscale = playerid.xscale {
 	if magnitude < 32 && ((place_meeting(x, bbox_bottom + 1,obj_solid) || (!place_meeting(x, y, obj_platform) && place_meeting(x, bbox_bottom + 1, obj_platform)))) && !place_meeting(x - image_xscale, y, obj_solid) 
 	 magnitude += 0.5
