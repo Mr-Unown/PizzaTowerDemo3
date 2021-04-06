@@ -210,7 +210,7 @@ if (grounded && (sprite_index == spr_facestomp || sprite_index == spr_freefall))
     sprite_index = spr_bodyslamland
     state = 77
 }
-if (key_slap2 && suplexmove == 0 && character != "V" && character != "S")
+if (key_slap2 && suplexmove = 0 && (character = "P" || character = "N" || (character = "D" && spellselect = 2)))
 {
 	if key_up && character = "P" && doublejump = 0
 	{
@@ -246,7 +246,7 @@ if (key_slap2 && suplexmove == 0 && character != "V" && character != "S")
 	}
 }
 //Breakdance
-if (key_shoot2 && shotgunAnim == 0) && (!key_down) && character != "V"
+if (key_shoot2 && shotgunAnim == 0) && (!key_down) && character != "V" && character != "D"
 {
 	breakdancebuffer = 50
     scr_soundeffect(sfx_breakdance)
@@ -422,4 +422,26 @@ if key_taunt2
         playerid = other.id
         baddie = 0
     }
+}
+
+// dougies bolt and bomb
+if character = "D"
+{
+	if key_slap && spellselect != 2 && spellselect != 4
+	{
+			spellcastedonce = false;
+			sprite_index = spr_pizzard_shoot
+			state = states.throw //i hope this works
+			image_index = 0
+	}
+	// superjump too lol
+	if key_slap2 && key_up && spellselect = 4 && floatbuffer = false
+	{
+		floatbuffer = true
+		sprite_index = spr_superjump
+		state = states.jump
+		vsp = -10
+		jumpstop = true
+		scr_soundeffect(sfx_superjumprelease)
+	}
 }

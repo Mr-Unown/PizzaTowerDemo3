@@ -92,7 +92,35 @@ moveAnim = 1
 stopAnim = 1
 crouchslideAnim = 1
 crouchAnim = 1
-sprite_index = spr_player_throw
-if (floor(image_index) == (image_number - 1) || move == (-xscale))
+if character = "P"
+	sprite_index = spr_player_throw
+//Dougie Spells
+if character = "D"
+{
+	if floor(image_index) = 5 && spellcastedonce = false
+	{
+		spellcastedonce = true
+		if spellselect = 1
+		{
+			with instance_create(x, y, obj_shotgunbullet)
+			{
+				spd = (10 * other.xscale)
+				sprite_index = spr_pizzard_bolt
+			}
+		}
+		if spellselect = 3
+		{
+			with instance_create(x, y, obj_cannongoblinbomb)
+			{
+				image_xscale = other.xscale
+				friendly = true
+			}
+		}
+	}
+}
+	
+if (floor(image_index) == (image_number - 1) || move == (-xscale)) {
     state = 0
+	spellcastedonce = false;
+}
 image_speed = 0.35

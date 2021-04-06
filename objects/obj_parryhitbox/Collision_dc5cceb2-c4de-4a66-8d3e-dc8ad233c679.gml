@@ -1,3 +1,5 @@
+if other.friendly = false {
+
 with (other.id)
 {
     var magnitude = abs(hsp)
@@ -11,5 +13,5 @@ with (other.id)
 }
 if (!collided)
     event_user(0)
-
+}
 

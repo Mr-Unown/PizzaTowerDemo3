@@ -76,7 +76,7 @@ with (obj_player1)
 	grounded = true
 	grinding = false
 	pipedirection = "none"
-    tauntparry_max = 10
+    
     parry_id = -4
     parried_baddie = 0
     parry_max = 8
@@ -214,6 +214,12 @@ with (obj_player1)
     angry = 0
     portal = 0
 	tauntcooleffect = noone
+	
+	floatbuffer = false
+floattimer = 50
+spellselect = 1
+spellshowbuffer = 150
+global.magic = 50
 }
 with (obj_player2)
 {
@@ -353,7 +359,7 @@ with (obj_player2)
     parry_id = -4
     parried_baddie = 0
     parry_max = 8
-    tauntparry_max = 10
+    
 	pipedirection = "none"
 	grounded = true
 	grinding = false

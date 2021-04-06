@@ -2,7 +2,7 @@ scr_initinput()
 scr_playercreate()
 pogo = false
 pipedirection = "none"
-tauntparry_max = 10
+
 parry_id = -4
 parried_baddie = 0
 parry_max = 8
