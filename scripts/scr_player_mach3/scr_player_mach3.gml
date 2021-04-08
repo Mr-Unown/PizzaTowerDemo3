@@ -186,7 +186,7 @@ if (key_down && fightball == 0 && (!place_meeting(x, y, obj_dashpad)))
 }
 if (((!grounded) && (scr_solid(x + hsp , y) || place_meeting((x + hsp), y, obj_solid)) && (!place_meeting((x + hsp), y, obj_destructibles)) && (!place_meeting((x + hsp), y, obj_metalblock)) && (!place_meeting((x + sign(hsp)), y, obj_slope))) || (grounded && place_meeting((x + hsp), (y - 32), obj_solid) && (!place_meeting((x + hsp), y, obj_destructibles)) && (!place_meeting((x + hsp), y, obj_metalblock)) && place_meeting(x, (y + 1), obj_slope)))
 {
-    wallspeed = clamp(movespeed,12, 24)
+    wallspeed = clamp(movespeed,12, 20)
     state = 17
 }
 if (scr_solid((x + 1), y) && xscale == 1 && (!scr_slope()) && (!place_meeting((x + sign(hsp)), y, obj_slope)) && (!place_meeting((x + sign(hsp)), y, obj_metalblock)) && (!place_meeting((x + sign(hsp)), y, obj_destructibles)) && (grounded || fightball == 1))

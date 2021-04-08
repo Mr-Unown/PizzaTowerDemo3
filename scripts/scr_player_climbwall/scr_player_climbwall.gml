@@ -15,21 +15,15 @@ else if (character == "S")
 }
 suplexmove = 0
 vsp = (-wallspeed)
-if !place_meeting(x + xscale, y, obj_unclimbablewall) {
-	if (character != "S")
-	{
-		if (wallspeed < 24 && move == xscale)
-			wallspeed += 0.05
-	}
-	else if (wallspeed < 24)
-		wallspeed += 0.08
+if (character != "S")
+{
+    if (wallspeed < 24 && move == xscale)
+        wallspeed += 0.05
 }
-else {
-	if wallspeed > 0
-		wallspeed -= 0.5
-	else
-		wallspeed = 0
-}
+else if (wallspeed < 24)
+    wallspeed += 0.08
+	
+
 crouchslideAnim = 1
 sprite_index = spr_machclimbwall
 if (character != "S")
@@ -70,7 +64,7 @@ if (!scr_solid((x + xscale), y))
 }
 if key_jump
 {
-    movespeed = clamp(floor(wallspeed /1.5),8,10)
+    movespeed = 8
     state = 70
     image_index = 0
     sprite_index = spr_walljumpstart

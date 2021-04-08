@@ -8,7 +8,6 @@ if instance_exists(baddieID)
         vsp = -10
 		hsp = 0	
 		momentum = 0
-		hp -= 1
     }
 }
 

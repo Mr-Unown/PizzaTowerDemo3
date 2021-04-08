@@ -49,8 +49,7 @@ if (parried_baddie > 0)
             vsp = 0
             global.combotime = 60
 			global.pausecombotime = true
-			obj_tv.alarm[1] = 75
-			scr_sleep();	
+			obj_tv.alarm[1] = 75				
             with (obj_camera)
             {
                 shake_mag = 3
@@ -67,7 +66,6 @@ if (parried_baddie > 0)
                 with (instance_create((x + random_range(-100, 100)), (y + random_range(-100, 100)), obj_balloonpop))
                     sprite_index = spr_shotgunimpact
             }
-			scr_sleep();	
             x = (room_width / 2)
             y = -100
         }
@@ -79,7 +77,6 @@ if (parried_baddie > 0)
             scr_soundeffect(15)
             with (instance_create(x, y, obj_shake))
                 sprite_index = other.sprite_index
-			scr_sleep();					
             relax = 1
         }
     }
