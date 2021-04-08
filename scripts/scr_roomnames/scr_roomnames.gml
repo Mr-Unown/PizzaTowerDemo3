@@ -259,7 +259,7 @@ switch room
 		message = "Revenge of John";
 		break;	
 	case ancient_11:
-		message = "Wheres the elevator?";
+		message = "Emergency Exit";
 		break;		
 	case ancient_treasure:
 		message = "Beloved Treasure";

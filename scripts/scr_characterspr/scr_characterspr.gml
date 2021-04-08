@@ -186,7 +186,7 @@ switch character {
 	spr_grabcancelair = spr_player_grabcancelair
 	spr_parry1 = spr_player_parry1
 	spr_parry2 = spr_player_parry2
-	spr_parry3 = spr_player_breakdance
+	spr_parry3 = spr_player_parry3
 	spr_breakdancestart = spr_player_breakdancestart
 	spr_breakdance = spr_player_breakdance
 	spr_breakdanceattack1 = spr_player_breakdance_attack
@@ -383,9 +383,9 @@ switch character {
 	spr_golfwin = spr_playerN_victory
 	spr_grabcancel = spr_player_grabcancel
 	spr_grabcancelair = spr_player_grabcancelair
-	spr_parry1 = spr_player_parry1
-	spr_parry2 = spr_player_parry2
-	spr_parry3 = spr_player_breakdance
+	spr_parry1 = spr_playerN_parry1
+	spr_parry2 = spr_playerN_parry2
+	spr_parry3 = spr_playerN_parry3
 	spr_breakdancestart = spr_player_breakdancestart
 	spr_breakdance = spr_player_breakdance
 	spr_breakdanceattack1 = spr_player_breakdance_attack

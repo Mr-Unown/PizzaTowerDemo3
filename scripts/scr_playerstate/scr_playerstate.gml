@@ -1,4 +1,4 @@
-#region Enum
+#region Enum 
 enum states
 {
 	normal = 0,
