@@ -95,9 +95,9 @@ with (obj_player1)
                 instance_destroy()
         }
     }	
-    if place_meeting(x, (y + 1), obj_destructibleplatform)
+    if place_meeting(x, (y + 1), obj_cheeseblock)
     {
-        with (instance_place(x, (y + 1), obj_destructibleplatform))
+        with (instance_place(x, (y + 1), obj_cheeseblock))
         {
             falling = 1
             if (falling == 1)
@@ -296,9 +296,9 @@ with (obj_player2)
                 instance_destroy()
         }
     }		
-    if place_meeting(x, (y + 1), obj_destructibleplatform)
+    if place_meeting(x, (y + 1), obj_cheeseblock)
     {
-        with (instance_place(x, (y + 1), obj_destructibleplatform))
+        with (instance_place(x, (y + 1), obj_cheeseblock))
         {
             falling = 1
             if (falling == 1)

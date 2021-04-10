@@ -1,3 +1,4 @@
+/*
 global.__objectDepths[0] = 98
 global.__objectDepths[1] = -6
 global.__objectDepths[2] = -9998
@@ -389,7 +390,7 @@ global.__objectNames[148] = "obj_transformbarrel"
 global.__objectNames[149] = "obj_barrel"
 global.__objectNames[150] = "obj_barrelfloat"
 global.__objectNames[151] = "obj_tomatoblock"
-global.__objectNames[152] = "obj_destructibleplatform"
+global.__objectNames[152] = "obj_cheeseblock"
 global.__objectNames[153] = "obj_baddiegibs"
 global.__objectNames[154] = "obj_wooddebris"
 global.__objectNames[155] = "obj_slapstar"

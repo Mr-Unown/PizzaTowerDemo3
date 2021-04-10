@@ -12514,6 +12514,14 @@
             }
         },
         {
+            "Key": "8a87ce5d-f09c-47f0-b3c7-96536429e9ee",
+            "Value": {
+                "id": "0a8ae618-081e-4fc4-a87f-bd9eaa74570d",
+                "resourcePath": "sprites\\spr_cheeseblockdestroyed\\spr_cheeseblockdestroyed.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8aab8f17-a3ed-4d9c-bde3-565aae91d81b",
             "Value": {
                 "id": "87aa24c3-6568-4f57-9db1-98bdf05abeaf",
@@ -20021,7 +20029,7 @@
             "Key": "daaa91e2-9a4f-4321-b066-68443d1bf955",
             "Value": {
                 "id": "e5797b7c-bf21-4120-abb3-5145b1ec0335",
-                "resourcePath": "objects\\obj_destructibleplatform\\obj_destructibleplatform.yy",
+                "resourcePath": "objects\\obj_cheeseblock\\obj_cheeseblock.yy",
                 "resourceType": "GMObject"
             }
         },
