@@ -5,7 +5,9 @@ if scr_solid(x+hsp,y) {
 }
 if grounded && vsp >= 0
 {
-	instance_create(x,y,obj_noiseexplosion)	
+	with instance_create(x,y,obj_noiseexplosion)	{
+		playerid = other.playerid
+	}
 	instance_destroy()
 }
 scr_collide()

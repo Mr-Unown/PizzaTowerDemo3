@@ -4,3 +4,4 @@ if audio_is_playing(sfx_explosion)
 scr_soundeffect(sfx_explosion)
 hurtplayer = 0
 alarm[0] = 5
+playerid = obj_player1

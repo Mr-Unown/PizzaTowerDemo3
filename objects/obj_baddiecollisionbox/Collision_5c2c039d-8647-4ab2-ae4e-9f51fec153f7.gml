@@ -12,7 +12,7 @@ if instance_exists(baddieID)
 				momentum = 0
 				hp = (hp - 1)
 			}
-			else {
+			else {		
 				dying = true
 				scarebuffer = 0
 				blowdirection = 5;

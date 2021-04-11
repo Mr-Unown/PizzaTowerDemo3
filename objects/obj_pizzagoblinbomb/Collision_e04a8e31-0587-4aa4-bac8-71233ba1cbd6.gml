@@ -7,7 +7,10 @@ with other.id
 			if (cutscene == 0 && other.grounded == 1 && state != 27 && (state == 22 || character == "S"))
 			{
 				global.pausecombotime = true	
-				bombpeptimer = 100
+				if other.thrownbyplayer = false
+					bombpeptimer = 100
+				else
+					bombpeptimer = clamp(floor(other.countdown * 2),0,100)
 				state = 27
 				image_index = 0
 				sprite_index = spr_bombpepintro

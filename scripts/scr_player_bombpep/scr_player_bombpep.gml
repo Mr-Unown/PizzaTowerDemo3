@@ -64,13 +64,15 @@ if (bombpeptimer > 0)
 if key_slap2 && bombpeptimer != 0  && (sprite_index == spr_bombpeprunabouttoexplode || sprite_index == spr_bombpeprun) {
 	sprite_index = spr_bombpepthrow
 	image_index = 0
-	bombpeptimer = 100
+
     with (instance_create(x, y, obj_pizzagoblinbomb))
 	{			
+		countdown = clamp(floor(other.bombpeptimer/2),0,30)
 		thrownbyplayer = true;
         hsp = (other.xscale * 10)
         vsp = -8    
 	}
+	bombpeptimer = 100
 }
 if floor(image_index) = image_number - 1 && sprite_index = spr_bombpepthrow {
 	alarm[5] = 2
