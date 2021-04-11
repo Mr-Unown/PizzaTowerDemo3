@@ -14,22 +14,21 @@ alarm[4] = 14
 vsp = 0
 hsp = 0
 
-/* TODO: make this work
-if key_jump2 && doublejump = 0 && floor(image_index) >= 2 && floor(image_index) != image_number - 1
+//TODO: make this work
+if key_jump2 && floor(image_index) >= 2 && floor(image_index) != image_number - 1
 {
-		doublejump = 1
-		facehurt = 0
-		jumpAnim = 0;
-        state = 58
-        vsp = -12
-        sprite_index = spr_machfreefall
-		scr_soundeffect(sfx_jump)
-		scr_soundeffect(sfx_rollgetup)
-		with (instance_create(x, y, obj_highjumpcloud2))
-			image_xscale = other.xscale
+	facehurt = 0
+	jumpAnim = 0
+    state = 58
+    vsp = -10
+    sprite_index = spr_machfreefall
+	scr_soundeffect(sfx_jump)
+	scr_soundeffect(sfx_rollgetup)
+	with (instance_create(x, y, obj_highjumpcloud2))
+		image_xscale = other.xscale
 }
-else */if floor(image_index) == (image_number - 1) 
-		state = 0
+else if floor(image_index) == (image_number - 1) 
+	state = 0
 image_speed = 0.35
 
 

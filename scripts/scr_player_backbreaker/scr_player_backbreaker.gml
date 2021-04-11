@@ -46,7 +46,7 @@ if (sprite_index == spr_taunt)
 			parry_id = noone
         }
     }
-    if (global.combo >= 3 && (!instance_exists(obj_tauntaftereffectspawner)) && character != "V")
+    if (supertauntcharged = true && (!instance_exists(obj_tauntaftereffectspawner)) && character != "V")
     {
 		if global.combotime > 0
 		global.combotime -= 10
@@ -57,14 +57,27 @@ if (sprite_index == spr_taunt)
             playerid = other.id
         with (obj_baddie)
         {
-            if point_in_rectangle(x, y, __view_get(0, 0), __view_get(1, 0), (__view_get(0, 0) + __view_get(2, 0)), (__view_get(1, 0) + __view_get(3, 0)))
-                instance_destroy()
+			var _cam_x = camera_get_view_x(view_camera[0])
+			var _cam_y = camera_get_view_y(view_camera[0])
+			var _cam_w = camera_get_view_width(view_camera[0])
+			var _cam_h = camera_get_view_height(view_camera[0])
+            if point_in_rectangle(x, y, (_cam_x) - 32, (_cam_y) - 32, (_cam_x + _cam_w) + 32, (_cam_y + _cam_h) + 32)
+			{
+				scarebuffer = 0;
+				blowdirection = 5;
+				blowintensity = 1;
+				playerxscale = choose(1,-1)
+				scr_sleep();
+				state = enemystates.enemyshake;	
+			}
         }
         with (obj_camera)
         {
             shake_mag = 10
             shake_mag_acc = (30 / room_speed)
         }
+		supertauntcharged = false;
+		supertauntbuffer = 0;
     }
     if (global.debugmode == 1)
     {

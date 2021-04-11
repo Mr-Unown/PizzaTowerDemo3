@@ -65,7 +65,7 @@ if key_slap2 && key_up && character = "P" && doublejump != 1 && sprite_index != 
 	sprite_index = spr_player_shoryumineken		
 	image_index = 0
 }
-if grounded && doublejump = 1
+if grounded && doublejump = 1 && vsp >= 0  && sprite_index != spr_player_shoryumineken	
 doublejump = 0
 
 //Hitwall

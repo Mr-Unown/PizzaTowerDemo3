@@ -401,6 +401,23 @@ if (key_slap2 && (character = "P" || character = "N" || (character = "D" && spel
 			movespeed = 4
 	}
 }
+//Pepperman Attack
+if (key_slap2 && character == "PM")
+{
+    if (move == 0)
+        movespeed = 0
+    else
+    {
+        movespeed = 10
+        vsp = -5
+    }
+    suplexmove = 1
+    scr_soundeffect(126)
+    scr_soundeffect(33)
+    sprite_index = spr_playerP_shoulder
+    state = states.kingknightroll
+    image_index = 0
+}
 //Breakdance
 if (key_shoot2 && shotgunAnim == 0) && character != "V" && character != "D"
 {

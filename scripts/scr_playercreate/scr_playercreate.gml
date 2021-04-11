@@ -1,5 +1,10 @@
 breakdancebuffer = 50
 collectscore = 0
+//Super Taunts
+supertauntbuffer = 0;
+supertauntcharged = false;
+supertaunteffect = noone;
+
 global.freezeframe = false;
 global.freezeframetimer = 200;
 global.sleepScale = 1;

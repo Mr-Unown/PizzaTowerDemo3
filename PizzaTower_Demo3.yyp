@@ -13162,6 +13162,14 @@
             }
         },
         {
+            "Key": "917db972-2b35-4ae9-b6dd-f42338901833",
+            "Value": {
+                "id": "f2211821-f15b-4099-9ab8-fed921bd9457",
+                "resourcePath": "objects\\obj_supertaunteffect\\obj_supertaunteffect.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "919dae82-ee4d-451e-99d1-3110cc1bb4c5",
             "Value": {
                 "id": "11852508-1c65-466f-b7db-7ed8514931cd",
