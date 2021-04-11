@@ -15,6 +15,7 @@ with other.id
 			}
 			if (hurted == 0 && other.grounded == 0)
 			{
+				instance_create(x, y, obj_bombexplosion)
 				instance_destroy(other.id)
 			}
 		}

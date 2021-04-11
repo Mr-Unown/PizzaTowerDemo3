@@ -110,6 +110,7 @@ switch character {
 	spr_crazyrun = spr_player_crazyrun
 	spr_bombpeprun = spr_bombpep_run
 	spr_bombpepintro = spr_bombpep_intro
+	spr_bombpepthrow = spr_player_throw
 	spr_bombpeprunabouttoexplode = spr_bombpep_runabouttoexplode
 	spr_bombpepend = spr_bombpep_end
 	spr_fireass = spr_player_fireass
@@ -305,6 +306,7 @@ switch character {
 	spr_crazyrun = spr_playerN_crazyrun
 	spr_bombpeprun = spr_playerN_bomb
 	spr_bombpepintro = spr_playerN_bombstart
+	spr_bombpepthrow = spr_playerN_noisebombthrow	
 	spr_bombpeprunabouttoexplode = spr_playerN_bombabouttoexplode
 	spr_bombpepend = spr_playerN_bombend
 	spr_fireass = spr_playerN_fireass
@@ -506,6 +508,7 @@ switch character {
 	spr_bodyslamland = spr_snick_bodyslamland
 	spr_bombpeprun = spr_snick_bomb
 	spr_bombpepintro = spr_snick_bombstart
+	spr_bombpepthrow = spr_snick_jump	
 	spr_bombpeprunabouttoexplode = spr_snick_bombabouttoexplode
 	spr_bombpepend = spr_snick_bombend
 	spr_fireass = spr_snick_fireass1
@@ -675,6 +678,7 @@ switch character {
     spr_crazyrun = spr_playerV_crazyrun
     spr_bombpeprun = spr_bombpep_run
     spr_bombpepintro = spr_bombpep_intro
+	spr_bombpepthrow = spr_playerV_dynamitethrow
     spr_bombpeprunabouttoexplode = spr_bombpep_runabouttoexplode
     spr_bombpepend = spr_bombpep_end
     spr_fireass = spr_player_fireass
@@ -870,6 +874,7 @@ switch character {
     spr_crazyrun = spr_playerN_crazyrun
     spr_bombpeprun = spr_playerN_bomb
     spr_bombpepintro = spr_playerN_bombstart
+	spr_bombpepthrow = spr_playerN_noisebombthrow	
     spr_bombpeprunabouttoexplode = spr_playerN_bombabouttoexplode
     spr_bombpepend = spr_playerN_bombend
     spr_fireass = spr_playerN_fireass
@@ -1068,6 +1073,7 @@ switch character {
 	spr_crazyrun = spr_playerN_crazyrun
 	spr_bombpeprun = spr_playerN_bomb
 	spr_bombpepintro = spr_playerN_bombstart
+	spr_bombpepthrow = spr_playerN_noisebombthrow	
 	spr_bombpeprunabouttoexplode = spr_playerN_bombabouttoexplode
 	spr_bombpepend = spr_playerN_bombend
 	spr_fireass = spr_playerN_fireass

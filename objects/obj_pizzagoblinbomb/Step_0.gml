@@ -16,6 +16,9 @@ if (countdown == 0) {
 	instance_create(x, y, obj_bombexplosion)
     instance_destroy()
 }
-
+if place_meeting((x + hsp), (y + vsp), obj_solid) && thrownbyplayer = true {
+    instance_create(x, y, obj_bombexplosion)
+	instance_destroy()
+}
 
 

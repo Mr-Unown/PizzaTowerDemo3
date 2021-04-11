@@ -6,3 +6,4 @@ image_speed = 0.35
 drop = 1
 grounded = 0
 friendly = false
+thrownbyplayer = false;

@@ -34,7 +34,7 @@ else
     hsp = 0
     movespeed = 0
 }
-if (bombpeptimer < 20 && bombpeptimer != 0)
+if (bombpeptimer < 20 && bombpeptimer != 0) && sprite_index != spr_bombpepthrow
     sprite_index = spr_bombpeprunabouttoexplode
 if (sprite_index == spr_bombpepend)
 {
@@ -60,6 +60,26 @@ if (bombpeptimer == 0 && sprite_index == spr_bombpeprunabouttoexplode)
 }
 if (bombpeptimer > 0)
     bombpeptimer -= 0.5
+//Bomb Throw
+if key_slap2 && bombpeptimer != 0  && (sprite_index == spr_bombpeprunabouttoexplode || sprite_index == spr_bombpeprun) {
+	sprite_index = spr_bombpepthrow
+	image_index = 0
+	bombpeptimer = 100
+    with (instance_create(x, y, obj_pizzagoblinbomb))
+	{			
+		thrownbyplayer = true;
+        hsp = (other.xscale * 10)
+        vsp = -8    
+	}
+}
+if floor(image_index) = image_number - 1 && sprite_index = spr_bombpepthrow {
+	alarm[5] = 2
+	alarm[7] = 60
+	hurted = 1
+	state = 0
+	sprite_index = spr_idle
+	image_index = 0
+}
 if (scr_solid((x + 1), y) && xscale == 1 && hsp != 0 && (!place_meeting((x + sign(hsp)), y, obj_slope)))
 {
     instance_create((x + 10), (y + 10), obj_bumpeffect)
