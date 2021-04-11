@@ -145,7 +145,10 @@ switch room
 		break;	
 	case ruin_11:
 		message = "Ancient Gods and PB";
-		break;			
+		break;		
+	case ruin_12:
+		message = "Ancient John Retreat";
+		break;				
 	case ruin_treasure:
 		message = "Get Beaned!";
 		break;	

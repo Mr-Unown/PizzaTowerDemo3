@@ -8,7 +8,7 @@
             global.minutes = 2
             global.seconds = 15
             break
-        case ruin_11:
+        case ruin_12:
             global.minutes = 2
             global.seconds = 15
             break
@@ -53,4 +53,8 @@
             global.minutes = 1
             global.seconds = 35
             break									*/
+		default:
+			global.minutes = 3
+            global.seconds = 10
+			break;
 	}

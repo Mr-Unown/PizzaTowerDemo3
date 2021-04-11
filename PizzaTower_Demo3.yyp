@@ -3722,6 +3722,14 @@
             }
         },
         {
+            "Key": "2a917bf4-0f0d-4523-8546-ccb04f49c5cf",
+            "Value": {
+                "id": "bc24608b-5b5d-4fa7-9023-f02733fed287",
+                "resourcePath": "rooms\\ruin_12\\ruin_12.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "2ae4f58e-29a7-4639-b074-84f2a60b56c6",
             "Value": {
                 "id": "204ddc69-ad18-408b-8fb8-0da3a264bd1a",
