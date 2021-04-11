@@ -9,7 +9,7 @@ with (playerid)
     parried_baddie = 8
     flash = 1
     movespeed = 8
-	scr_sleep();	
+	//scr_sleep();	
 }
 alarm[0] = 3
 collided = 1

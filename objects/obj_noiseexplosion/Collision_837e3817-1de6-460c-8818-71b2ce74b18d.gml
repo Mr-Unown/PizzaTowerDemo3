@@ -7,4 +7,3 @@ if sign(other.image_xscale) = 1 && x > other.x
 else if sign(other.image_xscale) = -1 && x < other.x
 	instance_destroy(other.id)
 }
-

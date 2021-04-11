@@ -3298,6 +3298,14 @@
             }
         },
         {
+            "Key": "25ea4298-61f7-4af7-bfce-7b39c8dc734e",
+            "Value": {
+                "id": "b84b9ce5-2e83-4558-afe6-2349a5e4fed6",
+                "resourcePath": "objects\\obj_noiseexplosion\\obj_noiseexplosion.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2602384a-225c-45dd-a93e-c39b1d5a3b51",
             "Value": {
                 "id": "62f8beab-ad86-46c3-aab2-a09d057e8846",
@@ -3447,6 +3455,14 @@
                 "id": "0b955205-0e06-4690-9d7e-efc3c0cdcdbc",
                 "resourcePath": "sounds\\mu_factory1\\mu_factory1.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "27de1922-1aee-47f4-9771-257ca7ea93aa",
+            "Value": {
+                "id": "bbd9434f-aacf-42fd-8040-a3e43191e9e0",
+                "resourcePath": "objects\\obj_noisethrowingbomb\\obj_noisethrowingbomb.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -6479,14 +6495,6 @@
                 "id": "84308061-8b9c-4e72-ba06-8572653b589b",
                 "resourcePath": "sprites\\spr_pizzakinpineapple_underwater\\spr_pizzakinpineapple_underwater.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "475db6b4-5856-4fc1-8988-bacc4b266761",
-            "Value": {
-                "id": "077318d4-a127-4cdb-83c0-cf9976b1f4c7",
-                "resourcePath": "objects\\obj_movingplatform\\obj_movingplatform.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -10967,6 +10975,14 @@
                 "id": "669bc2dd-3dcb-42a3-8d42-5df63d69c940",
                 "resourcePath": "sprites\\spr_pizzakinpineapple\\spr_pizzakinpineapple.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "7971a071-bb6f-4ef4-8b12-e40f03d9e37d",
+            "Value": {
+                "id": "fd16afbe-b747-455a-afc7-f3ad7cdce251",
+                "resourcePath": "objects\\obj_unclimbablewall\\obj_unclimbablewall.yy",
+                "resourceType": "GMObject"
             }
         },
         {
