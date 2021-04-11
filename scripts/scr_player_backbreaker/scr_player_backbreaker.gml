@@ -67,12 +67,12 @@ if (sprite_index == spr_taunt)
 				blowdirection = 5;
 				blowintensity = 1;
 				playerxscale = choose(1,-1)
-				scr_sleep();
 				state = enemystates.enemyshake;	
 			}
         }
         with (obj_camera)
         {
+			scr_sleep();
             shake_mag = 10
             shake_mag_acc = (30 / room_speed)
         }
