@@ -133,7 +133,7 @@ else if (global.levelselected == 1)
             {
                 global.wave = 0
                 global.maxwave = (((global.minutes * 60) + global.seconds) * 60)
-                if global.panicbg
+                if global.panicbg = true
                     scr_panicbg_init()
                 global.snickchallenge = 1
                 global.collect = 10000

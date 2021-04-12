@@ -68,7 +68,7 @@ if ((floor(obj_player1.image_index) == (obj_player1.image_number - 1) && obj_pla
         {
             global.wave = 0
             global.maxwave = (((global.minutes * 60) + global.seconds) * 60)
-            if global.panicbg
+            if global.panicbg = true
                 scr_panicbg_init()
             global.snickchallenge = 1
             global.nocombo = 1

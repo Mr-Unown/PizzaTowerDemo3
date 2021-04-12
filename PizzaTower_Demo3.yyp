@@ -9154,6 +9154,14 @@
             }
         },
         {
+            "Key": "63787b2c-36ac-45cc-9dcf-bf1804e0070d",
+            "Value": {
+                "id": "2fc57652-fb41-4673-b170-72627ca0ac14",
+                "resourcePath": "objects\\obj_unclimbablewall\\obj_unclimbablewall.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "63b7bea2-34cf-4560-876e-d5dc65855cef",
             "Value": {
                 "id": "2dccffe1-02ac-4bf5-a4f3-c5d7fa267344",
@@ -10975,14 +10983,6 @@
                 "id": "669bc2dd-3dcb-42a3-8d42-5df63d69c940",
                 "resourcePath": "sprites\\spr_pizzakinpineapple\\spr_pizzakinpineapple.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "7971a071-bb6f-4ef4-8b12-e40f03d9e37d",
-            "Value": {
-                "id": "fd16afbe-b747-455a-afc7-f3ad7cdce251",
-                "resourcePath": "objects\\obj_unclimbablewall\\obj_unclimbablewall.yy",
-                "resourceType": "GMObject"
             }
         },
         {

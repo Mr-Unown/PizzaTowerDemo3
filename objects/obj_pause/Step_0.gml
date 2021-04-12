@@ -314,7 +314,7 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
             global.minutes = 9
             global.wave = 0
             global.maxwave = (((global.minutes * 60) + global.seconds) * 60)
-            if global.panicbg
+            if global.panicbg = true
                 scr_panicbg_init()
             obj_player1.targetDoor = "A"
             global.snickchallenge = 1

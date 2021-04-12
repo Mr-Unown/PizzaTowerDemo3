@@ -1,6 +1,6 @@
 if (global.screenmelt == 1)
 {
-    if (global.panic == 1 && global.panicbg)
+    if (global.panic == 1 && global.panicbg = true)
     {
         application_surface_draw_enable(0)
         var winh = window_get_height()

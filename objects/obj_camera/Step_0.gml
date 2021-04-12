@@ -7,9 +7,14 @@ var _drawy = 100 + _cam_y
 //Maxangle
 
 maxangle = clamp(floor(arctan((room_height/room_width)/_cam_y)), 0, 3)
-
-
-
+/*
+//Panic Bg Update
+if global.panicbg = true && global.panic = true {
+	var panic = (global.wave/global.maxwave)
+	var time = (current_time / 1000)
+	if (sin(time * panic) * panic) = 0
+		global.wave = (global.maxwave - (((global.minutes * 60) + global.seconds) * 60))
+}*/
 //Collided with Player
 if point_in_rectangle(obj_player.x,obj_player.y, _drawx - 80, _drawy - 85,_drawx + 80,_drawy + 85)
 collided = true

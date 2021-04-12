@@ -23,7 +23,7 @@ chargecamera = 0
 alpha = 1
 zoomh = 540
 zoomw = 960
-global.panicbg = 1
+global.panicbg = true;
 ini_open("saveData.ini")
 global.screenmelt = ini_read_real("Option", "panicbg", 1)
 global.mastervolume = ini_read_real("Option", "mastervolume", 1)
