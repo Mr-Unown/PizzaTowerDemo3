@@ -27,7 +27,7 @@ if supertauntbuffer >= 500 && supertauntcharged = false
 	supertauntbuffer = 500;
 	supertauntcharged = true;
 }
-if supertauntcharged = true 
+if supertauntcharged = true  && room != rank_room
 {
 	if !instance_exists(supertaunteffect)
 		with instance_create(x,y,obj_supertaunteffect) 

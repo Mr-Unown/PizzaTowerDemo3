@@ -25,7 +25,10 @@ else if place_meeting((x + sign(hsp)), y, obj_solid) && (place_meeting((x), y + 
 	xscale *= -1	
 
 }
-
+//Slam Down
+if (key_down2 && (!key_jump2))
+    vsp = 10
+	
 //Jump
 if key_jump
     input_buffer_jump = 0

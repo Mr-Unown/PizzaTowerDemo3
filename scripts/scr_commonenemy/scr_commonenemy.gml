@@ -34,7 +34,7 @@ if (markedfordeath == 1)
     markedfordeathbuffer--
 if (thrown == 1 && place_meeting((x + hsp), (y + vsp), obj_hallway))
     markedfordeath = 1
-	
+
 //Pitfall Eenemy
 if y > (room_height * 1.1)
 	markedfordeath = 1
@@ -70,5 +70,9 @@ if deathbuffer > 0 && dying = true {
 }
 //Force Death
 if dying = true && thrown != 1 && ((state != 105 && state != 109 && state != 106 && state != 200)) && deathbuffer <= 0 {
+	event_user(0)
+}
+//Force Death Two
+if dying = true && instance_exists(obj_fadeout) {
 	event_user(0)
 }
