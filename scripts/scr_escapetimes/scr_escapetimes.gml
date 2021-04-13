@@ -16,6 +16,10 @@
             global.minutes = 3
             global.seconds = 30
             break
+        case ancient_10:
+            global.minutes = 3
+            global.seconds = 15
+            break			
 		/*			
         case chateau_6:
             global.minutes = 2

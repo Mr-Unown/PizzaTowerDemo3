@@ -4,7 +4,7 @@ else if place_meeting(x, (y + 1), obj_railh)
     hsp = ((xscale * movespeed) - 5)
 else if place_meeting(x, (y + 1), obj_railh2)
     hsp = ((xscale * movespeed) + 5)
-if (movespeed >= 0 && sprite_index != spr_crouchslipjump)
+if (movespeed >= 0 && grounded)
     movespeed -= 0.2
 mask_index = spr_crouchmask
 if key_jump
@@ -14,12 +14,11 @@ if ((!key_jump2) && jumpstop == 0 && vsp < 0.5 && stompAnim == 0)
     vsp /= 10
     jumpstop = 1
 }
-if (input_buffer_jump < 8 && sprite_index != spr_crouchslipjump && grounded && (!scr_solid((x + 27), (y - 32))) && (!scr_solid((x - 27), (y - 32))) && (!scr_solid(x, (y - 32))) && (!scr_solid(x, (y - 16))))
+if (input_buffer_jump < 8 && grounded && (!scr_solid((x + 27), (y - 32))) && (!scr_solid((x - 27), (y - 32))) && (!scr_solid(x, (y - 32))) && (!scr_solid(x, (y - 16))))
 {
 	sprite_index = spr_crouchslipjump
 	image_index = 0
 	vsp = -11
-	movespeed = (clamp(movespeed + 0.25,0,20))
 	with (instance_create(x, y, obj_superdashcloud))
     {
         image_xscale = other.xscale

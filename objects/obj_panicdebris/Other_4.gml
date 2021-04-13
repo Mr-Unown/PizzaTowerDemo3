@@ -22,6 +22,9 @@ var back_id8 = layer_background_get_id(lay_id10)
 var lay_id11 = layer_get_id("Backgrounds_scroll")
 var back_id9 = layer_background_get_id(lay_id11)
 var roomname = room_get_name(room)
+//Ancient John Room
+if (global.panic == 1 && layer_background_get_sprite(back_id) == bg_darkjohn)
+    layer_background_sprite(back_id, bg_darkjohnescape)	
 /*
 if (global.panic == 1 && (layer_background_get_sprite(back_id2) == 1208 || layer_background_get_sprite(back_id2) == 1211))
     layer_background_sprite(back_id2, 1467)
