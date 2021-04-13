@@ -29,7 +29,7 @@ switch room
 		targetdarkness = 0.5;
 		break;	
 	case ancient_10:
-		targetdarkness = clamp(clamp(camera_get_view_y(view_camera[0]),768,3264)/2000,0.5,1);
+		targetdarkness = clamp(clamp(camera_get_view_y(view_camera[0]),768,3264)/2000,0.5,0.85);
 		break;	
 	case ancient_11:
 		targetdarkness = 0.5;

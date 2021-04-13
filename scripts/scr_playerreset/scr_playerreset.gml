@@ -8,8 +8,13 @@ if instance_exists(obj_endlevelfade)
 
 //Goop Gone
 with obj_goop 
-instance_destroy(id,false)	
-
+instance_destroy(id,false)
+//Lighting
+with obj_lighting
+{
+	darkness = 0
+	targetdarkness = 0
+}
 global.style = 0
 global.stylethreshold = 0
 global.freezeframe = false;

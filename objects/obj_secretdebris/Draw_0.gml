@@ -1,3 +1,4 @@
+//To Do: Rewrite Secret Debris to cause less lag
 if point_in_rectangle(x, y, camera_get_view_x(view_camera[0]), camera_get_view_y(view_camera[0]), (camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0])), (camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0])))
 {
     if (!surface_exists(s))
@@ -6,7 +7,7 @@ if point_in_rectangle(x, y, camera_get_view_x(view_camera[0]), camera_get_view_y
     draw_set_blend_mode(0)
     draw_sprite_ext(sprite_index, image_index, sprite_xoffset, sprite_yoffset, image_xscale, image_yscale, image_angle, image_blend, image_alpha)
   	gpu_set_blendmode_ext(9,6)
-    if (mode == 1)
+    if (mode = 1)
     {
         draw_tile(tile_dataset, tile_dataid, 0, 0, 0)
         draw_tile(tile_dataset, tile_dataid, 0, 32, 0)

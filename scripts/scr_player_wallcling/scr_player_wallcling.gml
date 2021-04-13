@@ -2,6 +2,8 @@ hsp = 0
 if !place_meeting(x - xscale, y, obj_unclimbablewall) {
 	vsp = 0
 }
+else
+	vsp = approach(vsp,1,0.25)
 wallclingbuffer = 15
 
 if sprite_index = spr_playerN_wallcling && floor(image_index) = image_number - 1
