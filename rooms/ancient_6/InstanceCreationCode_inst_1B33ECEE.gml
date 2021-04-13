@@ -1,2 +1,1 @@
- targetRoom = ancient_secret4 
- depth = 201
+targetRoom = ancient_secret4 

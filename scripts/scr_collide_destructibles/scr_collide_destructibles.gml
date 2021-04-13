@@ -36,6 +36,14 @@ with (obj_player1)
                 instance_destroy()
         }
     }
+	if (state = states.knightpep || state = states.knightpepattack) && grounded && movespeed > 0
+	{
+		if place_meeting(x + xscale, y, obj_destructibles)
+        {
+            with (instance_place(x + xscale, y, obj_destructibles))
+                instance_destroy()
+        }
+	}
     if (state == 68)
     {
         if place_meeting((x + hsp), y, obj_destructibles)
@@ -231,9 +239,9 @@ with (obj_player2)
     }
     if ((state == 24 || state == 43 || state == 9) && vsp > 0)
     {
-        if place_meeting(x, (y + 1), obj_destructibles)
+        if place_meeting(x, (y + vsp), obj_destructibles)
         {
-            with (instance_place(x, (y + 1), obj_destructibles))
+            with (instance_place(x, (y + vsp), obj_destructibles))
                 instance_destroy()
         }
     }
@@ -253,6 +261,14 @@ with (obj_player2)
                 instance_destroy()
         }
     }
+	if (state = states.knightpep || state = states.knightpepattack) && grounded && movespeed > 0
+	{
+		if place_meeting(x + xscale, y, obj_destructibles)
+        {
+            with (instance_place(x + xscale, y, obj_destructibles))
+                instance_destroy()
+        }
+	}	
 	if sprite_index = spr_playerN_spinjump {
         if place_meeting((x + hsp), y + vsp, obj_destructibles)
         {
