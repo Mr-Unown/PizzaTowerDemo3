@@ -3074,14 +3074,6 @@
             }
         },
         {
-            "Key": "236158ac-314c-4a8e-8230-b30c4c33fb9a",
-            "Value": {
-                "id": "92291b86-bf12-4f62-9f89-a0f664fbd26d",
-                "resourcePath": "rooms\\ancient_3\\ancient_3.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "237d6a29-a634-4619-80d9-01776247940e",
             "Value": {
                 "id": "2dd0324c-e263-44c7-a095-86bbbfc210b4",
@@ -16943,6 +16935,14 @@
                 "id": "e4998a46-2839-4ece-a2f5-b30e8a14b8c2",
                 "resourcePath": "sounds\\mu_hub\\mu_hub.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "bacf837b-5340-4bc2-93e8-c25cdb518e66",
+            "Value": {
+                "id": "5ad750f4-3961-44f6-9e9b-6965e92b3a6a",
+                "resourcePath": "rooms\\ancient_3\\ancient_3.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
