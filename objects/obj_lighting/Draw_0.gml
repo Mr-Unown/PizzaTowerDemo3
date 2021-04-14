@@ -31,7 +31,7 @@ else if surface_exists(surf)
 			var _x = x - sprite_xoffset + random_range(-1, 1)
 			var _y = y - sprite_yoffset + random_range(-1, 1)
 			draw_circle((((x - 26) + random_range(-1, 1))), ((y - 63) + random_range(-1, 1)), (70 + random_range(-1, 1)), 0)		
-			draw_sprite_pos(spr_graybox, 0, _x + 43, _y + 65, _x + 65, _y + 67, _x +  0, _y + 255, _x + 98, _y +  255, 1);
+			draw_sprite_pos(spr_graybox, 0, _x + 43, _y + 65, _x + 65, _y + 67, _x +  98, _y + 255, _x + 0, _y +  255, 1);
 		}
 	}
     draw_set_blend_mode(0)

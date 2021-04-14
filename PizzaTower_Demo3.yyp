@@ -9490,6 +9490,14 @@
             }
         },
         {
+            "Key": "67e5f766-ed7c-4a59-a375-9c953212329a",
+            "Value": {
+                "id": "f5191766-27ec-447d-b577-98cf2a0e524e",
+                "resourcePath": "sprites\\spr_secretonewaybigblock\\spr_secretonewaybigblock.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "67eb287b-4f32-4a7a-aed0-5aa5412e5ad1",
             "Value": {
                 "id": "40af86cb-4e3e-4b33-8c64-c5679c07591c",
@@ -11298,6 +11306,14 @@
             }
         },
         {
+            "Key": "7c88664a-ed5f-44e1-8f7f-ffc8fa8b8655",
+            "Value": {
+                "id": "5ce8fda6-55a6-4a53-bd57-01fdda9c306c",
+                "resourcePath": "objects\\obj_secretonewaybigblock\\obj_secretonewaybigblock.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "7ccc3b4a-e42d-4048-8080-824020912fc1",
             "Value": {
                 "id": "fa7ffa9f-0349-4cd6-aa46-236ceb08963b",
@@ -11927,6 +11943,14 @@
                 "id": "1bc5987d-02fd-4388-a080-384d7f49b079",
                 "resourcePath": "objects\\obj_ufoolive\\obj_ufoolive.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8278bc9f-f63f-48e3-87bd-2ad5b21a5aa0",
+            "Value": {
+                "id": "71d684f6-1285-406d-b81a-c7a0c6cfba49",
+                "resourcePath": "rooms\\ancient_10_1\\ancient_10_1.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -12686,6 +12710,14 @@
             "Value": {
                 "id": "c917b1e4-8bb6-4824-ad86-f3f1b2ad3845",
                 "resourcePath": "sprites\\spr_gatefade\\spr_gatefade.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8c31c56c-94c1-4cc2-b61d-17446d1e40de",
+            "Value": {
+                "id": "4e436282-a583-45bc-91d4-5b0d8ae7ddde",
+                "resourcePath": "sprites\\bg_darkjohnstatue\\bg_darkjohnstatue.yy",
                 "resourceType": "GMSprite"
             }
         },
