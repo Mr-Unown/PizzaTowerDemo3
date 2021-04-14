@@ -1,2 +1,4 @@
+if global.debugmode= true {
 visible = true
-depth = 90
+depth = 101
+}

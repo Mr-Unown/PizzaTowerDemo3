@@ -6074,6 +6074,14 @@
             }
         },
         {
+            "Key": "4269bd39-e8b1-43a3-8101-31cb0870b711",
+            "Value": {
+                "id": "2645afc0-36eb-4108-a8e1-c90e5e3bcc9c",
+                "resourcePath": "sprites\\spr_respawnblock\\spr_respawnblock.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "42803141-3d66-49d8-a085-a8ccf2ccc23a",
             "Value": {
                 "id": "92eb1524-44e9-48b1-b8b4-38fc371c78bb",
@@ -16474,6 +16482,14 @@
             }
         },
         {
+            "Key": "b562c717-9d52-4d35-bd18-4dd620f05cd8",
+            "Value": {
+                "id": "6cf4c882-0ae1-4ff2-883a-c6eedceefd3b",
+                "resourcePath": "objects\\obj_respawnabledestroyable\\obj_respawnabledestroyable.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b58d6daa-128f-4424-bdeb-adeb05d97a84",
             "Value": {
                 "id": "11895534-2dea-45ee-9dfd-aaa1276ccb62",
@@ -22511,6 +22527,14 @@
                 "id": "bc68714c-be71-4a04-9685-f642374846e8",
                 "resourcePath": "rooms\\dungeon_7\\dungeon_7.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "f544b142-da04-4538-a10b-6f9f5564e6b3",
+            "Value": {
+                "id": "25428739-4318-42dd-809b-89feea1dd97f",
+                "resourcePath": "sprites\\spr_bigdebris_respawn\\spr_bigdebris_respawn.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

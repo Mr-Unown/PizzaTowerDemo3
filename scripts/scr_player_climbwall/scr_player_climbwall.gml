@@ -26,7 +26,7 @@ if !place_meeting(x + xscale, y, obj_unclimbablewall) {
 }
 else {
 	if wallspeed > 0
-		wallspeed -= 0.5
+		wallspeed -= 0.25
 	else
 		wallspeed = 0
 }
@@ -61,16 +61,20 @@ if (!scr_solid((x + xscale), y))
     {
         state = 91
         sprite_index = spr_mach4
-		movespeed = wallspeed
+		movespeed = clamp(wallspeed,12,24)
     }
-    else {
+    else if wallspeed >= 4 {
         state = 70
-		movespeed = wallspeed
+		movespeed = clamp(wallspeed,8,12)
+	}
+	else {
+	    state = 58
+		sprite_index = spr_fall
 	}
 }
 if key_jump
 {
-    movespeed = clamp(floor(wallspeed /1.5),8,10)
+    movespeed = clamp(floor(wallspeed /1.5),8,11)
     state = 70
     image_index = 0
     sprite_index = spr_walljumpstart

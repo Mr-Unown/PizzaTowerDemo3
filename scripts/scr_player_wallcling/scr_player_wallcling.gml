@@ -3,8 +3,14 @@ if !place_meeting(x - xscale, y, obj_unclimbablewall) {
 	vsp = 0
 }
 else
-	vsp = approach(vsp,1,0.25)
+	vsp = approach(vsp,0.5,0.05)
 wallclingbuffer = 15
+
+if (!scr_solid((x - xscale), y))
+{
+    state = 58
+    sprite_index = spr_fall
+}
 
 if sprite_index = spr_playerN_wallcling && floor(image_index) = image_number - 1
 {

@@ -36,11 +36,11 @@ with (obj_player1)
                 instance_destroy()
         }
     }
-	if (state = states.knightpep || state = states.knightpepattack) && grounded && movespeed > 0
+	if (state = states.knightpep || state = states.knightpepattack) && grounded
 	{
-		if place_meeting(x + xscale, y, obj_destructibles)
+		if place_meeting(x + sign(hsp), y, obj_destructibles)
         {
-            with (instance_place(x + xscale, y, obj_destructibles))
+            with (instance_place(x + sign(hsp), y, obj_destructibles))
                 instance_destroy()
         }
 	}
@@ -261,14 +261,14 @@ with (obj_player2)
                 instance_destroy()
         }
     }
-	if (state = states.knightpep || state = states.knightpepattack) && grounded && movespeed > 0
+	if (state = states.knightpep || state = states.knightpepattack) && grounded
 	{
-		if place_meeting(x + xscale, y, obj_destructibles)
+		if place_meeting(x + sign(hsp), y, obj_destructibles)
         {
-            with (instance_place(x + xscale, y, obj_destructibles))
+            with (instance_place(x + sign(hsp), y, obj_destructibles))
                 instance_destroy()
         }
-	}	
+	}
 	if sprite_index = spr_playerN_spinjump {
         if place_meeting((x + hsp), y + vsp, obj_destructibles)
         {
@@ -418,9 +418,9 @@ with (obj_player2)
 }
 with (obj_pizzaball)
 {
-    if (place_meeting((x + hsp), y, obj_destructibles) && thrown == 1 && movespeed >= 2 )
+    if (place_meeting((x + hsp), y, obj_destructibles) && thrown == 1)
         instance_destroy(instance_place((x + hsp), y, obj_destructibles))
-    if (place_meeting(x, (y + vsp), obj_destructibles) && thrown == 1 && movespeed >= 2 )
+    if (place_meeting(x, (y + vsp), obj_destructibles) && thrown == 1)
         instance_destroy(instance_place(x, (y + vsp), obj_destructibles))
 
 }
