@@ -20,9 +20,7 @@ if (place_meeting(x, y, obj_player1) && player == 0)
 			global.fakepeppino = 0			
 			scr_stopescapemusic()
 			
-			collectscore += 1000
-			with (instance_create(x, y, obj_smallnumber))
-				number = "1000"
+
             ds_list_add(global.saveroom, other.id)
             global.treasure = 1
             hsp = 0
@@ -66,9 +64,7 @@ if (place_meeting(x, y, obj_player2) && player == 0)
 			global.snickchallenge = 0
 			global.fakepeppino = 0				
 			scr_stopescapemusic()
-			collectscore += 1000
-			with (instance_create(x, y, obj_smallnumber))
-				number = "1000"			
+	
             ds_list_add(global.saveroom, other.id)
             global.treasure = 1
             hsp = 0

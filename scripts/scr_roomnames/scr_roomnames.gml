@@ -261,6 +261,9 @@ switch room
 	case ancient_10:
 		message = "Revenge of John";
 		break;	
+	case ancient_10_1:
+		message = "Pit of John";
+		break;			
 	case ancient_11:
 		message = "Emergency Exit";
 		break;		
