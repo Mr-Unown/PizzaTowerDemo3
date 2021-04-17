@@ -1,10 +1,13 @@
 var lay_id = layer_get_id("Tiles_1")
 var map_id = layer_tilemap_get_id(lay_id)
 var set_id = tilemap_get_tileset(map_id)
-var data = tilemap_get_at_pixel(map_id, x, y)
-var data2 = tilemap_get_at_pixel(map_id, (x + (sign(image_xscale) * 33)), y)
-var data3 = tilemap_get_at_pixel(map_id, x, (y + 33))
-var data4 = tilemap_get_at_pixel(map_id, (x + (sign(image_xscale) * 33)), (y + 33))
+var offset = 0;
+if image_xscale < 1
+offset = -1
+var data = tilemap_get_at_pixel(map_id, x + offset, y)
+var data2 = tilemap_get_at_pixel(map_id, (x + offset + (sign(image_xscale) * 32)), y)
+var data3 = tilemap_get_at_pixel(map_id, x+ offset , (y + 33))
+var data4 = tilemap_get_at_pixel(map_id, (x + offset+ (sign(image_xscale) * 32)), (y + 33))
 datas = data
 if tile_get_empty(data2)
     data2s = data
@@ -29,10 +32,10 @@ if (ds_list_find_index(global.saveroom, id) != -1)
     data2 = tile_set_empty(data2)
     data3 = tile_set_empty(data3)
     data4 = tile_set_empty(data4)
-    tilemap_set_at_pixel(map_id, data, x, y)
-    tilemap_set_at_pixel(map_id, data2, (x + 33), y)
-    tilemap_set_at_pixel(map_id, data3, x, (y + 33))
-    tilemap_set_at_pixel(map_id, data4, (x + 33), (y + 33))
+    tilemap_set_at_pixel(map_id, data, x + offset, y)
+    tilemap_set_at_pixel(map_id, data2, (x + offset + (image_xscale * 32)), y)
+    tilemap_set_at_pixel(map_id, data3, x + offset, (y + 32))
+    tilemap_set_at_pixel(map_id, data4, (x + offset + (image_xscale * 32)), (y + 33))
     instance_destroy()
 
 }

@@ -75,11 +75,14 @@ if (!scr_solid((x + xscale), y))
 }
 if key_jump
 {
-    movespeed = clamp(floor(wallspeed /1.5),8,11)
+	if character != "PZ"
+		movespeed = clamp(floor(wallspeed /1.5),8,11)
+	else
+		movespeed = clamp(round(wallspeed /1.25),8,20)
     state = 70
     image_index = 0
     sprite_index = spr_walljumpstart
-    if (character == "P")
+    if (character == "P" || character = "PZ")
         vsp = -11
     else
         vsp = -13
