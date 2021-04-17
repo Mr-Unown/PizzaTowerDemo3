@@ -3,7 +3,7 @@ if (grabbedby == 1)
     image_xscale = (-obj_player1.xscale)
     stunned = 200
     obj_player1.baddiegrabbedID = id
-    if (obj_player1.state == 28 || obj_player1.state == 46 || obj_player1.state == 41 || obj_player1.state == 42 || obj_player1.state == 10)
+    if (obj_player1.state == 28 || obj_player1.state = states.frozen || obj_player1.state == 46 || obj_player1.state == 41 || obj_player1.state == 42 || obj_player1.state == 10)
     {
         x = obj_player1.x
         if (obj_player1.sprite_index != obj_player1.spr_haulingstart)
@@ -45,7 +45,7 @@ if (grabbedby == 1)
                 shake_mag_acc = (3 / room_speed)
             }
         }
-        if (!(state == 46 || state == 3 || state == 28 || state == 41 || state == 42 || state == 10 || state == 47 || state == 43 || state == 48 || state == 49 || state == 50))
+        if (!(state == 46 || state == states.frozen || state == 3 || state == 28 || state == 41 || state == 42 || state == 10 || state == 47 || state == 43 || state == 48 || state == 49 || state == 50))
         {
             other.x = x
             other.y = y
@@ -371,7 +371,7 @@ if (grabbedby == 2)
     image_xscale = (-obj_player2.xscale)
     stunned = 200
     obj_player2.baddiegrabbedID = id
-    if (obj_player2.state == 28 || obj_player2.state == 46 || obj_player2.state == 41 || obj_player2.state == 42 || obj_player2.state == 10)
+    if (obj_player2.state == 28 || obj_player2.state = states.frozen  || obj_player2.state == 46 || obj_player2.state == 41 || obj_player2.state == 42 || obj_player2.state == 10)
     {
         x = obj_player2.x
         if (obj_player2.sprite_index != obj_player2.spr_haulingstart)
@@ -413,7 +413,7 @@ if (grabbedby == 2)
                 shake_mag_acc = (3 / room_speed)
             }
         }
-        if (!(state == 46 || state == 3 || state == 28 || state == 41 || state == 42 || state == 10 || state == 47 || state == 43 || state == 48 || state == 49 || state == 50))
+        if (!(state == 46 || state == states.frozen || state == 3 || state == 28 || state == 41 || state == 42 || state == 10 || state == 47 || state == 43 || state == 48 || state == 49 || state == 50))
         {
             other.x = x
             other.y = y

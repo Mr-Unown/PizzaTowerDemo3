@@ -133,24 +133,21 @@ if (sprite_index == spr_player_airbash && grounded)
     sprite_index = spr_player_groundbash
 if (sprite_index == spr_player_groundbash && (!grounded))
     sprite_index = spr_player_airbash
-if (key_jump && grounded)
+if (key_jump && grounded) &&  !(character == "N" && pogo = true)
 {
-	if (character == "N" && pogo = true) 
-	{
-		sprite_index = spr_playerN_pogostart
-		state = states.pogo
-		image_index = 0
-		pogomovespeed = 9
-		vsp = -11		
-		instance_create(x, y, obj_jumpdust)		
-	}
-	else
-	{
 		sprite_index = spr_mach2jump
 		state = 70
 		grav = 0.5
 		instance_create(x, y, obj_jumpdust)
 		suplexmove = 0
 		vsp = -11
-	}
+}
+if (character == "N" && pogo = true) && key_attack2
+{
+		sprite_index = spr_playerN_pogostart
+		state = states.pogo
+		image_index = 0
+		pogomovespeed = 9
+		vsp = -11		
+		instance_create(x, y, obj_jumpdust)		
 }

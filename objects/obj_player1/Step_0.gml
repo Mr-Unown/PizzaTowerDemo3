@@ -143,7 +143,7 @@ instance_create(roomstartx,roomstarty - 50 ,obj_handgrabber)
 //i think this is where resetting variables starts
 if ((!instance_exists(baddiegrabbedID)) && (state == 46 || state == 43 || state == 10))
     state = 0
-if (!(state == 46 || state == states.frozen || state == 43 || state == 10))
+if (!(state == 46 || state == states.frozen || state == states.golf || state == 43 || state == 10))
     baddiegrabbedID = noone
 if grinding && !cutscene && !scr_transformationcheck(id)
     state = 45

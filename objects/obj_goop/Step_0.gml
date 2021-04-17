@@ -33,6 +33,4 @@ if frozen = false
 	//Grounded
 	if grounded
 	hsp = (abs(hsp) - 0.25) * _direction
-	if instance_number(obj_goop) > 150
-		instance_destroy()
 }

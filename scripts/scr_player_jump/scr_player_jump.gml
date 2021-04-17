@@ -210,9 +210,9 @@ if (grounded && (sprite_index == spr_facestomp || sprite_index == spr_freefall))
     sprite_index = spr_bodyslamland
     state = 77
 }
-if (key_slap2 && suplexmove = 0 && (character = "P" || character = "N" || (character = "D" && spellselect = 2)))
+if (key_slap2 && suplexmove = 0 && (character = "P" || character = "PZ" || character = "N" || (character = "D" && spellselect = 2)))
 {
-	if key_up && character = "P" && doublejump = 0
+	if key_up && (character = "P" || character = "PZ" )&& doublejump = 0
 	{
 		suplexmove = 1		
 		suplexdashsnd = audio_play_sound(sfx_suplexdash, 1, false)
@@ -237,9 +237,13 @@ if (key_slap2 && suplexmove = 0 && (character = "P" || character = "N" || (chara
 		audio_sound_gain(suplexdashsnd, (1 * global.soundeffectsvolume), 0)
 		state = 22
 		image_index = 0
-		sprite_index = spr_suplexdashjumpstart
-		vsp = -4
-		if (character == "P")
+		if character != "PZ" {
+			vsp = -4
+			sprite_index = spr_suplexdashjumpstart
+		}
+		else
+			sprite_index = spr_suplexdash
+		if (character == "P"|| character = "D" || character = "PZ")
 	        movespeed = 6
 	    else
 			movespeed = 4

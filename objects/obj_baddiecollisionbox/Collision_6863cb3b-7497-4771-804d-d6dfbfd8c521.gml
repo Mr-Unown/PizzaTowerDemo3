@@ -1,4 +1,4 @@
-if (other.playermode == 1)
+if (other.playermode == 1) && global.freezeframe = false
 {
     if instance_exists(baddieID)
     {

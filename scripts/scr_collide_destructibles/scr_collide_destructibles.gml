@@ -36,7 +36,7 @@ with (obj_player1)
                 instance_destroy()
         }
     }
-	if (state = states.knightpep || state = states.knightpepattack) && grounded
+	if (state = states.knightpep || state = states.knightpepattack)
 	{
 		if place_meeting(x + sign(hsp), y, obj_destructibles)
         {
@@ -261,7 +261,7 @@ with (obj_player2)
                 instance_destroy()
         }
     }
-	if (state = states.knightpep || state = states.knightpepattack) && grounded
+	if (state = states.knightpep || state = states.knightpepattack)
 	{
 		if place_meeting(x + sign(hsp), y, obj_destructibles)
         {

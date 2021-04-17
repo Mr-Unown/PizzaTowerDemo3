@@ -1,4 +1,4 @@
-if (bulletbuffer == 0)
+if (bulletbuffer == 0) && global.freezeframe = false
 {
     if instance_exists(baddieID)
     {

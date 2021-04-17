@@ -2,27 +2,27 @@ if (ds_list_find_index(global.saveroom, id) == -1)
 {
     var lay_id = layer_get_id("Tiles_1")
     var map_id = layer_tilemap_get_id(lay_id)
-    var set_id = tilemap_get_tileset(map_id)
-    var data = tilemap_get_at_pixel(map_id, x, y)
-    var data2 = tilemap_get_at_pixel(map_id, (x + 33), y)
-    var data3 = tilemap_get_at_pixel(map_id, x, (y + 33))
-    var data4 = tilemap_get_at_pixel(map_id, (x + 33), (y + 33))
-    with (instance_create((x + 32), (y + 32), obj_secretdebris))
+	var data = tilemap_get_at_pixel(map_id, x, y)
+	var data2 = tilemap_get_at_pixel(map_id, (x + (sign(image_xscale) * 33)), y)
+	var data3 = tilemap_get_at_pixel(map_id, x, (y + 33))
+	var data4 = tilemap_get_at_pixel(map_id, (x + (sign(image_xscale) * 33)), (y + 33))
+
+    with (instance_create((x + (image_xscale * 32)), (y + 32), obj_secretdebris))
     {
         tile_dataid = other.datas
         tile_dataset = other.set_ids
     }
-    with (instance_create((x + 32), (y + 32), obj_secretdebris))
+    with (instance_create((x + (image_xscale * 32)), (y + 32), obj_secretdebris))
     {
         tile_dataid = other.data2s
         tile_dataset = other.set_ids
     }
-    with (instance_create((x + 32), (y + 32), obj_secretdebris))
+    with (instance_create((x + (image_xscale * 32)), (y + 32), obj_secretdebris))
     {
         tile_dataid = other.data3s
         tile_dataset = other.set_ids
     }
-    with (instance_create((x + 32), (y + 32), obj_secretdebris))
+    with (instance_create((x + (image_xscale * 32)), (y + 32), obj_secretdebris))
     {
         tile_dataid = other.data4s
         tile_dataset = other.set_ids

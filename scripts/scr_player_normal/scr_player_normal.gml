@@ -14,7 +14,7 @@ else if place_meeting(x, (y + 1), obj_railh)
     hsp = ((move * movespeed) - 5)
 else if place_meeting(x, (y + 1), obj_railh2)
     hsp = ((move * movespeed) + 5)
-if (character == "P" || character == "N" || character == "PM" || character == "V" || character = "D")
+if (character == "P" || character == "N" || character == "PZ" || character == "PM" || character == "V" || character = "D")
 {
     if (machslideAnim == 0 && landAnim == 0 && shotgunAnim == 0)
     {
@@ -346,11 +346,11 @@ if (key_shoot2 && character == "V" && (!instance_exists(obj_vigidynamite)))
         playerid = other.id
     }
 }
-if (key_slap2 && (character = "P" || character = "N" || (character = "D" && spellselect = 2)))
+if (key_slap2 && (character = "P" || character == "PZ" || character = "N" || (character = "D" && spellselect = 2)))
 {
-	if key_up && (character = "P" || character = "N")
+	if key_up && (character = "P" || character == "PZ"  || character = "N")
 	{
-		if character = "P" 
+		if character = "P" || character == "PZ" 
 		{
 			suplexmove = 1		
 			suplexdashsnd = audio_play_sound(sfx_suplexdash, 1, false)
@@ -395,7 +395,7 @@ if (key_slap2 && (character = "P" || character = "N" || (character = "D" && spel
 	        sprite_index = spr_shotgunsuplexdash
 	    else
 			sprite_index = spr_suplexdash
-		if (character == "P" || character = "D")
+		if (character == "P" || character == "PZ" || character = "D")
 	        movespeed = 6
 	    else
 			movespeed = 4
@@ -471,7 +471,7 @@ if (key_slap2 && character == "S")
     state = 12
     image_index = 0
 }
-if (key_attack && (!place_meeting((x + xscale), y, obj_solid)) && (character == "P" || (character == "N" && pogo != true) || (character = "D" && spellselect = 2) || character == "V"))
+if (key_attack && (!place_meeting((x + xscale), y, obj_solid)) && (character == "P" || (character == "N" && pogo != true) || character == "PZ"  || (character = "D" && spellselect = 2) || character == "V"))
 {
     movespeed = 6
     sprite_index = spr_mach1

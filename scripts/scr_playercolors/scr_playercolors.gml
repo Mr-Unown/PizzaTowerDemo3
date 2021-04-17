@@ -8,6 +8,10 @@ if character = "V"
 characters = "Vigilante"
 if character = "PM"
 characters = "Pepperman"
+if character = "D"
+characters = "Dougie"
+if character = "PZ"
+characters = "Pizzelle"
 
 
 //Colorindex

@@ -15,7 +15,8 @@ else if (character == "S")
 }
 suplexmove = 0
 vsp = (-wallspeed)
-if !place_meeting(x + xscale, y, obj_unclimbablewall) {
+if !place_meeting(x + xscale, y, obj_unclimbablewall) && character != "PZ"
+{
 	if (character != "S")
 	{
 		if (wallspeed < 24 && move == xscale)

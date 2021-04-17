@@ -92,6 +92,17 @@ if (sprite_index == spr_taunt)
                 taunttimer = 20
             }
         }
+        if (character == "PZ")
+        {
+            if key_down2
+            {
+                if (paletteselect < 12)
+                    paletteselect += 1
+                else
+                    paletteselect = 1
+                taunttimer = 20
+            }
+        }		
         if (character == "N")
         {
             if key_down2
@@ -167,10 +178,16 @@ if (sprite_index == spr_taunt)
             }
 			else if (character == "V")
             {
-                character = "D"
+                character = "PZ"
                 paletteselect = 0
                 tauntstoredsprite = spr_idle
             }
+			else if (character == "PZ")
+            {
+                character = "D"
+                paletteselect = 1
+                tauntstoredsprite = spr_idle
+            }			
             else if (character == "D")
             {
                 if (global.peppermode == 0)

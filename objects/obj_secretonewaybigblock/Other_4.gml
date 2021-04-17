@@ -2,9 +2,9 @@ var lay_id = layer_get_id("Tiles_1")
 var map_id = layer_tilemap_get_id(lay_id)
 var set_id = tilemap_get_tileset(map_id)
 var data = tilemap_get_at_pixel(map_id, x, y)
-var data2 = tilemap_get_at_pixel(map_id, (x + 33), y)
+var data2 = tilemap_get_at_pixel(map_id, (x + (sign(image_xscale) * 33)), y)
 var data3 = tilemap_get_at_pixel(map_id, x, (y + 33))
-var data4 = tilemap_get_at_pixel(map_id, (x + 33), (y + 33))
+var data4 = tilemap_get_at_pixel(map_id, (x + (sign(image_xscale) * 33)), (y + 33))
 datas = data
 if tile_get_empty(data2)
     data2s = data
@@ -34,6 +34,7 @@ if (ds_list_find_index(global.saveroom, id) != -1)
     tilemap_set_at_pixel(map_id, data3, x, (y + 33))
     tilemap_set_at_pixel(map_id, data4, (x + 33), (y + 33))
     instance_destroy()
+
 }
 
 

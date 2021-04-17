@@ -1,0 +1,5 @@
+Pizzelle Differences
+-His grab goes in a straight line
+-You can do a mach 2 airdash to gain speed
+-He can't wallrun forever, he has to keep jumping
+-His superjump breaks metal blocks above him
