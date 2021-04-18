@@ -97,7 +97,7 @@ if (superspringjump != 1)
 		with instance_create(x,y,obj_jumpdust)
 			image_xscale = other.xscale
     }	
-    else if (key_attack2 && global.coop == 0) && !(character == "N" && pogo = true) && jetpacking = false
+    else if (key_attack2) && !(character == "N" && pogo = true) && jetpacking = false
     {
 		jetpacking = false
         if (move != 0)

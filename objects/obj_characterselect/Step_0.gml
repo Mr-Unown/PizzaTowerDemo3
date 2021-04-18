@@ -18,13 +18,11 @@ if obj_player1.key_jump && selection == 0 && characterselected = false {
     {
         character = "P";
         scr_characterspr()
-		paletteselect = 1
     }
     with (obj_player2)
     {
         character = "N";
         scr_characterspr()
-		paletteselect = 0
     }
 	peppinoselected = true;
 	if global.coop = true
@@ -41,13 +39,11 @@ if obj_player1.key_jump && selection == 1 && characterselected = false {
     {		
         character = "N";
         scr_characterspr()
-		paletteselect = 0
     }
     with (obj_player2)
     {
         character = "P";
         scr_characterspr()
-		paletteselect = 1
     }		
 	noiseselected = true;
 	if global.coop = true

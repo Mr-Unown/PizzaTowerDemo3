@@ -48,11 +48,6 @@ if (sprite_index == spr_taunt)
     }
     if (supertauntcharged = true && (!instance_exists(obj_tauntaftereffectspawner)) && character != "V")
     {
-		if global.combotime > 0
-		global.combotime -= 10
-		else
-		global.combotime = 0
-		global.pausecombotime = false
         with (instance_create(x, y, obj_tauntaftereffectspawner))
             playerid = other.id
         with (obj_baddie)

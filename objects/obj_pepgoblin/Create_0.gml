@@ -33,7 +33,7 @@ important = 0
 heavy = 1
 depth = 0
 grabbedby = 0
-paletteselect = 1
+paletteselect = 0
 spr_palette = 228
 dropcoin = 0
 scr_enemycreate()

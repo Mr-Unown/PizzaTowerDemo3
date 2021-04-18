@@ -64,7 +64,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
         }
     }
 
-    if (string_letters(roomname) == "entrance" || string_letters(roomname) == "ancient") && global.coop == 0
+    if (string_letters(roomname) == "entrance" || string_letters(roomname) == "entrancesecret" || string_letters(roomname) == "ancient" || string_letters(roomname) == "ancientsecret") && global.coop == 0
     {
         if (obj_player1.character == "P")
         {
@@ -107,7 +107,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
             }
         }
     }
-    if (string_letters(roomname) == "entrance" && global.coop == 1)
+    if (string_letters(roomname) == "entrance" || string_letters(roomname) == "entrancesecret" || string_letters(roomname) == "ancient" || string_letters(roomname) == "ancientsecret") && global.coop = 1
     {
         if (!audio_is_playing(mu_entrance2p))
         {

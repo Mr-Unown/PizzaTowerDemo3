@@ -218,7 +218,7 @@ switch object_index
             image_index = obj_player1.image_index
         }
         break
-    case 3:
+    case obj_player1:
         if (fightball == 0)
             xscale = (-obj_player2.xscale)
         obj_player2.baddiegrabbedID = id

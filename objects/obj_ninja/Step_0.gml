@@ -20,8 +20,10 @@ if (attack == 0 && state != 109 && state != 200 && state != 106)
     state = 94
     roaming = 0
 }
-if (state != 94)
+if (state != 94) {
     roaming = 1
+	movespeed = 4
+}
 if (x != obj_player.x)
 {
     if (obj_player.x > (x - 200) && obj_player.x < (x + 200) && obj_player.y == y)

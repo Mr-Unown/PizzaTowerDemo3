@@ -25,6 +25,12 @@ if !place_meeting(x + xscale, y, obj_unclimbablewall) && character != "PZ"
 	else if (wallspeed < 24)
 		wallspeed += 0.08
 }
+else if character = "PZ" && !place_meeting(x + xscale, y, obj_unclimbablewall) {
+	if wallspeed > 0
+		wallspeed -= 0.125
+	else
+		wallspeed = 0
+}
 else {
 	if wallspeed > 0
 		wallspeed -= 0.25
@@ -58,7 +64,7 @@ if (!scr_solid((x + xscale), y))
 {
     instance_create(x, y, obj_jumpdust)
     vsp = 0
-	if (wallspeed >= 12 && global.coop == 0)
+	if (wallspeed >= 12)
     {
         state = 91
         sprite_index = spr_mach4
@@ -78,7 +84,7 @@ if key_jump
 	if character != "PZ"
 		movespeed = clamp(floor(wallspeed /1.5),8,11)
 	else
-		movespeed = clamp(round(wallspeed /1.25),8,20)
+		movespeed = clamp(round(wallspeed /1.25),8,15)
     state = 70
     image_index = 0
     sprite_index = spr_walljumpstart

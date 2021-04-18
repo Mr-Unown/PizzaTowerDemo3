@@ -87,7 +87,7 @@ if grounded
 {
     if (movespeed < 12)
         movespeed += 0.1
-    if (movespeed >= 12 && global.coop == 0) && character != "D"
+    if (movespeed >= 12) && character != "D"
     {
         movespeed = 12
         state = 91
@@ -186,6 +186,7 @@ if (move == (-xscale) && grounded && character != "S")
     machhitAnimtimer = 500
     machhitAnim = 0
 }
+/* Coop fightball
 if ((object_index == obj_player1 && place_meeting(x, y, obj_player2) && obj_player1.hurted == 0 && obj_player2.hurted == 0) || (object_index == obj_player2 && place_meeting(x, y, obj_player1) && obj_player2.hurted == 0 && obj_player1.hurted == 0))
 {
     if (object_index == obj_player1)
@@ -226,7 +227,7 @@ if ((object_index == obj_player1 && place_meeting(x, y, obj_player2) && obj_play
     obj_player2.image_index = 0
     obj_player1.fightball = 1
     obj_player2.fightball = 1
-}
+}*/
 if (move == xscale && (!key_attack) && grounded && (character == "P" || character == "N" || character == "V"))
     state = 0
 if (sprite_index == spr_rollgetup)
