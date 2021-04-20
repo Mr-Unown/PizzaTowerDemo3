@@ -16,8 +16,10 @@ if (showtext == false)
 	else
 		draw_y = -64
 }
-
+if instance_exists(obj_player)
+{
 if point_in_rectangle(obj_player.x,obj_player.y, _draw_x - offsetx, _draw_y - offsety, _draw_x + offsetx, _draw_y + offsety)
 	alpha = 0.5
 else
 	alpha = 1
+}
