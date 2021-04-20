@@ -34,6 +34,7 @@ if (!grounded)
     if (move != 0)
         xscale = move
 }
+
 freefallsmash++
 if (freefallsmash > 10 && (!instance_exists(superslameffectid)))
 {
@@ -82,4 +83,18 @@ if (grounded && (!input_buffer_jump < 8) && (!place_meeting(x, (y + 1), obj_dest
 	}	
     freefallstart = 0
 }
+if (key_attack2) && character = "PZ" && !grounded && freefallsmash > 10
+{		
+        if (move != 0)
+            xscale = move
+        movespeed = 10
+        machhitAnim = 0
+        state = 70
+        flash = 1
+		vsp = -2
+        flash = 1
+        sprite_index = spr_mach2jump
+        with (instance_create(x, y, obj_jumpdust))
+            image_xscale = other.xscale
+}	
 image_speed = 0.35

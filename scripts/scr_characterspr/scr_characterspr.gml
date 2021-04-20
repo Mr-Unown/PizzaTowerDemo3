@@ -1242,14 +1242,14 @@ switch character {
 	spr_machroll = spr_playerPZ_machroll
 	spr_hitwall = spr_playerPZ_mach3hitwall
 	spr_superjumpland = spr_playerPZ_superjumpland
-	spr_walljumpstart = spr_playerPZ_mach2jump
+	spr_walljumpstart = spr_player_mach2jump
 	spr_superjumpprep = spr_playerPZ_superjumpprep
 	spr_superjump = spr_playerPZ_superjump
 	spr_superjumppreplight = spr_playerPZ_superjumppreplight
 	spr_superjumpright =  spr_playerPZ_superjumpright
 	spr_superjumpleft = spr_playerPZ_superjumpleft
 	spr_machfreefall = spr_playerPZ_machfreefall
-	spr_mach3hit = spr_player_mach4 //Missing
+	spr_mach3hit = spr_playerPZ_mach4 //Missing
 	spr_knightpepwalk = spr_knightpep_walk
 	spr_knightpepjump = spr_knightpep_jump
 	spr_knightpepfall = spr_knightpep_fall

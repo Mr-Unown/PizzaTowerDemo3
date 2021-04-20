@@ -225,7 +225,7 @@ if (key_slap2 && suplexmove = 0 && (character = "P" || character = "PZ" || chara
 		if movespeed < 3
 		movespeed = 3
 		momemtum = 1
-		vsp = -10
+		vsp = -8
 		state = 58
 		sprite_index = spr_player_shoryumineken		
 		image_index = 0

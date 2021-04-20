@@ -96,7 +96,21 @@ if (superspringjump != 1)
 		image_index = 0
 		with instance_create(x,y,obj_jumpdust)
 			image_xscale = other.xscale
-    }	
+    }
+	else if (key_attack2) && character = "PZ"
+	{			
+		jetpacking = false
+        if (move != 0)
+            xscale = move
+        movespeed = 10
+        machhitAnim = 0
+        state = 70
+        flash = 1
+		vsp = -11
+        sprite_index = spr_mach2jump
+        with (instance_create(x, y, obj_jumpdust))
+            image_xscale = other.xscale
+	}	
     else if (key_attack2) && !(character == "N" && pogo = true) && jetpacking = false
     {
 		jetpacking = false

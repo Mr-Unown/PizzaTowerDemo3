@@ -87,7 +87,10 @@ if key_jump
 		movespeed = clamp(round(wallspeed /1.25),8,15)
     state = 70
     image_index = 0
-    sprite_index = spr_walljumpstart
+	if character != "PZ"
+		sprite_index = spr_walljumpstart
+	else
+		sprite_index = spr_mach2jump
     if (character == "P" || character = "PZ")
         vsp = -11
     else
