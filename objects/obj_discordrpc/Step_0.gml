@@ -21,7 +21,7 @@ if is_discord_ready = true
 	{
 		oldstring_characterstring = string_characterstring
 		oldstring_smallimagekey = string_smallimagekey
-		rousr_dissonance_set_large_image(string(string_smallimagekey), string(string_characterstring)) //Current Player 1 Character
+		rousr_dissonance_set_small_image(string(string_smallimagekey), string(string_characterstring)) //Current Player 1 Character
 	}
 	#region Player 1 Chara Icon
 	if obj_pause.pause != 1
