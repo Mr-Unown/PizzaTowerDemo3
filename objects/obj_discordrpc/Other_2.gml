@@ -6,8 +6,9 @@ rousr_dissonance_create(appid);
 
 //Default Information
 rousr_dissonance_set_details("") //Current Status
-rousr_dissonance_set_state("") //Current Room Name if any
+rousr_dissonance_set_state("") //Current Level
 rousr_dissonance_set_large_image("default", "Pizza Tower Demo 3") //Demo 3 Pic
+rousr_dissonance_set_small_image("", "") //Character Pic
 rousr_dissonance_set_timestamps(0) //Time
 
 
