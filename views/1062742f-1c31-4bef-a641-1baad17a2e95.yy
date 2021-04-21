@@ -1,0 +1,30 @@
+{
+    "id": "1062742f-1c31-4bef-a641-1baad17a2e95",
+    "modelName": "GMFolder",
+    "mvc": "1.1",
+    "name": "1062742f-1c31-4bef-a641-1baad17a2e95",
+    "children": [
+        "fc2bed0b-803d-4698-8604-9564a6cc8f11",
+        "30b9186f-a1ba-4aeb-98a9-97c3473cdee6",
+        "76c2793c-f135-4e3c-befd-0a01b4379281",
+        "460e2caa-677e-414d-94da-9faf32b7c782",
+        "1e5e113e-9f20-4706-88c4-6f0c5680dad1",
+        "fab0526a-51b1-4a9b-9994-81962181c921",
+        "982d8f9f-5103-4802-b27b-62b49e2361e0",
+        "b96d0ff0-e6f8-4e0f-a7a7-560ae71d3eaa",
+        "4bbc3676-2e31-4505-aec7-01280a9cb479",
+        "1a3a5d72-39fa-42e8-a0fa-3c968be021b5",
+        "30aec081-1f96-4aa2-964e-d75e072fb94c",
+        "e152e694-1360-4da6-97da-9941c2b7f379",
+        "74e03e94-3c51-4313-8017-bae5fb02417e",
+        "7ad86f12-da7c-40d3-8bfb-3872f1adcbc3",
+        "b86b563a-a5a6-4d51-bd8d-a03ea9a2242e",
+        "3a93f7d2-a035-4524-a184-9aea2099ab34",
+        "ed75b477-aa61-4db8-ac77-5ec22d9a3034",
+        "046c2052-ad45-4118-a2b9-09b5057396b0"
+    ],
+    "filterType": "GMRoom",
+    "folderName": "Chateau",
+    "isDefaultView": false,
+    "localisedFolderName": ""
+}

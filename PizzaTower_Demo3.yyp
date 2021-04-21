@@ -562,6 +562,14 @@
             }
         },
         {
+            "Key": "046c2052-ad45-4118-a2b9-09b5057396b0",
+            "Value": {
+                "id": "ddce438f-b1d0-4923-b0ac-04a1aa7e5493",
+                "resourcePath": "rooms\\chateau_secret6\\chateau_secret6.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "0472cfdb-845f-4466-85dc-29eb748c6a39",
             "Value": {
                 "id": "78867a7f-6b43-4fab-83da-5bedafbacc35",
@@ -1706,6 +1714,14 @@
             }
         },
         {
+            "Key": "1062742f-1c31-4bef-a641-1baad17a2e95",
+            "Value": {
+                "id": "148876fa-0b82-4e38-884c-5d571f608484",
+                "resourcePath": "views\\1062742f-1c31-4bef-a641-1baad17a2e95.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "109ed8f8-f2af-4e3d-a62d-aad4fb36647d",
             "Value": {
                 "id": "ea0450b4-cefd-4fc9-88d7-66f7e96d2b7d",
@@ -2538,6 +2554,14 @@
             }
         },
         {
+            "Key": "1a3a5d72-39fa-42e8-a0fa-3c968be021b5",
+            "Value": {
+                "id": "3428922a-efb1-497f-af33-dadbaf77bd19",
+                "resourcePath": "rooms\\chateau_10\\chateau_10.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "1a897850-6cef-4ed3-a08b-bbc9833613ae",
             "Value": {
                 "id": "d62011bf-6ae9-4b25-9453-f22e96405677",
@@ -2823,6 +2847,14 @@
                 "id": "c5a095d0-4cd5-4e43-bb48-66e9e6322799",
                 "resourcePath": "scripts\\scr_player_barrelnormal\\scr_player_barrelnormal.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "1e5e113e-9f20-4706-88c4-6f0c5680dad1",
+            "Value": {
+                "id": "9997ccae-b7fb-483a-b915-6e1104a9ddf6",
+                "resourcePath": "rooms\\chateau_5\\chateau_5.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -4418,11 +4450,27 @@
             }
         },
         {
+            "Key": "30aec081-1f96-4aa2-964e-d75e072fb94c",
+            "Value": {
+                "id": "8b40ac73-9523-48de-b5e5-7c5a5f4e789c",
+                "resourcePath": "rooms\\chateau_pizzamart\\chateau_pizzamart.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "30b86ffa-5b22-4fff-a9f6-0d4534e3b6d3",
             "Value": {
                 "id": "8f7f5368-b09e-4ff4-8d80-50c5b309a8ff",
                 "resourcePath": "sprites\\bg_strongcold5\\bg_strongcold5.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "30b9186f-a1ba-4aeb-98a9-97c3473cdee6",
+            "Value": {
+                "id": "6e0c7285-39da-46b7-9cf3-26b0461cfb02",
+                "resourcePath": "rooms\\chateau_2\\chateau_2.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -5439,6 +5487,14 @@
                 "id": "2cbf4b06-6fc0-4ee2-8154-614ae8a16148",
                 "resourcePath": "objects\\obj_noisecrusher\\obj_noisecrusher.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "3a93f7d2-a035-4524-a184-9aea2099ab34",
+            "Value": {
+                "id": "866229b6-1930-4c9b-9036-3e6d19009446",
+                "resourcePath": "rooms\\chateau_secret4\\chateau_secret4.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -6626,6 +6682,14 @@
             }
         },
         {
+            "Key": "460e2caa-677e-414d-94da-9faf32b7c782",
+            "Value": {
+                "id": "f209f0e4-1aeb-4d94-87e3-c20381cc83e9",
+                "resourcePath": "rooms\\chateau_4\\chateau_4.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "460fc8a7-7ee1-4880-a59c-cdc3d753b720",
             "Value": {
                 "id": "e51a40af-5815-421a-9b4a-d4fee55f3bc9",
@@ -7047,6 +7111,14 @@
                 "id": "e5fa2758-bc45-4018-a41d-578e9e9d4034",
                 "resourcePath": "objects\\obj_teleportalend\\obj_teleportalend.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "4bbc3676-2e31-4505-aec7-01280a9cb479",
+            "Value": {
+                "id": "8f77dbd1-f912-4ae3-b064-db086380c298",
+                "resourcePath": "rooms\\chateau_9\\chateau_9.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -11034,6 +11106,14 @@
             }
         },
         {
+            "Key": "74e03e94-3c51-4313-8017-bae5fb02417e",
+            "Value": {
+                "id": "472855fd-d56e-4e2c-889c-7a5913f40d62",
+                "resourcePath": "rooms\\chateau_secret1\\chateau_secret1.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "75174428-aaf8-45c9-86a6-7184d69b1c77",
             "Value": {
                 "id": "c443afef-6e11-42cb-bc95-af3bba46dc3d",
@@ -11231,6 +11311,14 @@
                 "id": "9883cdfd-8e2a-4d37-af6e-32d96f76ecca",
                 "resourcePath": "tilesets\\tileset_entrance\\tileset_entrance.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "76c2793c-f135-4e3c-befd-0a01b4379281",
+            "Value": {
+                "id": "f68049a8-8c1a-44ff-aa4e-f32a23a221e1",
+                "resourcePath": "rooms\\chateau_3\\chateau_3.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -11511,6 +11599,14 @@
                 "id": "0ec0c37f-e8ba-4da7-8215-a111bfcf9563",
                 "resourcePath": "sprites\\spr_key\\spr_key.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "7ad86f12-da7c-40d3-8bfb-3872f1adcbc3",
+            "Value": {
+                "id": "2728382f-32e4-48bc-a6b2-ca743de89af0",
+                "resourcePath": "rooms\\chateau_secret2\\chateau_secret2.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -14370,6 +14466,14 @@
             }
         },
         {
+            "Key": "982d8f9f-5103-4802-b27b-62b49e2361e0",
+            "Value": {
+                "id": "9896e746-bdc5-45ca-8a75-94fc1cdac889",
+                "resourcePath": "rooms\\chateau_7\\chateau_7.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "986d10cd-72a5-435b-a9ab-0aaf4e039664",
             "Value": {
                 "id": "74c5c97a-e3b5-45be-aca6-066f9b38b3e9",
@@ -15511,14 +15615,6 @@
                 "id": "1635e639-ef37-40aa-9c67-e3fb7ccfe17f",
                 "resourcePath": "scripts\\scr_player_barrelmach1\\scr_player_barrelmach1.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "a571d6ad-2f08-44ce-b62f-06f3504646d6",
-            "Value": {
-                "id": "dac23b77-4af8-494f-9d9f-259fa9c9024b",
-                "resourcePath": "views\\a571d6ad-2f08-44ce-b62f-06f3504646d6.yy",
-                "resourceType": "GMFolder"
             }
         },
         {
@@ -17226,6 +17322,14 @@
             }
         },
         {
+            "Key": "b86b563a-a5a6-4d51-bd8d-a03ea9a2242e",
+            "Value": {
+                "id": "66c0ffb0-92ec-4bde-8dad-2cca87a1fbd9",
+                "resourcePath": "rooms\\chateau_secret3\\chateau_secret3.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "b872e0c9-8b42-45d5-9b37-182e728c7742",
             "Value": {
                 "id": "fbe9adfb-f99d-435a-b5da-7d89b426a884",
@@ -17326,6 +17430,14 @@
             "Value": {
                 "id": "b55a9504-ab08-4fb1-b17e-0bd5bf652ecc",
                 "resourcePath": "rooms\\medieval_secret3\\medieval_secret3.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "b96d0ff0-e6f8-4e0f-a7a7-560ae71d3eaa",
+            "Value": {
+                "id": "604ef1f9-d81a-4723-bf5b-859792f843d7",
+                "resourcePath": "rooms\\chateau_8\\chateau_8.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -21386,6 +21498,14 @@
             }
         },
         {
+            "Key": "e152e694-1360-4da6-97da-9941c2b7f379",
+            "Value": {
+                "id": "c553ec64-5c28-4a2e-a41f-d65bd2e1a01f",
+                "resourcePath": "rooms\\chateau_treasure\\chateau_treasure.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "e15923be-170f-4a30-b466-8735f16260b3",
             "Value": {
                 "id": "401a3d85-d6a8-47ca-a9ee-3547e69eb389",
@@ -22594,6 +22714,14 @@
             }
         },
         {
+            "Key": "ed75b477-aa61-4db8-ac77-5ec22d9a3034",
+            "Value": {
+                "id": "84503911-0ec2-4d88-a380-ba504746c72e",
+                "resourcePath": "rooms\\chateau_secret5\\chateau_secret5.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "ed95edb1-b79b-4ae2-b3ee-ca43e74964b2",
             "Value": {
                 "id": "dba5c664-006d-4b2f-82b9-0a8fd3c55e45",
@@ -23706,6 +23834,14 @@
             }
         },
         {
+            "Key": "fab0526a-51b1-4a9b-9994-81962181c921",
+            "Value": {
+                "id": "aa6dc525-3dbe-4de3-a05c-cbdd16087ea8",
+                "resourcePath": "rooms\\chateau_6\\chateau_6.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "fab6a163-25e6-4671-a5fc-782ef052ac28",
             "Value": {
                 "id": "85c1b42f-288a-459c-8cb7-8cd252747095",
@@ -23791,6 +23927,14 @@
                 "id": "91a78560-690a-4fb9-8552-7170004baf66",
                 "resourcePath": "sprites\\bg_scrollingforeground\\bg_scrollingforeground.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fc2bed0b-803d-4698-8604-9564a6cc8f11",
+            "Value": {
+                "id": "009f1976-c407-4c78-8250-0429daaff92a",
+                "resourcePath": "rooms\\chateau_1\\chateau_1.yy",
+                "resourceType": "GMRoom"
             }
         },
         {

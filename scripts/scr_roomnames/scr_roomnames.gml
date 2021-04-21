@@ -289,6 +289,62 @@ switch room
 		message = "Highway through John";
 		break;			
 	#endregion	
+	#region Chateau
+	case chateau_1:
+		message = "Pizza Tower at Halloween";
+		break;
+	case chateau_2:
+		message = "Eerily Similar";
+		break;		
+	case chateau_3:
+		message = "Sorcerer Apprentice";
+		break;	
+	case chateau_4:
+		message = "Goblin Massacre";
+		break;	
+	case chateau_5:
+		message = "Revenge of the Killer Goblins";
+		break;	
+	case chateau_6:
+		message = "Jumpscare";
+		break;	
+	case chateau_7:
+		message = "You Cannot Escape...";
+		break;	
+	case chateau_8:
+		message = "Goblin Pit of Horror";
+		break;	
+	case chateau_9:
+		message = "Thriller Flight";
+		break;	
+	case chateau_10:
+		message = "Pizzard Council";
+		break;	
+	case chateau_treasure:
+		message = "Peanut Minus";
+		break;	
+	case chateau_pizzamart:
+		message = "Halloween Spookfair";
+		break;				
+	case chateau_secret1:
+		message = "Claustrophobic";
+		break;	
+	case chateau_secret2:
+		message = "Just Run... Away";
+		break;	
+	case chateau_secret3:
+		message = "Scariest Roll";
+		break;
+	case chateau_secret4:
+		message = "Pizza Block of Terror";
+		break;			
+	case chateau_secret5:
+		message = "No Wallrunning";
+		break;			
+	case chateau_secret6:
+		message = "The Terrifying Giant Pizza";
+		break;			
+	#endregion		
 	default:
 		message = noone;
 		break;
