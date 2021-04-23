@@ -2,7 +2,7 @@ if place_meeting(x, (y - 1), obj_player1)
 {
     with (obj_player1)
     {
-        if (place_meeting(x, (y + 1), obj_ladder) && key_down && (state == 66 || (character == "S" && (state == 0 || state == 37 || state == 69))) && place_meeting(x, (y + 1), obj_platform))
+        if (place_meeting(x, (y + 1), obj_ladder) && key_down && (state == 66 || (character == "S" && (state == 0 || state == 37 || state == 69))) && place_meeting(x, (y + 1), obj_platform)) && !place_meeting(x,y+1,obj_solid)
         {
             y += 5
             state = 59
@@ -19,7 +19,7 @@ if instance_exists(obj_player2)
     {
         with (obj_player2)
         {
-            if (place_meeting(x, (y + 1), obj_ladder) && key_down && (state == 66 || (character == "S" && (state == 0 || state == 37 || state == 69))) && place_meeting(x, (y + 1), obj_platform))
+            if (place_meeting(x, (y + 1), obj_ladder) && key_down && (state == 66 || (character == "S" && (state == 0 || state == 37 || state == 69))) && place_meeting(x, (y + 1), obj_platform)) && !place_meeting(x,y+1,obj_solid)
             {
                 y += 5
                 state = 59

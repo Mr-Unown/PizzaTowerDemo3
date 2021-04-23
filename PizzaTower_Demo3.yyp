@@ -5530,6 +5530,14 @@
             }
         },
         {
+            "Key": "3b1954d8-f4be-412a-b515-6c3d6c115da4",
+            "Value": {
+                "id": "53a1ac8c-54bf-4d22-afdc-c007e21e205f",
+                "resourcePath": "rooms\\chateau_treasure\\chateau_treasure.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "3b261fae-6ad4-4238-a03d-6d94a8211b29",
             "Value": {
                 "id": "01788975-36da-4b8e-a081-72847604d4a2",
@@ -21498,14 +21506,6 @@
             }
         },
         {
-            "Key": "e152e694-1360-4da6-97da-9941c2b7f379",
-            "Value": {
-                "id": "c553ec64-5c28-4a2e-a41f-d65bd2e1a01f",
-                "resourcePath": "rooms\\chateau_treasure\\chateau_treasure.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "e15923be-170f-4a30-b466-8735f16260b3",
             "Value": {
                 "id": "401a3d85-d6a8-47ca-a9ee-3547e69eb389",
@@ -22350,6 +22350,14 @@
             "Value": {
                 "id": "1fbbd58f-e857-4843-b6b0-9567537a1dae",
                 "resourcePath": "sprites\\spr_piraneapple_dead\\spr_piraneapple_dead.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ea048de5-b0e8-4ec7-8f9c-caf504bf9593",
+            "Value": {
+                "id": "1b8ef3f0-a073-4086-bf6e-590cbd2140b4",
+                "resourcePath": "sprites\\spr_boxxednoise_intro1\\spr_boxxednoise_intro1.yy",
                 "resourceType": "GMSprite"
             }
         },

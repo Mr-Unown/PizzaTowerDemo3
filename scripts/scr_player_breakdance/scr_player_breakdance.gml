@@ -60,7 +60,10 @@ if key_slap2 && key_up && character = "P" && doublejump != 1 && sprite_index != 
 	if movespeed < 3
 	movespeed = 3
 	momemtum = 1
+	if grounded
 	vsp = -10
+	else
+	vsp = -8
 	state = 58
 	sprite_index = spr_player_shoryumineken		
 	image_index = 0

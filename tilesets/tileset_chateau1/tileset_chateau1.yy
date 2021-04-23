@@ -4,7 +4,31 @@
     "mvc": "1.11",
     "name": "tileset_chateau1",
     "auto_tile_sets": [
-        
+        {
+            "id": "480d5f36-5f9e-4b3e-95c5-abe1053bf2f2",
+            "modelName": "GMAutoTileSet",
+            "mvc": "1.0",
+            "closed_edge": false,
+            "name": "autotile_1",
+            "tiles": [
+                22,
+                73,
+                71,
+                12,
+                53,
+                21,
+                0,
+                11,
+                51,
+                0,
+                23,
+                13,
+                32,
+                31,
+                33,
+                0
+            ]
+        }
     ],
     "macroPageTiles": {
         "SerialiseData": null,

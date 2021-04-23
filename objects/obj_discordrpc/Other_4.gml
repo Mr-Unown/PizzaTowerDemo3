@@ -37,11 +37,11 @@ if (global.snickchallenge == 0)
 	string_state = "Ancient Passageway"
 	string_imagekey = "ancient"
     }				
-    else if (string_letters(roomname) == "chateau" || string_letters(roomname) == "chateausecret")
+    else if (string_letters(roomname) == "chateau" || string_letters(roomname) == "chateausecret") || room = chateau_pizzamart
     {
 	string_status = "Playing a level"
 	string_state = "Pizzascare"
-	string_imagekey = "default"
+	string_imagekey = "chateau"
     }			
     else if (string_letters(roomname) == "strongcold" || string_letters(roomname) == "strongcoldsecret")
     {
