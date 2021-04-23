@@ -19,12 +19,12 @@
         case ancient_10:
             global.minutes = 3
             global.seconds = 15
-            break			
-		/*			
+            break					
         case chateau_6:
             global.minutes = 2
             global.seconds = 15
             break
+			/*
         case strongcold_1:
             global.minutes = 3
             global.seconds = 30
