@@ -4,7 +4,7 @@ if is_discord_ready = true
 	if oldstring_status != string_status //Update only when necessary
 	{
 		oldstring_status = string_status
-		rousr_dissonance_set_details(string(string_status)) //Current Status
+		rousr_dissonance_set_details(string(string_status)) //Current Level
 	}
 	if oldstring_roomname != string_roomname || oldstring_imagekey != string_imagekey  //It also prevents loops
 	{
@@ -15,7 +15,7 @@ if is_discord_ready = true
 	if oldstring_state != string_state 
 	{
 		oldstring_state = string_state
-		rousr_dissonance_set_state(string(string_state)) //Current Level
+		rousr_dissonance_set_state(string(string_state)) //Funny Mamamia Details
 	}	
 	if oldstring_characterstring != string_characterstring || oldstring_smallimagekey != string_smallimagekey  //Character Thing
 	{
@@ -69,6 +69,32 @@ if is_discord_ready = true
 		string_characterstring = "";
 		string_smallimagekey = "";
 		}
+	}
+	#endregion
+	
+	
+	#region State / Funny Details
+	if in_a_level = true
+	{
+		if global.timeattack = false
+			string_state  = ("Points: "+ string_points + " | Rank: "+ string_rank)
+		else
+			string_state  = ("Time: ")
+		string_points = string(global.collect)
+		if (global.collect) >= global.srank
+			string_rank = "S"
+		else if (global.collect) > global.arank
+			string_rank = "A"
+		else if (global.collect) > global.brank
+			string_rank = "B"
+		else if (global.collect) > global.crank
+			string_rank = "C"
+		else
+			string_rank = "D"
+	}
+	else
+	{
+		string_state  = string_characterstring	
 	}
 	#endregion
 }

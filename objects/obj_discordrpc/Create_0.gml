@@ -6,6 +6,9 @@ string_imagekey = "default"
 string_smallimagekey = ""
 string_characterstring = ""
 
+string_rank = "D"
+string_points = "0"
+in_a_level = false;
 
 oldstring_status = ""
 oldstring_state = ""

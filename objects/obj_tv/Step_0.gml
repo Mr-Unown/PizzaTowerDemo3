@@ -72,6 +72,7 @@ if instance_exists(obj_itspizzatime)
     showtext = 1
     tvsprite = spr_tvexit
 }
+
 if (global.collect > global.srank && shownranks == 0 && global.nocombo == 0)
 {
     image_speed = 0.125
