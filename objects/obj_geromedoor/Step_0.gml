@@ -1,4 +1,4 @@
-if ((obj_player1.state == 0 || obj_player1.state == 69 || obj_player1.state == 70 || obj_player1.state == 91 || obj_player1.state == 65) && sprite_index == spr_doorkey && obj_player1.key_up && global.geromefollowing = 1 && place_meeting(x, y, obj_player1))
+if ((obj_player1.state == 0 || obj_player1.state == 69 || obj_player1.state == 70 || obj_player1.state == 91 || obj_player1.state == 65) && sprite_index == spr_geromedoor && obj_player1.key_up && global.geromefollowing = 1 && place_meeting(x, y, obj_player1))
 {
     ds_list_add(global.saveroom, id)
 	global.geromeopen = true;
