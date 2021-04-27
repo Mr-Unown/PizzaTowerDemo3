@@ -72,8 +72,8 @@ with (obj_player)
             instance_create(x, y, obj_fadeout)
     }
 }
-if (floor(image_index) == 2)
-    image_speed = 0
+if (floor(image_index) == image_number - 1) && sprite_index = spr_doorkeyopen
+    sprite_index = spr_doorvisited
 if (floor(obj_player.image_index) == (obj_player.image_number - 1) && obj_player.state == 64)
 {
     with (obj_player)

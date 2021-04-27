@@ -5026,6 +5026,14 @@
             }
         },
         {
+            "Key": "36397758-22df-4efb-bc70-9c56f6f31ddb",
+            "Value": {
+                "id": "41de417a-04a6-4ed5-8a2b-d3ea9a638e93",
+                "resourcePath": "sprites\\spr_geromedoor_opened\\spr_geromedoor_opened.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "365acfd5-3667-4675-8515-3762e8a18d48",
             "Value": {
                 "id": "a76e5c90-1d2d-466d-ad22-492abc0f6799",
@@ -15754,6 +15762,14 @@
             }
         },
         {
+            "Key": "a72ecb0b-e2c3-4650-b172-6d10ad87c9ad",
+            "Value": {
+                "id": "77301711-8a9f-4bba-ae9c-28838767779c",
+                "resourcePath": "sprites\\spr_geromedoor_opening\\spr_geromedoor_opening.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a7523043-33c6-4a5c-a17a-a89b23ea0188",
             "Value": {
                 "id": "3e005093-ca09-4655-a0e1-f3f838921ca1",
@@ -18326,6 +18342,14 @@
             "Value": {
                 "id": "10ded6a0-2685-471e-84af-7305369e5bdd",
                 "resourcePath": "sprites\\spr_snick_jump\\spr_snick_jump.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c229a04c-e102-48b2-81d4-8039158bd839",
+            "Value": {
+                "id": "b232051c-1c3b-4a97-8ce1-34a07633f094",
+                "resourcePath": "sprites\\spr_geromedoor\\spr_geromedoor.yy",
                 "resourceType": "GMSprite"
             }
         },
