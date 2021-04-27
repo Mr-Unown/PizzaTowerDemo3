@@ -23314,6 +23314,14 @@
             }
         },
         {
+            "Key": "f497cedf-44b6-4e42-84c1-7e9e4acb6e4e",
+            "Value": {
+                "id": "226cc79e-f0f0-4542-bb16-4f35647b4ec3",
+                "resourcePath": "shaders\\shd_greyscale\\shd_greyscale.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "f49d5749-0e60-49f0-a9af-fb217c683b68",
             "Value": {
                 "id": "21399a29-d498-47e0-91cb-5d001ea4fd02",

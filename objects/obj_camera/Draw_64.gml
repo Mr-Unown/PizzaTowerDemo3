@@ -1,3 +1,5 @@
+
+
 if (obj_player1.spotlight == 1)
 	if	obj_player1.custompalette = true
 		pal_swap_set(obj_player1.surf_pallete, 1, true)
@@ -21,6 +23,8 @@ else
     player = obj_player1
     player2 = obj_player2
 }
+if global.hudmode != 1
+{
 if (player.state != 55)
 {
     if (player.character == "P")
@@ -228,6 +232,7 @@ if (player.state != 55)
 
    //draw_text(190, 97, string(global.freezeframe))
 
+}
 }
 draw_set_blend_mode(0)
 

@@ -29,3 +29,4 @@ if flash
 
 if spellshowbuffer > 0
 		draw_sprite(spr_dougieicons, (spellselect - 1), x, y - 50)
+	

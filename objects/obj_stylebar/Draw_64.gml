@@ -1,3 +1,5 @@
+if global.hudmode != 1
+{
 //Better Stylebar
 drawx = obj_tv.drawx;
 drawy = obj_tv.drawy + 70;
@@ -47,3 +49,4 @@ if (global.stylethreshold == 0)
 }*/
 
 
+}

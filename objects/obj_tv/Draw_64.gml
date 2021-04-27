@@ -1,3 +1,5 @@
+if global.hudmode != 1
+{
 var _xoffset = random_range(-3,3);
 var _yoffset = random_range(-3,3);
 draw_set_font(global.font)
@@ -65,3 +67,4 @@ if instance_exists(obj_pizzaball)
     draw_text(832, 300, string_hash_to_newline(((string(global.golfhit) + " ") + "STROKES")))
 
 
+}

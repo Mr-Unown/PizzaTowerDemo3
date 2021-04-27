@@ -1,5 +1,5 @@
 if ((!variable_global_exists("panicbg_surface")) || (!surface_exists(global.panicbg_surface)))
-    global.panicbg_surface = surface_create(camera_get_view_width(view_camera[0]) + 128, 	camera_get_view_height(view_camera[0]) + 128)
+    global.panicbg_surface = surface_create(camera_get_view_width(view_camera[0]) + 128, camera_get_view_height(view_camera[0]) + 128)
 if event_type == ev_draw and event_number == 0
 {
     surface_set_target(global.panicbg_surface)

@@ -26,8 +26,7 @@ if (player.character == "V")
 //Pause Combo
 if global.snickchallenge = true
 	global.pausecombotime = false
-if (global.hudmode == 0)
-{
+
     if (room == Realtitlescreen || room == Tutorialtrap ||  room == Titlescreen || room == rank_room || room == cowboytask || room == hub_room2 || room == hub_room1)
         alpha = 0
     if (room == Titlescreen || room == Tutorialtrap || room == rank_room || room == cowboytask || room == hub_room3 || room == hub_room2 || room == hub_room1)
@@ -43,12 +42,8 @@ if (global.hudmode == 0)
         else if (!(room == rank_room || room == timesuproom || room == boss_room1 || room == Realtitlescreen || room == Scootertransition || room == Titlescreen || room == Tutorialtrap || room == rank_room || room == cowboytask ||room == hub_room3   || room == hub_room2 || room == hub_room1))
             alpha = 1
     }
-}
-else if (global.hudmode == 1)
-{
-    visible = false
-    tvsprite = spr_tvknight
-}
+
+
 
 if (showtext == 1)
 {

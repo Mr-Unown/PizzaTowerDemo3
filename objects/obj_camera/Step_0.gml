@@ -25,10 +25,13 @@ if collided = true
 	alpha = 0.5
 else
 	alpha = 1
+//Greyscale
+if global.panic = 1 && global.seconds <= 0 && global.minutes <= 0
+greyscalefade = approach(greyscalefade,0.45,0.005)
+else
+greyscalefade = approach(greyscalefade,0,0.0025)
 
-if (global.hudmode == 1)
-    visible = false
-else if (room == strongcold_endscreen || room == rank_room || room == timesuproom || room == Realtitlescreen || room == Scootertransition || room == characterselect)
+if (room == strongcold_endscreen || room == rank_room || room == timesuproom || room == Realtitlescreen || room == Scootertransition || room == characterselect)
     visible = false
 else
     visible = true

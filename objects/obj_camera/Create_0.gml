@@ -1,4 +1,5 @@
 depth = -11
+greyscalefade = 0;
 global.hitstunenabled = true;
 global.levelname = "none"
 global.tutorialtrap = 0

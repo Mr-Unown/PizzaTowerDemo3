@@ -58,7 +58,7 @@
             global.seconds = 35
             break									*/
 		default:
-			global.minutes = 1
-            global.seconds = 10
+			global.minutes = 0
+            global.seconds = 20
 			break;
 	}

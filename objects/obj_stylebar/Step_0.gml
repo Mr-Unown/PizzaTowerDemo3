@@ -1,5 +1,4 @@
-if (global.hudmode == 0)
-{
+
     alpha = obj_tv.alpha
     if (room == Realtitlescreen || room == Titlescreen || room == rank_room || room == cowboytask || room == hub_room2 || room == hub_room1)
         alpha = obj_tv.alpha
@@ -16,7 +15,6 @@ if (global.hudmode == 0)
         else if (!(room == rank_room || room == timesuproom || room == boss_room1 || room == Realtitlescreen || room == Scootertransition || room == Titlescreen || room == rank_room || room == cowboytask || room == hub_room2 || room == hub_room1))
             alpha = obj_tv.alpha
     }
-}
 
 //Gaming
 if global.stylethreshold <= 0 {
