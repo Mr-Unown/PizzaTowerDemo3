@@ -7,43 +7,43 @@ else
 var roomname = room_get_name(room)
 if (global.snickchallenge == 0)
 {
-    if (string_letters(roomname) == "entrance" || string_letters(roomname) == "entrancesecret") //|| room = medieval_pizzamart
+    if (string_letters(roomname) == "entrance" || string_letters(roomname) == "entrancesecret") ||/* room = entrance_pizzamart ||*/ room = entrance_treasure
     {
 	string_status = "Entrance"
 	string_imagekey = "entrance"
 	in_a_level = true;
     }
-    else if (string_letters(roomname) == "medieval" || string_letters(roomname) == "medievalsecret") || room = medieval_pizzamart
+    else if (string_letters(roomname) == "medieval" || string_letters(roomname) == "medievalsecret") || room = medieval_pizzamart || room = medieval_treasure
     {
 	string_status = "Pizzascape"	
 	string_imagekey = "medieval"
 	in_a_level = true;
     }
-    else if (string_letters(roomname) == "ruin" || string_letters(roomname) == "ruinsecret") || room = ruin_pizzamart
+    else if (string_letters(roomname) == "ruin" || string_letters(roomname) == "ruinsecret") || room = ruin_pizzamart || room = ruin_treasure
     {
 	string_status = "Ancient Cheese"
 	string_imagekey = "ruin"
 	in_a_level = true;
     }
-    else if (string_letters(roomname) == "dungeon" || string_letters(roomname) == "dungeonsecret") || room = dungeon_pizzamart
+    else if (string_letters(roomname) == "dungeon" || string_letters(roomname) == "dungeonsecret") || room = dungeon_pizzamart || room = dungeon_treasure
     {
 	string_status = "Bloodsauce Dungeon"
 	string_imagekey = "dungeon"
 	in_a_level = true;
     }
-    else if (string_letters(roomname) == "ancient" || string_letters(roomname) == "ancientsecret")
+    else if (string_letters(roomname) == "ancient" || string_letters(roomname) == "ancientsecret") ||/* room = ancient_pizzamart ||*/ room = ancient_treasure
     {
 	string_status = "Ancient Passageway"
 	string_imagekey = "ancient"
 	in_a_level = true;
     }				
-    else if (string_letters(roomname) == "chateau" || string_letters(roomname) == "chateausecret") || room = chateau_pizzamart
+    else if (string_letters(roomname) == "chateau" || string_letters(roomname) == "chateausecret") || room = chateau_pizzamart || room = chateau_treasure
     {
 	string_status = "Pizzascare"
 	string_imagekey = "chateau"
 	in_a_level = true;
     }			
-    else if (string_letters(roomname) == "strongcold" || string_letters(roomname) == "strongcoldsecret")
+    else if (string_letters(roomname) == "strongcold" || string_letters(roomname) == "strongcoldsecret") || room = strongcold_pizzamart || room = strongcold_treasure
     {
 	string_status = "Strongcold"
 	string_imagekey = "default"

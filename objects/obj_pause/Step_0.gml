@@ -149,7 +149,7 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
         global.laptouched = 0
         if (global.snickchallenge == 0)
         {
-            if (string_letters(roomname) == "entrance" || string_letters(roomname) == "entrancesecret")
+            if (string_letters(roomname) == "entrance" || string_letters(roomname) == "entrancesecret") ||/* room = entrance_pizzamart ||*/ room = entrance_treasure
             {
                 instance_activate_all()
                 room = entrance_1
@@ -159,7 +159,7 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
                 if instance_exists(obj_player2)
                     obj_player2.targetDoor = "A"
             }
-            else if (string_letters(roomname) == "medieval" || string_letters(roomname) == "medievalsecret")
+            else if (string_letters(roomname) == "medieval" || string_letters(roomname) == "medievalsecret") || room = medieval_pizzamart || room = medieval_treasure
             {
                 instance_activate_all()
                 room = medieval_1
@@ -169,7 +169,7 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
                 if instance_exists(obj_player2)
                     obj_player2.targetDoor = "A"
             }
-            else if (string_letters(roomname) == "ruin" || string_letters(roomname) == "ruinsecret")
+            else if (string_letters(roomname) == "ruin" || string_letters(roomname) == "ruinsecret") || room = ruin_pizzamart || room = ruin_treasure
             {
                 instance_activate_all()
                 room = ruin_1
@@ -179,7 +179,7 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
                 if instance_exists(obj_player2)
                     obj_player2.targetDoor = "A"
             }
-            else if (string_letters(roomname) == "dungeon" || string_letters(roomname) == "dungeonsecret")
+            else if (string_letters(roomname) == "dungeon" || string_letters(roomname) == "dungeonsecret") || room = dungeon_pizzamart || room = dungeon_treasure
             {
                 instance_activate_all()
                 room = dungeon_1
@@ -189,7 +189,7 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
                 if instance_exists(obj_player2)
                     obj_player2.targetDoor = "A"
             }
-            else if (string_letters(roomname) == "ancient" || string_letters(roomname) == "ancientsecret")
+            else if (string_letters(roomname) == "ancient" || string_letters(roomname) == "ancientsecret") ||/* room = ancient_pizzamart ||*/ room = ancient_treasure
             {
                 instance_activate_all()
                 room = ancient_1
@@ -199,7 +199,7 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
                 if instance_exists(obj_player2)
                     obj_player2.targetDoor = "A"
             }				
-            else if (string_letters(roomname) == "chateau" || string_letters(roomname) == "chateausecret")
+            else if (string_letters(roomname) == "chateau" || string_letters(roomname) == "chateausecret") || room = chateau_pizzamart || room = chateau_treasure
             {
                 instance_activate_all()
                 room = chateau_1
@@ -209,7 +209,7 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
                 if instance_exists(obj_player2)
                     obj_player2.targetDoor = "A"
             }			
-            else if (string_letters(roomname) == "strongcold" || string_letters(roomname) == "strongcoldsecret")
+            else if (string_letters(roomname) == "strongcold" || string_letters(roomname) == "strongcoldsecret")  || room = strongcold_pizzamart || room = strongcold_treasure
             {
                 instance_activate_all()
                 room = strongcold_10

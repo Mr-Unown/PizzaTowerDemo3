@@ -2,6 +2,8 @@ if (room == rank_room || room == timesuproom)
     visible = false
 else
     visible = playerid.visible
+if (global.miniboss == 0) && room = strongcold_miniboss
+    instance_destroy()
 if (obj_player.state == 53)
     visible = false
 if (obj_player1.spotlight == 1)
@@ -10,7 +12,7 @@ else
     playerid = obj_player2
 if (sprite_index == spr_noisebomb_intro && floor(image_index) == (image_number - 1))
     sprite_index = spr_noisebomb_idle
-if (global.noisebombfollow = true && sprite_index != spr_noisebomb_intro)
+if ((global.noisebombfollow = true && sprite_index != spr_noisebomb_intro) && room != strongcold_miniboss) || ((global.miniboss = 1  && sprite_index != spr_noisebomb_intro) && room = strongcold_miniboss)
 {
     image_alpha = playerid.image_alpha
 	if (playerid.hsp != 0)
