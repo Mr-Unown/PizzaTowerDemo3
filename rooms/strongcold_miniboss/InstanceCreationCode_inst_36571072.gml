@@ -1,1 +1,1 @@
-targetRoom = strongcold_1
+//targetRoom = strongcold_1

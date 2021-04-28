@@ -1,1 +1,1 @@
-targetRoom = room_test1
+targetRoom = strongcold_miniboss

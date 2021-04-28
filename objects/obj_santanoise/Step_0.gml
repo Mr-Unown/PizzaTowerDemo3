@@ -29,4 +29,6 @@ if (grounded && dust == 0)
     instance_create(x, y, obj_landcloud)
 }
 
-
+	global.combotime = 60
+	global.pausecombotime = true
+	obj_tv.alarm[1] = 75	

@@ -43,7 +43,7 @@ if (global.snickchallenge == 0)
 	string_imagekey = "chateau"
 	in_a_level = true;
     }			
-    else if (string_letters(roomname) == "strongcold" || string_letters(roomname) == "strongcoldsecret") || room = strongcold_pizzamart || room = strongcold_treasure
+    else if (string_letters(roomname) == "strongcold" || string_letters(roomname) == "strongcoldsecret")// || room = strongcold_pizzamart || room = strongcold_treasure
     {
 	string_status = "Strongcold"
 	string_imagekey = "default"

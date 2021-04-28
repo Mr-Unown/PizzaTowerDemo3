@@ -144,15 +144,15 @@ else if ((!audio_is_playing(mu_snickchallengeend)) && global.snickchallenge == 1
     scr_sound(mu_snickchallengeend)
     pausedmusic = mu_snickchallengeend
 }
-/*
+
 if (room == strongcold_miniboss && global.miniboss == 1)
 {
     if (!audio_is_playing(mu_miniboss))
     {
         scr_soundstopall()
-        scr_sound(72)
-        scr_soundeffect(44)
-        pausedmusic = 72
+        scr_sound(mu_miniboss)
+        scr_soundeffect(sfx_scream5)
+        pausedmusic = mu_miniboss
     }
 }
 else if (room == strongcold_endscreen)
@@ -160,10 +160,10 @@ else if (room == strongcold_endscreen)
     if (!audio_is_playing(mu_entrance))
     {
         scr_soundstopall()
-        scr_sound(78)
-        pausedmusic = 78
+        scr_sound(mu_entrance)
+        pausedmusic = mu_entrance
     }
-}
+}/*
 if (room == mansion_miniboss)
 {
     if instance_exists(obj_pepperman)
