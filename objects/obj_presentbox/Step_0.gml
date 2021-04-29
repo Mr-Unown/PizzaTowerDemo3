@@ -77,7 +77,7 @@ switch global.boxhp
 var player = instance_nearest(x,y,obj_player)
 if global.coop = false
 player = obj_player1
-if ((player.instakillmove = true || player.state = 22 || player.state = states.kingknightroll || player.state = states.parry) && place_meeting(x, y, player) && sprite_index != spr_present)
+if ((player.instakillmove = true  || player.state = 22 || player.state = states.kingknightroll || player.state = states.parry) && player.state != states.slipnslide && place_meeting(x, y, player) && sprite_index != spr_present) && player.state != states.pogo
 {
     with (player)
     {
@@ -99,7 +99,6 @@ if ((player.instakillmove = true || player.state = 22 || player.state = states.k
         }
         global.boxhp = (global.boxhp - 1)
         scr_soundeffect(11)
-		scr_sleep();
         instance_create(x, y, obj_slapstar)
         instance_create(x, y, obj_slapstar)
         instance_create(x, y, obj_slapstar)
@@ -122,7 +121,6 @@ if ((player.instakillmove = true || player.state = 22 || player.state = states.k
             shake_mag_acc = (40 / room_speed)
         }
         scr_soundeffect(11)
-		scr_sleep();
         instance_create(x, y, obj_slapstar)
         instance_create(x, y, obj_slapstar)
         instance_create(x, y, obj_slapstar)

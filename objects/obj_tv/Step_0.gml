@@ -23,6 +23,12 @@ if (player.character == "V")
 {
     tvsprite = spr_tvdefault
 }*/
+if global.miniboss = true
+{
+	global.combotime = 60
+	global.pausecombotime = true
+	obj_tv.alarm[1] = 75	
+}
 //Pause Combo
 if global.snickchallenge = true
 	global.pausecombotime = false
