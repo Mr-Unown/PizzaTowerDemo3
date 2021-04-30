@@ -1034,6 +1034,14 @@
             }
         },
         {
+            "Key": "09b7cfcd-124c-440f-a504-a1b6115b1d16",
+            "Value": {
+                "id": "10dcec84-8034-48d9-8c87-089b2a7bc833",
+                "resourcePath": "rooms\\strongcold_secret5\\strongcold_secret5.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "09ce42e0-d310-436e-94cd-9b8ede8466a4",
             "Value": {
                 "id": "ae316f56-66b5-4ad5-81ad-24f0ecd4b82b",
@@ -1626,6 +1634,14 @@
             }
         },
         {
+            "Key": "0f64d296-19b7-4c99-b1e8-fd9fb4dcc83a",
+            "Value": {
+                "id": "5e4e6f2c-d693-4886-ba1b-77c482eed061",
+                "resourcePath": "rooms\\strongcold_8\\strongcold_8.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "0f68d882-6293-4255-ab8d-6bd5457aa257",
             "Value": {
                 "id": "c8d4bff3-4e8a-4328-b0d0-bb0394429143",
@@ -2002,6 +2018,14 @@
             }
         },
         {
+            "Key": "13f39f95-4f94-42ba-ba50-94d1129e7f7e",
+            "Value": {
+                "id": "5ef9c5c8-58ab-4b97-b183-579d1d6c29a4",
+                "resourcePath": "rooms\\strongcold_secret4\\strongcold_secret4.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "13fcf205-f878-4530-99fb-74daece702d6",
             "Value": {
                 "id": "e65c5f5d-5ee4-448a-b440-c408bc079848",
@@ -2207,6 +2231,14 @@
                 "id": "c63a1cc8-701f-496d-a93e-a2ebf9594378",
                 "resourcePath": "sprites\\bg_strongcold2\\bg_strongcold2.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "1700afff-31a2-4fbc-b0a8-0afcfe000bbf",
+            "Value": {
+                "id": "1a3d924e-66ab-4d5c-937c-d5b42c8ca708",
+                "resourcePath": "rooms\\strongcold_9\\strongcold_9.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -3119,6 +3151,14 @@
                 "id": "0a2e2d2e-a4f7-414f-9a99-55948f77cdf7",
                 "resourcePath": "tilesets\\tile_castle_tileset\\tile_castle_tileset.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "21bd0e65-50b2-489f-8118-943a929ba8d7",
+            "Value": {
+                "id": "7bf7cbce-f870-4c03-bda6-1cf8766aee01",
+                "resourcePath": "rooms\\strongcold_7\\strongcold_7.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -4266,6 +4306,14 @@
             }
         },
         {
+            "Key": "2eae01cb-1c76-415a-967e-f6069967d589",
+            "Value": {
+                "id": "23af71fc-9ed8-4289-9e23-14d8288fbe60",
+                "resourcePath": "rooms\\strongcold_3\\strongcold_3.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "2eb4462c-29e9-4253-9c64-1bdef7f12cd0",
             "Value": {
                 "id": "41686188-2494-4f27-b396-6fd8476ed746",
@@ -4615,6 +4663,14 @@
                 "id": "ad2fdddc-678b-4689-9889-43fb722a6999",
                 "resourcePath": "views\\327666e2-7343-458a-9f2c-98b832d6e108.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "3276b65c-b66e-4238-b303-cd67f28765b5",
+            "Value": {
+                "id": "472bdefa-3101-4778-95ce-2d7425a6f80b",
+                "resourcePath": "rooms\\strongcold_secret3\\strongcold_secret3.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -6058,6 +6114,14 @@
             }
         },
         {
+            "Key": "3fbcc760-95db-4cb7-a164-7912cf637fe4",
+            "Value": {
+                "id": "73a401d8-b710-4dfd-87d1-9f9e4a24153e",
+                "resourcePath": "rooms\\strongcold_10\\strongcold_10.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "3fcd7ee9-a314-4679-85dd-7f9fbcca9bda",
             "Value": {
                 "id": "86b00af3-b438-4a00-ad32-292a2b2a2eb4",
@@ -7442,6 +7506,14 @@
             }
         },
         {
+            "Key": "4ea55f77-06c8-4721-9e15-10e55fcbc7a5",
+            "Value": {
+                "id": "68eddd06-22ea-47b9-9423-8f367535fd0d",
+                "resourcePath": "rooms\\strongcold_pizzamart\\strongcold_pizzamart.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "4eb2a84c-628f-4e33-9ac8-5f22e1738229",
             "Value": {
                 "id": "fcdb18d8-f5db-4585-895f-54e719b4fb7a",
@@ -7535,6 +7607,14 @@
                 "id": "9f5af44e-9942-4326-8f54-9abc2381498c",
                 "resourcePath": "sprites\\spr_crouchmask\\spr_crouchmask.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4fa16983-1d6a-4f8a-9caf-4ea85ec666db",
+            "Value": {
+                "id": "3f140af8-4edf-4f78-9485-03ec61e9459c",
+                "resourcePath": "rooms\\strongcold_1\\strongcold_1.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -8303,6 +8383,14 @@
                 "id": "f4a5c50f-65bb-4e61-9ef9-c996e05b3b34",
                 "resourcePath": "sprites\\spr_minigunbackup\\spr_minigunbackup.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "56f06a7f-3432-4fdb-b69f-7dd5577df706",
+            "Value": {
+                "id": "e4fde613-cad1-4efd-a9cc-79ffa3728673",
+                "resourcePath": "rooms\\strongcold_2\\strongcold_2.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -11914,6 +12002,14 @@
             }
         },
         {
+            "Key": "7db01589-a28c-4c27-a0a4-35a77595171b",
+            "Value": {
+                "id": "608708a7-0d9c-4ede-b533-8ab2ac09db61",
+                "resourcePath": "rooms\\strongcold_secret6\\strongcold_secret6.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "7db1c2eb-84c6-48e8-abd5-e8b6a75e1535",
             "Value": {
                 "id": "56c74fa9-81d1-4545-922c-e420eb53321a",
@@ -13178,6 +13274,14 @@
             }
         },
         {
+            "Key": "8b2441fa-be6d-4e77-80aa-1605d643a44b",
+            "Value": {
+                "id": "947c832b-0090-4ca3-8600-63bd8aeeab15",
+                "resourcePath": "rooms\\strongcold_secret2\\strongcold_secret2.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "8b458e4a-5807-49c0-ab7c-0891aceca80e",
             "Value": {
                 "id": "55cebdc8-ca42-4750-ac5c-5e6785f8e1b6",
@@ -13903,6 +14007,14 @@
                 "id": "b47dd354-03fb-43a8-af9c-8f6cdd457157",
                 "resourcePath": "sprites\\spr_pizzagoblin_hit\\spr_pizzagoblin_hit.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "93100ddd-5498-4fda-8ef2-ae0db765ab31",
+            "Value": {
+                "id": "6c1362bb-cce4-486e-93dc-760fc57bf997",
+                "resourcePath": "rooms\\strongcold_6\\strongcold_6.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -14823,6 +14935,14 @@
                 "id": "8ad769bc-02c4-466d-87e2-01be04aa1f93",
                 "resourcePath": "objects\\obj_movingoutlet\\obj_movingoutlet.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "9c08e256-9076-4ad6-bd5d-7dd7b0991775",
+            "Value": {
+                "id": "a81c0d41-28e0-4734-b32c-13b947366e74",
+                "resourcePath": "rooms\\strongcold_secret1\\strongcold_secret1.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -17674,6 +17794,14 @@
             }
         },
         {
+            "Key": "bac73316-f15e-4dc1-9d71-f468edb274ce",
+            "Value": {
+                "id": "f788e6cd-5a00-49cd-b93c-5f55f816ac13",
+                "resourcePath": "rooms\\strongcold_treasure\\strongcold_treasure.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "baca3743-09b8-4b25-80f1-230ff1568bc9",
             "Value": {
                 "id": "e4998a46-2839-4ece-a2f5-b30e8a14b8c2",
@@ -20066,6 +20194,14 @@
             }
         },
         {
+            "Key": "d1e67695-c5b2-403b-9622-469564a74fef",
+            "Value": {
+                "id": "43a88e0f-3ad2-4fa6-b0f4-97126f334a06",
+                "resourcePath": "rooms\\strongcold_5\\strongcold_5.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "d1ed15a2-ec39-4391-8b0a-30e5a64417e0",
             "Value": {
                 "id": "5edfb5af-be0c-4632-b804-f3a044209849",
@@ -20127,6 +20263,14 @@
                 "id": "9bb2229a-f3d9-4fc8-9343-842ed50f3235",
                 "resourcePath": "sprites\\spr_flagnoise\\spr_flagnoise.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d31d9485-96c2-481a-ae01-e39dee8d4080",
+            "Value": {
+                "id": "08e95cfe-e6ea-466b-be0f-8f2ea76a5453",
+                "resourcePath": "rooms\\strongcold_4\\strongcold_4.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
