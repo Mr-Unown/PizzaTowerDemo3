@@ -23,12 +23,12 @@
         case chateau_6:
             global.minutes = 2
             global.seconds = 15
-            break
-			/*
+            break	
         case strongcold_1:
             global.minutes = 3
             global.seconds = 30
             break
+			/*
         case desert_16:
             global.minutes = 2
             global.seconds = 30

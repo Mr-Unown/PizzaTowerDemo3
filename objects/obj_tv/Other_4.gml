@@ -49,7 +49,6 @@ if (room == ancient_1 && global.snickchallenge == 0)
     global.brank = (global.srank - ((global.srank / 4) * 2))
     global.crank = (global.srank - ((global.srank / 4) * 3))
 }
-/*
 if (room == chateau_1 && global.snickchallenge == 0)
 {
     global.srank = 10000
@@ -65,6 +64,7 @@ if (room == strongcold_10 && global.snickchallenge == 0)
     global.brank = (global.srank - ((global.srank / 4) * 2))
     global.crank = (global.srank - ((global.srank / 4) * 3))
 }
+/*
 if (room == desert_1 && global.snickchallenge == 0)
 {
     global.srank = 13800
