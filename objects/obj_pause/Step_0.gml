@@ -223,7 +223,7 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
                 if instance_exists(obj_player2)
                     obj_player2.targetDoor = "A"
             }			
-            else if (string_letters(roomname) == "strongcold" || string_letters(roomname) == "strongcoldsecret") || room = strongcold_pizzamart || room = strongcold_treasure
+            else if (string_letters(roomname) == "strongcold" || string_letters(roomname) == "strongcoldsecret") ||  room = strongcold_miniboss || room = strongcold_pizzamart || room = strongcold_treasure
             {
                 instance_activate_all()
                 room = strongcold_10

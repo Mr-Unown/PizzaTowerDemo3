@@ -285,7 +285,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
     {
         for (i = 0; i < 20; i++)
         {
-            if (roomname == ("strongcold_" + string(i)) && i > 1)
+            if (roomname == ("strongcold_" + string(i)) && i > 1) || room = strongcold_miniboss
             {
                 if (!audio_is_playing(mu_strongcold))
                 {
