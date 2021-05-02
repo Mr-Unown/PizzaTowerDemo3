@@ -22,23 +22,20 @@ if (movespeed <= 0 && (!scr_slope()))
     mach2 = 0
     image_index = 0
 }
-if (scr_solid((x + 1), y) && xscale == 1 && (!place_meeting((x + sign(hsp)), y, obj_slope)))
+if (scr_solid((x + 1), y) && xscale == 1 && (!place_meeting((x + sign(hsp)), y, obj_slope))) && !place_meeting((x + sign(hsp)), y, obj_destructibles)
 {
-    state = 72
-    hsp = -2
-    vsp = -3
-    mach2 = 0
-    image_index = 0
-    instance_create((x + 10), (y + 10), obj_bumpeffect)
+    state = states.jump
+	vsp = -11
+	jumpstop = 1
+	movespeed = 0
+
 }
-if (scr_solid((x - 1), y) && xscale == -1 && (!place_meeting((x + sign(hsp)), y, obj_slope)))
+if (scr_solid((x - 1), y) && xscale == -1 && (!place_meeting((x + sign(hsp)), y, obj_slope))) && !place_meeting((x + sign(hsp)), y, obj_destructibles)
 {
-    state = 72
-    hsp = 2
-    vsp = -3
-    mach2 = 0
-    image_index = 0
-    instance_create((x - 10), (y + 10), obj_bumpeffect)
+	state = states.jump
+	vsp = -11
+	jumpstop = 1
+	movespeed = 0
 }
 sprite_index = spr_slipnslide
 image_speed = 0.35

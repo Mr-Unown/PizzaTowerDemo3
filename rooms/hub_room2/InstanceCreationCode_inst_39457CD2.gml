@@ -1,2 +1,2 @@
-level = "chateau"
-targetRoom = chateau_1
+level = "strongcold"
+targetRoom = strongcold_10

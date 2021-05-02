@@ -44,6 +44,14 @@ with (obj_player1)
                 instance_destroy()
         }
 	}
+	if (state = states.slipnslide)
+	{
+		if place_meeting(x + sign(hsp), y, obj_destructibles)
+        {
+            with (instance_place(x + sign(hsp), y, obj_destructibles))
+                instance_destroy()
+        }
+	}	
     if (state == 68)
     {
         if place_meeting((x + hsp), y, obj_destructibles)
@@ -269,6 +277,14 @@ with (obj_player2)
                 instance_destroy()
         }
 	}
+	if (state = states.slipnslide)
+	{
+		if place_meeting(x + sign(hsp), y, obj_destructibles)
+        {
+            with (instance_place(x + sign(hsp), y, obj_destructibles))
+                instance_destroy()
+        }
+	}		
 	if sprite_index = spr_playerN_spinjump {
         if place_meeting((x + hsp), y + vsp, obj_destructibles)
         {

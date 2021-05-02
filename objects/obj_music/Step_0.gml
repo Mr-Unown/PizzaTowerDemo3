@@ -127,8 +127,7 @@ if (global.panic == 1 && obj_pause.pause == 0)
         }
     }
 }
-audio_sound_gain(global.music, (0.6 * global.musicvolume), 0)
-audio_sound_gain(global.music2, (0.6 * global.musicvolume), 0)	
+	
 
 if (global.miniboss == 0 && audio_is_playing(mu_miniboss))
     audio_stop_sound(mu_miniboss)
@@ -186,8 +185,8 @@ if (room == mansion_miniboss)
     }
     if audio_is_playing(sfx_scream5)
         audio_stop_sound(mu_mansion)
-}
-//TODO: Make this Better
+}*/ 
+
 if instance_exists(obj_johnpillar)
 {
     if ((!audio_is_playing(mu_scary)) && obj_pause.pause == 0)
@@ -195,11 +194,16 @@ if instance_exists(obj_johnpillar)
         global.scarysound = audio_play_sound(mu_scary, 10, true)
         audio_sound_gain(global.scarysound, (0 * global.musicvolume), 0)
     }
-    if (audio_is_playing(mu_scary) && obj_pause.pause == 0)
+    if (audio_is_playing(global.scarysound) && obj_pause.pause == 0)
     {
         with (obj_johnpillar)
         {
             var player = instance_nearest(x, y, obj_player)
+			if global.coop = false
+			player = obj_player1
+			//I know this looks bad but this is the way I want it
+			//I don't want it to grow stronger only when you move closer
+			//It's more of when you are in its vicinity
             if point_in_rectangle(player.x, player.y, (x - 424), (y - 64), (x + 424), (y + 288))
             {
                 audio_sound_gain(global.music, (0 * global.musicvolume), 2000)
@@ -224,14 +228,15 @@ else if audio_is_playing(global.scarysound)
     if (audio_sound_get_gain(global.scarysound) == 0)
     {
         audio_stop_sound(global.scarysound)
-        scarysound = -4
+        global.scarysound = noone
     }
     audio_sound_gain(global.music, (0.6 * global.musicvolume), 2000)
 }
 else
-*/
-
-	
+{
+audio_sound_gain(global.music, (0.6 * global.musicvolume), 0)
+audio_sound_gain(global.music2, (0.6 * global.musicvolume), 0)
+}
 if audio_is_playing(mu_ruin) && audio_is_playing(mu_ruinbmix)
 {
 	if global.ruinmusic = 0 {

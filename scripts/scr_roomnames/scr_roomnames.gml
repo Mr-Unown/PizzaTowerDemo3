@@ -345,6 +345,68 @@ switch room
 		message = "The Terrifying Giant Pizza";
 		break;			
 	#endregion		
+	#region Strongcold
+	case strongcold_10:
+		message = "Pizza Tower and it's Christmas!";
+		break;
+	case strongcold_9:
+		message = "Merrily Similar";
+		break;		
+	case strongcold_8:
+		message = "Tis the Season...";
+		break;	
+	case strongcold_7:
+		message = "...To be Jelly";
+		break;	
+	case strongcold_6:
+		message = "Christmas Time Chime";
+		break;	
+	case strongcold_5:
+		message = "Holiday Torture Room";
+		break;	
+	case strongcold_4:
+		message = "Explosive Present";
+		break;	
+	case strongcold_3:
+		message = "Merry Swissmas";
+		break;	
+	case strongcold_2:
+		message = "New Rear Eve";
+		break;	
+	case strongcold_miniboss:
+		message = "It's Claus!";
+		break;			
+	case strongcold_1:
+		message = "Dejohn Vu";
+		break;	
+	case strongcold_escape:
+		message = "The Tower Ultimatum";
+		break;			
+	case strongcold_treasure:
+		message = "Here lies Cake";
+		break;	
+	case strongcold_pizzamart:
+		message = "Merry Pizzamart!";
+		break;				
+	case strongcold_secret1:
+		message = "Present Blocks";
+		break;	
+	case strongcold_secret2:
+		message = "Pool of Christmas Joy";
+		break;	
+	case strongcold_secret3:
+		message = "The Bad Part of Winter";
+		break;
+	case strongcold_secret4:
+		message = "Hidden Present";
+		break;			
+	case strongcold_secret5:
+		message = "Secret in the Season";
+		break;			
+	case strongcold_secret6:
+		message = "There's a Present Down There";
+		break;			
+	#endregion				
 	default:
 		message = noone;
 		break;

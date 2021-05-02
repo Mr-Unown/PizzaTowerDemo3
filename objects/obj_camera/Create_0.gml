@@ -1,4 +1,8 @@
 depth = -11
+//Stinky Thing
+oldfacesprite = spr_null
+
+
 greyscalefade = 0;
 global.hitstunenabled = true;
 global.levelname = "none"

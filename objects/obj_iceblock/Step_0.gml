@@ -1,8 +1,10 @@
+if global.freezeframe = false
+{
 if place_meeting(x, (y - 1), obj_player1)
 {
     with (obj_player1)
     {
-        if (cutscene == 0)
+        if (cutscene == 0) && state != states.frozen
         {
             if (state == 24)
                 state = 18
@@ -17,7 +19,7 @@ if place_meeting(x, (y - 1), obj_player2)
 {
     with (obj_player2)
     {
-        if (cutscene == 0)
+        if (cutscene == 0) && state != states.frozen
         {
             if (state == 24)
                 state = 18
@@ -28,5 +30,4 @@ if place_meeting(x, (y - 1), obj_player2)
         }
     }
 }
-
-
+}

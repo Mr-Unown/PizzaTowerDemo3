@@ -280,7 +280,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
                 }
             }
         }
-    }
+    }*/
     if (string_letters(roomname) == "strongcold")
     {
         for (i = 0; i < 20; i++)
@@ -290,24 +290,23 @@ if (global.panic == 0 && global.snickchallenge == 0)
                 if (!audio_is_playing(mu_strongcold))
                 {
                     scr_soundstopall()
-                    scr_sound(99)
+                    scr_sound(mu_strongcold)
                     audio_sound_set_track_position(global.music, fadeoff)
-                    pausedmusic = 99
+                    pausedmusic = mu_strongcold
                 }
             }
             else if (roomname == "strongcold_1")
             {
-                if (!audio_is_playing(mu_chateau))
+                if (!audio_is_playing(mu_scary))
                 {
                     scr_soundstopall()
-                    scr_sound(80)
+                    scr_sound(mu_scary)
                     audio_sound_set_track_position(global.music, fadeoff)
-                    pausedmusic = 80
+                    pausedmusic = mu_scary
                 }
             }
         }
     }
-	*/
     if (string_letters(roomname) == "medieval")
     {
         for (i = 0; i < 20; i++)

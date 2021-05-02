@@ -7922,6 +7922,14 @@
             }
         },
         {
+            "Key": "52b0605c-11b0-40ff-b105-7eae255bd1d0",
+            "Value": {
+                "id": "40613782-2a59-4779-89f5-ab8a84264147",
+                "resourcePath": "objects\\obj_strongcoldfakedeco\\obj_strongcoldfakedeco.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "52b78e0a-4ec6-4197-96c3-f45be03bca19",
             "Value": {
                 "id": "910abcf7-4980-46d8-9e03-30e4bc8cae37",
@@ -11514,6 +11522,14 @@
             }
         },
         {
+            "Key": "788522f0-c7c0-4977-95a3-b8775c817d22",
+            "Value": {
+                "id": "3e250793-599b-4e50-9c6a-d68d72a9051c",
+                "resourcePath": "scripts\\draw_sprite_ext_camera\\draw_sprite_ext_camera.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "78b4e742-7d9f-433a-85ab-e903fe637d26",
             "Value": {
                 "id": "80588342-623d-490f-8366-74a963bc8bed",
@@ -12055,6 +12071,14 @@
                 "id": "a771dfea-6e5f-4dd8-a69d-4630a7e01a89",
                 "resourcePath": "options\\windowsuap\\options_windowsuap.yy",
                 "resourceType": "GMWindowsUAPOptions"
+            }
+        },
+        {
+            "Key": "7e0fcb1b-379a-4306-8e8f-73d5a6dc5913",
+            "Value": {
+                "id": "90098e71-feaf-4e13-8e07-63b897ff1a28",
+                "resourcePath": "sprites\\spr_bigiceblock\\spr_bigiceblock.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -13470,6 +13494,14 @@
             "Value": {
                 "id": "7e3531bb-53ee-4b65-a150-17efb4d71f8f",
                 "resourcePath": "sprites\\spr_bombpep_runabouttoexplode\\spr_bombpep_runabouttoexplode.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8d2df550-a863-44cf-b7b6-da308d4f636d",
+            "Value": {
+                "id": "17540a98-764a-4bac-92f5-9a3236045b46",
+                "resourcePath": "sprites\\spr_decorationanimated1escape\\spr_decorationanimated1escape.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -20754,6 +20786,14 @@
             }
         },
         {
+            "Key": "d78456b5-5a1b-4502-8098-5733c3705f63",
+            "Value": {
+                "id": "2daab605-de2d-47df-8585-56f492fddf54",
+                "resourcePath": "objects\\obj_bigiceblock\\obj_bigiceblock.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d7915fc6-f5e1-4c27-a0dc-4414ae6bc4ac",
             "Value": {
                 "id": "fec43f05-755a-4354-a880-527b285fa968",
@@ -24754,7 +24794,8 @@
         "dbf8829c-d327-4b1c-8688-4fd07d2c4abf",
         "dd225450-20d6-46c4-9cfb-d671edade35b",
         "f476ae04-b208-49d4-95a9-c6adbb1452d9",
-        "fe3e1f3a-d25f-4a78-87ae-6bb500d172e6"
+        "fe3e1f3a-d25f-4a78-87ae-6bb500d172e6",
+        "788522f0-c7c0-4977-95a3-b8775c817d22"
     ],
     "tutorial": ""
 }

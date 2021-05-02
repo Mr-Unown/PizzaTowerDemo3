@@ -81,6 +81,7 @@ if (optionselected == -1)
         audio_master_gain(global.mastervolume)
         audio_sound_gain(global.pausenicemusic, (0.6 * global.musicvolume), 0)
         audio_sound_gain(global.music, (0.6 * global.musicvolume), 0)
+		audio_sound_gain(global.scarysound, (0.6 * global.musicvolume), 0)
     }
 }
 if (optionselected == 0)
@@ -185,6 +186,7 @@ if (optionselected == 1)
         ini_close()
         audio_sound_gain(global.music, (0.6 * value), 0)
         audio_sound_gain(global.pausenicemusic, (0.6 * value), 0)
+		audio_sound_gain(global.scarysound, (0.6 * value), 0)
     }
 }
 if (optionselected == 2)

@@ -57,8 +57,22 @@ if ((!pause) && (!instance_exists(obj_fadeout)))
             global.peppermode = 0
         }
         if keyboard_check_pressed(vk_f11)
+		{
 			global.pausecombotime = false
             global.peppermode = 1
+		}
+		//For Development Purposes only
+        if keyboard_check_pressed(vk_f12)
+		{
+			var rm_name = room_get_name(room);
+			var lay_id = layer_get_id("Tiles_1")
+			var map_id = layer_tilemap_get_id(lay_id)
+			screenshot_surface = surface_create(room_width,room_height)
+			surface_set_target(screenshot_surface)
+			draw_tilemap(map_id,0,0)
+			surface_reset_target()
+			surface_save(screenshot_surface, "screenshot_" + string(rm_name) +".png");	
+		}
     }
 }
 if keyboard_check_pressed(vk_f6)
@@ -209,7 +223,7 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
                 if instance_exists(obj_player2)
                     obj_player2.targetDoor = "A"
             }			
-            else if (string_letters(roomname) == "strongcold" || string_letters(roomname) == "strongcoldsecret")  //|| room = strongcold_pizzamart || room = strongcold_treasure
+            else if (string_letters(roomname) == "strongcold" || string_letters(roomname) == "strongcoldsecret") || room = strongcold_pizzamart || room = strongcold_treasure
             {
                 instance_activate_all()
                 room = strongcold_10
