@@ -5,5 +5,5 @@ if (ds_list_find_index(global.saveroom, id) != -1)
 
 
 if place_meeting(x,y, obj_player) && sprite_index != spr_goldendoorvisited	 {
-	sprite_index = spr_doorvisited	
+	sprite_index = spr_doorblockedclosing
 }

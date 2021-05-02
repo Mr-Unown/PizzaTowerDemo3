@@ -281,7 +281,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
             }
         }
     }*/
-    if (string_letters(roomname) == "strongcold")
+    if (string_letters(roomname) == "strongcold") || room = strongcold_miniboss
     {
         for (i = 0; i < 20; i++)
         {
@@ -295,7 +295,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
                     pausedmusic = mu_strongcold
                 }
             }
-            else if (roomname == "strongcold_1")
+            else if (roomname == "strongcold_1") && room != strongcold_miniboss
             {
                 if (!audio_is_playing(mu_scary))
                 {
