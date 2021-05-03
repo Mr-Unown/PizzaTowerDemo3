@@ -123,5 +123,7 @@ global.golfsecret = ini_read_string("Secret", "golf", 0)
 global.golftreasure = ini_read_string("Treasure", "golf", 0)
 ini_close()
 targetDoor = "A"
+image_speed = 0
+image_index = 0
 
 
