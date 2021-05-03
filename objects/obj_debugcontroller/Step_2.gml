@@ -30,6 +30,8 @@ if (keyboard_check_pressed(vk_return) && input != "")
 				obj_camera.alarm[1] = 60 break
 			case "togglecollision":
 				showcollisions = !showcollisions break
+			case "debugmode":
+				global.debugmode = !global.debugmode break
 			default:
 				show_debug_message("FAIL!")
 		}

@@ -3,7 +3,7 @@
 
 if active = true
 {
-	if keyboard_check_pressed(vk_f5)
+	if keyboard_check_pressed(vk_f6)
 		active = false
 		
 	if keyboard_check(vk_anykey) && inputbuffer = 0
@@ -19,7 +19,7 @@ if active = true
 		deletebuffer = deletemax
 	}
 }
-else if keyboard_check_pressed(vk_f5)
+else if keyboard_check_pressed(vk_f6)
 {
 	input = ""
 	keyboard_string = ""
