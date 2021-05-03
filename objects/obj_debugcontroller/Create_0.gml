@@ -13,4 +13,4 @@ commands[2] = "togglecollision"
 commands[3] = "debugmode"
 
 // command functions
-showcollisions = true
+showcollisions = false
