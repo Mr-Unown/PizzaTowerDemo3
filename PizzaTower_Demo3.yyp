@@ -14522,6 +14522,14 @@
             }
         },
         {
+            "Key": "9732fc17-4fe1-4bfb-bbb8-07415d2368f0",
+            "Value": {
+                "id": "38c75cc1-7f0e-4dcf-bbe6-87837fe8ddc3",
+                "resourcePath": "objects\\obj_debugcontroller\\obj_debugcontroller.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "97515627-858e-4ad6-8e7e-b18099329bd1",
             "Value": {
                 "id": "ca084a19-e630-444c-8a6b-b581e7e98f2a",
@@ -16970,6 +16978,14 @@
             }
         },
         {
+            "Key": "b215885c-46b2-4019-bff2-885ebe3e18e4",
+            "Value": {
+                "id": "4891cfd3-673c-4252-9978-5dceaf22e4d7",
+                "resourcePath": "views\\b215885c-46b2-4019-bff2-885ebe3e18e4.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "b226df51-8a6a-4779-a041-1f1d7eb514b1",
             "Value": {
                 "id": "e9fffd70-0d1d-4dee-9533-9b0de05dbf77",
@@ -18191,6 +18207,14 @@
                 "id": "87795276-46ba-4697-a0ce-e2acbe11420c",
                 "resourcePath": "rooms\\kungfu_2\\kungfu_2.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "be7d5dbe-609d-433b-9b9a-9c885c709738",
+            "Value": {
+                "id": "6329650d-272f-40b1-8236-bb2092a2e86d",
+                "resourcePath": "scripts\\string_split\\string_split.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -24771,7 +24795,6 @@
         "d839bb5c-2c79-43d8-9c20-9c7b204c85b6",
         "0f68d882-6293-4255-ab8d-6bd5457aa257",
         "73cff51e-95d4-473c-9091-eae05f7a541f",
-        "a2527da5-5b55-4ad2-b5e8-fb8f46e14faa",
         "05a7f835-e8b1-4fb5-8a4d-d5197fcef48f",
         "0bccaae9-5554-43a8-8ae0-f8329fa188d8",
         "0bbfe40d-98d0-4da5-a070-c98d034a74e0",
@@ -24795,7 +24818,9 @@
         "dd225450-20d6-46c4-9cfb-d671edade35b",
         "f476ae04-b208-49d4-95a9-c6adbb1452d9",
         "fe3e1f3a-d25f-4a78-87ae-6bb500d172e6",
-        "788522f0-c7c0-4977-95a3-b8775c817d22"
+        "788522f0-c7c0-4977-95a3-b8775c817d22",
+        "a2527da5-5b55-4ad2-b5e8-fb8f46e14faa",
+        "be7d5dbe-609d-433b-9b9a-9c885c709738"
     ],
     "tutorial": ""
 }
