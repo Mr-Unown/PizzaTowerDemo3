@@ -16,6 +16,7 @@ if event_type == ev_draw and event_number == 0
     var bg8 = layer_get_id("Backgrounds_far1")
     var bg9 = layer_get_id("Backgrounds_scroll")
 	var bg10 = layer_get_id("Backgrounds_far")
+	var bg11 = layer_get_id("Backgrounds_4")	
     layer_x(bg1, ((layer_get_x(bg1) - _cam_x) + 64))
     layer_y(bg1, ((layer_get_y(bg1) - _cam_y) + 64))
     layer_x(bg2, ((layer_get_x(bg2) - _cam_x) + 64))
@@ -34,5 +35,8 @@ if event_type == ev_draw and event_number == 0
     layer_y(bg8, ((layer_get_y(bg8) - _cam_y) + 64))
     layer_x(bg9, ((layer_get_x(bg9) - _cam_x) + 64))
     layer_y(bg9, ((layer_get_y(bg9) - _cam_y) + 64))
+	layer_x(bg10, ((layer_get_x(bg10) - _cam_x) + 64))	
 	layer_y(bg10, ((layer_get_y(bg10) - _cam_y) + 64))
+    layer_x(bg11, ((layer_get_x(bg11) - _cam_x) + 64))
+    layer_y(bg11, ((layer_get_y(bg11) - _cam_y) + 64))	
 }

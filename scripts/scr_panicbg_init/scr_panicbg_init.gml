@@ -20,6 +20,8 @@ if layer_exists("Backgrounds_3")
     layers[layernum++] = "Backgrounds_3"
 if layer_exists("Backgrounds_sky2")
     layers[layernum++] = "Backgrounds_sky2"
+if layer_exists("Backgrounds_4")
+    layers[layernum++] = "Backgrounds_4"	
 if (!layernum)
     return;
 var bottom_id = layer_get_id(layers[0])

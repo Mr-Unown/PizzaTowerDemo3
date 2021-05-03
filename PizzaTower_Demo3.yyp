@@ -9082,6 +9082,14 @@
             }
         },
         {
+            "Key": "5da3f8a4-0ef6-46e7-8621-9f04763d484f",
+            "Value": {
+                "id": "39f969f1-c104-4d67-a326-d58f2beb2382",
+                "resourcePath": "sprites\\bg_nightsky\\bg_nightsky.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5da90731-b001-46db-bf5b-7faf5cb7a9c8",
             "Value": {
                 "id": "c82ae003-050d-4ab1-93f5-4a39f061c711",
@@ -19410,6 +19418,14 @@
             }
         },
         {
+            "Key": "ca47b4a3-4f5d-4e1c-8b02-a6e6bc59eff1",
+            "Value": {
+                "id": "9abeeaa4-d890-4ec1-aa96-630814137f0a",
+                "resourcePath": "sprites\\bg_strongcold1start\\bg_strongcold1start.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ca7219bd-e2db-4c37-8d33-91dde51b6a48",
             "Value": {
                 "id": "cd2c0f19-0389-4f78-b6be-5a8b73a2ae5c",
@@ -19628,6 +19644,9 @@
         {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "16727d41-8b6e-4531-a017-32b2ada3a6ed",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
@@ -20894,6 +20913,14 @@
             "Value": {
                 "id": "6da78d4a-9ef3-491e-a8d8-328e21b56cd6",
                 "resourcePath": "sprites\\spr_doorkey\\spr_doorkey.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d8a8bbad-527c-405d-9e11-77fda37137ca",
+            "Value": {
+                "id": "4127ee16-0a00-466c-9d71-85aa9f3aa034",
+                "resourcePath": "sprites\\bg_nightskyescape\\bg_nightskyescape.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -22922,6 +22949,14 @@
             }
         },
         {
+            "Key": "ed017705-31f4-44f4-b7ba-1ac3a4f49529",
+            "Value": {
+                "id": "b3b8d1ef-02d2-499c-a410-b7e320e4f97f",
+                "resourcePath": "sprites\\spr_tile_strongcold1start\\spr_tile_strongcold1start.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ed18086f-8cb1-4f8e-9021-cdc8023dd132",
             "Value": {
                 "id": "aa2ee8e5-ca04-458e-924b-1cf8ff8eacf9",
@@ -23207,6 +23242,14 @@
                 "id": "0a53fa57-07be-4dc9-ae5a-ac0659fabaa3",
                 "resourcePath": "views\\f074440d-7f66-4a94-87df-a3f9258a1239.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f080f159-9237-42b2-994f-4753672d0ed2",
+            "Value": {
+                "id": "57e21c4d-ec2d-4815-9f3b-dcddf8acb214",
+                "resourcePath": "sprites\\bg_dungeon1start\\bg_dungeon1start.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -24239,6 +24282,14 @@
                 "id": "2ddb06a5-3ff5-48a8-b13c-b94f3a62fb19",
                 "resourcePath": "scripts\\scr_soundeffect\\scr_soundeffect.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "fcc623f7-9312-4761-98eb-3ab2e856125c",
+            "Value": {
+                "id": "26ed6a8c-43f0-4411-aca8-a4568586d6ab",
+                "resourcePath": "sprites\\spr_tile_dungeon1start\\spr_tile_dungeon1start.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
