@@ -14,5 +14,5 @@ global.pausecombotime = true
 obj_tv.alarm[1] = 75
 scr_soundeffect(32)
 instance_destroy()
-
-
+repeat 5
+	instance_create(x + random_range(-5,5),y + random_range(-5,5), obj_collecteffect)
