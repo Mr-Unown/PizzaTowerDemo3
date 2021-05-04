@@ -141,7 +141,7 @@ if (global.option_resolution == 2)
     window_set_size(1920, 1080)
 backtohubstartx = x
 backtohubstarty = y
-backtohubroom = 0
+backtohubroom = noone
 global.style = 0
 slapcharge = 0
 slaphand = 1

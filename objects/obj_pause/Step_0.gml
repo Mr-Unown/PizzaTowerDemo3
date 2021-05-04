@@ -61,7 +61,7 @@ if ((!pause) && (!instance_exists(obj_fadeout)))
 			global.pausecombotime = false
             global.peppermode = 1
 		}
-		//For Development Purposes only
+		/*For Development Purposes only
         if keyboard_check_pressed(vk_f12)
 		{
 			var rm_name = room_get_name(room);
@@ -72,7 +72,7 @@ if ((!pause) && (!instance_exists(obj_fadeout)))
 			draw_tilemap(map_id,0,0)
 			surface_reset_target()
 			surface_save(screenshot_surface, "screenshot_" + string(rm_name) +".png");	
-		}
+		}*/
     }
 }
 if keyboard_check_pressed(vk_f6)
@@ -369,17 +369,19 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
 			global.fakepeppino = 0
 			scr_playerreset()
 
-			if obj_player.backtohubroom != noone {
-			obj_player1.targetDoor = "start"
-			if instance_exists(obj_player2)			
-			obj_player2.targetDoor = "start"				
-			room = obj_player.backtohubroom		 
+			if obj_player.backtohubroom != noone 
+			{
+				obj_player1.targetDoor = "start"
+				if instance_exists(obj_player2)			
+				obj_player2.targetDoor = "start"				
+				room = obj_player.backtohubroom		 
 			}
-			else {
-			obj_player1.targetDoor = "A"
-			if instance_exists(obj_player2)
-			obj_player2.targetDoor = "A"				
-			room = hub_room1
+			else 
+			{
+				obj_player1.targetDoor = "A"
+				if instance_exists(obj_player2)
+				obj_player2.targetDoor = "A"				
+				room = hub_room1
 			}
         }
     }
