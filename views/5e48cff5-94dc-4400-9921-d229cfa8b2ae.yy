@@ -20,7 +20,8 @@
         "3a7415da-ec2e-4db7-9edc-15a7c90d031a",
         "57009f2d-d692-4a7a-be2a-5f9b6565fdb7",
         "9d6c21f4-b80f-4062-965a-18a4ec96445b",
-        "52b78e0a-4ec6-4197-96c3-f45be03bca19"
+        "52b78e0a-4ec6-4197-96c3-f45be03bca19",
+        "d32ccbe1-e728-4bf1-bd9d-eed1e93fa6b8"
     ],
     "filterType": "GMObject",
     "folderName": "Doors and Hallways",
