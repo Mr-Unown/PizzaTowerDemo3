@@ -20349,14 +20349,6 @@
             }
         },
         {
-            "Key": "d32ccbe1-e728-4bf1-bd9d-eed1e93fa6b8",
-            "Value": {
-                "id": "21d61d61-92a8-4bb7-be59-8e8fcad03e42",
-                "resourcePath": "objects\\group_doortriggers\\group_doortriggers.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "d32e20fc-2579-4f80-b85c-5c08df76353a",
             "Value": {
                 "id": "2e4e8460-3f9a-4e60-a2e1-1ee0b287bb1e",
