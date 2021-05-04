@@ -26,6 +26,11 @@ global.pausecombotime = true
 obj_tv.alarm[1] = 75
 with (instance_create((x + 16), y, obj_smallnumber))
     number = "10"
+	with instance_create(x,y, obj_collecteffect)
+	{
+	sprite_index = other.sprite_index
+	choosed = true;
+	}
 instance_destroy()
 
 
