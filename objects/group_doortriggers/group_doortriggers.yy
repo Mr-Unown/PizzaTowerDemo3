@@ -1,5 +1,5 @@
 {
-    "id": "d32ccbe1-e728-4bf1-bd9d-eed1e93fa6b8",
+    "id": "50c1260c-9a1b-42bb-bae9-223c38530706",
     "modelName": "GMObject",
     "mvc": "1.0",
     "name": "group_doortriggers",

@@ -7730,6 +7730,14 @@
             }
         },
         {
+            "Key": "50c1260c-9a1b-42bb-bae9-223c38530706",
+            "Value": {
+                "id": "5b46a631-2a6a-4b54-8377-3b2e667f635c",
+                "resourcePath": "objects\\group_doortriggers\\group_doortriggers.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "50daae4c-1aa0-49a1-891e-babbb6c4677c",
             "Value": {
                 "id": "4c6feda7-4e87-4e0a-864b-5de3621657a7",
@@ -20346,14 +20354,6 @@
                 "id": "08e95cfe-e6ea-466b-be0f-8f2ea76a5453",
                 "resourcePath": "rooms\\strongcold_4\\strongcold_4.yy",
                 "resourceType": "GMRoom"
-            }
-        },
-        {
-            "Key": "d32ccbe1-e728-4bf1-bd9d-eed1e93fa6b8",
-            "Value": {
-                "id": "21d61d61-92a8-4bb7-be59-8e8fcad03e42",
-                "resourcePath": "objects\\group_doortriggers\\group_doortriggers.yy",
-                "resourceType": "GMObject"
             }
         },
         {
