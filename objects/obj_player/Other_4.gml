@@ -267,7 +267,7 @@ with (obj_shotgun)
 				if instance_exists(group_doortriggers)
 				{
 					show_debug_message("Found Subtitute Door")
-					var door = instance_nearest(x,y,group_doortriggers)
+					var door = group_doortriggers
 					if (hallway == 1)
 						x = (door.x + (hallwaydirection * 100))
 					else if (box == 1)
@@ -486,7 +486,7 @@ if (object_index == obj_player2)
 				if instance_exists(group_doortriggers)
 				{
 					show_debug_message("Found Subtitute Door")
-					var door = instance_nearest(x,y,group_doortriggers)
+					var door = group_doortriggers
 					if (hallway == 1)
 						x = (door.x + (hallwaydirection * 100))
 					else if (box == 1)

@@ -28,10 +28,24 @@ if (keyboard_check_pressed(vk_return) && input != "")
 				global.minutes = real(arg1)
 				global.seconds = real(arg2)
 				obj_camera.alarm[1] = 60 break
-			case "togglecollision":
-				showcollisions = !showcollisions break
-			case "debugmode":
-				global.debugmode = !global.debugmode break
+			case "togglecollision": //Could probably use simplification
+				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !showcollisions else arg1 = ds_list_find_value(_commands, 1)
+				if arg1 = "true"
+					arg1 = 1
+				else if arg1 = "false"
+					arg1 = 0
+				else if real(arg1) != 1 && real(arg1) != 0
+					arg1 = !showcollisions				
+				showcollisions = arg1 break
+			case "debugmode": //Could probably use optimization
+				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.debugmode else arg1 = ds_list_find_value(_commands, 1)
+				if arg1 = "true"
+					arg1 = 1
+				else if arg1 = "false"
+					arg1 = 0
+				else if real(arg1) != 1 && real(arg1) != 0
+					arg1 = !global.debugmode				
+				global.debugmode = !global.debugmode break			
 			default:
 				show_debug_message("FAIL TBH!")
 		}
