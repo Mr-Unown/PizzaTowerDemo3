@@ -15,3 +15,5 @@ obj_tv.alarm[1] = 75
 scr_soundeffect(6)
 instance_destroy()
 
+repeat 10
+		instance_create(x + random_range(-10,10),y + random_range(-10,10), obj_collecteffect)

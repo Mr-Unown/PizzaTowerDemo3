@@ -6,7 +6,7 @@ if ((!pause) && (!instance_exists(obj_fadeout)))
         if (!instance_exists(obj_pausefadeout))
             instance_create(x, y, obj_pausefadeout)
     }
-    if ((obj_player2.key_jump || keyboard_check_pressed(vk_f5)) && global.coop == 0 && room != rank_room && room != Scootertransition && room != Realtitlescreen && room != timesuproom)
+    if ((obj_player2.key_jump || keyboard_check_pressed(vk_f5)) && global.coop == 0 && room != rank_room && room != Scootertransition && room != Realtitlescreen && room != timesuproom) && obj_debugcontroller.active = false
     {
         global.coop = 1
         with (obj_player2)
@@ -28,7 +28,7 @@ if ((!pause) && (!instance_exists(obj_fadeout)))
     }
     if (global.debugmode == 1)
     {
-        if (keyboard_check_pressed(vk_f5) && global.coop == 0)
+        if (keyboard_check_pressed(vk_f5) && global.coop == 0) && obj_debugcontroller.active = false
         {
             global.coop = 1
             with (obj_player2)
@@ -75,24 +75,24 @@ if ((!pause) && (!instance_exists(obj_fadeout)))
 		}*/
     }
 }
-if keyboard_check_pressed(vk_f6)
-{
-    global.debugmode = !global.debugmode
-	if global.debugmode = 1
-    with (obj_tv)
-    {
-        message = "DEBUG MODE ON"
-        showtext = 1
-        alarm[0] = 100
-    }
-	else
-	with (obj_tv)
-    {
-        message = "DEBUG MODE OFF"
-        showtext = 1
-        alarm[0] = 100
-    }
-}
+//if keyboard_check_pressed(vk_f6)
+//{
+//    global.debugmode = !global.debugmode
+//	if global.debugmode = 1
+//    with (obj_tv)
+//    {
+//        message = "DEBUG MODE ON"
+//        showtext = 1
+//        alarm[0] = 100
+//    }
+//	else
+//	with (obj_tv)
+//    {
+//        message = "DEBUG MODE OFF"
+//        showtext = 1
+//        alarm[0] = 100
+//    }
+//}
 if keyboard_check_pressed(vk_f7)
 {
     global.hudmode = !global.hudmode
