@@ -33,7 +33,7 @@ if (keyboard_check_pressed(vk_return) && input != "")
 			case "debugmode":
 				global.debugmode = !global.debugmode break
 			default:
-				show_debug_message("FAIL!")
+				show_debug_message("FAIL TBH!")
 		}
 		
         active = false
@@ -42,7 +42,7 @@ if (keyboard_check_pressed(vk_return) && input != "")
 	
 with (obj_solid)
 {
-    if (object_index == obj_solid || object_index == obj_secretbigblock || object_index == obj_secretblock || object_index == obj_secretmetalblock)
+    if (object_index == obj_solid || object_index == obj_secretbigblock || object_index == obj_secretbigblock2 || object_index == obj_secretonewaybigblock || object_index == obj_secretblock || object_index == obj_secretblock2 || object_index == obj_secretmetalblock)
         visible = other.showcollisions
 }
 with (obj_slope)
@@ -53,5 +53,10 @@ with (obj_slope)
 with (obj_platform)
 {
     if (object_index == obj_platform)
+        visible = other.showcollisions
+}
+with (obj_platformside)
+{
+    if (object_index == obj_platformside)
         visible = other.showcollisions
 }

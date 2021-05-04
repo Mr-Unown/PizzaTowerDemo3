@@ -1,6 +1,7 @@
 //Inputs
 scr_getinput()
-
+if instance_exists(obj_debugcontroller) && obj_debugcontroller.active = true
+	return;
 //Select your Car
 if ((key_up2 || keyboard_check_pressed(vk_up)) && selectedfile > 0 && global.savefileselected = false)
 {
