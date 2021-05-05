@@ -25,10 +25,7 @@ colorindex[6] = 6
 colorindex[7] = 7
 
 if variable_global_exists(global.savefile)
-continue;
-else
-return;
-
+{
 //Saved Colors
 #region Spaghetti
 ini_open("Palettes/"+string(characters)+"_palettes_"+global.savefile+".ini")
@@ -109,7 +106,7 @@ colored[colorindex[7],2] = ini_read_real(string(characters)+"Colors"+string(colo
 //ini_write_real(string(characters["P"])+"Colors", "Red", color[0])
 ini_close()
 #endregion
-
+}
 
 //Colors
 color[0] = make_color_rgb(colored[0,0],colored[0,1],colored[0,2])
