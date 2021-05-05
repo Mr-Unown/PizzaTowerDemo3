@@ -27,7 +27,7 @@ colorindex[7] = 7
 
 //Saved Colors
 #region Spaghetti
-ini_open("saveData.ini")
+ini_open("Palettes/"+string(characters)+"_palettes_"+global.savefile+".ini")
 if !ini_section_exists(string(characters)+"Colors"+string(colorindex[0])) {
  ini_write_real(string(characters)+"Colors"+string(colorindex[0]), "Red", 0);
  ini_write_real(string(characters)+"Colors"+string(colorindex[0]), "Green", 0);
