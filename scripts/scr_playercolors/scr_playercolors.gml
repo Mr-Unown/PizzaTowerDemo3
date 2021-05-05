@@ -24,6 +24,10 @@ colorindex[5] = 5
 colorindex[6] = 6
 colorindex[7] = 7
 
+if variable_global_exists(global.savefile)
+continue;
+else
+return;
 
 //Saved Colors
 #region Spaghetti
