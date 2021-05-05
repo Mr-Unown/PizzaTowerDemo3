@@ -21,6 +21,9 @@ colorindex[2] = 2
 colorindex[3] = 3
 colorindex[4] = 4
 colorindex[5] = 5
+colorindex[6] = 6
+colorindex[7] = 7
+
 
 //Saved Colors
 #region Spaghetti
@@ -55,6 +58,16 @@ if !ini_section_exists(string(characters)+"Colors"+string(colorindex[5])) {
  ini_write_real(string(characters)+"Colors"+string(colorindex[5]), "Green", 255);
  ini_write_real(string(characters)+"Colors"+string(colorindex[5]), "Blue", 255);
 }
+if !ini_section_exists(string(characters)+"Colors"+string(colorindex[6])) {
+ ini_write_real(string(characters)+"Colors"+string(colorindex[6]), "Red", 255);
+ ini_write_real(string(characters)+"Colors"+string(colorindex[6]), "Green", 255);
+ ini_write_real(string(characters)+"Colors"+string(colorindex[6]), "Blue", 255);
+}
+if !ini_section_exists(string(characters)+"Colors"+string(colorindex[7])) {
+ ini_write_real(string(characters)+"Colors"+string(colorindex[7]), "Red", 255);
+ ini_write_real(string(characters)+"Colors"+string(colorindex[7]), "Green", 255);
+ ini_write_real(string(characters)+"Colors"+string(colorindex[7]), "Blue", 255);
+}
 
 
 colored[colorindex[0],0] = ini_read_real(string(characters)+"Colors"+string(colorindex[0]), "Red", 0);
@@ -81,6 +94,13 @@ colored[colorindex[5],0] = ini_read_real(string(characters)+"Colors"+string(colo
 colored[colorindex[5],1] = ini_read_real(string(characters)+"Colors"+string(colorindex[5]), "Green", 255);
 colored[colorindex[5],2] = ini_read_real(string(characters)+"Colors"+string(colorindex[5]), "Blue", 255);
 
+colored[colorindex[6],0] = ini_read_real(string(characters)+"Colors"+string(colorindex[6]), "Red", 255);
+colored[colorindex[6],1] = ini_read_real(string(characters)+"Colors"+string(colorindex[6]), "Green", 255);
+colored[colorindex[6],2] = ini_read_real(string(characters)+"Colors"+string(colorindex[6]), "Blue", 255);
+
+colored[colorindex[7],0] = ini_read_real(string(characters)+"Colors"+string(colorindex[7]), "Red", 255);
+colored[colorindex[7],1] = ini_read_real(string(characters)+"Colors"+string(colorindex[7]), "Green", 255);
+colored[colorindex[7],2] = ini_read_real(string(characters)+"Colors"+string(colorindex[7]), "Blue", 255);
 
 //ini_write_real(string(characters["P"])+"Colors", "Red", color[0])
 ini_close()
@@ -94,3 +114,5 @@ color[2] = make_color_rgb(colored[2,0],colored[2,1],colored[2,2])
 color[3] = make_color_rgb(colored[3,0],colored[3,1],colored[3,2])
 color[4] = make_color_rgb(colored[4,0],colored[4,1],colored[4,2])
 color[5] = make_color_rgb(colored[5,0],colored[5,1],colored[5,2])
+color[6] = make_color_rgb(colored[6,0],colored[6,1],colored[6,2])
+color[7] = make_color_rgb(colored[7,0],colored[7,1],colored[7,2])

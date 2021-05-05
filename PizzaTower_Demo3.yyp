@@ -12618,6 +12618,14 @@
             }
         },
         {
+            "Key": "82bc45c3-d9c1-4fbb-84c2-5e1e9dd5d4c0",
+            "Value": {
+                "id": "b8af2a83-bff1-4e0a-a8c0-fbc30248918c",
+                "resourcePath": "sprites\\spr_pizzellepalette\\spr_pizzellepalette.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "82c6ef2c-57fd-4946-985b-f54815b6b70b",
             "Value": {
                 "id": "1d211ce8-7562-4412-8211-b560d737b19c",
@@ -13354,6 +13362,14 @@
             }
         },
         {
+            "Key": "8b8c9f7a-1962-4f20-a886-3298a4159eb2",
+            "Value": {
+                "id": "c173e9e4-74e5-40bb-9999-4adb55e48960",
+                "resourcePath": "objects\\obj_metaldetector\\obj_metaldetector.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "8b8fdb6d-9a87-40f1-b04e-78fdcde6962f",
             "Value": {
                 "id": "b1b38360-5933-491e-9df9-b838a293b1fd",
@@ -13766,6 +13782,14 @@
             "Value": {
                 "id": "21d63560-2102-4f73-8627-3e89e0b60cf6",
                 "resourcePath": "sprites\\spr_player_mach3jump\\spr_player_mach3jump.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8fcc3ad0-19cb-4549-9dff-dad14dc95079",
+            "Value": {
+                "id": "f2e2d282-5cd8-4b9d-89c5-c4ea12b65667",
+                "resourcePath": "sprites\\spr_metaldetector\\spr_metaldetector.yy",
                 "resourceType": "GMSprite"
             }
         },

@@ -1,8 +1,8 @@
  switch room
     {
         case entrance_10:
-            global.minutes = 2
-            global.seconds = 30
+            global.minutes = 3
+            global.seconds = 15
             break
         case medieval_10:
             global.minutes = 2
@@ -18,15 +18,15 @@
             break
         case ancient_10:
             global.minutes = 3
-            global.seconds = 15
+            global.seconds = 50
             break					
         case chateau_6:
-            global.minutes = 2
+            global.minutes = 3
             global.seconds = 15
             break	
         case strongcold_1:
             global.minutes = 3
-            global.seconds = 30
+            global.seconds = 50
             break
 			/*
         case desert_16:

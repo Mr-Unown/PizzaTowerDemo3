@@ -1263,7 +1263,7 @@ switch character {
 	spr_bodyslamstart = spr_player_bodyslamstart
 	spr_bodyslamfall = spr_player_bodyslamfall
 	spr_bodyslamland = spr_player_bodyslamland
-	spr_crazyrun = spr_player_crazyrun
+	spr_crazyrun = spr_playerPZ_crazyrun
 	spr_bombpeprun = spr_bombpep_run
 	spr_bombpepintro = spr_bombpep_intro
 	spr_bombpepthrow = spr_player_throw
@@ -1325,7 +1325,7 @@ switch character {
     spr_fightball1 = spr_player_fightball1
 	spr_fightball2 = spr_player_fightball2
     spr_squished = spr_player_squished
-    spr_palette = spr_peppalette
+    spr_palette = spr_pizzellepalette
     spr_tomatojump = spr_player_Sjump
     spr_boxxedair = spr_boxxedpep_air
     spr_boxxedwalk = spr_boxxedpep_walk

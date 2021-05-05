@@ -1,4 +1,4 @@
-if surface_exists(surf_pallete) && !((paletteselect < 12 && character = "P") || (paletteselect < 11 && character != "P" && character != "PM")|| (paletteselect < 5 && character = "PM"))
+if surface_exists(surf_pallete) && !((paletteselect < 12 && (character = "P" || character = "PZ")) || (paletteselect < 11 && character != "P" && character != "PZ" && character != "PM") || (paletteselect < 5 && character = "PM"))
 {
 	#region Surface
 	surface_set_target(surf_pallete);
@@ -11,7 +11,7 @@ if surface_exists(surf_pallete) && !((paletteselect < 12 && character = "P") || 
 	#endregion
 	pal_swap_set(surf_pallete, 1, true)
 }
-else if (paletteselect < 12 && character = "P") || (paletteselect < 11 && character != "P" && character != "PM")|| (paletteselect < 5 && character = "PM")
+else if ((paletteselect < 12 && (character = "P" || character = "PZ")) || (paletteselect < 11 && character != "P" && character != "PZ" && character != "PM") || (paletteselect < 5 && character = "PM"))
 	pal_swap_set(spr_palette, paletteselect, false)
 	
 draw_sprite_ext(sprite_index, image_index, x, y, xscale, yscale, image_angle, image_blend, image_alpha)
