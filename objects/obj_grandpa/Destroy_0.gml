@@ -35,7 +35,7 @@ if (ds_list_find_index(global.saveroom, id) == -1)
     global.combo = (global.combo + 1)
     if (global.nocombo == 0)
     {
-        if (global.combo == 1)
+        if (global.stylethreshold <= 0)
         {
             if (grabbedby == 1)
                 obj_player1.collectscore = (obj_player1.collectscore + 10)
@@ -45,9 +45,9 @@ if (ds_list_find_index(global.saveroom, id) == -1)
                 obj_player1.collectscore = (obj_player1.collectscore + 10)
             with (instance_create(x, y, obj_smallnumber))
                 number = "10"
-            global.style += 5
+
         }
-        if (global.combo == 2)
+        if (global.stylethreshold = 1)
         {
             if (grabbedby == 1)
                 obj_player1.collectscore = (obj_player1.collectscore + 20)
@@ -57,9 +57,9 @@ if (ds_list_find_index(global.saveroom, id) == -1)
                 obj_player1.collectscore = (obj_player1.collectscore + 20)
             with (instance_create(x, y, obj_smallnumber))
                 number = "20"
-            global.style += 5
+
         }
-        if (global.combo == 3)
+        if (global.stylethreshold = 2)
         {
             if (grabbedby == 1)
                 obj_player1.collectscore = (obj_player1.collectscore + 40)
@@ -69,9 +69,21 @@ if (ds_list_find_index(global.saveroom, id) == -1)
                 obj_player1.collectscore = (obj_player1.collectscore + 40)
             with (instance_create(x, y, obj_smallnumber))
                 number = "40"
-			global.style += 5
+
         }
-        if (global.combo >= 4)
+        if (global.stylethreshold = 3)
+        {
+            if (grabbedby == 1)
+                obj_player1.collectscore = (obj_player1.collectscore + 60)
+            else if (grabbedby == 2)
+                 obj_player2.collectscore = (obj_player2.collectscore + 60)
+            else
+                obj_player1.collectscore = (obj_player1.collectscore + 60)
+            with (instance_create(x, y, obj_smallnumber))
+                number = "60"
+
+        }
+        if (global.stylethreshold >= 4)
         {
             if (grabbedby == 1)
                 obj_player1.collectscore = (obj_player1.collectscore + 80)
@@ -81,9 +93,10 @@ if (ds_list_find_index(global.saveroom, id) == -1)
                 obj_player1.collectscore = (obj_player1.collectscore + 80)
             with (instance_create(x, y, obj_smallnumber))
                 number = "80"
-            global.style += 5
-        }
+            
+        }		
     }
+	global.style += 5
     global.combotime = 60
 	global.pausecombotime = true
     obj_tv.alarm[1] = 75

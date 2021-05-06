@@ -41,7 +41,7 @@ if (grounded && move != 0 && sprite_index == spr_knightpepidle)
     sprite_index = spr_knightpepwalk
 else if (grounded && move == 0 && sprite_index == spr_knightpepwalk)
     sprite_index = spr_knightpepidle
-if (input_buffer_jump < 8 && vsp > 0 && grounded && (sprite_index == spr_knightpepidle || sprite_index == spr_knightpepwalk))
+if (input_buffer_jump < 8 && vsp > 0 && grounded && (sprite_index == spr_knightpepidle || sprite_index = spr_knightpepland || sprite_index == spr_knightpepwalk))
 {
     image_index = 0
     sprite_index = spr_knightpepjumpstart

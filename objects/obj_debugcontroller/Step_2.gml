@@ -45,7 +45,31 @@ if (keyboard_check_pressed(vk_return) && input != "")
 					arg1 = 0
 				else if real(arg1) != 1 && real(arg1) != 0
 					arg1 = !global.debugmode				
-				global.debugmode = !global.debugmode break			
+				global.debugmode = !global.debugmode break		
+			case "changecharacter":
+				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = 1 else arg1 = ds_list_find_value(_commands, 1)
+				var arg2 if ds_list_find_value(_commands, 2) == undefined arg2 = "P" else arg2 = ds_list_find_value(_commands, 2)
+				var arg3 if ds_list_find_value(_commands, 3) == undefined arg3 = undefined else arg3 = ds_list_find_value(_commands, 3)				
+				var player = obj_player1
+				if arg1 = 2
+				player = obj_player2
+				else if arg1 = 1
+				player = obj_player1
+				//Pogo
+				if arg3 = "true"
+					arg3 = 1
+				else if arg3 = "false"
+					arg3 = 0		
+				with player
+				{
+				character = arg2
+				if is_undefined(arg3) && arg2 = "N"
+				pogo = !pogo
+				else
+				pogo = arg3
+				paletteselect = 0
+				}
+				break
 			default:
 				show_debug_message("FAIL TBH!")
 		}

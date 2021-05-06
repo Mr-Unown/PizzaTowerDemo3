@@ -13,6 +13,7 @@ commands[0] = "room_goto [roomname] [targetdoor]"
 commands[1] = "escape [minutes] [seconds]"
 commands[2] = "togglecollision (true/false)"
 commands[3] = "debugmode (true/false)"
+commands[4] = "changecharacter [player] [character] (true/false)"
 
 
 // command functions

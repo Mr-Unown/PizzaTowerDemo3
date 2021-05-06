@@ -128,5 +128,8 @@ if (superspringjump != 1)
 	
 
 }
-image_speed = 0.5
+if character != "PZ"
+	image_speed = 0.5
+else
+	image_speed = 0.35
 scr_collide_player()
