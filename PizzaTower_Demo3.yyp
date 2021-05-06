@@ -20045,6 +20045,14 @@
             }
         },
         {
+            "Key": "cfbbd251-2f8d-4c8f-81e8-8cb0ca3ebeb9",
+            "Value": {
+                "id": "705fe7d0-50f2-4a34-acea-ed8ab37370ef",
+                "resourcePath": "objects\\obj_shotgun\\obj_shotgun.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "cfbdeb6a-3319-40cd-9891-5f3cd89955a8",
             "Value": {
                 "id": "0bb34289-e159-46a8-a7d1-7c3baff722e4",
