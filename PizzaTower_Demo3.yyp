@@ -11226,6 +11226,14 @@
             }
         },
         {
+            "Key": "748a3455-46bd-4718-a7ed-6216b80a7487",
+            "Value": {
+                "id": "d9b6ed29-d60d-4421-a341-899ace7efe6b",
+                "resourcePath": "objects\\obj_safespace\\obj_safespace.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "749dc324-c1ad-44c3-8e4c-be567f1b2e4e",
             "Value": {
                 "id": "befe491d-8bb1-42bf-97b9-861a292ed163",

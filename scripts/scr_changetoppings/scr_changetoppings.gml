@@ -134,26 +134,4 @@ with (obj_destroyable2_bigescape)
             instance_create(((x + (sprite_width / 2)) + random_range(-10, 10)), ((y + (sprite_height / 2)) + random_range(-5, 5)), obj_cloudeffect)
     }
 }
-with (obj_shotgun)
-{
-    if (ds_list_find_index(global.saveroom, id) == -1)
-    {
-        if ((obj_player1.character == "P" && obj_player1.spotlight == 1) || (obj_player2.character == "P" && obj_player1.spotlight == 0))
-            sprite_index = spr_shotgun
-        else if ((obj_player1.character == "N" && obj_player1.spotlight == 1) || (obj_player2.character == "N" && obj_player1.spotlight == 0))
-            sprite_index = spr_minigun
-        else if ((obj_player1.character == "S" && obj_player1.spotlight == 1) || (obj_player2.character == "S" && obj_player1.spotlight == 0))
-        {
-            sprite_index = choose(spr_shotgun, spr_minigun)
-            alarm[0] = 20
-        }
-        else if ((obj_player1.character == "V" && obj_player1.spotlight == 1) || (obj_player2.character == "V" && obj_player1.spotlight == 0))
-        {
-            sprite_index = choose(spr_shotgun, spr_minigun)
-            alarm[0] = 20
-        }
-        instance_create((x + (sprite_width / 2)), (y + (sprite_height / 2)), obj_cloudeffect)
-        repeat (3)
-            instance_create(((x + (sprite_width / 2)) + random_range(-10, 10)), ((y + (sprite_height / 2)) + random_range(-5, 5)), obj_cloudeffect)
-    }
-}
+

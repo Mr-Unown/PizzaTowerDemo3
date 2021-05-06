@@ -7,6 +7,7 @@ supertaunteffect = noone;
 //Pizza Shield
 pizzashield = false;
 pizzashieldbackup = 0;
+pizzashieldframes = 0;
 
 global.freezeframe = false;
 global.freezeframetimer = 200;

@@ -188,7 +188,8 @@ with (argument0)
             {
 				sprite_index = spr_pizzashield_block
 				image_index = 0
-				image_speed = 0.35
+				image_speed = 0
+				image_xscale = argument0.image_xscale
             }
             if (pizzashieldbackup >= 1)
                 pizzashieldbackup = pizzashieldbackup - 1

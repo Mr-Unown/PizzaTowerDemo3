@@ -35,7 +35,7 @@ if (bulletbuffer == 0) && global.freezeframe = false
                 instance_create(x, y, obj_baddiegibs)
                 instance_destroy()
             }
-            instance_destroy()
+            instance_destroy(other.id)
         }
     }
 }

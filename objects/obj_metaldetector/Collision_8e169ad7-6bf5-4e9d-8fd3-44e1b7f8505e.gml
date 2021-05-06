@@ -2,6 +2,10 @@ with other
 {
 	if GshotgunAnim = true
 	{
+			if state == states.shotgun
+			{
+				state = 0
+			}
             with (instance_create(x, y, obj_sausageman_dead))
             {
                 if (other.character == "P")

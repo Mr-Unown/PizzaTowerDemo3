@@ -1,5 +1,6 @@
-if (grounded && (!place_meeting(x, y, obj_solid)))
-    draw_sprite(spr_grabicon, grabindex, (x + 20), (y - 30))
-draw_self()
 
+draw_self()
+if (grounded && (!place_meeting(x, y, obj_solid)))
+    draw_sprite(spr_grabicon, grabindex, x, (y - 25))
+	
 grabindex += 0.35

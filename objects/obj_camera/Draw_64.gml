@@ -171,7 +171,7 @@ if (player.state != 55)
 	//Backup
 	 if (player.pizzashieldbackup >= 1)
 	 {
-		 for (var i = 0; i < pizzashieldbackup; ++i) {
+		 for (var i = 0; i < player.pizzashieldbackup; ++i) {
 		      draw_sprite_ext(spr_shieldbackup, -1, 50, 100 + (32*i), 1, 1, 0, c_white, alpha)
 		 }
 	 }

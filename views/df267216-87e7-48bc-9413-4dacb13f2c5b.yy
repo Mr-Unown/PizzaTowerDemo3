@@ -26,7 +26,8 @@
         "344d1132-d5d2-4e66-a05a-51ee2be7679f",
         "85c9c674-fc85-4014-a9c9-4e726ed11703",
         "a9a8ed3d-e12f-4040-990a-8321a13fe969",
-        "9732fc17-4fe1-4bfb-bbb8-07415d2368f0"
+        "9732fc17-4fe1-4bfb-bbb8-07415d2368f0",
+        "748a3455-46bd-4718-a7ed-6216b80a7487"
     ],
     "filterType": "GMObject",
     "folderName": "Core",

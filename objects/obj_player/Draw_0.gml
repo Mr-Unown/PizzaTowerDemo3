@@ -31,8 +31,13 @@ if flash
 }
 //Pizzashield
 if pizzashield = true
-	draw_sprite_ext(spr_pizzashield, -1, x, y, xscale, yscale, image_angle, image_blend, image_alpha)
-	
+	draw_sprite_ext(spr_pizzashield, pizzashieldframes , x, y, xscale, yscale, image_angle, image_blend, image_alpha)
+if global.freezeframe = false
+	pizzashieldframes += 0.35
+if pizzashieldframes > 16
+	pizzashieldframes = 0
+
+//Spell
 if spellshowbuffer > 0
 		draw_sprite(spr_dougieicons, (spellselect - 1), x, y - 50)
 	
