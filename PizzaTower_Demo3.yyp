@@ -4738,6 +4738,14 @@
             }
         },
         {
+            "Key": "32f6dd1b-d673-4ca5-a91e-e033c0659fe8",
+            "Value": {
+                "id": "552acbf3-c851-46b6-b5cc-c9ccd71aa232",
+                "resourcePath": "sprites\\spr_swordstonereappear\\spr_swordstonereappear.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "32ffb772-df3e-49e2-8857-cb99e917c857",
             "Value": {
                 "id": "dff2c0e0-1e5d-494e-97b8-ffdd781d48cf",

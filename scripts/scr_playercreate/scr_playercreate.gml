@@ -8,6 +8,8 @@ supertaunteffect = noone;
 pizzashield = false;
 pizzashieldbackup = 0;
 pizzashieldframes = 0;
+//Vigi Health nerf
+vigitimer = 100
 
 global.freezeframe = false;
 global.freezeframetimer = 200;

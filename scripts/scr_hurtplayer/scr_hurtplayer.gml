@@ -45,13 +45,19 @@ with (argument0)
         }
         if (character == "V")
         {
-            if (vigihealth != 0)
+            if (vigihealth != 0) && pizzashield = false
             {
                 state = 73
                 alarm[8] = 80
                 alarm[7] = 50
                 vigihealth -= 45
             }
+			else
+			{
+				state = 73
+                alarm[8] = 80
+                alarm[7] = 50
+			}
         }
         if (vigihealth <= 0 && character == "V")
         {

@@ -1,1 +1,1 @@
-sprite_index = spr_swordstone
+sprite_index = spr_swordstonereappear

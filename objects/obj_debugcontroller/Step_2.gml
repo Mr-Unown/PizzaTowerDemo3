@@ -68,6 +68,7 @@ if (keyboard_check_pressed(vk_return) && input != "")
 				else
 				pogo = arg3
 				paletteselect = 0
+				scr_characterspr()
 				}
 				break
 			default:

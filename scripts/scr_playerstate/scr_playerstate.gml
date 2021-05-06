@@ -434,4 +434,15 @@ if surface_exists(surf_pallete) && !((paletteselect < 12 && character = "P") || 
 	custompalette = true
 else if (paletteselect < 12 && character = "P") || (paletteselect < 11 && character != "P" && character != "PM")|| (paletteselect < 5 && character = "PM")
 	custompalette = false
+//Vigi Health nerf
+if vigihealth > 100 && vigitimer <= 0
+{
+	vigitimer = 100
+	vigihealth = vigihealth - 5
+}
+else if vigihealth <= 100
+	vigitimer = 100
 	
+vigitimer--
+
+vigihealth = clamp(vigihealth,0,250)
