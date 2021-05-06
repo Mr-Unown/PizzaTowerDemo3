@@ -1894,7 +1894,11 @@
         "ed017705-31f4-44f4-b7ba-1ac3a4f49529",
         "ca47b4a3-4f5d-4e1c-8b02-a6e6bc59eff1",
         "82bc45c3-d9c1-4fbb-84c2-5e1e9dd5d4c0",
-        "8fcc3ad0-19cb-4549-9dff-dad14dc95079"
+        "8fcc3ad0-19cb-4549-9dff-dad14dc95079",
+        "91c20f22-f3fd-446d-bc9d-de03fc502afb",
+        "cfbdeb6a-3319-40cd-9891-5f3cd89955a8",
+        "f062e173-733c-4462-9151-bef4904c9827",
+        "868b1e1c-80d6-4f1a-b1f2-8de25d4b1775"
     ],
     "filterType": "GMSprite",
     "folderName": "Sprites",

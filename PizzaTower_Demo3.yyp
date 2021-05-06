@@ -1546,6 +1546,14 @@
             }
         },
         {
+            "Key": "0ecdabea-c54c-4c72-ba2f-bcb7fce7ab6c",
+            "Value": {
+                "id": "f9f04f66-7d34-429f-b79a-5093df7851da",
+                "resourcePath": "objects\\obj_pizzashield\\obj_pizzashield.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0ee93b8d-d3d8-486b-a960-33f43cc56ba9",
             "Value": {
                 "id": "c8152fed-8627-44aa-b1dd-c26848d4d501",
@@ -12970,6 +12978,14 @@
             }
         },
         {
+            "Key": "868b1e1c-80d6-4f1a-b1f2-8de25d4b1775",
+            "Value": {
+                "id": "dff2ac45-3824-4f16-9a10-e7e2982c5cd4",
+                "resourcePath": "sprites\\spr_pizzashield_collectible\\spr_pizzashield_collectible.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "86a6f845-7077-483b-9a7e-99d4a5046faf",
             "Value": {
                 "id": "d8fddc38-c4a4-4cfe-89c4-524428628257",
@@ -13958,6 +13974,14 @@
             "Value": {
                 "id": "c12eff3a-b2bf-40f3-a4ed-e9d0aa4ce207",
                 "resourcePath": "sprites\\spr_shotgun_shot\\spr_shotgun_shot.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "91c20f22-f3fd-446d-bc9d-de03fc502afb",
+            "Value": {
+                "id": "57753a75-8396-4889-ac97-095f58655239",
+                "resourcePath": "sprites\\spr_gunbox\\spr_gunbox.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -20021,6 +20045,14 @@
             }
         },
         {
+            "Key": "cfbdeb6a-3319-40cd-9891-5f3cd89955a8",
+            "Value": {
+                "id": "0bb34289-e159-46a8-a7d1-7c3baff722e4",
+                "resourcePath": "sprites\\spr_pizzashield\\spr_pizzashield.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "cfca5ad6-62a0-467c-ab2f-48f178eaa08b",
             "Value": {
                 "id": "6225a48c-a3a8-4197-8027-30c319b6ad00",
@@ -20224,7 +20256,7 @@
             "Key": "d14d44b9-24be-4c69-815d-eacab1dad866",
             "Value": {
                 "id": "284fb7d0-cb75-4d9b-9787-0cfe33b992da",
-                "resourcePath": "sprites\\spr_shotgunbackup\\spr_shotgunbackup.yy",
+                "resourcePath": "sprites\\spr_shieldbackup\\spr_shieldbackup.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -23273,6 +23305,14 @@
             "Value": {
                 "id": "a4b9c61f-13ca-4cf1-8120-7016174ec13b",
                 "resourcePath": "sprites\\spr_punchdust\\spr_punchdust.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f062e173-733c-4462-9151-bef4904c9827",
+            "Value": {
+                "id": "d4be6a60-2302-411a-bee0-4d58393ac8e5",
+                "resourcePath": "sprites\\spr_pizzashield_block\\spr_pizzashield_block.yy",
                 "resourceType": "GMSprite"
             }
         },

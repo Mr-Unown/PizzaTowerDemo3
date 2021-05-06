@@ -2,6 +2,7 @@ scr_initinput()
 scr_playercreate()
 pogo = false
 pipedirection = "none"
+global.savefile = "a"
 
 parry_id = -4
 parried_baddie = 0

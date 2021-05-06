@@ -29,8 +29,6 @@ if (player.state != 55)
 {
     if (player.character == "P")
     {
-        if (player.backupweapon == 1)
-            draw_sprite_ext(spr_shotgunbackup, -1, 50, 100, 1, 1, 0, c_white, alpha)
         if (shoving == 1)
             draw_sprite_ext_camera(spr_pepinoHUD_shove, image_index, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.sprite_index == spr_knightpep_thunder)
@@ -74,8 +72,6 @@ if (player.state != 55)
     }
     if (player.character == "N")
     {
-        if (player.backupweapon == 1)
-            draw_sprite_ext(spr_minigunbackup, -1, 50, 100, 1, 1, 0, c_white, alpha)
         if (shoving == 1)
             draw_sprite_ext_camera(spr_noiseHUD_shove, image_index, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.sprite_index == player.spr_knightpepthunder)
@@ -117,8 +113,6 @@ if (player.state != 55)
     }
     if (player.character == "V")
     {
-        if (player.backupweapon == 1)
-            draw_sprite_ext(spr_shotgunbackup, -1, 50, 100, 1, 1, 0, c_white, alpha)
         if (shoving == 1)
             draw_sprite_ext_camera(spr_pepinoHUD_shove, image_index, 125, 100, 1, 1, 0, c_white, alpha)
         else if (sprite_index == spr_playerV_dead)
@@ -164,8 +158,6 @@ if (player.state != 55)
     }
     if (player.character == "S")
     {
-        if (player.backupweapon == 1)
-            draw_sprite_ext(spr_shotgunbackup, -1, 50, 100, 1, 1, 0, c_white, alpha)
         if (shoving == 1)
             draw_sprite_ext_camera(spr_pepinoHUD_shove, image_index, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.sprite_index == spr_snick_thunder)
@@ -176,6 +168,15 @@ if (player.state != 55)
             draw_sprite_ext_camera(spr_snickHUD_normal, -1, 125, 60, 1, 1, 0, c_white, alpha)
     }
     shader_reset()
+	//Backup
+	 if (player.pizzashieldbackup >= 1)
+	 {
+		 for (var i = 0; i < pizzashieldbackup; ++i) {
+		      draw_sprite_ext(spr_shieldbackup, -1, 50, 100 + (32*i), 1, 1, 0, c_white, alpha)
+		 }
+	 }
+	
+	//Speedbar
     if ((player.movespeed < 2.4 || (!(player.state == 69 || player.state == 70 || player.state == 91 || player.state == states.jetpack || player.state == 17 || player.state == 71 || player.state == 37 || player.state == 12 || player.state == 111 || player.state == 22))) && player.state != states.pogo) || (player.pogomovespeed <= 7 && player.state = states.pogo && player.movespeed <= 0)
         draw_sprite_ext(spr_speedbar, 0, 125, 140, 1, 1, 0, c_white, alpha)
     else if ((player.movespeed >= 2.4 && player.movespeed < 4.8 && (player.state == 69 || player.state == 70 || player.state == 91  || player.state == states.jetpack || player.state == 17 || player.state == 71 || player.state == 37 || player.state == 12 || player.state == 111 || player.state == 22)) && player.state != states.pogo) || (player.pogomovespeed <= 7 && player.state = states.pogo && player.movespeed > 0)

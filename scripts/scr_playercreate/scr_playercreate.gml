@@ -6,11 +6,12 @@ supertauntcharged = false;
 supertaunteffect = noone;
 //Pizza Shield
 pizzashield = false;
+pizzashieldbackup = 0;
 
 global.freezeframe = false;
 global.freezeframetimer = 200;
-global.sleepScale = 1;
-global.sleepAcc = 0;
+//global.sleepScale = 1;
+//global.sleepAcc = 0;
 global.collect = 0
 global.collectN = 0
 pogojetcharge = false

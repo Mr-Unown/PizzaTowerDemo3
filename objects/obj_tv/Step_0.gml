@@ -130,7 +130,7 @@ else if (obj_player.sprite_index == obj_player.spr_golfwin)
     tvsprite = spr_tvclap
     once = 1
 }
-else if (obj_player.state == 73)
+else if (obj_player.state == states.hurt)
 {
     image_speed = 0.1
     showtext = 1
@@ -165,6 +165,12 @@ else if (global.hurtcounter >= global.hurtmilestone)
         character = "SNICK"
     else if (obj_player.character == "V")
         character = "THE VIGILANTE"
+    else if (obj_player.character == "PZ")
+        character = "PIZZELLE"
+    else if (obj_player.character == "PM")
+        character = "PEPPERMAN"		
+    else if (obj_player.character == "D")
+        character = "DOUGIE"	
     message = (((("YOU HAVE HURT " + string(character)) + " ") + string(global.hurtmilestone)) + " TIMES...")
     if (tvsprite != 917 && tvsprite != 916 && tvsprite != 915 && tvsprite != 914)
         tvsprite = choose(spr_tvtalking1, spr_tvtalking2, spr_tvtalking3, spr_tvtalking4)
@@ -222,13 +228,13 @@ else if (room == Realtitlescreen)
         message = ""
     }
 }
-if (obj_player.state == 56)
+else if (obj_player.state == states.keyget)
 {
     showtext = 1
     message = "GOT THE KEY!"
     alarm[0] = 50
 }
-if instance_exists(obj_noise_pushbutton)
+else if instance_exists(obj_noise_pushbutton)
 {
     if (obj_noise_pushbutton.hsp != 0 && global.panic == 0)
     {
@@ -237,6 +243,7 @@ if instance_exists(obj_noise_pushbutton)
         alarm[0] = 50
     }
 }
+
 if instance_exists(obj_pizzaball)
     global.golfbuffer = 50
 if ((!instance_exists(obj_pizzaball)) && global.golfbuffer > 0)

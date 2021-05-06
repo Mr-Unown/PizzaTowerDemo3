@@ -118,9 +118,16 @@ if state != 55 && !instance_exists(obj_fadeout) && !place_meeting(x,y,obj_hallwa
             sprite_index = spr_hurtjump
     else
             sprite_index = spr_hurt
-	with obj_tv {
-        message = choose("OW!", "OUCH!", "OH!", "WOH!")
-		chose = 0		
+	with obj_tv
+	{
+		image_speed = 0.1
+		showtext = 1
+		if (chose == 0)
+			message = choose("OW!", "OUCH!", "OH!", "WOH!")
+		alarm[0] = 50
+		chose = 1
+		tvsprite = spr_tvhurt
+		once = 1		
 	}
     movespeed = 1
     vsp = -5

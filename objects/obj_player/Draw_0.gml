@@ -17,6 +17,9 @@ else if ((paletteselect < 12 && (character = "P" || character = "PZ")) || (palet
 draw_sprite_ext(sprite_index, image_index, x, y, xscale, yscale, image_angle, image_blend, image_alpha)
 if (character == "P" && sprite_index == spr_taunt && floor(image_index) == 11)
     draw_sprite_ext(spr_promotion, image_index, x, y, 1, yscale, image_angle, image_blend, image_alpha)
+	
+
+	
 shader_reset()
 if flash
 {
@@ -26,7 +29,10 @@ if flash
         draw_sprite_ext(spr_promotion, image_index, x, y, 1, yscale, image_angle, image_blend, image_alpha)
     shader_reset()
 }
-
+//Pizzashield
+if pizzashield = true
+	draw_sprite_ext(spr_pizzashield, -1, x, y, xscale, yscale, image_angle, image_blend, image_alpha)
+	
 if spellshowbuffer > 0
 		draw_sprite(spr_dougieicons, (spellselect - 1), x, y - 50)
 	
