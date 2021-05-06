@@ -1890,6 +1890,14 @@
             }
         },
         {
+            "Key": "128db315-2c6c-4988-afb9-fef501fedb71",
+            "Value": {
+                "id": "dc55b05e-a127-4a61-b6af-2b728e57c827",
+                "resourcePath": "objects\\obj_shotgun\\obj_shotgun.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "12a6d5e6-7c26-47f4-9f15-e3366c37abdc",
             "Value": {
                 "id": "c233b8fd-ca6a-468f-b433-8bf7caae9199",
@@ -20042,14 +20050,6 @@
                 "id": "8961327e-e9f1-424f-8186-f32bd5ee8b72",
                 "resourcePath": "sprites\\spr_playerV_idle6\\spr_playerV_idle6.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "cfbbd251-2f8d-4c8f-81e8-8cb0ca3ebeb9",
-            "Value": {
-                "id": "705fe7d0-50f2-4a34-acea-ed8ab37370ef",
-                "resourcePath": "objects\\obj_shotgun\\obj_shotgun.yy",
-                "resourceType": "GMObject"
             }
         },
         {

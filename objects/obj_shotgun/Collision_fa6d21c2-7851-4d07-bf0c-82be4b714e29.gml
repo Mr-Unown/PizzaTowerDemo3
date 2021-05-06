@@ -1,3 +1,4 @@
+//Shotgun
 if (other.object_index == obj_player1)
 {
     if (obj_player1.character != "S" && obj_player1.character != "V" && obj_player1.character != "D" && obj_player1.character != "PM")
