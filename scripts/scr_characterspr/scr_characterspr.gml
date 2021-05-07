@@ -1250,36 +1250,36 @@ switch character {
 	spr_superjumpleft = spr_playerPZ_superjumpleft
 	spr_machfreefall = spr_playerPZ_machfreefall
 	spr_mach3hit = spr_playerPZ_mach4 //Missing
-	spr_knightpepwalk = spr_knightpep_walk
-	spr_knightpepjump = spr_knightpep_jump
-	spr_knightpepfall = spr_knightpep_fall
-	spr_knightpepidle = spr_knightpep_idle
-	spr_knightpepjumpstart = spr_knightpep_jumpstart
-	spr_knightpepthunder = spr_knightpep_thunder
-	spr_knightpepland = spr_knightpep_land
-	spr_knightpepdownslope = spr_knightpep_downslope
-	spr_knightpepstart =  spr_knightpep_start
-	spr_knightpepcharge = spr_knightpep_charge
-	spr_bodyslamstart = spr_player_bodyslamstart
-	spr_bodyslamfall = spr_player_bodyslamfall
-	spr_bodyslamland = spr_player_bodyslamland
+	spr_knightpepwalk = spr_knightpep_walk //Missing
+	spr_knightpepjump = spr_knightpep_jump //Missing
+	spr_knightpepfall = spr_knightpep_fall //Missing
+	spr_knightpepidle = spr_knightpep_idle //Missing
+	spr_knightpepjumpstart = spr_knightpep_jumpstart //Missing
+	spr_knightpepthunder = spr_knightpep_thunder //Missing
+	spr_knightpepland = spr_knightpep_land //Missing
+	spr_knightpepdownslope = spr_knightpep_downslope //Missing
+	spr_knightpepstart =  spr_knightpep_start //Missing
+	spr_knightpepcharge = spr_knightpep_charge //Missing
+	spr_bodyslamstart = spr_playerPZ_bodyslamstart
+	spr_bodyslamfall = spr_playerPZ_bodyslamfall
+	spr_bodyslamland = spr_playerPZ_bodyslamland
 	spr_crazyrun = spr_playerPZ_crazyrun
-	spr_bombpeprun = spr_bombpep_run
-	spr_bombpepintro = spr_bombpep_intro
-	spr_bombpepthrow = spr_player_throw
-	spr_bombpeprunabouttoexplode = spr_bombpep_runabouttoexplode
-	spr_bombpepend = spr_bombpep_end
-	spr_fireass = spr_player_fireass
-	spr_fireassground = spr_player_fireassground
-	spr_fireassend = spr_player_fireassend
-	spr_tumblestart = spr_player_tumblestart
-	spr_tumbleend = spr_player_tumbleend
-	spr_tumble = spr_player_tumble
-	spr_stunned = spr_player_stunned
-	spr_downpizzabox = spr_player_downpizzabox
-	spr_uppizzabox = spr_player_uppizzabox
-	spr_taunt = spr_player_taunt
-	spr_slipnslide = spr_player_slipnslide
+	spr_bombpeprun = spr_playerPZ_bomb
+	spr_bombpepintro = spr_playerPZ_bombstart
+	spr_bombpepthrow = spr_playerPZ_bomb
+	spr_bombpeprunabouttoexplode = spr_playerPZ_bombabouttoexplode
+	spr_bombpepend = spr_playerPZ_bombend
+	spr_fireass = spr_playerPZ_fireass
+	spr_fireassground = spr_playerN_fireassground //Missing
+	spr_fireassend = spr_playerN_fireassend //Missing
+	spr_tumblestart = spr_playerPZ_tumblestart
+	spr_tumbleend = spr_playerPZ_tumbleend
+	spr_tumble = spr_playerPZ_tumble
+	spr_stunned = spr_playerPZ_stunned 
+	spr_downpizzabox = spr_player_downpizzabox //Missing
+	spr_uppizzabox = spr_player_uppizzabox //Missing
+	spr_taunt = spr_playerPZ_taunt
+	spr_slipnslide =  spr_playerPZ_stunned //Missing
 	spr_mach3boost = spr_player_machslideboost3
 	spr_facehurtup = spr_player_facehurtup
 	spr_facehurt = spr_player_facehurt
@@ -1356,7 +1356,7 @@ switch character {
     break;	
 	case "BF": //Getting Freaky on a Friday Night
 	#region Boyfriend
-	//Friday Night Funkin' is a free-to-play and open-source 
+	//Friday Night Funkin' is a currently free-to-play and open-source 
 	//rhythm game developed by a team of four Newgrounds users.
 	//The game has a play style reminiscent of 
 	//Dance Dance Revolution and PaRappa the Rapper 

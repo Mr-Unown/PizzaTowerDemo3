@@ -25,6 +25,15 @@ else
 }
 if global.hudmode != 1
 {
+	//Backup
+	 if (player.pizzashieldbackup >= 1)
+	 {
+		 for (var i = 0; i < player.pizzashieldbackup; ++i) {
+		      draw_sprite_ext(spr_shieldbackup, -1, 50, 100 + (32*i), 1, 1, 0, c_white, alpha)
+		 }
+	 }
+	 
+	 
 if (player.state != 55)
 {
     if (player.character == "P")
@@ -168,13 +177,7 @@ if (player.state != 55)
             draw_sprite_ext_camera(spr_snickHUD_normal, -1, 125, 60, 1, 1, 0, c_white, alpha)
     }
     shader_reset()
-	//Backup
-	 if (player.pizzashieldbackup >= 1)
-	 {
-		 for (var i = 0; i < player.pizzashieldbackup; ++i) {
-		      draw_sprite_ext(spr_shieldbackup, -1, 50, 100 + (32*i), 1, 1, 0, c_white, alpha)
-		 }
-	 }
+
 	
 	//Speedbar
     if ((player.movespeed < 2.4 || (!(player.state == 69 || player.state == 70 || player.state == 91 || player.state == states.jetpack || player.state == 17 || player.state == 71 || player.state == 37 || player.state == 12 || player.state == 111 || player.state == 22))) && player.state != states.pogo) || (player.pogomovespeed <= 7 && player.state = states.pogo && player.movespeed <= 0)
