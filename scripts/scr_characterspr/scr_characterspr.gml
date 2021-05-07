@@ -152,6 +152,7 @@ switch character {
 	spr_panic = spr_player_panic
 	spr_facestomp = spr_player_facestomp
 	spr_freefall = spr_player_freefall
+	spr_freefallland = spr_player_freefallland	
 	spr_shotgunland = spr_shotgun_land
 	spr_shotgunshoot = spr_player_shotgun
 	spr_shotgunidle = spr_shotgun_idle
@@ -350,6 +351,7 @@ switch character {
 	spr_panic = spr_playerN_panicidle
 	spr_facestomp = spr_playerN_machfreefall1
 	spr_freefall = spr_playerN_machfreefall2
+	spr_freefallland = spr_playerN_bodyslamland
 	spr_shotgunland = spr_playerN_minigunland
 	spr_shotgunshoot = spr_playerN_minigunshoot
 	spr_shotgunidle = spr_playerN_minigunidle
@@ -717,6 +719,7 @@ switch character {
     spr_panic = spr_playerV_panic
     spr_facestomp = spr_playerV_bigfall1
     spr_freefall = spr_playerV_bigfall2
+	spr_freefallland = spr_playerV_bodyslamland
     spr_shotgunland = spr_shotgun_land
     spr_shotgunshoot = spr_player_shotgun
     spr_shotgunidle = spr_shotgun_idle
@@ -914,6 +917,7 @@ switch character {
     spr_panic = spr_playerN_panicidle
     spr_facestomp = spr_playerP_freefall
     spr_freefall = spr_playerP_freefall
+	spr_freefallland = spr_playerP_freefall
     spr_shotgunland = spr_playerN_minigunland
     spr_shotgunshoot = spr_playerN_minigunshoot
     spr_shotgunidle = spr_playerN_minigunidle
@@ -1113,6 +1117,7 @@ switch character {
 	spr_panic = spr_playerN_panicidle
 	spr_facestomp = spr_playerN_machfreefall1
 	spr_freefall = spr_playerN_machfreefall2
+	spr_freefallland = spr_playerV_bodyslamland	
 	spr_shotgunland = spr_playerN_minigunland
 	spr_shotgunshoot = spr_playerN_minigunshoot
 	spr_shotgunidle = spr_playerN_minigunidle
@@ -1309,6 +1314,7 @@ switch character {
 	spr_panic = spr_player_panic //Missing?
 	spr_facestomp = spr_playerPZ_facestomp 
 	spr_freefall = spr_playerPZ_freefall
+	spr_freefallland = spr_playerPZ_freefallland
 	spr_shotgunland = spr_shotgun_land
 	spr_shotgunshoot = spr_player_shotgun
 	spr_shotgunidle = spr_shotgun_idle

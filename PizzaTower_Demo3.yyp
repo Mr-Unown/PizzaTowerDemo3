@@ -18906,6 +18906,14 @@
             }
         },
         {
+            "Key": "c3475489-7cc9-4ec2-ac49-ead706e56808",
+            "Value": {
+                "id": "8ed6fee5-8af0-47c8-bbce-e66d45faabbe",
+                "resourcePath": "sprites\\spr_playerPZ_freefallland\\spr_playerPZ_freefallland.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c34ce058-2438-4d41-bb75-c8efe013a8e3",
             "Value": {
                 "id": "f8db5796-5425-479b-a438-c78b0bb94484",

@@ -96,7 +96,8 @@
         "abdcb461-307e-488d-8976-aacf217fda36",
         "91a8de7e-a602-40ad-a32f-5a4a4bb0131e",
         "c3730e5f-1dd4-4ecf-be97-9e2ee5043e32",
-        "8302d5f2-20a4-4aba-89ba-b033f198ed02"
+        "8302d5f2-20a4-4aba-89ba-b033f198ed02",
+        "c3475489-7cc9-4ec2-ac49-ead706e56808"
     ],
     "filterType": "GMSprite",
     "folderName": "Pizzelle Sprite",

@@ -207,7 +207,7 @@ if (grounded && (sprite_index == spr_facestomp || sprite_index == spr_freefall))
     }
     scr_soundeffect(15)
     image_index = 0
-    sprite_index = spr_bodyslamland
+    sprite_index = spr_freefallland
     state = 77
 }
 if (key_slap2 && suplexmove = 0 && (character = "P" || character = "PZ" || character = "N" || (character = "D" && spellselect = 2)))
