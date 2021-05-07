@@ -20757,6 +20757,14 @@
             }
         },
         {
+            "Key": "d5047a96-b569-408c-9a42-1d5558d3d114",
+            "Value": {
+                "id": "e4efcac0-492a-4d5d-aa0c-c08309ce7a47",
+                "resourcePath": "sprites\\spr_playerPZ_machslideboost3\\spr_playerPZ_machslideboost3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d516cefa-3ec2-48d4-9b80-e2e8a44be001",
             "Value": {
                 "id": "012a5f21-fa7b-4fb2-9e92-fb650e3b0f4b",
@@ -23257,6 +23265,14 @@
             "Value": {
                 "id": "530b7d4e-15d5-4cdd-9895-9e8edbe83f29",
                 "resourcePath": "sprites\\spr_sausagemannocigar_stunfalltrans\\spr_sausagemannocigar_stunfalltrans.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ee07ed10-f40c-45b7-ac1b-0a8b3515a425",
+            "Value": {
+                "id": "1daac68a-940e-4015-80ae-8e8432c5f73e",
+                "resourcePath": "sprites\\spr_playerPZ_suplexdash\\spr_playerPZ_suplexdash.yy",
                 "resourceType": "GMSprite"
             }
         },
