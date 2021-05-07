@@ -13,34 +13,39 @@ if (global.panic == 1 && obj_pause.pause == 0)
 
     if (global.lapping == 0)
     {
-        if ((!audio_is_playing(mu_pizzatime)) && (!audio_is_playing(mu_noiseescape)) && (!audio_is_playing(mu_snickescape)) && (!audio_is_playing(mu_vigiescape)))
+        if ((!audio_is_playing(mu_pizzatime)) && (!audio_is_playing(mu_noiseescape)) && (!audio_is_playing(mu_snickescape)) && !audio_is_playing(mu_pizzelleescape) && (!audio_is_playing(mu_vigiescape)))
         {
             scr_soundstopall()
             if (obj_player1.character == "P")
             {
-                scr_sound(74)
-                pausedmusic = 74
+                scr_sound(mu_pizzatime)
+                pausedmusic = mu_pizzatime
             }
             else if (obj_player1.character == "N")
             {
-                scr_sound(97)
-                pausedmusic = 97
+                scr_sound(mu_noiseescape)
+                pausedmusic = mu_noiseescape
             }
             else if (obj_player1.character == "S")
             {
-                scr_sound(104)
-                pausedmusic = 104
+                scr_sound(mu_snickescape)
+                pausedmusic = mu_snickescape
             }
             else if (obj_player1.character == "V")
             {
-                scr_sound(123)
-                pausedmusic = 123
+                scr_sound(mu_vigiescape)
+                pausedmusic = mu_vigiescape
             }
+			else
+			{
+                scr_sound(mu_pizzelleescape)
+                pausedmusic = mu_pizzelleescape				
+			}
         }
     }
     else if (global.lapping == 1)
     {
-        if ((!audio_is_playing(mu_pizzatimeremix)) && (!audio_is_playing(mu_noiseescaperequiem)) && (!audio_is_playing(mu_snickescaperequiem)) && (!audio_is_playing(mu_vigiescaperequiem)) && (!audio_is_playing(mu_desertescape)) && (!audio_is_playing(mu_mansionescape)) && (!audio_is_playing(mu_factoryescape)) && (!audio_is_playing(mu_sewerescape)) && (!audio_is_playing(mu_freezerescape)))
+        if ((!audio_is_playing(mu_pizzatimeremix)) && (!audio_is_playing(mu_noiseescaperequiem)) && (!audio_is_playing(mu_snickescaperequiem)) && (!audio_is_playing(mu_vigiescaperequiem)) && (!audio_is_playing(mu_desertescape)) && (!audio_is_playing(mu_mansionescape)) && (!audio_is_playing(mu_factoryescape)) && (!audio_is_playing(mu_sewerescape)) && !audio_is_playing(mu_pizzelleescaperequiem) && (!audio_is_playing(mu_freezerescape)))
         {
             scr_soundstopall()
             if (string_letters(roomname) == "desert") && global.extraescapemusic = 1
@@ -70,51 +75,61 @@ if (global.panic == 1 && obj_pause.pause == 0)
             }
             else if (obj_player1.character == "P")
             {
-                scr_sound(129)
-                pausedmusic = 129
+                scr_sound(mu_pizzatimeremix)
+                pausedmusic = mu_pizzatimeremix
             }
             else if (obj_player1.character == "N")
             {
-                scr_sound(121)
-                pausedmusic = 121
+                scr_sound(mu_noiseescaperequiem)
+                pausedmusic = mu_noiseescaperequiem
             }
             else if (obj_player1.character == "S")
             {
-                scr_sound(128)
-                pausedmusic = 128
+                scr_sound(mu_snickescaperequiem)
+                pausedmusic = mu_snickescaperequiem
             }
             else if (obj_player1.character == "V")
             {
-                scr_sound(130)
-                pausedmusic = 130
+                scr_sound(mu_vigiescaperequiem)
+                pausedmusic = mu_vigiescaperequiem
             }
+			else
+			{
+                scr_sound(mu_pizzelleescaperequiem)
+                pausedmusic = mu_pizzelleescaperequiem			
+			}
         }
     }
     else if (global.lapping == 2)
     {
-        if ((!audio_is_playing(mu_pizzatimeremix)) && (!audio_is_playing(mu_noiseescaperequiem)) && (!audio_is_playing(mu_snickescaperequiem)) && (!audio_is_playing(mu_vigiescaperequiem)))
+        if ((!audio_is_playing(mu_pizzatimeremix)) && !audio_is_playing(mu_pizzelleescaperequiem) && (!audio_is_playing(mu_noiseescaperequiem)) && (!audio_is_playing(mu_snickescaperequiem)) && (!audio_is_playing(mu_vigiescaperequiem)))
         {
             scr_soundstopall()
             if (obj_player1.character == "P")
             {
-                scr_sound(129)
-                pausedmusic = 129
+                scr_sound(mu_pizzatimeremix)
+                pausedmusic = mu_pizzatimeremix
             }
             else if (obj_player1.character == "N")
             {
-                scr_sound(121)
-                pausedmusic = 121
+                scr_sound(mu_noiseescaperequiem)
+                pausedmusic = mu_noiseescaperequiem
             }
             else if (obj_player1.character == "S")
             {
-                scr_sound(128)
-                pausedmusic = 128
+                scr_sound(mu_snickescaperequiem)
+                pausedmusic = mu_snickescaperequiem
             }
             else if (obj_player1.character == "V")
             {
-                scr_sound(130)
-                pausedmusic = 130
+                scr_sound(mu_vigiescaperequiem)
+                pausedmusic = mu_vigiescaperequiem
             }
+			else
+			{
+                scr_sound(mu_pizzelleescaperequiem)
+                pausedmusic = mu_pizzelleescaperequiem			
+			}
         }
     }
     else if (global.lapping >= 3)

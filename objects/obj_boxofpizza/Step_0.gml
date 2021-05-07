@@ -88,5 +88,6 @@ if (place_meeting(x, (y + 1), obj_doorD) || place_meeting(x, (y - 1), obj_doorD)
     targetDoor = "D"
 if (place_meeting(x, (y + 1), obj_doorE) || place_meeting(x, (y - 1), obj_doorE))
     targetDoor = "E"
-
+if (place_meeting(x, (y + 1), obj_doorG) || place_meeting(x, (y - 1), obj_doorG))
+    targetDoor = "G"	
 

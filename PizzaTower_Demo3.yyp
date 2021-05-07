@@ -5130,6 +5130,14 @@
             }
         },
         {
+            "Key": "35df1760-d76c-4b89-8434-86239a292dc3",
+            "Value": {
+                "id": "83f0b3e9-e3ea-4910-8c38-094c2d94d676",
+                "resourcePath": "sounds\\mu_pizzelleescaperequiem\\mu_pizzelleescaperequiem.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "35ed5561-7f3d-42eb-8894-e24b04066d22",
             "Value": {
                 "id": "454ceba9-d25e-4177-9b45-c8529adc54b3",
@@ -10159,6 +10167,14 @@
                 "id": "93c991ee-24a2-414d-ab32-6d8af5c92ddd",
                 "resourcePath": "sounds\\sfx_machroll\\sfx_machroll.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "6833700e-885d-4dfa-bcda-8142a7d3d439",
+            "Value": {
+                "id": "72499c99-ab15-4b3d-a1f9-37bd0536c31f",
+                "resourcePath": "objects\\obj_doorG\\obj_doorG.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -15298,6 +15314,14 @@
             }
         },
         {
+            "Key": "9d31b6f2-045c-4548-b034-576654ab62bd",
+            "Value": {
+                "id": "e35412c2-5858-44ac-a183-c07a3a19a6e1",
+                "resourcePath": "sounds\\mu_pizzelleescape\\mu_pizzelleescape.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "9d464db5-6b2b-4e96-a79a-6ff4add5501c",
             "Value": {
                 "id": "a1302cea-c9b2-443a-82c4-c21938254bb0",
@@ -15622,6 +15646,14 @@
             "Value": {
                 "id": "87dadbf0-523c-4fad-8f02-cd9a6007034e",
                 "resourcePath": "sprites\\spr_pizzacutterstart\\spr_pizzacutterstart.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a0d9785f-3624-438b-9d00-34357384f3da",
+            "Value": {
+                "id": "8a202e14-e66b-4682-ab59-53d656030bd6",
+                "resourcePath": "sprites\\spr_playerPZ_parry1\\spr_playerPZ_parry1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -17410,6 +17442,14 @@
             }
         },
         {
+            "Key": "b3a8b1df-81cc-44e6-aa15-693f355ae1b5",
+            "Value": {
+                "id": "bc1472d9-16a3-49de-ba5f-f6bee341b8af",
+                "resourcePath": "sprites\\spr_playerPZ_parry2\\spr_playerPZ_parry2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b3b22e4d-96c5-4ec1-a72f-cdc3273ec0b8",
             "Value": {
                 "id": "641897de-4d6f-48f3-8c58-20ee2be3371f",
@@ -17990,6 +18030,14 @@
             "Value": {
                 "id": "e4ad88d8-c046-4ca8-b5fe-4c3a85ea0e40",
                 "resourcePath": "sprites\\spr_player_idlevomit\\spr_player_idlevomit.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ba0c9c57-393a-4997-bab7-97815503b603",
+            "Value": {
+                "id": "3060aa56-e865-488d-b5ca-8d4bdafc97a0",
+                "resourcePath": "sprites\\spr_playerPZ_parry3\\spr_playerPZ_parry3.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -23498,6 +23546,14 @@
                 "id": "9bdb40c1-e786-4b2b-bbea-153645b6bd8c",
                 "resourcePath": "sounds\\mu_pizzamayhem\\mu_pizzamayhem.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "ef9fc72c-4a8c-4434-95fa-a9ce0c04d30f",
+            "Value": {
+                "id": "0be9faa0-3b1c-4ca8-ad4c-2262e36530da",
+                "resourcePath": "sprites\\spr_doorG\\spr_doorG.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

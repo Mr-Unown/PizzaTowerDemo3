@@ -228,6 +228,20 @@ with (obj_destroyable2_bigescape)
                     x = (obj_doorF.x + 16)
                 y = (obj_doorF.y - 14)
             }
+            else if (targetDoor == "G") && instance_exists(obj_doorG)
+            {
+                if (hallway == 1)
+                    x = (obj_doorG.x + (hallwaydirection * 100))
+                else if (box == 1)
+                    x = (obj_doorG.x + 32)
+                else if (portal == 1)
+                    x = (obj_doorG.x + 16)
+                else if (vertical == 1)
+                    x = (obj_doorG.x + verticaloffset)
+                else
+                    x = (obj_doorG.x + 16)
+                y = (obj_doorG.y - 14)
+            }			
 			else if (targetDoor = "start")
             {
 				if (global.coop == 0)
@@ -447,6 +461,20 @@ if (object_index == obj_player2)
                     x = (obj_doorF.x + 16)
                 y = (obj_doorF.y - 14)
             }
+            else if (targetDoor == "G") && instance_exists(obj_doorG)
+            {
+                if (hallway == 1)
+                    x = (obj_doorG.x + (hallwaydirection * 100))
+                else if (box == 1)
+                    x = (obj_doorG.x + 32)
+                else if (portal == 1)
+                    x = (obj_doorG.x + 16)
+                else if (vertical == 1)
+                    x = (obj_doorG.x + verticaloffset)
+                else
+                    x = (obj_doorG.x + 16)
+                y = (obj_doorG.y - 14)
+            }						
 			else if (targetDoor = "start")
             {
 				if (global.coop == 0)

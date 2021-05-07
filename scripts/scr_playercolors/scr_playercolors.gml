@@ -14,7 +14,7 @@ if character = "PZ"
 characters = "Pizzelle"
 
 
-//Colorindex
+//Colorindex Comment: what the fuck is the point of this
 colorindex[0] = 0
 colorindex[1] = 1
 colorindex[2] = 2
@@ -28,42 +28,50 @@ colorindex[7] = 7
 //Saved Colors
 #region Spaghetti
 ini_open(string(characters)+"_palettes.ini")
-if !ini_section_exists(string(characters)+"Colors"+string(colorindex[0])) {
+if !ini_section_exists(string(characters)+"Colors"+string(colorindex[0])) 
+{
  ini_write_real(string(characters)+"Colors"+string(colorindex[0]), "Red", 0);
  ini_write_real(string(characters)+"Colors"+string(colorindex[0]), "Green", 0);
  ini_write_real(string(characters)+"Colors"+string(colorindex[0]), "Blue", 0);
 }
-if !ini_section_exists(string(characters)+"Colors"+string(colorindex[1])) {
+if !ini_section_exists(string(characters)+"Colors"+string(colorindex[1])) 
+{
  ini_write_real(string(characters)+"Colors"+string(colorindex[1]), "Red", 255);
  ini_write_real(string(characters)+"Colors"+string(colorindex[1]), "Green", 255);
  ini_write_real(string(characters)+"Colors"+string(colorindex[1]), "Blue", 255);
 }
-if !ini_section_exists(string(characters)+"Colors"+string(colorindex[2])) {
+if !ini_section_exists(string(characters)+"Colors"+string(colorindex[2])) 
+{
  ini_write_real(string(characters)+"Colors"+string(colorindex[2]), "Red", 255);
  ini_write_real(string(characters)+"Colors"+string(colorindex[2]), "Green", 255);
  ini_write_real(string(characters)+"Colors"+string(colorindex[2]), "Blue", 255);
 }
-if !ini_section_exists(string(characters)+"Colors"+string(colorindex[3])) {
+if !ini_section_exists(string(characters)+"Colors"+string(colorindex[3])) 
+{
  ini_write_real(string(characters)+"Colors"+string(colorindex[3]), "Red", 255);
  ini_write_real(string(characters)+"Colors"+string(colorindex[3]), "Green", 255);
  ini_write_real(string(characters)+"Colors"+string(colorindex[3]), "Blue", 255);
 }
-if !ini_section_exists(string(characters)+"Colors"+string(colorindex[4])) {
+if !ini_section_exists(string(characters)+"Colors"+string(colorindex[4])) 
+{
  ini_write_real(string(characters)+"Colors"+string(colorindex[4]), "Red", 255);
  ini_write_real(string(characters)+"Colors"+string(colorindex[4]), "Green", 255);
  ini_write_real(string(characters)+"Colors"+string(colorindex[4]), "Blue", 255);
 }
-if !ini_section_exists(string(characters)+"Colors"+string(colorindex[5])) {
+if !ini_section_exists(string(characters)+"Colors"+string(colorindex[5])) 
+{
  ini_write_real(string(characters)+"Colors"+string(colorindex[5]), "Red", 255);
  ini_write_real(string(characters)+"Colors"+string(colorindex[5]), "Green", 255);
  ini_write_real(string(characters)+"Colors"+string(colorindex[5]), "Blue", 255);
 }
-if !ini_section_exists(string(characters)+"Colors"+string(colorindex[6])) {
+if !ini_section_exists(string(characters)+"Colors"+string(colorindex[6])) 
+{
  ini_write_real(string(characters)+"Colors"+string(colorindex[6]), "Red", 255);
  ini_write_real(string(characters)+"Colors"+string(colorindex[6]), "Green", 255);
  ini_write_real(string(characters)+"Colors"+string(colorindex[6]), "Blue", 255);
 }
-if !ini_section_exists(string(characters)+"Colors"+string(colorindex[7])) {
+if !ini_section_exists(string(characters)+"Colors"+string(colorindex[7])) 
+{
  ini_write_real(string(characters)+"Colors"+string(colorindex[7]), "Red", 255);
  ini_write_real(string(characters)+"Colors"+string(colorindex[7]), "Green", 255);
  ini_write_real(string(characters)+"Colors"+string(colorindex[7]), "Blue", 255);

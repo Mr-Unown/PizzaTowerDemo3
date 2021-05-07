@@ -110,5 +110,7 @@ if place_meeting(x, y, obj_doorE)
     targetDoor = "E"
 if place_meeting(x, y, obj_doorF)
     targetDoor = "F"
+if place_meeting(x, y, obj_doorG)
+    targetDoor = "G"	
 
 

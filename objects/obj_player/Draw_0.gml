@@ -30,7 +30,7 @@ if flash
     shader_reset()
 }
 //Pizzashield
-if pizzashield = true
+if pizzashield = true && room != rank_room && room != timesuproom
 	draw_sprite_ext(spr_pizzashield, pizzashieldframes , x, y, xscale, yscale, image_angle, image_blend, image_alpha)
 if global.freezeframe = false
 	pizzashieldframes += 0.35
