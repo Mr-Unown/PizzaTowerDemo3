@@ -13,8 +13,8 @@ uniform float fade;
 
 void main()
 { 
-
-	float gamma = 0.45; // 0.6
+	//Posterized
+	float gamma = 0.8; // 0.6
 	float numColors = 8.0; // 8.0
 	vec3 col = texture2D(gm_BaseTexture, v_vTexcoord).rgb;
 	col = pow(abs(col), vec3(gamma, gamma, gamma));
@@ -23,6 +23,7 @@ void main()
 	col = col / numColors;
 	col = pow(abs(col), vec3(1.0/gamma));
 	vec4 posterized = vec4(col, texture2D(gm_BaseTexture, v_vTexcoord).a);
+	//Greyscale Effect
 	float gray = dot(posterized.rgb, vec3(0.21, 0.71, 0.07));
 	gl_FragColor = vec4(mix(posterized.rgb,vec3(gray),fade), posterized.a);  
 }
