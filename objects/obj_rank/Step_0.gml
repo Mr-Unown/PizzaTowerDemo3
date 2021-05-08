@@ -131,6 +131,19 @@ if (obj_player1.collectscore >= obj_player2.collectscore)
         if (global.rank == "d")
             sprite_index = spr_rankND
     }
+    else if (obj_player1.character == "PZ")
+    {
+        if (global.rank == "s")
+            sprite_index = spr_playerPZ_rankS
+        if (global.rank == "a")
+            sprite_index = spr_playerPZ_rankA
+        if (global.rank == "b")
+            sprite_index = spr_playerPZ_rankB
+        if (global.rank == "c")
+            sprite_index = spr_playerPZ_rankC
+        if (global.rank == "d")
+            sprite_index = spr_playerPZ_rankD
+    }	
     else if (obj_player1.character == "S")
     {
         if (global.rank == "s")
@@ -192,6 +205,19 @@ if (obj_player2.collectscore > obj_player1.collectscore)
         if (global.rank == "d")
             sprite_index = spr_rankND
     }
+    else if (obj_player2.character == "PZ")
+    {
+        if (global.rank == "s")
+            sprite_index = spr_playerPZ_rankS
+        if (global.rank == "a")
+            sprite_index = spr_playerPZ_rankA
+        if (global.rank == "b")
+            sprite_index = spr_playerPZ_rankB
+        if (global.rank == "c")
+            sprite_index = spr_playerPZ_rankC
+        if (global.rank == "d")
+            sprite_index = spr_playerPZ_rankD
+    }		
     else if (obj_player2.character == "S")
     {
         if (global.rank == "s")

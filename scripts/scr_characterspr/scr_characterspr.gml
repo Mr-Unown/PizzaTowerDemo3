@@ -786,9 +786,9 @@ switch character {
     spr_lookdoor = spr_playerP_door
     spr_walkfront = spr_playerP_walkfront
     spr_victory = spr_playerN_victory
-    spr_Ladder = spr_playerN_ladder
-    spr_laddermove = spr_playerN_laddermove
-    spr_ladderdown = spr_playerN_ladderdown
+    spr_Ladder = spr_playerP_ladder
+    spr_laddermove = spr_playerP_laddermove
+    spr_ladderdown = spr_playerP_ladderdown
     spr_keyget = spr_playerP_key
     spr_crouchslip = spr_playerN_crouchslip
 	spr_crouchslipjump = spr_playerN_crouchslip
