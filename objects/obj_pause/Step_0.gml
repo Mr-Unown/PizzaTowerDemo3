@@ -324,8 +324,12 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
             global.lapping = 0
             global.laptouched = 0
             obj_player1.collectscore = 10000
-            global.seconds = 59
-            global.minutes = 9
+            with (obj_camera)
+            {
+                alarm[1] = 60
+                global.seconds = 59
+                global.minutes = 9
+            }
             global.wave = 0
             global.maxwave = (((global.minutes * 60) + global.seconds) * 60)
             if global.panicbg = true
