@@ -99,7 +99,7 @@ if (character == "P" || character == "N" || character == "PZ" || character == "P
                         firebutt = 0
                     }
                 }
-                else if (firebutt != 0 && character == "PM" && character == "V")
+                else if (firebutt != 0 && (character == "PM" || character == "PZ" || character == "V" || character == "D"))
                 {
                     buttanim = 100
                     firebutt = 0

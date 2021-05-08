@@ -182,35 +182,35 @@ if (player.state != 55)
         if (shoving == 1)
             draw_sprite_ext_camera(spr_pepinoHUD_shove, image_index, 125, 100, 1, 1, 0, c_white, alpha)
 		else if player.sprite_index == player.spr_hurt || player.sprite_index == player.spr_hurtjump
-			draw_sprite_ext_camera(spr_playerPZ_hurtHUD, -1, 125, 60, 1, 1, 0, c_white, alpha)			
+			draw_sprite_ext_camera(spr_playerPZ_hurtHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)			
 		else if player.sprite_index == player.spr_bombpepend
-			draw_sprite_ext_camera(spr_playerPZ_explodedHUD, -1, 125, 60, 1, 1, 0, c_white, alpha)
-		else if player.state == states.mach1
-			draw_sprite_ext_camera(spr_playerPZ_mach1HUD, -1, 125, 60, 1, 1, 0, c_white, alpha)
-		else if player.state == states.mach2
-			draw_sprite_ext_camera(spr_playerPZ_mach2HUD, -1, 125, 60, 1, 1, 0, c_white, alpha)
-		else if player.state == states.mach3 && player.sprite_index != player.spr_crazyrun
-			draw_sprite_ext_camera(spr_playerPZ_mach3HUD, -1, 125, 60, 1, 1, 0, c_white, alpha)		
-		else if player.state == states.mach3  && player.sprite_index == player.spr_crazyrun
-			draw_sprite_ext_camera(spr_playerPZ_mach4HUD, -1, 125, 60, 1, 1, 0, c_white, alpha)	
-		else if player.state == states.jetpack && player.sprite_index != player.spr_jetpackcrazy
-			draw_sprite_ext_camera(spr_playerPZ_mach3HUD, -1, 125, 60, 1, 1, 0, c_white, alpha)		
-		else if player.state == states.jetpack  && player.sprite_index == player.spr_jetpackcrazy
-			draw_sprite_ext_camera(spr_playerPZ_mach4HUD, -1, 125, 60, 1, 1, 0, c_white, alpha)	
-		else if player.sprite_index == player.spr_freefallland || player.sprite_index == player.spr_bodyslamland || player.state == states.freefallland
-			draw_sprite_ext_camera(spr_playerPZ_slamHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)	
-		else if player.state == states.freefall || player.state == states.freefallprep
-			draw_sprite_ext_camera(spr_playerPZ_freefallHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
+			draw_sprite_ext_camera(spr_playerPZ_explodedHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
 		else if player.state == states.Sjump
 			draw_sprite_ext_camera(spr_playerPZ_superjumpHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
 		else if player.state == states.jetpackstart || player.state == states.Sjumpprep
-			draw_sprite_ext_camera(spr_playerPZ_superjumpprepHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
+			draw_sprite_ext_camera(spr_playerPZ_superjumpprepHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)			
+        else if (player.state == 69 || (player.state == states.pogo && player.pogomovespeed <= 7) || player.state == 33 || player.state == 92 || player.state == 74 || player.state == 57 || player.state == 63 || player.state == 42 || player.state == 65 || player.state == 46 || player.state == 47 || player.state == 51 || player.state == 48 || player.state == 49 || player.state == 50)
+            draw_sprite_ext_camera(spr_playerPZ_mach1HUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
+        else if (player.state == 70 || (player.state == states.pogo && player.pogomovespeed > 7 && player.pogomovespeed < 12) || player.sprite_index == player.spr_dive || player.sprite_index == player.spr_machslideboost || player.state == 17 || player.state == 111 || player.state == 22 || player.state == 43)
+            draw_sprite_ext_camera(spr_playerPZ_mach2HUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
+        else if (player.state == 91 && player.sprite_index == player.spr_crazyrun)
+            draw_sprite_ext_camera(spr_playerPZ_mach4HUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
+        else if (player.state == states.jetpack && player.sprite_index == player.spr_jetpackcrazy)
+            draw_sprite_ext_camera(spr_playerPZ_mach4HUD, -1, 125, 100, 1, 1, 0, c_white, alpha)		
+        else if (player.state == 91 || (player.state == states.pogo && player.pogomovespeed >= 12) || player.state == states.jetpack || player.sprite_index == player.spr_mach3boost)
+            draw_sprite_ext_camera(spr_playerPZ_mach3HUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
+		else if player.sprite_index == player.spr_freefallland || player.sprite_index == player.spr_bodyslamland || player.state == states.freefallland || player.sprite_index == player.spr_Timesup
+			draw_sprite_ext_camera(spr_playerPZ_slamHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)	
+		else if player.state == states.freefall || player.state == states.freefallprep
+			draw_sprite_ext_camera(spr_playerPZ_freefallHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
 		else if player.sprite_index == player.spr_bump || player.sprite_index == player.spr_slipnslide || player.sprite_index == player.spr_stunned
-			draw_sprite_ext_camera(spr_playerPZ_bumpHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)				
+			draw_sprite_ext_camera(spr_playerPZ_bumpHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)		
+        else if (player.angry == 1)
+            draw_sprite_ext_camera(spr_playerPZ_angryHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)			
         else if (global.combo >= 3) && global.pausecombotime = true
             draw_sprite_ext_camera(spr_playerPZ_menacingHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)				
         else
-            draw_sprite_ext_camera(spr_playerPZ_normalHUD, -1, 125, 60, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_playerPZ_normalHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
     }	
     shader_reset()
 
