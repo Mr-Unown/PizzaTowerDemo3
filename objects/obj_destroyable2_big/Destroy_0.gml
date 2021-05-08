@@ -12,6 +12,8 @@ if (ds_list_find_index(global.saveroom, id) == -1 && global.snickchallenge == 0)
                 sprite_index = spr_bigdebris
             else if (other.sprite_index == spr_cheesebigblock)
                 sprite_index = spr_bigpizzadebris
+			else if (other.sprite_index == spr_PZbigbreakable)
+				sprite_index = spr_PZbigpizzadebris		
         }
     }
     with (instance_create((x + 32), (y + 32), obj_pizzaslice))

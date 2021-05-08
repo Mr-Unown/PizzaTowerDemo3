@@ -23,6 +23,8 @@ with (obj_collect)
             sprite_index = spr_snickcollectible1
         else if ((obj_player1.character == "V" && obj_player1.spotlight == 1) || (obj_player2.character == "V" && obj_player1.spotlight == 0))
             sprite_index = choose(spr_cheesetopping1, spr_cheesetopping2, spr_cheesetopping3, spr_cheesetopping4, spr_cheesetopping5)
+		else if ((obj_player1.character == "PZ" && obj_player1.spotlight == 1) || (obj_player2.character == "PZ" && obj_player1.spotlight == 0))
+			sprite_index = choose(spr_PZtopping1, spr_PZtopping2, spr_PZtopping3, spr_PZtopping4, spr_PZtopping5)			
     }
 }
 with (obj_bigcollect)
@@ -37,6 +39,8 @@ with (obj_bigcollect)
             sprite_index = spr_snickcollectible2
         else if ((obj_player1.character == "V" && obj_player1.spotlight == 1) || (obj_player2.character == "V" && obj_player1.spotlight == 0))
             sprite_index = choose(spr_pizzacollect1cheese, spr_pizzacollect2cheese, spr_pizzacollect3cheese)
+		else if ((obj_player1.character == "PZ" && obj_player1.spotlight == 1) || (obj_player2.character == "PZ" && obj_player1.spotlight == 0))
+			sprite_index = choose(spr_PZbigpizza1, spr_PZbigpizza2, spr_PZbigpizza3)			
     }
 }
 with (obj_giantcollect)
@@ -51,6 +55,8 @@ with (obj_giantcollect)
             sprite_index = spr_snickcollectible3
         else if ((obj_player1.character == "V" && obj_player1.spotlight == 1) || (obj_player2.character == "V" && obj_player1.spotlight == 0))
             sprite_index = spr_giantpizzacheese
+		else if ((obj_player1.character == "PZ" && obj_player1.spotlight == 1) || (obj_player2.character == "PZ" && obj_player1.spotlight == 0))
+			sprite_index = spr_PZgiantpizza			
     }
 }
 with (obj_pizzaslice)
@@ -65,6 +71,8 @@ with (obj_pizzaslice)
             sprite_index = spr_snickcollectible4
         else if ((obj_player1.character == "V" && obj_player1.spotlight == 1) || (obj_player2.character == "V" && obj_player1.spotlight == 0))
             sprite_index = spr_cheesespinningslice
+		else if ((obj_player1.character == "PZ" && obj_player1.spotlight == 1) || (obj_player2.character == "PZ" && obj_player1.spotlight == 0))
+			sprite_index = spr_xmasspinningslice				
     }
 }
 with (obj_destroyable2)
@@ -79,6 +87,8 @@ with (obj_destroyable2)
             sprite_index = spr_xmasblock
         else if ((obj_player1.character == "V" && obj_player1.spotlight == 1) || (obj_player2.character == "V" && obj_player1.spotlight == 0))
             sprite_index = spr_cheesedestroyableblock
+		else if ((obj_player1.character == "PZ" && obj_player1.spotlight == 1) || (obj_player2.character == "PZ" && obj_player1.spotlight == 0))
+			sprite_index = spr_PZdestroyablepep				
     }
 }
 with (obj_destroyable2escape)
@@ -93,6 +103,8 @@ with (obj_destroyable2escape)
             sprite_index = spr_xmasblockescape
         else if ((obj_player1.character == "V" && obj_player1.spotlight == 1) || (obj_player2.character == "V" && obj_player1.spotlight == 0))
             sprite_index = spr_cheesedestroyableblockescape
+		else if ((obj_player1.character == "PZ" && obj_player1.spotlight == 1) || (obj_player2.character == "PZ" && obj_player1.spotlight == 0))
+			sprite_index = spr_PZdestroyablepepescape			
     }
 }
 with (obj_destroyable2_big)
@@ -107,6 +119,8 @@ with (obj_destroyable2_big)
             sprite_index = spr_xmasbigblock
         else if ((obj_player1.character == "V" && obj_player1.spotlight == 1) || (obj_player2.character == "V" && obj_player1.spotlight == 0))
             sprite_index = spr_cheesebigblock
+		else if ((obj_player1.character == "PZ" && obj_player1.spotlight == 1) || (obj_player2.character == "PZ" && obj_player1.spotlight == 0))
+			sprite_index = spr_PZbigbreakable				
     }
 }
 with (obj_destroyable2_bigescape)
@@ -121,6 +135,8 @@ with (obj_destroyable2_bigescape)
             sprite_index = spr_xmasbigblockescape
         else if ((obj_player1.character == "V" && obj_player1.spotlight == 1) || (obj_player2.character == "V" && obj_player1.spotlight == 0))
             sprite_index = spr_cheesebigblockescape
+		else if ((obj_player1.character == "PZ" && obj_player1.spotlight == 1) || (obj_player2.character == "PZ" && obj_player1.spotlight == 0))
+			sprite_index = spr_PZbigbreakableescape				
     }
 }
 

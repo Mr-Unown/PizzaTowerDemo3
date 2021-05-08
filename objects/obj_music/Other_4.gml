@@ -106,6 +106,16 @@ if (global.panic == 0 && global.snickchallenge == 0)
                 pausedmusic = mu_entranceV
             }
         }
+		else
+		{
+            if (!audio_is_playing(mu_entrancePZ)) //Technically it's Creampuff's theme lol
+            {
+                scr_soundstopall()
+                scr_sound(mu_entrancePZ)
+                audio_sound_set_track_position(global.music, fadeoff)
+                pausedmusic = mu_entrancePZ
+            }			
+		}
     }
     if (string_letters(roomname) == "entrance" || string_letters(roomname) == "entrancesecret" || string_letters(roomname) == "ancient" || string_letters(roomname) == "ancientsecret") && global.coop = 1
     {
