@@ -199,7 +199,7 @@ if (player.state != 55)
             draw_sprite_ext_camera(spr_playerPZ_mach4HUD, -1, 125, 100, 1, 1, 0, c_white, alpha)		
         else if (player.state == 91 || (player.state == states.pogo && player.pogomovespeed >= 12) || player.state == states.jetpack || player.sprite_index == player.spr_mach3boost)
             draw_sprite_ext_camera(spr_playerPZ_mach3HUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
-		else if player.sprite_index == player.spr_freefallland || player.sprite_index == player.spr_bodyslamland || player.state == states.freefallland || player.sprite_index == player.spr_Timesup
+		else if player.sprite_index == player.spr_freefallland || player.sprite_index == player.spr_bodyslamland || player.state == states.freefallland || player.sprite_index == player.spr_Timesup || player.sprite_index = player.spr_superjumpland || player.sprite_index = player.spr_hitwall
 			draw_sprite_ext_camera(spr_playerPZ_slamHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)	
 		else if player.state == states.freefall || player.state == states.freefallprep
 			draw_sprite_ext_camera(spr_playerPZ_freefallHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
