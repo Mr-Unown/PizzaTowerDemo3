@@ -26,10 +26,11 @@ if collided = true
 else
 	alpha = 1
 //Greyscale
-if global.panic = 1 && global.seconds <= 0 && global.minutes <= 0
+if (global.panic = 1 || global.snickchallenge = true) && global.seconds <= 0 && global.minutes <= 0
 greyscalefade = approach(greyscalefade,0.45,0.005)
 else
 greyscalefade = approach(greyscalefade,0,0.005)
+
 
 if (room == strongcold_endscreen || room == rank_room || room == timesuproom || room == Realtitlescreen || room == Scootertransition || room == characterselect)
     visible = false

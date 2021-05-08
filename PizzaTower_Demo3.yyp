@@ -7010,6 +7010,14 @@
             }
         },
         {
+            "Key": "47d18be6-4c30-475e-bc06-ef2470e6a0c6",
+            "Value": {
+                "id": "0bfa0fbb-aa9e-4222-b9bf-67568166a8f4",
+                "resourcePath": "scripts\\scr_panicbg_end1\\scr_panicbg_end1.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "47d1cc60-682c-4a27-91d7-a27e9d412728",
             "Value": {
                 "id": "6ab49853-46ff-44e4-87ca-9065fc705409",
@@ -14847,6 +14855,14 @@
                 "id": "38c75cc1-7f0e-4dcf-bbe6-87837fe8ddc3",
                 "resourcePath": "objects\\obj_debugcontroller\\obj_debugcontroller.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "973cf84a-6de9-4491-8d89-ac9ef4fd0d34",
+            "Value": {
+                "id": "769d9d7c-7c29-4402-a76e-cd05e93cf14f",
+                "resourcePath": "shaders\\shd_posterization\\shd_posterization.yy",
+                "resourceType": "GMShader"
             }
         },
         {

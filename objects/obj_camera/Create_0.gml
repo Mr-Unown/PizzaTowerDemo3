@@ -2,8 +2,11 @@ depth = -11
 //Stinky Thing
 oldfacesprite = spr_null
 
-
+//Shaders
 greyscalefade = 0;
+
+
+
 global.hitstunenabled = true;
 global.levelname = "none"
 global.tutorialtrap = 0

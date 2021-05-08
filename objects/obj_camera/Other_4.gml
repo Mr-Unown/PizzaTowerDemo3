@@ -15,6 +15,7 @@ if ((global.panic == 1 || global.snickchallenge == 1) && global.panicbg = true)
     scr_panicbg_init()
 application_surface_draw_enable(1)
 global.wave = (global.maxwave - (((global.minutes * 60) + global.seconds) * 60))
+
 angle = 0
 global.freezeframe = false;
 global.freezeframetimer = clamp(global.freezeframetimer,50,185)

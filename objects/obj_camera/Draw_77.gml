@@ -13,8 +13,11 @@
 	if global.screenmelt = 1 && global.panic = 1 && global.panicbg
 		appa = lerp(1, 0.534, (global.wave / global.maxwave))
 	//Draw Thing
-	shader_set(shd_greyscale);
-	var fade = shader_get_uniform(shd_greyscale, "fade")
+	var shader = shd_greyscale;
+	if global.snickchallenge = true && global.minutes < 2
+		shader = shd_posterization
+	shader_set(shader);
+	var fade = shader_get_uniform(shader, "fade")
     shader_set_uniform_f(fade, greyscalefade)
 	draw_surface_stretched_ext(application_surface, appx, 0, appw, apph, c_white, appa)
 	shader_reset();		
