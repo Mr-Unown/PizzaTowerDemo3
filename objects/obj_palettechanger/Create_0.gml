@@ -5,6 +5,7 @@ custom = 1,
 characters = 2,
 hats = 3
 }
+
 paletteoptions[0] = paletteoption.palettes
 paletteoptions[1] = paletteoption.custom
 paletteoptions[2] = paletteoption.characters
@@ -14,3 +15,32 @@ optionselected = 0
 selectedoption = paletteoption.palettes;
 has_selectedoption = false;
 player = obj_player1
+
+//Custom
+indexedcolor = 0;
+customcolor[0] = 0 //RED
+customcolor[1] = 0 //GREEN
+customcolor[2] = 0 //BLUE
+
+//ini_write_real(string(characters)+"Colors"+string(indexedcolor), "Red", customcolor[indexedcolor]);
+//ini_write_real(string(characters)+"Colors"+string(indexedcolor), "Green", customcolor[indexedcolor]);
+//ini_write_real(string(characters)+"Colors"+string(indexedcolor), "Blue", customcolor[indexedcolor]);
+//
+//color[0] = make_color_rgb(colored[0,0],colored[0,1],colored[0,2])
+
+
+//Player
+if player.character = "P"
+characters = "Peppino"
+if player.character = "N"
+characters = "Noise"
+if player.character = "S"
+characters = "Snick"
+if player.character = "V"
+characters = "Vigilante"
+if player.character = "PM"
+characters = "Pepperman"
+if player.character = "D"
+characters = "Dougie"
+if player.character = "PZ"
+characters = "Pizzelle"

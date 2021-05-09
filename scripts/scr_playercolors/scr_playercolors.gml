@@ -115,7 +115,7 @@ ini_close()
 #endregion
 
 
-//Colors
+//Colors					//RED		//GREEN		//BLUE
 color[0] = make_color_rgb(colored[0,0],colored[0,1],colored[0,2])
 color[1] = make_color_rgb(colored[1,0],colored[1,1],colored[1,2])
 color[2] = make_color_rgb(colored[2,0],colored[2,1],colored[2,2])

@@ -866,10 +866,10 @@ switch character {
     spr_knightpepdownslope = spr_playerN_knightdownslope
     spr_knightpepstart = spr_playerN_knightsword
     spr_knightpepcharge = spr_playerN_knightslide
-    spr_bodyslamstart = spr_playerP_freefall
-    spr_bodyslamfall = spr_playerP_freefall
-    spr_bodyslamland = spr_playerN_bodyslamland
-    spr_crazyrun = spr_playerN_crazyrun
+    spr_bodyslamstart = spr_playerP_bodyslamstart
+    spr_bodyslamfall = spr_playerP_bodyslam
+    spr_bodyslamland = spr_playerP_bodyslamland
+    spr_crazyrun = spr_playerP_dash
     spr_bombpeprun = spr_playerN_bomb
     spr_bombpepintro = spr_playerN_bombstart
 	spr_bombpepthrow = spr_playerN_noisebombthrow	

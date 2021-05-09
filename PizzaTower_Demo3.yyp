@@ -3026,6 +3026,14 @@
             }
         },
         {
+            "Key": "1f0579ad-2712-4c68-a4ea-791477769860",
+            "Value": {
+                "id": "ba1d1e18-9e94-403d-ac15-e9ba72ca71f4",
+                "resourcePath": "sprites\\spr_scrollbarbutton\\spr_scrollbarbutton.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1f450735-0c60-4a44-bf73-f0f59abf2b2c",
             "Value": {
                 "id": "68088936-c165-4500-a5b0-b1bbfe81b14a",
@@ -18162,6 +18170,14 @@
             }
         },
         {
+            "Key": "b90cd752-1af0-4dce-bd8b-9d17550627e4",
+            "Value": {
+                "id": "99803461-a4be-481c-87a4-8751b81a9bef",
+                "resourcePath": "sprites\\spr_scrollbar\\spr_scrollbar.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b93399d6-ea5c-4e35-9fec-5c71fded6fd6",
             "Value": {
                 "id": "c558a1f1-6e75-477a-84d4-174ac33e4782",
@@ -22362,6 +22378,14 @@
                 "id": "ced6ac2d-6b3f-438a-8dc8-94550db25ca5",
                 "resourcePath": "sprites\\spr_pepperdoor\\spr_pepperdoor.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "dfd003dc-3047-4f95-8aec-d52fdfc26b1d",
+            "Value": {
+                "id": "b0e611ce-5e40-4c9a-82ac-18390c35718c",
+                "resourcePath": "objects\\obj_palettechangerscrollbar\\obj_palettechangerscrollbar.yy",
+                "resourceType": "GMObject"
             }
         },
         {
