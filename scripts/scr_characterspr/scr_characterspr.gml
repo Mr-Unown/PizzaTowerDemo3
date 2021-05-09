@@ -816,7 +816,7 @@ switch character {
     spr_climbwall = spr_playerN_climbwall
     spr_grab = spr_playerN_grab
     spr_mach2jump = spr_playerN_mach2jump
-    spr_Timesup = spr_playerP_scare
+    spr_Timesup = spr_playerP_levelintro
     spr_deathstart = spr_playerN_deathstart
     spr_deathend = spr_playerN_deathend
     spr_machpunch1 = spr_playerN_machpunch1

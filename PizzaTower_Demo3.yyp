@@ -7658,6 +7658,14 @@
             }
         },
         {
+            "Key": "4e198752-daee-4e69-afa7-247fb39aac36",
+            "Value": {
+                "id": "8f8dea15-75e0-4a05-acaf-952f65a4810a",
+                "resourcePath": "sprites\\spr_playerP_bodyslamstart\\spr_playerP_bodyslamstart.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4e1e2c42-f69f-4b56-97e1-42ac7284e09e",
             "Value": {
                 "id": "8692c730-209d-43fe-8e7c-aa14ef9cef0f",
@@ -9671,6 +9679,14 @@
                 "id": "e6bd2c73-0ce9-49c9-a265-b74f5ef7ebb4",
                 "resourcePath": "tilesets\\tile_kungfutiles\\tile_kungfutiles.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "60c3fdf3-8dc6-4b88-8ebf-fb76dbd84528",
+            "Value": {
+                "id": "6e291fcc-f252-467f-b205-f149c26a8a92",
+                "resourcePath": "objects\\obj_palettechanger\\obj_palettechanger.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -14842,6 +14858,14 @@
             }
         },
         {
+            "Key": "96218c37-0ce0-498f-922b-0a9052a9068f",
+            "Value": {
+                "id": "d276a116-58ea-403e-a7fb-26fbd1c6f338",
+                "resourcePath": "sprites\\spr_playerP_bodyslamland\\spr_playerP_bodyslamland.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9622e3fb-8d6a-40bc-8483-ff92049fb186",
             "Value": {
                 "id": "0cf9bcda-f64b-40ca-b10b-099c585b8cb1",
@@ -16126,6 +16150,14 @@
             "Value": {
                 "id": "7b170182-0635-488b-8430-10f3871d561c",
                 "resourcePath": "sprites\\spr_coolpinea_dead\\spr_coolpinea_dead.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a39b5def-c748-4631-8be8-c0dac6fc669c",
+            "Value": {
+                "id": "5f975859-f334-4ca9-9b16-58156275cfb3",
+                "resourcePath": "sprites\\spr_playerP_bodyslam\\spr_playerP_bodyslam.yy",
                 "resourceType": "GMSprite"
             }
         },
