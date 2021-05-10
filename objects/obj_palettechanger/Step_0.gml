@@ -26,7 +26,14 @@ if has_selectedoption = true
 			break;
 		case paletteoption.custom:
 		#region Custom
-		
+		/*for (var i = 0; i < 2; i++) 
+		{
+		    with instance_create(x,y,obj_palettechangerscrollbar)
+			{
+				indexedcolor = other.indexedcolor //Which Color to Change
+				customcolor = i //Which Color Value to change		
+			}
+		}*/
 		player.color[indexedcolor] = make_color_rgb(customcolor[0],customcolor[1],customcolor[2])
 		#endregion
 			break;
@@ -37,8 +44,13 @@ if has_selectedoption = true
 	        
 			break;		
 	}
-}
-
+}/*
+//Clean up
+if selectedoption != paletteoption.custom
+{
+	if instance_exists(obj_palettechangerscrollbar)
+		instance_destroy(obj_palettechangerscrollbar)
+}*/
 //Change Options
 if ((key_up2 || keyboard_check_pressed(vk_up)) && optionselected > 0) && has_selectedoption = false
 {

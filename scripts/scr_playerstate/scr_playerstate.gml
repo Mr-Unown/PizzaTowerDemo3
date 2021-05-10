@@ -430,11 +430,11 @@ switch state
 }
 
 //Palette
-if surface_exists(surf_pallete) && !((paletteselect < 12 && (character = "P" || character = "PZ")) || (paletteselect < 11 && character != "P" && character != "PZ" && character != "PM") || (paletteselect < 5 && character = "PM"))
+if surface_exists(surf_pallete) && (paletteselect >= sprite_get_width(spr_palette) - 1)
 	custompalette = true
-else if ((paletteselect < 12 && (character = "P" || character = "PZ")) || (paletteselect < 11 && character != "P" && character != "PZ" && character != "PM") || (paletteselect < 5 && character = "PM"))
+else if (paletteselect < sprite_get_width(spr_palette) - 1)
 	custompalette = false
-	
+
 //Vigi Health nerf
 if vigihealth > 100 && vigitimer <= 0
 {

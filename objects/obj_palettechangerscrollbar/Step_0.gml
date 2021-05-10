@@ -9,3 +9,22 @@ var _mouse_y = (mouse_y - _cam_y)
 
 
 
+
+if mouse_check_button_pressed(mb_left) 
+{
+    if point_in_circle(_mouse_x, _mouse_y, button_x, button_y, button_radius) 
+	{
+        selected = true;
+    }
+}
+
+if !mouse_check_button(mb_left) 
+{
+    selected = false;
+}
+
+if selected 
+{
+    value = clamp((_mouse_x - x) / sprite_width, 0, max_value);
+	obj_palettechanger.customcolor[customcolor] = value
+}
