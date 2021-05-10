@@ -18530,6 +18530,14 @@
             }
         },
         {
+            "Key": "bbb482e2-f788-4bf2-b651-f7a0499ba6f4",
+            "Value": {
+                "id": "3423cbc1-624c-4635-8d1c-7df95c70df49",
+                "resourcePath": "sprites\\spr_supertauntcharge\\spr_supertauntcharge.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "bbdb6706-a299-4671-bdbf-03a49c651b1e",
             "Value": {
                 "id": "1df75187-802e-49bc-b5a7-8f3e6ab8965a",

@@ -447,3 +447,27 @@ else if vigihealth <= 100
 vigitimer--
 
 vigihealth = clamp(vigihealth,0,250)
+//Supertaunt
+if global.combo >= 3 && supertauntbuffer < 500 && supertauntcharged = false
+	supertauntbuffer++
+else if supertauntbuffer > 0
+	supertauntbuffer--
+if supertauntbuffer >= 500 && supertauntcharged = false
+{
+	supertauntbuffer = 500;
+	supertauntcharged = true;
+}
+if (supertauntbuffer <= 0 && supertauntcharged = true) || global.combo < 3 
+{
+	supertauntbuffer = 0;
+	supertauntcharged = false;
+}
+if supertauntcharged = true  && room != rank_room
+{
+	if !instance_exists(supertaunteffect)
+		with instance_create(x,y,obj_supertaunteffect) 
+		{
+			other.supertaunteffect = id
+			playerid = other.id
+		}
+}

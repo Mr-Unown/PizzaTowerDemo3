@@ -8,25 +8,7 @@ if image_blend != make_colour_hsv(0, 0, 255) && state != states.comingoutdoor {
 //Heavy
 if heavy = 1 && state != 46
 heavy = 0
-//Supertaunt
-if global.combo >= 3 && supertauntbuffer < 500
-	supertauntbuffer++
-else if supertauntbuffer > 0
-	supertauntbuffer--
-if supertauntbuffer >= 500 && supertauntcharged = false
-{
-	supertauntbuffer = 500;
-	supertauntcharged = true;
-}
-if supertauntcharged = true && room != rank_room
-{
-	if !instance_exists(supertaunteffect)
-		with instance_create(x,y,obj_supertaunteffect) 
-		{
-			other.supertaunteffect = id
-			playerid = other.id
-		}
-}
+
 
 //Clingy
 if wallclingbuffer > 15

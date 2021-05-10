@@ -71,8 +71,10 @@ if (sprite_index == spr_taunt)
             shake_mag = 10
             shake_mag_acc = (30 / room_speed)
         }
-		supertauntcharged = false;
-		supertauntbuffer = 0;
+		obj_player1.supertauntcharged = false;
+		obj_player1.supertauntbuffer = 0;
+		obj_player2.supertauntcharged = false;
+		obj_player2.supertauntbuffer = 0;		
     }
     if (global.debugmode == 1)
     {

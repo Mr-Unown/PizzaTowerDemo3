@@ -41,7 +41,7 @@ if instance_exists(obj_player2)
 }
 with (obj_player)
 {
-    if (place_meeting(x, y, obj_keydoor) && other.sprite_index == spr_doorvisited && key_up && (state == 0 || state == 69 || state == 70 || state == 91) && y == (other.y + 50) && (!instance_exists(obj_noisesatellite)) && (!instance_exists(obj_fadeout)) && state != 78 && state != 64 && state != 61)
+    if (place_meeting(x, y, obj_keydoor) && other.sprite_index == spr_doorvisited && (key_up && (state == 0 || state == 69 || state == 70 || state == 91 || state == 65) && y == (other.y + 50) && (!instance_exists(obj_noisesatellite)) && (!instance_exists(obj_fadeout)) && state != 78 && state != 61 && ((obj_player1.spotlight == 1 && object_index == obj_player1) || (obj_player1.spotlight == 0 && object_index == obj_player2))))
     {
         scr_soundeffect(52)
         mach2 = 0

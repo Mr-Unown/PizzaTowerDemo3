@@ -17,25 +17,7 @@ wallclingbuffer = 0
 if jetpacking = true && state != states.frozen && !(state = 51 || sprite_index = spr_playerN_jetpackstart || sprite_index = spr_superjumpprep || sprite_index = spr_jetpack || sprite_index = spr_jetpackcrazy || sprite_index = spr_playerN_jetpackslide || sprite_index = spr_playerN_Sjump)	
 jetpacking = false
 
-//Supertaunt
-if global.combo >= 3 && supertauntbuffer < 500
-	supertauntbuffer++
-else if supertauntbuffer > 0
-	supertauntbuffer--
-if supertauntbuffer >= 500 && supertauntcharged = false
-{
-	supertauntbuffer = 500;
-	supertauntcharged = true;
-}
-if supertauntcharged = true  && room != rank_room
-{
-	if !instance_exists(supertaunteffect)
-		with instance_create(x,y,obj_supertaunteffect) 
-		{
-			other.supertaunteffect = id
-			playerid = other.id
-		}
-}
+
 //Score
 global.collect = collectscore + obj_player2.collectscore
 global.collectN = obj_player2.collectscore
