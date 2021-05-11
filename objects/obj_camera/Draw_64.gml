@@ -1,15 +1,6 @@
 
 
-if (obj_player1.spotlight == 1)
-	if	obj_player1.custompalette = true
-		pal_swap_set(obj_player1.surf_pallete, 1, true)
-	else if	obj_player1.custompalette = false
-		pal_swap_set(obj_player1.spr_palette, obj_player1.paletteselect, false)
-else
-	if	obj_player2.custompalette = true
-		pal_swap_set(obj_player2.surf_pallete, 1, true)
-	else if	obj_player2.custompalette = false
-		pal_swap_set(obj_player2.spr_palette, obj_player2.paletteselect, false)
+
 		
 var player = obj_player1
 var player2 = obj_player2
@@ -25,6 +16,17 @@ else
 }
 if global.hudmode != 1
 {
+if (obj_player1.spotlight == 1)
+	if	obj_player1.custompalette = true
+		pal_swap_set(obj_player1.surf_pallete, 1, true)
+	else if	obj_player1.custompalette = false
+		pal_swap_set(obj_player1.spr_palette, obj_player1.paletteselect, false)
+else
+	if	obj_player2.custompalette = true
+		pal_swap_set(obj_player2.surf_pallete, 1, true)
+	else if	obj_player2.custompalette = false
+		pal_swap_set(obj_player2.spr_palette, obj_player2.paletteselect, false)	
+		
 	//Backup
 	 if (player.pizzashieldbackup >= 1)
 	 {

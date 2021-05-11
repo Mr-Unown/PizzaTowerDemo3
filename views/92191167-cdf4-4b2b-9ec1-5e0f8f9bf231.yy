@@ -8,7 +8,8 @@
         "a33586fc-b927-43a1-b38f-12754625ac4f",
         "645c38d6-76b7-4cc7-b2f4-891902b93912",
         "62a4aa6b-cf25-41a6-b376-5d4265314a3c",
-        "50c1260c-9a1b-42bb-bae9-223c38530706"
+        "50c1260c-9a1b-42bb-bae9-223c38530706",
+        "e1fad7f1-1f22-41b3-a0c7-905fef57c465"
     ],
     "filterType": "GMObject",
     "folderName": "Groups",

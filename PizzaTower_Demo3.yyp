@@ -22629,6 +22629,14 @@
             }
         },
         {
+            "Key": "e1fad7f1-1f22-41b3-a0c7-905fef57c465",
+            "Value": {
+                "id": "3e971bae-240c-4a32-ab93-8ceff423b884",
+                "resourcePath": "objects\\group_door\\group_door.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e2060574-d825-40ea-be8e-dfe603f06062",
             "Value": {
                 "id": "940709c3-fdbc-4dfd-93e8-93d233812c44",
