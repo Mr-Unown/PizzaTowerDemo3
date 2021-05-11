@@ -13,20 +13,16 @@ draw_set_color(c_white)
 #region Palette
 var paletteselected = 0
 
-if player.character = "P" || player.character = "PZ"
-{	
-	if player.paletteselect != sprite_get_width(player.spr_palette) - 1 
+if player.paletteselect != sprite_get_width(player.spr_palette) - 1
+{
+	if player.character = "P" || player.character = "PZ"
 		paletteselected = player.paletteselect
 	else
-		paletteselected = "CUSTOM"
+		paletteselected = player.paletteselect + 1
 }
 else
-{
-	if player.paletteselect != sprite_get_width(player.spr_palette)
-		paletteselected = player.paletteselect
-	else
-		paletteselected = "CUSTOM"	
-}
+	paletteselected = "CUSTOM"	
+
 #endregion
 
 if (optionselected == 0)

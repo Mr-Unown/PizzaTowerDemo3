@@ -10,9 +10,14 @@ switch customcolor
 	draw_y = 320
 	break;
 	
-	case 3: //B
+	case 2: //B
 	draw_x = 480
 	draw_y = 352
+	break;
+	
+	default:
+	draw_x = 0
+	draw_y = 0
 	break;
 }
 

@@ -26,14 +26,47 @@ if has_selectedoption = true
 			break;
 		case paletteoption.custom:
 		#region Custom
-		/*for (var i = 0; i < 2; i++) 
-		{
-		    with instance_create(x,y,obj_palettechangerscrollbar)
+			#region Dirty Scrollbar thingy
+			var i = 0;
+			repeat(3)
 			{
-				indexedcolor = other.indexedcolor //Which Color to Change
-				customcolor = i //Which Color Value to change		
+			if scrollID[i] = noone
+				with instance_create(x,y,obj_palettechangerscrollbar)
+				{
+					customcolor = i
+					other.scrollID[i] = id		
+					i++
+				}
+				
 			}
-		}*/
+			#endregion
+		if ((key_right2 || keyboard_check_pressed(vk_right)))
+		{
+			indexedcolor = clamp(indexedcolor + 1,0,sprite_get_height(player.spr_palette))
+			ini_open(string(characters)+"_palettes.ini")
+			scrollID[0].value = (ini_read_real(string(characters)+"Colors"+string(indexedcolor), "Red", 0) / 255);
+			scrollID[1].value = (ini_read_real(string(characters)+"Colors"+string(indexedcolor), "Green", 0) / 255);
+			scrollID[2].value = (ini_read_real(string(characters)+"Colors"+string(indexedcolor), "Blue", 0) / 255);			
+			ini_close()
+		}
+		if (((-key_left2) || keyboard_check_pressed(vk_left)))
+		{
+			indexedcolor = clamp(indexedcolor - 1,0,sprite_get_height(player.spr_palette))
+			ini_open(string(characters)+"_palettes.ini")
+			scrollID[0].value = (ini_read_real(string(characters)+"Colors"+string(indexedcolor), "Red", 0) / 255);
+			scrollID[1].value = (ini_read_real(string(characters)+"Colors"+string(indexedcolor), "Green", 0) / 255);
+			scrollID[2].value = (ini_read_real(string(characters)+"Colors"+string(indexedcolor), "Blue", 0) / 255);
+			ini_close()
+		}			
+		if key_jump2
+		{
+			ini_open(string(characters)+"_palettes.ini")
+			ini_write_real(string(characters)+"Colors"+string(indexedcolor), "Red", customcolor[indexedcolor]);
+			ini_write_real(string(characters)+"Colors"+string(indexedcolor), "Green", customcolor[indexedcolor]);
+			ini_write_real(string(characters)+"Colors"+string(indexedcolor), "Blue", customcolor[indexedcolor]);		
+			ini_close()
+			
+		}
 		player.color[indexedcolor] = make_color_rgb(customcolor[0],customcolor[1],customcolor[2])
 		#endregion
 			break;
@@ -44,13 +77,21 @@ if has_selectedoption = true
 	        
 			break;		
 	}
-}/*
+}
 //Clean up
 if selectedoption != paletteoption.custom
 {
+	
 	if instance_exists(obj_palettechangerscrollbar)
 		instance_destroy(obj_palettechangerscrollbar)
-}*/
+	scrollID[0] = noone
+	scrollID[1] = noone
+	scrollID[2] = noone
+	with player.id
+	{
+		scr_playercolors()
+	}
+}
 //Change Options
 if ((key_up2 || keyboard_check_pressed(vk_up)) && optionselected > 0) && has_selectedoption = false
 {

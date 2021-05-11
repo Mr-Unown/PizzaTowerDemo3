@@ -22,12 +22,13 @@ customcolor[0] = 0 //RED
 customcolor[1] = 0 //GREEN
 customcolor[2] = 0 //BLUE
 
-//ini_write_real(string(characters)+"Colors"+string(indexedcolor), "Red", customcolor[indexedcolor]);
-//ini_write_real(string(characters)+"Colors"+string(indexedcolor), "Green", customcolor[indexedcolor]);
-//ini_write_real(string(characters)+"Colors"+string(indexedcolor), "Blue", customcolor[indexedcolor]);
+
 //
 //color[0] = make_color_rgb(colored[0,0],colored[0,1],colored[0,2])
-
+//Scrollbar ID
+scrollID[0] = noone
+scrollID[1] = noone
+scrollID[2] = noone
 
 //Player
 if player.character = "P"

@@ -2,6 +2,8 @@ with other.id
 {
 	if state = states.pipe
 	{	
+		visible = true
+		flash = true
 		x = other.centerX
 		y = other.centerY		
 		if other.pipedirection = "up"
@@ -13,7 +15,7 @@ with other.id
 			sprite_index = spr_superjump
 			state = 63
 			vsp = -15
-
+			jetpacking = true
 			instance_create(x, y, obj_explosioneffect)
 			#endregion
 			}
