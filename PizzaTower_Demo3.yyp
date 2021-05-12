@@ -3298,6 +3298,14 @@
             }
         },
         {
+            "Key": "21fb516f-48db-4944-9708-a890efcae4ff",
+            "Value": {
+                "id": "626ae802-ea13-4fde-a25b-c4634e32f841",
+                "resourcePath": "sprites\\spr_tvboot\\spr_tvboot.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "221745d0-f29e-4639-ac08-23124e840a78",
             "Value": {
                 "id": "46ed54a7-4499-4b73-a9a8-e947049854b3",

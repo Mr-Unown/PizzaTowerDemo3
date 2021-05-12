@@ -51,6 +51,7 @@ global.storedgun = 0
 global.golfhit = 0
 with (obj_tv)
 {
+	bootingup = false
     shownranks = 0
     shownranka = 0
     shownrankb = 0
@@ -59,6 +60,16 @@ with (obj_tv)
     shownderanka = 0
     shownderankb = 0
     shownderankc = 0
+	tvsprite = spr_tvboot
+	imageindexstore = 0
+	image_index = 0
+	image_speed = 0
+	alarm[0] = -1
+	showtext = false
+	tvsprite = spr_tvboot
+	sprite_index = spr_tvboot
+	
+
 }
 global.SAGEshotgunsnicknumber = 0
 obj_music.fadeoff = 0

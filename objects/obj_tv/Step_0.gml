@@ -73,8 +73,22 @@ if instance_exists(obj_itspizzatime)
     showtext = 1
     tvsprite = spr_tvexit
 }
-
-if (global.collect > global.srank && shownranks == 0 && global.nocombo == 0)
+if tvsprite = spr_tvboot
+{
+	if instance_exists(obj_fadeout)
+		image_index = 0
+    image_speed = 0.5
+	sprite_index = tvsprite	
+	if floor(image_index) == image_number - 1
+	{
+		showtext = 0
+		tvsprite = spr_tvdefault
+		image_speed = 0.1
+		imageindexstore = 0
+		bootingup = true
+	}
+}
+else if (global.collect > global.srank && shownranks == 0 && global.nocombo == 0)
 {
     image_speed = 0.125
 	if global.coop = false
@@ -172,7 +186,7 @@ else if (global.hurtcounter >= global.hurtmilestone)
     else if (obj_player.character == "D")
         character = "DOUGIE"	
     message = (((("YOU HAVE HURT " + string(character)) + " ") + string(global.hurtmilestone)) + " TIMES...")
-    if (tvsprite != 917 && tvsprite != 916 && tvsprite != 915 && tvsprite != 914)
+    if (tvsprite != spr_tvtalking1 && tvsprite != spr_tvtalking2 && tvsprite != spr_tvtalking3 && tvsprite != spr_tvtalking4)
         tvsprite = choose(spr_tvtalking1, spr_tvtalking2, spr_tvtalking3, spr_tvtalking4)
     global.hurtmilestone = (global.hurtmilestone + 3)
 }
@@ -249,4 +263,4 @@ if instance_exists(obj_pizzaball)
 if ((!instance_exists(obj_pizzaball)) && global.golfbuffer > 0)
     global.golfbuffer--
 
-
+sprite_index = tvsprite

@@ -21,7 +21,7 @@ else
 	drawx2 = 750 + _xoffset;
 	drawy2 = -14 + _yoffset;
 }
-if (global.combo != 0 && global.miniboss == 0 && global.combotime != 0 && (tvsprite == spr_tvdefault || tvsprite == spr_tvcombo))
+if (global.combo != 0 && global.miniboss == 0 && global.combotime != 0 && (tvsprite == spr_tvdefault || tvsprite == spr_tvcombo)) && tvsprite != spr_tvboot
 {
 	//New Combo Meter
 	var combotimer = global.combotime / 60
