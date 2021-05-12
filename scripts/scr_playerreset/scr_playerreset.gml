@@ -60,7 +60,6 @@ with (obj_tv)
     shownderanka = 0
     shownderankb = 0
     shownderankc = 0
-	tvsprite = spr_tvboot
 	imageindexstore = 0
 	image_index = 0
 	image_speed = 0
@@ -68,7 +67,8 @@ with (obj_tv)
 	showtext = false
 	tvsprite = spr_tvboot
 	sprite_index = spr_tvboot
-	
+	xi = 500
+	yi = 600
 
 }
 global.SAGEshotgunsnicknumber = 0

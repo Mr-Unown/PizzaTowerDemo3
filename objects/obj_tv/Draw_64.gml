@@ -1,3 +1,4 @@
+
 if global.hudmode != 1
 {
 var _xoffset = random_range(-3,3);

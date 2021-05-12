@@ -109,8 +109,9 @@ if (room == mansion_1 && global.snickchallenge == 0)
 
 if bootingup = false
 {
+	alarm[0] = -1
 	imageindexstore = 0
-	image_index = 0
+	_image_index = 0
 	image_speed = 0
 	tvsprite = spr_tvboot
 	sprite_index = spr_tvboot

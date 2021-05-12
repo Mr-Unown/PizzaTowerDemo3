@@ -5,7 +5,8 @@ oldfacesprite = spr_null
 //Shaders
 greyscalefade = 0;
 
-
+//Number
+_image_index = 0;
 
 global.hitstunenabled = true;
 global.levelname = "none"

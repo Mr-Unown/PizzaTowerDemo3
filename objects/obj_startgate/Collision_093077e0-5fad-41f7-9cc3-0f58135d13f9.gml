@@ -2,15 +2,15 @@ with (obj_player1)
 {
     if (place_meeting(x, y, other) && key_up && grounded && (state == 0 || state == 69 || state == 70 || state == 91) && (!instance_exists(obj_noisesatellite)) && (!instance_exists(obj_fadeout)) && state != 64 && state != 61 && obj_player1.spotlight == 1)
     {
-		with (obj_camera)
-		{
-			bootingup = false		
-			imageindexstore = 0
-			image_index = 0
-			image_speed = 0
-			tvsprite = spr_tvboot
-			sprite_index = spr_tvboot
-		}
+		obj_tv.alarm[0] = -1
+		obj_tv.imageindexstore = 0
+		obj_tv.image_index = 0
+		obj_tv.image_speed = 0
+		obj_tv.tvsprite = spr_tvboot
+		obj_tv.sprite_index = spr_tvboot
+		obj_tv.bootingup = false
+
+
 		global.levelname = other.level
         scr_soundstopall()
 		x = other.cplayer1x
@@ -42,15 +42,15 @@ with (obj_player2)
 {
     if (place_meeting(x, y, other) && key_up && grounded && (state == 0 || state == 69 || state == 70 || state == 91) && (!instance_exists(obj_noisesatellite)) && (!instance_exists(obj_fadeout)) && state != 64 && state != 61 && obj_player1.spotlight == 0)
     {
-		with (obj_camera)
-		{
-			bootingup = false		
-			imageindexstore = 0
-			image_index = 0
-			image_speed = 0
-			tvsprite = spr_tvboot
-			sprite_index = spr_tvboot
-		}
+
+		obj_tv.alarm[0] = -1
+		obj_tv.imageindexstore = 0
+		obj_tv.image_index = 0
+		obj_tv.image_speed = 0
+		obj_tv.tvsprite = spr_tvboot
+		obj_tv.sprite_index = spr_tvboot
+		obj_tv.bootingup = false
+		
 		global.levelname = other.level
         scr_soundstopall()
 		x = other.cplayer1x
@@ -93,12 +93,6 @@ if ((floor(obj_player1.image_index) == (obj_player1.image_number - 1) && obj_pla
             obj_player1.collectscore = 10000
 			with (obj_camera)
 			{
-				bootingup = false		
-				imageindexstore = 0
-				image_index = 0
-				image_speed = 0
-				tvsprite = spr_tvboot
-				sprite_index = spr_tvboot
 		        alarm[1] = 60
                 global.seconds = 59
                 global.minutes = 9

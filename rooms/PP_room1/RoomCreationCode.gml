@@ -9,7 +9,7 @@ with (obj_tv)
 	image_speed = 0
 	image_index = 0
 	tvsprite = spr_tvboot
-	sprite_index = spr_tvboot
+	
     shownranks = 0	
     shownranka = 0
     shownrankb = 0
