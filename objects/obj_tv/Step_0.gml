@@ -77,7 +77,7 @@ if tvsprite = spr_tvboot
 {
 	if instance_exists(obj_fadeout)
 		image_index = 0
-    image_speed = 0.5
+    image_speed = 0.35
 	sprite_index = tvsprite	
 	if floor(image_index) == image_number - 1
 	{

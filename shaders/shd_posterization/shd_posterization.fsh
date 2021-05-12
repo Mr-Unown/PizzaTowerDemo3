@@ -14,7 +14,7 @@ uniform float fade;
 void main()
 { 
 	//Posterized
-	float gamma = 0.8; // 0.6
+	float gamma = 0.9; // 0.6
 	float numColors = 8.0; // 8.0
 	vec3 col = texture2D(gm_BaseTexture, v_vTexcoord).rgb;
 	col = pow(abs(col), vec3(gamma, gamma, gamma));

@@ -285,7 +285,7 @@ if (state == 23 || sprite_index == spr_knightpepstart || sprite_index == spr_kni
     cutscene = 1
 else
     cutscene = 0
-if ((place_meeting(x, y, obj_door) || place_meeting(x, y, obj_dresser) || place_meeting(x, y, obj_snick) || place_meeting(x,y,obj_geromedoor) || place_meeting(x, y, obj_keydoor) || (place_meeting(x, y, obj_exitgate) && global.panic == 1)) && (!instance_exists(obj_uparrow)) && scr_solid(x, (y + 1)) && state == 0 && obj_player1.spotlight == 0)
+if ((place_meeting(x, y, obj_door) || place_meeting(x, y, obj_dresser) || place_meeting(x, y, obj_snick) || place_meeting(x,y,obj_geromedoor) || place_meeting(x, y, obj_keydoor) || (place_meeting(x, y, obj_exitgate) && (global.panic == 1 || global.snickchallenge == true))) && (!instance_exists(obj_uparrow)) && scr_solid(x, (y + 1)) && state == 0 && obj_player1.spotlight == 0)
 {
     with (instance_create(x, y, obj_uparrow))
         playerid = other.object_index
