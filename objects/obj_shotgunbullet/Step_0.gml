@@ -1,7 +1,19 @@
-if (scr_solid((x + spd), y) && (!place_meeting((x + spd), y, obj_destructibles)) && (!place_meeting((x + spd), y, obj_targetblock)))
-    instance_destroy()
+//if (scr_solid((x + spd), y) && (!place_meeting((x + spd), y, obj_destructibles)) && (!place_meeting((x + spd), y, obj_targetblock)))
+    //sinstance_destroy()
 with (instance_place((x + spd), y - spdh, obj_destructibles))
-	instance_destroy()
+{
+	if object_index != obj_onewaybigblock && object_index != obj_secretonewaybigblock
+		instance_destroy()
+	else if object_index = obj_onewaybigblock || object_index = obj_secretonewaybigblock
+	{
+		if sign(image_xscale) = 1 && other.x > x
+			instance_destroy()
+		else if sign(image_xscale) = -1 && other.x < x
+			instance_destroy()
+		else
+			instance_destroy(other.id)
+	}
+}
 with (instance_place((x + spd), y - spdh, obj_targetblock))
     instance_destroy()
 x += spd
