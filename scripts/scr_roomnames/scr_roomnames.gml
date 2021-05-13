@@ -149,6 +149,9 @@ switch room
 	case ruin_12:
 		message = "Ancient John Retreat";
 		break;				
+	case ruin_13:
+		message = "Temple of Boom";
+		break;						
 	case ruin_treasure:
 		message = "Get Beaned!";
 		break;	

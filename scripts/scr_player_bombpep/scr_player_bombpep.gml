@@ -67,7 +67,7 @@ if key_slap2 && bombpeptimer != 0  && (sprite_index == spr_bombpeprunabouttoexpl
 
     with (instance_create(x, y, obj_pizzagoblinbomb))
 	{			
-		countdown = clamp(floor(other.bombpeptimer/2),0,30)
+		countdown = clamp(floor(other.bombpeptimer/2),0,60)
 		thrownbyplayer = true;
         hsp = (other.xscale * 10)
         vsp = -8    

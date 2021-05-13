@@ -8,9 +8,9 @@ with other.id
 			{
 				global.pausecombotime = true	
 				if other.thrownbyplayer = false
-					bombpeptimer = 100
+					bombpeptimer = 200
 				else
-					bombpeptimer = clamp(floor(other.countdown * 2),0,100)
+					bombpeptimer = clamp(floor(other.countdown * 2),0,200)
 				state = 27
 				image_index = 0
 				sprite_index = spr_bombpepintro
