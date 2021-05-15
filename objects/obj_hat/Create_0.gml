@@ -1,7 +1,8 @@
 depth = -10
 player = obj_player1
 image_xscale = player.xscale
-_image_speed = 0
+image_speed = 0.35
+_image_index = 0
 //player.equippedhat = false
 choosenhat[0] = spr_null
 choosenhat[1] = spr_hat_cowboy

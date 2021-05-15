@@ -36,9 +36,9 @@ else
     draw_text_colour(500, 200, "EDIT MODE", c_white, c_white, c_white, c_white, 0.5)
 	
 if (optionselected == 2)
-    draw_text_colour(480, 350, "PEPPINO", c_white, c_white, c_white, c_white, 1)
+    draw_text_colour(480, 350, string_upper(string(characters)), c_white, c_white, c_white, c_white, 1)
 else
-    draw_text_colour(480, 350, "PEPPINO", c_white, c_white, c_white, c_white, 0.5)	
+    draw_text_colour(480, 350, string_upper(string(characters)), c_white, c_white, c_white, c_white, 0.5)	
 
 if (optionselected == 3)
     draw_text_colour(64, 25, "HATS", c_white, c_white, c_white, c_white, 1)

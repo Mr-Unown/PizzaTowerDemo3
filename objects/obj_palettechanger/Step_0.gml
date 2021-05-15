@@ -1,4 +1,21 @@
 scr_getinput()
+//Player
+if player.character = "P"
+characters = "Peppino"
+if player.character = "N"
+characters = "Noise"
+if player.character = "S"
+characters = "Snick"
+if player.character = "V"
+characters = "Vigilante"
+if player.character = "PM"
+characters = "Pepperman"
+if player.character = "D"
+characters = "Dougie"
+if player.character = "PZ"
+characters = "Pizzelle"
+
+
 if has_selectedoption = true
 {
 	switch selectedoption
