@@ -72,7 +72,7 @@ if (character == "V")
 if (superspringjump != 1)
 {
 
-	if (key_attack2 && jetpacking = true)
+	if (key_attack2 && jetpacking = true) && character = "N"
     {
 		jetpacking = true		
 		scr_soundeffect(sfx_noisewoah)
@@ -84,7 +84,7 @@ if (superspringjump != 1)
 		if move != 0
 		  xscale = move
     }
-	else if (key_jump2 && jetpacking = true)
+	else if (key_jump2 && jetpacking = true) && character = "N"
     {
 		jetpacking = false
 		scr_soundeffect(sfx_jump)

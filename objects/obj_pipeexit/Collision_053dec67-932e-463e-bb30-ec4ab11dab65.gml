@@ -13,7 +13,7 @@ with other.id
 			#region JetpackUp
 			scr_soundeffect(sfx_superjumprelease)
 			sprite_index = spr_superjump
-			state = 63
+			state = states.Sjump
 			vsp = -15
 			jetpacking = true
 			instance_create(x, y, obj_explosioneffect)
@@ -23,7 +23,7 @@ with other.id
 			#region SuperJump
 			scr_soundeffect(sfx_superjumprelease)
 			sprite_index = spr_superjump
-			state = 63
+			state = states.Sjump
 			superspringjump = 1
 			vsp = -20
 			instance_create(x, y, obj_explosioneffect)

@@ -11,7 +11,7 @@ if instance_exists(ID)
 		player = instance_nearest(x,y,obj_player)
     with (ID)
     {
-        if (state != 96) && (player.instakillmove == 1 || player.state == 22)
+        if (state != 96) 
         {
             hitboxcreate = 0
             instance_destroy(other.id)

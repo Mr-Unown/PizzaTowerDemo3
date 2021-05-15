@@ -53,14 +53,14 @@ if has_selectedoption = true
 					customcolor = i
 					other.scrollID[i] = id		
 					ini_open(string(other.characters)+"_palettes.ini")
-					if customcolor = 0
+					if i = 0
 						value = (ini_read_real(string(other.characters)+"Colors"+string(other.indexedcolor), "Red", 0) / 255);
-					if customcolor = 1
+					if i = 1
 						value = (ini_read_real(string(other.characters)+"Colors"+string(other.indexedcolor), "Green", 0) / 255);
-					if customcolor = 2
+					if i = 2
 						value = (ini_read_real(string(other.characters)+"Colors"+string(other.indexedcolor), "Blue", 0) / 255);
 					ini_close()
-					i++
+					i += 1
 				}
 				
 			}
@@ -68,6 +68,8 @@ if has_selectedoption = true
 		if ((key_right2 || keyboard_check_pressed(vk_right)))
 		{
 			indexedcolor = clamp(indexedcolor + 1,0,sprite_get_height(player.spr_palette))
+			with obj_palettechangerscrollbar
+				selected = false;
 			ini_open(string(characters)+"_palettes.ini")
 			scrollID[0].value = (ini_read_real(string(characters)+"Colors"+string(indexedcolor), "Red", 0) / 255);
 			scrollID[1].value = (ini_read_real(string(characters)+"Colors"+string(indexedcolor), "Green", 0) / 255);
@@ -77,6 +79,8 @@ if has_selectedoption = true
 		if (((-key_left2) || keyboard_check_pressed(vk_left)))
 		{
 			indexedcolor = clamp(indexedcolor - 1,0,sprite_get_height(player.spr_palette))
+			with obj_palettechangerscrollbar
+				selected = false;			
 			ini_open(string(characters)+"_palettes.ini")
 			scrollID[0].value = (ini_read_real(string(characters)+"Colors"+string(indexedcolor), "Red", 0) / 255);
 			scrollID[1].value = (ini_read_real(string(characters)+"Colors"+string(indexedcolor), "Green", 0) / 255);
