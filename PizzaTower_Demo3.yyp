@@ -17338,6 +17338,14 @@
             }
         },
         {
+            "Key": "ae86c177-c057-45ac-988a-8a939e671290",
+            "Value": {
+                "id": "735aa8f7-9603-4881-b695-febb0ca6742a",
+                "resourcePath": "sprites\\spr_noisey_turn\\spr_noisey_turn.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ae88c04f-47d6-42dc-b991-a0439e24d7fc",
             "Value": {
                 "id": "a299f954-83d5-4742-a38c-fe10cb3014dc",
@@ -22993,6 +23001,14 @@
             "Value": {
                 "id": "cec5291d-8248-4ed3-b6f5-4c1b0550e34a",
                 "resourcePath": "sprites\\spr_pizzakinshroom_underwater\\spr_pizzakinshroom_underwater.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e4a4bc1b-a79e-4af4-88e4-0907ad67af46",
+            "Value": {
+                "id": "d36e9a83-4b98-41f1-a671-677b72769df0",
+                "resourcePath": "sprites\\spr_noisey_scared\\spr_noisey_scared.yy",
                 "resourceType": "GMSprite"
             }
         },

@@ -29,6 +29,13 @@ if ((scr_solid((x + 1), y) && image_xscale == 1) || (scr_solid((x - 1), y) && im
             sprite_index = spr_forknight_turn
             state = 94
         }
+		else if (object_index == obj_noisey)
+        {
+            image_xscale *= -1
+            image_index = 0
+            sprite_index = spr_noisey_turn
+            state = 94
+        }
         else if grounded
             image_xscale *= -1
     }
@@ -55,6 +62,13 @@ if (object_index != obj_ancho) && object_index != obj_ufoolive
                 sprite_index = spr_forknight_turn
                 state = 94
             }
+			else if (object_index == obj_noisey)
+			{
+				image_xscale *= -1
+				image_index = 0
+				sprite_index = spr_noisey_turn
+				state = 94
+			}			
             else
                 image_xscale *= -1
         }

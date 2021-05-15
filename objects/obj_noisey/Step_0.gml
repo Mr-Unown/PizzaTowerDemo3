@@ -1,4 +1,5 @@
 scr_commonenemy()
+
 if (state == 106 && stunned > 100 && birdcreated == 0)
 {
     birdcreated = 1

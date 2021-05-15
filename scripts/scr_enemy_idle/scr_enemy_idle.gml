@@ -14,6 +14,8 @@ if (object_index == obj_ancho && sprite_index == scaredspr && scarebuffer = 0)
     state = 102
 if (object_index == obj_forknight && sprite_index == spr_forknight_turn && floor(image_index) == (image_number - 1))
     state = 102
+if (object_index == obj_noisey && sprite_index == spr_noisey_turn && floor(image_index) == (image_number - 1))
+    state = 102
 if (sprite_index != spr_coolpinea_parry)
 {
     if ((grounded || (grounded && (!place_meeting(x, y, obj_platform)))) && vsp > 0)
