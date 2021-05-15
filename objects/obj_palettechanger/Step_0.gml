@@ -82,7 +82,7 @@ if has_selectedoption = true
 		#region Characters
 		if ((key_right2 || keyboard_check_pressed(vk_right)))
 		{
-			selectedcharacter += 1
+			selectedcharacter = clamp(selectedcharacter + 1,0,7)
 			with player
 			{
 				character = other.playercharacter[other.selectedcharacter]
@@ -91,14 +91,13 @@ if has_selectedoption = true
 		}
 		if (((-key_left2) || keyboard_check_pressed(vk_left)))
 		{
-			selectedcharacter -= 1
+			selectedcharacter = clamp(selectedcharacter - 1,0,7)
 			with player
 			{
 				character = other.playercharacter[other.selectedcharacter]
 				scr_characterspr()
 			}
 		}       
-		selectedcharacter = clamp(selectedcharacter,0,7)
 		player.selectedcharacter = selectedcharacter
 		if selectedcharacter = 2
 			player.pogo = true
@@ -110,13 +109,12 @@ if has_selectedoption = true
 	    #region Hats
 		if ((key_right2 || keyboard_check_pressed(vk_right)))
 		{
-			player.choosenhat += 1
+			player.choosenhat = clamp(player.choosenhat + 1,0,5)
 		}
 		if (((-key_left2) || keyboard_check_pressed(vk_left)))
 		{
-			player.choosenhat -= 1
+			player.choosenhat = clamp(player.choosenhat - 1,0,5)
 		}		
-		player.choosenhat = clamp(player.choosenhat,0,5)
 		if player.choosenhat = 0
 			player.equippedhat = false;
 		else
