@@ -1,6 +1,6 @@
 sprite_index = choosenhat[player.choosenhat]
 x = player.x
-y = ((sprite_get_bbox_top(player.sprite_index) + player.y) - 40)
+y = ((sprite_get_bbox_top(player.sprite_index) + player.y) - 45)
 image_xscale = player.xscale
 image_alpha = player.image_alpha
 //image_blend = player.image_blend

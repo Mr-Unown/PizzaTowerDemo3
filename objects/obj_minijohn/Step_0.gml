@@ -32,7 +32,7 @@ if (state == 94 || state == 102)
     image_xscale = (-sign(playerposition))
     slide = ((-image_xscale) * (movespeed + 4))
 }
-if (hitboxcreate == 0 && state == 96) && !(targetplayer.instakillmove == 1 || targetplayer.state == 22)
+if (hitboxcreate == 0 && state == 96) //&& !(targetplayer.instakillmove == 1 || targetplayer.state == 22)
 {
     hitboxcreate = 1
     with (instance_create(x, y, obj_john_hitbox))
