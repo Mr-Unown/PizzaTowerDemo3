@@ -35,6 +35,14 @@ if has_selectedoption = true
 				{
 					customcolor = i
 					other.scrollID[i] = id		
+					ini_open(string(other.characters)+"_palettes.ini")
+					if customcolor = 0
+						value = (ini_read_real(string(other.characters)+"Colors"+string(other.indexedcolor), "Red", 0) / 255);
+					if customcolor = 1
+						value = (ini_read_real(string(other.characters)+"Colors"+string(other.indexedcolor), "Green", 0) / 255);
+					if customcolor = 2
+						value = (ini_read_real(string(other.characters)+"Colors"+string(other.indexedcolor), "Blue", 0) / 255);
+					ini_close()
 					i++
 				}
 				
@@ -71,10 +79,49 @@ if has_selectedoption = true
 		#endregion
 			break;
 		case paletteoption.characters:
-        
+		#region Characters
+		if ((key_right2 || keyboard_check_pressed(vk_right)))
+		{
+			selectedcharacter += 1
+			with player
+			{
+				character = other.playercharacter[other.selectedcharacter]
+				scr_characterspr()
+			}			
+		}
+		if (((-key_left2) || keyboard_check_pressed(vk_left)))
+		{
+			selectedcharacter -= 1
+			with player
+			{
+				character = other.playercharacter[other.selectedcharacter]
+				scr_characterspr()
+			}
+		}       
+		selectedcharacter = clamp(selectedcharacter,0,7)
+		player.selectedcharacter = selectedcharacter
+		if selectedcharacter = 2
+			player.pogo = true
+		else
+			player.pogo = false		
+		#endregion
 			break;
 		case paletteoption.hats:
-	        
+	    #region Hats
+		if ((key_right2 || keyboard_check_pressed(vk_right)))
+		{
+			player.choosenhat += 1
+		}
+		if (((-key_left2) || keyboard_check_pressed(vk_left)))
+		{
+			player.choosenhat -= 1
+		}		
+		player.choosenhat = clamp(player.choosenhat,0,5)
+		if player.choosenhat = 0
+			player.equippedhat = false;
+		else
+			player.equippedhat = true;
+		#endregion
 			break;		
 	}
 }

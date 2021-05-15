@@ -357,7 +357,7 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
             }
             scr_playerreset()
             obj_player.state = 8
-            global.cowboyhat = 0
+            //global.equippedhat = 0
             obj_player1.targetDoor = "A"
             if instance_exists(obj_player2)
                 obj_player2.targetDoor = "A"

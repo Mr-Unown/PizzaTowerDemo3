@@ -2,6 +2,7 @@ switch character {
     case "P": //The Fat Italian Hero
 	#region Peppino
     {
+	selectedcharacter = 0;
 	spr_idle = spr_player_idle
 	spr_move = spr_player_move
 	spr_crawl = spr_player_crawl
@@ -201,6 +202,10 @@ switch character {
 	case "N": //The Naughty Humanoid
 	#region Noise
 	{
+	if pogo = false
+		selectedcharacter = 1;
+	else
+		selectedcharacter = 2;
     spr_idle = spr_playerN_idle
     spr_move = spr_playerN_move
     spr_crawl = spr_playerN_crawl
@@ -401,6 +406,7 @@ switch character {
 	case "S": //The Forgotten Mascot
 	#region Snick
 	{
+	selectedcharacter = 3;
 	spr_idle = spr_snick_idle
 	spr_move = spr_snick_walk
 	spr_crawl =  spr_snick_idle
@@ -570,6 +576,7 @@ switch character {
 	case "V": //The Cowboy Cheeseslime
 	#region Vigilante
 	{
+	selectedcharacter = 4;
     spr_idle = spr_playerV_idle
     spr_move = spr_playerV_move
     spr_crawl = spr_playerV_crouchmove
@@ -768,6 +775,7 @@ switch character {
 	case "PM": //The Big, Bad, and the Ugly
 	#region Pepperman
 	{
+	selectedcharacter = 7;		
     spr_idle = spr_playerP_idle
     spr_move = spr_playerP_move
     spr_crawl = spr_playerN_crawl
@@ -967,6 +975,7 @@ switch character {
 	case "D": //The Named One
 	#region Dougie
 	{
+	selectedcharacter = 6;		
     spr_idle = spr_pizzard_scared
     spr_move = spr_pizzard_walk
     spr_crawl = spr_playerN_crawl
@@ -1167,6 +1176,7 @@ switch character {
     case "PZ": //The Confused One
 	#region Pizzelle
     {
+	selectedcharacter = 5;
 	spr_idle = spr_playerPZ_idle
 	spr_move = spr_playerPZ_move
 	spr_crawl = spr_playerPZ_crawl

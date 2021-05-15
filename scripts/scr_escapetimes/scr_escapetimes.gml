@@ -9,8 +9,8 @@
             global.seconds = 15
             break
         case ruin_11:
-            global.minutes = 3
-            global.seconds = 15
+            global.minutes = 2
+            global.seconds = 30
             break
         case dungeon_10:
             global.minutes = 3

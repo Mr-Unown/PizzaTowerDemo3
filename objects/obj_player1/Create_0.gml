@@ -1,9 +1,11 @@
 scr_initinput()
 scr_playercreate()
+selectedcharacter = 0;
 pogo = false
 pipedirection = "none"
 global.savefile = "a"
-
+equippedhat = false;
+choosenhat = 0;
 parry_id = -4
 parried_baddie = 0
 parry_max = 8

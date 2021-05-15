@@ -1,9 +1,12 @@
 scr_initinput2()
 scr_playercreate()
+selectedcharacter = 1;
 pogo = false
 pipedirection = "none"
 tauntcooleffect = noone
 parry_id = -4
+equippedhat = false;
+choosenhat = 0;
 parried_baddie = 0
 parry_max = 8
 superspringjump = 0

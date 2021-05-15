@@ -47,7 +47,7 @@ if is_discord_ready = true
 			string_smallimagekey = "vigi";
 			break;
 			case "D":
-			string_characterstring = "Dougie";
+			string_characterstring = "Danton"//"Dougie";
 			string_smallimagekey = "dougie";
 			break;	
 			case "PM":

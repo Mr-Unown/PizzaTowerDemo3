@@ -45,3 +45,17 @@ if player.character = "D"
 characters = "Dougie"
 if player.character = "PZ"
 characters = "Pizzelle"
+
+//Character Changer
+selectedcharacter = player.selectedcharacter
+playercharacter[0] = "P"
+playercharacter[1] = "N" //Skateboard
+playercharacter[2] = "N" //Pogo
+playercharacter[3] = "S"
+playercharacter[4] = "V"
+playercharacter[5] = "PZ"
+playercharacter[6] = "D"
+playercharacter[7] = "PM"
+
+//Hats
+//sprite_index = choosenhat[player.choosenhat]

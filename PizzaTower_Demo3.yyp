@@ -5042,6 +5042,14 @@
             }
         },
         {
+            "Key": "33de82a9-d32d-4e6d-b114-5de05eeb8242",
+            "Value": {
+                "id": "7807a133-aec0-485e-85b5-0aedacb82441",
+                "resourcePath": "sprites\\spr_hat_pizza\\spr_hat_pizza.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "33fa301d-d750-41c9-97de-459eedf9cc8e",
             "Value": {
                 "id": "1531190c-93e2-4f5a-9f9e-1149110233fb",
@@ -6495,6 +6503,14 @@
                 "id": "c256b804-2a7f-4828-bacd-993190c65e90",
                 "resourcePath": "objects\\obj_watercurrent\\obj_watercurrent.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "40ee96cc-44b4-42d5-a4ef-c111ce2fc15f",
+            "Value": {
+                "id": "cf0f69be-0c19-4297-a069-d8fbd22ace05",
+                "resourcePath": "sprites\\spr_hat_generic\\spr_hat_generic.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -12901,7 +12917,7 @@
             "Key": "818d58ed-1464-423f-bf79-1773b349f8d2",
             "Value": {
                 "id": "dfb115ff-22af-4d91-b84f-cad6104f2cee",
-                "resourcePath": "sprites\\spr_cowboyhat1\\spr_cowboyhat1.yy",
+                "resourcePath": "sprites\\spr_hat_cowboy\\spr_hat_cowboy.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -13662,6 +13678,14 @@
             "Value": {
                 "id": "fb632d69-593b-4838-832c-ca013cf221b4",
                 "resourcePath": "sprites\\spr_crushershockwave\\spr_crushershockwave.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8a74edaf-c4a3-4f00-9f1c-7da95ac92ae5",
+            "Value": {
+                "id": "bd2ac518-1d44-4f7d-b906-6ee2f0e57f73",
+                "resourcePath": "sprites\\spr_hat_ducky\\spr_hat_ducky.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -19978,6 +20002,14 @@
             }
         },
         {
+            "Key": "c8dbd548-9d9c-4c75-8311-f1377ede6511",
+            "Value": {
+                "id": "442d7d39-b308-4579-b04b-0ed300f80ef0",
+                "resourcePath": "objects\\obj_hat\\obj_hat.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c8fb419c-f59d-43fc-b242-18797b5135a3",
             "Value": {
                 "id": "e8adfeff-1d29-4288-ae78-8a1dec8a4c7a",
@@ -25409,6 +25441,14 @@
             "Value": {
                 "id": "e89d0988-6541-4f5a-8ee8-62d4f6c80744",
                 "resourcePath": "sprites\\spr_playerN_minigunmove\\spr_playerN_minigunmove.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ff3d6daf-def9-486c-b873-e05f4ff2b51d",
+            "Value": {
+                "id": "1c55671a-4b6c-40e1-8d70-b1d4fb94a964",
+                "resourcePath": "sprites\\spr_hat_classy\\spr_hat_classy.yy",
                 "resourceType": "GMSprite"
             }
         },
