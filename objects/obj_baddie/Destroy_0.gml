@@ -35,8 +35,9 @@ if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
     global.combo = (global.combo + 1)
     if (global.nocombo == 0)
     {
-        if (global.combo == 1)
+        if (global.stylethreshold <= 0)
         {
+			global.style += 10
             if (grabbedby == 1)
                 obj_player1.collectscore = (obj_player1.collectscore + 10)
             else if (grabbedby == 2)
@@ -45,10 +46,11 @@ if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
                 obj_player1.collectscore = (obj_player1.collectscore + 10)
             with (instance_create(x, y, obj_smallnumber))
                 number = "10"
-            global.style += 5
+
         }
-        if (global.combo == 2)
+        if (global.stylethreshold = 1)
         {
+			global.style += 5
             if (grabbedby == 1)
                 obj_player1.collectscore = (obj_player1.collectscore + 20)
             else if (grabbedby == 2)
@@ -57,10 +59,11 @@ if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
                 obj_player1.collectscore = (obj_player1.collectscore + 20)
             with (instance_create(x, y, obj_smallnumber))
                 number = "20"
-            global.style += 5
+
         }
-        if (global.combo == 3)
+        if (global.stylethreshold = 2)
         {
+			global.style += 4
             if (grabbedby == 1)
                 obj_player1.collectscore = (obj_player1.collectscore + 40)
             else if (grabbedby == 2)
@@ -69,10 +72,24 @@ if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
                 obj_player1.collectscore = (obj_player1.collectscore + 40)
             with (instance_create(x, y, obj_smallnumber))
                 number = "40"
-            global.style += 5
+
         }
-        if (global.combo >= 4)
+        if (global.stylethreshold = 3)
         {
+			global.style += 3
+            if (grabbedby == 1)
+                obj_player1.collectscore = (obj_player1.collectscore + 60)
+            else if (grabbedby == 2)
+                 obj_player2.collectscore = (obj_player2.collectscore + 60)
+            else
+                obj_player1.collectscore = (obj_player1.collectscore + 60)
+            with (instance_create(x, y, obj_smallnumber))
+                number = "60"
+
+        }
+        if (global.stylethreshold >= 4)
+        {
+			global.style += 2
             if (grabbedby == 1)
                 obj_player1.collectscore = (obj_player1.collectscore + 80)
             else if (grabbedby == 2)
@@ -81,8 +98,8 @@ if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
                 obj_player1.collectscore = (obj_player1.collectscore + 80)
             with (instance_create(x, y, obj_smallnumber))
                 number = "80"
-            global.style += 5
-        }
+           
+        }		
     }
     global.combotime = 60
 	global.pausecombotime = true

@@ -4,7 +4,6 @@ with (obj_player)
     {
         global.timeractive = 0
         global.panic = 0
-        global.panicbg = 0
         image_speed = 0.35
         x = (other.x + 30)
         xscale = -1

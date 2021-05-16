@@ -19,8 +19,7 @@ if grounded
     movespeed -= 0.5
 if (movespeed <= 0)
     movespeed = 0
-if (!audio_is_playing(sfx_parry))
-    scr_soundeffect(137)
+
 if (parried_baddie > 0)
 {
     parried_baddie--
@@ -49,7 +48,8 @@ if (parried_baddie > 0)
             vsp = 0
             global.combotime = 60
 			global.pausecombotime = true
-			obj_tv.alarm[1] = 75				
+			obj_tv.alarm[1] = 75	
+			scr_sleep();
             with (obj_camera)
             {
                 shake_mag = 3
@@ -66,6 +66,7 @@ if (parried_baddie > 0)
                 with (instance_create((x + random_range(-100, 100)), (y + random_range(-100, 100)), obj_balloonpop))
                     sprite_index = spr_shotgunimpact
             }
+			scr_sleep();
             x = (room_width / 2)
             y = -100
         }
@@ -78,6 +79,7 @@ if (parried_baddie > 0)
             with (instance_create(x, y, obj_shake))
                 sprite_index = other.sprite_index
             relax = 1
+			scr_sleep();
         }
     }
 }

@@ -31,6 +31,12 @@ if (fadealpha == 0)
     instance_destroy()
 if (fadealpha == 1)
 {
+	//Nightsky Moon
+	if (global.panic == 1 && layer_background_get_sprite(back_id6) == bg_nightsky)
+		layer_background_sprite(back_id6, bg_nightskyescape)	
+	//Ancient John Room
+    if (global.panic == 1 && layer_background_get_sprite(back_id) == bg_darkjohn)
+        layer_background_sprite(back_id, bg_darkjohnescape)	
     if (global.panic == 1 && (layer_background_get_sprite(back_id2) == 1208 || layer_background_get_sprite(back_id2) == 1211))
         layer_background_sprite(back_id2, 1467)
     if (global.desertnight == 1 && layer_background_get_sprite(back_id) == 1205)
@@ -71,7 +77,7 @@ if (fadealpha == 1)
         layer_background_sprite(back_id3, 1263)
     if (global.panic == 1 && layer_background_get_sprite(back_id3) == 1270)
         layer_background_sprite(back_id3, 1647)
-    if (global.snickchallenge == 1 && global.minutes < 2)
+/*    if (global.snickchallenge == 1 && global.minutes < 2)
     {
         layer_background_blend(back_id, 255)
         layer_background_blend(back_id2, 255)
@@ -82,7 +88,7 @@ if (fadealpha == 1)
         layer_background_blend(back_id7, 255)
         layer_background_blend(back_id8, 255)
         layer_background_blend(back_id9, 255)
-    }
+    }*/
 }
 
 

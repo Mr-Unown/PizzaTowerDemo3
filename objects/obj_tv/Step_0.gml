@@ -23,11 +23,16 @@ if (player.character == "V")
 {
     tvsprite = spr_tvdefault
 }*/
+if global.miniboss = true
+{
+	global.combotime = 60
+	global.pausecombotime = true
+	obj_tv.alarm[1] = 75	
+}
 //Pause Combo
 if global.snickchallenge = true
 	global.pausecombotime = false
-if (global.hudmode == 0)
-{
+
     if (room == Realtitlescreen || room == Tutorialtrap ||  room == Titlescreen || room == rank_room || room == cowboytask || room == hub_room2 || room == hub_room1)
         alpha = 0
     if (room == Titlescreen || room == Tutorialtrap || room == rank_room || room == cowboytask || room == hub_room3 || room == hub_room2 || room == hub_room1)
@@ -43,12 +48,8 @@ if (global.hudmode == 0)
         else if (!(room == rank_room || room == timesuproom || room == boss_room1 || room == Realtitlescreen || room == Scootertransition || room == Titlescreen || room == Tutorialtrap || room == rank_room || room == cowboytask ||room == hub_room3   || room == hub_room2 || room == hub_room1))
             alpha = 1
     }
-}
-else if (global.hudmode == 1)
-{
-    visible = false
-    tvsprite = spr_tvknight
-}
+
+
 
 if (showtext == 1)
 {
@@ -72,7 +73,22 @@ if instance_exists(obj_itspizzatime)
     showtext = 1
     tvsprite = spr_tvexit
 }
-if (global.collect > global.srank && shownranks == 0 && global.nocombo == 0)
+if tvsprite = spr_tvboot
+{
+	if instance_exists(obj_fadeout)
+		image_index = 0
+    image_speed = 0.35
+	sprite_index = tvsprite	
+	if floor(image_index) == image_number - 1
+	{
+		showtext = 0
+		tvsprite = spr_tvdefault
+		image_speed = 0.1
+		imageindexstore = 0
+		bootingup = true
+	}
+}
+else if (global.collect > global.srank && shownranks == 0 && global.nocombo == 0)
 {
     image_speed = 0.125
 	if global.coop = false
@@ -128,7 +144,7 @@ else if (obj_player.sprite_index == obj_player.spr_golfwin)
     tvsprite = spr_tvclap
     once = 1
 }
-else if (obj_player.state == 73)
+else if (obj_player.state == states.hurt)
 {
     image_speed = 0.1
     showtext = 1
@@ -163,8 +179,14 @@ else if (global.hurtcounter >= global.hurtmilestone)
         character = "SNICK"
     else if (obj_player.character == "V")
         character = "THE VIGILANTE"
+    else if (obj_player.character == "PZ")
+        character = "PIZZELLE"
+    else if (obj_player.character == "PM")
+        character = "PEPPERMAN"		
+    else if (obj_player.character == "D")
+        character = "DOUGIE"	
     message = (((("YOU HAVE HURT " + string(character)) + " ") + string(global.hurtmilestone)) + " TIMES...")
-    if (tvsprite != 917 && tvsprite != 916 && tvsprite != 915 && tvsprite != 914)
+    if (tvsprite != spr_tvtalking1 && tvsprite != spr_tvtalking2 && tvsprite != spr_tvtalking3 && tvsprite != spr_tvtalking4)
         tvsprite = choose(spr_tvtalking1, spr_tvtalking2, spr_tvtalking3, spr_tvtalking4)
     global.hurtmilestone = (global.hurtmilestone + 3)
 }
@@ -220,13 +242,13 @@ else if (room == Realtitlescreen)
         message = ""
     }
 }
-if (obj_player.state == 56)
+else if (obj_player.state == states.keyget)
 {
     showtext = 1
     message = "GOT THE KEY!"
     alarm[0] = 50
 }
-if instance_exists(obj_noise_pushbutton)
+else if instance_exists(obj_noise_pushbutton)
 {
     if (obj_noise_pushbutton.hsp != 0 && global.panic == 0)
     {
@@ -235,9 +257,10 @@ if instance_exists(obj_noise_pushbutton)
         alarm[0] = 50
     }
 }
+
 if instance_exists(obj_pizzaball)
     global.golfbuffer = 50
 if ((!instance_exists(obj_pizzaball)) && global.golfbuffer > 0)
     global.golfbuffer--
 
-
+sprite_index = tvsprite

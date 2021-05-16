@@ -4,9 +4,10 @@ if (string_letters(roomname) == "strongcold")
     if (global.panic == 1)
         instance_destroy()
 }
+/*
 if (blocked == 1)
-    sprite_index = spr_doorblocked
-if (sprite_index == spr_doorblockedclosing && floor(image_index) == (image_number - 2))
+    sprite_index = spr_doorblocked*/
+if (sprite_index == spr_doorblockedclosing && floor(image_index) == (image_number - 1))
 {
     image_index = 0
     image_speed = 0

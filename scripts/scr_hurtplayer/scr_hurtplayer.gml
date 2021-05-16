@@ -45,13 +45,19 @@ with (argument0)
         }
         if (character == "V")
         {
-            if (vigihealth != 0)
+            if (vigihealth != 0) && pizzashield = false
             {
                 state = 73
                 alarm[8] = 80
                 alarm[7] = 50
                 vigihealth -= 45
             }
+			else
+			{
+				state = 73
+                alarm[8] = 80
+                alarm[7] = 50
+			}
         }
         if (vigihealth <= 0 && character == "V")
         {
@@ -97,7 +103,7 @@ with (argument0)
         instance_create(x, y, obj_spikehurteffect)
         image_index = 0
         flash = 1
-        if (shotgunAnim == 0)
+        if (pizzashield == false)
         {
 			global.style = (global.style - 10)
             global.hurtcounter = (global.hurtcounter + 1)
@@ -186,15 +192,15 @@ with (argument0)
         {
             with (instance_create(x, y, obj_sausageman_dead))
             {
-                if (argument0.character == "P")
-                    sprite_index = spr_shotgunback
-                else if (argument0.character == "N")
-                    sprite_index = spr_minigunfall
+				sprite_index = spr_pizzashield_block
+				image_index = 0
+				image_speed = 0
+				image_xscale = argument0.image_xscale
             }
-            if (Gbackupweapon == 1)
-                Gbackupweapon = 0
+            if (pizzashieldbackup >= 1)
+                pizzashieldbackup = pizzashieldbackup - 1
             else
-                GshotgunAnim = 0
+                pizzashield = false
         }
     }
 }

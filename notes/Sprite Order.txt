@@ -1411,7 +1411,7 @@ spr_decorationanimated1
 spr_decorationanimated2
 spr_decorationanimated3
 spr_decorationanimated4
-spr_xmasspinningslice
+spr_snickcollectible4
 spr_xmaspizzaboxdown
 spr_xmaspizzaboxup
 spr_xmasshroomtoppin_idle

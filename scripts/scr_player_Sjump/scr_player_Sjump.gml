@@ -72,7 +72,7 @@ if (character == "V")
 if (superspringjump != 1)
 {
 
-	if (key_attack2 && jetpacking = true)
+	if (key_attack2 && jetpacking = true) && character = "N"
     {
 		jetpacking = true		
 		scr_soundeffect(sfx_noisewoah)
@@ -84,7 +84,7 @@ if (superspringjump != 1)
 		if move != 0
 		  xscale = move
     }
-	else if (key_jump2 && jetpacking = true)
+	else if (key_jump2 && jetpacking = true) && character = "N"
     {
 		jetpacking = false
 		scr_soundeffect(sfx_jump)
@@ -96,8 +96,22 @@ if (superspringjump != 1)
 		image_index = 0
 		with instance_create(x,y,obj_jumpdust)
 			image_xscale = other.xscale
-    }	
-    else if (key_attack2 && global.coop == 0) && !(character == "N" && pogo = true) && jetpacking = false
+    }
+	else if (key_attack2) && character = "PZ"
+	{			
+		jetpacking = false
+        if (move != 0)
+            xscale = move
+        movespeed = 10
+        machhitAnim = 0
+        state = 70
+        flash = 1
+		vsp = -11
+        sprite_index = spr_mach2jump
+        with (instance_create(x, y, obj_jumpdust))
+            image_xscale = other.xscale
+	}	
+    else if (key_attack2) && !(character == "N" && pogo = true) && jetpacking = false
     {
 		jetpacking = false
         if (move != 0)
@@ -114,5 +128,8 @@ if (superspringjump != 1)
 	
 
 }
-image_speed = 0.5
+if character != "PZ"
+	image_speed = 0.5
+else
+	image_speed = 0.35
 scr_collide_player()

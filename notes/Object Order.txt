@@ -198,7 +198,7 @@ obj_pizzacutter1
 obj_swordstone
 obj_pizzacutter2
 obj_thunder
-obj_destructibleplatform
+obj_cheeseblock
 obj_boilingsauce
 obj_iceblock
 obj_risingboilingsauce

@@ -1,6 +1,9 @@
 scr_getinput()
 scr_playerstate()
-
+//No more Shadows
+if image_blend != make_colour_hsv(0, 0, 255) && state != states.comingoutdoor {
+	image_blend = make_colour_hsv(0, 0, 255)
+}
 //Heavy
 if heavy = 1 && state != 46
 heavy = 0
@@ -11,7 +14,7 @@ wallclingbuffer--
 else
 wallclingbuffer = 0
 //Jetpack Controls
-if jetpacking = true && !(state = 51 || sprite_index = spr_playerN_jetpackstart || sprite_index = spr_superjumpprep || sprite_index = spr_jetpack || sprite_index = spr_jetpackcrazy || sprite_index = spr_playerN_jetpackslide || sprite_index = spr_playerN_Sjump)	
+if jetpacking = true && state != states.frozen && !(state = 51 || sprite_index = spr_playerN_jetpackstart || sprite_index = spr_superjumpprep || sprite_index = spr_jetpack || sprite_index = spr_jetpackcrazy || sprite_index = spr_playerN_jetpackslide || sprite_index = spr_playerN_Sjump)	
 jetpacking = false
 
 
@@ -80,7 +83,7 @@ if (state == 55 && y > (room_height * 2))
     }
 }
 //Autopitfall 
-if state != 55 && y > (room_height * 1.5)
+if state != 55 && !instance_exists(obj_fadeout) && !place_meeting(x,y,obj_hallway) && !place_meeting(x,y,obj_pitfall) && !place_meeting(x,y,obj_pitcollider) && y > (room_height * 1.3)
 {
 	{
 		
@@ -97,9 +100,16 @@ if state != 55 && y > (room_height * 1.5)
             sprite_index = spr_hurtjump
     else
             sprite_index = spr_hurt
-	with obj_tv {
-        message = choose("OW!", "OUCH!", "OH!", "WOH!")
-		chose = 0		
+	with obj_tv
+	{
+		image_speed = 0.1
+		showtext = 1
+		if (chose == 0)
+			message = choose("OW!", "OUCH!", "OH!", "WOH!")
+		alarm[0] = 50
+		chose = 1
+		tvsprite = spr_tvhurt
+		once = 1		
 	}
     movespeed = 1
     vsp = -5
@@ -122,7 +132,7 @@ instance_create(roomstartx,roomstarty - 50 ,obj_handgrabber)
 //i think this is where resetting variables starts
 if ((!instance_exists(baddiegrabbedID)) && (state == 46 || state == 43 || state == 10))
     state = 0
-if (!(state == 46 || state == states.frozen || state == 43 || state == 10))
+if (!(state == 46 || state == states.frozen || state == states.golf || state == 43 || state == 10))
     baddiegrabbedID = noone
 if grinding && !cutscene && !scr_transformationcheck(id)
     state = 45
@@ -216,7 +226,7 @@ if (state != 58)
     ladderbuffer = 0
 if (state != 58)
     stompAnim = 0
-if ((state == 91 || state == states.breakdance || (state != 51 && (sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump))  || (pogomovespeed >= 12  && state == states.pogo) ||state == states.jetpack || (state == 109 && instance_exists(obj_player2) && obj_player2.state == 91) || state == 114 || state == 70 || state == 17 || state == 9 || state == 37 || state == 10 || state == 22 || state == 71) && macheffect == 0)
+if ((state == 91 || state == states.breakdance || (state != 51 && (sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump))  || (pogomovespeed >= 12  && state == states.pogo) ||state == states.jetpack || (state == 109 && instance_exists(obj_player2) && obj_player2.state == 91) || state == 114 || state == 70 || state == 17 || state == 9 || state == 37 || state == 10 || state == 22 || state == 71 || pogojetcharge = true) && macheffect == 0)
 {
     macheffect = 1
     toomuchalarm1 = 6
@@ -228,12 +238,12 @@ if ((state == 91 || state == states.breakdance || (state != 51 && (sprite_index 
         sprite_index = other.sprite_index
     }
 }
-if (!(state == 91 || (state != 51 && (sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump)) || state == states.breakdance || (pogomovespeed >= 12  && state == states.pogo) || state == states.jetpack || (state == 109 && instance_exists(obj_player2) && obj_player2.state == 91) || state == 114 || state == 70 || state == 17 || state == 9 || state == 37 || state == 10 || state == 22 || state == 71))
+if (!(state == 91 || (state != 51 && (sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump)) || state == states.breakdance || (pogomovespeed >= 12  && state == states.pogo) || state == states.jetpack || (state == 109 && instance_exists(obj_player2) && obj_player2.state == 91) || state == 114 || state == 70 || state == 17 || state == 9 || state == 37 || state == 10 || state == 22 || state == 71 || pogojetcharge = true))
     macheffect = 0
 if (toomuchalarm1 > 0)
 {
     toomuchalarm1 -= 1
-    if (toomuchalarm1 <= 0 && (state == 91 || state == states.breakdance ||(state != 51 && (sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump)) || (pogomovespeed >= 12  && state == states.pogo) || state == states.jetpack || state == 111 || state == 114 || (state == 109 && instance_exists(obj_player2) && obj_player2.state == 91) || state == 17 || state == 9 || state == 70 || state == 10 || state == 71 || state == 37 || state == 22 || (state == 33 && mach2 >= 100)))
+    if (toomuchalarm1 <= 0 && (state == 91 || state == states.breakdance ||(state != 51 && (sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump)) || (pogomovespeed >= 12  && state == states.pogo) || state == states.jetpack || state == 111 || state == 114 || (state == 109 && instance_exists(obj_player2) && obj_player2.state == 91) || state == 17 || state == 9 || state == 70 || state == 10 || state == 71 || pogojetcharge = true || state == 37 || state == 22 || (state == 33 && mach2 >= 100)))
     {
         with (instance_create(x, y, obj_mach3effect))
         {
@@ -275,7 +285,7 @@ if (state == 23 || sprite_index == spr_knightpepstart || sprite_index == spr_kni
     cutscene = 1
 else
     cutscene = 0
-if (((place_meeting(x, y, obj_door) && (!place_meeting(x, y, obj_doorblocked))) || place_meeting(x, y, obj_dresser) || place_meeting(x,y,obj_geromedoor)|| place_meeting(x, y, obj_snick) || place_meeting(x, y, obj_keydoor) || (place_meeting(x, y, obj_exitgate) && global.panic == 1)) && (!instance_exists(obj_uparrow)) && scr_solid(x, (y + 1)) && state == 0 && obj_player1.spotlight == 1)
+if (((place_meeting(x, y, obj_door) && (!place_meeting(x, y, obj_doorblocked))) || place_meeting(x, y, obj_dresser) || place_meeting(x,y, obj_door2) || place_meeting(x,y,obj_geromedoor)|| place_meeting(x, y, obj_snick) || place_meeting(x, y, obj_keydoor) || (place_meeting(x, y, obj_exitgate) && (global.panic == 1 || global.snickchallenge == true))) && (!instance_exists(obj_uparrow)) && scr_solid(x, (y + 1)) && state == 0 && obj_player1.spotlight == 1)
 {
     with (instance_create(x, y, obj_uparrow))
         playerid = other.object_index

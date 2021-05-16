@@ -20,31 +20,16 @@ var lay_id9 = layer_get_id("Backgrounds_scroll")
 var back_id9 = layer_background_get_id(lay_id9)
 var lay_id10 = layer_get_id("Backgrounds_far")
 var back_id10 = layer_background_get_id(lay_id10)
+var lay_id11 = layer_get_id("Backgrounds_4")
+var back_id11 = layer_background_get_id(lay_id11)
 if (room != hub_room1 && room != hub_room3  && room != hub_room2 && room != cowboytask && obj_pause.pause == 0)
     global.scrolloffset += 1
 //Disgusting
+var _speedmodifier = 4
 if (global.freezeframe = false)
 {
-    x_shift_1 += layer_get_hspeed("Backgrounds_sky")
-    y_shift_1 += layer_get_vspeed("Backgrounds_sky")
-    x_shift_2 += layer_get_hspeed("Backgrounds_sky2")
-    y_shift_2 += layer_get_vspeed("Backgrounds_sky2")
-    x_shift_3 += layer_get_hspeed("Backgrounds_scroll")
-    y_shift_3 += layer_get_vspeed("Backgrounds_scroll")
-    layer_background_speed(back_id, back1)
-    layer_background_speed(back_id2, back2)
-    layer_background_speed(back_id3, back3)
-    layer_background_speed(back_id4, back4)
-    layer_background_speed(back_id5, back5)
-    layer_background_speed(back_id6, back6)
-    layer_background_speed(back_id7, back7)
-    layer_background_speed(back_id8, back8)
-    layer_background_speed(back_id9, back9)
-	layer_background_speed(back_id10, back10)
+	_speedmodifier = 1
 }
-else
-{
-	var _speedmodifier = 4
     x_shift_1 += (layer_get_hspeed("Backgrounds_sky") /_speedmodifier)
     y_shift_1 += (layer_get_vspeed("Backgrounds_sky") /_speedmodifier)
     x_shift_2 += (layer_get_hspeed("Backgrounds_sky2") /_speedmodifier)
@@ -60,8 +45,9 @@ else
     layer_background_speed(back_id7, (back7 /_speedmodifier))
     layer_background_speed(back_id8, (back8 /_speedmodifier))
     layer_background_speed(back_id9, (back9 /_speedmodifier))
-    layer_background_speed(back_id10, (back9 /_speedmodifier))
-}
+    layer_background_speed(back_id10, (back10 /_speedmodifier))
+	layer_background_speed(back_id11, (back11 /_speedmodifier))
+
 layer_x("Backgrounds_scroll", (((_cam_x * 0.25) + x_shift_3) + (scrolloffset * layer_get_hspeed("Backgrounds_scroll"))))
 layer_y("Backgrounds_scroll", (((_cam_y * 0.25) + y_shift_3) + (scrolloffset * layer_get_vspeed("Backgrounds_scroll"))))
 layer_x("Backgrounds_1", (_cam_x * 0.25))
@@ -70,6 +56,8 @@ layer_x("Backgrounds_2", (_cam_x * 0.15))
 layer_y("Backgrounds_2", (_cam_y * 0.15))
 layer_x("Backgrounds_3", (_cam_x * 0.05))
 layer_y("Backgrounds_3", (_cam_y * 0.05))
+layer_x("Backgrounds_4", (_cam_x * 0.005))
+layer_y("Backgrounds_4", (_cam_y * 0.005))
 layer_x("Backgrounds_Ground1", (_cam_x * 0.15))
 layer_y("Backgrounds_Ground1", ((_cam_y * 0.15) + groundy))
 layer_x("Backgrounds_Ground2", (_cam_x * 0.25))

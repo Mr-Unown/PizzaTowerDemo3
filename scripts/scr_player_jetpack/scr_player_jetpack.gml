@@ -57,6 +57,16 @@ if key_attack2 && jetpacking = true
 	state = states.pogo
 	pogomovespeed = movespeed
 }
+//Auto Parry
+if (!instance_exists(parry_id))
+{
+    parry_id = instance_create(x, y, obj_autoparryhitbox)
+    with (parry_id)
+    {
+		playerid = other.id
+        image_xscale = other.xscale
+	}
+}
 //Cancel into Spin
 if key_jump2 && jetpacking = true
 {
@@ -248,4 +258,5 @@ if key_taunt2 && jetpacking = true
         playerid = other.id
         baddie = 0
     }
+	scr_baddietauntfakeout();	
 }

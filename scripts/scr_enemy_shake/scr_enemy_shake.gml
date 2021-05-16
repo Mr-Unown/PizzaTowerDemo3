@@ -4,6 +4,8 @@ else if (grabbedby == 2)
     player = obj_player2
 hsp = 0
 vsp = 0
+if shakebuffer > 0
+    shakebuffer--
 if global.freezeframe = false
     shake = 0
 else	

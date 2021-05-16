@@ -16,5 +16,6 @@ if audio_is_playing(sfx_collecttopping)
     obj_tv.alarm[1] = 75
 scr_soundeffect(5)
 instance_destroy()
-
+repeat 3
+	instance_create(x + random_range(-3,3),y + random_range(-3,3), obj_collecteffect)
 

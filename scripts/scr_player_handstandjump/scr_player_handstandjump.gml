@@ -1,5 +1,7 @@
 if (character != "S")
 {
+	if character == "PZ" 
+		vsp = 0.5
     landAnim = 0
     hsp = (xscale * movespeed)
     move = (key_left + key_right)
@@ -12,6 +14,10 @@ if (character != "S")
         else if (!grounded)
             movespeed = 10
     }
+	if character = "PZ"
+	{
+       movespeed = 10
+	}
     if (character == "N")
     {
         if (movespeed < 8 && grounded)
@@ -53,12 +59,20 @@ if (character != "S")
 			}
 		}
 	}
-    if ((floor(image_index) == (image_number - 1) || sprite_index == spr_suplexdashjump || sprite_index == spr_suplexdashjumpstart) && grounded && (!key_attack) && vsp > 0)
+    if ((floor(image_index) == (image_number - 1) || sprite_index == spr_suplexdashjump || sprite_index == spr_suplexdashjumpstart) && grounded && (!key_attack) && vsp > 0) && character != "PZ"
     {
         image_speed = 0.35
         state = 0
         grav = 0.5
     }
+	//Pizzelle
+    if floor(image_index) == (image_number - 1) && sprite_index = spr_suplexdash && character = "PZ"
+    {
+        image_speed = 0.35
+        state = 0
+        grav = 0.5
+    }
+
     if ((floor(image_index) == (image_number - 1) || sprite_index == spr_suplexdashjump || sprite_index == spr_suplexdashjumpstart) && grounded && key_attack)
     {
         image_speed = 0.35
@@ -83,7 +97,7 @@ if (character != "S")
         state = 68
         movespeed = 15
     }
-    if ((!grounded) && (sprite_index == spr_suplexdash || sprite_index == spr_shotgunsuplexdash))
+    if ((!grounded) && (sprite_index == spr_suplexdash || sprite_index == spr_shotgunsuplexdash)) && character != "PZ"
     {
         image_index = 0
         sprite_index = spr_suplexdashjumpstart
@@ -183,6 +197,15 @@ if (character != "S")
         machhitAnimtimer = 500
         rollmove = 0
     }
+	if (key_jump && grounded && character = "PZ") 
+	{
+		sprite_index = spr_mach2jump
+		state = 70
+		grav = 0.5
+		instance_create(x, y, obj_jumpdust)
+		suplexmove = 0
+		vsp = -11
+	}	
 }
 if (character == "S")
 {

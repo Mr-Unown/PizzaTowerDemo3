@@ -12,7 +12,7 @@ with other.id
     other.grabbed = 1
 	}
 	
-	if (state = 70 || state = 91 || state = 2 || (grounded && state = 37)) && other.thrown = 0 && other.grabbed = 0
+	if (state = 70 || state = 91 || state = 2 || (grounded && state = states.jetpack) || (grounded && state = 37)) && other.thrown = 0 && other.grabbed = 0
 	{
 		x = other.x
 		y = other.y

@@ -145,7 +145,13 @@ switch room
 		break;	
 	case ruin_11:
 		message = "Ancient Gods and PB";
-		break;			
+		break;		
+	case ruin_12:
+		message = "Ancient John Retreat";
+		break;				
+	case ruin_13:
+		message = "Temple of Boom";
+		break;						
 	case ruin_treasure:
 		message = "Get Beaned!";
 		break;	
@@ -258,8 +264,11 @@ switch room
 	case ancient_10:
 		message = "Revenge of John";
 		break;	
+	case ancient_10_1:
+		message = "Pit of John";
+		break;			
 	case ancient_11:
-		message = "Wheres the elevator?";
+		message = "Emergency Exit";
 		break;		
 	case ancient_treasure:
 		message = "Beloved Treasure";
@@ -283,6 +292,124 @@ switch room
 		message = "Highway through John";
 		break;			
 	#endregion	
+	#region Chateau
+	case chateau_1:
+		message = "Pizza Tower at Halloween";
+		break;
+	case chateau_2:
+		message = "Eerily Similar";
+		break;		
+	case chateau_3:
+		message = "Sorcerer Apprentice";
+		break;	
+	case chateau_4:
+		message = "Goblin Massacre";
+		break;	
+	case chateau_5:
+		message = "Revenge of the Killer Goblins";
+		break;	
+	case chateau_6:
+		message = "Jumpscare";
+		break;	
+	case chateau_7:
+		message = "You Cannot Escape...";
+		break;	
+	case chateau_8:
+		message = "Goblin Pit of Horror";
+		break;	
+	case chateau_9:
+		message = "Thriller Flight";
+		break;	
+	case chateau_10:
+		message = "Pizzard Council";
+		break;	
+	case chateau_treasure:
+		message = "Peanut Minus";
+		break;	
+	case chateau_pizzamart:
+		message = "Halloween Spookfair";
+		break;				
+	case chateau_secret1:
+		message = "Claustrophobic";
+		break;	
+	case chateau_secret2:
+		message = "Just Run... Away";
+		break;	
+	case chateau_secret3:
+		message = "Scariest Roll";
+		break;
+	case chateau_secret4:
+		message = "Pizza Block of Terror";
+		break;			
+	case chateau_secret5:
+		message = "No Wallrunning";
+		break;			
+	case chateau_secret6:
+		message = "The Terrifying Giant Pizza";
+		break;			
+	#endregion		
+	#region Strongcold
+	case strongcold_10:
+		message = "Pizza Tower and it's Christmas!";
+		break;
+	case strongcold_9:
+		message = "Merrily Similar";
+		break;		
+	case strongcold_8:
+		message = "Tis the Season...";
+		break;	
+	case strongcold_7:
+		message = "...To be Jelly";
+		break;	
+	case strongcold_6:
+		message = "Christmas Time Chime";
+		break;	
+	case strongcold_5:
+		message = "Holiday Torture Room";
+		break;	
+	case strongcold_4:
+		message = "Explosive Present";
+		break;	
+	case strongcold_3:
+		message = "Merry Swissmas";
+		break;	
+	case strongcold_2:
+		message = "New Rear Eve";
+		break;	
+	case strongcold_miniboss:
+		message = "It's Claus!";
+		break;			
+	case strongcold_1:
+		message = "Dejohn Vu";
+		break;	
+	case strongcold_escape:
+		message = "The Tower Ultimatum";
+		break;			
+	case strongcold_treasure:
+		message = "Here lies Cake";
+		break;	
+	case strongcold_pizzamart:
+		message = "Merry Pizzamart!";
+		break;				
+	case strongcold_secret1:
+		message = "Present Blocks";
+		break;	
+	case strongcold_secret2:
+		message = "Pool of Christmas Joy";
+		break;	
+	case strongcold_secret3:
+		message = "The Bad Part of Winter";
+		break;
+	case strongcold_secret4:
+		message = "Hidden Present";
+		break;			
+	case strongcold_secret5:
+		message = "Secret in the Season";
+		break;			
+	case strongcold_secret6:
+		message = "There's a Present Down There";
+		break;			
+	#endregion				
 	default:
 		message = noone;
 		break;

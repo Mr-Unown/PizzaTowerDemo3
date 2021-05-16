@@ -14,7 +14,7 @@ else if place_meeting(x, (y + 1), obj_railh)
     hsp = ((move * movespeed) - 5)
 else if place_meeting(x, (y + 1), obj_railh2)
     hsp = ((move * movespeed) + 5)
-if (character == "P" || character == "N" || character == "PM" || character == "V" || character = "D")
+if (character == "P" || character == "N" || character == "PZ" || character == "PM" || character == "V" || character = "D")
 {
     if (machslideAnim == 0 && landAnim == 0 && shotgunAnim == 0)
     {
@@ -99,7 +99,7 @@ if (character == "P" || character == "N" || character == "PM" || character == "V
                         firebutt = 0
                     }
                 }
-                else if (firebutt != 0 && character == "PM" && character == "V")
+                else if (firebutt != 0 && (character == "PM" || character == "PZ" || character == "V" || character == "D"))
                 {
                     buttanim = 100
                     firebutt = 0
@@ -328,10 +328,13 @@ if (key_slap2 && character == "V")
     image_index = 0
     sprite_index = spr_playerV_revolverstart
 }
+//Dynamite
 if (key_shoot2 && character == "V" && (!instance_exists(obj_vigidynamite)))
 {
     if (move == 0)
         movespeed = 0
+	else
+		movespeed = 3
     state = 110
     image_index = 0
     sprite_index = spr_playerV_dynamitethrow
@@ -343,25 +346,43 @@ if (key_shoot2 && character == "V" && (!instance_exists(obj_vigidynamite)))
         playerid = other.id
     }
 }
-if (key_slap2 && (character = "P" || character = "N" || (character = "D" && spellselect = 2)))
+if (key_slap2 && (character = "P" || character == "PZ" || character = "N" || (character = "D" && spellselect = 2)))
 {
-	if key_up && character = "P"
+	if key_up && (character = "P" || character == "PZ"  || character = "N")
 	{
-		suplexmove = 1		
-		suplexdashsnd = audio_play_sound(sfx_suplexdash, 1, false)
-		audio_sound_gain(suplexdashsnd, (1 * global.soundeffectsvolume), 0)		
-		doublejump = 1
-		scr_soundeffect(sfx_jump)
-		scr_soundeffect(sfx_rollgetup)
-		jumpstop = 1
-		momemtum = 1
-		if movespeed < 3
-		movespeed = 3
-		vsp = -12
-		state = 58
-		jumpAnim = 1
-		sprite_index = spr_player_shoryumineken		
-		image_index = 0
+		if character = "P" || character == "PZ" 
+		{
+			suplexmove = 1		
+			suplexdashsnd = audio_play_sound(sfx_suplexdash, 1, false)
+			audio_sound_gain(suplexdashsnd, (1 * global.soundeffectsvolume), 0)		
+			doublejump = 1
+			scr_soundeffect(sfx_jump)
+			scr_soundeffect(sfx_rollgetup)
+			jumpstop = 1
+			momemtum = 1
+			if movespeed < 3
+				movespeed = 3
+			vsp = -12
+			state = 58
+			jumpAnim = 1
+			sprite_index = spr_player_shoryumineken		
+			image_index = 0
+		}
+		else if character = "N" 
+		{
+			if movespeed > 3
+				movespeed = 3
+			state = states.throwdynamite
+			image_index = 0
+			sprite_index = spr_playerN_noisebombthrow
+			with (instance_create(x, y, obj_noisethrowingbomb))
+			{
+				image_xscale = other.xscale
+				movespeed = 2
+				vsp = -11
+				playerid = other.id
+			}
+		}
 	}
 	else
 	{
@@ -374,11 +395,28 @@ if (key_slap2 && (character = "P" || character = "N" || (character = "D" && spel
 	        sprite_index = spr_shotgunsuplexdash
 	    else
 			sprite_index = spr_suplexdash
-		if (character == "P" || character = "D")
+		if (character == "P" || character == "PZ" || character = "D")
 	        movespeed = 6
 	    else
 			movespeed = 4
 	}
+}
+//Pepperman Attack
+if (key_slap2 && character == "PM")
+{
+    if (move == 0)
+        movespeed = 0
+    else
+    {
+        movespeed = 10
+        vsp = -5
+    }
+    suplexmove = 1
+    scr_soundeffect(126)
+    scr_soundeffect(33)
+    sprite_index = spr_playerP_shoulder
+    state = states.kingknightroll
+    image_index = 0
 }
 //Breakdance
 if (key_shoot2 && shotgunAnim == 0) && character != "V" && character != "D"
@@ -433,7 +471,7 @@ if (key_slap2 && character == "S")
     state = 12
     image_index = 0
 }
-if (key_attack && (!place_meeting((x + xscale), y, obj_solid)) && (character == "P" || (character == "N" && pogo != true) || (character = "D" && spellselect = 2) || character == "V"))
+if (key_attack && (!place_meeting((x + xscale), y, obj_solid)) && (character == "P" || (character == "N" && pogo != true) || character == "PZ"  || (character = "D" && spellselect = 2) || character == "V"))
 {
     movespeed = 6
     sprite_index = spr_mach1
@@ -499,6 +537,7 @@ if key_taunt2
         playerid = other.id
         baddie = 0
     }
+	scr_baddietauntfakeout();	
 }
 superspringjump = 0
 if (gamepad_button_value(0, gp_shoulderlb) != 0 || (key_taunt2 && key_down2))

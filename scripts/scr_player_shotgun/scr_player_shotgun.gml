@@ -70,7 +70,8 @@ if key_slap2
     if (move != 0)
         xscale = move
     suplexmove = 1
-    suplexdashsnd = audio_play_sound(sfx_suplexdash, 1, false)
+	suplexdashsnd = audio_play_sound(sfx_suplexdash, 1, false)
+	audio_sound_gain(suplexdashsnd, (1 * global.soundeffectsvolume), 0)	
     state = 22
     image_index = 0
     if (shotgunAnim == 1)

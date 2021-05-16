@@ -60,7 +60,7 @@ else
     else if (railspeed > 0)
         railspeed -= 0.25
 }
-if ((scr_solid((x + sign(hsp)), y) || place_meeting((x + hsp), y, obj_hallway)) && (!(place_meeting((x + hsp), y, obj_destructibles) && movespeed >= 2)))
+if ((scr_solid((x + sign(hsp)), y) || place_meeting((x + hsp), y, obj_hallway)) && (!(place_meeting((x + hsp), y, obj_destructibles))))
 {
     if ((!place_meeting((x + sign(hsp)), y, obj_slope))  && (!place_meeting(x, (y + 1), obj_slope)))
     {

@@ -73,6 +73,16 @@ if ((!key_jump2) && jumpstop == 0 && vsp < 0.5)
     vsp /= 10
     jumpstop = 1
 }
+//Auto Parry
+if (!instance_exists(parry_id))
+{
+    parry_id = instance_create(x, y, obj_autoparryhitbox)
+    with (parry_id)
+    {
+		playerid = other.id
+        image_xscale = other.xscale
+	}
+}
 if (grounded && vsp > 0)
     jumpstop = 0
 if (!grounded)
@@ -107,6 +117,8 @@ if (fightball == 0)
 {
     if (sprite_index == spr_mach3jump && floor(image_index) == (image_number - 1))
         sprite_index = spr_mach4
+    if (sprite_index == spr_mach3dashpad && floor(image_index) == (image_number - 1))
+        sprite_index = spr_mach4		
     if (floor(image_index) == (image_number - 1) && (sprite_index == spr_rollgetup || sprite_index == spr_mach3hit))
         sprite_index = spr_mach4
     if (floor(image_index) == (image_number - 1) && sprite_index == spr_player_machhit && machhitAnim == 0)
@@ -144,7 +156,7 @@ if (sprite_index == spr_player_machhit)
     image_speed = 0.65
 if key_jump
     input_buffer_jump = 0
-if (key_up && character != "V")
+if (key_up && character != "V") && !place_meeting(x, y, obj_dashpad)
 {
     sprite_index = spr_superjumpprep
     state = 65
@@ -153,7 +165,7 @@ if (key_up && character != "V")
     superjumpprepsnd = audio_play_sound(sfx_superjumpprep, 1, false)
     audio_sound_gain(superjumpprepsnd, (1 * global.soundeffectsvolume), 0)
 }
-if (grounded && key_up && character == "V")
+if (grounded && key_up && character == "V") && !place_meeting(x, y, obj_dashpad) 
 {
     sprite_index = spr_superjumpprep
     state = 65
@@ -162,21 +174,21 @@ if (grounded && key_up && character == "V")
     superjumpprepsnd = audio_play_sound(sfx_superjumpprep, 1, false)
     audio_sound_gain(superjumpprepsnd, (1 * global.soundeffectsvolume), 0)
 }
-if (((!key_attack) && fightball == 0 && grounded && character != "S") || (character == "S" && (move == 0 || move != xscale) && turnbuffer >= 50 && grounded && fightball == 0))
+if ((((!key_attack) && fightball == 0 && grounded && character != "S") || (character == "S" && (move == 0 || move != xscale) && turnbuffer >= 50 && grounded && fightball == 0))) && !place_meeting(x, y, obj_dashpad) && mach3dash = false
 {
     sprite_index = spr_machslidestart
     scr_soundeffect(65)
     state = 71
     image_index = 0
 }
-if (move == (-xscale) && grounded && character != "S" && fightball == 0)
+if (move == (-xscale) && grounded && character != "S" && fightball == 0) && !place_meeting(x, y, obj_dashpad) && mach3dash = false
 {
     scr_soundeffect(62)
     sprite_index = spr_mach3boost
     state = 71
     image_index = 0
 }
-if (key_down && fightball == 0 && (!place_meeting(x, y, obj_dashpad)))
+if (key_down && fightball == 0 && (!place_meeting(x, y, obj_dashpad))) 
 {
     with (instance_create(x, y, obj_jumpdust))
         image_xscale = other.xscale
@@ -186,7 +198,7 @@ if (key_down && fightball == 0 && (!place_meeting(x, y, obj_dashpad)))
 }
 if (((!grounded) && (scr_solid(x + hsp , y) || place_meeting((x + hsp), y, obj_solid)) && (!place_meeting((x + hsp), y, obj_destructibles)) && (!place_meeting((x + hsp), y, obj_metalblock)) && (!place_meeting((x + sign(hsp)), y, obj_slope))) || (grounded && place_meeting((x + hsp), (y - 32), obj_solid) && (!place_meeting((x + hsp), y, obj_destructibles)) && (!place_meeting((x + hsp), y, obj_metalblock)) && place_meeting(x, (y + 1), obj_slope)))
 {
-    wallspeed = clamp(movespeed,12, 20)
+    wallspeed = clamp(movespeed,12, 24)
     state = 17
 }
 if (scr_solid((x + 1), y) && xscale == 1 && (!scr_slope()) && (!place_meeting((x + sign(hsp)), y, obj_slope)) && (!place_meeting((x + sign(hsp)), y, obj_metalblock)) && (!place_meeting((x + sign(hsp)), y, obj_destructibles)) && (grounded || fightball == 1))
@@ -354,6 +366,7 @@ if (key_taunt2 && fightball == 0)
         playerid = other.id
         baddie = 0
     }
+	scr_baddietauntfakeout();
 }
 if (!instance_exists(chargeeffectid))
 {

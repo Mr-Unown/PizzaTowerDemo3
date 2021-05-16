@@ -1,13 +1,6 @@
-if (obj_player1.spotlight == 1)
-	if	obj_player1.custompalette = true
-		pal_swap_set(obj_player1.surf_pallete, 1, true)
-	else if	obj_player1.custompalette = false
-		pal_swap_set(obj_player1.spr_palette, obj_player1.paletteselect, false)
-else
-	if	obj_player2.custompalette = true
-		pal_swap_set(obj_player2.surf_pallete, 1, true)
-	else if	obj_player2.custompalette = false
-		pal_swap_set(obj_player2.spr_palette, obj_player2.paletteselect, false)
+
+
+
 		
 var player = obj_player1
 var player2 = obj_player2
@@ -21,157 +14,210 @@ else
     player = obj_player1
     player2 = obj_player2
 }
+if global.hudmode != 1
+{
+if (obj_player1.spotlight == 1)
+	if	obj_player1.custompalette = true
+		pal_swap_set(obj_player1.surf_pallete, 1, true)
+	else if	obj_player1.custompalette = false
+		pal_swap_set(obj_player1.spr_palette, obj_player1.paletteselect, false)
+else
+	if	obj_player2.custompalette = true
+		pal_swap_set(obj_player2.surf_pallete, 1, true)
+	else if	obj_player2.custompalette = false
+		pal_swap_set(obj_player2.spr_palette, obj_player2.paletteselect, false)	
+		
+	//Backup
+	 if (player.pizzashieldbackup >= 1)
+	 {
+		 for (var i = 0; i < player.pizzashieldbackup; ++i) {
+		      draw_sprite_ext(spr_shieldbackup, -1, 50, 100 + (32*i), 1, 1, 0, c_white, alpha)
+		 }
+	 }
+	 
+	 
 if (player.state != 55)
 {
     if (player.character == "P")
     {
-        if (player.backupweapon == 1)
-            draw_sprite_ext(spr_shotgunbackup, -1, 50, 100, 1, 1, 0, c_white, alpha)
         if (shoving == 1)
-            draw_sprite_ext(spr_pepinoHUD_shove, image_index, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_pepinoHUD_shove, image_index, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.sprite_index == spr_knightpep_thunder)
-            draw_sprite_ext(spr_pepinoHUDthunder, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_pepinoHUDthunder, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.sprite_index != spr_knightpep_start && (player.state == 24 || player.state == 18))
-            draw_sprite_ext(spr_pepinoHUDknight, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_pepinoHUDknight, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.sprite_index == spr_bombpep_end)
-            draw_sprite_ext(spr_pepinoHUDbombend, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_pepinoHUDbombend, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (instance_exists(obj_itspizzatime) || player.sprite_index == spr_bombpep_intro || player.sprite_index == spr_bombpep_runabouttoexplode || player.sprite_index == spr_bombpep_run || player.sprite_index == spr_player_fireass)
-            draw_sprite_ext(spr_pepinoHUDscream, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_pepinoHUDscream, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.state == 93 || (player.state == 77 && shake_mag > 0))
-            draw_sprite_ext(spr_pepinoHUDstun, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_pepinoHUDstun, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.sprite_index == spr_player_victory || player.state == 56 || player.state == 62 || player.state == 23 || (player.state == 54 && player.sprite_index == spr_player_levelcomplete))
-            draw_sprite_ext(spr_pepinoHUDhappy, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_pepinoHUDhappy, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.sprite_index == spr_player_machroll || player.sprite_index == spr_player_tumble)
-            draw_sprite_ext(spr_pepinoHUDrolling, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_pepinoHUDrolling, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.state == 69 || (player.state == states.pogo && player.pogomovespeed < 7) ||  player.state == 33 || player.state == 92 || player.state == 74 || player.state == 57 || player.state == 63 || player.state == 42 || player.state == 65 || player.state == 46 || player.state == 47 || player.state == 51 || player.state == 48 || player.state == 49 || player.state == 50)
-            draw_sprite_ext(spr_pepinoHUDmach1, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_pepinoHUDmach1, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.state == 70 || (player.state == states.pogo && player.pogomovespeed > 7 && player.pogomovespeed < 9) || player.sprite_index == spr_player_dive || player.sprite_index == spr_player_machslideboost || player.state == 17 || player.state == 111 || player.state == 22 || player.state == 43)
-            draw_sprite_ext(spr_pepinoHUDmach2, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_pepinoHUDmach2, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.state == 91 && player.sprite_index == spr_player_crazyrun)
-            draw_sprite_ext(spr_pepinoHUDmach4, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_pepinoHUDmach4, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.state == states.jetpack && player.sprite_index == player.spr_jetpackcrazy)
-            draw_sprite_ext(spr_pepinoHUDmach4, -1, 125, 100, 1, 1, 0, c_white, alpha)			
+            draw_sprite_ext_camera(spr_pepinoHUDmach4, -1, 125, 100, 1, 1, 0, c_white, alpha)			
         else if (player.state == 91 || (player.state == states.pogo && player.pogomovespeed > 9) ||player.state == states.jetpack || player.sprite_index == spr_player_machslideboost3)
-            draw_sprite_ext(spr_pepinoHUDmach3, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_pepinoHUDmach3, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.state == 73 || player.sprite_index == spr_bombpep_end || player.sprite_index == spr_player_fireassend || player.state == 36 || player.state == 27 || (player.state == 54 && player.sprite_index == spr_player_bossintro) || (player.state == 54 && player.sprite_index == spr_player_idle))
-            draw_sprite_ext(spr_pepinoHUDhurt, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_pepinoHUDhurt, -1, 125, 100, 1, 1, 0, c_white, alpha)
 		else if (global.combo >= 3) && global.pausecombotime = true
-            draw_sprite_ext(spr_pepinoHUDmenacing, -1, 125, 100, 1, 1, 0, c_white, alpha)			
+            draw_sprite_ext_camera(spr_pepinoHUDmenacing, -1, 125, 100, 1, 1, 0, c_white, alpha)			
         else if (player.angry == 1)
-            draw_sprite_ext(spr_pepinoHUD3hp, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_pepinoHUD3hp, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.sprite_index == spr_player_hurtidle || player.sprite_index == spr_player_hurtwalk)
-            draw_sprite_ext(spr_pepinoHUD1hp, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_pepinoHUD1hp, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (global.panic == 1 || global.snickchallenge == 1 || global.miniboss == 1)
-            draw_sprite_ext(spr_pepinoHUDpanic, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_pepinoHUDpanic, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.sprite_index == spr_shotgun_pullout)
-            draw_sprite_ext(spr_pepinoHUDmenacing, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_pepinoHUDmenacing, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else
-            draw_sprite_ext(spr_pepinoHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_pepinoHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
     }
     if (player.character == "N")
     {
-        if (player.backupweapon == 1)
-            draw_sprite_ext(spr_minigunbackup, -1, 50, 100, 1, 1, 0, c_white, alpha)
         if (shoving == 1)
-            draw_sprite_ext(spr_noiseHUD_shove, image_index, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_noiseHUD_shove, image_index, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.sprite_index == player.spr_knightpepthunder)
-            draw_sprite_ext(spr_noiseHUD_thunder, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_noiseHUD_thunder, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.sprite_index != player.spr_knightpepstart && (player.state == 24 || player.state == 18))
-            draw_sprite_ext(spr_noiseHUD_knight, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_noiseHUD_knight, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.sprite_index == player.spr_bombpepend)
-            draw_sprite_ext(spr_noiseHUD_bomb, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_noiseHUD_bomb, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (instance_exists(obj_itspizzatime) || player.sprite_index == player.spr_bombpepintro || player.sprite_index == player.spr_bombpeprunabouttoexplode || player.sprite_index == player.spr_bombpeprun || player.sprite_index == player.spr_fireass)
-            draw_sprite_ext(spr_noiseHUD_panic, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_noiseHUD_panic, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.state == 93 || (player.state == 77 && shake_mag > 0))
-            draw_sprite_ext(spr_noiseHUD_groundpound, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_noiseHUD_groundpound, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.sprite_index == player.spr_victory || player.state == 56 || player.state == 62 || player.state == 23 || (player.state == 54 && player.sprite_index == spr_player_levelcomplete))
-            draw_sprite_ext(spr_noiseHUD_happy, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_noiseHUD_happy, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.state == 69 || (player.state == states.pogo && player.pogomovespeed <= 7) || player.state == 33 || player.state == 92 || player.state == 74 || player.state == 57 || player.state == 63 || player.state == 42 || player.state == 65 || player.state == 46 || player.state == 47 || player.state == 51 || player.state == 48 || player.state == 49 || player.state == 50)
-            draw_sprite_ext(spr_noiseHUD_mach1, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_noiseHUD_mach1, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.state == 70 || (player.state == states.pogo && player.pogomovespeed > 7 && player.pogomovespeed < 12) || player.sprite_index == player.spr_dive || player.sprite_index == player.spr_machslideboost || player.state == 17 || player.state == 111 || player.state == 22 || player.state == 43)
-            draw_sprite_ext(spr_noiseHUD_mach2, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_noiseHUD_mach2, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.state == 91 && player.sprite_index == player.spr_crazyrun)
-            draw_sprite_ext(spr_noiseHUD_crazyrun, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_noiseHUD_crazyrun, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.state == states.jetpack && player.sprite_index == player.spr_jetpackcrazy)
-            draw_sprite_ext(spr_noiseHUD_crazyrun, -1, 125, 100, 1, 1, 0, c_white, alpha)		
+            draw_sprite_ext_camera(spr_noiseHUD_crazyrun, -1, 125, 100, 1, 1, 0, c_white, alpha)		
         else if (player.state == 91 || (player.state == states.pogo && player.pogomovespeed >= 12) || player.state == states.jetpack || player.sprite_index == player.spr_mach3boost)
-            draw_sprite_ext(spr_noiseHUD_mach3, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_noiseHUD_mach3, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.state == 73 || player.sprite_index == player.spr_bombpepend || player.sprite_index == player.spr_fireassend || player.state == 36 || player.state == 27 || (player.state == 54 && player.sprite_index == spr_player_bossintro) || (player.state == 54 && player.sprite_index == player.spr_idle))
-            draw_sprite_ext(spr_noiseHUD_hurt, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_noiseHUD_hurt, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (global.combo >= 3) && global.pausecombotime = true
-            draw_sprite_ext(spr_noiseHUD_menacing, -1, 125, 100, 1, 1, 0, c_white, alpha)			
+            draw_sprite_ext_camera(spr_noiseHUD_menacing, -1, 125, 100, 1, 1, 0, c_white, alpha)			
         else if (player.angry == 1)
-            draw_sprite_ext(spr_noiseHUD_angry, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_noiseHUD_angry, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.sprite_index == player.spr_hurtidle || player.sprite_index == player.spr_hurtwalk)
-            draw_sprite_ext(spr_noiseHUD_lowhealth, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_noiseHUD_lowhealth, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (global.panic == 1 || global.snickchallenge == 1 || global.miniboss == 1)
-            draw_sprite_ext(spr_noiseHUD_panic, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_noiseHUD_panic, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.sprite_index == spr_shotgun_pullout)
-            draw_sprite_ext(spr_noiseHUD_menacing, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_noiseHUD_menacing, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else
-            draw_sprite_ext(spr_noiseHUD_idle, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_noiseHUD_idle, -1, 125, 100, 1, 1, 0, c_white, alpha)
     }
     if (player.character == "V")
     {
-        if (player.backupweapon == 1)
-            draw_sprite_ext(spr_shotgunbackup, -1, 50, 100, 1, 1, 0, c_white, alpha)
         if (shoving == 1)
-            draw_sprite_ext(spr_pepinoHUD_shove, image_index, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_pepinoHUD_shove, image_index, 125, 100, 1, 1, 0, c_white, alpha)
         else if (sprite_index == spr_playerV_dead)
-            draw_sprite_ext(spr_playerV_hurtHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_playerV_hurtHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.vigihealth < 25 && player.vigihealth != 0)
-            draw_sprite_ext(spr_playerV_panicHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_playerV_panicHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.vigihealth == 0)
-            draw_sprite_ext(spr_playerV_angryHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_playerV_angryHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.sprite_index == spr_playerV_angryidle || player.sprite_index == spr_playerV_angrymove)
-            draw_sprite_ext(spr_playerV_angryHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_playerV_angryHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.sprite_index == spr_playerV_bodyslamprep || player.sprite_index == spr_playerV_bodyslam || player.sprite_index == spr_playerV_bodyslamland)
-            draw_sprite_ext(spr_playerV_angryHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_playerV_angryHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.sprite_index == spr_playerV_suprise || player.sprite_index == spr_playerV_facehurt)
-            draw_sprite_ext(spr_playerV_angryHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_playerV_angryHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.sprite_index == spr_playerV_keydoor || player.sprite_index == spr_playerV_victory || player.sprite_index == spr_playerV_gottreasure)
-            draw_sprite_ext(spr_playerV_happyHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_playerV_happyHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.sprite_index == spr_playerV_keydoor || player.sprite_index == spr_playerV_keyget || player.sprite_index == spr_playerV_gottreasure)
-            draw_sprite_ext(spr_playerV_happyHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_playerV_happyHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.state == 69 || player.state == 33 || player.state == 92 || player.state == 74 || player.state == 57 || player.state == 63 || player.state == 42 || player.state == 65 || player.state == 46 || player.state == 47 || player.state == 51 || player.state == 48 || player.state == 49 || player.state == 50)
-            draw_sprite_ext(spr_playerV_machHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_playerV_machHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.sprite_index == spr_playerV_dive)
-            draw_sprite_ext(spr_playerV_machHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_playerV_machHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.state == 70 || player.state == states.pogo || player.sprite_index == spr_playerV_mach2boost || player.state == 17 || player.state == 22 || player.state == 43)
-            draw_sprite_ext(spr_playerV_machHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_playerV_machHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.state == 91 && player.sprite_index == spr_playerV_crazyrun)
-            draw_sprite_ext(spr_playerV_machHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_playerV_machHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.state == states.jetpack && player.sprite_index == player.spr_jetpackcrazy)
-            draw_sprite_ext(spr_playerV_machHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)			
+            draw_sprite_ext_camera(spr_playerV_machHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)			
         else if (player.state == 91 || player.state == states.jetpack || player.sprite_index == spr_playerV_mach3boost)
-            draw_sprite_ext(spr_playerV_machHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_playerV_machHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.state == 73 || player.sprite_index == spr_bombpep_end || player.sprite_index == spr_player_fireassend || player.state == 36 || player.state == 27 || (player.state == 54 && player.sprite_index == spr_player_bossintro) || (player.state == 54 && player.sprite_index == spr_player_idle))
-            draw_sprite_ext(spr_playerV_hurtHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_playerV_hurtHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.sprite_index == spr_playerV_hurt)
-            draw_sprite_ext(spr_playerV_hurtHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_playerV_hurtHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (global.combo >= 3) && global.pausecombotime = true
-            draw_sprite_ext(spr_playerV_happyHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)			
+            draw_sprite_ext_camera(spr_playerV_happyHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)			
         else if (global.panic == 1 || global.snickchallenge == 1 || global.miniboss == 1)
-            draw_sprite_ext(spr_playerV_panicHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_playerV_panicHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.sprite_index == spr_playerV_panic)
-            draw_sprite_ext(spr_playerV_panicHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_playerV_panicHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else
-            draw_sprite_ext(spr_playerV_normalHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_playerV_normalHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
     }
     if (player.character == "S")
     {
-        if (player.backupweapon == 1)
-            draw_sprite_ext(spr_shotgunbackup, -1, 50, 100, 1, 1, 0, c_white, alpha)
         if (shoving == 1)
-            draw_sprite_ext(spr_pepinoHUD_shove, image_index, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_pepinoHUD_shove, image_index, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.sprite_index == spr_snick_thunder)
-            draw_sprite_ext(spr_snickHUD_thunder, -1, 125, 60, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_snickHUD_thunder, -1, 125, 60, 1, 1, 0, c_white, alpha)
         else if (player.sprite_index != spr_snick_robotsword && (player.state == 24 || player.state == 18))
-            draw_sprite_ext(spr_snickHUD_robo, -1, 125, 60, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_snickHUD_robo, -1, 125, 60, 1, 1, 0, c_white, alpha)
         else
-            draw_sprite_ext(spr_snickHUD_normal, -1, 125, 60, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_snickHUD_normal, -1, 125, 60, 1, 1, 0, c_white, alpha)
     }
+    if (player.character == "PZ")
+    {
+		//Add more face huds
+        if (shoving == 1)
+            draw_sprite_ext_camera(spr_pepinoHUD_shove, image_index, 125, 100, 1, 1, 0, c_white, alpha)
+		else if player.sprite_index == player.spr_hurt || player.sprite_index == player.spr_hurtjump
+			draw_sprite_ext_camera(spr_playerPZ_hurtHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)			
+		else if player.sprite_index == player.spr_bombpepend
+			draw_sprite_ext_camera(spr_playerPZ_explodedHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
+		else if player.state == states.Sjump
+			draw_sprite_ext_camera(spr_playerPZ_superjumpHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
+		else if player.state == states.jetpackstart || player.state == states.Sjumpprep
+			draw_sprite_ext_camera(spr_playerPZ_superjumpprepHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)			
+        else if (player.state == 69 || (player.state == states.pogo && player.pogomovespeed <= 7) || player.state == 33 || player.state == 92 || player.state == 74 || player.state == 57 || player.state == 63 || player.state == 42 || player.state == 65 || player.state == 46 || player.state == 47 || player.state == 51 || player.state == 48 || player.state == 49 || player.state == 50)
+            draw_sprite_ext_camera(spr_playerPZ_mach1HUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
+        else if (player.state == 70 || (player.state == states.pogo && player.pogomovespeed > 7 && player.pogomovespeed < 12) || player.sprite_index == player.spr_dive || player.sprite_index == player.spr_machslideboost || player.state == 17 || player.state == 111 || player.state == 22 || player.state == 43)
+            draw_sprite_ext_camera(spr_playerPZ_mach2HUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
+        else if (player.state == 91 && player.sprite_index == player.spr_crazyrun)
+            draw_sprite_ext_camera(spr_playerPZ_mach4HUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
+        else if (player.state == states.jetpack && player.sprite_index == player.spr_jetpackcrazy)
+            draw_sprite_ext_camera(spr_playerPZ_mach4HUD, -1, 125, 100, 1, 1, 0, c_white, alpha)		
+        else if (player.state == 91 || (player.state == states.pogo && player.pogomovespeed >= 12) || player.state == states.jetpack || player.sprite_index == player.spr_mach3boost)
+            draw_sprite_ext_camera(spr_playerPZ_mach3HUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
+		else if player.sprite_index == player.spr_freefallland || player.sprite_index == player.spr_bodyslamland || player.state == states.freefallland || player.sprite_index == player.spr_Timesup || player.sprite_index = player.spr_superjumpland || player.sprite_index = player.spr_hitwall
+			draw_sprite_ext_camera(spr_playerPZ_slamHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)	
+		else if player.state == states.freefall || player.state == states.freefallprep
+			draw_sprite_ext_camera(spr_playerPZ_freefallHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
+		else if player.sprite_index == player.spr_bump || player.sprite_index == player.spr_slipnslide || player.sprite_index == player.spr_stunned
+			draw_sprite_ext_camera(spr_playerPZ_bumpHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)		
+        else if (player.angry == 1)
+            draw_sprite_ext_camera(spr_playerPZ_angryHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)			
+        else if (global.combo >= 3) && global.pausecombotime = true
+            draw_sprite_ext_camera(spr_playerPZ_menacingHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)				
+        else
+            draw_sprite_ext_camera(spr_playerPZ_normalHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
+    }	
     shader_reset()
+
+	
+	//Speedbar
     if ((player.movespeed < 2.4 || (!(player.state == 69 || player.state == 70 || player.state == 91 || player.state == states.jetpack || player.state == 17 || player.state == 71 || player.state == 37 || player.state == 12 || player.state == 111 || player.state == 22))) && player.state != states.pogo) || (player.pogomovespeed <= 7 && player.state = states.pogo && player.movespeed <= 0)
         draw_sprite_ext(spr_speedbar, 0, 125, 140, 1, 1, 0, c_white, alpha)
     else if ((player.movespeed >= 2.4 && player.movespeed < 4.8 && (player.state == 69 || player.state == 70 || player.state == 91  || player.state == states.jetpack || player.state == 17 || player.state == 71 || player.state == 37 || player.state == 12 || player.state == 111 || player.state == 22)) && player.state != states.pogo) || (player.pogomovespeed <= 7 && player.state = states.pogo && player.movespeed > 0)
@@ -228,6 +274,7 @@ if (player.state != 55)
 
    //draw_text(190, 97, string(global.freezeframe))
 
+}
 }
 draw_set_blend_mode(0)
 

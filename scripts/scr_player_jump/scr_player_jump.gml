@@ -146,7 +146,7 @@ if (key_down && sprite_index != spr_player_jugglebash)
         image_index = 0
         state = 92
         sprite_index = spr_bodyslamstart
-        if (character == "P")
+        if (character == "P" || character == "PZ" || character == "S")
             vsp = -5
         else
             vsp = -7
@@ -207,12 +207,12 @@ if (grounded && (sprite_index == spr_facestomp || sprite_index == spr_freefall))
     }
     scr_soundeffect(15)
     image_index = 0
-    sprite_index = spr_bodyslamland
+    sprite_index = spr_freefallland
     state = 77
 }
-if (key_slap2 && suplexmove = 0 && (character = "P" || character = "N" || (character = "D" && spellselect = 2)))
+if (key_slap2 && suplexmove = 0 && (character = "P" || character = "PZ" || character = "N" || (character = "D" && spellselect = 2)))
 {
-	if key_up && character = "P" && doublejump = 0
+	if key_up && (character = "P" || character = "PZ" )&& doublejump = 0
 	{
 		suplexmove = 1		
 		suplexdashsnd = audio_play_sound(sfx_suplexdash, 1, false)
@@ -225,7 +225,7 @@ if (key_slap2 && suplexmove = 0 && (character = "P" || character = "N" || (chara
 		if movespeed < 3
 		movespeed = 3
 		momemtum = 1
-		vsp = -10
+		vsp = -8
 		state = 58
 		sprite_index = spr_player_shoryumineken		
 		image_index = 0
@@ -237,9 +237,13 @@ if (key_slap2 && suplexmove = 0 && (character = "P" || character = "N" || (chara
 		audio_sound_gain(suplexdashsnd, (1 * global.soundeffectsvolume), 0)
 		state = 22
 		image_index = 0
-		sprite_index = spr_suplexdashjumpstart
-		vsp = -4
-		if (character == "P")
+		if character != "PZ" {
+			vsp = -4
+			sprite_index = spr_suplexdashjumpstart
+		}
+		else
+			sprite_index = spr_suplexdash
+		if (character == "P"|| character = "D" || character = "PZ")
 	        movespeed = 6
 	    else
 			movespeed = 4
@@ -422,6 +426,7 @@ if key_taunt2
         playerid = other.id
         baddie = 0
     }
+	scr_baddietauntfakeout();	
 }
 
 // dougies bolt and bomb

@@ -1,4 +1,4 @@
-if (bulletbuffer == 0)
+if (bulletbuffer == 0) && global.freezeframe = false
 {
     if instance_exists(baddieID)
     {
@@ -35,7 +35,7 @@ if (bulletbuffer == 0)
                 instance_create(x, y, obj_baddiegibs)
                 instance_destroy()
             }
-            instance_destroy()
+            instance_destroy(other.id)
         }
     }
 }

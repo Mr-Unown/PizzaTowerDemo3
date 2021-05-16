@@ -11,3 +11,6 @@ if place_meeting((x + hsp), (y + vsp), obj_bombblock) {
 scr_collide()
 
 
+
+
+

@@ -1,4 +1,4 @@
-if (bulletbuffer == 0)
+if (bulletbuffer == 0) && global.freezeframe = false
 {
     with (other.id)
     {

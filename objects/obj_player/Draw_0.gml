@@ -1,4 +1,10 @@
-if surface_exists(surf_pallete) && !((paletteselect < 12 && character = "P") || (paletteselect < 11 && character != "P" && character != "PM")|| (paletteselect < 5 && character = "PM"))
+if !surface_exists(surf_pallete) && (paletteselect >= sprite_get_width(spr_palette) - 1)
+{
+	//Surface
+	if !surface_exists(surf_pallete)
+		surf_pallete = surface_create(surf_width,surf_height)	
+}
+else if surface_exists(surf_pallete) && (paletteselect >= sprite_get_width(spr_palette) - 1)
 {
 	#region Surface
 	surface_set_target(surf_pallete);
@@ -11,12 +17,15 @@ if surface_exists(surf_pallete) && !((paletteselect < 12 && character = "P") || 
 	#endregion
 	pal_swap_set(surf_pallete, 1, true)
 }
-else if (paletteselect < 12 && character = "P") || (paletteselect < 11 && character != "P" && character != "PM")|| (paletteselect < 5 && character = "PM")
+else if (paletteselect < sprite_get_width(spr_palette) - 1)
 	pal_swap_set(spr_palette, paletteselect, false)
 	
 draw_sprite_ext(sprite_index, image_index, x, y, xscale, yscale, image_angle, image_blend, image_alpha)
 if (character == "P" && sprite_index == spr_taunt && floor(image_index) == 11)
     draw_sprite_ext(spr_promotion, image_index, x, y, 1, yscale, image_angle, image_blend, image_alpha)
+	
+
+	
 shader_reset()
 if flash
 {
@@ -26,6 +35,15 @@ if flash
         draw_sprite_ext(spr_promotion, image_index, x, y, 1, yscale, image_angle, image_blend, image_alpha)
     shader_reset()
 }
+//Pizzashield
+if pizzashield = true && room != rank_room && room != timesuproom
+	draw_sprite_ext(spr_pizzashield, pizzashieldframes , x, y, xscale, yscale, image_angle, image_blend, image_alpha)
+if global.freezeframe = false
+	pizzashieldframes += 0.35
+if pizzashieldframes > 16
+	pizzashieldframes = 0
 
+//Spell
 if spellshowbuffer > 0
 		draw_sprite(spr_dougieicons, (spellselect - 1), x, y - 50)
+	

@@ -22,6 +22,8 @@ else
     player = obj_player1
     player2 = obj_player2
 }
+if global.hudmode != 1
+{
 if (player2.state != 55)
 {
     if (player2.character == "P")
@@ -61,6 +63,7 @@ if (player2.state != 55)
         alpha = 0.5
     else
         alpha = 1
+}
 }
 draw_set_blend_mode(0)
 

@@ -1,9 +1,11 @@
-image_speed = 0.1
+image_speed = 0
 depth = -11
 chose = 0
 message = ""
 showtext = 0
-tvsprite = spr_tvdefault
+bootingup = false;
+tvsprite = spr_tvboot
+_image_index = 0;
 collided = false
 noisesprite = spr_noiseHUD_idle
 xi = 500

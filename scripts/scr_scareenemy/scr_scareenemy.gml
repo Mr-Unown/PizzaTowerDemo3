@@ -19,8 +19,8 @@ if (state != 109)
 			if (sprite_index != scaredspr) 
 			{
 				sprite_index = scaredspr
-				if grav != 0
-					vsp = -5
+				if grav != 0 && grounded
+					vsp = -3
 			}			
         }
     }

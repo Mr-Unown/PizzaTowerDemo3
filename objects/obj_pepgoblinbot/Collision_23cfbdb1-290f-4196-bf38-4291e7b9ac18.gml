@@ -2,7 +2,7 @@ with (other.id)
 {
     if cutscene = 0
     {
-        if  state != 86 && state != 2 && state != 24 && state != 7 && state != 18
+        if  state != 86 && state != states.frozen && state != 2 && state != 24 && state != 7 && state != 18
         {
             state = 2
             xscale = other.image_xscale

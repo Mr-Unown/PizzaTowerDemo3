@@ -1,9 +1,23 @@
 breakdancebuffer = 50
 collectscore = 0
+//Super Taunts
+supertauntbuffer = 0;
+supertauntcharged = false;
+supertaunteffect = noone;
+//Pizza Shield
+pizzashield = false;
+pizzashieldbackup = 0;
+pizzashieldframes = 0;
+//Vigi Health nerf
+vigitimer = 100
+//Mach3DashBuffer
+mach3dash = false;
+mach3dashbuffer = 0;
+
 global.freezeframe = false;
 global.freezeframetimer = 200;
-global.sleepScale = 1;
-global.sleepAcc = 0;
+//global.sleepScale = 1;
+//global.sleepAcc = 0;
 global.collect = 0
 global.collectN = 0
 pogojetcharge = false
@@ -79,7 +93,7 @@ global.geromeopen = false;
 floatbuffer = false
 floattimer = 50
 spellselect = 1
-spellshowbuffer = 150
+spellshowbuffer = 0
 spellcastedonce = false;
 global.magic = 50
 

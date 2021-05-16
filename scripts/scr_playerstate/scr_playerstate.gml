@@ -430,8 +430,52 @@ switch state
 }
 
 //Palette
-if surface_exists(surf_pallete) && !((paletteselect < 12 && character = "P") || (paletteselect < 11 && character != "P" && character != "PM")|| (paletteselect < 5 && character = "PM"))
+if surface_exists(surf_pallete) && (paletteselect >= sprite_get_width(spr_palette) - 1)
 	custompalette = true
-else if (paletteselect < 12 && character = "P") || (paletteselect < 11 && character != "P" && character != "PM")|| (paletteselect < 5 && character = "PM")
+else if (paletteselect < sprite_get_width(spr_palette) - 1)
 	custompalette = false
+
+//Vigi Health nerf
+if vigihealth > 100 && vigitimer <= 0
+{
+	vigitimer = 100
+	vigihealth = vigihealth - 5
+}
+else if vigihealth <= 100
+	vigitimer = 100
 	
+vigitimer--
+
+vigihealth = clamp(vigihealth,0,250)
+//Supertaunt
+if global.combo >= 3 && supertauntbuffer < 500 && supertauntcharged = false
+	supertauntbuffer++
+else if supertauntbuffer > 0
+	supertauntbuffer--
+if supertauntbuffer >= 500 && supertauntcharged = false
+{
+	supertauntbuffer = 500;
+	supertauntcharged = true;
+}
+if (supertauntbuffer <= 0 && supertauntcharged = true) || global.combo < 3 
+{
+	supertauntbuffer = 0;
+	supertauntcharged = false;
+}
+if supertauntcharged = true  && room != rank_room
+{
+	if !instance_exists(supertaunteffect)
+		with instance_create(x,y,obj_supertaunteffect) 
+		{
+			other.supertaunteffect = id
+			playerid = other.id
+		}
+}
+//Mach3DashBuffer
+if mach3dash = false
+	mach3dashbuffer = 25
+else if mach3dash = true && mach3dashbuffer > 0
+	mach3dashbuffer--
+
+if mach3dashbuffer <= 0
+	mach3dash = false

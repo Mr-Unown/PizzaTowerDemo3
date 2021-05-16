@@ -1,3 +1,6 @@
+
+if global.hudmode != 1
+{
 var _xoffset = random_range(-3,3);
 var _yoffset = random_range(-3,3);
 draw_set_font(global.font)
@@ -19,7 +22,7 @@ else
 	drawx2 = 750 + _xoffset;
 	drawy2 = -14 + _yoffset;
 }
-if (global.combo != 0 && global.miniboss == 0 && global.combotime != 0 && (tvsprite == spr_tvdefault || tvsprite == spr_tvcombo))
+if (global.combo != 0 && global.miniboss == 0 && global.combotime != 0 && (tvsprite == spr_tvdefault || tvsprite == spr_tvcombo)) && tvsprite != spr_tvboot
 {
 	//New Combo Meter
 	var combotimer = global.combotime / 60
@@ -59,9 +62,10 @@ if (tvsprite == spr_tvdefault && room != strongcold_endscreen && global.miniboss
 		draw_text(832, 80, string_hash_to_newline(obj_player2.collectscore))
 	}
 }
-else if (global.miniboss == 1)
-    draw_text(832, 60, string_hash_to_newline(global.boxhp))
+else if (global.miniboss == 1) && tvsprite = spr_tvnoise
+    draw_text(832, 80, string_hash_to_newline(global.boxhp))
 if instance_exists(obj_pizzaball)
     draw_text(832, 300, string_hash_to_newline(((string(global.golfhit) + " ") + "STROKES")))
 
 
+}

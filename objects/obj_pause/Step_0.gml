@@ -6,12 +6,12 @@ if ((!pause) && (!instance_exists(obj_fadeout)))
         if (!instance_exists(obj_pausefadeout))
             instance_create(x, y, obj_pausefadeout)
     }
-    if ((obj_player2.key_jump || keyboard_check_pressed(vk_f5)) && global.coop == 0 && room != rank_room && room != Scootertransition && room != Realtitlescreen && room != timesuproom)
+    if ((obj_player2.key_jump || keyboard_check_pressed(vk_f5)) && global.coop == 0 && room != rank_room && room != Scootertransition && room != Realtitlescreen && room != timesuproom) && obj_debugcontroller.active = false
     {
         global.coop = 1
         with (obj_player2)
         {
-            c = 0
+            blackblend = 0
             image_blend = make_colour_hsv(0, 0, 255)
             x = obj_player1.x
             y = obj_player1.y
@@ -28,12 +28,12 @@ if ((!pause) && (!instance_exists(obj_fadeout)))
     }
     if (global.debugmode == 1)
     {
-        if (keyboard_check_pressed(vk_f5) && global.coop == 0)
+        if (keyboard_check_pressed(vk_f5) && global.coop == 0) && obj_debugcontroller.active = false
         {
             global.coop = 1
             with (obj_player2)
             {
-                c = 0
+                blackblend = 0
                 image_blend = make_colour_hsv(0, 0, 255)
                 x = obj_player1.x
                 y = obj_player1.y
@@ -57,28 +57,42 @@ if ((!pause) && (!instance_exists(obj_fadeout)))
             global.peppermode = 0
         }
         if keyboard_check_pressed(vk_f11)
+		{
 			global.pausecombotime = false
             global.peppermode = 1
+		}
+		/*For Development Purposes only
+        if keyboard_check_pressed(vk_f12)
+		{
+			var rm_name = room_get_name(room);
+			var lay_id = layer_get_id("Tiles_1")
+			var map_id = layer_tilemap_get_id(lay_id)
+			screenshot_surface = surface_create(room_width,room_height)
+			surface_set_target(screenshot_surface)
+			draw_tilemap(map_id,0,0)
+			surface_reset_target()
+			surface_save(screenshot_surface, "screenshot_" + string(rm_name) +".png");	
+		}*/
     }
 }
-if keyboard_check_pressed(vk_f6)
-{
-    global.debugmode = !global.debugmode
-	if global.debugmode = 1
-    with (obj_tv)
-    {
-        message = "DEBUG MODE ON"
-        showtext = 1
-        alarm[0] = 100
-    }
-	else
-	with (obj_tv)
-    {
-        message = "DEBUG MODE OFF"
-        showtext = 1
-        alarm[0] = 100
-    }
-}
+//if keyboard_check_pressed(vk_f6)
+//{
+//    global.debugmode = !global.debugmode
+//	if global.debugmode = 1
+//    with (obj_tv)
+//    {
+//        message = "DEBUG MODE ON"
+//        showtext = 1
+//        alarm[0] = 100
+//    }
+//	else
+//	with (obj_tv)
+//    {
+//        message = "DEBUG MODE OFF"
+//        showtext = 1
+//        alarm[0] = 100
+//    }
+//}
 if keyboard_check_pressed(vk_f7)
 {
     global.hudmode = !global.hudmode
@@ -149,7 +163,7 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
         global.laptouched = 0
         if (global.snickchallenge == 0)
         {
-            if (string_letters(roomname) == "entrance" || string_letters(roomname) == "entrancesecret")
+            if (string_letters(roomname) == "entrance" || string_letters(roomname) == "entrancesecret") ||/* room = entrance_pizzamart ||*/ room = entrance_treasure
             {
                 instance_activate_all()
                 room = entrance_1
@@ -159,7 +173,7 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
                 if instance_exists(obj_player2)
                     obj_player2.targetDoor = "A"
             }
-            else if (string_letters(roomname) == "medieval" || string_letters(roomname) == "medievalsecret")
+            else if (string_letters(roomname) == "medieval" || string_letters(roomname) == "medievalsecret") || room = medieval_pizzamart || room = medieval_treasure
             {
                 instance_activate_all()
                 room = medieval_1
@@ -169,7 +183,7 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
                 if instance_exists(obj_player2)
                     obj_player2.targetDoor = "A"
             }
-            else if (string_letters(roomname) == "ruin" || string_letters(roomname) == "ruinsecret")
+            else if (string_letters(roomname) == "ruin" || string_letters(roomname) == "ruinsecret") || room = ruin_pizzamart || room = ruin_treasure
             {
                 instance_activate_all()
                 room = ruin_1
@@ -179,7 +193,7 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
                 if instance_exists(obj_player2)
                     obj_player2.targetDoor = "A"
             }
-            else if (string_letters(roomname) == "dungeon" || string_letters(roomname) == "dungeonsecret")
+            else if (string_letters(roomname) == "dungeon" || string_letters(roomname) == "dungeonsecret") || room = dungeon_pizzamart || room = dungeon_treasure
             {
                 instance_activate_all()
                 room = dungeon_1
@@ -189,7 +203,7 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
                 if instance_exists(obj_player2)
                     obj_player2.targetDoor = "A"
             }
-            else if (string_letters(roomname) == "ancient" || string_letters(roomname) == "ancientsecret")
+            else if (string_letters(roomname) == "ancient" || string_letters(roomname) == "ancientsecret") ||/* room = ancient_pizzamart ||*/ room = ancient_treasure
             {
                 instance_activate_all()
                 room = ancient_1
@@ -199,7 +213,7 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
                 if instance_exists(obj_player2)
                     obj_player2.targetDoor = "A"
             }				
-            else if (string_letters(roomname) == "chateau" || string_letters(roomname) == "chateausecret")
+            else if (string_letters(roomname) == "chateau" || string_letters(roomname) == "chateausecret") || room = chateau_pizzamart || room = chateau_treasure
             {
                 instance_activate_all()
                 room = chateau_1
@@ -209,7 +223,7 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
                 if instance_exists(obj_player2)
                     obj_player2.targetDoor = "A"
             }			
-            else if (string_letters(roomname) == "strongcold" || string_letters(roomname) == "strongcoldsecret")
+            else if (string_letters(roomname) == "strongcold" || string_letters(roomname) == "strongcoldsecret") ||  room = strongcold_miniboss || room = strongcold_pizzamart || room = strongcold_treasure
             {
                 instance_activate_all()
                 room = strongcold_10
@@ -310,11 +324,15 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
             global.lapping = 0
             global.laptouched = 0
             obj_player1.collectscore = 10000
-            global.seconds = 59
-            global.minutes = 9
+            with (obj_camera)
+            {
+                alarm[1] = 60
+                global.seconds = 59
+                global.minutes = 9
+            }
             global.wave = 0
             global.maxwave = (((global.minutes * 60) + global.seconds) * 60)
-            if global.panicbg
+            if global.panicbg = true
                 scr_panicbg_init()
             obj_player1.targetDoor = "A"
             global.snickchallenge = 1
@@ -339,7 +357,7 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
             }
             scr_playerreset()
             obj_player.state = 8
-            global.cowboyhat = 0
+            //global.equippedhat = 0
             obj_player1.targetDoor = "A"
             if instance_exists(obj_player2)
                 obj_player2.targetDoor = "A"
@@ -355,17 +373,19 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
 			global.fakepeppino = 0
 			scr_playerreset()
 
-			if obj_player.backtohubroom != noone {
-			obj_player1.targetDoor = "start"
-			if instance_exists(obj_player2)			
-			obj_player2.targetDoor = "start"				
-			room = obj_player.backtohubroom		 
+			if obj_player.backtohubroom != noone 
+			{
+				obj_player1.targetDoor = "start"
+				if instance_exists(obj_player2)			
+				obj_player2.targetDoor = "start"				
+				room = obj_player.backtohubroom		 
 			}
-			else {
-			obj_player1.targetDoor = "A"
-			if instance_exists(obj_player2)
-			obj_player2.targetDoor = "A"				
-			room = hub_room1
+			else 
+			{
+				obj_player1.targetDoor = "A"
+				if instance_exists(obj_player2)
+				obj_player2.targetDoor = "A"				
+				room = hub_room1
 			}
         }
     }

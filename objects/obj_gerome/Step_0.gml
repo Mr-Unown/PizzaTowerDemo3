@@ -17,6 +17,9 @@ if alreadytouched = true
 		ds_list_add(global.follower, id);
 		global.geromefollowing = true
 		sprite_index = spr_gerome_idle
+		targetx = obj_player1.x
+		targety = obj_player1.y
+		magnitude = 0
 	}
 if sprite_index = spr_gerome_mop && global.geromefollowing = true && floor(image_index) = image_number -1
 	sprite_index = spr_gerome_idle

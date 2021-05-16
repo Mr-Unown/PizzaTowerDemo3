@@ -1,11 +1,15 @@
-pal_swap_init_system(shd_pal_swapper)
+pal_swap_init_system(shd_pal_swapper);
 obj_player1.collectscore = 0
 obj_player2.collectscore = 0
 global.collect = 0
 global.collectN = 0
 with (obj_tv)
 {
-	tvsprite = spr_tvdefault	
+	bootingup = false
+	image_speed = 0
+	image_index = 0
+	tvsprite = spr_tvboot
+	
     shownranks = 0	
     shownranka = 0
     shownrankb = 0

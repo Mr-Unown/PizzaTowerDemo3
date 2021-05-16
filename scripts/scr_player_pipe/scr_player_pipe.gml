@@ -4,6 +4,7 @@ landAnim = 0
 vsp = 0
 hsp = 0
 cutscene = 1
+visible = false
 var pipespeed = 15;
 var centerX;
 var centerY;

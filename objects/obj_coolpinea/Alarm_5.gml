@@ -18,8 +18,8 @@ if (state != 94 && state == 102)
             baddieid = other.id
         }
     }
+	taunttimer = 20
     state = 94
-    taunttimer = 20
     alarm[5] = 100
     vsp = 0
     if (parrying == 0)

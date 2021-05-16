@@ -9,7 +9,155 @@ scr_playercolors()
 if (object_index == obj_player1)
 {
     if (global.coop == 1)
-        scr_changetoppings()
+	{
+        #region Changetoppings
+with (obj_collect)
+{
+    if (ds_list_find_index(global.saveroom, id) == -1)
+    {
+        if ((obj_player1.character == "P" && obj_player1.spotlight == 1) || (obj_player2.character == "P" && obj_player1.spotlight == 0))
+            sprite_index = choose(spr_shroomcollect, spr_tomatocollect, spr_cheesecollect, spr_sausagecollect, spr_pineapplecollect)
+        else if ((obj_player1.character == "N" && obj_player1.spotlight == 1) || (obj_player2.character == "N" && obj_player1.spotlight == 0))
+            sprite_index = choose(spr_halloweencollectibles1, spr_halloweencollectibles2, spr_halloweencollectibles3, spr_halloweencollectibles4, spr_halloweencollectibles5)
+        else if ((obj_player1.character == "S" && obj_player1.spotlight == 1) || (obj_player2.character == "S" && obj_player1.spotlight == 0))
+            sprite_index = spr_snickcollectible1
+        else if ((obj_player1.character == "V" && obj_player1.spotlight == 1) || (obj_player2.character == "V" && obj_player1.spotlight == 0))
+            sprite_index = choose(spr_cheesetopping1, spr_cheesetopping2, spr_cheesetopping3, spr_cheesetopping4, spr_cheesetopping5)
+		else if ((obj_player1.character == "PZ" && obj_player1.spotlight == 1) || (obj_player2.character == "PZ" && obj_player1.spotlight == 0))
+			sprite_index = choose(spr_PZtopping1, spr_PZtopping2, spr_PZtopping3, spr_PZtopping4, spr_PZtopping5)			
+    }
+}
+with (obj_escapecollect)
+{
+    if (ds_list_find_index(global.saveroom, id) == -1)
+    {
+        if ((obj_player1.character == "P" && obj_player1.spotlight == 1) || (obj_player2.character == "P" && obj_player1.spotlight == 0))
+            sprite_index = choose(spr_shroomcollect, spr_tomatocollect, spr_cheesecollect, spr_sausagecollect, spr_pineapplecollect)
+        else if ((obj_player1.character == "N" && obj_player1.spotlight == 1) || (obj_player2.character == "N" && obj_player1.spotlight == 0))
+            sprite_index = choose(spr_halloweencollectibles1, spr_halloweencollectibles2, spr_halloweencollectibles3, spr_halloweencollectibles4, spr_halloweencollectibles5)
+        else if ((obj_player1.character == "S" && obj_player1.spotlight == 1) || (obj_player2.character == "S" && obj_player1.spotlight == 0))
+            sprite_index = spr_snickcollectible1
+        else if ((obj_player1.character == "V" && obj_player1.spotlight == 1) || (obj_player2.character == "V" && obj_player1.spotlight == 0))
+            sprite_index = choose(spr_cheesetopping1, spr_cheesetopping2, spr_cheesetopping3, spr_cheesetopping4, spr_cheesetopping5)
+		else if ((obj_player1.character == "PZ" && obj_player1.spotlight == 1) || (obj_player2.character == "PZ" && obj_player1.spotlight == 0))
+			sprite_index = choose(spr_PZtopping1, spr_PZtopping2, spr_PZtopping3, spr_PZtopping4, spr_PZtopping5)			
+    }
+}
+with (obj_bigcollect)
+{
+    if (ds_list_find_index(global.saveroom, id) == -1)
+    {
+        if ((obj_player1.character == "P" && obj_player1.spotlight == 1) || (obj_player2.character == "P" && obj_player1.spotlight == 0))
+            sprite_index = choose(spr_pizzacollect1, spr_pizzacollect2, spr_pizzacollect3)
+        else if ((obj_player1.character == "N" && obj_player1.spotlight == 1) || (obj_player2.character == "N" && obj_player1.spotlight == 0))
+            sprite_index = choose(spr_pizzacollect1halloween, spr_pizzacollect2halloween, spr_pizzacollect3halloween)
+        else if ((obj_player1.character == "S" && obj_player1.spotlight == 1) || (obj_player2.character == "S" && obj_player1.spotlight == 0))
+            sprite_index = spr_snickcollectible2
+        else if ((obj_player1.character == "V" && obj_player1.spotlight == 1) || (obj_player2.character == "V" && obj_player1.spotlight == 0))
+            sprite_index = choose(spr_pizzacollect1cheese, spr_pizzacollect2cheese, spr_pizzacollect3cheese)
+		else if ((obj_player1.character == "PZ" && obj_player1.spotlight == 1) || (obj_player2.character == "PZ" && obj_player1.spotlight == 0))
+			sprite_index = choose(spr_PZbigpizza1, spr_PZbigpizza2, spr_PZbigpizza3)			
+    }
+}
+with (obj_giantcollect)
+{
+    if (ds_list_find_index(global.saveroom, id) == -1)
+    {
+        if ((obj_player1.character == "P" && obj_player1.spotlight == 1) || (obj_player2.character == "P" && obj_player1.spotlight == 0))
+            sprite_index = spr_giantpizza
+        else if ((obj_player1.character == "N" && obj_player1.spotlight == 1) || (obj_player2.character == "N" && obj_player1.spotlight == 0))
+            sprite_index = spr_giantpizzahalloween
+        else if ((obj_player1.character == "S" && obj_player1.spotlight == 1) || (obj_player2.character == "S" && obj_player1.spotlight == 0))
+            sprite_index = spr_snickcollectible3
+        else if ((obj_player1.character == "V" && obj_player1.spotlight == 1) || (obj_player2.character == "V" && obj_player1.spotlight == 0))
+            sprite_index = spr_giantpizzacheese
+		else if ((obj_player1.character == "PZ" && obj_player1.spotlight == 1) || (obj_player2.character == "PZ" && obj_player1.spotlight == 0))
+			sprite_index = spr_PZgiantpizza			
+    }
+}
+with (obj_pizzaslice)
+{
+    if (ds_list_find_index(global.saveroom, id) == -1)
+    {
+        if ((obj_player1.character == "P" && obj_player1.spotlight == 1) || (obj_player2.character == "P" && obj_player1.spotlight == 0))
+            sprite_index = spr_pizzaslice
+        else if ((obj_player1.character == "N" && obj_player1.spotlight == 1) || (obj_player2.character == "N" && obj_player1.spotlight == 0))
+            sprite_index = spr_halloweenspinningslice
+        else if ((obj_player1.character == "S" && obj_player1.spotlight == 1) || (obj_player2.character == "S" && obj_player1.spotlight == 0))
+            sprite_index = spr_snickcollectible4
+        else if ((obj_player1.character == "V" && obj_player1.spotlight == 1) || (obj_player2.character == "V" && obj_player1.spotlight == 0))
+            sprite_index = spr_cheesespinningslice
+		else if ((obj_player1.character == "PZ" && obj_player1.spotlight == 1) || (obj_player2.character == "PZ" && obj_player1.spotlight == 0))
+			sprite_index = spr_xmasspinningslice				
+    }
+}
+with (obj_destroyable2)
+{
+    if (ds_list_find_index(global.saveroom, id) == -1)
+    {
+        if ((obj_player1.character == "P" && obj_player1.spotlight == 1) || (obj_player2.character == "P" && obj_player1.spotlight == 0))
+            sprite_index = spr_destroyablepep
+        else if ((obj_player1.character == "N" && obj_player1.spotlight == 1) || (obj_player2.character == "N" && obj_player1.spotlight == 0))
+            sprite_index = spr_halloweensmallblock
+        else if ((obj_player1.character == "S" && obj_player1.spotlight == 1) || (obj_player2.character == "S" && obj_player1.spotlight == 0))
+            sprite_index = spr_xmasblock
+        else if ((obj_player1.character == "V" && obj_player1.spotlight == 1) || (obj_player2.character == "V" && obj_player1.spotlight == 0))
+            sprite_index = spr_cheesedestroyableblock
+		else if ((obj_player1.character == "PZ" && obj_player1.spotlight == 1) || (obj_player2.character == "PZ" && obj_player1.spotlight == 0))
+			sprite_index = spr_PZdestroyablepep				
+    }
+}
+with (obj_destroyable2escape)
+{
+    if (ds_list_find_index(global.saveroom, id) == -1)
+    {
+        if ((obj_player1.character == "P" && obj_player1.spotlight == 1) || (obj_player2.character == "P" && obj_player1.spotlight == 0))
+            sprite_index = spr_destroyablepepescape
+        else if ((obj_player1.character == "N" && obj_player1.spotlight == 1) || (obj_player2.character == "N" && obj_player1.spotlight == 0))
+            sprite_index = spr_halloweensmallblockescape
+        else if ((obj_player1.character == "S" && obj_player1.spotlight == 1) || (obj_player2.character == "S" && obj_player1.spotlight == 0))
+            sprite_index = spr_xmasblockescape
+        else if ((obj_player1.character == "V" && obj_player1.spotlight == 1) || (obj_player2.character == "V" && obj_player1.spotlight == 0))
+            sprite_index = spr_cheesedestroyableblockescape
+		else if ((obj_player1.character == "PZ" && obj_player1.spotlight == 1) || (obj_player2.character == "PZ" && obj_player1.spotlight == 0))
+			sprite_index = spr_PZdestroyablepepescape			
+    }
+}
+with (obj_destroyable2_big)
+{
+    if (ds_list_find_index(global.saveroom, id) == -1)
+    {
+        if ((obj_player1.character == "P" && obj_player1.spotlight == 1) || (obj_player2.character == "P" && obj_player1.spotlight == 0))
+            sprite_index = spr_bigbreakable
+        else if ((obj_player1.character == "N" && obj_player1.spotlight == 1) || (obj_player2.character == "N" && obj_player1.spotlight == 0))
+            sprite_index = spr_halloweenbigblock
+        else if ((obj_player1.character == "S" && obj_player1.spotlight == 1) || (obj_player2.character == "S" && obj_player1.spotlight == 0))
+            sprite_index = spr_xmasbigblock
+        else if ((obj_player1.character == "V" && obj_player1.spotlight == 1) || (obj_player2.character == "V" && obj_player1.spotlight == 0))
+            sprite_index = spr_cheesebigblock
+		else if ((obj_player1.character == "PZ" && obj_player1.spotlight == 1) || (obj_player2.character == "PZ" && obj_player1.spotlight == 0))
+			sprite_index = spr_PZbigbreakable				
+    }
+}
+with (obj_destroyable2_bigescape)
+{
+    if (ds_list_find_index(global.saveroom, id) == -1)
+    {
+        if ((obj_player1.character == "P" && obj_player1.spotlight == 1) || (obj_player2.character == "P" && obj_player1.spotlight == 0))
+            sprite_index = spr_bigbreakableescape
+        else if ((obj_player1.character == "N" && obj_player1.spotlight == 1) || (obj_player2.character == "N" && obj_player1.spotlight == 0))
+            sprite_index = spr_halloweenbigblockescape
+        else if ((obj_player1.character == "S" && obj_player1.spotlight == 1) || (obj_player2.character == "S" && obj_player1.spotlight == 0))
+            sprite_index = spr_xmasbigblockescape
+        else if ((obj_player1.character == "V" && obj_player1.spotlight == 1) || (obj_player2.character == "V" && obj_player1.spotlight == 0))
+            sprite_index = spr_cheesebigblockescape
+		else if ((obj_player1.character == "PZ" && obj_player1.spotlight == 1) || (obj_player2.character == "PZ" && obj_player1.spotlight == 0))
+			sprite_index = spr_PZbigbreakableescape				
+    }
+}
+
+		#endregion
+	}
     if (state == 46)
         state = 0
     if (object_index == obj_player2 && obj_player1.spotlight == 1 && global.coop == 1)
@@ -28,7 +176,7 @@ if (object_index == obj_player1)
     {
         if (global.verticalh == 0)
         {
-            if (targetDoor == "A")
+            if (targetDoor == "A") && instance_exists(obj_doorA)
             {
                 if (hallway == 1)
                     x = (obj_doorA.x + (hallwaydirection * 100))
@@ -42,7 +190,7 @@ if (object_index == obj_player1)
                     x = (obj_doorA.x + 16)	
                 y = (obj_doorA.y - 14)
             }
-            if (targetDoor == "B")
+            else if (targetDoor == "B") && instance_exists(obj_doorB)
             {
                 if (hallway == 1)
                     x = (obj_doorB.x + (hallwaydirection * 100))
@@ -56,7 +204,7 @@ if (object_index == obj_player1)
                     x = (obj_doorB.x + 16)
                 y = (obj_doorB.y - 14)
             }
-            if (targetDoor == "C")
+            else if (targetDoor == "C") && instance_exists(obj_doorC)
             {
                 if (hallway == 1)
                     x = (obj_doorC.x + (hallwaydirection * 100))
@@ -70,7 +218,7 @@ if (object_index == obj_player1)
                     x = (obj_doorC.x + 16)
                 y = (obj_doorC.y - 14)
             }
-            if (targetDoor == "D")
+            else if (targetDoor == "D") && instance_exists(obj_doorD)
             {
                 if (hallway == 1)
                     x = (obj_doorD.x + (hallwaydirection * 100))
@@ -84,7 +232,7 @@ if (object_index == obj_player1)
                     x = (obj_doorD.x + 16)
                 y = (obj_doorD.y - 14)
             }
-            if (targetDoor == "E")
+            else if (targetDoor == "E") && instance_exists(obj_doorE)
             {
                 if (hallway == 1)
                     x = (obj_doorE.x + (hallwaydirection * 100))
@@ -98,7 +246,7 @@ if (object_index == obj_player1)
                     x = (obj_doorE.x + 16)
                 y = (obj_doorE.y - 14)
             }
-            if (targetDoor == "F")
+            else if (targetDoor == "F") && instance_exists(obj_doorF)
             {
                 if (hallway == 1)
                     x = (obj_doorF.x + (hallwaydirection * 100))
@@ -112,7 +260,21 @@ if (object_index == obj_player1)
                     x = (obj_doorF.x + 16)
                 y = (obj_doorF.y - 14)
             }
-			if (targetDoor = "start")
+            else if (targetDoor == "G") && instance_exists(obj_doorG)
+            {
+                if (hallway == 1)
+                    x = (obj_doorG.x + (hallwaydirection * 100))
+                else if (box == 1)
+                    x = (obj_doorG.x + 32)
+                else if (portal == 1)
+                    x = (obj_doorG.x + 16)
+                else if (vertical == 1)
+                    x = (obj_doorG.x + verticaloffset)
+                else
+                    x = (obj_doorG.x + 16)
+                y = (obj_doorG.y - 14)
+            }			
+			else if (targetDoor = "start")
             {
 				if (global.coop == 0)
 				{
@@ -124,7 +286,29 @@ if (object_index == obj_player1)
 					x = backtohubstartx - 32
 					y = backtohubstarty
 				}
-            }	
+            }
+			else
+			{
+				show_debug_message("Specified Target Door not found...")
+				if instance_exists(group_doortriggers)
+				{
+					show_debug_message("Found Subtitute Door")
+					var door = group_doortriggers
+					if (hallway == 1)
+						x = (door.x + (hallwaydirection * 100))
+					else if (box == 1)
+						x = (door.x + 32)
+					else if (portal == 1)
+						x = (door.x + 16)
+					else if (vertical == 1)
+						x = (door.x + verticaloffset)
+					else
+						x = (door.x + 16)
+					y = (door.y - 14)
+				}
+				else
+					show_debug_message("Cannot find Subtitute Door")
+			}
         }
         if (global.verticalh == 1)
         {
@@ -225,7 +409,7 @@ if (object_index == obj_player2)
     {
         if (global.verticalh == 0)
         {
-            if (targetDoor == "A")
+            if (targetDoor == "A") && instance_exists(obj_doorA)
             {
                 if (hallway == 1)
                     x = (obj_doorA.x + (hallwaydirection * 100))
@@ -236,10 +420,10 @@ if (object_index == obj_player2)
                 else if (vertical == 1)
                     x = (obj_doorA.x + verticaloffset)
                 else
-                    x = (obj_doorA.x + 16)
+                    x = (obj_doorA.x + 16)	
                 y = (obj_doorA.y - 14)
             }
-            if (targetDoor == "B")
+            else if (targetDoor == "B") && instance_exists(obj_doorB)
             {
                 if (hallway == 1)
                     x = (obj_doorB.x + (hallwaydirection * 100))
@@ -253,7 +437,7 @@ if (object_index == obj_player2)
                     x = (obj_doorB.x + 16)
                 y = (obj_doorB.y - 14)
             }
-            if (targetDoor == "C")
+            else if (targetDoor == "C") && instance_exists(obj_doorC)
             {
                 if (hallway == 1)
                     x = (obj_doorC.x + (hallwaydirection * 100))
@@ -267,7 +451,7 @@ if (object_index == obj_player2)
                     x = (obj_doorC.x + 16)
                 y = (obj_doorC.y - 14)
             }
-            if (targetDoor == "D")
+            else if (targetDoor == "D") && instance_exists(obj_doorD)
             {
                 if (hallway == 1)
                     x = (obj_doorD.x + (hallwaydirection * 100))
@@ -281,7 +465,7 @@ if (object_index == obj_player2)
                     x = (obj_doorD.x + 16)
                 y = (obj_doorD.y - 14)
             }
-            if (targetDoor == "E")
+            else if (targetDoor == "E") && instance_exists(obj_doorE)
             {
                 if (hallway == 1)
                     x = (obj_doorE.x + (hallwaydirection * 100))
@@ -295,7 +479,7 @@ if (object_index == obj_player2)
                     x = (obj_doorE.x + 16)
                 y = (obj_doorE.y - 14)
             }
-            if (targetDoor == "F")
+            else if (targetDoor == "F") && instance_exists(obj_doorF)
             {
                 if (hallway == 1)
                     x = (obj_doorF.x + (hallwaydirection * 100))
@@ -309,7 +493,21 @@ if (object_index == obj_player2)
                     x = (obj_doorF.x + 16)
                 y = (obj_doorF.y - 14)
             }
-			if (targetDoor = "start")
+            else if (targetDoor == "G") && instance_exists(obj_doorG)
+            {
+                if (hallway == 1)
+                    x = (obj_doorG.x + (hallwaydirection * 100))
+                else if (box == 1)
+                    x = (obj_doorG.x + 32)
+                else if (portal == 1)
+                    x = (obj_doorG.x + 16)
+                else if (vertical == 1)
+                    x = (obj_doorG.x + verticaloffset)
+                else
+                    x = (obj_doorG.x + 16)
+                y = (obj_doorG.y - 14)
+            }						
+			else if (targetDoor = "start")
             {
 				if (global.coop == 0)
 				{
@@ -322,6 +520,28 @@ if (object_index == obj_player2)
 					y = backtohubstarty
 				}
             }
+			else
+			{
+				show_debug_message("Specified Target Door not found...")
+				if instance_exists(group_doortriggers)
+				{
+					show_debug_message("Found Subtitute Door")
+					var door = group_doortriggers
+					if (hallway == 1)
+						x = (door.x + (hallwaydirection * 100))
+					else if (box == 1)
+						x = (door.x + 32)
+					else if (portal == 1)
+						x = (door.x + 16)
+					else if (vertical == 1)
+						x = (door.x + verticaloffset)
+					else
+						x = (door.x + 16)
+					y = (door.y - 14)
+				}
+				else
+					show_debug_message("Cannot find Subtitute Door")
+			}
         }
         if (global.verticalh == 1)
         {

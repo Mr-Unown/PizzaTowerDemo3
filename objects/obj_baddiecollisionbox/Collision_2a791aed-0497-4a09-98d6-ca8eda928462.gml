@@ -1,15 +1,26 @@
-if instance_exists(baddieID)
+if instance_exists(baddieID) && global.freezeframe = false
 {
     with (baddieID)
     {
-        if (state != 200)
+        if (state != enemystates.enemyshake && state != enemystates.enemyfrozen)
         {
-			state = 106
-			if stunned < 100
-				stunned = 100
-			vsp = -5
-			hsp = 0	
-			momentum = 0
+			if hp > 1 {
+				state = 106
+				if stunned < 100
+					stunned = 100
+				vsp = -5
+				hsp = 0	
+				momentum = 0
+				hp = (hp - 1)
+			}
+			else {
+				dying = true
+				scarebuffer = 0
+				blowdirection = 5;
+				blowintensity = 1;
+				playerxscale = image_xscale;
+				state = enemystates.enemyshake;	
+			}
         }
     }
 }

@@ -8,8 +8,13 @@ if instance_exists(obj_endlevelfade)
 
 //Goop Gone
 with obj_goop 
-instance_destroy(id,false)	
-
+instance_destroy(id,false)
+//Lighting
+with obj_lighting
+{
+	darkness = 0
+	targetdarkness = 0
+}
 global.style = 0
 global.stylethreshold = 0
 global.freezeframe = false;
@@ -34,6 +39,7 @@ obj_player2.x = -1000
 obj_player2.y = 500
 obj_player2.state = 8
 obj_camera.golf = 0
+obj_camera.greyscalefade = 0;
 if instance_exists(obj_coopflag)
     instance_destroy(obj_coopflag)
 global.miniboss = 0
@@ -45,6 +51,7 @@ global.storedgun = 0
 global.golfhit = 0
 with (obj_tv)
 {
+	bootingup = false
     shownranks = 0
     shownranka = 0
     shownrankb = 0
@@ -53,6 +60,16 @@ with (obj_tv)
     shownderanka = 0
     shownderankb = 0
     shownderankc = 0
+	imageindexstore = 0
+	image_index = 0
+	image_speed = 0
+	alarm[0] = -1
+	showtext = false
+	tvsprite = spr_tvboot
+	sprite_index = spr_tvboot
+	xi = 500
+	yi = 600
+
 }
 global.SAGEshotgunsnicknumber = 0
 obj_music.fadeoff = 0
@@ -92,7 +109,7 @@ with (obj_player1)
     buttanim = 0
     firebutt = 0
     image_blend = make_colour_hsv(0, 0, 255)
-    c = 0
+    blackblend = 0
     heavy = 0
     image_index = 0
     sprite_index = spr_walkfront
@@ -218,7 +235,7 @@ with (obj_player1)
 	floatbuffer = false
 floattimer = 50
 spellselect = 1
-spellshowbuffer = 150
+spellshowbuffer = 0
 global.magic = 50
 }
 with (obj_player2)
@@ -231,7 +248,7 @@ with (obj_player2)
     buttanim = 0
     firebutt = 0
     image_blend = make_colour_hsv(0, 0, 255)
-    c = 0
+    blackblend = 0
     heavy = 0
     image_index = 0
     sprite_index = spr_walkfront

@@ -28,9 +28,13 @@ if (place_meeting(x, y, anyplayer) && (anyplayer.instakillmove == 1 || anyplayer
     x = (room_width / 2)
     y = -100
 }
+
 if (global.snickchallenge == 1 && global.minutes < 2 && warning == 0)
 {
-    instance_create(x, y, obj_panicchanger)
+    with instance_create(x, y, obj_panicchanger)
+	{
+		depth = -99999
+	}
     warning = 1
 }
 

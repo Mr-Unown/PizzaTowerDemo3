@@ -1,6 +1,9 @@
 scr_getinput2()
 scr_playerstate()
-
+//No more Shadows
+if image_blend != make_colour_hsv(0, 0, 255) && state != states.comingoutdoor {
+	image_blend = make_colour_hsv(0, 0, 255)
+}
 
 //Heavy
 if heavy = 1 && state != 46
@@ -13,7 +16,7 @@ wallclingbuffer--
 else
 wallclingbuffer = 0
 //Jetpack Controls
-if jetpacking = true && !(state = 51 || sprite_index = spr_playerN_jetpackstart || sprite_index = spr_superjumpprep || sprite_index = spr_jetpack || sprite_index = spr_jetpackcrazy || sprite_index = spr_playerN_jetpackslide || sprite_index = spr_playerN_Sjump)	
+if jetpacking = true && state != states.frozen && !(state = 51 || sprite_index = spr_playerN_jetpackstart || sprite_index = spr_superjumpprep || sprite_index = spr_jetpack || sprite_index = spr_jetpackcrazy || sprite_index = spr_playerN_jetpackslide || sprite_index = spr_playerN_Sjump)	
 jetpacking = false
 
 //Pogo
@@ -89,7 +92,7 @@ if (state == 55 && y > (room_height * 2))
     room = hub_room1
 }
 //Autopitfall
-if state != 55 && y > (room_height * 1.5)
+if state != 55 && !instance_exists(obj_fadeout) && !place_meeting(x,y,obj_hallway) && !place_meeting(x,y,obj_pitfall) && !place_meeting(x,y,obj_pitcollider) && y > (room_height * 1.3)
 {
 	{
 		
@@ -106,9 +109,16 @@ if state != 55 && y > (room_height * 1.5)
             sprite_index = spr_hurtjump
     else
             sprite_index = spr_hurt
-	with obj_tv {
-        message = choose("OW!", "OUCH!", "OH!", "WOH!")
-		chose = 0		
+	with obj_tv
+	{
+		image_speed = 0.1
+		showtext = 1
+		if (chose == 0)
+			message = choose("OW!", "OUCH!", "OH!", "WOH!")
+		alarm[0] = 50
+		chose = 1
+		tvsprite = spr_tvhurt
+		once = 1		
 	}
     movespeed = 1
     vsp = -5
@@ -275,7 +285,7 @@ if (state == 23 || sprite_index == spr_knightpepstart || sprite_index == spr_kni
     cutscene = 1
 else
     cutscene = 0
-if ((place_meeting(x, y, obj_door) || place_meeting(x, y, obj_dresser) || place_meeting(x, y, obj_snick) || place_meeting(x,y,obj_geromedoor) || place_meeting(x, y, obj_keydoor) || (place_meeting(x, y, obj_exitgate) && global.panic == 1)) && (!instance_exists(obj_uparrow)) && scr_solid(x, (y + 1)) && state == 0 && obj_player1.spotlight == 0)
+if ((place_meeting(x, y, obj_door) || place_meeting(x, y, obj_dresser) || place_meeting(x, y, obj_snick) || place_meeting(x,y,obj_geromedoor) || place_meeting(x, y, obj_keydoor) || (place_meeting(x, y, obj_exitgate) && (global.panic == 1 || global.snickchallenge == true))) && (!instance_exists(obj_uparrow)) && scr_solid(x, (y + 1)) && state == 0 && obj_player1.spotlight == 0)
 {
     with (instance_create(x, y, obj_uparrow))
         playerid = other.object_index

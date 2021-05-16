@@ -1,4 +1,4 @@
-if instance_exists(baddieID)
+if instance_exists(baddieID) && global.freezeframe = false
 {
     if (baddieID.thrown == 0)
     {

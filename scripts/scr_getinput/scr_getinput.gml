@@ -1,4 +1,8 @@
 gamepad_set_axis_deadzone(0, 0.4)
+if instance_exists(obj_debugcontroller) && obj_debugcontroller.active = true
+	return;
+else
+{
 key_up = (keyboard_check(global.key_up) || gamepad_button_check(0, global.key_upC) || gamepad_axis_value(0, gp_axislv) < 0)
 key_up2 = (keyboard_check_pressed(global.key_up) || gamepad_button_check_pressed(0, global.key_upC) || (gamepad_axis_value(0, gp_axislv) < -0.5 && stickpressed == 0))
 key_right = (keyboard_check(global.key_right) || gamepad_button_check(0, global.key_rightC) || gamepad_axis_value(0, gp_axislh) > 0)
@@ -73,4 +77,5 @@ if keyboard_check_pressed(vk_f1)
         showtext = 1
         alarm[0] = 150
     }
+}
 }

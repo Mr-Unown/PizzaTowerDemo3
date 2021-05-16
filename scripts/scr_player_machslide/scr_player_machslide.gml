@@ -7,7 +7,7 @@ else if place_meeting(x, (y + 1), obj_railh2)
 move = (key_right + key_left)
 if (movespeed >= 0)
 {
-    if (character == "P")
+    if (character == "P" || character = "S" || character = "PZ" || character = "V")
         movespeed -= 0.4
     else
         movespeed -= 0.2

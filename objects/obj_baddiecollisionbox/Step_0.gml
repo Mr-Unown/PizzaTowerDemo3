@@ -8,9 +8,9 @@ if instance_exists(baddieID)
 }
 if (bulletbuffer > 0)
     bulletbuffer--
-if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1.cutscene == 0 && obj_player1.state != 7)
+if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1.cutscene == 0 && obj_player1.state != 7) && global.freezeframe = false
 {
-    if (baddieID.state != 109 && baddieID.state != 200)
+    if (baddieID.state != enemystates.enemygrabbed && baddieID.state != enemystates.enemyfrozen && baddieID.state != enemystates.enemyshake)
     {
         with (obj_player1) 
         {
@@ -214,7 +214,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                 }	
 				#endregion
 			}
-            if (instance_exists(other.baddieID) && other.baddieID.state != "punch" && other.baddieID.dying = false && y < other.baddieID.y && attacking == 0 && sprite_index != spr_player_mach2jump && (state == 58 || state == 69 || state == 46) && vsp > 0 && other.baddieID.vsp >= 0 && sprite_index != spr_stompprep)
+            if (instance_exists(other.baddieID) && instakillmove = 0 && other.baddieID.state != "punch" && other.baddieID.dying = false && y < other.baddieID.y && attacking == 0 && sprite_index != spr_player_mach2jump && (state == 58 || state == 69 || state == 46) && vsp > 0 && other.baddieID.vsp >= 0 && sprite_index != spr_stompprep)
             {
                 scr_soundeffect(12)
                 if (x != other.baddieID.x)
@@ -242,9 +242,9 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                         sprite_index = spr_stompprep
                 }
             }
-            if (instance_exists(other.baddieID) && other.baddieID.state != "punch"  && other.baddieID.state != 97 && other.baddieID.vsp > 0 && state != 57 && state != 43 && state != 71 && state != 74 && state != 70 && state != 22)
+            if (instance_exists(other.baddieID) && instakillmove = 0 && other.baddieID.state != "punch"  && other.baddieID.state != 97 && other.baddieID.vsp > 0 && state != 57 && state != 43 && state != 71 && state != 74 && state != 70 && state != 22)
             {
-                if (other.baddieID.state != 96 && other.baddieID != obj_shrimp) && other.baddieID.dying = false
+                if (other.baddieID.state != 96 && other.baddieID.object_index != obj_shrimp) && other.baddieID.dying = false
                 {
                     if (state != 73 && state != 12) 
                     {
@@ -264,6 +264,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                     }
                 }
             }
+			/*
             if (instance_exists(other.baddieID) && (state == 43 || state == 74))
             {
                 scr_soundeffect(30)
@@ -287,8 +288,8 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                 state = 0
                 other.baddieID.vsp = -4
                 other.baddieID.hsp = (xscale * 5)
-            }
-            if (instance_exists(other.baddieID) && state == 22 && character != "S")
+            }*/
+            if (instance_exists(other.baddieID) && instakillmove = 0 && state == 22 && character != "S")
             {
                 if ((key_shoot || sprite_index == spr_shotgunsuplexdash) && shotgunAnim == 1)
                 {
@@ -331,9 +332,9 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
         }
     }
 }
-if (instance_exists(baddieID) && place_meeting(x, y, obj_player2) && obj_player2.cutscene == 0 && obj_player2.state != 7)
+if (instance_exists(baddieID) && place_meeting(x, y, obj_player2) && obj_player2.cutscene == 0 && obj_player2.state != 7) && global.freezeframe = false
 {
-    if (baddieID.state != 109 && baddieID.state != 200)
+    if (baddieID.state != enemystates.enemygrabbed && baddieID.state != enemystates.enemyfrozen && baddieID.state != enemystates.enemyshake)
     {
         with (obj_player2)
         {
@@ -535,7 +536,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player2) && obj_player2
                 }	
 				#endregion
 			}
-            if (instance_exists(other.baddieID) && other.baddieID.state != "punch" && other.baddieID.dying = false && y < other.baddieID.y && attacking == 0 && sprite_index != spr_player_mach2jump && (state == 58 || state == 69 || state == 46) && vsp > 0 && other.baddieID.vsp >= 0 && sprite_index != spr_stompprep)
+            if (instance_exists(other.baddieID) && instakillmove = 0 && other.baddieID.state != "punch" && other.baddieID.dying = false && y < other.baddieID.y && attacking == 0 && sprite_index != spr_player_mach2jump && (state == 58 || state == 69 || state == 46) && vsp > 0 && other.baddieID.vsp >= 0 && sprite_index != spr_stompprep)
             {
                 scr_soundeffect(12)
                 if (x != other.baddieID.x)
@@ -563,9 +564,9 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player2) && obj_player2
                         sprite_index = spr_stompprep
                 }
             }
-            if (instance_exists(other.baddieID) && other.baddieID.state != "punch"  && other.baddieID.state != 97 && other.baddieID.vsp > 0 && state != 57 && state != 43 && state != 71 && state != 74 && state != 70 && state != 22)
+            if (instance_exists(other.baddieID) && instakillmove = 0 && other.baddieID.state != "punch"  && other.baddieID.state != 97 && other.baddieID.vsp > 0 && state != 57 && state != 43 && state != 71 && state != 74 && state != 70 && state != 22)
             {
-                if (other.baddieID.state != 96 && other.baddieID != obj_shrimp) && other.baddieID.dying = false
+                if (other.baddieID.state != 96 && other.baddieID.object_index != obj_shrimp) && other.baddieID.dying = false
                 {
                     if (state != 73 && state != 12)
                     {
@@ -585,6 +586,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player2) && obj_player2
                     }
                 }
             }
+			/*
             if (instance_exists(other.baddieID) && (state == 43 || state == 74))
             {
                 scr_soundeffect(30)
@@ -608,7 +610,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player2) && obj_player2
                 state = 0
                 other.baddieID.vsp = -4
                 other.baddieID.hsp = (xscale * 5)
-            }
+            }*/
             if (instance_exists(other.baddieID) && state == 22 && character != "S")
             {
                 if ((key_shoot || sprite_index == spr_shotgunsuplexdash) && shotgunAnim == 1)

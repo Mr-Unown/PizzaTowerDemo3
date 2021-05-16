@@ -1,5 +1,5 @@
 image_speed = 0.35
-targetRoom = 114
+targetRoom = medieval_10
 targetDoor = "A"
 ID = 3
 vertical = 0

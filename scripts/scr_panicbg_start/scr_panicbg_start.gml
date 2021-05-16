@@ -1,5 +1,5 @@
 if ((!variable_global_exists("panicbg_surface")) || (!surface_exists(global.panicbg_surface)))
-    global.panicbg_surface = surface_create(camera_get_view_width(view_camera[0]) + 128, 	camera_get_view_height(view_camera[0]) + 128)
+    global.panicbg_surface = surface_create(camera_get_view_width(view_camera[0]) + 128, camera_get_view_height(view_camera[0]) + 128)
 if event_type == ev_draw and event_number == 0
 {
     surface_set_target(global.panicbg_surface)
@@ -16,6 +16,7 @@ if event_type == ev_draw and event_number == 0
     var bg8 = layer_get_id("Backgrounds_far1")
     var bg9 = layer_get_id("Backgrounds_scroll")
 	var bg10 = layer_get_id("Backgrounds_far")
+	var bg11 = layer_get_id("Backgrounds_4")	
     layer_x(bg1, ((layer_get_x(bg1) - _cam_x) + 64))
     layer_y(bg1, ((layer_get_y(bg1) - _cam_y) + 64))
     layer_x(bg2, ((layer_get_x(bg2) - _cam_x) + 64))
@@ -34,5 +35,8 @@ if event_type == ev_draw and event_number == 0
     layer_y(bg8, ((layer_get_y(bg8) - _cam_y) + 64))
     layer_x(bg9, ((layer_get_x(bg9) - _cam_x) + 64))
     layer_y(bg9, ((layer_get_y(bg9) - _cam_y) + 64))
+	layer_x(bg10, ((layer_get_x(bg10) - _cam_x) + 64))	
 	layer_y(bg10, ((layer_get_y(bg10) - _cam_y) + 64))
+    layer_x(bg11, ((layer_get_x(bg11) - _cam_x) + 64))
+    layer_y(bg11, ((layer_get_y(bg11) - _cam_y) + 64))	
 }

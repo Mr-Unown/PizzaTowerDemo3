@@ -64,7 +64,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
         }
     }
 
-    if (string_letters(roomname) == "entrance" || string_letters(roomname) == "ancient") && global.coop == 0
+    if (string_letters(roomname) == "entrance" || string_letters(roomname) == "entrancesecret" || string_letters(roomname) == "ancient" || string_letters(roomname) == "ancientsecret") && global.coop == 0
     {
         if (obj_player1.character == "P")
         {
@@ -106,8 +106,18 @@ if (global.panic == 0 && global.snickchallenge == 0)
                 pausedmusic = mu_entranceV
             }
         }
+		else
+		{
+            if (!audio_is_playing(mu_entrancePZ)) //Technically it's Creampuff's theme lol
+            {
+                scr_soundstopall()
+                scr_sound(mu_entrancePZ)
+                audio_sound_set_track_position(global.music, fadeoff)
+                pausedmusic = mu_entrancePZ
+            }			
+		}
     }
-    if (string_letters(roomname) == "entrance" && global.coop == 1)
+    if (string_letters(roomname) == "entrance" || string_letters(roomname) == "entrancesecret" || string_letters(roomname) == "ancient" || string_letters(roomname) == "ancientsecret") && global.coop = 1
     {
         if (!audio_is_playing(mu_entrance2p))
         {
@@ -280,34 +290,33 @@ if (global.panic == 0 && global.snickchallenge == 0)
                 }
             }
         }
-    }
-    if (string_letters(roomname) == "strongcold")
+    }*/
+    if (string_letters(roomname) == "strongcold") || room = strongcold_miniboss
     {
         for (i = 0; i < 20; i++)
         {
-            if (roomname == ("strongcold_" + string(i)) && i > 1)
+            if (roomname == ("strongcold_" + string(i)) && i > 1) || room = strongcold_miniboss
             {
                 if (!audio_is_playing(mu_strongcold))
                 {
                     scr_soundstopall()
-                    scr_sound(99)
+                    scr_sound(mu_strongcold)
                     audio_sound_set_track_position(global.music, fadeoff)
-                    pausedmusic = 99
+                    pausedmusic = mu_strongcold
                 }
             }
-            else if (roomname == "strongcold_1")
+            else if (roomname == "strongcold_1") && room != strongcold_miniboss
             {
-                if (!audio_is_playing(mu_chateau))
+                if (!audio_is_playing(mu_scary))
                 {
                     scr_soundstopall()
-                    scr_sound(80)
+                    scr_sound(mu_scary)
                     audio_sound_set_track_position(global.music, fadeoff)
-                    pausedmusic = 80
+                    pausedmusic = mu_scary
                 }
             }
         }
     }
-	*/
     if (string_letters(roomname) == "medieval")
     {
         for (i = 0; i < 20; i++)

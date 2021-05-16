@@ -1,6 +1,5 @@
 if (room == PP_room1 && global.snickchallenge == 0)
 {
-    tvsprite = spr_tvdefault
     global.srank = 1005000
     global.arank = (global.srank - (global.srank / 4))
     global.brank = (global.srank - ((global.srank / 4) * 2))
@@ -49,7 +48,6 @@ if (room == ancient_1 && global.snickchallenge == 0)
     global.brank = (global.srank - ((global.srank / 4) * 2))
     global.crank = (global.srank - ((global.srank / 4) * 3))
 }
-/*
 if (room == chateau_1 && global.snickchallenge == 0)
 {
     global.srank = 10000
@@ -59,12 +57,13 @@ if (room == chateau_1 && global.snickchallenge == 0)
 }
 
 if (room == strongcold_10 && global.snickchallenge == 0)
-{
+{	
     global.srank = 9000
     global.arank = (global.srank - (global.srank / 4))
     global.brank = (global.srank - ((global.srank / 4) * 2))
     global.crank = (global.srank - ((global.srank / 4) * 3))
 }
+/*
 if (room == desert_1 && global.snickchallenge == 0)
 {
     global.srank = 13800
@@ -107,3 +106,14 @@ if (room == mansion_1 && global.snickchallenge == 0)
     global.brank = (global.srank - ((global.srank / 4) * 2))
     global.crank = (global.srank - ((global.srank / 4) * 3))
 }*/
+
+if bootingup = false
+{
+	alarm[0] = -1
+	imageindexstore = 0
+	_image_index = 0
+	image_speed = 0
+	tvsprite = spr_tvboot
+	sprite_index = spr_tvboot
+	bootingup = true
+}

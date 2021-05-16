@@ -1,4 +1,5 @@
-if (ID.sprite_index != spr_coolpinea_parry && ID.parry == 0)
+if instance_exists(ID)
+if (ID.sprite_index != spr_coolpinea_parry && ID.sprite_index = spr_coolpinea_taunt && ID.parry == 0)
 {
     with (other.id)
     {

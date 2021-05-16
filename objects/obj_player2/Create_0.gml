@@ -1,9 +1,12 @@
 scr_initinput2()
 scr_playercreate()
+selectedcharacter = 1;
 pogo = false
 pipedirection = "none"
 tauntcooleffect = noone
 parry_id = -4
+equippedhat = false;
+choosenhat = 0;
 parried_baddie = 0
 parry_max = 8
 superspringjump = 0
@@ -54,7 +57,7 @@ input_buffer_secondjump = 8
 input_buffer_highjump = 8
 player_x = x
 player_y = y
-targetRoom = 0
+targetRoom = Realtitlescreen
 targetDoor = "A"
 flash = 0
 global.key_inv = 0
@@ -125,7 +128,7 @@ taunttimer = 20
 global.golfhit = 0
 backtohubstartx = x
 backtohubstarty = y
-backtohubroom = 0
+backtohubroom = noone
 global.style = 0
 slapcharge = 0
 slaphand = 1
@@ -170,6 +173,6 @@ superjumpholdsnd = -1
 superjumpprepsnd = -1
 suplexdashsnd = -1
 obj_player2.hp = 5
-c = 0
+blackblend = 0
 
 

@@ -1,7 +1,7 @@
 alarm[5] = 2
 alarm[7] = 60
 global.SAGEknighttaken = 1
-if (sprite_index == spr_knightpepwalk || sprite_index == spr_knightpepjump || sprite_index == spr_knightpepfall || sprite_index == spr_knightpepidle)
+if (sprite_index == spr_knightpepwalk || sprite_index = spr_knightpepland || sprite_index == spr_knightpepjump || sprite_index == spr_knightpepfall || sprite_index == spr_knightpepidle)
 {
     move = (key_left + key_right)
     if ((!place_meeting(x, (y + 1), obj_railh)) && (!place_meeting(x, (y + 1), obj_railh2)))
@@ -11,16 +11,18 @@ if (sprite_index == spr_knightpepwalk || sprite_index == spr_knightpepjump || sp
     else if place_meeting(x, (y + 1), obj_railh2)
         hsp = ((move * movespeed) + 5)
 }
-else if grounded
+else
 {
+	   
     if ((!place_meeting(x, (y + 1), obj_railh)) && (!place_meeting(x, (y + 1), obj_railh2)))
         hsp = (move * movespeed)
     else if place_meeting(x, (y + 1), obj_railh)
         hsp = ((move * movespeed) - 5)
     else if place_meeting(x, (y + 1), obj_railh2)
         hsp = ((move * movespeed) + 5)
-    move = 0
+	move = 0		
 }
+
 if key_jump
     input_buffer_jump = 0
 if ((!key_jump2) && jumpstop == 0 && vsp < 0.5 && stompAnim == 0)
@@ -39,7 +41,7 @@ if (grounded && move != 0 && sprite_index == spr_knightpepidle)
     sprite_index = spr_knightpepwalk
 else if (grounded && move == 0 && sprite_index == spr_knightpepwalk)
     sprite_index = spr_knightpepidle
-if (input_buffer_jump < 8 && vsp > 0 && grounded && (sprite_index == spr_knightpepidle || sprite_index == spr_knightpepwalk))
+if (input_buffer_jump < 8 && vsp > 0 && grounded && (sprite_index == spr_knightpepidle || sprite_index = spr_knightpepland || sprite_index == spr_knightpepwalk))
 {
     image_index = 0
     sprite_index = spr_knightpepjumpstart
@@ -82,7 +84,7 @@ if (sprite_index == spr_knightpepfall && !place_meeting(x,y + 1,obj_destructible
 		playerid = other.id
 		image_xscale = other.xscale
 	}	
-
+	movespeed = clamp(movespeed,0,3)
     sprite_index = spr_knightpepland
 }
 if (floor(image_index) == (image_number - 1) && sprite_index == spr_knightpepland)

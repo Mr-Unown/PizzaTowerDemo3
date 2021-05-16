@@ -4,6 +4,7 @@ if (ds_list_find_index(global.saveroom, id) == -1 && global.snickchallenge == 0)
 	global.pausecombotime = true
     obj_tv.alarm[1] = 75
 	obj_camera.alarm[1] = 60
+
     var cx = (x + (sprite_width / 2))
     var cy = (y + (sprite_height / 2))
     instance_create(cx, cy, obj_bangeffect)
@@ -41,7 +42,7 @@ if (ds_list_find_index(global.saveroom, id) == -1 && global.snickchallenge == 0)
     global.wave = 0
     global.maxwave = (((global.minutes * 60) + global.seconds) * 60)
 
-	if global.panicbg
+	if global.panicbg = true
 		scr_panicbg_init()
 	
     ds_list_add(global.saveroom, id)

@@ -13,7 +13,13 @@ start_running = 1
 alarm[4] = 14
 vsp = 0
 hsp = 0
-if (floor(image_index) == 6)
+if (floor(image_index) == 6) && character != "PZ"
+{
+    sprite_index = spr_machfreefall
+    state = 58
+    jumpAnim = 0
+}
+else if (floor(image_index) == image_number - 1) && character = "PZ"
 {
     sprite_index = spr_machfreefall
     state = 58

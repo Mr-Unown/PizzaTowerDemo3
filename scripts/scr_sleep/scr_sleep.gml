@@ -1,7 +1,11 @@
 /// @description Freezes time for the given time. 
 with obj_camera {
-	event_user(0)
+	if !alarm[3] 
+		event_user(0)
 }
+
+
+//The removed
 /*
 
 if (t < 1) { 	

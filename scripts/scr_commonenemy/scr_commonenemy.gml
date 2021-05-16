@@ -1,62 +1,6 @@
-#region Enum
-enum enemystates
-{
-	enemyidle = 94,
-	enemycharge = 96,	
-	enemythrow = 97,
-	enemyturn = 98,
-	enemywalk = 102,
-	enemyland = 104,
-	enemyhit = 105,
-	enemystun = 106,
-	enemygrabbed = 109,
-	enemyshake = 200,
-	enemyfrozen = 201
-}
-//Also added baddiestates enum
-#endregion
-#region States
-switch state
-{
-    case 94:
-        scr_enemy_idle()
-        break
-    case 96:
-        scr_enemy_charge()
-        break
-    case 98:
-        scr_enemy_turn()
-        break
-    case 102:
-        scr_enemy_walk()
-        break
-    case 104:
-        scr_enemy_land()
-        break
-    case 105:
-        scr_enemy_hit()
-        break
-    case 106:
-        scr_enemy_stun()
-        break
-    case 97:
-        scr_pizzagoblin_throw()
-        break
-    case 109:
-        scr_enemy_grabbed()
-        break
-    case 200:
-        scr_enemy_shake()
-        break
-    case enemystates.enemyfrozen:
-        scr_enemy_frozen()
-        break		
-}
+//States
+scr_enemystates()
 
-
-
-
-#endregion
 //Drain Scare
 if scarebuffer > 0
 scarebuffer--
@@ -72,8 +16,8 @@ if scarebuffer > 0 && shake != 1 && state = 94 && state != states.frozen && stat
 	if (sprite_index != scaredspr)
     {
        sprite_index = scaredspr
-       if grav != 0
-		vsp = -5
+       if (grav != 0 && grounded) 
+		vsp = -3
     }
 }
 else if !(state = 94 && scarebuffer > 0)
@@ -90,7 +34,7 @@ if (markedfordeath == 1)
     markedfordeathbuffer--
 if (thrown == 1 && place_meeting((x + hsp), (y + vsp), obj_hallway))
     markedfordeath = 1
-	
+
 //Pitfall Eenemy
 if y > (room_height * 1.1)
 	markedfordeath = 1
@@ -128,3 +72,9 @@ if deathbuffer > 0 && dying = true {
 if dying = true && thrown != 1 && ((state != 105 && state != 109 && state != 106 && state != 200)) && deathbuffer <= 0 {
 	event_user(0)
 }
+//Force Death Two
+if dying = true && instance_exists(obj_fadeout) 
+{
+	event_user(0)
+}
+

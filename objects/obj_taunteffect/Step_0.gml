@@ -1,6 +1,6 @@
 if (baddie == 0)
 {
-    if (playerid.state != 51)
+    if (playerid.state != 51 && playerid.state != states.frozen)
         instance_destroy()
 }
 else if (baddie == 1) && instance_exists(baddieid)
@@ -10,3 +10,7 @@ else if (baddie == 1) && instance_exists(baddieid)
 }
 else
 	instance_destroy()
+if global.freezeframe = true
+	image_speed = 0
+else
+	image_speed = 0.5

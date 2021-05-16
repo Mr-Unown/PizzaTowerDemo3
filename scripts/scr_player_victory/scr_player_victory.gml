@@ -8,6 +8,13 @@ stopAnim = 1
 crouchslideAnim = 1
 crouchAnim = 1
 machhitAnim = 0
+if place_meeting(x,y,obj_door) || place_meeting(x,y,obj_keydoor) || place_meeting(x,y,obj_geromedoor) || place_meeting(x,y,obj_snickchallengedoor)
+{
+	with instance_place(x,y,group_door)
+	{
+		other.x = approach(other.x,x + sprite_width/2,2)
+	}
+}
 if place_meeting(x, y, obj_keydoor) || place_meeting(x, y, obj_geromedoor)
     sprite_index = spr_victory
 if (place_meeting(x, y, obj_startgate) || place_meeting(x, y, obj_levelcomputer))

@@ -1,5 +1,4 @@
-if (global.hudmode == 0)
-{
+
     alpha = obj_tv.alpha
     if (room == Realtitlescreen || room == Titlescreen || room == rank_room || room == cowboytask || room == hub_room2 || room == hub_room1)
         alpha = obj_tv.alpha
@@ -16,7 +15,6 @@ if (global.hudmode == 0)
         else if (!(room == rank_room || room == timesuproom || room == boss_room1 || room == Realtitlescreen || room == Scootertransition || room == Titlescreen || room == rank_room || room == cowboytask || room == hub_room2 || room == hub_room1))
             alpha = obj_tv.alpha
     }
-}
 
 //Gaming
 if global.stylethreshold <= 0 {
@@ -55,7 +53,7 @@ if (global.style < 0 && global.stylethreshold != 0)
     global.stylethreshold = (global.stylethreshold - 1)
     global.style += 25
 }
-if global.style >= 0 //&& global.combotime <= 40
+if global.style >= 0 && !instance_exists(obj_safespace) && !instance_exists(obj_treasure)
     global.style -= intensity
 if (global.style < 0 && global.stylethreshold == 0)
     global.style = 0

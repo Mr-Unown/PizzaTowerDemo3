@@ -1,6 +1,6 @@
 with (other.id)
 {
-    if (state != 114 && (!(state == 51 && instance_exists(parry_id))))
+    if (state != 114 && state != states.frozen && (!(state == 51 && instance_exists(parry_id))))
     {
         if (instance_exists(other.baddieID) && state != 2 && state != 24 && state != 86 && state != 7 && state != 18)
         {

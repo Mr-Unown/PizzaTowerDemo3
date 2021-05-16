@@ -15,15 +15,28 @@ else if (character == "S")
 }
 suplexmove = 0
 vsp = (-wallspeed)
-if (character != "S")
+if !place_meeting(x + xscale, y, obj_unclimbablewall) && character != "PZ"
 {
-    if (wallspeed < 24 && move == xscale)
-        wallspeed += 0.05
+	if (character != "S")
+	{
+		if (wallspeed < 24 && move == xscale)
+			wallspeed += 0.05
+	}
+	else if (wallspeed < 24)
+		wallspeed += 0.08
 }
-else if (wallspeed < 24)
-    wallspeed += 0.08
-	
-
+else if character = "PZ" && !place_meeting(x + xscale, y, obj_unclimbablewall) {
+	if wallspeed > 0
+		wallspeed -= 0.125
+	else
+		wallspeed = 0
+}
+else {
+	if wallspeed > 0
+		wallspeed -= 0.25
+	else
+		wallspeed = 0
+}
 crouchslideAnim = 1
 sprite_index = spr_machclimbwall
 if (character != "S")
@@ -51,24 +64,34 @@ if (!scr_solid((x + xscale), y))
 {
     instance_create(x, y, obj_jumpdust)
     vsp = 0
-	if (wallspeed >= 12 && global.coop == 0)
+	if (wallspeed >= 12)
     {
         state = 91
         sprite_index = spr_mach4
-		movespeed = wallspeed
+		movespeed = clamp(wallspeed,12,24)
     }
-    else {
+    else if wallspeed >= 4 {
         state = 70
-		movespeed = wallspeed
+		movespeed = clamp(wallspeed,8,12)
+	}
+	else {
+	    state = 58
+		sprite_index = spr_fall
 	}
 }
 if key_jump
 {
-    movespeed = 8
+	if character != "PZ"
+		movespeed = clamp(floor(wallspeed /1.5),8,11)
+	else
+		movespeed = clamp(round(wallspeed /1.25),8,15)
     state = 70
     image_index = 0
-    sprite_index = spr_walljumpstart
-    if (character == "P")
+	if character != "PZ"
+		sprite_index = spr_walljumpstart
+	else
+		sprite_index = spr_mach2jump
+    if (character == "P" || character = "PZ")
         vsp = -11
     else
         vsp = -13
@@ -83,5 +106,3 @@ if ((grounded && wallspeed <= 0) || wallspeed <= 0)
 image_speed = 0.6
 if (!instance_exists(obj_cloudeffect))
     instance_create(x, (y + 43), obj_cloudeffect)
-
-

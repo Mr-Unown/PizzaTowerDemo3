@@ -1,26 +1,54 @@
 with (other.id)
 {
-    if (grounded && (state == 69 || state == 70))
+    if (state == 69 || state == states.throwdynamite || state == states.shotgun || state == states.pistol || state == 70 || state == states.machslide || state == states.machroll || state == states.freefallland || state == states.freefall || state == states.freefallprep || state == states.Sjumpprep || state == states.jump || state == states.normal || state == states.handstandjump || state == states.kingknightroll || state == states.crouch || state == states.crouchjump || state == states.crouchslide || state == states.slipnslide)
     {
         xscale = other.image_xscale
         mach2 = 100
         machhitAnim = 0
         state = 91
-        flash = 1
-        sprite_index = spr_mach4
+		if mach3dash = false
+			flash = 1
+		image_index = 0
+        sprite_index = spr_mach3dashpad
+		mach3dash = true
+		mach3dashbuffer = 25
         instance_create(x, y, obj_jumpdust)
         movespeed = 14
     }
-    else if (grounded && state == 91)
+	else if state == states.Sjump && bbox_bottom < other.bbox_bottom
+	{
+        xscale = other.image_xscale
+        mach2 = 100
+        machhitAnim = 0
+        state = 91
+		if mach3dash = false
+			flash = 1
+		image_index = 0			
+        sprite_index = spr_mach3dashpad
+		mach3dash = true
+		mach3dashbuffer = 25
+        instance_create(x, y, obj_jumpdust)
+        movespeed = 14
+    }
+    else if state == 91 
     {
-        flash = 1
+		xscale = other.image_xscale
+		if mach3dash = false
+			flash = 1
         if (movespeed < 14)
             movespeed = 14
+		if sprite_index = spr_mach4 
+		{
+			image_index = 0
+			sprite_index = spr_mach3dashpad	
+		}
+		mach3dash = true
+		mach3dashbuffer = 25			
         instance_create(x, y, obj_jumpdust)
     }
-	else if (state == 24 || state == 18) && key_attack
-        {
-			#region Debris
+	else if (state == 24 || state == 18) 
+    {
+		#region Debris
             if (character == "P")
             {
                 with (instance_create(x, y, obj_knightdebris))
@@ -83,20 +111,22 @@ with (other.id)
                     instance_create(x, y, obj_metaldebris)
             }
 			#endregion
-            scr_soundeffect(16)
-            scr_soundeffect(17)
-            image_index = 0
-            image_index = 0
-			xscale = other.image_xscale
-			mach2 = 100
-			machhitAnim = 0
-			state = 91
+        scr_soundeffect(16)
+        scr_soundeffect(17)
+        image_index = 0
+		xscale = other.image_xscale
+		mach2 = 100
+		machhitAnim = 0
+		state = 91
+		if mach3dash = false
 			flash = 1
-			sprite_index = spr_mach4
-			instance_create(x, y, obj_jumpdust)
-			movespeed = 14
-        }
-	else if state = 86  && key_attack
+		sprite_index = spr_mach3dashpad
+		instance_create(x, y, obj_jumpdust)
+		mach3dash = true
+		mach3dashbuffer = 25			
+		movespeed = 14
+    }
+	else if state = 86 
 	{
 		repeat (4)
 			instance_create(x, y, obj_wooddebris)
@@ -107,20 +137,27 @@ with (other.id)
 		mach2 = 100
 		machhitAnim = 0
 		state = 91
-		flash = 1
-		sprite_index = spr_mach4
+		if mach3dash = false
+			flash = 1
+		sprite_index = spr_mach3dashpad
+		mach3dash = true
+		mach3dashbuffer = 25		
 		instance_create(x, y, obj_jumpdust)
 		movespeed = 14
 	}
-	else if (state = states.pogo) || (state = states.jetpack && key_attack && jetpacking = true) 
+	else if (state = states.pogo) || (state = states.jetpack && jetpacking = true) 
 	{
 		jetpacking = false
 	    xscale = other.image_xscale
         mach2 = 100
         machhitAnim = 0
         state = 91
-        flash = 1
-        sprite_index = spr_mach4
+		if mach3dash = false
+			flash = 1
+		image_index = 0			
+        sprite_index = spr_mach3dashpad
+		mach3dash = true
+		mach3dashbuffer = 25		
         instance_create(x, y, obj_jumpdust)
         movespeed = 14		
 	}

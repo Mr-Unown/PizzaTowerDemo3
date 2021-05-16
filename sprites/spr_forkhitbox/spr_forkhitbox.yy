@@ -9,7 +9,7 @@
     "bbox_bottom": 91,
     "bbox_left": 59,
     "bbox_right": 96,
-    "bbox_top": 65,
+    "bbox_top": 66,
     "bboxmode": 0,
     "colkind": 2,
     "coltolerance": 0,
@@ -54,7 +54,7 @@
             "visible": true
         }
     ],
-    "origin": 0,
+    "origin": 4,
     "originLocked": false,
     "playbackSpeed": 1,
     "playbackSpeedType": 1,

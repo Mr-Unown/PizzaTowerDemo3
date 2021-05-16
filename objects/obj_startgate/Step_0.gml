@@ -9,13 +9,14 @@ else
     player = obj_player2
     player2 = 3
 }
+/*
 if place_meeting(x, y, obj_player1)
     image_speed = 0.35
 else
 {
     image_speed = 0
     image_index = 0
-}
+}*/
 /*
 ini_open("playerData_"+global.savefile+".ini")
 global.SAGEshotgunsnick = ini_read_string("SAGE2019", "shotgunsnick", 0)

@@ -1,4 +1,13 @@
 depth = -11
+//Stinky Thing
+oldfacesprite = spr_null
+
+//Shaders
+greyscalefade = 0;
+
+//Number
+_image_index = 0;
+
 global.hitstunenabled = true;
 global.levelname = "none"
 global.tutorialtrap = 0
@@ -23,7 +32,7 @@ chargecamera = 0
 alpha = 1
 zoomh = 540
 zoomw = 960
-global.panicbg = 1
+global.panicbg = true;
 ini_open("saveData.ini")
 global.screenmelt = ini_read_real("Option", "panicbg", 1)
 global.mastervolume = ini_read_real("Option", "mastervolume", 1)

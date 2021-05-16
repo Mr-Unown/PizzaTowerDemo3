@@ -39,7 +39,7 @@ if (character == "S")
     if (move != 0)
         xscale = move
 }
-if (sprite_index != spr_superjumpprep && (character == "P" || character == "N" || character == "V"))
+if (sprite_index != spr_superjumpprep && character != "S")
 {
     if (sign(hsp) == 0)
         sprite_index = spr_superjumppreplight

@@ -36,7 +36,7 @@ if (obj_player1.collectscore > 0)
 
 if (obj_player2.collectscore > 0)
     obj_player2.collectscore = (obj_player2.collectscore - 5)
-
+/*
 if (global.snickchallenge == 1 && global.rank == 0)
 {
     with (obj_player)
@@ -51,7 +51,7 @@ if (global.snickchallenge == 1 && global.rank == 0)
         player2 = 4
     }
     alarm[2] = -1
-}
+}*/
 if (global.miniboss == 1)
 {
     with (obj_player)
@@ -63,6 +63,51 @@ if (global.miniboss == 1)
         vsp = -10
         scr_soundstopall()
         scr_soundeffect(87)
+		#region Hurtplayer
+        if (obj_player1.collectscore > 100)
+        {
+			obj_player1.collectscore = (obj_player1.collectscore - 100)
+			with (instance_create(x, y, obj_smallnumber))
+			{
+				color = 1
+				number = "-100"
+			}
+        }
+		else if (obj_player1.collectscore != 0)
+			{
+			with (instance_create(x, y, obj_smallnumber))
+			{
+				color = 1
+				number = ("-" + string(obj_player1.collectscore))
+				obj_player1.collectscore = 0
+			}
+        }
+		else
+			obj_player1.collectscore = 0
+		if instance_exists(obj_player2)
+		{
+			if (obj_player2.collectscore > 100)
+			{
+				obj_player2.collectscore = (obj_player2.collectscore - 100)
+				with (instance_create(x, y, obj_smallnumber))
+				{
+					color = 1
+					number = "-100"
+				}
+			}
+			else if (obj_player2.collectscore != 0)
+				{
+				with (instance_create(x, y, obj_smallnumber))
+				{
+					color = 1
+					number = ("-" + string(obj_player2.collectscore))
+					obj_player2.collectscore = 0
+				}
+			}	
+			else
+				obj_player2.collectscore = 0
+		}	
+		#endregion
     }
     alarm[2] = -1
     global.miniboss = 0
