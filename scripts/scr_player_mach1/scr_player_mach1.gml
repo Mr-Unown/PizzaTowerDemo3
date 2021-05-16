@@ -162,6 +162,7 @@ if key_taunt2
         playerid = other.id
         baddie = 0
     }
+	scr_baddietauntfakeout();	
 }
 if (key_slap2 && character == "V")
 {

@@ -537,6 +537,7 @@ if key_taunt2
         playerid = other.id
         baddie = 0
     }
+	scr_baddietauntfakeout();	
 }
 superspringjump = 0
 if (gamepad_button_value(0, gp_shoulderlb) != 0 || (key_taunt2 && key_down2))

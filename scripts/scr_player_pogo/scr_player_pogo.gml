@@ -139,6 +139,7 @@ if key_taunt2 && (sprite_index != spr_playerN_pogo && sprite_index != spr_player
         playerid = other.id
         baddie = 0
     }
+	scr_baddietauntfakeout();		
 }
 
 

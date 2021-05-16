@@ -78,9 +78,3 @@ if dying = true && instance_exists(obj_fadeout)
 	event_user(0)
 }
 
-//Taunt to Reactivate
-if obj_player.state == states.backbreaker && state != enemystates.enemythrow && dying = false && state != enemystates.enemyshake && state != enemystates.enemyfrozen
-{
-	stunned = 0
-	bombreset = 0
-}

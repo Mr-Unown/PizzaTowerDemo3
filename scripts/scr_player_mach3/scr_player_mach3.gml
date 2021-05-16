@@ -366,6 +366,7 @@ if (key_taunt2 && fightball == 0)
         playerid = other.id
         baddie = 0
     }
+	scr_baddietauntfakeout();
 }
 if (!instance_exists(chargeeffectid))
 {

@@ -426,6 +426,7 @@ if key_taunt2
         playerid = other.id
         baddie = 0
     }
+	scr_baddietauntfakeout();	
 }
 
 // dougies bolt and bomb

@@ -169,6 +169,7 @@ if key_taunt2
         playerid = other.id
         baddie = 0
     }
+	scr_baddietauntfakeout();	
 }
 if (((!key_attack) && move != xscale && grounded) || (character == "S" && move == 0 && grounded)) && !grinding
 {

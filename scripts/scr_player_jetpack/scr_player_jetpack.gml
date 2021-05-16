@@ -258,4 +258,5 @@ if key_taunt2 && jetpacking = true
         playerid = other.id
         baddie = 0
     }
+	scr_baddietauntfakeout();	
 }

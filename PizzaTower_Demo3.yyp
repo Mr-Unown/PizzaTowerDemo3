@@ -25117,6 +25117,14 @@
             }
         },
         {
+            "Key": "faaf8fff-90b2-4825-bdd2-1193a3d23b28",
+            "Value": {
+                "id": "3cb25f73-13e9-4184-b71b-005f4c40d346",
+                "resourcePath": "scripts\\scr_baddietauntfakeout\\scr_baddietauntfakeout.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "fab0526a-51b1-4a9b-9994-81962181c921",
             "Value": {
                 "id": "aa6dc525-3dbe-4de3-a05c-cbdd16087ea8",
@@ -25871,7 +25879,8 @@
         "dbf8829c-d327-4b1c-8688-4fd07d2c4abf",
         "dd225450-20d6-46c4-9cfb-d671edade35b",
         "f476ae04-b208-49d4-95a9-c6adbb1452d9",
-        "fe3e1f3a-d25f-4a78-87ae-6bb500d172e6"
+        "fe3e1f3a-d25f-4a78-87ae-6bb500d172e6",
+        "faaf8fff-90b2-4825-bdd2-1193a3d23b28"
     ],
     "tutorial": ""
 }
