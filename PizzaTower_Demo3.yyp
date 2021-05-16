@@ -2514,6 +2514,14 @@
             }
         },
         {
+            "Key": "1890f8d3-a02a-46aa-ac9a-1801d03c5ece",
+            "Value": {
+                "id": "8a8744ec-e7b1-4d5d-8d8e-7c1818d6e346",
+                "resourcePath": "sprites\\spr_playerN_dashpad\\spr_playerN_dashpad.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "18a83326-c883-4a45-80e9-3c7ec5be0066",
             "Value": {
                 "id": "c79003e8-1632-4fae-97c5-eae8c31dd279",
@@ -5294,6 +5302,14 @@
             "Value": {
                 "id": "41de417a-04a6-4ed5-8a2b-d3ea9a638e93",
                 "resourcePath": "sprites\\spr_geromedoor_opened\\spr_geromedoor_opened.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3653857b-8dd8-4ac1-851d-2b7560fba8eb",
+            "Value": {
+                "id": "a7b23020-5d79-49be-853a-0e6d04787860",
+                "resourcePath": "sprites\\spr_playerN_grinding\\spr_playerN_grinding.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -8746,6 +8762,14 @@
             }
         },
         {
+            "Key": "57361f6c-99d6-4dfe-ba8a-6701bf1b7724",
+            "Value": {
+                "id": "e4a28170-4372-4981-ab3d-45089d27dd6e",
+                "resourcePath": "sprites\\spr_playerPZ_dashpad\\spr_playerPZ_dashpad.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5766c18e-6988-4e50-a513-b2570b9768c8",
             "Value": {
                 "id": "28df8b86-49dc-4588-8b80-c0d015499a82",
@@ -11434,6 +11458,14 @@
             }
         },
         {
+            "Key": "7349a6d3-49d2-43bf-af1b-1a6cfb87bc4b",
+            "Value": {
+                "id": "b9ccf1bc-346b-4b29-a742-a167932c2a68",
+                "resourcePath": "sprites\\spr_player_dashpad\\spr_player_dashpad.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7381fdd4-31c3-470f-87e3-1c80798b5e6b",
             "Value": {
                 "id": "f788c51c-95ae-436a-b68b-e79166807b5a",
@@ -11703,6 +11735,14 @@
                 "id": "77eee0d4-e718-4018-8301-7620950dadbb",
                 "resourcePath": "sprites\\spr_foodtreasuregot\\spr_foodtreasuregot.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "75636027-0f9a-42fe-b083-e118f0e21b15",
+            "Value": {
+                "id": "125a1768-b037-4b16-b566-f2fa956f04fa",
+                "resourcePath": "objects\\obj_autoparryhitbox\\obj_autoparryhitbox.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -12999,6 +13039,14 @@
                 "id": "12427bf2-8502-40bc-b14e-9b9d4d797920",
                 "resourcePath": "objects\\obj_exitgame\\obj_exitgame.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "823cab5f-3a5a-4b54-957a-29b25ced4229",
+            "Value": {
+                "id": "2762048d-7218-4898-a75d-7a9ef711da35",
+                "resourcePath": "sprites\\spr_player_grinding\\spr_player_grinding.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

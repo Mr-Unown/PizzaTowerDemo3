@@ -471,3 +471,11 @@ if supertauntcharged = true  && room != rank_room
 			playerid = other.id
 		}
 }
+//Mach3DashBuffer
+if mach3dash = false
+	mach3dashbuffer = 25
+else if mach3dash = true && mach3dashbuffer > 0
+	mach3dashbuffer--
+
+if mach3dashbuffer <= 0
+	mach3dash = false

@@ -10,6 +10,9 @@ pizzashieldbackup = 0;
 pizzashieldframes = 0;
 //Vigi Health nerf
 vigitimer = 100
+//Mach3DashBuffer
+mach3dash = false;
+mach3dashbuffer = 0;
 
 global.freezeframe = false;
 global.freezeframetimer = 200;

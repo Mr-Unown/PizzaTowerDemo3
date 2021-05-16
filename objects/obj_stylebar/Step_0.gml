@@ -53,7 +53,7 @@ if (global.style < 0 && global.stylethreshold != 0)
     global.stylethreshold = (global.stylethreshold - 1)
     global.style += 25
 }
-if global.style >= 0 //&& global.combotime <= 40
+if global.style >= 0 && !instance_exists(obj_safespace) && !instance_exists(obj_treasure)
     global.style -= intensity
 if (global.style < 0 && global.stylethreshold == 0)
     global.style = 0

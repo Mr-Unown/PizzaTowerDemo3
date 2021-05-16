@@ -42,4 +42,5 @@ if (sprite_index != spr_present && collisionbuffer == 0)
     with (instance_create(x, y, obj_sausageman_dead))
         sprite_index = other.deadspr
 	collisionbuffer = 1		
+	instance_destroy(other.id)
 }

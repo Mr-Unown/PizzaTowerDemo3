@@ -4,7 +4,7 @@ vsp = 0
 grav = 0.5
 grounded = 1
 turned = 0
-can_turn = 1
+can_turn = false
 depth = 5
 
 

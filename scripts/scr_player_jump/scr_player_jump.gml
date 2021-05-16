@@ -146,7 +146,7 @@ if (key_down && sprite_index != spr_player_jugglebash)
         image_index = 0
         state = 92
         sprite_index = spr_bodyslamstart
-        if (character == "P")
+        if (character == "P" || character == "PZ" || character == "S")
             vsp = -5
         else
             vsp = -7

@@ -5,6 +5,8 @@ with (other)
         other.image_speed = 0.35
         if (xscale != other.image_xscale)
             xscale = other.image_xscale
+		mach3dash = true
+		mach3dashbuffer = 25			
     }
 }
 

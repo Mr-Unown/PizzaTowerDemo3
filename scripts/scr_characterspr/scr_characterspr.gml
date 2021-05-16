@@ -195,6 +195,10 @@ switch character {
 	spr_breakdanceattack2start = spr_player_breakdance_bumstart
 	spr_breakdanceattack2 = spr_player_breakdance_bum
 	spr_breakdanceattack2ground = spr_player_breakdance_bumground
+	//Dashpad
+	spr_mach3dashpad = spr_player_dashpad
+	//Grinding
+	spr_grinding = spr_player_grinding	
     paletteselect = 1
 	}
 	#endregion
@@ -399,6 +403,10 @@ switch character {
 	spr_breakdanceattack2start = spr_player_breakdance_bumstart
 	spr_breakdanceattack2 = spr_player_breakdance_bum
 	spr_breakdanceattack2ground = spr_player_breakdance_bumground
+	//Dashpad
+	spr_mach3dashpad = spr_playerN_dashpad
+	//Grinding
+	spr_grinding = spr_playerN_grinding	
     paletteselect = 0
 	}	
 	#endregion
@@ -569,6 +577,10 @@ switch character {
 	spr_breakdanceattack2start = spr_player_breakdance_bumstart
 	spr_breakdanceattack2 = spr_player_breakdance_bum
 	spr_breakdanceattack2ground = spr_player_breakdance_bumground
+	//Dashpad
+	spr_mach3dashpad = spr_snick_mach3
+	//Grinding
+	spr_grinding = spr_playerN_grinding	
 	paletteselect = 0
 	}	
 	#endregion
@@ -768,6 +780,10 @@ switch character {
 	spr_breakdanceattack2start = spr_player_breakdance_bumstart
 	spr_breakdanceattack2 = spr_player_breakdance_bum
 	spr_breakdanceattack2ground = spr_player_breakdance_bumground
+	//Dashpad
+	spr_mach3dashpad = spr_playerV_mach3
+	//Grinding
+	spr_grinding = spr_player_grinding	
     paletteselect = 0
 	}	
 	#endregion
@@ -968,6 +984,10 @@ switch character {
 	spr_breakdanceattack2start = spr_player_breakdance_bumstart
 	spr_breakdanceattack2 = spr_player_breakdance_bum
 	spr_breakdanceattack2ground = spr_player_breakdance_bumground
+	//Dashpad
+	spr_mach3dashpad = spr_playerP_dash
+	//Grinding
+	spr_grinding = spr_playerN_grinding	
     paletteselect = 0
 	}	
 	#endregion
@@ -1169,6 +1189,10 @@ switch character {
 	spr_breakdanceattack2start = spr_player_breakdance_bumstart
 	spr_breakdanceattack2 = spr_player_breakdance_bum
 	spr_breakdanceattack2ground = spr_player_breakdance_bumground
+	//Dashpad
+	spr_mach3dashpad = spr_playerP_dash	
+	//Grinding
+	spr_grinding = spr_player_grinding	
     paletteselect = 0
 	}	
 	#endregion
@@ -1368,6 +1392,10 @@ switch character {
 	spr_breakdanceattack2start = spr_player_breakdance_bumstart //Missing
 	spr_breakdanceattack2 = spr_player_breakdance_bum //Missing
 	spr_breakdanceattack2ground = spr_player_breakdance_bumground //Missing
+	//Dashpad
+	spr_mach3dashpad = spr_playerPZ_dashpad	
+	//Grinding
+	spr_grinding = spr_playerN_grinding //Missing
     paletteselect = 1
 	}
 	#endregion

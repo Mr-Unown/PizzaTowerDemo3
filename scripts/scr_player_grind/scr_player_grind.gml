@@ -9,7 +9,7 @@ if movespeed < 9
 else if (movespeed > 12) {
     movespeed -= 0.1
 }
-sprite_index = spr_player_grind	
+sprite_index = spr_grinding	
 if (!grinding) {
 	if movespeed < 11 {
 		state = 70		
@@ -42,7 +42,7 @@ if key_jump
     scr_soundeffect(0)
 }
 //Bump
-if place_meeting(x+xscale ,y, obj_solid)
+if place_meeting(x + xscale ,y, obj_solid)
 {
 	grinding = true
 	instance_create((x + (10 * sign(xscale))), (y + 10), obj_bumpeffect)
