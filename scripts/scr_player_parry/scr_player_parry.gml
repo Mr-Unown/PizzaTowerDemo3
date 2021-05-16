@@ -19,8 +19,7 @@ if grounded
     movespeed -= 0.5
 if (movespeed <= 0)
     movespeed = 0
-if (!audio_is_playing(sfx_parry))
-    scr_soundeffect(sfx_parry)
+
 if (parried_baddie > 0)
 {
     parried_baddie--
