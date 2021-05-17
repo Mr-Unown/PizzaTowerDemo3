@@ -40,3 +40,11 @@ with obj_baddie
 		}
 	}
 }
+with obj_invtrash
+{
+	bombreset = 0
+}
+with obj_cannongoblinbot
+{
+	bombreset = 0
+}

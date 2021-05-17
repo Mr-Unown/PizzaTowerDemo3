@@ -20,5 +20,5 @@ if (floor(image_index) == 2 && sprite_index == spr_invtrash_throw && bombreset <
 }
 if (sprite_index == spr_invtrash_throw && floor(image_index) == (image_number - 1))
     sprite_index = spr_invtrash_idle
-
+scr_collide();
 

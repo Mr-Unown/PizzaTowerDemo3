@@ -16,8 +16,8 @@ wallclingbuffer--
 else
 wallclingbuffer = 0
 //Jetpack Controls
-if jetpacking = true && state != states.frozen && !(state = 51 || sprite_index = spr_playerN_jetpackstart || sprite_index = spr_superjumpprep || sprite_index = spr_jetpack || sprite_index = spr_jetpackcrazy || sprite_index = spr_playerN_jetpackslide || sprite_index = spr_playerN_Sjump)	
-jetpacking = false
+if jetpacking = true && state != states.frozen && !(state = states.pipe ||state = states.Sjump || sprite_index = spr_playerN_jetpackstart || sprite_index = spr_superjumpprep || sprite_index = spr_jetpack || sprite_index = spr_jetpackcrazy || sprite_index = spr_playerN_jetpackslide || sprite_index = spr_playerN_Sjump)	
+	jetpacking = false
 
 //Pogo
 if pogojetchargebuffer > 0
