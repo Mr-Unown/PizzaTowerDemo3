@@ -30,7 +30,7 @@ if ((player.instakillmove = true  || player.state = 22 || player.state = states.
             vsp = -3
         }		
     }
-	if can_switch = true
+	if can_switch = true || can_switch = false
 	{
 		global.switchblock = !global.switchblock
 		with obj_onoffswitch
