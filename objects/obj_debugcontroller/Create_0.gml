@@ -1,3 +1,5 @@
+#macro DEBUG true // DISABLE THIS FOR RELEASE BUILDS!!!
+
 active = false
 input = ""
 keyboard_string = ""
@@ -9,8 +11,12 @@ deletemax = 6
 // this is for listing commands and functions, all the adding is done with end step
 //Items in brackets are required
 //Items in parentheses are optional
+if DEBUG {
 commands[0] = "changecharacter [player] [character] (true/false)"
 commands[1] = "room_goto [roomname] [targetdoor]"
+}
+// its going to obviously look like something was omitted here
+//but oh well!
 commands[2] = "escape [minutes] [seconds]"
 commands[3] = "togglecollision (true/false)"
 commands[4] = "debugmode (true/false)"

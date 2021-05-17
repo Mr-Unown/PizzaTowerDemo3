@@ -181,7 +181,11 @@ if (sprite_index == spr_taunt)
             }
 			else if (character == "PZ")
             {
-                character = "D"
+				//dougie probably wont be done by then, so do this
+				if DEBUG
+					character =  "D"
+				else
+					character = "P"
                 paletteselect = 1
                 tauntstoredsprite = spr_idle
             }			

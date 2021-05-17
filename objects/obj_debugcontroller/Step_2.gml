@@ -11,6 +11,7 @@ if (keyboard_check_pressed(vk_return) && input != "")
 		switch _cmd
 		{
 			case "room_goto":
+				if DEBUG {
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = 0 else arg1 = ds_list_find_value(_commands, 1)
 				var arg2 if ds_list_find_value(_commands, 2) == undefined arg2 = 0 else arg2 = ds_list_find_value(_commands, 2)
 				if asset_get_type(arg1) = asset_room
@@ -20,7 +21,7 @@ if (keyboard_check_pressed(vk_return) && input != "")
 				}
 				obj_player1.targetDoor = arg2
 				obj_player2.targetDoor = arg2
-				instance_create(0, 0, obj_fadeout) break
+				instance_create(0, 0, obj_fadeout) } break
 			case "escape":
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = 0 else arg1 = ds_list_find_value(_commands, 1)
 				var arg2 if ds_list_find_value(_commands, 2) == undefined arg2 = 10 else arg2 = ds_list_find_value(_commands, 2)
@@ -30,23 +31,36 @@ if (keyboard_check_pressed(vk_return) && input != "")
 				obj_camera.alarm[1] = 60 break
 			case "togglecollision": //Could probably use simplification
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !showcollisions else arg1 = ds_list_find_value(_commands, 1)
-				if arg1 = "true"
-					arg1 = 1
-				else if arg1 = "false"
-					arg1 = 0
-				else if real(arg1) != 1 && real(arg1) != 0
-					arg1 = !showcollisions				
+				//if arg1 = "true"
+				//	arg1 = 1
+				//else if arg1 = "false"
+				//	arg1 = 0
+				//else if real(arg1) != 1 && real(arg1) != 0
+				//	arg1 = !showcollisions			
+				switch arg1
+				{
+					case "true": arg1 = true
+					case "false": arg1 = false
+					default: arg1 = !showcollisions
+				}
 				showcollisions = arg1 break
 			case "debugmode": //Could probably use optimization
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.debugmode else arg1 = ds_list_find_value(_commands, 1)
-				if arg1 = "true"
-					arg1 = 1
-				else if arg1 = "false"
-					arg1 = 0
-				else if real(arg1) != 1 && real(arg1) != 0
-					arg1 = !global.debugmode				
-				global.debugmode = !global.debugmode break		
+				//if arg1 = "true"
+				//	arg1 = 1
+				//else if arg1 = "false"
+				//	arg1 = 0
+				//else if real(arg1) != 1 && real(arg1) != 0
+				//	arg1 = !global.debugmode	
+				switch arg1
+				{
+					case "true": arg1 = true
+					case "false": arg1 = false
+					default: arg1 = !global.debugmode
+				}
+				global.debugmode = arg1 break		
 			case "changecharacter":
+				if DEBUG {
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = 1 else arg1 = ds_list_find_value(_commands, 1)
 				var arg2 if ds_list_find_value(_commands, 2) == undefined arg2 = "P" else arg2 = ds_list_find_value(_commands, 2)
 				var arg3 if ds_list_find_value(_commands, 3) == undefined arg3 = undefined else arg3 = ds_list_find_value(_commands, 3)				
@@ -70,7 +84,9 @@ if (keyboard_check_pressed(vk_return) && input != "")
 				paletteselect = 0
 				scr_characterspr()
 				}
+				}
 				break
+				
 			default:
 				show_debug_message("FAIL TBH!")
 		}
