@@ -1858,6 +1858,14 @@
             }
         },
         {
+            "Key": "11306758-8ca1-4b3e-a2ba-8e8440d64da2",
+            "Value": {
+                "id": "b3f71972-663d-4a9e-bcb0-96d0181843e8",
+                "resourcePath": "sprites\\bg_purplesewer\\bg_purplesewer.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "11478781-5f04-4433-8131-de93887eae47",
             "Value": {
                 "id": "cb2f8021-01dd-43b2-b47c-c99bbf0008d0",

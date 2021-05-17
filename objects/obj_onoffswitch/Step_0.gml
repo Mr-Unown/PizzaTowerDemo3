@@ -28,9 +28,19 @@ if ((player.instakillmove = true  || player.state = 22 || player.state = states.
             state = 57
             movespeed = 3
             vsp = -3
+			global.switchblock = !global.switchblock
+			with obj_onoffswitch
+			{
+				if global.switchblock == 0
+					sprite_index = spr_onoffswitch_bluetored
+				else
+					sprite_index = spr_onoffswitch_redtoblue
+				can_switch = false
+				alarm[0] = 90
+			}
         }		
     }
-	if can_switch = true || can_switch = false
+	if can_switch = true
 	{
 		global.switchblock = !global.switchblock
 		with obj_onoffswitch

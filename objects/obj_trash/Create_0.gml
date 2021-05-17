@@ -21,6 +21,7 @@ grounded = 1
 bombreset = 0
 idlespr = spr_trash
 stunfallspr = spr_trash_bump
+scaredspr = spr_trash_bump
 walkspr = spr_trash
 grabbedspr = spr_trash_bump
 flash = 0
