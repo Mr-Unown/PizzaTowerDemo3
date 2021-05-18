@@ -104,7 +104,8 @@ enum states
 	pogo = 119,
 	wallcling = 120,
 	breakdance = 121,
-	frozen = 122
+	frozen = 122,
+	changing = 123
 
 } 
 //I made some changes to it so that we can know at a glance what number it gets converted to.
@@ -121,8 +122,8 @@ switch state
     case 109:
         scr_player_grabbed()
         break
-	case states.uppercut:
-		scr_player_uppunch() //Unused
+	case states.changing:
+		scr_player_changing()
 		break;
 	case states.pipe:
         scr_player_pipe()

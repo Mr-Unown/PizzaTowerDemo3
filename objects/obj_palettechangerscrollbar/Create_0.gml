@@ -1,3 +1,4 @@
+depth = -1000
 _sprite_width = sprite_get_width(spr_scrollbar)
 _sprite_height = sprite_get_height(spr_scrollbar)
 button_sprite_width = sprite_get_width(spr_scrollbarbutton)

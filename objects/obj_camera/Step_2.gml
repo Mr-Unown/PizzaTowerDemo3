@@ -5,7 +5,8 @@ else
 	global.freezeframetimer = 185
 if global.freezeframetimer >= 5
 	global.can_freeze = true;
-else {
+else 
+{
 	global.can_freeze = false;
 	global.freezeframe = false;	
 }

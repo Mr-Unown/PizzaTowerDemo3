@@ -7,14 +7,8 @@ var _drawy = 100 + _cam_y
 //Maxangle
 
 maxangle = clamp(floor(arctan((room_height/room_width)/_cam_y)), 0, 3)
-/*
-//Panic Bg Update
-if global.panicbg = true && global.panic = true {
-	var panic = (global.wave/global.maxwave)
-	var time = (current_time / 1000)
-	if (sin(time * panic) * panic) = 0
-		global.wave = (global.maxwave - (((global.minutes * 60) + global.seconds) * 60))
-}*/
+
+
 //Collided with Player
 if point_in_rectangle(obj_player.x,obj_player.y, _drawx - 80, _drawy - 85,_drawx + 80,_drawy + 85)
 collided = true
@@ -30,7 +24,11 @@ if (global.panic = 1 || global.snickchallenge = true) && global.seconds <= 0 && 
 greyscalefade = approach(greyscalefade,0.45,0.005)
 else
 greyscalefade = approach(greyscalefade,0,0.005)
-
+//Panic Bg Update
+if global.panicbg = true && (global.panic = 1 || global.snickchallenge = true)
+{
+	global.wave = clamp(clamp(global.wave + 1,0,(global.maxwave - (((global.minutes * 60) + global.seconds) * 60))),0,global.maxwave)
+}	
 
 if (room == strongcold_endscreen || room == rank_room || room == timesuproom || room == Realtitlescreen || room == Scootertransition || room == characterselect)
     visible = false
@@ -165,7 +163,8 @@ if (shake_mag > 0)
 }
 if (instance_exists(player) && player.state != 36 && player.state != 55)
     target = player
-if (golf == 1 && instance_exists(obj_pizzaball)) {
+if (golf == 1 && instance_exists(obj_pizzaball)) 
+{
 	var factor = 1.5;
 	golfdistanced = point_distance(0, target.y, 0, obj_pizzaball.y)
     golfdistance = point_distance(target.x, 0, obj_pizzaball.x, 0)

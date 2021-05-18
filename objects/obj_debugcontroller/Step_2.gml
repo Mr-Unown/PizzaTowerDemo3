@@ -28,6 +28,16 @@ if (keyboard_check_pressed(vk_return) && input != "")
 				global.panic = !global.panic
 				global.minutes = real(arg1)
 				global.seconds = real(arg2)
+				if instance_exists(obj_minipillar)
+					with (obj_minipillar)
+						fadetopanic = 1
+				if instance_exists(obj_reverseminipillar)
+					with (obj_reverseminipillar)
+						fadetopanic = 1
+				global.wave = 0
+				global.maxwave = (((global.minutes * 60) + global.seconds) * 60)
+				if global.panicbg = true
+					scr_panicbg_init()			
 				obj_camera.alarm[1] = 60 break
 			case "togglecollision": //Could probably use simplification
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !showcollisions else arg1 = ds_list_find_value(_commands, 1)

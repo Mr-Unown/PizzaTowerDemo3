@@ -6,7 +6,6 @@ if active = true
 	draw_set_color(c_black)
 	draw_set_alpha(0.5)
 	draw_rectangle(view_get_xport(0), view_get_yport(0), view_get_wport(0), view_get_hport(0), 0)
-	
 	draw_set_alpha(1)
 	draw_set_color(c_white)
 	draw_set_halign(fa_center)

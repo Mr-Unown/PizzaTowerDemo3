@@ -22,11 +22,11 @@ if has_selectedoption = true
 	{
 		case paletteoption.palettes:
 		#region Palettes
-		if ((key_right2 || keyboard_check_pressed(vk_right)))
+		if (key_up2 || keyboard_check_pressed(vk_up))
 		{
 			player.paletteselect += 1
 		}
-		if (((-key_left2) || keyboard_check_pressed(vk_left)))
+		if (key_down2 || keyboard_check_pressed(vk_down))
 		{
 			player.paletteselect -= 1
 		}
@@ -50,6 +50,7 @@ if has_selectedoption = true
 			if scrollID[i] = noone
 				with instance_create(x,y,obj_palettechangerscrollbar)
 				{
+					depth = other.depth - 1
 					customcolor = i
 					other.scrollID[i] = id		
 					ini_open(string(other.characters)+"_palettes.ini")
@@ -65,7 +66,7 @@ if has_selectedoption = true
 				
 			}
 			#endregion
-		if ((key_right2 || keyboard_check_pressed(vk_right)))
+		if (key_up2 || keyboard_check_pressed(vk_up))
 		{
 			indexedcolor = clamp(indexedcolor + 1,0,sprite_get_height(player.spr_palette))
 			with obj_palettechangerscrollbar
@@ -76,7 +77,7 @@ if has_selectedoption = true
 			scrollID[2].value = (ini_read_real(string(characters)+"Colors"+string(indexedcolor), "Blue", 0) / 255);			
 			ini_close()
 		}
-		if (((-key_left2) || keyboard_check_pressed(vk_left)))
+		if (key_down2 || keyboard_check_pressed(vk_down))
 		{
 			indexedcolor = clamp(indexedcolor - 1,0,sprite_get_height(player.spr_palette))
 			with obj_palettechangerscrollbar
@@ -101,7 +102,7 @@ if has_selectedoption = true
 			break;
 		case paletteoption.characters:
 		#region Characters
-		if ((key_right2 || keyboard_check_pressed(vk_right)))
+		if (key_up2 || keyboard_check_pressed(vk_up))
 		{
 			selectedcharacter = clamp(selectedcharacter + 1,0,7)
 			with player
@@ -110,7 +111,7 @@ if has_selectedoption = true
 				scr_characterspr()
 			}			
 		}
-		if (((-key_left2) || keyboard_check_pressed(vk_left)))
+		if (key_down2 || keyboard_check_pressed(vk_down))
 		{
 			selectedcharacter = clamp(selectedcharacter - 1,0,7)
 			with player
@@ -128,11 +129,11 @@ if has_selectedoption = true
 			break;
 		case paletteoption.hats:
 	    #region Hats
-		if ((key_right2 || keyboard_check_pressed(vk_right)))
+		if (key_up2 || keyboard_check_pressed(vk_up))
 		{
 			player.choosenhat = clamp(player.choosenhat + 1,0,5)
 		}
-		if (((-key_left2) || keyboard_check_pressed(vk_left)))
+		if (key_down2 || keyboard_check_pressed(vk_down))
 		{
 			player.choosenhat = clamp(player.choosenhat - 1,0,5)
 		}		
@@ -159,23 +160,23 @@ if selectedoption != paletteoption.custom
 	}
 }
 //Change Options
-if ((key_up2 || keyboard_check_pressed(vk_up)) && optionselected > 0) && has_selectedoption = false
+if ((key_right2 || keyboard_check_pressed(vk_right))) && optionselected > 0 && has_selectedoption = false
 {
     optionselected -= 1
     scr_soundeffect(sfx_step)
 }
-else if (key_up2 || keyboard_check_pressed(vk_up)) && has_selectedoption = false
+else if ((key_right2 || keyboard_check_pressed(vk_right))) && has_selectedoption = false
 {
 	optionselected = 3
 	scr_soundeffect(sfx_step)
 }
 
-if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 3) && has_selectedoption = false
+if (((-key_left2) || keyboard_check_pressed(vk_left))) && optionselected < 3 && has_selectedoption = false
 {
     optionselected += 1
     scr_soundeffect(sfx_step)
 }
-else if ((key_down2 || keyboard_check_pressed(vk_down))) && has_selectedoption = false
+else if (((-key_left2) || keyboard_check_pressed(vk_left))) && has_selectedoption = false
 {
     optionselected = 0
     scr_soundeffect(sfx_step)
@@ -190,4 +191,16 @@ if ((key_jump || keyboard_check_pressed(vk_return)) && has_selectedoption = fals
 if (key_slap2 || keyboard_check_pressed(vk_return)) && has_selectedoption = true
 {
 	has_selectedoption = false
+}
+//Get Out
+if (key_slap2 || keyboard_check_pressed(vk_return)) && has_selectedoption = false
+{
+	instance_destroy()
+	with player
+	{
+		state = states.comingoutdoor
+        image_index = 0
+		blackblend = 0
+		visible = true
+	}
 }

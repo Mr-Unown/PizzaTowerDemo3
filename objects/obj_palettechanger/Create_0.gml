@@ -1,3 +1,4 @@
+depth = -999
 enum paletteoption
 {
 palettes = 0,

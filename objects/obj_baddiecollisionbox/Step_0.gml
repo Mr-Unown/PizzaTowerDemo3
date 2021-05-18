@@ -50,6 +50,11 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                 global.combotime = 60
 				global.pausecombotime = true
 				obj_tv.alarm[1] = 75
+				with (instance_create((other.x + random_range(-16, 16)), (other.y + random_range(-16, 16)), obj_balloonpop))
+				{
+					image_index = 0.35
+					sprite_index = spr_dust_effect
+				}				
                 if ((!grounded) && state != 74 && key_jump2) 
                 {
                     if (state == 70 || (state == 91 && fightball == 0))
@@ -370,7 +375,13 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player2) && obj_player2
                 global.hit = (global.hit + 1)
                 global.combotime = 60
 				global.pausecombotime = true
-				obj_tv.alarm[1] = 75				
+				obj_tv.alarm[1] = 75		
+				with (instance_create((other.x + random_range(-16, 16)), (other.y + random_range(-16, 16)), obj_balloonpop))
+				{
+					image_index = 0.35
+					sprite_index = spr_dust_effect
+				}
+								
                 if ((!grounded) && state != 74 && key_jump2)
                 {
                     if (state == 70 || (state == 91 && fightball == 0))

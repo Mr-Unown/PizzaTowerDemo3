@@ -2,21 +2,25 @@ targetDoor = "A"
 if (obj_player1.spotlight == 1)
 {
     player = obj_player1
-    player2 = 4
+    player2 = obj_player2
 }
 else
 {
     player = obj_player2
-    player2 = 3
+    player2 = obj_player1
 }
-/*
-if place_meeting(x, y, obj_player1)
-    image_speed = 0.35
+
+if place_meeting(x, y, obj_player) && level = "snickchallenge"
+    image_speed = 0.12
 else
 {
     image_speed = 0
     image_index = 0
-}*/
+}
+if level = "snickchallenge"
+{
+	sprite_index = spr_snickchallengecomputer
+}
 /*
 ini_open("playerData_"+global.savefile+".ini")
 global.SAGEshotgunsnick = ini_read_string("SAGE2019", "shotgunsnick", 0)
