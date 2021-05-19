@@ -145,11 +145,11 @@ if (global.panic == 1 && obj_pause.pause == 0)
         }
     }
 }
-else if (global.panic == 1 && obj_pause.pause == 0) && (ded = true)
+if (global.panic == 1 && obj_pause.pause == 0) && (ded = true)
 {
 	if (!audio_is_playing(mu_escaperumble))
     {
-		scr_soundeffect(sfx_pizzaface)
+		
 		global.escaperumblemusic = audio_play_sound(mu_escaperumble, 10, true)
 		audio_sound_gain(global.escaperumblemusic, (0.6 * global.musicvolume), 0)
     }	
