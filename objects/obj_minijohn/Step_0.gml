@@ -32,7 +32,7 @@ if (state == 94 || state == 102)
     image_xscale = (-sign(playerposition))
     slide = ((-image_xscale) * (movespeed + 4))
 }
-if (hitboxcreate == 0 && state == 96) && targetplayer.instakillmove = false && targetplayer.state != states.frozen && targetplayer.state != states.handstandjump && targetplayer.state != states.kingknightroll
+if (hitboxcreate == 0 && state == 96) && targetplayer.instakillmove = false && targetplayer.state != states.mach3  && targetplayer.state != states.frozen && targetplayer.state != states.handstandjump && targetplayer.state != states.kingknightroll
 {
     hitboxcreate = 1
     with (instance_create(x, y, obj_john_hitbox))

@@ -1,7 +1,4 @@
 
-
-
-		
 var player = obj_player1
 var player2 = obj_player2
 if (obj_player1.spotlight == 0)

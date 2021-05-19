@@ -11,11 +11,13 @@ if (global.panic == 1 || global.snickchallenge == 1 || global.miniboss == 1)
 				obj_player2.collectscore -= 5
 		}
 	}
-    if (global.seconds < 0)
+    if (global.seconds < 0) && global.minutes > 0
     {
         global.seconds = 59
         global.minutes -= 1
     }
+	else if global.seconds < 0 && global.minutes <= 0
+		global.seconds = 0
 
 	
 }

@@ -1,5 +1,9 @@
 if (global.seconds == 0 && global.minutes == 0)
+{
+	alarm[1] = -1
     alarm[2] = 3
+}
+
 if (obj_player1.collectscore > 0)
 {
     with (instance_create(obj_player1.x, obj_player1.y, obj_pizzaloss))

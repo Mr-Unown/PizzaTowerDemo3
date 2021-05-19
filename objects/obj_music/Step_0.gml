@@ -8,9 +8,12 @@ if (room != hub_room1)
     fadeoff = audio_sound_get_track_position(global.music)
 else
     fadeoff = 0
-if (global.panic == 1 && obj_pause.pause == 0)
+if global.timeattack = false
+	ded = obj_camera.ded
+else
+	ded = false
+if (global.panic == 1 && obj_pause.pause == 0) && (ded = false)
 {
-
     if (global.lapping == 0)
     {
         if ((!audio_is_playing(mu_pizzatime)) && (!audio_is_playing(mu_noiseescape)) && (!audio_is_playing(mu_snickescape)) && !audio_is_playing(mu_pizzelleescape) && (!audio_is_playing(mu_vigiescape)))
@@ -137,12 +140,20 @@ if (global.panic == 1 && obj_pause.pause == 0)
         if (!audio_is_playing(mu_pizzamayhem))
         {
             scr_soundstopall()
-            scr_sound(131)
-            pausedmusic = 131
+            scr_sound(mu_pizzamayhem)
+            pausedmusic = mu_pizzamayhem
         }
     }
 }
-	
+else if (global.panic == 1 && obj_pause.pause == 0) && (ded = true)
+{
+	if (!audio_is_playing(mu_escaperumble))
+    {
+		scr_soundeffect(sfx_pizzaface)
+		global.escaperumblemusic = audio_play_sound(mu_escaperumble, 10, true)
+		audio_sound_gain(global.escaperumblemusic, (0.6 * global.musicvolume), 0)
+    }	
+}
 
 if (global.miniboss == 0 && audio_is_playing(mu_miniboss))
     audio_stop_sound(mu_miniboss)

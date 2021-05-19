@@ -27,7 +27,7 @@ greyscalefade = approach(greyscalefade,0,0.005)
 //Panic Bg Update
 if global.panicbg = true && (global.panic = 1 || global.snickchallenge = true)
 {
-	global.wave = clamp(clamp(global.wave + 1,0,(global.maxwave - (((global.minutes * 60) + global.seconds) * 60))),0,global.maxwave)
+	global.wave = clamp(clamp(global.wave + 0.0625,0,(global.maxwave - (((global.minutes * 60) + global.seconds) * 60))),0,global.maxwave)
 }	
 
 if (room == strongcold_endscreen || room == rank_room || room == timesuproom || room == Realtitlescreen || room == Scootertransition || room == characterselect)
@@ -134,6 +134,10 @@ if (global.seconds <= 0 && global.minutes <= 0 && ded == 0)
     alarm[1] = -1
     alarm[2] = 3
     ded = 1
+	if global.panic = true && (global.timeattack = false ||global.lapping = false) && global.snickchallenge = false && global.miniboss = false && !instance_exists(obj_pizzaface)
+	{
+		instance_create(500,-500,obj_pizzaface)
+	}	
 }
 if (global.seconds < 0)
 {

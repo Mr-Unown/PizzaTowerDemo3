@@ -1,7 +1,7 @@
 if (room != rank_room)
 {
     x = (room_width / 2)
-    y = -128
+    y = -200
 }
 var oldmax = maxspeed
 if (relax == 1)

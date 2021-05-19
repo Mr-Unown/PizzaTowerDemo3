@@ -100,8 +100,7 @@ if (keyboard_check_pressed(vk_return) && input != "")
 			default:
 				show_debug_message("FAIL TBH!")
 		}
-		
-        active = false
+		active = false
     }
 }
 	
