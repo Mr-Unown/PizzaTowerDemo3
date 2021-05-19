@@ -480,3 +480,13 @@ else if mach3dash = true && mach3dashbuffer > 0
 
 if mach3dashbuffer <= 0
 	mach3dash = false
+//Timesup
+if (state == 55 && y > (room_height * 2))
+{
+	global.levelname = "none"
+    global.fakepeppino = 0
+    scr_playerreset()
+    obj_player1.targetDoor = "start"
+    obj_player2.targetDoor = "start"
+    room = obj_player.backtohubroom
+}

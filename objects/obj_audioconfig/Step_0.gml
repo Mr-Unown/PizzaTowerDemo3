@@ -81,7 +81,9 @@ if (optionselected == -1)
         audio_master_gain(global.mastervolume)
         audio_sound_gain(global.pausenicemusic, (0.6 * global.musicvolume), 0)
         audio_sound_gain(global.music, (0.6 * global.musicvolume), 0)
+		audio_sound_gain(global.music2, (0.6 * global.musicvolume), 0)
 		audio_sound_gain(global.scarysound, (0.6 * global.musicvolume), 0)
+		audio_sound_gain(global.escaperumblemusic, (0.6 * global.musicvolume), 0)
     }
 }
 if (optionselected == 0)

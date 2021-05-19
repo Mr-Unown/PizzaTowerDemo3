@@ -85,12 +85,7 @@ if (global.playerhealth <= 0 && state != 55)
     sprite_index = spr_deathstart
     state = 55
 }
-if (state == 55 && y > (room_height * 2))
-{
-    scr_playerreset()
-    targetDoor = "none"
-    room = hub_room1
-}
+
 //Autopitfall
 if state != 55 && !instance_exists(obj_fadeout) && !place_meeting(x,y,obj_hallway) && !place_meeting(x,y,obj_pitfall) && !place_meeting(x,y,obj_pitcollider) && y > (room_height * 1.3)
 {

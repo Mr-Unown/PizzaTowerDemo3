@@ -37,7 +37,7 @@ if relax = false && room != rank_room && !instance_exists(obj_safespace) && !ins
 if (relax == 1)
 {
     x = median((x - maxspeed), playerid.x, (x + maxspeed))
-    y = -128
+    y = -200
 }
 if ((global.panic == 0 || global.timeattack = true) && room != rank_room)
 {
