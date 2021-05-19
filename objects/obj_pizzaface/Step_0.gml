@@ -2,7 +2,7 @@ var playerid = obj_player1
 if (global.coop = true)
     playerid = instance_nearest(x,y,obj_player)
 
-if relax = false && room != rank_room && !instance_exists(obj_safespace) && !instance_exists(obj_treasureshadow)
+if relax = false && global.freezeframe = false && room != rank_room && !instance_exists(obj_safespace) && !instance_exists(obj_treasureshadow)
 {
     x = median((x - maxspeed), playerid.x, (x + maxspeed))
     y = median((y - maxspeed), playerid.y, (y + maxspeed))
@@ -18,7 +18,7 @@ if relax = false && room != rank_room && !instance_exists(obj_safespace) && !ins
 			if instance_exists(obj_shake)
             relax = 1
         }*/
-		if (playerid.state != 51 && playerid.state != 114) && relax = false
+		if (playerid.state != 51 && playerid.state != states.mach3 && playerid.state != states.jetpack && playerid.state != 114) && relax = false
 		{
 			with obj_player
 			{

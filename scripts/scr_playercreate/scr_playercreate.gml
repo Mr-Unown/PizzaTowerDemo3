@@ -1,5 +1,7 @@
 breakdancebuffer = 50
 collectscore = 0
+//Up arrow
+uparrowid = noone
 //Super Taunts
 supertauntbuffer = 0;
 supertauntcharged = false;

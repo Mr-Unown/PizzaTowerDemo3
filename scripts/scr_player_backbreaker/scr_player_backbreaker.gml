@@ -78,72 +78,24 @@ if (sprite_index == spr_taunt)
     }
     if (global.debugmode == 1)
     {
-        if (character == "P")
-        {
-            if key_down2
-            {
-                if (paletteselect < 12)
-                    paletteselect += 1
-                else
-                    paletteselect = 1
-                taunttimer = 20
-            }
-        }
-        if (character == "PZ")
-        {
-            if key_down2
-            {
-                if (paletteselect < 12)
-                    paletteselect += 1
-                else
-                    paletteselect = 1
-                taunttimer = 20
-            }
-        }		
-        if (character == "N")
-        {
-            if key_down2
-            {
-                if (paletteselect < 11)
-                    paletteselect += 1
-                else
-                    paletteselect = 0
-                taunttimer = 20
-            }
-        }
-        if (character == "S")
-        {
-            if key_down2
-            {
-                if (paletteselect < 11)
-                    paletteselect += 1
-                else
-                    paletteselect = 0
-                taunttimer = 20
-            }
-        }
-        if (character == "V")
-        {
-            if key_down2
-            {
-                if (paletteselect < 11)
-                    paletteselect += 1
-                else
-                    paletteselect = 0
-                taunttimer = 20
-            }
-        }
-		if (character == "PM")
-        {
-            if key_down2
-            {
-                if (paletteselect < 5)
-                    paletteselect += 1
-                else
-                    paletteselect = 0
-                taunttimer = 20
-            }
-        }
+		if key_down2
+		{
+			if character = "P" || character = "PZ"
+			{
+				if (paletteselect < sprite_get_width(spr_palette) - 1)
+					paletteselect += 1
+				else
+					paletteselect = 1
+			}
+			else
+			{
+				if (paletteselect < sprite_get_width(spr_palette) - 1)
+					paletteselect += 1
+				else
+					paletteselect = 0
+			}
+			taunttimer = 20
+		}
         if key_up2
         {
             if (character == "P")
@@ -151,6 +103,7 @@ if (sprite_index == spr_taunt)
                 character = "N"
 				pogo = false
                 paletteselect = 0
+				scr_characterspr()
                 tauntstoredsprite = spr_idle
             }
             else if (character == "N") && pogo = false
@@ -158,6 +111,7 @@ if (sprite_index == spr_taunt)
                 character = "N"
 				pogo = true
                 paletteselect = 0
+				scr_characterspr()
                 tauntstoredsprite = spr_idle
             }			
             else if (character == "N") && pogo = true
@@ -165,18 +119,21 @@ if (sprite_index == spr_taunt)
                 character = "S"
 				pogo = false
                 paletteselect = 0
+				scr_characterspr()
                 tauntstoredsprite = spr_idle
             }
             else if (character == "S")
             {
                 character = "V"
                 paletteselect = 0
+				scr_characterspr()
                 tauntstoredsprite = spr_idle
             }
 			else if (character == "V")
             {
                 character = "PZ"
                 paletteselect = 0
+				scr_characterspr()
                 tauntstoredsprite = spr_idle
             }
 			else if (character == "PZ")
@@ -187,26 +144,21 @@ if (sprite_index == spr_taunt)
 				else
 					character = "P"
                 paletteselect = 1
+				scr_characterspr()
                 tauntstoredsprite = spr_idle
             }			
             else if (character == "D")
             {
-                if (global.peppermode == 0)
-                {
-                    character = "P"
-                    paletteselect = 1
-                }
-                else
-                {
-                    character = "PM"
-                    paletteselect = 0
-                }
+                character = "PM"
+                paletteselect = 0
+				scr_characterspr()
                 tauntstoredsprite = spr_idle
             }
             else if (character == "PM")
             {
                 character = "P"
                 paletteselect = 1
+				scr_characterspr()
                 tauntstoredsprite = spr_idle
             }
             scr_characterspr()

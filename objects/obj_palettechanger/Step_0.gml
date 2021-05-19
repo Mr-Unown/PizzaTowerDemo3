@@ -160,25 +160,25 @@ if selectedoption != paletteoption.custom
 	}
 }
 //Change Options
-if ((key_right2 || keyboard_check_pressed(vk_right))) && optionselected > 0 && has_selectedoption = false
-{
-    optionselected -= 1
-    scr_soundeffect(sfx_step)
-}
-else if ((key_right2 || keyboard_check_pressed(vk_right))) && has_selectedoption = false
-{
-	optionselected = 3
-	scr_soundeffect(sfx_step)
-}
-
-if (((-key_left2) || keyboard_check_pressed(vk_left))) && optionselected < 3 && has_selectedoption = false
+if ((key_right2 || keyboard_check_pressed(vk_right))) && optionselected < 3 && has_selectedoption = false
 {
     optionselected += 1
     scr_soundeffect(sfx_step)
 }
+else if ((key_right2 || keyboard_check_pressed(vk_right))) && has_selectedoption = false
+{
+	optionselected = 0
+	scr_soundeffect(sfx_step)
+}
+
+if (((-key_left2) || keyboard_check_pressed(vk_left))) && optionselected > 0 && has_selectedoption = false
+{
+    optionselected -= 1
+    scr_soundeffect(sfx_step)
+}
 else if (((-key_left2) || keyboard_check_pressed(vk_left))) && has_selectedoption = false
 {
-    optionselected = 0
+    optionselected = 3
     scr_soundeffect(sfx_step)
 }
 //Select Option
