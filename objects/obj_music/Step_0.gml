@@ -8,10 +8,7 @@ if (room != hub_room1)
     fadeoff = audio_sound_get_track_position(global.music)
 else
     fadeoff = 0
-if global.timeattack = false
-	ded = obj_camera.ded
-else
-	ded = false
+
 if (global.panic == 1 && obj_pause.pause == 0)
 {
     if (global.lapping == 0)
@@ -145,11 +142,10 @@ if (global.panic == 1 && obj_pause.pause == 0)
         }
     }
 }
-if (global.panic == 1 && obj_pause.pause == 0) && (ded = true)
+if (global.panic == 1 && obj_pause.pause == 0) && (global.minutes <= 0 && global.seconds <= 0 && global.timeattack = false)
 {
 	if (!audio_is_playing(mu_escaperumble))
     {
-		
 		global.escaperumblemusic = audio_play_sound(mu_escaperumble, 10, true)
 		audio_sound_gain(global.escaperumblemusic, (0.6 * global.musicvolume), 0)
     }	
