@@ -30,7 +30,7 @@ if (ds_list_find_index(global.saveroom, id) == -1 && global.snickchallenge == 0)
         with (obj_reverseminipillar)
             fadetopanic = 1
     }
-    with (instance_create(x + 112, y + 64, obj_baddie_dead))
+    with (instance_create(x + 112 * sign(image_xscale), y + 64, obj_baddie_dead))
 	{
         sprite_index = spr_hungrypillar_dead
 		image_xscale = other.image_xscale

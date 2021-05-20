@@ -33,8 +33,8 @@ if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
         sprite_index = other.spr_dead
 		image_xscale = other.image_xscale
         sprite_index = other.spr_dead
-		initialhsp = other.initialhsp
-		initialvsp = other.initialvsp
+		hsp = other.initialhsp
+		vsp = other.initialvsp
 		if other.shrimptype = 0
 			paletteselect = 0 
 		else
@@ -137,8 +137,8 @@ else if (ds_list_find_index(global.baddieroom, id) == -1 && important == 1)
         sprite_index = other.spr_dead
 		image_xscale = other.image_xscale
         sprite_index = other.spr_dead
-		initialhsp = other.initialhsp
-		initialvsp = other.initialvsp
+		hsp = other.initialhsp
+		vsp = other.initialvsp
 		if other.shrimptype = 0
 			paletteselect = 0 
 		else

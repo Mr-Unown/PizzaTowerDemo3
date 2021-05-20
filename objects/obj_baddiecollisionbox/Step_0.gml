@@ -38,7 +38,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
 				angle = point_direction(other.baddieID.x, other.baddieID.y,x + hsp, y + vsp );		
 				ymovespeed = 2 + abs(vsp)
 				vdirection = sign(hsp)
-				other.baddieID.initialvsp = lengthdir_y(ymovespeed, angle) - 2;
+				other.baddieID.initialvsp = clamp(lengthdir_y(ymovespeed, angle) - 2,-16,-5)
 				other.baddieID.initialhsp = (vdirection * (5 + abs(floor(hsp))))				
                 scr_soundeffect(34)
 				//New Hitstun
@@ -374,7 +374,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player2) && obj_player2
 				angle = point_direction(other.baddieID.x, other.baddieID.y,x + hsp, y + vsp );		
 				ymovespeed = 2 + abs(vsp)
 				vdirection = sign(hsp)
-				other.baddieID.initialvsp = lengthdir_y(ymovespeed, angle) - 2;
+				other.baddieID.initialvsp = clamp(lengthdir_y(ymovespeed, angle) - 2,-16,-5)
 				other.baddieID.initialhsp = (vdirection * (5 + abs(floor(hsp))))				
 				//New Hitstun
 				if other.baddieID.hp <= 1

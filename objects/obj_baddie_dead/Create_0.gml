@@ -2,10 +2,12 @@ var player = obj_player1
 if global.coop = true
 player = instance_nearest(x,y,obj_player)
 
-initialvsp = 0;
-initialhsp = 0;
-vsp = random_range(0,-5) + initialvsp
-hsp = (player.image_xscale * random_range(1, 5)) + initialhsp
+initialvsp = random_range(-5, -10)
+initialhsp = (sign((x - player.x)) * random_range(5, 10))
+if (x != player.x)
+    image_xscale = (-sign((x - player.x)))
+vsp = initialvsp
+hsp = initialhsp
 grav = 0.4
 alarm[0] = 5
 cigar = 0

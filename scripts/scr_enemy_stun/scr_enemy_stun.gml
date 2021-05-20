@@ -11,7 +11,7 @@ if ((grounded || (grounded && (!place_meeting(x, y, obj_platform)))) && vsp > 0)
 {
     if (thrown == 1 && hp <= 0) || (dying = true)
 	{
-		initialvsp = lengthdir_y(ymovespeed, angle) - 2;
+		initialvsp = clamp(lengthdir_y(ymovespeed, angle) - 2,-16,-5)
 		initialhsp = (vdirection * (5 + abs(floor(hsp))))	
         instance_destroy()
 	}
@@ -31,7 +31,7 @@ if (place_meeting((x - image_xscale), y, obj_solid) && (!place_meeting((x - imag
         image_xscale = (-other.image_xscale)
     if (thrown == 1 && hp <= 0 || dying = true) 
 	{
-		initialvsp = lengthdir_y(ymovespeed, angle) - 2;
+		initialvsp = clamp(lengthdir_y(ymovespeed, angle) - 2,-16,-5)
 		initialhsp = (vdirection * (5 + abs(floor(hsp))))		
         instance_destroy()
 	}
