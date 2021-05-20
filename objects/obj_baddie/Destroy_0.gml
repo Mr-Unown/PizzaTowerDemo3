@@ -28,8 +28,13 @@ if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
         shake_mag = 3
         shake_mag_acc = (3 / room_speed)
     }
-    with (instance_create(x, y, obj_sausageman_dead))
+    with (instance_create(x, y, obj_baddie_dead))
+	{
+		image_xscale = other.image_xscale
         sprite_index = other.spr_dead
+		initialhsp = other.initialhsp
+		initialvsp = other.initialvsp
+	}
     ds_list_add(global.baddieroom, id)
     obj_tv.image_index = random_range(0, 4)
     global.combo = (global.combo + 1)
@@ -120,8 +125,13 @@ else if (ds_list_find_index(global.baddieroom, id) == -1 && important == 1)
         shake_mag = 3
         shake_mag_acc = (3 / room_speed)
     }
-    with (instance_create(x, y, obj_sausageman_dead))
+    with (instance_create(x, y, obj_baddie_dead))
+	{
+		image_xscale = other.image_xscale
         sprite_index = other.spr_dead
+		initialhsp = other.initialhsp
+		initialvsp = other.initialvsp
+	}
 }
 if (dropcoin == 1)
 {

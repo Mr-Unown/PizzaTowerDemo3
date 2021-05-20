@@ -28,7 +28,7 @@ if (ds_list_find_index(global.saveroom, id) == -1)
         shake_mag = 3
         shake_mag_acc = (3 / room_speed)
     }
-    with (instance_create(x, y, obj_sausageman_dead))
+    with (instance_create(x, y,  obj_baddie_dead))
         sprite_index = spr_grandpa_dead
     ds_list_add(global.saveroom, id)
     obj_tv.image_index = random_range(0, 4)

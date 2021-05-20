@@ -39,7 +39,7 @@ if (sprite_index != spr_present && collisionbuffer == 0)
         instance_create(x, y, obj_baddiegibs)
         sprite_index = spr_present
     }
-    with (instance_create(x, y, obj_sausageman_dead))
+    with (instance_create(x, y,  obj_baddie_dead))
         sprite_index = other.deadspr
 	collisionbuffer = 1		
 	instance_destroy(other.id)

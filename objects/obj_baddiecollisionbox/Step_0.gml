@@ -1,3 +1,4 @@
+var angle,xmovespeed,ymovespeed;
 if (!instance_exists(baddieID))
     instance_destroy()
 if instance_exists(baddieID)
@@ -22,6 +23,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                     if (fightball == 0)
                         sprite_index = spr_mach3hit
                     image_index = 0
+
                 }
                 if (state == 70 && grounded)
                 {
@@ -32,6 +34,12 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                     other.baddieID.grabbedby = 1
                 else
                     other.baddieID.grabbedby = 2
+				//Instakill Move Scaboom
+				angle = point_direction(x + hsp, y + vsp, other.x, other.y);
+				xmovespeed = (3 + abs(floor(x - xprevious)))		
+				ymovespeed = (2 + abs(floor(y - yprevious)))
+				other.baddieID.initialhsp = lengthdir_x(xmovespeed, angle);
+				other.baddieID.initialvsp = lengthdir_y(ymovespeed, angle) - 2;
                 scr_soundeffect(34)
 				//New Hitstun
 				if other.baddieID.hp <= 1
@@ -362,6 +370,12 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player2) && obj_player2
                 else
                     other.baddieID.grabbedby = 1
                 scr_soundeffect(34)
+				//Instakill Move Scaboom
+				angle = point_direction(x + hsp, y + vsp, other.x, other.y);
+				xmovespeed = (3 + abs(floor(x - xprevious)))		
+				ymovespeed = (2 + abs(floor(y - yprevious)))
+				other.baddieID.initialhsp = lengthdir_x(xmovespeed, angle);
+				other.baddieID.initialvsp = lengthdir_y(ymovespeed, angle) - 2;				
 				//New Hitstun
 				if other.baddieID.hp <= 1
 					other.baddieID.dying = true

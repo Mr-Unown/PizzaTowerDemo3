@@ -3773,7 +3773,7 @@
             "Key": "27033b59-0afb-4863-9c67-8c091ba948e2",
             "Value": {
                 "id": "2e204681-b366-46b5-98ec-1da0400f4235",
-                "resourcePath": "objects\\obj_sausageman_dead\\obj_sausageman_dead.yy",
+                "resourcePath": "objects\\obj_baddie_dead\\obj_baddie_dead.yy",
                 "resourceType": "GMObject"
             }
         },

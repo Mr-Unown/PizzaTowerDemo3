@@ -1,4 +1,4 @@
-if (obj_player.key_right2 && i < 13)
+if (obj_player.key_right2 && i < sprite_get_number(spr_manual) - 1)
 {
     i += 1
     scr_soundeffect(29)

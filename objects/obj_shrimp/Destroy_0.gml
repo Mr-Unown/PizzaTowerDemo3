@@ -27,8 +27,13 @@ if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
         shake_mag = 3
         shake_mag_acc = (3 / room_speed)
     }
-    with (instance_create(x, y, obj_shrimp_dead)) {
+    with (instance_create(x, y, obj_baddie_dead)) 
+	{
         sprite_index = other.spr_dead
+		image_xscale = other.image_xscale
+        sprite_index = other.spr_dead
+		initialhsp = other.initialhsp
+		initialvsp = other.initialvsp
 		if other.shrimptype = 0
 			paletteselect = 0 
 		else
@@ -125,8 +130,13 @@ else if (ds_list_find_index(global.baddieroom, id) == -1 && important == 1)
         shake_mag = 3
         shake_mag_acc = (3 / room_speed)
     }
-    with (instance_create(x, y, obj_shrimp_dead)) {
+    with (instance_create(x, y, obj_baddie_dead)) 
+	{
         sprite_index = other.spr_dead
+		image_xscale = other.image_xscale
+        sprite_index = other.spr_dead
+		initialhsp = other.initialhsp
+		initialvsp = other.initialvsp
 		if other.shrimptype = 0
 			paletteselect = 0 
 		else

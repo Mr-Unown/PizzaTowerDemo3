@@ -10,7 +10,8 @@ markedfordeathbuffer = 50
 deathbuffer = 100
 playerxscale = obj_player1.xscale
 dying = false
-
+initialhsp = 0
+initialvsp = 0
 //Stored Stuff
 frozenstate = 0;
 frozenspriteindex = spr_player_idle;

@@ -129,7 +129,7 @@ if ((player.instakillmove = true  || player.state = 22 || player.state = states.
         instance_create(x, y, obj_baddiegibs)
         sprite_index = spr_present
     }
-    with (instance_create(x, y, obj_sausageman_dead))
+    with (instance_create(x, y,  obj_baddie_dead))
         sprite_index = other.deadspr
 }
 if (place_meeting(x, y, obj_baddie) && obj_baddie.thrown == 1 && sprite_index != spr_present)
@@ -173,7 +173,7 @@ if (place_meeting(x, y, obj_baddie) && obj_baddie.thrown == 1 && sprite_index !=
         instance_create(x, y, obj_baddiegibs)
         sprite_index = spr_present
     }
-    with (instance_create(x, y, obj_sausageman_dead))
+    with (instance_create(x, y,  obj_baddie_dead))
         sprite_index = other.deadspr
 }
 switch character

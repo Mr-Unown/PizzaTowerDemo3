@@ -30,7 +30,7 @@ if (ds_list_find_index(global.saveroom, id) == -1 && global.snickchallenge == 0)
         with (obj_reverseminipillar)
             fadetopanic = 1
     }
-    with (instance_create(x, y, obj_sausageman_dead))
+    with (instance_create(x, y,  obj_baddie_dead))
         sprite_index = spr_hungrypillar_dead
     scr_soundeffect(11)
     instance_create(x, (y + 600), obj_itspizzatime)
