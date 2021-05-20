@@ -1,3 +1,4 @@
+event_inherited();
 depth = 1
 solidid = noone
 if (image_xscale == 1)
