@@ -20,9 +20,8 @@ y += floor(vsp)
 #endregion
 
 //Rotato
+if canrotate = true
 image_angle += rotatevalue * rotatedirection
-
 //Potato
-var sprite_diagonal = sqrt(sprite_height*sprite_height+sprite_width*sprite_width);
-drawx = x + lengthdir_x(sprite_diagonal/2, image_angle+135);
-drawy = y + lengthdir_y(sprite_diagonal/2, image_angle+135);
+drawx = x
+drawy = y

@@ -29,6 +29,7 @@ if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
     }
     with (instance_create(x, y, obj_baddie_dead)) 
 	{
+		canrotate = true
         sprite_index = other.spr_dead
 		image_xscale = other.image_xscale
         sprite_index = other.spr_dead
@@ -132,6 +133,7 @@ else if (ds_list_find_index(global.baddieroom, id) == -1 && important == 1)
     }
     with (instance_create(x, y, obj_baddie_dead)) 
 	{
+		canrotate = true
         sprite_index = other.spr_dead
 		image_xscale = other.image_xscale
         sprite_index = other.spr_dead

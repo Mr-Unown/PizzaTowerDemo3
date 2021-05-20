@@ -1,9 +1,6 @@
-var angle,xmovespeed,ymovespeed;
-//Spoon
-angle = point_direction(x, y, x + hsp, y + vsp);
-xmovespeed = (3 + abs(floor(x - xprevious)))		
-ymovespeed = (2 + abs(floor(y - yprevious)))
-
+var angle = point_direction(x,y,x + hsp, y + vsp );		
+var ymovespeed = 2 + abs(vsp)
+var vdirection = sign(hsp)
 if (object_index == obj_ninja)
     attack = 1
 stunned--
@@ -14,8 +11,8 @@ if ((grounded || (grounded && (!place_meeting(x, y, obj_platform)))) && vsp > 0)
 {
     if (thrown == 1 && hp <= 0) || (dying = true)
 	{
-		initialhsp = lengthdir_x(xmovespeed, angle);
 		initialvsp = lengthdir_y(ymovespeed, angle) - 2;
+		initialhsp = (vdirection * (5 + abs(floor(hsp))))	
         instance_destroy()
 	}
     if (hp > 0 && object_index == obj_bigcheese && sprite_index == spr_bigcheese_fall)
@@ -34,8 +31,8 @@ if (place_meeting((x - image_xscale), y, obj_solid) && (!place_meeting((x - imag
         image_xscale = (-other.image_xscale)
     if (thrown == 1 && hp <= 0 || dying = true) 
 	{
-		initialhsp = lengthdir_x(xmovespeed, angle);
-		initialvsp = lengthdir_y(ymovespeed, angle) - 2;		
+		initialvsp = lengthdir_y(ymovespeed, angle) - 2;
+		initialhsp = (vdirection * (5 + abs(floor(hsp))))		
         instance_destroy()
 	}
     if (thrown == 1 && hp > 0 && object_index == obj_bigcheese && sprite_index == stunfallspr)
