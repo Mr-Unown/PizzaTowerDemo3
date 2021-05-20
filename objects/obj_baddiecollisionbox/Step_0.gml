@@ -38,8 +38,8 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
 				angle = point_direction(other.baddieID.x, other.baddieID.y,x + hsp, y + vsp );		
 				ymovespeed = 2 + abs(vsp)
 				vdirection = sign(hsp)
-				other.baddieID.initialvsp = clamp(lengthdir_y(ymovespeed, angle) - 2,-16,-5)
-				other.baddieID.initialhsp = (vdirection * (5 + abs(floor(hsp))))				
+				other.baddieID.initialvsp = clamp(-lengthdir_y(ymovespeed, angle) - 2,-20,(random_range(0,-10)))
+				other.baddieID.initialhsp = (vdirection * ((random_range(1,7)) + abs(floor(hsp))))				
                 scr_soundeffect(34)
 				//New Hitstun
 				if other.baddieID.hp <= 1
@@ -374,8 +374,8 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player2) && obj_player2
 				angle = point_direction(other.baddieID.x, other.baddieID.y,x + hsp, y + vsp );		
 				ymovespeed = 2 + abs(vsp)
 				vdirection = sign(hsp)
-				other.baddieID.initialvsp = clamp(lengthdir_y(ymovespeed, angle) - 2,-16,-5)
-				other.baddieID.initialhsp = (vdirection * (5 + abs(floor(hsp))))				
+				other.baddieID.initialvsp = clamp(-lengthdir_y(ymovespeed, angle) - 2,-20,(random_range(0,-10)))
+				other.baddieID.initialhsp = (vdirection * ((random_range(1,7)) + abs(floor(hsp))))				
 				//New Hitstun
 				if other.baddieID.hp <= 1
 					other.baddieID.dying = true

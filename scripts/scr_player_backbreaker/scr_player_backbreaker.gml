@@ -63,6 +63,10 @@ if (sprite_index == spr_taunt)
 				blowintensity = 1;
 				playerxscale = choose(1,-1)
 				state = enemystates.enemyshake;	
+				var vec = point_direction(other.x,other.y,x,y)
+				var len = random_range(6,14)
+				initialvsp = lengthdir_y(len,vec)
+				initialhsp = lengthdir_x(len,vec)
 			}
         }
         with (obj_camera)

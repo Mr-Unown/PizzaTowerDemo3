@@ -5,10 +5,11 @@ if point_in_rectangle(x, y, camera_get_view_x(view_camera[0]), camera_get_view_y
         s = surface_create(sprite_width, sprite_height)
     surface_set_target(s)
     draw_set_blend_mode(0)
-    draw_sprite_ext(sprite_index, image_index, sprite_xoffset, sprite_yoffset, image_xscale, image_yscale, image_angle, image_blend, image_alpha)
+    draw_sprite_ext(sprite_index, image_index, sprite_xoffset, sprite_yoffset, image_xscale, image_yscale, 0, image_blend, image_alpha)
   	gpu_set_blendmode_ext(9,6)
     if (mode = 1)
     {
+		//Could probably be simplified with a for loop
         draw_tile(tile_dataset, tile_dataid, 0, 0, 0)
         draw_tile(tile_dataset, tile_dataid, 0, 32, 0)
         draw_tile(tile_dataset, tile_dataid, 0, 0, 32)
@@ -23,7 +24,7 @@ if point_in_rectangle(x, y, camera_get_view_x(view_camera[0]), camera_get_view_y
         draw_sprite_tiled(blendsprite, 0, 0, 0)
     draw_set_blend_mode(0)
     surface_reset_target()
-    draw_surface(s, (x - sprite_xoffset), (y - sprite_yoffset))
+	draw_surface_ext(s,x- sprite_xoffset,y - sprite_yoffset,image_xscale,image_yscale,image_angle,image_blend,image_alpha)
 }
 
 

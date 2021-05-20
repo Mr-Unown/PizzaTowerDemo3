@@ -11,11 +11,8 @@ deathbuffer = 100
 playerxscale = obj_player1.xscale
 dying = false
 //Death Sprite
-var player = obj_player1
-if global.coop = true
-player = instance_nearest(x,y,obj_player)
 initialvsp = random_range(-5, -10)
-initialhsp = (sign((x - player.x)) * random_range(5, 10))
+initialhsp = random_range(5, 10) * choose(1,-1)
 //Stored Stuff
 frozenstate = 0;
 frozenspriteindex = spr_player_idle;
