@@ -7,8 +7,10 @@ if other.key_up2 && !instance_exists(obj_palettechanger)
 	}	
 	other.state = states.changing
 	other.visible = false
-	with (instance_create((other.x + random_range(-16, 16)), (other.y + random_range(-16, 16)), obj_balloonpop))
+	var _depth = other.depth - 0.5
+	with (instance_create((other.x + random_range(-5, 5)), (other.y + random_range(-5, 5)), obj_balloonpop))
 	{
+		depth = _depth
 		image_index = 0.35
 		sprite_index = spr_dust_effect
 	}	

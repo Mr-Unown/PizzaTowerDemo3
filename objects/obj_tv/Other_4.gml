@@ -7,28 +7,28 @@ if (room == PP_room1 && global.snickchallenge == 0)
 }
 if (room == entrance_1 && global.snickchallenge == 0)
 {
-    global.srank = 10000
+    global.srank = 14750
     global.arank = (global.srank - (global.srank / 4))
     global.brank = (global.srank - ((global.srank / 4) * 2))
     global.crank = (global.srank - ((global.srank / 4) * 3))
 }
 if (room == medieval_1 && global.snickchallenge == 0)
 {
-    global.srank = 11000
+    global.srank = 13850
     global.arank = (global.srank - (global.srank / 4))
     global.brank = (global.srank - ((global.srank / 4) * 2))
     global.crank = (global.srank - ((global.srank / 4) * 3))
 }
 if (room == ruin_1 && global.snickchallenge == 0)
 {
-    global.srank = 11800
+    global.srank = 18500
     global.arank = (global.srank - (global.srank / 4))
     global.brank = (global.srank - ((global.srank / 4) * 2))
     global.crank = (global.srank - ((global.srank / 4) * 3))
 }
 if (room == dungeon_1 && global.snickchallenge == 0)
 {
-    global.srank = 10400
+    global.srank = 19550
     global.arank = (global.srank - (global.srank / 4))
     global.brank = (global.srank - ((global.srank / 4) * 2))
     global.crank = (global.srank - ((global.srank / 4) * 3))
@@ -43,14 +43,14 @@ if (room == medieval_1 && global.snickchallenge == 1) //Snick Challenge
 }
 if (room == ancient_1 && global.snickchallenge == 0)
 {
-    global.srank = 10000
+    global.srank = 22000
     global.arank = (global.srank - (global.srank / 4))
     global.brank = (global.srank - ((global.srank / 4) * 2))
     global.crank = (global.srank - ((global.srank / 4) * 3))
 }
 if (room == chateau_1 && global.snickchallenge == 0)
 {
-    global.srank = 10000
+    global.srank = 14700
     global.arank = (global.srank - (global.srank / 4))
     global.brank = (global.srank - ((global.srank / 4) * 2))
     global.crank = (global.srank - ((global.srank / 4) * 3))
@@ -58,7 +58,7 @@ if (room == chateau_1 && global.snickchallenge == 0)
 
 if (room == strongcold_10 && global.snickchallenge == 0)
 {	
-    global.srank = 9000
+    global.srank = 19700
     global.arank = (global.srank - (global.srank / 4))
     global.brank = (global.srank - ((global.srank / 4) * 2))
     global.crank = (global.srank - ((global.srank / 4) * 3))

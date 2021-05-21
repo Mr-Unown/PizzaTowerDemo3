@@ -9,24 +9,34 @@ if (ds_list_find_index(global.saveroom, id) == -1)
 	var data2 = tilemap_get_at_pixel(map_id, (x  + offset + (sign(image_xscale) * 32)), y)
 	var data3 = tilemap_get_at_pixel(map_id, x + offset , (y + 33))
 	var data4 = tilemap_get_at_pixel(map_id, (x   + offset + (sign(image_xscale) * 32)), (y + 33))
-
+	var player = obj_player1
+	if global.coop = true
+	player = instance_nearest(x,y,obj_player)
     with (instance_create((x + (image_xscale * 32)), (y + 32), obj_secretdebris))
     {
+		initialhsp = player.hsp / 2
+		initialvsp = clamp(player.vsp / 1.3,-12,random_range(0,-5))		
         tile_dataid = other.datas
         tile_dataset = other.set_ids
     }
     with (instance_create((x + (image_xscale * 32)), (y + 32), obj_secretdebris))
     {
+		initialhsp = player.hsp / 2
+		initialvsp = clamp(player.vsp / 1.3,-12,random_range(0,-5))		
         tile_dataid = other.data2s
         tile_dataset = other.set_ids
     }
     with (instance_create((x + (image_xscale * 32)), (y + 32), obj_secretdebris))
     {
+		initialhsp = player.hsp / 2
+		initialvsp = clamp(player.vsp / 1.3,-12,random_range(0,-5))		
         tile_dataid = other.data3s
         tile_dataset = other.set_ids
     }
     with (instance_create((x + (image_xscale * 32)), (y + 32), obj_secretdebris))
     {
+		initialhsp = player.hsp / 2
+		initialvsp = clamp(player.vsp / 1.3,-12,random_range(0,-5))		
         tile_dataid = other.data4s
         tile_dataset = other.set_ids
     }

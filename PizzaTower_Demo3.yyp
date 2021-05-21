@@ -5570,6 +5570,14 @@
             }
         },
         {
+            "Key": "389ffd94-f80c-48db-bcba-d2f242617b69",
+            "Value": {
+                "id": "a3e7f5b0-5633-45ff-b585-d007ccebb7ed",
+                "resourcePath": "objects\\group_pushables\\group_pushables.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "38a299f1-091f-4a02-8e02-55e19ec27ad7",
             "Value": {
                 "id": "ff7acd55-a2ee-4a1f-9cf9-dc99c089422a",
