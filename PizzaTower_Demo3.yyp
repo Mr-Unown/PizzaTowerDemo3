@@ -10346,6 +10346,14 @@
             }
         },
         {
+            "Key": "66f4252e-665c-4bf3-a9b7-a3d803457036",
+            "Value": {
+                "id": "9c84a5e3-c5d4-4cb2-9a43-258cbd501bab",
+                "resourcePath": "sprites\\spr_rankplus\\spr_rankplus.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "67003194-8258-4f32-81d0-469159494e7e",
             "Value": {
                 "id": "7ec531dc-154f-446e-83ae-fed9bb6f45c8",

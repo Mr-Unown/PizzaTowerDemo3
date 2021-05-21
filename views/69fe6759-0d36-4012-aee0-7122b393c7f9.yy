@@ -151,7 +151,7 @@
         "9d31b6f2-045c-4548-b034-576654ab62bd"
     ],
     "filterType": "GMSound",
-    "folderName": "sounds",
+    "folderName": "Sounds",
     "isDefaultView": false,
-    "localisedFolderName": "ResourceTree_Sounds"
+    "localisedFolderName": ""
 }

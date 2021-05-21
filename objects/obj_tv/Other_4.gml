@@ -7,14 +7,14 @@ if (room == PP_room1 && global.snickchallenge == 0)
 }
 if (room == entrance_1 && global.snickchallenge == 0)
 {
-    global.srank = 14750
+    global.srank = 14650
     global.arank = (global.srank - (global.srank / 4))
     global.brank = (global.srank - ((global.srank / 4) * 2))
     global.crank = (global.srank - ((global.srank / 4) * 3))
 }
 if (room == medieval_1 && global.snickchallenge == 0)
 {
-    global.srank = 13850
+    global.srank = 13700
     global.arank = (global.srank - (global.srank / 4))
     global.brank = (global.srank - ((global.srank / 4) * 2))
     global.crank = (global.srank - ((global.srank / 4) * 3))
@@ -28,7 +28,7 @@ if (room == ruin_1 && global.snickchallenge == 0)
 }
 if (room == dungeon_1 && global.snickchallenge == 0)
 {
-    global.srank = 19550
+    global.srank = 19450
     global.arank = (global.srank - (global.srank / 4))
     global.brank = (global.srank - ((global.srank / 4) * 2))
     global.crank = (global.srank - ((global.srank / 4) * 3))

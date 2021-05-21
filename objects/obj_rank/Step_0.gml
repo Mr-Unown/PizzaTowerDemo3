@@ -1,3 +1,12 @@
+if (showtext == 1)
+{
+    xi = (500 + random_range(1, -1))
+    if (yi > 500)
+        yi -= 5
+}
+if (showtext == 0)
+    xi = (500 + random_range(1, -1))
+	
 if (floor(image_index) == (image_number - 1))
 {
     image_speed = 0

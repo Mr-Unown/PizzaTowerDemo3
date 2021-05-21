@@ -111,7 +111,8 @@ if (superspringjump != 1)
         machhitAnim = 0
         state = 91
         flash = 1
-        sprite_index = spr_mach4
+        image_index = 0
+        sprite_index = spr_mach3dashpad
         with (instance_create(x, y, obj_jumpdust))
             image_xscale = other.xscale
     }	
