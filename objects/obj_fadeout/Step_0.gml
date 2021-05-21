@@ -33,7 +33,7 @@ if instance_exists(obj_player)
 {
     with (obj_player1)
     {
-        if (other.fadein == 1 && (obj_player1.state == 78 || obj_player1.state == 64) && (place_meeting(x, y, obj_door) || place_meeting(x, y, obj_geromedoor) || place_meeting(x, y, obj_keydoor) || place_meeting(x, y, obj_levelcomputer) || place_meeting(x, y, obj_startgate)))
+        if (other.fadein == 1 && (obj_player1.state == 78 || obj_player1.state == 64) && (place_meeting(x, y, obj_door) || place_meeting(x,y, obj_doorblocked) || place_meeting(x, y, obj_geromedoor) || place_meeting(x, y, obj_keydoor) || place_meeting(x, y, obj_levelcomputer) || place_meeting(x, y, obj_startgate)))
         {
             state = 61
             image_index = 0
@@ -64,7 +64,7 @@ if instance_exists(obj_player)
     {
         with (obj_player2)
         {
-            if (other.fadein == 1 && (obj_player2.state == 78 || obj_player2.state == 64) && (place_meeting(x, y, obj_door) || place_meeting(x, y, obj_geromedoor) || place_meeting(x, y, obj_keydoor) || place_meeting(x, y, obj_levelcomputer) || place_meeting(x, y, obj_startgate)))
+            if (other.fadein == 1 && (obj_player2.state == 78 || obj_player2.state == 64) && (place_meeting(x, y, obj_door) || place_meeting(x,y, obj_doorblocked) || place_meeting(x, y, obj_geromedoor) || place_meeting(x, y, obj_keydoor) || place_meeting(x, y, obj_levelcomputer) || place_meeting(x, y, obj_startgate)))
             {
                 state = 61
                 image_index = 0
