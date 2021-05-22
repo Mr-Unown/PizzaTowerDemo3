@@ -14,5 +14,5 @@ hurtpoints = 0
 timepoints = 0
 escapetimepoints = 0
 treasurepoints = 0
-alarm[1] = 20
+alarm[1] = 80
 

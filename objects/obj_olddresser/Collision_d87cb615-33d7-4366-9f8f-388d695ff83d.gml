@@ -16,7 +16,7 @@ with other.id
 			else
 				paletteselect = 0
 		}
-		var _depth = depth - 0.5
+		var _depth = depth - 5
 		with (instance_create((x + random_range(-5, 5)), (y + random_range(-5, 5)), obj_balloonpop))
 		{
 			depth = _depth
