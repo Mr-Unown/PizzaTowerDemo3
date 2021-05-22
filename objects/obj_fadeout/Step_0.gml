@@ -16,6 +16,7 @@ if (fadealpha > 1)
             with (obj_music)
                 fadeoff = 0
         }
+		
         if (room != obj_player1.targetRoom)
             room_goto(obj_player1.targetRoom)
         if (global.coop == 1)

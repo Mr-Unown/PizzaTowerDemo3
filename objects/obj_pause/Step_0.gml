@@ -61,18 +61,18 @@ if ((!pause) && (!instance_exists(obj_fadeout)))
 			global.pausecombotime = false
             global.peppermode = 1
 		}
-		/*For Development Purposes only
-        if keyboard_check_pressed(vk_f12)
+		if DEBUG
 		{
-			var rm_name = room_get_name(room);
-			var lay_id = layer_get_id("Tiles_1")
-			var map_id = layer_tilemap_get_id(lay_id)
-			screenshot_surface = surface_create(room_width,room_height)
-			surface_set_target(screenshot_surface)
-			draw_tilemap(map_id,0,0)
-			surface_reset_target()
-			surface_save(screenshot_surface, "screenshot_" + string(rm_name) +".png");	
-		}*/
+			if keyboard_check_pressed(vk_f12)
+			{
+				var roomname = string(room)
+				screenshot_surface = surface_create(960,540)
+				surface_set_target(screenshot_surface)
+				draw_surface(application_surface,0,0)
+				surface_reset_target()
+				surface_save(screenshot_surface, "screenshot_"+roomname+".png");	
+			}
+		}
     }
 }
 //if keyboard_check_pressed(vk_f6)

@@ -6,8 +6,6 @@ with (other.id)
         mach2 = 100
         machhitAnim = 0
         state = 91
-		if mach3dash = false
-			flash = 1
 		image_index = 0
         sprite_index = spr_mach3dashpad
 		mach3dash = true
@@ -21,8 +19,6 @@ with (other.id)
         mach2 = 100
         machhitAnim = 0
         state = 91
-		if mach3dash = false
-			flash = 1
 		image_index = 0
         sprite_index = spr_mach3dashpad
 		mach3dash = true
@@ -36,8 +32,6 @@ with (other.id)
         mach2 = 100
         machhitAnim = 0
         state = 91
-		if mach3dash = false
-			flash = 1
 		image_index = 0			
         sprite_index = spr_mach3dashpad
 		mach3dash = true
@@ -48,8 +42,6 @@ with (other.id)
     else if state == 91 
     {
 		xscale = other.image_xscale
-		if mach3dash = false
-			flash = 1
         if (movespeed < 14)
             movespeed = 14
 		if sprite_index = spr_mach4 

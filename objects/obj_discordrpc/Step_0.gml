@@ -82,7 +82,12 @@ if is_discord_ready = true
 			string_state  = ("Time: ")
 		string_points = string(global.collect)
 		if (global.collect) >= global.srank
-			string_rank = "S"
+		{
+			if global.treasure != 0
+				string_rank = "S+"
+			else
+				string_rank = "S"
+		}
 		else if (global.collect) > global.arank
 			string_rank = "A"
 		else if (global.collect) > global.brank
