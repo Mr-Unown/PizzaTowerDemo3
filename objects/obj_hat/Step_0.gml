@@ -1,3 +1,8 @@
+if player.choosenhat = 0
+	player.equippedhat = false;
+else
+	player.equippedhat = true;
+			
 sprite_index = choosenhat[player.choosenhat]
 x = player.x
 y = ((sprite_get_bbox_top(player.sprite_index) + player.y) - 45)
