@@ -10,6 +10,8 @@ markedfordeathbuffer = 50
 deathbuffer = 100
 playerxscale = obj_player1.xscale
 dying = false
+//Stupid anti Strongcold softlock
+stuntouch = 0
 //Death Sprite
 initialvsp = random_range(-5, -10)
 initialhsp = random_range(5, 10) * choose(1,-1)

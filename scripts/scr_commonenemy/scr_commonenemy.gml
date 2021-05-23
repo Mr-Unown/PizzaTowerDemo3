@@ -1,6 +1,11 @@
 //States
 scr_enemystates()
 
+//Stun
+if stuntouch > 0
+stuntouch--
+
+
 //Drain Scare
 if scarebuffer > 0
 scarebuffer--

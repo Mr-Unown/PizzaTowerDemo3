@@ -342,7 +342,7 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
     }
     if (key_jump2 && selected == 2)
     {
-        if (room == hub_room1 || room == Titlescreen || room == Scootertransition || room == characterselect)
+        if (room == hub_room1 || room == hub_room2 || room == hub_room3 || room == cowboytask || room == Titlescreen || room == Scootertransition || room == characterselect)
         {
             pause = 0
             instance_activate_all()
@@ -373,7 +373,7 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
 			global.fakepeppino = 0
 			scr_playerreset()
 
-			if obj_player.backtohubroom != noone 
+			if obj_player.backtohubroom != noone && obj_player.backtohubroom != undefined
 			{
 				obj_player1.targetDoor = "start"
 				if instance_exists(obj_player2)			

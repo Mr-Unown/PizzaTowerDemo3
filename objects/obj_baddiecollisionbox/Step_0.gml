@@ -259,8 +259,9 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
             {
                 if (other.baddieID.state != 96 && other.baddieID.id != obj_shrimp) && other.baddieID.dying = false
                 {
-                    if (state != 73 && state != 12) 
+                    if (state != 73 && state != 12) && other.baddieID.stuntouch <= 0
                     {
+						other.baddieID.stuntouch = 50
                         scr_soundeffect(16)
                         if (state != 27 && state != 69 && state != 68 && state != 111)
                             movespeed = 0
@@ -593,8 +594,9 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player2) && obj_player2
             {
                 if (other.baddieID.state != 96 && other.baddieID.id != obj_shrimp) && other.baddieID.dying = false
                 {
-                    if (state != 73 && state != 12)
+                    if (state != 73 && state != 12) && other.baddieID.stuntouch <= 0
                     {
+						other.baddieID.stuntouch = 50
                         scr_soundeffect(16)
                         if (state != 27 && state != 69 && state != 68 && state != 111)
                             movespeed = 0
