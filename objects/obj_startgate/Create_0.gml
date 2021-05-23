@@ -6,6 +6,7 @@ player = 3
 player2 = 4
 level = "none" 
 drawtext = false
+depth = 50
 cplayerx = x
 cplayer1x = x
 cplayer2x = x

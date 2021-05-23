@@ -1,4 +1,3 @@
-//To Do: Rewrite Secret Debris to cause less lag
 if point_in_rectangle(x, y, camera_get_view_x(view_camera[0]), camera_get_view_y(view_camera[0]), (camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0])), (camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0])))
 {
     if (!surface_exists(s))
@@ -31,6 +30,7 @@ if point_in_rectangle(x, y, camera_get_view_x(view_camera[0]), camera_get_view_y
         draw_sprite_tiled(blendsprite, 0, 0, 0)
     draw_set_blend_mode(0)
     surface_reset_target()
+	//Stolen Angle Code thing
 	var sprite_diagonal = sqrt(sprite_height*sprite_height+sprite_width*sprite_width);
 	var dir = point_direction(x,y,x-sprite_get_xoffset(sprite_index), y-sprite_get_yoffset(sprite_index))
 	var drawx = (x - sprite_xoffset) + lengthdir_x(sprite_diagonal/2, image_angle + dir);

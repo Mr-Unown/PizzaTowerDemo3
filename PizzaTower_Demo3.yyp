@@ -13074,6 +13074,14 @@
             }
         },
         {
+            "Key": "81e7b852-f306-4a1d-a156-3cf5cf5f5f30",
+            "Value": {
+                "id": "37247606-e942-444f-aaf0-14634301ecff",
+                "resourcePath": "rooms\\rooftop_5\\rooftop_5.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "820de66c-4b43-47e0-9be2-6587d3e1783b",
             "Value": {
                 "id": "0be0859a-c763-480d-a392-f5390a72f665",

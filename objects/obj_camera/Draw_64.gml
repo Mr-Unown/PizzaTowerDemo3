@@ -269,7 +269,7 @@ if (player.state != 55)
         draw_sprite_ext(spr_key, -1, 50, 30, 1, 1, 0, c_white, alpha)
     draw_sprite_ext(spr_inv, -1, 50, 30, 1, 1, 0, c_white, alpha)
 
-   draw_text(190, 97, string(instance_number(obj_secretdebris)))
+   ///draw_text(190, 97, string(instance_number(obj_secretdebris)))
 
 }
 }

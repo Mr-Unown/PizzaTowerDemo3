@@ -136,12 +136,11 @@ else if (global.collect > global.crank && shownrankc == 0 && global.nocombo == 0
     tvsprite = spr_tvrankc
     shownrankc = 1
 }
-else if (obj_player.state == states.hurt)
+else if (obj_player.state == states.hurt) && chose = 0
 {
     image_speed = 0.1
     showtext = 1
-    if (chose == 0)
-        message = choose("OW!", "OUCH!", "OH!", "WOH!")
+    message = choose("OW!", "OUCH!", "OH!", "WOH!")
     alarm[0] = 50
     chose = 1
     tvsprite = spr_tvhurt

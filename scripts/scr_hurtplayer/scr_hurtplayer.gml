@@ -65,6 +65,16 @@ with (argument0)
             state = 55
             sprite_index = spr_deathstart
         }
+		with obj_tv
+		{
+			image_speed = 0.1
+			showtext = 1
+			message = choose("OW!", "OUCH!", "OH!", "WOH!")
+			alarm[0] = 50
+			chose = 1
+			tvsprite = spr_tvhurt
+			once = 1
+		}
         hurted = 1
         if (xscale == other.image_xscale)
             sprite_index = spr_hurtjump
