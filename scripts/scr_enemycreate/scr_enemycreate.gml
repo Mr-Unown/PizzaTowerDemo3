@@ -10,6 +10,7 @@ markedfordeathbuffer = 50
 deathbuffer = 100
 playerxscale = obj_player1.xscale
 dying = false
+creatorid = noone
 //Stupid anti Strongcold softlock
 stuntouch = 0
 //Death Sprite

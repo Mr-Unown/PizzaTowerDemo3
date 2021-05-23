@@ -17,7 +17,8 @@ if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
 	_direction = sign(hsp)
 	}
 	
-	with instance_create(x, y, obj_goop) {
+	with instance_create(x, y, obj_goop) 
+	{
 	vsp = random_range(-2,-8)
 	hsp = random_range(-2,-6)
 	_direction = sign(hsp)
@@ -37,6 +38,13 @@ if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
 		vsp = other.initialvsp
 	}
     ds_list_add(global.baddieroom, id)
+	if creatorid != noone
+	{
+		with creatorid
+		{
+			ds_list_add(global.baddieroom,id)
+		}
+	}
     obj_tv.image_index = random_range(0, 4)
     global.combo = (global.combo + 1)
     if (global.nocombo == 0)

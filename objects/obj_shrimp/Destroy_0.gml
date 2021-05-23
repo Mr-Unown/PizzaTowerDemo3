@@ -27,6 +27,7 @@ if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
         shake_mag = 3
         shake_mag_acc = (3 / room_speed)
     }
+	
     with (instance_create(x, y, obj_baddie_dead)) 
 	{
 		canrotate = true
@@ -42,6 +43,11 @@ if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
 		spr_palette = spr_shrimp_palette
 	}
     ds_list_add(global.baddieroom, id)
+	if creatorid != noone
+	{
+		with creatorid
+			ds_list_add(global.baddieroom,id)
+	}	
     obj_tv.image_index = random_range(0, 4)
     global.combo = (global.combo + 1)
     if (global.nocombo == 0)
