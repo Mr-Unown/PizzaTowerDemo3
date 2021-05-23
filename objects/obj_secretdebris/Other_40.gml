@@ -1,2 +1,2 @@
-if instance_number(obj_secretdebris) > 45
+if instance_number(obj_secretdebris) > 300
 	instance_destroy()

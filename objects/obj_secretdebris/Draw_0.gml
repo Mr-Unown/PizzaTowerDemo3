@@ -9,7 +9,14 @@ if point_in_rectangle(x, y, camera_get_view_x(view_camera[0]), camera_get_view_y
   	gpu_set_blendmode_ext(9,6)
     if (mode = 1)
     {
-		//Could probably be simplified with a for loop
+		for (var i = -1; i < 2; i += 1) 
+		{
+			for (var z = -1; z < 2; z += 1) 
+			{
+				draw_tile(tile_dataset, tile_dataid, 0, 0 + (32 * i), 0 + (32 * z))   
+			}
+		}
+		/*
         draw_tile(tile_dataset, tile_dataid, 0, 0, 0)
         draw_tile(tile_dataset, tile_dataid, 0, 32, 0)
         draw_tile(tile_dataset, tile_dataid, 0, 0, 32)
@@ -18,7 +25,7 @@ if point_in_rectangle(x, y, camera_get_view_x(view_camera[0]), camera_get_view_y
         draw_tile(tile_dataset, tile_dataid, 0, 0, -32)
         draw_tile(tile_dataset, tile_dataid, 0, -32, -32)
         draw_tile(tile_dataset, tile_dataid, 0, 32, -32)
-        draw_tile(tile_dataset, tile_dataid, 0, -32, 32)
+        draw_tile(tile_dataset, tile_dataid, 0, -32, 32)*/
     }
     else
         draw_sprite_tiled(blendsprite, 0, 0, 0)
