@@ -1,4 +1,4 @@
-#macro DOUGIE true // DISABLE THIS FOR RELEASE BUILDS!!!
+
 image_speed = 0
 activated = 0
 depth = 1

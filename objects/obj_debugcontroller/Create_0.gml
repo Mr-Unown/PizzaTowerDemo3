@@ -1,4 +1,4 @@
-#macro DEBUG true // DISABLE THIS FOR RELEASE BUILDS!!!
+
 
 active = false
 input = ""
