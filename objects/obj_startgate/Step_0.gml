@@ -113,15 +113,20 @@ if (distance_to_object(player) < 50)
 		            alarm[0] = 2
 			break;
 			case "kungfu": 
-		            message = "STREETS OF PIZZA"
+		            message = "WIP STREETS OF PIZZA"
 		            showtext = 1
 		            alarm[0] = 2
 			break;		
 			case "resto": 
-		            message = "GOLF EATIN'"
+		            message = "WIP GOLF EATIN'"
 		            showtext = 1
 		            alarm[0] = 2
-			break;						
+			break;	
+			case "rooftop": 
+		            message = "WIP ROOF LEVEL"
+		            showtext = 1
+		            alarm[0] = 2
+			break;				
 			default: 
 					message = "NONE"
 					showtext = 1

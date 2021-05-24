@@ -5,7 +5,7 @@ if (string_letters(roomname) == "golf")
     global.fakepeppino = 1
 if instance_exists(obj_endlevelfade)
     instance_destroy(obj_endlevelfade)
-
+obj_discordrpc.alarm[0] = -1
 //Goop Gone
 with obj_goop 
 instance_destroy(id,false)

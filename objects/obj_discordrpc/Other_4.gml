@@ -5,7 +5,7 @@ else
 	string_roomname = ""
 //Level Names
 var roomname = room_get_name(room)
-if (global.snickchallenge == 0)
+if (global.snickchallenge == false)
 {
     if (string_letters(roomname) == "entrance" || string_letters(roomname) == "entrancesecret") ||/* room = entrance_pizzamart ||*/ room = entrance_treasure
     {
@@ -110,7 +110,7 @@ if (global.snickchallenge == 0)
 	in_a_level = false;
 	}
 }
-else if !alarm[0]
+else if global.snickchallenge = true && !alarm[0]
 {
 	string_status = "Snick's Challenge"
 	string_imagekey = "snickchallenge"

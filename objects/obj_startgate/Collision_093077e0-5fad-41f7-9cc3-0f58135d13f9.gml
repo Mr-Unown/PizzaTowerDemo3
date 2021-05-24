@@ -103,7 +103,10 @@ if ((floor(obj_player1.image_index) == (obj_player1.image_number - 1) && obj_pla
         targetDoor = other.targetDoor
         targetRoom = other.targetRoom
         if (!instance_exists(obj_fadeout))
-            instance_create(x, y, obj_fadeout)
+            with instance_create(x, y, obj_fadeout)
+			{
+				flushtextures = true
+			}
     }
 }
 

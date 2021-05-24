@@ -220,6 +220,9 @@
         {
             "Key": "01bc4ccb-afa1-4d79-a1a0-ad7f4e5b8fa2",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "e91a185b-bd3f-4285-b14b-a8cdcc2f9440",
                 "resourcePath": "sprites\\spr_entrancebgtile1\\spr_entrancebgtile1.yy",
                 "resourceType": "GMSprite"
@@ -620,6 +623,9 @@
         {
             "Key": "04e94982-ef30-41ab-90db-b4ddfc977cd4",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "e271cff8-416b-4503-b099-db1d770c389e",
                 "resourcePath": "sprites\\bg_ruincloud\\bg_ruincloud.yy",
                 "resourceType": "GMSprite"
@@ -748,6 +754,9 @@
         {
             "Key": "06158b9f-dc8e-47b9-98d4-9f256436a47d",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "64c09f9d-cc67-497d-a164-a883a493a1d1",
                 "resourcePath": "sprites\\bg_medieval1\\bg_medieval1.yy",
                 "resourceType": "GMSprite"
@@ -836,6 +845,9 @@
         {
             "Key": "0726c18c-d714-424d-9300-006aa5851020",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "f6744520-531f-4248-bd16-f417f9bcccbf",
                 "resourcePath": "sprites\\bg_darkjohn\\bg_darkjohn.yy",
                 "resourceType": "GMSprite"
@@ -1212,6 +1224,9 @@
         {
             "Key": "0ae0ae9e-5823-4c40-aec8-d038333d3b35",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "36e07525-3981-4101-a1e0-51e20a0938cc",
                 "resourcePath": "sprites\\spr_xmasdecotree\\spr_xmasdecotree.yy",
                 "resourceType": "GMSprite"
@@ -1668,6 +1683,9 @@
         {
             "Key": "0f1ac727-d697-439f-8f9c-88a5f3836aa1",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "d81d05a6-4716-4911-a6f2-e64cb1af9d66",
                 "resourcePath": "sprites\\tile_medieval\\tile_medieval.yy",
                 "resourceType": "GMSprite"
@@ -1676,6 +1694,9 @@
         {
             "Key": "0f2c3b02-9810-4c93-ac5e-e817829972bf",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "40d82eaa-eb74-41de-81aa-9e356b4e3b44",
                 "resourcePath": "sprites\\bg_dungeondark2\\bg_dungeondark2.yy",
                 "resourceType": "GMSprite"
@@ -2020,6 +2041,9 @@
         {
             "Key": "12d85ce9-b1e8-4c9b-9d55-7a39f46a10f9",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "75ecd642-fe77-4f2a-9b06-b685f2dd3a17",
                 "resourcePath": "sprites\\bg_medievaltreasure2\\bg_medievaltreasure2.yy",
                 "resourceType": "GMSprite"
@@ -2340,6 +2364,9 @@
         {
             "Key": "16af10ad-0f60-4042-a634-4ac3eeab02df",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "5a473e0b-8983-42c2-99c7-f2d91b224286",
                 "resourcePath": "sprites\\bg_dungeon1\\bg_dungeon1.yy",
                 "resourceType": "GMSprite"
@@ -2356,6 +2383,9 @@
         {
             "Key": "16e2ea0b-b1a5-4e96-9b77-0eb11b9e9f7d",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "c63a1cc8-701f-496d-a93e-a2ebf9594378",
                 "resourcePath": "sprites\\bg_strongcold2\\bg_strongcold2.yy",
                 "resourceType": "GMSprite"
@@ -2428,6 +2458,9 @@
         {
             "Key": "17f666e0-4f7d-4d81-a636-2b9db6b3ea52",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "87838c05-3478-47c5-907e-70f3ec7f2302",
                 "resourcePath": "sprites\\bg_hubroom2TILE\\bg_hubroom2TILE.yy",
                 "resourceType": "GMSprite"
@@ -2580,6 +2613,9 @@
         {
             "Key": "18f0811b-c43f-49b9-bb5b-fa0d782caac7",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "a04be131-59f1-4372-ae48-4cfe20a3204b",
                 "resourcePath": "sprites\\bg_hubroom2\\bg_hubroom2.yy",
                 "resourceType": "GMSprite"
@@ -2684,6 +2720,9 @@
         {
             "Key": "19917376-b04c-4e7c-85a8-f18a74ba290f",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "d872f0c5-2a38-4ffe-b7c0-98f8486e7055",
                 "resourcePath": "sprites\\bg_dungeontomato2\\bg_dungeontomato2.yy",
                 "resourceType": "GMSprite"
@@ -3972,6 +4011,9 @@
         {
             "Key": "28d080c4-caa5-4de5-b5f0-c2c95e46f1b8",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "275afa9c-4f25-4628-ace7-276fe3643f7a",
                 "resourcePath": "tilesets\\tile_tower_tileset\\tile_tower_tileset.yy",
                 "resourceType": "GMTileSet"
@@ -4156,6 +4198,9 @@
         {
             "Key": "2af801cf-43d9-49ba-aa3f-ae1afec43b4c",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "08ce7934-cea4-4c1f-ad55-e7f8e6f834bd",
                 "resourcePath": "sprites\\bg_ruincheese1\\bg_ruincheese1.yy",
                 "resourceType": "GMSprite"
@@ -4324,6 +4369,9 @@
         {
             "Key": "2d12cade-d276-4dc2-b9c5-a8a669042be8",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "b174ba0a-4c75-40e0-b5e4-a8f88ad28688",
                 "resourcePath": "sprites\\tile_chateau1\\tile_chateau1.yy",
                 "resourceType": "GMSprite"
@@ -4444,6 +4492,9 @@
         {
             "Key": "2e6ccf6e-7f72-4559-9198-beb9556df222",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "e242cfc1-f51a-469b-85ff-3de5f2e6825f",
                 "resourcePath": "sprites\\tile_dungeon\\tile_dungeon.yy",
                 "resourceType": "GMSprite"
@@ -4548,6 +4599,9 @@
         {
             "Key": "2f316231-29f8-48f2-8c95-722562b5fb6b",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "99af5acb-2fbb-4206-a8e4-cb7e492546da",
                 "resourcePath": "sprites\\bg_chateautreasure2\\bg_chateautreasure2.yy",
                 "resourceType": "GMSprite"
@@ -4700,6 +4754,9 @@
         {
             "Key": "30b86ffa-5b22-4fff-a9f6-0d4534e3b6d3",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "8f7f5368-b09e-4ff4-8d80-50c5b309a8ff",
                 "resourcePath": "sprites\\bg_strongcold5\\bg_strongcold5.yy",
                 "resourceType": "GMSprite"
@@ -4732,6 +4789,9 @@
         {
             "Key": "30dab443-4eb3-4d7b-8cf6-c1ca0a6ca6c6",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "d17784dc-02ce-44cd-b151-6574d07ca2c1",
                 "resourcePath": "sprites\\spr_entrancebgtile2\\spr_entrancebgtile2.yy",
                 "resourceType": "GMSprite"
@@ -4956,6 +5016,9 @@
         {
             "Key": "33144bf2-9d7e-4af1-9f4c-c683c01fce72",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "7dfc86a2-8252-4a82-9a5c-ac9a5bde7f9d",
                 "resourcePath": "sprites\\bg_strongcold3\\bg_strongcold3.yy",
                 "resourceType": "GMSprite"
@@ -5300,6 +5363,9 @@
         {
             "Key": "360ff110-1ff1-4adc-b904-5dac1e308a7f",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "f58efc6d-8b7b-48dc-a60f-b884855d5ea2",
                 "resourcePath": "tilesets\\tileset_medieval2\\tileset_medieval2.yy",
                 "resourceType": "GMTileSet"
@@ -5332,6 +5398,9 @@
         {
             "Key": "365acfd5-3667-4675-8515-3762e8a18d48",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "a76e5c90-1d2d-466d-ad22-492abc0f6799",
                 "resourcePath": "sprites\\tile_entrance1\\tile_entrance1.yy",
                 "resourceType": "GMSprite"
@@ -5340,6 +5409,9 @@
         {
             "Key": "365ca1e7-bbf8-49c5-9b2c-19eb73d1aa75",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "138ea001-b5fd-4f46-a59c-bbafc6e75ab1",
                 "resourcePath": "sprites\\bg_dungeontomato\\bg_dungeontomato.yy",
                 "resourceType": "GMSprite"
@@ -5684,6 +5756,9 @@
         {
             "Key": "39731095-27f4-4e10-963e-e523401f2a9b",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "11f2b3f4-3702-4ae3-8992-69bf895eed4f",
                 "resourcePath": "tilesets\\tile_entrancedecorations\\tile_entrancedecorations.yy",
                 "resourceType": "GMTileSet"
@@ -5708,6 +5783,9 @@
         {
             "Key": "3985782c-1e6b-4066-ae96-1bd43fe167a4",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "52920bc4-1f80-422d-9e2e-88fccd99ab71",
                 "resourcePath": "sprites\\spr_decorationanimated2\\spr_decorationanimated2.yy",
                 "resourceType": "GMSprite"
@@ -5756,6 +5834,9 @@
         {
             "Key": "3a201f15-128f-4705-8751-52dc871b2d85",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "d7d0d0ab-4b51-4a3a-83d0-b5d9aebbab9b",
                 "resourcePath": "sprites\\bg_dungeon2\\bg_dungeon2.yy",
                 "resourceType": "GMSprite"
@@ -6204,6 +6285,9 @@
         {
             "Key": "3e17d014-a695-4104-9157-56b12f321586",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "3c5d03d3-57e1-4ad5-9f4b-bdd90067e984",
                 "resourcePath": "sprites\\bg_medievalinterior\\bg_medievalinterior.yy",
                 "resourceType": "GMSprite"
@@ -6300,6 +6384,9 @@
         {
             "Key": "3ef39c17-e4e3-40b4-9aae-8881394c4d18",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "6de3bcca-6ec5-4028-b6d8-baa50232d365",
                 "resourcePath": "sprites\\tile_medieval2\\tile_medieval2.yy",
                 "resourceType": "GMSprite"
@@ -6388,6 +6475,9 @@
         {
             "Key": "3fcd7ee9-a314-4679-85dd-7f9fbcca9bda",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "86b00af3-b438-4a00-ad32-292a2b2a2eb4",
                 "resourcePath": "sprites\\tile_chateaudecoration\\tile_chateaudecoration.yy",
                 "resourceType": "GMSprite"
@@ -7084,6 +7174,9 @@
         {
             "Key": "4693035d-8041-4e50-b229-62728fa02c64",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "7aa974c0-6169-421d-a94a-6059146f538e",
                 "resourcePath": "sprites\\bg_chateauinterior\\bg_chateauinterior.yy",
                 "resourceType": "GMSprite"
@@ -7484,6 +7577,9 @@
         {
             "Key": "4ae5dcae-cf42-4e92-b7c4-ce6e2c24cd96",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "b40f196d-b2d2-4515-a5a6-1b919ba9a2d5",
                 "resourcePath": "sprites\\spr_entrancebgtile5\\spr_entrancebgtile5.yy",
                 "resourceType": "GMSprite"
@@ -7618,14 +7714,6 @@
             }
         },
         {
-            "Key": "4c7388ff-ed9f-4507-8bcf-2d3481f72bd8",
-            "Value": {
-                "id": "9e3d821f-a06e-4a07-82b3-04f45b684a90",
-                "resourcePath": "sprites\\bg_xmastreasure\\bg_xmastreasure.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "4c8e1e81-76ab-445c-9ca0-ca78d43e858e",
             "Value": {
                 "id": "a61f12c2-01a6-4b20-b655-9281c5d31465",
@@ -7756,6 +7844,9 @@
         {
             "Key": "4dfb68ca-3b02-48cd-849d-5cb1cc871f45",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "958a952e-460c-4dd3-912d-01b96e26b1bf",
                 "resourcePath": "sprites\\bg_ruinstatue2\\bg_ruinstatue2.yy",
                 "resourceType": "GMSprite"
@@ -8060,6 +8151,9 @@
         {
             "Key": "506215ed-b20b-4b12-839d-0ee433a5e9c9",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "e70559cb-1aa5-4b1e-9248-6ed967e2dbfc",
                 "resourcePath": "sprites\\bg_ruincheese3\\bg_ruincheese3.yy",
                 "resourceType": "GMSprite"
@@ -8116,6 +8210,9 @@
         {
             "Key": "50de2383-a1eb-4f0f-8d35-d19b2682564e",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "9460b68c-768a-4217-b1cb-e9e081ab9f57",
                 "resourcePath": "sprites\\spr_halloweendeco1\\spr_halloweendeco1.yy",
                 "resourceType": "GMSprite"
@@ -8292,6 +8389,9 @@
         {
             "Key": "526e03e7-b9a3-4279-ab95-ce3524e96b41",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "ffd23237-08bd-424d-b507-9816aea336eb",
                 "resourcePath": "tilesets\\tileset_strongcold\\tileset_strongcold.yy",
                 "resourceType": "GMTileSet"
@@ -8892,6 +8992,9 @@
         {
             "Key": "58405375-a1ab-41b9-9577-207d2556b93d",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "9b05147e-c715-485d-b921-ef007b80e1c6",
                 "resourcePath": "sprites\\spr_decorationanimated4\\spr_decorationanimated4.yy",
                 "resourceType": "GMSprite"
@@ -8948,6 +9051,9 @@
         {
             "Key": "58a78c60-f6d9-4816-9afe-41d620643d42",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "73cde097-3022-4369-b8e7-cc19f5222214",
                 "resourcePath": "sprites\\bg_ruinarchitecture2\\bg_ruinarchitecture2.yy",
                 "resourceType": "GMSprite"
@@ -9132,6 +9238,9 @@
         {
             "Key": "5a6c6df8-ce59-41fd-9fa7-f28edf0fc9c1",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "92f3e0f8-ce6c-40da-a98e-946e01d9a4ee",
                 "resourcePath": "sprites\\bg_strongcold1\\bg_strongcold1.yy",
                 "resourceType": "GMSprite"
@@ -9268,6 +9377,9 @@
         {
             "Key": "5c05a35e-a190-4c26-9854-2a3ecb10796e",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "fd29b9cb-4a39-46c3-9e69-78d071f0f1c5",
                 "resourcePath": "sprites\\bg_medievaltreasure1\\bg_medievaltreasure1.yy",
                 "resourceType": "GMSprite"
@@ -9532,6 +9644,9 @@
         {
             "Key": "5e23d812-ab3b-457e-a474-8cf04caea856",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "8c162bf9-3ec9-4e9a-a281-f5e6647d197b",
                 "resourcePath": "sprites\\tile_dungeon3\\tile_dungeon3.yy",
                 "resourceType": "GMSprite"
@@ -9876,6 +9991,9 @@
         {
             "Key": "6145822c-d4aa-43ed-beee-7081ee370cef",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "64a78f41-f7d1-4000-9474-19b01cc6df85",
                 "resourcePath": "sprites\\tile_ruin2\\tile_ruin2.yy",
                 "resourceType": "GMSprite"
@@ -10164,6 +10282,9 @@
         {
             "Key": "6443a02c-44aa-4a2e-96be-4ed421e76f1a",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "d08d9458-7a1c-4237-b315-fcae04495b33",
                 "resourcePath": "sprites\\spr_decorationanimated1\\spr_decorationanimated1.yy",
                 "resourceType": "GMSprite"
@@ -10180,6 +10301,9 @@
         {
             "Key": "64472625-4872-4012-bc7a-3a1cbe9a22b3",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "610fcc8e-c546-4899-8642-093bb6417b84",
                 "resourcePath": "sprites\\bg_entrance1\\bg_entrance1.yy",
                 "resourceType": "GMSprite"
@@ -10204,6 +10328,9 @@
         {
             "Key": "645c5931-6ef9-448c-b660-37410c22be58",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "19467df1-2eac-44db-b7a4-5b887f8c2946",
                 "resourcePath": "sprites\\bg_chateautreasure1\\bg_chateautreasure1.yy",
                 "resourceType": "GMSprite"
@@ -10316,6 +10443,9 @@
         {
             "Key": "661b57cb-5bb4-4a89-ad50-7735242493d6",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "e46ebfbe-3948-4e54-b707-2543adb070a6",
                 "resourcePath": "sprites\\tile_strongcold\\tile_strongcold.yy",
                 "resourceType": "GMSprite"
@@ -10548,6 +10678,9 @@
         {
             "Key": "68bb2e76-7558-4604-8d22-975e2a86d8bb",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "c9bb8684-7450-4fa0-89a0-5ae7afaad6e1",
                 "resourcePath": "sprites\\spr_halloweendeco3\\spr_halloweendeco3.yy",
                 "resourceType": "GMSprite"
@@ -11220,6 +11353,9 @@
         {
             "Key": "70147392-4f9c-4fad-aab6-87a6ed4c9f64",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "23cebf7a-7dd5-4c18-8b4e-2f962d3d0c95",
                 "resourcePath": "sprites\\bg_ruin\\bg_ruin.yy",
                 "resourceType": "GMSprite"
@@ -11468,6 +11604,9 @@
         {
             "Key": "72d6a3e6-ceb7-435a-a1eb-72f623e83dee",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "695d1282-c187-4dd3-aa5b-4d5d7d33134f",
                 "resourcePath": "sprites\\bg_chateau3\\bg_chateau3.yy",
                 "resourceType": "GMSprite"
@@ -11756,6 +11895,9 @@
         {
             "Key": "74db05cc-6257-4e08-8e7d-d26b576dee98",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "9ec3da2d-43b8-403a-911b-b12f053725f0",
                 "resourcePath": "sprites\\bg_ruinarchitecture3\\bg_ruinarchitecture3.yy",
                 "resourceType": "GMSprite"
@@ -11972,6 +12114,9 @@
         {
             "Key": "76bcd30d-6384-4df1-b024-25c4c2dfaf20",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "9883cdfd-8e2a-4d37-af6e-32d96f76ecca",
                 "resourcePath": "tilesets\\tileset_entrance\\tileset_entrance.yy",
                 "resourceType": "GMTileSet"
@@ -12036,6 +12181,9 @@
         {
             "Key": "77bc7841-1308-4207-a40b-7483349b4df9",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "a5be4fed-0fa9-4609-8086-0dbe99c70897",
                 "resourcePath": "tilesets\\tileset_medieval3\\tileset_medieval3.yy",
                 "resourceType": "GMTileSet"
@@ -12668,6 +12816,9 @@
         {
             "Key": "7e9225a2-22f5-4fff-a504-44e4f501c5fa",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "8c13a12d-aac1-48df-9981-5c549e5de5b4",
                 "resourcePath": "sprites\\spr_entrancelamp\\spr_entrancelamp.yy",
                 "resourceType": "GMSprite"
@@ -13114,6 +13265,14 @@
             }
         },
         {
+            "Key": "822296c1-ed14-4dc5-9e66-3849dfb96bc1",
+            "Value": {
+                "id": "64d59075-a704-46f0-81dd-0b44dda1b647",
+                "resourcePath": "sprites\\spr_wipsign\\spr_wipsign.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "822f55d1-f17b-4a7f-b4b9-4930278829d9",
             "Value": {
                 "id": "b665b863-7c3d-4f89-8cdd-a311ffc48431",
@@ -13500,6 +13659,9 @@
         {
             "Key": "8652f5a8-72f7-4d0d-98ca-84b2ce1fe827",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "b8c8e108-1a7e-4825-bfce-d618f3947ac4",
                 "resourcePath": "sprites\\bg_ruinstatue1\\bg_ruinstatue1.yy",
                 "resourceType": "GMSprite"
@@ -13524,6 +13686,9 @@
         {
             "Key": "86689aaa-c973-425d-a24c-3ec23a6a9a2d",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "84542bc1-3db8-4820-9f75-395973ea87a1",
                 "resourcePath": "sprites\\bg_ruinarchitecture1\\bg_ruinarchitecture1.yy",
                 "resourceType": "GMSprite"
@@ -13532,6 +13697,9 @@
         {
             "Key": "86848f7f-f375-4d23-8b2a-3a48580eecfd",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "0440bad8-b8e8-4292-acb7-a470da63c496",
                 "resourcePath": "sprites\\bg_strongcold6\\bg_strongcold6.yy",
                 "resourceType": "GMSprite"
@@ -14020,6 +14188,9 @@
         {
             "Key": "8c31c56c-94c1-4cc2-b61d-17446d1e40de",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "4e436282-a583-45bc-91d4-5b0d8ae7ddde",
                 "resourcePath": "sprites\\bg_darkjohnstatue\\bg_darkjohnstatue.yy",
                 "resourceType": "GMSprite"
@@ -14132,6 +14303,9 @@
         {
             "Key": "8d2df550-a863-44cf-b7b6-da308d4f636d",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "17540a98-764a-4bac-92f5-9a3236045b46",
                 "resourcePath": "sprites\\spr_decorationanimated1escape\\spr_decorationanimated1escape.yy",
                 "resourceType": "GMSprite"
@@ -14356,6 +14530,9 @@
         {
             "Key": "8f88537e-14e3-4153-b3ae-eaa259db55e8",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "ebb8c995-8ed6-4bff-850a-16f0f23d9460",
                 "resourcePath": "sprites\\tile_ruin\\tile_ruin.yy",
                 "resourceType": "GMSprite"
@@ -14564,6 +14741,9 @@
         {
             "Key": "91ab7ada-8af0-4a8d-82c1-4534bd96619d",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "8b6e87e3-7099-43c5-baa7-2d3b077d1ea1",
                 "resourcePath": "sprites\\bg_entrance2\\bg_entrance2.yy",
                 "resourceType": "GMSprite"
@@ -14620,6 +14800,9 @@
         {
             "Key": "920662f1-21cb-458c-aa55-494f39b61ade",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "5b432b9b-42b4-48f5-b016-7a9666b4db69",
                 "resourcePath": "sprites\\bg_hubroom1\\bg_hubroom1.yy",
                 "resourceType": "GMSprite"
@@ -14644,6 +14827,9 @@
         {
             "Key": "921a81c2-fced-4319-9351-3d20ee52ff19",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "e83d588b-e37a-4d8e-85f8-c8e57232164f",
                 "resourcePath": "tilesets\\tile_towerdetails_tileset\\tile_towerdetails_tileset.yy",
                 "resourceType": "GMTileSet"
@@ -14764,6 +14950,9 @@
         {
             "Key": "93778ff9-1c55-4d57-a45e-9003c6da4237",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "72c840fa-ca5a-4caa-8a7c-c2b0de3b8732",
                 "resourcePath": "sprites\\bg_chateaulibrary\\bg_chateaulibrary.yy",
                 "resourceType": "GMSprite"
@@ -15100,6 +15289,9 @@
         {
             "Key": "96298661-6d3c-4fcd-bd93-b1811b859247",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "8c17e08a-e499-4791-9dce-2f58eda2e15c",
                 "resourcePath": "tilesets\\tileset_chateaudecorations\\tileset_chateaudecorations.yy",
                 "resourceType": "GMTileSet"
@@ -15132,6 +15324,9 @@
         {
             "Key": "964b3fa6-3b2c-4d2d-a995-c49013d5bc22",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "1e522412-ee09-41d7-919b-195b188fea35",
                 "resourcePath": "sprites\\spr_halloweendeco2\\spr_halloweendeco2.yy",
                 "resourceType": "GMSprite"
@@ -15276,6 +15471,9 @@
         {
             "Key": "97986766-81b0-4251-8f3f-5bd3070a90a8",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "b7f2857f-48b0-48c2-a618-c575cffee82b",
                 "resourcePath": "sprites\\bg_dungeondark1\\bg_dungeondark1.yy",
                 "resourceType": "GMSprite"
@@ -15359,6 +15557,14 @@
                 "id": "9896e746-bdc5-45ca-8a75-94fc1cdac889",
                 "resourcePath": "rooms\\chateau_7\\chateau_7.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "985ccc93-6a0b-49e2-bff1-52fde47a1032",
+            "Value": {
+                "id": "fc8cd312-e286-44c4-ab68-7b01cc3c37ce",
+                "resourcePath": "sprites\\spr_playerPZ_faceplant\\spr_playerPZ_faceplant.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -15692,6 +15898,9 @@
         {
             "Key": "9c104b6f-057b-49cc-96ca-df331c9c3c2a",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "02cff003-e478-469a-a6d4-84a7080716b1",
                 "resourcePath": "sprites\\bg_medievallibrairy1\\bg_medievallibrairy1.yy",
                 "resourceType": "GMSprite"
@@ -15884,6 +16093,9 @@
         {
             "Key": "9e172794-2130-4635-9a7a-279aef194f96",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "590f12d1-d126-4fb6-a170-022e1f024553",
                 "resourcePath": "sprites\\bg_medieval3\\bg_medieval3.yy",
                 "resourceType": "GMSprite"
@@ -15964,6 +16176,9 @@
         {
             "Key": "9f162530-8a1e-4074-bdd5-2573b8b66a45",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "83e209ca-7993-4cf7-900c-f4605e5c280c",
                 "resourcePath": "sprites\\spr_tile_entrancedecorations\\spr_tile_entrancedecorations.yy",
                 "resourceType": "GMSprite"
@@ -16316,6 +16531,9 @@
         {
             "Key": "a2f3b38d-cdb2-482a-9c98-2b84bd04694b",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "7d617674-519c-4501-a461-db12e9088cf8",
                 "resourcePath": "sprites\\bg_darkjohnescape\\bg_darkjohnescape.yy",
                 "resourceType": "GMSprite"
@@ -16684,6 +16902,9 @@
         {
             "Key": "a6ea2d2b-74de-4112-bfed-60001328563d",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "4a620a92-36ce-46cf-b220-dba9e1088e73",
                 "resourcePath": "sprites\\bg_hubroom3TILE\\bg_hubroom3TILE.yy",
                 "resourceType": "GMSprite"
@@ -16972,6 +17193,9 @@
         {
             "Key": "a9d2751f-fa37-42d3-8db0-53f366f7329f",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "02b9d1a7-1bb1-4c88-8a88-ede4e88ad0bc",
                 "resourcePath": "sprites\\bg_dungeon3\\bg_dungeon3.yy",
                 "resourceType": "GMSprite"
@@ -17172,6 +17396,9 @@
         {
             "Key": "abc24e38-11cc-480e-9da2-43e9ca2f69b4",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "a09d1bd4-f4ce-4ecd-bbd1-cc547ab30663",
                 "resourcePath": "sprites\\bg_hubroom1TILE\\bg_hubroom1TILE.yy",
                 "resourceType": "GMSprite"
@@ -17404,6 +17631,9 @@
         {
             "Key": "adebef67-931f-4938-89b4-f09ebfc42f6f",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "579f5e26-3eab-41ae-b1c2-389265d0a7a8",
                 "resourcePath": "tilesets\\tileset_dungeon3\\tileset_dungeon3.yy",
                 "resourceType": "GMTileSet"
@@ -17836,6 +18066,9 @@
         {
             "Key": "b2d2bfbf-9f94-41ab-8375-c4a20bbfe2de",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "e7defb80-7184-4388-ab9b-37c7a4edc363",
                 "resourcePath": "sprites\\bg_entrance3\\bg_entrance3.yy",
                 "resourceType": "GMSprite"
@@ -18836,6 +19069,9 @@
         {
             "Key": "bcc86894-ffda-4baa-be7b-bde5dfc0e287",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "df261b72-2c88-447c-a889-a36605853451",
                 "resourcePath": "sprites\\bg_ruincheese2\\bg_ruincheese2.yy",
                 "resourceType": "GMSprite"
@@ -18908,6 +19144,9 @@
         {
             "Key": "bd4cdb12-0ec4-49bf-a8d9-40779b7296d1",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "894a0ec8-aa0e-4761-942c-3cdbe729c4cf",
                 "resourcePath": "tilesets\\tileset_dungeon\\tileset_dungeon.yy",
                 "resourceType": "GMTileSet"
@@ -18972,6 +19211,9 @@
         {
             "Key": "bde852d2-9b5a-4de8-bdfd-336672079c31",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "31dea31a-5312-4a01-9bfa-e4542bcc9ed8",
                 "resourcePath": "sprites\\tile_dungeon2\\tile_dungeon2.yy",
                 "resourceType": "GMSprite"
@@ -19020,6 +19262,9 @@
         {
             "Key": "be3a6287-a51e-4936-b1fb-2cac5cf2bebf",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "7d379959-7d59-41d3-9230-ca521d702b82",
                 "resourcePath": "sprites\\bg_ruinsky\\bg_ruinsky.yy",
                 "resourceType": "GMSprite"
@@ -19212,6 +19457,9 @@
         {
             "Key": "bfdcf7bc-6f3a-4da4-89b2-d04c9d3e4855",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "52d465c7-9b29-4539-a2d0-d83c17432d9d",
                 "resourcePath": "sprites\\spr_halloweendeco4\\spr_halloweendeco4.yy",
                 "resourceType": "GMSprite"
@@ -19324,6 +19572,9 @@
         {
             "Key": "c0d39861-334a-407b-b2d9-e746ba217397",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "3b110880-6581-48df-b509-2ed4f45af1b0",
                 "resourcePath": "tilesets\\tileset_chateau1\\tileset_chateau1.yy",
                 "resourceType": "GMTileSet"
@@ -19764,6 +20015,9 @@
         {
             "Key": "c5da31c1-6b75-4daf-850a-a350168f4bc5",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "8124a548-c048-4062-8ff6-2c22faf0ef34",
                 "resourcePath": "sprites\\bg_dungeonskeleton1\\bg_dungeonskeleton1.yy",
                 "resourceType": "GMSprite"
@@ -20340,6 +20594,9 @@
         {
             "Key": "ca47b4a3-4f5d-4e1c-8b02-a6e6bc59eff1",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "9abeeaa4-d890-4ec1-aa96-630814137f0a",
                 "resourcePath": "sprites\\bg_strongcold1start\\bg_strongcold1start.yy",
                 "resourceType": "GMSprite"
@@ -20647,6 +20904,9 @@
         {
             "Key": "cd2607dd-0339-42f2-be2f-6333afbd753d",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "07188c8e-977c-4fbe-98a3-d900e16c5f33",
                 "resourcePath": "sprites\\bg_dungeonskeleton2\\bg_dungeonskeleton2.yy",
                 "resourceType": "GMSprite"
@@ -20759,6 +21019,9 @@
         {
             "Key": "ce084cdd-a8ce-4948-a891-d71dc60f1c5a",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "fa7b7747-0ef2-49b8-91cd-2102abd98227",
                 "resourcePath": "tilesets\\tileset_dungeon2\\tileset_dungeon2.yy",
                 "resourceType": "GMTileSet"
@@ -20999,6 +21262,9 @@
         {
             "Key": "d0e5b105-84d1-476e-b987-7e4dbc911616",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "54aa4aa0-3b72-4746-b384-5106e93d074b",
                 "resourcePath": "sprites\\spr_entrancebgpillar\\spr_entrancebgpillar.yy",
                 "resourceType": "GMSprite"
@@ -21447,6 +21713,9 @@
         {
             "Key": "d4782b47-9391-4855-8a75-661bf7ccb53f",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "baa4876e-7cde-4b13-a55b-f226413e22a5",
                 "resourcePath": "tilesets\\tileset_medieval\\tileset_medieval.yy",
                 "resourceType": "GMTileSet"
@@ -21975,6 +22244,9 @@
         {
             "Key": "d93e2fa4-942a-4b1e-94c2-56b8a18098b1",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "b51af5c6-7cc5-4018-bf63-bc8e8b92494a",
                 "resourcePath": "sprites\\spr_entrancebgtile3\\spr_entrancebgtile3.yy",
                 "resourceType": "GMSprite"
@@ -22271,6 +22543,9 @@
         {
             "Key": "dc4f9cf6-1e11-4bc4-8d0e-84e6a29ed116",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "3be16d08-2a2c-448d-8d2f-e91bc004de8f",
                 "resourcePath": "tilesets\\tileset_strongcolddecoration\\tileset_strongcolddecoration.yy",
                 "resourceType": "GMTileSet"
@@ -22375,6 +22650,9 @@
         {
             "Key": "dd24f7c8-66c7-4b98-ac57-05a1641ea4ce",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "e62a5b5b-1277-415b-986c-f7151e4cfd71",
                 "resourcePath": "sprites\\bg_strongcold4\\bg_strongcold4.yy",
                 "resourceType": "GMSprite"
@@ -22631,6 +22909,9 @@
         {
             "Key": "dffa29ad-2c8d-4a60-af7f-9ba300baa65a",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "b0fb0a00-4a22-495e-864e-8b1024521b75",
                 "resourcePath": "sprites\\bg_chateau1\\bg_chateau1.yy",
                 "resourceType": "GMSprite"
@@ -22935,6 +23216,9 @@
         {
             "Key": "e288b009-9f94-481a-8f3a-ccfd55f94473",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "b438f0d9-ee6c-4428-83dc-5cf614941e97",
                 "resourcePath": "sprites\\spr_entrancebgtile4\\spr_entrancebgtile4.yy",
                 "resourceType": "GMSprite"
@@ -23031,6 +23315,9 @@
         {
             "Key": "e38a5cc8-b2d4-4e42-bdcf-d5fa772e6d67",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "e3867fc2-1985-464d-971b-1c70baa63193",
                 "resourcePath": "sprites\\bg_medievallibrairy2\\bg_medievallibrairy2.yy",
                 "resourceType": "GMSprite"
@@ -23111,6 +23398,9 @@
         {
             "Key": "e40d7458-ef20-4369-b15f-bab4ec51e059",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "225dd2ee-08d9-4a00-85b3-b7a579a6fd06",
                 "resourcePath": "sprites\\bg_medieval2\\bg_medieval2.yy",
                 "resourceType": "GMSprite"
@@ -23439,6 +23729,9 @@
         {
             "Key": "e7911c8a-1d3a-4ac7-b71c-5e4bf2fe53ef",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "04c6b0c2-7ef2-419d-89e9-a9c7fcb08ab2",
                 "resourcePath": "sprites\\bg_cowboytaskTILE\\bg_cowboytaskTILE.yy",
                 "resourceType": "GMSprite"
@@ -23495,6 +23788,9 @@
         {
             "Key": "e803394a-5ec5-43ef-b0a7-293aed4ec069",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "076daf78-f19e-4350-9eab-441dfa291cfe",
                 "resourcePath": "sprites\\tile_medieval3\\tile_medieval3.yy",
                 "resourceType": "GMSprite"
@@ -23959,6 +24255,9 @@
         {
             "Key": "ece229ac-80f9-44f7-9cf5-5448aa73ae7a",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "94248cd3-ab52-410d-9d92-af75e35de277",
                 "resourcePath": "sprites\\spr_decorationanimated3\\spr_decorationanimated3.yy",
                 "resourceType": "GMSprite"
@@ -23983,6 +24282,9 @@
         {
             "Key": "ed017705-31f4-44f4-b7ba-1ac3a4f49529",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "b3b8d1ef-02d2-499c-a410-b7e320e4f97f",
                 "resourcePath": "sprites\\spr_tile_strongcold1start\\spr_tile_strongcold1start.yy",
                 "resourceType": "GMSprite"
@@ -24167,6 +24469,9 @@
         {
             "Key": "ef7770df-2e15-4046-92a0-44f7b8229f72",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "a85eecd6-ab77-4bec-8b2a-a9d3a5eb3ba8",
                 "resourcePath": "tilesets\\tileset_ruin2\\tileset_ruin2.yy",
                 "resourceType": "GMTileSet"
@@ -24303,6 +24608,9 @@
         {
             "Key": "f080f159-9237-42b2-994f-4753672d0ed2",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "57e21c4d-ec2d-4815-9f3b-dcddf8acb214",
                 "resourcePath": "sprites\\bg_dungeon1start\\bg_dungeon1start.yy",
                 "resourceType": "GMSprite"
@@ -24599,6 +24907,9 @@
         {
             "Key": "f41d6d81-3926-46e1-b8a5-eb8c983ba056",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "b3026097-99b7-47c8-8203-bdc03aacb24a",
                 "resourcePath": "sprites\\bg_chateau2\\bg_chateau2.yy",
                 "resourceType": "GMSprite"
@@ -24695,6 +25006,9 @@
         {
             "Key": "f51dbaea-b962-4f3a-9e77-d1eea0962fc3",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "1eb9c1cf-6c3d-4560-994f-027ab4d6c7da",
                 "resourcePath": "sprites\\bg_ruinstatue3\\bg_ruinstatue3.yy",
                 "resourceType": "GMSprite"
@@ -24783,6 +25097,9 @@
         {
             "Key": "f5de079f-8671-485f-9b75-980d1fd10476",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "248c4a3e-fa6f-42c5-9be8-25ab912d8c52",
                 "resourcePath": "sprites\\tile_strongcolddecoration\\tile_strongcolddecoration.yy",
                 "resourceType": "GMSprite"
@@ -24887,6 +25204,9 @@
         {
             "Key": "f727803f-98b6-448a-99fe-84ee123680f5",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "876f5db9-6a9a-4390-bcbd-2ff62abed545",
                 "resourcePath": "sprites\\spr_ruinfallingbrick\\spr_ruinfallingbrick.yy",
                 "resourceType": "GMSprite"
@@ -24927,6 +25247,9 @@
         {
             "Key": "f742ab28-72d8-48d3-858c-c00a48eff057",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "08c886b1-ac57-4cb7-ae57-99e4a4b83efc",
                 "resourcePath": "tilesets\\tileset_ruin\\tileset_ruin.yy",
                 "resourceType": "GMTileSet"
@@ -25407,6 +25730,9 @@
         {
             "Key": "fcc623f7-9312-4761-98eb-3ab2e856125c",
             "Value": {
+                "configDeltas": [
+                    "Normal"
+                ],
                 "id": "26ed6a8c-43f0-4411-aca8-a4568586d6ab",
                 "resourcePath": "sprites\\spr_tile_dungeon1start\\spr_tile_dungeon1start.yy",
                 "resourceType": "GMSprite"

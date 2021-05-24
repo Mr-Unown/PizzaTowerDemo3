@@ -175,11 +175,15 @@ if (character != "S")
                 else
                     sprite_index = spr_player_airbashstart
             }
-            if (character == "N")
-            {
-                sprite_index = spr_playerN_spin
-                scr_soundeffect(126)
-            }
+			else if (character == "N")
+			{
+				sprite_index = spr_playerN_spin
+				scr_soundeffect(126)
+			}
+			else
+			{
+				sprite_index = spr_playerPZ_faceplant
+			}
             state = 111
             image_speed = 0.5
             with (instance_create(x, y, obj_jumpdust))

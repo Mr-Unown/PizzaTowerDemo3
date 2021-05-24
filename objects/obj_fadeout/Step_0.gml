@@ -2,6 +2,11 @@ if instance_exists(obj_pausefadeout)
     instance_destroy(obj_pausefadeout)
 if (fadealpha > 1)
 {
+	if flushtextures = true
+	{
+		draw_texture_flush();
+		flushtextures = false
+	}
 	global.geromeopen = false;
     fadein = 1
     if instance_exists(obj_player)
@@ -18,11 +23,15 @@ if (fadealpha > 1)
         }
 		
         if (room != obj_player1.targetRoom)
+		{
             room_goto(obj_player1.targetRoom)
+		}
         if (global.coop == 1)
         {
             if (room != obj_player2.targetRoom)
+			{
                 room_goto(obj_player2.targetRoom)
+			}
         }
     }
 }

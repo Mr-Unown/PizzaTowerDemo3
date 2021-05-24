@@ -1,16 +1,18 @@
-if (other.object_index != obj_coolpinea_hitbox)
+if instance_exists(other.id)
 {
-    with (other.id)
-        instance_destroy()
-    if (!collided)
-        event_user(0)
+	if (other.object_index != obj_coolpinea_hitbox)
+	{
+		with (other.id)
+			instance_destroy()
+		if (!collided)
+			event_user(0)
+	}
+	else if (other.ID.sprite_index == spr_coolpinea_taunt && other.object_index == obj_coolpinea_hitbox)
+	{
+		with (other.id)
+			instance_destroy()
+		if (!collided)
+		    event_user(0)
+	}
 }
-else if (other.ID.sprite_index == spr_coolpinea_taunt && other.object_index == obj_coolpinea_hitbox)
-{
-    with (other.id)
-        instance_destroy()
-    if (!collided)
-        event_user(0)
-}
-
 
