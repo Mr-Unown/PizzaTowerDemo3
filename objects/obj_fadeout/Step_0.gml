@@ -2,7 +2,7 @@ if instance_exists(obj_pausefadeout)
     instance_destroy(obj_pausefadeout)
 if (fadealpha > 1)
 {
-	if flushtextures = true
+	while flushtextures = true
 	{
 		draw_texture_flush();
 		flushtextures = false

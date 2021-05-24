@@ -344,7 +344,13 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
     {
         if (room == hub_room1 || room == hub_room2 || room == hub_room3 || room == cowboytask || room == Titlescreen || room == Scootertransition || room == characterselect)
         {
-            pause = 0
+			with instance_create(x,y,obj_pausefadeout)
+			{
+				flushtextures = true
+				fadein = 1
+				fadealpha = 1	
+			}
+			pause = 0
             instance_activate_all()
             global.lapping = 0
             global.nocombo = 0
@@ -362,12 +368,17 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
             if instance_exists(obj_player2)
                 obj_player2.targetDoor = "A"
             global.coop = 0
-			draw_texture_flush();
+			
         }
         else
         {
-			draw_texture_flush();
-            pause = 0
+			with instance_create(x,y,obj_pausefadeout)
+			{
+				flushtextures = true
+				fadein = 1
+				fadealpha = 1	
+			}
+			pause = 0
             instance_activate_all()
             global.lapping = 0
             global.laptouched = 0
