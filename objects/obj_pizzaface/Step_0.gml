@@ -26,6 +26,7 @@ if relax = false && global.freezeframe = false && room != rank_room && !instance
 				{
 					audio_stop_all()
 					state = states.timesup
+					obj_camera.alarm[2] = -1
 					room = timesuproom
 					scr_soundeffect(mu_timesup)
 				}
