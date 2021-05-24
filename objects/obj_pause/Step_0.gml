@@ -366,6 +366,7 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
         }
         else
         {
+			draw_texture_flush();
             pause = 0
             instance_activate_all()
             global.lapping = 0
@@ -373,7 +374,6 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
 			global.levelname = "none"
 			global.fakepeppino = 0
 			scr_playerreset()
-			draw_texture_flush();
 			if obj_player.backtohubroom != noone && obj_player.backtohubroom != undefined
 			{
 				obj_player1.targetDoor = "start"
