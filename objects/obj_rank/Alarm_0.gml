@@ -1,4 +1,4 @@
-if (global.christmasend == 1)
+/*if (global.christmasend == 1)
 {
 	global.levelname = "none"
     global.fakepeppino = 0
@@ -9,13 +9,18 @@ if (global.christmasend == 1)
     room = strongcold_endscreen
 }
 else
-{
+{*/
+	while flushtextures = true
+	{
+		draw_texture_flush();
+		flushtextures = false
+	}
 	global.levelname = "none"
     global.fakepeppino = 0
     scr_playerreset()
     obj_player1.targetDoor = "start"
     obj_player2.targetDoor = "start"
     room = obj_player.backtohubroom
-}
+//}
 
 
