@@ -103,7 +103,6 @@ if ((!key_down) && (!scr_solid((x + 27), (y - 32))) && (!scr_solid((x - 27), (y 
     else
 	{
         state = 70
-		movespeed = clamp(wallspeed,8,12)
 	}
     if (character != "S")
         sprite_index = spr_rollgetup
