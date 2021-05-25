@@ -232,7 +232,7 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
                 obj_player1.targetDoor = "A"
                 if instance_exists(obj_player2)
                     obj_player2.targetDoor = "A"
-            }
+            }/*
             else if (string_letters(roomname) == "golf" || string_letters(roomname) == "golfsecret")
             {
                 instance_activate_all()
@@ -242,7 +242,7 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
                 obj_player1.targetDoor = "A"
                 if instance_exists(obj_player2)
                     obj_player2.targetDoor = "A"
-            }
+            }*/
             else if (string_letters(roomname) == "resto" || string_letters(roomname) == "restosecret")
             {
                 instance_activate_all()
@@ -252,7 +252,7 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
                 obj_player1.targetDoor = "A"
                 if instance_exists(obj_player2)
                     obj_player2.targetDoor = "A"
-            }			
+            }/*			
             else if (string_letters(roomname) == "desert" || string_letters(roomname) == "desertsecret")
             {
                 instance_activate_all()
@@ -302,7 +302,7 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
                 obj_player1.targetDoor = "A"
                 if instance_exists(obj_player2)
                     obj_player2.targetDoor = "A"
-            }
+            }*/
             else if (string_letters(roomname) == "kungfu" || string_letters(roomname) == "kungfusecret")
             {
                 instance_activate_all()

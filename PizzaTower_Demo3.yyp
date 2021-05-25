@@ -22727,6 +22727,14 @@
             }
         },
         {
+            "Key": "e0d35136-feb6-4e32-8b88-cef44800c97e",
+            "Value": {
+                "id": "07a600e8-fea4-43a3-9aef-bd857a3a4b17",
+                "resourcePath": "objects\\obj_ufoolive_teleportal\\obj_ufoolive_teleportal.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e0d6a3e6-24ce-4328-820c-4f89bab31acf",
             "Value": {
                 "id": "46a49cbc-66b8-4cb2-9615-ea23b0d70b7a",

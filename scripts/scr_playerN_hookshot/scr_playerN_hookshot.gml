@@ -1,4 +1,4 @@
-move = (key_left + key_right)
+/*move = (key_left + key_right)
 hsp = (movespeed * move)
 if (move != 0)
     xscale = move

@@ -1,4 +1,4 @@
-mask_index = spr_player_mask
+/*mask_index = spr_player_mask
 move = (key_left + key_right)
 hsp = (move * movespeed)
 vsp = 0

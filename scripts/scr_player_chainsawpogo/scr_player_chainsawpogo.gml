@@ -1,4 +1,4 @@
-hsp = (xscale * movespeed)
+/*hsp = (xscale * movespeed)
 if ((scr_solid((x + 1), y) && xscale == 1) || (scr_solid((x - 1), y) && xscale == -1))
     movespeed = 0
 landAnim = 1

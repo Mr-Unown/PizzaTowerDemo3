@@ -1,4 +1,4 @@
-costumercutscenetimer--
+/*costumercutscenetimer--
 if (sprite_index == spr_player_knock && costumercutscenetimer < 0)
 {
     xscale *= -1
