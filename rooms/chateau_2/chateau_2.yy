@@ -511,9 +511,9 @@
         },
         {
             "__type": "GMRBackgroundLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "Backgrounds_3",
+            "name": "Backgrounds_long",
             "id": "6a979cf1-dc08-4b2c-b70b-0fcc6aa4326c",
-            "animationFPS": 1,
+            "animationFPS": 0.35,
             "animationSpeedType": "1",
             "colour": { "Value": 4294967295 },
             "depth": 300,
@@ -534,15 +534,15 @@
             "m_serialiseFrozen": false,
             "modelName": "GMRBackgroundLayer",
             "mvc": "1.0",
-            "spriteId": "dffa29ad-2c8d-4a60-af7f-9ba300baa65a",
+            "spriteId": "fd33f744-b111-4177-aef1-6cde2771cbd2",
             "stretch": false,
             "userdefined_animFPS": false,
             "userdefined_depth": false,
             "visible": true,
             "vspeed": 0,
-            "vtiled": true,
+            "vtiled": false,
             "x": 0,
-            "y": 0
+            "y": 632
         },
         {
             "__type": "GMRBackgroundLayer_Model:#YoYoStudio.MVCFormat",

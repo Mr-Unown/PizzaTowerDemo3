@@ -66,14 +66,14 @@ if (character != "S")
         grav = 0.5
     }
 	//Pizzelle
-    if floor(image_index) == (image_number - 1) && sprite_index = spr_suplexdash && character = "PZ"
+    if floor(image_index) == (image_number - 1) && sprite_index = spr_suplexdash && character = "PZ"  && !key_attack
     {
         image_speed = 0.35
         state = 0
         grav = 0.5
     }
 
-    if ((floor(image_index) == (image_number - 1) || sprite_index == spr_suplexdashjump || sprite_index == spr_suplexdashjumpstart) && grounded && key_attack)
+    if ((floor(image_index) == (image_number - 1) || sprite_index == spr_suplexdashjump || sprite_index == spr_suplexdashjumpstart) && (grounded || character = "PZ") && key_attack)
     {
         image_speed = 0.35
 		if (character == "N" && pogo = true) && !key_slap2 

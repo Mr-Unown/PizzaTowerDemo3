@@ -16183,6 +16183,14 @@
             }
         },
         {
+            "Key": "a156a16f-dd89-489e-bd0b-4c78be297580",
+            "Value": {
+                "id": "d6c0a993-b3a8-4426-a13f-df5d82cdc2d7",
+                "resourcePath": "sprites\\bg_medievaltowers\\bg_medievaltowers.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a164c134-ba18-4339-9c9e-da6591c170d4",
             "Value": {
                 "id": "14632ad0-eadb-48b8-a71f-522c33b56dc1",
@@ -25444,6 +25452,14 @@
                 "id": "1f5e3c82-3ae4-4aee-99e0-a6bb513a6e88",
                 "resourcePath": "scripts\\__background_set_element\\__background_set_element.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "fd33f744-b111-4177-aef1-6cde2771cbd2",
+            "Value": {
+                "id": "b61f0f14-086b-4c93-adde-b943b09897ba",
+                "resourcePath": "sprites\\bg_chateautowers\\bg_chateautowers.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

@@ -94,7 +94,17 @@ if ((!key_down) && (!scr_solid((x + 27), (y - 32))) && (!scr_solid((x - 27), (y 
 {
     image_index = 0
     scr_soundeffect(sfx_rollgetup)
-    state = 70
+	
+	if (movespeed >= 12) && character = "PZ"
+    {
+        state = 91
+		movespeed = clamp(movespeed,12,15)
+    }
+    else
+	{
+        state = 70
+		movespeed = clamp(wallspeed,8,12)
+	}
     if (character != "S")
         sprite_index = spr_rollgetup
 }
