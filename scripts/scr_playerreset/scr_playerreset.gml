@@ -1,54 +1,51 @@
-var roomname = room_get_name(room)
-if (string_letters(roomname) != "golf")
-    global.fakepeppino = 0
-if (string_letters(roomname) == "golf")
-    global.fakepeppino = 1
 if instance_exists(obj_endlevelfade)
-    instance_destroy(obj_endlevelfade)
-obj_discordrpc.alarm[0] = -1
+    instance_destroy(obj_endlevelfade);
+obj_discordrpc.alarm[0] = -1;
 //Goop Gone
 with obj_goop 
-instance_destroy(id,false)
+{
+instance_destroy(id,false);
+}
 //Lighting
 with obj_lighting
 {
-	darkness = 0
-	targetdarkness = 0
+	darkness = 0;
+	targetdarkness = 0;
 }
-global.style = 0
-global.stylethreshold = 0
+global.style = 0;
+global.stylethreshold = 0;
 global.freezeframe = false;
-global.switchblock = 0
-global.soundposoffset = 0
-global.scrolloffset = 0
-global.timeractive = 0
-global.wave = 0
-global.maxwave = 0
-global.golfbuffer = 0
-global.secretfound = 0
-global.hurtcounter = 0
-global.snickchallenge = 0
-global.timeattack = 0
+global.switchblock = 0;
+global.soundposoffset = 0;
+global.scrolloffset = 0;
+global.timeractive = 0;
+global.wave = 0;
+global.maxwave = 0;
+global.golfbuffer = 0;
+global.secretfound = 0;
+global.hurtcounter = 0;
+global.snickchallenge = 0;
+global.timeattack = 0;
 if instance_exists(obj_snickexe)
-    instance_destroy(obj_snickexe)
-obj_timeattack.stop = 0
-global.taseconds = 0
-global.taminutes = 0
-obj_player1.spotlight = 1
-obj_player2.x = -1000
-obj_player2.y = 500
-obj_player2.state = 8
-obj_camera.golf = 0
+    instance_destroy(obj_snickexe);
+obj_timeattack.stop = 0;
+global.taseconds = 0;
+global.taminutes = 0;
+obj_player1.spotlight = 1;
+obj_player2.x = -1000;
+obj_player2.y = 500;
+obj_player2.state = 8;
+obj_camera.golf = 0;
 obj_camera.greyscalefade = 0;
 if instance_exists(obj_coopflag)
-    instance_destroy(obj_coopflag)
-global.miniboss = 0
-global.lapping = 0
-global.laptouched = 0
-global.christmasend = 0
-global.nocombo = 0
-global.storedgun = 0
-global.golfhit = 0
+    instance_destroy(obj_coopflag);
+global.miniboss = 0;
+global.lapping = 0;
+global.laptouched = 0;
+global.christmasend = 0;
+global.nocombo = 0;
+global.storedgun = 0;
+global.golfhit = 0;
 with (obj_tv)
 {
 	bootingup = false
@@ -65,28 +62,29 @@ with (obj_tv)
 	image_speed = 0
 	alarm[0] = -1
 	showtext = false
-	tvsprite = spr_tvboot
-	sprite_index = spr_tvboot
-	xi = 500
-	yi = 600
+	tvsprite = spr_tvboot;
+	sprite_index = spr_tvboot;
+	xi = 500;
+	yi = 600;
 
 }
-global.SAGEshotgunsnicknumber = 0
-obj_music.fadeoff = 0
-scr_soundstopall()
+global.SAGEshotgunsnicknumber = 0;
+obj_music.fadeoff = 0;
+scr_soundstopall();
+audio_stop_all();
 if instance_exists(obj_timesup)
-    instance_destroy(obj_timesup)
-global.seconds = 59
-global.minutes = 1
-obj_player1.state = 61
-obj_player1.visible = true
-obj_player2.state = 61
-obj_player2.visible = true
+    instance_destroy(obj_timesup);
+global.seconds = 59;
+global.minutes = 1;
+obj_player1.state = 61;
+obj_player1.visible = true;
+obj_player2.state = 61;
+obj_player2.visible = true;
 
 
 ds_list_clear(global.saveroom)
 ds_list_clear(global.baddieroom)
-global.ruinmusic = 0
+global.ruinmusic = 0;
 with (obj_player1)
 {
 	scr_playercreate()
@@ -234,9 +232,9 @@ with (obj_player1)
 	
 	floatbuffer = false
 floattimer = 50
-spellselect = 1
-spellshowbuffer = 0
-global.magic = 50
+spellselect = 1;
+spellshowbuffer = 0;
+global.magic = 50;
 }
 with (obj_player2)
 {
@@ -375,10 +373,10 @@ with (obj_player2)
     superspringjump = 0
     parry_id = -4
     parried_baddie = 0
-    parry_max = 8
+    parry_max = 8;
     
-	pipedirection = "none"
-	grounded = true
-	grinding = false
+	pipedirection = "none";
+	grounded = true;
+	grinding = false;
 	
 }

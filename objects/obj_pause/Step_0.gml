@@ -138,8 +138,12 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
         selected = 2
         scr_soundeffect(29)
     }
-    if (key_jump2 && selected == -1)
-    {
+	if key_jump2
+	{
+		switch (selected) 
+		{
+			case -1:
+		#region Config
         if (!instance_exists(obj_mainconfig))
             instance_create(x, y, obj_mainconfig)
         scr_soundeffect(8)
@@ -150,14 +154,16 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
         }
         else
             audio_resume_sound(global.pausenicemusic)
-    }
-    if (!instance_exists(obj_mainconfig))
-    {
-        if audio_is_playing(global.pausenicemusic)
-            audio_pause_sound(global.pausenicemusic)
-    }
-    if (key_jump && selected == 1)
-    {
+		#endregion				
+				break;			
+			case 0:
+		#region Leave
+        if (!instance_exists(obj_pausefadeout))
+            instance_create(x, y, obj_pausefadeout)		
+		#endregion
+				break;			
+		    case 1:
+		#region Restart
         var roomname = room_get_name(room)
         global.lapping = 0
         global.laptouched = 0
@@ -339,73 +345,76 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
             global.nocombo = 1
             pause = 0
         }
-    }
-    if (key_jump2 && selected == 2)
-    {
+		#endregion
+		        break;
+			case 2:
+		#region Quit
         if (room == hub_room1 || room == hub_room2 || room == hub_room3 || room == cowboytask || room == Titlescreen || room == Scootertransition || room == characterselect)
         {
 			with instance_create(x,y,obj_pausefadeout)
 			{
-				flushtextures = true
-				fadein = 1
-				fadealpha = 1	
+				flushtextures = true;
+				fadein = 1;
+				fadealpha = 1;
 			}
-			pause = 0
-            instance_activate_all()
-            global.lapping = 0
-            global.nocombo = 0
-            global.laptouched = 0
-            room = Realtitlescreen
+			pause = 0;
+            instance_activate_all();
+            global.lapping = 0;
+            global.nocombo = 0;
+            global.laptouched = 0;
+            room = Realtitlescreen;
             with (obj_player1)
             {
-                character = "P"
-                scr_characterspr()
+                character = "P";
+                scr_characterspr();
             }
-            scr_playerreset()
-            obj_player.state = 8
-            //global.equippedhat = 0
-            obj_player1.targetDoor = "A"
+            scr_playerreset();
+            obj_player.state = 8;
+            //global.equippedhat = 0;
+            obj_player1.targetDoor = "A";
             if instance_exists(obj_player2)
-                obj_player2.targetDoor = "A"
-            global.coop = 0
-			
+                obj_player2.targetDoor = "A";
+            global.coop = 0;
         }
         else
         {
 			with instance_create(x,y,obj_pausefadeout)
 			{
-				flushtextures = true
-				fadein = 1
-				fadealpha = 1	
+				flushtextures = true;
+				fadein = 1;
+				fadealpha = 1;
 			}
-			pause = 0
-            instance_activate_all()
-            global.lapping = 0
-            global.laptouched = 0
-			global.levelname = "none"
-			global.fakepeppino = 0
-			scr_playerreset()
+			pause = 0;
+            instance_activate_all();
+            global.lapping = 0;
+            global.laptouched = 0;
+			global.levelname = "none";
+			global.fakepeppino = 0;
+			scr_playerreset();
 			if obj_player.backtohubroom != noone && obj_player.backtohubroom != undefined
 			{
-				obj_player1.targetDoor = "start"
+				obj_player1.targetDoor = "start";
 				if instance_exists(obj_player2)			
-				obj_player2.targetDoor = "start"				
-				room = obj_player.backtohubroom		 
+				obj_player2.targetDoor = "start";			
+				room = obj_player.backtohubroom	; 
 			}
 			else 
 			{
-				obj_player1.targetDoor = "A"
+				obj_player1.targetDoor = "A";
 				if instance_exists(obj_player2)
-				obj_player2.targetDoor = "A"				
-				room = hub_room1
+				obj_player2.targetDoor = "A";				
+				room = hub_room1;
 			}
         }
-    }
-    if (key_jump2 && selected == 0)
+		#endregion		
+				break;
+		}
+	}
+    if (!instance_exists(obj_mainconfig))
     {
-        if (!instance_exists(obj_pausefadeout))
-            instance_create(x, y, obj_pausefadeout)
-    }
+        if audio_is_playing(global.pausenicemusic)
+            audio_pause_sound(global.pausenicemusic)
+    }	
 }
 
 

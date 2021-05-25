@@ -1,4 +1,4 @@
-var roomname = room_get_name(room)
+//var roomname = room_get_name(room)
 if (ds_list_find_index(global.saveroom, id) == -1 && global.snickchallenge == 0)
 {
     global.secretfound = (global.secretfound + 1)
