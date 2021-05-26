@@ -65,7 +65,7 @@ if (player.state != 55)
             draw_sprite_ext_camera(spr_pepinoHUDmach3, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.state == 73 || player.sprite_index == spr_bombpep_end || player.sprite_index == spr_player_fireassend || player.state == 36 || player.state == 27 || (player.state == 54 && player.sprite_index == spr_player_bossintro) || (player.state == 54 && player.sprite_index == spr_player_idle))
             draw_sprite_ext_camera(spr_pepinoHUDhurt, -1, 125, 100, 1, 1, 0, c_white, alpha)
-		else if (global.combo >= 3) && global.pausecombotime = true
+		else if (global.combo >= 3) && global.combobuffer > 0
             draw_sprite_ext_camera(spr_pepinoHUDmenacing, -1, 125, 100, 1, 1, 0, c_white, alpha)			
         else if (player.angry == 1)
             draw_sprite_ext_camera(spr_pepinoHUD3hp, -1, 125, 100, 1, 1, 0, c_white, alpha)
@@ -106,7 +106,7 @@ if (player.state != 55)
             draw_sprite_ext_camera(spr_noiseHUD_mach3, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.state == 73 || player.sprite_index == player.spr_bombpepend || player.sprite_index == player.spr_fireassend || player.state == 36 || player.state == 27 || (player.state == 54 && player.sprite_index == spr_player_bossintro) || (player.state == 54 && player.sprite_index == player.spr_idle))
             draw_sprite_ext_camera(spr_noiseHUD_hurt, -1, 125, 100, 1, 1, 0, c_white, alpha)
-        else if (global.combo >= 3) && global.pausecombotime = true
+        else if (global.combo >= 3) && global.combobuffer > 0
             draw_sprite_ext_camera(spr_noiseHUD_menacing, -1, 125, 100, 1, 1, 0, c_white, alpha)			
         else if (player.angry == 1)
             draw_sprite_ext_camera(spr_noiseHUD_angry, -1, 125, 100, 1, 1, 0, c_white, alpha)
@@ -155,7 +155,7 @@ if (player.state != 55)
             draw_sprite_ext_camera(spr_playerV_hurtHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.sprite_index == spr_playerV_hurt)
             draw_sprite_ext_camera(spr_playerV_hurtHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
-        else if (global.combo >= 3) && global.pausecombotime = true
+        else if (global.combo >= 3) && global.combobuffer > 0
             draw_sprite_ext_camera(spr_playerV_happyHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)			
         else if (global.panic == 1 || global.snickchallenge == 1 || global.miniboss == 1)
             draw_sprite_ext_camera(spr_playerV_panicHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
@@ -206,7 +206,7 @@ if (player.state != 55)
 			draw_sprite_ext_camera(spr_playerPZ_bumpHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)		
         else if (player.angry == 1)
             draw_sprite_ext_camera(spr_playerPZ_angryHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)			
-        else if (global.combo >= 3) && global.pausecombotime = true
+        else if (global.combo >= 3) && global.combobuffer > 0
             draw_sprite_ext_camera(spr_playerPZ_menacingHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)				
         else
             draw_sprite_ext_camera(spr_playerPZ_normalHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)

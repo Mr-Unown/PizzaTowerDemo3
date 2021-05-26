@@ -6359,6 +6359,14 @@
             }
         },
         {
+            "Key": "3fa00685-ae8d-4c6e-9aec-57fbf13fecd5",
+            "Value": {
+                "id": "cb8a7c7e-a22a-46cb-acf2-37e2c71ba290",
+                "resourcePath": "sprites\\spr_ancienttv\\spr_ancienttv.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3fa78080-2918-42da-870b-91e5fea83cf0",
             "Value": {
                 "id": "8bd0631e-4f74-43b9-a00d-6d76cd09d99f",

@@ -134,7 +134,7 @@ else if (global.collect > global.crank && shownrankc == 0 && global.nocombo == 0
     alarm[0] = 200
     tvsprite = spr_tvrankc
     shownrankc = 1
-}
+}/*
 else if (obj_player.state == states.hurt) && chose = 0
 {
     image_speed = 0.1
@@ -144,7 +144,7 @@ else if (obj_player.state == states.hurt) && chose = 0
     chose = 1
     tvsprite = spr_tvhurt
     once = 1
-}
+}*/
 else if (obj_player.sprite_index == obj_player.spr_golfwin)
 {
     image_speed = 0.1
@@ -152,7 +152,7 @@ else if (obj_player.sprite_index == obj_player.spr_golfwin)
     tvsprite = spr_tvclap
     once = 1
 }
-else if (obj_player.state == 36 || obj_player.state == 4)
+else if (obj_player.state == states.gameover || obj_player.state == states.timesup)
 {
     alarm[0] = 50
     image_speed = 0.1

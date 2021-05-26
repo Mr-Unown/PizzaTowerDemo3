@@ -36,7 +36,7 @@ drawy = 74;
 drawx2 = 750;
 drawy2 = -14;
 combolast = 0;
-combobuffer = 0;
+global.combobuffer = 0;
 display_set_gui_size(960, 540)
 
 

@@ -33,7 +33,7 @@ if (global.combo != 0 && global.miniboss == 0 && global.combotime != 0 && (tvspr
 	draw_sprite_part_ext(spr_tvdefault, -1, (sprite_get_width(spr_tvdefault)) * combotimer, 0, (sprite_get_width(spr_tvdefault)), sprite_get_height(spr_tvdefault), drawx2 + xoffset, drawy2 ,1 ,1 ,c_white , alpha)
 	draw_sprite_part_ext(tvsprite, -1, 0, 0, (sprite_get_width(tvsprite)) * combotimer, sprite_get_height(tvsprite),drawx2 ,drawy2 ,1 ,1 ,c_white , alpha)
 	//Draw Text
-	if room != strongcold_endscreen  && combobuffer <= 0
+	if room != strongcold_endscreen  && global.combobuffer <= 0
 	{
 		if (global.coop == 0)
 			draw_text(832, 60, string_hash_to_newline(global.collect))
@@ -43,7 +43,7 @@ if (global.combo != 0 && global.miniboss == 0 && global.combotime != 0 && (tvspr
 			draw_text(832, 80, string_hash_to_newline(obj_player2.collectscore))
 		}
 	}
-	else if room != strongcold_endscreen && combobuffer > 0
+	else if room != strongcold_endscreen && global.combobuffer > 0
 	{
 	draw_sprite_ext(spr_tvcombotext, -1, 832, 74, 1, 1, 0, c_white, 1)
     draw_text(852, 75, string_hash_to_newline(global.combo))

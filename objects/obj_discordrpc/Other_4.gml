@@ -110,10 +110,10 @@ if (global.snickchallenge == false)
 	in_a_level = false;
 	}
 }
-else if global.snickchallenge = true && !alarm[0]
+else if global.snickchallenge = true
 {
 	string_status = "Snick's Challenge"
 	string_imagekey = "snickchallenge"
 	in_a_level = true;
-	alarm[0] = 50
+	alarm[0] = 100
 }
