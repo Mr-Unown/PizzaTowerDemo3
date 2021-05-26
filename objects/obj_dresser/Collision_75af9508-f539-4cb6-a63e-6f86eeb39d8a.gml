@@ -13,6 +13,6 @@ if other.key_up2 && !instance_exists(obj_palettechanger)
 		depth = _depth
 		image_index = 0.35
 		sprite_index = spr_bigpoofclouds
-		image_angle = choose(0,90,180,360)
+		image_angle = choose(0,90,180,270)
 	}	
 }
