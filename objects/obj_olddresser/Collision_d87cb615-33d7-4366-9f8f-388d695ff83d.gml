@@ -21,7 +21,8 @@ with other.id
 		{
 			depth = _depth
 			image_index = 0.35
-			sprite_index = spr_dust_effect
+			sprite_index = spr_bigpoofclouds
+			image_angle = choose(0,90,180,360)
 		}			
 	}
 }

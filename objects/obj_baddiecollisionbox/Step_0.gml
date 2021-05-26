@@ -61,7 +61,8 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
 				with (instance_create((other.x + random_range(-16, 16)), (other.y + random_range(-16, 16)), obj_balloonpop))
 				{
 					image_index = 0.35
-					sprite_index = spr_dust_effect
+					sprite_index = spr_bigpoofclouds
+					image_angle = choose(0,90,180,360)
 				}				
                 if ((!grounded) && state != 74 && key_jump2) 
                 {
@@ -394,7 +395,8 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player2) && obj_player2
 				with (instance_create((other.x + random_range(-16, 16)), (other.y + random_range(-16, 16)), obj_balloonpop))
 				{
 					image_index = 0.35
-					sprite_index = spr_dust_effect
+					sprite_index = spr_bigpoofclouds
+					image_angle = choose(0,90,180,360)
 				}
 								
                 if ((!grounded) && state != 74 && key_jump2)

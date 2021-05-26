@@ -21799,6 +21799,14 @@
             }
         },
         {
+            "Key": "d77d70ce-5bce-48c3-b110-d284cd49032a",
+            "Value": {
+                "id": "b168907b-9957-4aad-aad3-bcec6216e2e1",
+                "resourcePath": "sprites\\spr_bigpoofclouds\\spr_bigpoofclouds.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d78456b5-5a1b-4502-8098-5733c3705f63",
             "Value": {
                 "id": "2daab605-de2d-47df-8585-56f492fddf54",
