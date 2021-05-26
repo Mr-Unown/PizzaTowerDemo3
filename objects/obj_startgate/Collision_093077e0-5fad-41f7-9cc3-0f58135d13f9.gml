@@ -21,15 +21,16 @@ with (obj_player1)
         obj_camera.chargecamera = 0
         image_index = 0
         state = 64
-        obj_player2.backtohubstartx = other.cplayerx
-        obj_player2.backtohubstarty = y
-        obj_player2.backtohubroom = room
+
         if (global.coop == 1)
         {
             with (obj_player2)
             {
 				x = obj_player1.x + 64
                 y = obj_player1.y
+				backtohubstartx = obj_player1.backtohubstartx 
+				backtohubstarty = obj_player1.y
+				backtohubroom = room
                 mach2 = 0
                 obj_camera.chargecamera = 0
                 image_index = 0
@@ -61,15 +62,15 @@ with (obj_player2)
         obj_camera.chargecamera = 0
         image_index = 0
         state = 64
-        obj_player1.backtohubstartx = other.cplayerx
-        obj_player1.backtohubstarty = y
-        obj_player1.backtohubroom = room
         if (global.coop == 1)
         {
             with (obj_player1)
             {
                 x = obj_player2.x + 64
                 y = obj_player2.y
+				backtohubstartx = obj_player2.backtohubstartx 
+				backtohubstarty = obj_player2.y
+				backtohubroom = room				
                 mach2 = 0
                 obj_camera.chargecamera = 0
                 image_index = 0

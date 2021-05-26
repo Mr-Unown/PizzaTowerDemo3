@@ -22,7 +22,7 @@ else
     player = obj_player1
     player2 = obj_player2
 }
-if global.hudmode != 1
+if global.hudmode == false
 {
 if (player2.state != 55)
 {

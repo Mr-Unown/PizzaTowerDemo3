@@ -1,4 +1,4 @@
-if global.hudmode != 1
+if global.hudmode == false
 {
 //Better Stylebar
 drawx = obj_tv.drawx;

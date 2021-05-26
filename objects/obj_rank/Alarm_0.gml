@@ -17,10 +17,18 @@ else
 	}
 	global.levelname = "none"
     global.fakepeppino = 0
-    scr_playerreset()
-    obj_player1.targetDoor = "start"
-    obj_player2.targetDoor = "start"
-    room = obj_player.backtohubroom
+	script_execute(scr_playerreset);
+	var _backtohubroom = hub_room1;
+	with obj_player1
+	{
+		targetDoor = "start";
+		_backtohubroom = backtohubroom;
+	}
+	with obj_player2
+	{
+		targetDoor = "start";
+	}		
+	room_goto(_backtohubroom); 
 //}
 
 

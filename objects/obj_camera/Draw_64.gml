@@ -11,7 +11,7 @@ else
     player = obj_player1
     player2 = obj_player2
 }
-if global.hudmode != 1
+if global.hudmode == false
 {
 if (obj_player1.spotlight == 1)
 	if	obj_player1.custompalette = true

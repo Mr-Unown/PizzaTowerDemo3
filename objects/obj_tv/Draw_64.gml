@@ -1,5 +1,5 @@
 
-if global.hudmode != 1
+if global.hudmode == false
 {
 var _xoffset = random_range(-3,3);
 var _yoffset = random_range(-3,3);

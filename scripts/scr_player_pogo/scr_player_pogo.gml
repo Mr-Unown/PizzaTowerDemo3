@@ -53,10 +53,10 @@ if (sprite_index = spr_playerN_pogo || sprite_index = spr_playerN_pogocharged) &
 	//Jump
 	if key_jump2
 	vsp = -12
-	else if !key_down2
-	vsp = -6		
+	else if key_down2
+	vsp = -3		
 	else
-	vsp = -3
+	vsp = -6
 
 	//To prevent repeat stuff
 	pogoed = true	

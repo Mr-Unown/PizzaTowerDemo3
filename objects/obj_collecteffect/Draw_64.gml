@@ -1,4 +1,4 @@
-if global.hudmode != 1
+if global.hudmode == false
 {
 draw_sprite_ext(sprite_index,-1,drawx,drawy,1,1,0,c_white,image_alpha)
 }

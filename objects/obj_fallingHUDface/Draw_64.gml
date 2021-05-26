@@ -1,4 +1,4 @@
-if global.hudmode != 1
+if global.hudmode == false
 {
 if (obj_player1.spotlight == 0)
     pal_swap_set(obj_player1.spr_palette, obj_player1.paletteselect, 0)
