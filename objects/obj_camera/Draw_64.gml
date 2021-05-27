@@ -13,6 +13,10 @@ else
 }
 if global.hudmode == false
 {
+	switch(global.newhud)
+	{
+		case 0:
+		#region OLD HUD
 if (obj_player1.spotlight == 1)
 	if	obj_player1.custompalette = true
 		pal_swap_set(obj_player1.surf_pallete, 1, true)
@@ -27,7 +31,8 @@ else
 	//Backup
 	 if (player.pizzashieldbackup >= 1)
 	 {
-		 for (var i = 0; i < player.pizzashieldbackup; ++i) {
+		 for (var i = 0; i < player.pizzashieldbackup; ++i)
+		 {
 		      draw_sprite_ext(spr_shieldbackup, -1, 50, 100 + (32*i), 1, 1, 0, c_white, alpha)
 		 }
 	 }
@@ -227,6 +232,18 @@ if (player.state != 55)
         draw_sprite_ext(spr_speedbar, 4, 125, 140, 1, 1, 0, c_white, alpha)
     else if ((player.movespeed >= 12 && (player.state == 69 || player.state == 70 || player.state == 91  || player.state == states.jetpack || player.state == 17 || player.state == 71 || player.state == 37 || player.state == 12 || player.state == 111 || player.state == 22)))
         draw_sprite_ext(spr_speedbarmax, -1, 125, 140, 1, 1, 0, c_white, alpha)
+	#endregion
+		break;		
+		case 1:
+		#region NEW HUD
+		
+		#endregion
+		break;
+
+
+	}
+}
+draw_set_blend_mode(0)
     //font = font_add_sprite_ext(spr_font, "ABCDEFGHIJKLMNOPQRSTUVWXYZ!.1234567890:", 1, 0)
     draw_set_font(global.font)
     draw_set_halign(fa_center)
@@ -270,9 +287,4 @@ if (player.state != 55)
     draw_sprite_ext(spr_inv, -1, 50, 30, 1, 1, 0, c_white, alpha)
 
    ///draw_text(190, 97, string(instance_number(obj_secretdebris)))
-
-}
-}
-draw_set_blend_mode(0)
-
 

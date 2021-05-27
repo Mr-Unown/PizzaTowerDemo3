@@ -4,6 +4,7 @@ chose = 0
 message = ""
 showtext = 0
 bootingup = false;
+oldfacesprite = spr_tv_open
 tvsprite = spr_tvboot
 _image_index = 0;
 collided = false
