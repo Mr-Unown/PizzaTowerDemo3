@@ -6,7 +6,8 @@
     "children": [
         "bd4cdb12-0ec4-49bf-a8d9-40779b7296d1",
         "ce084cdd-a8ce-4948-a891-d71dc60f1c5a",
-        "adebef67-931f-4938-89b4-f09ebfc42f6f"
+        "adebef67-931f-4938-89b4-f09ebfc42f6f",
+        "c4532dca-722e-43fb-ad67-701d2ed14b4d"
     ],
     "filterType": "GMTileSet",
     "folderName": "Dungeon",

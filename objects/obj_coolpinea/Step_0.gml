@@ -17,6 +17,7 @@ if (hitboxcreate == 0 && (state == 94 || state == 102))
     {
         ID = other.id
         sprite_index = spr_coolpinea_taunt
+		mask_index = spr_player_mask
     }
 }
 if (state != 109)

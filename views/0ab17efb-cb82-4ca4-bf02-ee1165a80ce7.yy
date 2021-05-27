@@ -21,7 +21,9 @@
         "af85bd82-dee7-42ff-a94f-cbf3d654b234",
         "eca2a169-06b0-4ca8-83e8-cc60a5c0e17a",
         "051694ad-e3e1-402c-9531-2ebe929bb5d6",
-        "db140801-9ee3-45bd-a997-c2c34544a524"
+        "db140801-9ee3-45bd-a997-c2c34544a524",
+        "c4532dca-722e-43fb-ad67-701d2ed14b4d",
+        "5d5a6fd0-cd1c-4806-8b29-e71ebbc3b248"
     ],
     "filterType": "GMTileSet",
     "folderName": "Tile Sets",
