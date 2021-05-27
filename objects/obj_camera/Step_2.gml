@@ -7,11 +7,10 @@ if global.hitstunenabled >= 2
 }
 else
 	global.freezeframetimer = global.defaulttime
+	
 if global.freezeframetimer >= 5
 	global.can_freeze = true;
 else 
-{
 	global.can_freeze = false;
 	//global.freezeframe = false;	
-}
 

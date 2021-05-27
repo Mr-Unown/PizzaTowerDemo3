@@ -2983,6 +2983,14 @@
             }
         },
         {
+            "Key": "1d8ece36-c65f-4caa-b795-161cfb6be798",
+            "Value": {
+                "id": "4a48e9c6-55b0-46f4-85b2-7372270d32e9",
+                "resourcePath": "sprites\\tile_chateau3\\tile_chateau3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1da318f1-9dc5-418e-bac6-eed2ad86308e",
             "Value": {
                 "id": "d459c8c3-2030-42a0-8e35-6ab3910b8315",
@@ -4764,6 +4772,14 @@
                 "id": "5deb53da-d960-4616-93ff-df8ce8798457",
                 "resourcePath": "objects\\obj_noisesatellite\\obj_noisesatellite.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "31240fcf-82aa-46b1-8a8c-e2316d2677af",
+            "Value": {
+                "id": "cfad7658-3920-460a-935b-48214b0d1264",
+                "resourcePath": "tilesets\\tileset_chateau3\\tileset_chateau3.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
@@ -20623,6 +20639,14 @@
             }
         },
         {
+            "Key": "cca4614c-c6e0-44e7-9cba-788c638df064",
+            "Value": {
+                "id": "f9fc045f-2b30-47ee-b3b8-865fc8e3dc60",
+                "resourcePath": "tilesets\\tileset_chateau2\\tileset_chateau2.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "cca643c1-941f-409c-8122-6fec69623ea0",
             "Value": {
                 "id": "5f20c4b6-f3cf-4f00-99d1-c560ac77ff3c",
@@ -23891,6 +23915,14 @@
             "Value": {
                 "id": "fc31de2a-ab0a-4cf3-b0c8-562dd0987b83",
                 "resourcePath": "sprites\\spr_forknight_turn\\spr_forknight_turn.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "eba49751-6cf2-4248-b1e1-35e3172c95d6",
+            "Value": {
+                "id": "80d67e29-b463-4b67-8d32-53807e31d87a",
+                "resourcePath": "sprites\\tile_chateau2\\tile_chateau2.yy",
                 "resourceType": "GMSprite"
             }
         },

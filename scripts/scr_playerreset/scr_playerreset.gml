@@ -42,6 +42,12 @@ obj_player2.y = 500;
 obj_player2.state = 8;
 obj_camera.golf = 0;
 obj_camera.greyscalefade = 0;
+with obj_camera
+{
+	alarm[3] = -1
+	golf = 0;
+	greyscalefade = 0;
+}
 if instance_exists(obj_coopflag)
     instance_destroy(obj_coopflag);
 global.miniboss = 0;
