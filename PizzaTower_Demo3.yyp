@@ -5799,6 +5799,14 @@
             }
         },
         {
+            "Key": "3a5ebbc0-bb6d-4873-9803-8182e4d2fcd8",
+            "Value": {
+                "id": "b50433a9-f323-4304-9b29-172ff67a0f76",
+                "resourcePath": "sprites\\spr_orangepalette\\spr_orangepalette.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3a601465-b67a-4cf7-a766-6a49eaef6a30",
             "Value": {
                 "id": "c16baad7-a730-4ed6-a815-52e43ab5df50",

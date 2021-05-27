@@ -2,7 +2,7 @@ with other.id
 {
 	if key_up2
 	{
-		if character = "P" || character = "PZ"
+		if character = "P" || character = "PZ" || (character = "N" && pogo = true)
 		{
 			if (paletteselect < sprite_get_width(spr_palette) - 1)
 				paletteselect += 1

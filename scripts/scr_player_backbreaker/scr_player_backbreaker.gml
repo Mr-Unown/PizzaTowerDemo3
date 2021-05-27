@@ -84,7 +84,7 @@ if (sprite_index == spr_taunt)
     {
 		if key_down2
 		{
-			if character = "P" || character = "PZ"
+			if character = "P" || character = "PZ" || (character = "N" && pogo = true)
 			{
 				if (paletteselect < sprite_get_width(spr_palette) - 1)
 					paletteselect += 1
@@ -107,7 +107,7 @@ if (sprite_index == spr_taunt)
                 character = "N"
 				pogo = false
                 paletteselect = 0
-				scr_characterspr()
+				scr_characterspr();
                 tauntstoredsprite = spr_idle
             }
             else if (character == "N") && pogo = false
@@ -115,7 +115,7 @@ if (sprite_index == spr_taunt)
                 character = "N"
 				pogo = true
                 paletteselect = 0
-				scr_characterspr()
+				scr_characterspr();
                 tauntstoredsprite = spr_idle
             }			
             else if (character == "N") && pogo = true
@@ -123,21 +123,21 @@ if (sprite_index == spr_taunt)
                 character = "S"
 				pogo = false
                 paletteselect = 0
-				scr_characterspr()
+				scr_characterspr();
                 tauntstoredsprite = spr_idle
             }
             else if (character == "S")
             {
                 character = "V"
                 paletteselect = 0
-				scr_characterspr()
+				scr_characterspr();
                 tauntstoredsprite = spr_idle
             }
 			else if (character == "V")
             {
                 character = "PZ"
                 paletteselect = 0
-				scr_characterspr()
+				scr_characterspr();
                 tauntstoredsprite = spr_idle
             }
 			else if (character == "PZ")
@@ -148,14 +148,14 @@ if (sprite_index == spr_taunt)
 				else
 					character = "PM"
                 paletteselect = 0
-				scr_characterspr()
+				scr_characterspr();
                 tauntstoredsprite = spr_idle
             }			
             else if (character == "D")
             {
                 character = "PM"
                 paletteselect = 0
-				scr_characterspr()
+				scr_characterspr();
                 tauntstoredsprite = spr_idle
             }
             else if (character == "PM")

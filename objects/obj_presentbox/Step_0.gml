@@ -1,3 +1,21 @@
+var player = obj_player1
+if global.coop = true
+player = (obj_player1.spotlight = false ? obj_player2 : obj_player1);
+//Paletteswitch
+if sprite_index == spr_present
+{
+	if (player.character = "N" && player.pogo = false)
+	{
+		spr_palette = spr_orangepalette
+		paletteselect = 1
+	}
+	else if (player.character = "N" && player.pogo = true)
+	{
+		spr_palette = spr_noisepalette
+		paletteselect = 0
+	}
+
+}
 switch global.boxhp
 {
     case 20:
@@ -129,8 +147,15 @@ if ((player.instakillmove = true  || player.state = 22 || player.state = states.
         instance_create(x, y, obj_baddiegibs)
         sprite_index = spr_present
     }
-    with (instance_create(x, y,  obj_baddie_dead))
+    with (instance_create(x, y, obj_baddie_dead))
+	{
         sprite_index = other.deadspr
+		if other.character = 0
+		{
+			spr_palette = other.spr_palette
+			paletteselect = other.paletteselect
+		}
+	}
 }
 if (place_meeting(x, y, obj_baddie) && obj_baddie.thrown == 1 && sprite_index != spr_present)
 {
@@ -173,8 +198,15 @@ if (place_meeting(x, y, obj_baddie) && obj_baddie.thrown == 1 && sprite_index !=
         instance_create(x, y, obj_baddiegibs)
         sprite_index = spr_present
     }
-    with (instance_create(x, y,  obj_baddie_dead))
+    with (instance_create(x, y, obj_baddie_dead))
+	{
         sprite_index = other.deadspr
+		if other.character = 0
+		{
+			spr_palette = other.spr_palette
+			paletteselect = other.paletteselect
+		}
+	}
 }
 switch character
 {

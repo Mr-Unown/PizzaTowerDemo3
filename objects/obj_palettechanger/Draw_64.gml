@@ -18,7 +18,7 @@ var paletteselected = 0
 
 if player.paletteselect != sprite_get_width(player.spr_palette) - 1
 {
-	if player.character = "P" || player.character = "PZ"
+	if player.character = "P" || player.character = "PZ" || (player.character = "N" && player.pogo = true)
 		paletteselected = player.paletteselect
 	else
 		paletteselected = player.paletteselect + 1

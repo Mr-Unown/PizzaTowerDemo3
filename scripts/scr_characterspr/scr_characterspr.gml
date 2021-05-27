@@ -378,7 +378,7 @@ switch character {
     spr_fightball1 = spr_playerN_fightball1
 	spr_fightball2 = spr_playerN_fightball2
     spr_squished = spr_playerN_squished
-    spr_palette = spr_noisepalette
+
     spr_tomatojump = spr_playerN_glide
     spr_boxxedair = spr_boxxednoise_air
     spr_boxxedwalk = spr_boxxednoise_walk
@@ -407,7 +407,18 @@ switch character {
 	spr_mach3dashpad = spr_playerN_dashpad
 	//Grinding
 	spr_grinding = spr_playerN_grinding	
-    paletteselect = 0
+	//Palette
+	if pogo = false
+	{
+		spr_palette = spr_noisepalette;
+		paletteselect = 0;
+	}
+	else if pogo = true
+	{
+		spr_palette = spr_orangepalette;	
+		paletteselect = 1;
+	}
+
 	}	
 	#endregion
 	break;
@@ -1164,7 +1175,7 @@ switch character {
     spr_fightball1 = spr_playerN_fightball1
 	spr_fightball2 = spr_playerN_fightball2
     spr_squished = spr_playerN_squished
-    spr_palette = spr_noisepalette
+	spr_palette = spr_orangepalette;
     spr_tomatojump = spr_playerN_glide
     spr_boxxedair = spr_boxxednoise_air
     spr_boxxedwalk = spr_boxxednoise_walk
