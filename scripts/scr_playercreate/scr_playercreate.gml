@@ -18,6 +18,7 @@ mach3dashbuffer = 0;
 
 global.freezeframe = false;
 global.freezeframetimer = 200;
+
 //global.sleepScale = 1;
 //global.sleepAcc = 0;
 global.collect = 0

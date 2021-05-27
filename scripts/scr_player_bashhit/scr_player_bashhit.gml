@@ -1,3 +1,5 @@
+if global.freezeframe = false
+{
 mach2 = 0
 anger = 100
 if (sprite_index == spr_player_bashblow1 && floor(image_index) == (image_number - 3))
@@ -47,3 +49,4 @@ if (sprite_index != spr_player_jugglebash)
 	scr_sleep();	
 }
 image_speed = 0.35
+}

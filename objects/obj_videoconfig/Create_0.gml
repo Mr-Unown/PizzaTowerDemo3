@@ -9,6 +9,7 @@ optionsaved_fullscreen = global.option_fullscreen
 optionsaved_resolution = global.option_resolution
 optionsaved_panicbg = global.screenmelt
 optionsaved_hitstun = global.hitstunenabled
+//global.defaulttime = 70
 depth = -99
 selecting = -1
 

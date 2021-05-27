@@ -39,6 +39,7 @@ global.screenmelt = ini_read_real("Option", "panicbg", 1)
 global.mastervolume = ini_read_real("Option", "mastervolume", 1)
 global.musicvolume = ini_read_real("Option", "musicvolume", 1)
 global.soundeffectsvolume = ini_read_real("Option", "soundeffectsvolume", 1)
+global.defaulttime = ini_read_real("Option", "secrethitstuntimer", 70)
 ini_close()
 audio_master_gain(global.mastervolume)
 global.maxwave = 0

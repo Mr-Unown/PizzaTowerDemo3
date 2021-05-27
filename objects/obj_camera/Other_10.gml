@@ -5,7 +5,7 @@ if global.freezeframe != true {
 		if global.hitstunenabled >= 2
 			global.freezeframetimer = clamp(global.freezeframetimer - 50,0,185);
 		else
-			global.freezeframetimer = 65;
+			global.freezeframetimer = global.defaulttime;
 		
 		if global.can_freeze = true && global.hitstunenabled > 0 {
 		#region Frozen entities

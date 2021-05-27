@@ -39,6 +39,13 @@ if (keyboard_check_pressed(vk_return) && input != "")
 				if global.panicbg = true
 					scr_panicbg_init()			
 				obj_camera.alarm[1] = 60 break
+			case "standardhitstun":
+				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = 70 else arg1 = ds_list_find_value(_commands, 1)
+				global.defaulttime = real(arg1)		
+				ini_open("saveData.ini")
+				ini_write_real("Option", "secrethitstuntimer", real(arg1))
+				ini_close()
+				break;				
 			case "togglecollision": //Could probably use simplification
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !showcollisions else arg1 = ds_list_find_value(_commands, 1)
 				//if arg1 = "true"

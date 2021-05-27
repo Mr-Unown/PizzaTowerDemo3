@@ -20,9 +20,11 @@ commands[arrayi++] = "room_goto [roomname] [targetdoor]"
 //but oh well!
 
 //D3G: Well I fixed it
+commands[arrayi++] = "standardhitstun [value]" //Funny secret option
 commands[arrayi++] = "escape [minutes] [seconds]"
 commands[arrayi++] = "togglecollision (true/false)"
 commands[arrayi++] = "debugmode (true/false)"
+
 
 //D3G: iirc counting and setting up arrays from the reverse (5 to 0) is slightly more memory efficient
 //than starting from 0 but it should not matter much here...
