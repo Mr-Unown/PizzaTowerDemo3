@@ -8,7 +8,7 @@ greyscalefade = 0;
 //Number
 _image_index = 0;
 
-global.hitstunenabled = true;
+
 global.levelname = "none"
 global.tutorialtrap = 0
 collided = false
@@ -34,6 +34,7 @@ zoomh = 540
 zoomw = 960
 global.panicbg = true;
 ini_open("saveData.ini")
+global.hitstunenabled = ini_read_real("Option", "hitstun", 1);
 global.screenmelt = ini_read_real("Option", "panicbg", 1)
 global.mastervolume = ini_read_real("Option", "mastervolume", 1)
 global.musicvolume = ini_read_real("Option", "musicvolume", 1)

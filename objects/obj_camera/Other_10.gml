@@ -1,8 +1,13 @@
 /// @description Freezes time for the given time. 
 alarm[3] = round(global.freezeframetimer / room_speed) * 3;
 if global.freezeframe != true {
-		global.freezeframetimer = clamp(global.freezeframetimer - 50,0,185);
-		if global.can_freeze = true && global.hitstunenabled = true {
+		
+		if global.hitstunenabled >= 2
+			global.freezeframetimer = clamp(global.freezeframetimer - 50,0,185);
+		else
+			global.freezeframetimer = 65;
+		
+		if global.can_freeze = true && global.hitstunenabled > 0 {
 		#region Frozen entities
 		with obj_player {
 			if state != states.frozen {

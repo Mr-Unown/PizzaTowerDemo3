@@ -103,13 +103,13 @@ if (optionselected == 2)
 }
 if (optionselected == 3)
 {
-    if ((key_right2 || keyboard_check_pressed(vk_right)) && optionsaved_hitstun == 1)
-        optionsaved_hitstun = 0
-    if (((-key_left2) || keyboard_check_pressed(vk_left)) && optionsaved_hitstun == 0)
-        optionsaved_hitstun = 1
+    if ((key_right2 || keyboard_check_pressed(vk_right)) && optionsaved_hitstun < 2)
+        optionsaved_hitstun += 1
+    if (((-key_left2) || keyboard_check_pressed(vk_left)) && optionsaved_hitstun > 0)
+        optionsaved_hitstun -= 1		
     if ((key_jump || keyboard_check_pressed(vk_return)) && optionsaved_hitstun == 0)
     {
-        global.hitstunenabled = false
+        global.hitstunenabled = 0
         ini_open("saveData.ini")
 			ini_write_real("Option", "hitstun", 0)
         ini_close()
@@ -117,9 +117,17 @@ if (optionselected == 3)
     }
     if ((key_jump || keyboard_check_pressed(vk_return)) && optionsaved_hitstun == 1)
     {
-        global.hitstunenabled = true
+        global.hitstunenabled = 1
         ini_open("saveData.ini")
 			ini_write_real("Option", "hitstun", 1)
+        ini_close()
+        selecting = -1
+    }	
+    if ((key_jump || keyboard_check_pressed(vk_return)) && optionsaved_hitstun == 2)
+    {
+        global.hitstunenabled = 2
+        ini_open("saveData.ini")
+			ini_write_real("Option", "hitstun", 2)
         ini_close()
         selecting = -1
     }
