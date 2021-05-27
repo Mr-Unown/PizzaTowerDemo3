@@ -5,4 +5,4 @@ if combolast != global.combo
 }	
 	
 if global.combobuffer > 0
-global.combobuffer--
+	global.combobuffer = (global.combobuffer - 0.5)
