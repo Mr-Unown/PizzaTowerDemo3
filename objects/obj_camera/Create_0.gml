@@ -34,6 +34,7 @@ zoomh = 540
 zoomw = 960
 global.panicbg = true;
 ini_open("saveData.ini")
+global.newhud = ini_read_real("Option", "newhud", 0);
 global.hitstunenabled = ini_read_real("Option", "hitstun", 1);
 global.screenmelt = ini_read_real("Option", "panicbg", 1)
 global.mastervolume = ini_read_real("Option", "mastervolume", 1)
