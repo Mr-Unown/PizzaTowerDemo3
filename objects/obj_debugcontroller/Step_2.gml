@@ -70,6 +70,17 @@ if (keyboard_check_pressed(vk_return) && input != "")
 					default: arg1 = !global.newhud
 				}
 				global.newhud = arg1
+				with obj_tv
+				{
+					alarm[0] = -1
+					imageindexstore = 0
+					_image_index = 0
+					image_speed = 0
+					tvsprite = spr_tvboot;
+					newtvsprite = spr_tv_open;
+					sprite_index = spr_tvboot
+					bootingup = true
+				}
 				ini_open("saveData.ini")
 				ini_write_real("Option", "newhud", arg1);
 				ini_close()

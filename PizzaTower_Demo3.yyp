@@ -7135,6 +7135,14 @@
             }
         },
         {
+            "Key": "45a44576-5ff7-48da-82a5-e8ceec2f1a72",
+            "Value": {
+                "id": "94e20f05-1609-4642-96b2-83caa2459461",
+                "resourcePath": "sprites\\spr_tv_combobar\\spr_tv_combobar.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "45a97b95-35a5-434d-9a7d-ddd2ab3a50c6",
             "Value": {
                 "id": "8e167369-29c2-4f3b-90c4-41bd36fc2dbb",

@@ -1,3 +1,5 @@
+if global.newhud = false
+{
 if (obj_player1.spotlight == 0)
 	if	obj_player1.custompalette = true
 		pal_swap_set(obj_player1.surf_pallete, 1, true)
@@ -68,3 +70,4 @@ if (player2.state != 55)
 draw_set_blend_mode(0)
 
 
+}

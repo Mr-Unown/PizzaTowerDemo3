@@ -8,8 +8,8 @@ with (obj_tv)
 	bootingup = false
 	image_speed = 0
 	image_index = 0
-	tvsprite = spr_tvboot
-	
+	tvsprite = spr_tvboot;
+	newtvsprite = spr_tv_open;
     shownranks = 0	
     shownranka = 0
     shownrankb = 0

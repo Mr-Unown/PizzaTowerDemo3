@@ -5,6 +5,11 @@ message = ""
 showtext = 0
 bootingup = false;
 oldfacesprite = spr_tv_open
+newtvsprite = spr_tv_open
+newhudyoffset = 0;
+var player = (obj_player1.spotlight = false ? obj_player2 : obj_player1)
+oldcharacter = player.character
+idle = 0
 tvsprite = spr_tvboot
 _image_index = 0;
 collided = false

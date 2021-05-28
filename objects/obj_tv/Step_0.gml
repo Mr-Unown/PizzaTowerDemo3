@@ -33,7 +33,7 @@ if global.miniboss = true
 if global.snickchallenge = true
 	global.pausecombotime = false
 
-    if (room == Realtitlescreen || room == Tutorialtrap ||  room == Titlescreen || room == rank_room || room == cowboytask || room == hub_room2 || room == hub_room1)
+    if (room == Realtitlescreen || room == Tutorialtrap ||  room == Titlescreen || room == rank_room || room == cowboytask || room == hub_room3 || room == hub_room2 || room == hub_room1)
         alpha = 0
     if (room == Titlescreen || room == Tutorialtrap || room == rank_room || room == cowboytask || room == hub_room3 || room == hub_room2 || room == hub_room1)
         tvsprite = spr_tvknight
@@ -48,9 +48,13 @@ if global.snickchallenge = true
         else if (!(room == rank_room || room == timesuproom || room == boss_room1 || room == Realtitlescreen || room == Scootertransition || room == Titlescreen || room == Tutorialtrap || room == rank_room || room == cowboytask ||room == hub_room3   || room == hub_room2 || room == hub_room1))
             alpha = 1
     }
-
-
-
+if global.newhud = true
+{
+if collided = true
+	newhudyoffset = approach(newhudyoffset,-600,16)
+else
+	newhudyoffset = approach(newhudyoffset,0,16)
+}
 if (showtext == 1)
 {
     xi = (500 + random_range(1, -1))
@@ -259,5 +263,134 @@ if instance_exists(obj_pizzaball)
     global.golfbuffer = 50
 if ((!instance_exists(obj_pizzaball)) && global.golfbuffer > 0)
     global.golfbuffer--
-
-sprite_index = tvsprite
+//New TV
+var player = (obj_player1.spotlight = false ? obj_player2 : obj_player1)
+var _state = player.state;
+if !(global.freezeframe = false && !((player.state == states.backbreaker && player.sprite_index  == player.spr_taunt) || player.state == states.frozen || player.state == states.portal))
+{
+	var storedstate = player.tauntstoredstate;
+	if player.state = states.frozen
+	{
+		if player.frozenstate != states.backbreaker && player.frozenspriteindex != player.spr_taunt
+		storedstate = player.frozenstate;
+		else
+		storedstate = player.tauntstoredstate;
+	}
+	_state = storedstate
+}	
+if newtvsprite = spr_tv_open
+{
+	idle = 0
+	if instance_exists(obj_fadeout)
+		image_index = 0
+    image_speed = 0.35
+	sprite_index = newtvsprite	
+	if floor(image_index) == image_number - 1
+	{
+		showtext = 0
+		newtvsprite = spr_tv_static
+		image_speed = 0.35
+		bootingup = true
+	}
+}
+else if global.newhud = true && oldcharacter == player.character && (sprite_index != spr_tv_open && newtvsprite != spr_tv_open)
+{
+	image_speed = 0.35
+	switch(player.character)
+	{
+		case "P":
+		switch(_state)
+		{
+			case states.bombpep:
+			newtvsprite = spr_tv_bombpep;
+			break;			
+			case states.fireass:
+			newtvsprite = spr_tv_fireass;
+			break;			
+			case states.knightpep:
+			case states.knightpepattack:
+			case states.knightpepslopes:
+			newtvsprite = spr_tv_knight;
+			break;		
+			case states.tumble:
+			newtvsprite = spr_tv_tumble;
+			break;
+			default:
+			#region Normal
+            if (idle < 400)
+                idle++
+            if (idle >= 300 && floor(image_index) >= (image_number - 1))
+            {
+                idle = 0
+                image_index = 0
+            }
+            if (idle >= 300 && newtvsprite != spr_tv_idleanim1 && newtvsprite != spr_tv_idleanim2)
+            {
+                newtvsprite = choose(spr_tv_idleanim1, spr_tv_idleanim2)
+                image_index = 0
+            }
+			if idle < 300
+				newtvsprite = spr_tv_idle
+			#endregion
+			break;
+		}
+		break;
+		
+		default:
+		switch(_state)
+		{
+			case states.bombpep:
+			newtvsprite = spr_tv_bombpepN;
+			break;			
+			case states.fireass:
+			newtvsprite = spr_tv_fireassN;
+			break;			
+			case states.knightpep:
+			case states.knightpepattack:
+			case states.knightpepslopes:
+			newtvsprite = spr_tv_knightN;
+			break;		
+			case states.tumble:
+			newtvsprite = spr_tv_tumbleN;
+			break;
+			default:
+			#region Normal
+            if (idle < 400)
+                idle++
+            if (idle >= 300 && floor(image_index) >= (image_number - 1))
+            {
+                idle = 0
+                image_index = 0
+            }
+            if (idle >= 300 && newtvsprite != spr_tv_idleanim1N && newtvsprite != spr_tv_idleanim2N)
+            {
+                newtvsprite = choose(spr_tv_idleanim1N, spr_tv_idleanim2N)
+                image_index = 0
+            }
+			if idle < 300
+				newtvsprite = spr_tv_idleN
+			#endregion
+			break;
+		}
+		break;
+	
+	}
+}
+else if global.newhud = true && oldcharacter != player.character
+{
+	alarm[0] = -1
+	imageindexstore = 0
+	_image_index = 0
+	image_speed = 0
+	tvsprite = spr_tvboot;
+	newtvsprite = spr_tv_open;
+	sprite_index = spr_tvboot
+	bootingup = true	
+	idle = 0
+	oldcharacter = player.character
+}
+//Sprite_index
+if global.newhud = false
+	sprite_index = tvsprite
+else
+	sprite_index = newtvsprite

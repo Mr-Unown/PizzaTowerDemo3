@@ -53,6 +53,7 @@ with obj_camera
 	newhudyoffset = 0;
 	//Shake
 	shakemag = 0;	
+	colors[0] = choose(0,1,2,3)
 }
 if instance_exists(obj_coopflag)
     instance_destroy(obj_coopflag);
@@ -80,6 +81,8 @@ with (obj_tv)
 	alarm[0] = -1;
 	showtext = false;
 	tvsprite = spr_tvboot;
+	newtvsprite = spr_tv_open;
+	idle = 0
 	sprite_index = spr_tvboot;
 	xi = 500;
 	yi = 600;

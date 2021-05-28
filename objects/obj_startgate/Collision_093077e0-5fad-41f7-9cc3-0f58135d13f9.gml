@@ -7,6 +7,7 @@ with (obj_player1)
 		obj_tv.image_index = 0
 		obj_tv.image_speed = 0
 		obj_tv.tvsprite = spr_tvboot
+		obj_tv.newtvsprite = spr_tv_open;
 		obj_tv.sprite_index = spr_tvboot
 		obj_tv.bootingup = false
 
@@ -49,6 +50,7 @@ with (obj_player2)
 		obj_tv.image_index = 0
 		obj_tv.image_speed = 0
 		obj_tv.tvsprite = spr_tvboot
+		obj_tv.newtvsprite = spr_tv_open;
 		obj_tv.sprite_index = spr_tvboot
 		obj_tv.bootingup = false
 		

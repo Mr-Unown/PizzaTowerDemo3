@@ -238,10 +238,9 @@ if (player.state != 55)
 		break;		
 		case 1:
 		#region NEW HUD
-
 		var newhudx = 150 + irandom_range(-shakemag,shakemag);
 	    var newhudy = 100 + irandom_range(-shakemag,shakemag) + newhudyoffset;		
-		if global.levelname != "none"
+		if global.levelname != "none" && (!(room == timesuproom || room == boss_room1 || room == Scootertransition || room == characterselect || room == Realtitlescreen || room == Tutorialtrap ||  room == Titlescreen || room == rank_room || room == cowboytask || room == Tutorialtrap || room == cowboytask || room == timesuproom || room == hub_room3 || room == hub_room2 || room == hub_room1))
 		{
 		if global.stylethreshold > 0
 		{
@@ -376,6 +375,7 @@ if (player.state != 55)
     }
 	#endregion
 	#region Timer
+	var timery = (global.newhud == true? 475 : 65)	
 	if (global.panic == 1 || global.snickchallenge == 1 || global.miniboss == 1)
     {
         if (global.seconds < 10)
@@ -384,7 +384,8 @@ if (player.state != 55)
                 draw_set_color(c_red)
             else
                 draw_set_color(c_white)
-            draw_text((random_range(1, -1) + 480), (random_range(1, -1) + 65), string_hash_to_newline(((string(global.minutes) + ":0") + string(global.seconds))))
+
+            draw_text((random_range(1, -1) + 480), (random_range(1, -1) + timery), string_hash_to_newline(((string(global.minutes) + ":0") + string(global.seconds))))
         }
         else if (global.seconds >= 10)
         {
@@ -392,7 +393,7 @@ if (player.state != 55)
                 draw_set_color(c_red)
             else
                 draw_set_color(c_white)
-            draw_text((random_range(1, -1) + 480), (random_range(1, -1) + 65), string_hash_to_newline(((string(global.minutes) + ":") + string(global.seconds))))
+            draw_text((random_range(1, -1) + 480), (random_range(1, -1) + timery), string_hash_to_newline(((string(global.minutes) + ":") + string(global.seconds))))
         }
     }	
 	#endregion

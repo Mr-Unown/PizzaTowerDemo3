@@ -70,7 +70,28 @@ switch(global.newhud)
 	break;
 	case 1:
 	#region NEW TV
-	//draw_sprite_ext_camera(spr_tv_blank, -1, 125, 100, 1, 1, 0, c_white, alpha)
+	if !(room == Realtitlescreen || room == rank_room || room == timesuproom || room == boss_room1)
+	{
+		draw_sprite_ext(newtvsprite, -1, 832, 100 + newhudyoffset, 1, 1, 0, c_white, 1)
+		if global.combo != 0 && global.miniboss == 0 && global.combotime != 0 && newtvsprite != spr_tv_open
+		{
+			if global.combobuffer > 0
+			{
+				draw_sprite_ext(spr_tv_combo, image_index, 832, 100 + newhudyoffset, 1, 1, 0, c_white, 1)		
+				draw_set_font(global.combofont)
+				draw_set_halign(fa_center)
+				draw_set_color(c_white)
+				var _combo = string(global.combo)
+				if (global.combo < 10)
+					_combo = "0" + string(global.combo)
+				draw_text(830, 90 + newhudyoffset, string_hash_to_newline(_combo))
+			}
+			var barindex = floor((global.combotime / 60) * 4) - 1;
+			draw_sprite_ext(spr_tv_combobar, barindex, 832, 100 + newhudyoffset, 1, 1, 0, c_white, 1)					
+		}
+	}
+
+	
 	#endregion
 	break;
 }
