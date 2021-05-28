@@ -77,18 +77,20 @@ if instance_exists(obj_itspizzatime)
     showtext = 1
     tvsprite = spr_tvexit
 }
-if tvsprite = spr_tvboot
+if tvsprite = spr_tvboot && bootingup = false
 {
-	if instance_exists(obj_fadeout)
-		image_index = 0
+	image_index = 0
     image_speed = 0.35
 	sprite_index = tvsprite	
+	bootingup = true
+}
+else if tvsprite = spr_tvboot && bootingup = true
+{
 	if floor(image_index) == image_number - 1
 	{
 		showtext = 0
 		tvsprite = spr_tvdefault
 		image_speed = 0.1
-		bootingup = true
 	}
 }
 else if (global.collect > global.srank && shownranks == 0 && global.nocombo == 0)
@@ -278,19 +280,21 @@ if !(global.freezeframe = false && !((player.state == states.backbreaker && play
 	}
 	_state = storedstate
 }	
-if newtvsprite = spr_tv_open
+if newtvsprite = spr_tv_open && bootingup = false 
 {
-	idle = 0
-	if instance_exists(obj_fadeout)
-		image_index = 0
+	image_index = 0
     image_speed = 0.35
 	sprite_index = newtvsprite	
+	bootingup = true
+}
+else if newtvsprite = spr_tv_open && bootingup = true
+{
 	if floor(image_index) == image_number - 1
 	{
+		idle = 0
 		showtext = 0
-		newtvsprite = spr_tv_static
+		newtvsprite = spr_tv_blank
 		image_speed = 0.35
-		bootingup = true
 	}
 }
 else if global.newhud = true && oldcharacter == player.character && (sprite_index != spr_tv_open && newtvsprite != spr_tv_open)
@@ -380,12 +384,12 @@ else if global.newhud = true && oldcharacter != player.character
 {
 	alarm[0] = -1
 	imageindexstore = 0
-	_image_index = 0
+	image_index = 0
 	image_speed = 0
 	tvsprite = spr_tvboot;
 	newtvsprite = spr_tv_open;
 	sprite_index = spr_tvboot
-	bootingup = true	
+	bootingup = false
 	idle = 0
 	oldcharacter = player.character
 }

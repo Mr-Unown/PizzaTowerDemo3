@@ -43,10 +43,9 @@ if bootingup = false
 {
 	alarm[0] = -1
 	imageindexstore = 0
-	_image_index = 0
+	image_index = 0
 	image_speed = 0
 	tvsprite = spr_tvboot;
 	newtvsprite = spr_tv_open;
 	sprite_index = spr_tvboot
-	bootingup = true
 }
