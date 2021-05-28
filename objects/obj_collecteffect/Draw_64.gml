@@ -30,7 +30,7 @@ if point_in_circle(drawx,drawy,targetx,targety,32)
 	{
 		with obj_camera
 		{
-			shakemag = clamp(shakemag + 1,0,5)
+			shakemag = clamp(shakemag + 1,2,5)
 		}
 	}
 	drawx = targetx
