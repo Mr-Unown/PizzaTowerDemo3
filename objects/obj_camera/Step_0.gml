@@ -15,10 +15,21 @@ collided = true
 else
 collided = false
 //Alpha
-if collided = true
-	alpha = 0.5
+if global.newhud = false
+{
+	if collided = true
+		alpha = 0.5
+	else
+		alpha = 1
+}
 else
-	alpha = 1
+{
+	if collided = true
+		newhudyoffset = approach(newhudyoffset,-600,16)
+	else
+		newhudyoffset = approach(newhudyoffset,0,16)
+}
+shakemag = approach(shakemag,0, 20 / room_speed)
 //Greyscale
 if (global.panic = 1 || global.snickchallenge = true) && global.seconds <= 0 && global.minutes <= 0
 greyscalefade = approach(greyscalefade,0.45,0.005)

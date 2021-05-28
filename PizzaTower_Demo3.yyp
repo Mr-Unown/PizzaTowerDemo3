@@ -8983,6 +8983,14 @@
             }
         },
         {
+            "Key": "58145d8f-7db8-483e-b69c-dbd5e1a88f44",
+            "Value": {
+                "id": "26a16cac-1849-454f-bd13-6767655e23c8",
+                "resourcePath": "sprites\\spr_shieldbackupNEW\\spr_shieldbackupNEW.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5825fefa-5e1f-4b0f-960e-707b3c165362",
             "Value": {
                 "id": "99c9c9a8-ce9a-4b87-84f0-bcfb78588d9a",

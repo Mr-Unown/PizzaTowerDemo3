@@ -5,8 +5,8 @@ switch(global.newhud)
 {
 	case 0:
 	#region OLD TV
-	var _xoffset = random_range(-3,3);
-	var _yoffset = random_range(-3,3);
+	var _xoffset = irandom_range(-3,3);
+	var _yoffset = irandom_range(-3,3);
 	draw_set_font(global.font)
 	draw_set_halign(fa_center)
 	draw_set_color(c_white)

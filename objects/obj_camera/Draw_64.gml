@@ -28,7 +28,15 @@ else
 	else if	obj_player2.custompalette = false
 		pal_swap_set(obj_player2.spr_palette, obj_player2.paletteselect, false)	
 		
-
+	#region Backup
+	if (player.pizzashieldbackup >= 1)
+	{
+		for (var i = 0; i < player.pizzashieldbackup; ++i)
+		{
+			draw_sprite_ext(spr_shieldbackup, -1, 50, 100 + (32*i), 1, 1, 0, c_white, alpha)
+		}
+	}	
+	#endregion
 	 
 	 
 if (player.state != 55)
@@ -230,10 +238,11 @@ if (player.state != 55)
 		break;		
 		case 1:
 		#region NEW HUD
+
+		var newhudx = 150 + irandom_range(-shakemag,shakemag);
+	    var newhudy = 100 + irandom_range(-shakemag,shakemag) + newhudyoffset;		
 		if global.levelname != "none"
 		{
-		var newhudx = 150;
-	    var newhudy = 100;
 		if global.stylethreshold > 0
 		{
 			if floor(_image_index) < sprite_get_number(spr_heatmeter) - 1
@@ -242,7 +251,7 @@ if (player.state != 55)
 				_image_index = 0
 		}
 		else
-			_image_index = 0
+			_image_index = 0	
 		//Style bar Fill thing
 		var heatw = sprite_get_width(spr_heatmeter_fill)
 		var heath = sprite_get_height(spr_heatmeter_fill)		
@@ -265,6 +274,75 @@ if (player.state != 55)
 			draw_sprite_ext(spr_pizzascore_olive, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
 		if global.collect >= global.srank
 			draw_sprite_ext(spr_pizzascore_shroom, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)		
+		//Point
+		draw_set_halign(fa_center);
+		draw_set_color(c_white);
+		draw_set_font(global.pointsfont);	
+		var _string = string(global.collect), _string_length = string_length(_string); //D3G: Holy shit I'm an idiot I've been using string width lmao no wonder it keeps crashing
+		if collected != _string
+		{
+			for (var i = 0; i < _string_length; i++)  //D3G: Idk what is happening anymore
+			{
+				colors[i] = choose(0,1,2,3)
+			}
+			collected = _string
+		}
+		var textyoffset = 0;
+		#region textyoffset bounce
+		var _index = floor(_image_index)
+		switch(_index)
+		{
+			case 0:
+			textyoffset = 0;
+			break;
+			case 1:
+			case 2:
+			case 3:			
+			case 4:						
+			textyoffset = 1;
+			break;		
+			case 5:						
+			textyoffset = -1;
+			case 6:						
+			textyoffset = -2;			
+			break;			
+			case 7:						
+			textyoffset = -3;			
+			break;			
+			case 8:						
+			textyoffset = -5;			
+			break;		
+			case 9:						
+			textyoffset = -5;			
+			break;		
+			case 10:						
+			textyoffset = -3;			
+			break;	
+			case 11:						
+			textyoffset = -3;			
+			break;					
+		}
+		
+		
+		
+		#endregion		
+		for (var i = 0; i < _string_length; i++) 
+		{
+			var _xx = (newhudx + 15) + (-(string_width(_string)/ 2) + ((string_width(_string)/_string_length) * i)), _yy = newhudy - 55, pal = colors[i];
+			var _yyoffset = (i % 2 == 0 ? -4 : 0)
+			pal_swap_set(spr_font_collect_palette,pal,false);
+			draw_text(_xx, _yy + _yyoffset + textyoffset, string_char_at(_string,i + 1));
+			shader_reset();
+		} //D3G: Why does it keep crashing fkmadkmkdm
+		#region Backup
+		if (player.pizzashieldbackup >= 1)
+		{
+			for (var i = 0; i < player.pizzashieldbackup; ++i)
+			{
+				draw_sprite_ext(spr_shieldbackupNEW, -1, (newhudx - 75) + (16*i), newhudy + 75, 1, 1, 0, c_white, alpha)
+			}
+		}	
+		#endregion
 		}
 		#endregion
 		break;
@@ -274,17 +352,8 @@ if (player.state != 55)
 	#region Stats
 	#region Key
     if (global.key_inv == 1)
-        draw_sprite_ext(spr_key, -1, 50, 30, 1, 1, 0, c_white, alpha)
-    draw_sprite_ext(spr_inv, -1, 50, 30, 1, 1, 0, c_white, alpha)	
-	#endregion
-	#region Backup
-	if (player.pizzashieldbackup >= 1)
-	{
-		for (var i = 0; i < player.pizzashieldbackup; ++i)
-		{
-			draw_sprite_ext(spr_shieldbackup, -1, 50, 100 + (32*i), 1, 1, 0, c_white, alpha)
-		}
-	}	
+        draw_sprite_ext(spr_key, -1, 50, 30, 1, 1, 0, c_white, 1)
+    draw_sprite_ext(spr_inv, -1, 50, 30, 1, 1, 0, c_white, 1)	
 	#endregion
 	#region Vigi Health
     draw_set_font(global.font)
@@ -303,7 +372,7 @@ if (player.state != 55)
 		vdrawy = 65	
 		}
         if (player.character == "V")
-            draw_text(vdrawx, vdrawy, player.vigihealth)
+            draw_text(vdrawx, vdrawy + newhudyoffset, player.vigihealth)
     }
 	#endregion
 	#region Timer

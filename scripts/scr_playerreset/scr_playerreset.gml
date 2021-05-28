@@ -47,6 +47,12 @@ with obj_camera
 	alarm[3] = -1
 	golf = 0;
 	greyscalefade = 0;
+	//Number
+	_image_index = 0;
+	_image_speed = 0;
+	newhudyoffset = 0;
+	//Shake
+	shakemag = 0;	
 }
 if instance_exists(obj_coopflag)
     instance_destroy(obj_coopflag);

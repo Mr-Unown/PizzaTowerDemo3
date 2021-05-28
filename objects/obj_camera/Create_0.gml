@@ -8,7 +8,14 @@ greyscalefade = 0;
 //Number
 _image_index = 0;
 _image_speed = 0;
-
+//Change Colors only when needed
+collected = "0";
+colors[0] = choose(0,1,2,3)
+colors[1] = choose(0,1,2,3)
+colors[2] = choose(0,1,2,3)
+newhudyoffset = 0;
+//Shake
+shakemag = 0;
 global.levelname = "none"
 global.tutorialtrap = 0
 collided = false
