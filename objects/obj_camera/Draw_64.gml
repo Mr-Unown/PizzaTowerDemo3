@@ -1,4 +1,3 @@
-
 var player = obj_player1
 var player2 = obj_player2
 if (obj_player1.spotlight == 0)
@@ -13,6 +12,7 @@ else
 }
 if global.hudmode == false
 {
+
 	switch(global.newhud)
 	{
 		case 0:
@@ -28,14 +28,7 @@ else
 	else if	obj_player2.custompalette = false
 		pal_swap_set(obj_player2.spr_palette, obj_player2.paletteselect, false)	
 		
-	//Backup
-	 if (player.pizzashieldbackup >= 1)
-	 {
-		 for (var i = 0; i < player.pizzashieldbackup; ++i)
-		 {
-		      draw_sprite_ext(spr_shieldbackup, -1, 50, 100 + (32*i), 1, 1, 0, c_white, alpha)
-		 }
-	 }
+
 	 
 	 
 if (player.state != 55)
@@ -232,19 +225,68 @@ if (player.state != 55)
         draw_sprite_ext(spr_speedbar, 4, 125, 140, 1, 1, 0, c_white, alpha)
     else if ((player.movespeed >= 12 && (player.state == 69 || player.state == 70 || player.state == 91  || player.state == states.jetpack || player.state == 17 || player.state == 71 || player.state == 37 || player.state == 12 || player.state == 111 || player.state == 22)))
         draw_sprite_ext(spr_speedbarmax, -1, 125, 140, 1, 1, 0, c_white, alpha)
+}
 	#endregion
 		break;		
 		case 1:
 		#region NEW HUD
+		if global.levelname != "none"
+		{
+		var newhudx = 150;
+	    var newhudy = 100;
+		if global.stylethreshold > 0
+		{
+			if floor(_image_index) < sprite_get_number(spr_heatmeter) - 1
+				_image_index += 0.1875 * global.stylethreshold;
+			else
+				_image_index = 0
+		}
+		else
+			_image_index = 0
+		//Style bar Fill thing
+		var heatw = sprite_get_width(spr_heatmeter_fill)
+		var heath = sprite_get_height(spr_heatmeter_fill)		
+		var meter = global.style / 25;
+		draw_sprite_part_ext(spr_heatmeter_fill, _image_index, 0, 0, heatw * meter, heath, newhudx - sprite_get_xoffset(spr_heatmeter_fill), newhudy - sprite_get_yoffset(spr_heatmeter_fill), 1, 1, c_white, alpha)
 		
+		//Style/Heat Meter
+		pal_swap_set(spr_heatmeter_palette,clamp(global.stylethreshold - 1,0,10),false)
+		draw_sprite_ext(spr_heatmeter, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
+		shader_reset();
+		//Pizzascore thing
+		draw_sprite_ext(spr_pizzascore, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
+		
+		//Rank Topppings
+		if global.collect >= global.crank
+			draw_sprite_ext(spr_pizzascore_pepper, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
+		if global.collect >= global.brank
+			draw_sprite_ext(spr_pizzascore_pepperoni, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
+		if global.collect >= global.arank
+			draw_sprite_ext(spr_pizzascore_olive, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
+		if global.collect >= global.srank
+			draw_sprite_ext(spr_pizzascore_shroom, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)		
+		}
 		#endregion
 		break;
 
 
 	}
-}
-draw_set_blend_mode(0)
-    //font = font_add_sprite_ext(spr_font, "ABCDEFGHIJKLMNOPQRSTUVWXYZ!.1234567890:", 1, 0)
+	#region Stats
+	#region Key
+    if (global.key_inv == 1)
+        draw_sprite_ext(spr_key, -1, 50, 30, 1, 1, 0, c_white, alpha)
+    draw_sprite_ext(spr_inv, -1, 50, 30, 1, 1, 0, c_white, alpha)	
+	#endregion
+	#region Backup
+	if (player.pizzashieldbackup >= 1)
+	{
+		for (var i = 0; i < player.pizzashieldbackup; ++i)
+		{
+			draw_sprite_ext(spr_shieldbackup, -1, 50, 100 + (32*i), 1, 1, 0, c_white, alpha)
+		}
+	}	
+	#endregion
+	#region Vigi Health
     draw_set_font(global.font)
     draw_set_halign(fa_center)
     draw_set_color(c_white)
@@ -263,7 +305,9 @@ draw_set_blend_mode(0)
         if (player.character == "V")
             draw_text(vdrawx, vdrawy, player.vigihealth)
     }
-    if (global.panic == 1 || global.snickchallenge == 1 || global.miniboss == 1)
+	#endregion
+	#region Timer
+	if (global.panic == 1 || global.snickchallenge == 1 || global.miniboss == 1)
     {
         if (global.seconds < 10)
         {
@@ -281,10 +325,15 @@ draw_set_blend_mode(0)
                 draw_set_color(c_white)
             draw_text((random_range(1, -1) + 480), (random_range(1, -1) + 65), string_hash_to_newline(((string(global.minutes) + ":") + string(global.seconds))))
         }
-    }
-    if (global.key_inv == 1)
-        draw_sprite_ext(spr_key, -1, 50, 30, 1, 1, 0, c_white, alpha)
-    draw_sprite_ext(spr_inv, -1, 50, 30, 1, 1, 0, c_white, alpha)
+    }	
+	#endregion
+	#endregion
+}
+draw_set_blend_mode(0)
 
-   ///draw_text(190, 97, string(instance_number(obj_secretdebris)))
+
+
+    
+
+
 

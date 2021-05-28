@@ -1,111 +1,43 @@
-if (room == PP_room1 && global.snickchallenge == 0)
+if global.snickchallenge == false
 {
-    global.srank = 1005000
+	switch(global.levelname)
+	{
+		case "entrance":
+			global.srank = 14500
+		break;
+		case "medieval":
+			global.srank = 13500	
+		break;
+		case "ruin":
+			global.srank = 16500
+		break;
+		case "dungeon":
+			global.srank = 17500	
+		break;
+		case "ancient":
+			global.srank = 21500	
+		break;
+		case "chateau":
+			global.srank = 14500	
+		break;		
+		case "strongcold":
+			global.srank = 19000	
+		break;
+		default:
+			global.srank = global.collect + 1005000					
+		break;
+	}
     global.arank = (global.srank - (global.srank / 4))
     global.brank = (global.srank - ((global.srank / 4) * 2))
-    global.crank = (global.srank - ((global.srank / 4) * 3))
+    global.crank = (global.srank - ((global.srank / 4) * 3))		
 }
-if (room == entrance_1 && global.snickchallenge == 0)
-{
-    global.srank = 14500
-    global.arank = (global.srank - (global.srank / 4))
-    global.brank = (global.srank - ((global.srank / 4) * 2))
-    global.crank = (global.srank - ((global.srank / 4) * 3))
-}
-if (room == medieval_1 && global.snickchallenge == 0)
-{
-    global.srank = 13500
-    global.arank = (global.srank - (global.srank / 4))
-    global.brank = (global.srank - ((global.srank / 4) * 2))
-    global.crank = (global.srank - ((global.srank / 4) * 3))
-}
-if (room == ruin_1 && global.snickchallenge == 0)
-{
-    global.srank = 16500
-    global.arank = (global.srank - (global.srank / 4))
-    global.brank = (global.srank - ((global.srank / 4) * 2))
-    global.crank = (global.srank - ((global.srank / 4) * 3))
-}
-if (room == dungeon_1 && global.snickchallenge == 0)
-{
-    global.srank = 17500
-    global.arank = (global.srank - (global.srank / 4))
-    global.brank = (global.srank - ((global.srank / 4) * 2))
-    global.crank = (global.srank - ((global.srank / 4) * 3))
-}
-
-if (room == medieval_1 && global.snickchallenge == 1) //Snick Challenge
+else
 {
     global.srank = 8300
     global.arank = (global.srank - (global.srank / 4))
     global.brank = (global.srank - ((global.srank / 4) * 2))
-    global.crank = (global.srank - ((global.srank / 4) * 3))
+    global.crank = (global.srank - ((global.srank / 4) * 3))	
 }
-if (room == ancient_1 && global.snickchallenge == 0)
-{
-    global.srank = 21500
-    global.arank = (global.srank - (global.srank / 4))
-    global.brank = (global.srank - ((global.srank / 4) * 2))
-    global.crank = (global.srank - ((global.srank / 4) * 3))
-}
-if (room == chateau_1 && global.snickchallenge == 0)
-{
-    global.srank = 14500
-    global.arank = (global.srank - (global.srank / 4))
-    global.brank = (global.srank - ((global.srank / 4) * 2))
-    global.crank = (global.srank - ((global.srank / 4) * 3))
-}
-
-if (room == strongcold_10 && global.snickchallenge == 0)
-{	
-    global.srank = 19000
-    global.arank = (global.srank - (global.srank / 4))
-    global.brank = (global.srank - ((global.srank / 4) * 2))
-    global.crank = (global.srank - ((global.srank / 4) * 3))
-}
-/*
-if (room == desert_1 && global.snickchallenge == 0)
-{
-    global.srank = 13800
-    global.arank = (global.srank - (global.srank / 4))
-    global.brank = (global.srank - ((global.srank / 4) * 2))
-    global.crank = (global.srank - ((global.srank / 4) * 3))
-}
-if (room == factory_1 && global.snickchallenge == 0)
-{
-    global.srank = 8400
-    global.arank = (global.srank - (global.srank / 4))
-    global.brank = (global.srank - ((global.srank / 4) * 2))
-    global.crank = (global.srank - ((global.srank / 4) * 3))
-}
-if (room == freezer_1 && global.snickchallenge == 0)
-{
-    global.srank = 8250
-    global.arank = (global.srank - (global.srank / 4))
-    global.brank = (global.srank - ((global.srank / 4) * 2))
-    global.crank = (global.srank - ((global.srank / 4) * 3))
-}
-if (room == sewer_1 && global.snickchallenge == 0)
-{
-    global.srank = 7000
-    global.arank = (global.srank - (global.srank / 4))
-    global.brank = (global.srank - ((global.srank / 4) * 2))
-    global.crank = (global.srank - ((global.srank / 4) * 3))
-}
-if (room == golf_1 && global.snickchallenge == 0)
-{
-    global.srank = 6000
-    global.arank = (global.srank - (global.srank / 4))
-    global.brank = (global.srank - ((global.srank / 4) * 2))
-    global.crank = (global.srank - ((global.srank / 4) * 3))
-}
-if (room == mansion_1 && global.snickchallenge == 0)
-{
-    global.srank = 12250
-    global.arank = (global.srank - (global.srank / 4))
-    global.brank = (global.srank - ((global.srank / 4) * 2))
-    global.crank = (global.srank - ((global.srank / 4) * 3))
-}*/
 
 if bootingup = false
 {

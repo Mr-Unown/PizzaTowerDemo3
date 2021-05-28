@@ -6,6 +6,7 @@ image_index = 0
 choosed = false;
 drawx = xstart - _cam_x
 drawy = ystart - _cam_y
+
 if global.newhud = false
 {
 	targetx = 832;

@@ -7,7 +7,7 @@ greyscalefade = 0;
 
 //Number
 _image_index = 0;
-
+_image_speed = 0;
 
 global.levelname = "none"
 global.tutorialtrap = 0

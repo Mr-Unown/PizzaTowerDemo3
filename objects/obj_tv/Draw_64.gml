@@ -70,7 +70,7 @@ switch(global.newhud)
 	break;
 	case 1:
 	#region NEW TV
-	draw_sprite_ext_camera(spr_tv_blank, -1, 125, 100, 1, 1, 0, c_white, alpha)
+	//draw_sprite_ext_camera(spr_tv_blank, -1, 125, 100, 1, 1, 0, c_white, alpha)
 	#endregion
 	break;
 }
