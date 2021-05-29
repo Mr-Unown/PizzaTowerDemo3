@@ -103,11 +103,11 @@ switch(global.newhud)
 					var _xx = (-(string_width(_combo)/ 2) + ((string_width(_combo)/_string_length) * i)) + irandom_range(-2,2)
 					var _yy = (i * -4) + irandom_range(-2,2)
 					}
-					draw_text(835 + _xx, 85 + _yy + newhudyoffset, string_char_at(_combo,i + 1));
+					draw_text(835 + _xx, 82 + _yy + newhudyoffset, string_char_at(_combo,i + 1));
 				}
 			}
 			//Combobar
-			var barindex = clamp(round((global.combotime / 60) * 4) - 1,0,4);											
+			var barindex = clamp(round((global.combotime / 60) * 4) - 1,0,3);											
 			draw_sprite_ext(spr_tv_combobar, barindex, 832, 107 + newhudyoffset, 1, 1, 0, c_white, 1)
 		}
 		else if (global.miniboss == 1) &&  newtvsprite = spr_tv_noiseboss
@@ -131,17 +131,63 @@ switch(global.newhud)
 					var _xx = (-(string_width(_hp)/ 2) + ((string_width(_hp)/_string_length) * i)) + irandom_range(-2,2)
 					var _yy = (i * -4) + irandom_range(-2,2)
 					}
-					draw_text(835 + _xx, 85 + _yy + newhudyoffset, string_char_at(_hp,i + 1));
+					draw_text(835 + _xx, 82 + _yy + newhudyoffset, string_char_at(_hp,i + 1));
 				}
 			#endregion
 		}
 	}
 
 	#region TEXT
+	//NEW TEXT
+	if shownewtext = true
+	{
+	draw_sprite_ext(textbubblesprites, textbubbleframes, 532, 45 + newhudyoffset, 1, 1, 0, c_white, 1)
+	
+	if !surface_exists(textpromptsurface)
+		textpromptsurface = surface_create(300,100)
+	surface_set_target(textpromptsurface)
+	draw_clear_alpha(c_black, 0)
+	var pizzafont = true;
+	var _newmessage = newmessage;
+	//Font Options
+	if pizzafont = false
+	{
+		draw_set_font(font1);
+		draw_set_halign(fa_left);
+		draw_set_color(c_black);
+		_newmessage = newmessage;
+	}
+	else
+	{
+		draw_set_font(global.smallfont);
+		draw_set_halign(fa_left);
+		draw_set_color(c_white);
+		_newmessage = string_upper(newmessage);
+	}	
+	//Text
+	if textbubblesprites = spr_tv_bubble
+	{
+		//CONT. So I moved it here 
+		if floor(text_x) <= -(floor(string_width(_newmessage)) + 5) //- 775)
+		{
+			textbubblesprites = spr_tv_bubbleclose;
+			textbubbleframes = 0;
+		}
+		draw_text(text_x, 45, _newmessage)
+	}
+
+	surface_reset_target()
+	//draw_text(367, 300, string(floor(text_x)))
+	//draw_text(367, 350, string(string_width(newmessage)))	
+	if surface_exists(textpromptsurface)
+		draw_surface(textpromptsurface, 367, -10 + newhudyoffset)
+	}
+	
+	//OLD TEXT
 	draw_set_font(global.font)
 	draw_set_halign(fa_center)
 	draw_set_color(c_white)
-	draw_text(xi, yi, string_hash_to_newline(message))
+	draw_text(xi, yi, string_hash_to_newline(oldmessage))
 	#endregion
 	
 	#endregion

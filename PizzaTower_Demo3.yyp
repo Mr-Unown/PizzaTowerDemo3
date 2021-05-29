@@ -15047,6 +15047,14 @@
             }
         },
         {
+            "Key": "93eba93f-e17c-4215-bc3f-5b0884f88805",
+            "Value": {
+                "id": "97657c80-cdd4-4bd6-bc16-5d55f83573a3",
+                "resourcePath": "objects\\obj_tvtexttrigger\\obj_tvtexttrigger.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "94060e0a-442f-4aff-a215-f9664a524673",
             "Value": {
                 "id": "a5c362ae-45fd-4035-b8c7-7f6bb7de6e72",

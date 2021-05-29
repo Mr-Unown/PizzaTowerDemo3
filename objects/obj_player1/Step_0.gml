@@ -157,8 +157,7 @@ else if (global.combotime <= 0)
 	global.combotime = 0
 if (global.combotime == 0 && global.combo != 0)
 {
-	if global.combo >= 3
-		scr_soundeffect(sfx_comboend);
+	scr_soundeffect(sfx_comboend);
     global.combo = 0
 }
 if (input_buffer_jump < 8)

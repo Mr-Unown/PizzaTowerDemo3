@@ -194,7 +194,7 @@ if (grounded && (sprite_index == spr_facestomp || sprite_index == spr_freefall))
 {
     with (obj_baddie)
     {
-        if point_in_rectangle(x, y, __view_get(0, 0), __view_get(1, 0), (__view_get(0, 0) + __view_get(2, 0)), (__view_get(1, 0) + __view_get(3, 0)))
+        if point_in_rectangle(x, y, __view_get(0, 0), __view_get(1, 0), (__view_get(0, 0) + __view_get(2, 0)), (__view_get(1, 0) + __view_get(3, 0))) && grounded
         {
             vsp = -7
             hsp = 0

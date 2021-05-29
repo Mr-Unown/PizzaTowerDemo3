@@ -1,3 +1,5 @@
+showtext = 0
+oldmessage = ""
 if global.snickchallenge == false
 {
 	switch(global.levelname)

@@ -44,7 +44,7 @@ obj_camera.golf = 0;
 obj_camera.greyscalefade = 0;
 with obj_camera
 {
-	startgate = noone
+	global.startgate = noone
 	alarm[3] = -1
 	golf = 0;
 	greyscalefade = 0;
@@ -84,6 +84,12 @@ with (obj_tv)
 	showtext = false;
 	tvsprite = spr_tvboot;
 	newtvsprite = spr_tv_open;
+	ds_queue_clear(global.newhudmessage)
+	newmessage = ""
+	shownewtext = false;
+	showingnewtext = false;
+	textbubbleframes = 0;
+	text_x = 300;		
 	idle = 0
 	sprite_index = spr_tvboot;
 	xi = 500;

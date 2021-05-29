@@ -5,10 +5,12 @@ var _drawx = 832 + _cam_x
 var _drawy = 74 + _cam_y
 if point_in_rectangle(obj_player.x,obj_player.y, _drawx - 80, _drawy - 85,_drawx + 80,_drawy + 101) //85)
 collided = true
+else if global.newhud = true && point_in_rectangle(obj_player.x,obj_player.y, _drawx - 80, _drawy - 1000,_drawx + 85,_drawy + 101) //85)
+collided = true
+else if global.newhud = true && shownewtext = true && point_in_rectangle(obj_player.x,obj_player.y, _drawx - 300, _drawy - 1000,_drawx + 85,_drawy + 32) //85)
+collided = true
 else
 collided = false
-
-
 var player = obj_player1
 if (obj_player1.spotlight == 0)
     player = obj_player2
@@ -419,3 +421,36 @@ if oldcombo != global.combo && global.newhud = true
 	newshake = true;
 	alarm[2] = 20
 }
+//Textbubble
+if ds_queue_size(global.newhudmessage) > 0 && showingnewtext = false && newtvsprite != spr_tv_open && newtvsprite != spr_tv_static
+{
+	newmessage = ds_queue_dequeue(global.newhudmessage);
+	shownewtext = true;
+	showingnewtext = true;
+	textbubblesprites = spr_tv_bubbleopen;
+	textbubbleframes = 0;
+	text_x = 300;
+}
+if textbubblesprites = spr_tv_bubbleopen && floor(textbubbleframes) >= sprite_get_number(spr_tv_bubbleopen) - 1
+	textbubblesprites = spr_tv_bubble
+if textbubblesprites = spr_tv_bubble
+{
+	text_x += -3
+	/* I was thinking why there was a disconnect between the draw and this CONT. in Draw GUI
+	if floor(text_x) <= -(floor(string_width(string_upper(newmessage))) - 775)
+	{
+		textbubblesprites = spr_tv_bubbleclose;
+		textbubbleframes = 0;
+	}*/
+}
+if textbubblesprites = spr_tv_bubbleclose && floor(textbubbleframes) >= sprite_get_number(spr_tv_bubbleclose) - 1
+{
+	newmessage = ""
+	shownewtext = false;
+	showingnewtext = false;
+	textbubbleframes = 0;
+	text_x = 300;	
+}
+
+
+textbubbleframes += 0.35

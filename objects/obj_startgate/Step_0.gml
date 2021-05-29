@@ -131,21 +131,15 @@ if (distance_to_object(player) < 50)
 					message = "NONE"
 					showtext = 1
 					alarm[0] = 2
+			break;
+			
 		}
 #endregion
+		oldmessage = message					
 	 }
-	 with obj_camera
-	 {
-		startgate = other.id
-	 }
+
 }
-else
-{
-	with obj_camera
-	{
-		startgate = noone
-	}
-}
+
 //Draw Text
 if place_meeting(x, y, player)
 	drawtext = true

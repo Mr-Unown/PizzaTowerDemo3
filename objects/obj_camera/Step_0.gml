@@ -12,6 +12,8 @@ maxangle = clamp(floor(arctan((room_height/room_width)/_cam_y)), 0, 3)
 //Collided with Player
 if point_in_rectangle(obj_player.x,obj_player.y, _drawx - 80, _drawy - 85,_drawx + 80,_drawy + 85)
 collided = true
+else if global.newhud = true && point_in_rectangle(obj_player.x,obj_player.y, _drawx - 100, _drawy - 1000,_drawx + 80,_drawy + 85)
+collided = true
 else
 collided = false
 //Alpha
@@ -179,27 +181,40 @@ if (shake_mag > 0)
 if (instance_exists(player) && player.state != 36 && player.state != 55)
     target = player
 //Special Cam Stuff
-
-//STARTGATE
-if startgate != noone && instance_exists(startgate)
+//GATE THING
+var _player = obj_player1
+if global.coop = true
+_player = (obj_player1.spotlight = false ? obj_player2 : obj_player1)
+with instance_nearest(_player.x,_player.y,obj_startgate)
 {
-	var factor = 1.5;
-	startdistanced = point_distance(0, target.y, 0, startgate.y - 50)
-    startdistance = point_distance(target.x, 0, startgate.x, 0)
-
-    if (target.x >= startgate.x)
-		startgateoffsetx = ((-golfdistance) / factor)
+	if (distance_to_object(_player) < 100)
+		global.startgate = id
+	else
+		global.startgate = noone
+}
+//global.startgate
+if global.startgate != noone && instance_exists(global.startgate)
+{
+	var factor = 5;
+	startdistanced = point_distance(0, target.y, 0, global.startgate.y - 125)
+    startdistance = point_distance(target.x, 0, global.startgate.x, 0)
+	var _startgateoffsety,_startgateoffsetx;
+    if (target.x >= global.startgate.x)
+		_startgateoffsetx = ((-startdistance) / factor)
     else
-        startgateoffsetx = (golfdistance / factor)
-    if (target.y >= startgate.y - 50)
-        startgateoffsety = ((-golfdistanced) / factor)
+        _startgateoffsetx = (startdistance / factor)
+    if (target.y >= global.startgate.y - 125)
+        _startgateoffsety = ((-startdistanced) / factor)
     else
-        startgateoffsety = (golfdistanced / factor)	
+        _startgateoffsety = (startdistanced / factor)	
+		
+	startgateoffsetx = approach(startgateoffsetx,_startgateoffsetx,1);
+	startgateoffsety = approach(startgateoffsety,_startgateoffsety,1);
 }
 else
 {
-	startgateoffsetx = approach(startgateoffsetx,0,16)
-	startgateoffsety = approach(startgateoffsety,0,16)
+	startgateoffsetx = approach(startgateoffsetx,0,1)
+	startgateoffsety = approach(startgateoffsety,0,1)
 }
 //GOLF
 if (golf == 1 && instance_exists(obj_pizzaball)) 

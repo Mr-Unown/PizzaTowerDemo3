@@ -1,9 +1,16 @@
 global.newhudmessage = ds_queue_create();
+textbubblesprites = spr_tv_bubble;
+textbubbleframes = 0;
+textpromptsurface = noone;
 shownewtext = false;
+showingnewtext = false;
 image_speed = 0
 depth = -11
 chose = 0
 message = ""
+oldmessage = ""
+text_x = 32;
+newmessage = ""
 showtext = 0
 bootingup = false;
 oldfacesprite = spr_tv_open
