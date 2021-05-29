@@ -44,6 +44,7 @@ obj_camera.golf = 0;
 obj_camera.greyscalefade = 0;
 with obj_camera
 {
+	startgate = noone
 	alarm[3] = -1
 	golf = 0;
 	greyscalefade = 0;
@@ -57,6 +58,7 @@ with obj_camera
 }
 if instance_exists(obj_coopflag)
     instance_destroy(obj_coopflag);
+ds_queue_clear(global.newhudmessage);
 global.miniboss = 0;
 global.lapping = 0;
 global.laptouched = 0;
@@ -86,7 +88,8 @@ with (obj_tv)
 	sprite_index = spr_tvboot;
 	xi = 500;
 	yi = 600;
-
+	newshake = false;
+	shake = false;
 }
 global.SAGEshotgunsnicknumber = 0;
 with obj_music

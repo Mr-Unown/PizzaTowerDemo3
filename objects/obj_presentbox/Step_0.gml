@@ -115,6 +115,11 @@ if ((player.instakillmove = true  || player.state = 22 || player.state = states.
             shake_mag = 20
             shake_mag_acc = (40 / room_speed)
         }
+		with obj_tv
+		{
+			newshake = true;
+			alarm[2] = 20
+		}
         global.boxhp = (global.boxhp - 1)
         scr_soundeffect(11)
         instance_create(x, y, obj_slapstar)
@@ -166,6 +171,16 @@ if (place_meeting(x, y, obj_baddie) && obj_baddie.thrown == 1 && sprite_index !=
             shake_mag = 20
             shake_mag_acc = (40 / room_speed)
         }
+		with obj_tv
+		{
+			newshake = true;
+			alarm[2] = 20
+		}		
+		with obj_tv
+		{
+			newshake = true;
+			alarm[2] = 20
+		}		
         global.boxhp = (global.boxhp - 1)
         scr_soundeffect(11)
         instance_create(x, y, obj_slapstar)

@@ -22,7 +22,11 @@
         "8957075e-9b11-4850-b210-4102ee178196",
         "1d7b394a-c417-4e5b-a60b-c0474c0f8002",
         "893fcd2a-bb7f-4bd6-9ba5-6cdc53ba46ff",
-        "45a44576-5ff7-48da-82a5-e8ceec2f1a72"
+        "45a44576-5ff7-48da-82a5-e8ceec2f1a72",
+        "fa6e4891-059e-4a36-a42c-d0643e9a50ed",
+        "9bd88e4f-bc63-4d73-b33a-52d9e7a82d67",
+        "3f47b174-a2e7-4e10-9f05-ddfb1e370fa9",
+        "9770fb10-b99b-4f8e-a32b-94d932ac172f"
     ],
     "filterType": "GMSprite",
     "folderName": "PTV",

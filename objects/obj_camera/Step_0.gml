@@ -178,6 +178,30 @@ if (shake_mag > 0)
 }
 if (instance_exists(player) && player.state != 36 && player.state != 55)
     target = player
+//Special Cam Stuff
+
+//STARTGATE
+if startgate != noone && instance_exists(startgate)
+{
+	var factor = 1.5;
+	startdistanced = point_distance(0, target.y, 0, startgate.y - 50)
+    startdistance = point_distance(target.x, 0, startgate.x, 0)
+
+    if (target.x >= startgate.x)
+		startgateoffsetx = ((-golfdistance) / factor)
+    else
+        startgateoffsetx = (golfdistance / factor)
+    if (target.y >= startgate.y - 50)
+        startgateoffsety = ((-golfdistanced) / factor)
+    else
+        startgateoffsety = (golfdistanced / factor)	
+}
+else
+{
+	startgateoffsetx = approach(startgateoffsetx,0,16)
+	startgateoffsety = approach(startgateoffsety,0,16)
+}
+//GOLF
 if (golf == 1 && instance_exists(obj_pizzaball)) 
 {
 	var factor = 1.5;
@@ -249,10 +273,10 @@ if target = player
 }
 
 //Camera X
-camera_set_view_pos(view_camera[0],target_x - (targetzoom1 / 2) + (chargecamera + golfdistancex + p2pdistancex)  + floor(irandom_range(-shake_mag, shake_mag)/2), camera_get_view_y(view_camera[0]))			
+camera_set_view_pos(view_camera[0],target_x - (targetzoom1 / 2) + (chargecamera + startgateoffsetx + golfdistancex + p2pdistancex)  + floor(irandom_range(-shake_mag, shake_mag)/2), camera_get_view_y(view_camera[0]))			
 camera_set_view_pos(view_camera[0],clamp(camera_get_view_x(view_camera[0]), 0 + floor(irandom_range(-shake_mag, shake_mag)/2), (room_width - targetzoom1)+ floor(irandom_range(-shake_mag, shake_mag)/2)),camera_get_view_y(view_camera[0]))
 //Camera Y	
-camera_set_view_pos(view_camera[0],camera_get_view_x(view_camera[0]), ((target_y - (targetzoom2 / 2)) + golfdistancey + p2pdistancey ) + irandom_range(-shake_mag, shake_mag))		
+camera_set_view_pos(view_camera[0],camera_get_view_x(view_camera[0]), ((target_y - (targetzoom2 / 2)) + startgateoffsety + golfdistancey + p2pdistancey ) + irandom_range(-shake_mag, shake_mag))		
 camera_set_view_pos(view_camera[0],camera_get_view_x(view_camera[0]),clamp(camera_get_view_y(view_camera[0]), 0 + irandom_range(-shake_mag, shake_mag), (room_height - targetzoom2) + irandom_range(-shake_mag, shake_mag)))
 #endregion
 target_xold = target_x

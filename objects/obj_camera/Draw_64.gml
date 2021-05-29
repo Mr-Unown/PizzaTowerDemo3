@@ -375,7 +375,7 @@ if (player.state != 55)
     }
 	#endregion
 	#region Timer
-	var timery = (global.newhud == true? 475 : 65)	
+	var timery = (global.newhud == true? 450 : 65)	
 	if (global.panic == 1 || global.snickchallenge == 1 || global.miniboss == 1)
     {
         if (global.seconds < 10)

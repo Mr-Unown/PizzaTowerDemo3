@@ -23,7 +23,7 @@ if point_in_circle(drawx,drawy,targetx,targety,32)
 		with obj_tv
 		{
 			shake = true;
-			alarm[2] = 10;
+			alarm[2] = 20;
 		}
 	}
 	else

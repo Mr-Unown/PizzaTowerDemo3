@@ -8,7 +8,7 @@ with (obj_player1)
 		obj_tv.image_speed = 0
 		obj_tv.bootingup = false
 
-
+		ds_queue_clear(global.newhudmessage);
 		global.levelname = other.level
         scr_soundstopall()
 		x = other.cplayer1x
@@ -47,7 +47,7 @@ with (obj_player2)
 		obj_tv.image_index = 0
 		obj_tv.image_speed = 0
 		obj_tv.bootingup = false
-		
+		ds_queue_clear(global.newhudmessage);	
 		global.levelname = other.level
         scr_soundstopall()
 		x = other.cplayer1x

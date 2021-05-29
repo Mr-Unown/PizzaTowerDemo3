@@ -1,3 +1,5 @@
+global.newhudmessage = ds_queue_create();
+shownewtext = false;
 image_speed = 0
 depth = -11
 chose = 0
@@ -7,8 +9,11 @@ bootingup = false;
 oldfacesprite = spr_tv_open
 newtvsprite = spr_tv_open
 newhudyoffset = 0;
+oldcombo = 0;
+newshake = false;
 var player = (obj_player1.spotlight = false ? obj_player2 : obj_player1)
 oldcharacter = player.character
+oldplayer = player
 idle = 0
 tvsprite = spr_tvboot
 _image_index = 0;

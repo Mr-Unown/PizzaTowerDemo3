@@ -280,7 +280,18 @@ if !(global.freezeframe = false && !((player.state == states.backbreaker && play
 	}
 	_state = storedstate
 }	
-if newtvsprite = spr_tv_open && bootingup = false 
+if global.miniboss = true
+{
+    image_speed = 0.35
+	newtvsprite = spr_tv_noiseboss
+	sprite_index = newtvsprite	
+}
+else if newtvsprite = spr_tv_static
+{
+    image_speed = 0.35
+	sprite_index = newtvsprite		
+}
+else if newtvsprite = spr_tv_open && bootingup = false 
 {
 	image_index = 0
     image_speed = 0.35
@@ -323,10 +334,11 @@ else if global.newhud = true && oldcharacter == player.character && (sprite_inde
 			#region Normal
             if (idle < 400)
                 idle++
-            if (idle >= 300 && floor(image_index) >= (image_number - 1))
+            if (idle >= 300 && floor(image_index) >= (image_number - 1)) && (newtvsprite = spr_tv_idleanim1 || newtvsprite = spr_tv_idleanim2)
             {
                 idle = 0
                 image_index = 0
+				newtvsprite = spr_tv_idle
             }
             if (idle >= 300 && newtvsprite != spr_tv_idleanim1 && newtvsprite != spr_tv_idleanim2)
             {
@@ -361,10 +373,11 @@ else if global.newhud = true && oldcharacter == player.character && (sprite_inde
 			#region Normal
             if (idle < 400)
                 idle++
-            if (idle >= 300 && floor(image_index) >= (image_number - 1))
+            if (idle >= 300 && floor(image_index) >= (image_number - 1)) && (newtvsprite = spr_tv_idleanim1N || newtvsprite = spr_tv_idleanim2N)
             {
                 idle = 0
                 image_index = 0
+				newtvsprite = spr_tv_idleN
             }
             if (idle >= 300 && newtvsprite != spr_tv_idleanim1N && newtvsprite != spr_tv_idleanim2N)
             {
@@ -380,7 +393,7 @@ else if global.newhud = true && oldcharacter == player.character && (sprite_inde
 	
 	}
 }
-else if global.newhud = true && oldcharacter != player.character
+else if global.newhud = true && ((oldcharacter != player.character) || (oldplayer != player))
 {
 	alarm[0] = -1
 	imageindexstore = 0
@@ -392,9 +405,17 @@ else if global.newhud = true && oldcharacter != player.character
 	bootingup = false
 	idle = 0
 	oldcharacter = player.character
+	oldplayer = player
 }
+
 //Sprite_index
 if global.newhud = false
 	sprite_index = tvsprite
 else
 	sprite_index = newtvsprite
+if oldcombo != global.combo && global.newhud = true
+{
+	oldcombo = global.combo
+	newshake = true;
+	alarm[2] = 20
+}

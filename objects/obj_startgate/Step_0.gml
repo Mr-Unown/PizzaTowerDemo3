@@ -134,6 +134,17 @@ if (distance_to_object(player) < 50)
 		}
 #endregion
 	 }
+	 with obj_camera
+	 {
+		startgate = other.id
+	 }
+}
+else
+{
+	with obj_camera
+	{
+		startgate = noone
+	}
 }
 //Draw Text
 if place_meeting(x, y, player)

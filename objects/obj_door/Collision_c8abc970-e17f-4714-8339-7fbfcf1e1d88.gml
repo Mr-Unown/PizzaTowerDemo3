@@ -1,5 +1,6 @@
 if (!place_meeting(x, y, obj_doorblocked))
 {
+	var _acttransition = acttransition,_resetDoor = resetDoor;
     with (other.id)
     {
         if (key_up && (state == 0 || state == 69 || state == 70 || state == 91 || state == 65) && y == (other.y + 50) && (!instance_exists(obj_noisesatellite)) && (!instance_exists(obj_fadeout)) && state != 78 && state != 61 && ((obj_player1.spotlight == 1 && object_index == obj_player1) || (obj_player1.spotlight == 0 && object_index == obj_player2)))
@@ -35,13 +36,10 @@ if (!place_meeting(x, y, obj_doorblocked))
                 }
             }
             other.visited = 1
-            if (other.acttransition == 1)
-            {
-                with (instance_create(x, y, obj_fadeout))
-                    acttransition = 1
-            }
-            else
-                instance_create(x, y, obj_fadeout)
+            with instance_create(x, y, obj_fadeout)
+			{
+			   acttransition = _acttransition
+			}
         }
     }
 }

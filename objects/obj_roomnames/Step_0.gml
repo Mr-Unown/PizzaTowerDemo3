@@ -8,6 +8,7 @@ if (showtext == true)
 		draw_y += 5
 	else
 		draw_y = 35
+	newdraw_y = approach(newdraw_y,500,5)
 }
 if (showtext == false)
 {
@@ -15,8 +16,9 @@ if (showtext == false)
         draw_y -= 1
 	else
 		draw_y = -64
+	newdraw_y = approach(newdraw_y,600,1)		
 }
-if instance_exists(obj_player)
+if instance_exists(obj_player) && global.newhud = false
 {
 if point_in_rectangle(obj_player.x,obj_player.y, _draw_x - offsetx, _draw_y - offsety, _draw_x + offsetx, _draw_y + offsety)
 	alpha = 0.5

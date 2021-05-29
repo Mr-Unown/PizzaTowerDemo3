@@ -1,6 +1,12 @@
 depth = -11
 //Stinky Thing
 oldfacesprite = spr_null
+//Startgate
+startgate = noone;
+startdistanced = 0;
+startdistance = 0;
+startgateoffsetx = 0;
+startgateoffsety = 0;
 
 //Shaders
 greyscalefade = 0;

@@ -4,8 +4,9 @@ target_x = obj_player1.x
 target_y = obj_player1.y
 target_xold = obj_player1.x
 target_yold = obj_player1.y
-golfdistance = 0
-
+golfdistance = 0;
+startgateoffsetx = 0;
+startgateoffsety = 0;
 with (obj_camera)
 {
     shake_mag = 0

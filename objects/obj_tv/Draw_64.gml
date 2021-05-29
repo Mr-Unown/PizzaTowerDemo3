@@ -66,6 +66,12 @@ switch(global.newhud)
 	}
 	else if (global.miniboss == 1) && tvsprite = spr_tvnoise
 	    draw_text(832, 80, string_hash_to_newline(global.boxhp))
+	#region TEXT
+	draw_set_font(global.font)
+	draw_set_halign(fa_center)
+	draw_set_color(c_white)
+	draw_text(xi, yi, string_hash_to_newline(message))
+	#endregion		
 	#endregion
 	break;
 	case 1:
@@ -73,32 +79,75 @@ switch(global.newhud)
 	if !(room == Realtitlescreen || room == rank_room || room == timesuproom || room == boss_room1)
 	{
 		draw_sprite_ext(newtvsprite, -1, 832, 100 + newhudyoffset, 1, 1, 0, c_white, 1)
-		if global.combo != 0 && global.miniboss == 0 && global.combotime != 0 && newtvsprite != spr_tv_open
+		if global.combo != 0 && global.miniboss == 0 && global.combotime != 0 && newtvsprite != spr_tv_open && newtvsprite != spr_tv_static && newtvsprite != spr_tv_noiseboss
 		{
 			if global.combobuffer > 0
 			{
+				//Combo text
 				draw_sprite_ext(spr_tv_combo, image_index, 832, 100 + newhudyoffset, 1, 1, 0, c_white, 1)		
+				//Combo counter
 				draw_set_font(global.combofont)
 				draw_set_halign(fa_center)
 				draw_set_color(c_white)
+
 				var _combo = string(global.combo)
 				if (global.combo < 10)
 					_combo = "0" + string(global.combo)
-				draw_text(830, 90 + newhudyoffset, string_hash_to_newline(_combo))
+				var _string_length = string_length(_combo);
+				for (var i = 0; i < _string_length; i++) 
+				{
+					var _xx = (-(string_width(_combo)/ 2) + ((string_width(_combo)/_string_length) * i)) 
+					var _yy = (i * -4)		
+					if newshake = true
+					{
+					var _xx = (-(string_width(_combo)/ 2) + ((string_width(_combo)/_string_length) * i)) + irandom_range(-2,2)
+					var _yy = (i * -4) + irandom_range(-2,2)
+					}
+					draw_text(835 + _xx, 85 + _yy + newhudyoffset, string_char_at(_combo,i + 1));
+				}
 			}
-			var barindex = floor((global.combotime / 60) * 4) - 1;
-			draw_sprite_ext(spr_tv_combobar, barindex, 832, 100 + newhudyoffset, 1, 1, 0, c_white, 1)					
+			//Combobar
+			var barindex = clamp(round((global.combotime / 60) * 4) - 1,0,4);											
+			draw_sprite_ext(spr_tv_combobar, barindex, 832, 107 + newhudyoffset, 1, 1, 0, c_white, 1)
+		}
+		else if (global.miniboss == 1) &&  newtvsprite = spr_tv_noiseboss
+		{
+			#region BOXHP
+				//Combo counter
+				draw_set_font(global.combofont)
+				draw_set_halign(fa_center)
+				draw_set_color(c_white)
+
+				var _hp = string(global.boxhp)
+				if (global.boxhp < 10)
+					_hp = "0" + string(global.boxhp)
+				var _string_length = string_length(_hp);
+				for (var i = 0; i < _string_length; i++) 
+				{
+					var _xx = (-(string_width(_hp)/ 2) + ((string_width(_hp)/_string_length) * i)) 
+					var _yy = (i * -4)		
+					if newshake = true
+					{
+					var _xx = (-(string_width(_hp)/ 2) + ((string_width(_hp)/_string_length) * i)) + irandom_range(-2,2)
+					var _yy = (i * -4) + irandom_range(-2,2)
+					}
+					draw_text(835 + _xx, 85 + _yy + newhudyoffset, string_char_at(_hp,i + 1));
+				}
+			#endregion
 		}
 	}
 
-	
-	#endregion
-	break;
-}
+	#region TEXT
 	draw_set_font(global.font)
 	draw_set_halign(fa_center)
 	draw_set_color(c_white)
 	draw_text(xi, yi, string_hash_to_newline(message))
+	#endregion
+	
+	#endregion
+	break;
+}
+
 	if instance_exists(obj_pizzaball)
 	    draw_text(832, 300, string_hash_to_newline(((string(global.golfhit) + " ") + "STROKES")))
 }
