@@ -110,6 +110,21 @@
                     "mipsToGenerate": 0,
                     "scaled": true
                 }
+            },
+            {
+                "Key": 8,
+                "Value": {
+                    "id": "ddac66d6-1e11-4100-b123-920c9d981dbb",
+                    "modelName": "GMTextureGroup",
+                    "mvc": "1.0",
+                    "groupName": "HUB",
+                    "targets": 461609314234257646,
+                    "autocrop": true,
+                    "border": 2,
+                    "groupParent": "00000000-0000-0000-0000-000000000000",
+                    "mipsToGenerate": 0,
+                    "scaled": true
+                }
             }
         ],
         "Checksum": "ࢺ懜璙ᓆ锯翋꤯맫",

@@ -313,6 +313,7 @@ else if newtvsprite = spr_tv_open && bootingup = true
 else if global.newhud = true && oldcharacter == player.character && (sprite_index != spr_tv_open && newtvsprite != spr_tv_open)
 {
 	image_speed = 0.35
+	#region NEW TV
 	switch(player.character)
 	{
 		case "P":
@@ -392,8 +393,9 @@ else if global.newhud = true && oldcharacter == player.character && (sprite_inde
 			break;
 		}
 		break;
-	
+
 	}
+	#endregion	
 }
 else if global.newhud = true && ((oldcharacter != player.character) || (oldplayer != player))
 {
@@ -409,7 +411,45 @@ else if global.newhud = true && ((oldcharacter != player.character) || (oldplaye
 	oldcharacter = player.character
 	oldplayer = player
 }
-
+#region Transformation text
+switch(obj_player.state)
+{
+	case states.knightpep:
+	case states.knightpepslopes:
+	case states.knightpepattack:
+	if ds_list_find_index(global.saveroom, "knight") = -1  
+	{
+		scr_queuemessage("Wow! It seems that thunder has turned a seemingly-unknown-as-of-now fat man into a valiant and more easily identifiable knight! What mighty stead will he ride? What epic quest will he accomplish?");
+		scr_queuemessage("Maybe he will just slam into a wall and become incredibly boring again?");
+		ds_list_add(global.saveroom, "knight")
+	}
+	break;
+	case states.bombpep:
+	if ds_list_find_index(global.saveroom, "bomb") = -1  
+	{
+		scr_queuemessage("Whew... That Strange Unknown Pizzaman better be careful you might never know when that bomb will blow up!");
+		scr_queuemessage("I sure hope this strange man knows how to play Bomb Throw, if not... well I'm sure he'll be fine.");
+		ds_list_add(global.saveroom, "bomb")
+	}
+	break;		
+	case states.fireass:
+	if ds_list_find_index(global.saveroom, "fireass") = -1  
+	{
+		scr_queuemessage("Ouch! That's gotta hurt! Quickly, Stop, Drop, and Mope!");
+		scr_queuemessage("I sure hope that man has some asbestos pants...");
+		ds_list_add(global.saveroom, "fireass")
+	}	
+	break;	
+	case states.tumble:
+	if ds_list_find_index(global.saveroom, "tumble") = -1  
+	{
+		scr_queuemessage("Oh, looks like this man has taken the tumble! You better watch your step folks or this could happen to you!");
+		scr_queuemessage("At this point there is nothing you can do but hope to get bumped into a wall and not into a death trap!");
+		ds_list_add(global.saveroom, "tumble")
+	}	
+	break;		
+}
+#endregion
 //Sprite_index
 if global.newhud = false
 	sprite_index = tvsprite
@@ -435,7 +475,7 @@ if textbubblesprites = spr_tv_bubbleopen && floor(textbubbleframes) >= sprite_ge
 	textbubblesprites = spr_tv_bubble
 if textbubblesprites = spr_tv_bubble
 {
-	text_x += -3
+	text_x += -4
 	/* I was thinking why there was a disconnect between the draw and this CONT. in Draw GUI
 	if floor(text_x) <= -(floor(string_width(string_upper(newmessage))) - 775)
 	{

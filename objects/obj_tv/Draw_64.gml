@@ -147,23 +147,23 @@ switch(global.newhud)
 		textpromptsurface = surface_create(300,100)
 	surface_set_target(textpromptsurface)
 	draw_clear_alpha(c_black, 0)
-	var pizzafont = true;
+	//var pizzafont = true;
 	var _newmessage = newmessage;
 	//Font Options
-	if pizzafont = false
-	{
+	//if pizzafont = false
+	//{
 		draw_set_font(font1);
 		draw_set_halign(fa_left);
 		draw_set_color(c_black);
 		_newmessage = newmessage;
-	}
+	/*}
 	else
 	{
 		draw_set_font(global.smallfont);
 		draw_set_halign(fa_left);
-		draw_set_color(c_white);
+		draw_set_color(make_color_rgb(255,240,240));//c_white);
 		_newmessage = string_upper(newmessage);
-	}	
+	}*/	
 	//Text
 	if textbubblesprites = spr_tv_bubble
 	{
