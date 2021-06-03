@@ -24,6 +24,8 @@ var lay_id11 = layer_get_id("Backgrounds_4")
 var back_id11 = layer_background_get_id(lay_id11)
 var lay_id12 = layer_get_id("Backgrounds_long")
 var back_id12 = layer_background_get_id(lay_id12)
+var lay_id13 = layer_get_id("Backgrounds_foreground")
+var back_id13 = layer_background_get_id(lay_id13)
 if (room != hub_room1 && room != hub_room3  && room != hub_room2 && room != cowboytask && obj_pause.pause == 0)
     global.scrolloffset += 1
 //Disgusting
@@ -51,6 +53,8 @@ if (global.freezeframe = false)
 	layer_background_speed(back_id11, (back11 /_speedmodifier))
 	layer_background_speed(back_id12, (back12 /_speedmodifier))
 
+layer_x("Backgrounds_foreground", (_cam_x * 0.95))
+layer_y("Backgrounds_foreground", (room_height - sprite_get_height(layer_background_get_sprite(back_id13))) )
 layer_x("Backgrounds_scroll", (((_cam_x * 0.25) + x_shift_3) + (scrolloffset * layer_get_hspeed("Backgrounds_scroll"))))
 layer_y("Backgrounds_scroll", (((_cam_y * 0.25) + y_shift_3) + (scrolloffset * layer_get_vspeed("Backgrounds_scroll"))))
 layer_x("Backgrounds_1", (_cam_x * 0.25))

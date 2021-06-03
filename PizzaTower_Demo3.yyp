@@ -2175,6 +2175,14 @@
             }
         },
         {
+            "Key": "1424ead1-073b-441a-8585-c86ee0654d28",
+            "Value": {
+                "id": "f9c390fc-a93a-47fd-b629-b37183477abc",
+                "resourcePath": "sprites\\bg_entranceforeground\\bg_entranceforeground.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1466f793-b39c-4d20-bb59-8ce036a4e769",
             "Value": {
                 "id": "ca00d5f6-af1b-466a-bca8-76f8111b2743",
@@ -6607,6 +6615,14 @@
             }
         },
         {
+            "Key": "407a0984-66ef-43af-b0de-ab7ef4429b5e",
+            "Value": {
+                "id": "484e5d4a-5c46-46fc-8af0-211d8cbc6854",
+                "resourcePath": "tilesets\\tile_entrancedecorations2\\tile_entrancedecorations2.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "4099526f-d680-4bb0-8acf-d3637b932be6",
             "Value": {
                 "id": "3d8d0518-363d-4ec1-8c32-a1b9beef0cce",
@@ -10100,6 +10116,14 @@
                 "id": "809f88a4-fbbb-47cf-8a33-ee1bff45d589",
                 "resourcePath": "objects\\obj_secretbigblock2\\obj_secretbigblock2.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "61939faa-ab4e-4c0f-b756-e2b49430315e",
+            "Value": {
+                "id": "19dc8ba1-ed35-4fde-a981-dd52ea63ce37",
+                "resourcePath": "sprites\\spr_tile_entrancedecorations2\\spr_tile_entrancedecorations2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
