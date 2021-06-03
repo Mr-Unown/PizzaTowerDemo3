@@ -959,6 +959,14 @@
             }
         },
         {
+            "Key": "089298aa-b08d-4c7a-b30d-ba449299af80",
+            "Value": {
+                "id": "4c1e59e0-3fb3-4027-95b2-c12fab84448d",
+                "resourcePath": "sprites\\spr_chateaudecoration\\spr_chateaudecoration.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "089656a2-9f74-4947-976e-660f674074d4",
             "Value": {
                 "id": "b3bb7690-7ba5-4bfc-b03f-8d15541114cd",
@@ -5055,6 +5063,14 @@
             }
         },
         {
+            "Key": "3370b06d-f97c-4be2-a82d-ebdc434bb35b",
+            "Value": {
+                "id": "6256b829-5b03-4981-9202-7843dc4bec0d",
+                "resourcePath": "tilesets\\tileset_medievaldecoration\\tileset_medievaldecoration.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "337504b3-2250-48ff-946f-28fe166cd4a9",
             "Value": {
                 "id": "ffb1370e-074c-44f3-a7f7-3ff835bd7cc3",
@@ -6644,6 +6660,14 @@
                 "id": "c256b804-2a7f-4828-bacd-993190c65e90",
                 "resourcePath": "objects\\obj_watercurrent\\obj_watercurrent.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "40c28f31-5ffb-458c-a084-f19922792ebc",
+            "Value": {
+                "id": "fe95f58a-846e-4cbf-9e30-e812044c0529",
+                "resourcePath": "sprites\\spr_medievaldoor\\spr_medievaldoor.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -12767,6 +12791,14 @@
             }
         },
         {
+            "Key": "7de93f47-e387-4a14-85d4-d084bc8eec57",
+            "Value": {
+                "id": "1b04b0f2-6297-4d96-9208-ae07733ad351",
+                "resourcePath": "sprites\\spr_medievaldecoration\\spr_medievaldecoration.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7dea8886-b3b3-4653-be42-16a5444daa03",
             "Value": {
                 "id": "701f79f4-3402-4d9a-bbad-1820b6ff7ce0",
@@ -18708,6 +18740,14 @@
                 "id": "99803461-a4be-481c-87a4-8751b81a9bef",
                 "resourcePath": "sprites\\spr_scrollbar\\spr_scrollbar.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b9230902-3017-4dd1-86ac-32dbcbcee4ca",
+            "Value": {
+                "id": "56938bca-6bcc-4483-99a1-c9101fc94ff2",
+                "resourcePath": "tilesets\\tileset_chateaudecorationsNEW\\tileset_chateaudecorationsNEW.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {

@@ -6,7 +6,8 @@
     "children": [
         "d4782b47-9391-4855-8a75-661bf7ccb53f",
         "360ff110-1ff1-4adc-b904-5dac1e308a7f",
-        "77bc7841-1308-4207-a40b-7483349b4df9"
+        "77bc7841-1308-4207-a40b-7483349b4df9",
+        "3370b06d-f97c-4be2-a82d-ebdc434bb35b"
     ],
     "filterType": "GMTileSet",
     "folderName": "Medieval",
