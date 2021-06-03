@@ -7703,6 +7703,14 @@
             }
         },
         {
+            "Key": "4bf2357c-4953-4647-bcec-cc9a2f29b812",
+            "Value": {
+                "id": "d5f323e8-3e7e-4e12-846c-861c40305ad6",
+                "resourcePath": "sprites\\spr_chateaudoor\\spr_chateaudoor.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4bfaaf93-588f-4e0d-a58b-1b55936c743e",
             "Value": {
                 "id": "e1627fe8-3a19-4610-8067-51fb2283296a",
