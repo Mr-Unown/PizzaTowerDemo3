@@ -1,5 +1,5 @@
-depth = -10.5
-image_alpha = 0.392
+depth = -20
+alpha = 0.75
 created = 0
 image_speed = 1
 

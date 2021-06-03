@@ -429,6 +429,31 @@ switch state
         scr_player_taxi()
         break
 }
+//Water
+if place_meeting(x,y,group_cheesewater) 
+{
+	with instance_place(x,y,group_cheesewater)
+	if other.bbox_top > bbox_top
+		other.in_water = true
+}
+else
+{
+	in_water = false
+}
+
+if in_water = true
+{
+	if vsp > 15
+		vsp = 15
+    var bubble = random_range(1, 100)
+    if (bubble >= 99)
+    {
+		with instance_create(x,y,obj_waterbubble)
+			depth = other.depth - 25
+    }	
+	
+}
+
 
 //Palette
 if surface_exists(surf_pallete) && (paletteselect >= sprite_get_width(spr_palette) - 1)

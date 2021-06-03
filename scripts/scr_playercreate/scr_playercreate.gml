@@ -1,3 +1,4 @@
+global.wateralpha = 0.85
 breakdancebuffer = 50
 collectscore = 0
 //Up arrow
