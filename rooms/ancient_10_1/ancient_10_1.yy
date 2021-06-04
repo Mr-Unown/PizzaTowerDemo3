@@ -55,7 +55,6 @@
         "054bd957-6381-46c0-ab8f-1e6cb2455b6a",
         "47cb8fb8-00f9-4fbc-8bd3-f9d49f000539",
         "134baf62-47d2-4975-a28f-b77aee28f22b",
-        "9f5c2c2e-490d-4759-ae7d-2ed01e3256cb",
         "48d39a36-c214-486b-8c8a-3b9b74901be0",
         "f789399b-f8f9-4e95-83a4-5e12d5704c4d",
         "efc4052e-6da6-4c7f-b9be-608cdbf69e38",
@@ -223,7 +222,8 @@
         "963640b5-dadd-4e1e-96dd-40f2eeccf2b1",
         "4e243a82-14a9-43af-8777-2c7bb716c969",
         "c14af1a5-8dae-4b2a-984b-1cbba285c519",
-        "395db892-57bd-4d0e-95fd-6ba2239ea7e3"
+        "395db892-57bd-4d0e-95fd-6ba2239ea7e3",
+        "9f5c2c2e-490d-4759-ae7d-2ed01e3256cb"
     ],
     "IsDnD": false,
     "layers": [
@@ -1091,7 +1091,7 @@
             "vspeed": 0,
             "vtiled": false,
             "x": 0,
-            "y": 2312
+            "y": 2075
         },
         {
             "__type": "GMRBackgroundLayer_Model:#YoYoStudio.MVCFormat",

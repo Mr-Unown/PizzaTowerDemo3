@@ -133,7 +133,7 @@
         },
         {
             "__type": "GMRBackgroundLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "Backgrounds_sky",
+            "name": "Backgrounds_cloud",
             "id": "24b3319c-7afb-492d-a456-d346935008c8",
             "animationFPS": 1,
             "animationSpeedType": "1",

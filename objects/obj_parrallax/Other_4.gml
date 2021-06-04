@@ -22,6 +22,10 @@ var lay_id11 = layer_get_id("Backgrounds_4")
 var back_id11 = layer_background_get_id(lay_id11)
 var lay_id12 = layer_get_id("Backgrounds_long")
 var back_id12 = layer_background_get_id(lay_id12)
+
+var lay_id13 = layer_get_id("Backgrounds_foreground")
+//var back_id13 = layer_background_get_id(lay_id13)
+layer_depth(lay_id13,-10);
 scrolloffset = global.scrolloffset
 layer_x("Backgrounds_sky", 0)
 layer_y("Backgrounds_sky", 0)
