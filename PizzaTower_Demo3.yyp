@@ -10479,6 +10479,14 @@
             }
         },
         {
+            "Key": "65847a94-d726-4286-af51-4cf46e244813",
+            "Value": {
+                "id": "8c83d036-3ce4-4e87-8301-b3e00734b7a6",
+                "resourcePath": "scripts\\scr_secrettiles\\scr_secrettiles.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "65a3cfe3-c616-476e-aba4-10eccac46fe5",
             "Value": {
                 "id": "5e5567cb-dfcf-4021-9e92-c3df646f6b1a",
@@ -21191,6 +21199,14 @@
             }
         },
         {
+            "Key": "ce146ae4-feaa-4173-ba0a-3dc21287ab1f",
+            "Value": {
+                "id": "9dd53ecd-e093-49ed-8366-03fa30ddb605",
+                "resourcePath": "sprites\\spr_entrancebgtiletransition\\spr_entrancebgtiletransition.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ce1e6a5b-79ba-4941-b056-6906c4de5526",
             "Value": {
                 "id": "2980dd3b-1e03-4944-b340-ee98f30a201f",
@@ -24711,6 +24727,14 @@
             }
         },
         {
+            "Key": "f0054433-de92-46ba-bd90-c5e54be1a951",
+            "Value": {
+                "id": "884abefb-bee7-4b89-952a-bd3fbcf02a66",
+                "resourcePath": "objects\\obj_secretwall\\obj_secretwall.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f00dca82-f858-4c2c-8e27-098edf47e5d7",
             "Value": {
                 "id": "3a644656-0d06-4c56-a9a2-71b8dfeeddc8",
@@ -26492,7 +26516,8 @@
         "f476ae04-b208-49d4-95a9-c6adbb1452d9",
         "fe3e1f3a-d25f-4a78-87ae-6bb500d172e6",
         "faaf8fff-90b2-4825-bdd2-1193a3d23b28",
-        "b3a731ee-12f8-4aca-9b2a-b6780c7982f4"
+        "b3a731ee-12f8-4aca-9b2a-b6780c7982f4",
+        "65847a94-d726-4286-af51-4cf46e244813"
     ],
     "tutorial": ""
 }

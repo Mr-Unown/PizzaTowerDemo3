@@ -138,7 +138,7 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
         selected = 2
         scr_soundeffect(29)
     }
-	if key_jump2
+	if key_jump
 	{
 		switch (selected) 
 		{
@@ -319,8 +319,8 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
                 if instance_exists(obj_player2)
                     obj_player2.targetDoor = "A";
             }			
-            else
-                scr_soundeffect(8);
+            else if !audio_is_playing(sfx_enemyprojectile)
+                scr_soundeffect(sfx_enemyprojectile);
         }
         else if (global.snickchallenge == 1)
         {

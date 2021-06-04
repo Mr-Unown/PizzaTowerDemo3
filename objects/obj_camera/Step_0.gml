@@ -253,17 +253,20 @@ target_x +=  target.x - target_xold
 target_y +=  target.y - target_yold
 #region Camera
 //Zooming and Angles
-
-if angle != 0 && global.freezeframe = false
+if global.freezeframe = false
+{
+	targetzoom1 = approach(targetzoom1,960,16)
+	targetzoom2 = approach(targetzoom2,540,9)	
 	angle = approach(angle,0,0.25)
+	/*
 if targetzoom1 < 960 && global.freezeframe = false
 	targetzoom1 += 16
 else if global.freezeframe = false
 	targetzoom1 = 960
 if targetzoom2 < 540 && global.freezeframe = false
-	targetzoom2 += 9
-else if global.freezeframe = false
-	targetzoom2 = 540
+	targetzoom2 += 9*/
+
+}
 //Zoom and Angles 2	
 camera_set_view_angle(view_camera[0], angle)		
 camera_set_view_size(view_camera[0],targetzoom1,targetzoom2)
