@@ -300,5 +300,10 @@ camera_set_view_pos(view_camera[0],camera_get_view_x(view_camera[0]),clamp(camer
 target_xold = target_x
 target_yold = target_y
 
-
+global.hitstunalarm = approach(global.hitstunalarm,-1,1)
+//New Hitstun
+if (global.hitstunalarm <= -1)
+{
+	global.freezeframe = false;
+}
 

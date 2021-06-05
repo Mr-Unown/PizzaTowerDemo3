@@ -46,6 +46,7 @@ with obj_camera
 {
 	global.startgate = noone
 	alarm[3] = -1
+	global.hitstunalarm = -1
 	golf = 0;
 	greyscalefade = 0;
 	//Number

@@ -46,6 +46,7 @@ chargecamera = 0
 alpha = 1
 zoomh = 540
 zoomw = 960
+global.hitstunalarm = 0;
 global.panicbg = true;
 ini_open("saveData.ini")
 global.newhud = ini_read_real("Option", "newhud", 0);

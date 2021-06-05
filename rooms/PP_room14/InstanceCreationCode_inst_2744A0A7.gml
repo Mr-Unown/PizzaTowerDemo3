@@ -39,6 +39,7 @@ obj_camera.golf = 0;
 obj_camera.greyscalefade = 0;
 with obj_camera
 {
+	global.hitstunalarm = -1
 	alarm[3] = -1
 	golf = 0;
 	greyscalefade = 0;
