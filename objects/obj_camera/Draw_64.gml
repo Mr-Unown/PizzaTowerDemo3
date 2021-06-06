@@ -273,7 +273,11 @@ if (player.state != 55)
 			draw_sprite_ext(spr_pizzascore_olive, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
 		if global.collect >= global.srank
 			draw_sprite_ext(spr_pizzascore_shroom, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)		
-		//Point
+			
+		switch global.timeattack
+		{
+			case false:
+			#region Point
 		draw_set_halign(fa_center);
 		draw_set_color(c_white);
 		draw_set_font(global.pointsfont);	
@@ -332,7 +336,13 @@ if (player.state != 55)
 			pal_swap_set(spr_font_collect_palette,pal,false);
 			draw_text(_xx, _yy + _yyoffset + textyoffset, string_char_at(_string,i + 1));
 			shader_reset();
-		} //D3G: Why does it keep crashing fkmadkmkdm
+		} #endregion
+			break;
+			case true:
+			
+			
+			break;
+		}
 		#region Backup
 		if (player.pizzashieldbackup >= 1)
 		{
@@ -397,6 +407,25 @@ if (player.state != 55)
         }
     }	
 	#endregion
+	#region Speedrun Timer
+	ini_open("playerData_"+global.savefile+".ini");
+	var ranks = ini_read_string("Ranks", string(global.levelname), "none"); 
+	ini_close();
+	if global.levelname != "none" && (ranks != "none") && room != hub_room1 && room != hub_room2 && room != hub_room3 && room != cowboytask && room != timesuproom && room != Scootertransition && room != Tutorialtrap  && room != Titlescreen 
+	{
+		var tiny = ":"
+		var tinier = ":"
+		if (global.bonusseconds < 10)
+			tiny = ":0"
+		if (global.bonusmiliseconds < 10)
+			tinier = ":0"			
+		draw_set_color(c_white)
+		draw_set_halign(fa_center)
+		draw_set_font(global.smallfont)
+		draw_text(832, 512, string_hash_to_newline(((string(global.bonusminutes) + string(tiny)) + string(global.bonusseconds) + string(tinier) + string(global.bonusmiliseconds))))
+	}
+	#endregion
+	
 	#endregion
 }
 draw_set_blend_mode(0)

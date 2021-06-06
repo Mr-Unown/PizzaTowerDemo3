@@ -32,6 +32,11 @@ image_speed = 0.35
 alarm[1] = -1
 global.seconds = 59
 global.minutes = 0
+
+global.bonusmiliseconds = 0;
+global.bonusseconds = 0;
+global.bonusminutes = 0;
+
 global.miniboss = 0
 angle = 0
 frame = 0

@@ -307,3 +307,18 @@ if (global.hitstunalarm <= -1)
 	global.freezeframe = false;
 }
 
+//Speedrun Timer
+if global.freezeframe = false && room != hub_room1 && room != hub_room2 && room != hub_room3 && room != cowboytask && room != timesuproom && room != rank_room && room != Scootertransition && room != Tutorialtrap  && room != Titlescreen  
+{
+	global.bonusmiliseconds += 1
+	if global.bonusmiliseconds >= 60
+	{
+		global.bonusmiliseconds = 0
+		global.bonusseconds += 1
+		if (global.bonusseconds >= 60)
+		{
+			global.bonusseconds = 0
+			global.bonusminutes += 1
+		}
+	}
+}

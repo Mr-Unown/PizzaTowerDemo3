@@ -3,6 +3,7 @@ global.font = font_add_sprite_ext(spr_font, "ABCDEFGHIJKLMNOPQRSTUVWXYZ!.1234567
 global.pointsfont = font_add_sprite_ext(spr_font_collect, "0123456789", 1, 0)
 global.combofont = font_add_sprite_ext(spr_font_combo, "0123456789", 1, 0)
 global.smallnumber = font_add_sprite_ext(spr_smallnumber, "1234567890-", 1, 0)
+global.timerfont = font_add_sprite_ext(spr_font_timer, "1234567890:", 1, 0)
 ini_open("saveData.ini")
 global.mastervolume = ini_read_real("Option", "mastervolume", 1)
 global.musicvolume = ini_read_real("Option", "musicvolume", 1)

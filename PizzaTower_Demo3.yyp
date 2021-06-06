@@ -8391,6 +8391,14 @@
             }
         },
         {
+            "Key": "51d49441-1624-46dc-97ce-a0515129457e",
+            "Value": {
+                "id": "439eb4c8-85ca-473f-8eb4-257956eb0b3f",
+                "resourcePath": "sprites\\spr_pizzascoretimer\\spr_pizzascoretimer.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "51df0459-e156-4eb9-94de-eddc598befd9",
             "Value": {
                 "id": "44d84d2a-41b4-41eb-af23-dec1f5f94b6c",
@@ -20139,6 +20147,14 @@
             "Value": {
                 "id": "cc244826-83bd-40a6-b997-9a6b2c978f15",
                 "resourcePath": "sprites\\spr_playerPZ_machslidestart\\spr_playerPZ_machslidestart.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c56e5de1-e99a-44b4-b4eb-8166e588fdda",
+            "Value": {
+                "id": "77d0b2c4-3e5e-4702-a48b-0df2bea30827",
+                "resourcePath": "sprites\\spr_font_timer\\spr_font_timer.yy",
                 "resourceType": "GMSprite"
             }
         },

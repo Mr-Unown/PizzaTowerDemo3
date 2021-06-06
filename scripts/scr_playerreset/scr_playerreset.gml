@@ -4,6 +4,10 @@ with obj_discordrpc
 {
 	alarm[0] = -1;
 }
+//Speedrun Timer
+global.bonusmiliseconds = 0;
+global.bonusseconds = 0;
+global.bonusminutes = 0;
 //Goop Gone
 with obj_goop 
 {

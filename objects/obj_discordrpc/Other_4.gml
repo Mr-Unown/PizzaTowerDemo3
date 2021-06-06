@@ -117,3 +117,9 @@ else if global.snickchallenge = true
 	in_a_level = true;
 	alarm[0] = 100
 }
+else
+{
+	string_status = "Pizza Tower"
+	string_imagekey = "default"
+	in_a_level = false;
+}
