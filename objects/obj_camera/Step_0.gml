@@ -308,7 +308,7 @@ if (global.hitstunalarm <= -1)
 }
 
 //Speedrun Timer
-if global.freezeframe = false && room != hub_room1 && room != hub_room2 && room != hub_room3 && room != cowboytask && room != timesuproom && room != rank_room && room != Scootertransition && room != Tutorialtrap  && room != Titlescreen  
+if global.freezeframe = false && room != hub_room1 && room != hub_room2 && room != hub_room3 && room != cowboytask && room != timesuproom && room != rank_room && room != Scootertransition && room != Tutorialtrap  && room != Titlescreen  && room != Realtitlescreen
 {
 	global.bonusmiliseconds += 1
 	if global.bonusmiliseconds >= 60
@@ -321,4 +321,10 @@ if global.freezeframe = false && room != hub_room1 && room != hub_room2 && room 
 			global.bonusminutes += 1
 		}
 	}
+}
+else
+{
+	global.bonusmiliseconds = 0;
+	global.bonusseconds = 0;
+	global.bonusminutes = 0;
 }

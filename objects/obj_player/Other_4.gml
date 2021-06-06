@@ -1,3 +1,5 @@
+var yoffset = 160
+
 //Surface
 if !surface_exists(surf_pallete)
 	surf_pallete = surface_create(surf_width,surf_height)
@@ -188,6 +190,9 @@ with (obj_destroyable2_bigescape)
                     x = (obj_doorA.x + verticaloffset)
                 else
                     x = (obj_doorA.x + 16)	
+				if vertical == 1
+				y = (obj_doorA.y + hallwaydirection * yoffset)
+				else
                 y = (obj_doorA.y - 14)
             }
             else if (targetDoor == "B") && instance_exists(obj_doorB)
@@ -202,6 +207,9 @@ with (obj_destroyable2_bigescape)
                     x = (obj_doorB.x + verticaloffset)
                 else
                     x = (obj_doorB.x + 16)
+				if vertical == 1
+				y = (obj_doorB.y + hallwaydirection * yoffset)
+				else					
                 y = (obj_doorB.y - 14)
             }
             else if (targetDoor == "C") && instance_exists(obj_doorC)
@@ -216,6 +224,9 @@ with (obj_destroyable2_bigescape)
                     x = (obj_doorC.x + verticaloffset)
                 else
                     x = (obj_doorC.x + 16)
+				if vertical == 1
+				y = (obj_doorC.y + hallwaydirection * yoffset)
+				else					
                 y = (obj_doorC.y - 14)
             }
             else if (targetDoor == "D") && instance_exists(obj_doorD)
@@ -230,6 +241,9 @@ with (obj_destroyable2_bigescape)
                     x = (obj_doorD.x + verticaloffset)
                 else
                     x = (obj_doorD.x + 16)
+				if vertical == 1
+				y = (obj_doorD.y + hallwaydirection * yoffset)
+				else					
                 y = (obj_doorD.y - 14)
             }
             else if (targetDoor == "E") && instance_exists(obj_doorE)
@@ -244,6 +258,9 @@ with (obj_destroyable2_bigescape)
                     x = (obj_doorE.x + verticaloffset)
                 else
                     x = (obj_doorE.x + 16)
+				if vertical == 1
+				y = (obj_doorE.y + hallwaydirection * yoffset)
+				else					
                 y = (obj_doorE.y - 14)
             }
             else if (targetDoor == "F") && instance_exists(obj_doorF)
@@ -258,6 +275,9 @@ with (obj_destroyable2_bigescape)
                     x = (obj_doorF.x + verticaloffset)
                 else
                     x = (obj_doorF.x + 16)
+				if vertical == 1
+				y = (obj_doorF.y + hallwaydirection * yoffset)
+				else					
                 y = (obj_doorF.y - 14)
             }
             else if (targetDoor == "G") && instance_exists(obj_doorG)
@@ -272,6 +292,9 @@ with (obj_destroyable2_bigescape)
                     x = (obj_doorG.x + verticaloffset)
                 else
                     x = (obj_doorG.x + 16)
+				if vertical == 1
+				y = (obj_doorG.y + hallwaydirection * yoffset)
+				else					
                 y = (obj_doorG.y - 14)
             }			
 			else if (targetDoor = "start")
@@ -304,7 +327,10 @@ with (obj_destroyable2_bigescape)
 						x = (door.x + verticaloffset)
 					else
 						x = (door.x + 16)
-					y = (door.y - 14)
+					if vertical == 1
+						y = (door.y + hallwaydirection * yoffset)
+					else						
+						y = (door.y - 14)
 				}
 				else
 					show_debug_message("Cannot find Subtitute Door")
@@ -421,6 +447,9 @@ if (object_index == obj_player2)
                     x = (obj_doorA.x + verticaloffset)
                 else
                     x = (obj_doorA.x + 16)	
+				if vertical == 1
+				y = (obj_doorA.y + hallwaydirection * yoffset)
+				else
                 y = (obj_doorA.y - 14)
             }
             else if (targetDoor == "B") && instance_exists(obj_doorB)
@@ -435,6 +464,9 @@ if (object_index == obj_player2)
                     x = (obj_doorB.x + verticaloffset)
                 else
                     x = (obj_doorB.x + 16)
+				if vertical == 1
+				y = (obj_doorB.y + hallwaydirection * yoffset)
+				else					
                 y = (obj_doorB.y - 14)
             }
             else if (targetDoor == "C") && instance_exists(obj_doorC)
@@ -449,6 +481,9 @@ if (object_index == obj_player2)
                     x = (obj_doorC.x + verticaloffset)
                 else
                     x = (obj_doorC.x + 16)
+				if vertical == 1
+				y = (obj_doorC.y + hallwaydirection * yoffset)
+				else					
                 y = (obj_doorC.y - 14)
             }
             else if (targetDoor == "D") && instance_exists(obj_doorD)
@@ -463,6 +498,9 @@ if (object_index == obj_player2)
                     x = (obj_doorD.x + verticaloffset)
                 else
                     x = (obj_doorD.x + 16)
+				if vertical == 1
+				y = (obj_doorD.y + hallwaydirection * yoffset)
+				else					
                 y = (obj_doorD.y - 14)
             }
             else if (targetDoor == "E") && instance_exists(obj_doorE)
@@ -477,6 +515,9 @@ if (object_index == obj_player2)
                     x = (obj_doorE.x + verticaloffset)
                 else
                     x = (obj_doorE.x + 16)
+				if vertical == 1
+				y = (obj_doorE.y + hallwaydirection * yoffset)
+				else					
                 y = (obj_doorE.y - 14)
             }
             else if (targetDoor == "F") && instance_exists(obj_doorF)
@@ -491,6 +532,9 @@ if (object_index == obj_player2)
                     x = (obj_doorF.x + verticaloffset)
                 else
                     x = (obj_doorF.x + 16)
+				if vertical == 1
+				y = (obj_doorF.y + hallwaydirection * yoffset)
+				else					
                 y = (obj_doorF.y - 14)
             }
             else if (targetDoor == "G") && instance_exists(obj_doorG)
@@ -505,6 +549,9 @@ if (object_index == obj_player2)
                     x = (obj_doorG.x + verticaloffset)
                 else
                     x = (obj_doorG.x + 16)
+				if vertical == 1
+				y = (obj_doorG.y + hallwaydirection * yoffset)
+				else					
                 y = (obj_doorG.y - 14)
             }						
 			else if (targetDoor = "start")
@@ -537,6 +584,9 @@ if (object_index == obj_player2)
 						x = (door.x + verticaloffset)
 					else
 						x = (door.x + 16)
+					if vertical == 1
+					y = (door.y + hallwaydirection * yoffset)
+					else						
 					y = (door.y - 14)
 				}
 				else

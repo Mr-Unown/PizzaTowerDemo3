@@ -3999,6 +3999,14 @@
             }
         },
         {
+            "Key": "28408ba8-649c-4589-8391-dcfea40b0200",
+            "Value": {
+                "id": "7a369e56-16f8-40ad-83a9-a368a7baa61d",
+                "resourcePath": "sprites\\spr_verticalhallway\\spr_verticalhallway.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2847a7b9-dae8-462f-901a-ab967a998a34",
             "Value": {
                 "id": "b31ccd73-2523-4656-8556-db8ff6c0e720",
@@ -17316,6 +17324,14 @@
                 "id": "ee3520aa-b5da-4219-99a2-84bb2f2eebf4",
                 "resourcePath": "sprites\\spr_swordstonetaken\\spr_swordstonetaken.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a97f0c81-177c-4110-b903-4a0be1b21531",
+            "Value": {
+                "id": "b8d52caa-edee-45ec-b61d-674e3debc5e9",
+                "resourcePath": "objects\\obj_verticalhallway\\obj_verticalhallway.yy",
+                "resourceType": "GMObject"
             }
         },
         {
