@@ -4,6 +4,7 @@ pos_x = other.x;
 }
 	with (other.id)
     {
+		wallspeed = clamp(wallspeed,8,25)
 		global.pausecombotime = true
 		obj_tv.alarm[1] = 75	
 		x = x

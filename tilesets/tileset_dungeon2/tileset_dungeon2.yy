@@ -4,7 +4,31 @@
     "mvc": "1.11",
     "name": "tileset_dungeon2",
     "auto_tile_sets": [
-        
+        {
+            "id": "721e949b-534f-40ea-982e-90260406cabb",
+            "modelName": "GMAutoTileSet",
+            "mvc": "1.0",
+            "closed_edge": false,
+            "name": "autotile_1",
+            "tiles": [
+                4,
+                53,
+                51,
+                2,
+                33,
+                11,
+                0,
+                1,
+                31,
+                0,
+                13,
+                3,
+                22,
+                21,
+                23,
+                0
+            ]
+        }
     ],
     "macroPageTiles": {
         "SerialiseData": null,

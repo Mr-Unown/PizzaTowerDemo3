@@ -16,5 +16,3 @@ if global.treasure = true && global.rank == "s" && floor(image_index) == (image_
 	plusrankframes = clamp(plusrankframes +0.35, 0,23)
 }
 shader_reset()
-
-
