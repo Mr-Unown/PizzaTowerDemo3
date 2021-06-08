@@ -13,6 +13,10 @@ arrayi = 0
 //Items in parentheses are optional
 if DEBUG 
 {
+/* Cursed Commands (DANGER WARNING)
+commands[arrayi++] = "create [obj] (x) (y)"
+commands[arrayi++] = "destroy [obj] (true/false)"
+commands[arrayi++] = "set [obj.variable] [value]"	*/
 commands[arrayi++] = "changecharacter [player] [character] (true/false)"
 commands[arrayi++] = "room_goto [roomname] [targetdoor]"
 }

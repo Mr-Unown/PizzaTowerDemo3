@@ -22,6 +22,60 @@ if (keyboard_check_pressed(vk_return) && input != "")
 				obj_player1.targetDoor = arg2
 				obj_player2.targetDoor = arg2
 				instance_create(0, 0, obj_fadeout) } break
+				/*
+			case "create":
+				if DEBUG {
+				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = noone else arg1 = ds_list_find_value(_commands, 1)
+				var arg2 if ds_list_find_value(_commands, 2) == undefined arg2 = 0 else arg2 = real(ds_list_find_value(_commands, 2))
+				var arg3 if ds_list_find_value(_commands, 3) == undefined arg3 = 0 else arg3 = real(ds_list_find_value(_commands, 3))
+				
+			
+				if asset_get_type(arg1) = asset_object
+					instance_create(arg2, arg3,asset_get_index(arg1))
+
+				} 
+				break;
+			case "destroy":
+				if DEBUG {
+				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = noone else arg1 = ds_list_find_value(_commands, 1)
+				var arg2 if ds_list_find_value(_commands, 2) == undefined arg2 = true else arg2 = ds_list_find_value(_commands, 2)
+				
+				if asset_get_type(arg1) != asset_object
+					break;
+				
+				switch arg2
+				{
+					case "true": arg2 = true
+					default: arg2 = false
+				}
+				instance_destroy(asset_get_index(arg1),arg2)
+
+				} 
+				break;	
+			case "set":
+				if DEBUG {
+				var arg1 if ds_list_find_value(_commands, 1) == undefined break; else arg1 = ds_list_find_value(_commands, 1)
+				var arg2 if ds_list_find_value(_commands, 2) == undefined arg2 = 0 else arg2 = ds_list_find_value(_commands, 2)
+				
+				var _split = string_split(arg1,".")
+				var _instance if ds_list_find_value(_split, 1) == undefined _instance = "global" else _instance = ds_list_find_value(_commands, 1)
+				var _value if ds_list_find_value(_split, 2) == undefined _value = 0 else _value = ds_list_find_value(_commands, 2)					
+				
+				if _instance != "global"
+				{
+				//arg1 = variable_instance_get(asset_get_index(_instance),_value);
+				variable_instance_set(asset_get_index(_instance),_value,real(arg2))
+				}
+				else
+				{
+				//arg1 = variable_global_get(_value);
+				variable_global_set(_value,real(arg2));
+				}
+				
+				
+			
+				} 
+				break;			*/		
 			case "escape":
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = 0 else arg1 = ds_list_find_value(_commands, 1)
 				var arg2 if ds_list_find_value(_commands, 2) == undefined arg2 = 10 else arg2 = ds_list_find_value(_commands, 2)
@@ -48,12 +102,7 @@ if (keyboard_check_pressed(vk_return) && input != "")
 				break;				
 			case "togglecollision": //Could probably use simplification
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !showcollisions else arg1 = ds_list_find_value(_commands, 1)
-				//if arg1 = "true"
-				//	arg1 = 1
-				//else if arg1 = "false"
-				//	arg1 = 0
-				//else if real(arg1) != 1 && real(arg1) != 0
-				//	arg1 = !showcollisions			
+
 				switch arg1
 				{
 					case "true": arg1 = true

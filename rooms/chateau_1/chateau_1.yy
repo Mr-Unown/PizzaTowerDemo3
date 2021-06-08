@@ -611,7 +611,7 @@
         },
         {
             "__type": "GMRBackgroundLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "Backgrounds_sky",
+            "name": "Backgrounds_scroll",
             "id": "80e6eedb-0bb3-424f-bafa-0f1d31e039ed",
             "animationFPS": 1,
             "animationSpeedType": "1",
@@ -646,7 +646,7 @@
         },
         {
             "__type": "GMRBackgroundLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "Backgrounds_1",
+            "name": "Backgrounds_far1",
             "id": "098e59d2-1c9e-4115-84ff-33f9faec5424",
             "animationFPS": 1,
             "animationSpeedType": "1",

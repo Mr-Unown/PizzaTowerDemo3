@@ -6,6 +6,9 @@ with (argument0)
     else if (state == 27 && hurted == 0)
     {
     }
+	else if global.freezeframe = true
+	{
+	}
     else if (state == 86)
     {
     }	
