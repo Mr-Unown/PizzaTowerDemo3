@@ -3911,6 +3911,14 @@
             }
         },
         {
+            "Key": "27c99efb-5bbe-42d0-9813-96562da400c2",
+            "Value": {
+                "id": "007f861d-3ff1-4f23-a167-9488e7ae5ed8",
+                "resourcePath": "sprites\\spr_tvrankd\\spr_tvrankd.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "27d894eb-b9cc-43e5-9425-c8d49c6466e9",
             "Value": {
                 "id": "0b955205-0e06-4690-9d7e-efc3c0cdcdbc",

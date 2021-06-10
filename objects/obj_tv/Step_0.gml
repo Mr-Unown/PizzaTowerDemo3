@@ -142,17 +142,55 @@ else if (global.collect > global.crank && shownrankc == 0 && global.nocombo == 0
     alarm[0] = 200
     tvsprite = spr_tvrankc
     shownrankc = 1
-}/*
-else if (obj_player.state == states.hurt) && chose = 0
+}
+else if (global.timeattackpoints > global.stimerank && showntimeranka == 0 && global.timeattack = true)
 {
-    image_speed = 0.1
+    image_speed = 0
+	if global.coop = false
+    message = "YOU ONLY GOT ENOUGH FOR RANK A"
+	else
+	message = "WE ONLY GOT ENOUGH FOR RANK A"
     showtext = 1
-    message = choose("OW!", "OUCH!", "OH!", "WOH!")
-    alarm[0] = 50
-    chose = 1
-    tvsprite = spr_tvhurt
-    once = 1
-}*/
+    alarm[0] = 200
+    tvsprite = spr_tvranka
+    showntimeranka = 1
+}
+else if (global.timeattackpoints > global.atimerank && showntimerankb == 0 && global.timeattack = true)
+{
+    image_speed = 0
+	if global.coop = false
+    message = "YOU ONLY GOT ENOUGH FOR RANK B"
+	else
+	message = "WE ONLY GOT ENOUGH FOR RANK B"
+    showtext = 1
+    alarm[0] = 200
+    tvsprite = spr_tvrankb
+    showntimerankb = 1
+}
+else if (global.timeattackpoints > global.btimerank && showntimerankc == 0 && global.timeattack = true)
+{
+    image_speed = 0
+	if global.coop = false
+    message = "YOU ONLY GOT ENOUGH FOR RANK C"
+	else
+	message = "WE ONLY GOT ENOUGH FOR RANK C"
+    showtext = 1
+    alarm[0] = 200
+    tvsprite = spr_tvrankc
+    showntimerankc = 1
+}
+else if (global.timeattackpoints > global.ctimerank && showntimerankd == 0 && global.timeattack = true)
+{
+    image_speed = 0.35
+	if global.coop = false
+    message = "YOU ONLY GOT ENOUGH FOR RANK D"
+	else
+	message = "WE ONLY GOT ENOUGH FOR RANK D"
+    showtext = 1
+    alarm[0] = 200
+    tvsprite = spr_tvrankd
+    showntimerankd = 1
+}
 else if (obj_player.sprite_index == obj_player.spr_golfwin)
 {
     image_speed = 0.1

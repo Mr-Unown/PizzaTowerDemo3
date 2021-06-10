@@ -160,7 +160,7 @@ else
 }
 //Lapping Time Attack baybe
 ini_open("playerData_"+global.savefile+".ini")
-if selected = true && ini_read_string("Ranks", "snickchallenge", "none") != "none" && has_selectedoption = false
+if selected = true && ini_read_string("Ranks", string(level), "none") != "none" && has_selectedoption = false && string(level) != "snickchallenge"
 {
 	scr_getinput();
     if (key_right2)

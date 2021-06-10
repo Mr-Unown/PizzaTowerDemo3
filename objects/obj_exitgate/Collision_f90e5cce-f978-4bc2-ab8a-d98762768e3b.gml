@@ -44,20 +44,32 @@ with (obj_player)
         targetDoor = "A"
         obj_camera.alarm[2] = -1
         scr_stopescapemusic()
-        if ((global.collect) >= global.srank)
-        {
-            global.rank = "s"
-            if (global.snickchallenge == 1)
-                global.SAGEsnicksrank = 1
-        }
-        else if ((global.collect) > global.arank)
-            global.rank = "a"
-        else if ((global.collect) > global.brank)
-            global.rank = "b"
-        else if ((global.collect) > global.crank)
-            global.rank = "c"
-        else
-            global.rank = "d"
+		//Rank Decide
+		if global.timeattack = false
+		{ 
+			#region Ranks
+			if ((global.collect) >= global.srank)
+			{
+				global.rank = "s"
+				if (global.snickchallenge == 1)
+					global.SAGEsnicksrank = 1
+			}
+			else if ((global.collect) > global.arank)
+				global.rank = "a"
+			else if ((global.collect) > global.brank)
+	            global.rank = "b"
+			else if ((global.collect) > global.crank)
+	            global.rank = "c"
+			else
+				global.rank = "d"
+			#endregion
+		}
+		else
+		{
+			#region Timeattack
+			
+			#endregion
+		}
         if (global.rank == "s")
             scr_soundeffect(mu_ranks)
         if (global.rank == "a")

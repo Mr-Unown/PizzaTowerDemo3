@@ -66,10 +66,11 @@ with (obj_tv)
     shownranka = 0;
     shownrankb = 0;
     shownrankc = 0;
-    shownderanks = 0;
-    shownderanka = 0;
-    shownderankb = 0;
-    shownderankc = 0;
+    showntimeranks = 0;
+    showntimeranka = 0;
+    showntimerankb = 0;
+    showntimerankc = 0;
+	showntimerankd = 0;
 	imageindexstore = 0;
 }
 global.SAGEshotgunsnicknumber = 0;

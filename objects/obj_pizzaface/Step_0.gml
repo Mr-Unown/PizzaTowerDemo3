@@ -40,7 +40,7 @@ if (relax == 1)
     x = median((x - maxspeed), playerid.x, (x + maxspeed))
     y = -200
 }
-if ((global.panic == 0 || global.timeattack = true) && room != rank_room)
+if ((global.panic == 0) && room != rank_room)
 {
     with (instance_create(x, y, obj_shake))
         sprite_index = other.sprite_index

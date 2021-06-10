@@ -40,6 +40,12 @@ else
     global.brank = (global.srank - ((global.srank / 4) * 2))
     global.crank = (global.srank - ((global.srank / 4) * 3))	
 }
+//Time Attack
+global.stimerank = 1.00;
+global.atimerank = (global.stimerank + (global.stimerank / 2))
+global.btimerank = (global.stimerank + (global.stimerank / 2)*2)
+global.ctimerank = (global.stimerank + (global.stimerank / 2)*3)
+global.dtimerank = (global.stimerank + (global.stimerank / 2)*4)
 
 if bootingup = false
 {

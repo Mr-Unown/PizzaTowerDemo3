@@ -8,6 +8,8 @@ string_characterstring = ""
 
 string_rank = "D"
 string_points = "0"
+string_timemin = "3"
+string_timesec = "10"
 in_a_level = false;
 
 oldstring_status = ""
