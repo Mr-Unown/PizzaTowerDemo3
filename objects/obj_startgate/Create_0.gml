@@ -123,6 +123,10 @@ global.golftoppin5 = ini_read_string("Toppin", "golf5", 0)
 global.golfsecret = ini_read_string("Secret", "golf", 0)
 global.golftreasure = ini_read_string("Treasure", "golf", 0)
 ini_close()
+selected = false
+selection = 0
+has_selectedoption = false
+can_gotolevel = false
 targetDoor = "A"
 image_speed = 0
 image_index = 0

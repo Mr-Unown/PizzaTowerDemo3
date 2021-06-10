@@ -158,3 +158,30 @@ else
 	cplayer1x = cplayerx - 32
 	cplayer2x = cplayerx + 32
 }
+//Lapping Time Attack baybe
+ini_open("playerData_"+global.savefile+".ini")
+if selected = true && ini_read_string("Ranks", "snickchallenge", "none") != "none" && has_selectedoption = false
+{
+	scr_getinput();
+    if (key_right2)
+    {
+        selection = 1
+        scr_soundeffect(sfx_step)
+    }
+	else if (-key_left2)
+	{
+        selection = 0
+        scr_soundeffect(sfx_step)		
+	}
+	if key_jump2
+	{
+		has_selectedoption = true;
+		scr_soundeffect(sfx_enemyprojectile)
+	}
+}
+else if selected = true
+	can_gotolevel = true
+
+
+ini_close()
+

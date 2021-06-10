@@ -1,4 +1,4 @@
-if (global.timeattack == 1)
+if (global.timeattack == 1) && room != hub_room1 && room != hub_room2 && room != hub_room3 && room != cowboytask && room != timesuproom && room != Scootertransition && room != Tutorialtrap  && room != Titlescreen  && room != Realtitlescreen
 {
     if (global.taseconds < 10)
     {

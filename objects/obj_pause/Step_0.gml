@@ -372,6 +372,8 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
             global.lapping = 0;
             global.nocombo = 0;
             global.laptouched = 0;
+			global.levelname = "none";
+			global.timeattack = 0;
 			room_goto(Realtitlescreen);
             with (obj_player1)
             {
@@ -401,6 +403,7 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
             global.laptouched = 0;
 			global.levelname = "none";
 			global.fakepeppino = 0;
+			global.timeattack = 0;
 			script_execute(scr_playerreset);
 			var _backtohubroom = hub_room1;
 			with obj_player1

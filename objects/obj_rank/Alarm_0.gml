@@ -15,6 +15,7 @@ else
 		draw_texture_flush();
 		flushtextures = false
 	}
+	global.timeattack = 0;
 	global.levelname = "none"
     global.fakepeppino = 0
 	script_execute(scr_playerreset);
