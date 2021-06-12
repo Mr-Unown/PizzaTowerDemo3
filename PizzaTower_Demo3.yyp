@@ -11079,6 +11079,14 @@
             }
         },
         {
+            "Key": "6b960021-0ab3-4d2a-b850-58a75b2222bc",
+            "Value": {
+                "id": "842fa9b7-15b3-45f2-9eb0-0c0c3faebd69",
+                "resourcePath": "sprites\\spr_gerome_dead\\spr_gerome_dead.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6bc884e3-0ece-479f-807b-bbf02fc8d0c7",
             "Value": {
                 "id": "5d9da162-69b9-454e-8d77-fba88bb9d548",
@@ -25035,6 +25043,14 @@
             "Value": {
                 "id": "754a3d95-34d2-4ea4-87bf-4df2fd5fbb1c",
                 "resourcePath": "sprites\\spr_xmasbigblock\\spr_xmasbigblock.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f225180f-7117-42bd-b53f-58f1edfb969c",
+            "Value": {
+                "id": "be0d954f-1e4a-4d91-a357-25d1bf1e9dcd",
+                "resourcePath": "sprites\\spr_gerome_dying\\spr_gerome_dying.yy",
                 "resourceType": "GMSprite"
             }
         },

@@ -1,3 +1,12 @@
+if global.timeattack = true
+{
+	sprite_index = spr_gerome_dying
+	image_speed = 0.35
+	if floor(image_index) >= image_number - 1
+		instance_destroy();
+}
+else
+{
 if (room == rank_room || room == timesuproom)
     visible = false
 else
@@ -70,5 +79,6 @@ if image_xscale != playerid.xscale {
 	}
 if playerid.x != x
 	drawxscale = (-sign((x - playerid.x)))	
+}
 }
 }
