@@ -3,16 +3,12 @@ if global.timeattack = true
 	if (global.panic == 0)
 	{
 		if activated = true
-			image_alpha = approach(image_angle,0.5,0.015)
-		else if !instance_exists(obj_gerome)
-			image_alpha = 0.43
+			image_alpha = approach(image_alpha,0.43,0.015)
 	}
 	else
 	{
 		if activated = true
-			image_alpha = approach(image_angle,1,0.015)
-		else if !instance_exists(obj_gerome)
-			image_alpha = 1
+			image_alpha = approach(image_alpha,1,0.015)
 	}
 }
 if place_meeting(x, y, obj_doorA)

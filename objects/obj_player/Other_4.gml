@@ -349,62 +349,16 @@ with (obj_destroyable2_bigescape)
             sprite_index = spr_pizzaportalentrancestart
             image_index = 0
             ds_list_clear(global.baddieroom)
-            portal = 0
-            if (global.lapping == 0)
+			global.lapping = (global.lapping + 1)
+            scr_soundeffect(6)
+            with (obj_tv)
             {
-                with (instance_create(x, y, obj_smallnumber))
-                    number = "2000"
-                obj_player1.collectscore = ( obj_player1.collectscore + 2000)
-                scr_soundeffect(6)
-                with (obj_tv)
-                {
-                    showtext = 1
-                    message = "LAP 1!"
-                    alarm[0] = 100
-                }
-            }
-            if (global.lapping == 1)
-            {
-                with (instance_create(x, y, obj_smallnumber))
-                    number = "5000"
-                 obj_player1.collectscore = ( obj_player1.collectscore + 5000)
-                scr_soundeffect(6)
-                with (obj_tv)
-                {
-                    showtext = 1
-                    message = "LAP 2!"
-                    alarm[0] = 100
-                }
-            }
-            if (global.lapping == 2)
-            {
-                with (instance_create(x, y, obj_smallnumber))
-                    number = "6500"
-                 obj_player1.collectscore = ( obj_player1.collectscore + 6500)
-                scr_soundeffect(6)
-                with (obj_tv)
-                {
-                    showtext = 1
-                    message = "LAP 3!"
-                    alarm[0] = 100
-                }
-            }
-            if (global.lapping == 3)
-            {
-                with (instance_create(x, y, obj_smallnumber))
-                    number = "8500"
-                 obj_player1.collectscore = ( obj_player1.collectscore + 8500)
-                scr_soundeffect(6)
-                scr_soundeffect(127)
-                instance_create(x, y, obj_pizzaface)
-                with (obj_tv)
-                {
-                    showtext = 1
-                    message = "DEATH MODE!"
-                    alarm[0] = 100
-                }
-            }
-            global.lapping = (global.lapping + 1)
+				showtext = 1
+                message = "LAP "+ string(global.lapping)+"/3!"
+				oldmessage = "LAP "+ string(global.lapping)+"/3!"
+                alarm[0] = 100
+            } 
+			portal = 0
         }
     }
     vertical = 0
@@ -606,62 +560,16 @@ if (object_index == obj_player2)
             sprite_index = spr_pizzaportalentrancestart
             image_index = 0
             ds_list_clear(global.baddieroom)
-            portal = 0
-            if (global.lapping == 0)
+			global.lapping = (global.lapping + 1)
+            scr_soundeffect(6)
+            with (obj_tv)
             {
-                with (instance_create(x, y, obj_smallnumber))
-                    number = "2000"
-                 obj_player2.collectscore = (obj_player2.collectscore + 2000)
-                scr_soundeffect(6)
-                with (obj_tv)
-                {
-                    showtext = 1
-                    message = "LAP 1!"
-                    alarm[0] = 100
-                }
-            }
-            if (global.lapping == 1)
-            {
-                with (instance_create(x, y, obj_smallnumber))
-                    number = "5000"
-                obj_player2.collectscore = (obj_player2.collectscore + 5000)
-                scr_soundeffect(6)
-                with (obj_tv)
-                {
-                    showtext = 1
-                    message = "LAP 2!"
-                    alarm[0] = 100
-                }
-            }
-            if (global.lapping == 2)
-            {
-                with (instance_create(x, y, obj_smallnumber))
-                    number = "6500"
-                obj_player2.collectscore = (obj_player2.collectscore + 6500)
-                scr_soundeffect(6)
-                with (obj_tv)
-                {
-                    showtext = 1
-                    message = "LAP 3!"
-                    alarm[0] = 100
-                }
-            }
-            if (global.lapping == 3)
-            {
-                with (instance_create(x, y, obj_smallnumber))
-                    number = "8500"
-                obj_player2.collectscore = (obj_player2.collectscore + 8500)
-                scr_soundeffect(6)
-                scr_soundeffect(127)
-                instance_create(x, y, obj_pizzaface)
-                with (obj_tv)
-                {
-                    showtext = 1
-                    message = "DEATH MODE!"
-                    alarm[0] = 100
-                }
-            }
-            global.lapping = (global.lapping + 1)
+				showtext = 1
+                message = "LAP "+ string(global.lapping)+"/3!"
+				oldmessage = "LAP "+ string(global.lapping)+"/3!"
+                alarm[0] = 100
+            } 
+			portal = 0
         }
     }
     vertical = 0

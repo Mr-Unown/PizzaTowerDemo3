@@ -4,7 +4,7 @@ if global.timeattack = true
 	{
 		with (instance_create(x, y, obj_shake))
 			sprite_index = spr_gerome_dead
-		with(obj_portalend)
+		with obj_portalend
 			activated = true
 		ds_list_add(global.saveroom, id)
 	}

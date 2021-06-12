@@ -6,7 +6,7 @@ if (floor(image_index) >= (image_number - 5) && sprite_index == spr_pizzaportale
 }
 if (floor(image_index) >= (image_number - 1) && sprite_index == spr_pizzaportalentrancestart)
 {
-	visible = false
+	visible = true
     vsp = 14
     state = 74
     if (shotgunAnim == 0)
@@ -16,7 +16,7 @@ if (floor(image_index) >= (image_number - 1) && sprite_index == spr_pizzaportale
 }
 else
 {
-	visible = true
+	visible = false
     hsp = 0
     vsp = 0
 }
