@@ -1,5 +1,6 @@
 if ((!pause) && (!instance_exists(obj_fadeout)))
 {
+	
     if (obj_player1.key_start && room != rank_room && room != Realtitlescreen && room != timesuproom)
     {
         selected = 0

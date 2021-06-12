@@ -95,7 +95,7 @@ else if tvsprite = spr_tvboot && bootingup = true
 		image_speed = 0.1
 	}
 }
-else if (global.collect > global.srank && shownranks == 0 && global.nocombo == 0)
+else if (global.collect > global.srank && shownranks == 0 && global.timeattack == false && global.nocombo == 0)
 {
     image_speed = 0.125
 	if global.coop = false
@@ -107,7 +107,7 @@ else if (global.collect > global.srank && shownranks == 0 && global.nocombo == 0
     tvsprite = spr_tvranks
     shownranks = 1
 }
-else if (global.collect > global.arank && shownranka == 0 && global.nocombo == 0)
+else if (global.collect > global.arank && shownranka == 0 && global.timeattack == false && global.nocombo == 0)
 {
     image_speed = 0
 	if global.coop = false
@@ -119,7 +119,7 @@ else if (global.collect > global.arank && shownranka == 0 && global.nocombo == 0
     tvsprite = spr_tvranka
     shownranka = 1
 }
-else if (global.collect > global.brank && shownrankb == 0 && global.nocombo == 0)
+else if (global.collect > global.brank && shownrankb == 0 && global.timeattack == false && global.nocombo == 0)
 {
     image_speed = 0
 	if global.coop = false
@@ -131,7 +131,7 @@ else if (global.collect > global.brank && shownrankb == 0 && global.nocombo == 0
     tvsprite = spr_tvrankb
     shownrankb = 1
 }
-else if (global.collect > global.crank && shownrankc == 0 && global.nocombo == 0)
+else if (global.collect > global.crank && shownrankc == 0 && global.timeattack == false && global.nocombo == 0)
 {
     image_speed = 0
 	if global.coop = false

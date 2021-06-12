@@ -21,19 +21,19 @@ if global.snickchallenge == false
 			global.srank = 17500	
 		break;
 		case "ancient":
-			global.stimerank = 1.00;
+			global.stimerank = 3.35;
 			global.srank = 21500	
 		break;
 		case "chateau":
-			global.stimerank = 1.00;
+			global.stimerank = 3.15;
 			global.srank = 14500	
 		break;		
 		case "strongcold":
-			global.stimerank = 1.00;
+			global.stimerank = 6.00;
 			global.srank = 19000	
 		break;
 		default:
-			global.stimerank = 0.00;
+			global.stimerank = 10.00;
 			global.srank = global.collect + 1005000					
 		break;
 	}

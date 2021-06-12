@@ -21471,6 +21471,14 @@
             }
         },
         {
+            "Key": "d0563157-9e73-4d84-bddb-a8ddbb19037b",
+            "Value": {
+                "id": "7730cf34-46b3-4454-8ef8-8748159e3a73",
+                "resourcePath": "sprites\\spr_tvoff\\spr_tvoff.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d066b67d-e55e-45e3-a428-ff5ea8cd1459",
             "Value": {
                 "id": "32d0c69d-0d86-49f0-b092-b896228c57bf",
