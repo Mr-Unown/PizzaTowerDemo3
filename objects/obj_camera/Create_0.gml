@@ -61,6 +61,7 @@ global.mastervolume = ini_read_real("Option", "mastervolume", 1)
 global.musicvolume = ini_read_real("Option", "musicvolume", 1)
 global.soundeffectsvolume = ini_read_real("Option", "soundeffectsvolume", 1)
 global.defaulttime = ini_read_real("Option", "secrethitstuntimer", 70)
+global.quipsfrequency = ini_read_real("Option", "quips", 0)
 ini_close()
 audio_master_gain(global.mastervolume)
 global.maxwave = 0

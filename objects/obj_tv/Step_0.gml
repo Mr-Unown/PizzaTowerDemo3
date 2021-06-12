@@ -229,8 +229,14 @@ else if (global.hurtcounter >= global.hurtmilestone)
     else if (obj_player.character == "D")
         character = "DOUGIE"	
     message = (((("YOU HAVE HURT " + string(character)) + " ") + string(global.hurtmilestone)) + " TIMES...")
+	scr_queuemessage("It seems that our counters indicate that some "+ choose("idiot","moron","ignoramus","buffon") + "Pizzaman has been hurt " + string(global.hurtmilestone)+ " times...");
     if (tvsprite != spr_tvtalking1 && tvsprite != spr_tvtalking2 && tvsprite != spr_tvtalking3 && tvsprite != spr_tvtalking4)
         tvsprite = choose(spr_tvtalking1, spr_tvtalking2, spr_tvtalking3, spr_tvtalking4)
+	var randomchance = irandom_range(0,100);
+	if (randomchance < global.quipsfrequency)
+	{
+		scr_soundeffect(sfx_mammamia,sfx_oh,sfx_ohman);
+	}
     global.hurtmilestone = (global.hurtmilestone + 3)
 }
 else if (obj_player.state == 44)

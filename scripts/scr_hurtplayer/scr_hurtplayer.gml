@@ -39,7 +39,12 @@ with (argument0)
             else
                 y = obj_player1.y
         }
-        scr_soundeffect(10)
+        scr_soundeffect(sfx_pephurt)
+		var randomchance = irandom_range(0,100);
+		if randomchance < global.quipsfrequency
+		{
+			scr_soundeffect(sfx_hurt1,sfx_hurt2,sfx_hurt3);
+		}
         if (character != "V")
         {
             state = 73

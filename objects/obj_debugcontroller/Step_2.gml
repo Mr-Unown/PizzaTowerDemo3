@@ -99,7 +99,14 @@ if (keyboard_check_pressed(vk_return) && input != "")
 				ini_open("saveData.ini")
 				ini_write_real("Option", "secrethitstuntimer", real(arg1))
 				ini_close()
-				break;				
+				break;		
+			case "voicefrequency":
+				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = 0 else arg1 = ds_list_find_value(_commands, 1)
+				global.quipsfrequency = real(arg1)		
+				ini_open("saveData.ini")
+				ini_write_real("Option", "quips", real(arg1))
+				ini_close()
+				break;						
 			case "togglecollision": //Could probably use simplification
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !showcollisions else arg1 = ds_list_find_value(_commands, 1)
 
