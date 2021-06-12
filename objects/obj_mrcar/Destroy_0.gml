@@ -2,7 +2,7 @@ if (ds_list_find_index(global.saveroom, id) == -1)
 {
 	var i = random_range(0, 100)
     if (i >= 97)
-        scr_soundeffect(40, 41, 42, 43, 44, 45, 46, 47, 48, 49)
+    	scr_soundeffect(sfx_scream1, sfx_scream2, sfx_scream3, sfx_scream4, sfx_scream5, sfx_scream6, sfx_scream7, sfx_scream8, sfx_scream9, sfx_scream10, sfx_screamhurt);
 	instance_create(drawx,drawy, obj_safeexplosion)
 	instance_create(drawx, drawy, obj_slapstar)
     instance_create(drawx, drawy, obj_slapstar)
@@ -33,7 +33,7 @@ if (ds_list_find_index(global.saveroom, id) == -1)
         shake_mag_acc = (10 / room_speed)
     }
     scr_soundeffect(sfx_breakmetal)
-	scr_soundeffect(11)
+	scr_soundeffect(sfx_killenemy)
     ds_list_add(global.saveroom, id)
 }
 
