@@ -147,7 +147,7 @@ if (global.seconds <= 0 && global.minutes <= 0 && ded == 0)
     alarm[1] = -1
     alarm[2] = 3
     ded = 1
-	if global.panic = true && (global.timeattack = false ||global.lapping = false) && global.snickchallenge = false && global.miniboss = false && !instance_exists(obj_pizzaface)
+	if global.panic = true && global.snickchallenge = false && global.miniboss = false && !instance_exists(obj_pizzaface)
 	{
 		instance_create(500,-500,obj_pizzaface)
 	}	
