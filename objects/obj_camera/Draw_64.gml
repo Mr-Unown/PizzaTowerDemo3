@@ -265,6 +265,8 @@ if (player.state != 55)
 		draw_sprite_ext(spr_pizzascore, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
 		
 		//Rank Topppings
+		if global.timeattack = false
+		{
 		if global.collect >= global.crank
 			draw_sprite_ext(spr_pizzascore_pepper, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
 		if global.collect >= global.brank
@@ -273,6 +275,18 @@ if (player.state != 55)
 			draw_sprite_ext(spr_pizzascore_olive, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
 		if global.collect >= global.srank
 			draw_sprite_ext(spr_pizzascore_shroom, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)		
+		}
+		else
+		{
+		if global.timeattackpoints < global.ctimerank
+			draw_sprite_ext(spr_pizzascore_pepper, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
+		if global.timeattackpoints < global.btimerank
+			draw_sprite_ext(spr_pizzascore_pepperoni, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
+		if global.timeattackpoints < global.atimerank
+			draw_sprite_ext(spr_pizzascore_olive, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
+		if global.timeattackpoints < global.stimerank
+			draw_sprite_ext(spr_pizzascore_shroom, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)					
+		}
 			
 		switch global.timeattack
 		{

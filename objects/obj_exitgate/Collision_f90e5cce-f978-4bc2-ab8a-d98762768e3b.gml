@@ -67,7 +67,16 @@ with (obj_player)
 		else
 		{
 			#region Timeattack
-			
+			if ((global.timeattackpoints) <= global.stimerank)
+				global.rank = "s"
+			else if ((global.timeattackpoints) <= global.atimerank)
+				global.rank = "a"
+			else if ((global.timeattackpoints) <= global.btimerank)
+	            global.rank = "b"
+			else if ((global.timeattackpoints) <= global.ctimerank)
+	            global.rank = "c"
+			else
+				global.rank = "d"
 			#endregion
 		}
         if (global.rank == "s")
@@ -99,16 +108,17 @@ with (obj_player)
 				ini_write_string("Toppin", (string(global.levelname) + "4"), global.sausagefollow)
 			if (ini_read_string("Toppin", (string(global.levelname) + "5"), 0) == 0)
 				ini_write_string("Toppin", (string(global.levelname) + "5"), global.pineapplefollow)
+			var string_rank = string(global.timeattack == false ? "Ranks" : "Time")
 			if (global.rank == "s")
-				ini_write_string("Ranks", string(global.levelname), global.rank)
-			if (global.rank == "a" && "s" != ini_read_string("Ranks", string(global.levelname), "none"))
-	            ini_write_string("Ranks", string(global.levelname), global.rank)
-			if (global.rank == "b" && "s" != ini_read_string("Ranks", string(global.levelname), "none") && "a" != ini_read_string("Ranks", string(global.levelname), "none"))
-				ini_write_string("Ranks", string(global.levelname), global.rank)
-			if (global.rank == "c" && "s" != ini_read_string("Ranks", string(global.levelname), "none") && "a" != ini_read_string("Ranks", string(global.levelname), "none") && "b" != ini_read_string("Ranks", string(global.levelname), "none"))
-				ini_write_string("Ranks", string(global.levelname), global.rank)
-			if (global.rank == "d" && "s" != ini_read_string("Ranks", string(global.levelname), "none") && "a" != ini_read_string("Ranks", string(global.levelname), "none") && "b" != ini_read_string("Ranks", string(global.levelname), "none") && "c" != ini_read_string("Ranks", string(global.levelname), "none"))
-				ini_write_string("Ranks", string(global.levelname), global.rank)
+				ini_write_string(string_rank, string(global.levelname), global.rank)
+			if (global.rank == "a" && "s" != ini_read_string(string_rank, string(global.levelname), "none"))
+	            ini_write_string(string_rank, string(global.levelname), global.rank)
+			if (global.rank == "b" && "s" != ini_read_string(string_rank, string(global.levelname), "none") && "a" != ini_read_string(string_rank, string(global.levelname), "none"))
+				ini_write_string(string_rank, string(global.levelname), global.rank)
+			if (global.rank == "c" && "s" != ini_read_string(string_rank, string(global.levelname), "none") && "a" != ini_read_string(string_rank, string(global.levelname), "none") && "b" != ini_read_string(string_rank, string(global.levelname), "none"))
+				ini_write_string(string_rank, string(global.levelname), global.rank)
+			if (global.rank == "d" && "s" != ini_read_string(string_rank, string(global.levelname), "none") && "a" != ini_read_string(string_rank, string(global.levelname), "none") && "b" != ini_read_string(string_rank, string(global.levelname), "none") && "c" != ini_read_string(string_rank, string(global.levelname), "none"))
+				ini_write_string(string_rank, string(global.levelname), global.rank)
         ini_close()
 		#endregion
         if (!instance_exists(obj_endlevelfade))

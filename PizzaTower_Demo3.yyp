@@ -4631,6 +4631,14 @@
             }
         },
         {
+            "Key": "2f228530-18a6-44bb-877d-56775380ff19",
+            "Value": {
+                "id": "ca391450-6155-42cb-bce8-562d1590cad0",
+                "resourcePath": "sprites\\spr_ranksigntimeattack\\spr_ranksigntimeattack.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2f2404b1-3b37-45a6-b840-6e54526cd817",
             "Value": {
                 "id": "748dd1ee-1d54-4c0c-a892-628ccbc3d2af",
