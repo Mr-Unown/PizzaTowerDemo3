@@ -353,8 +353,55 @@ if (player.state != 55)
 		} #endregion
 			break;
 			case true:
-			
-			
+			#region Timeattack
+			var textyoffset = 0;
+			#region textyoffset bounce
+		var _index = floor(_image_index)
+		switch(_index)
+		{
+			case 0:
+			textyoffset = 0;
+			break;
+			case 1:
+			case 2:
+			case 3:			
+			case 4:						
+			textyoffset = 1;
+			break;		
+			case 5:						
+			textyoffset = -1;
+			case 6:						
+			textyoffset = -2;			
+			break;			
+			case 7:						
+			textyoffset = -3;			
+			break;			
+			case 8:						
+			textyoffset = -5;			
+			break;		
+			case 9:						
+			textyoffset = -5;			
+			break;		
+			case 10:						
+			textyoffset = -3;			
+			break;	
+			case 11:						
+			textyoffset = -3;			
+			break;					
+		}
+		
+		
+		
+		#endregion					
+			draw_sprite_ext(spr_pizzascoretimer, _image_index, newhudx, newhudy + textyoffset, 1, 1, 0, c_white, alpha)
+			draw_set_halign(fa_center);
+			draw_set_color(c_white);
+			draw_set_font(global.timerfont);	
+			var _min = string(global.taminutes < 10 ? ("0" + string(global.taminutes)) : string(global.taminutes));
+			var _sec = string(global.taseconds < 10 ? ("0" + string(global.taseconds)) : string(global.taseconds));
+			var _string = string(_min) + ":" + string(_sec);
+			draw_text(newhudx-5,newhudy-52+textyoffset,_string)
+			#endregion
 			break;
 		}
 		#region Backup

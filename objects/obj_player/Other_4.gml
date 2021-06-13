@@ -354,8 +354,9 @@ with (obj_destroyable2_bigescape)
             with (obj_tv)
             {
 				showtext = 1
-                message = "LAP "+ string(global.lapping)+"/3!"
-				oldmessage = "LAP "+ string(global.lapping)+"/3!"
+                message = "LAP "+ string(global.lapping)+" OUT OF 3!"
+				scr_queuemessage("PTV Race Division announces that the local Pizzaman has done "+ string(global.lapping)+" out of 3!");
+				//oldmessage = "LAP "+ string(global.lapping)+" OUT OF 3!"
                 alarm[0] = 100
             } 
 			portal = 0
@@ -565,8 +566,8 @@ if (object_index == obj_player2)
             with (obj_tv)
             {
 				showtext = 1
-                message = "LAP "+ string(global.lapping)+"/3!"
-				oldmessage = "LAP "+ string(global.lapping)+"/3!"
+                message = "LAP "+ string(global.lapping)+" OUT OF 3!"
+				scr_queuemessage("PTV Race Division announces that the local Pizzaman has done "+ string(global.lapping)+" out of 3!");
                 alarm[0] = 100
             } 
 			portal = 0
