@@ -519,7 +519,7 @@ if textbubblesprites = spr_tv_bubbleopen && floor(textbubbleframes) >= sprite_ge
 	textbubblesprites = spr_tv_bubble
 if textbubblesprites = spr_tv_bubble
 {
-	text_x += -4
+	text_x += -3.5
 	/* I was thinking why there was a disconnect between the draw and this CONT. in Draw GUI
 	if floor(text_x) <= -(floor(string_width(string_upper(newmessage))) - 775)
 	{
