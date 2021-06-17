@@ -14,8 +14,8 @@ if (state != 109)
 if (state != 106)
     thrown = 0
 scr_scareenemy()
-if (bombreset > 0)
-    bombreset--
+
+    
 var player = (global.coop ? instance_nearest(x, y, obj_player) : obj_player1)	
 if (x != player.x && state != 97 && player.state != states.breakdance && player.state != 2 && bombreset == 0 && grounded)
 {

@@ -1,3 +1,4 @@
+bombreset = 0
 dropcoin = 0
 shake = 0
 shakebuffer = 2.5

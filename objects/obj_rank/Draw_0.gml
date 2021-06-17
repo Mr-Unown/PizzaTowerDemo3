@@ -10,7 +10,7 @@ if (obj_player1.character == "PZ" && obj_player1.collectscore >= obj_player2.col
 	plusx = 852
 	plusy = 78
 }
-if global.treasure = true && global.rank == "s" && floor(image_index) == (image_number - 1)
+if (global.treasure = true || global.deathmode = true) && global.rank == "s" && floor(image_index) == (image_number - 1)
 {
 	draw_sprite_ext(spr_rankplus,plusrankframes,plusx,plusy,1,1,0,c_white,1)
 	plusrankframes = clamp(plusrankframes +0.35, 0,23)

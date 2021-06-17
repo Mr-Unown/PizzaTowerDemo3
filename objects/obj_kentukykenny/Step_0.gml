@@ -20,8 +20,8 @@ if (state != 109)
     depth = 0
 if (state != 106)
     thrown = 0
-if (bombreset > 0)
-    bombreset--
+
+    
 if (x != player.x && state != 97 && bombreset == 0 && grounded)
 {
     if (player.x > (x - 400) && player.x < (x + 400) && y <= (player.y + 20) && y >= (player.y - 20))

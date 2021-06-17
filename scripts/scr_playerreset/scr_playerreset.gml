@@ -8,6 +8,9 @@ with obj_discordrpc
 global.bonusmiliseconds = 0;
 global.bonusseconds = 0;
 global.bonusminutes = 0;
+global.deathmode = false;
+global.storedtaminute = 0;
+global.storedtasecond = 0;
 //Goop Gone
 with obj_goop 
 {

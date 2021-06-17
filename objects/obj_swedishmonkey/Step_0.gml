@@ -14,8 +14,8 @@ if (state != 109)
     depth = 0
 if (state != 106)
     thrown = 0
-if (bombreset > 0)
-    bombreset--
+
+   
 if (state != 97 && bombreset == 0 && grounded)
 {
     if (state == 102 || state == 94)

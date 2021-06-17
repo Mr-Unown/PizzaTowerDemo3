@@ -14,8 +14,8 @@ if (state != 109)
     depth = 0
 if (state != 106)
     thrown = 0
-if (bombreset > 0)
-    bombreset--
+
+    
 var targetplayer = instance_nearest(x, y, obj_player)
 if (x != targetplayer.x && state != 97 && bombreset == 0 && grounded && targetplayer.state != 73 && targetplayer.cutscene == 0)
 {

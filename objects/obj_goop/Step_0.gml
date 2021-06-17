@@ -13,9 +13,11 @@ if frozen = false
 	if place_meeting(x + hsp,y,obj_solid)
 	hsp = 0
 	
-	
+	if y > (room_height * 1.3)
+	instance_destroy();
 	//Stuck
-	if place_meeting(x,y,obj_solid) && !place_meeting(x,y,obj_metalblockescape) && !place_meeting(x,y,obj_destructibles){
+	if scr_solid(x,y) && !place_meeting(x,y,obj_metalblockescape) && !place_meeting(x,y,obj_destructibles) 
+	{
 	var player = instance_nearest(x,y,obj_player)
 	maxspeed += 0.1
     x = median((x - maxspeed), player.x, (x + maxspeed))

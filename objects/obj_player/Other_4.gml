@@ -1,4 +1,5 @@
 var yoffset = 160
+
 switch current_month
 {
 	case 4: //April
@@ -9,9 +10,12 @@ switch current_month
 		if global.has_drawnpeter = false && object_index = obj_player1
 		{
 			var chance = random_range(0,200);
-			//var yes = (chance >= 200 ? true : false);
-			var yes = true;
+			var yes = (chance >= 200 ? true : false);
 			global.draw_peter = yes;
+		}
+		else if global.has_drawnpeter = true
+		{
+			global.draw_peter = false
 		}
 	}
 	
@@ -386,13 +390,20 @@ with (obj_destroyable2_bigescape)
             image_index = 0
             ds_list_clear(global.baddieroom)
 			global.lapping = (global.lapping + 1)
+			if global.lapping >= 3
+				global.deathmode = true;
             scr_soundeffect(6)
+			with obj_timeattack
+			{
+			alarm[1] = 60
+			global.taminutes = (global.storedtaminute);
+			global.taseconds = (global.storedtasecond);
+			}
             with (obj_tv)
             {
 				showtext = 1
                 message = "LAP "+ string(global.lapping)+" OUT OF 3!"
 				scr_queuemessage("PTV Racing Division announces that the local Pizzaman has done "+ string(global.lapping)+" out of 3 Laps!");
-				//oldmessage = "LAP "+ string(global.lapping)+" OUT OF 3!"
                 alarm[0] = 100
             } 
 			portal = 0
@@ -598,7 +609,15 @@ if (object_index == obj_player2)
             image_index = 0
             ds_list_clear(global.baddieroom)
 			global.lapping = (global.lapping + 1)
+			if global.lapping >= 3
+				global.deathmode = true;
             scr_soundeffect(6)
+			with obj_timeattack
+			{
+			alarm[1] = 60
+			global.taminutes = (global.storedtaminute);
+			global.taseconds = (global.storedtasecond);
+			}
             with (obj_tv)
             {
 				showtext = 1

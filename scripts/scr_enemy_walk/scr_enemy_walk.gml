@@ -1,13 +1,14 @@
+var _movespeed = movespeed + (clamp(global.lapping,0,3)), _image_speed = 0.35 + ((clamp(global.lapping,0,3)) * 0.05)
 if (grounded && (!place_meeting(x, (y + 1), obj_railh)) && (!place_meeting(x, (y + 1), obj_railh2)))
-    hsp = (image_xscale * movespeed)
+    hsp = (image_xscale * _movespeed)
 else if ((sprite_index == spr_indiancheese_land || sprite_index == spr_indiancheese_jump) && (!place_meeting(x, (y + 1), obj_railh)) && (!place_meeting(x, (y + 1), obj_railh2)))
-    hsp = (image_xscale * movespeed)
+    hsp = (image_xscale * _movespeed)
 else if object_index = obj_ufoolive
-	hsp = (image_xscale * movespeed)
+	hsp = (image_xscale * _movespeed)
 else if (grounded && place_meeting(x, (y + 1), obj_railh))
-    hsp = ((image_xscale * movespeed) - 5)
+    hsp = ((image_xscale * _movespeed) - 5)
 else if (grounded && place_meeting(x, (y + 1), obj_railh2))
-    hsp = ((image_xscale * movespeed) + 5)
+    hsp = ((image_xscale * _movespeed) + 5)
 else if (object_index != obj_ancho)
     hsp = 0
 if (object_index != obj_indiancheese && object_index != obj_spitcheese)
@@ -17,7 +18,7 @@ else if (object_index == obj_spitcheese)
 }
 else if (sprite_index == scaredspr)
     sprite_index = walkspr
-image_speed = 0.35
+image_speed = _image_speed
 if ((scr_solid((x + 1), y) && image_xscale == 1) || (scr_solid((x - 1), y) && image_xscale == -1) || place_meeting((x + hsp), y, obj_hallway)) 
 {
     if (!place_meeting((x + sign(hsp)), y, obj_slope)) && grounded

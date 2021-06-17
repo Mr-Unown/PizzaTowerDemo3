@@ -24,9 +24,9 @@ else if (paletteselect < sprite_get_width(spr_palette) - 1)
 if global.draw_peter = true && (character == "P" || character == "N")
 {
 	if character == "P"
-	draw_sprite_ext(spr_peter, image_index, x, y, xscale, yscale, image_angle, image_blend, image_alpha)
+	draw_sprite_ext(spr_peter, -1, x, y, xscale, yscale, image_angle, image_blend, image_alpha)
 	else
-	draw_sprite_ext(spr_chungus, image_index, x, y, xscale, yscale, image_angle, image_blend, image_alpha)
+	draw_sprite_ext(spr_chungus, -1, x, y, xscale, yscale, image_angle, image_blend, image_alpha)
 }
 else
 draw_sprite_ext(sprite_index, image_index, x, y, xscale, yscale, image_angle, image_blend, image_alpha)
@@ -40,17 +40,15 @@ shader_reset()
 if flash
 {
     shader_set(shd_hit)
-
 	if global.draw_peter = true && (character == "P" || character == "N")
 	{
 		if character == "P"
-		draw_sprite_ext(spr_peter, image_index, x, y, xscale, yscale, image_angle, image_blend, image_alpha)
+		draw_sprite_ext(spr_peter, -1, x, y, xscale, yscale, image_angle, image_blend, image_alpha)
 		else
-		draw_sprite_ext(spr_chungus, image_index, x, y, xscale, yscale, image_angle, image_blend, image_alpha)
+		draw_sprite_ext(spr_chungus, -1, x, y, xscale, yscale, image_angle, image_blend, image_alpha)
 	}
-	else
+	else	
 	draw_sprite_ext(sprite_index, image_index, x, y, xscale, yscale, image_angle, image_blend, image_alpha)
-
     if (character == "P" && sprite_index == spr_taunt && floor(image_index) == 11)
         draw_sprite_ext(spr_promotion, image_index, x, y, 1, yscale, image_angle, image_blend, image_alpha)
     shader_reset()
@@ -66,4 +64,5 @@ if pizzashieldframes > 16
 //Spell
 if spellshowbuffer > 0
 		draw_sprite(spr_dougieicons, (spellselect - 1), x, y - 50)
-	
+
+

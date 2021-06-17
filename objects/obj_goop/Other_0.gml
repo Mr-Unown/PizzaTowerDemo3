@@ -1,3 +1,4 @@
-if frozen = false {
+if frozen = false 
+{
 instance_destroy()
 }

@@ -2151,6 +2151,14 @@
             }
         },
         {
+            "Key": "13dc717c-4f16-471e-87a5-5a13ad9f86d4",
+            "Value": {
+                "id": "1ad2f123-460b-4a40-a09e-db46d4807e6c",
+                "resourcePath": "sprites\\spr_player_supertaunt4\\spr_player_supertaunt4.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "13df8178-ca1e-47ce-a4e9-f4aa9f0eecd0",
             "Value": {
                 "id": "14c49d8a-d67d-496c-a31b-d7af3ebe71c4",
@@ -2540,6 +2548,14 @@
                 "id": "7da8752b-3119-494b-925e-c67bbb093847",
                 "resourcePath": "sounds\\mu_cowboysecret\\mu_cowboysecret.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "1844657b-6116-41b5-9658-1b0562c4174c",
+            "Value": {
+                "id": "bb0e8307-1001-4857-9088-905c1bfbf0fe",
+                "resourcePath": "sprites\\spr_player_supertaunt1\\spr_player_supertaunt1.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -4879,6 +4895,14 @@
             }
         },
         {
+            "Key": "311e6891-2d2a-4633-9748-33648eda2c2b",
+            "Value": {
+                "id": "b96bcea5-5b0a-45a0-8c02-8f00f1f55ac4",
+                "resourcePath": "sprites\\spr_playerN_supertaunt4\\spr_playerN_supertaunt4.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3122fe6d-1246-4818-b057-09a269cdcf81",
             "Value": {
                 "id": "5deb53da-d960-4616-93ff-df8ce8798457",
@@ -6668,6 +6692,14 @@
                 "id": "484e5d4a-5c46-46fc-8af0-211d8cbc6854",
                 "resourcePath": "tilesets\\tile_entrancedecorations2\\tile_entrancedecorations2.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "40885610-0a3f-419b-bd4a-f888a7701ab6",
+            "Value": {
+                "id": "5fbc056e-a200-4859-a718-29639fe28fef",
+                "resourcePath": "sprites\\spr_playerN_supertaunt2\\spr_playerN_supertaunt2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -9355,6 +9387,14 @@
             "Value": {
                 "id": "7ce94c7d-7170-4173-bcb0-a48b2c5cc100",
                 "resourcePath": "sprites\\spr_player_fightball2\\spr_player_fightball2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5a643a02-8746-4c4c-892b-8a4479fa6461",
+            "Value": {
+                "id": "3505bdf4-f088-40cb-9c49-af63c1c04535",
+                "resourcePath": "sprites\\spr_player_supertaunt3\\spr_player_supertaunt3.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -14391,6 +14431,14 @@
             }
         },
         {
+            "Key": "8c1cb836-cf3b-4b9d-ac23-5181073960ac",
+            "Value": {
+                "id": "349eea86-8c9b-454a-be9c-484fb72780e9",
+                "resourcePath": "sprites\\spr_playerN_supertaunt1\\spr_playerN_supertaunt1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8c313735-1113-4e77-8904-625509bf30b2",
             "Value": {
                 "id": "c917b1e4-8bb6-4824-ad86-f3f1b2ad3845",
@@ -15603,6 +15651,14 @@
             "Value": {
                 "id": "0bc9806d-7536-468a-b2a7-384795588864",
                 "resourcePath": "sprites\\spr_noiseselected\\spr_noiseselected.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9705a884-d43d-4ee0-8c2e-0da41cbc7e6d",
+            "Value": {
+                "id": "2b8875ef-ea98-42d1-9547-ea3833f17981",
+                "resourcePath": "sprites\\spr_playerN_supertaunt3\\spr_playerN_supertaunt3.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -19123,6 +19179,14 @@
             "Value": {
                 "id": "20265a4b-c758-47ba-a809-e5d9f911d0dd",
                 "resourcePath": "sprites\\bg_pepperman\\bg_pepperman.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ba46d945-1ff2-4bbd-8640-daf2738f0536",
+            "Value": {
+                "id": "fba9344d-e69d-49bf-b83f-0cc45189dec7",
+                "resourcePath": "sprites\\spr_player_supertaunt2\\spr_player_supertaunt2.yy",
                 "resourceType": "GMSprite"
             }
         },

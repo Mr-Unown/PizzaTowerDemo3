@@ -4,7 +4,8 @@ if (ds_list_find_index(global.saveroom, id) == -1 && global.snickchallenge == 0)
 	global.pausecombotime = true
     obj_tv.alarm[1] = 75
 	obj_camera.alarm[1] = 60
-
+	global.storedtaminute = global.taminutes;
+	global.storedtasecond = global.taseconds;
     var cx = (x + (sprite_width / 2))
     var cy = (y + (sprite_height / 2))
     instance_create(cx, cy, obj_bangeffect)
