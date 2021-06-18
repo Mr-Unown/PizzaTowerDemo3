@@ -1,11 +1,4 @@
-
-if !surface_exists(surf_pallete) && (paletteselect >= sprite_get_width(spr_palette) - 1)
-{
-	//Surface
-	if !surface_exists(surf_pallete)
-		surf_pallete = surface_create(surf_width,surf_height)	
-}
-else if surface_exists(surf_pallete) && (paletteselect >= sprite_get_width(spr_palette) - 1)
+if surface_exists(surf_pallete)
 {
 	#region Surface
 	surface_set_target(surf_pallete);
@@ -16,6 +9,14 @@ else if surface_exists(surf_pallete) && (paletteselect >= sprite_get_width(spr_p
 	}
 	surface_reset_target();	
 	#endregion
+}
+else if !surface_exists(surf_pallete)
+{
+	surf_pallete = surface_create(surf_width,surf_height)	
+}
+
+if surface_exists(surf_pallete) && (paletteselect >= sprite_get_width(spr_palette) - 1)
+{
 	pal_swap_set(surf_pallete, 1, true)
 }
 else if (paletteselect < sprite_get_width(spr_palette) - 1)

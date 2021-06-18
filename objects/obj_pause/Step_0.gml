@@ -54,13 +54,15 @@ if ((!pause) && (!instance_exists(obj_fadeout)))
             global.combotime = 60
 			global.pausecombotime = true
 			obj_tv.alarm[1] = 75
-            global.combo = 3
-            global.peppermode = 0
+            global.combo += 3
+            //global.peppermode = 0
+			obj_player1.supertauntcharged = true;
+			obj_player2.supertauntcharged = true;
         }
         if keyboard_check_pressed(vk_f11)
 		{
 			global.pausecombotime = false
-            global.peppermode = 1
+            //global.peppermode = 1
 		}
 		if DEBUG
 		{

@@ -29,6 +29,7 @@ if (sprite_index == spr_playerV_dynamitethrow && floor(image_index) == (image_nu
 }
 if (sprite_index == spr_taunt)
 {
+	image_speed = 0
     if (!instance_exists(parry_id))
     {
         parry_id = instance_create(x, y, obj_parryhitbox)
@@ -48,6 +49,7 @@ if (sprite_index == spr_taunt)
     }
     if (supertauntcharged = true && (!instance_exists(obj_tauntaftereffectspawner)) && character != "V")
     {
+		#region supertaunt
         with (instance_create(x, y, obj_tauntaftereffectspawner))
             playerid = other.id
         with (obj_baddie)
@@ -79,6 +81,7 @@ if (sprite_index == spr_taunt)
 		obj_player1.supertauntbuffer = 0;
 		obj_player2.supertauntcharged = false;
 		obj_player2.supertauntbuffer = 0;		
+		#endregion
     }
     if (global.debugmode == 1)
     {
@@ -194,6 +197,60 @@ if (taunttimer == 0 && sprite_index == spr_taunt)
         parry_id = -4
     }
 }
+//Supertaunt Stuff
+if (sprite_index == spr_supertaunt1 || sprite_index == spr_supertaunt2 || sprite_index == spr_supertaunt3 || sprite_index == spr_supertaunt4)
+{
+	image_speed = 0.35
+	hsp = 0
+	vsp = 0
+    if (supertauntcharged = true && (!instance_exists(obj_tauntaftereffectspawner)) && character != "V")
+    {
+		#region supertaunt
+        with (instance_create(x, y, obj_tauntaftereffectspawner))
+            playerid = other.id
+        with (obj_baddie)
+        {
+			var _cam_x = camera_get_view_x(view_camera[0])
+			var _cam_y = camera_get_view_y(view_camera[0])
+			var _cam_w = camera_get_view_width(view_camera[0])
+			var _cam_h = camera_get_view_height(view_camera[0])
+            if point_in_rectangle(x, y, (_cam_x) - 32, (_cam_y) - 32, (_cam_x + _cam_w) + 32, (_cam_y + _cam_h) + 32)
+			{
+				scarebuffer = 0;
+				blowdirection = 5;
+				blowintensity = 1;
+				playerxscale = choose(1,-1)
+				state = enemystates.enemyshake;	
+				var vec = point_direction(other.x,other.y,x,y)
+				var len = random_range(6,14)
+				initialvsp = lengthdir_y(len,vec)
+				initialhsp = lengthdir_x(len,vec)
+			}
+        }
+        with (obj_camera)
+        {
+			scr_sleep();
+            shake_mag = 10
+            shake_mag_acc = (30 / room_speed)
+        }
+		obj_player1.supertauntcharged = false;
+		obj_player1.supertauntbuffer = 0;
+		obj_player2.supertauntcharged = false;
+		obj_player2.supertauntbuffer = 0;		
+		#endregion
+    }
+}
+if (floor(image_index) >= image_number - 1 && (sprite_index == spr_supertaunt1 || sprite_index == spr_supertaunt2 || sprite_index == spr_supertaunt3 || sprite_index == spr_supertaunt4))
+{
+    movespeed = tauntstoredmovespeed
+    sprite_index = tauntstoredsprite
+    state = tauntstoredstate
+    if instance_exists(parry_id)
+    {
+        instance_destroy(parry_id)
+        parry_id = -4
+    }
+}
 if (floor(image_index) == (image_number - 1) && sprite_index == spr_player_eatspaghetti)
     state = 0
 if (floor(image_index) == (image_number - 1) && sprite_index == spr_Timesup && place_meeting(x, y, obj_exitgate))
@@ -213,6 +270,7 @@ if (key_jump && sprite_index == spr_player_phoneidle)
 }
 if (global.miniboss == 1 && sprite_index == spr_bossintro && floor(image_index) == (image_number - 1))
     state = 0
+if sprite_index != spr_taunt &&  !(sprite_index == spr_supertaunt1 || sprite_index == spr_supertaunt2 || sprite_index == spr_supertaunt3 || sprite_index == spr_supertaunt4)
 image_speed = 0.35
 if (character == "N" && sprite_index == spr_playerN_dab)
 {
@@ -226,7 +284,7 @@ if (character == "N" && sprite_index == spr_playerN_dab)
 		else
 		global.combotime = 0
 		global.pausecombotime = false
-        scr_soundeffect(60)
+        scr_soundeffect(sfx_taunt)
         instance_create(x, y, obj_taunteffect)
         instance_create(x, y, obj_tauntaftereffectspawner)
         with (obj_baddie)
@@ -255,7 +313,7 @@ if (character == "P" && sprite_index == spr_player_smirk)
 		else
 		global.combotime = 0
 		global.pausecombotime = false		
-        scr_soundeffect(60)
+        scr_soundeffect(sfx_taunt)
         instance_create(x, y, obj_taunteffect)
         instance_create(x, y, obj_tauntaftereffectspawner)
         with (obj_baddie)
@@ -284,7 +342,7 @@ if (character == "S" && sprite_index == spr_snick_exe)
 		else
 		global.combotime = 0
 		global.pausecombotime = false
-        scr_soundeffect(60)
+        scr_soundeffect(sfx_taunt)
         instance_create(x, y, obj_taunteffect)
         instance_create(x, y, obj_tauntaftereffectspawner)
         with (obj_baddie)
@@ -314,7 +372,7 @@ if (character == "V" && sprite_index == spr_playerV_revolverstart)
 		else
 		global.combotime = 0
 		global.pausecombotime = false		
-        scr_soundeffect(60)
+        scr_soundeffect(sfx_taunt)
         instance_create(x, y, obj_taunteffect)
         instance_create(x, y, obj_tauntaftereffectspawner)
         with (obj_baddie)

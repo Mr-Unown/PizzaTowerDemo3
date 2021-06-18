@@ -6,6 +6,9 @@ with (argument0)
     else if (state == 27 && hurted == 0)
     {
     }
+	else if (sprite_index == spr_supertaunt1 || sprite_index == spr_supertaunt2 || sprite_index == spr_supertaunt3 || sprite_index == spr_supertaunt4)
+	{
+	}
 	else if global.freezeframe = true
 	{
 	}

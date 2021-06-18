@@ -20,7 +20,7 @@ if (ID.sprite_index != spr_coolpinea_parry && ID.sprite_index = spr_coolpinea_ta
         other.ID.state = 94
         instance_create(x, y, obj_bangeffect)
         instance_create(x, y, obj_slapstar)
-        scr_soundeffect(60)
+        scr_soundeffect(sfx_taunt)
     }
 }
 

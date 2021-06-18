@@ -59,7 +59,7 @@ if (place_meeting(x, (y + 1), obj_player) && activated == 0)
             tauntstoredmovespeed = 0
             tauntstoredsprite = spr_fall
             tauntstoredstate = 58
-            scr_soundeffect(60)
+            scr_soundeffect(sfx_taunt)
             state = 51
             image_index = random_range(0, (sprite_get_number(spr_taunt) - 1))
             sprite_index = spr_taunt
@@ -79,7 +79,7 @@ if (place_meeting(x, (y + 1), obj_player) && activated == 0)
             tauntstoredmovespeed = 0
             tauntstoredsprite = spr_fall
             tauntstoredstate = 58
-            scr_soundeffect(60)
+            scr_soundeffect(sfx_taunt)
             state = 51
             image_index = random_range(0, (sprite_get_number(spr_taunt) - 1))
             sprite_index = spr_taunt
@@ -99,7 +99,7 @@ if (place_meeting(x, (y + 1), obj_player) && activated == 0)
             tauntstoredmovespeed = 0
             tauntstoredsprite = spr_fall
             tauntstoredstate = 58
-            scr_soundeffect(60)
+            scr_soundeffect(sfx_taunt)
             state = 51
             image_index = random_range(0, (sprite_get_number(spr_taunt) - 1))
             sprite_index = spr_taunt
@@ -118,7 +118,7 @@ if (place_meeting(x, (y + 1), obj_player) && activated == 0)
             tauntstoredmovespeed = 0
             tauntstoredsprite = spr_fall
             tauntstoredstate = 58
-            scr_soundeffect(60)
+            scr_soundeffect(sfx_taunt)
             state = 51
             image_index = random_range(0, (sprite_get_number(spr_taunt) - 1))
             sprite_index = spr_taunt
@@ -137,7 +137,7 @@ if (place_meeting(x, (y + 1), obj_player) && activated == 0)
             tauntstoredmovespeed = 0
             tauntstoredsprite = spr_fall
             tauntstoredstate = 58
-            scr_soundeffect(60)
+            scr_soundeffect(sfx_taunt)
             state = 51
             image_index = random_range(0, (sprite_get_number(spr_taunt) - 1))
             sprite_index = spr_taunt
@@ -156,7 +156,7 @@ if (place_meeting(x, (y + 1), obj_player) && activated == 0)
             tauntstoredmovespeed = 0
             tauntstoredsprite = spr_fall
             tauntstoredstate = 58
-            scr_soundeffect(60)
+            scr_soundeffect(sfx_taunt)
             state = 51
             image_index = random_range(0, (sprite_get_number(spr_taunt) - 1))
             sprite_index = spr_taunt
@@ -177,7 +177,7 @@ if (place_meeting(x, (y + 1), obj_player) && activated == 0)
             tauntstoredmovespeed = 0
             tauntstoredsprite = spr_fall
             tauntstoredstate = 58
-            scr_soundeffect(60)
+            scr_soundeffect(sfx_taunt)
             state = 51
             image_index = random_range(0, (sprite_get_number(spr_taunt) - 1))
             sprite_index = spr_taunt
@@ -197,7 +197,7 @@ if (place_meeting(x, (y + 1), obj_player) && activated == 0)
             tauntstoredmovespeed = 0
             tauntstoredsprite = spr_fall
             tauntstoredstate = 58
-            scr_soundeffect(60)
+            scr_soundeffect(sfx_taunt)
             state = 51
             image_index = random_range(0, (sprite_get_number(spr_taunt) - 1))
             sprite_index = spr_taunt
@@ -225,7 +225,7 @@ if (place_meeting(x, (y + 1), obj_player2) && activated == 0)
             tauntstoredmovespeed = 0
             tauntstoredsprite = spr_fall
             tauntstoredstate = 58
-            scr_soundeffect(60)
+            scr_soundeffect(sfx_taunt)
             state = 51
             image_index = random_range(0, (sprite_get_number(spr_taunt) - 1))
             sprite_index = spr_taunt
@@ -244,7 +244,7 @@ if (place_meeting(x, (y + 1), obj_player2) && activated == 0)
             tauntstoredmovespeed = 0
             tauntstoredsprite = spr_fall
             tauntstoredstate = 58
-            scr_soundeffect(60)
+            scr_soundeffect(sfx_taunt)
             state = 51
             image_index = random_range(0, (sprite_get_number(spr_taunt) - 1))
             sprite_index = spr_taunt
@@ -263,7 +263,7 @@ if (place_meeting(x, (y + 1), obj_player2) && activated == 0)
             tauntstoredmovespeed = 0
             tauntstoredsprite = spr_fall
             tauntstoredstate = 58
-            scr_soundeffect(60)
+            scr_soundeffect(sfx_taunt)
             state = 51
             image_index = random_range(0, (sprite_get_number(spr_taunt) - 1))
             sprite_index = spr_taunt
@@ -282,7 +282,7 @@ if (place_meeting(x, (y + 1), obj_player2) && activated == 0)
             tauntstoredmovespeed = 0
             tauntstoredsprite = spr_fall
             tauntstoredstate = 58
-            scr_soundeffect(60)
+            scr_soundeffect(sfx_taunt)
             state = 51
             image_index = random_range(0, (sprite_get_number(spr_taunt) - 1))
             sprite_index = spr_taunt
@@ -301,7 +301,7 @@ if (place_meeting(x, (y + 1), obj_player2) && activated == 0)
             tauntstoredmovespeed = 0
             tauntstoredsprite = spr_fall
             tauntstoredstate = 58
-            scr_soundeffect(60)
+            scr_soundeffect(sfx_taunt)
             state = 51
             image_index = random_range(0, (sprite_get_number(spr_taunt) - 1))
             sprite_index = spr_taunt
@@ -320,7 +320,7 @@ if (place_meeting(x, (y + 1), obj_player2) && activated == 0)
             tauntstoredmovespeed = 0
             tauntstoredsprite = spr_fall
             tauntstoredstate = 58
-            scr_soundeffect(60)
+            scr_soundeffect(sfx_taunt)
             state = 51
             image_index = random_range(0, (sprite_get_number(spr_taunt) - 1))
             sprite_index = spr_taunt

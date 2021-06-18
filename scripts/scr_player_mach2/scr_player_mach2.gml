@@ -156,14 +156,22 @@ if (key_attack && (!place_meeting((x + xscale), y, obj_solid)) && character == "
 }
 if key_taunt2
 {
-    scr_soundeffect(60)
+    scr_soundeffect(sfx_taunt)
     taunttimer = 20
     tauntstoredmovespeed = movespeed
     tauntstoredsprite = sprite_index
     tauntstoredstate = state
     state = 51
-    image_index = random_range(0, (sprite_get_number(spr_taunt) - 1))
-    sprite_index = spr_taunt
+	if supertauntcharged = true && (character == "P" || character == "N")
+	{
+		image_index = 0
+		sprite_index = choose(spr_supertaunt1,spr_supertaunt2,spr_supertaunt3,spr_supertaunt4)
+	}
+	else
+	{
+		image_index = random_range(0, sprite_get_number(spr_taunt))
+		sprite_index = spr_taunt
+	}
     with (instance_create(x, y, obj_taunteffect))
     {
         playerid = other.id

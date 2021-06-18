@@ -1,19 +1,18 @@
 if room = roomid 
 {
 //This should force the goop to land
-var _solid = collision_line(x, y, x, y + room_height, obj_solid , false, true);
-var _slope = collision_line(x, y, x, y + room_height, obj_slope, false, true);
-var _platform = collision_line(x,  y, x, y +  room_height,  obj_platform, false, true);
-if (_solid != noone || _slope != noone || _platform != noone)
+var _collision = collision_line(x, y, x, y + room_height, group_collision, false, true);
+if (_collision != noone)
 {
-	while (!grounded && (_solid != noone || _slope != noone || _platform != noone))
+	while ((!grounded) && _collision != noone)
 	{
+		//var _dis = distance_to_point(x,_collision.y) fuck this is not workinf
+		//var _dir = point_direction(x,y,x,y + room_height)
+		//y = lengthdir_y((_dis),_dir) - sprite_get_height(mask_index) 
 		hsp = 0;
-		vsp = 10;
+		vsp = 10; //Well this works...
 		scr_collide();
-		_solid = collision_line(x, y, x, y + room_height, obj_solid , false, true);
-		_slope = collision_line(x, y, x, y + room_height, obj_slope, false, true);
-		_platform = collision_line(x,  y, x, y +  room_height,  obj_platform, false, true);
+		_collision = collision_line(x, y, x, y + room_height, group_collision, false, true);
 	}
 }
 else if !grounded
