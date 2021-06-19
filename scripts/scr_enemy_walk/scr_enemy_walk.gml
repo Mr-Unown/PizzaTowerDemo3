@@ -1,4 +1,4 @@
-var _movespeed = movespeed + (global.heatmeter * sign(movespeed)), _image_speed = 0.35 + ((global.heatmeter) * 0.05)
+var _movespeed = movespeed + ((clamp(global.heatmeter,0,3.25) ) * sign(movespeed)), _image_speed = 0.35 + ((global.heatmeter) * 0.05)
 if (grounded && (!place_meeting(x, (y + 1), obj_railh)) && (!place_meeting(x, (y + 1), obj_railh2)))
     hsp = (image_xscale * _movespeed)
 else if ((sprite_index == spr_indiancheese_land || sprite_index == spr_indiancheese_jump) && (!place_meeting(x, (y + 1), obj_railh)) && (!place_meeting(x, (y + 1), obj_railh2)))

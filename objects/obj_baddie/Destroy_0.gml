@@ -36,6 +36,14 @@ if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
         sprite_index = other.spr_dead
 		hsp = other.initialhsp
 		vsp = other.initialvsp
+		if other.id = obj_shrimp ||  other.id = obj_shrimpred ||  other.id = obj_shrimpblue
+		{
+			if other.shrimptype = 0
+				paletteselect = 0 
+			else
+				paletteselect = 1
+			spr_palette = spr_shrimp_palette
+		}		
 	}
     ds_list_add(global.baddieroom, id)
 	if creatorid != noone
@@ -45,13 +53,17 @@ if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
 			ds_list_add(global.baddieroom,id)
 		}
 	}
-    obj_tv.image_index = random_range(0, 4)
+	if global.newhud = false
+    obj_tv.image_index = random_range(0, 4)	
+
     global.combo = (global.combo + 1)
-    if (global.nocombo == 0)
-    {
+    
+   
         if (global.stylethreshold <= 0)
         {
-			global.style += 10
+			global.style += 7
+			if global.nocombo = false
+			{
             if (grabbedby == 1)
                 obj_player1.collectscore = (obj_player1.collectscore + 10)
             else if (grabbedby == 2)
@@ -60,11 +72,14 @@ if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
                 obj_player1.collectscore = (obj_player1.collectscore + 10)
             with (instance_create(x, y, obj_smallnumber))
                 number = "10"
+			}
 
         }
         if (global.stylethreshold = 1)
         {
 			global.style += 5
+			if global.nocombo = false
+			{
             if (grabbedby == 1)
                 obj_player1.collectscore = (obj_player1.collectscore + 20)
             else if (grabbedby == 2)
@@ -73,11 +88,14 @@ if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
                 obj_player1.collectscore = (obj_player1.collectscore + 20)
             with (instance_create(x, y, obj_smallnumber))
                 number = "20"
+			}
 
         }
         if (global.stylethreshold = 2)
         {
 			global.style += 4
+			if global.nocombo = false
+			{
             if (grabbedby == 1)
                 obj_player1.collectscore = (obj_player1.collectscore + 40)
             else if (grabbedby == 2)
@@ -86,11 +104,14 @@ if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
                 obj_player1.collectscore = (obj_player1.collectscore + 40)
             with (instance_create(x, y, obj_smallnumber))
                 number = "40"
+			}
 
         }
         if (global.stylethreshold = 3)
         {
 			global.style += 3
+			if global.nocombo = false
+			{
             if (grabbedby == 1)
                 obj_player1.collectscore = (obj_player1.collectscore + 60)
             else if (grabbedby == 2)
@@ -99,11 +120,14 @@ if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
                 obj_player1.collectscore = (obj_player1.collectscore + 60)
             with (instance_create(x, y, obj_smallnumber))
                 number = "60"
+			}
 
         }
         if (global.stylethreshold >= 4)
         {
 			global.style += 2
+			if global.nocombo = false
+			{
             if (grabbedby == 1)
                 obj_player1.collectscore = (obj_player1.collectscore + 80)
             else if (grabbedby == 2)
@@ -112,9 +136,10 @@ if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
                 obj_player1.collectscore = (obj_player1.collectscore + 80)
             with (instance_create(x, y, obj_smallnumber))
                 number = "80"
+			}
            
         }		
-    }
+ 
     global.combotime = 60
 	global.pausecombotime = true
     obj_tv.alarm[1] = 75	
@@ -141,6 +166,14 @@ else if (ds_list_find_index(global.baddieroom, id) == -1 && important == 1)
         sprite_index = other.spr_dead
 		hsp = other.initialhsp
 		vsp = other.initialvsp
+		if other.id = obj_shrimp ||  other.id = obj_shrimpred ||  other.id = obj_shrimpblue
+		{
+			if other.shrimptype = 0
+				paletteselect = 0 
+			else
+				paletteselect = 1
+			spr_palette = spr_shrimp_palette
+		}
 	}
 }
 if (dropcoin == 1)
