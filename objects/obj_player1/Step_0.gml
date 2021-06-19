@@ -1,5 +1,9 @@
 scr_getinput()
 scr_playerstate()
+//Heat Meter
+
+var style = (global.heatmeteroption == true ? global.stylethreshold : 0)
+global.heatmeter = clamp(style,global.lapping,4)
 //No more Shadows
 if image_blend != make_colour_hsv(0, 0, 255) && state != states.comingoutdoor {
 	image_blend = make_colour_hsv(0, 0, 255)

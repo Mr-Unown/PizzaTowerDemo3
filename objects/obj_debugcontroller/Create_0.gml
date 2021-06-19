@@ -26,6 +26,7 @@ commands[arrayi++] = "room_goto [roomname] [targetdoor]"
 //D3G: Well I fixed it
 commands[arrayi++] = "standardhitstun [value]" //Funny secret option
 commands[arrayi++] = "voicefrequency [value]" //Another funny secret
+commands[arrayi++] = "heatmeter (true/false)" //Another funny secret
 commands[arrayi++] = "escape [minutes] [seconds]"
 commands[arrayi++] = "newhud (true/false)"
 commands[arrayi++] = "togglecollision (true/false)"

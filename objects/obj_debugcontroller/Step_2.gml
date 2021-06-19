@@ -155,7 +155,19 @@ if (keyboard_check_pressed(vk_return) && input != "")
 					case "false": arg1 = false
 					default: arg1 = !global.debugmode
 				}
-				global.debugmode = arg1 break		
+				global.debugmode = arg1 
+				ini_open("saveData.ini")
+				ini_write_real("Option", "heat", arg1);
+				ini_close()				break		
+			case "heatmeter": 
+				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.heatmeteroption  else arg1 = ds_list_find_value(_commands, 1)
+				switch arg1
+				{
+					case "true": arg1 = true
+					case "false": arg1 = false
+					default: arg1 = !global.heatmeteroption 
+				}
+				global.heatmeteroption  = arg1 break						
 			case "changecharacter":
 				if DEBUG {
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = 1 else arg1 = ds_list_find_value(_commands, 1)
