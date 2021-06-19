@@ -1,4 +1,8 @@
-if frozen = false 
+repeat (6)
 {
-instance_destroy()
+        with instance_create(x, y, obj_balloonpop)
+            sprite_index = spr_shotgunimpact
 }
+
+instance_destroy()
+

@@ -81,8 +81,12 @@ with obj_music
 if instance_exists(obj_timesup)
     instance_destroy(obj_timesup);
 
+
 ds_list_clear(global.saveroom);
 ds_list_clear(global.baddieroom);
+ds_list_clear(global.gooproom);
+
+
 global.ruinmusic = 0;
 global.style = 0
 global.stylethreshold = 0

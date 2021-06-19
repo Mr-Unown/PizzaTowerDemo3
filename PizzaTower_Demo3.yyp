@@ -18215,6 +18215,14 @@
             }
         },
         {
+            "Key": "b09dedf7-442a-4273-8098-6022d23fb29a",
+            "Value": {
+                "id": "f34f16a4-e472-47fd-8abd-932175db60c2",
+                "resourcePath": "objects\\obj_goopcontroller\\obj_goopcontroller.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b0bbdb15-bdbb-4d7f-96c9-5cbf25cacece",
             "Value": {
                 "id": "40c81a6f-fcbe-4cb1-b654-e2466820fa3a",

@@ -15,5 +15,9 @@ with (obj_tv)
     shownrankb = 0
     shownrankc = 0
 }
-ds_list_clear(global.saveroom)
-ds_list_clear(global.baddieroom)
+
+ds_list_clear(global.saveroom);
+ds_list_clear(global.baddieroom);
+ds_list_clear(global.gooproom);
+
+

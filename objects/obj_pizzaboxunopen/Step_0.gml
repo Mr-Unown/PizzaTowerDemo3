@@ -163,6 +163,8 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
 		}			
     }	
     sprite_index = spr_pizzaboxopen
+	if (ds_list_find_index(global.saveroom, id) == -1)
+	ds_list_add(global.saveroom, id)
 }
 if (sprite_index == spr_pizzaboxopen && floor(image_index) == 16)
     instance_destroy()

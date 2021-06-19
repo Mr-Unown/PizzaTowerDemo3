@@ -6,7 +6,7 @@ if stuntouch > 0
 stuntouch--
 //Bomb
 if (bombreset > 0)
-    bombreset -= 1 + (clamp(global.lapping,0,3)*0.5)
+    bombreset -= 1 + (clamp(global.lapping,0,4)*0.5)
 
 //Drain Scare
 if scarebuffer > 0

@@ -123,6 +123,9 @@ obj_player2.visible = true;
 
 ds_list_clear(global.saveroom);
 ds_list_clear(global.baddieroom);
+ds_list_clear(global.gooproom);
+
+
 global.ruinmusic = 0;
 with (obj_player1)
 {

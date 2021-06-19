@@ -1,5 +1,6 @@
 depth = 1;
 playerid = obj_player1;
+pooid = id;
 
 //core if you see this I can explain...
 chance = random_range(0,100);

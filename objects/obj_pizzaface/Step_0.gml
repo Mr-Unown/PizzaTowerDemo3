@@ -4,8 +4,11 @@ if (global.coop = true)
 
 if relax = false && global.freezeframe = false && room != rank_room && !instance_exists(obj_safespace) && !instance_exists(obj_treasureshadow)
 {
+	if playerid.cutscene = false
+	{
     x = median((x - maxspeed), playerid.x, (x + maxspeed))
     y = median((y - maxspeed), playerid.y, (y + maxspeed))
+	}
     if (place_meeting(x, y, playerid) && (!instance_exists(obj_fadeout)) && (!instance_exists(obj_endlevelfade)) && playerid.state != 73)
     {
 		/*
@@ -18,7 +21,7 @@ if relax = false && global.freezeframe = false && room != rank_room && !instance
 			if instance_exists(obj_shake)
             relax = 1
         }*/
-		if (playerid.state != 51 && playerid.state != states.mach3 && playerid.state != states.jetpack && playerid.state != 114) && relax = false
+		if (playerid.state != 51 && playerid.cutscene = false && playerid.state != states.mach3 && playerid.state != states.jetpack && playerid.state != 114) && relax = false
 		{
 			with obj_player
 			{
