@@ -11,7 +11,8 @@ enum enemystates
 	enemystun = 106,
 	enemygrabbed = 109,
 	enemyshake = 200,
-	enemyfrozen = 201
+	enemyfrozen = 201,
+	enemyheat = 202
 }
 //Also added baddiestates enum
 #endregion
@@ -51,6 +52,9 @@ switch state
     case enemystates.enemyfrozen:
         scr_enemy_frozen()
         break		
+    case enemystates.enemyheat:
+        scr_enemy_heat()
+        break				
 }
 
 

@@ -1,3 +1,4 @@
+pal_swap_set(spr_palette, paletteselect, 0)
 var drawx = x
 var drawy = y
 if (shake == 1)
@@ -17,5 +18,5 @@ if flash
     draw_sprite_ext(sprite_index, image_index, drawx, drawy, image_xscale, image_yscale, image_angle, image_blend, image_alpha)
     shader_reset()
 }
-
+shader_reset()
 

@@ -4162,7 +4162,7 @@
             "Key": "299901d9-29bc-42cb-aaa4-cb81f93e8746",
             "Value": {
                 "id": "697c6f96-b8d6-4e98-9d48-c0dfdee5f429",
-                "resourcePath": "sprites\\palette_cheeseslime\\palette_cheeseslime.yy",
+                "resourcePath": "sprites\\spr_palette_cheeseslime\\spr_palette_cheeseslime.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -7346,7 +7346,7 @@
             "Key": "46a8dec1-3ea2-46e1-8461-659528acd81c",
             "Value": {
                 "id": "2e3df377-2337-4845-8405-b28a64134422",
-                "resourcePath": "sprites\\palette_forknight\\palette_forknight.yy",
+                "resourcePath": "sprites\\spr_palette_forknight\\spr_palette_forknight.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -18655,6 +18655,14 @@
             }
         },
         {
+            "Key": "b5805e98-27bf-4e6a-bbb1-a11af426d517",
+            "Value": {
+                "id": "2018a898-ef29-4315-90d2-44370811c134",
+                "resourcePath": "sprites\\spr_cheeseslime_heat\\spr_cheeseslime_heat.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b58d6daa-128f-4424-bdeb-adeb05d97a84",
             "Value": {
                 "id": "11895534-2dea-45ee-9dfd-aaa1276ccb62",
@@ -19298,7 +19306,7 @@
             "Key": "bb18936a-67fd-475a-bf23-29038c9ae649",
             "Value": {
                 "id": "f92581ce-54d0-408f-8c2a-8a24f06ab8fd",
-                "resourcePath": "sprites\\palette_pizzard\\palette_pizzard.yy",
+                "resourcePath": "sprites\\spr_palette_pizzard\\spr_palette_pizzard.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -21586,7 +21594,7 @@
             "Key": "d00b1f0d-dad2-49f9-a7f9-165ba0e0aa90",
             "Value": {
                 "id": "3b9b9239-9970-4374-bf5c-2c725cd05082",
-                "resourcePath": "sprites\\palette_pepgoblin\\palette_pepgoblin.yy",
+                "resourcePath": "sprites\\spr_palette_pepgoblin\\spr_palette_pepgoblin.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -25231,6 +25239,14 @@
             }
         },
         {
+            "Key": "f23dc235-1e36-4453-8337-2943e3c705a3",
+            "Value": {
+                "id": "c1527156-9085-4049-93d6-f8e50211379c",
+                "resourcePath": "scripts\\scr_enemy_heat\\scr_enemy_heat.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f23ea787-5418-48c2-9c20-6a25105cae1a",
             "Value": {
                 "id": "c6d6209a-a569-4514-b278-df6ed0ded364",
@@ -26741,6 +26757,7 @@
         "2f8ca10f-c8db-4e04-96ae-8b913ca0d595",
         "d70bc196-d37d-48d0-a66e-dc99dcdb3235",
         "94257dc3-817c-439e-82bd-87db19c7b488",
+        "f23dc235-1e36-4453-8337-2943e3c705a3",
         "d23711ed-08c8-4e9c-a8d6-498f3727fee3",
         "b1008dbf-d92a-43cc-b563-42112691e8de",
         "9f658123-1ae0-489f-94c0-2cc8af93bdb9",

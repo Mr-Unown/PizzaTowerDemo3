@@ -1,3 +1,4 @@
+scr_enemycreate()
 shrimptype = 0
 cautious = 1
 runbuffer = 0
@@ -46,6 +47,6 @@ if shrimptype = 0
 	paletteselect = 0 
 else
 	paletteselect = 1
-scr_enemycreate()
+
 
 

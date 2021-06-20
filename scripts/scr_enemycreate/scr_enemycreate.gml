@@ -26,3 +26,7 @@ frozenmovespeed = 0;
 frozengrav = 0.35;
 frozenhsp = 0;
 frozenvsp = 0;
+//Palette
+spr_palette = spr_null;
+paletteselect = 0;
+hitboxcreate = false;

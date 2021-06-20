@@ -53,17 +53,10 @@ if (sprite_index == spr_taunt)
 		
 		with (obj_pizzaface)
 		{
-			var _cam_x = camera_get_view_x(view_camera[0])
-			var _cam_y = camera_get_view_y(view_camera[0])
-			var _cam_w = camera_get_view_width(view_camera[0])
-			var _cam_h = camera_get_view_height(view_camera[0])
-            if point_in_rectangle(x, y, (_cam_x) - 32, (_cam_y) - 32, (_cam_x + _cam_w) + 32, (_cam_y + _cam_h) + 32)
-			{
             scr_soundeffect(15)
             with (instance_create(x, y, obj_shake))
                 sprite_index = other.sprite_index
 			relax = true
-			}
 		}		
         with (instance_create(x, y, obj_tauntaftereffectspawner))
             playerid = other.id
@@ -221,6 +214,13 @@ if (sprite_index == spr_supertaunt1 || sprite_index == spr_supertaunt2 || sprite
     if (supertauntcharged = true && (!instance_exists(obj_tauntaftereffectspawner)) && character != "V")
     {
 		#region supertaunt
+		with (obj_pizzaface)
+		{
+            scr_soundeffect(15)
+            with (instance_create(x, y, obj_shake))
+                sprite_index = other.sprite_index
+			relax = true
+		}	
         with (instance_create(x, y, obj_tauntaftereffectspawner))
             playerid = other.id
         with (obj_baddie)

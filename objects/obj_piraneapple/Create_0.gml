@@ -1,3 +1,4 @@
+scr_enemycreate();
 grav = 0.5
 hsp = 0
 vsp = 0
@@ -41,6 +42,6 @@ hitboxcreate = 0
 image_speed = 0.35
 slide = 2
 alarm[5] = 10
-scr_enemycreate()
+
 
 

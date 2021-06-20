@@ -36,14 +36,8 @@ if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
         sprite_index = other.spr_dead
 		hsp = other.initialhsp
 		vsp = other.initialvsp
-		if other.id = obj_shrimp ||  other.id = obj_shrimpred ||  other.id = obj_shrimpblue
-		{
-			if other.shrimptype = 0
-				paletteselect = 0 
-			else
-				paletteselect = 1
-			spr_palette = spr_shrimp_palette
-		}		
+		paletteselect = other.paletteselect
+		spr_palette = other.spr_palette	
 	}
     ds_list_add(global.baddieroom, id)
 	if creatorid != noone
@@ -166,14 +160,9 @@ else if (ds_list_find_index(global.baddieroom, id) == -1 && important == 1)
         sprite_index = other.spr_dead
 		hsp = other.initialhsp
 		vsp = other.initialvsp
-		if other.id = obj_shrimp ||  other.id = obj_shrimpred ||  other.id = obj_shrimpblue
-		{
-			if other.shrimptype = 0
-				paletteselect = 0 
-			else
-				paletteselect = 1
-			spr_palette = spr_shrimp_palette
-		}
+		paletteselect = other.paletteselect
+		spr_palette = other.spr_palette
+		
 	}
 }
 if (dropcoin == 1)

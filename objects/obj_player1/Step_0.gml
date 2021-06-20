@@ -1,9 +1,27 @@
 scr_getinput()
 scr_playerstate()
-//Heat Meter
 
+//Heat Meter
 var style = (global.heatmeteroption == true ? global.stylethreshold : 0)
 global.heatmeter = clamp(style,global.lapping,4)
+//Poofeffect when heat change
+if global.oldmeter != global.heatmeter 
+{
+	if (global.oldmeter >= 4 && global.heatmeter < 4) || (global.heatmeter >= 4 && global.oldmeter < 4)
+	{	
+		with obj_baddie
+		{
+			flash = true
+			with (instance_create((x + random_range(-5, 5)), (y + random_range(-5, 5)), obj_balloonpop))
+			{
+				image_index = 0.35
+				sprite_index = spr_bigpoofclouds
+				image_angle = choose(0,90,180,270)
+			}	
+		}
+	}
+	global.oldmeter = global.heatmeter		
+}
 //No more Shadows
 if image_blend != make_colour_hsv(0, 0, 255) && state != states.comingoutdoor {
 	image_blend = make_colour_hsv(0, 0, 255)

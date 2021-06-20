@@ -5,6 +5,7 @@ with obj_discordrpc
 	alarm[0] = -1;
 }
 //Heat Meter
+global.oldmeter = 0;
 global.heatmeter = 0;
 //Speedrun Timer
 global.bonusmiliseconds = 0;

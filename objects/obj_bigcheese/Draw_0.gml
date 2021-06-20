@@ -1,3 +1,4 @@
+pal_swap_set(spr_palette, paletteselect, 0)
 var drawx = x
 var drawy = y
 if (shake == 1)
@@ -146,4 +147,4 @@ else
     }
 }
 
-
+shader_reset()
