@@ -9,14 +9,77 @@ else if (grounded && place_meeting(x, (y + 1), obj_railh2))
 switch object_index
 {
 	case obj_cheeseslime:
-	if floor(image_index) >= image_number - 1
+	#region Cheeseslime
+	if floor(image_index) >= image_number -1 && sprite_index  = spr_cheeseslime_heatstart
+	{
+		image_index = 0
+		sprite_index = spr_cheeseslime_heat
+		movespeed = 7
+	}	
+	if floor(image_index) >= image_number - 1 && sprite_index = spr_cheeseslime_heat
 	{
 		image_index = 0
         sprite_index = walkspr
         state = 102
         movespeed = 1
-		
 	}
+	#endregion
 	break;
+	case obj_forknight:
+	#region Forknight
+	if floor(image_index) >= image_number -1 && sprite_index  = spr_forknight_heatstart
+	{
+		image_index = 0;
+		sprite_index = spr_forknight_heat;
+		movespeed = 7;
+		heatbuffer = 50;
+	}	
+	if sprite_index = spr_forknight_heat
+	{
+		vsp = 0
+		heatbuffer = approach(heatbuffer,0,1)
+		if heatbuffer <= 0
+		{
+			image_index = 0;
+			sprite_index = walkspr;
+			state = 102;
+			movespeed = 1;
+		}
+	}
+	#endregion
+	break;	
+	case obj_fencer:
+	#region fencer
+	if floor(image_index) >= image_number -1 && sprite_index  = spr_fencer_heatstart
+	{
+		image_index = 0;
+		sprite_index = spr_fencer_heat;
+		movespeed = 8;
+		vsp = -3
+		heatbuffer = 35;
+	}	
+	if sprite_index = spr_fencer_heat
+	{
+		heatbuffer = approach(heatbuffer,0,1)
+		if heatbuffer <= 0
+		{
+			image_index = 0;
+			sprite_index = spr_fencer_charge;
+			state = enemystates.enemycharge;
+			movespeed = 5;
+		}
+	}
+	#endregion
+	break;	
 }
-bombreset = 100
+heatreset = 100
+image_speed = 0.35
+//Effects
+if ((!instance_exists(dashcloudid)) && grounded && movespeed > 0)
+{
+    with (instance_create(x, y, obj_dashcloud))
+    {
+        image_xscale = other.image_xscale
+        other.dashcloudid = id
+    }
+}

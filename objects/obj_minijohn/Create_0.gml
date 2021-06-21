@@ -43,5 +43,5 @@ hitboxcreate = 0
 image_speed = 0.35
 slide = 5
 
-
+spr_palette = spr_palette_minijohn
 

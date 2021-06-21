@@ -1,4 +1,10 @@
 scr_collide();
+
+var rail = 0;
+if grounded
+rail = ( place_meeting(x,y+1,obj_railh) ? -5 : (place_meeting(x,y+1,obj_railh2) ? 5 : 0) )
+hsp = (_direction * movespeed) + rail
+
 //Animations
 if !grounded
 	sprite_index = spr_goop_fall
@@ -10,7 +16,7 @@ if floor(image_index) = image_number -1 && sprite_index = spr_goop_land
 	
 //Wallstop
 if place_meeting(x + hsp,y,obj_solid)
-	hsp = 0
+	movespeed = 0
 	
 if y > (room_height * 1.3)
 {
@@ -37,9 +43,9 @@ else if stuck = true
 	visible = true
 	vsp = random_range(2,8) * _direction
 	hsp = random_range(2,6) * _direction
+	movespeed = abs(hsp);
 }
 	
-//Grounded
-if grounded
-	hsp = (abs(hsp) - 0.25) * _direction
 
+if grounded
+	movespeed = approach(movespeed,0,0.25)  //(abs(hsp) - 0.25) * _direction

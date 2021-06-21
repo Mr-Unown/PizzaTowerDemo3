@@ -34,7 +34,7 @@ important = 0
 heavy = 0
 depth = 0
 paletteselect = 0
-spr_palette = palette_cheeseslime
+spr_palette = spr_noisepalette
 grabbedby = 0
 dropcoin = 0
 

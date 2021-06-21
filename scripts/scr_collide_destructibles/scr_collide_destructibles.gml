@@ -471,11 +471,19 @@ with (obj_baddie)
 {
     if (place_meeting((x + hsp), y, obj_destructibles) && (thrown = 1 || state = enemystates.enemyheat || state = "punch"))
         instance_destroy(instance_place((x + hsp), y, obj_destructibles))
-    if (place_meeting(x, (y + vsp), obj_destructibles) && (thrown = 1 || state = enemystates.enemyheat || state = "punch"))
+    if (place_meeting(x, (y + vsp), obj_destructibles) && (thrown = 1 || state = "punch"))
         instance_destroy(instance_place(x, (y + vsp), obj_destructibles))
 		
-	
-		
+	if (movespeed) > 0
+	{
+    if (place_meeting(x + image_xscale,y , obj_destructibles) && (state = enemystates.enemyheat || state = "punch"))
+        instance_destroy(instance_place(x + image_xscale, y, obj_destructibles))
+	}		
+	if abs(vsp) > 0
+	{
+    if (place_meeting(x, (y + vsp), obj_destructibles) && (state = enemystates.enemyheat || state = "punch"))
+        instance_destroy(instance_place(x, (y + vsp), obj_destructibles))
+	}
 }
 with (obj_throwableparent)
 {

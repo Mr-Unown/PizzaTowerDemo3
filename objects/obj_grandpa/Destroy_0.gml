@@ -14,14 +14,16 @@ if (ds_list_find_index(global.saveroom, id) == -1 && important == 0)
 	with instance_create(x, y, obj_goop) {
 	vsp = random_range(-2,-8)
 	hsp = random_range(2,6)
-	_direction = sign(hsp)
+	_direction = sign(hsp);
+	movespeed = abs(hsp);
 	}
 	
 	with instance_create(x, y, obj_goop) 
 	{
 	vsp = random_range(-2,-8)
 	hsp = random_range(-2,-6)
-	_direction = sign(hsp)
+	_direction = sign(hsp);
+	movespeed = abs(hsp);
 	}	
     with (obj_camera)
     {

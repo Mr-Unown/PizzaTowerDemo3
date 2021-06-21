@@ -56,7 +56,7 @@ if instance_exists(ID)
         }
         if (object_index == obj_pizzice)
         {
-            if (state != 96 || scared == 1) || player.state = states.breakdance
+            if ((state != 96 && state != enemystates.enemyheat) || scared == 1) || player.state = states.breakdance
             {
                 hitboxcreate = 0
                 instance_destroy(other.id)
@@ -72,7 +72,7 @@ if instance_exists(ID)
 		}
         if (object_index == obj_peasanto || object_index == obj_fencer || object_index == obj_ninja || object_index == obj_ancho)
         {
-            if (state != 96) || player.state = states.breakdance
+            if (state != 96 && state != enemystates.enemyheat) || player.state = states.breakdance
             {
                 hitboxcreate = 0
                 instance_destroy(other.id)

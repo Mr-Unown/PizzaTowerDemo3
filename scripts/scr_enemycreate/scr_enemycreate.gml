@@ -30,3 +30,7 @@ frozenvsp = 0;
 spr_palette = spr_null;
 paletteselect = 0;
 hitboxcreate = false;
+heatreset = 0;
+heatbuffer = 0;
+alarm[4] = 10
+dashcloudid = noone

@@ -36,5 +36,5 @@ depth = 0
 grabbedby = 0
 dropcoin = 0
 
-
+spr_palette = spr_palette_swedishmonkey
 

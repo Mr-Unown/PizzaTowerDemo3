@@ -34,6 +34,30 @@ switch(global.newhud)
 		else
 		draw_sprite_part_ext(spr_tvdefault, -1, (sprite_get_width(spr_tvdefault)) * combotimer, 0, (sprite_get_width(spr_tvdefault)), sprite_get_height(spr_tvdefault), drawx2 + xoffset, drawy2 ,1 ,1 ,c_white , alpha)
 		draw_sprite_part_ext(tvsprite, -1, 0, 0, (sprite_get_width(tvsprite)) * combotimer, sprite_get_height(tvsprite),drawx2 ,drawy2 ,1 ,1 ,c_white , alpha)
+		/* //Newer Combo Meter Fix this later
+		if surface_exists(oldcombometersurface)
+		{
+			var combotimer = global.combotime / 60
+			var xoffset = clamp(sprite_get_width(spr_tvdefault) * combotimer, 13, sprite_get_width(spr_tvdefault))
+			//set surface
+			surface_set_target(oldcombometersurface);
+			//draw bg
+			draw_sprite_ext(spr_tvdefault, -1, 0, 0, 1, 1, 0, c_white, 1);
+			draw_set_blend_mode(0);
+			//draw mask
+			draw_sprite_ext(spr_tv_fuzz, -1, 0 + xoffset, 0, 1, 1, 0, c_white, 1);
+  			gpu_set_blendmode_ext(9,6);
+			//draw front
+			draw_sprite_ext(tvsprite, -1, 0, 0, 1, 1, 0, c_white, 1);
+			draw_set_blend_mode(0);
+		
+			surface_reset_target();
+			
+			draw_surface_ext(oldcombometersurface,drawx - 82,drawy - 88 ,1,1,0,c_white,alpha);
+		}
+		else
+			oldcombometersurface = surface_create(200,200);
+		*/
 		//Draw Text
 		if room != strongcold_endscreen  && global.combobuffer <= 0
 		{
@@ -76,6 +100,8 @@ switch(global.newhud)
 	break;
 	case 1:
 	#region NEW TV
+	//if surface_exists(oldcombometersurface)
+	//	surface_free(oldcombometersurface);
 	if !(room == Realtitlescreen || room == rank_room || room == timesuproom || room == boss_room1)
 	{
 		draw_sprite_ext(newtvsprite, -1, 832, 100 + newhudyoffset, 1, 1, 0, c_white, 1)

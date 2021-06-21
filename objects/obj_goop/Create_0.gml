@@ -20,5 +20,6 @@ image = image_index;
 image_speed = 0.35;
 frozen = false;
 _direction = sign(hsp);
+movespeed = abs(hsp);
 maxspeed = 0;
 stuck = false;

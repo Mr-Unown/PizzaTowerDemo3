@@ -24,4 +24,8 @@ for (var i = 0; i < ds_list_size(global.gooproom); i++)
 			}
 		}
 	}
+	else
+	{
+		ds_list_delete(global.gooproom,ds_list_find_index(global.gooproom,i))
+	}
 }

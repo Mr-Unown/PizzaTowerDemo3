@@ -66,14 +66,27 @@ if ((!pause) && (!instance_exists(obj_fadeout)))
 		}
 		if DEBUG
 		{
+			//Todo: Snapshot Mode like super mario 3d world + bowser's furry collection
 			if keyboard_check_pressed(vk_f12)
 			{
-				var roomname = string(room)
 				screenshot_surface = surface_create(960,540)
 				surface_set_target(screenshot_surface)
+				draw_clear_alpha(c_black, 0)
 				draw_surface(application_surface,0,0)
+				gpu_set_blendenable(0)
+				gpu_set_colorwriteenable(0, 0, 0, 1)
+				draw_set_color(c_white)
+				draw_rectangle(-192, -192, 960 + 192, 540 + 192, 0)
+				gpu_set_blendenable(1)
+				gpu_set_colorwriteenable(1, 1, 1, 1)
 				surface_reset_target()
-				surface_save(screenshot_surface, "screenshot_"+roomname+".png");	
+	
+				var file;
+				file = get_save_filename_ext("screenshot|*.png", "", working_directory, "Save your Screenshot");
+				if file != ""
+				{
+					surface_save(screenshot_surface, file);
+				}	
 			}
 		}
     }
