@@ -1,4 +1,3 @@
-
 //This will create the object responsible for Integration
 rousr_dissonance_create(appid);
 
