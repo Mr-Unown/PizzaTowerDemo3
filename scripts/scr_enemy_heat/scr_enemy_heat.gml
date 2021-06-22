@@ -49,14 +49,14 @@ switch object_index
 	#endregion
 	break;	
 	case obj_fencer:
-	#region fencer
+	#region Fencer
 	if floor(image_index) >= image_number -1 && sprite_index  = spr_fencer_heatstart
 	{
 		image_index = 0;
 		sprite_index = spr_fencer_heat;
 		movespeed = 8;
-		vsp = -3
-		heatbuffer = 35;
+		vsp = -5
+		heatbuffer = 25;
 	}	
 	if sprite_index = spr_fencer_heat
 	{
@@ -66,7 +66,7 @@ switch object_index
 			image_index = 0;
 			sprite_index = spr_fencer_charge;
 			state = enemystates.enemycharge;
-			movespeed = 5;
+			movespeed = 8;
 		}
 	}
 	#endregion

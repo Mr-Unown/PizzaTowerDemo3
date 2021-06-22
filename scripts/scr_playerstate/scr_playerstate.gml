@@ -478,7 +478,7 @@ if global.combo >= 3 && supertauntbuffer < 500 && supertauntcharged = false
 	supertauntbuffer++
 else if supertauntbuffer > 0
 	supertauntbuffer--
-if supertauntbuffer >= 500 && supertauntcharged = false && state != states.backbreaker
+if supertauntbuffer >= 500 && supertauntcharged = false && state != states.backbreaker && global.miniboss = false
 {
 	supertauntbuffer = 500;
 	supertauntcharged = true;

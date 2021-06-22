@@ -1,4 +1,4 @@
-if (ds_list_find_index(global.saveroom, id) == -1 && important == 0)
+if (ds_list_find_index(global.saveroom, id) == -1)
 {
     var i = random_range(0, 100)
     if (i >= 95)
@@ -130,7 +130,7 @@ if (ds_list_find_index(global.saveroom, id) == -1 && important == 0)
 	global.pausecombotime = true
     obj_tv.alarm[1] = 75	
 }
-else if (ds_list_find_index(global.saveroom, id) == -1 && important == 1)
+else if (ds_list_find_index(global.saveroom, id) == -1)
 {
     scr_soundeffect(11)
     instance_create(x, y, obj_slapstar)

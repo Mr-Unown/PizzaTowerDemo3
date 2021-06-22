@@ -476,8 +476,8 @@ with (obj_baddie)
 		
 	if (movespeed) > 0
 	{
-    if (place_meeting(x + image_xscale,y , obj_destructibles) && (state = enemystates.enemyheat || state = "punch"))
-        instance_destroy(instance_place(x + image_xscale, y, obj_destructibles))
+    if (place_meeting(x + image_xscale,y  - 1, obj_destructibles) && (state = enemystates.enemyheat || state = "punch"))
+        instance_destroy(instance_place(x + image_xscale, y -1, obj_destructibles))
 	}		
 	if abs(vsp) > 0
 	{

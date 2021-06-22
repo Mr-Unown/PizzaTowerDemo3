@@ -29,8 +29,8 @@ if global.snickchallenge == false
 			global.srank = 14500	
 		break;		
 		case "strongcold":
-			global.stimerank = 6.00;
-			global.srank = 19000	
+			global.stimerank = 6.30;
+			global.srank = 18900	
 		break;
 		default:
 			global.stimerank = 10.00;
