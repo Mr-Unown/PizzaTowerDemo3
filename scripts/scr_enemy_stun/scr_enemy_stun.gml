@@ -72,6 +72,8 @@ if (floor(image_index) == (image_number - 1) && stunned < 0)
     }
     else if (object_index == obj_minijohn)
     {
+		movespeed = 7
+		slide = ((-image_xscale) * (movespeed + 4))
         state = 96
         image_index = 0
         sprite_index = walkspr

@@ -19,6 +19,7 @@ if (x != player.x && player.state != 27 && state != enemystates.enemyheat && gro
 			sprite_index = spr_cheeseslime_heatstart
 			movespeed = 0
 			heatreset = 100
+			vsp = 0
 			flash = true
 			state = enemystates.enemyheat
 			with (instance_create(x,y,obj_heataftereffectspawner))

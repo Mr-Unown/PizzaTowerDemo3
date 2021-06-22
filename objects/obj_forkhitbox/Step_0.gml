@@ -17,6 +17,14 @@ if instance_exists(ID)
                 instance_destroy(other.id)
             }
         }		
+        if (object_index == obj_minijohn)
+        {
+            if (state != enemystates.enemyheat || player.instakillmove = true || player.state == states.mach3 || player.state == states.frozen || player.state == states.handstandjump || player.state == states.kingknightroll || player.state == states.breakdance)
+            {
+                hitboxcreate = 0
+                instance_destroy(other.id)
+            }
+        }			
         if (object_index == obj_forknight || object_index == obj_indiancheese || object_index == obj_noisey)
         {
             if ((state != 102 && state != enemystates.enemyheat) || player.state = states.breakdance)

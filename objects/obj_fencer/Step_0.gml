@@ -16,6 +16,7 @@ if (x != player.x && player.state != 27 && state != enemystates.enemyheat && gro
     {
         if (state == 102 || state == enemystates.enemycharge || state == 94)
         {
+			vsp = 0
             image_index = 0
             image_xscale = (-sign((x - player.x)))
 			sprite_index = spr_fencer_heatstart

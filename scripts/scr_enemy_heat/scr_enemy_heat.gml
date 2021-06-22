@@ -71,6 +71,66 @@ switch object_index
 	}
 	#endregion
 	break;	
+	case obj_ancho:
+	#region Ancho
+	if sprite_index  = spr_ancho_heatstart
+	{
+		movespeed = 0
+		hsp = 0
+		vsp = 0 
+		if floor(image_index) >= image_number -1
+		{
+		image_index = 0
+		sprite_index = spr_ancho_heat
+		vsp = 10
+		}
+	}	
+	if sprite_index = spr_ancho_heat
+	{
+		vsp = 10
+		if grounded
+		{
+			scr_soundeffect(15);
+			with (obj_camera)
+			{
+				shake_mag = 10
+				shake_mag_acc = (30 / room_speed)
+			}			
+			sprite_index = spr_ancho_heatland;
+			image_index = 0;
+			hsp = 0;
+			vsp = 0;
+		}
+	}
+	if sprite_index = spr_ancho_heatland && floor(image_index) >= image_number -1
+	{
+		image_index = 0
+        sprite_index = walkspr
+        state = 102
+        movespeed = 1
+	}
+	#endregion
+	break;	
+	case obj_minijohn:
+	#region Minijohn
+	if floor(image_index) >= image_number -1 && sprite_index  = spr_minijohn_heatstart
+	{
+		image_index = 0;
+		sprite_index = spr_minijohn_heat;
+	}	
+	if sprite_index = spr_minijohn_heat
+	{
+		if grounded
+		{
+			movespeed = 7
+			slide = ((-image_xscale) * (movespeed + 4))
+			state = 96
+			image_index = 0
+			sprite_index = walkspr
+		}
+	}
+	#endregion
+	break;		
 }
 heatreset = 100
 image_speed = 0.35
