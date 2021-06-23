@@ -9463,14 +9463,6 @@
             }
         },
         {
-            "Key": "5a583daf-4fb1-48fd-9632-f15c9009d9bc",
-            "Value": {
-                "id": "e3e9d132-bb77-4ca1-a18b-a31351bcc44a",
-                "resourcePath": "tilesets\\tileset_strongcolddecoration11\\tileset_strongcolddecoration11.yy",
-                "resourceType": "GMTileSet"
-            }
-        },
-        {
             "Key": "5a643a02-8746-4c4c-892b-8a4479fa6461",
             "Value": {
                 "id": "3505bdf4-f088-40cb-9c49-af63c1c04535",

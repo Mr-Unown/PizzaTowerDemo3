@@ -7,8 +7,7 @@
         "526e03e7-b9a3-4279-ab95-ce3524e96b41",
         "2555123e-2bc1-4dbe-bbc1-f706b3a76641",
         "5d5a6fd0-cd1c-4806-8b29-e71ebbc3b248",
-        "dc4f9cf6-1e11-4bc4-8d0e-84e6a29ed116",
-        "5a583daf-4fb1-48fd-9632-f15c9009d9bc"
+        "dc4f9cf6-1e11-4bc4-8d0e-84e6a29ed116"
     ],
     "filterType": "GMTileSet",
     "folderName": "Strongcold",
