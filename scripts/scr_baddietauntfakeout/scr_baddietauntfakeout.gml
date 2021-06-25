@@ -30,7 +30,7 @@ with obj_baddie
     }
 	taunttimer = 20
     state = 94
-    bombreset = 100
+    tauntreset = 100
     vsp = 0
     if (parrying == 0)
         hsp = 0

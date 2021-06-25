@@ -24,8 +24,9 @@ if (state != 109)
     depth = 0
 if (state != 106)
     thrown = 0
+tauntreset = approach(tauntreset,0, 1 + (global.heatmeter*0.25)  )
 //taunt
-if (state != 94 && state == 102) && bombreset <= 0
+if (state != 94 && state == 102) && tauntreset <= 0
 {
     if point_in_rectangle(x, y, camera_get_view_x(view_camera[0]), camera_get_view_y(view_camera[0]), (camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0])), (camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0])))
     {
@@ -47,7 +48,7 @@ if (state != 94 && state == 102) && bombreset <= 0
     }
 	taunttimer = 20
     state = 94
-    bombreset = 100
+    tauntreset = 100
     vsp = 0
     if (parrying == 0)
         hsp = 0

@@ -1,3 +1,4 @@
+scr_enemycreate()
 grav = 0.5
 hsp = 0
 vsp = 0
@@ -39,8 +40,10 @@ tauntdepth = 0
 parrying = 0
 hurtedplayeridx = 3
 taunteffect = noone
-scr_enemycreate()
+
 parrymovespeed = 0
 box_id = -4
-
+tauntreset = 100
+spr_palette = spr_palette_forknight //Make palette???
+paletteselect = 0
 

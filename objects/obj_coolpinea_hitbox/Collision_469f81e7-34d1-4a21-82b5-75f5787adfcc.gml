@@ -9,7 +9,7 @@ if other.state != states.breakdance
 			instance_create(other.x, other.y, obj_bangeffect)
 			instance_create(other.x, other.y, obj_slapstar)
 			ID.hurtedplayeridx = other.x
-			ID.bombreset = 100
+			ID.tauntreset = 100
 			ID.taunttimer = 0
 		}
 	}

@@ -19,6 +19,7 @@ stuntouch--
 if (bombreset > 0)
     bombreset -= 1 + (global.heatmeter*0.5)
 	
+	
 //Heat
 heatreset = approach(heatreset,0,1)
 

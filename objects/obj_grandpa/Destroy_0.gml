@@ -35,7 +35,7 @@ if (ds_list_find_index(global.saveroom, id) == -1)
 	{
 		canrotate = true
 		image_xscale = other.image_xscale
-        sprite_index = other.spr_dead
+        sprite_index = spr_grandpa_dead
 		hsp = other.initialhsp
 		vsp = other.initialvsp
 	}
@@ -149,7 +149,7 @@ else if (ds_list_find_index(global.saveroom, id) == -1)
 	{
 		canrotate = true
 		image_xscale = other.image_xscale
-        sprite_index = other.spr_dead
+        sprite_index = spr_grandpa_dead
 		hsp = other.initialhsp
 		vsp = other.initialvsp
 	}

@@ -2,13 +2,13 @@ switch state
 {
     case 98:
         scr_golf_idle()
-        break
+        break;
     case 100:
         scr_golf_hit()
-        break
+        break;
     case 99:
         scr_golf_grabbed()
-        break
+        break;
 }
 
 if (thrown == 1)
@@ -41,7 +41,7 @@ if (place_meeting(x, y, obj_player1) && obj_player1.cutscene == 0 && obj_player1
             movespeed = 0
             image_index = 0
             sprite_index = spr_haulingstart
-            state = 112
+            state = states.golf
             other.grabbedby = 1
             if (xscale == 1)
                 other.angle = 0
@@ -63,7 +63,7 @@ if (place_meeting(x, y, obj_player2) && obj_player2.cutscene == 0 && obj_player2
             movespeed = 0
             image_index = 0
             sprite_index = spr_haulingstart
-            state = 112
+            state = states.golf
             other.grabbedby = 2
             if (xscale == 1)
                 other.angle = 0

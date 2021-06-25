@@ -15,7 +15,7 @@ if (ID.sprite_index != spr_coolpinea_parry && ID.sprite_index = spr_coolpinea_ta
         other.ID.image_index = 0
         other.ID.parrying = 1
         other.ID.hurtedplayeridx = x
-        other.ID.bombreset = 100
+        other.ID.tauntreset = 100
         other.ID.taunttimer = 0
         other.ID.state = 94
         instance_create(x, y, obj_bangeffect)
