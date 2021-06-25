@@ -10,13 +10,14 @@ if (golf == 0)
 			if content != noone
             with (instance_create(x, (y - 35), content))
             {
+				image_xscale = other.image_xscale
                 if (other.content != obj_pizzaball && other.content != obj_peasanto)
                     state = 106
                 stunned = 50
                 vsp = -5
                 other.baddieid = id
                 if (other.content != 91)
-                    important = 1
+                    important = other.important
                 else
                     important = 0
             }

@@ -13,6 +13,7 @@
         "1974dbe5-b2ae-4a6d-b326-b17d94cf5a87",
         "707bf0d5-aa6f-4724-9dd7-2499f7ea89d7",
         "4f6f0a9e-04d1-4da0-b441-33e0140b044f",
+        "db140801-9ee3-45bd-a997-c2c34544a524",
         "ade2c80b-1a54-4f9c-827a-738e210d760b",
         "a7d70d55-f387-4378-bb5c-51442c18123f",
         "32ffb772-df3e-49e2-8857-cb99e917c857",
@@ -20,8 +21,7 @@
         "c77a88da-5abb-472c-8ff3-c7baa5658326",
         "af85bd82-dee7-42ff-a94f-cbf3d654b234",
         "eca2a169-06b0-4ca8-83e8-cc60a5c0e17a",
-        "051694ad-e3e1-402c-9531-2ebe929bb5d6",
-        "db140801-9ee3-45bd-a997-c2c34544a524"
+        "051694ad-e3e1-402c-9531-2ebe929bb5d6"
     ],
     "filterType": "GMTileSet",
     "folderName": "Tile Sets",

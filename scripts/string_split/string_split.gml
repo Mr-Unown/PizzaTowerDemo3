@@ -14,6 +14,6 @@ for (var i = 1; i < (string_length(argument0) + 1); i++)
 	}
 }
 
-for(var i = 0; i < ds_list_size(list); i++)
-	show_debug_message(ds_list_find_value(list, i))
+//for(var i = 0; i < ds_list_size(list); i++)
+//	show_debug_message(ds_list_find_value(list, i))
 return list

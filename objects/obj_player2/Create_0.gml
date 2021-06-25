@@ -1,5 +1,6 @@
 scr_initinput2()
 scr_playercreate()
+global.has_drawnpeter = false;
 selectedcharacter = 1;
 pogo = false
 pipedirection = "none"
@@ -128,7 +129,7 @@ taunttimer = 20
 global.golfhit = 0
 backtohubstartx = x
 backtohubstarty = y
-backtohubroom = noone
+backtohubroom = hub_room1
 global.style = 0
 slapcharge = 0
 slaphand = 1

@@ -1,3 +1,21 @@
+var player = obj_player1
+if global.coop = true
+player = (obj_player1.spotlight = false ? obj_player2 : obj_player1);
+//Paletteswitch
+if sprite_index == spr_present
+{
+	if (player.character = "N" && player.pogo = false)
+	{
+		spr_palette = spr_orangepalette
+		paletteselect = 1
+	}
+	else if (player.character = "N" && player.pogo = true)
+	{
+		spr_palette = spr_noisepalette
+		paletteselect = 0
+	}
+
+}
 switch global.boxhp
 {
     case 20:
@@ -97,6 +115,11 @@ if ((player.instakillmove = true  || player.state = 22 || player.state = states.
             shake_mag = 20
             shake_mag_acc = (40 / room_speed)
         }
+		with obj_tv
+		{
+			newshake = true;
+			alarm[2] = 20
+		}
         global.boxhp = (global.boxhp - 1)
         scr_soundeffect(11)
         instance_create(x, y, obj_slapstar)
@@ -129,8 +152,15 @@ if ((player.instakillmove = true  || player.state = 22 || player.state = states.
         instance_create(x, y, obj_baddiegibs)
         sprite_index = spr_present
     }
-    with (instance_create(x, y, obj_sausageman_dead))
+    with (instance_create(x, y, obj_baddie_dead))
+	{
         sprite_index = other.deadspr
+		if other.character = 0
+		{
+			spr_palette = other.spr_palette
+			paletteselect = other.paletteselect
+		}
+	}
 }
 if (place_meeting(x, y, obj_baddie) && obj_baddie.thrown == 1 && sprite_index != spr_present)
 {
@@ -141,6 +171,16 @@ if (place_meeting(x, y, obj_baddie) && obj_baddie.thrown == 1 && sprite_index !=
             shake_mag = 20
             shake_mag_acc = (40 / room_speed)
         }
+		with obj_tv
+		{
+			newshake = true;
+			alarm[2] = 20
+		}		
+		with obj_tv
+		{
+			newshake = true;
+			alarm[2] = 20
+		}		
         global.boxhp = (global.boxhp - 1)
         scr_soundeffect(11)
         instance_create(x, y, obj_slapstar)
@@ -173,8 +213,15 @@ if (place_meeting(x, y, obj_baddie) && obj_baddie.thrown == 1 && sprite_index !=
         instance_create(x, y, obj_baddiegibs)
         sprite_index = spr_present
     }
-    with (instance_create(x, y, obj_sausageman_dead))
+    with (instance_create(x, y, obj_baddie_dead))
+	{
         sprite_index = other.deadspr
+		if other.character = 0
+		{
+			spr_palette = other.spr_palette
+			paletteselect = other.paletteselect
+		}
+	}
 }
 switch character
 {

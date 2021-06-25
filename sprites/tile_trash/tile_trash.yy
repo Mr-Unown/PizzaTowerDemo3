@@ -8,7 +8,7 @@
     "VTile": true,
     "bbox_bottom": 287,
     "bbox_left": 0,
-    "bbox_right": 287,
+    "bbox_right": 319,
     "bbox_top": 0,
     "bboxmode": 0,
     "colkind": 1,
@@ -16,24 +16,24 @@
     "edgeFiltering": false,
     "frames": [
         {
-            "id": "e27470ad-feba-4992-a37a-44cbe338e1d9",
+            "id": "c4654f89-04ae-45d3-b5da-58aeb13370ed",
             "modelName": "GMSpriteFrame",
             "mvc": "1.0",
             "SpriteId": "d0219091-e2bb-4908-b8b8-ac84e957e1d6",
             "compositeImage": {
-                "id": "cac02a9b-f124-4d75-83c9-f6ab68676f79",
+                "id": "9e02961e-f49d-49df-82b5-54629b7aca2a",
                 "modelName": "GMSpriteImage",
                 "mvc": "1.0",
-                "FrameId": "e27470ad-feba-4992-a37a-44cbe338e1d9",
+                "FrameId": "c4654f89-04ae-45d3-b5da-58aeb13370ed",
                 "LayerId": "00000000-0000-0000-0000-000000000000"
             },
             "images": [
                 {
-                    "id": "e594e74e-56c9-4d00-9f5a-f6dbcbdcfb71",
+                    "id": "b0adabee-f92f-42e7-ab85-9284a86d6843",
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
-                    "FrameId": "e27470ad-feba-4992-a37a-44cbe338e1d9",
-                    "LayerId": "3a138520-c5a1-435c-8ce8-51e4f74dee2d"
+                    "FrameId": "c4654f89-04ae-45d3-b5da-58aeb13370ed",
+                    "LayerId": "43041610-555e-4f4b-af2f-4d7f73cca2e7"
                 }
             ]
         }
@@ -43,7 +43,7 @@
     "height": 320,
     "layers": [
         {
-            "id": "3a138520-c5a1-435c-8ce8-51e4f74dee2d",
+            "id": "43041610-555e-4f4b-af2f-4d7f73cca2e7",
             "modelName": "GMImageLayer",
             "mvc": "1.0",
             "SpriteId": "d0219091-e2bb-4908-b8b8-ac84e957e1d6",
@@ -56,8 +56,8 @@
     ],
     "origin": 0,
     "originLocked": false,
-    "playbackSpeed": 15,
-    "playbackSpeedType": 0,
+    "playbackSpeed": 1,
+    "playbackSpeedType": 1,
     "premultiplyAlpha": false,
     "sepmasks": false,
     "swatchColours": null,

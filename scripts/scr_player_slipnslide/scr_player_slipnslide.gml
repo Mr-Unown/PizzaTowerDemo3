@@ -8,14 +8,12 @@ crouchslideAnim = 1
 crouchAnim = 0
 machhitAnim = 0
 hsp = (xscale * movespeed)
-if (!place_meeting(x, (y + 1), obj_slope))
-{
-    if (movespeed > 0)
-        movespeed -= 0.25
-}
+
+movespeed = approach(movespeed,0,0.19)
+
 machhitAnim = 0
 crouchslideAnim = 1
-if (movespeed <= 0 && (!scr_slope()))
+if (movespeed <= 0)
 {
     state = 0
     movespeed = 0
@@ -28,7 +26,6 @@ if (scr_solid((x + 1), y) && xscale == 1 && (!place_meeting((x + sign(hsp)), y, 
 	vsp = -11
 	jumpstop = 1
 	movespeed = 0
-
 }
 if (scr_solid((x - 1), y) && xscale == -1 && (!place_meeting((x + sign(hsp)), y, obj_slope))) && !place_meeting((x + sign(hsp)), y, obj_destructibles)
 {

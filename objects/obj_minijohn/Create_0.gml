@@ -1,3 +1,4 @@
+scr_enemycreate()
 grav = 0.5
 hsp = 0
 vsp = 0
@@ -41,6 +42,6 @@ steppy = 0
 hitboxcreate = 0
 image_speed = 0.35
 slide = 5
-scr_enemycreate()
 
+spr_palette = spr_palette_minijohn
 

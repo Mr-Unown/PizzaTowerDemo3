@@ -44,20 +44,41 @@ with (obj_player)
         targetDoor = "A"
         obj_camera.alarm[2] = -1
         scr_stopescapemusic()
-        if ((global.collect) >= global.srank)
-        {
-            global.rank = "s"
-            if (global.snickchallenge == 1)
-                global.SAGEsnicksrank = 1
-        }
-        else if ((global.collect) > global.arank)
-            global.rank = "a"
-        else if ((global.collect) > global.brank)
-            global.rank = "b"
-        else if ((global.collect) > global.crank)
-            global.rank = "c"
-        else
-            global.rank = "d"
+		//Rank Decide
+		if global.timeattack = false
+		{ 
+			#region Ranks
+			if ((global.collect) >= global.srank)
+			{
+				global.rank = "s"
+				if (global.snickchallenge == 1)
+					global.SAGEsnicksrank = 1
+			}
+			else if ((global.collect) > global.arank)
+				global.rank = "a"
+			else if ((global.collect) > global.brank)
+	            global.rank = "b"
+			else if ((global.collect) > global.crank)
+	            global.rank = "c"
+			else
+				global.rank = "d"
+			#endregion
+		}
+		else
+		{
+			#region Timeattack
+			if ((global.timeattackpoints) <= global.stimerank)
+				global.rank = "s"
+			else if ((global.timeattackpoints) <= global.atimerank)
+				global.rank = "a"
+			else if ((global.timeattackpoints) <= global.btimerank)
+	            global.rank = "b"
+			else if ((global.timeattackpoints) <= global.ctimerank)
+	            global.rank = "c"
+			else
+				global.rank = "d"
+			#endregion
+		}
         if (global.rank == "s")
             scr_soundeffect(mu_ranks)
         if (global.rank == "a")
@@ -74,8 +95,10 @@ with (obj_player)
 			if (ini_read_string("Secret", string(global.levelname), 0) < global.secretfound)
 				ini_write_string("Secret", string(global.levelname), global.secretfound)		
 			if (ini_read_string("Treasure", string(global.levelname), 0) == 0)
-				ini_write_string("Treasure", string(global.levelname), global.treasure)				
-			if (ini_read_string("Highscore", string(global.levelname), 0) < global.collect)
+				ini_write_string("Treasure", string(global.levelname), global.treasure)			
+			if (ini_read_string("Deathmode", string(global.levelname), 0) == 0)
+				ini_write_string("Deathmode", string(global.levelname), global.deathmode)						
+			if (ini_read_string("Highscore", string(global.levelname), 0) < global.collect) && global.timeattack = false
 				ini_write_string("Highscore", string(global.levelname), global.collect)
 			if (ini_read_string("Toppin", (string(global.levelname) + "1"), 0) == 0)
 				ini_write_string("Toppin", (string(global.levelname) + "1"), global.shroomfollow)
@@ -87,16 +110,17 @@ with (obj_player)
 				ini_write_string("Toppin", (string(global.levelname) + "4"), global.sausagefollow)
 			if (ini_read_string("Toppin", (string(global.levelname) + "5"), 0) == 0)
 				ini_write_string("Toppin", (string(global.levelname) + "5"), global.pineapplefollow)
+			var string_rank = string(global.timeattack == false ? "Ranks" : "Time")
 			if (global.rank == "s")
-				ini_write_string("Ranks", string(global.levelname), global.rank)
-			if (global.rank == "a" && "s" != ini_read_string("Ranks", string(global.levelname), "none"))
-	            ini_write_string("Ranks", string(global.levelname), global.rank)
-			if (global.rank == "b" && "s" != ini_read_string("Ranks", string(global.levelname), "none") && "a" != ini_read_string("Ranks", string(global.levelname), "none"))
-				ini_write_string("Ranks", string(global.levelname), global.rank)
-			if (global.rank == "c" && "s" != ini_read_string("Ranks", string(global.levelname), "none") && "a" != ini_read_string("Ranks", string(global.levelname), "none") && "b" != ini_read_string("Ranks", string(global.levelname), "none"))
-				ini_write_string("Ranks", string(global.levelname), global.rank)
-			if (global.rank == "d" && "s" != ini_read_string("Ranks", string(global.levelname), "none") && "a" != ini_read_string("Ranks", string(global.levelname), "none") && "b" != ini_read_string("Ranks", string(global.levelname), "none") && "c" != ini_read_string("Ranks", string(global.levelname), "none"))
-				ini_write_string("Ranks", string(global.levelname), global.rank)
+				ini_write_string(string_rank, string(global.levelname), global.rank)
+			if (global.rank == "a" && "s" != ini_read_string(string_rank, string(global.levelname), "none"))
+	            ini_write_string(string_rank, string(global.levelname), global.rank)
+			if (global.rank == "b" && "s" != ini_read_string(string_rank, string(global.levelname), "none") && "a" != ini_read_string(string_rank, string(global.levelname), "none"))
+				ini_write_string(string_rank, string(global.levelname), global.rank)
+			if (global.rank == "c" && "s" != ini_read_string(string_rank, string(global.levelname), "none") && "a" != ini_read_string(string_rank, string(global.levelname), "none") && "b" != ini_read_string(string_rank, string(global.levelname), "none"))
+				ini_write_string(string_rank, string(global.levelname), global.rank)
+			if (global.rank == "d" && "s" != ini_read_string(string_rank, string(global.levelname), "none") && "a" != ini_read_string(string_rank, string(global.levelname), "none") && "b" != ini_read_string(string_rank, string(global.levelname), "none") && "c" != ini_read_string(string_rank, string(global.levelname), "none"))
+				ini_write_string(string_rank, string(global.levelname), global.rank)
         ini_close()
 		#endregion
         if (!instance_exists(obj_endlevelfade))

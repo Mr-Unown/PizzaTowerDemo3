@@ -1,3 +1,4 @@
+scr_enemycreate();
 grav = 0.5
 hsp = 0
 vsp = 0
@@ -33,9 +34,8 @@ important = 0
 heavy = 0
 depth = 0
 paletteselect = 0
-spr_palette = palette_cheeseslime
+spr_palette = spr_noisepalette
 grabbedby = 0
 dropcoin = 0
-scr_enemycreate()
 
 

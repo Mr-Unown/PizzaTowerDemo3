@@ -1,4 +1,4 @@
-move = (key_left + key_right)
+/*move = (key_left + key_right)
 if (momemtum == 0)
     hsp = (move * movespeed)
 else

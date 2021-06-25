@@ -199,6 +199,11 @@ switch character {
 	spr_mach3dashpad = spr_player_dashpad
 	//Grinding
 	spr_grinding = spr_player_grinding	
+	//Supertaunt
+	spr_supertaunt1 = spr_player_supertaunt1 
+	spr_supertaunt2 = spr_player_supertaunt2
+	spr_supertaunt3 = spr_player_supertaunt3 
+	spr_supertaunt4 = spr_player_supertaunt4 
     paletteselect = 1
 	}
 	#endregion
@@ -378,7 +383,7 @@ switch character {
     spr_fightball1 = spr_playerN_fightball1
 	spr_fightball2 = spr_playerN_fightball2
     spr_squished = spr_playerN_squished
-    spr_palette = spr_noisepalette
+
     spr_tomatojump = spr_playerN_glide
     spr_boxxedair = spr_boxxednoise_air
     spr_boxxedwalk = spr_boxxednoise_walk
@@ -407,7 +412,23 @@ switch character {
 	spr_mach3dashpad = spr_playerN_dashpad
 	//Grinding
 	spr_grinding = spr_playerN_grinding	
-    paletteselect = 0
+	//Supertaunt
+	spr_supertaunt1 = spr_playerN_supertaunt1 
+	spr_supertaunt2 = spr_playerN_supertaunt2
+	spr_supertaunt3 = spr_playerN_supertaunt3 
+	spr_supertaunt4 = spr_playerN_supertaunt4 	
+	//Palette
+	if pogo = false
+	{
+		spr_palette = spr_noisepalette;
+		paletteselect = 0;
+	}
+	else if pogo = true
+	{
+		spr_palette = spr_orangepalette;	
+		paletteselect = 1;
+	}
+
 	}	
 	#endregion
 	break;
@@ -581,6 +602,11 @@ switch character {
 	spr_mach3dashpad = spr_snick_mach3
 	//Grinding
 	spr_grinding = spr_playerN_grinding	
+	//Supertaunt
+	spr_supertaunt1 = spr_player_supertaunt1 
+	spr_supertaunt2 = spr_player_supertaunt2
+	spr_supertaunt3 = spr_player_supertaunt3 
+	spr_supertaunt4 = spr_player_supertaunt4 	
 	paletteselect = 0
 	}	
 	#endregion
@@ -784,6 +810,11 @@ switch character {
 	spr_mach3dashpad = spr_playerV_mach3
 	//Grinding
 	spr_grinding = spr_player_grinding	
+	//Supertaunt
+	spr_supertaunt1 = spr_player_supertaunt1 
+	spr_supertaunt2 = spr_player_supertaunt2
+	spr_supertaunt3 = spr_player_supertaunt3 
+	spr_supertaunt4 = spr_player_supertaunt4 	
     paletteselect = 0
 	}	
 	#endregion
@@ -988,6 +1019,11 @@ switch character {
 	spr_mach3dashpad = spr_playerP_dash
 	//Grinding
 	spr_grinding = spr_playerN_grinding	
+	//Supertaunt
+	spr_supertaunt1 = spr_player_supertaunt1 
+	spr_supertaunt2 = spr_player_supertaunt2
+	spr_supertaunt3 = spr_player_supertaunt3 
+	spr_supertaunt4 = spr_player_supertaunt4 	
     paletteselect = 0
 	}	
 	#endregion
@@ -1164,7 +1200,7 @@ switch character {
     spr_fightball1 = spr_playerN_fightball1
 	spr_fightball2 = spr_playerN_fightball2
     spr_squished = spr_playerN_squished
-    spr_palette = spr_noisepalette
+	spr_palette = spr_orangepalette;
     spr_tomatojump = spr_playerN_glide
     spr_boxxedair = spr_boxxednoise_air
     spr_boxxedwalk = spr_boxxednoise_walk
@@ -1193,6 +1229,11 @@ switch character {
 	spr_mach3dashpad = spr_playerP_dash	
 	//Grinding
 	spr_grinding = spr_player_grinding	
+	//Supertaunt
+	spr_supertaunt1 = spr_player_supertaunt1 
+	spr_supertaunt2 = spr_player_supertaunt2
+	spr_supertaunt3 = spr_player_supertaunt3 
+	spr_supertaunt4 = spr_player_supertaunt4 	
     paletteselect = 0
 	}	
 	#endregion
@@ -1396,6 +1437,11 @@ switch character {
 	spr_mach3dashpad = spr_playerPZ_dashpad	
 	//Grinding
 	spr_grinding = spr_playerN_grinding //Missing
+	//Supertaunt //Missing
+	spr_supertaunt1 = spr_playerN_supertaunt1 
+	spr_supertaunt2 = spr_playerN_supertaunt2
+	spr_supertaunt3 = spr_playerN_supertaunt3 
+	spr_supertaunt4 = spr_playerN_supertaunt4 	
     paletteselect = 1
 	}
 	#endregion

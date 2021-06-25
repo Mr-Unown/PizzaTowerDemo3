@@ -33,6 +33,7 @@ if (object_index == obj_fencer)
         hsp = 0
     if (((scr_solid((x + 1), y) && image_xscale == 1) || (scr_solid((x - 1), y) && image_xscale == -1)) && (!place_meeting((x + sign(hsp)), y, obj_slope)))
         image_xscale *= -1
+	movespeed = approach(movespeed,5,0.5)
 }
 if (object_index == obj_minijohn || object_index == obj_piraneapple)
 {

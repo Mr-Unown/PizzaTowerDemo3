@@ -8,7 +8,7 @@ if (_low < _high)
     _low = (argument[3] - 1)
     _high = (argument[2] + 1)
 }
-var _start_exists = 0
+/*var _start_exists = 0
 with (obj_tile_swapper_start)
 {
     if (depth == _low)

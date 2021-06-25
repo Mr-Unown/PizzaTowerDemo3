@@ -8,8 +8,8 @@ if (state == 106 && stunned > 100 && birdcreated == 0)
 }
 if (state != 106)
     birdcreated = 0
-if (bombreset > 0)
-    bombreset--
+
+    
 if (floor(image_index) == (image_number - 1) && sprite_index == spr_spitcheese_spit)
     sprite_index = spr_spitcheese_idle
 if (state != 97 && bombreset == 0)

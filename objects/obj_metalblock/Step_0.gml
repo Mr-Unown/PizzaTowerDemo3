@@ -28,9 +28,9 @@ if (place_meeting(x, (y + 1), obj_player2) || place_meeting(x, (y - 1), obj_play
         tile_layer_delete_at(1, x, y)
     }
 }
-if (place_meeting(x, (y + 40), obj_player1) && obj_player1.state == 63 && obj_player1.superspringjump == 1)
+if (place_meeting(x, (y + 40), obj_player1) && obj_player1.state == 63 && (obj_player1.superspringjump == 1 || (obj_player1.character = "PZ" && object_index != obj_metalblockhard)))
     instance_destroy()
-if (place_meeting(x, (y + 40), obj_player2) && obj_player2.state == 63 && obj_player2.superspringjump == 1)
+if (place_meeting(x, (y + 40), obj_player2) && obj_player2.state == 63 && (obj_player2.superspringjump == 1 || (obj_player2.character = "PZ" && object_index != obj_metalblockhard)))
     instance_destroy()
 
 

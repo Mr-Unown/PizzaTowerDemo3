@@ -20,6 +20,17 @@ if (flash == 1 && alarm[2] <= 0)
     alarm[2] = (0.15 * room_speed)
 if (state != 109)
     depth = 0
+//Heatbox
+if (hitboxcreate == 0 && state == enemystates.enemyheat)
+{
+    hitboxcreate = 1
+    with (instance_create(x, y, obj_forkhitbox))
+	{
+        ID = other.id
+		mask_index = spr_ancho_heat
+		sprite_index = spr_ancho_heat
+	}
+}
 
 if (sprite_index == spr_ancho_chargestart && floor(image_index) == (image_number - 1))
 {
@@ -32,19 +43,42 @@ if (sprite_index == spr_ancho_chargestart && floor(image_index) == (image_number
     sprite_index = spr_ancho_charge
     movespeed = 10
 }
-var player = instance_nearest(x,y, obj_player)
+var player = (global.coop = false ? obj_player1 : instance_nearest(x,y,obj_player));
 if (x != player.x && state != 96 && y == ystart) && sprite_index != scaredspr
 {
-    if (player.x > (x - 200) && player.x < (x + 200) && y <= (player.y + 50) && y >= (player.y - 50))
+    if (player.x > (x - 200) && player.x < (x + 200) && y <= (player.y + 50) && y >= (player.y - 50)) && global.heatmeter < 4
     {
         if (state == 102)
         {
-            image_index = 0
-            image_xscale = (-sign((x - player.x)))
-            state = 96
-            sprite_index = spr_ancho_chargestart
+			image_index = 0
+			image_xscale = (-sign((x - player.x)))
+			state = 96
+			sprite_index = spr_ancho_chargestart
         }
     }
+    else if (player.x > (x - 150) && player.x < (x + 150) && y <= (player.y + 632) && y >= (player.y - 50)) && global.heatmeter >= 4
+    {
+		#region Heat attack
+        if (state == 102) && heatreset <= 0
+        {
+			vsp = 0 
+			hsp = 0
+			image_index = 0
+			image_xscale = (-sign((x - player.x)))
+			sprite_index = spr_ancho_heatstart
+			movespeed = 0
+			heatreset = 100
+			flash = true
+			state = enemystates.enemyheat
+			with (instance_create(x,y,obj_heataftereffectspawner))
+			{
+				image_index = other.image_index
+				sprite_index = other.sprite_index
+				image_xscale = other.image_xscale				
+			}				
+        }
+		#endregion
+	}	
 }
 if (state == 106 || state == 102)
     movespeed = 0

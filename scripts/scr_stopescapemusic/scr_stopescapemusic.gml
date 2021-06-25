@@ -20,4 +20,5 @@ audio_stop_sound(mu_vigiescaperequiem)
 audio_stop_sound(mu_pizzelleescaperequiem)
 //Lap 3 Music
 audio_stop_sound(mu_pizzamayhem)
-
+//Run out of Time Song
+audio_stop_sound(mu_escaperumble)

@@ -25,8 +25,8 @@ if (sprite_index == spr_pizzaportalend)
         scr_soundeffect(52)
         instance_create(x, y, obj_fadeout)
     }
-    image_index = 0
-    sprite_index = spr_pizzaportal
+    image_speed = 0
+    visible = false
     ds_list_clear(global.baddieroom)
 }
 

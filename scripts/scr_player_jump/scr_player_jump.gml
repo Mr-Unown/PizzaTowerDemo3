@@ -194,7 +194,7 @@ if (grounded && (sprite_index == spr_facestomp || sprite_index == spr_freefall))
 {
     with (obj_baddie)
     {
-        if point_in_rectangle(x, y, __view_get(0, 0), __view_get(1, 0), (__view_get(0, 0) + __view_get(2, 0)), (__view_get(1, 0) + __view_get(3, 0)))
+        if point_in_rectangle(x, y, __view_get(0, 0), __view_get(1, 0), (__view_get(0, 0) + __view_get(2, 0)), (__view_get(1, 0) + __view_get(3, 0))) && grounded
         {
             vsp = -7
             hsp = 0
@@ -413,14 +413,22 @@ if key_attack2 && (character == "N" && pogo = true) && pogojetcharge = true
 }
 if key_taunt2
 {
-    scr_soundeffect(60)
+    scr_soundeffect(sfx_taunt)
     taunttimer = 20
     tauntstoredmovespeed = movespeed
     tauntstoredsprite = sprite_index
     tauntstoredstate = state
     state = 51
-    image_index = random_range(0, (sprite_get_number(spr_taunt) - 1))
-    sprite_index = spr_taunt
+	if supertauntcharged = true && (character == "P" || character == "N")
+	{
+		image_index = 0
+		sprite_index = choose(spr_supertaunt1,spr_supertaunt2,spr_supertaunt3,spr_supertaunt4)
+	}
+	else
+	{
+		image_index = random_range(0, sprite_get_number(spr_taunt))
+		sprite_index = spr_taunt
+	}
     with (instance_create(x, y, obj_taunteffect))
     {
         playerid = other.id

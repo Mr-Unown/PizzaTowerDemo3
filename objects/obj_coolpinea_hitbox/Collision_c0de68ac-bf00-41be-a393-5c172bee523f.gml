@@ -12,12 +12,12 @@ if other.ID.sprite_index = spr_coolpinea_taunt
                 other.ID.image_index = 0
                 other.ID.parrying = 1
                 other.ID.hurtedplayeridx = x
-                other.ID.alarm[5] = 100
+                other.ID.tauntreset = 100
                 other.ID.taunttimer = 0
                 other.ID.state = 94
                 instance_create(x, y, obj_bangeffect)
                 instance_create(x, y, obj_slapstar)
-                scr_soundeffect(60)
+                scr_soundeffect(sfx_taunt)
             }
             var targetxscale = other.ID.image_xscale
             with (baddieID)

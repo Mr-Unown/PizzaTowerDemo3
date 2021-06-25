@@ -1,5 +1,27 @@
 scr_getinput()
 scr_playerstate()
+
+//Heat Meter
+var style = (global.heatmeteroption == true ? global.stylethreshold : 0)
+global.heatmeter = clamp(style,global.lapping,4)
+//Poofeffect when heat change
+if global.oldmeter != global.heatmeter 
+{
+	if (global.oldmeter >= 4 && global.heatmeter < 4) || (global.heatmeter >= 4 && global.oldmeter < 4)
+	{	
+		with obj_baddie
+		{
+			flash = true
+			with (instance_create((x + random_range(-5, 5)), (y + random_range(-5, 5)), obj_balloonpop))
+			{
+				image_index = 0.35
+				sprite_index = spr_bigpoofclouds
+				image_angle = choose(0,90,180,270)
+			}	
+		}
+	}
+	global.oldmeter = global.heatmeter		
+}
 //No more Shadows
 if image_blend != make_colour_hsv(0, 0, 255) && state != states.comingoutdoor {
 	image_blend = make_colour_hsv(0, 0, 255)
@@ -14,8 +36,8 @@ wallclingbuffer--
 else
 wallclingbuffer = 0
 //Jetpack Controls
-if jetpacking = true && state != states.frozen && !(state = 51 || sprite_index = spr_playerN_jetpackstart || sprite_index = spr_superjumpprep || sprite_index = spr_jetpack || sprite_index = spr_jetpackcrazy || sprite_index = spr_playerN_jetpackslide || sprite_index = spr_playerN_Sjump)	
-jetpacking = false
+if jetpacking = true && state != states.frozen && !(state = states.pipe ||state = states.Sjump || sprite_index = spr_playerN_jetpackstart || sprite_index = spr_superjumpprep || sprite_index = spr_jetpack || sprite_index = spr_jetpackcrazy || sprite_index = spr_playerN_jetpackslide || sprite_index = spr_playerN_Sjump)	
+	jetpacking = false
 
 
 //Score
@@ -68,20 +90,7 @@ if (global.playerhealth <= 0 && state != 55)
     sprite_index = spr_deathstart
     state = 55
 }
-if (state == 55 && y > (room_height * 2))
-{
-    scr_playerreset()
-    targetDoor = "A"
-    room = hub_room1
-    if (global.coop == 1)
-    {
-        with (obj_player2)
-        {
-            targetDoor = "A"
-            scr_playerreset()
-        }
-    }
-}
+
 //Autopitfall 
 if state != 55 && !instance_exists(obj_fadeout) && !place_meeting(x,y,obj_hallway) && !place_meeting(x,y,obj_pitfall) && !place_meeting(x,y,obj_pitcollider) && y > (room_height * 1.3)
 {
@@ -169,7 +178,18 @@ if (global.combotime > 0) && global.pausecombotime = false && global.freezeframe
 else if (global.combotime <= 0)
 	global.combotime = 0
 if (global.combotime == 0 && global.combo != 0)
+{
+	scr_soundeffect(sfx_comboend);
+	if global.combo > 3
+	{
+	var randomchance = irandom_range(0,100);
+		if (randomchance < global.quipsfrequency)
+		{
+			scr_soundeffect(sfx_yipee,sfx_prettygood);
+		}
+	}
     global.combo = 0
+}
 if (input_buffer_jump < 8)
     input_buffer_jump++
 if (input_buffer_secondjump < 8)
@@ -285,10 +305,13 @@ if (state == 23 || sprite_index == spr_knightpepstart || sprite_index == spr_kni
     cutscene = 1
 else
     cutscene = 0
-if (((place_meeting(x, y, obj_door) && (!place_meeting(x, y, obj_doorblocked))) || place_meeting(x, y, obj_dresser) || place_meeting(x,y, obj_door2) || place_meeting(x,y,obj_geromedoor)|| place_meeting(x, y, obj_snick) || place_meeting(x, y, obj_keydoor) || (place_meeting(x, y, obj_exitgate) && (global.panic == 1 || global.snickchallenge == true))) && (!instance_exists(obj_uparrow)) && scr_solid(x, (y + 1)) && state == 0 && obj_player1.spotlight == 1)
+if (((place_meeting(x, y, obj_door) && (!place_meeting(x, y, obj_doorblocked))) || place_meeting(x, y, obj_olddresser) || place_meeting(x, y, obj_dresser) || place_meeting(x,y, obj_door2) || place_meeting(x,y,obj_geromedoor) || place_meeting(x, y, obj_hatstand) || place_meeting(x, y, obj_snick) || place_meeting(x, y, obj_keydoor) || (place_meeting(x, y, obj_exitgate) && (global.panic == 1 || global.snickchallenge == true))) && (!instance_exists(uparrowid)) && scr_solid(x, (y + 1)) && state == 0 && obj_player1.spotlight == 1)
 {
     with (instance_create(x, y, obj_uparrow))
+	{
+		other.uparrowid = id
         playerid = other.object_index
+	}
 }
 if (state == 70 && (!instance_exists(speedlineseffectid)))
 {

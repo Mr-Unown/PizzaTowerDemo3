@@ -17,14 +17,46 @@ if (hitboxcreate == 0 && (state == 94 || state == 102))
     {
         ID = other.id
         sprite_index = spr_coolpinea_taunt
+		mask_index = spr_player_mask
     }
 }
 if (state != 109)
     depth = 0
 if (state != 106)
     thrown = 0
-if (state == 102 && (!alarm[5]))
-    alarm[5] = 100
+tauntreset = approach(tauntreset,0, 1 + (global.heatmeter*0.25)  )
+//taunt
+if (state != 94 && state == 102) && tauntreset <= 0
+{
+    if point_in_rectangle(x, y, camera_get_view_x(view_camera[0]), camera_get_view_y(view_camera[0]), (camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0])), (camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0])))
+    {
+        if audio_is_playing(sfx_taunt)
+            audio_stop_sound(sfx_taunt)
+        scr_soundeffect(sfx_taunt)
+    }
+    image_index = random_range(0, sprite_get_number(spr_coolpinea_taunt))
+    sprite_index = spr_coolpinea_taunt
+    if (!instance_exists(taunteffect))
+    {
+        with (instance_create(x, y, obj_taunteffect))
+        {
+            depth = 0.5
+            other.taunteffect = id
+            baddie = 1
+            baddieid = other.id
+        }
+    }
+	taunttimer = 20
+    state = 94
+    tauntreset = 100
+    vsp = 0
+    if (parrying == 0)
+        hsp = 0
+}
+
+
+
+
 if (parrying == 1)
 {
     var targetxscaleposition = (x - hurtedplayeridx)

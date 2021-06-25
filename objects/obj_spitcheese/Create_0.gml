@@ -1,3 +1,4 @@
+scr_enemycreate()
 grav = 0.5
 hsp = 0
 vsp = 0
@@ -35,6 +36,6 @@ heavy = 0
 depth = 0
 grabbedby = 0
 dropcoin = 0
-scr_enemycreate()
+
 
 

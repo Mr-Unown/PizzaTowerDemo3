@@ -72,7 +72,7 @@ obj_pepgoblin_kickhitbox
 obj_kentukykenny_projectile
 obj_pizzard_bolt
 obj_slipnslide
-obj_sausageman_dead
+ obj_baddie_dead
 obj_enemybird
 obj_slimedead
 obj_enemybandaid

@@ -18,7 +18,7 @@ if (fadealpha > 1 && fadein == 0)
         audio_resume_sound(obj_player.superjumpprepsnd)
         audio_resume_sound(obj_player.suplexdashsnd)
 		audio_resume_sound(sfx_smallvictory)
-		
+		audio_resume_sound(global.escaperumblemusic)
         if (global.ruinmusic == 1 && global.snickchallenge == 0 && global.panic == 0 && global.timeattack == 0)
         {
             if audio_is_playing(mu_ruin)
@@ -42,7 +42,15 @@ if (fadein == 0)
     fadealpha += 0.1
 else if (fadein == 1)
     fadealpha -= 0.1
-if (fadein == 1 && fadealpha < 0)
-    instance_destroy()
+if fadein == 1
+{
+	while flushtextures = true
+	{
+		draw_texture_flush();
+		flushtextures = false
+	}
+	if fadealpha < 0
+		instance_destroy()
+}
 
 

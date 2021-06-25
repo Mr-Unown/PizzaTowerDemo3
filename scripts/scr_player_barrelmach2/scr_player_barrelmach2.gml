@@ -1,4 +1,4 @@
-hsp = (image_xscale * movespeed)
+/*hsp = (image_xscale * movespeed)
 movespeed = 10
 if (vsp < 12)
     vsp += grav

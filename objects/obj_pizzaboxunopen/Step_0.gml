@@ -26,7 +26,7 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
 		}
         if (global.toppintotal < 5)
             obj_tv.message = (("YOU NEED " + string((5 - global.toppintotal))) + " MORE TOPPINS!")
-        if (global.toppintotal == 5)
+        if (global.toppintotal >= 5)
             obj_tv.message = "YOU HAVE ALL TOPPINS!"
         obj_tv.showtext = 1
         obj_tv.alarm[0] = 150
@@ -52,7 +52,7 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
         //global.style = (global.style + 50)		
         if (global.toppintotal < 5)
             obj_tv.message = (("YOU NEED " + string((5 - global.toppintotal))) + " MORE TOPPINS!")
-        if (global.toppintotal == 5)
+        if (global.toppintotal >= 5)
             obj_tv.message = "YOU HAVE ALL TOPPINS!"
         obj_tv.showtext = 1
         obj_tv.alarm[0] = 150
@@ -77,7 +77,7 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
         //global.style = (global.style + 50)		
         if (global.toppintotal < 5)
             obj_tv.message = (("YOU NEED " + string((5 - global.toppintotal))) + " MORE TOPPINS!")
-        if (global.toppintotal == 5)
+        if (global.toppintotal >= 5)
             obj_tv.message = "YOU HAVE ALL TOPPINS!"
         obj_tv.showtext = 1
         obj_tv.alarm[0] = 150
@@ -102,7 +102,7 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
         //global.style = (global.style + 50)		
         if (global.toppintotal < 5)
             obj_tv.message = (("YOU NEED " + string((5 - global.toppintotal))) + " MORE TOPPINS!")
-        if (global.toppintotal == 5)
+        if (global.toppintotal >= 5)
             obj_tv.message = "YOU HAVE ALL TOPPINS!"
         obj_tv.showtext = 1
         obj_tv.alarm[0] = 150
@@ -131,7 +131,7 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
 		
         if (global.toppintotal < 5)
             obj_tv.message = (("YOU NEED " + string((5 - global.toppintotal))) + " MORE TOPPINS!")
-        if (global.toppintotal == 5)
+        if (global.toppintotal >= 5)
             obj_tv.message = "YOU HAVE ALL TOPPINS!"
         obj_tv.showtext = 1
         obj_tv.alarm[0] = 150
@@ -163,6 +163,8 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
 		}			
     }	
     sprite_index = spr_pizzaboxopen
+	if (ds_list_find_index(global.saveroom, id) == -1)
+	ds_list_add(global.saveroom, id)
 }
 if (sprite_index == spr_pizzaboxopen && floor(image_index) == 16)
     instance_destroy()

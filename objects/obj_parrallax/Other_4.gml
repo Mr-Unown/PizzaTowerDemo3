@@ -20,6 +20,12 @@ var lay_id10 = layer_get_id("Backgrounds_far")
 var back_id10 = layer_background_get_id(lay_id10)
 var lay_id11 = layer_get_id("Backgrounds_4")
 var back_id11 = layer_background_get_id(lay_id11)
+var lay_id12 = layer_get_id("Backgrounds_long")
+var back_id12 = layer_background_get_id(lay_id12)
+
+var lay_id13 = layer_get_id("Backgrounds_foreground")
+//var back_id13 = layer_background_get_id(lay_id13)
+layer_depth(lay_id13,-10);
 scrolloffset = global.scrolloffset
 layer_x("Backgrounds_sky", 0)
 layer_y("Backgrounds_sky", 0)
@@ -35,6 +41,7 @@ x_shift_3 = 0
 y_shift_3 = 0
 groundy = layer_get_y("Backgrounds_Ground1")
 ground2y = layer_get_y("Backgrounds_Ground2")
+longy = layer_get_y("Backgrounds_long")
 back1 = layer_background_get_speed(back_id)
 back2 = layer_background_get_speed(back_id2)
 back3 = layer_background_get_speed(back_id3)
@@ -46,4 +53,5 @@ back8 = layer_background_get_speed(back_id8)
 back9 = layer_background_get_speed(back_id9)
 back10 = layer_background_get_speed(back_id10)
 back11 = layer_background_get_speed(back_id11)
+back12 = layer_background_get_speed(back_id12)
 

@@ -15,8 +15,10 @@ with other.id
 			sprite_index = spr_superjump
 			state = states.Sjump
 			vsp = -15
+			superspringjump = false
 			jetpacking = true
-			instance_create(x, y, obj_explosioneffect)
+			
+			instance_create(x, y, obj_explosioneffect)			
 			#endregion
 			}
 			else
@@ -63,12 +65,16 @@ with other.id
 			else
 			{
 			#region MachRight
+
+
 	        xscale = 1
 			mach2 = 100
 			machhitAnim = 0
 			state = 91
-			flash = 1
-			sprite_index = spr_mach4
+			image_index = 0
+			sprite_index = spr_mach3dashpad
+			mach3dash = true
+			mach3dashbuffer = 25
 			instance_create(x, y, obj_jumpdust)
 			movespeed = 14	
 			#endregion
@@ -95,8 +101,10 @@ with other.id
 			mach2 = 100
 			machhitAnim = 0
 			state = 91
-			flash = 1
-			sprite_index = spr_mach4
+			image_index = 0
+			sprite_index = spr_mach3dashpad
+			mach3dash = true
+			mach3dashbuffer = 25
 			instance_create(x, y, obj_jumpdust)
 			movespeed = 14	
 			#endregion

@@ -1,3 +1,4 @@
+event_inherited();
 hp = 2
 depth = 1
         if ((obj_player1.character == "P" && obj_player1.spotlight == 1) || (obj_player2.character == "P" && obj_player1.spotlight == 0))

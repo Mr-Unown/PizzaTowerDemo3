@@ -1,7 +1,3 @@
-
-
-
-		
 var player = obj_player1
 var player2 = obj_player2
 if (obj_player1.spotlight == 0)
@@ -14,8 +10,13 @@ else
     player = obj_player1
     player2 = obj_player2
 }
-if global.hudmode != 1
+if global.hudmode == false
 {
+
+	switch(global.newhud)
+	{
+		case 0:
+		#region OLD HUD
 if (obj_player1.spotlight == 1)
 	if	obj_player1.custompalette = true
 		pal_swap_set(obj_player1.surf_pallete, 1, true)
@@ -27,13 +28,15 @@ else
 	else if	obj_player2.custompalette = false
 		pal_swap_set(obj_player2.spr_palette, obj_player2.paletteselect, false)	
 		
-	//Backup
-	 if (player.pizzashieldbackup >= 1)
-	 {
-		 for (var i = 0; i < player.pizzashieldbackup; ++i) {
-		      draw_sprite_ext(spr_shieldbackup, -1, 50, 100 + (32*i), 1, 1, 0, c_white, alpha)
-		 }
-	 }
+	#region Backup
+	if (player.pizzashieldbackup >= 1)
+	{
+		for (var i = 0; i < player.pizzashieldbackup; ++i)
+		{
+			draw_sprite_ext(spr_shieldbackup, -1, 50, 100 + (32*i), 1, 1, 0, c_white, alpha)
+		}
+	}	
+	#endregion
 	 
 	 
 if (player.state != 55)
@@ -68,7 +71,7 @@ if (player.state != 55)
             draw_sprite_ext_camera(spr_pepinoHUDmach3, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.state == 73 || player.sprite_index == spr_bombpep_end || player.sprite_index == spr_player_fireassend || player.state == 36 || player.state == 27 || (player.state == 54 && player.sprite_index == spr_player_bossintro) || (player.state == 54 && player.sprite_index == spr_player_idle))
             draw_sprite_ext_camera(spr_pepinoHUDhurt, -1, 125, 100, 1, 1, 0, c_white, alpha)
-		else if (global.combo >= 3) && global.pausecombotime = true
+		else if (global.combo >= 3) && global.combobuffer > 0
             draw_sprite_ext_camera(spr_pepinoHUDmenacing, -1, 125, 100, 1, 1, 0, c_white, alpha)			
         else if (player.angry == 1)
             draw_sprite_ext_camera(spr_pepinoHUD3hp, -1, 125, 100, 1, 1, 0, c_white, alpha)
@@ -109,7 +112,7 @@ if (player.state != 55)
             draw_sprite_ext_camera(spr_noiseHUD_mach3, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.state == 73 || player.sprite_index == player.spr_bombpepend || player.sprite_index == player.spr_fireassend || player.state == 36 || player.state == 27 || (player.state == 54 && player.sprite_index == spr_player_bossintro) || (player.state == 54 && player.sprite_index == player.spr_idle))
             draw_sprite_ext_camera(spr_noiseHUD_hurt, -1, 125, 100, 1, 1, 0, c_white, alpha)
-        else if (global.combo >= 3) && global.pausecombotime = true
+        else if (global.combo >= 3) && global.combobuffer > 0
             draw_sprite_ext_camera(spr_noiseHUD_menacing, -1, 125, 100, 1, 1, 0, c_white, alpha)			
         else if (player.angry == 1)
             draw_sprite_ext_camera(spr_noiseHUD_angry, -1, 125, 100, 1, 1, 0, c_white, alpha)
@@ -158,7 +161,7 @@ if (player.state != 55)
             draw_sprite_ext_camera(spr_playerV_hurtHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.sprite_index == spr_playerV_hurt)
             draw_sprite_ext_camera(spr_playerV_hurtHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
-        else if (global.combo >= 3) && global.pausecombotime = true
+        else if (global.combo >= 3) && global.combobuffer > 0
             draw_sprite_ext_camera(spr_playerV_happyHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)			
         else if (global.panic == 1 || global.snickchallenge == 1 || global.miniboss == 1)
             draw_sprite_ext_camera(spr_playerV_panicHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
@@ -209,7 +212,7 @@ if (player.state != 55)
 			draw_sprite_ext_camera(spr_playerPZ_bumpHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)		
         else if (player.angry == 1)
             draw_sprite_ext_camera(spr_playerPZ_angryHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)			
-        else if (global.combo >= 3) && global.pausecombotime = true
+        else if (global.combo >= 3) && global.combobuffer > 0
             draw_sprite_ext_camera(spr_playerPZ_menacingHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)				
         else
             draw_sprite_ext_camera(spr_playerPZ_normalHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
@@ -230,7 +233,199 @@ if (player.state != 55)
         draw_sprite_ext(spr_speedbar, 4, 125, 140, 1, 1, 0, c_white, alpha)
     else if ((player.movespeed >= 12 && (player.state == 69 || player.state == 70 || player.state == 91  || player.state == states.jetpack || player.state == 17 || player.state == 71 || player.state == 37 || player.state == 12 || player.state == 111 || player.state == 22)))
         draw_sprite_ext(spr_speedbarmax, -1, 125, 140, 1, 1, 0, c_white, alpha)
-    //font = font_add_sprite_ext(spr_font, "ABCDEFGHIJKLMNOPQRSTUVWXYZ!.1234567890:", 1, 0)
+}
+	#endregion
+		break;		
+		case 1:
+		#region NEW HUD
+		var newhudx = 150 + irandom_range(-shakemag,shakemag);
+	    var newhudy = 100 + irandom_range(-shakemag,shakemag) + newhudyoffset;		
+		if global.levelname != "none" && (!(room == timesuproom || room == boss_room1 || room == Scootertransition || room == characterselect || room == Realtitlescreen || room == Tutorialtrap ||  room == Titlescreen || room == rank_room || room == cowboytask || room == Tutorialtrap || room == cowboytask || room == timesuproom || room == hub_room3 || room == hub_room2 || room == hub_room1))
+		{
+		if global.stylethreshold > 0
+		{
+			if floor(_image_index) < sprite_get_number(spr_heatmeter) - 1
+				_image_index += 0.1875 * global.stylethreshold;
+			else
+				_image_index = 0
+		}
+		else
+			_image_index = 0	
+		//Style bar Fill thing
+		var heatw = sprite_get_width(spr_heatmeter_fill)
+		var heath = sprite_get_height(spr_heatmeter_fill)		
+		var meter = global.style / 25;
+		draw_sprite_part_ext(spr_heatmeter_fill, _image_index, 0, 0, heatw * meter, heath, newhudx - sprite_get_xoffset(spr_heatmeter_fill), newhudy - sprite_get_yoffset(spr_heatmeter_fill), 1, 1, c_white, alpha)
+		
+		//Style/Heat Meter
+		pal_swap_set(spr_heatmeter_palette,clamp(global.stylethreshold - 1,0,10),false)
+		draw_sprite_ext(spr_heatmeter, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
+		shader_reset();
+		//Pizzascore thing
+		draw_sprite_ext(spr_pizzascore, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
+		
+		//Rank Topppings
+		if global.timeattack = false
+		{
+		if global.collect >= global.crank
+			draw_sprite_ext(spr_pizzascore_pepper, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
+		if global.collect >= global.brank
+			draw_sprite_ext(spr_pizzascore_pepperoni, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
+		if global.collect >= global.arank
+			draw_sprite_ext(spr_pizzascore_olive, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
+		if global.collect >= global.srank
+			draw_sprite_ext(spr_pizzascore_shroom, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)		
+		}
+		else
+		{
+		if global.timeattackpoints < global.ctimerank
+			draw_sprite_ext(spr_pizzascore_pepper, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
+		if global.timeattackpoints < global.btimerank
+			draw_sprite_ext(spr_pizzascore_pepperoni, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
+		if global.timeattackpoints < global.atimerank
+			draw_sprite_ext(spr_pizzascore_olive, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
+		if global.timeattackpoints < global.stimerank
+			draw_sprite_ext(spr_pizzascore_shroom, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)					
+		}
+			
+		switch global.timeattack
+		{
+			case false:
+			#region Point
+		draw_set_halign(fa_center);
+		draw_set_color(c_white);
+		draw_set_font(global.pointsfont);	
+		var _string = string(global.collect), _string_length = string_length(_string); //D3G: Holy shit I'm an idiot I've been using string width lmao no wonder it keeps crashing
+		if collected != _string
+		{
+			for (var i = 0; i < _string_length; i++)  //D3G: Idk what is happening anymore
+			{
+				colors[i] = choose(0,1,2,3)
+			}
+			collected = _string
+		}
+		var textyoffset = 0;
+		#region textyoffset bounce
+		var _index = floor(_image_index)
+		switch(_index)
+		{
+			case 0:
+			textyoffset = 0;
+			break;
+			case 1:
+			case 2:
+			case 3:			
+			case 4:						
+			textyoffset = 1;
+			break;		
+			case 5:						
+			textyoffset = -1;
+			case 6:						
+			textyoffset = -2;			
+			break;			
+			case 7:						
+			textyoffset = -3;			
+			break;			
+			case 8:						
+			textyoffset = -5;			
+			break;		
+			case 9:						
+			textyoffset = -5;			
+			break;		
+			case 10:						
+			textyoffset = -3;			
+			break;	
+			case 11:						
+			textyoffset = -3;			
+			break;					
+		}
+		
+		
+		
+		#endregion		
+		for (var i = 0; i < _string_length; i++) 
+		{
+			var _xx = (newhudx + 15) + (-(string_width(_string)/ 2) + ((string_width(_string)/_string_length) * i)), _yy = newhudy - 55, pal = colors[i];
+			var _yyoffset = (i % 2 == 0 ? -4 : 0)
+			pal_swap_set(spr_font_collect_palette,pal,false);
+			draw_text(_xx, _yy + _yyoffset + textyoffset, string_char_at(_string,i + 1));
+			shader_reset();
+		} #endregion
+			break;
+			case true:
+			#region Timeattack
+			var textyoffset = 0;
+			#region textyoffset bounce
+		var _index = floor(_image_index)
+		switch(_index)
+		{
+			case 0:
+			textyoffset = 0;
+			break;
+			case 1:
+			case 2:
+			case 3:			
+			case 4:						
+			textyoffset = 1;
+			break;		
+			case 5:						
+			textyoffset = -1;
+			case 6:						
+			textyoffset = -2;			
+			break;			
+			case 7:						
+			textyoffset = -3;			
+			break;			
+			case 8:						
+			textyoffset = -5;			
+			break;		
+			case 9:						
+			textyoffset = -5;			
+			break;		
+			case 10:						
+			textyoffset = -3;			
+			break;	
+			case 11:						
+			textyoffset = -3;			
+			break;					
+		}
+		
+		
+		
+		#endregion					
+			draw_sprite_ext(spr_pizzascoretimer, _image_index, newhudx, newhudy + textyoffset, 1, 1, 0, c_white, alpha)
+			draw_set_halign(fa_center);
+			draw_set_color(c_white);
+			draw_set_font(global.timerfont);	
+			var _min = string(global.taminutes < 10 ? ("0" + string(global.taminutes)) : string(global.taminutes));
+			var _sec = string(global.taseconds < 10 ? ("0" + string(global.taseconds)) : string(global.taseconds));
+			var _string = string(_min) + ":" + string(_sec);
+			draw_text(newhudx-5,newhudy-52+textyoffset,_string)
+			#endregion
+			break;
+		}
+		#region Backup
+		if (player.pizzashieldbackup >= 1)
+		{
+			for (var i = 0; i < player.pizzashieldbackup; ++i)
+			{
+				draw_sprite_ext(spr_shieldbackupNEW, -1, (newhudx - 75) + (16*i), newhudy + 75, 1, 1, 0, c_white, alpha)
+			}
+		}	
+		#endregion
+		}
+		#endregion
+		break;
+
+
+	}
+	#region Stats
+	#region Key
+    if (global.key_inv == 1)
+        draw_sprite_ext(spr_key, -1, 50, 30, 1, 1, 0, c_white, 1)
+    draw_sprite_ext(spr_inv, -1, 50, 30, 1, 1, 0, c_white, 1)	
+	#endregion
+	#region Vigi Health
     draw_set_font(global.font)
     draw_set_halign(fa_center)
     draw_set_color(c_white)
@@ -247,9 +442,12 @@ if (player.state != 55)
 		vdrawy = 65	
 		}
         if (player.character == "V")
-            draw_text(vdrawx, vdrawy, player.vigihealth)
+            draw_text(vdrawx, vdrawy + newhudyoffset, player.vigihealth)
     }
-    if (global.panic == 1 || global.snickchallenge == 1 || global.miniboss == 1)
+	#endregion
+	#region Timer
+	var timery = (global.newhud == true? 450 : 65)	
+	if (global.panic == 1 || global.snickchallenge == 1 || global.miniboss == 1)
     {
         if (global.seconds < 10)
         {
@@ -257,7 +455,8 @@ if (player.state != 55)
                 draw_set_color(c_red)
             else
                 draw_set_color(c_white)
-            draw_text((random_range(1, -1) + 480), (random_range(1, -1) + 65), string_hash_to_newline(((string(global.minutes) + ":0") + string(global.seconds))))
+
+            draw_text((random_range(1, -1) + 480), (random_range(1, -1) + timery), string_hash_to_newline(((string(global.minutes) + ":0") + string(global.seconds))))
         }
         else if (global.seconds >= 10)
         {
@@ -265,17 +464,36 @@ if (player.state != 55)
                 draw_set_color(c_red)
             else
                 draw_set_color(c_white)
-            draw_text((random_range(1, -1) + 480), (random_range(1, -1) + 65), string_hash_to_newline(((string(global.minutes) + ":") + string(global.seconds))))
+            draw_text((random_range(1, -1) + 480), (random_range(1, -1) + timery), string_hash_to_newline(((string(global.minutes) + ":") + string(global.seconds))))
         }
-    }
-    if (global.key_inv == 1)
-        draw_sprite_ext(spr_key, -1, 50, 30, 1, 1, 0, c_white, alpha)
-    draw_sprite_ext(spr_inv, -1, 50, 30, 1, 1, 0, c_white, alpha)
-
-   //draw_text(190, 97, string(global.freezeframe))
-
-}
+    }	
+	#endregion
+	#region Speedrun Timer
+	ini_open("playerData_"+global.savefile+".ini");
+	var ranks = ini_read_string("Ranks", string(global.levelname), "none"); 
+	ini_close();
+	if global.levelname != "none" && (ranks != "none") && room != hub_room1 && room != hub_room2 && room != hub_room3 && room != cowboytask && room != timesuproom && room != Scootertransition && room != Tutorialtrap  && room != Titlescreen  && room != Realtitlescreen
+	{
+		var tiny = ":"
+		var tinier = ":"
+		if (global.bonusseconds < 10)
+			tiny = ":0"
+		if (global.bonusmiliseconds < 10)
+			tinier = ":0"			
+		draw_set_color(c_white)
+		draw_set_halign(fa_left)
+		draw_set_font(global.smallfont)
+		draw_text(832, 512, string_hash_to_newline(((string(global.bonusminutes) + string(tiny)) + string(global.bonusseconds) + string(tinier) + string(global.bonusmiliseconds))))
+	}
+	#endregion
+	
+	#endregion
 }
 draw_set_blend_mode(0)
+
+
+
+    
+
 
 

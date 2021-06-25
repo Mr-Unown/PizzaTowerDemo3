@@ -6,7 +6,6 @@ if active = true
 	draw_set_color(c_black)
 	draw_set_alpha(0.5)
 	draw_rectangle(view_get_xport(0), view_get_yport(0), view_get_wport(0), view_get_hport(0), 0)
-	
 	draw_set_alpha(1)
 	draw_set_color(c_white)
 	draw_set_halign(fa_center)
@@ -18,9 +17,9 @@ if active = true
 	
 	draw_set_halign(fa_left)
 	
-	draw_text(100, 80, "COMMAND LIST:")
+	draw_text(100, 80 - 32, "COMMAND LIST:")
 	for(var i = 0; i < array_length_1d(commands); i++)
-		draw_text(100, 100 + (i * 16), string(commands[i]))
+		draw_text(100, 100  - 32 + (i * 16), string(commands[i]))
 	
 	//if choosingdoor = true
 	//	draw_text(431, 220, "TARGET DOOR: " + string(targetDoor))

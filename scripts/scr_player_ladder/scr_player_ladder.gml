@@ -13,7 +13,7 @@ hsp = 0
 if key_up
 {
     sprite_index = spr_laddermove
-    vsp = -3 
+    vsp = -4 
     image_speed = 0.35
 }
 else if key_down

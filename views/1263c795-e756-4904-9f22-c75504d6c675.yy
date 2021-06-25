@@ -6,7 +6,9 @@
     "children": [
         "e22cdca8-877c-45e0-a35d-4585e63c8cba",
         "4e515092-c6aa-4de4-b113-b32dc86852dc",
-        "6420c6df-67ff-4103-89e3-6a6e0bb4fdeb"
+        "6420c6df-67ff-4103-89e3-6a6e0bb4fdeb",
+        "7ed2f42a-a85e-48fa-8f74-dfcaee021811",
+        "81e7b852-f306-4a1d-a156-3cf5cf5f5f30"
     ],
     "filterType": "GMRoom",
     "folderName": "Rooftop",

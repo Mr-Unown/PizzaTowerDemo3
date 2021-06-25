@@ -5,7 +5,7 @@ else
 	string_roomname = ""
 //Level Names
 var roomname = room_get_name(room)
-if (global.snickchallenge == 0)
+if (global.snickchallenge == false)
 {
     if (string_letters(roomname) == "entrance" || string_letters(roomname) == "entrancesecret") ||/* room = entrance_pizzamart ||*/ room = entrance_treasure
     {
@@ -43,7 +43,7 @@ if (global.snickchallenge == 0)
 	string_imagekey = "chateau"
 	in_a_level = true;
     }			
-    else if (string_letters(roomname) == "strongcold" || string_letters(roomname) == "strongcoldsecret") || room = strongcold_pizzamart || room = strongcold_treasure
+    else if (string_letters(roomname) == "strongcold" || string_letters(roomname) == "strongcoldsecret") || room = strongcold_pizzamart || room = strongcold_miniboss || room = strongcold_treasure
     {
 	string_status = "Strongcold"
 	string_imagekey = "strongcold"
@@ -110,10 +110,16 @@ if (global.snickchallenge == 0)
 	in_a_level = false;
 	}
 }
-else if !alarm[0]
+else if global.snickchallenge = true
 {
 	string_status = "Snick's Challenge"
 	string_imagekey = "snickchallenge"
 	in_a_level = true;
-	alarm[0] = 50
+	alarm[0] = 100
+}
+else
+{
+	string_status = "Pizza Tower"
+	string_imagekey = "default"
+	in_a_level = false;
 }

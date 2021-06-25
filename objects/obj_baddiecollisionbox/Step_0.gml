@@ -1,3 +1,4 @@
+var angle,xmovespeed,ymovespeed,vdirection;
 if (!instance_exists(baddieID))
     instance_destroy()
 if instance_exists(baddieID)
@@ -22,6 +23,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                     if (fightball == 0)
                         sprite_index = spr_mach3hit
                     image_index = 0
+
                 }
                 if (state == 70 && grounded)
                 {
@@ -32,6 +34,12 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                     other.baddieID.grabbedby = 1
                 else
                     other.baddieID.grabbedby = 2
+				//Instakill Move Scaboom
+				angle = point_direction(other.baddieID.x, other.baddieID.y,x + hsp, y + vsp );		
+				ymovespeed = 2 + abs(vsp)
+				vdirection = sign(hsp)
+				other.baddieID.initialvsp = clamp(-lengthdir_y(ymovespeed, angle) - 2,-20,(random_range(0,-10)))
+				other.baddieID.initialhsp = (vdirection * ((random_range(1,7)) + abs(floor(hsp))))				
                 scr_soundeffect(34)
 				//New Hitstun
 				if other.baddieID.hp <= 1
@@ -50,6 +58,12 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                 global.combotime = 60
 				global.pausecombotime = true
 				obj_tv.alarm[1] = 75
+				with (instance_create((other.x + random_range(-16, 16)), (other.y + random_range(-16, 16)), obj_balloonpop))
+				{
+					image_index = 0.35
+					sprite_index = spr_bigpoofclouds
+					image_angle = choose(0,90,180,270)
+				}				
                 if ((!grounded) && state != 74 && key_jump2) 
                 {
                     if (state == 70 || (state == 91 && fightball == 0))
@@ -244,10 +258,11 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
             }
             if (instance_exists(other.baddieID) && instakillmove = 0 && other.baddieID.state != "punch"  && other.baddieID.state != 97 && other.baddieID.vsp > 0 && state != 57 && state != 43 && state != 71 && state != 74 && state != 70 && state != 22)
             {
-                if (other.baddieID.state != 96 && other.baddieID.object_index != obj_shrimp) && other.baddieID.dying = false
+                if (other.baddieID.state != 96 && other.baddieID.id != obj_shrimp) && other.baddieID.dying = false
                 {
-                    if (state != 73 && state != 12) 
+                    if (state != 73 && state != 12) && other.baddieID.stuntouch <= 0
                     {
+						other.baddieID.stuntouch = 50
                         scr_soundeffect(16)
                         if (state != 27 && state != 69 && state != 68 && state != 111)
                             movespeed = 0
@@ -357,6 +372,12 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player2) && obj_player2
                 else
                     other.baddieID.grabbedby = 1
                 scr_soundeffect(34)
+				//Instakill Move Scaboom
+				angle = point_direction(other.baddieID.x, other.baddieID.y,x + hsp, y + vsp );		
+				ymovespeed = 2 + abs(vsp)
+				vdirection = sign(hsp)
+				other.baddieID.initialvsp = clamp(-lengthdir_y(ymovespeed, angle) - 2,-20,(random_range(0,-10)))
+				other.baddieID.initialhsp = (vdirection * ((random_range(1,7)) + abs(floor(hsp))))				
 				//New Hitstun
 				if other.baddieID.hp <= 1
 					other.baddieID.dying = true
@@ -370,7 +391,14 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player2) && obj_player2
                 global.hit = (global.hit + 1)
                 global.combotime = 60
 				global.pausecombotime = true
-				obj_tv.alarm[1] = 75				
+				obj_tv.alarm[1] = 75		
+				with (instance_create((other.x + random_range(-16, 16)), (other.y + random_range(-16, 16)), obj_balloonpop))
+				{
+					image_index = 0.35
+					sprite_index = spr_bigpoofclouds
+					image_angle = choose(0,90,180,270)
+				}
+								
                 if ((!grounded) && state != 74 && key_jump2)
                 {
                     if (state == 70 || (state == 91 && fightball == 0))
@@ -566,10 +594,11 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player2) && obj_player2
             }
             if (instance_exists(other.baddieID) && instakillmove = 0 && other.baddieID.state != "punch"  && other.baddieID.state != 97 && other.baddieID.vsp > 0 && state != 57 && state != 43 && state != 71 && state != 74 && state != 70 && state != 22)
             {
-                if (other.baddieID.state != 96 && other.baddieID.object_index != obj_shrimp) && other.baddieID.dying = false
+                if (other.baddieID.state != 96 && other.baddieID.id != obj_shrimp) && other.baddieID.dying = false
                 {
-                    if (state != 73 && state != 12)
+                    if (state != 73 && state != 12) && other.baddieID.stuntouch <= 0
                     {
+						other.baddieID.stuntouch = 50
                         scr_soundeffect(16)
                         if (state != 27 && state != 69 && state != 68 && state != 111)
                             movespeed = 0

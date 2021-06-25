@@ -1,4 +1,4 @@
-if (obj_player.character == "S")
+/*if (obj_player.character == "S")
     instance_destroy()
 if (x != obj_player1.x)
     image_xscale = (-sign((x - obj_player1.x)))

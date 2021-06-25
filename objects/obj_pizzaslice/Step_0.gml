@@ -22,7 +22,6 @@ if (recreate == 1 && (!place_meeting(x, y, obj_solid)) && outside_room == 0)
     vsp = random_range(-2, -4)
 }
 scr_collide()
-if (global.timeattack == 1)
-    instance_destroy()
+
 
 

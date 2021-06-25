@@ -41,6 +41,7 @@ if (optionselected == 1 && (obj_player.key_jump || keyboard_check_pressed(vk_ret
     global.SAGEknighttaken = 0
     global.SAGEtoppin = 0
     global.SAGEtreasure = 0
+	/*
     with (obj_SAGE2019achievementmarker)
     {
         snickshotgun = 0
@@ -52,7 +53,7 @@ if (optionselected == 1 && (obj_player.key_jump || keyboard_check_pressed(vk_ret
         knight = 0
         toppin = 0
         treasure = 0
-    }
+    }*/
     obj_mainmenuselect.selected = 0
     instance_destroy()
 }

@@ -1,1 +1,2 @@
 shake = false;
+newshake = false;

@@ -1,4 +1,4 @@
-scr_enemycreate()
+scr_enemycreate();
 grav = 0.5
 hsp = 0
 vsp = 0
@@ -35,5 +35,6 @@ depth = 0
 charging = 0
 grabbedby = 0
 dropcoin = 0
-
+spr_palette = spr_palette_forknight
+paletteselect = 0
 

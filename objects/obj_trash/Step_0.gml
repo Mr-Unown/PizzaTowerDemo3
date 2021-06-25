@@ -7,8 +7,8 @@ if (state == 106 && stunned > 40 && birdcreated == 0)
 }
 if (state != 106)
     birdcreated = 0
-if (bombreset > 0)
-    bombreset--
+
+    
 if (state != 97 && bombreset == 0)
 {
     if (state == 102 || state == 94)

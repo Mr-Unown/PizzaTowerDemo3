@@ -1,4 +1,4 @@
-if (mach2 == 0)
+/*if (mach2 == 0)
 {
     hsp = (move * movespeed)
     movespeed = 4

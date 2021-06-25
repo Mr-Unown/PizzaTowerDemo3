@@ -1,4 +1,4 @@
-move = (key_left + key_right)
+/*move = (key_left + key_right)
 jumpAnim = 0
 hsp = (move * movespeed)
 if ((scr_solid((x + 1), y) && xscale == 1) || (scr_solid((x - 1), y) && xscale == -1))

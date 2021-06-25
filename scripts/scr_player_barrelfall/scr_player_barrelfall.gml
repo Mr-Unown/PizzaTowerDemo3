@@ -1,4 +1,4 @@
-mask_index = spr_player_mask
+/*mask_index = spr_player_mask
 if (vsp < 12)
     vsp += grav
 if place_meeting(x, y, obj_water2)

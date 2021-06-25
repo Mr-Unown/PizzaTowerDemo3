@@ -21,7 +21,7 @@ if (flash == 1 && alarm[2] <= 0)
 if (state != 109)
     depth = 0
 if bombreset > 0 && state = 102
-    bombreset--
+    
 if bombreset <= 0 && state = 102
 {
     with (instance_create(x, y + 20, obj_ufoolive_teleportal))

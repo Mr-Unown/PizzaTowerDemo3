@@ -14,8 +14,8 @@ if (state != 109)
 if (state != 106)
     thrown = 0
 scr_scareenemy()
-if (bombreset > 0)
-    bombreset--
+
+    
 if (x != obj_player1.x && obj_player1.state != 18 && obj_player1.state != 24 && state != 97 && bombreset == 0 && grounded)
 {
     if (obj_player1.x > (x - 400) && obj_player1.x < (x + 400) && y <= (obj_player1.y + 20) && y >= (obj_player1.y - 20))

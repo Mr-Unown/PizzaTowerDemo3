@@ -29,6 +29,7 @@ if (sprite_index == spr_playerV_dynamitethrow && floor(image_index) == (image_nu
 }
 if (sprite_index == spr_taunt)
 {
+	image_speed = 0
     if (!instance_exists(parry_id))
     {
         parry_id = instance_create(x, y, obj_parryhitbox)
@@ -48,6 +49,15 @@ if (sprite_index == spr_taunt)
     }
     if (supertauntcharged = true && (!instance_exists(obj_tauntaftereffectspawner)) && character != "V")
     {
+		#region supertaunt
+		
+		with (obj_pizzaface)
+		{
+            scr_soundeffect(15)
+            with (instance_create(x, y, obj_shake))
+                sprite_index = other.sprite_index
+			relax = true
+		}		
         with (instance_create(x, y, obj_tauntaftereffectspawner))
             playerid = other.id
         with (obj_baddie)
@@ -63,6 +73,10 @@ if (sprite_index == spr_taunt)
 				blowintensity = 1;
 				playerxscale = choose(1,-1)
 				state = enemystates.enemyshake;	
+				var vec = point_direction(other.x,other.y,x,y)
+				var len = random_range(6,14)
+				initialvsp = lengthdir_y(len,vec)
+				initialhsp = lengthdir_x(len,vec)
 			}
         }
         with (obj_camera)
@@ -75,75 +89,28 @@ if (sprite_index == spr_taunt)
 		obj_player1.supertauntbuffer = 0;
 		obj_player2.supertauntcharged = false;
 		obj_player2.supertauntbuffer = 0;		
+		#endregion
     }
     if (global.debugmode == 1)
     {
-        if (character == "P")
-        {
-            if key_down2
-            {
-                if (paletteselect < 12)
-                    paletteselect += 1
-                else
-                    paletteselect = 1
-                taunttimer = 20
-            }
-        }
-        if (character == "PZ")
-        {
-            if key_down2
-            {
-                if (paletteselect < 12)
-                    paletteselect += 1
-                else
-                    paletteselect = 1
-                taunttimer = 20
-            }
-        }		
-        if (character == "N")
-        {
-            if key_down2
-            {
-                if (paletteselect < 11)
-                    paletteselect += 1
-                else
-                    paletteselect = 0
-                taunttimer = 20
-            }
-        }
-        if (character == "S")
-        {
-            if key_down2
-            {
-                if (paletteselect < 11)
-                    paletteselect += 1
-                else
-                    paletteselect = 0
-                taunttimer = 20
-            }
-        }
-        if (character == "V")
-        {
-            if key_down2
-            {
-                if (paletteselect < 11)
-                    paletteselect += 1
-                else
-                    paletteselect = 0
-                taunttimer = 20
-            }
-        }
-		if (character == "PM")
-        {
-            if key_down2
-            {
-                if (paletteselect < 5)
-                    paletteselect += 1
-                else
-                    paletteselect = 0
-                taunttimer = 20
-            }
-        }
+		if key_down2
+		{
+			if character = "P" || character = "PZ" || (character = "N" && pogo = true)
+			{
+				if (paletteselect < sprite_get_width(spr_palette) - 1)
+					paletteselect += 1
+				else
+					paletteselect = 1
+			}
+			else
+			{
+				if (paletteselect < sprite_get_width(spr_palette) - 1)
+					paletteselect += 1
+				else
+					paletteselect = 0
+			}
+			taunttimer = 20
+		}
         if key_up2
         {
             if (character == "P")
@@ -151,6 +118,7 @@ if (sprite_index == spr_taunt)
                 character = "N"
 				pogo = false
                 paletteselect = 0
+				scr_characterspr();
                 tauntstoredsprite = spr_idle
             }
             else if (character == "N") && pogo = false
@@ -158,6 +126,7 @@ if (sprite_index == spr_taunt)
                 character = "N"
 				pogo = true
                 paletteselect = 0
+				scr_characterspr();
                 tauntstoredsprite = spr_idle
             }			
             else if (character == "N") && pogo = true
@@ -165,44 +134,46 @@ if (sprite_index == spr_taunt)
                 character = "S"
 				pogo = false
                 paletteselect = 0
+				scr_characterspr();
                 tauntstoredsprite = spr_idle
             }
             else if (character == "S")
             {
                 character = "V"
                 paletteselect = 0
+				scr_characterspr();
                 tauntstoredsprite = spr_idle
             }
 			else if (character == "V")
             {
                 character = "PZ"
                 paletteselect = 0
+				scr_characterspr();
                 tauntstoredsprite = spr_idle
             }
 			else if (character == "PZ")
             {
-                character = "D"
-                paletteselect = 1
+				//dougie probably wont be done by then, so do this
+				if DOUGIE
+					character =  "D"
+				else
+					character = "PM"
+                paletteselect = 0
+				scr_characterspr();
                 tauntstoredsprite = spr_idle
             }			
             else if (character == "D")
             {
-                if (global.peppermode == 0)
-                {
-                    character = "P"
-                    paletteselect = 1
-                }
-                else
-                {
-                    character = "PM"
-                    paletteselect = 0
-                }
+                character = "PM"
+                paletteselect = 0
+				scr_characterspr();
                 tauntstoredsprite = spr_idle
             }
             else if (character == "PM")
             {
                 character = "P"
                 paletteselect = 1
+				scr_characterspr()
                 tauntstoredsprite = spr_idle
             }
             scr_characterspr()
@@ -234,6 +205,67 @@ if (taunttimer == 0 && sprite_index == spr_taunt)
         parry_id = -4
     }
 }
+//Supertaunt Stuff
+if (sprite_index == spr_supertaunt1 || sprite_index == spr_supertaunt2 || sprite_index == spr_supertaunt3 || sprite_index == spr_supertaunt4)
+{
+	image_speed = 0.35
+	hsp = 0
+	vsp = 0
+    if (supertauntcharged = true && (!instance_exists(obj_tauntaftereffectspawner)) && character != "V")
+    {
+		#region supertaunt
+		with (obj_pizzaface)
+		{
+            scr_soundeffect(15)
+            with (instance_create(x, y, obj_shake))
+                sprite_index = other.sprite_index
+			relax = true
+		}	
+        with (instance_create(x, y, obj_tauntaftereffectspawner))
+            playerid = other.id
+        with (obj_baddie)
+        {
+			var _cam_x = camera_get_view_x(view_camera[0])
+			var _cam_y = camera_get_view_y(view_camera[0])
+			var _cam_w = camera_get_view_width(view_camera[0])
+			var _cam_h = camera_get_view_height(view_camera[0])
+            if point_in_rectangle(x, y, (_cam_x) - 32, (_cam_y) - 32, (_cam_x + _cam_w) + 32, (_cam_y + _cam_h) + 32)
+			{
+				scarebuffer = 0;
+				blowdirection = 5;
+				blowintensity = 1;
+				playerxscale = choose(1,-1)
+				state = enemystates.enemyshake;	
+				var vec = point_direction(other.x,other.y,x,y)
+				var len = random_range(6,14)
+				initialvsp = lengthdir_y(len,vec)
+				initialhsp = lengthdir_x(len,vec)
+			}
+        }
+        with (obj_camera)
+        {
+			scr_sleep();
+            shake_mag = 10
+            shake_mag_acc = (30 / room_speed)
+        }
+		obj_player1.supertauntcharged = false;
+		obj_player1.supertauntbuffer = 0;
+		obj_player2.supertauntcharged = false;
+		obj_player2.supertauntbuffer = 0;		
+		#endregion
+    }
+}
+if (floor(image_index) >= image_number - 1 && (sprite_index == spr_supertaunt1 || sprite_index == spr_supertaunt2 || sprite_index == spr_supertaunt3 || sprite_index == spr_supertaunt4))
+{
+    movespeed = tauntstoredmovespeed
+    sprite_index = tauntstoredsprite
+    state = tauntstoredstate
+    if instance_exists(parry_id)
+    {
+        instance_destroy(parry_id)
+        parry_id = -4
+    }
+}
 if (floor(image_index) == (image_number - 1) && sprite_index == spr_player_eatspaghetti)
     state = 0
 if (floor(image_index) == (image_number - 1) && sprite_index == spr_Timesup && place_meeting(x, y, obj_exitgate))
@@ -253,6 +285,7 @@ if (key_jump && sprite_index == spr_player_phoneidle)
 }
 if (global.miniboss == 1 && sprite_index == spr_bossintro && floor(image_index) == (image_number - 1))
     state = 0
+if sprite_index != spr_taunt &&  !(sprite_index == spr_supertaunt1 || sprite_index == spr_supertaunt2 || sprite_index == spr_supertaunt3 || sprite_index == spr_supertaunt4)
 image_speed = 0.35
 if (character == "N" && sprite_index == spr_playerN_dab)
 {
@@ -266,7 +299,7 @@ if (character == "N" && sprite_index == spr_playerN_dab)
 		else
 		global.combotime = 0
 		global.pausecombotime = false
-        scr_soundeffect(60)
+        scr_soundeffect(sfx_taunt)
         instance_create(x, y, obj_taunteffect)
         instance_create(x, y, obj_tauntaftereffectspawner)
         with (obj_baddie)
@@ -295,7 +328,7 @@ if (character == "P" && sprite_index == spr_player_smirk)
 		else
 		global.combotime = 0
 		global.pausecombotime = false		
-        scr_soundeffect(60)
+        scr_soundeffect(sfx_taunt)
         instance_create(x, y, obj_taunteffect)
         instance_create(x, y, obj_tauntaftereffectspawner)
         with (obj_baddie)
@@ -324,7 +357,7 @@ if (character == "S" && sprite_index == spr_snick_exe)
 		else
 		global.combotime = 0
 		global.pausecombotime = false
-        scr_soundeffect(60)
+        scr_soundeffect(sfx_taunt)
         instance_create(x, y, obj_taunteffect)
         instance_create(x, y, obj_tauntaftereffectspawner)
         with (obj_baddie)
@@ -354,7 +387,7 @@ if (character == "V" && sprite_index == spr_playerV_revolverstart)
 		else
 		global.combotime = 0
 		global.pausecombotime = false		
-        scr_soundeffect(60)
+        scr_soundeffect(sfx_taunt)
         instance_create(x, y, obj_taunteffect)
         instance_create(x, y, obj_tauntaftereffectspawner)
         with (obj_baddie)

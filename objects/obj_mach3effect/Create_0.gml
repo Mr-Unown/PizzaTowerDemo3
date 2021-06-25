@@ -8,4 +8,4 @@ gonealpha = 1
 vanish = 0
 spr_palette = playerid.spr_palette
 paletteselect = playerid.paletteselect
-
+custompalette = playerid.custompalette

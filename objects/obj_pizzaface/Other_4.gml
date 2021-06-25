@@ -1,11 +1,12 @@
 if (room != rank_room)
 {
     x = (room_width / 2)
-    y = -128
+    y = -200
 }
 var oldmax = maxspeed
 if (relax == 1)
 {
+	scr_soundeffect(sfx_pizzaface)
     relax = 0
     maxspeed = 1
 }

@@ -1,5 +1,15 @@
+global.wateralpha = 0.85
+global.storedtaminute = 0;
+global.storedtasecond = 0;
 breakdancebuffer = 50
 collectscore = 0
+//Global Time Events
+global.timeevent = 0 //1 = Xmas 2 = April 3 = Halloween
+//Funny Peter
+global.draw_peter = false;
+global.deathmode = false;
+//Up arrow
+uparrowid = noone
 //Super Taunts
 supertauntbuffer = 0;
 supertauntcharged = false;
@@ -16,6 +26,7 @@ mach3dashbuffer = 0;
 
 global.freezeframe = false;
 global.freezeframetimer = 200;
+
 //global.sleepScale = 1;
 //global.sleepAcc = 0;
 global.collect = 0

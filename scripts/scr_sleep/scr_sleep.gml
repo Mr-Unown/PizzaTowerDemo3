@@ -1,7 +1,10 @@
 /// @description Freezes time for the given time. 
-with obj_camera {
-	if !alarm[3] 
+with obj_camera 
+{
+	if global.hitstunalarm <= -1 //!alarm[3] 
+	{
 		event_user(0)
+	}
 }
 
 

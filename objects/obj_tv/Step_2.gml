@@ -1,8 +1,11 @@
 if combolast != global.combo
 {
 	combolast = global.combo
-	combobuffer = 60
+	global.combobuffer = 60
 }	
 	
-if combobuffer > 0
-combobuffer--
+if global.combobuffer > 0
+	global.combobuffer = (global.combobuffer - 0.5)
+	
+if global.combobuffer <= 0
+	global.hit = 0;

@@ -1,5 +1,7 @@
 scr_initinput()
 scr_playercreate()
+global.has_drawnpeter = false;
+global.oldmeter = 0;
 selectedcharacter = 0;
 pogo = false
 pipedirection = "none"
@@ -144,7 +146,7 @@ if (global.option_resolution == 2)
     window_set_size(1920, 1080)
 backtohubstartx = x
 backtohubstarty = y
-backtohubroom = noone
+backtohubroom = hub_room1
 global.style = 0
 slapcharge = 0
 slaphand = 1

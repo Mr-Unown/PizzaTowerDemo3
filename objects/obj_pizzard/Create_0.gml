@@ -1,3 +1,4 @@
+scr_enemycreate();
 grav = 0.5
 hsp = 0
 vsp = 0
@@ -34,8 +35,8 @@ heavy = 1
 depth = 0
 grabbedby = 0
 paletteselect = 0
-spr_palette = 299
+spr_palette = spr_palette_pizzard
 dropcoin = 0
-scr_enemycreate()
+
 
 

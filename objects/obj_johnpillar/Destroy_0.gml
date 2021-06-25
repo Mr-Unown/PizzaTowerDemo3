@@ -4,7 +4,8 @@ if (ds_list_find_index(global.saveroom, id) == -1 && global.snickchallenge == 0)
 	global.pausecombotime = true
     obj_tv.alarm[1] = 75
 	obj_camera.alarm[1] = 60
-
+	global.storedtaminute = global.taminutes;
+	global.storedtasecond = global.taseconds;
     var cx = (x + (sprite_width / 2))
     var cy = (y + (sprite_height / 2))
     instance_create(cx, cy, obj_bangeffect)
@@ -30,8 +31,12 @@ if (ds_list_find_index(global.saveroom, id) == -1 && global.snickchallenge == 0)
         with (obj_reverseminipillar)
             fadetopanic = 1
     }
-    with (instance_create(x, y, obj_sausageman_dead))
+    with (instance_create(x + 112 * sign(image_xscale), y + 64, obj_baddie_dead))
+	{
         sprite_index = spr_hungrypillar_dead
+		image_xscale = other.image_xscale
+		canrotate = true
+	}
     scr_soundeffect(11)
     instance_create(x, (y + 600), obj_itspizzatime)
 

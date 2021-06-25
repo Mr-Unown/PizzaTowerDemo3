@@ -1,8 +1,23 @@
 /// @description Freezes time for the given time. 
-alarm[3] = round(global.freezeframetimer / room_speed) * 3;
-if global.freezeframe != true {
-		global.freezeframetimer = clamp(global.freezeframetimer - 50,0,185);
-		if global.can_freeze = true && global.hitstunenabled = true {
+
+switch global.hitstunenabled
+{
+	case 1:
+	global.hitstunalarm = round(global.defaulttime / room_speed) * 3;
+	//alarm[3] = round(global.defaulttime / room_speed) * 3;
+	break;
+	default:
+	global.hitstunalarm = round(global.freezeframetimer / room_speed) * 3;		
+	//alarm[3] = round(global.freezeframetimer / room_speed) * 3;		
+	break;
+}
+
+if global.freezeframe = false 
+{
+		global.freezeframetimer = clamp(global.freezeframetimer - 50,1,185);
+		
+		if global.can_freeze = true && global.hitstunenabled != 0 
+		{
 		#region Frozen entities
 		with obj_player {
 			if state != states.frozen {
@@ -39,6 +54,9 @@ if global.freezeframe != true {
 		with obj_camera {
 			shake_mag = 2
 			shake_mag_acc = (3 / room_speed)
+			targetzoom1 = approach(targetzoom1,896,32)
+			targetzoom2 = approach(targetzoom2,504,18)
+			/*
 			if targetzoom1 > 896
 				targetzoom1 -= 32
 			else
@@ -46,7 +64,7 @@ if global.freezeframe != true {
 			if targetzoom2 > 504
 				targetzoom2 -= 18
 			else
-				targetzoom2 = 504
+				targetzoom2 = 504*/
 			angle = random_range((-maxangle), maxangle)
 		}
 		#endregion

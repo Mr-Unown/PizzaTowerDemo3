@@ -1,6 +1,7 @@
 timerank = "none"
-levelsign = "strongcold"
+levelsign = "none"
+deathmode = 0
 image_speed = 0
-depth = -1
+depth = 49
 
 

@@ -7,6 +7,11 @@ with (other.id)
             if (state != 24 && hurted == 0)
             {
                 scr_soundeffect(1)
+				var randomchance = irandom_range(0,100);
+				if (randomchance < global.quipsfrequency) && !audio_is_playing(sfx_lightning)
+				{
+					scr_soundeffect(sfx_lightning);
+				}				
                 hsp = 0
                 movespeed = 0
                 state = 24

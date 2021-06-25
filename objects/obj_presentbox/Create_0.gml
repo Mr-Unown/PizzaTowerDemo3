@@ -13,5 +13,6 @@ image_speed = 0.35
 depth = 10
 global.boxhp = 20
 collisionbuffer = 0
-
+spr_palette = spr_noisepalette
+paletteselect = 0
 

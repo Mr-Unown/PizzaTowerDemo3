@@ -14,7 +14,7 @@ with obj_baddie
     {
         if audio_is_playing(sfx_taunt)
             audio_stop_sound(sfx_taunt)
-        scr_soundeffect(60)
+        scr_soundeffect(sfx_taunt)
     }
     image_index = random_range(0, sprite_get_number(spr_coolpinea_taunt))
     sprite_index = spr_coolpinea_taunt
@@ -30,7 +30,7 @@ with obj_baddie
     }
 	taunttimer = 20
     state = 94
-    alarm[5] = 100
+    tauntreset = 100
     vsp = 0
     if (parrying == 0)
         hsp = 0
@@ -39,4 +39,12 @@ with obj_baddie
 		#endregion
 		}
 	}
+}
+with obj_invtrash
+{
+	bombreset = 0
+}
+with obj_cannongoblinbot
+{
+	bombreset = 0
 }

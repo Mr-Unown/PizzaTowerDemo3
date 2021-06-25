@@ -1,5 +1,6 @@
 image_speed = 0
 baddieid = noone
+important = true;
 content = noone
 refresh = 20
 depth = 1

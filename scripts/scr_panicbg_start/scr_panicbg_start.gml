@@ -6,6 +6,8 @@ if event_type == ev_draw and event_number == 0
     draw_clear_alpha(c_black, 0)
     var _cam_x = camera_get_view_x(view_camera[0])
     var _cam_y = camera_get_view_y(view_camera[0])
+	//var _cam_x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0])/2
+	//var _cam_y = camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0])/2	
     var bg1 = layer_get_id("Backgrounds_1")
     var bg2 = layer_get_id("Backgrounds_2")
     var bg3 = layer_get_id("Backgrounds_3")
@@ -17,6 +19,7 @@ if event_type == ev_draw and event_number == 0
     var bg9 = layer_get_id("Backgrounds_scroll")
 	var bg10 = layer_get_id("Backgrounds_far")
 	var bg11 = layer_get_id("Backgrounds_4")	
+	var bg12 = layer_get_id("Backgrounds_long")	
     layer_x(bg1, ((layer_get_x(bg1) - _cam_x) + 64))
     layer_y(bg1, ((layer_get_y(bg1) - _cam_y) + 64))
     layer_x(bg2, ((layer_get_x(bg2) - _cam_x) + 64))
@@ -39,4 +42,6 @@ if event_type == ev_draw and event_number == 0
 	layer_y(bg10, ((layer_get_y(bg10) - _cam_y) + 64))
     layer_x(bg11, ((layer_get_x(bg11) - _cam_x) + 64))
     layer_y(bg11, ((layer_get_y(bg11) - _cam_y) + 64))	
+    layer_x(bg12, ((layer_get_x(bg12) - _cam_x) + 64))
+    layer_y(bg12, ((layer_get_y(bg12) - _cam_y) + 64))		
 }

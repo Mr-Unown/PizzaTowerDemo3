@@ -2,10 +2,17 @@ if (ds_list_find_index(global.saveroom, id) == -1)
 {
     if (global.panic == 1)
     {
+		var player = obj_player1
+		if global.coop = true
+		player = instance_nearest(x,y,obj_player)		
         repeat (6)
         {
             with (instance_create((x + 32), (y + 32), obj_debris))
+			{
+				initialhsp = player.hsp / 2
+				initialvsp = clamp(player.vsp / 1.3,-12,random_range(0,-5))
                 sprite_index = spr_bigdebrisescape
+			}
         }
         with (instance_create((x + 32), (y + 32), obj_pizzaslice))
             hsp = 2
@@ -14,7 +21,8 @@ if (ds_list_find_index(global.saveroom, id) == -1)
 		with instance_create(x + 32, y + 16, obj_goop) {
 			vsp = random_range(-2,-8)
 			hsp = choose(2,-2)
-			_direction = choose(1,-1)
+			_direction = sign(hsp);
+			movespeed = abs(hsp);
 		}				
         if (audio_is_playing(sfx_breakblock1) || audio_is_playing(sfx_breakblock2))
         {

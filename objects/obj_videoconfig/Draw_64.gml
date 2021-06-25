@@ -49,11 +49,15 @@ if (optionselected == 3)
     draw_text_colour(480, 475 - 25, "HITSTUN", c_white, c_white, c_white, c_white, 1)
 else
     draw_text_colour(480, 475 - 25, "HITSTUN", c_white, c_white, c_white, c_white, 0.5)
-if (optionsaved_hitstun == 1)
-    draw_text_colour(380, 525 - 25, "ON", c_white, c_white, c_white, c_white, 1)
-else
-    draw_text_colour(380, 525 - 25, "ON", c_white, c_white, c_white, c_white, 0.5)
 if (optionsaved_hitstun == 0)
-    draw_text_colour(580, 525 - 25, "OFF", c_white, c_white, c_white, c_white, 1)
+    draw_text_colour(300 - 15, 525 - 25, "DISABLED", c_white, c_white, c_white, c_white, 1)
 else
-    draw_text_colour(580, 525 - 25, "OFF", c_white, c_white, c_white, c_white, 0.5)
+    draw_text_colour(300 - 15, 525 - 25, "DISABLED", c_white, c_white, c_white, c_white, 0.5)
+if (optionsaved_hitstun == 1)
+    draw_text_colour(480 + 5, 525 - 25, "STANDARD", c_white, c_white, c_white, c_white, 1)
+else
+    draw_text_colour(480 + 5, 525 - 25, "STANDARD", c_white, c_white, c_white, c_white, 0.5)
+if (optionsaved_hitstun == 2)
+    draw_text_colour(680 + 5, 525 - 25, "DYNAMIC", c_white, c_white, c_white, c_white, 1)
+else
+    draw_text_colour(680 + 5, 525 - 25, "DYNAMIC", c_white, c_white, c_white, c_white, 0.5)

@@ -7,3 +7,4 @@ if vanish = 1
 }
 spr_palette = playerid.spr_palette
 paletteselect = playerid.paletteselect
+supertauntindex += 0.5

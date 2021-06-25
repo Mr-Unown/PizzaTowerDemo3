@@ -1,3 +1,4 @@
+global.timeattackpoints = 0
 global.timeattack = 0
 global.taseconds = 0
 global.taminutes = 0

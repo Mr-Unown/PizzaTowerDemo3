@@ -53,8 +53,10 @@ if (sprite_index = spr_playerN_pogo || sprite_index = spr_playerN_pogocharged) &
 	//Jump
 	if key_jump2
 	vsp = -12
+	else if key_down
+	vsp = -3		
 	else
-	vsp = -6		
+	vsp = -6
 
 	//To prevent repeat stuff
 	pogoed = true	
@@ -132,8 +134,16 @@ if key_taunt2 && (sprite_index != spr_playerN_pogo && sprite_index != spr_player
     tauntstoredsprite = sprite_index
     tauntstoredstate = state
     state = 51
-    image_index = random_range(0, (sprite_get_number(spr_taunt) - 1))
-    sprite_index = spr_taunt
+	if supertauntcharged = true && (character == "P" || character == "N")
+	{
+		image_index = 0
+		sprite_index = choose(spr_supertaunt1,spr_supertaunt2,spr_supertaunt3,spr_supertaunt4)
+	}
+	else
+	{
+		image_index = random_range(0, sprite_get_number(spr_taunt))
+		sprite_index = spr_taunt
+	}
     with (instance_create(x, y, obj_taunteffect))
     {
         playerid = other.id

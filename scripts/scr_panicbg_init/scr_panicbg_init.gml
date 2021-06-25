@@ -14,6 +14,8 @@ if layer_exists("Backgrounds_sky")
     layers[layernum++] = "Backgrounds_sky"
 if layer_exists("Backgrounds_Ground1")
     layers[layernum++] = "Backgrounds_Ground1"
+if layer_exists("Backgrounds_long")
+    layers[layernum++] = "Backgrounds_long"	
 if layer_exists("Backgrounds_2")
     layers[layernum++] = "Backgrounds_2"
 if layer_exists("Backgrounds_3")

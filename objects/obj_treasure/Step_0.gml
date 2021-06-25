@@ -1,3 +1,7 @@
+obj_camera.alarm[2] = -1
+global.panic = 0
+global.snickchallenge = 0
+global.fakepeppino = 0			
 if (sprite_index != sprgot)
     sprite_index = spridle
 if (place_meeting(x, y, obj_player1) && player == 0)

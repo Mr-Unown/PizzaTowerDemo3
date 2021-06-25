@@ -1,3 +1,10 @@
+if global.timeattack = true
+{
+	sprite_index = spr_gerome_dying
+	image_speed = 0.35
+	image_index = 0
+	
+}
 if global.geromefollowing = true {
 x = obj_player1.x
 y = obj_player1.y

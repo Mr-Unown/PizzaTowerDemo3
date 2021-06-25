@@ -2,21 +2,25 @@ targetDoor = "A"
 if (obj_player1.spotlight == 1)
 {
     player = obj_player1
-    player2 = 4
+    player2 = obj_player2
 }
 else
 {
     player = obj_player2
-    player2 = 3
+    player2 = obj_player1
 }
-/*
-if place_meeting(x, y, obj_player1)
-    image_speed = 0.35
+
+if place_meeting(x, y, obj_player) && level = "snickchallenge"
+    image_speed = 0.12
 else
 {
     image_speed = 0
     image_index = 0
-}*/
+}
+if level = "snickchallenge"
+{
+	sprite_index = spr_snickchallengecomputer
+}
 /*
 ini_open("playerData_"+global.savefile+".ini")
 global.SAGEshotgunsnick = ini_read_string("SAGE2019", "shotgunsnick", 0)
@@ -109,23 +113,33 @@ if (distance_to_object(player) < 50)
 		            alarm[0] = 2
 			break;
 			case "kungfu": 
-		            message = "STREETS OF PIZZA"
+		            message = "WIP STREETS OF PIZZA"
 		            showtext = 1
 		            alarm[0] = 2
 			break;		
 			case "resto": 
-		            message = "GOLF EATIN'"
+		            message = "WIP GOLF EATIN'"
 		            showtext = 1
 		            alarm[0] = 2
-			break;						
+			break;	
+			case "rooftop": 
+		            message = "WIP ROOF LEVEL"
+		            showtext = 1
+		            alarm[0] = 2
+			break;				
 			default: 
 					message = "NONE"
 					showtext = 1
 					alarm[0] = 2
+			break;
+			
 		}
 #endregion
+		oldmessage = message					
 	 }
+
 }
+
 //Draw Text
 if place_meeting(x, y, player)
 	drawtext = true
@@ -144,3 +158,30 @@ else
 	cplayer1x = cplayerx - 32
 	cplayer2x = cplayerx + 32
 }
+//Lapping Time Attack baybe
+ini_open("playerData_"+global.savefile+".ini")
+if selected = true && ini_read_string("Ranks", string(level), "none") != "none" && has_selectedoption = false && string(level) != "snickchallenge"
+{
+	scr_getinput();
+    if (key_right2)
+    {
+        selection = 1
+        scr_soundeffect(sfx_step)
+    }
+	else if (-key_left2)
+	{
+        selection = 0
+        scr_soundeffect(sfx_step)		
+	}
+	if key_jump2
+	{
+		has_selectedoption = true;
+		scr_soundeffect(sfx_enemyprojectile)
+	}
+}
+else if selected = true
+	can_gotolevel = true
+
+
+ini_close()
+

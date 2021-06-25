@@ -1,5 +1,6 @@
 global.breaksound = 0
-
+initialhsp = random_range(-4, 4)
+initialvsp = random_range(-4, 0)
 depth = 1
 solidid = noone
 if (image_xscale == 1)

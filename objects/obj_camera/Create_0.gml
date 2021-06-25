@@ -1,14 +1,28 @@
 depth = -11
 //Stinky Thing
 oldfacesprite = spr_null
+//global.startgate
+
+global.startgate = noone;
+startdistanced = 0;
+startdistance = 0;
+startgateoffsetx = 0;
+startgateoffsety = 0;
 
 //Shaders
 greyscalefade = 0;
 
 //Number
 _image_index = 0;
-
-global.hitstunenabled = true;
+_image_speed = 0;
+//Change Colors only when needed
+collected = "0";
+colors[0] = choose(0,1,2,3)
+colors[1] = choose(0,1,2,3)
+colors[2] = choose(0,1,2,3)
+newhudyoffset = 0;
+//Shake
+shakemag = 0;
 global.levelname = "none"
 global.tutorialtrap = 0
 collided = false
@@ -18,6 +32,11 @@ image_speed = 0.35
 alarm[1] = -1
 global.seconds = 59
 global.minutes = 0
+
+global.bonusmiliseconds = 0;
+global.bonusseconds = 0;
+global.bonusminutes = 0;
+
 global.miniboss = 0
 angle = 0
 frame = 0
@@ -32,12 +51,18 @@ chargecamera = 0
 alpha = 1
 zoomh = 540
 zoomw = 960
+global.hitstunalarm = 0;
 global.panicbg = true;
 ini_open("saveData.ini")
+global.newhud = ini_read_real("Option", "newhud", 0);
+global.hitstunenabled = ini_read_real("Option", "hitstun", 1);
 global.screenmelt = ini_read_real("Option", "panicbg", 1)
 global.mastervolume = ini_read_real("Option", "mastervolume", 1)
 global.musicvolume = ini_read_real("Option", "musicvolume", 1)
 global.soundeffectsvolume = ini_read_real("Option", "soundeffectsvolume", 1)
+global.defaulttime = ini_read_real("Option", "secrethitstuntimer", 70)
+global.quipsfrequency = ini_read_real("Option", "quips", 0)
+global.heatmeteroption = ini_read_real("Option", "heat", 0)
 ini_close()
 audio_master_gain(global.mastervolume)
 global.maxwave = 0

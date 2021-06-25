@@ -20,10 +20,16 @@ with other.id
 		movespeed = 10	
 		vsp = 0
 		sprite_index = spr_player_barrelroll
-		repeat (6)
+		repeat (5)
 		{
 			with (instance_create((other.x + random_range(-100, 100)), (other.y + random_range(-100, 100)), obj_balloonpop))
 				sprite_index = spr_shotgunimpact
+		}
+		with (instance_create((other.x + random_range(-16, 16)), (other.y + random_range(-16, 16)), obj_balloonpop))
+		{
+				image_index = 0.35
+				sprite_index = spr_bigpoofclouds
+				image_angle = choose(0,90,180,270)
 		}
 		instance_destroy(other.id)
 	}

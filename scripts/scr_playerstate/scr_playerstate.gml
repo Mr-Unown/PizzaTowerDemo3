@@ -104,7 +104,8 @@ enum states
 	pogo = 119,
 	wallcling = 120,
 	breakdance = 121,
-	frozen = 122
+	frozen = 122,
+	changing = 123
 
 } 
 //I made some changes to it so that we can know at a glance what number it gets converted to.
@@ -121,8 +122,8 @@ switch state
     case 109:
         scr_player_grabbed()
         break
-	case states.uppercut:
-		scr_player_uppunch() //Unused
+	case states.changing:
+		scr_player_changing()
 		break;
 	case states.pipe:
         scr_player_pipe()
@@ -428,6 +429,31 @@ switch state
         scr_player_taxi()
         break
 }
+//Water
+if place_meeting(x,y,group_cheesewater) 
+{
+	with instance_place(x,y,group_cheesewater)
+	if other.bbox_top > bbox_top
+		other.in_water = true
+}
+else
+{
+	in_water = false
+}
+
+if in_water = true
+{
+	if vsp > 15
+		vsp = 15
+    var bubble = random_range(1, 100)
+    if (bubble >= 99)
+    {
+		with instance_create(x,y,obj_waterbubble)
+			depth = other.depth - 25
+    }	
+	
+}
+
 
 //Palette
 if surface_exists(surf_pallete) && (paletteselect >= sprite_get_width(spr_palette) - 1)
@@ -452,7 +478,7 @@ if global.combo >= 3 && supertauntbuffer < 500 && supertauntcharged = false
 	supertauntbuffer++
 else if supertauntbuffer > 0
 	supertauntbuffer--
-if supertauntbuffer >= 500 && supertauntcharged = false
+if supertauntbuffer >= 500 && supertauntcharged = false && state != states.backbreaker && global.miniboss = false
 {
 	supertauntbuffer = 500;
 	supertauntcharged = true;
@@ -479,3 +505,17 @@ else if mach3dash = true && mach3dashbuffer > 0
 
 if mach3dashbuffer <= 0
 	mach3dash = false
+//Timesup
+if (state == 55 && y > (room_height * 2))
+{
+	global.levelname = "none";
+    global.fakepeppino = 0;
+    script_execute(scr_playerreset);
+	var _backtohub = hub_room1;
+	with obj_player
+	{
+		targetDoor = "start";
+		_backtohub = backtohubroom
+	}
+    room = _backtohub
+}

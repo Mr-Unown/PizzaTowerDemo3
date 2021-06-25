@@ -4,7 +4,31 @@
     "mvc": "1.11",
     "name": "tileset_dungeon",
     "auto_tile_sets": [
-        
+        {
+            "id": "5bb9bcca-d14e-4163-916d-c46af75cd5e5",
+            "modelName": "GMAutoTileSet",
+            "mvc": "1.0",
+            "closed_edge": false,
+            "name": "autotile_1",
+            "tiles": [
+                4,
+                53,
+                51,
+                2,
+                33,
+                11,
+                0,
+                1,
+                31,
+                0,
+                13,
+                3,
+                22,
+                21,
+                23,
+                0
+            ]
+        }
     ],
     "macroPageTiles": {
         "SerialiseData": null,
@@ -19,7 +43,7 @@
     "out_tilevborder": 2,
     "spriteId": "2e6ccf6e-7f72-4559-9198-beb9556df222",
     "sprite_no_export": true,
-    "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
+    "textureGroupId": "9f45fbc6-1f44-4c18-a9fe-a6ae26675e09",
     "tile_animation": {
         "AnimationCreationOrder": null,
         "FrameData": [

@@ -6,6 +6,8 @@ image_index = 0
 choosed = false;
 drawx = xstart - _cam_x
 drawy = ystart - _cam_y
+
+
 if choosed = false
 {
 	if ((obj_player1.character == "P" && obj_player1.spotlight == 1) || (obj_player2.character == "P" && obj_player1.spotlight == 0))

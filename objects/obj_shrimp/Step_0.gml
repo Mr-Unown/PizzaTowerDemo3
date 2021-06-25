@@ -26,8 +26,8 @@ if state = 102 {
 	sprite_index = walkspr
 	movespeed = 7
 }
-if (bombreset > 0)
-    bombreset--
+
+    
 var player = instance_nearest(x, y, obj_player)
 if attack = 0 && sprite_index = spr_shrimp_idle
 {

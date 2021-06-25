@@ -4,6 +4,14 @@ with (other.id)
     {
         if (state != 60 && grounded)
         {
+			if state != 60
+			{
+				var randomchance = irandom_range(0,100);
+				if (randomchance < global.quipsfrequency)
+				{
+					scr_soundeffect(sfx_dizzy);
+				}				
+			}			
             state = 60
             if (movespeed < 12)
                 movespeed = 12

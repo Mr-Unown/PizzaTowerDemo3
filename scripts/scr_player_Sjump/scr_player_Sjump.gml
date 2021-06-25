@@ -16,31 +16,21 @@ if jetpacking = true
 }
 else
 	hsp = 0
-if (superspringjump != 1)
+if (superspringjump = false)
 {
-    if (sprite_index == spr_superjump)
-        vsp = -15
-    if (sprite_index == spr_player_supersidejump)
-    {
-        if (a < 25)
-            a++
-        hsp = (xscale * a)
-        vsp = 0
-    }
+	vsp = -15
 }
-else if (superspringjump == 1)
+else if (superspringjump == true)
 {
-    if (sprite_index == spr_superjump)
-        vsp -= 0.5
+	vsp -= 0.5
 }
-if (scr_solid(x, (y - 1)) && (!place_meeting(x, (y - 1), obj_destructibles)))
+if (scr_solid(x, (y + vsp)) && (!place_meeting(x, (y + vsp), obj_destructibles)))
 {
     a = 0
     if (sprite_index == spr_player_supersidejump)
         sprite_index = spr_player_supersidejumpland
     if (sprite_index == spr_superjump)
         sprite_index = spr_superjumpland
-    superspringjump = 0
     with (obj_camera)
     {
         shake_mag = 10
@@ -59,7 +49,8 @@ if (scr_solid(x, (y - 1)) && (!place_meeting(x, (y - 1), obj_destructibles)))
     image_index = 0
     state = 93
     machhitAnim = 0
-	jetpacking = false		
+	jetpacking = false	
+    superspringjump = false	
 }
 if (character == "V")
 {
@@ -120,7 +111,8 @@ if (superspringjump != 1)
         machhitAnim = 0
         state = 91
         flash = 1
-        sprite_index = spr_mach4
+        image_index = 0
+        sprite_index = spr_mach3dashpad
         with (instance_create(x, y, obj_jumpdust))
             image_xscale = other.xscale
     }	

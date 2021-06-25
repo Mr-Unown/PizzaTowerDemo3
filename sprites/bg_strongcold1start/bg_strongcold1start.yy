@@ -8,7 +8,7 @@
     "VTile": false,
     "bbox_bottom": 999,
     "bbox_left": 0,
-    "bbox_right": 2499,
+    "bbox_right": 2047,
     "bbox_top": 0,
     "bboxmode": 0,
     "colkind": 1,
@@ -62,9 +62,9 @@
     "sepmasks": false,
     "swatchColours": null,
     "swfPrecision": 2.525,
-    "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
+    "textureGroupId": "7dbe7b39-92d2-4024-8c53-83710fececce",
     "type": 0,
-    "width": 2500,
+    "width": 2048,
     "xorig": 0,
     "yorig": 0
 }

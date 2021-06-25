@@ -1,4 +1,4 @@
-machhitAnim = 0
+/*machhitAnim = 0
 crouchslideAnim = 1
 hsp = (xscale * movespeed)
 if key_jump

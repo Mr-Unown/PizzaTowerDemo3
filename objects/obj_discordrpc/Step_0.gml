@@ -79,10 +79,21 @@ if is_discord_ready = true
 		if global.timeattack = false
 			string_state  = ("Points: "+ string_points + " | Rank: "+ string_rank)
 		else
-			string_state  = ("Time: ")
+			string_state  = ("Time: "+ string_timemin + ":" + string_timesec)
+		//Time Attack
+		string_timemin = string(global.taminutes)
+		if global.taseconds < 10
+		string_timesec = "0"+ string(global.taseconds)
+		else
+		string_timesec = string(global.taseconds)
 		string_points = string(global.collect)
 		if (global.collect) >= global.srank
-			string_rank = "S"
+		{
+			if global.treasure != 0
+				string_rank = "S+"
+			else
+				string_rank = "S"
+		}
 		else if (global.collect) > global.arank
 			string_rank = "A"
 		else if (global.collect) > global.brank

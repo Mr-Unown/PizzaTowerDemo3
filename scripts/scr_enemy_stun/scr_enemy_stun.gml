@@ -1,3 +1,6 @@
+var angle = point_direction(x,y,x + hsp, y + vsp );		
+var ymovespeed = 2 + abs(vsp)
+var vdirection = sign(hsp)
 if (object_index == obj_ninja)
     attack = 1
 stunned--
@@ -7,7 +10,11 @@ image_speed = 0.35
 if ((grounded || (grounded && (!place_meeting(x, y, obj_platform)))) && vsp > 0)
 {
     if (thrown == 1 && hp <= 0) || (dying = true)
+	{
+		initialvsp = clamp(-lengthdir_y(ymovespeed, angle) - 2,-20,(random_range(0,-10)))
+		initialhsp = (vdirection * ((random_range(1,7)) + abs(floor(hsp))))	
         instance_destroy()
+	}
     if (hp > 0 && object_index == obj_bigcheese && sprite_index == spr_bigcheese_fall)
         sprite_index = spr_bigcheese_land
     thrown = 0
@@ -22,8 +29,12 @@ if (place_meeting((x - image_xscale), y, obj_solid) && (!place_meeting((x - imag
 {
     with (instance_create(x, y, obj_bulletimpact))
         image_xscale = (-other.image_xscale)
-    if (thrown == 1 && hp <= 0) 
+    if (thrown == 1 && hp <= 0 || dying = true) 
+	{
+		initialvsp = clamp(-lengthdir_y(ymovespeed, angle) - 2,-20,(random_range(0,-10)))
+		initialhsp = (vdirection * ((random_range(1,7)) + abs(floor(hsp))))		
         instance_destroy()
+	}
     if (thrown == 1 && hp > 0 && object_index == obj_bigcheese && sprite_index == stunfallspr)
         sprite_index = spr_bigcheese_fall
     thrown = 0
@@ -61,6 +72,8 @@ if (floor(image_index) == (image_number - 1) && stunned < 0)
     }
     else if (object_index == obj_minijohn)
     {
+		movespeed = 7
+		slide = ((-image_xscale) * (movespeed + 4))
         state = 96
         image_index = 0
         sprite_index = walkspr

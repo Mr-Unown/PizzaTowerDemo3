@@ -1,5 +1,6 @@
 depth = 1;
 playerid = obj_player1;
+pooid = id;
 
 //core if you see this I can explain...
 chance = random_range(0,100);
@@ -19,5 +20,6 @@ image = image_index;
 image_speed = 0.35;
 frozen = false;
 _direction = sign(hsp);
+movespeed = abs(hsp);
 maxspeed = 0;
 stuck = false;

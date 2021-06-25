@@ -1,3 +1,4 @@
+bombreset = 0
 dropcoin = 0
 shake = 0
 shakebuffer = 2.5
@@ -10,7 +11,12 @@ markedfordeathbuffer = 50
 deathbuffer = 100
 playerxscale = obj_player1.xscale
 dying = false
-
+creatorid = noone
+//Stupid anti Strongcold softlock
+stuntouch = 0
+//Death Sprite
+initialvsp = random_range(-5, -10)
+initialhsp = random_range(5, 10) * choose(1,-1)
 //Stored Stuff
 frozenstate = 0;
 frozenspriteindex = spr_player_idle;
@@ -20,3 +26,11 @@ frozenmovespeed = 0;
 frozengrav = 0.35;
 frozenhsp = 0;
 frozenvsp = 0;
+//Palette
+spr_palette = spr_null;
+paletteselect = 0;
+hitboxcreate = false;
+heatreset = 0;
+heatbuffer = 0;
+alarm[4] = 10
+dashcloudid = noone

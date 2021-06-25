@@ -1,6 +1,28 @@
 //States
 scr_enemystates()
 
+//Heat Meter Palettes
+if global.heatmeter >= 4 && object_index != obj_shrimp && object_index != obj_shrimpred && object_index != obj_shrimpblue
+{
+	paletteselect = 1
+}
+else if global.heatmeter < 4 && object_index != obj_shrimp && object_index != obj_shrimpred && object_index != obj_shrimpblue
+{
+	paletteselect = 0
+}
+
+
+//Stun
+if stuntouch > 0
+stuntouch--
+//Bomb
+if (bombreset > 0)
+    bombreset -= 1 + (global.heatmeter*0.5)
+	
+	
+//Heat
+heatreset = approach(heatreset,0,1)
+
 //Drain Scare
 if scarebuffer > 0
 scarebuffer--

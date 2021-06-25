@@ -120,7 +120,17 @@ with (obj_player1)
                 image_speed = 0.35
         }
     }
-    if (vsp <= 0.5 && (state == 58 || state == 17 || state == 6 || state == 63 || state == 70 || state == 91 || state == states.jetpack))
+	if state  == states.Sjump
+	{
+        if place_meeting(x, (y + vsp), obj_destructibles)
+        {
+            with (instance_place(x, (y + vsp), obj_destructibles))
+            {
+                instance_destroy()
+            }
+        }		
+	}
+    if (vsp <= 0.5 && (state == 58 || state == 17 || state == 6 || state == states.Sjump || state == 70 || state == 91 || state == states.jetpack))
     {
         if place_meeting(x, (y - 1), obj_destructibles)
         {
@@ -129,7 +139,7 @@ with (obj_player1)
                 instance_destroy()
                 with (other.id)
                 {
-                    if (state != 63 && state != 17)
+                    if (state != states.Sjump && state != 17)
                         vsp = 0
                 }
             }
@@ -237,6 +247,16 @@ with (obj_player2)
                 machpunchAnim = 1
         }		
 	}	
+	if state  == states.Sjump
+	{
+        if place_meeting(x, (y + vsp), obj_destructibles)
+        {
+            with (instance_place(x, (y + vsp), obj_destructibles))
+            {
+                instance_destroy()
+            }
+        }		
+	}	
     if (state == 73 && thrown == 1)
     {
         if place_meeting((x - hsp), y, obj_destructibles)
@@ -337,7 +357,7 @@ with (obj_player2)
                 image_speed = 0.35
         }
     }
-    if (vsp <= 0.5 && (state == 58 || state == 17 || state == 6 || state == 63 || state == 70 || state == 91 || state == states.jetpack))
+    if (vsp <= 0.5 && (state == 58 || state == 17 || state == 6 || state == states.Sjump || state == 70 || state == 91 || state == states.jetpack))
     {
         if place_meeting(x, (y - 1), obj_destructibles)
         {
@@ -346,7 +366,7 @@ with (obj_player2)
                 instance_destroy()
                 with (other.id)
                 {
-                    if (state != 63 && state != 17)
+                    if (state != states.Sjump && state != 17)
                         vsp = 0
                 }
             }
@@ -449,10 +469,21 @@ with (obj_mrcar)
 }
 with (obj_baddie)
 {
-    if (place_meeting((x + hsp), y, obj_destructibles) && (thrown = 1 || state = "punch"))
+    if (place_meeting((x + hsp), y, obj_destructibles) && (thrown = 1 || state = enemystates.enemyheat || state = "punch"))
         instance_destroy(instance_place((x + hsp), y, obj_destructibles))
     if (place_meeting(x, (y + vsp), obj_destructibles) && (thrown = 1 || state = "punch"))
         instance_destroy(instance_place(x, (y + vsp), obj_destructibles))
+		
+	if (movespeed) > 0
+	{
+    if (place_meeting(x + image_xscale,y  - 1, obj_destructibles) && (state = enemystates.enemyheat || state = "punch"))
+        instance_destroy(instance_place(x + image_xscale, y -1, obj_destructibles))
+	}		
+	if abs(vsp) > 0
+	{
+    if (place_meeting(x, (y + vsp), obj_destructibles) && (state = enemystates.enemyheat || state = "punch"))
+        instance_destroy(instance_place(x, (y + vsp), obj_destructibles))
+	}
 }
 with (obj_throwableparent)
 {

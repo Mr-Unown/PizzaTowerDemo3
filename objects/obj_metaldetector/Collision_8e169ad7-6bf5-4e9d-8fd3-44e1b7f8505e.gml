@@ -6,7 +6,7 @@ with other
 			{
 				state = 0
 			}
-            with (instance_create(x, y, obj_sausageman_dead))
+            with (instance_create(x, y,  obj_baddie_dead))
             {
                 if (other.character == "P")
                     sprite_index = spr_shotgunback

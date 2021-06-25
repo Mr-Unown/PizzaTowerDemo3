@@ -6,8 +6,6 @@ with (other.id)
         mach2 = 100
         machhitAnim = 0
         state = 91
-		if mach3dash = false
-			flash = 1
 		image_index = 0
         sprite_index = spr_mach3dashpad
 		mach3dash = true
@@ -15,14 +13,25 @@ with (other.id)
         instance_create(x, y, obj_jumpdust)
         movespeed = 14
     }
-	else if state == states.Sjump && bbox_bottom < other.bbox_bottom
+	else if (state != states.frozen && cutscene = false && bbox_bottom < other.bbox_bottom) && !(state == states.Sjump || state == 24 || state == 18 || state == states.wallcling || state == 91  || state == states.climbwall) && 	!(state = 86 || state = states.pogo ||  (state = states.jetpack && jetpacking = true) )
+	{
+		xscale = other.image_xscale
+        mach2 = 100
+        machhitAnim = 0
+        state = 91
+		image_index = 0
+        sprite_index = spr_mach3dashpad
+		mach3dash = true
+		mach3dashbuffer = 25
+        instance_create(x, y, obj_jumpdust)
+        movespeed = 14
+	}
+	else if (state == states.Sjump || state == states.wallcling || state == states.climbwall) && bbox_bottom < other.bbox_bottom
 	{
         xscale = other.image_xscale
         mach2 = 100
         machhitAnim = 0
         state = 91
-		if mach3dash = false
-			flash = 1
 		image_index = 0			
         sprite_index = spr_mach3dashpad
 		mach3dash = true
@@ -33,8 +42,6 @@ with (other.id)
     else if state == 91 
     {
 		xscale = other.image_xscale
-		if mach3dash = false
-			flash = 1
         if (movespeed < 14)
             movespeed = 14
 		if sprite_index = spr_mach4 
@@ -145,7 +152,7 @@ with (other.id)
 		instance_create(x, y, obj_jumpdust)
 		movespeed = 14
 	}
-	else if (state = states.pogo) || (state = states.jetpack && jetpacking = true) 
+	else if  (state = states.pogo) || (state = states.jetpack && jetpacking = true) 
 	{
 		jetpacking = false
 	    xscale = other.image_xscale

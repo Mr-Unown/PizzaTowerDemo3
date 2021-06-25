@@ -6,6 +6,12 @@ with (argument0)
     else if (state == 27 && hurted == 0)
     {
     }
+	else if (sprite_index == spr_supertaunt1 || sprite_index == spr_supertaunt2 || sprite_index == spr_supertaunt3 || sprite_index == spr_supertaunt4)
+	{
+	}
+	else if global.freezeframe = true
+	{
+	}
     else if (state == 86)
     {
     }	
@@ -36,7 +42,12 @@ with (argument0)
             else
                 y = obj_player1.y
         }
-        scr_soundeffect(10)
+        scr_soundeffect(sfx_pephurt)
+		var randomchance = irandom_range(0,100);
+		if randomchance < global.quipsfrequency
+		{
+			scr_soundeffect(sfx_hurt1,sfx_hurt2,sfx_hurt3);
+		}
         if (character != "V")
         {
             state = 73
@@ -65,6 +76,16 @@ with (argument0)
             state = 55
             sprite_index = spr_deathstart
         }
+		with obj_tv
+		{
+			image_speed = 0.1
+			showtext = 1
+			message = choose("OW!", "OUCH!", "OH!", "WOH!")
+			alarm[0] = 50
+			chose = 1
+			tvsprite = spr_tvhurt
+			once = 1
+		}
         hurted = 1
         if (xscale == other.image_xscale)
             sprite_index = spr_hurtjump
@@ -190,7 +211,7 @@ with (argument0)
         }
         else
         {
-            with (instance_create(x, y, obj_sausageman_dead))
+            with (instance_create(x, y,  obj_baddie_dead))
             {
 				sprite_index = spr_pizzashield_block
 				image_index = 0

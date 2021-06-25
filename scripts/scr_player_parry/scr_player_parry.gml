@@ -78,8 +78,8 @@ if (parried_baddie > 0)
             scr_soundeffect(15)
             with (instance_create(x, y, obj_shake))
                 sprite_index = other.sprite_index
-            relax = 1
 			scr_sleep();
+			relax = true
         }
     }
 }

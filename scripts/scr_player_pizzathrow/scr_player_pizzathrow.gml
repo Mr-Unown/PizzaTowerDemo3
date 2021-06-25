@@ -1,4 +1,4 @@
-movespeed = 0
+/*movespeed = 0
 mach2 = 0
 hsp = 0
 xscale = -1

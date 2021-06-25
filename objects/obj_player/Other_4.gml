@@ -1,3 +1,45 @@
+var yoffset = 160
+
+switch current_month
+{
+	case 4: //April
+	
+	if current_day = 1
+	{
+		global.timeevent = 2; //April fools
+		if global.has_drawnpeter = false && object_index = obj_player1
+		{
+			var chance = random_range(0,200);
+			var yes = (chance >= 200 ? true : false);
+			global.draw_peter = yes;
+		}
+		else if global.has_drawnpeter = true
+		{
+			global.draw_peter = false
+		}
+	}
+	
+	break;
+	case 12: //December
+	
+		global.timeevent = 1; //Xmas
+		//Insert Christmas Event here
+	
+	break;
+	case 6: //June
+	
+		global.timeevent = 4; //Summer
+		
+	break;
+	case 10: //October
+	
+		global.timeevent = 3; //Halloween
+		//Insert Halloween Event here
+	
+	break;	
+}
+
+
 //Surface
 if !surface_exists(surf_pallete)
 	surf_pallete = surface_create(surf_width,surf_height)
@@ -188,6 +230,9 @@ with (obj_destroyable2_bigescape)
                     x = (obj_doorA.x + verticaloffset)
                 else
                     x = (obj_doorA.x + 16)	
+				if vertical == 1
+				y = (obj_doorA.y + hallwaydirection * yoffset)
+				else
                 y = (obj_doorA.y - 14)
             }
             else if (targetDoor == "B") && instance_exists(obj_doorB)
@@ -202,6 +247,9 @@ with (obj_destroyable2_bigescape)
                     x = (obj_doorB.x + verticaloffset)
                 else
                     x = (obj_doorB.x + 16)
+				if vertical == 1
+				y = (obj_doorB.y + hallwaydirection * yoffset)
+				else					
                 y = (obj_doorB.y - 14)
             }
             else if (targetDoor == "C") && instance_exists(obj_doorC)
@@ -216,6 +264,9 @@ with (obj_destroyable2_bigescape)
                     x = (obj_doorC.x + verticaloffset)
                 else
                     x = (obj_doorC.x + 16)
+				if vertical == 1
+				y = (obj_doorC.y + hallwaydirection * yoffset)
+				else					
                 y = (obj_doorC.y - 14)
             }
             else if (targetDoor == "D") && instance_exists(obj_doorD)
@@ -230,6 +281,9 @@ with (obj_destroyable2_bigescape)
                     x = (obj_doorD.x + verticaloffset)
                 else
                     x = (obj_doorD.x + 16)
+				if vertical == 1
+				y = (obj_doorD.y + hallwaydirection * yoffset)
+				else					
                 y = (obj_doorD.y - 14)
             }
             else if (targetDoor == "E") && instance_exists(obj_doorE)
@@ -244,6 +298,9 @@ with (obj_destroyable2_bigescape)
                     x = (obj_doorE.x + verticaloffset)
                 else
                     x = (obj_doorE.x + 16)
+				if vertical == 1
+				y = (obj_doorE.y + hallwaydirection * yoffset)
+				else					
                 y = (obj_doorE.y - 14)
             }
             else if (targetDoor == "F") && instance_exists(obj_doorF)
@@ -258,6 +315,9 @@ with (obj_destroyable2_bigescape)
                     x = (obj_doorF.x + verticaloffset)
                 else
                     x = (obj_doorF.x + 16)
+				if vertical == 1
+				y = (obj_doorF.y + hallwaydirection * yoffset)
+				else					
                 y = (obj_doorF.y - 14)
             }
             else if (targetDoor == "G") && instance_exists(obj_doorG)
@@ -272,6 +332,9 @@ with (obj_destroyable2_bigescape)
                     x = (obj_doorG.x + verticaloffset)
                 else
                     x = (obj_doorG.x + 16)
+				if vertical == 1
+				y = (obj_doorG.y + hallwaydirection * yoffset)
+				else					
                 y = (obj_doorG.y - 14)
             }			
 			else if (targetDoor = "start")
@@ -304,7 +367,10 @@ with (obj_destroyable2_bigescape)
 						x = (door.x + verticaloffset)
 					else
 						x = (door.x + 16)
-					y = (door.y - 14)
+					if vertical == 1
+						y = (door.y + hallwaydirection * yoffset)
+					else						
+						y = (door.y - 14)
 				}
 				else
 					show_debug_message("Cannot find Subtitute Door")
@@ -323,62 +389,24 @@ with (obj_destroyable2_bigescape)
             sprite_index = spr_pizzaportalentrancestart
             image_index = 0
             ds_list_clear(global.baddieroom)
-            portal = 0
-            if (global.lapping == 0)
+			global.lapping = (global.lapping + 1)
+			if global.lapping >= 3
+				global.deathmode = true;
+            scr_soundeffect(6)
+			with obj_timeattack
+			{
+			alarm[1] = 60
+			global.taminutes = (global.storedtaminute);
+			global.taseconds = (global.storedtasecond);
+			}
+            with (obj_tv)
             {
-                with (instance_create(x, y, obj_smallnumber))
-                    number = "2000"
-                obj_player1.collectscore = ( obj_player1.collectscore + 2000)
-                scr_soundeffect(6)
-                with (obj_tv)
-                {
-                    showtext = 1
-                    message = "LAP 1!"
-                    alarm[0] = 100
-                }
-            }
-            if (global.lapping == 1)
-            {
-                with (instance_create(x, y, obj_smallnumber))
-                    number = "5000"
-                 obj_player1.collectscore = ( obj_player1.collectscore + 5000)
-                scr_soundeffect(6)
-                with (obj_tv)
-                {
-                    showtext = 1
-                    message = "LAP 2!"
-                    alarm[0] = 100
-                }
-            }
-            if (global.lapping == 2)
-            {
-                with (instance_create(x, y, obj_smallnumber))
-                    number = "6500"
-                 obj_player1.collectscore = ( obj_player1.collectscore + 6500)
-                scr_soundeffect(6)
-                with (obj_tv)
-                {
-                    showtext = 1
-                    message = "LAP 3!"
-                    alarm[0] = 100
-                }
-            }
-            if (global.lapping == 3)
-            {
-                with (instance_create(x, y, obj_smallnumber))
-                    number = "8500"
-                 obj_player1.collectscore = ( obj_player1.collectscore + 8500)
-                scr_soundeffect(6)
-                scr_soundeffect(127)
-                instance_create(x, y, obj_pizzaface)
-                with (obj_tv)
-                {
-                    showtext = 1
-                    message = "DEATH MODE!"
-                    alarm[0] = 100
-                }
-            }
-            global.lapping = (global.lapping + 1)
+				showtext = 1
+                message = "LAP "+ string(global.lapping)+" OUT OF 3!"
+				scr_queuemessage("PTV Racing Division announces that the local Pizzaman has done "+ string(global.lapping)+" out of 3 Laps!");
+                alarm[0] = 100
+            } 
+			portal = 0
         }
     }
     vertical = 0
@@ -421,6 +449,9 @@ if (object_index == obj_player2)
                     x = (obj_doorA.x + verticaloffset)
                 else
                     x = (obj_doorA.x + 16)	
+				if vertical == 1
+				y = (obj_doorA.y + hallwaydirection * yoffset)
+				else
                 y = (obj_doorA.y - 14)
             }
             else if (targetDoor == "B") && instance_exists(obj_doorB)
@@ -435,6 +466,9 @@ if (object_index == obj_player2)
                     x = (obj_doorB.x + verticaloffset)
                 else
                     x = (obj_doorB.x + 16)
+				if vertical == 1
+				y = (obj_doorB.y + hallwaydirection * yoffset)
+				else					
                 y = (obj_doorB.y - 14)
             }
             else if (targetDoor == "C") && instance_exists(obj_doorC)
@@ -449,6 +483,9 @@ if (object_index == obj_player2)
                     x = (obj_doorC.x + verticaloffset)
                 else
                     x = (obj_doorC.x + 16)
+				if vertical == 1
+				y = (obj_doorC.y + hallwaydirection * yoffset)
+				else					
                 y = (obj_doorC.y - 14)
             }
             else if (targetDoor == "D") && instance_exists(obj_doorD)
@@ -463,6 +500,9 @@ if (object_index == obj_player2)
                     x = (obj_doorD.x + verticaloffset)
                 else
                     x = (obj_doorD.x + 16)
+				if vertical == 1
+				y = (obj_doorD.y + hallwaydirection * yoffset)
+				else					
                 y = (obj_doorD.y - 14)
             }
             else if (targetDoor == "E") && instance_exists(obj_doorE)
@@ -477,6 +517,9 @@ if (object_index == obj_player2)
                     x = (obj_doorE.x + verticaloffset)
                 else
                     x = (obj_doorE.x + 16)
+				if vertical == 1
+				y = (obj_doorE.y + hallwaydirection * yoffset)
+				else					
                 y = (obj_doorE.y - 14)
             }
             else if (targetDoor == "F") && instance_exists(obj_doorF)
@@ -491,6 +534,9 @@ if (object_index == obj_player2)
                     x = (obj_doorF.x + verticaloffset)
                 else
                     x = (obj_doorF.x + 16)
+				if vertical == 1
+				y = (obj_doorF.y + hallwaydirection * yoffset)
+				else					
                 y = (obj_doorF.y - 14)
             }
             else if (targetDoor == "G") && instance_exists(obj_doorG)
@@ -505,6 +551,9 @@ if (object_index == obj_player2)
                     x = (obj_doorG.x + verticaloffset)
                 else
                     x = (obj_doorG.x + 16)
+				if vertical == 1
+				y = (obj_doorG.y + hallwaydirection * yoffset)
+				else					
                 y = (obj_doorG.y - 14)
             }						
 			else if (targetDoor = "start")
@@ -537,6 +586,9 @@ if (object_index == obj_player2)
 						x = (door.x + verticaloffset)
 					else
 						x = (door.x + 16)
+					if vertical == 1
+					y = (door.y + hallwaydirection * yoffset)
+					else						
 					y = (door.y - 14)
 				}
 				else
@@ -556,62 +608,24 @@ if (object_index == obj_player2)
             sprite_index = spr_pizzaportalentrancestart
             image_index = 0
             ds_list_clear(global.baddieroom)
-            portal = 0
-            if (global.lapping == 0)
+			global.lapping = (global.lapping + 1)
+			if global.lapping >= 3
+				global.deathmode = true;
+            scr_soundeffect(6)
+			with obj_timeattack
+			{
+			alarm[1] = 60
+			global.taminutes = (global.storedtaminute);
+			global.taseconds = (global.storedtasecond);
+			}
+            with (obj_tv)
             {
-                with (instance_create(x, y, obj_smallnumber))
-                    number = "2000"
-                 obj_player2.collectscore = (obj_player2.collectscore + 2000)
-                scr_soundeffect(6)
-                with (obj_tv)
-                {
-                    showtext = 1
-                    message = "LAP 1!"
-                    alarm[0] = 100
-                }
-            }
-            if (global.lapping == 1)
-            {
-                with (instance_create(x, y, obj_smallnumber))
-                    number = "5000"
-                obj_player2.collectscore = (obj_player2.collectscore + 5000)
-                scr_soundeffect(6)
-                with (obj_tv)
-                {
-                    showtext = 1
-                    message = "LAP 2!"
-                    alarm[0] = 100
-                }
-            }
-            if (global.lapping == 2)
-            {
-                with (instance_create(x, y, obj_smallnumber))
-                    number = "6500"
-                obj_player2.collectscore = (obj_player2.collectscore + 6500)
-                scr_soundeffect(6)
-                with (obj_tv)
-                {
-                    showtext = 1
-                    message = "LAP 3!"
-                    alarm[0] = 100
-                }
-            }
-            if (global.lapping == 3)
-            {
-                with (instance_create(x, y, obj_smallnumber))
-                    number = "8500"
-                obj_player2.collectscore = (obj_player2.collectscore + 8500)
-                scr_soundeffect(6)
-                scr_soundeffect(127)
-                instance_create(x, y, obj_pizzaface)
-                with (obj_tv)
-                {
-                    showtext = 1
-                    message = "DEATH MODE!"
-                    alarm[0] = 100
-                }
-            }
-            global.lapping = (global.lapping + 1)
+				showtext = 1
+                message = "LAP "+ string(global.lapping)+" OUT OF 3!"
+				scr_queuemessage("PTV Racing Division announces that the local Pizzaman has done "+ string(global.lapping)+" out of 3 Laps!");
+                alarm[0] = 100
+            } 
+			portal = 0
         }
     }
     vertical = 0
