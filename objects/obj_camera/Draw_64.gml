@@ -186,6 +186,10 @@ if (player.state != 55)
 		//Add more face huds
         if (shoving == 1)
             draw_sprite_ext_camera(spr_pepinoHUD_shove, image_index, 125, 100, 1, 1, 0, c_white, alpha)
+        else if (player.sprite_index == spr_playerPZ_knightthunder)
+            draw_sprite_ext_camera(spr_playerPZ_thunderHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
+        else if (player.sprite_index != spr_playerPZ_knightstart && (player.state == 24 || player.state == 18))
+            draw_sprite_ext_camera(spr_playerPZ_knightHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)			
 		else if player.sprite_index == player.spr_hurt || player.sprite_index == player.spr_hurtjump
 			draw_sprite_ext_camera(spr_playerPZ_hurtHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)			
 		else if player.sprite_index == player.spr_bombpepend
