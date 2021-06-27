@@ -8431,6 +8431,14 @@
             }
         },
         {
+            "Key": "50af87d6-b21c-4db3-a303-e08234a9fe6f",
+            "Value": {
+                "id": "93b5a39d-ab56-400b-9d1e-8ed9c0a918c7",
+                "resourcePath": "sprites\\spr_knightpep_ground\\spr_knightpep_ground.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "50c1260c-9a1b-42bb-bae9-223c38530706",
             "Value": {
                 "id": "5b46a631-2a6a-4b54-8377-3b2e667f635c",
@@ -11591,6 +11599,14 @@
             }
         },
         {
+            "Key": "6f9ad7dc-cb68-4923-b2bb-15430f5c11b6",
+            "Value": {
+                "id": "3fbdd67a-0c8a-4fb4-b8ad-eb69022ec68a",
+                "resourcePath": "sprites\\spr_playerPZ_knightgroundpound\\spr_playerPZ_knightgroundpound.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6fc37045-f4a3-4bed-865c-c323aff42d02",
             "Value": {
                 "id": "769a7640-a000-437e-8c59-3ae0b3a5db10",
@@ -12011,6 +12027,14 @@
             "Value": {
                 "id": "618c49cd-ac4f-429f-8bae-f420be139bda",
                 "resourcePath": "sprites\\spr_tvrankstatus\\spr_tvrankstatus.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "73c08b97-b705-4630-b177-c22e712aad28",
+            "Value": {
+                "id": "79a70788-3728-419e-8fc7-fd911608b101",
+                "resourcePath": "sprites\\spr_snick_robot_groundpound\\spr_snick_robot_groundpound.yy",
                 "resourceType": "GMSprite"
             }
         },

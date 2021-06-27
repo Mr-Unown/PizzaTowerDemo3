@@ -1,15 +1,15 @@
+var _movespeed = movespeed + knightslidespeed
 if ((!place_meeting(x, (y + 1), obj_railh)) && (!place_meeting(x, (y + 1), obj_railh2)))
-    hsp = (move * movespeed)
+    hsp = (xscale * _movespeed)
 else if place_meeting(x, (y + 1), obj_railh)
-    hsp = ((move * movespeed) - 5)
+    hsp = ((xscale * _movespeed) - 5)
 else if place_meeting(x, (y + 1), obj_railh2)
-    hsp = ((move * movespeed) + 5)
+    hsp = ((xscale * _movespeed) + 5)
 alarm[5] = 2
 alarm[7] = 60
 hurted = 1
-hsp = (xscale * movespeed)
 if (sprite_index == spr_knightpepdownslope)
-    movespeed = 15
+    movespeed = clamp(movespeed,15,movespeed + 100)
 if (!scr_slope())
     sprite_index = spr_knightpepcharge
 if scr_slope()
@@ -72,6 +72,19 @@ if (scr_solid((x + sign(hsp)), y) && (!place_meeting((x + sign(hsp)), y, obj_des
             sprite_index = spr_playerN_knightarmor
         }
     }
+	else if (character == "PZ")
+    {
+		#region Pizzelle
+				for (var i = 0; i < sprite_get_number(spr_playerPZ_knightdebris) - 1; ++i) 
+				{
+					with (instance_create(x, y, obj_knightdebris))
+					{
+						image_index = i
+						sprite_index = spr_playerPZ_knightdebris
+					}
+				}
+				#endregion
+    }			
     else
     {
         repeat (6)

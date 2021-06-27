@@ -47,7 +47,7 @@ if (player.state != 55)
             draw_sprite_ext_camera(spr_pepinoHUD_shove, image_index, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.sprite_index == spr_knightpep_thunder)
             draw_sprite_ext_camera(spr_pepinoHUDthunder, -1, 125, 100, 1, 1, 0, c_white, alpha)
-        else if (player.sprite_index != spr_knightpep_start && (player.state == 24 || player.state == 18))
+        else if (player.sprite_index != spr_knightpep_start && (player.state == 24 || player.state == states.knightpepattack || player.state == 18))
             draw_sprite_ext_camera(spr_pepinoHUDknight, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.sprite_index == spr_bombpep_end)
             draw_sprite_ext_camera(spr_pepinoHUDbombend, -1, 125, 100, 1, 1, 0, c_white, alpha)
@@ -90,7 +90,7 @@ if (player.state != 55)
             draw_sprite_ext_camera(spr_noiseHUD_shove, image_index, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.sprite_index == player.spr_knightpepthunder)
             draw_sprite_ext_camera(spr_noiseHUD_thunder, -1, 125, 100, 1, 1, 0, c_white, alpha)
-        else if (player.sprite_index != player.spr_knightpepstart && (player.state == 24 || player.state == 18))
+        else if (player.sprite_index != player.spr_knightpepstart && (player.state == 24 || player.state == states.knightpepattack  || player.state == 18))
             draw_sprite_ext_camera(spr_noiseHUD_knight, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.sprite_index == player.spr_bombpepend)
             draw_sprite_ext_camera(spr_noiseHUD_bomb, -1, 125, 100, 1, 1, 0, c_white, alpha)
@@ -176,7 +176,7 @@ if (player.state != 55)
             draw_sprite_ext_camera(spr_pepinoHUD_shove, image_index, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.sprite_index == spr_snick_thunder)
             draw_sprite_ext_camera(spr_snickHUD_thunder, -1, 125, 60, 1, 1, 0, c_white, alpha)
-        else if (player.sprite_index != spr_snick_robotsword && (player.state == 24 || player.state == 18))
+        else if (player.sprite_index != spr_snick_robotsword && (player.state == 24 || player.state == states.knightpepattack || player.state == 18))
             draw_sprite_ext_camera(spr_snickHUD_robo, -1, 125, 60, 1, 1, 0, c_white, alpha)
         else
             draw_sprite_ext_camera(spr_snickHUD_normal, -1, 125, 60, 1, 1, 0, c_white, alpha)
@@ -188,7 +188,7 @@ if (player.state != 55)
             draw_sprite_ext_camera(spr_pepinoHUD_shove, image_index, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.sprite_index == spr_playerPZ_knightthunder)
             draw_sprite_ext_camera(spr_playerPZ_thunderHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
-        else if (player.sprite_index != spr_playerPZ_knightstart && (player.state == 24 || player.state == 18))
+        else if (player.sprite_index != spr_playerPZ_knightstart && (player.state == 24  || player.state == states.knightpepattack || player.state == 18))
             draw_sprite_ext_camera(spr_playerPZ_knightHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)			
 		else if player.sprite_index == player.spr_hurt || player.sprite_index == player.spr_hurtjump
 			draw_sprite_ext_camera(spr_playerPZ_hurtHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)			
@@ -492,6 +492,7 @@ if (player.state != 55)
 	#endregion
 	
 	#endregion
+	
 }
 draw_set_blend_mode(0)
 

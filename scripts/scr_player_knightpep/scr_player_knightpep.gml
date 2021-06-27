@@ -13,7 +13,6 @@ if (sprite_index == spr_knightpepwalk || sprite_index = spr_knightpepland || spr
 }
 else
 {
-	   
     if ((!place_meeting(x, (y + 1), obj_railh)) && (!place_meeting(x, (y + 1), obj_railh2)))
         hsp = (move * movespeed)
     else if place_meeting(x, (y + 1), obj_railh)
@@ -107,6 +106,22 @@ if (move != 0)
 }
 else
     movespeed = 0
+//Groundpound
+if !grounded && key_down2
+{	
+	knightmaxy = y;	
+	image_index = 0
+	sprite_index = spr_knightpepattack;
+	vsp = -5;
+	knightpoundbuffer = 0;
+	state = states.knightpepattack
+	with (instance_create(x,y,obj_heataftereffectspawner))
+	{
+		image_index = other.image_index
+		sprite_index = other.sprite_index
+		image_xscale = other.image_xscale				
+	}	
+}
 if (move != 0 && hsp != 0)
 {
     if (movespeed < 1)
@@ -120,6 +135,11 @@ else
     image_speed = 0.35
 if (floor(image_index) == 4 && sprite_index == spr_knightpepstart)
     instance_create(x, (y - 600), obj_thunder)
+if floor(image_index) >= image_number - 1 && sprite_index = spr_knightpepstart
+{
+	image_index = image_number - 1
+	image_speed = 0
+}
 if (floor(image_index) == (image_number - 1) && sprite_index == spr_knightpepthunder)
     sprite_index = spr_knightpepidle
 if ((!instance_exists(obj_cloudeffect)) && grounded && move != 0 && (floor(image_index) == 4 || floor(image_index) == 10))
@@ -128,7 +148,8 @@ if (move != 0 && (floor(image_index) == 3 || floor(image_index) == 8) && steppy 
     steppy = 1
 if (move != 0 && floor(image_index) != 3 && floor(image_index) != 8)
     steppy = 0
-if sprite_index = spr_knightpepstart || sprite_index = spr_knightpepthunder {
+if sprite_index = spr_knightpepstart || sprite_index = spr_knightpepthunder 
+{
 	global.pausecombotime = true		
 	obj_tv.alarm[1] = 75		
 }
