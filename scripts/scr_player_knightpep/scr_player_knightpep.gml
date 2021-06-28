@@ -115,6 +115,7 @@ if !grounded && key_down2
 	vsp = -5;
 	knightpoundbuffer = 0;
 	state = states.knightpepattack
+	flash = true
 	with (instance_create(x,y,obj_heataftereffectspawner))
 	{
 		image_index = other.image_index
@@ -133,8 +134,33 @@ if (move != 0 && hsp != 0)
 }
 else
     image_speed = 0.35
+//Thunder Check
 if (floor(image_index) == 4 && sprite_index == spr_knightpepstart)
-    instance_create(x, (y - 600), obj_thunder)
+{
+	if instance_exists(obj_thunder)
+	{
+		with obj_thunder
+		{
+			if playerid != other.id
+			{
+				with other.id
+				{
+					with instance_create(x, (y - 600), obj_thunder)
+					{
+						playerid = other.id;
+					}					
+				}
+			}
+		}
+	}
+	else
+	{
+		with instance_create(x, (y - 600), obj_thunder)
+		{
+			playerid = other.id;
+		}
+	}
+}
 if floor(image_index) >= image_number - 1 && sprite_index = spr_knightpepstart
 {
 	image_index = image_number - 1
