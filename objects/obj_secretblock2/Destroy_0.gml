@@ -15,7 +15,7 @@ if (ds_list_find_index(global.saveroom, id) == -1)
 	instance_create(x, y, obj_collect)
     repeat (8)
     {
-        with (instance_create((x + 16), y, obj_secretdebris))
+        with (instance_create((x + 16), y + 16, obj_secretdebris))
         {
             sprite_index = spr_secretdebris
             tile_dataid = other.datas

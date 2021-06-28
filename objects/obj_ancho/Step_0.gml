@@ -56,7 +56,7 @@ if (x != player.x && state != 96 && y == ystart) && sprite_index != scaredspr
 			sprite_index = spr_ancho_chargestart
         }
     }
-    else if (player.x > (x - 150) && player.x < (x + 150) && y <= (player.y + 632) && y >= (player.y - 50)) && global.heatmeter >= 4
+    else if (player.x > (x - 150) && player.x < (x + 150) && y <= (player.y + 50) && y >= (player.y - 632)) && global.heatmeter >= 4
     {
 		#region Heat attack
         if (state == 102) && heatreset <= 0

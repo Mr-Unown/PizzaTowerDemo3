@@ -207,7 +207,7 @@ if (((!grounded) && scr_solid(x + hsp,y) && (!place_meeting((x + hsp), y, obj_de
     wallspeed = clamp(movespeed,12, 24)
     state = 17
 }
-else if (scr_solid((x + sign(hsp)), y) && !(scr_slope() && !scr_solid(x + sign(hsp),y - 2)) && (!place_meeting((x + sign(hsp)), y, obj_metalblock)) && (!place_meeting((x + sign(hsp)), y, obj_destructibles))) 
+else if (grounded && scr_solid((x + sign(hsp)), y) && (!scr_slope() && scr_solid(x + sign(hsp),y - 2)) && (!place_meeting((x + sign(hsp)), y, obj_metalblock)) && (!place_meeting((x + sign(hsp)), y, obj_destructibles))) 
 {
 	jetpacking = false	
     if (fightball == 0)
