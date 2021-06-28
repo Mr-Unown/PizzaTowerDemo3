@@ -104,7 +104,7 @@ switch character {
 	spr_knightpepdownslope = spr_knightpep_downslope
 	spr_knightpepstart =  spr_knightpep_start
 	spr_knightpepcharge = spr_knightpep_charge
-	spr_knightpepattack = spr_knightpep_ground //knight groundpound
+	spr_knightpepattack = spr_knightpep_groundpound //knight groundpound
 	spr_bodyslamstart = spr_player_bodyslamstart
 	spr_bodyslamfall = spr_player_bodyslamfall
 	spr_bodyslamland = spr_player_bodyslamland
@@ -314,7 +314,7 @@ switch character {
 	spr_knightpepdownslope = spr_playerN_knightdownslope
 	spr_knightpepstart = spr_playerN_knightsword
 	spr_knightpepcharge = spr_playerN_knightslide
-	spr_knightpepattack = spr_knightpep_ground //knight groundpound	
+	spr_knightpepattack = spr_knightpep_groundpound //knight groundpound	
 	spr_bodyslamstart = spr_playerN_bodyslamstart
 	spr_bodyslamfall = spr_playerN_bodyslam
 	spr_bodyslamland = spr_playerN_bodyslamland
@@ -718,7 +718,7 @@ switch character {
     spr_knightpepdownslope = spr_knightpep_downslope
     spr_knightpepstart = spr_knightpep_start
     spr_knightpepcharge = spr_knightpep_charge
-	spr_knightpepattack = spr_knightpep_ground //knight groundpound	
+	spr_knightpepattack = spr_knightpep_groundpound //knight groundpound	
     spr_bodyslamstart = spr_playerV_bodyslamprep
     spr_bodyslamfall = spr_playerV_bodyslam
     spr_bodyslamland = spr_playerV_bodyslamland
@@ -925,7 +925,7 @@ switch character {
     spr_knightpepdownslope = spr_playerN_knightdownslope
     spr_knightpepstart = spr_playerN_knightsword
     spr_knightpepcharge = spr_playerN_knightslide
-	spr_knightpepattack = spr_knightpep_ground //knight groundpound	
+	spr_knightpepattack = spr_knightpep_groundpound //knight groundpound	
     spr_bodyslamstart = spr_playerP_bodyslamstart
     spr_bodyslamfall = spr_playerP_bodyslam
     spr_bodyslamland = spr_playerP_bodyslamland
@@ -1135,7 +1135,7 @@ switch character {
 	spr_knightpepdownslope = spr_playerN_knightdownslope
 	spr_knightpepstart = spr_playerN_knightsword
 	spr_knightpepcharge = spr_playerN_knightslide
-	spr_knightpepattack = spr_knightpep_ground //knight groundpound	
+	spr_knightpepattack = spr_knightpep_groundpound //knight groundpound	
 	spr_bodyslamstart = spr_playerN_bodyslamstart
 	spr_bodyslamfall = spr_playerN_bodyslam
 	spr_bodyslamland = spr_playerN_bodyslamland

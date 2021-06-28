@@ -116,8 +116,9 @@ if scr_slope() && vsp > 0
     }
 	scr_soundeffect(15)
 	knightpoundbuffer = 0
-	var maxyy = 5
-	knightslidespeed = clamp((y - knightmaxy),0,maxyy);
+	var maxyy = knightmaxy + 200
+	if state != states.knightpepslopes
+	knightslidespeed += clamp((y - knightmaxy),0,maxyy);
     with (instance_place(x, (y + 1), obj_slope))
         other.xscale = (-sign(image_xscale))
     state = 18

@@ -37,7 +37,7 @@ if (selected == 0)
         alarm[2] = 5
     }
 }
-var lay_id = layer_get_id("Backgrounds_2")
+var lay_id = layer_get_id("Backgrounds_mainmenulight")
 var back_id = layer_background_get_id(lay_id)
 layer_background_index(back_id, optionselected)
 

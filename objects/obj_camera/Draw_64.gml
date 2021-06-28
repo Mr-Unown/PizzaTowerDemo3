@@ -420,8 +420,6 @@ if (player.state != 55)
 		}
 		#endregion
 		break;
-
-
 	}
 	#region Stats
 	#region Key
@@ -492,7 +490,6 @@ if (player.state != 55)
 	#endregion
 	
 	#endregion
-	
 }
 draw_set_blend_mode(0)
 
