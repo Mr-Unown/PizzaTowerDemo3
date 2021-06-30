@@ -2,6 +2,6 @@ fadealpha = 0
 fadein = 0
 gotonoplayer = 0
 depth = -9999
-flushtextures = false
+global.flushtextures = false
 
 

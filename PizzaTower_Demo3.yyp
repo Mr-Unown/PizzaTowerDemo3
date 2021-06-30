@@ -5559,6 +5559,14 @@
             }
         },
         {
+            "Key": "365481a0-ec54-4498-9123-83c598543630",
+            "Value": {
+                "id": "2ae8084c-3bbe-4a4e-a532-fa1291dc627e",
+                "resourcePath": "sprites\\spr_pizzaloadbar\\spr_pizzaloadbar.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "365acfd5-3667-4675-8515-3762e8a18d48",
             "Value": {
                 "id": "a76e5c90-1d2d-466d-ad22-492abc0f6799",

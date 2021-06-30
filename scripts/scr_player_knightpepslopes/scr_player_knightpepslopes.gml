@@ -1,4 +1,4 @@
-var _movespeed = movespeed + clamp(round(knightslidespeed/32),0,8)
+var _movespeed = movespeed + clamp(round(knightslidespeed/32),0,7)
 if ((!place_meeting(x, (y + 1), obj_railh)) && (!place_meeting(x, (y + 1), obj_railh2)))
     hsp = (xscale * _movespeed)
 else if place_meeting(x, (y + 1), obj_railh)

@@ -296,6 +296,7 @@ if (((key_down && grounded) || (scr_solid(x, (y - 3)) && grounded)) && character
     image_index = 0
     idle = 0
 }
+//Movespeed
 if (move != 0)
 {
     if (movespeed < 6)
@@ -307,6 +308,8 @@ else
     movespeed = 0
 if (movespeed > 6)
     movespeed -= 0.1
+	
+	
 momemtum = 0
 if (move != 0)
 {
@@ -537,7 +540,7 @@ if key_taunt2
 	}
 	else
 	{
-		image_index = random_range(0, sprite_get_number(spr_taunt))
+		image_index = irandom_range(0, sprite_get_number(spr_taunt))
 		sprite_index = spr_taunt
 	}
     with (instance_create(x, y, obj_taunteffect))

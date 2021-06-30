@@ -124,6 +124,35 @@ if scr_slope() && vsp > 0
     state = 18
     sprite_index = spr_knightpepdownslope
 }
+//Ice
+if (place_meeting(x,y+1,obj_iceblock) || place_meeting(x,y+1,obj_iceblockminiboss) || place_meeting(x,y+1,obj_bigiceblock)) && vsp > 0
+{
+    with (obj_baddie)
+    {
+        if (grounded && shake != 1 && state != 109 && markedfordeath != 1 && point_in_rectangle(x, y, __view_get(0, 0), __view_get(1, 0), (__view_get(0, 0) + __view_get(2, 0)), (__view_get(1, 0) + __view_get(3, 0))))
+        {
+			state = 106
+			if stunned < 60
+				stunned = 60
+			image_xscale *= -1
+            vsp = -11
+            hsp = 0
+			momentum = 0
+        }
+    }
+    with (obj_camera)
+    {
+        shake_mag = 10
+        shake_mag_acc = (30 / room_speed)
+    }
+	scr_soundeffect(15)
+	knightpoundbuffer = 0
+	knightslidespeed += clamp((y - knightmaxy)/2,0,knightmaxy + 200);
+    with (instance_place(x, (y + 1), obj_slope))
+        other.xscale = (-sign(image_xscale))
+    state = 18
+    sprite_index = spr_knightpepdownslope
+}
 #endregion
 
 image_speed = 0.35

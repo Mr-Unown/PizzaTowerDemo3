@@ -58,7 +58,7 @@ if drawtext = true
 
 
 }
-if selected = true && ini_read_string("Ranks", string(level), "none") != "none"
+if selected = true && ini_read_string("Ranks", string(level), "none") != "none" && string(level) != "snickchallenge"
 {
 	draw_sprite_ext(spr_attackselect,selection,x,y,1,1,0,c_white,1)
 }

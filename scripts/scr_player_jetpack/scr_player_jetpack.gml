@@ -133,7 +133,7 @@ if (scr_solid((x + sign(hsp)), y) && !(scr_slope() && !scr_solid(x + sign(hsp),y
         vsp = -3
         mach2 = 0
         image_index = 0
-        instance_create((x + 10), (y + 10), obj_bumpeffect)
+        instance_create((x + 10 * xscale), (y + 10 ), obj_bumpeffect)
     }
     else if (fightball == 1)
     {
@@ -166,7 +166,7 @@ if (scr_solid((x + sign(hsp)), y) && !(scr_slope() && !scr_solid(x + sign(hsp),y
             vsp = -3
             mach2 = 0
             image_index = 0
-            instance_create((x + 10), (y + 10), obj_bumpeffect)
+             instance_create((x + 10 * xscale), (y + 10 ), obj_bumpeffect)
         }
         fightball = 0
     }
@@ -189,7 +189,7 @@ if key_taunt2 && jetpacking = true
 	}
 	else
 	{
-		image_index = random_range(0, sprite_get_number(spr_taunt))
+		image_index = irandom_range(0, sprite_get_number(spr_taunt))
 		sprite_index = spr_taunt
 	}
     with (instance_create(x, y, obj_taunteffect))

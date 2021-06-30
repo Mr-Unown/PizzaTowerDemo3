@@ -60,7 +60,10 @@ if (fightball == 1 && global.coop == 1)
 }
 if (movespeed < 24 && move == xscale)
 {
-    movespeed += 0.1
+	if (character == "N" && pogo = false)
+        movespeed += 0.2
+    else
+        movespeed += 0.1
     if ((!instance_exists(crazyruneffectid)) && grounded)
     {
         with (instance_create(x, y, obj_crazyruneffect))
@@ -239,7 +242,7 @@ else if (grounded && scr_solid((x + sign(hsp)), y) && (!scr_slope() && scr_solid
         vsp = -3
         mach2 = 0
         image_index = 0
-        instance_create((x + 10), (y + 10), obj_bumpeffect)
+         instance_create((x + 10 * xscale), (y + 10 ), obj_bumpeffect)
     }
     else if (fightball == 1)
     {
@@ -272,7 +275,7 @@ else if (grounded && scr_solid((x + sign(hsp)), y) && (!scr_slope() && scr_solid
             vsp = -3
             mach2 = 0
             image_index = 0
-            instance_create((x + 10), (y + 10), obj_bumpeffect)
+             instance_create((x + 10 * xscale), (y + 10 ), obj_bumpeffect)
         }
         fightball = 0
     }
@@ -305,7 +308,7 @@ if (key_taunt2 && fightball == 0)
 	}
 	else
 	{
-		image_index = random_range(0, sprite_get_number(spr_taunt))
+		image_index = irandom_range(0, sprite_get_number(spr_taunt))
 		sprite_index = spr_taunt
 	}
     with (instance_create(x, y, obj_taunteffect))

@@ -18,7 +18,7 @@ if place_meeting(x, (y - 1), obj_player1)
 {
     with (obj_player1)
     {
-        if (cutscene == 0) && state != states.frozen
+        if (cutscene == 0) && state != states.frozen && state != states.knightpepattack
         {
 		
             if (state == 24)
@@ -34,7 +34,7 @@ if place_meeting(x, (y - 1), obj_player2)
 {
     with (obj_player2)
     {
-        if (cutscene == 0) && state != states.frozen
+        if (cutscene == 0) && state != states.frozen && state != states.knightpepattack
         {
 		
             if (state == 24)
