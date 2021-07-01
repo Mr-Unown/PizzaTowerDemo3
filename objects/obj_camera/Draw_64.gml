@@ -488,7 +488,15 @@ if (player.state != 55)
 		draw_text(832, 512, string_hash_to_newline(((string(global.bonusminutes) + string(tiny)) + string(global.bonusseconds) + string(tinier) + string(global.bonusmiliseconds))))
 	}
 	#endregion
-	
+	#region Murder
+	if (player.murderammo >= 1)
+	{
+		for (var i = 0; i < player.murderammo; ++i)
+		{
+			draw_sprite_ext(spr_shieldbackupNEW, -1, 78 + (16*i), 181, 1, 1, 0, c_white, alpha)
+		}
+	}	
+	#endregion
 	#endregion
 }
 draw_set_blend_mode(0)

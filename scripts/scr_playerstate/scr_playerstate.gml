@@ -453,8 +453,12 @@ if in_water = true
     }	
 	
 }
-
-
+//Murder
+if combothreshold >= 10
+{
+	murderammo += 1;
+	combothreshold = 0;
+}
 //Palette
 if surface_exists(surf_pallete) && (paletteselect >= sprite_get_width(spr_palette) - 1)
 	custompalette = true

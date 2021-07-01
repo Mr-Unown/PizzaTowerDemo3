@@ -8,6 +8,11 @@ knightmaxy = 0;
 knightslidespeed = 0;
 //Global Time Events
 global.timeevent = 0 //1 = Xmas 2 = April 3 = Halloween
+
+//Funny Murder
+murderammo = 0;
+combothreshold = 0;
+
 //Funny Peter
 global.draw_peter = false;
 global.deathmode = false;

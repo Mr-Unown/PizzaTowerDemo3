@@ -43,7 +43,12 @@ if (ds_list_find_index(global.saveroom, id) == -1)
 	if global.newhud = false
     obj_tv.image_index = random_range(0, 4)
     global.combo = (global.combo + 1)
-    
+    if (grabbedby == 1)
+		obj_player1.combothreshold = (obj_player1.combothreshold + 1)	
+	else if grabbedby == 2
+		obj_player2.combothreshold = (obj_player2.combothreshold + 1)	
+	else
+		obj_player1.combothreshold = (obj_player1.combothreshold + 1)	    
    
         if (global.stylethreshold <= 0)
         {
