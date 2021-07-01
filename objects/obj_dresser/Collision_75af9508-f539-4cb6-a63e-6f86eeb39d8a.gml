@@ -1,9 +1,10 @@
+/// @description Activate Changing room
 if other.key_up2 && !instance_exists(obj_palettechanger)
 {
-	var _player = other.id
+	_player = other.id
 	with instance_create(room_width/2,room_height/2,obj_palettechanger)	
 	{
-		player = _player
+		player = other._player
 	}	
 	other.state = states.changing
 	other.visible = false

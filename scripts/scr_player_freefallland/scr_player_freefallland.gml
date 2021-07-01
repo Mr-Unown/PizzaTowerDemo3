@@ -14,7 +14,7 @@ alarm[4] = 14
 vsp = 0
 hsp = 0
 
-//TODO: make this work
+//TODO: IDK
 if key_jump2 && floor(image_index) >= 2 && floor(image_index) != image_number - 1
 {
 	facehurt = 0
