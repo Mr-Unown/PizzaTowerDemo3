@@ -2,47 +2,62 @@ switch room
 {
 	#region Ancient
 	case ancient_1:
-		targetdarkness = 0.5;
+		can_draw = true;
+		targetdarkness = 0.75;
 		break;
 	case ancient_2:
-		targetdarkness = 0.5;
+		can_draw = true;
+		targetdarkness = 0.75;
 		break;		
 	case ancient_3:
-		targetdarkness = 0.5;
+		can_draw = true;
+		targetdarkness = 0.75;
 		break;	
 	case ancient_4:
-		targetdarkness = 0.5;
+		can_draw = true;
+		targetdarkness = 0.75;
 		break;	
 	case ancient_5:
-		targetdarkness = 0.5;
+		can_draw = true;	
+		targetdarkness = 0.75;
 		break;	
 	case ancient_6:
-		targetdarkness = 0.5;
+		can_draw = true;
+		targetdarkness = 0.75;
 		break;	
 	case ancient_7:
-		targetdarkness = 0.5;
+		can_draw = true;
+		targetdarkness = 0.75;
 		break;	
 	case ancient_8:
-		targetdarkness = 0.5;
+		can_draw = true;
+		targetdarkness = 0.75;
 		break;	
 	case ancient_9:
-		targetdarkness = 0.5;
+		can_draw = true;
+		targetdarkness = 0.75;
 		break;	
 	case ancient_10:
-		targetdarkness = clamp(clamp(camera_get_view_y(view_camera[0]),768,3264)/2000,0.5,0.75);
+		can_draw = true;
+		var _dark = clamp(camera_get_view_y(view_camera[0]),864,2756)/2756
+		targetdarkness = clamp(_dark * 0.85,0.75,0.85)
 		break;	
 	case ancient_10_1:
-		targetdarkness = clamp(clamp(camera_get_view_y(view_camera[0]),768,3264)/2000,0.5,0.75);
+		can_draw = true;
+		var _dark = clamp(camera_get_view_y(view_camera[0]),864,2756)/2756
+		targetdarkness = clamp(_dark * 0.85,0.75,0.85)
 		break;			
 	case ancient_11:
-		targetdarkness = 0.5;
+		can_draw = true;
+		targetdarkness = 0.75;
 		break;				
 	#endregion	
 	default:
 		targetdarkness = 0;
 		darkness = 0
+		can_draw = false;
 		break;
 }
 //Change Darkness
-darkness = approach(darkness,targetdarkness,0.005)
+darkness = approach(darkness,targetdarkness,0.015)
 

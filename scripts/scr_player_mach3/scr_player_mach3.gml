@@ -60,7 +60,10 @@ if (fightball == 1 && global.coop == 1)
 }
 if (movespeed < 24 && move == xscale)
 {
-    movespeed += 0.1
+	if (character == "N" && pogo = false)
+        movespeed += 0.2
+    else
+        movespeed += 0.1
     if ((!instance_exists(crazyruneffectid)) && grounded)
     {
         with (instance_create(x, y, obj_crazyruneffect))
@@ -201,13 +204,15 @@ if (key_down && fightball == 0 && (!place_meeting(x, y, obj_dashpad)))
     state = 37
     vsp = 10
 }
-if (((!grounded) && (scr_solid(x + hsp , y) || place_meeting((x + hsp), y, obj_solid)) && (!place_meeting((x + hsp), y, obj_destructibles)) && (!place_meeting((x + hsp), y, obj_metalblock)) && (!place_meeting((x + sign(hsp)), y, obj_slope))) || (grounded && place_meeting((x + hsp), (y - 32), obj_solid) && (!place_meeting((x + hsp), y, obj_destructibles)) && (!place_meeting((x + hsp), y, obj_metalblock)) && place_meeting(x, (y + 1), obj_slope)))
+//Hitwall
+if (((!grounded) && scr_solid(x + hsp,y) && (!place_meeting((x + hsp), y, obj_destructibles)) && (!place_meeting((x + sign(hsp)), y, obj_slope))) || (grounded && (scr_solid(x + hsp,y - 2) && !place_meeting(x + sign(hsp),y,obj_slope)) && (!place_meeting((x + hsp), y, obj_destructibles)) && (!place_meeting((x + hsp), y, obj_metalblock)) && scr_slope() ) )
 {
     wallspeed = clamp(movespeed,12, 24)
     state = 17
 }
-if (scr_solid((x + 1), y) && xscale == 1 && (!scr_slope()) && (!place_meeting((x + sign(hsp)), y, obj_slope)) && (!place_meeting((x + sign(hsp)), y, obj_metalblock)) && (!place_meeting((x + sign(hsp)), y, obj_destructibles)) && (grounded || fightball == 1))
+else if (grounded && scr_solid((x + sign(hsp)), y) && (!scr_slope() && scr_solid(x + sign(hsp),y - 2)) && (!place_meeting((x + sign(hsp)), y, obj_metalblock)) && (!place_meeting((x + sign(hsp)), y, obj_destructibles))) 
 {
+	jetpacking = false	
     if (fightball == 0)
     {
         sprite_index = spr_hitwall
@@ -233,11 +238,11 @@ if (scr_solid((x + 1), y) && xscale == 1 && (!scr_slope()) && (!place_meeting((x
         }
         flash = 0
         state = 72
-        hsp = -2.5
+        hsp = -2.5 * xscale
         vsp = -3
         mach2 = 0
         image_index = 0
-        instance_create((x + 10), (y + 10), obj_bumpeffect)
+         instance_create((x + 10 * xscale), (y + 10 ), obj_bumpeffect)
     }
     else if (fightball == 1)
     {
@@ -266,84 +271,16 @@ if (scr_solid((x + 1), y) && xscale == 1 && (!scr_slope()) && (!place_meeting((x
             }
             flash = 0
             state = 72
-            hsp = -2.5
+            hsp = -2.5 * xscale
             vsp = -3
             mach2 = 0
             image_index = 0
-            instance_create((x + 10), (y + 10), obj_bumpeffect)
+             instance_create((x + 10 * xscale), (y + 10 ), obj_bumpeffect)
         }
         fightball = 0
     }
 }
-if (scr_solid((x - 1), y) && xscale == -1 && (!scr_slope()) && (!place_meeting((x + sign(hsp)), y, obj_slope)) && (!place_meeting((x + sign(hsp)), y, obj_metalblock)) && (!place_meeting((x + sign(hsp)), y, obj_destructibles)) && (grounded || fightball == 1))
-{
-    if (fightball == 0)
-    {
-        sprite_index = spr_hitwall
-        scr_soundeffect(15)
-        scr_soundeffect(16)
-        with (obj_camera)
-        {
-            shake_mag = 20
-            shake_mag_acc = (40 / room_speed)
-        }
-        hsp = 0
-        image_speed = 0.35
-        with (obj_baddie)
-        {
-            if point_in_rectangle(x, y, __view_get(0, 0), __view_get(1, 0), (__view_get(0, 0) + __view_get(2, 0)), (__view_get(1, 0) + __view_get(3, 0)))
-            {
-                stun = 1
-                alarm[0] = 200
-                ministun = 0
-                vsp = -5
-                hsp = 0
-            }
-        }
-        flash = 0
-        state = 72
-        hsp = 2.5
-        vsp = -3
-        mach2 = 0
-        image_index = 0
-        instance_create((x - 10), (y + 10), obj_bumpeffect)
-    }
-    else if (fightball == 1)
-    {
-        with (obj_player)
-        {
-            sprite_index = spr_hitwall
-            scr_soundeffect(15)
-            scr_soundeffect(16)
-            with (obj_camera)
-            {
-                shake_mag = 20
-                shake_mag_acc = (40 / room_speed)
-            }
-            hsp = 0
-            image_speed = 0.35
-            with (obj_baddie)
-            {
-                if point_in_rectangle(x, y, __view_get(0, 0), __view_get(1, 0), (__view_get(0, 0) + __view_get(2, 0)), (__view_get(1, 0) + __view_get(3, 0)))
-                {
-                    stun = 1
-                    alarm[0] = 200
-                    ministun = 0
-                    vsp = -5
-                    hsp = 0
-                }
-            }
-            flash = 0
-            state = 72
-            hsp = -2.5
-            vsp = -3
-            mach2 = 0
-            image_index = 0
-            instance_create((x + 10), (y + 10), obj_bumpeffect)
-        }
-        fightball = 0
-    }
-}
+
 if ((!instance_exists(dashcloudid)) && grounded)
 {
     with (instance_create(x, y, obj_superdashcloud))
@@ -371,7 +308,7 @@ if (key_taunt2 && fightball == 0)
 	}
 	else
 	{
-		image_index = random_range(0, sprite_get_number(spr_taunt))
+		image_index = irandom_range(0, sprite_get_number(spr_taunt))
 		sprite_index = spr_taunt
 	}
     with (instance_create(x, y, obj_taunteffect))

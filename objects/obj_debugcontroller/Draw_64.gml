@@ -2,7 +2,7 @@
 
 if active = true
 {
-	depth = -9999
+	
 	draw_set_color(c_black)
 	draw_set_alpha(0.5)
 	draw_rectangle(view_get_xport(0), view_get_yport(0), view_get_wport(0), view_get_hport(0), 0)
@@ -27,3 +27,16 @@ if active = true
 	//if invalidbuffer > 0
 	//	draw_text(431, 220, "INVALID ROOM!!")
 }
+
+
+
+/* Gerome Loadbar
+if showloadbar = true
+{
+	global.moppingframes += 0.35
+	draw_sprite_ext(spr_pizzaloadbar,global.moppingframes,864,448,1,1,0,c_white,1) //not really gerome now
+	if floor(global.moppingframes) >= sprite_get_number(spr_pizzaloadbar) - 1
+	{
+		showloadbar = false
+	}
+}*/

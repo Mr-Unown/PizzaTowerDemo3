@@ -1,4 +1,4 @@
-if (obj_player1.state == 27 && obj_player1.sprite_index != obj_player1.spr_bombpepend && (place_meeting((x + 1), y, obj_player1) || place_meeting((x - 1), y, obj_player1) || place_meeting(x, (y - 1), obj_player1) || place_meeting(x, (y + 1), obj_player1)))
+if (obj_player1.state == 27 && obj_player1.sprite_index != obj_player1.spr_bombpepthrow && obj_player1.sprite_index != obj_player1.spr_bombpepend && (place_meeting((x + 1), y, obj_player1) || place_meeting((x - 1), y, obj_player1) || place_meeting(x, (y - 1), obj_player1) || place_meeting(x, (y + 1), obj_player1)))
 {
     with (obj_player1)
     {
@@ -11,7 +11,7 @@ if (obj_player1.state == 27 && obj_player1.sprite_index != obj_player1.spr_bombp
         bombpeptimer = 0
     }
 }
-if (obj_player2.state == 27 && obj_player2.sprite_index != obj_player2.spr_bombpepend && (place_meeting((x + 1), y, obj_player2) || place_meeting((x - 1), y, obj_player2) || place_meeting(x, (y - 1), obj_player2) || place_meeting(x, (y + 1), obj_player2)))
+if (obj_player2.state == 27 && obj_player1.sprite_index != obj_player1.spr_bombpepthrow && obj_player2.sprite_index != obj_player2.spr_bombpepend && (place_meeting((x + 1), y, obj_player2) || place_meeting((x - 1), y, obj_player2) || place_meeting(x, (y - 1), obj_player2) || place_meeting(x, (y + 1), obj_player2)))
 {
     with (obj_player2)
     {

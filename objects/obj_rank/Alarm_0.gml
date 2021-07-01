@@ -10,10 +10,12 @@
 }
 else
 {*/
-	while flushtextures = true
+	while global.flushtextures = true
 	{
 		draw_texture_flush();
-		flushtextures = false
+		sprite_flush_multi(global.prefetcharray);
+		global.flushtextures = false
+		show_debug_message("Flushed Textures");
 	}
 	global.timeattack = 0;
 	global.levelname = "none"

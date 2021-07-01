@@ -34,7 +34,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
         }
     }
 
-    if (string_letters(roomname) == "hubroom" || room = cowboytask || string_letters(roomname) == "Titlescreen")
+    if (string_letters(roomname) == "hubroom" || room == Tutorialtrap || room = cowboytask || string_letters(roomname) == "Titlescreen")
     {
         if (!audio_is_playing(mu_hub))
         {

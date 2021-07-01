@@ -124,7 +124,7 @@ switch state
         break
 	case states.changing:
 		scr_player_changing()
-		break;
+		break;		
 	case states.pipe:
         scr_player_pipe()
         break
@@ -449,7 +449,7 @@ if in_water = true
     if (bubble >= 99)
     {
 		with instance_create(x,y,obj_waterbubble)
-			depth = other.depth - 25
+			depth = other.depth - 5
     }	
 	
 }
@@ -518,4 +518,9 @@ if (state == 55 && y > (room_height * 2))
 		_backtohub = backtohubroom
 	}
     room = _backtohub
+}
+//Knight ground pond
+if state != states.knightpep && state != states.knightpepslopes && state != states.knightpepattack
+{
+	knightpoundbuffer = 0;
 }

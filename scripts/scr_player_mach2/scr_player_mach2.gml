@@ -86,7 +86,12 @@ if (machhitAnim == 0)
 if grounded
 {
     if (movespeed < 12)
-        movespeed += 0.1
+	{
+		if character == "N" && pogo = false
+			movespeed += 0.2
+		else
+			movespeed += 0.1
+	}
     if (movespeed >= 12) && character != "D"
     {
         movespeed = 12
@@ -110,16 +115,17 @@ if (key_down && (!place_meeting(x, y, obj_dashpad)))
     if (character == "V")
         sprite_index = spr_playerV_divekickgetup
 }
-if (((!grounded) && place_meeting((x + hsp), y, obj_solid) && (!place_meeting((x + hsp), y, obj_destructibles)) && (!place_meeting((x + sign(hsp)), y, obj_slope))) || (grounded && place_meeting((x + hsp), (y - 64), obj_solid) && (!place_meeting((x + hsp), y, obj_destructibles)) && (!place_meeting((x + hsp), y, obj_metalblock)) && place_meeting(x, (y + 1), obj_slope)))
+if (((!grounded) && scr_solid(x + hsp,y) && (!place_meeting((x + hsp), y, obj_destructibles)) && (!place_meeting((x + sign(hsp)), y, obj_slope))) || (grounded && (scr_solid(x + hsp,y - 2) && !place_meeting(x + sign(hsp),y,obj_slope)) && (!place_meeting((x + hsp), y, obj_destructibles))  && scr_slope() ) )
 {
     wallspeed = movespeed
     state = 17
 }
-if (grounded && (!scr_slope()) && place_meeting((x + hsp), y, obj_solid) && (!place_meeting((x + hsp), y, obj_destructibles)) && (!place_meeting((x + sign(hsp)), y, obj_slope)))
+else if (grounded && scr_solid((x + sign(hsp)), y) && (!scr_slope() && scr_solid(x + sign(hsp),y - 2)) && (!place_meeting((x + sign(hsp)), y, obj_destructibles))) 
 {
     movespeed = 0
     state = 0
 }
+
 if ((!instance_exists(dashcloudid)) && grounded)
 {
     with (instance_create(x, y, obj_dashcloud))
@@ -169,7 +175,7 @@ if key_taunt2
 	}
 	else
 	{
-		image_index = random_range(0, sprite_get_number(spr_taunt))
+		image_index = irandom_range(0, sprite_get_number(spr_taunt))
 		sprite_index = spr_taunt
 	}
     with (instance_create(x, y, obj_taunteffect))

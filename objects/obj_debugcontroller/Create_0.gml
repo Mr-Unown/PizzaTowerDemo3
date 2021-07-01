@@ -1,4 +1,4 @@
-
+depth = -9999
 
 active = false
 input = ""
@@ -38,3 +38,6 @@ commands[arrayi++] = "debugmode (true/false)"
 
 // command functions
 showcollisions = false
+
+//Unrelated
+//showloadbar = false;

@@ -2,10 +2,12 @@ if instance_exists(obj_pausefadeout)
     instance_destroy(obj_pausefadeout)
 if (fadealpha > 1)
 {
-	while flushtextures = true
+	while global.flushtextures = true
 	{
 		draw_texture_flush();
-		flushtextures = false
+		sprite_flush_multi(global.prefetcharray);
+		global.flushtextures = false
+		show_debug_message("Flushed Textures");
 	}
 	global.geromeopen = false;
     fadein = 1

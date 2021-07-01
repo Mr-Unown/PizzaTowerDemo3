@@ -20,10 +20,20 @@ if (character != "S")
 	}
     if (character == "N")
     {
-        if (movespeed < 8 && grounded)
-            movespeed += 0.5
-        else if (!grounded)
-            movespeed = 8
+		if pogo == true
+		{
+			if (movespeed < 8 && grounded)
+				movespeed += 0.5
+			else if (!grounded)
+				movespeed = 8
+		}
+		else
+		{
+			if (movespeed < 10 && grounded)
+				movespeed += 0.5
+			else if (!grounded)
+				movespeed = 10
+		}
     }
     if ((!key_jump2) && jumpstop == 0 && vsp < 0.5 && stompAnim == 0)
     {

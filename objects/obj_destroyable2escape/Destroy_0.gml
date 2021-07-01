@@ -4,7 +4,7 @@ if (ds_list_find_index(global.saveroom, id) == -1)
     {
         repeat (6)
         {
-            with (instance_create((x + 16), y, obj_pizzadebris))
+            with (instance_create((x + 16), y + 16, obj_pizzadebris))
                 sprite_index = spr_debrisescape
         }
         instance_create(x, y, obj_collect)

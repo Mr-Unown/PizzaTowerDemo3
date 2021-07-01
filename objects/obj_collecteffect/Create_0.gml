@@ -7,6 +7,11 @@ choosed = false;
 drawx = xstart - _cam_x
 drawy = ystart - _cam_y
 
+//Cooleffect
+drawxscale = 1
+drawyscale = 1
+biggening = true;
+
 
 if choosed = false
 {
