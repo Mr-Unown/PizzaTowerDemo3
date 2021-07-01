@@ -112,7 +112,7 @@ if can_gotolevel = true && (((floor(obj_player1.image_index) >= (obj_player1.ima
         if (!instance_exists(obj_fadeout))
 			with instance_create(x, y, obj_fadeout)
 			{
-				flushtextures = true
+				global.flushtextures = true
 			}
     }
 	#endregion

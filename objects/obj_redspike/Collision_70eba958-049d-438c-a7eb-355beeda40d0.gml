@@ -7,6 +7,7 @@ with (other)
         {
             if (character == "P")
             {
+				#region Peppino
                 with (instance_create(x, y, obj_knightdebris))
                 {
                     image_index = 0
@@ -37,9 +38,12 @@ with (other)
                     image_index = 5
                     sprite_index = spr_knightdebris
                 }
+				#endregion
+				
             }
             else if (character == "N")
             {
+				#region Noise
                 with (instance_create(x, y, obj_knightdebris))
                 {
                     image_index = 0
@@ -60,7 +64,21 @@ with (other)
                     image_index = 3
                     sprite_index = spr_playerN_knightarmor
                 }
+				#endregion
             }
+            else if (character == "PZ")
+            {
+				#region Pizzelle
+				for (var i = 0; i < sprite_get_number(spr_playerPZ_knightdebris) - 1; ++i) 
+				{
+					with (instance_create(x, y, obj_knightdebris))
+					{
+						image_index = i
+						sprite_index = spr_playerPZ_knightdebris
+					}
+				}
+				#endregion
+            }			
             else
             {
                 repeat (6)

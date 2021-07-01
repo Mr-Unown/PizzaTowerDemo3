@@ -9,8 +9,11 @@ if (movespeed >= 0)
 {
     if (character == "P" || character = "S" || character = "PZ" || character = "V")
         movespeed -= 0.4
-    else
-        movespeed -= 0.2
+    else if pogo = false
+        movespeed -= 0.185
+	else
+		movespeed -= 0.2
+	
 }
 if (sprite_index == spr_machslidestart && floor(image_index) == (image_number - 1))
     sprite_index = spr_machslide

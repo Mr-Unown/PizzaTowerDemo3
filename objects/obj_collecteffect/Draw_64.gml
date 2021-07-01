@@ -1,6 +1,6 @@
 if global.hudmode == false
 {
-draw_sprite_ext(sprite_index,-1,drawx,drawy,1,1,0,c_white,image_alpha)
+draw_sprite_ext(sprite_index,-1,drawx,drawy,drawxscale,drawyscale,0,c_white,image_alpha)
 }
 if global.newhud = false
 {
@@ -13,8 +13,9 @@ else
 	targety = 100 + obj_camera.newhudyoffset;
 }
 var angle = point_direction(drawx, drawy, targetx, targety);
-drawx += lengthdir_x(32, angle);
-drawy += lengthdir_y(32, angle);
+drawx += lengthdir_x(16, angle);
+drawy += lengthdir_y(16, angle);
+
 //Tv
 if point_in_circle(drawx,drawy,targetx,targety,32) 
 {

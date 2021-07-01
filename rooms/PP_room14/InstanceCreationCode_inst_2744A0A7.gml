@@ -1,6 +1,7 @@
 targetRoom = hub_room1
 if instance_exists(obj_endlevelfade)
     instance_destroy(obj_endlevelfade);
+	
 with obj_discordrpc
 {
 	alarm[0] = -1;

@@ -3,8 +3,16 @@ global.storedtaminute = 0;
 global.storedtasecond = 0;
 breakdancebuffer = 50
 collectscore = 0
+knightpoundbuffer = 0;
+knightmaxy = 0;
+knightslidespeed = 0;
 //Global Time Events
 global.timeevent = 0 //1 = Xmas 2 = April 3 = Halloween
+
+//Funny Murder
+murderammo = 0;
+combothreshold = 0;
+
 //Funny Peter
 global.draw_peter = false;
 global.deathmode = false;

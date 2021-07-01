@@ -181,7 +181,7 @@ if (sprite_index == spr_taunt)
             scr_soundeffect(sfx_taunt)
             taunttimer = 20
             state = 51
-            image_index = random_range(0, sprite_get_number(spr_taunt))
+            image_index = irandom_range(0, sprite_get_number(spr_taunt))
             sprite_index = spr_taunt
             tauntstoredstate = 0
             with (instance_create(x, y, obj_taunteffect))

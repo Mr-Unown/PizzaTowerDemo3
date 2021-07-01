@@ -36,7 +36,7 @@ with (obj_player1)
                 instance_destroy()
         }
     }
-	if (state = states.knightpep || state = states.knightpepattack)
+	if (state = states.knightpep)
 	{
 		if place_meeting(x + sign(hsp), y, obj_destructibles)
         {
@@ -44,6 +44,14 @@ with (obj_player1)
                 instance_destroy()
         }
 	}
+	if (state = states.knightpepattack)
+	{
+		if place_meeting(x + hsp, y + vsp, obj_destructibles)
+        {
+            with (instance_place(x + hsp, y + vsp, obj_destructibles))
+                instance_destroy()
+        }
+	}	
 	if (state = states.slipnslide)
 	{
 		if place_meeting(x + sign(hsp), y, obj_destructibles)
@@ -289,7 +297,7 @@ with (obj_player2)
                 instance_destroy()
         }
     }
-	if (state = states.knightpep || state = states.knightpepattack)
+	if (state = states.knightpep )
 	{
 		if place_meeting(x + sign(hsp), y, obj_destructibles)
         {
@@ -297,6 +305,14 @@ with (obj_player2)
                 instance_destroy()
         }
 	}
+	if (state = states.knightpepattack)
+	{
+		if place_meeting(x + hsp, y + vsp, obj_destructibles)
+        {
+            with (instance_place(x + hsp, y + vsp, obj_destructibles))
+                instance_destroy()
+        }
+	}		
 	if (state = states.slipnslide)
 	{
 		if place_meeting(x + sign(hsp), y, obj_destructibles)

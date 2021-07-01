@@ -103,7 +103,7 @@ if (sprite_index == spr_pizzaball_stun && stunned <= 0 && floor(image_index) == 
 }
 if (sprite_index == spr_pizzaball_walk && grounded)
     sprite_index = spr_pizzaball_idle
-if (obj_player.state == 77 && grounded)
+if (obj_player.state == states.freefallland && grounded)
 {
     if point_in_rectangle(x, y, __view_get(0, 0), __view_get(1, 0), (__view_get(0, 0) + __view_get(2, 0)), (__view_get(1, 0) + __view_get(3, 0)))
     {

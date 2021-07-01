@@ -615,6 +615,14 @@
             }
         },
         {
+            "Key": "04e49c8a-4945-44ee-9307-f3aefa6802a2",
+            "Value": {
+                "id": "3b9315e8-ee61-49ea-b244-fde1abfae83e",
+                "resourcePath": "sprites\\spr_playerPZ_knightslope\\spr_playerPZ_knightslope.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "04e94982-ef30-41ab-90db-b4ddfc977cd4",
             "Value": {
                 "id": "e271cff8-416b-4503-b099-db1d770c389e",
@@ -1460,6 +1468,14 @@
                 "id": "02498a6c-59f8-491e-86ab-63d0810d2533",
                 "resourcePath": "rooms\\entrance_1\\entrance_1.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "0d6f594f-5b0d-4f15-88ae-d0a919e441ea",
+            "Value": {
+                "id": "fb08f6e8-769a-4255-86c0-d9ccceb8e02f",
+                "resourcePath": "sprites\\spr_playerPZ_knightidle\\spr_playerPZ_knightidle.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -5159,6 +5175,14 @@
             }
         },
         {
+            "Key": "33203195-b84a-4a1d-affb-07e77666e604",
+            "Value": {
+                "id": "abdab7dd-b419-488b-afaa-34e9cd8af071",
+                "resourcePath": "sprites\\spr_playerPZ_knightstart\\spr_playerPZ_knightstart.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "33516d19-f55c-47ad-9ca9-2e81e5906072",
             "Value": {
                 "id": "f36f4773-2274-42ee-9113-24a7026f9ba3",
@@ -5531,6 +5555,14 @@
             "Value": {
                 "id": "a7b23020-5d79-49be-853a-0e6d04787860",
                 "resourcePath": "sprites\\spr_playerN_grinding\\spr_playerN_grinding.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "365481a0-ec54-4498-9123-83c598543630",
+            "Value": {
+                "id": "2ae8084c-3bbe-4a4e-a532-fa1291dc627e",
+                "resourcePath": "sprites\\spr_pizzaloadbar\\spr_pizzaloadbar.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -8403,6 +8435,14 @@
             "Value": {
                 "id": "9e65e1c1-fae7-40e1-bcd8-fe5b1004de57",
                 "resourcePath": "sprites\\spr_railh\\spr_railh.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "50af87d6-b21c-4db3-a303-e08234a9fe6f",
+            "Value": {
+                "id": "93b5a39d-ab56-400b-9d1e-8ed9c0a918c7",
+                "resourcePath": "sprites\\spr_knightpep_groundpound\\spr_knightpep_groundpound.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -11567,6 +11607,14 @@
             }
         },
         {
+            "Key": "6f9ad7dc-cb68-4923-b2bb-15430f5c11b6",
+            "Value": {
+                "id": "3fbdd67a-0c8a-4fb4-b8ad-eb69022ec68a",
+                "resourcePath": "sprites\\spr_playerPZ_knightgroundpound\\spr_playerPZ_knightgroundpound.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6fc37045-f4a3-4bed-865c-c323aff42d02",
             "Value": {
                 "id": "769a7640-a000-437e-8c59-3ae0b3a5db10",
@@ -11987,6 +12035,14 @@
             "Value": {
                 "id": "618c49cd-ac4f-429f-8bae-f420be139bda",
                 "resourcePath": "sprites\\spr_tvrankstatus\\spr_tvrankstatus.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "73c08b97-b705-4630-b177-c22e712aad28",
+            "Value": {
+                "id": "79a70788-3728-419e-8fc7-fd911608b101",
+                "resourcePath": "sprites\\spr_snick_robot_groundpound\\spr_snick_robot_groundpound.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -13711,6 +13767,14 @@
             }
         },
         {
+            "Key": "83739f32-9c13-4ade-bca8-53cc20f8cb80",
+            "Value": {
+                "id": "62810a8b-42aa-49c7-a3ff-ad95299c4cdd",
+                "resourcePath": "sprites\\spr_playerPZ_knightdebris\\spr_playerPZ_knightdebris.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "837c00af-19f7-40a8-920f-806d4b76badd",
             "Value": {
                 "id": "7f6a96ae-2c93-4726-a0b1-2b104ea091ad",
@@ -14091,6 +14155,14 @@
             "Value": {
                 "id": "5a3a8ff0-bc05-4051-af3e-2ead1eca7c65",
                 "resourcePath": "sprites\\spr_tv_idle\\spr_tv_idle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8873a040-c60e-4ea2-b3d6-0f3f7633c56f",
+            "Value": {
+                "id": "ab944c21-fd06-4239-892c-36626d8e7a4f",
+                "resourcePath": "sprites\\spr_playerPZ_knightslide\\spr_playerPZ_knightslide.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -15084,6 +15156,14 @@
                 "id": "f2211821-f15b-4099-9ab8-fed921bd9457",
                 "resourcePath": "objects\\obj_supertaunteffect\\obj_supertaunteffect.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "918145c0-21e1-4cb5-8883-f19e4ed73bf9",
+            "Value": {
+                "id": "dd4f17da-c5cf-427a-b10c-93bdc5706421",
+                "resourcePath": "sprites\\spr_playerPZ_knightjump\\spr_playerPZ_knightjump.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -16607,6 +16687,14 @@
             }
         },
         {
+            "Key": "9f13c6b5-9504-4bed-be83-9d8022815a05",
+            "Value": {
+                "id": "56600933-371b-45d4-8b2f-b8977748b205",
+                "resourcePath": "sprites\\spr_playerPZ_knightthunder\\spr_playerPZ_knightthunder.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9f162530-8a1e-4074-bdd5-2573b8b66a45",
             "Value": {
                 "id": "83e209ca-7993-4cf7-900c-f4605e5c280c",
@@ -17487,6 +17575,14 @@
             }
         },
         {
+            "Key": "a86ce83b-00a5-45df-87f9-cd8489099650",
+            "Value": {
+                "id": "245a8921-da28-411b-af0d-76eab6b70f51",
+                "resourcePath": "sprites\\spr_playerPZ_knightfall\\spr_playerPZ_knightfall.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a88c7ac3-568a-4856-be98-75a75ae36d30",
             "Value": {
                 "id": "a319a996-0ee3-4f55-9da5-32f83276b361",
@@ -17763,6 +17859,14 @@
             "Value": {
                 "id": "fc30cd9e-611c-419b-91c5-c77f44b14e1a",
                 "resourcePath": "sprites\\spr_file1\\spr_file1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "aab18549-93eb-4207-8e25-d56644a437fc",
+            "Value": {
+                "id": "fb661661-9ac5-4481-bf30-34b09531b452",
+                "resourcePath": "sprites\\spr_playerPZ_knightHUD\\spr_playerPZ_knightHUD.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -18395,6 +18499,14 @@
             "Value": {
                 "id": "6e837682-4418-441c-b3af-689a77461679",
                 "resourcePath": "sprites\\spr_selectbackground_light\\spr_selectbackground_light.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b0d63815-8579-4bf5-a4bc-0862d1cbee23",
+            "Value": {
+                "id": "743c9071-096a-4c1d-b817-4683709aa224",
+                "resourcePath": "sprites\\spr_playerPZ_knightjumpstart\\spr_playerPZ_knightjumpstart.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -24103,6 +24215,14 @@
             }
         },
         {
+            "Key": "e4ddc71a-d573-4fe8-a084-8befd708eaa5",
+            "Value": {
+                "id": "64f82931-f593-4fad-9989-2349770b036a",
+                "resourcePath": "sprites\\spr_playerPZ_knightland\\spr_playerPZ_knightland.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e50824b3-4a13-4d17-accd-7810981a217b",
             "Value": {
                 "id": "dcde1fc2-cc4d-419c-88b4-b17156f829f2",
@@ -26319,6 +26439,14 @@
             }
         },
         {
+            "Key": "fb775eb6-c39a-453e-951b-395c010e858c",
+            "Value": {
+                "id": "5a433308-f612-43f7-8045-b460fdcc5547",
+                "resourcePath": "sprites\\spr_playerPZ_thunderHUD\\spr_playerPZ_thunderHUD.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "fba766a0-d65e-41e5-8789-9fcec0ecd016",
             "Value": {
                 "id": "45c68713-b942-43d5-ad3b-087881483194",
@@ -26340,6 +26468,14 @@
                 "id": "2ddd12bc-04ad-4827-8b1a-26e56db34aa0",
                 "resourcePath": "objects\\obj_rancher\\obj_rancher.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "fbd731b2-a1b9-4742-87c5-456e5c382a49",
+            "Value": {
+                "id": "c6431b9c-daa5-4c57-b6cc-3b66d2dadf80",
+                "resourcePath": "sprites\\spr_playerPZ_knightmove\\spr_playerPZ_knightmove.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

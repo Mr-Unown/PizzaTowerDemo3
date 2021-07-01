@@ -44,10 +44,12 @@ else if (fadein == 1)
     fadealpha -= 0.1
 if fadein == 1
 {
-	while flushtextures = true
+	while global.flushtextures = true
 	{
 		draw_texture_flush();
-		flushtextures = false
+		sprite_flush_multi(global.prefetcharray);
+		global.flushtextures = false
+		show_debug_message("Flushed Textures");
 	}
 	if fadealpha < 0
 		instance_destroy()

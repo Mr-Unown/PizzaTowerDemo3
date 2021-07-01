@@ -379,7 +379,7 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
         {
 			with instance_create(x,y,obj_pausefadeout)
 			{
-				flushtextures = true;
+				global.flushtextures = true;
 				fadein = 1;
 				fadealpha = 1;
 			}
@@ -409,7 +409,7 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
         {
 			with instance_create(x,y,obj_pausefadeout)
 			{
-				flushtextures = true;
+				global.flushtextures = true;
 				fadein = 1;
 				fadealpha = 1;
 			}
