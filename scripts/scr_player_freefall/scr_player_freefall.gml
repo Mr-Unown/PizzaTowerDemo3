@@ -1,5 +1,6 @@
 landAnim = 1
-vsp = 15
+vsp += 0.15;
+vsp = clamp(vsp,15,20);
 move = (key_left + key_right)
 if (!grounded)
 {
@@ -83,7 +84,7 @@ if (grounded && (!input_buffer_jump < 8) && (!place_meeting(x, (y + 1), obj_dest
 	}	
     freefallstart = 0
 }
-if (key_attack2) && character = "PZ" && !grounded && freefallsmash > 10
+/*if (key_attack2) && character = "PZ" && !grounded && freefallsmash > 10
 {		
         if (move != 0)
             xscale = move
@@ -96,5 +97,16 @@ if (key_attack2) && character = "PZ" && !grounded && freefallsmash > 10
         sprite_index = spr_mach2jump
         with (instance_create(x, y, obj_jumpdust))
             image_xscale = other.xscale
-}	
+}*/
 image_speed = 0.35
+
+if instance_exists(obj_superslameffect) && key_attack && (character != "N" && pogo = false)
+{
+vsp = -2
+movespeed = 10
+state = states.mach2
+flash = 1
+sprite_index = spr_mach2jump
+instance_create(x, y, obj_jumpdust)
+scr_soundeffect(sfx_rollgetup)
+}
