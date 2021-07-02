@@ -205,6 +205,8 @@ switch character {
 	spr_supertaunt2 = spr_player_supertaunt2
 	spr_supertaunt3 = spr_player_supertaunt3 
 	spr_supertaunt4 = spr_player_supertaunt4 
+	//Murder
+	spr_murder = spr_player_revolvershoot
     paletteselect = 1
 	}
 	#endregion
@@ -419,6 +421,8 @@ switch character {
 	spr_supertaunt2 = spr_playerN_supertaunt2
 	spr_supertaunt3 = spr_playerN_supertaunt3 
 	spr_supertaunt4 = spr_playerN_supertaunt4 	
+	//Murder
+	spr_murder = spr_playerN_bombkick
 	//Palette
 	if pogo = false
 	{
@@ -609,7 +613,9 @@ switch character {
 	spr_supertaunt1 = spr_player_supertaunt1 
 	spr_supertaunt2 = spr_player_supertaunt2
 	spr_supertaunt3 = spr_player_supertaunt3 
-	spr_supertaunt4 = spr_player_supertaunt4 	
+	spr_supertaunt4 = spr_player_supertaunt4 
+	//Murder
+	spr_murder = spr_player_revolvershoot	
 	paletteselect = 0
 	}	
 	#endregion
@@ -819,6 +825,8 @@ switch character {
 	spr_supertaunt2 = spr_player_supertaunt2
 	spr_supertaunt3 = spr_player_supertaunt3 
 	spr_supertaunt4 = spr_player_supertaunt4 	
+	//Murder
+	spr_murder = spr_playerV_revolvershoot	
     paletteselect = 0
 	}	
 	#endregion
@@ -1029,6 +1037,8 @@ switch character {
 	spr_supertaunt2 = spr_player_supertaunt2
 	spr_supertaunt3 = spr_player_supertaunt3 
 	spr_supertaunt4 = spr_player_supertaunt4 	
+	//Murder
+	spr_murder = spr_player_revolvershoot	
     paletteselect = 0
 	}	
 	#endregion
@@ -1240,6 +1250,8 @@ switch character {
 	spr_supertaunt2 = spr_player_supertaunt2
 	spr_supertaunt3 = spr_player_supertaunt3 
 	spr_supertaunt4 = spr_player_supertaunt4 	
+	//Murder
+	spr_murder = spr_player_revolvershoot	
     paletteselect = 0
 	}	
 	#endregion
@@ -1449,6 +1461,8 @@ switch character {
 	spr_supertaunt2 = spr_playerN_supertaunt2
 	spr_supertaunt3 = spr_playerN_supertaunt3 
 	spr_supertaunt4 = spr_playerN_supertaunt4 	
+	//Murder
+	spr_murder = spr_player_revolvershoot	
     paletteselect = 1
 	}
 	#endregion

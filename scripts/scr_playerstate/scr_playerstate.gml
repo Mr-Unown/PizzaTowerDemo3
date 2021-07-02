@@ -105,7 +105,8 @@ enum states
 	wallcling = 120,
 	breakdance = 121,
 	frozen = 122,
-	changing = 123
+	changing = 123,
+	murder = 124
 
 } 
 //I made some changes to it so that we can know at a glance what number it gets converted to.
@@ -116,7 +117,7 @@ switch state
     case 0:
         scr_player_normal()
         break
-    case 122:
+    case states.frozen:
         scr_player_frozen()
         break		
     case 109:
@@ -125,6 +126,9 @@ switch state
 	case states.changing:
 		scr_player_changing()
 		break;		
+    case states.murder:
+        scr_player_murder()
+        break				
 	case states.pipe:
         scr_player_pipe()
         break
@@ -459,6 +463,11 @@ if combothreshold >= 10
 	murderammo += 1;
 	combothreshold = 0;
 }
+if global.combotime <= 0
+{
+	combothreshold = 0;
+}
+
 //Palette
 if surface_exists(surf_pallete) && (paletteselect >= sprite_get_width(spr_palette) - 1)
 	custompalette = true

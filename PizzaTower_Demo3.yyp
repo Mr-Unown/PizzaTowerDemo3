@@ -1471,6 +1471,14 @@
             }
         },
         {
+            "Key": "0d54fa81-b872-4f86-9005-9f57e0029d1c",
+            "Value": {
+                "id": "e4a99abf-ec8a-4494-8db6-08219a0a4bd8",
+                "resourcePath": "objects\\obj_revolverbullet\\obj_revolverbullet.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0d6f594f-5b0d-4f15-88ae-d0a919e441ea",
             "Value": {
                 "id": "fb08f6e8-769a-4255-86c0-d9ccceb8e02f",
@@ -4475,6 +4483,14 @@
             "Value": {
                 "id": "8e8e19af-ca04-4c4c-ba9d-db497e171cd1",
                 "resourcePath": "sprites\\spr_playerN_machpunch2\\spr_playerN_machpunch2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2ce98948-969d-41b9-9cf4-7e0d3bccd5bf",
+            "Value": {
+                "id": "53feb98a-f439-42d5-99e6-88d31fe01d04",
+                "resourcePath": "sprites\\spr_playerN_noisebombslide\\spr_playerN_noisebombslide.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -9935,6 +9951,14 @@
             }
         },
         {
+            "Key": "5e3cc87b-4a46-4327-a80c-e794e9bf2dc9",
+            "Value": {
+                "id": "34a01935-abfd-4ac1-ae63-5e37bb7e4efc",
+                "resourcePath": "objects\\obj_noisekickbomb\\obj_noisekickbomb.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5e3ced29-a793-4a0c-b824-c1034ebc13bd",
             "Value": {
                 "id": "ec509506-bcbd-4c56-9b28-d43b1882b9b7",
@@ -11404,6 +11428,14 @@
                 "id": "b5befb9e-7c92-4f1c-8054-8c84b63667ea",
                 "resourcePath": "sounds\\sfx_superjumprelease\\sfx_superjumprelease.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "6d30efc2-71cc-474f-9abc-f5f82306be26",
+            "Value": {
+                "id": "0692d5e2-89a2-4e89-af93-a533738d99fb",
+                "resourcePath": "scripts\\scr_player_murder\\scr_player_murder.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -22375,6 +22407,14 @@
             }
         },
         {
+            "Key": "d3bb48b7-9b88-4437-8d01-3bdd10ac2777",
+            "Value": {
+                "id": "1d71cbf7-a83e-49d0-a920-3328f4aadf0c",
+                "resourcePath": "sprites\\spr_playerN_bombkick\\spr_playerN_bombkick.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d3bba70a-a79e-48f0-8787-943d6c784ccb",
             "Value": {
                 "id": "4c35d053-3c73-4003-b115-10307b36a7ba",
@@ -22603,6 +22643,14 @@
             "Value": {
                 "id": "7bc4665c-a8d8-47bf-8a7c-d23f4db1ec90",
                 "resourcePath": "sprites\\spr_pizzagoblin_stomped\\spr_pizzagoblin_stomped.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d6687b92-48b2-40a8-b943-b66af5bc9455",
+            "Value": {
+                "id": "60d8c4dc-c1e4-4c18-b23f-3b7b640b6812",
+                "resourcePath": "sprites\\spr_player_revolvershoot\\spr_player_revolvershoot.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -27085,6 +27133,7 @@
         "45ba5e56-1ee0-433f-8f69-f1fc6172aa43",
         "95922115-5c4a-4394-8b8e-4f94028640e7",
         "67f24a2f-894d-46f6-9fe4-60ee480f3d7b",
+        "6d30efc2-71cc-474f-9abc-f5f82306be26",
         "f577b556-a881-4fc4-b8ee-f9aa11944f3e",
         "fa54c751-c7de-49b9-b12c-931507dbd8fe",
         "274792e0-4c41-4502-b416-096e5fff32e7",

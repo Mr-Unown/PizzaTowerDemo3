@@ -58,6 +58,8 @@ if ((!pause) && (!instance_exists(obj_fadeout)))
             //global.peppermode = 0
 			obj_player1.supertauntcharged = true;
 			obj_player2.supertauntcharged = true;
+			obj_player1.murderammo += 1;
+			obj_player2.murderammo += 1;			
         }
         if keyboard_check_pressed(vk_f11)
 		{
