@@ -78,6 +78,7 @@ switch character {
     spr_idle6 = spr_player_handgesture4
     spr_piledriver = spr_player_piledriver
     spr_piledriverland = spr_player_piledriverland
+	spr_piledriverjump = spr_player_jugglebash;
     spr_charge = spr_player_charge
     spr_mach3jump = spr_player_mach3jump
     spr_mach4 = spr_player_mach4
@@ -186,7 +187,7 @@ switch character {
 	spr_jetpackcrazy = spr_player_jetpackcrazy
 	spr_golfwin = spr_player_levelcomplete
 	spr_grabcancel = spr_player_grabcancel
-	spr_grabcancelair = spr_player_grabcancelair
+	spr_grabcancelair = spr_player_grabcancel
 	spr_parry1 = spr_player_parry1
 	spr_parry2 = spr_player_parry2
 	spr_parry3 = spr_player_parry3
@@ -196,6 +197,8 @@ switch character {
 	spr_breakdanceattack2start = spr_player_breakdance_bumstart
 	spr_breakdanceattack2 = spr_player_breakdance_bum
 	spr_breakdanceattack2ground = spr_player_breakdance_bumground
+	//Grab bump
+	spr_grabbump = spr_player_suplexbump;	
 	//Dashpad
 	spr_mach3dashpad = spr_player_dashpad
 	//Grinding
@@ -293,6 +296,7 @@ switch character {
 	spr_idle6 = spr_playerN_idlemask
 	spr_piledriver = spr_playerN_piledriver
 	spr_piledriverland = spr_playerN_piledriverland
+	spr_piledriverjump = spr_playerN_piledriverjump;
 	spr_charge = spr_playerN_charge
 	spr_mach3jump = spr_playerN_mach3jump
 	spr_mach4 = spr_playerN_mach3
@@ -401,8 +405,8 @@ switch character {
 	spr_jetpack = spr_playerN_jetpack
 	spr_jetpackcrazy = spr_playerN_crazyrun
 	spr_golfwin = spr_playerN_victory
-	spr_grabcancel = spr_player_grabcancel
-	spr_grabcancelair = spr_player_grabcancelair
+	spr_grabcancel = spr_playerN_grabcancel
+	spr_grabcancelair = spr_playerN_grabcancel
 	spr_parry1 = spr_playerN_parry1
 	spr_parry2 = spr_playerN_parry2
 	spr_parry3 = spr_playerN_parry3
@@ -412,6 +416,8 @@ switch character {
 	spr_breakdanceattack2start = spr_player_breakdance_bumstart
 	spr_breakdanceattack2 = spr_player_breakdance_bum
 	spr_breakdanceattack2ground = spr_player_breakdance_bumground
+	//Grab bump
+	spr_grabbump = spr_playerN_suplexbump;
 	//Dashpad
 	spr_mach3dashpad = spr_playerN_dashpad
 	//Grinding
@@ -519,6 +525,7 @@ switch character {
 	spr_suplexdash = spr_snick_idle
 	spr_piledriver = spr_snick_idle
 	spr_piledriverland = spr_snick_idle
+	spr_piledriverjump = spr_snick_idle;
 	spr_charge = spr_snick_idle
 	spr_mach3jump = spr_snick_mach3
 	spr_mach4 = spr_snick_mach3
@@ -595,7 +602,7 @@ switch character {
 	spr_jetpackcrazy = spr_playerN_crazyrun
 	spr_golfwin = spr_snick_victory
 	spr_grabcancel = spr_player_grabcancel
-	spr_grabcancelair = spr_player_grabcancelair
+	spr_grabcancelair = spr_player_grabcancel
 	spr_parry1 = spr_player_parry1
 	spr_parry2 = spr_player_parry2
 	spr_parry3 = spr_player_breakdance
@@ -605,6 +612,8 @@ switch character {
 	spr_breakdanceattack2start = spr_player_breakdance_bumstart
 	spr_breakdanceattack2 = spr_player_breakdance_bum
 	spr_breakdanceattack2ground = spr_player_breakdance_bumground
+	//Grab bump
+	spr_grabbump = spr_playerN_suplexbump;	
 	//Dashpad
 	spr_mach3dashpad = spr_snick_mach3
 	//Grinding
@@ -698,6 +707,7 @@ switch character {
     spr_idle6 = spr_playerV_idle6
     spr_piledriver = spr_player_piledriver
     spr_piledriverland = spr_player_piledriverland
+	spr_piledriverjump = spr_player_jugglebash;	
     spr_charge = spr_player_charge
     spr_mach3jump = spr_playerV_mach3jump
     spr_mach4 = spr_playerV_mach3
@@ -806,7 +816,7 @@ switch character {
 	spr_jetpackcrazy = spr_playerN_crazyrun
 	spr_golfwin = spr_playerV_victory
 	spr_grabcancel = spr_player_grabcancel
-	spr_grabcancelair = spr_player_grabcancelair
+	spr_grabcancelair = spr_player_grabcancel
 	spr_parry1 = spr_player_parry1
 	spr_parry2 = spr_player_parry2
 	spr_parry3 = spr_player_breakdance
@@ -816,6 +826,8 @@ switch character {
 	spr_breakdanceattack2start = spr_player_breakdance_bumstart
 	spr_breakdanceattack2 = spr_player_breakdance_bum
 	spr_breakdanceattack2ground = spr_player_breakdance_bumground
+	//Grab bump
+	spr_grabbump = spr_playerN_suplexbump;	
 	//Dashpad
 	spr_mach3dashpad = spr_playerV_mach3
 	//Grinding
@@ -910,6 +922,7 @@ switch character {
     spr_idle6 = spr_playerP_idle6
     spr_piledriver = spr_playerN_piledriver
     spr_piledriverland = spr_playerN_piledriverland
+	spr_piledriverjump = spr_playerN_piledriverjump;	
     spr_charge = spr_playerN_charge
     spr_mach3jump = spr_playerN_mach3jump
     spr_mach4 = spr_playerP_dash
@@ -1018,7 +1031,7 @@ switch character {
 	spr_jetpackcrazy = spr_playerN_crazyrun
 	spr_golfwin = spr_playerV_victory	
 	spr_grabcancel = spr_player_grabcancel
-	spr_grabcancelair = spr_player_grabcancelair
+	spr_grabcancelair = spr_player_grabcancel
 	spr_parry1 = spr_player_parry1
 	spr_parry2 = spr_player_parry2
 	spr_parry3 = spr_player_breakdance
@@ -1028,6 +1041,8 @@ switch character {
 	spr_breakdanceattack2start = spr_player_breakdance_bumstart
 	spr_breakdanceattack2 = spr_player_breakdance_bum
 	spr_breakdanceattack2ground = spr_player_breakdance_bumground
+	//Grab bump
+	spr_grabbump = spr_playerN_suplexbump;	
 	//Dashpad
 	spr_mach3dashpad = spr_playerP_dash
 	//Grinding
@@ -1122,6 +1137,7 @@ switch character {
 	spr_idle6 = spr_playerN_idlemask
 	spr_piledriver = spr_playerN_piledriver
 	spr_piledriverland = spr_playerN_piledriverland
+	spr_piledriverjump = spr_playerN_piledriverjump;
 	spr_charge = spr_playerN_charge
 	spr_mach3jump = spr_playerN_mach3jump
 	spr_mach4 = spr_playerN_mach3
@@ -1231,7 +1247,7 @@ switch character {
 	spr_jetpackcrazy = spr_playerN_crazyrun
 	spr_golfwin = spr_playerN_victory
 	spr_grabcancel = spr_player_grabcancel
-	spr_grabcancelair = spr_player_grabcancelair
+	spr_grabcancelair = spr_player_grabcancel
 	spr_parry1 = spr_player_parry1
 	spr_parry2 = spr_player_parry2
 	spr_parry3 = spr_player_breakdance
@@ -1241,6 +1257,8 @@ switch character {
 	spr_breakdanceattack2start = spr_player_breakdance_bumstart
 	spr_breakdanceattack2 = spr_player_breakdance_bum
 	spr_breakdanceattack2ground = spr_player_breakdance_bumground
+	//Grab bump
+	spr_grabbump = spr_playerN_suplexbump;	
 	//Dashpad
 	spr_mach3dashpad = spr_playerP_dash	
 	//Grinding
@@ -1332,6 +1350,7 @@ switch character {
     spr_idle6 = spr_playerPZ_idle //Missing
     spr_piledriver = spr_playerPZ_piledriver
     spr_piledriverland = spr_playerPZ_piledriverland
+	spr_piledriverjump = spr_playerPZ_machfreefall;	//Missing
     spr_charge = spr_playerPZ_charge
     spr_mach3jump = spr_playerPZ_mach3jump
     spr_mach4 = spr_playerPZ_mach4
@@ -1442,7 +1461,7 @@ switch character {
 	spr_jetpackcrazy = spr_playerN_crazyrun //Missing
 	spr_golfwin = spr_player_levelcomplete //Missing
 	spr_grabcancel = spr_player_grabcancel //Missing
-	spr_grabcancelair = spr_player_grabcancelair //Missing
+	spr_grabcancelair = spr_player_grabcancel //Missing
 	spr_parry1 = spr_playerPZ_parry1
 	spr_parry2 = spr_playerPZ_parry2
 	spr_parry3 = spr_playerPZ_parry3
@@ -1452,6 +1471,9 @@ switch character {
 	spr_breakdanceattack2start = spr_player_breakdance_bumstart //Missing
 	spr_breakdanceattack2 = spr_player_breakdance_bum //Missing
 	spr_breakdanceattack2ground = spr_player_breakdance_bumground //Missing
+	//Grab bump
+	spr_grabbump = spr_playerN_suplexbump; //Missing	
+
 	//Dashpad
 	spr_mach3dashpad = spr_playerPZ_dashpad	
 	//Grinding

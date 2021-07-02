@@ -2962,7 +2962,7 @@
             "Key": "1bf81868-b1a3-4656-b632-24cbdd293d69",
             "Value": {
                 "id": "7228d84f-851a-4693-be8c-0affea6e66fb",
-                "resourcePath": "sprites\\spr_player_grabcancelair\\spr_player_grabcancelair.yy",
+                "resourcePath": "sprites\\spr_playerN_grabcancel\\spr_playerN_grabcancel.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3083,6 +3083,14 @@
             "Value": {
                 "id": "be49e7c2-20c5-436a-93ce-4b4edc65e096",
                 "resourcePath": "sprites\\spr_computerfreezer\\spr_computerfreezer.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "1d7738cf-ba8a-46d6-8bc8-6a7d750eab1a",
+            "Value": {
+                "id": "67963a5e-aae4-47da-aba4-525fd1dd8246",
+                "resourcePath": "sprites\\spr_peppinobullet\\spr_peppinobullet.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -6100,6 +6108,14 @@
                 "id": "866229b6-1930-4c9b-9036-3e6d19009446",
                 "resourcePath": "rooms\\chateau_secret4\\chateau_secret4.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "3aa2f95d-1b77-4734-8713-3950bfe4d93c",
+            "Value": {
+                "id": "03ce06d1-f09b-4655-aa6a-642962f73250",
+                "resourcePath": "sprites\\spr_peppinobullethud\\spr_peppinobullethud.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -14079,6 +14095,14 @@
             }
         },
         {
+            "Key": "864b6535-81c7-416c-85ee-46234c2ca254",
+            "Value": {
+                "id": "b43b9077-5c3a-473d-b20d-6ba12addc2c2",
+                "resourcePath": "sprites\\spr_playerN_suplexbump\\spr_playerN_suplexbump.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8652f5a8-72f7-4d0d-98ca-84b2ce1fe827",
             "Value": {
                 "id": "b8c8e108-1a7e-4825-bfce-d618f3947ac4",
@@ -17119,6 +17143,14 @@
             }
         },
         {
+            "Key": "a3014a6e-4093-438c-8762-c749a79de3f0",
+            "Value": {
+                "id": "5c20952f-1ed6-4502-afd7-6dc616f8b0ee",
+                "resourcePath": "sprites\\spr_playerN_piledriverjump\\spr_playerN_piledriverjump.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a30570d9-433c-4392-92f9-1ccdcecb73c2",
             "Value": {
                 "id": "df7f9176-57f6-43de-8dcb-6dfa679b2534",
@@ -20087,6 +20119,14 @@
             }
         },
         {
+            "Key": "bf303633-1f00-4dbb-aad5-d78692782722",
+            "Value": {
+                "id": "74fc4da4-204e-4771-b474-919f34eacb92",
+                "resourcePath": "sprites\\spr_player_suplexbump\\spr_player_suplexbump.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "bf414014-6029-43c3-9867-c4fb896d2e9b",
             "Value": {
                 "id": "089c25ce-b431-4d55-aff7-58e640d3849a",
@@ -21967,6 +22007,14 @@
             }
         },
         {
+            "Key": "d06cd950-079b-44dd-8ca9-919dc0d617a2",
+            "Value": {
+                "id": "e0d9fce6-be33-4807-abb5-c920c8ce38dc",
+                "resourcePath": "sprites\\spr_peppinobulletdead\\spr_peppinobulletdead.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d0a08e25-8b7e-4252-9688-2589dbcc9ec4",
             "Value": {
                 "id": "ae7967dc-2a1b-4d58-b196-2ccdbc04c219",
@@ -23515,6 +23563,14 @@
             "Value": {
                 "id": "702e1bac-ce60-44f3-9b19-01d9716b04db",
                 "resourcePath": "sprites\\spr_noisehotairmatch\\spr_noisehotairmatch.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "de284296-a757-418b-a205-547c5246a686",
+            "Value": {
+                "id": "fe4f7767-2b19-49fc-9520-fca897c66f76",
+                "resourcePath": "sprites\\spr_peppinobulletbump\\spr_peppinobulletbump.yy",
                 "resourceType": "GMSprite"
             }
         },

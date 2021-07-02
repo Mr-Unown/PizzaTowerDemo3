@@ -39,14 +39,26 @@ if (grounded && (!place_meeting(x, (y + 1), obj_destructibles)) && sprite_index 
         }
     }
 }
-if sprite_index = spr_piledriverland && floor(image_index) = image_number - 1 {
+if sprite_index = spr_piledriverland && floor(image_index) >= image_number - 1 
+{
+	/*
     state = 58
     vsp = -8
     sprite_index = spr_machfreefall
+	*/
+	image_index = 0
+	sprite_index = spr_piledriverjump
+	if key_jump2
+		vsp = -10
+	else
+		vsp = -8
+    state = 58
+    jumpAnim = 1
 	if instance_exists(baddiegrabbedID)
 		with baddiegrabbedID
 		{
-			if object_index != obj_player {
+			if object_index != obj_player 
+			{
 			instance_create(x, y, obj_slapstar)
 			instance_create(x, y, obj_baddiegibs)
 			flash = 1
@@ -63,7 +75,8 @@ if sprite_index = spr_piledriverland && floor(image_index) = image_number - 1 {
 			hsp = ((-image_xscale) * 10)
 			vsp = -10		
 			}
-			else {
+			else 
+			{
 			thrown = 1
             instance_create(x, y, obj_slapstar)
             instance_create(x, y, obj_baddiegibs)

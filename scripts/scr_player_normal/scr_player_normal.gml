@@ -173,9 +173,10 @@ if (character == "S")
 
 if (landAnim == 1)
 {
-	if sprite_index = spr_grabcancel && floor(image_index) = image_number - 1
+	/*if sprite_index = spr_grabcancel && floor(image_index) = image_number - 1
 	{
-		if move = 0	{
+		if move = 0	
+		{
 			if (shotgunAnim == 0) 
 				sprite_index = spr_idle
 			else 
@@ -185,8 +186,8 @@ if (landAnim == 1)
 			sprite_index = spr_move	
 		image_index = 0
 		landAnim = 0
-	}
-    if (shotgunAnim == 0) && sprite_index != spr_grabcancel
+	}*/
+    if (shotgunAnim == 0) 
     {
         if (move == 0)
         {
@@ -206,7 +207,7 @@ if (landAnim == 1)
             }
         }
     }
-    if (shotgunAnim == 1) && sprite_index != spr_grabcancel
+    if (shotgunAnim == 1) 
     {
         sprite_index = spr_shotgunland
         if (floor(image_index) == (image_number - 1))

@@ -64,7 +64,8 @@ if (grounded && input_buffer_jump < 8 && (!key_down) && (!key_attack) && vsp > 0
 if (grounded && vsp > 0 && (!key_attack))
 {
     doublejump = 0
-    scr_soundeffect(29)
+	if sprite_index != spr_grabbump
+		scr_soundeffect(sfx_step)
     if key_attack
         landAnim = 0
     input_buffer_secondjump = 0

@@ -1,8 +1,9 @@
 landAnim = 1
 if vsp < 15
 	vsp = 15;
-vsp = clamp(vsp + 0.15,15,18);
+vsp = clamp(vsp + 0.15,15,20);
 move = (key_left + key_right)
+freefallsmash += clamp(vsp/15,1,2)
 if (!grounded)
 {
     hsp = (move * movespeed)
@@ -37,7 +38,7 @@ if (!grounded)
         xscale = move
 }
 
-freefallsmash += clamp(vsp/15,1,2)
+
 if (freefallsmash > 10 && (!instance_exists(superslameffectid)))
 {
     with (instance_create(x, y, obj_superslameffect))
@@ -86,7 +87,7 @@ if (grounded && (!input_buffer_jump < 8) && (!place_meeting(x, (y + 1), obj_dest
     freefallstart = 0
 }
 //Groundpound Cancel
-if (key_attack2) &&  (character != "N" && pogo = false) && !grounded && freefallsmash > 10
+if (key_attack2) && !(character = "N" && pogo = true) && !grounded && freefallsmash > 10
 {		
         if (move != 0)
             xscale = move

@@ -45,9 +45,9 @@ if (character != "S")
 		if !grounded 
 		{
 			state = 58
-			if character = "P"
+			if character == "P" || character == "N"
 			{
-				sprite_index = spr_grabcancelair
+				sprite_index = spr_grabcancel
 				jumpAnim = 1
 				image_index = 0
 			}
@@ -61,12 +61,6 @@ if (character != "S")
 		else
 		{
 			state = 0
-			if character = "P"
-			{
-				sprite_index = spr_grabcancel
-				landAnim = 1
-				image_index = 0
-			}
 		}
 	}
     if ((floor(image_index) == (image_number - 1) || sprite_index == spr_suplexdashjump || sprite_index == spr_suplexdashjumpstart) && grounded && (!key_attack) && vsp > 0) && character != "PZ"
@@ -125,33 +119,40 @@ if (character != "S")
         else
             vsp = -13
     }
-    if (scr_solid((x + 1), y) && xscale == 1 && (!place_meeting((x + sign(hsp)), y, obj_slope)) && (!place_meeting((x + xscale), y, obj_destructibles)))
+	//Bump int
+    if (scr_solid((x + xscale), y) && (!place_meeting((x + sign(hsp)), y, obj_slope)) && (!place_meeting((x + xscale), y, obj_destructibles)))
     {
-        scr_soundeffect(16)
-        grav = 0.5
-        movespeed = 0
-        state = 72
-        hsp = -2.5
-        vsp = -3
-        mach2 = 0
-        image_index = 0
-        machslideAnim = 1
-        machhitAnim = 0
-        instance_create((x + 10), (y + 10), obj_bumpeffect)
-    }
-    if (scr_solid((x - 1), y) && xscale == -1 && (!place_meeting((x + sign(hsp)), y, obj_slope)) && (!place_meeting((x + xscale), y, obj_destructibles)))
-    {
-        scr_soundeffect(16)
-        grav = 0.5
-        movespeed = 0
-        state = 72
-        hsp = 2.5
-        vsp = -3
-        mach2 = 0
-        image_index = 0
-        machslideAnim = 1
-        machhitAnim = 0
-        instance_create((x - 10), (y + 10), obj_bumpeffect)
+		if character == "P" || character == "N"
+		{
+		    scr_soundeffect(16)
+			grav = 0.5
+			movespeed = 0
+			state = 58
+			hsp = (-1 * xscale)
+			vsp = clamp(vsp - 3,-3, 21)
+			mach2 = 0
+			image_index = 0
+			sprite_index = spr_grabbump
+			jumpAnim = 0
+			jumpstop = 1
+			machslideAnim = 1
+			machhitAnim = 0
+			instance_create((x + (10 * xscale)), (y + 10), obj_bumpeffect)
+		}
+		else
+		{
+			scr_soundeffect(16)
+			grav = 0.5
+			movespeed = 0
+			state = 72
+			hsp = (-2.5 * xscale)
+			vsp = -3
+			mach2 = 0
+			image_index = 0
+			machslideAnim = 1
+			machhitAnim = 0
+			instance_create((x + (10 * xscale)), (y + 10), obj_bumpeffect)
+		}
     }
     if ((!instance_exists(obj_slidecloud)) && grounded && movespeed > 5)
     {
