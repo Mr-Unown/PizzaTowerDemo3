@@ -18,8 +18,8 @@ if sprite_index = spr_peppinobulletbump && floor(image_index) >= image_number - 
 		canrotate = true
 		image_xscale = other.image_xscale
         sprite_index = spr_peppinobulletdead
-		vsp = random_range(4, -10)
-		hsp = -image_xscale * random_range(5, 10)
+		vsp = irandom_range(4, -10)
+		hsp = -image_xscale * irandom_range(10, 16)
 		rotatedirection = choose(-1,1)
 		rotatevalue = irandom_range(5,20)		
 		
