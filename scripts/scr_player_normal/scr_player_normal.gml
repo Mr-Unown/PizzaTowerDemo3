@@ -173,9 +173,10 @@ if (character == "S")
 
 if (landAnim == 1)
 {
-	if sprite_index = spr_grabcancel && floor(image_index) = image_number - 1
+	/*if sprite_index = spr_grabcancel && floor(image_index) = image_number - 1
 	{
-		if move = 0	{
+		if move = 0	
+		{
 			if (shotgunAnim == 0) 
 				sprite_index = spr_idle
 			else 
@@ -185,8 +186,8 @@ if (landAnim == 1)
 			sprite_index = spr_move	
 		image_index = 0
 		landAnim = 0
-	}
-    if (shotgunAnim == 0) && sprite_index != spr_grabcancel
+	}*/
+    if (shotgunAnim == 0) 
     {
         if (move == 0)
         {
@@ -206,7 +207,7 @@ if (landAnim == 1)
             }
         }
     }
-    if (shotgunAnim == 1) && sprite_index != spr_grabcancel
+    if (shotgunAnim == 1) 
     {
         sprite_index = spr_shotgunland
         if (floor(image_index) == (image_number - 1))
@@ -424,14 +425,46 @@ if (key_slap2 && character == "PM")
 //Breakdance
 if (key_shoot2 && shotgunAnim == 0) && character != "V" && character != "D"
 {
-	breakdancebuffer = 50
-    scr_soundeffect(sfx_breakdance)
-	movespeed = 10
-    state = states.breakdance
-	with instance_create(x, y, obj_dashcloud2)
-       image_xscale = other.xscale
-    image_index = 0
-    sprite_index = spr_breakdancestart
+	if murderammo >= 1
+	{
+		image_index = 0
+		sprite_index = spr_murder
+		state = states.murder
+		switch character
+		{
+			case "N":
+			
+			with (instance_create((x), (y), obj_noisekickbomb))
+			{
+				playerid = other.id
+				image_xscale = other.xscale
+			}
+			
+			break;
+			default:
+			
+			with (instance_create((x + 10*xscale), (y + 16), obj_revolverbullet))
+			{
+				playerid = other.id
+				image_xscale = other.xscale
+			}	
+			
+			break;
+		}
+		scr_soundeffect(14)
+		murderammo -= 1
+	}
+	else
+	{
+		breakdancebuffer = 50
+		scr_soundeffect(sfx_breakdance)
+		movespeed = 10
+		state = states.breakdance
+		with instance_create(x, y, obj_dashcloud2)
+			image_xscale = other.xscale
+		image_index = 0
+		sprite_index = spr_breakdancestart
+	}
 }
 //Shotgun
 if (key_shoot2 && shotgunAnim == 1 && character != "V" && character != "S")

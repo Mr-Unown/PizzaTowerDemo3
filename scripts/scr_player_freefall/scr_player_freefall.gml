@@ -1,7 +1,9 @@
 landAnim = 1
-vsp += 0.15;
-vsp = clamp(vsp,15,20);
+if vsp < 15
+	vsp = 15;
+vsp = clamp(vsp + 0.15,15,20);
 move = (key_left + key_right)
+freefallsmash += clamp(vsp/15,1,2)
 if (!grounded)
 {
     hsp = (move * movespeed)
@@ -36,7 +38,7 @@ if (!grounded)
         xscale = move
 }
 
-freefallsmash++
+
 if (freefallsmash > 10 && (!instance_exists(superslameffectid)))
 {
     with (instance_create(x, y, obj_superslameffect))
@@ -84,29 +86,19 @@ if (grounded && (!input_buffer_jump < 8) && (!place_meeting(x, (y + 1), obj_dest
 	}	
     freefallstart = 0
 }
-/*if (key_attack2) && character = "PZ" && !grounded && freefallsmash > 10
+//Groundpound Cancel
+if (key_attack2) && !(character = "N" && pogo = true) && !grounded && freefallsmash > 10
 {		
         if (move != 0)
             xscale = move
         movespeed = 10
         machhitAnim = 0
-        state = 70
+        state = states.mach2
         flash = 1
 		vsp = -2
-        flash = 1
         sprite_index = spr_mach2jump
         with (instance_create(x, y, obj_jumpdust))
             image_xscale = other.xscale
-}*/
-image_speed = 0.35
-
-if instance_exists(obj_superslameffect) && key_attack && (character != "N" && pogo = false)
-{
-vsp = -2
-movespeed = 10
-state = states.mach2
-flash = 1
-sprite_index = spr_mach2jump
-instance_create(x, y, obj_jumpdust)
-scr_soundeffect(sfx_rollgetup)
+		scr_soundeffect(sfx_rollgetup)			
 }
+image_speed = 0.35

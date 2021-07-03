@@ -501,6 +501,13 @@ with (obj_baddie)
         instance_destroy(instance_place(x, (y + vsp), obj_destructibles))
 	}
 }
+with (obj_noisekickbomb)
+{
+   if (place_meeting((x + hsp), y, obj_destructibles))
+       instance_destroy(instance_place((x + hsp), y, obj_destructibles))
+   if (place_meeting((x + sign(hsp)), y, obj_destructibles))
+       instance_destroy(instance_place((x + sign(hsp)), y, obj_destructibles))	   
+}
 with (obj_throwableparent)
 {
    if (place_meeting((x + hsp), y, obj_destructibles) && thrown == 1)
