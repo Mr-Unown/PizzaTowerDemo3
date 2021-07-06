@@ -5,5 +5,5 @@ player = obj_player1
 _visible = 1;
 oldshield = 0;
 blink_time = 0;
-blink_length = 10;
+blink_length = 5;
 blink_alpha = 0;
