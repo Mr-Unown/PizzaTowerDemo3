@@ -218,7 +218,7 @@ with (obj_player1)
     global.combo = 0;
     global.combotime = 0;
 	global.pausecombotime = false;
-    global.pizzacoin = 0;
+    pizzacoin = 0;
     global.toppintotal = 1;
     global.hit = 0;
     ini_open("playerData_"+global.savefile+".ini")
@@ -358,7 +358,7 @@ with (obj_player2)
     global.treasure = 0;
     global.combo = 0;
     global.combotime = 0;
-    global.pizzacoin = 0;
+    pizzacoin = 0;
     global.toppintotal = 1;
     global.hit = 0;
     ini_open("playerData_"+global.savefile+".ini")

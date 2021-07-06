@@ -17,6 +17,18 @@ if global.hudmode == false
 	{
 		case 0:
 		#region OLD HUD
+		
+	#region Murder
+	var murdersprite = (player.character == "N" ? spr_playerN_noisebomb : spr_peppinobullethud)
+	if (player.murderammo >= 1)
+	{
+		for (var i = 0; i < player.murderammo; ++i)
+		{
+			draw_sprite_ext(murdersprite, -1, 50, 100 + (32*i), 1, 1, 0, c_white, alpha)
+		}
+	}	
+	#endregion			
+	
 if (obj_player1.spotlight == 1)
 	if	obj_player1.custompalette = true
 		pal_swap_set(obj_player1.surf_pallete, 1, true)
@@ -27,7 +39,7 @@ else
 		pal_swap_set(obj_player2.surf_pallete, 1, true)
 	else if	obj_player2.custompalette = false
 		pal_swap_set(obj_player2.spr_palette, obj_player2.paletteselect, false)	
-		
+	/*	
 	#region Backup
 	if (player.pizzashieldbackup >= 1)
 	{
@@ -37,7 +49,8 @@ else
 		}
 	}	
 	#endregion
-	 
+	*/
+
 	 
 if (player.state != 55)
 {
@@ -397,17 +410,29 @@ if (player.state != 55)
 		
 		
 		#endregion					
-			draw_sprite_ext(spr_pizzascoretimer, _image_index, newhudx, newhudy + textyoffset, 1, 1, 0, c_white, alpha)
+			draw_sprite_ext(spr_pizzascoretimer, _image_index, newhudx, newhudy - 2 + textyoffset, 1, 1, 0, c_white, alpha)
 			draw_set_halign(fa_center);
 			draw_set_color(c_white);
 			draw_set_font(global.timerfont);	
 			var _min = string(global.taminutes < 10 ? ("0" + string(global.taminutes)) : string(global.taminutes));
 			var _sec = string(global.taseconds < 10 ? ("0" + string(global.taseconds)) : string(global.taseconds));
 			var _string = string(_min) + ":" + string(_sec);
-			draw_text(newhudx-5,newhudy-52+textyoffset,_string)
+			draw_text(newhudx-5,newhudy-54+textyoffset,_string)
 			#endregion
 			break;
 		}
+
+		#region Murder
+		var murdersprite = (player.character == "N" ? spr_playerN_noisebomb : spr_peppinobullethud)
+		if (player.murderammo >= 1)
+		{
+			for (var i = 0; i < player.murderammo; ++i)
+			{
+				draw_sprite_ext(murdersprite, -1, (newhudx - 75) + (16*i), newhudy + 70, 1, 1, 0, c_white, alpha)
+			}
+		}	
+		#endregion		
+		/*
 		#region Backup
 		if (player.pizzashieldbackup >= 1)
 		{
@@ -417,6 +442,7 @@ if (player.state != 55)
 			}
 		}	
 		#endregion
+		*/
 		}
 		#endregion
 		break;
@@ -488,15 +514,7 @@ if (player.state != 55)
 		draw_text(832, 512, string_hash_to_newline(((string(global.bonusminutes) + string(tiny)) + string(global.bonusseconds) + string(tinier) + string(global.bonusmiliseconds))))
 	}
 	#endregion
-	#region Murder
-	if (player.murderammo >= 1)
-	{
-		for (var i = 0; i < player.murderammo; ++i)
-		{
-			draw_sprite_ext(spr_shieldbackupNEW, -1, 78 + (16*i), 181, 1, 1, 0, c_white, alpha)
-		}
-	}	
-	#endregion
+
 	#endregion
 }
 draw_set_blend_mode(0)

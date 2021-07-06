@@ -66,4 +66,4 @@ if pizzashieldframes > 16
 if spellshowbuffer > 0
 		draw_sprite(spr_dougieicons, (spellselect - 1), x, y - 50)
 
-
+//draw_text(x, y - 50,string(knightmaxy))

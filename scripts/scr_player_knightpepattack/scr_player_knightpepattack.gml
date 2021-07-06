@@ -43,7 +43,7 @@ if !grounded
 	}
 	else
 	{
-		vsp = clamp(approach(vsp,18,0.25),15,18)
+		vsp = clamp(vsp + 0.25,15,20);
 		if !instance_exists(superslameffectid)
 		{
 			with (instance_create(x, y, obj_superslameffect))
@@ -116,9 +116,9 @@ if scr_slope() && vsp > 0
     }
 	scr_soundeffect(15)
 	knightpoundbuffer = 0
-	var maxyy = knightmaxy + 200
 	if state != states.knightpepslopes
-	knightslidespeed += clamp((y - knightmaxy),0,maxyy);
+	var _speed = abs((y - knightmaxy));
+	knightslidespeed += _speed
     with (instance_place(x, (y + 1), obj_slope))
         other.xscale = (-sign(image_xscale))
     state = 18
@@ -147,11 +147,12 @@ if (place_meeting(x,y+1,obj_iceblock) || place_meeting(x,y+1,obj_iceblockminibos
     }
 	scr_soundeffect(15)
 	knightpoundbuffer = 0
-	knightslidespeed += clamp((y - knightmaxy)/2,0,knightmaxy + 200);
+	var _speed = abs((y - knightmaxy)/2);
+	knightslidespeed += _speed
     with (instance_place(x, (y + 1), obj_slope))
         other.xscale = (-sign(image_xscale))
     state = 18
-    sprite_index = spr_knightpepdownslope
+    sprite_index = spr_knightpepcharge
 }
 #endregion
 

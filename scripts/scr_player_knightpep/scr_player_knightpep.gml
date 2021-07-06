@@ -109,7 +109,8 @@ else
 //Groundpound
 if !grounded && key_down2
 {	
-	knightmaxy = y;	
+	knightmaxy = y;
+	knightroomy = y;
 	image_index = 0
 	sprite_index = spr_knightpepattack;
 	vsp = -5;

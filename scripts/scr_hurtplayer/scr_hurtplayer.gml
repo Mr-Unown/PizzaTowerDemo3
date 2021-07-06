@@ -221,7 +221,7 @@ with (argument0)
             if (pizzashieldbackup >= 1)
                 pizzashieldbackup = pizzashieldbackup - 1
             else
-                pizzashield = false
+                pizzashield = false		
         }
     }
 }

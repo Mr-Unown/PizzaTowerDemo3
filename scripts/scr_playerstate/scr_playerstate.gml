@@ -460,7 +460,7 @@ if in_water = true
 //Murder
 if combothreshold >= 10
 {
-	murderammo += 1;
+	murderammo = clamp(murderammo + 1,0,4);
 	combothreshold = 0;
 }
 if global.combotime <= 0

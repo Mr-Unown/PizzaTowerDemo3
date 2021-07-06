@@ -1,1 +1,1 @@
-scr_secrettiles("Tiles_secret");
+scr_secrettiles_add("Tiles_secret");

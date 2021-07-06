@@ -251,19 +251,50 @@ if (key_slap2 && suplexmove = 0 && (character = "P" || character = "PZ" || chara
 	}
 }
 //Breakdance
-if (key_shoot2 && shotgunAnim == 0) && (!key_down) && character != "V" && character != "D"
+if (key_shoot2 && shotgunAnim == 0) && (!key_down)  && character != "V" && character != "D"
 {
-	breakdancebuffer = 50
-    scr_soundeffect(sfx_breakdance)
-	movespeed = 10
-	vsp = -4
-    state = states.breakdance
-	with instance_create(x, y, obj_dashcloud2)
-       image_xscale = other.xscale
-    image_index = 0
-    sprite_index = spr_breakdancestart
-
+	if murderammo >= 1
+	{
+		image_index = 0
+		sprite_index = spr_murder
+		state = states.murder
+		switch character
+		{
+			case "N":
+			
+			with (instance_create((x), (y), obj_noisekickbomb))
+			{
+				playerid = other.id
+				image_xscale = other.xscale
+			}
+			
+			break;
+			default:
+			
+			with (instance_create((x + 10*xscale), (y + 16), obj_revolverbullet))
+			{
+				playerid = other.id
+				image_xscale = other.xscale
+			}	
+			
+			break;
+		}
+		scr_soundeffect(14)
+		murderammo -= 1
+	}
+	else
+	{
+		breakdancebuffer = 50
+		scr_soundeffect(sfx_breakdance)
+		movespeed = 10
+		state = states.breakdance
+		with instance_create(x, y, obj_dashcloud2)
+			image_xscale = other.xscale
+		image_index = 0
+		sprite_index = spr_breakdancestart
+	}
 }
+
 //Shotgun
 if (key_shoot2 && shotgunAnim == 1 && character != "V" && character != "S" && (!key_down))
 {

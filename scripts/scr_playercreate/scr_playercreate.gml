@@ -5,9 +5,28 @@ breakdancebuffer = 50
 collectscore = 0
 knightpoundbuffer = 0;
 knightmaxy = 0;
+knightroomy = 0;
 knightslidespeed = 0;
 //Global Time Events
 global.timeevent = 0 //1 = Xmas 2 = April 3 = Halloween
+
+//Bumbo want coin
+pizzacoin = 0;
+pizzacoinindicatorid = noone;
+shieldindicatorid = noone;
+if !instance_exists(pizzacoinindicatorid)
+	with instance_create(x,y,obj_pizzacoinindicator)
+	{
+		other.pizzacoinindicatorid = id
+		player = other.id
+	}
+if !instance_exists(shieldindicatorid)
+	with instance_create(x,y,obj_shieldbackupindicator)
+	{
+		other.shieldindicatorid = id
+		player = other.id		
+	}
+
 
 //Funny Murder
 murderammo = 0;

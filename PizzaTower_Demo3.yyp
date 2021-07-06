@@ -2855,6 +2855,14 @@
             }
         },
         {
+            "Key": "1add7b43-2cb2-402e-801d-c77932279e6b",
+            "Value": {
+                "id": "f61acce0-a907-42a2-805d-eebc7292cc90",
+                "resourcePath": "objects\\obj_shieldbackupindicator\\obj_shieldbackupindicator.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1aec57b4-9282-4201-95bc-3d548597cbc7",
             "Value": {
                 "id": "439a34dc-237d-404f-b8a0-3687d33099c7",
@@ -10738,7 +10746,7 @@
             "Key": "65847a94-d726-4286-af51-4cf46e244813",
             "Value": {
                 "id": "8c83d036-3ce4-4e87-8301-b3e00734b7a6",
-                "resourcePath": "scripts\\scr_secrettiles\\scr_secrettiles.yy",
+                "resourcePath": "scripts\\scr_secrettiles_add\\scr_secrettiles_add.yy",
                 "resourceType": "GMScript"
             }
         },
