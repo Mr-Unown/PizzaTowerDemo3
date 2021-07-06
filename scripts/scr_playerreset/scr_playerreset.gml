@@ -27,6 +27,13 @@ with obj_lighting
 }
 scr_soundstopall();
 audio_stop_all();
+//Shield
+with obj_shieldbackupindicator {
+oldshield = 0;
+visible = false;
+show = 0;
+_visible = 1;
+}
 global.style = 0;
 global.stylethreshold = 0;
 global.freezeframe = false;

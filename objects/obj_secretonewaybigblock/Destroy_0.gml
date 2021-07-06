@@ -56,7 +56,7 @@ if (ds_list_find_index(global.saveroom, id) == -1)
     tilemap_set_at_pixel(map_id, data3, x  + offset, (y + 33))
     tilemap_set_at_pixel(map_id, data4, (x  + offset + (image_xscale * 32)), (y + 33))
     var pizzacoin = random_range(1, 100)
-    if (pizzacoin >= 90)
+    if (pizzacoin >= 85)
     {
         with (instance_create(x, y, obj_pizzacoin))
             hsp = choose(-2, 2)
