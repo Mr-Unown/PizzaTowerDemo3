@@ -51,4 +51,10 @@ if ((global.panic == 0) && room != rank_room)
     instance_destroy(afterid)
 }
 
-
+if (relax == 1 && pizzafacetimer <= 0) && can_countdown = true
+{
+	scr_soundeffect(sfx_pizzaface)
+    relax = 0
+    maxspeed = 1
+}
+pizzafacetimer = approach(pizzafacetimer,0,1)

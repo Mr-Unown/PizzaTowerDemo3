@@ -336,13 +336,13 @@ switch room
 		message = "Just Run... Away";
 		break;	
 	case chateau_secret3:
-		message = "Scariest Roll";
+		message = "Scariest Jump";
 		break;
 	case chateau_secret4:
 		message = "Pizza Block of Terror";
 		break;			
 	case chateau_secret5:
-		message = "No Wallrunning";
+		message = "Too Heavy and Too Fast";
 		break;			
 	case chateau_secret6:
 		message = "The Terrifying Giant Pizza";

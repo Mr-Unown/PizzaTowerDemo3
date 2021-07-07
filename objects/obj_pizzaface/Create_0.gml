@@ -6,4 +6,5 @@ y = -200
 scr_soundeffect(sfx_pizzaface)
 alarm[1] = 10
 relax = 0
-
+pizzafacetimer = 0;
+can_countdown = false;

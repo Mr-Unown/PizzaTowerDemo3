@@ -80,6 +80,7 @@ if (parried_baddie > 0)
                 sprite_index = other.sprite_index
 			scr_sleep();
 			relax = true
+			pizzafacetimer = 500
         }
     }
 }

@@ -13,13 +13,14 @@ if (sprite_index == spr_knightpepwalk || sprite_index = spr_knightpepland || spr
 }
 else
 {
+	move = 0	
     if ((!place_meeting(x, (y + 1), obj_railh)) && (!place_meeting(x, (y + 1), obj_railh2)))
         hsp = (move * movespeed)
     else if place_meeting(x, (y + 1), obj_railh)
         hsp = ((move * movespeed) - 5)
     else if place_meeting(x, (y + 1), obj_railh2)
         hsp = ((move * movespeed) + 5)
-	move = 0		
+	
 }
 
 if key_jump
