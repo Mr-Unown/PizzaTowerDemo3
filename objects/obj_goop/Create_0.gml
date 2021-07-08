@@ -1,7 +1,7 @@
 depth = 1;
 playerid = obj_player1;
 pooid = id;
-
+created = false;
 //core if you see this I can explain...
 chance = random_range(0,100);
 if chance <= 96

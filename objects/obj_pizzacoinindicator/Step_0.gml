@@ -1,6 +1,7 @@
 var weapon = instance_nearest(player.x,player.y,obj_weaponmachine);
 if instance_exists(obj_weaponmachine) && point_distance(weapon.x,weapon.y,player.x,player.y) <= 1024
     show = 75;
+	
 if (show == 0)
 {
     visible = false

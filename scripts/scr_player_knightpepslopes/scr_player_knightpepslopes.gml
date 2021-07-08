@@ -39,7 +39,7 @@ if (key_jump && grounded)
     sprite_index = spr_knightpepjump;	
 }
 //Groundpound Again
-if !grounded && (sprite_index == spr_knightpepjump || sprite_index == spr_knightpepfall) && key_down2
+if !grounded && key_down2
 {	
 	knightmaxy = y;
 	knightroomy = y;
