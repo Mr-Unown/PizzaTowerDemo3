@@ -65,8 +65,8 @@ if pizzashieldframes > 16
 //Spell
 if spellshowbuffer > 0
 		draw_sprite(spr_dougieicons, (spellselect - 1), x, y - 50)
-		
+/*		
 draw_set_font(global.smallnumber)
 draw_text(x, y - 50,string(instance_number(obj_goop)))
 if ds_exists(global.gooproom,ds_type_list)
-draw_text(x, y - 70,string(ds_list_size(global.gooproom)))
+draw_text(x, y - 70,string(ds_list_size(global.gooproom)))*/

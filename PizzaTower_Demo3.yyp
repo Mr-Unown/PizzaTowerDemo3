@@ -9167,6 +9167,14 @@
             }
         },
         {
+            "Key": "56934f7a-cb9c-4b4d-9069-6df3ddfbd13c",
+            "Value": {
+                "id": "9a0b999d-0a90-49f6-9c8d-cbcd8feb4e73",
+                "resourcePath": "sprites\\spr_minipillarwaking\\spr_minipillarwaking.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "56b4842d-75b7-4420-98f1-a2780b870c29",
             "Value": {
                 "id": "08987d7b-c6b7-4c26-9b97-cc01a1828acb",
@@ -20939,6 +20947,14 @@
             "Value": {
                 "id": "f97ae737-e002-4dd1-a4bf-072b4f3b54bd",
                 "resourcePath": "sprites\\spr_hook\\spr_hook.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c734a86a-7a0c-43b6-b946-1d21bcb450a8",
+            "Value": {
+                "id": "5e5d3e77-3154-4959-ac46-189cca4ea2f4",
+                "resourcePath": "sprites\\spr_minipillarsleeping\\spr_minipillarsleeping.yy",
                 "resourceType": "GMSprite"
             }
         },
