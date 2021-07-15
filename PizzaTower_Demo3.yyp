@@ -3599,6 +3599,14 @@
             }
         },
         {
+            "Key": "2358c981-71b4-49d5-be14-65e6330977d9",
+            "Value": {
+                "id": "e2348ec3-06d2-4eb0-a604-2a477fbc9233",
+                "resourcePath": "sprites\\spr_playerPZ_windingidle\\spr_playerPZ_windingidle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "236adc23-46d5-4c70-bdf0-774eecb4b5cc",
             "Value": {
                 "id": "5ebaeee0-3765-4ada-a010-fa745e004d98",
@@ -9055,6 +9063,14 @@
             }
         },
         {
+            "Key": "5529a8cf-fd5c-49e0-b6e7-d461a5f93950",
+            "Value": {
+                "id": "63645946-4757-4c36-9d47-4d550fa567a6",
+                "resourcePath": "sprites\\spr_playerPZ_slipnslide\\spr_playerPZ_slipnslide.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "55322422-2762-43d3-975d-0b8009d14a14",
             "Value": {
                 "id": "4b82ab8f-b739-48b7-ad86-e90aeafd319e",
@@ -12628,6 +12644,14 @@
                 "id": "3e250793-599b-4e50-9c6a-d68d72a9051c",
                 "resourcePath": "scripts\\draw_sprite_ext_camera\\draw_sprite_ext_camera.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "789480d8-940f-4864-b782-2846d5b44452",
+            "Value": {
+                "id": "79a7b065-1afe-468f-ac9c-9d1980198d8d",
+                "resourcePath": "sprites\\spr_playerPZ_treasureget\\spr_playerPZ_treasureget.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -24791,6 +24815,14 @@
             }
         },
         {
+            "Key": "e929dfd2-762c-4ca5-8619-625d58bdf514",
+            "Value": {
+                "id": "8469c5a9-5fad-47b6-8ca4-f1671de60ccc",
+                "resourcePath": "sprites\\spr_playerPZ_escapeidle\\spr_playerPZ_escapeidle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e93b2561-3cfd-4516-b8d1-5e1950158d4a",
             "Value": {
                 "id": "c2c365fc-9919-485d-9ab3-02a6022b2846",
@@ -26860,6 +26892,14 @@
                 "id": "5aeb8580-54a4-4f93-91ae-8c52a58eacb4",
                 "resourcePath": "views\\feda98d3-327b-484a-899c-1305503640a2.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "fee3b4be-7b77-42d3-94b2-54de47aba414",
+            "Value": {
+                "id": "9829f068-5598-4177-8f48-a2d5dd373088",
+                "resourcePath": "sprites\\spr_playerPZ_opendoorkey\\spr_playerPZ_opendoorkey.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

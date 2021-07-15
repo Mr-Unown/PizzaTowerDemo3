@@ -1295,7 +1295,7 @@ switch character {
 	spr_land2 = spr_playerPZ_land2
 	spr_lookdoor = spr_playerPZ_lookdoor
 	spr_walkfront = spr_playerPZ_walkfront
-	spr_victory = spr_player_victory //Missing
+	spr_victory = spr_playerPZ_opendoorkey
 	spr_Ladder = spr_playerPZ_ladder
 	spr_laddermove = spr_playerPZ_laddermove
 	spr_ladderdown = spr_playerPZ_ladderdown
@@ -1330,7 +1330,7 @@ switch character {
     spr_machpunch2 = spr_playerPZ_machpunch2 
     spr_hurtjump = spr_playerPZ_stunned //Missing
     spr_entergate = spr_playerPZ_entergate
-    spr_gottreasure = spr_player_gottreasure //Missing
+    spr_gottreasure = spr_playerPZ_treasureget
     spr_bossintro = spr_playerPZ_bossintro
     spr_hurtidle = spr_playerPZ_idle //Missing
     spr_hurtwalk = spr_playerPZ_move //Missing
@@ -1393,11 +1393,11 @@ switch character {
 	spr_tumblestart = spr_playerPZ_tumblestart
 	spr_tumbleend = spr_playerPZ_tumbleend
 	spr_tumble = spr_playerPZ_tumble
-	spr_stunned = spr_playerPZ_stunned 
+	spr_stunned = spr_playerPZ_stunned
 	spr_downpizzabox = spr_player_downpizzabox //Missing
 	spr_uppizzabox = spr_player_uppizzabox //Missing
 	spr_taunt = spr_playerPZ_taunt
-	spr_slipnslide =  spr_playerPZ_stunned //Missing
+	spr_slipnslide =  spr_playerPZ_slipnslide
 	spr_mach3boost = spr_playerPZ_machslideboost3
 	spr_facehurtup = spr_playerPZ_idle //Missing
 	spr_facehurt = spr_playerPZ_idle //Missing
@@ -1423,10 +1423,10 @@ switch character {
 	spr_finishingblow3 = spr_playerPZ_finishingblow3
 	spr_finishingblow4 = spr_playerPZ_finishingblow4
 	spr_finishingblow5 = spr_playerPZ_finishingblow5 //Missing
-	spr_winding = spr_player_winding //Missing?
+	spr_winding = spr_playerPZ_windingidle
 	spr_3hpwalk = spr_playerPZ_angrymove
 	spr_3hpidle = spr_playerPZ_angryidle
-	spr_panic = spr_player_panic //Missing?
+	spr_panic = spr_playerPZ_escapeidle
 	spr_facestomp = spr_playerPZ_facestomp 
 	spr_freefall = spr_playerPZ_freefall
 	spr_freefallland = spr_playerPZ_freefallland
