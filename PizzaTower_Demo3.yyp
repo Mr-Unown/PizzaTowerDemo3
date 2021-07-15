@@ -2887,6 +2887,14 @@
             }
         },
         {
+            "Key": "1b29aa90-c69e-401b-94fe-c1ca4c7fb050",
+            "Value": {
+                "id": "655e5500-fd7d-4c0a-87fe-8f6a9448e3d8",
+                "resourcePath": "sprites\\spr_playerPZ_hurt\\spr_playerPZ_hurt.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1b2dffb5-d111-4ba4-b9bc-b3d25416c877",
             "Value": {
                 "id": "033cbcc3-c18d-4600-8a54-f70f1640984b",
@@ -26532,6 +26540,14 @@
                 "id": "7007525a-7be1-468d-9751-cb88cfeeb1e6",
                 "resourcePath": "rooms\\PP_room13\\PP_room13.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "fb194ff4-f170-4668-b59a-6a1ed7034390",
+            "Value": {
+                "id": "eeed892b-3b4e-4b4c-83ef-bbdadeef6d33",
+                "resourcePath": "sprites\\spr_playerPZ_hurtHUD\\spr_playerPZ_hurtHUD.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
