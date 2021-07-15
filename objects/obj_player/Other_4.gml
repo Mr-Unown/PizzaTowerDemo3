@@ -2,7 +2,7 @@ if vertical = 1
 {
 	knightmaxy = knightroomy - (room_height * sign(hallwaydirection));
 }
-var yoffset = 160
+var yoffset = 80
 
 switch current_month
 {
