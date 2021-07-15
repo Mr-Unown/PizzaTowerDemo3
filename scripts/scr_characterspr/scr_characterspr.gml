@@ -1328,7 +1328,7 @@ switch character {
     spr_deathend = spr_player_deathend //Missing
     spr_machpunch1 = spr_playerPZ_machpunch1 
     spr_machpunch2 = spr_playerPZ_machpunch2 
-    spr_hurtjump = spr_playerPZ_hurt //Missing
+    spr_hurtjump = spr_playerPZ_stunned //Missing
     spr_entergate = spr_playerPZ_entergate
     spr_gottreasure = spr_player_gottreasure //Missing
     spr_bossintro = spr_playerPZ_bossintro
