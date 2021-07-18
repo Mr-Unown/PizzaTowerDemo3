@@ -24,7 +24,7 @@ if place_meeting(x, y, obj_platform)
 {
 	if (platform.image_yscale > 0)
 	{
-		if y > old_y && (bbox_bottom % 16) == 0 && (!place_meeting(x, old_y, obj_platform))
+		if y > old_y && /*(bbox_bottom % 16) == 0 &&*/ (!place_meeting(x, old_y, obj_platform))
 		{
 			x = old_x
 			y = old_y

@@ -8,7 +8,7 @@ if place_meeting(x, y, obj_solid)
     y = old_y
     return 1;
 }
-if (y > old_y) && (bbox_bottom % 16 = 0) && (state == 91 || sprite_index == spr_mach3boost) && !place_meeting(x, old_y, obj_water) && place_meeting(x, y, obj_water)
+if (y > old_y) /*&& (bbox_bottom % 16 = 0)*/ && (state == 91 || sprite_index == spr_mach3boost) && !place_meeting(x, old_y, obj_water) && place_meeting(x, y, obj_water)
 {
 	if (state != 59)
     {
@@ -22,7 +22,7 @@ if place_meeting(x, y, obj_platform)
 {
 	if (platform.image_yscale > 0)
 	{
-		if y > old_y && (bbox_bottom % 16) == 0 && (!place_meeting(x, old_y, obj_platform))
+		if y > old_y /*&& (bbox_bottom % 16) == 0*/ && (!place_meeting(x, old_y, obj_platform))
 		{
 			if (state != 59)
 			{
@@ -67,7 +67,7 @@ if place_meeting(x, y, obj_platformside)
 		}
 	}	
 }
-if (y > old_y && (bbox_bottom % 16) == 0 && (!place_meeting(x, old_y, obj_grindrail)) && place_meeting(x, y, obj_grindrail))
+if (y > old_y && /*(bbox_bottom % 16) == 0 &&*/ (!place_meeting(x, old_y, obj_grindrail)) && place_meeting(x, y, obj_grindrail))
 {
 	if !cutscene && !scr_transformationcheck(other)
 	{
