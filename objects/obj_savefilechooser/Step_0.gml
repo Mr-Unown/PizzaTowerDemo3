@@ -68,8 +68,8 @@ scr_soundeffect(29)
 						
 					}
 					break;
-			case 3:
-			{
+		case 3:
+		{
 					if !key_right //shocking
 					{
 					}
@@ -79,7 +79,13 @@ scr_soundeffect(29)
 				show_debug_message("copied save 3 to save 2")
 				scr_soundeffect(sfx_breakmetal)
 				}
+			if key_taunt && key_right
+			{
+			file_copy("playerData_3.ini", "playerData_1.ini")	
+			show_debug_message("copied save 3 to save 1")
+			scr_soundeffect(sfx_breakblock1)	
 			}
+		}
 		break;
 		}
 
