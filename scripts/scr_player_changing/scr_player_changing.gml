@@ -7,3 +7,4 @@ sprite_index = spr_idle
 image_speed = 0.35
 visible = false
 x = approach(x,obj_dresser.x,2)
+y = approach(y,obj_dresser.y,16)

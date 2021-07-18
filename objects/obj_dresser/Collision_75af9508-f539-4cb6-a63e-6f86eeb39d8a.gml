@@ -6,9 +6,12 @@ if other.key_up2 && !instance_exists(obj_palettechanger)
 	{
 		player = other._player
 	}	
+	obj_player1.spotlight = (other.object_index == obj_player2 ? false : true)
+	other.vsp = 20
 	other.state = states.changing
 	other.visible = false
 	var _depth = other.depth - 0.5
+	other.paletteselect = sprite_get_width(other.spr_palette) - 1
 	with (instance_create((other.x + random_range(-5, 5)), (other.y + random_range(-5, 5)), obj_balloonpop))
 	{
 		depth = _depth

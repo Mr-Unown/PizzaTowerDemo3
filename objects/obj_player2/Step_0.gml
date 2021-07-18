@@ -56,8 +56,11 @@ if (global.coop == 0)
     fightball = 0
 if (state != 91 && state != 109)
     fightball = 0
-if (key_start && global.coop == 1 && fightball == 0)
+//Coop GONE
+if (key_start && global.coop == 1 && fightball == 0 && !instance_exists(obj_palettechanger))
 {
+	if (!instance_exists(obj_coopflag))
+		instance_destroy(obj_coopflag);
     with (instance_create(x, y, obj_dashcloud))
         sprite_index = spr_bombexplosion
     repeat (6)

@@ -1,10 +1,22 @@
 var draw_x = camera_get_view_width(view_camera[0]) /2
 var draw_y = camera_get_view_height(view_camera[0]) /2
-/*
+//Darken BG
 draw_set_alpha(0.5)
 draw_rectangle_color(-32, -32, 992, 572, c_black, c_black, c_black, c_black, 0)
 draw_set_alpha(1)
 
+//Draw Palettes
+draw_surface_ext(player.surf_pallete,draw_x + 160, draw_y - 160,40,40,0,c_white,1)
+
+
+
+//Player Sprite
+pal_swap_set(player.surf_pallete, 1, true);
+draw_sprite_ext(player.sprite_index,player.image_index,328,286,4,4,0,c_white,1)
+pal_swap_reset();
+
+
+/*
 
 draw_sprite_ext(sprite_index,optionselected,draw_x,draw_y,1,1,0,c_white,1)
 
