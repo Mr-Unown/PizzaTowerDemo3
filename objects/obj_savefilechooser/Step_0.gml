@@ -25,7 +25,65 @@ global.savefile = file[0]
 global.savefileselected = false
 scr_soundeffect(29)
 }
+	//delete 
+	 if key_attack2 && global.savefileselected = false
+    {
+    global.savefile = file[selectedfile] 
+    scr_soundeffect(sfx_loseknight)
+    file_delete((("playerData_" + global.savefile) + ".ini"))
+    }
+		//copy
+		if key_shoot2 && global.savefileselected = false
+		{
+		 global.savefile = file[selectedfile] 	
+		 scr_soundeffect(sfx_enemyprojectile)
+		/* 
+        switch to check what it saves to. 
+		right is used here to do the inverse.
+	    so it'll save 2 to 1 if you hold right if you're on save 2. 
+      	if you're on save 2 and don't hold right, it'll save to save 3.
+		pretty nifty, right? - soda
+		*/
+		switch global.savefile
+		{
+				case 1: 
+				{
+				file_copy("playerData_1.ini", "playerData_2.ini")
+				show_debug_message("copied save 1 to save 2")
+				}
+				break;
+					case 2: 
+					{
+					if !key_right
+					{
+					file_copy("playerData_2.ini", "playerData_3.ini")
+					show_debug_message("copied save 2 to save 3")
+					}
+				if key_right
+				{
+				file_copy("playerData_2.ini", "playerData_1.ini")	
+				show_debug_message("copied save 2 to save 1")
+				scr_soundeffect(sfx_breakdance)
+				}
+						
+					}
+					break;
+			case 3:
+			{
+					if !key_right //shocking
+					{
+					}
+				if key_right
+				{
+				file_copy("playerData_3.ini", "playerData_2.ini")	
+				show_debug_message("copied save 3 to save 2")
+				scr_soundeffect(sfx_breakmetal)
+				}
+			}
+		break;
+		}
 
+		}
 //Cursor
 if !instance_exists(cursori) && global.savefileselected = false
 	with instance_create(168,96,obj_cursor) {
