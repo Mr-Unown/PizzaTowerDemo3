@@ -4,13 +4,14 @@ pooid = id;
 created = false;
 //core if you see this I can explain...
 chance = random_range(0,100);
-if chance <= 96
+if chance <= 97
 paletteselect = choose(0,1); //Sauce or Cheese Goop
 else
 paletteselect = 2; //Chocolate Goop
 image_xscale = choose(1,-1) ;
 hsp = 0;
-vsp = 0 ;
+vsp = 0;
+grounded = false
 grav = 0.4;
 roomid = room;
 roomx = xstart;

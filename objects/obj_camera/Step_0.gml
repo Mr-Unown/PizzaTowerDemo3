@@ -305,10 +305,19 @@ global.hitstunalarm = approach(global.hitstunalarm,-1,1)
 if (global.hitstunalarm <= -1)
 {
 	global.freezeframe = false;
+	
 }
-
+//Alarms
+if frozen = true && global.freezeframe = false
+{
+	for (var i = 0; i < 3; i++)
+	{
+		alarm_set(i, frozenalarm[i]);
+	}	
+	frozen = false;
+}
 //Speedrun Timer
-if  room != hub_room1 && room != hub_room2 && room != hub_room3 && room != cowboytask && room != timesuproom && room != Scootertransition && room != Tutorialtrap  && room != Titlescreen  && room != Realtitlescreen
+if room != hub_room1 && room != hub_room2 && room != hub_room3 && room != cowboytask && room != timesuproom && room != Scootertransition && room != Tutorialtrap  && room != Titlescreen  && room != Realtitlescreen
 {
 	if global.freezeframe = false && obj_player.state != states.gottreasure  && room != rank_room && !instance_exists(obj_endlevelfade) && !instance_exists(obj_gatetransition)
 	{

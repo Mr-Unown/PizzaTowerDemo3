@@ -30,7 +30,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                     machpunchAnim = 1
                     image_index = 0
                 }
-                if (state != 73) && other.baddieID.state != enemystates.enemyfrozen && other.baddieID.state != enemystates.enemyshake
+                if (state != 73) 
                     other.baddieID.grabbedby = 1
                 else
                     other.baddieID.grabbedby = 2
@@ -109,8 +109,9 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                     other.baddieID.blowdirection = 3
                     other.baddieID.blowintensity = 1
                 }
-				scr_sleep();
+				
                 state = 113
+				scr_sleep();
                 image_index = 0
                 scr_soundeffect(14)
                 scr_soundeffect(34)
@@ -445,6 +446,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player2) && obj_player2
                     other.baddieID.blowintensity = 1
                 }
                 state = 113
+				scr_sleep();
                 image_index = 0
                 scr_soundeffect(14)
                 scr_soundeffect(34)

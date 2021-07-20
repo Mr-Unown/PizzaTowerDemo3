@@ -66,6 +66,9 @@ switch room
 	case medieval_3:
 		message = "Thunderstruck";
 		break;	
+	case medieval_3_1:
+		message = "Banquet Hall";
+		break;			
 	case medieval_4:
 		message = "Medieval Fantasy";
 		break;	

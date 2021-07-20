@@ -8199,6 +8199,14 @@
             }
         },
         {
+            "Key": "4e5457b8-6e9f-44fa-bfb7-aec8953837e4",
+            "Value": {
+                "id": "16eb8862-da0e-4cab-b29a-c201a33f117f",
+                "resourcePath": "objects\\group_afterimageeffects\\group_afterimageeffects.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4e5e12ab-91e2-40b6-ae2e-69eaf70f9ec1",
             "Value": {
                 "id": "05988e1e-b52c-4140-898b-077f65548155",
@@ -9859,6 +9867,14 @@
             "Value": {
                 "id": "075461e2-4d39-4b74-8198-0ce98fc89361",
                 "resourcePath": "sprites\\spr_filebutton_confirm\\spr_filebutton_confirm.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5cf2d82b-3c72-4f73-96da-0bea70a393af",
+            "Value": {
+                "id": "23b46358-887a-42d9-bc17-46d46a6213c0",
+                "resourcePath": "sprites\\unknown\\unknown.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -17351,6 +17367,14 @@
             }
         },
         {
+            "Key": "a46a5647-74e8-4598-b234-c724224aaa2d",
+            "Value": {
+                "id": "41e06918-1752-4cd0-96e6-e7665a5eb9bb",
+                "resourcePath": "rooms\\medieval_3_1\\medieval_3_1.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "a49dedd6-4e6d-4892-a918-80710afbd125",
             "Value": {
                 "id": "8344a4d5-5aa9-42e4-8b63-595c380d3e2a",
@@ -24391,14 +24415,6 @@
             }
         },
         {
-            "Key": "e50824b3-4a13-4d17-accd-7810981a217b",
-            "Value": {
-                "id": "dcde1fc2-cc4d-419c-88b4-b17156f829f2",
-                "resourcePath": "scripts\\unit_test\\unit_test.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "e50a0a9b-59b6-45ed-9135-bc4250a15808",
             "Value": {
                 "id": "d8562eaa-40ee-4474-9da7-3f8b95563ac3",
@@ -26791,6 +26807,14 @@
             }
         },
         {
+            "Key": "fdc1c66c-6469-4171-a20e-c4c4f7ad4c55",
+            "Value": {
+                "id": "e9d8f7f4-d8b4-4d35-940a-9a948f8e0e87",
+                "resourcePath": "sprites\\unknown__2_\\unknown__2_.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "fddc0f1b-aa0a-42c6-9ef1-d3ee89fba4c2",
             "Value": {
                 "id": "4ade9707-015c-4d82-916c-5dbdad3b5a69",
@@ -27343,8 +27367,7 @@
         "fe3e1f3a-d25f-4a78-87ae-6bb500d172e6",
         "faaf8fff-90b2-4825-bdd2-1193a3d23b28",
         "b3a731ee-12f8-4aca-9b2a-b6780c7982f4",
-        "65847a94-d726-4286-af51-4cf46e244813",
-        "e50824b3-4a13-4d17-accd-7810981a217b"
+        "65847a94-d726-4286-af51-4cf46e244813"
     ],
     "tutorial": ""
 }

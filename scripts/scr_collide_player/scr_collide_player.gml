@@ -1,4 +1,5 @@
-
+if global.freezeframe = true
+	return false;
 //Variables
 grounded = false
 grinding = false

@@ -331,7 +331,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
                     pausedmusic = mu_medievalentrance
                 }
             }
-            else if (roomname == ("medieval_" + string(i)) && i > 2 && i <= 5)
+            else if (roomname == ("medieval_" + string(i)) && i > 2 && i <= 5) || room == medieval_3_1
             {
                 if (!audio_is_playing(mu_medievalremix))
                 {

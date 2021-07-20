@@ -9,7 +9,6 @@ knightroomy = 0;
 knightslidespeed = 0;
 //Global Time Events
 global.timeevent = 0 //1 = Xmas 2 = April 3 = Halloween
-
 //Bumbo want coin
 pizzacoin = 0;
 pizzacoinindicatorid = noone;
@@ -89,7 +88,17 @@ frozensmash = 0;
 frozenhsp = 0;
 frozenvsp = 0;
 frozenjumpbuffer = 0;
-
+frozenalarm[0] = -1;
+frozenalarm[1] = -1;
+frozenalarm[2] = -1;
+frozenalarm[3] = -1;
+frozenalarm[4] = -1;
+frozenalarm[5] = -1;
+frozenalarm[6] = -1;
+frozenalarm[7] = -1;
+frozenalarm[8] = -1;
+frozenalarm[9] = -1;
+frozenalarm[10] = -1;
 
 global.pausecombotime = false
 

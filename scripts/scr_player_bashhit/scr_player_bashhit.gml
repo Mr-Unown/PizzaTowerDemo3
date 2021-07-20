@@ -1,5 +1,7 @@
 mach2 = 0
 anger = 100
+if global.freezeframe = false
+{
 if (sprite_index == spr_player_bashblow1 && floor(image_index) >= (image_number - 3))
 {
     sprite_index = spr_player_jugglebash
@@ -40,10 +42,14 @@ if (sprite_index == spr_player_bashblow5 && floor(image_index) >= (image_number 
     jumpAnim = 1
     suplexmove = 0
 }
+}
 if (sprite_index != spr_player_jugglebash)
 {
     vsp = 0
     hsp = 0
 	//scr_sleep();	
 }
-image_speed = 0.35
+if global.freezeframe = false
+image_speed = 0.35;
+else
+image_speed = 0;

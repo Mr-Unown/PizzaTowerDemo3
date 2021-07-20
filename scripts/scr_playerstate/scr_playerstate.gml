@@ -538,6 +538,7 @@ if state != states.knightpep && state != states.knightpepslopes && state != stat
 	knightpoundbuffer = 0;
 }
 //Mach 3 Effect
+if global.freezeframe = false {
 if ((state == 91 || state == states.Sjump || state == states.breakdance || (state != 51 && (sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump))  || (pogomovespeed >= 12  && state == states.pogo) ||state == states.jetpack || (state == 109 && instance_exists(obj_player2) && obj_player2.state == 91) || state == 114 || state == 70 || state == 17 || state == 9 || state == 37 || state == 10 || state == 22 || state == 71 || pogojetcharge = true) && macheffect == 0)
 {
     macheffect = 1
@@ -566,4 +567,5 @@ if (toomuchalarm1 > 0)
         }
         toomuchalarm1 = 6
     }
+}
 }

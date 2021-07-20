@@ -19,8 +19,10 @@ if global.freezeframe = false
 		if global.can_freeze = true && global.hitstunenabled != 0 
 		{
 		#region Frozen entities
-		with obj_player {
-			if state != states.frozen {
+		with obj_player 
+		{
+			if state != states.frozen 
+			{
 			frozenstate = state;
 			frozenspriteindex = sprite_index;
 			frozenimageindex = image_index;
@@ -31,11 +33,18 @@ if global.freezeframe = false
 			frozenhsp = hsp;
 			frozenvsp = vsp;
 			frozenjumpbuffer = input_buffer_jump;
+			//Alarms
+			for (var i = 0; i < 10; i++)
+			{
+				frozenalarm[i] = alarm_get(i);
+			}	
 			state = states.frozen;
 			}
 		}		
-		with obj_baddie {
-			if state != enemystates.enemyfrozen {
+		with obj_baddie 
+		{
+			if state != enemystates.enemyfrozen 
+			{
 			frozenstate = state;
 			frozenspriteindex = sprite_index;
 			frozenimageindex = image_index;
@@ -48,6 +57,36 @@ if global.freezeframe = false
 				state = enemystates.enemyfrozen;
 			}
 		}
+		with group_afterimageeffects
+		{
+			
+			//Alarms
+			for (var i = 0; i < 2; i++)
+			{
+				frozenalarm[i] = alarm_get(i);
+			}
+			frozen = true;
+		}
+		#endregion
+		#region Frozen Clocks
+		//Alarms obj_camera
+		for (var i = 0; i < 3; i++)
+		{
+			frozenalarm[i] = alarm_get(i);
+		}	
+		for (var i = 0; i < 3; i++)
+		{
+			if alarm_get(i) > -1
+				alarm_set(i, -1);
+		}
+		frozen = true;
+		with obj_timeattack
+		{
+			frozenalarm = alarm[1];
+			alarm[1] = -1;
+			frozen = true;
+		}
+		
 		#endregion
 		global.freezeframe = true;
 		#region Zoom in

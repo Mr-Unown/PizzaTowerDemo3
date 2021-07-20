@@ -80,15 +80,15 @@ with (obj_player)
 			#endregion
 		}
         if (global.rank == "s")
-            scr_soundeffect(mu_ranks)
+			scr_soundstop(mu_ranks)
         if (global.rank == "a")
-            scr_soundeffect(mu_ranka)
+            scr_soundstop(mu_ranka)
         if (global.rank == "b")
-            scr_soundeffect(mu_rankb)
+            scr_soundstop(mu_rankb)
         if (global.rank == "c")
-            scr_soundeffect(mu_rankc)
+            scr_soundstop(mu_rankc)
         if (global.rank == "d")
-            scr_soundeffect(mu_rankd)
+            scr_soundstop(mu_rankd)
         
 		#region Get Score
 		ini_open("playerData_"+global.savefile+".ini")

@@ -11,6 +11,12 @@ startgateoffsety = 0;
 
 //Shaders
 greyscalefade = 0;
+//Frozenarray
+frozenalarm[0] = -1
+frozenalarm[1] = -1
+frozenalarm[2] = -1
+frozenalarm[3] = -1
+frozen = false;
 
 //Number
 _image_index = 0;
