@@ -18,4 +18,4 @@ if (image_xscale == -1)
 	}
 }
 
-
+tiles = "Tiles_1"

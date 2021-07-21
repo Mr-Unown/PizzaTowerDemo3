@@ -5,6 +5,19 @@ else
     movespeed = 14
 if (key_down2 && (!key_jump2))
     vsp = 10
+//Slopes
+if scr_slope() && vsp >= 0
+{
+	with (instance_place(x, (y + 1), obj_slope))
+	{
+		if other.movespeed > 8 && other.xscale == sign(image_xscale)
+		{
+			other.movespeed -= 0.25
+		}
+		else if other.movespeed < 20 && other.xscale == -sign(image_xscale)
+			other.movespeed += 0.25
+	}
+}	
 if ((!scr_slope()) && sprite_index == spr_tumblestart && floor(image_index) < 11)
     image_index = 11
 if (sprite_index == spr_tumblestart && floor(image_index) == (image_number - 1))

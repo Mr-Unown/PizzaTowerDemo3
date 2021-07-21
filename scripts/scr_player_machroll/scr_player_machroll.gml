@@ -11,6 +11,28 @@ else if place_meeting(x, (y + 1), obj_railh2)
 mach2 = 100
 machslideAnim = 1
 move = (key_right + key_left)
+//Slopes
+if scr_slope() && vsp >= 0
+{
+	with (instance_place(x, (y + 1), obj_slope))
+	{
+		if other.sprite_index = other.spr_dive && other.move = -sign(image_xscale)
+		{
+			other.movespeed = clamp(other.movespeed/1.25,0,13)
+			other.xscale = -sign(image_xscale)
+		}
+		if other.movespeed > 0 && other.xscale == sign(image_xscale)
+		{
+			other.movespeed -= 0.25
+			if other.movespeed <= 0
+			{
+				other.xscale = -sign(image_xscale)
+			}
+		}
+		else if other.movespeed < 23 && other.xscale == -sign(image_xscale)
+			other.movespeed += 0.25
+	}
+}
 if (machhitAnim == 1 || rollmove == 1)
 {
     if (character != "P")
@@ -95,14 +117,20 @@ if ((!key_down) && (!scr_solid((x + 27), (y - 32))) && (!scr_solid((x - 27), (y 
     image_index = 0
     scr_soundeffect(sfx_rollgetup)
 	
-	if (movespeed >= 12) && character = "PZ"
+	if (movespeed >= 12)
     {
         state = 91
-		movespeed = clamp(movespeed,12,15)
+		movespeed = clamp(movespeed,12,20)
     }
-    else
+    else if movespeed >= 8
 	{
         state = 70
+		movespeed = clamp(movespeed,8,12)
+	}
+	else
+	{
+		state = states.mach1
+		movespeed = 6
 	}
     if (character != "S")
         sprite_index = spr_rollgetup

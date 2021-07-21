@@ -121,9 +121,9 @@ if (input_buffer_jump < 8 && grounded && (!(move == 1 && xscale == -1)) && (!(mo
     else
         vsp = -13
 }
-if (fightball == 0)
+if (fightball == 0) 
 {
-    if (sprite_index == spr_mach3jump && floor(image_index) == (image_number - 1))
+    if (sprite_index == spr_mach3jump && floor(image_index) == (image_number - 1)) 
         sprite_index = spr_mach4
     if (sprite_index == spr_mach3dashpad && floor(image_index) == (image_number - 1))
         sprite_index = spr_mach4		
@@ -200,6 +200,7 @@ if (key_down && fightball == 0 && (!place_meeting(x, y, obj_dashpad)))
 {
     with (instance_create(x, y, obj_jumpdust))
         image_xscale = other.xscale
+	movespeed = clamp(movespeed,12,15)
     flash = 0
     state = 37
     vsp = 10

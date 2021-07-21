@@ -60,7 +60,7 @@ if !grounded && key_down2
 if sprite_index = spr_knightpepjump && floor(image_index) >= image_number - 1
 	sprite_index = spr_knightpepfall
 //Bump into wall
-if scr_solid(x + sign(hsp), y)  && (!scr_slope() && scr_solid(x + sign(hsp),y - 2)) && (!place_meeting((x + sign(hsp)), y, obj_metalblock) && !place_meeting((x + sign(hsp)), y, obj_metalblockhard) && (!place_meeting((x + sign(hsp)), y, obj_destructibles))) 
+if (scr_solid(x + sign(hsp), y && !scr_slope()) || (scr_slope() && scr_solid(x + sign(hsp),y - 2))) && (!place_meeting((x + sign(hsp)), y, obj_metalblock) && !place_meeting((x + sign(hsp)), y, obj_metalblockhard) && (!place_meeting((x + sign(hsp)), y, obj_destructibles))) 
 {
     if (character == "P")
     {

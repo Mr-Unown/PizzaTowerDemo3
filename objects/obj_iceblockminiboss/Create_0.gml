@@ -3,4 +3,4 @@ visible = false
 depth = 4
 mask_index = spr_masknull
 
-
+tiles = "Tiles_1"

@@ -87,6 +87,9 @@ switch room
 	case medieval_9:
 		message = "Treasure Room";
 		break;	
+	case medieval_9_1:
+		message = "Golden Fever"
+		break;
 	case medieval_10:
 		message = "John Throne";
 		break;	

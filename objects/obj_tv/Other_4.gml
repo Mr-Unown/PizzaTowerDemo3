@@ -9,8 +9,8 @@ if global.snickchallenge == false
 			global.srank = 14500
 		break;
 		case "medieval":
-			global.stimerank = 2.15;
-			global.srank = 13500	
+			global.stimerank = 2.30;
+			global.srank = 14000	
 		break;
 		case "ruin":
 			global.stimerank = 3.00;

@@ -4383,6 +4383,14 @@
             }
         },
         {
+            "Key": "2ba730e2-6621-41ab-a194-18e5ad196863",
+            "Value": {
+                "id": "6022c0cc-a1d6-43b4-b2cf-2b7d0524d946",
+                "resourcePath": "rooms\\chateau_3_1\\chateau_3_1.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "2ba7883e-6080-46fd-b326-9899499c2306",
             "Value": {
                 "id": "e3278181-2c65-4ce9-8dcc-e1c3caa3bc93",
@@ -11223,6 +11231,14 @@
             }
         },
         {
+            "Key": "6a0e3c13-f945-49da-8a98-835788927b99",
+            "Value": {
+                "id": "9b1f2f0d-6cf6-4706-a9ed-3c3cb686fef6",
+                "resourcePath": "rooms\\medieval_9_1\\medieval_9_1.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "6a1ad385-6572-483c-8db4-3b3881b53034",
             "Value": {
                 "id": "dadf1513-5b81-4f63-ae7b-d802cd3dece5",
@@ -12820,6 +12836,14 @@
                 "id": "c3604733-a9a7-41ab-a2f0-fa282d17f2ec",
                 "resourcePath": "objects\\obj_pizzaface\\obj_pizzaface.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "7a5aeafa-9206-4de4-b4fc-7016a85a926d",
+            "Value": {
+                "id": "d198cff7-07f7-4bf2-9565-e6440e3408ec",
+                "resourcePath": "rooms\\chateau_9_1\\chateau_9_1.yy",
+                "resourceType": "GMRoom"
             }
         },
         {

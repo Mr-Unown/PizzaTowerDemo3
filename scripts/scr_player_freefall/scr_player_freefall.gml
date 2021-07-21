@@ -47,8 +47,36 @@ if (freefallsmash > 10 && (!instance_exists(superslameffectid)))
         other.superslameffectid = id
     }
 }
-if (grounded && (!input_buffer_jump < 8) && (!place_meeting(x, (y + 1), obj_destructibles)))
+if (grounded && (!input_buffer_jump < 8) && scr_slope() && freefallsmash > 10 && key_down && (!place_meeting(x, (y + 1), obj_destructibles)))
 {
+	#region Roll
+	with instance_place(x,y+1,obj_slope)
+	{
+		other.xscale = -sign(image_xscale)
+	}
+    with (instance_create(x, y, obj_jumpdust))
+        image_xscale = other.xscale
+	with instance_create(x, y, obj_landcloud)
+	{
+		playerid = other.id
+		image_xscale = other.xscale
+	}			
+	movespeed = clamp(abs(vsp),3,12)
+    flash = 0
+    state = 37
+    vsp = 10
+	jumpAnim = 1
+    jumpstop = 0
+
+    freefallstart = 0
+	freefallsmash = 0
+	combo = 0
+    bounce = 0	
+	#endregion
+}
+else if (grounded && (!input_buffer_jump < 8) && (!place_meeting(x, (y + 1), obj_destructibles)) /* && !key_down*/ )
+{
+	#region Land
     scr_soundeffect(15)
     freefallsmash = 0
     if (shotgunAnim == 0)
@@ -77,15 +105,18 @@ if (grounded && (!input_buffer_jump < 8) && (!place_meeting(x, (y + 1), obj_dest
         shake_mag = 10
         shake_mag_acc = (30 / room_speed)
     }
-    combo = 0
-    bounce = 0
+
 	with instance_create(x, y, obj_landcloud)
 	{
 		playerid = other.id
 		image_xscale = other.xscale
 	}	
     freefallstart = 0
+	combo = 0
+    bounce = 0
+	#endregion
 }
+
 //Groundpound Cancel
 if (key_attack2) && !(character = "N" && pogo = true) && !grounded && freefallsmash > 10
 {		

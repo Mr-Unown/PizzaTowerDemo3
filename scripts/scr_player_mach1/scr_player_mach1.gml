@@ -89,7 +89,15 @@ if (key_slap2 && key_down)
     else
         vsp = -7
 }
-if (grounded && sprite_index != spr_mach1 && vsp > 0)
+if sprite_index = spr_rollgetup && floor(image_index) >= image_number - 1
+{
+	if (grounded && sprite_index != spr_mach1 && vsp > 0)
+	{
+		sprite_index = spr_mach1
+		image_index = 0
+	}
+}
+if (grounded && sprite_index != spr_mach1 &&  sprite_index != spr_rollgetup  && vsp > 0)
 {
     sprite_index = spr_mach1
     image_index = 0
