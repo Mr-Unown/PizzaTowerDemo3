@@ -16,11 +16,21 @@ if scr_slope() && vsp >= 0
 {
 	with (instance_place(x, (y + 1), obj_slope))
 	{
-		if other.sprite_index = other.spr_dive && other.move = -sign(image_xscale)
+		//Quick Roll
+		if (other.sprite_index = other.spr_dive && other.move = -sign(image_xscale)) || other.machrolljump = 1
 		{
 			other.movespeed = clamp(other.movespeed/1.25,0,13)
 			other.xscale = -sign(image_xscale)
+			other.machrolljump = false;
 		}
+		//Roll Slideup
+		if place_meeting((other.x + sign(other.hsp)), other.y - 2, obj_solid) && !place_meeting((other.x + other.hsp), other.y, obj_destructibles)
+		{
+			other.vsp = clamp(round(abs(other.movespeed/23) * -12),-12,-2)
+			other.machrolljump = true
+			other.movespeed = 0
+		}
+		//Roll Momentum
 		if other.movespeed > 0 && other.xscale == sign(image_xscale)
 		{
 			other.movespeed -= 0.25
@@ -56,7 +66,7 @@ if (!grounded)
 }
 if (machhitAnim == 0)
     rollmove = 0
-if (scr_solid((x + 1), y) && xscale == 1 && (!place_meeting((x + sign(hsp)), y, obj_slope)) && (!place_meeting((x + sign(hsp)), y, obj_destructibles)))
+if (scr_solid((x + xscale), y) && (!place_meeting((x + sign(xscale)), y, obj_slope)) && (!place_meeting((x + sign(xscale)), y, obj_destructibles))) && machrolljump = false
 {
     scr_soundeffect(16)
     hsp = 0
@@ -64,38 +74,31 @@ if (scr_solid((x + 1), y) && xscale == 1 && (!place_meeting((x + sign(hsp)), y, 
     flash = 0
     combo = 0
     state = 72
-    hsp = -2.5
+    hsp = -2.5 * xscale
     vsp = -3
     mach2 = 0
     image_index = 0
     instance_create((x + 10), (y + 10), obj_bumpeffect)
 }
-if (scr_solid((x - 1), y) && xscale == -1 && (!place_meeting((x + sign(hsp)), y, obj_slope)) && (!place_meeting((x + sign(hsp)), y, obj_destructibles)))
-{
-    scr_soundeffect(16)
-    hsp = 0
-    image_speed = 0.35
-    flash = 0
-    combo = 0
-    state = 72
-    hsp = 2.5
-    vsp = -3
-    mach2 = 0
-    image_index = 0
-    instance_create((x - 10), (y + 10), obj_bumpeffect)
-}
+
 if ((!instance_exists(dashcloudid)) && grounded)
 	with instance_create(x,y + 43,obj_cloudeffect)
 	{
 		image_xscale = other.xscale
 		other.dashcloudid = id
 	}
-if grounded
+if grounded{
     sprite_index = spr_machroll
-else if (sprite_index != spr_dive)
+	machrolljump = false;
+}
+else if (sprite_index != spr_dive) && machrolljump = 0
 {
     sprite_index = spr_dive
     vsp = 10
+}
+else if machrolljump = true
+{
+	 sprite_index = spr_machroll
 }
 image_speed = 0.8
 //Breakdance Roll

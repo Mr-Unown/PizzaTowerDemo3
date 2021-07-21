@@ -23,7 +23,6 @@ else if place_meeting((x + sign(hsp)), y, obj_solid) && (place_meeting((x), y + 
 	jumpstop = 1
 	movespeed = 0
 	xscale *= -1	
-
 }
 //Slam Down
 if (key_down2 && (!key_jump2))

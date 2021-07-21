@@ -49,7 +49,8 @@ vigitimer = 100
 //Mach3DashBuffer
 mach3dash = false;
 mach3dashbuffer = 0;
-
+//mahrol
+machrolljump = false;
 global.freezeframe = false;
 global.freezeframetimer = 200;
 
