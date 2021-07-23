@@ -1,5 +1,9 @@
 scr_initinput2()
 scr_playercreate()
+
+characters = "Noise"
+colorheight = 7;
+
 global.has_drawnpeter = false;
 selectedcharacter = 1;
 pogo = false

@@ -1,5 +1,9 @@
 scr_initinput()
 scr_playercreate()
+
+characters = "Peppino"
+colorheight = 8;
+
 global.has_drawnpeter = false;
 global.oldmeter = 0;
 selectedcharacter = 0;

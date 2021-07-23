@@ -1,18 +1,30 @@
-if surface_exists(surf_pallete)
+if surface_exists(surf_pallete) && customupdate = true
 {
 	#region Surface
 	surface_set_target(surf_pallete);
+	draw_clear_alpha(c_white,0)
 	pal_swap_draw_palette(spr_palette,0,0,0)
 	pal_swap_draw_palette(spr_palette,paletteselect,1,0)
-	for (var i = 0; i < sprite_get_height(spr_palette); i++) {
+	for (var i = 0; i < colorheight; i++) {
 	    draw_point_color(1,i,color[i]);
 	}
 	surface_reset_target();	
 	#endregion
+	customupdate = false;
 }
 else if !surface_exists(surf_pallete)
 {
-	surf_pallete = surface_create(surf_width,surf_height)	
+	surf_pallete = surface_create(surf_width,surf_height)
+	#region Surface
+	surface_set_target(surf_pallete);
+	draw_clear_alpha(c_white,0)
+	pal_swap_draw_palette(spr_palette,0,0,0)
+	pal_swap_draw_palette(spr_palette,paletteselect,1,0)
+	for (var i = 0; i < colorheight; i++) {
+	    draw_point_color(1,i,color[i]);
+	}
+	surface_reset_target();	
+	#endregion	
 }
 
 if surface_exists(surf_pallete) && (paletteselect >= sprite_get_width(spr_palette) - 1)

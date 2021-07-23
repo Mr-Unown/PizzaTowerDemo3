@@ -70,14 +70,14 @@ wallclingbuffer = 15
 grindeffect = noone
 //New Palette
 surf_width = 2
-surf_height = 6
+surf_height = 10
 
 surf_pallete = -1
 if !surface_exists(surf_pallete)
 surf_pallete = surface_create(surf_width,surf_height)
 
 custompalette = false
-
+customupdate = true;
 //Stored Stuff
 frozenstate = 0;
 frozenspriteindex = spr_player_idle;
