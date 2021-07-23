@@ -1,8 +1,6 @@
 hsp = (xscale * movespeed)
 if (sprite_index == spr_tumblestart)
     movespeed = 6
-else
-    movespeed = 14
 if (key_down2 && (!key_jump2))
     vsp = 10
 //Slopes
@@ -21,7 +19,10 @@ if scr_slope() && vsp >= 0
 if ((!scr_slope()) && sprite_index == spr_tumblestart && floor(image_index) < 11)
     image_index = 11
 if (sprite_index == spr_tumblestart && floor(image_index) == (image_number - 1))
+{
     sprite_index = spr_tumble
+	movespeed = 14
+}
 if (place_meeting((x + xscale), y, obj_solid) && (!place_meeting((x + hsp), y, obj_destructibles)))
 {
     scr_soundeffect(38)
@@ -42,4 +43,7 @@ if (grounded && vsp > 0)
     jumpstop = 0
 if (input_buffer_jump < 8 && grounded && hsp != 0)
     vsp = -9
+if sprite_index != spr_tumble	
 image_speed = 0.35
+else
+image_speed = (movespeed/14) * 0.35

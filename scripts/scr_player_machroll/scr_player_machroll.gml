@@ -2,6 +2,10 @@ switch jetpacking
 {
 case false:
 #region Roll
+
+
+image_speed = (movespeed/12) * 0.8
+
 if (!place_meeting(x, (y + 1), obj_railh))
     hsp = (xscale * movespeed)
 else if place_meeting(x, (y + 1), obj_railh)
@@ -16,20 +20,6 @@ if scr_slope() && vsp >= 0
 {
 	with (instance_place(x, (y + 1), obj_slope))
 	{
-		//Quick Roll
-		if (other.sprite_index = other.spr_dive && other.move = -sign(image_xscale)) || other.machrolljump = 1
-		{
-			other.movespeed = clamp(other.movespeed/1.25,0,13)
-			other.xscale = -sign(image_xscale)
-			other.machrolljump = false;
-		}
-		//Roll Slideup
-		if place_meeting((other.x + sign(other.hsp)), other.y - 2, obj_solid) && !place_meeting((other.x + other.hsp), other.y, obj_destructibles)
-		{
-			other.vsp = clamp(round(abs(other.movespeed/23) * -12),-12,-2)
-			other.machrolljump = true
-			other.movespeed = 0
-		}
 		//Roll Momentum
 		if other.movespeed > 0 && other.xscale == sign(image_xscale)
 		{
@@ -66,7 +56,8 @@ if (!grounded)
 }
 if (machhitAnim == 0)
     rollmove = 0
-if (scr_solid((x + xscale), y) && (!place_meeting((x + sign(xscale)), y, obj_slope)) && (!place_meeting((x + sign(xscale)), y, obj_destructibles))) && machrolljump = false
+//Collide with Wall
+if place_meeting((x + sign(hsp)), y, obj_solid) && (!place_meeting((x + sign(hsp)), y, obj_slope))  && !place_meeting((x + hsp), y, obj_destructibles)
 {
     scr_soundeffect(16)
     hsp = 0
@@ -80,27 +71,23 @@ if (scr_solid((x + xscale), y) && (!place_meeting((x + sign(xscale)), y, obj_slo
     image_index = 0
     instance_create((x + 10), (y + 10), obj_bumpeffect)
 }
-
 if ((!instance_exists(dashcloudid)) && grounded)
 	with instance_create(x,y + 43,obj_cloudeffect)
 	{
 		image_xscale = other.xscale
 		other.dashcloudid = id
 	}
-if grounded{
+if grounded
+{
     sprite_index = spr_machroll
-	machrolljump = false;
 }
-else if (sprite_index != spr_dive) && machrolljump = 0
+else if (sprite_index != spr_dive) 
 {
     sprite_index = spr_dive
     vsp = 10
 }
-else if machrolljump = true
-{
-	 sprite_index = spr_machroll
-}
-image_speed = 0.8
+
+
 //Breakdance Roll
 if (key_shoot2) && character != "V"
 {
