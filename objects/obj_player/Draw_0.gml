@@ -1,4 +1,4 @@
-if surface_exists(surf_pallete) && customupdate = true
+if surface_exists(surf_pallete) && (customupdate = true || state = states.changing)
 {
 	#region Surface
 	surface_set_target(surf_pallete);

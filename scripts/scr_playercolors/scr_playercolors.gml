@@ -7,7 +7,7 @@ switch character
 	break;
 	case "N":
 	characters = "Noise"
-	colorheight = 7;
+	colorheight = 8;
 	break;
 	case "S":
 	characters = "Snick"
@@ -35,7 +35,7 @@ switch character
 	break;
 }
 #endregion
-//Colorindex
+//Colorindex (Pratically useless remove later pls)
 colorindex[0] = 0
 colorindex[1] = 1
 colorindex[2] = 2
@@ -58,7 +58,7 @@ if !ini_section_exists(string(characters)+"Colors"+string(colorindex[0]))
  ini_write_real(string(characters)+"Colors"+string(colorindex[0]), "Green", 0);
  ini_write_real(string(characters)+"Colors"+string(colorindex[0]), "Blue", 0);
 }
-for (var i = 1; i < array_length_1d(colorindex); ++i) 
+for (var i = 1; i < colorheight; ++i) 
 {
 	if !ini_section_exists(string(characters)+"Colors"+string(colorindex[i])) 
 	{
@@ -69,7 +69,7 @@ for (var i = 1; i < array_length_1d(colorindex); ++i)
 }
 ini_open(string(characters)+"_palettes.ini")
 
-for (var i = 0; i < array_length_1d(colorindex); ++i) 
+for (var i = 0; i < colorheight; ++i) 
 {
 	colored[colorindex[i],0] = ini_read_real(string(characters)+"Colors"+string(colorindex[i]), "Red", 0);
 	colored[colorindex[i],1] = ini_read_real(string(characters)+"Colors"+string(colorindex[i]), "Green", 0);
@@ -80,7 +80,7 @@ ini_close()
 
 
 //Colors					//RED		//GREEN		//BLUE
-for (var i = 0; i < array_length_1d(colorindex); ++i) 
+for (var i = 0; i < colorheight; ++i) 
 {
 	color[i] = make_color_rgb(colored[i,0],colored[i,1],colored[i,2])
 }

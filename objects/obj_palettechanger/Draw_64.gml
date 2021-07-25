@@ -6,15 +6,16 @@ draw_rectangle_color(-32, -32, 992, 572, c_black, c_black, c_black, c_black, 0)
 draw_set_alpha(1)
 
 //Draw Palettes
-draw_surface_ext(player.surf_pallete,draw_x + 160, draw_y - 160,40,40,0,c_white,1)
-
-
+if surface_exists(player.surf_pallete)
+{
+	draw_surface_ext(player.surf_pallete, 96, draw_y - 160,40,40,0,c_white,1)
+}
+draw_sprite(spr_palettechanger_selection,-1,96,draw_y - 160)
 
 //Player Sprite
 pal_swap_set(player.surf_pallete, 1, true);
-draw_sprite_ext(player.sprite_index,player.image_index,328,286,4,4,0,c_white,1)
+draw_sprite_ext(player.sprite_index,player.image_index,draw_x - 152,draw_y + 16,4,4,0,c_white,1)
 pal_swap_reset();
-
 
 /*
 

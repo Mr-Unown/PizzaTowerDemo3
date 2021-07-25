@@ -3218,7 +3218,7 @@
             "Key": "1f0579ad-2712-4c68-a4ea-791477769860",
             "Value": {
                 "id": "ba1d1e18-9e94-403d-ac15-e9ba72ca71f4",
-                "resourcePath": "sprites\\spr_scrollbarbutton\\spr_scrollbarbutton.yy",
+                "resourcePath": "sprites\\spr_palettechanger_scrollbarbutton\\spr_palettechanger_scrollbarbutton.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -9875,14 +9875,6 @@
             "Value": {
                 "id": "075461e2-4d39-4b74-8198-0ce98fc89361",
                 "resourcePath": "sprites\\spr_filebutton_confirm\\spr_filebutton_confirm.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "5cf2d82b-3c72-4f73-96da-0bea70a393af",
-            "Value": {
-                "id": "23b46358-887a-42d9-bc17-46d46a6213c0",
-                "resourcePath": "sprites\\unknown\\unknown.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -19426,7 +19418,7 @@
             "Key": "b90cd752-1af0-4dce-bd8b-9d17550627e4",
             "Value": {
                 "id": "99803461-a4be-481c-87a4-8751b81a9bef",
-                "resourcePath": "sprites\\spr_scrollbar\\spr_scrollbar.yy",
+                "resourcePath": "sprites\\spr_palettechanger_scrollbar\\spr_palettechanger_scrollbar.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -22599,6 +22591,14 @@
             }
         },
         {
+            "Key": "d450f3d8-92a1-4a79-ae22-9ca736954643",
+            "Value": {
+                "id": "0cc8b1b2-4430-44e0-ba0f-d1f34dfca760",
+                "resourcePath": "sprites\\spr_palettechanger_selection\\spr_palettechanger_selection.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d4691a96-9503-4dcb-b00a-cac23867a6fc",
             "Value": {
                 "id": "1cddb010-3768-480c-a1ef-a2da021e64c9",
@@ -24791,6 +24791,14 @@
             }
         },
         {
+            "Key": "e8572af2-8d30-4922-b909-26ea608dc11b",
+            "Value": {
+                "id": "831b3847-45aa-442f-a4f3-06f23bbe433b",
+                "resourcePath": "sprites\\spr_palettechanger_textbox\\spr_palettechanger_textbox.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e873b529-b1e2-4e77-86bc-633242bfa3aa",
             "Value": {
                 "id": "69de7ed5-6ae1-4360-9d03-70e0f159f419",
@@ -26783,6 +26791,14 @@
             }
         },
         {
+            "Key": "fcbf0dc5-6d80-43eb-8b8c-7a8317f20f43",
+            "Value": {
+                "id": "49bae4a6-4f58-4111-b09f-eb9166bcbad5",
+                "resourcePath": "sprites\\spr_metalblockharddebris\\spr_metalblockharddebris.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "fce2e908-8bf4-4845-9036-506182221f3c",
             "Value": {
                 "id": "939820ae-4dd9-40ad-aa6e-dcd59c858c44",
@@ -26827,14 +26843,6 @@
             "Value": {
                 "id": "fde1550c-faae-44db-a47b-34e7beeb37aa",
                 "resourcePath": "sprites\\spr_player_slaprun1\\spr_player_slaprun1.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "fdc1c66c-6469-4171-a20e-c4c4f7ad4c55",
-            "Value": {
-                "id": "e9d8f7f4-d8b4-4d35-940a-9a948f8e0e87",
-                "resourcePath": "sprites\\unknown__2_\\unknown__2_.yy",
                 "resourceType": "GMSprite"
             }
         },

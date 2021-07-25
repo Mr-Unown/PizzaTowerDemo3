@@ -1502,3 +1502,4 @@ switch character {
 	break;
 }
 scr_playercolors()
+customupdate = true;

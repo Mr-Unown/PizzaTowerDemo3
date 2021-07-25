@@ -7,15 +7,17 @@ with other.id
 			if (paletteselect < sprite_get_width(spr_palette) - 1)
 				paletteselect += 1
 			else
-				paletteselect = 1
+				paletteselect = 1		
 		}
 		else
 		{
 			if (paletteselect < sprite_get_width(spr_palette) - 1)
 				paletteselect += 1
 			else
-				paletteselect = 0
+				paletteselect = 0			
 		}
+		if paletteselect >= sprite_get_width(spr_palette) - 1
+			customupdate = true;	
 		var _depth = depth - 5
 		with (instance_create((x + random_range(-5, 5)), (y + random_range(-5, 5)), obj_balloonpop))
 		{

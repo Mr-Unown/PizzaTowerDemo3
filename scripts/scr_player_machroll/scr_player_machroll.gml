@@ -129,9 +129,34 @@ if ((!key_down) && (!scr_solid((x + 27), (y - 32))) && (!scr_solid((x - 27), (y 
 break;
 case true:
 #region Jetpack
+//Movespeed
+if (movespeed < 24 && move == xscale)
+{
+    movespeed += 0.1
+    if (!instance_exists(crazyruneffectid))
+    {
+        with (instance_create(x, y, obj_crazyruneffect))
+        {
+            playerid = other.object_index
+            other.crazyruneffectid = id
+        }
+    }
+}
+else if (movespeed > 12 && move != xscale)
+    movespeed -= 0.1
 hsp = (xscale * movespeed)
 mach2 = 100
 move = (key_right + key_left)
+//Sprite
+if movespeed > 20 && image_speed != 0.8
+{
+	flash = 1
+	image_speed = 0.8	
+}
+else if movespeed <= 20 
+{
+	image_speed = 0.5
+}
 if (scr_solid((x + 1), y) && xscale == 1 && (!place_meeting((x + sign(hsp)), y, obj_slope)) && (!place_meeting((x + sign(hsp)), y, obj_destructibles)))
 {
 	jetpacking = false
@@ -175,7 +200,6 @@ if ((!instance_exists(dashcloudid)) && grounded)
 		image_xscale = other.xscale
 		other.dashcloudid = id
 	}
-image_speed = 0.8	
 #endregion
 break;
 }

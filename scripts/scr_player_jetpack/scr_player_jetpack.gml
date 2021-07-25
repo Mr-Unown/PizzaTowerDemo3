@@ -90,7 +90,11 @@ if (!instance_exists(chargeeffectid))
         other.chargeeffectid = id
     }
 }
-
+//Image Speed
+if (sprite_index == spr_jetpack)
+    image_speed = 0.4
+if (sprite_index == spr_jetpackcrazy)
+    image_speed = 0.75
 if jetpacking = true && key_down && !place_meeting(x, y, obj_dashpad) && grounded {
 	sprite_index = spr_playerN_jetpackslide
     with (instance_create(x, y, obj_jumpdust))
