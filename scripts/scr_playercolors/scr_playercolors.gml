@@ -79,7 +79,7 @@ ini_close()
 #endregion
 
 
-//Colors					//RED		//GREEN		//BLUE
+//Colors					    //RED		//GREEN		//BLUE
 for (var i = 0; i < colorheight; ++i) 
 {
 	color[i] = make_color_rgb(colored[i,0],colored[i,1],colored[i,2])
