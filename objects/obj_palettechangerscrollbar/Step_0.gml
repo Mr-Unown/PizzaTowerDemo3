@@ -1,3 +1,25 @@
+#region Read INI
+if readcolor = true
+{
+	#region Read Colors
+	ini_open(string(player.characters)+"_palettes.ini")
+	switch colorchannel
+	{
+		case 0:
+		colorvalue = ini_read_real(string(player.characters)+"Colors"+string(global.colorchoosen), "Red", 0)/255;
+		break;
+		case 1:
+		colorvalue = ini_read_real(string(player.characters)+"Colors"+string(global.colorchoosen), "Green", 0)/255;
+		break;
+		case 2:
+		colorvalue = ini_read_real(string(player.characters)+"Colors"+string(global.colorchoosen), "Blue", 0)/255;
+		break;		
+	}
+	ini_close()
+	readcolor = false;
+	#endregion
+}
+#endregion
 #region Draw Position
 switch colorchannel
 {
@@ -52,10 +74,9 @@ else if !mouse_check_button(mb_left)
 if (selected == 1)
 {
 	colorvalue = clamp( (_mouse_x - _draw_x) / (sprite_get_width(spr_palettechanger_scrollbar) - 5),0,1)
-	finalvalue = round(colorvalue*255);
 }
 
-
+finalvalue = round(colorvalue*255);
 
 
 

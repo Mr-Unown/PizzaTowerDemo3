@@ -2,10 +2,47 @@
 if other.key_up2 && !instance_exists(obj_palettechanger)
 {
 	_player = other.id
+	var _players = _player;
 	with instance_create(room_width/2,room_height/2,obj_palettechanger)	
 	{
+		global.colorchoosen = 0;
 		player = other._player
+		for (var i = 0; i < player.colorheight; i++) 
+		{
+		   color[i] = player.color[i]
+		}
+
+		#region Scrollbars
+		var i = 0;
+		repeat(3)
+		{
+			with instance_create(x,y,obj_palettechangerscrollbar)
+			{
+				colorchannel = i
+				other.slider[colorchannel] = id;
+				readcolor = true;
+				#region Read Colors
+				ini_open(string(_players.characters)+"_palettes.ini")
+				switch colorchannel
+				{
+					case 0:
+					colorvalue = ini_read_real(string(_players.characters)+"Colors"+string(global.colorchoosen), "Red", 0)/255;
+					break;
+					case 1:
+					colorvalue = ini_read_real(string(_players.characters)+"Colors"+string(global.colorchoosen), "Green", 0)/255;
+					break;
+					case 2:
+					colorvalue = ini_read_real(string(_players.characters)+"Colors"+string(global.colorchoosen), "Blue", 0)/255;
+					break;		
+				}
+				ini_close()
+				#endregion
+			}
+		i++
+		}
+		#endregion		
 	}	
+	
 	obj_player1.spotlight = (other.object_index == obj_player2 ? false : true)
 	other.vsp = 20
 	other.state = states.changing

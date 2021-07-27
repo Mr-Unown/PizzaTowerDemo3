@@ -5,6 +5,6 @@ draw_y = -100;
 button_x = -100;
 draw_color = c_red;
 colorvalue = 1;
-finalvalue = 255;
+finalvalue = 0;
 selected = false;
 player = obj_player1

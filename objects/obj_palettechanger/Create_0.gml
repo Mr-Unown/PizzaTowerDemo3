@@ -4,18 +4,16 @@ has_selectedoption = false;
 slider[0] = noone;
 slider[1] = noone;
 slider[2] = noone;
-#region Scrollbars
-var i = 0;
-repeat(3)
-{
-	with instance_create(x,y,obj_palettechangerscrollbar)
-	{
-		colorchannel = i
-		other.slider[colorchannel] = id;
-	}
-	i++
-}
-
-
-#endregion
-global.colorchoosen = 0;
+//Draw Surface
+surface = noone;
+color[0] = 0;
+color[1] = 0;
+color[2] = 0;
+color[3] = 0;
+color[4] = 0;
+color[5] = 0;
+color[6] = 0;
+color[7] = 0;
+color[8] = 0;
+color[9] = 0;
+color[10] = 0;
