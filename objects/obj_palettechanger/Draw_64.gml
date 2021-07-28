@@ -10,6 +10,8 @@ if !surface_exists(surface) && surface_exists(player.surf_pallete)
 	surface = surface_create(2,10);
 	surface_copy(surface,0,0,player.surf_pallete);
 }
+
+
 //Draw Palettes
 if surface_exists(surface)
 {
@@ -22,7 +24,7 @@ if surface_exists(surface)
 	surface_reset_target()
 	draw_surface_ext(surface, 96, draw_y - 160,40,40,0,c_white,1)
 }
-draw_sprite(spr_palettechanger_selection,-1,96,draw_y - 160)
+draw_sprite(spr_palettechanger_selection,-1,96,(draw_y - 160) + (40 * global.colorchoosen))
 
 //Player Sprite
 pal_swap_set(surface, 1, true);

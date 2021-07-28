@@ -1,5 +1,5 @@
 #region Read INI
-if readcolor = true
+while readcolor = true
 {
 	#region Read Colors
 	ini_open(string(player.characters)+"_palettes.ini")
@@ -16,6 +16,7 @@ if readcolor = true
 		break;		
 	}
 	ini_close()
+	finalvalue = round(colorvalue*255);
 	readcolor = false;
 	#endregion
 }
@@ -76,8 +77,10 @@ if (selected == 1)
 	colorvalue = clamp( (_mouse_x - _draw_x) / (sprite_get_width(spr_palettechanger_scrollbar) - 5),0,1)
 }
 
-finalvalue = round(colorvalue*255);
-
+if readcolor = false
+{
+	finalvalue = round(colorvalue*255);
+}
 
 
 

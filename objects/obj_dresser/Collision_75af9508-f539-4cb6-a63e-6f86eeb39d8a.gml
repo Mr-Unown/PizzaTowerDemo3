@@ -6,6 +6,7 @@ if other.key_up2 && !instance_exists(obj_palettechanger)
 	with instance_create(room_width/2,room_height/2,obj_palettechanger)	
 	{
 		global.colorchoosen = 0;
+		global.oldcolorchoosen = 0;
 		player = other._player
 		for (var i = 0; i < player.colorheight; i++) 
 		{
