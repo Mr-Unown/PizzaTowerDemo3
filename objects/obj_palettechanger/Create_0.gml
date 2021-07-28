@@ -1,6 +1,6 @@
 depth = -999;
 player = obj_player1;
-has_selectedoption = false;
+has_selectedoption = 0;
 slider[0] = noone;
 slider[1] = noone;
 slider[2] = noone;
