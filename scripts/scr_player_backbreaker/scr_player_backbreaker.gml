@@ -99,15 +99,25 @@ if (sprite_index == spr_taunt)
 			{
 				if (paletteselect < sprite_get_width(spr_palette) - 1)
 					paletteselect += 1
+				else if customsavedpalette < 5
+					customsavedpalette += 1				
 				else
+				{
 					paletteselect = 1
+					customsavedpalette = 1
+				}
 			}
 			else
 			{
 				if (paletteselect < sprite_get_width(spr_palette) - 1)
 					paletteselect += 1
+				else if customsavedpalette < 5
+					customsavedpalette += 1				
 				else
-					paletteselect = 0
+				{
+					paletteselect = 0	
+					customsavedpalette = 1
+				}
 			}
 			taunttimer = 20
 		}
