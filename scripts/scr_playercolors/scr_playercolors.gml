@@ -51,7 +51,7 @@ colorindex[10] = 10
 
 //Saved Colors
 #region Spaghetti
-ini_open(string(characters)+"_palettes.ini")
+ini_open("Custom/"+string(characters)+"_"+string(customsavedpalette)+"_palettes.ini")
 if !ini_section_exists(string(characters)+"Colors"+string(colorindex[0])) 
 {
  ini_write_real(string(characters)+"Colors"+string(colorindex[0]), "Red", 0);
@@ -67,7 +67,7 @@ for (var i = 1; i < colorheight; ++i)
 		ini_write_real(string(characters)+"Colors"+string(colorindex[i]), "Blue", 255);
 	}	
 }
-ini_open(string(characters)+"_palettes.ini")
+ini_open("Custom/"+string(characters)+"_"+string(customsavedpalette)+"_palettes.ini")
 
 for (var i = 0; i < colorheight; ++i) 
 {

@@ -1501,5 +1501,5 @@ switch character {
 	#endregion
 	break;
 }
-scr_playercolors()
+scr_playercolors();
 customupdate = true;

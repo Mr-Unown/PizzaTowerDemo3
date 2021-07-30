@@ -457,6 +457,14 @@ if in_water = true
     }	
 	
 }
+/*
+//Update Colors
+if customsavedpalette != oldcustomsavedpalette
+{
+	scr_playercolors();
+	customupdate = true;
+	oldcustomsavedpalette = customsavedpalette;
+}*/
 //Murder
 if combothreshold >= 10
 {

@@ -1,8 +1,9 @@
 #region Read INI
 while readcolor = true
 {
+	selected = false;
 	#region Read Colors
-	ini_open(string(player.characters)+"_palettes.ini")
+	ini_open("Custom/"+string(player.characters)+"_"+string(player.customsavedpalette)+"_palettes.ini")
 	switch colorchannel
 	{
 		case 0:

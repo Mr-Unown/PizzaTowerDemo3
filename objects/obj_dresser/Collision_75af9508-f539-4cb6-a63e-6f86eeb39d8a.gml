@@ -23,7 +23,7 @@ if other.key_up2 && !instance_exists(obj_palettechanger)
 				other.slider[colorchannel] = id;
 				readcolor = true;
 				#region Read Colors
-				ini_open(string(_players.characters)+"_palettes.ini")
+				ini_open("Custom/"+string(_players.characters)+"_"+string(_players.customsavedpalette)+"_palettes.ini")
 				switch colorchannel
 				{
 					case 0:

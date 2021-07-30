@@ -7,6 +7,9 @@ knightpoundbuffer = 0;
 knightmaxy = 0;
 knightroomy = 0;
 knightslidespeed = 0;
+//CustomPaletteChoosyFILE
+customsavedpalette = 1;
+oldcustomsavedpalette = 1;
 //Global Time Events
 global.timeevent = 0 //1 = Xmas 2 = April 3 = Halloween
 //Bumbo want coin
