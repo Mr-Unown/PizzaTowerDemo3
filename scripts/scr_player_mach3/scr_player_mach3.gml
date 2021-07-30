@@ -206,7 +206,7 @@ if (key_down && fightball == 0 && (!place_meeting(x, y, obj_dashpad)))
     vsp = 10
 }
 //Hitwall
-if (((!grounded) && scr_solid(x + hsp,y) && (!place_meeting((x + hsp), y, obj_destructibles)) && (!place_meeting((x + sign(hsp)), y, obj_slope))) || (grounded && (scr_solid(x + hsp,y - 2) && !place_meeting(x + sign(hsp),y,obj_slope)) && (!place_meeting((x + hsp), y, obj_destructibles)) && (!place_meeting((x + hsp), y, obj_metalblock)) && scr_slope() ) )
+if (((!grounded) && scr_solid(x + hsp,y) && (!place_meeting((x + hsp), y, obj_destructibles)) && (!place_meeting((x + sign(hsp)), y, obj_slope))) || (grounded && (scr_solid(x + sign(hsp),y - 2)  && !place_meeting(x + sign(hsp),y,obj_slope)) && (!place_meeting((x + hsp), y, obj_destructibles)) && (!place_meeting((x + hsp), y, obj_metalblock)) && scr_slope() ) )
 {
     wallspeed = clamp(movespeed,12, 24)
     state = 17

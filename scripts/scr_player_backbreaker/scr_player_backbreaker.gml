@@ -120,6 +120,11 @@ if (sprite_index == spr_taunt)
 				}
 			}
 			taunttimer = 20
+			if paletteselect >= sprite_get_width(spr_palette) - 1
+			{
+				scr_playercolors();
+				customupdate = true;	
+			}			
 		}
         if key_up2
         {
