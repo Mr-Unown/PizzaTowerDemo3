@@ -5,10 +5,11 @@ draw_set_alpha(0.5)
 draw_rectangle_color(-32, -32, 992, 572, c_black, c_black, c_black, c_black, 0)
 draw_set_alpha(1)
 
-if !surface_exists(surface) && surface_exists(player.surf_pallete)
+if !surface_exists(surface)
 {
 	surface = surface_create(2,10);
-	surface_copy(surface,0,0,player.surf_pallete);
+	if surface_exists(player.surf_pallete)
+		surface_copy(surface,0,0,player.surf_pallete);
 }
 
 

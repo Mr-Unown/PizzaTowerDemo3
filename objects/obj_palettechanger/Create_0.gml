@@ -17,3 +17,5 @@ color[7] = 0;
 color[8] = 0;
 color[9] = 0;
 color[10] = 0;
+//Update Colors
+//customupdate = false;

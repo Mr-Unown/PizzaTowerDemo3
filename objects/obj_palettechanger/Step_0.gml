@@ -3,51 +3,62 @@
 //Change Palette Set to EDIT
 if player.key_right2
 {
-	player.customsavedpalette = clamp(player.customsavedpalette + 1,1,5)
-
-	#region Update
-	global.colorchoosen = 0;
-	global.oldcolorchoosen = 0;
 	#region Save Palette to INI
 	ini_open("Custom/"+string(player.characters)+"_"+string(player.customsavedpalette)+"_palettes.ini")	
 		ini_write_real(string(player.characters)+"Colors"+string(global.colorchoosen), "Red", slider[0].finalvalue);
 		ini_write_real(string(player.characters)+"Colors"+string(global.colorchoosen), "Green", slider[1].finalvalue);
 		ini_write_real(string(player.characters)+"Colors"+string(global.colorchoosen), "Blue", slider[2].finalvalue);
 	ini_close()
-	#endregion
+	#endregion	
+	player.customsavedpalette = clamp(player.customsavedpalette + 1,1,5)
+	#region Update
+	with player
+	{
+		scr_playercolors();
+		customupdate = true;	
+	}
+	global.oldcolorchoosen = 0;
+	global.colorchoosen = 0;
 	with obj_palettechangerscrollbar
 	{
 		readcolor = true;
-	}
+	}		
 	for (var i = 0; i < player.colorheight; i++) 
 	{
 	   color[i] = player.color[i]
-	}	
-	#endregion
+	}		
+	
+	
 	#endregion
 }
 if -player.key_left2
 {
-	player.customsavedpalette = clamp(player.customsavedpalette - 1,1,5)
-	
-	#region Update
-	global.colorchoosen = 0;
-	global.oldcolorchoosen = 0;
 	#region Save Palette to INI
 	ini_open("Custom/"+string(player.characters)+"_"+string(player.customsavedpalette)+"_palettes.ini")	
 		ini_write_real(string(player.characters)+"Colors"+string(global.colorchoosen), "Red", slider[0].finalvalue);
 		ini_write_real(string(player.characters)+"Colors"+string(global.colorchoosen), "Green", slider[1].finalvalue);
 		ini_write_real(string(player.characters)+"Colors"+string(global.colorchoosen), "Blue", slider[2].finalvalue);
 	ini_close()
-	#endregion
+	#endregion	
+	player.customsavedpalette = clamp(player.customsavedpalette - 1,1,5)
+	#region Update
+	with player
+	{
+		scr_playercolors();
+		customupdate = true;	
+	}
+	global.oldcolorchoosen = 0;
+	global.colorchoosen = 0;
 	with obj_palettechangerscrollbar
 	{
 		readcolor = true;
-	}
+	}		
 	for (var i = 0; i < player.colorheight; i++) 
 	{
 	   color[i] = player.color[i]
-	}	
+	}		
+	
+	
 	#endregion
 }
 	
