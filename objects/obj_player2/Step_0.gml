@@ -68,7 +68,7 @@ if (key_start && global.coop == 1 && fightball == 0 && !instance_exists(obj_pale
     global.coop = 0
     obj_player1.spotlight = 1
     obj_player1.depth = -7
-    scr_soundeffect(2)
+    scr_soundeffect(sfx_explosion)
 }
 if (global.coop == 0)
 {

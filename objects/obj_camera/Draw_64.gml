@@ -500,8 +500,10 @@ if (player.state != 55)
 	ini_open("playerData_"+global.savefile+".ini");
 	var ranks = ini_read_string("Ranks", string(global.levelname), "none"); 
 	ini_close();
-	if global.levelname != "none" && (ranks != "none") && room != hub_room1 && room != hub_room2 && room != hub_room3 && room != cowboytask && room != timesuproom && room != Scootertransition && room != Tutorialtrap  && room != Titlescreen  && room != Realtitlescreen
+	if global.levelname != "none" && (ranks != "none") && room != hub_room1 && room != hub_room2 && room != hub_room3 && room != cowboytask && room != timesuproom && room != Scootertransition && room != Tutorialtrap  && room != Titlescreen  && room != Realtitlescreen && !instance_exists(obj_endlevelfade)
 	{
+		if global.bonustimer = false
+			global.bonustimer = true;
 		var tiny = ":"
 		var tinier = ":"
 		var tinyish = ":"

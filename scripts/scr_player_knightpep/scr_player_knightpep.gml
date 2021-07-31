@@ -48,7 +48,7 @@ if (input_buffer_jump < 8 && vsp > 0 && grounded && (sprite_index == spr_knightp
 }
 if (floor(image_index) == (image_number - 1) && sprite_index == spr_knightpepjumpstart)
 {
-    scr_soundeffect(0)
+    scr_soundeffect(sfx_jump)
     vsp = -11
     if key_right
         hsp = 4

@@ -41,7 +41,7 @@ if (scr_solid(x, (y - 1)) && jumpstop == 0 && jumpAnim == 1)
 }
 if (grounded && input_buffer_jump < 8 && (!key_down) && (!key_attack) && vsp > 0 && (!(sprite_index == spr_facestomp || sprite_index == spr_freefall)))
 {
-    scr_soundeffect(0)
+    scr_soundeffect(sfx_jump)
     sprite_index = spr_jump
     if (shotgunAnim == 1)
         sprite_index = spr_shotgunjump
@@ -364,7 +364,7 @@ if (key_shoot2 && character == "V" && (!instance_exists(obj_vigidynamite)))
             movespeed = 0
         state = 110
         jumpAnim = 1
-        scr_soundeffect(0)
+        scr_soundeffect(sfx_jump)
         image_index = 0
         vsp = -7
         sprite_index = spr_playerV_dynamitethrow

@@ -2,50 +2,61 @@
 scr_getinput()
 if instance_exists(obj_debugcontroller) && obj_debugcontroller.active = true
 	return;
-//Select your Car
+//Select your File
 if ((key_up2 || keyboard_check_pressed(vk_up)) && selectedfile > 0 && global.savefileselected = false)
 {
     selectedfile -= 1
-    scr_soundeffect(29)
+    scr_soundeffect(sfx_step)
 }
 if ((key_down2 || keyboard_check_pressed(vk_down)) && selectedfile < 2 && global.savefileselected = false)
 {
     selectedfile += 1
-    scr_soundeffect(29)
+    scr_soundeffect(sfx_step)
 }
-//Load Save File
-if key_jump2 && global.savefileselected = false {
-scr_soundeffect(7)
-global.savefile = file[selectedfile] 
-global.savefileselected = true
+
+//Select your Option
+if ((-key_left2 || keyboard_check_pressed(vk_left)) && selectedoption > 0 && global.savefileselected = false)
+{
+    selectedoption -= 1
+    scr_soundeffect(sfx_step)
 }
+if ((key_right2 || keyboard_check_pressed(vk_right)) && selectedoption < 2 && global.savefileselected = false)
+{
+    selectedoption += 1
+    scr_soundeffect(sfx_step)
+}
+
 //Back out of Character Select
-if key_slap2 && global.savefileselected = true && obj_characterselect.characterselected = false {
-global.savefile = file[0] 	
-global.savefileselected = false
-scr_soundeffect(29)
+if key_slap2 && global.savefileselected = true && obj_characterselect.characterselected = false 
+{
+	save_fileoptionselected = false
+	global.savefile = file[0] 	
+	global.savefileselected = false
+	scr_soundeffect(sfx_step)
 }
-	//delete 
-	 if key_attack2 && global.savefileselected = false
-    {
-    global.savefile = file[selectedfile] 
+#region File Manipulation
+//Load Save File
+if key_jump2 && global.savefileselected = false 
+{
+	scr_soundeffect(sfx_collecttoppin)
+	global.savefile = file[selectedfile] 
+	global.savefileselected = true
+}
+//Delete File 
+if key_attack2 && global.savefileselected = false
+{
+	global.savefile = file[selectedfile] 
     scr_soundeffect(sfx_loseknight)
+	scr_soundeffect(sfx_explosion)
     file_delete((("playerData_" + global.savefile) + ".ini"))
-    }
-		//copy
-		if key_shoot2 && global.savefileselected = false
-		{
-		 global.savefile = file[selectedfile] 	
-		 scr_soundeffect(sfx_enemyprojectile)
-		/* 
-        switch to check what it saves to. 
-		right is used here to do the inverse.
-	    so it'll save 2 to 1 if you hold right if you're on save 2. 
-      	if you're on save 2 and don't hold right, it'll save to save 3.
-		pretty nifty, right? - soda
-		*/
-		switch global.savefile
-		{
+}
+//copy
+if key_shoot2 && global.savefileselected = false
+{
+	global.savefile = file[selectedfile] 	
+	scr_soundeffect(sfx_enemyprojectile)
+	switch global.savefile
+	{
 				case 1: 
 				{
 				file_copy("playerData_1.ini", "playerData_2.ini")
@@ -90,6 +101,29 @@ scr_soundeffect(29)
 		}
 
 		}
+#endregion		
+if key_jump2 && global.savefileselected = false && save_fileoptionselected = false
+{
+	switch (selectedoption)
+	{
+		case 2: //Load Save
+			scr_soundeffect(sfx_collecttoppin);
+			global.savefile = file[selectedfile];
+			global.savefileselected = true;
+			save_fileoptionselected = true;
+		break;
+		case 1: //Copy Save
+		
+		break;
+		case 0: //Delete Save
+			global.savefile = file[selectedfile] 
+			save_fileoptionselected = true;
+			instance_create(x,y,obj_erasefile)
+			//file_delete((("playerData_" + global.savefile) + ".ini"))
+		break;
+	}
+}
+
 //Cursor
 if !instance_exists(cursori) && global.savefileselected = false
 	with instance_create(168,96,obj_cursor) {

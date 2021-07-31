@@ -6,7 +6,7 @@ with (other.id)
         {
             if (state != 24 && hurted == 0)
             {
-                scr_soundeffect(1)
+                scr_soundeffect(sfx_becomeknight)
 				var randomchance = irandom_range(0,100);
 				if (randomchance < global.quipsfrequency) && !audio_is_playing(sfx_lightning)
 				{

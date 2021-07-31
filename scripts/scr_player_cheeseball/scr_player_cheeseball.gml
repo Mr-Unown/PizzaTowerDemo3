@@ -53,6 +53,6 @@ if key_jump
 if (input_buffer_jump < 8 && grounded)
 {
     instance_create(x, y, obj_highjumpcloud2)
-    scr_soundeffect(0)
+    scr_soundeffect(sfx_jump)
     vsp = -5
 }

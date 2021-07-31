@@ -25,7 +25,7 @@ if (grounded && key_down)
     crouchAnim = 1
     image_index = 0
     jumpstop = 0
-    scr_soundeffect(29)
+    scr_soundeffect(sfx_step)
 }
 if (jumpAnim == 1)
 {
@@ -53,7 +53,7 @@ if (grounded && (!key_down) && (!scr_solid(x, (y - 16))))
     image_index = 0
     jumpstop = 0
     mask_index = spr_player_mask
-    scr_soundeffect(29)
+    scr_soundeffect(sfx_step)
 }
 if (move != 0)
     xscale = move

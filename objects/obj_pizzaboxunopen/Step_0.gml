@@ -2,7 +2,7 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
 {
     if audio_is_playing(sfx_collecttoppin)
         audio_stop_sound(sfx_collecttoppin)
-    scr_soundeffect(7)
+    scr_soundeffect(sfx_collecttoppin)
     if (content == obj_bigcollect)
     {
         instance_create(x, (y - 3), obj_bigcollect)

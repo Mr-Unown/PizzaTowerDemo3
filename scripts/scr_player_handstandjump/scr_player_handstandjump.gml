@@ -112,7 +112,7 @@ if (character != "S")
     {
         image_index = 0
         sprite_index = spr_suplexdashjumpstart
-        scr_soundeffect(0)
+        scr_soundeffect(sfx_jump)
         instance_create(x, y, obj_highjumpcloud2)
         if (character == "P")
             vsp = -11

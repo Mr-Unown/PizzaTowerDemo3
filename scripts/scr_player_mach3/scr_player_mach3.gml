@@ -110,7 +110,7 @@ if (machhitAnim == 1)
 }
 if (input_buffer_jump < 8 && grounded && (!(move == 1 && xscale == -1)) && (!(move == -1 && xscale == 1)))
 {
-    scr_soundeffect(0)
+    scr_soundeffect(sfx_jump)
     if (sprite_index != spr_fightball1 && sprite_index != spr_fightball2)
     {
         image_index = 0

@@ -104,7 +104,7 @@ if (grounded && sprite_index != spr_mach1 &&  sprite_index != spr_rollgetup  && 
 }
 if (key_jump && grounded)
 {
-    scr_soundeffect(0)
+    scr_soundeffect(sfx_jump)
     sprite_index = spr_airdash1
     dir = xscale
     momemtum = 1

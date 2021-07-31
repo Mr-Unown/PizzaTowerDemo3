@@ -51,7 +51,7 @@ else
     }
 	if grounded && frozenstate = states.mach3 && !(move == 1 && xscale == -1) && !(move == -1 && xscale == 1)
 	{
-		scr_soundeffect(0)
+		scr_soundeffect(sfx_jump)
 		if (sprite_index != spr_fightball1 && sprite_index != spr_fightball2)
 		{
 	        image_index = 0
@@ -66,7 +66,7 @@ else
 	{
     image_index = 0
     sprite_index = spr_secondjump1
-    scr_soundeffect(0)
+    scr_soundeffect(sfx_jump)
     if (character == "P")
         vsp = -11
     else
@@ -74,7 +74,7 @@ else
 	}
 	if (frozenstate = states.mach1 && grounded)
 	{
-		scr_soundeffect(0)
+		scr_soundeffect(sfx_jump)
 		sprite_index = spr_airdash1
 		dir = xscale
 		momemtum = 1

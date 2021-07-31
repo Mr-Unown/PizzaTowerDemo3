@@ -11,11 +11,8 @@ draw_set_color(c_yellow)
 draw_text(xi, yi, string_hash_to_newline(message))
 
 
-//Speedrun Timer
-	ini_open("playerData_"+global.savefile+".ini");
-	var ranks = ini_read_string("Ranks", string(global.levelname), "none"); 
-	ini_close();
-	if (ranks != "none") 
+	//Speedrun Timer
+	if global.bonustimer = true
 	{
 		var tiny = ":"
 		var tinier = ":"

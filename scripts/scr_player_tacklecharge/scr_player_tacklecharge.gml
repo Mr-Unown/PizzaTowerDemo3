@@ -38,7 +38,7 @@ if (input_buffer_jump < 8 && grounded)
 {
     image_index = 0
     sprite_index = spr_player_secondjump1
-    scr_soundeffect(0)
+    scr_soundeffect(sfx_jump)
     vsp = -11
 }
 if key_jump

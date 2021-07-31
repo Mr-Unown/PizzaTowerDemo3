@@ -2,18 +2,18 @@ scr_getinput()
 if ((key_up2 || keyboard_check_pressed(vk_up)) && optionselected > -1)
 {
     optionselected -= 1
-    scr_soundeffect(29)
+    scr_soundeffect(sfx_step)
 }
 if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 3)
 {
     optionselected += 1
-    scr_soundeffect(29)
+    scr_soundeffect(sfx_step)
 }
 if (optionselected == -1)
 {
     if (key_jump2 || keyboard_check_pressed(vk_return))
     {
-        scr_soundeffect(8)
+        scr_soundeffect(sfx_enemyprojectile)
         if instance_exists(obj_mainconfig)
             obj_mainconfig.visible = true
         instance_destroy()

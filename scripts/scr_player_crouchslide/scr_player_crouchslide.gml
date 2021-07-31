@@ -25,7 +25,7 @@ if (input_buffer_jump < 8 && grounded && (!scr_solid((x + 27), (y - 32))) && (!s
         other.dashcloudid = id
     }
 	/*
-    scr_soundeffect(0)
+    scr_soundeffect(sfx_jump)
     sprite_index = spr_jump
     if (shotgunAnim == 1)
         sprite_index = spr_shotgunjump

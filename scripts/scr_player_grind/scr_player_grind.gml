@@ -39,7 +39,7 @@ if key_jump
     instance_create(x, y, obj_jumpdust)
     suplexmove = 0
     image_index = 0
-    scr_soundeffect(0)
+    scr_soundeffect(sfx_jump)
 }
 //Bump
 if place_meeting(x + xscale ,y, obj_solid)

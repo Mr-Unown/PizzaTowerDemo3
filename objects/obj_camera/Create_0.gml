@@ -43,6 +43,7 @@ global.bonusmiliseconds = 0;
 global.bonusseconds = 0;
 global.bonusminutes = 0;
 global.bonushour = 0;
+global.bonustimer = false;
 global.miniboss = 0
 angle = 0
 frame = 0

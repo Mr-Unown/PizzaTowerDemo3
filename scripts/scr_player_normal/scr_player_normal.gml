@@ -252,7 +252,7 @@ if ((!grounded) && (!key_jump))
 }
 if (key_jump && grounded && (!key_down))
 {
-    scr_soundeffect(0)
+    scr_soundeffect(sfx_jump)
     sprite_index = spr_jump
     if (shotgunAnim == 1)
         sprite_index = spr_shotgunjump
@@ -270,7 +270,7 @@ if (key_jump && grounded && (!key_down))
 }
 if (grounded && input_buffer_jump < 8 && (!key_down) && (!key_attack) && vsp > 0)
 {
-    scr_soundeffect(0)
+    scr_soundeffect(sfx_jump)
     sprite_index = spr_jump
     if (shotgunAnim == 1)
         sprite_index = spr_shotgunjump
