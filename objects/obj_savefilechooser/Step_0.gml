@@ -3,38 +3,33 @@ scr_getinput()
 if instance_exists(obj_debugcontroller) && obj_debugcontroller.active = true
 	return;
 //Select your File
-if ((key_up2 || keyboard_check_pressed(vk_up)) && selectedfile > 0 && global.savefileselected = false)
+if ((key_up2 || keyboard_check_pressed(vk_up)) && selectedfile > 0 && save_fileoptionselected = false && global.savefileselected = false)
 {
     selectedfile -= 1
     scr_soundeffect(sfx_step)
 }
-if ((key_down2 || keyboard_check_pressed(vk_down)) && selectedfile < 2 && global.savefileselected = false)
+if ((key_down2 || keyboard_check_pressed(vk_down)) && selectedfile < 2 && save_fileoptionselected = false && global.savefileselected = false)
 {
     selectedfile += 1
     scr_soundeffect(sfx_step)
 }
 
 //Select your Option
-if ((-key_left2 || keyboard_check_pressed(vk_left)) && selectedoption > 0 && global.savefileselected = false)
+if ((-key_left2 || keyboard_check_pressed(vk_left)) && selectedoption > 0 && save_fileoptionselected = true && global.savefileselected = false)
 {
     selectedoption -= 1
     scr_soundeffect(sfx_step)
 }
-if ((key_right2 || keyboard_check_pressed(vk_right)) && selectedoption < 2 && global.savefileselected = false)
+if ((key_right2 || keyboard_check_pressed(vk_right)) && selectedoption < 2 && save_fileoptionselected = true && global.savefileselected = false)
 {
     selectedoption += 1
     scr_soundeffect(sfx_step)
 }
 
-//Back out of Character Select
-if key_slap2 && global.savefileselected = true && obj_characterselect.characterselected = false 
-{
-	save_fileoptionselected = false
-	global.savefile = file[0] 	
-	global.savefileselected = false
-	scr_soundeffect(sfx_step)
-}
+
 #region File Manipulation
+#region OLD
+/*
 //Load Save File
 if key_jump2 && global.savefileselected = false 
 {
@@ -100,29 +95,54 @@ if key_shoot2 && global.savefileselected = false
 		break;
 		}
 
-		}
-#endregion		
+		}*/
+		#endregion
+//Firstly Select File
+if key_jump2 && global.savefileselected = false && save_fileoptionselected = false
+{
+	global.savefile = file[selectedfile];
+	save_fileoptionselected = true;
+	scr_soundeffect(sfx_step);				
+}
+//then Select Option
 if key_jump2 && global.savefileselected = false && save_fileoptionselected = false
 {
 	switch (selectedoption)
 	{
 		case 2: //Load Save
-			scr_soundeffect(sfx_collecttoppin);
-			global.savefile = file[selectedfile];
 			global.savefileselected = true;
 			save_fileoptionselected = true;
+			scr_soundeffect(sfx_collecttoppin);			
 		break;
 		case 1: //Copy Save
-		
+			save_fileoptionselected = true;
+			scr_soundeffect(sfx_collecttoppin);		
 		break;
 		case 0: //Delete Save
-			global.savefile = file[selectedfile] 
 			save_fileoptionselected = true;
 			instance_create(x,y,obj_erasefile)
-			//file_delete((("playerData_" + global.savefile) + ".ini"))
+			scr_soundeffect(sfx_collecttoppin);	
 		break;
 	}
 }
+#endregion	
+
+//Back out of Character Select
+if key_slap2 && global.savefileselected = true && obj_characterselect.characterselected = false 
+{
+	global.savefileselected = false;
+	scr_soundeffect(sfx_step);
+}
+//Back out of Option
+if key_slap2 && save_fileoptionselected = true && global.savefileselected = false
+{
+	selectedoption = 2;
+	save_fileoptionselected = false;
+	global.savefile = file[0];
+	global.savefileselected = false;
+	scr_soundeffect(sfx_step);
+}
+
 
 //Cursor
 if !instance_exists(cursori) && global.savefileselected = false

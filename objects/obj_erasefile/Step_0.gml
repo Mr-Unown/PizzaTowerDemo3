@@ -2,6 +2,7 @@
 scr_getinput()
 if instance_exists(obj_debugcontroller) && obj_debugcontroller.active = true
 	return;
+	
 //Select your Option
 if ((-key_left2 || keyboard_check_pressed(vk_left)) && optionselected > 0 && global.savefileselected = false)
 {
@@ -14,23 +15,15 @@ if ((key_right2 || keyboard_check_pressed(vk_right)) && optionselected < 1 && gl
     scr_soundeffect(sfx_step)
 }
 
-if (optionselected == 1 && (key_jump || keyboard_check_pressed(vk_return)))
+if (optionselected == 1 && (key_jump2 || keyboard_check_pressed(vk_return)))
 {
 	file_delete((("playerData_" + global.savefile) + ".ini"))
     scr_soundeffect(sfx_breakblock1)
-	with obj_savefilechooser
-	{
-		save_fileoptionselected = false;
-	}
     instance_destroy()
 }
 if (key_slap2 || keyboard_check_pressed(vk_escape) || (optionselected == 0 && (key_jump || keyboard_check_pressed(vk_return))))
 {
     scr_soundeffect(sfx_enemyprojectile)
-	with obj_savefilechooser
-	{
-		save_fileoptionselected = false;
-	}
     instance_destroy()
 }
 
