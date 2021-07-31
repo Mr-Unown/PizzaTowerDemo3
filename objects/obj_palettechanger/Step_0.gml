@@ -121,3 +121,31 @@ if (player.key_slap2 || keyboard_check_pressed(vk_return)) && has_selectedoption
 	}
 	instance_destroy();
 }
+
+
+if (showtext == true)
+{
+	if choosen = false
+	{
+		message = storemessage[messageindex]
+		if messageindex < 3
+			messageindex += 1
+		else
+			messageindex = 0
+		choosen = true
+	}
+    if (_draw_y < 35)
+		_draw_y += 5
+	else
+		_draw_y = 35
+}
+if (showtext == false)
+{
+    if (_draw_y > -64)
+        _draw_y -= 1
+	else
+	{
+		message = ""
+		_draw_y = -64
+	}
+}

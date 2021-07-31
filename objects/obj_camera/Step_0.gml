@@ -330,6 +330,11 @@ if room != hub_room1 && room != hub_room2 && room != hub_room3 && room != cowboy
 			{
 				global.bonusseconds = 0
 				global.bonusminutes += 1
+				if global.bonusminutes >= 60
+				{
+					global.bonusminutes = 0
+					global.bonushour += 1
+				}
 			}
 		}
 	}

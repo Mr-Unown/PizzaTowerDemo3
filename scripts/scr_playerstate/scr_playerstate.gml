@@ -527,18 +527,17 @@ else if mach3dash = true && mach3dashbuffer > 0
 if mach3dashbuffer <= 0
 	mach3dash = false
 //Timesup
-if (state == 55 && y > (room_height * 2))
+if (state == 55 && y > (room_height * 1.5))
 {
 	global.levelname = "none";
     global.fakepeppino = 0;
     script_execute(scr_playerreset);
-	var _backtohub = hub_room1;
+	//var _backtohub = hub_room1;
 	with obj_player
 	{
 		targetDoor = "start";
-		_backtohub = backtohubroom
 	}
-    room = _backtohub
+    room = obj_player1.backtohubroom
 }
 //Knight ground pond
 if state != states.knightpep && state != states.knightpepslopes && state != states.knightpepattack

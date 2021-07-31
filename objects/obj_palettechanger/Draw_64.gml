@@ -32,6 +32,18 @@ pal_swap_set(surface, 1, true);
 draw_sprite_ext(player.sprite_index,player.image_index,draw_x - 152,draw_y + 16,4,4,0,c_white,1)
 pal_swap_reset();
 
+
+
+//Text
+draw_set_font(global.smallfont)
+draw_set_halign(fa_center)
+draw_set_color(c_white)
+draw_text(_draw_x, _draw_y, string_upper(message))
+
+
+
+
+
 /*
 
 draw_sprite_ext(sprite_index,optionselected,draw_x,draw_y,1,1,0,c_white,1)

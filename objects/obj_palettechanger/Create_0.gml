@@ -19,3 +19,14 @@ color[9] = 0;
 color[10] = 0;
 //Update Colors
 //customupdate = false;
+showtext = true;
+_draw_x = 480;
+_draw_y = -64;
+choosen = false;
+message = noone;
+storemessage[0] = "USE THE MOUSE TO DRAG THE SLIDERS"
+storemessage[1] = "PRESS LEFT AND RIGHT TO CHANGE\n WHICH CUSTOM PALETTE TO CHANGE"
+storemessage[2] = "PRESS UP AND DOWN TO CHANGE\n WHICH COLOR TO EDIT"
+storemessage[3] = "PRESS SLAP TO EXIT AND SAVE CHANGES"
+messageindex = 0;
+alarm[1] = 50;

@@ -11,6 +11,7 @@ global.heatmeter = 0;
 global.bonusmiliseconds = 0;
 global.bonusseconds = 0;
 global.bonusminutes = 0;
+global.bonushour = 0;
 global.deathmode = false;
 global.storedtaminute = 0;
 global.storedtasecond = 0;
