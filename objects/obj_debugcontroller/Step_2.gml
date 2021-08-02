@@ -225,13 +225,9 @@ with (obj_platformside)
     if (object_index == obj_platformside)
         visible = other.showcollisions
 }
-with (obj_movingplatformtriggerh)
+
+with (obj_movingplatformtrigger)
 {
-    if (object_index == obj_movingplatformtriggerh)
-        visible = other.showcollisions
-}
-with (obj_movingplatformtriggerv)
-{
-    if (object_index == obj_movingplatformtriggerv)
+    if (object_index == obj_movingplatformtrigger)
         visible = other.showcollisions
 }
