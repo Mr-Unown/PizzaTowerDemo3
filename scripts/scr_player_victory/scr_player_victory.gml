@@ -13,6 +13,7 @@ if place_meeting(x,y,obj_door) || place_meeting(x,y,obj_keydoor) || place_meetin
 	with instance_place(x,y,group_door)
 	{
 		other.x = approach(other.x,x + sprite_width/2,2)
+		other.y = approach(other.y,y + sprite_height/2,5)
 	}
 }
 if place_meeting(x, y, obj_keydoor) || place_meeting(x, y, obj_geromedoor)

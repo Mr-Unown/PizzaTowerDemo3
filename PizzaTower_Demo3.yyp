@@ -3695,6 +3695,14 @@
             }
         },
         {
+            "Key": "2467c7a5-197d-4b9b-88eb-8adcfe7b57fa",
+            "Value": {
+                "id": "615b133c-013c-4beb-a710-d2bf20234349",
+                "resourcePath": "scripts\\scr_savefile_delete\\scr_savefile_delete.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "247446f2-5c61-4c17-9a56-a31942082632",
             "Value": {
                 "id": "b04ef5b8-97d1-480e-8298-53ca41bd83fe",
@@ -13956,6 +13964,14 @@
                 "id": "977efc00-5447-49da-920b-81e34fd6e492",
                 "resourcePath": "options\\ios\\options_ios.yy",
                 "resourceType": "GMiOSOptions"
+            }
+        },
+        {
+            "Key": "842c1219-3042-405f-aad8-5437a4f1bec3",
+            "Value": {
+                "id": "30ea2b6f-a15c-4143-86d6-484f0f2ffe54",
+                "resourcePath": "scripts\\scr_savefile_copy\\scr_savefile_copy.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -27399,7 +27415,9 @@
         "fe3e1f3a-d25f-4a78-87ae-6bb500d172e6",
         "faaf8fff-90b2-4825-bdd2-1193a3d23b28",
         "b3a731ee-12f8-4aca-9b2a-b6780c7982f4",
-        "65847a94-d726-4286-af51-4cf46e244813"
+        "65847a94-d726-4286-af51-4cf46e244813",
+        "2467c7a5-197d-4b9b-88eb-8adcfe7b57fa",
+        "842c1219-3042-405f-aad8-5437a4f1bec3"
     ],
     "tutorial": ""
 }

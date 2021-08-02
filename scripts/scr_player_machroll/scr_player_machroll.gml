@@ -20,17 +20,18 @@ if scr_slope() && vsp >= 0
 {
 	with (instance_place(x, (y + 1), obj_slope))
 	{
+		var slope_acceleration = abs(image_yscale) / abs(image_xscale)
 		//Roll Momentum
 		if other.movespeed > 0 && other.xscale == sign(image_xscale)
 		{
-			other.movespeed -= 0.25
+			other.movespeed -= (0.25 * slope_acceleration)
 			if other.movespeed <= 0
 			{
 				other.xscale = -sign(image_xscale)
 			}
 		}
 		else if other.movespeed < 23 && other.xscale == -sign(image_xscale)
-			other.movespeed += 0.25
+			other.movespeed += (0.25 * slope_acceleration)
 	}
 }
 if (machhitAnim == 1 || rollmove == 1)

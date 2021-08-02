@@ -1,4 +1,4 @@
-if global.savefileselected = true {
+if global.savefilechoosen = true {
 image_speed = 0.35
 if ((obj_player1.key_right2 || (-obj_player2.key_left2)) && selection == 0 && characterselected = false && readynow  == 0)
 {

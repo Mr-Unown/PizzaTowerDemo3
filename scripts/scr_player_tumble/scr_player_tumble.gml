@@ -8,12 +8,13 @@ if scr_slope() && vsp >= 0
 {
 	with (instance_place(x, (y + 1), obj_slope))
 	{
+		var slope_acceleration = abs(image_yscale) / abs(image_xscale)
 		if other.movespeed > 8 && other.xscale == sign(image_xscale)
 		{
-			other.movespeed -= 0.25
+			other.movespeed -= (0.25 * slope_acceleration)
 		}
 		else if other.movespeed < 20 && other.xscale == -sign(image_xscale)
-			other.movespeed += 0.25
+			other.movespeed += (0.25 * slope_acceleration)
 	}
 }	
 if ((!scr_slope()) && sprite_index == spr_tumblestart && floor(image_index) < 11)

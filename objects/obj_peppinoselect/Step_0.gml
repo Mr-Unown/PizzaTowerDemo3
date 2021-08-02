@@ -1,6 +1,6 @@
 if (sprite_index == spr_peppinoselected && floor(image_index) == (image_number - 1))
     image_speed = 0
-if global.savefileselected = true
+if global.savefilechoosen = true
 {
 if (blackblend < 255)
     blackblend += 5	
