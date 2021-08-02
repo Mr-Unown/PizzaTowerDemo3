@@ -1,10 +1,8 @@
 depth = 5;
 hsp = 0;
 vsp = 0;
-movespeedv = 5;
-movespeedh = 0;
-directionh = 0;
-directionv = -1;
+movespeed = 5;
+platform_direction = 0;
 
 objects[0] = obj_player;
 objects[1] = obj_baddie;

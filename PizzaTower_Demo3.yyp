@@ -2866,7 +2866,7 @@
             "Key": "1ac8ab03-c7df-41ee-bad0-e98c8d5e892e",
             "Value": {
                 "id": "3d0aa800-f8fb-4977-8318-4052c5df9796",
-                "resourcePath": "sprites\\spr_platformtriggerh\\spr_platformtriggerh.yy",
+                "resourcePath": "sprites\\spr_platformtrigger\\spr_platformtrigger.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -8783,14 +8783,6 @@
             }
         },
         {
-            "Key": "52c4f122-c0e3-43bf-a726-36bf9bc0f601",
-            "Value": {
-                "id": "22402fc0-0b0d-4bd4-a6d9-839f51801828",
-                "resourcePath": "objects\\obj_movingplatformtriggerv\\obj_movingplatformtriggerv.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "52cdf479-a4f2-43bd-9290-829e49a4ca90",
             "Value": {
                 "id": "88888877-620d-4666-b025-1137b09f1899",
@@ -9267,14 +9259,6 @@
             "Value": {
                 "id": "7a03718e-06fe-4a25-a46e-00571308eb6d",
                 "resourcePath": "sprites\\spr_player_3hpidle\\spr_player_3hpidle.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "56e349f4-3869-4d6b-a058-5d382c94dff4",
-            "Value": {
-                "id": "71c77cee-dce3-470f-bc67-c8b5a88df9f8",
-                "resourcePath": "sprites\\spr_platformtriggerv\\spr_platformtriggerv.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -9874,7 +9858,7 @@
             "Key": "5cad3a54-245b-4e13-b514-f2faa245fecd",
             "Value": {
                 "id": "7c89edcd-4183-4346-a273-53b5a6d00111",
-                "resourcePath": "objects\\obj_movingplatformtriggerh\\obj_movingplatformtriggerh.yy",
+                "resourcePath": "objects\\obj_movingplatformtrigger\\obj_movingplatformtrigger.yy",
                 "resourceType": "GMObject"
             }
         },

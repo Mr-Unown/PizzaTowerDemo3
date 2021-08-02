@@ -1,2 +1,1 @@
-movespeedh = 4;
-directionh = 1;
+movespeed = 4;

@@ -2007,7 +2007,6 @@
         "1f8caac5-809e-4088-ae67-63e9d013dc93",
         "5e629657-6711-4630-91e3-1a2219ecc3a1",
         "0bfc2c0c-48ed-4320-9095-fe263c2f8320",
-        "56e349f4-3869-4d6b-a058-5d382c94dff4",
         "1ac8ab03-c7df-41ee-bad0-e98c8d5e892e"
     ],
     "filterType": "GMSprite",
