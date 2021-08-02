@@ -1343,6 +1343,14 @@
             }
         },
         {
+            "Key": "0bfc2c0c-48ed-4320-9095-fe263c2f8320",
+            "Value": {
+                "id": "1c6331a2-2176-4441-8caf-c1a52008a193",
+                "resourcePath": "sprites\\spr_trickslopemask\\spr_trickslopemask.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0c4c33c9-f123-495c-b9b0-2d640911ab83",
             "Value": {
                 "id": "4187497d-4ccc-4f46-a4de-8e69cc6d3313",
@@ -2855,6 +2863,14 @@
             }
         },
         {
+            "Key": "1ac8ab03-c7df-41ee-bad0-e98c8d5e892e",
+            "Value": {
+                "id": "3d0aa800-f8fb-4977-8318-4052c5df9796",
+                "resourcePath": "sprites\\spr_platformtriggerh\\spr_platformtriggerh.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1add7b43-2cb2-402e-801d-c77932279e6b",
             "Value": {
                 "id": "f61acce0-a907-42a2-805d-eebc7292cc90",
@@ -3252,6 +3268,14 @@
                 "id": "c7e07e27-3904-4ba7-97d0-c7f17c09848b",
                 "resourcePath": "scripts\\texture_set_interpolation_ext\\texture_set_interpolation_ext.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "1f8caac5-809e-4088-ae67-63e9d013dc93",
+            "Value": {
+                "id": "f85c23d0-6a24-4d4f-9732-e8fab2b44a56",
+                "resourcePath": "sprites\\spr_movingplatform\\spr_movingplatform.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -8759,6 +8783,14 @@
             }
         },
         {
+            "Key": "52c4f122-c0e3-43bf-a726-36bf9bc0f601",
+            "Value": {
+                "id": "22402fc0-0b0d-4bd4-a6d9-839f51801828",
+                "resourcePath": "objects\\obj_movingplatformtriggerv\\obj_movingplatformtriggerv.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "52cdf479-a4f2-43bd-9290-829e49a4ca90",
             "Value": {
                 "id": "88888877-620d-4666-b025-1137b09f1899",
@@ -9159,6 +9191,14 @@
             }
         },
         {
+            "Key": "55fcfd35-9d47-4872-a0af-7ec65cd38559",
+            "Value": {
+                "id": "81fa7d60-415e-4451-87ef-efc606130881",
+                "resourcePath": "objects\\obj_movingplatform\\obj_movingplatform.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "561a9a04-bc7a-4a86-a37a-99f8fc15cb6d",
             "Value": {
                 "id": "8f7f931c-991e-4808-8d0b-5c1e75e8f0de",
@@ -9227,6 +9267,14 @@
             "Value": {
                 "id": "7a03718e-06fe-4a25-a46e-00571308eb6d",
                 "resourcePath": "sprites\\spr_player_3hpidle\\spr_player_3hpidle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "56e349f4-3869-4d6b-a058-5d382c94dff4",
+            "Value": {
+                "id": "71c77cee-dce3-470f-bc67-c8b5a88df9f8",
+                "resourcePath": "sprites\\spr_platformtriggerv\\spr_platformtriggerv.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -9823,6 +9871,14 @@
             }
         },
         {
+            "Key": "5cad3a54-245b-4e13-b514-f2faa245fecd",
+            "Value": {
+                "id": "7c89edcd-4183-4346-a273-53b5a6d00111",
+                "resourcePath": "objects\\obj_movingplatformtriggerh\\obj_movingplatformtriggerh.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5cb1af33-9c30-458a-aa79-a63cc25fed53",
             "Value": {
                 "id": "e4bbdab6-33e2-4be2-a458-1b96300d5682",
@@ -10067,6 +10123,14 @@
             "Value": {
                 "id": "8cd0630a-e700-4254-94b9-c2f1c5e689f2",
                 "resourcePath": "sprites\\spr_player_breakdancestart\\spr_player_breakdancestart.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5e629657-6711-4630-91e3-1a2219ecc3a1",
+            "Value": {
+                "id": "574b4f51-a1af-44ec-a583-6dd31e0cffac",
+                "resourcePath": "sprites\\spr_trickslope\\spr_trickslope.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -16563,6 +16627,14 @@
             "Value": {
                 "id": "02cff003-e478-469a-a6d4-84a7080716b1",
                 "resourcePath": "sprites\\bg_medievallibrairy1\\bg_medievallibrairy1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9c1f3c95-7d9a-470e-acd6-7deddb893d57",
+            "Value": {
+                "id": "dac2d1c5-9c50-4785-bca9-725cd25f4fff",
+                "resourcePath": "sprites\\spr_movingplatformmiddle\\spr_movingplatformmiddle.yy",
                 "resourceType": "GMSprite"
             }
         },
