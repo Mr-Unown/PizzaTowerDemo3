@@ -23,12 +23,12 @@ if place_meeting(x, y, obj_platform)
 	var platform = instance_place(x, y, obj_platform)
 	if (platform.image_yscale > 0)
 	{
-		if y > old_y /*&& (bbox_bottom % 16) == 0*/ && (!place_meeting(x, old_y, platform))
+		if y > old_y && (!place_meeting(x, old_y, platform))
 		{
 			if (state != 59)
 			{
-			x = old_x
-			y = old_y
+				x = old_x
+				y = old_y
 			return 1;
 			}
 		}

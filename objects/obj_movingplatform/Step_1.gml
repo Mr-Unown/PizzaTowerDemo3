@@ -25,14 +25,17 @@ for (var i = 0; i < array_length_1d(objects) - 1; ++i)
 		{
 			//Horizontal
 			var hcheck = script_execute(scr,x + other.hsp,y);
-			if !hcheck || hcheck.id == other.id
+			if hcheck == false
 				x += other.hsp
 			//Vertical
 			var vcheck = script_execute(scr,x,y + other.vsp);
-			if (!vcheck) || (vcheck && place_meeting(x,y + other.vsp,obj_platform)) || vcheck.id == other.id
+			if vcheck == false || (vcheck = true && place_meeting(x,y+other.vsp,obj_platform))
 			{
 				y += other.vsp
-				vsp = other.vsp;
+				if other.vsp > 0
+				{
+					vsp = other.vsp;
+				}
 				grounded = true;
 			}
 		}
