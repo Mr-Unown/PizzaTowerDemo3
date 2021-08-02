@@ -19,12 +19,13 @@ if (y > old_y && (bbox_bottom % 16) == 0 && (!place_meeting(x, old_y, obj_grindr
     return 1;
 }
 */
-var platform = instance_place(x, y, obj_platform)
+var platform = noone
 if place_meeting(x, y, obj_platform)
 {
+	var platform = instance_place(x, y, obj_platform)
 	if (platform.image_yscale > 0)
 	{
-		if y > old_y && /*(bbox_bottom % 16) == 0 &&*/ (!place_meeting(x, old_y, obj_platform))
+		if y > old_y && (!place_meeting(x, old_y, platform))
 		{
 			x = old_x
 			y = old_y
@@ -33,7 +34,7 @@ if place_meeting(x, y, obj_platform)
 	}
 	else
 	{
-		if y <= old_y && (!place_meeting(x, old_y, obj_platform))
+		if y <= old_y && (!place_meeting(x, old_y, platform))
 		{
 			x = old_x
 			y = old_y
@@ -41,12 +42,13 @@ if place_meeting(x, y, obj_platform)
 		}
 	}	
 }
-var platformside = instance_place(x, y, obj_platformside)
+var platformside = noone
 if place_meeting(x, y, obj_platformside)
 {
+	var platformside = instance_place(x, y, obj_platformside)	
 	if (platformside.image_xscale > 0)
 	{
-		if x <= old_x && !place_meeting(old_x, y, obj_platformside)
+		if x <= old_x && !place_meeting(old_x, y, platformside)
 		{
 			x = old_x
 			y = old_y
@@ -55,7 +57,7 @@ if place_meeting(x, y, obj_platformside)
 	}
 	else
 	{
-		if x >= old_x && !place_meeting(old_x, y, obj_platformside)
+		if x >= old_x && !place_meeting(old_x, y, platformside)
 		{
 			x = old_x
 			y = old_y
