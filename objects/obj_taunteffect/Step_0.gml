@@ -1,6 +1,6 @@
 if (baddie == 0)
 {
-    if (playerid.state != 51 && playerid.state != states.frozen)
+    if (playerid.state != 51 && playerid.state != states.trick && playerid.state != states.frozen)
         instance_destroy()
 }
 else if (baddie == 1) && instance_exists(baddieid)

@@ -106,7 +106,8 @@ enum states
 	breakdance = 121,
 	frozen = 122,
 	changing = 123,
-	murder = 124
+	murder = 124,
+	trick = 125
 
 } 
 //I made some changes to it so that we can know at a glance what number it gets converted to.
@@ -119,7 +120,10 @@ switch state
         break
     case states.frozen:
         scr_player_frozen()
-        break		
+        break	
+    case states.trick:
+        scr_player_trick()
+        break				
     case 109:
         scr_player_grabbed()
         break

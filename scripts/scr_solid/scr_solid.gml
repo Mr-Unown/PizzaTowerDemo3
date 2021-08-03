@@ -19,6 +19,17 @@ if (y > old_y && (bbox_bottom % 16) == 0 && (!place_meeting(x, old_y, obj_grindr
     return 1;
 }
 */
+var movingplatform = noone
+if place_meeting(x, y, obj_movingplatform)
+{
+	var movingplatform = instance_place(x, y, obj_movingplatform)
+	if y > old_y && (!place_meeting(x, old_y, movingplatform))
+	{
+		x = old_x
+		y = old_y
+		return 1;
+	}
+}
 var platform = noone
 if place_meeting(x, y, obj_platform)
 {

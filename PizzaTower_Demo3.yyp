@@ -12711,6 +12711,14 @@
             }
         },
         {
+            "Key": "77ed03cf-a144-4959-8996-49cf89d55d2c",
+            "Value": {
+                "id": "2673e151-ec20-4331-9ded-fab16041609d",
+                "resourcePath": "scripts\\scr_player_trick\\scr_player_trick.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "780e7b97-d202-460e-b756-da1b7dffeffa",
             "Value": {
                 "id": "6846364f-6875-49e0-a367-4990e1c63b2c",
@@ -24943,6 +24951,14 @@
             }
         },
         {
+            "Key": "e924cda1-16d5-4c40-acdf-b22b52494a65",
+            "Value": {
+                "id": "61d71b05-2087-4a67-a0c6-12e80d84eaa9",
+                "resourcePath": "objects\\obj_trickslope\\obj_trickslope.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e9291f6f-23f4-4c62-88f2-9d23cfc9deac",
             "Value": {
                 "id": "00ee6703-51e5-4241-901e-bfef35ee64b3",
@@ -27406,6 +27422,7 @@
         "95922115-5c4a-4394-8b8e-4f94028640e7",
         "67f24a2f-894d-46f6-9fe4-60ee480f3d7b",
         "6d30efc2-71cc-474f-9abc-f5f82306be26",
+        "77ed03cf-a144-4959-8996-49cf89d55d2c",
         "f577b556-a881-4fc4-b8ee-f9aa11944f3e",
         "fa54c751-c7de-49b9-b12c-931507dbd8fe",
         "274792e0-4c41-4502-b416-096e5fff32e7",
