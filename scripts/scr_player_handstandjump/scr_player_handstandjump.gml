@@ -120,7 +120,7 @@ if (character != "S")
             vsp = -13
     }
 	//Bump int
-    if (scr_solid((x + xscale), y) && (!place_meeting((x + sign(hsp)), y, obj_slope)) && (!place_meeting((x + xscale), y, obj_destructibles)))
+    if (scr_solid((x + xscale), y) && (!scr_slope_ext(x + sign(xscale),y)) && (!place_meeting((x + xscale), y, obj_destructibles)))
     {
 		if character == "P" || character == "N"
 		{

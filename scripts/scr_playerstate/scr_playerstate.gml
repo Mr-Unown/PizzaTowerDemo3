@@ -462,13 +462,18 @@ if in_water = true
 	
 }
 /*
-//Update Colors
-if customsavedpalette != oldcustomsavedpalette
+//Slope Angle
+if sprite_index != spr_knightpepdownslope && scr_slope() && grounded
 {
-	scr_playercolors();
-	customupdate = true;
-	oldcustomsavedpalette = customsavedpalette;
-}*/
+	with instance_place(x,y,obj_slope)
+	{
+		var flip = sign(image_xscale) = -1 ? 180 : 0
+		other.draw_angle = approach(other.draw_angle,(point_direction(x,y + sprite_height,x + sprite_width,y) - flip),16) ;
+	}
+}
+else
+	draw_angle = 0;
+*/
 //Murder
 if combothreshold >= 10
 {
@@ -547,6 +552,16 @@ if (state == 55 && y > (room_height * 1.5))
 if state != states.knightpep && state != states.knightpepslopes && state != states.knightpepattack
 {
 	knightpoundbuffer = 0;
+}
+//Tricks
+if (state == states.trick || tauntstoredstate == states.trick || frozenstate == states.trick)
+{
+	show_tricks = true;
+}
+else
+{
+	show_tricks = false;
+	tricksperformed = 0;
 }
 //Mach 3 Effect
 if global.freezeframe = false {

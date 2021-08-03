@@ -58,7 +58,7 @@ if (!grounded)
 if (machhitAnim == 0)
     rollmove = 0
 //Collide with Wall
-if place_meeting((x + sign(hsp)), y, obj_solid) && (!place_meeting((x + sign(hsp)), y, obj_slope))  && !place_meeting((x + hsp), y, obj_destructibles)
+if (scr_solid((x + xscale), y) && !scr_slope_ext(x + sign(hsp),y) && (!place_meeting((x + sign(hsp)), y, obj_destructibles)))
 {
     scr_soundeffect(16)
     hsp = 0
@@ -70,7 +70,7 @@ if place_meeting((x + sign(hsp)), y, obj_solid) && (!place_meeting((x + sign(hsp
     vsp = -3
     mach2 = 0
     image_index = 0
-    instance_create((x + 10), (y + 10), obj_bumpeffect)
+    instance_create((x + (10 * xscale)), (y + 10), obj_bumpeffect)
 }
 if ((!instance_exists(dashcloudid)) && grounded)
 	with instance_create(x,y + 43,obj_cloudeffect)
@@ -158,7 +158,7 @@ else if movespeed <= 20
 {
 	image_speed = 0.5
 }
-if (scr_solid((x + 1), y) && xscale == 1 && (!place_meeting((x + sign(hsp)), y, obj_slope)) && (!place_meeting((x + sign(hsp)), y, obj_destructibles)))
+if (scr_solid((x + 1), y) && xscale == 1 && !scr_slope_ext(x + sign(hsp),y) && (!place_meeting((x + sign(hsp)), y, obj_destructibles)))
 {
 	jetpacking = false
     scr_soundeffect(16)
@@ -173,7 +173,7 @@ if (scr_solid((x + 1), y) && xscale == 1 && (!place_meeting((x + sign(hsp)), y, 
     image_index = 0
     instance_create((x + 10), (y + 10), obj_bumpeffect)
 }
-if (scr_solid((x - 1), y) && xscale == -1 && (!place_meeting((x + sign(hsp)), y, obj_slope)) && (!place_meeting((x + sign(hsp)), y, obj_destructibles)))
+if (scr_solid((x - 1), y) && xscale == -1 && !scr_slope_ext(x + sign(hsp),y) && (!place_meeting((x + sign(hsp)), y, obj_destructibles)))
 {
 	jetpacking = false	
     scr_soundeffect(16)

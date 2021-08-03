@@ -235,10 +235,14 @@ if (landAnim == 0)
     else if (shotgunAnim == 1 && sprite_index != spr_shotgunshoot)
         sprite_index = spr_shotgunwalk
 }
+/*
 if (scr_solid((x + sign(hsp)), y) && xscale == 1 && move == 1 && (!place_meeting((x + 1), y, obj_slope)))
     movespeed = 0
 if (scr_solid((x + sign(hsp)), y) && xscale == -1 && move == -1 && (!place_meeting((x - 1), y, obj_slope)))
     movespeed = 0
+*/	
+if scr_solid(x + sign(hsp),y) && move != 0 && !scr_slope_ext(x + sign(hsp),y)
+	movespeed = 0
 jumpstop = 0
 if ((!grounded) && (!key_jump))
 {
@@ -507,8 +511,9 @@ if (key_slap2 && character == "S")
     state = 12
     image_index = 0
 }
-if (key_attack && (!place_meeting((x + xscale), y, obj_solid)) && (character == "P" || (character == "N" && pogo != true) || character == "PZ"  || (character = "D" && spellselect = 2) || character == "V"))
+if (key_attack && !(scr_solid(x + xscale, y) && !scr_slope_ext(x + sign(hsp),y)) && (character == "P" || (character == "N" && pogo != true) || character == "PZ"  || (character = "D" && spellselect = 2) || character == "V"))
 {
+	hsp = 0;
     movespeed = 6
     sprite_index = spr_mach1
     jumpAnim = 1

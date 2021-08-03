@@ -9071,6 +9071,14 @@
             }
         },
         {
+            "Key": "54cf4205-663e-4124-86ad-fe3ae39e9c00",
+            "Value": {
+                "id": "0b893cf9-85cb-4bbc-b76e-b2dc368333ac",
+                "resourcePath": "sprites\\spr_flamecloud\\spr_flamecloud.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "54fd3db8-5ea7-4b41-b371-f1f02dd35d3c",
             "Value": {
                 "id": "90b71361-ae7c-44ba-afbc-bb8df47b7de9",
@@ -12860,6 +12868,14 @@
                 "id": "9a5c91ef-7d8c-4c36-9e11-57baa857ecad",
                 "resourcePath": "sprites\\spr_snick_machslideend\\spr_snick_machslideend.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "79fe41a7-260d-4279-8390-323581f888a7",
+            "Value": {
+                "id": "ae9090d1-4743-4930-b1ed-1359f0700961",
+                "resourcePath": "scripts\\scr_slopeangle\\scr_slopeangle.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -25911,6 +25927,14 @@
             }
         },
         {
+            "Key": "f2a0a7e0-2fa3-4a01-b8c8-509b84268103",
+            "Value": {
+                "id": "01e617d7-b71c-4af9-93a7-fb9e2414e527",
+                "resourcePath": "scripts\\scr_slope_ext\\scr_slope_ext.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f2d79cbf-067f-4fea-adef-9db8da0725e4",
             "Value": {
                 "id": "c01ac272-a02e-4afc-978b-940a66ebb391",
@@ -27460,6 +27484,8 @@
         "d839bb5c-2c79-43d8-9c20-9c7b204c85b6",
         "0f68d882-6293-4255-ab8d-6bd5457aa257",
         "73cff51e-95d4-473c-9091-eae05f7a541f",
+        "f2a0a7e0-2fa3-4a01-b8c8-509b84268103",
+        "79fe41a7-260d-4279-8390-323581f888a7",
         "788522f0-c7c0-4977-95a3-b8775c817d22",
         "a2527da5-5b55-4ad2-b5e8-fb8f46e14faa",
         "be7d5dbe-609d-433b-9b9a-9c885c709738",

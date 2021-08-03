@@ -24,7 +24,7 @@ if (sprite_index == spr_tumblestart && floor(image_index) == (image_number - 1))
     sprite_index = spr_tumble
 	movespeed = 14
 }
-if (place_meeting((x + xscale), y, obj_solid) && (!place_meeting((x + hsp), y, obj_destructibles)))
+if (scr_solid((x + xscale), y) && !scr_slope_ext(x + sign(hsp),y) && (!place_meeting((x + sign(hsp)), y, obj_destructibles)))
 {
     scr_soundeffect(38)
     hsp = 0

@@ -7,6 +7,11 @@ knightpoundbuffer = 0;
 knightmaxy = 0;
 knightroomy = 0;
 knightslidespeed = 0;
+//Trick
+show_tricks = false;
+tricksperformed = 0;
+//Slope Angle
+draw_angle = 0;
 //CustomPaletteChoosyFILE
 customsavedpalette = 1;
 oldcustomsavedpalette = 1;

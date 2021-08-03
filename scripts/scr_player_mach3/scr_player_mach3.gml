@@ -243,7 +243,7 @@ else if (grounded && scr_solid((x + sign(hsp)), y) && (!scr_slope() && scr_solid
         vsp = -3
         mach2 = 0
         image_index = 0
-         instance_create((x + 10 * xscale), (y + 10 ), obj_bumpeffect)
+        instance_create((x + 10 * xscale), (y + 10 ), obj_bumpeffect)
     }
     else if (fightball == 1)
     {
