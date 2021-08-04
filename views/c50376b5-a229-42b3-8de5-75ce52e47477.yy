@@ -2008,7 +2008,8 @@
         "5e629657-6711-4630-91e3-1a2219ecc3a1",
         "0bfc2c0c-48ed-4320-9095-fe263c2f8320",
         "1ac8ab03-c7df-41ee-bad0-e98c8d5e892e",
-        "54cf4205-663e-4124-86ad-fe3ae39e9c00"
+        "54cf4205-663e-4124-86ad-fe3ae39e9c00",
+        "610d0829-cda7-4f56-a42f-602b371df200"
     ],
     "filterType": "GMSprite",
     "folderName": "Sprites",

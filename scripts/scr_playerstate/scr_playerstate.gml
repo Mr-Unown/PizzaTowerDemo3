@@ -1,3 +1,4 @@
+#region Enum and State
 #region Enum
 enum states
 {
@@ -437,6 +438,7 @@ switch state
         scr_player_taxi()
         break
 }
+#endregion
 //Water
 if place_meeting(x,y,group_cheesewater) 
 {
@@ -461,19 +463,70 @@ if in_water = true
     }	
 	
 }
-/*
-//Slope Angle
-if sprite_index != spr_knightpepdownslope && scr_slope() && grounded
+
+#region Slope Angle
+//Angle Strength
+var subtle_var = 5;
+#region State Stuff
+switch state
 {
-	with instance_place(x,y,obj_slope)
+	case states.normal:
+	subtle_var = 3
+	break;
+	case states.machroll:
+	case states.tumble:
+	case states.crouch:
+	case states.crouchslide:
+	case states.machslide:
+	subtle_var = 1.15
+	break;
+	case states.breakdance:
+	subtle_var = 1.25
+	break;
+	case states.mach1:
+	case states.mach3:
+	case states.mach2:
+	case states.jetpack:
+	subtle_var = 2
+	break;
+	case states.knightpepslopes:
+	subtle_var = 1.25
+	break;
+	default:
+	subtle_var = 5
+	break;
+}
+#endregion
+//Slope Angles 
+if global.freezeframe = false && sprite_index != spr_knightpepdownslope && place_meeting(x,y+1,obj_slope) && vsp >= 0 
+{
+	with instance_place(x,y + 1,obj_slope)
 	{
 		var flip = sign(image_xscale) = -1 ? 180 : 0
-		other.draw_angle = approach(other.draw_angle,(point_direction(x,y + sprite_height,x + sprite_width,y) - flip),16) ;
+		other.draw_angle = ( (approach(other.draw_angle,(point_direction(x,y + sprite_height,x + sprite_width,y) - flip),16)) / (subtle_var) );
 	}
 }
-else
-	draw_angle = 0;
-*/
+else if global.freezeframe = false
+	draw_angle = approach(draw_angle,0,32);
+#endregion	
+//Firetrail
+if firetrailbuffer > 0 && global.freezeframe = false
+firetrailbuffer -= movespeed/24 * 25
+if firetrailbuffer <= 0
+{
+	if movespeed >= 12 && (state == states.mach2 || state == states.mach3 || state == states.jetpack || state == states.trick || state == states.machroll)
+	{
+		with (instance_create(x, y, obj_superdashcloud))
+		{
+			image_speed = 0.35
+			sprite_index = spr_flamecloud
+			image_xscale = other.xscale
+			if place_meeting(other.x, (other.y + 1), obj_boilingwater) && !place_meeting(other.x, other.y, obj_boilingwater)
+				sprite_index = spr_watersplashsmall
+		}
+	}
+	firetrailbuffer = 100;
+}
 //Murder
 if combothreshold >= 10
 {

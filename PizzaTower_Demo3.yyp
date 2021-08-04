@@ -10415,6 +10415,14 @@
             }
         },
         {
+            "Key": "610d0829-cda7-4f56-a42f-602b371df200",
+            "Value": {
+                "id": "f55aa09c-5852-40a6-beeb-a245890c8679",
+                "resourcePath": "sprites\\spr_watersplashsmall\\spr_watersplashsmall.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "61119583-22eb-437d-90d5-411ab4324aad",
             "Value": {
                 "id": "d83adf49-f852-483f-a6e2-1c6829579c49",

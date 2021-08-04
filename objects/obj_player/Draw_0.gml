@@ -27,14 +27,14 @@ else if !surface_exists(surf_pallete)
 	#endregion	
 }
 //Stolen Angle Code thing
-//var offset_x = 0
-//var offset_y = 0
-//var _cos = cos(draw_angle)
-//var _sin = sin(draw_angle)
-var drawx = x; //+ _cos * offset_x - _sin * offset_y
-var drawy = y; //+ _sin * offset_x + _cos * offset_y
-var draw_angle = image_angle;
-//draw_surface_ext(s,drawx +sprite_get_xoffset(sprite_index) ,drawy +sprite_get_yoffset(sprite_index),image_xscale,image_yscale,image_angle,image_blend,image_alpha)
+var offset_x = 0
+var offset_y = 0
+var _cos = cos(draw_angle)
+var _sin = sin(draw_angle)
+var drawx = x + _cos * offset_x - _sin * offset_y;
+var drawy = y + _sin * offset_x + _cos * offset_y;
+//var draw_angle = image_angle;
+
 
 if surface_exists(surf_pallete) && (paletteselect >= sprite_get_width(spr_palette) - 1)
 {

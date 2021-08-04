@@ -7,6 +7,8 @@ knightpoundbuffer = 0;
 knightmaxy = 0;
 knightroomy = 0;
 knightslidespeed = 0;
+//Firetrail
+firetrailbuffer = 100;
 //Trick
 show_tricks = false;
 tricksperformed = 0;
