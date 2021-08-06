@@ -1,7 +1,7 @@
 var player = obj_player1
 if global.coop = true
 player = instance_nearest(x,y,obj_player)
-
+depth = -10.5;
 initialvsp = random_range(-5, -10)
 initialhsp = (sign((x - player.x)) * random_range(5, 10))
 if (x != player.x)

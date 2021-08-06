@@ -511,7 +511,7 @@ if (key_slap2 && character == "S")
     state = 12
     image_index = 0
 }
-if (key_attack && !(scr_solid(x + xscale, y) && !scr_slope_ext(x + sign(hsp),y)) && (character == "P" || (character == "N" && pogo != true) || character == "PZ"  || (character = "D" && spellselect = 2) || character == "V"))
+if (key_attack && (character == "P" || (character == "N" && pogo != true) || character == "PZ"  || (character = "D" && spellselect = 2) || character == "V")) && !scr_solidwall_noslope(x + xscale,y)
 {
 	hsp = 0;
     movespeed = 6

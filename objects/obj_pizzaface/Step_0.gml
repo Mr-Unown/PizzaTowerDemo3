@@ -56,5 +56,9 @@ if (relax == 1 && pizzafacetimer <= 0) && can_countdown = true
 	scr_soundeffect(sfx_pizzaface)
     relax = 0
     maxspeed = 1
+	can_countdown = false
 }
-pizzafacetimer = approach(pizzafacetimer,0,1)
+if can_countdown = true
+{
+	pizzafacetimer = approach(pizzafacetimer,0,1)
+}

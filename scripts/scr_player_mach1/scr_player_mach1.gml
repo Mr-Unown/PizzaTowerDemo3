@@ -14,7 +14,7 @@ if (scr_solid((x - 1), y) && xscale == -1 && (!place_meeting((x - 1), y, obj_slo
     state = 0
     movespeed = 0
 }*/
-if scr_solid(x + xscale, y) && !scr_slope_ext(x + sign(hsp),y)
+if scr_solid(x + xscale, y) && !scr_slope_ext(x + xscale,y)
 {
 	hsp = 0
     mach2 = 0

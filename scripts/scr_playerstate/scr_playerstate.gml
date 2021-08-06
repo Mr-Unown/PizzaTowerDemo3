@@ -477,17 +477,19 @@ switch state
 	case states.tumble:
 	case states.crouch:
 	case states.crouchslide:
-	case states.machslide:
 	subtle_var = 1.15
 	break;
 	case states.breakdance:
 	subtle_var = 1.25
 	break;
 	case states.mach1:
+	subtle_var = 2
+	break;
 	case states.mach3:
 	case states.mach2:
+	case states.machslide:
 	case states.jetpack:
-	subtle_var = 2
+	subtle_var = 1.5
 	break;
 	case states.knightpepslopes:
 	subtle_var = 1.25

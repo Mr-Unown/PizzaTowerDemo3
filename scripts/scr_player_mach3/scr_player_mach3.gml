@@ -81,6 +81,7 @@ if ((!key_jump2) && jumpstop == 0 && vsp < 0.5)
     vsp /= 10
     jumpstop = 1
 }
+/*
 //Auto Parry
 if (!instance_exists(parry_id))
 {
@@ -91,6 +92,7 @@ if (!instance_exists(parry_id))
         image_xscale = other.xscale
 	}
 }
+*/
 if (grounded && vsp > 0)
     jumpstop = 0
 if (!grounded)

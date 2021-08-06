@@ -3,13 +3,11 @@ hsp = xscale * movespeed
 //Taunt
 if key_taunt2 && !(sprite_index = spr_supertaunt1 || sprite_index = spr_supertaunt2 || sprite_index = spr_supertaunt3 || sprite_index = spr_supertaunt4)
 {
-	if vsp >= 0
-		vsp = -5
 	tricksperformed += 1;
 	global.style += 3
 	with (instance_create((x), y + 5, obj_smallnumber))
 	{
-		number = "3"
+		number = "+3"
 		color = 5
 	}
     scr_soundeffect(sfx_taunt)

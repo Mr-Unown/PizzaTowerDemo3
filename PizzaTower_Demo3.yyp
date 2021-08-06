@@ -5519,6 +5519,14 @@
             }
         },
         {
+            "Key": "34f8aefb-2081-46db-9a41-3ce83c9c8004",
+            "Value": {
+                "id": "13f4ee98-b1f3-4f21-b1c3-a91fe6d8af19",
+                "resourcePath": "scripts\\scr_solidwall_noslope\\scr_solidwall_noslope.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "352b3238-126d-4f90-ac10-10ebaa303523",
             "Value": {
                 "id": "62a5db70-8f19-476e-84ba-3927b60872be",
@@ -13076,6 +13084,14 @@
                 "id": "c8919a48-2cf9-4b6f-831c-a82989271e4f",
                 "resourcePath": "shaders\\shd_hit\\shd_hit.yy",
                 "resourceType": "GMShader"
+            }
+        },
+        {
+            "Key": "7bcec89b-002f-47ca-81f0-6458c82495db",
+            "Value": {
+                "id": "ff6ce78f-a75a-4978-9349-513a138c7e90",
+                "resourcePath": "rooms\\ancient_10_2\\ancient_10_2.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -27491,6 +27507,7 @@
         "4e1e2c42-f69f-4b56-97e1-42ac7284e09e",
         "d839bb5c-2c79-43d8-9c20-9c7b204c85b6",
         "0f68d882-6293-4255-ab8d-6bd5457aa257",
+        "34f8aefb-2081-46db-9a41-3ce83c9c8004",
         "73cff51e-95d4-473c-9091-eae05f7a541f",
         "f2a0a7e0-2fa3-4a01-b8c8-509b84268103",
         "79fe41a7-260d-4279-8390-323581f888a7",
