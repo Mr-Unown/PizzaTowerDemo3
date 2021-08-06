@@ -92,5 +92,6 @@ if show_tricks
 	draw_set_font(global.combofont)
 	draw_set_halign(fa_center)
 	draw_set_color(c_white)
-	draw_text(x,y - 180,string(tricksperformed))
+	draw_text(x,y - 90,string(tricksperformed))
 }
+//draw_text(x,y - 180,string(maxmachspeed))

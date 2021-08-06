@@ -22,9 +22,12 @@ if windingAnim < 2000
 windingAnim ++
 
 //Movespeed
-if (movespeed < 24 && move == xscale)
+if (movespeed < 26 && move == xscale)
 {
-    movespeed += 0.1
+	if movespeed < 24
+		movespeed += 0.1
+	else
+		movespeed += 0.025
     if (!instance_exists(crazyruneffectid))
     {
         with (instance_create(x, y, obj_crazyruneffect))

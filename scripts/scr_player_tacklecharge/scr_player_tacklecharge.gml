@@ -16,7 +16,6 @@ if key_slap2
 {
     if (move != 0)
         move = xscale
-    state = 3
     if (sprite_index == spr_swingding)
         sprite_index = spr_swingdingend
     else if (!key_up)
@@ -26,6 +25,7 @@ if key_slap2
     image_index = 0
     hsp = 0
     movespeed = 0
+	state = 3
 }
 if ((!key_jump2) && jumpstop == 0 && vsp < 0.5)
 {

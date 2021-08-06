@@ -15,7 +15,7 @@ with (other.id)
             instance_create((x + 10), (y + 10), obj_bumpeffect)
         if (other.sprite_index != spr_grandpa_punch)
         {
-            scr_soundeffect(14)
+            scr_soundeffect(sfx_killingblow)
             other.image_index = 0
             other.sprite_index = spr_grandpa_punch
         }

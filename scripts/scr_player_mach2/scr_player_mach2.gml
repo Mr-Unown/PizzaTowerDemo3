@@ -257,7 +257,7 @@ if (key_slap2 && character == "V")
     sprite_index = spr_playerV_airrevolver
     image_index = 0
     instance_create((x + (image_xscale * 20)), (y + 20), obj_shotgunbullet)
-    scr_soundeffect(14)
+    scr_soundeffect(sfx_killingblow)
 }
 if (key_shoot2 && character == "V" && (!instance_exists(obj_vigidynamite)))
 {

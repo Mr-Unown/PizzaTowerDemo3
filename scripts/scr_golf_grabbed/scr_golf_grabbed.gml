@@ -111,9 +111,9 @@ with (player)
         other.sprite_index = spr_pizzaball_flying
         sprite_index = spr_punch
         if (!audio_is_playing(sfx_punch))
-            scr_soundeffect(34)
+            scr_soundeffect(sfx_punch)
         if (!audio_is_playing(sfx_killingblow))
-            scr_soundeffect(14)
+            scr_soundeffect(sfx_killingblow)
         hsp = ((-xscale) * lengthdir_x((other.intensity / 20), other.angle))
         with (obj_camera)
         {

@@ -11,7 +11,7 @@ if collided = false
             other.throwdirection = vdirection
 			other.vsp = -12
 			other.hsp = (other.throwdirection * (3 + abs(floor(hsp))))
-			scr_soundeffect(34)
+			scr_soundeffect(sfx_punch)
 			scr_soundeffect(sfx_breakmetal)
 			other.grabbedby = 1
 		}
@@ -26,7 +26,7 @@ if collided = false
             other.throwdirection = vdirection
 			other.vsp = -12
 			other.hsp = (other.throwdirection * (3 + abs(floor(hsp))))
-			scr_soundeffect(34)
+			scr_soundeffect(sfx_punch)
 			scr_soundeffect(sfx_breakmetal)
 			other.grabbedby = 2
 		}
@@ -55,7 +55,7 @@ else
 			collided = true
 			vsp = -10
 			hsp = (abs(other.hsp - 6)) * other.throwdirection
-			scr_soundeffect(34)
+			scr_soundeffect(sfx_punch)
 			scr_soundeffect(sfx_breakmetal)
 			grabbedby = other.grabbedby
 	}

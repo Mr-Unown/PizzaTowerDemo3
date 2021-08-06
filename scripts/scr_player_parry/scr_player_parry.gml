@@ -35,7 +35,7 @@ if (parried_baddie > 0)
             shake = 1
             playerxscale = other.xscale
             if (!audio_is_playing(sfx_killingblow))
-                scr_soundeffect(14)
+                scr_soundeffect(sfx_killingblow)
             image_xscale = (-other.xscale)
             if (stunned < 500)
                 stunned = 500

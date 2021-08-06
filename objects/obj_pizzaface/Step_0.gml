@@ -21,7 +21,7 @@ if relax = false && global.freezeframe = false && room != rank_room && !instance
 			if instance_exists(obj_shake)
             relax = 1
         }*/
-		if (playerid.state != 51 && playerid.cutscene = false && playerid.state != states.mach3 && playerid.state != states.jetpack && playerid.state != 114) && relax = false
+		if ( !(playerid.state = states.mach3 || playerid.state = states.jetpack) && playerid.cutscene = false && playerid.state != states.mach3 && playerid.state != states.jetpack && playerid.state != 114) && relax = false
 		{
 			with obj_player
 			{
@@ -33,6 +33,26 @@ if relax = false && global.freezeframe = false && room != rank_room && !instance
 					room = timesuproom
 					scr_soundeffect(mu_timesup)
 				}
+			}
+		}
+		else if playerid.state = states.mach3 || playerid.state = states.jetpack
+		{
+			//Original Auto Parry
+			with (playerid)
+			{
+				scr_soundeffect(sfx_parry)
+				state = 114
+				sprite_index = choose(spr_parry1, spr_parry2, spr_parry3)
+				image_index = 0
+				taunttimer = 20
+				parry_id = -4
+				image_speed = 0.35
+				parried_baddie = 8
+				flash = 1
+				movespeed = 8
+				tauntstoredstate = states.normal
+				tauntstoredmovespeed = 0
+				tauntstoredsprite = spr_idle
 			}
 		}
     }

@@ -7,6 +7,10 @@ knightpoundbuffer = 0;
 knightmaxy = 0;
 knightroomy = 0;
 knightslidespeed = 0;
+//Super cool Movespeed Buff
+maxmachspeed = 24;
+//Swordhitbox
+swordhitboxid = noone;
 //Firetrail
 firetrailbuffer = 100;
 //Trick

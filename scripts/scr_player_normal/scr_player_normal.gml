@@ -455,7 +455,7 @@ if (key_shoot2 && shotgunAnim == 0) && character != "V" && character != "D"
 			
 			break;
 		}
-		scr_soundeffect(14)
+		scr_soundeffect(sfx_killingblow)
 		murderammo -= 1
 	}
 	else
@@ -473,7 +473,7 @@ if (key_shoot2 && shotgunAnim == 0) && character != "V" && character != "D"
 //Shotgun
 if (key_shoot2 && shotgunAnim == 1 && character != "V" && character != "S")
 {
-    scr_soundeffect(14)
+    scr_soundeffect(sfx_killingblow)
     state = 38
     with (instance_create(x, y, obj_pistoleffect))
         image_xscale = other.image_xscale

@@ -58,7 +58,8 @@ if (fightball == 1 && global.coop == 1)
         y = obj_player1.y
     }
 }
-if (movespeed < 24 && move == xscale)
+//Super cool Movespeed Buff
+if (movespeed < maxmachspeed && move == xscale)
 {
 	if (character == "N" && pogo = false)
         movespeed += 0.2
@@ -73,8 +74,13 @@ if (movespeed < 24 && move == xscale)
         }
     }
 }
-else if (movespeed > 12 && move != xscale)
-    movespeed -= 0.1
+else if (move != xscale)
+{	
+	if movespeed > 12
+		movespeed -= 0.1
+	if maxmachspeed > 24 && grounded
+		maxmachspeed -= 0.1
+}
 crouchslideAnim = 1
 if ((!key_jump2) && jumpstop == 0 && vsp < 0.5)
 {
@@ -337,7 +343,7 @@ if (key_slap2 && character == "V")
     sprite_index = spr_playerV_airrevolver
     image_index = 0
     instance_create((x + (image_xscale * 20)), (y + 20), obj_shotgunbullet)
-    scr_soundeffect(14)
+    scr_soundeffect(sfx_killingblow)
 }
 if (key_shoot2 && character == "V" && (!instance_exists(obj_vigidynamite)))
 {

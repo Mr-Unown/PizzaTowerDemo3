@@ -1,6 +1,12 @@
 move = (key_right + key_left)
-
-
+if !key_jump2 
+{
+	input_buffer_jump = frozenjumpbuffer;
+}
+else
+{
+	input_buffer_jump = 0;
+}
 //Freeze Frame
 if global.freezeframe = true
 {
@@ -29,15 +35,10 @@ else
 	freefallsmash =	frozensmash;
 	hsp = frozenhsp;
 	vsp = frozenvsp;
-	if !key_jump2 
+	if input_buffer_jump < 8
 	{
-		input_buffer_jump = frozenjumpbuffer;
-	}
-	else if key_jump2 
-	{
-		input_buffer_jump = 0;
 		#region Jumping
-	if ((!grounded) && frozenstate != 74 && instakillmove = true) 
+	if place_meeting(x,y,obj_baddiecollisionbox) && (!grounded && frozenstate != 74 && instakillmove = true)
     {
 		if (frozenstate == 70 || (frozenstate == 91 && fightball == 0))
         {
@@ -87,6 +88,45 @@ else
 	}	
 	#endregion
 	}
+	#region Machslide
+		switch (frozenstate)
+		{
+			case states.mach2:
+				if (((!key_attack) && move != xscale && grounded) || (character == "S" && move == 0 && grounded)) && !grinding
+				{
+					image_index = 0
+					frozenstate = 71
+					scr_soundeffect(65)
+					sprite_index = spr_machslidestart
+				}
+				if (move == (-xscale) && grounded && character != "S")
+				{
+					scr_soundeffect(62)
+					image_index = 0
+					frozenstate = 71
+					sprite_index = spr_machslideboost
+					machhitAnimtimer = 500
+					machhitAnim = 0
+				}
+			break;
+			case states.mach3:
+				if ((((!key_attack) && fightball == 0 && grounded && character != "S") || (character == "S" && (move == 0 || move != xscale) && turnbuffer >= 50 && grounded && fightball == 0))) && !place_meeting(x, y, obj_dashpad) && mach3dash = false
+				{
+					sprite_index = spr_machslidestart
+					scr_soundeffect(65)
+					frozenstate = 71
+					image_index = 0
+				}
+				if (move == (-xscale) && grounded && character != "S" && fightball == 0) && !place_meeting(x, y, obj_dashpad) && mach3dash = false
+				{
+					scr_soundeffect(62)
+					sprite_index = spr_mach3boost
+					frozenstate = 71
+					image_index = 0
+				}			
+			break;
+		}
+	#endregion
 	state =	frozenstate;
 	cutscene = false;
 }

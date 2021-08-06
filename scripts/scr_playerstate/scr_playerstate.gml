@@ -511,9 +511,14 @@ if global.freezeframe = false && sprite_index != spr_knightpepdownslope && place
 else if global.freezeframe = false
 	draw_angle = approach(draw_angle,0,32);
 #endregion	
+//Speedboost
+if grounded && (state != states.mach2 && state != states.frozen && state != states.backbreaker && state != states.trick && state != states.mach3 && state != states.jetpack && state != states.machroll)
+{
+	maxmachspeed = approach(maxmachspeed,24,1)
+}
 //Firetrail
 if firetrailbuffer > 0 && global.freezeframe = false
-firetrailbuffer -= movespeed/24 * 25
+firetrailbuffer -= movespeed/24 * 26
 if firetrailbuffer <= 0
 {
 	if movespeed >= 12 && (state == states.mach2 || state == states.mach3 || state == states.jetpack || state == states.trick || state == states.machroll)
@@ -649,4 +654,12 @@ if (toomuchalarm1 > 0)
         toomuchalarm1 = 6
     }
 }
+}
+//Instakill Move
+if global.freezeframe = false
+{
+	if state != states.frozen && (state == 68 || sprite_index = spr_swingding || sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump || state == 86 || state == states.breakdance ||	state == states.jetpack || state == states.pogo || state == 91 || state == 60 || (state == 73 && thrown == 1) || state == 70 || state == 17 || state == 74 || state == 2 || state == 6 || state == 7 || state == 9 || state == 44 || state == 35 || state == 63 || state == 37 || state == 40 || state == 10 || (state == 43 && sprite_index == spr_piledriver) || state == 24 || state == 25 || state == 18 || state == 15 || state == 13 || state == 11)
+		instakillmove = 1
+	else if state != states.frozen
+		instakillmove = 0
 }

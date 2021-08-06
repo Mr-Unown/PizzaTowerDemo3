@@ -4,7 +4,7 @@ if (thrown == 0)
     with (id)
     {
         if (!audio_is_playing(sfx_killingblow))
-            scr_soundeffect(14)
+            scr_soundeffect(sfx_killingblow)
         image_xscale = (-obj_slaphitbox2.image_xscale)
         instance_create((x + (obj_slaphitbox2.image_xscale * 30)), y, obj_bumpeffect)
         thrown = 1

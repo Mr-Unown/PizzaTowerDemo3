@@ -22,16 +22,28 @@ if scr_slope() && vsp >= 0
 	{
 		var slope_acceleration = abs(image_yscale) / abs(image_xscale)
 		//Roll Momentum
-		if other.movespeed > 0 && other.xscale == sign(image_xscale)
+		if other.xscale == sign(image_xscale)
 		{
-			other.movespeed -= (0.25 * slope_acceleration)
-			if other.movespeed <= 0
+			if other.movespeed > 0 
 			{
-				other.xscale = -sign(image_xscale)
+			other.movespeed -= (0.25 * slope_acceleration)
+				if other.movespeed <= 0
+				{
+					other.xscale = -sign(image_xscale)
+					other.maxmachspeed = 24
+				}
 			}
+			if other.maxmachspeed > 24
+				other.maxmachspeed -= (0.25 * slope_acceleration)
 		}
-		else if other.movespeed < 23 && other.xscale == -sign(image_xscale)
-			other.movespeed += (0.25 * slope_acceleration)
+		else if other.xscale == -sign(image_xscale)
+		{
+			if other.movespeed < other.maxmachspeed
+				other.movespeed += (0.25 * slope_acceleration)
+			if other.maxmachspeed < 28
+				other.maxmachspeed += (0.125 * slope_acceleration)
+				
+		}
 	}
 }
 if (machhitAnim == 1 || rollmove == 1)

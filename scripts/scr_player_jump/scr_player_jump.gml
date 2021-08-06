@@ -154,7 +154,7 @@ if (key_down && sprite_index != spr_player_jugglebash)
     }
     else if (character != "V" && character != "S")
     {
-        scr_soundeffect(14)
+        scr_soundeffect(sfx_killingblow)
         image_index = 0
         state = 92
         sprite_index = spr_shotgunjump1
@@ -279,7 +279,7 @@ if (key_shoot2 && shotgunAnim == 0) && (!key_down)  && character != "V" && chara
 			
 			break;
 		}
-		scr_soundeffect(14)
+		scr_soundeffect(sfx_killingblow)
 		murderammo -= 1
 	}
 	else
@@ -298,7 +298,7 @@ if (key_shoot2 && shotgunAnim == 0) && (!key_down)  && character != "V" && chara
 //Shotgun
 if (key_shoot2 && shotgunAnim == 1 && character != "V" && character != "S" && (!key_down))
 {
-    scr_soundeffect(14)
+    scr_soundeffect(sfx_killingblow)
     state = 38
     with (instance_create(x, y, obj_pistoleffect))
         image_xscale = other.image_xscale
@@ -329,7 +329,7 @@ if (key_slap2 && character == "V")
     image_index = 0
     with (instance_create((x + (xscale * 25)), (y + 20), obj_shotgunbullet))
         playerid = other.id
-    scr_soundeffect(14)
+    scr_soundeffect(sfx_killingblow)
 }
 
 if (character == "N" && pogo = true)  {
