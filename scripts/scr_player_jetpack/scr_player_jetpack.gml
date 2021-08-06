@@ -57,6 +57,7 @@ if key_attack2 && jetpacking = true
 	state = states.pogo
 	pogomovespeed = movespeed
 }
+/*
 //Auto Parry
 if (!instance_exists(parry_id))
 {
@@ -67,6 +68,7 @@ if (!instance_exists(parry_id))
         image_xscale = other.xscale
 	}
 }
+*/
 //Cancel into Spin
 if key_jump2 && jetpacking = true
 {

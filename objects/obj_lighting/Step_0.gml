@@ -41,12 +41,16 @@ switch room
 		can_draw = true;
 		var _dark = clamp(camera_get_view_y(view_camera[0]),864,2756)/2756
 		targetdarkness = clamp(_dark * 0.85,0.75,0.85)
-		break;	
+		break;		
 	case ancient_10_1:
 		can_draw = true;
-		var _dark = clamp(camera_get_view_y(view_camera[0]),864,2756)/2756
+		targetdarkness = 0.85
+		break;	
+	case ancient_10_2:
+		can_draw = true;
+		var _dark = clamp(camera_get_view_y(view_camera[0]),864,1632)/1632
 		targetdarkness = clamp(_dark * 0.85,0.75,0.85)
-		break;			
+		break;				
 	case ancient_11:
 		can_draw = true;
 		targetdarkness = 0.75;
