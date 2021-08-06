@@ -25,3 +25,4 @@ global.savefile = "a"
 cursory[0] = 96
 cursory[1] = 224
 cursory[2] = 352
+cursory[3] = 270

@@ -115,7 +115,12 @@ if !instance_exists(cursori) && global.savefilechoosen = false
 	}
 }
 if instance_exists(cursori)	&& global.savefilechoosen = false
-	cursori.y = cursory[selectedfile]
+{
+	if global.savefile_optionselected = false && global.savefile_fileselected = false
+		cursori.y = cursory[selectedfile];
+	else
+		cursori.y = 270;
+}
 else if instance_exists(cursori)
 	instance_destroy(cursori)
 	
