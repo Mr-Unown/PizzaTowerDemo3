@@ -21,7 +21,7 @@ if global.snickchallenge == false
 			global.srank = 17500	
 		break;
 		case "ancient":
-			global.stimerank = 3.50;
+			global.stimerank = 3.40;
 			global.srank = 21500	
 		break;
 		case "chateau":

@@ -477,7 +477,6 @@ switch state
 	case states.tumble:
 	case states.crouch:
 	case states.crouchslide:
-	case states.machslide:
 	subtle_var = 1.15
 	break;
 	case states.breakdance:
@@ -488,6 +487,7 @@ switch state
 	break;
 	case states.mach3:
 	case states.mach2:
+	case states.machslide:
 	case states.jetpack:
 	subtle_var = 1.5
 	break;
