@@ -2,8 +2,8 @@ landAnim = 1
 if vsp < 15
 	vsp = 15;
 vsp = clamp(vsp + 0.15,15,20);
+freefallsmash += clamp(vsp/15,1,2);
 move = (key_left + key_right)
-freefallsmash += clamp(vsp/15,1,2)
 if (!grounded)
 {
     hsp = (move * movespeed)
@@ -131,5 +131,28 @@ if (key_attack2) && !(character = "N" && pogo = true) && !grounded && freefallsm
         with (instance_create(x, y, obj_jumpdust))
             image_xscale = other.xscale
 		scr_soundeffect(sfx_rollgetup)			
+}
+if key_attack && (character == "N" && pogo = true) && !key_slap2 && pogojetcharge = false
+{
+    sprite_index = spr_playerN_pogostart
+    state = states.pogo
+    image_index = 0
+	pogomovespeed = 6	
+}
+if key_attack2 && (character == "N" && pogo = true) && pogojetcharge = true
+{
+	scr_soundeffect(sfx_noisewoah)	
+    if !key_up
+	sprite_index = spr_playerN_jetpackstart
+	else
+	sprite_index = spr_superjumpprep
+    state = states.jetpackstart
+	if move != 0
+		xscale = move
+    hsp = 0
+	vsp = 0
+    image_index = 0
+    superjumpprepsnd = audio_play_sound(sfx_superjumpprep, 1, false)
+    audio_sound_gain(superjumpprepsnd, (1 * global.soundeffectsvolume), 0)
 }
 image_speed = 0.35
