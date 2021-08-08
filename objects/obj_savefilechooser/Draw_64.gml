@@ -95,7 +95,10 @@ if global.savefile_optionselected = true
 					
 					draw_sprite_ext(spr_savefile_copy_arrow,-1,448,270,1,_ydir,0,image_blend,1)	
 				}
-				
+				draw_set_font(global.font)
+				draw_set_halign(fa_center)	
+				draw_set_color(c_white)
+				draw_text(448, 453, "PRESS UP AND DOWN TO\n SELECT THE FILE TO BE OVERWRITTEN")		
 				if selectedcopy_to_file = true
 				{
 					draw_set_alpha(0.65)
@@ -120,10 +123,7 @@ if global.savefile_optionselected = true
 						draw_text_colour(560, 300, "YES", c_green, c_green, c_green, c_green, 0.5)
 					}	
 				}
-				draw_set_font(global.font)
-				draw_set_halign(fa_center)	
-				draw_set_color(c_white)
-				draw_text(448, 453, "PRESS UP AND DOWN TO\n SELECT THE FILE TO BE OVERWRITTEN")					
+			
 			break;			
 		}
 }

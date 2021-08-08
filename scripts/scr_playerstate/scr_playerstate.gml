@@ -556,7 +556,7 @@ else if (paletteselect < sprite_get_width(spr_palette) - 1)
 	custompalette = false
 
 //Vigi Health nerf
-if vigihealth > 100 && vigitimer <= 0
+if vigihealth > 100 && vigitimer <= 0 && global.freezeframe = false
 {
 	vigitimer = 100
 	vigihealth = vigihealth - 5

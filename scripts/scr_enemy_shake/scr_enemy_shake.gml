@@ -12,6 +12,20 @@ else
 	shake = 1
 if global.freezeframe = false
 {
+    with (instance_create(x, y, obj_bumpeffect))
+		sprite_index = spr_parryeffect	
+	with (instance_create((other.x + random_range(-16, 16)), (other.y + random_range(-16, 16)), obj_balloonpop))
+	{
+		image_index = 0.35
+		sprite_index = spr_bigpoofclouds
+		image_angle = choose(0,90,180,270)
+	}	
+    instance_create(x, y, obj_slapstar)
+    instance_create(x, y, obj_slapstar)
+    instance_create(x, y, obj_slapstar)
+    instance_create(x, y, obj_baddiegibs)
+    instance_create(x, y, obj_baddiegibs)
+    instance_create(x, y, obj_baddiegibs)	
     if (blowdirection == 3)
     {
         alarm[1] = 2
@@ -22,8 +36,7 @@ if global.freezeframe = false
         grav = 0.5
         state = 106
         hp -= 1
-        with (instance_create(x, y, obj_bumpeffect))
-            sprite_index = spr_parryeffect
+
         thrown = 1
     }
     else if (blowdirection == 2)
@@ -36,8 +49,7 @@ if global.freezeframe = false
         grav = 0.5
         state = 106
         hp -= 1
-        with (instance_create(x, y, obj_bumpeffect))
-            sprite_index = spr_parryeffect
+
         thrown = 1
     }
     else if (blowdirection == 1)
@@ -50,8 +62,7 @@ if global.freezeframe = false
         grav = 0.5
         state = 106
         hp -= 1
-        with (instance_create(x, y, obj_bumpeffect))
-            sprite_index = spr_parryeffect
+
         thrown = 1
     }
     else if (blowdirection == "parry")
@@ -64,8 +75,7 @@ if global.freezeframe = false
         grav = 0
         state = 106
         hp -= 1
-        with (instance_create(x, y, obj_bumpeffect))
-            sprite_index = spr_parryeffect
+
         thrown = 1
     }
 	else if (blowdirection == 5) && hp > 1
@@ -78,19 +88,14 @@ if global.freezeframe = false
         grav = 0.5
         state = 106
         hp -= 1
-        with (instance_create(x, y, obj_bumpeffect))
-            sprite_index = spr_parryeffect
+
         thrown = 1
 	}
 	else
 	{
+		
 		instance_destroy()
 	}
-    instance_create(x, y, obj_slapstar)
-    instance_create(x, y, obj_slapstar)
-    instance_create(x, y, obj_slapstar)
-    instance_create(x, y, obj_baddiegibs)
-    instance_create(x, y, obj_baddiegibs)
-    instance_create(x, y, obj_baddiegibs)
+
 }
 sprite_index = stunfallspr

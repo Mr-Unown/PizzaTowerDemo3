@@ -88,7 +88,10 @@ global.storedgun = 0;
 global.golfhit = 0;
 with (obj_tv)
 {
+	frozenalarm = -1;
+	frozen = false;
 	bootingup = false;
+	alarm[1] = -1;
     shownranks = 0;
     shownranka = 0;
     shownrankb = 0;

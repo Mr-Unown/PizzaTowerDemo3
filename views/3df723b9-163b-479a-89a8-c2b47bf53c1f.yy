@@ -17,7 +17,10 @@
         "69bf71e1-fcf0-4a73-9b4d-8d481184ebca",
         "1466f793-b39c-4d20-bb59-8ce036a4e769",
         "92215e85-cbc4-47ab-a245-759b33573a69",
-        "51d49441-1624-46dc-97ce-a0515129457e"
+        "51d49441-1624-46dc-97ce-a0515129457e",
+        "26fbea9c-8d45-4bab-a986-4aca5786c2f2",
+        "e09bb347-8661-4a6c-9d4b-5a40ed5a87a0",
+        "2b92a855-0bfc-4812-8b3c-e150d986e2d1"
     ],
     "filterType": "GMSprite",
     "folderName": "NEW HUD",

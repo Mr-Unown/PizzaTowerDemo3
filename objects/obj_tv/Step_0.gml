@@ -31,6 +31,12 @@ if global.miniboss = true
 	global.pausecombotime = true
 	obj_tv.alarm[1] = 75	
 }
+//Time
+if frozen = true && global.freezeframe = false
+{
+	alarm[1] = frozenalarm;
+	frozen = false;		
+}
 //Pause Combo
 if global.snickchallenge = true
 	global.pausecombotime = false

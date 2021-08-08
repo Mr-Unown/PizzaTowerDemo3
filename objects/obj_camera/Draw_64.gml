@@ -459,6 +459,10 @@ if (player.state != 55)
     draw_set_color(c_white)
 	if (room != rank_room && room != strongcold_endscreen)
     {
+		switch (global.newhud)
+		{
+			case 0:
+			#region Old HUD
 		var vdrawx = 190
 		var vdrawy = 65
 		if player.hurted = 1 {
@@ -471,6 +475,36 @@ if (player.state != 55)
 		}
         if (player.character == "V")
             draw_text(vdrawx, vdrawy + newhudyoffset, player.vigihealth)
+			#endregion
+			break;
+			case 1:
+			#region New HUD
+				var vdrawx = 100
+				var vdrawy = 465
+				var shake1 = 0, shake2 = 0;
+				if player.hurted = 1 
+				{
+					shake1 = random_range(-1,1)
+					shake2 =  random_range(-1,1)
+				}
+				if (player.character == "V")
+				{
+					//Draw Bar
+					var spriteWidth = sprite_get_width(spr_vigihealth_filled);
+					var spriteHeight = sprite_get_height(spr_vigihealth_filled);
+					var hpPercent = player.vigihealth/100;
+					//draw_sprite_part(sprHealthBar, 0, 0, 0, spriteWidth*hpPercent, spriteHeight, x, y+5);
+					draw_sprite_ext(spr_vigihealth_empty, -1, vdrawx, vdrawy, 1, 1, 0, c_white, 1)
+					draw_sprite_part_ext(spr_vigihealth_filled,-1,0,0,spriteWidth,spriteHeight*hpPercent,vdrawx - 50,vdrawy + 50,1,-1,c_white,1)
+					
+					//Draw Frame
+					draw_sprite_ext(spr_vigihealth_frame, -1, vdrawx, vdrawy, 1, 1, 0, c_white, 1)
+					//Draw Health Text
+					draw_text(vdrawx + shake1, vdrawy + shake2 - 16, player.vigihealth)			
+				}
+			#endregion
+			break;
+		}
     }
 	#endregion
 	#region Timer

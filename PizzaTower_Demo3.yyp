@@ -3983,6 +3983,14 @@
             }
         },
         {
+            "Key": "26fbea9c-8d45-4bab-a986-4aca5786c2f2",
+            "Value": {
+                "id": "431ea3dd-3b55-4620-b6bb-3bc757b2ec90",
+                "resourcePath": "sprites\\spr_vigihealth_empty\\spr_vigihealth_empty.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "27033b59-0afb-4863-9c67-8c091ba948e2",
             "Value": {
                 "id": "2e204681-b366-46b5-98ec-1da0400f4235",
@@ -4411,6 +4419,14 @@
             "Value": {
                 "id": "c7c0f43c-7943-4f38-8631-04d2d48a376d",
                 "resourcePath": "sprites\\spr_taximove\\spr_taximove.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2b92a855-0bfc-4812-8b3c-e150d986e2d1",
+            "Value": {
+                "id": "adcf658e-8533-4d71-ab9d-734d902f5e07",
+                "resourcePath": "sprites\\spr_vigihealth_frame\\spr_vigihealth_frame.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -24059,6 +24075,14 @@
             "Value": {
                 "id": "743f2d74-19fe-4e0e-b985-dc89cec1a28e",
                 "resourcePath": "sprites\\spr_sausagemannocigar_walk\\spr_sausagemannocigar_walk.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e09bb347-8661-4a6c-9d4b-5a40ed5a87a0",
+            "Value": {
+                "id": "4f0976f2-b9e6-4061-a252-b82914cd2ef3",
+                "resourcePath": "sprites\\spr_vigihealth_filled\\spr_vigihealth_filled.yy",
                 "resourceType": "GMSprite"
             }
         },
