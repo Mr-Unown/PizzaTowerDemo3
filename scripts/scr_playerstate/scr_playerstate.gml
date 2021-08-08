@@ -563,11 +563,13 @@ if vigihealth > 100 && vigitimer <= 0 && global.freezeframe = false
 }
 else if vigihealth <= 100
 	vigitimer = 100
-	
+if global.freezeframe = false
 vigitimer--
 
 vigihealth = clamp(vigihealth,0,250)
 //Supertaunt
+if global.freezeframe = false
+{
 if global.combo >= 3 && supertauntbuffer < 500 && supertauntcharged = false
 	supertauntbuffer++
 else if supertauntbuffer > 0
@@ -590,6 +592,7 @@ if supertauntcharged = true  && room != rank_room
 			other.supertaunteffect = id
 			playerid = other.id
 		}
+}
 }
 //Mach3DashBuffer
 if mach3dash = false
