@@ -30,6 +30,9 @@ cursory[3] = 270
 
 
 //Copy File
+vanity_to_file = 0;
 copy_to_file = 0;
 selectedcopy_to_file = false;
 overwriteconfirmselection = 0;
+file1y = 128;
+file2y = 128;

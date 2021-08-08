@@ -50,6 +50,7 @@ if global.savefilechoosen = false
 			case 1: //Copy Save
 				copy_to_file = selectedfile
 				selectedcopy_to_file = false;
+				vanity_to_file = 0;
 				global.savefile_optionselected = true;
 				scr_soundeffect(sfx_collecttoppin);		
 				inputbuffer = true;
@@ -94,6 +95,9 @@ else if key_slap2 && global.savefilechoosen = false && global.savefile_optionsel
 	delete_optionselected = 0;
 	selectedoption = 2;
 	selectedcopy_to_file = false;
+	vanity_to_file = 0;
+	file1y = 128;
+	file2y = 128;	
 	global.savefile_optionselected = false;
 	scr_soundeffect(sfx_enemyprojectile);
 }
@@ -108,6 +112,8 @@ else if key_slap2 && global.savefilechoosen = true && obj_characterselect.charac
 	delete_optionselected = 0;
 	selectedoption = 2;
 	selectedcopy_to_file = false;
+	file1y = 128;
+	file2y = 128;	
 	global.savefile_optionselected = false;	
 	global.savefilechoosen = false;
 	scr_soundeffect(sfx_step);

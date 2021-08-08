@@ -78,6 +78,19 @@ if global.savefile_optionselected = true
 				}		
 			break;	
 			case 1: //Copy
+				if copy_to_file != selectedfile
+				{
+					var _ydir = 1
+					if vanity_to_file <= -1
+						_ydir = -1
+					
+					draw_sprite_ext(spr_savefile_copy_arrow,-1,448,270,1,_ydir,0,image_blend,1)	
+				}
+				var _above = (selectedfile - 1 <= -1 ? 2 : selectedfile - 1)
+				draw_sprite_ext(spr_savefilebox,_above,448,270 - file1y,1,1,0,image_blend,1)	
+				var _below = (selectedfile + 1)
+				draw_sprite_ext(spr_savefilebox,_below,448,270 + file2y,1,1,0,image_blend,1)			
+			
 				if selectedcopy_to_file = true
 				{
 					draw_set_alpha(0.65)

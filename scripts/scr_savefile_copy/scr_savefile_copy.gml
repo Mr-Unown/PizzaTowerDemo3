@@ -1,8 +1,9 @@
 //Input
 scr_getinput()
 //Select your Option
-if (key_up2 || keyboard_check_pressed(vk_up)) && global.savefilechoosen = false && !key_jump2 && selectedcopy_to_file = false
+if vanity_to_file > -1 && (key_up2 || keyboard_check_pressed(vk_up)) && global.savefilechoosen = false && !key_jump2 && selectedcopy_to_file = false
 {
+	vanity_to_file -= 1
 	var value = -1
 	if copy_to_file = 0
 		copy_to_file = 2
@@ -10,8 +11,9 @@ if (key_up2 || keyboard_check_pressed(vk_up)) && global.savefilechoosen = false 
 		copy_to_file = clamp(copy_to_file + value,0,2)
     scr_soundeffect(sfx_step)
 }
-if (key_down2 || keyboard_check_pressed(vk_down)) && global.savefilechoosen = false && !key_jump2 && selectedcopy_to_file = false
+if vanity_to_file < 1 && (key_down2 || keyboard_check_pressed(vk_down)) && global.savefilechoosen = false && !key_jump2 && selectedcopy_to_file = false
 {
+	vanity_to_file += 1
 	var value = 1
 	if copy_to_file = 2
 		copy_to_file = 0
@@ -62,6 +64,17 @@ if inputbuffer = false
 		}
 	}
 }
+//Funny Go Closer
+if vanity_to_file <= -1
+	file1y = approach(file1y,96,5)
+else
+	file1y = approach(file1y,128,5)
+	
+if vanity_to_file >= 1
+	file2y = approach(file2y,96,5)
+else
+	file2y = approach(file2y,128,5)
+
 //
 
 

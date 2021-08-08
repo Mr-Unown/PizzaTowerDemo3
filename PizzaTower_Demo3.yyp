@@ -11967,6 +11967,14 @@
             }
         },
         {
+            "Key": "7113e519-d63f-4e2e-aaaa-ac7d5d3c79fe",
+            "Value": {
+                "id": "03c3ea7d-da77-4e5e-b33e-2a1a78858682",
+                "resourcePath": "sprites\\spr_savefile_copy_arrow\\spr_savefile_copy_arrow.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "71269eea-c68d-4508-996d-1cfb7a007a00",
             "Value": {
                 "id": "21fe9382-f19a-4898-b132-93426c1a180e",
