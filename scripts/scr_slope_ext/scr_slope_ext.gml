@@ -1,4 +1,4 @@
-/// @description scr_slope_ext
+/// @description scr_slope_ext - an advanced slope collision detection code
 /// @param x
 /// @param y
 var old_x = x;

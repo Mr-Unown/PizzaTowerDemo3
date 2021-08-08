@@ -17,7 +17,12 @@ if place_meeting(x,y,obj_door) || place_meeting(x,y,obj_keydoor) || place_meetin
 	}
 }
 if place_meeting(x, y, obj_keydoor) || place_meeting(x, y, obj_geromedoor)
+{
     sprite_index = spr_victory
+	global.combotime = 60
+	global.pausecombotime = true
+	obj_tv.alarm[1] = 75	
+}
 if (place_meeting(x, y, obj_startgate) || place_meeting(x, y, obj_levelcomputer))
     sprite_index = spr_entergate
 if (floor(image_index) == (image_number - 1))

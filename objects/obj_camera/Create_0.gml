@@ -1,4 +1,6 @@
+
 depth = -11
+
 //Stinky Thing
 oldfacesprite = spr_null
 //global.startgate

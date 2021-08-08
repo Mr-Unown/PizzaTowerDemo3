@@ -48,6 +48,8 @@ if global.savefilechoosen = false
 				alarm[0] = 5
 			break;
 			case 1: //Copy Save
+				copy_to_file = selectedfile
+				selectedcopy_to_file = false;
 				global.savefile_optionselected = true;
 				scr_soundeffect(sfx_collecttoppin);		
 				inputbuffer = true;
@@ -87,17 +89,25 @@ if key_slap2 && global.savefilechoosen = false && global.savefile_optionselected
 	global.savefile_fileselected = false;
 	scr_soundeffect(sfx_enemyprojectile);				
 }
-else if key_slap2 && global.savefilechoosen = false && global.savefile_optionselected = true && global.savefile_fileselected = true //Back out of Option
+else if key_slap2 && global.savefilechoosen = false && global.savefile_optionselected = true && global.savefile_fileselected = true && selectedcopy_to_file = false //Back out of Option
 {
 	delete_optionselected = 0;
 	selectedoption = 2;
+	selectedcopy_to_file = false;
 	global.savefile_optionselected = false;
 	scr_soundeffect(sfx_enemyprojectile);
+}
+else if key_slap2 && global.savefilechoosen = false && global.savefile_optionselected = true && global.savefile_fileselected = true && selectedcopy_to_file = true //Back out of Copying
+{
+	scr_soundeffect(sfx_enemyprojectile)
+	overwriteconfirmselection = 0;
+	selectedcopy_to_file = false;			
 }
 else if key_slap2 && global.savefilechoosen = true && obj_characterselect.characterselected = false //Back out of Character Select
 {
 	delete_optionselected = 0;
 	selectedoption = 2;
+	selectedcopy_to_file = false;
 	global.savefile_optionselected = false;	
 	global.savefilechoosen = false;
 	scr_soundeffect(sfx_step);
@@ -142,6 +152,7 @@ if key_attack2 && global.savefilechoosen = false
 	scr_soundeffect(sfx_explosion)
     file_delete((("playerData_" + global.savefile) + ".ini"))
 }
+//cool epic soda code here
 //copy
 if key_shoot2 && global.savefilechoosen = false
 {

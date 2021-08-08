@@ -472,6 +472,7 @@ switch state
 {
 	case states.normal:
 	subtle_var = 3
+	//subtle_var = 1
 	break;
 	case states.machroll:
 	case states.tumble:
@@ -500,17 +501,20 @@ switch state
 }
 #endregion
 //Slope Angles 
+//Spaghetti Code Strikes Back
 if global.freezeframe = false && sprite_index != spr_knightpepdownslope && place_meeting(x,y+1,obj_slope) && vsp >= 0 
 {
 	with instance_place(x,y + 1,obj_slope)
 	{
-		var flip = sign(image_xscale) = -1 ? 180 : 0
+		var _xscale = sign(image_xscale)
+		var flip = _xscale = -1 ? 180 : 0
 		other.draw_angle = ( (approach(other.draw_angle,(point_direction(x,y + sprite_height,x + sprite_width,y) - flip),16)) / (subtle_var) );
 	}
 }
 else if global.freezeframe = false
 	draw_angle = approach(draw_angle,0,32);
 #endregion	
+
 //Speedboost
 if grounded && (state != states.mach2 && state != states.frozen && state != states.backbreaker && state != states.trick && state != states.mach3 && state != states.jetpack && state != states.machroll)
 {

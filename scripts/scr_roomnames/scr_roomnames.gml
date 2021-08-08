@@ -88,7 +88,7 @@ switch room
 		message = "Treasure Room";
 		break;	
 	case medieval_9_1:
-		message = "Golden Fever"
+		message = "Golden Bricks"
 		break;
 	case medieval_10:
 		message = "John Throne";
@@ -311,6 +311,9 @@ switch room
 	case chateau_3:
 		message = "Sorcerer Apprentice";
 		break;	
+	case chateau_3_1:
+		message = "Hallway of Terror!";
+		break;			
 	case chateau_4:
 		message = "Goblin Massacre";
 		break;	
@@ -329,6 +332,9 @@ switch room
 	case chateau_9:
 		message = "Thriller Flight";
 		break;	
+	case chateau_9_1:
+		message = "Brown Bricks";
+		break;			
 	case chateau_10:
 		message = "Pizzard Council";
 		break;	

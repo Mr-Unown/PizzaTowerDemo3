@@ -78,13 +78,30 @@ if global.savefile_optionselected = true
 				}		
 			break;	
 			case 1: //Copy
-				draw_set_alpha(0.65)
-				draw_rectangle_color(-32, -32, 960 + 32, 540 + 32, c_black, c_black, c_black, c_black, 0)
-				draw_set_alpha(1)
-				draw_set_font(global.font)
-				draw_set_halign(fa_center)
-				draw_set_color(c_white)
-				draw_text(480, 200, "THE PROGRAMMER HAS A NAP!\nHOLD OUT! PROGRAMMER!")
+				if selectedcopy_to_file = true
+				{
+					draw_set_alpha(0.65)
+					draw_rectangle_color(-32, -32, 960 + 32, 540 + 32, c_black, c_black, c_black, c_black, 0)
+					draw_set_alpha(1)
+					draw_set_font(global.font)
+					draw_set_halign(fa_center)
+					draw_set_color(c_white)
+					draw_text(480, 200, "ARE YOU SURE?")
+					if (overwriteconfirmselection == 0)
+						draw_text_colour(400, 300, "NO", c_white, c_white, c_white, c_white, 1)
+					else
+					{
+						draw_text_colour(400, 300, "NO", c_black, c_black, c_black, c_black, 1)
+						draw_text_colour(400, 300, "NO", c_white, c_white, c_white, c_white, 0.5)
+					}
+					if (overwriteconfirmselection == 1)
+						draw_text_colour(560, 300, "YES", c_green, c_green, c_green, c_green, 1)
+					else
+					{
+						draw_text_colour(560, 300, "YES", c_black, c_black, c_black, c_black, 1)
+						draw_text_colour(560, 300, "YES", c_green, c_green, c_green, c_green, 0.5)
+					}	
+				}
 			break;			
 		}
 }
