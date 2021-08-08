@@ -51,6 +51,7 @@ if global.savefilechoosen = false
 				copy_to_file = selectedfile
 				selectedcopy_to_file = false;
 				vanity_to_file = 0;
+				event_copy = false;
 				global.savefile_optionselected = true;
 				scr_soundeffect(sfx_collecttoppin);		
 				inputbuffer = true;
@@ -75,6 +76,7 @@ if global.savefilechoosen = false
 			scr_savefile_delete();			
 			break;
 			case 1: //Copy
+			event_copy = true;
 			scr_savefile_copy();
 			break;
 		}
@@ -96,6 +98,7 @@ else if key_slap2 && global.savefilechoosen = false && global.savefile_optionsel
 	selectedoption = 2;
 	selectedcopy_to_file = false;
 	vanity_to_file = 0;
+	event_copy = false;
 	file1y = 128;
 	file2y = 128;	
 	global.savefile_optionselected = false;
@@ -112,6 +115,7 @@ else if key_slap2 && global.savefilechoosen = true && obj_characterselect.charac
 	delete_optionselected = 0;
 	selectedoption = 2;
 	selectedcopy_to_file = false;
+	event_copy = false
 	file1y = 128;
 	file2y = 128;	
 	global.savefile_optionselected = false;	

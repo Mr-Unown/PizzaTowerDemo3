@@ -19,7 +19,7 @@ if (global.savefilechoosen = false)
 		draw_text(448, 453, "PRESS UP AND DOWN TO\n SELECT THE SAVE FILE")
 		#endregion
 	}
-	if global.savefile_fileselected = true
+	if global.savefile_fileselected = true && event_copy = false
 	{
 		#region Select Options
 		draw_set_color(c_white)
@@ -50,7 +50,7 @@ if (global.savefilechoosen = false)
 		#endregion		
 	}
 #region Mode
-if global.savefile_optionselected = true
+if global.savefile_optionselected = true 
 {
 		switch (selectedoption)
 		{
@@ -78,6 +78,15 @@ if global.savefile_optionselected = true
 				}		
 			break;	
 			case 1: //Copy
+
+				var _above = (selectedfile - 1 <= -1 ? 2 : selectedfile - 1)
+				draw_sprite_ext(spr_savefilebox,_above,448,270 - file1y,1,1,0,image_blend,1)	
+				
+				draw_sprite_ext(spr_savefilebox,selectedfile,448,270,1,1,0,image_blend,1)	
+				
+				var _below = (selectedfile + 1)
+				draw_sprite_ext(spr_savefilebox,_below,448,270 + file2y,1,1,0,image_blend,1)			
+			
 				if copy_to_file != selectedfile
 				{
 					var _ydir = 1
@@ -86,11 +95,7 @@ if global.savefile_optionselected = true
 					
 					draw_sprite_ext(spr_savefile_copy_arrow,-1,448,270,1,_ydir,0,image_blend,1)	
 				}
-				var _above = (selectedfile - 1 <= -1 ? 2 : selectedfile - 1)
-				draw_sprite_ext(spr_savefilebox,_above,448,270 - file1y,1,1,0,image_blend,1)	
-				var _below = (selectedfile + 1)
-				draw_sprite_ext(spr_savefilebox,_below,448,270 + file2y,1,1,0,image_blend,1)			
-			
+				
 				if selectedcopy_to_file = true
 				{
 					draw_set_alpha(0.65)
@@ -115,6 +120,10 @@ if global.savefile_optionselected = true
 						draw_text_colour(560, 300, "YES", c_green, c_green, c_green, c_green, 0.5)
 					}	
 				}
+				draw_set_font(global.font)
+				draw_set_halign(fa_center)	
+				draw_set_color(c_white)
+				draw_text(448, 453, "PRESS UP AND DOWN TO\n SELECT THE FILE TO BE OVERWRITTEN")					
 			break;			
 		}
 }

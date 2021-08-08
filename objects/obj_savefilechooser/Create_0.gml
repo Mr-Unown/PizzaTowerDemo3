@@ -30,6 +30,7 @@ cursory[3] = 270
 
 
 //Copy File
+event_copy = false;
 vanity_to_file = 0;
 copy_to_file = 0;
 selectedcopy_to_file = false;
