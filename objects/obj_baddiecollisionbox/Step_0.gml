@@ -37,9 +37,9 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
 				//Instakill Move Scaboom
 				angle = point_direction(other.baddieID.x, other.baddieID.y,x + hsp, y + vsp );		
 				ymovespeed = 2 + abs(vsp)
-				vdirection = sign(hsp)
-				other.baddieID.initialvsp = clamp(-lengthdir_y(ymovespeed, angle) - 2,-20,(random_range(0,-10)))
-				other.baddieID.initialhsp = (vdirection * ((random_range(1,7)) + abs(floor(hsp))))				
+				vdirection = sign(round(hsp + xscale/2))
+				other.baddieID.initialvsp = clamp(-lengthdir_y(ymovespeed, angle) - 2,-25,(random_range(-1,-15)))
+				other.baddieID.initialhsp = (vdirection * ((random_range(1,7)) + abs(floor(hsp * 1.2))))				
                 scr_soundeffect(sfx_punch)
 				//New Hitstun
 				if other.baddieID.hp <= 1
@@ -376,9 +376,9 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player2) && obj_player2
 				//Instakill Move Scaboom
 				angle = point_direction(other.baddieID.x, other.baddieID.y,x + hsp, y + vsp );		
 				ymovespeed = 2 + abs(vsp)
-				vdirection = sign(hsp)
-				other.baddieID.initialvsp = clamp(-lengthdir_y(ymovespeed, angle) - 2,-20,(random_range(0,-10)))
-				other.baddieID.initialhsp = (vdirection * ((random_range(1,7)) + abs(floor(hsp))))				
+				vdirection = sign(round(hsp + xscale/2))
+				other.baddieID.initialvsp = clamp(-lengthdir_y(ymovespeed, angle) - 2,-25,(random_range(-1,-15)))
+				other.baddieID.initialhsp = (vdirection * ((random_range(1,7)) + abs(floor(hsp * 1.2))))				
 				//New Hitstun
 				if other.baddieID.hp <= 1
 					other.baddieID.dying = true

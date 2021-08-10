@@ -502,7 +502,7 @@ switch state
 #endregion
 //Slope Angles 
 //Spaghetti Code Strikes Back
-if global.freezeframe = false && sprite_index != spr_knightpepdownslope && place_meeting(x,y+1,obj_slope) && vsp >= 0 
+if global.freezeframe = false && sprite_index != spr_tumblestart && sprite_index != spr_knightpepdownslope && place_meeting(x,y+1,obj_slope) && vsp >= 0 
 {
 	with instance_place(x,y + 1,obj_slope)
 	{

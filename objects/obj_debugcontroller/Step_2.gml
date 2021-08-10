@@ -109,14 +109,17 @@ if (keyboard_check_pressed(vk_return) && input != "")
 				break;						
 			case "togglecollision": //Could probably use simplification
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !showcollisions else arg1 = ds_list_find_value(_commands, 1)
-
+				
 				switch arg1
 				{
 					case "true": arg1 = true
 					case "false": arg1 = false
 					default: arg1 = !showcollisions
 				}
-				showcollisions = arg1 break
+				
+				showcollisions = arg1 
+				event_user(0);
+				break
 			case "newhud": //MAMA
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.newhud else arg1 = ds_list_find_value(_commands, 1)	
 				switch arg1
@@ -204,7 +207,9 @@ if (keyboard_check_pressed(vk_return) && input != "")
 		active = false
     }
 }
-	
+
+
+/*
 with (obj_solid)
 {
     if (object_index == obj_solid || object_index == obj_secretbigblock || object_index == obj_secretbigblock2 || object_index == obj_secretonewaybigblock || object_index == obj_secretblock || object_index == obj_secretblock2 || object_index == obj_secretmetalblock)
@@ -231,3 +236,4 @@ with (obj_movingplatformtrigger)
     if (object_index == obj_movingplatformtrigger)
         visible = other.showcollisions
 }
+*/

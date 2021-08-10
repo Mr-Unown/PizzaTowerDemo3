@@ -72,9 +72,10 @@ if (sprite_index == spr_taunt)
 				blowdirection = 5;
 				blowintensity = 1;
 				playerxscale = choose(1,-1)
+				newshakebuffer = 15;
 				state = enemystates.enemyshake;	
 				var vec = point_direction(other.x,other.y,x,y)
-				var len = random_range(6,14)
+				var len = random_range(15,25)
 				initialvsp = lengthdir_y(len,vec)
 				initialhsp = lengthdir_x(len,vec)
 			}
@@ -250,9 +251,10 @@ if (sprite_index == spr_supertaunt1 || sprite_index == spr_supertaunt2 || sprite
 				blowdirection = 5;
 				blowintensity = 1;
 				playerxscale = choose(1,-1)
+				newshakebuffer = 15;
 				state = enemystates.enemyshake;	
 				var vec = point_direction(other.x,other.y,x,y)
-				var len = random_range(6,14)
+				var len = random_range(15,25)
 				initialvsp = lengthdir_y(len,vec)
 				initialhsp = lengthdir_x(len,vec)
 			}

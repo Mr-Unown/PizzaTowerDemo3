@@ -1,3 +1,5 @@
+var _hsp = hsp
+var _vsp = vsp
 with (obj_player1)
 {
     if (state == 70 || state == 91 || state == states.jetpack || state == 37 || state == 18 || state == 2 || state == 10 || state == 9)

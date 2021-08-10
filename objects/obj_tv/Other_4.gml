@@ -49,7 +49,8 @@ if global.snickchallenge == false
 }
 else
 {
-    global.srank = 8300
+	//Snick Challenge
+    global.srank = 8000
     global.arank = (global.srank - (global.srank / 4))
     global.brank = (global.srank - ((global.srank / 4) * 2))
     global.crank = (global.srank - ((global.srank / 4) * 3))	

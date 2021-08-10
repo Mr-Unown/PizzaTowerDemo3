@@ -4,13 +4,18 @@ else if (grabbedby == 2)
     player = obj_player2
 hsp = 0
 vsp = 0
-if shakebuffer > 0
-    shakebuffer--
 if global.freezeframe = false
+{
+	if newshakebuffer > 0
+		newshakebuffer--
+}
+
+if global.freezeframe = false && newshakebuffer <= 0
     shake = 0
-else	
+else
 	shake = 1
-if global.freezeframe = false
+	
+if global.freezeframe = false && newshakebuffer <= 0
 {
     with (instance_create(x, y, obj_bumpeffect))
 		sprite_index = spr_parryeffect	
@@ -88,7 +93,6 @@ if global.freezeframe = false
         grav = 0.5
         state = 106
         hp -= 1
-
         thrown = 1
 	}
 	else

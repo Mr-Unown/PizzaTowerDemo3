@@ -38,6 +38,19 @@ commands[arrayi++] = "debugmode (true/false)"
 
 // command functions
 showcollisions = false
+oldshowcollision = false
+var i = 0;
+showcollisionarray[i++] = obj_solid;
+showcollisionarray[i++] = obj_slope;
+showcollisionarray[i++] = obj_platform;
+showcollisionarray[i++] = obj_platformside;
+showcollisionarray[i++] = obj_movingplatformtrigger;
+showcollisionarray[i++] = obj_secretbigblock;
+showcollisionarray[i++] = obj_secretbigblock2;
+showcollisionarray[i++] = obj_secretonewaybigblock;
+showcollisionarray[i++] = obj_secretblock;
+showcollisionarray[i++] = obj_secretblock2;
+showcollisionarray[i++] = obj_secretmetalblock;
+showcollisionarray[i++] = obj_crashplaneblock;
+showcollisionarray[i++] = obj_pitcollider;
 
-//Unrelated
-//showloadbar = false;
