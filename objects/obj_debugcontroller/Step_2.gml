@@ -23,6 +23,11 @@ if (keyboard_check_pressed(vk_return) && input != "")
 				obj_player2.targetDoor = arg2
 				instance_create(0, 0, obj_fadeout) } break
 			case "fart":
+			case "poop":
+			case "crap":
+			case "fard":
+			case "shart":
+			case "shit":
 			audio_sound_gain(audio_play_sound(sfx_fart, 1, false), (1 * global.soundeffectsvolume), 0)
 			break;
 				/*
