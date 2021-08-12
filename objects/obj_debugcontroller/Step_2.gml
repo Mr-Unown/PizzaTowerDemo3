@@ -22,6 +22,9 @@ if (keyboard_check_pressed(vk_return) && input != "")
 				obj_player1.targetDoor = arg2
 				obj_player2.targetDoor = arg2
 				instance_create(0, 0, obj_fadeout) } break
+			case "fart":
+			audio_sound_gain(audio_play_sound(sfx_fart, 1, false), (1 * global.soundeffectsvolume), 0)
+			break;
 				/*
 			case "create":
 				if DEBUG {
@@ -92,7 +95,8 @@ if (keyboard_check_pressed(vk_return) && input != "")
 				global.maxwave = (((global.minutes * 60) + global.seconds) * 60)
 				if global.panicbg = true
 					scr_panicbg_init()			
-				obj_camera.alarm[1] = 60 break
+				obj_camera.alarm[1] = 60
+				break
 			case "standardhitstun":
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = 70 else arg1 = ds_list_find_value(_commands, 1)
 				global.defaulttime = real(arg1)		

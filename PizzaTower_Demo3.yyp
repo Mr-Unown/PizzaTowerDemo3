@@ -19554,7 +19554,7 @@
             "Key": "b8f1abb4-7a1c-4e02-b63e-c0c99a889c41",
             "Value": {
                 "id": "d2e4762a-23de-4065-9bf5-16867c73a70e",
-                "resourcePath": "sounds\\sfx_jump\\sfx_jump.yy",
+                "resourcePath": "sounds\\sfx_fart\\sfx_fart.yy",
                 "resourceType": "GMSound"
             }
         },
@@ -21908,6 +21908,14 @@
                 "id": "4b4154be-6439-496a-a085-49d3c997d830",
                 "resourcePath": "sprites\\spr_spitcheese_scared\\spr_spitcheese_scared.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "cd24eb94-ce08-42b8-a099-694fb099bccd",
+            "Value": {
+                "id": "9202a6ed-00b0-4e8f-826a-dc877dda60c0",
+                "resourcePath": "sounds\\sfx_jump\\sfx_jump.yy",
+                "resourceType": "GMSound"
             }
         },
         {
