@@ -28,7 +28,7 @@ if (sprite_index == spr_boxcrusher_land)
         if (other.sprite_index != other.spr_boxxedintro)
         {
             other.sprite_index = other.spr_boxxedintro
-            scr_soundeffect(14)
+            scr_soundeffect(sfx_killingblow)
             with (obj_camera)
             {
                 shake_mag = 10
@@ -44,7 +44,7 @@ if (sprite_index == spr_boxcrusher_land)
         if (other.sprite_index != other.spr_stunned)
         {
             other.sprite_index = other.spr_stunned
-            scr_soundeffect(14)
+            scr_soundeffect(sfx_killingblow)
         }
         with (obj_camera)
         {

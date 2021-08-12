@@ -34,6 +34,7 @@ if instance_exists(obj_player2)
         sprite_index = spr_doorkeyopen
         image_speed = 0.35
 		global.pausecombotime = true
+		global.combotime = 60
 		obj_tv.alarm[1] = 75		
         instance_create((x + 50), (y + 50), obj_lock)
         global.key_inv = 0

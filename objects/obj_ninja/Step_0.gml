@@ -36,8 +36,8 @@ if (x != obj_player.x)
             roaming = 1
             attack = 1
             vsp = -11
-            scr_soundeffect(8)
-            scr_soundeffect(0)
+            scr_soundeffect(sfx_enemyprojectile)
+            scr_soundeffect(sfx_jump)
             image_index = 0
             image_xscale = (-sign((x - obj_player.x)))
             state = 96

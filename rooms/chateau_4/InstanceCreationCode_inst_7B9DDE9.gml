@@ -1,1 +1,1 @@
-targetRoom = chateau_3
+targetRoom = chateau_3_1

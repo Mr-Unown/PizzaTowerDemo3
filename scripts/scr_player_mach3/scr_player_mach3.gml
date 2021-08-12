@@ -58,7 +58,8 @@ if (fightball == 1 && global.coop == 1)
         y = obj_player1.y
     }
 }
-if (movespeed < 24 && move == xscale)
+//Super cool Movespeed Buff
+if (movespeed < maxmachspeed && move == xscale)
 {
 	if (character == "N" && pogo = false)
         movespeed += 0.2
@@ -73,14 +74,20 @@ if (movespeed < 24 && move == xscale)
         }
     }
 }
-else if (movespeed > 12 && move != xscale)
-    movespeed -= 0.1
+else if (move != xscale)
+{	
+	if movespeed > 12
+		movespeed -= 0.1
+	if maxmachspeed > 24 && grounded
+		maxmachspeed -= 0.1
+}
 crouchslideAnim = 1
 if ((!key_jump2) && jumpstop == 0 && vsp < 0.5)
 {
     vsp /= 10
     jumpstop = 1
 }
+/*
 //Auto Parry
 if (!instance_exists(parry_id))
 {
@@ -91,6 +98,7 @@ if (!instance_exists(parry_id))
         image_xscale = other.xscale
 	}
 }
+*/
 if (grounded && vsp > 0)
     jumpstop = 0
 if (!grounded)
@@ -110,7 +118,7 @@ if (machhitAnim == 1)
 }
 if (input_buffer_jump < 8 && grounded && (!(move == 1 && xscale == -1)) && (!(move == -1 && xscale == 1)))
 {
-    scr_soundeffect(0)
+    scr_soundeffect(sfx_jump)
     if (sprite_index != spr_fightball1 && sprite_index != spr_fightball2)
     {
         image_index = 0
@@ -121,9 +129,9 @@ if (input_buffer_jump < 8 && grounded && (!(move == 1 && xscale == -1)) && (!(mo
     else
         vsp = -13
 }
-if (fightball == 0)
+if (fightball == 0) 
 {
-    if (sprite_index == spr_mach3jump && floor(image_index) == (image_number - 1))
+    if (sprite_index == spr_mach3jump && floor(image_index) == (image_number - 1)) 
         sprite_index = spr_mach4
     if (sprite_index == spr_mach3dashpad && floor(image_index) == (image_number - 1))
         sprite_index = spr_mach4		
@@ -200,12 +208,13 @@ if (key_down && fightball == 0 && (!place_meeting(x, y, obj_dashpad)))
 {
     with (instance_create(x, y, obj_jumpdust))
         image_xscale = other.xscale
+	movespeed = clamp(movespeed,12,15)
     flash = 0
     state = 37
     vsp = 10
 }
 //Hitwall
-if (((!grounded) && scr_solid(x + hsp,y) && (!place_meeting((x + hsp), y, obj_destructibles)) && (!place_meeting((x + sign(hsp)), y, obj_slope))) || (grounded && (scr_solid(x + hsp,y - 2) && !place_meeting(x + sign(hsp),y,obj_slope)) && (!place_meeting((x + hsp), y, obj_destructibles)) && (!place_meeting((x + hsp), y, obj_metalblock)) && scr_slope() ) )
+if (((!grounded) && scr_solid(x + hsp,y) && (!place_meeting((x + hsp), y, obj_destructibles)) && (!place_meeting((x + sign(hsp)), y, obj_slope))) || (grounded && (scr_solid(x + sign(hsp),y - 2)  && !place_meeting(x + sign(hsp),y,obj_slope)) && (!place_meeting((x + hsp), y, obj_destructibles)) && (!place_meeting((x + hsp), y, obj_metalblock)) && scr_slope() ) )
 {
     wallspeed = clamp(movespeed,12, 24)
     state = 17
@@ -242,7 +251,7 @@ else if (grounded && scr_solid((x + sign(hsp)), y) && (!scr_slope() && scr_solid
         vsp = -3
         mach2 = 0
         image_index = 0
-         instance_create((x + 10 * xscale), (y + 10 ), obj_bumpeffect)
+        instance_create((x + 10 * xscale), (y + 10 ), obj_bumpeffect)
     }
     else if (fightball == 1)
     {
@@ -334,7 +343,7 @@ if (key_slap2 && character == "V")
     sprite_index = spr_playerV_airrevolver
     image_index = 0
     instance_create((x + (image_xscale * 20)), (y + 20), obj_shotgunbullet)
-    scr_soundeffect(14)
+    scr_soundeffect(sfx_killingblow)
 }
 if (key_shoot2 && character == "V" && (!instance_exists(obj_vigidynamite)))
 {

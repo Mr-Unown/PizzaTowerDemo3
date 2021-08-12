@@ -41,7 +41,7 @@ if (scr_solid(x, (y - 1)) && jumpstop == 0 && jumpAnim == 1)
 }
 if (grounded && input_buffer_jump < 8 && (!key_down) && (!key_attack) && vsp > 0 && (!(sprite_index == spr_facestomp || sprite_index == spr_freefall)))
 {
-    scr_soundeffect(0)
+    scr_soundeffect(sfx_jump)
     sprite_index = spr_jump
     if (shotgunAnim == 1)
         sprite_index = spr_shotgunjump
@@ -64,7 +64,8 @@ if (grounded && input_buffer_jump < 8 && (!key_down) && (!key_attack) && vsp > 0
 if (grounded && vsp > 0 && (!key_attack))
 {
     doublejump = 0
-    scr_soundeffect(29)
+	if sprite_index != spr_grabbump
+		scr_soundeffect(sfx_step)
     if key_attack
         landAnim = 0
     input_buffer_secondjump = 0
@@ -153,7 +154,7 @@ if (key_down && sprite_index != spr_player_jugglebash)
     }
     else if (character != "V" && character != "S")
     {
-        scr_soundeffect(14)
+        scr_soundeffect(sfx_killingblow)
         image_index = 0
         state = 92
         sprite_index = spr_shotgunjump1
@@ -250,23 +251,54 @@ if (key_slap2 && suplexmove = 0 && (character = "P" || character = "PZ" || chara
 	}
 }
 //Breakdance
-if (key_shoot2 && shotgunAnim == 0) && (!key_down) && character != "V" && character != "D"
+if (key_shoot2 && shotgunAnim == 0) && (!key_down)  && character != "V" && character != "D"
 {
-	breakdancebuffer = 50
-    scr_soundeffect(sfx_breakdance)
-	movespeed = 10
-	vsp = -4
-    state = states.breakdance
-	with instance_create(x, y, obj_dashcloud2)
-       image_xscale = other.xscale
-    image_index = 0
-    sprite_index = spr_breakdancestart
-
+	if murderammo >= 1
+	{
+		image_index = 0
+		sprite_index = spr_murder
+		state = states.murder
+		switch character
+		{
+			case "N":
+			
+			with (instance_create((x), (y), obj_noisekickbomb))
+			{
+				playerid = other.id
+				image_xscale = other.xscale
+			}
+			
+			break;
+			default:
+			
+			with (instance_create((x + 10*xscale), (y + 16), obj_revolverbullet))
+			{
+				playerid = other.id
+				image_xscale = other.xscale
+			}	
+			
+			break;
+		}
+		scr_soundeffect(sfx_killingblow)
+		murderammo -= 1
+	}
+	else
+	{
+		breakdancebuffer = 50
+		scr_soundeffect(sfx_breakdance)
+		movespeed = 10
+		state = states.breakdance
+		with instance_create(x, y, obj_dashcloud2)
+			image_xscale = other.xscale
+		image_index = 0
+		sprite_index = spr_breakdancestart
+	}
 }
+
 //Shotgun
 if (key_shoot2 && shotgunAnim == 1 && character != "V" && character != "S" && (!key_down))
 {
-    scr_soundeffect(14)
+    scr_soundeffect(sfx_killingblow)
     state = 38
     with (instance_create(x, y, obj_pistoleffect))
         image_xscale = other.image_xscale
@@ -297,7 +329,7 @@ if (key_slap2 && character == "V")
     image_index = 0
     with (instance_create((x + (xscale * 25)), (y + 20), obj_shotgunbullet))
         playerid = other.id
-    scr_soundeffect(14)
+    scr_soundeffect(sfx_killingblow)
 }
 
 if (character == "N" && pogo = true)  {
@@ -332,7 +364,7 @@ if (key_shoot2 && character == "V" && (!instance_exists(obj_vigidynamite)))
             movespeed = 0
         state = 110
         jumpAnim = 1
-        scr_soundeffect(0)
+        scr_soundeffect(sfx_jump)
         image_index = 0
         vsp = -7
         sprite_index = spr_playerV_dynamitethrow

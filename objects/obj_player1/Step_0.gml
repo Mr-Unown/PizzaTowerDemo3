@@ -213,10 +213,7 @@ if (state == 41 || state == 47 || state == 48 || state == 50 || state == 49)
 else
     grabbing = 0
 
-if (state == 68 || sprite_index = spr_swingding || sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump || state == 86 || state == states.breakdance ||	state == states.jetpack || state == states.pogo || state == 91 || state == 60 || (state == 73 && thrown == 1) || state == 70 || state == 17 || state == 74 || state == 2 || state == 6 || state == 7 || state == 9 || state == 44 || state == 35 || state == 63 || state == 37 || state == 40 || state == 10 || (state == 43 && sprite_index == spr_piledriver) || state == 24 || state == 25 || state == 18 || state == 15 || state == 13 || state == 11)
-    instakillmove = 1
-else
-    instakillmove = 0
+
 if (flash == 1 && alarm[0] <= 0)
     alarm[0] = (0.15 * room_speed)
 if (state != 91 && state != 71)
@@ -246,35 +243,7 @@ if (state != 58)
     ladderbuffer = 0
 if (state != 58)
     stompAnim = 0
-if ((state == 91 || state == states.breakdance || (state != 51 && (sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump))  || (pogomovespeed >= 12  && state == states.pogo) ||state == states.jetpack || (state == 109 && instance_exists(obj_player2) && obj_player2.state == 91) || state == 114 || state == 70 || state == 17 || state == 9 || state == 37 || state == 10 || state == 22 || state == 71 || pogojetcharge = true) && macheffect == 0)
-{
-    macheffect = 1
-    toomuchalarm1 = 6
-    with (instance_create(x, y, obj_mach3effect))
-    {
-        playerid = other.object_index
-        image_index = (other.image_index - 1)
-        image_xscale = other.xscale
-        sprite_index = other.sprite_index
-    }
-}
-if (!(state == 91 || (state != 51 && (sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump)) || state == states.breakdance || (pogomovespeed >= 12  && state == states.pogo) || state == states.jetpack || (state == 109 && instance_exists(obj_player2) && obj_player2.state == 91) || state == 114 || state == 70 || state == 17 || state == 9 || state == 37 || state == 10 || state == 22 || state == 71 || pogojetcharge = true))
-    macheffect = 0
-if (toomuchalarm1 > 0)
-{
-    toomuchalarm1 -= 1
-    if (toomuchalarm1 <= 0 && (state == 91 || state == states.breakdance ||(state != 51 && (sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump)) || (pogomovespeed >= 12  && state == states.pogo) || state == states.jetpack || state == 111 || state == 114 || (state == 109 && instance_exists(obj_player2) && obj_player2.state == 91) || state == 17 || state == 9 || state == 70 || state == 10 || state == 71 || pogojetcharge = true || state == 37 || state == 22 || (state == 33 && mach2 >= 100)))
-    {
-        with (instance_create(x, y, obj_mach3effect))
-        {
-            playerid = other.object_index
-            image_index = (other.image_index - 1)
-            image_xscale = other.xscale
-            sprite_index = other.sprite_index
-        }
-        toomuchalarm1 = 6
-    }
-}
+
 if (y < -800) && state = 63
 {
 	superspringjump = 0

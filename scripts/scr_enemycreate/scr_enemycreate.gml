@@ -12,11 +12,13 @@ deathbuffer = 100
 playerxscale = obj_player1.xscale
 dying = false
 creatorid = noone
+//Funny Dramatic Supertaunt shake
+newshakebuffer = 0;
 //Stupid anti Strongcold softlock
 stuntouch = 0
 //Death Sprite
 initialvsp = random_range(-5, -10)
-initialhsp = random_range(5, 10) * choose(1,-1)
+initialhsp = irandom_range(8, 15) * choose(1,-1)
 //Stored Stuff
 frozenstate = 0;
 frozenspriteindex = spr_player_idle;

@@ -11,7 +11,9 @@ global.heatmeter = 0;
 global.bonusmiliseconds = 0;
 global.bonusseconds = 0;
 global.bonusminutes = 0;
+global.bonushour = 0;
 global.deathmode = false;
+global.bonustimer = false;
 global.storedtaminute = 0;
 global.storedtasecond = 0;
 //Goop Gone
@@ -27,6 +29,13 @@ with obj_lighting
 }
 scr_soundstopall();
 audio_stop_all();
+//Shield
+with obj_shieldbackupindicator {
+oldshield = 0;
+visible = false;
+show = 0;
+_visible = 1;
+}
 global.style = 0;
 global.stylethreshold = 0;
 global.freezeframe = false;
@@ -79,7 +88,10 @@ global.storedgun = 0;
 global.golfhit = 0;
 with (obj_tv)
 {
+	frozenalarm = -1;
+	frozen = false;
 	bootingup = false;
+	alarm[1] = -1;
     shownranks = 0;
     shownranka = 0;
     shownrankb = 0;
@@ -128,6 +140,8 @@ ds_list_clear(global.saveroom);
 ds_list_clear(global.baddieroom);
 ds_list_clear(global.gooproom);
 
+ds_list_clear(global.toppinlist);
+ds_list_clear(global.follower);
 
 global.ruinmusic = 0;
 with (obj_player1)
@@ -218,7 +232,7 @@ with (obj_player1)
     global.combo = 0;
     global.combotime = 0;
 	global.pausecombotime = false;
-    global.pizzacoin = 0;
+    pizzacoin = 0;
     global.toppintotal = 1;
     global.hit = 0;
     ini_open("playerData_"+global.savefile+".ini")
@@ -358,7 +372,7 @@ with (obj_player2)
     global.treasure = 0;
     global.combo = 0;
     global.combotime = 0;
-    global.pizzacoin = 0;
+    pizzacoin = 0;
     global.toppintotal = 1;
     global.hit = 0;
     ini_open("playerData_"+global.savefile+".ini")

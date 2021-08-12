@@ -21,12 +21,12 @@ with (other.id)
     }
     else if (((state != 91 && sprite_index != spr_mach3boost) && (state != states.jetpack)) || (sprite_index == spr_crazyrun || sprite_index = spr_jetpackcrazy))
         audio_stop_sound(mach3snd)
-    if (state == 18 && (!audio_is_playing(sfx_knightslide)))
+    if (state == 18 && (!audio_is_playing(sfx_knightslide) && grounded))
     {
         knightslide = audio_play_sound(sfx_knightslide, 1, false)
         audio_sound_gain(knightslide, (1 * global.soundeffectsvolume), 0)
     }
-    else if (state != 18 && audio_is_playing(sfx_knightslide))
+    else if ((state != 18 || grounded = false) && audio_is_playing(sfx_knightslide))
         audio_stop_sound(knightslide)
     if ((sprite_index == spr_bombpeprun || sprite_index == spr_bombpeprunabouttoexplode) && (!audio_is_playing(sfx_bombpep1)))
     {

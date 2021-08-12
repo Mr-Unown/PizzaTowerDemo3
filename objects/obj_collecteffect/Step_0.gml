@@ -1,5 +1,5 @@
 //Cooleffect
-var scale = 1.5;
+var scale = 1.25;
 var distance = point_distance(drawx,drawy,targetx,targety)
 if biggening = true
 drawxscale = approach(drawxscale,scale,0.15)

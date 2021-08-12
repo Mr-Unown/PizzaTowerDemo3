@@ -124,7 +124,7 @@ with (other)
         {
             scr_soundeffect(16)
             scr_soundeffect(17)
-            scr_soundeffect(8)
+            scr_soundeffect(sfx_enemyprojectile)
             grav = 0.5
             repeat (8)
             {

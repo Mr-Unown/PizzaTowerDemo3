@@ -22,9 +22,12 @@ if windingAnim < 2000
 windingAnim ++
 
 //Movespeed
-if (movespeed < 24 && move == xscale)
+if (movespeed < 26 && move == xscale)
 {
-    movespeed += 0.1
+	if movespeed < 24
+		movespeed += 0.1
+	else
+		movespeed += 0.025
     if (!instance_exists(crazyruneffectid))
     {
         with (instance_create(x, y, obj_crazyruneffect))
@@ -57,6 +60,7 @@ if key_attack2 && jetpacking = true
 	state = states.pogo
 	pogomovespeed = movespeed
 }
+/*
 //Auto Parry
 if (!instance_exists(parry_id))
 {
@@ -67,6 +71,7 @@ if (!instance_exists(parry_id))
         image_xscale = other.xscale
 	}
 }
+*/
 //Cancel into Spin
 if key_jump2 && jetpacking = true
 {
@@ -90,7 +95,11 @@ if (!instance_exists(chargeeffectid))
         other.chargeeffectid = id
     }
 }
-
+//Image Speed
+if (sprite_index == spr_jetpack)
+    image_speed = 0.4
+if (sprite_index == spr_jetpackcrazy)
+    image_speed = 0.75
 if jetpacking = true && key_down && !place_meeting(x, y, obj_dashpad) && grounded {
 	sprite_index = spr_playerN_jetpackslide
     with (instance_create(x, y, obj_jumpdust))

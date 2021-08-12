@@ -24,7 +24,7 @@ if (input_buffer_jump < 8 && grounded && (!(move == 1 && xscale == -1)) && (!(mo
 {
     image_index = 0
     sprite_index = spr_secondjump1
-    scr_soundeffect(0)
+    scr_soundeffect(sfx_jump)
     if (character == "P")
         vsp = -11
     else
@@ -115,7 +115,7 @@ if (key_down && (!place_meeting(x, y, obj_dashpad)))
     if (character == "V")
         sprite_index = spr_playerV_divekickgetup
 }
-if (((!grounded) && scr_solid(x + hsp,y) && (!place_meeting((x + hsp), y, obj_destructibles)) && (!place_meeting((x + sign(hsp)), y, obj_slope))) || (grounded && (scr_solid(x + hsp,y - 2) && !place_meeting(x + sign(hsp),y,obj_slope)) && (!place_meeting((x + hsp), y, obj_destructibles))  && scr_slope() ) )
+if (((!grounded) && scr_solid(x + hsp,y) && (!place_meeting((x + hsp), y, obj_destructibles)) && (!place_meeting((x + sign(hsp)), y, obj_slope))) || (grounded && (scr_solid(x + sign(hsp),y - 2) && !place_meeting(x + sign(hsp),y,obj_slope)) && (!place_meeting((x + hsp), y, obj_destructibles))  && scr_slope() ) )
 {
     wallspeed = movespeed
     state = 17
@@ -257,7 +257,7 @@ if (key_slap2 && character == "V")
     sprite_index = spr_playerV_airrevolver
     image_index = 0
     instance_create((x + (image_xscale * 20)), (y + 20), obj_shotgunbullet)
-    scr_soundeffect(14)
+    scr_soundeffect(sfx_killingblow)
 }
 if (key_shoot2 && character == "V" && (!instance_exists(obj_vigidynamite)))
 {

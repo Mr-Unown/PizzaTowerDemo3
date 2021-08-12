@@ -8,7 +8,7 @@ if place_meeting(x, y, obj_solid)
     y = old_y
     return 1;
 }
-if (y > old_y) && (bbox_bottom % 16 = 0) && (state == 91 || sprite_index == spr_mach3boost) && !place_meeting(x, old_y, obj_water) && place_meeting(x, y, obj_water)
+if (y > old_y) && (state == 91 || sprite_index == spr_mach3boost) && !place_meeting(x, old_y, obj_water) && place_meeting(x, y, obj_water)
 {
 	if (state != 59)
     {
@@ -17,24 +17,36 @@ if (y > old_y) && (bbox_bottom % 16 = 0) && (state == 91 || sprite_index == spr_
     return 1;
 	}
 }
-var platform = instance_place(x, y, obj_platform)
+var movingplatform = noone
+if place_meeting(x, y, obj_movingplatform)
+{
+	var movingplatform = instance_place(x, y, obj_movingplatform)
+	if y > old_y && (!place_meeting(x, old_y, movingplatform))
+	{
+		x = old_x
+		y = old_y
+		return 1;
+	}
+}
+var platform = noone
 if place_meeting(x, y, obj_platform)
 {
+	var platform = instance_place(x, y, obj_platform)
 	if (platform.image_yscale > 0)
 	{
-		if y > old_y && (bbox_bottom % 16) == 0 && (!place_meeting(x, old_y, obj_platform))
+		if y > old_y && (!place_meeting(x, old_y, platform))
 		{
 			if (state != 59)
 			{
-			x = old_x
-			y = old_y
+				x = old_x
+				y = old_y
 			return 1;
 			}
 		}
 	}
 	else
 	{
-		if y <= old_y && (!place_meeting(x, old_y, obj_platform))
+		if y <= old_y && (!place_meeting(x, old_y, platform))
 		{
 			if (state != 59)
 			{
@@ -45,12 +57,13 @@ if place_meeting(x, y, obj_platform)
 		}
 	}	
 }
-var platformside = instance_place(x, y, obj_platformside)
+var platformside = noone
 if place_meeting(x, y, obj_platformside)
 {
+	var platformside = instance_place(x, y, obj_platformside)
 	if (platformside.image_xscale > 0)
 	{
-		if x <= old_x && !place_meeting(old_x, y, obj_platformside)
+		if x <= old_x && !place_meeting(old_x, y, platformside)
 		{
 			x = old_x
 			y = old_y
@@ -59,7 +72,7 @@ if place_meeting(x, y, obj_platformside)
 	}
 	else
 	{
-		if x >= old_x && !place_meeting(old_x, y, obj_platformside)
+		if x >= old_x && !place_meeting(old_x, y, platformside)
 		{
 			x = old_x
 			y = old_y
@@ -67,7 +80,7 @@ if place_meeting(x, y, obj_platformside)
 		}
 	}	
 }
-if (y > old_y && (bbox_bottom % 16) == 0 && (!place_meeting(x, old_y, obj_grindrail)) && place_meeting(x, y, obj_grindrail))
+if (y > old_y && /*(bbox_bottom % 16) == 0 &&*/ (!place_meeting(x, old_y, obj_grindrail)) && place_meeting(x, y, obj_grindrail))
 {
 	if !cutscene && !scr_transformationcheck(other)
 	{

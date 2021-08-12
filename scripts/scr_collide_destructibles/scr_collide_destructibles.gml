@@ -1,3 +1,5 @@
+var _hsp = hsp
+var _vsp = vsp
 with (obj_player1)
 {
     if (state == 70 || state == 91 || state == states.jetpack || state == 37 || state == 18 || state == 2 || state == 10 || state == 9)
@@ -183,13 +185,18 @@ with (obj_player1)
                 instance_destroy()
         }
     }
-    if (state == 74 || state == 77)
+    if (state == states.freefall || state == states.freefallland)
     {
         if (place_meeting(x, (y + 1), obj_metalblock) && freefallsmash > 10)
         {
             with (instance_place(x, (y + 1), obj_metalblock))
                 instance_destroy()
         }
+        if (place_meeting(x, (y + 1), obj_metalblockhard) && freefallsmash > 10)
+        {
+            with (instance_place(x, (y + 1), obj_metalblockhard))
+                instance_destroy()
+        }		
     }
     if (state == 22)
     {
@@ -418,13 +425,18 @@ with (obj_player2)
                 instance_destroy()
         }
     }
-    if (state == 74 || state == 77)
+    if (state == states.freefall || state == states.freefallland)
     {
         if (place_meeting(x, (y + 1), obj_metalblock) && freefallsmash > 10)
         {
             with (instance_place(x, (y + 1), obj_metalblock))
                 instance_destroy()
         }
+        if (place_meeting(x, (y + 1), obj_metalblockhard) && freefallsmash > 10)
+        {
+            with (instance_place(x, (y + 1), obj_metalblockhard))
+                instance_destroy()
+        }		
     }
     if (state == 22)
     {
@@ -500,6 +512,13 @@ with (obj_baddie)
     if (place_meeting(x, (y + vsp), obj_destructibles) && (state = enemystates.enemyheat || state = "punch"))
         instance_destroy(instance_place(x, (y + vsp), obj_destructibles))
 	}
+}
+with (obj_noisekickbomb)
+{
+   if (place_meeting((x + hsp), y, obj_destructibles))
+       instance_destroy(instance_place((x + hsp), y, obj_destructibles))
+   if (place_meeting((x + sign(hsp)), y, obj_destructibles))
+       instance_destroy(instance_place((x + sign(hsp)), y, obj_destructibles))	   
 }
 with (obj_throwableparent)
 {

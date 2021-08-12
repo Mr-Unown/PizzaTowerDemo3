@@ -21,11 +21,13 @@ for (var i = 0; i < ds_list_size(global.gooproom); i++)
 				paletteselect = _palette
 				hsp = 0
 				vsp = 0 
+				created = true;
 			}
 		}
 	}
 	else
 	{
-		ds_list_delete(global.gooproom,ds_list_find_index(global.gooproom,i))
+		ds_list_delete(global.gooproom,i)
+		i--
 	}
 }

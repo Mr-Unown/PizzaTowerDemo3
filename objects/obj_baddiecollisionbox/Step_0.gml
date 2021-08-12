@@ -30,17 +30,17 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                     machpunchAnim = 1
                     image_index = 0
                 }
-                if (state != 73) && other.baddieID.state != enemystates.enemyfrozen && other.baddieID.state != enemystates.enemyshake
+                if (state != 73) 
                     other.baddieID.grabbedby = 1
                 else
                     other.baddieID.grabbedby = 2
 				//Instakill Move Scaboom
 				angle = point_direction(other.baddieID.x, other.baddieID.y,x + hsp, y + vsp );		
 				ymovespeed = 2 + abs(vsp)
-				vdirection = sign(hsp)
-				other.baddieID.initialvsp = clamp(-lengthdir_y(ymovespeed, angle) - 2,-20,(random_range(0,-10)))
-				other.baddieID.initialhsp = (vdirection * ((random_range(1,7)) + abs(floor(hsp))))				
-                scr_soundeffect(34)
+				vdirection = sign(round(hsp + xscale/2))
+				other.baddieID.initialvsp = clamp(-lengthdir_y(ymovespeed, angle) - 2,-25,(random_range(-1,-15)))
+				other.baddieID.initialhsp = (vdirection * ((random_range(1,7)) + abs(floor(hsp * 1.2))))				
+                scr_soundeffect(sfx_punch)
 				//New Hitstun
 				if other.baddieID.hp <= 1
 					other.baddieID.dying = true
@@ -109,11 +109,12 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                     other.baddieID.blowdirection = 3
                     other.baddieID.blowintensity = 1
                 }
-				scr_sleep();
+				
                 state = 113
+				scr_sleep();
                 image_index = 0
-                scr_soundeffect(14)
-                scr_soundeffect(34)
+                scr_soundeffect(sfx_killingblow)
+                scr_soundeffect(sfx_punch)
                 with (other.baddieID)
                 {
 					hp -= 1
@@ -155,8 +156,8 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                 other.baddieID.blowintensity = 1			
 				else
 				other.baddieID.blowintensity = 0.8					
-                scr_soundeffect(14)
-                scr_soundeffect(34)
+                scr_soundeffect(sfx_killingblow)
+                scr_soundeffect(sfx_punch)
                 with (other.baddieID)
                 {
 					hp -= 1
@@ -196,8 +197,8 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                 other.baddieID.blowintensity = 1			
 				else
 				other.baddieID.blowintensity = 0.8					
-                scr_soundeffect(14)
-                scr_soundeffect(34)
+                scr_soundeffect(sfx_killingblow)
+                scr_soundeffect(sfx_punch)
                 with (other.baddieID)
                 {
 					hp -= 1
@@ -371,13 +372,13 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player2) && obj_player2
                     other.baddieID.grabbedby = 2
                 else
                     other.baddieID.grabbedby = 1
-                scr_soundeffect(34)
+                scr_soundeffect(sfx_punch)
 				//Instakill Move Scaboom
 				angle = point_direction(other.baddieID.x, other.baddieID.y,x + hsp, y + vsp );		
 				ymovespeed = 2 + abs(vsp)
-				vdirection = sign(hsp)
-				other.baddieID.initialvsp = clamp(-lengthdir_y(ymovespeed, angle) - 2,-20,(random_range(0,-10)))
-				other.baddieID.initialhsp = (vdirection * ((random_range(1,7)) + abs(floor(hsp))))				
+				vdirection = sign(round(hsp + xscale/2))
+				other.baddieID.initialvsp = clamp(-lengthdir_y(ymovespeed, angle) - 2,-25,(random_range(-1,-15)))
+				other.baddieID.initialhsp = (vdirection * ((random_range(1,7)) + abs(floor(hsp * 1.2))))				
 				//New Hitstun
 				if other.baddieID.hp <= 1
 					other.baddieID.dying = true
@@ -445,9 +446,10 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player2) && obj_player2
                     other.baddieID.blowintensity = 1
                 }
                 state = 113
+				scr_sleep();
                 image_index = 0
-                scr_soundeffect(14)
-                scr_soundeffect(34)
+                scr_soundeffect(sfx_killingblow)
+                scr_soundeffect(sfx_punch)
                 with (other.baddieID)
                 {
 					hp -= 1
@@ -489,8 +491,8 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player2) && obj_player2
                 other.baddieID.blowintensity = 1			
 				else
 				other.baddieID.blowintensity = 0.8					
-                scr_soundeffect(14)
-                scr_soundeffect(34)
+                scr_soundeffect(sfx_killingblow)
+                scr_soundeffect(sfx_punch)
                 with (other.baddieID)
                 {
 					hp -= 1
@@ -532,8 +534,8 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player2) && obj_player2
                 other.baddieID.blowintensity = 1			
 				else
 				other.baddieID.blowintensity = 0.8					
-                scr_soundeffect(14)
-                scr_soundeffect(34)
+                scr_soundeffect(sfx_killingblow)
+                scr_soundeffect(sfx_punch)
                 with (other.baddieID)
                 {
 					hp -= 1

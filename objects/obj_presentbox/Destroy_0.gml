@@ -1,4 +1,4 @@
-if (ds_list_find_index(global.baddieroom, id) == -1)
+if (ds_list_find_index(global.saveroom, id) == -1)
 {
 	with obj_tv
 	{
@@ -13,10 +13,17 @@ if (ds_list_find_index(global.baddieroom, id) == -1)
 	}
     instance_create(x, y, obj_safeexplosion)
     global.miniboss = 0
-    ds_list_add(global.baddieroom, id)
+    ds_list_add(global.saveroom, id)
     instance_destroy(obj_baddiespawner)
     instance_destroy(obj_doorblocked)
     instance_destroy(obj_iceblockminiboss)
 }
-
+else
+{
+	var door = obj_doorblocked
+	with door
+	{
+		instance_destroy(id,false);
+	}
+}
 

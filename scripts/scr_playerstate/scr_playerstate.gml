@@ -1,3 +1,4 @@
+#region Enum and State
 #region Enum
 enum states
 {
@@ -105,7 +106,9 @@ enum states
 	wallcling = 120,
 	breakdance = 121,
 	frozen = 122,
-	changing = 123
+	changing = 123,
+	murder = 124,
+	trick = 125
 
 } 
 //I made some changes to it so that we can know at a glance what number it gets converted to.
@@ -116,15 +119,21 @@ switch state
     case 0:
         scr_player_normal()
         break
-    case 122:
+    case states.frozen:
         scr_player_frozen()
-        break		
+        break	
+    case states.trick:
+        scr_player_trick()
+        break				
     case 109:
         scr_player_grabbed()
         break
 	case states.changing:
 		scr_player_changing()
 		break;		
+    case states.murder:
+        scr_player_murder()
+        break				
 	case states.pipe:
         scr_player_pipe()
         break
@@ -429,6 +438,7 @@ switch state
         scr_player_taxi()
         break
 }
+#endregion
 //Water
 if place_meeting(x,y,group_cheesewater) 
 {
@@ -454,6 +464,90 @@ if in_water = true
 	
 }
 
+#region Slope Angle
+//Angle Strength
+var subtle_var = 5;
+#region State Stuff
+switch state
+{
+	case states.normal:
+	subtle_var = 3
+	//subtle_var = 1
+	break;
+	case states.machroll:
+	case states.tumble:
+	case states.crouch:
+	case states.crouchslide:
+	subtle_var = 1.15
+	break;
+	case states.breakdance:
+	subtle_var = 1.25
+	break;
+	case states.mach1:
+	subtle_var = 2
+	break;
+	case states.mach3:
+	case states.mach2:
+	case states.machslide:
+	case states.jetpack:
+	subtle_var = 1.5
+	break;
+	case states.knightpepslopes:
+	subtle_var = 1.25
+	break;
+	default:
+	subtle_var = 5
+	break;
+}
+#endregion
+//Slope Angles 
+//Spaghetti Code Strikes Back
+if global.freezeframe = false && sprite_index != spr_tumblestart && sprite_index != spr_knightpepdownslope && place_meeting(x,y+1,obj_slope) && vsp >= 0 
+{
+	with instance_place(x,y + 1,obj_slope)
+	{
+		var _xscale = sign(image_xscale)
+		var flip = _xscale = -1 ? 180 : 0
+		other.draw_angle = ( (approach(other.draw_angle,(point_direction(x,y + sprite_height,x + sprite_width,y) - flip),16)) / (subtle_var) );
+	}
+}
+else if global.freezeframe = false
+	draw_angle = approach(draw_angle,0,32);
+#endregion	
+
+//Speedboost
+if grounded && (state != states.mach2 && state != states.frozen && state != states.backbreaker && state != states.trick && state != states.mach3 && state != states.jetpack && state != states.machroll)
+{
+	maxmachspeed = approach(maxmachspeed,24,1)
+}
+//Firetrail
+if firetrailbuffer > 0 && global.freezeframe = false
+firetrailbuffer -= movespeed/24 * 26
+if firetrailbuffer <= 0
+{
+	if movespeed >= 12 && (state == states.mach2 || state == states.mach3 || state == states.jetpack || state == states.trick || state == states.machroll)
+	{
+		with (instance_create(x, y, obj_superdashcloud))
+		{
+			image_speed = 0.35
+			sprite_index = spr_flamecloud
+			image_xscale = other.xscale
+			if place_meeting(other.x, (other.y + 1), obj_boilingwater) && !place_meeting(other.x, other.y, obj_boilingwater)
+				sprite_index = spr_watersplashsmall
+		}
+	}
+	firetrailbuffer = 100;
+}
+//Murder
+if combothreshold >= 10
+{
+	murderammo = clamp(murderammo + 1,0,4);
+	combothreshold = 0;
+}
+if global.combotime <= 0
+{
+	combothreshold = 0;
+}
 
 //Palette
 if surface_exists(surf_pallete) && (paletteselect >= sprite_get_width(spr_palette) - 1)
@@ -462,18 +556,20 @@ else if (paletteselect < sprite_get_width(spr_palette) - 1)
 	custompalette = false
 
 //Vigi Health nerf
-if vigihealth > 100 && vigitimer <= 0
+if vigihealth > 100 && vigitimer <= 0 && global.freezeframe = false
 {
 	vigitimer = 100
 	vigihealth = vigihealth - 5
 }
 else if vigihealth <= 100
 	vigitimer = 100
-	
+if global.freezeframe = false
 vigitimer--
 
 vigihealth = clamp(vigihealth,0,250)
 //Supertaunt
+if global.freezeframe = false
+{
 if global.combo >= 3 && supertauntbuffer < 500 && supertauntcharged = false
 	supertauntbuffer++
 else if supertauntbuffer > 0
@@ -497,6 +593,7 @@ if supertauntcharged = true  && room != rank_room
 			playerid = other.id
 		}
 }
+}
 //Mach3DashBuffer
 if mach3dash = false
 	mach3dashbuffer = 25
@@ -506,21 +603,70 @@ else if mach3dash = true && mach3dashbuffer > 0
 if mach3dashbuffer <= 0
 	mach3dash = false
 //Timesup
-if (state == 55 && y > (room_height * 2))
+if (state == 55 && y > (room_height * 1.5))
 {
 	global.levelname = "none";
     global.fakepeppino = 0;
     script_execute(scr_playerreset);
-	var _backtohub = hub_room1;
+	//var _backtohub = hub_room1;
 	with obj_player
 	{
 		targetDoor = "start";
-		_backtohub = backtohubroom
 	}
-    room = _backtohub
+    room = obj_player1.backtohubroom
 }
 //Knight ground pond
 if state != states.knightpep && state != states.knightpepslopes && state != states.knightpepattack
 {
 	knightpoundbuffer = 0;
+}
+//Tricks
+if (state == states.trick || tauntstoredstate == states.trick || frozenstate == states.trick)
+{
+	show_tricks = true;
+}
+else
+{
+	show_tricks = false;
+	tricksperformed = 0;
+}
+//Mach 3 Effect
+if global.freezeframe = false {
+if ((state == 91 || state == states.Sjump || state == states.breakdance || (state != 51 && (sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump))  || (pogomovespeed >= 12  && state == states.pogo) ||state == states.jetpack || (state == 109 && instance_exists(obj_player2) && obj_player2.state == 91) || state == 114 || state == 70 || state == 17 || state == 9 || state == 37 || state == 10 || state == 22 || state == 71 || pogojetcharge = true) && macheffect == 0)
+{
+    macheffect = 1
+    toomuchalarm1 = 6
+    with (instance_create(x, y, obj_mach3effect))
+    {
+        playerid = other.object_index
+        image_index = (other.image_index - 1)
+        image_xscale = other.xscale
+        sprite_index = other.sprite_index
+    }
+}
+if (!(state == 91 || (state != 51 && (sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump)) || state == states.breakdance || (pogomovespeed >= 12  && state == states.pogo) || state == states.Sjump || state == states.jetpack || (state == 109 && instance_exists(obj_player2) && obj_player2.state == 91) || state == 114 || state == 70 || state == 17 || state == 9 || state == 37 || state == 10 || state == 22 || state == 71 || pogojetcharge = true))
+    macheffect = 0
+if (toomuchalarm1 > 0)
+{
+    toomuchalarm1 -= 1
+    if (toomuchalarm1 <= 0 && (state == 91  || state == states.Sjump || state == states.breakdance ||(state != 51 && (sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump)) || (pogomovespeed >= 12  && state == states.pogo) || state == states.jetpack || state == 111 || state == 114 || (state == 109 && instance_exists(obj_player2) && obj_player2.state == 91) || state == 17 || state == 9 || state == 70 || state == 10 || state == 71 || pogojetcharge = true || state == 37 || state == 22 || (state == 33 && mach2 >= 100)))
+    {
+        with (instance_create(x, y, obj_mach3effect))
+        {
+            playerid = other.object_index
+            image_index = (other.image_index - 1)
+            image_xscale = other.xscale
+            sprite_index = other.sprite_index
+        }
+        toomuchalarm1 = 6
+    }
+}
+}
+//Instakill Move
+if global.freezeframe = false
+{
+	if state != states.frozen && (state == 68 || sprite_index = spr_swingding || sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump || state == 86 || state == states.breakdance ||	state == states.jetpack || state == states.pogo || state == 91 || state == 60 || (state == 73 && thrown == 1) || state == 70 || state == 17 || state == 74 || state == 2 || state == 6 || state == 7 || state == 9 || state == 44 || state == 35 || state == 63 || state == 37 || state == 40 || state == 10 || (state == 43 && sprite_index == spr_piledriver) || state == 24 || state == 25 || state == 18 || state == 15 || state == 13 || state == 11)
+		instakillmove = 1
+	else if state != states.frozen
+		instakillmove = 0
 }

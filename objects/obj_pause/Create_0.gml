@@ -22,7 +22,8 @@ pineappledone = 0
 depth = -98
 draw_screen = 0
 global.nocombo = 0
-global.pausenicemusic = -4
+global.pausenicemusic = noone;
+//global.pausenicetrack = 0;
 
 global.tutorialtrap = 0
 global.verticalh = 0

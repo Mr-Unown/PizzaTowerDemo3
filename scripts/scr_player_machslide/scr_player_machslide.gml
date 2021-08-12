@@ -5,6 +5,7 @@ else if place_meeting(x, (y + 1), obj_railh)
 else if place_meeting(x, (y + 1), obj_railh2)
     hsp = ((xscale * movespeed) + 5)
 move = (key_right + key_left)
+maxmachspeed = 24;
 if (movespeed >= 0)
 {
     if (character == "P" || character = "S" || character = "PZ" || character = "V")

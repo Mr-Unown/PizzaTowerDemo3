@@ -5,7 +5,7 @@
     "name": "obj_palettechangerscrollbar",
     "eventList": [
         {
-            "id": "c98eee8a-79c8-4fa3-8fc6-ccfa57f5afd0",
+            "id": "b8d48dc8-d97a-494e-924a-22646359782c",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
@@ -15,7 +15,7 @@
             "m_owner": "dfd003dc-3047-4f95-8aec-d52fdfc26b1d"
         },
         {
-            "id": "b81bb373-b265-40b7-be21-f0e5e63b3d3e",
+            "id": "b01d90f7-51d3-4a17-ad7f-abe81f8b64cb",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
@@ -25,7 +25,7 @@
             "m_owner": "dfd003dc-3047-4f95-8aec-d52fdfc26b1d"
         },
         {
-            "id": "8c8a6e7c-3070-483d-baef-abbce376e48a",
+            "id": "2c05efa1-7a95-4ab9-a010-2cb6373ed2d2",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
@@ -35,7 +35,7 @@
             "m_owner": "dfd003dc-3047-4f95-8aec-d52fdfc26b1d"
         },
         {
-            "id": "ed48ecdc-1405-4785-8c13-29f92077844f",
+            "id": "fb293f8a-2039-4ed2-aad1-bbb99b6c293b",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,

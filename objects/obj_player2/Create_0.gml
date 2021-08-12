@@ -1,5 +1,11 @@
 scr_initinput2()
 scr_playercreate()
+//CustomPaletteChoosyFILE
+customsavedpalette = 1;
+oldcustomsavedpalette = 1;
+characters = "Noise"
+colorheight = 7;
+
 global.has_drawnpeter = false;
 selectedcharacter = 1;
 pogo = false

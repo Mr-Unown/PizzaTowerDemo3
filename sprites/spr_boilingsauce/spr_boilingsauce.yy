@@ -604,7 +604,7 @@
             "visible": true
         }
     ],
-    "origin": 0,
+    "origin": 3,
     "originLocked": false,
     "playbackSpeed": 1,
     "playbackSpeedType": 1,

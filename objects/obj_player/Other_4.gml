@@ -1,3 +1,7 @@
+if vertical = 1
+{
+	knightmaxy = knightroomy - (room_height * sign(hallwaydirection));
+}
 var yoffset = 160
 
 switch current_month
@@ -44,8 +48,8 @@ switch current_month
 if !surface_exists(surf_pallete)
 	surf_pallete = surface_create(surf_width,surf_height)
 //Colors
-scr_playercolors()
-	
+scr_playercolors();
+customupdate = true;
 	
 //Things
 if (object_index == obj_player1)
@@ -409,6 +413,7 @@ with (obj_destroyable2_bigescape)
 			portal = 0
         }
     }
+	
     vertical = 0
     hallway = 0
     box = 0
@@ -628,6 +633,17 @@ if (object_index == obj_player2)
 			portal = 0
         }
     }
+	if vertical = 1
+	{
+		if hallwaydirection >= 1
+		{
+			knightmaxy = knightroomy  - room_height;
+		}
+		else
+		{
+			knightmaxy = knightroomy  + room_height;
+		}
+	}	
     vertical = 0
     hallway = 0
     box = 0

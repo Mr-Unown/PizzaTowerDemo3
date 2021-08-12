@@ -23,7 +23,7 @@ if other.ID.sprite_index = spr_coolpinea_taunt
             with (baddieID)
             {
                 if (!audio_is_playing(sfx_killingblow))
-                    scr_soundeffect(14)
+                    scr_soundeffect(sfx_killingblow)
                 image_xscale = (-sign(targetxscale))
                 stunned = 200
                 alarm[3] = 3

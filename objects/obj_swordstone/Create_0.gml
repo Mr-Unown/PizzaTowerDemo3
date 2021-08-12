@@ -1,3 +1,4 @@
+depth = 4
 image_index = 0.35
 ID = noone
 showmarker = true;

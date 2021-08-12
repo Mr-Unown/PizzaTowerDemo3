@@ -104,7 +104,20 @@ switch(global.newhud)
 	//	surface_free(oldcombometersurface);
 	if !(room == Realtitlescreen || room == rank_room || room == timesuproom || room == boss_room1)
 	{
+		#region Palette		
+if (obj_player1.spotlight == 1)
+	if	obj_player1.custompalette = true
+		pal_swap_set(obj_player1.surf_pallete, 1, true)
+	else if	obj_player1.custompalette = false
+		pal_swap_set(obj_player1.spr_palette, obj_player1.paletteselect, false)
+else
+	if	obj_player2.custompalette = true
+		pal_swap_set(obj_player2.surf_pallete, 1, true)
+	else if	obj_player2.custompalette = false
+		pal_swap_set(obj_player2.spr_palette, obj_player2.paletteselect, false)		
+#endregion		
 		draw_sprite_ext(newtvsprite, -1, 832, 100 + newhudyoffset, 1, 1, 0, c_white, 1)
+		pal_swap_reset()
 		if global.combo != 0 && global.miniboss == 0 && global.combotime != 0 && newtvsprite != spr_tv_open && newtvsprite != spr_tv_static && newtvsprite != spr_tv_noiseboss
 		{
 			if global.combobuffer > 0

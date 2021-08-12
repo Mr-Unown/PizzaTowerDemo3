@@ -17,6 +17,18 @@ if global.hudmode == false
 	{
 		case 0:
 		#region OLD HUD
+		
+	#region Murder
+	var murdersprite = (player.character == "N" ? spr_playerN_noisebomb : spr_peppinobullethud)
+	if (player.murderammo >= 1)
+	{
+		for (var i = 0; i < player.murderammo; ++i)
+		{
+			draw_sprite_ext(murdersprite, -1, 50, 100 + (32*i), 1, 1, 0, c_white, alpha)
+		}
+	}	
+	#endregion			
+	
 if (obj_player1.spotlight == 1)
 	if	obj_player1.custompalette = true
 		pal_swap_set(obj_player1.surf_pallete, 1, true)
@@ -27,7 +39,7 @@ else
 		pal_swap_set(obj_player2.surf_pallete, 1, true)
 	else if	obj_player2.custompalette = false
 		pal_swap_set(obj_player2.spr_palette, obj_player2.paletteselect, false)	
-		
+	/*	
 	#region Backup
 	if (player.pizzashieldbackup >= 1)
 	{
@@ -37,7 +49,8 @@ else
 		}
 	}	
 	#endregion
-	 
+	*/
+
 	 
 if (player.state != 55)
 {
@@ -397,17 +410,29 @@ if (player.state != 55)
 		
 		
 		#endregion					
-			draw_sprite_ext(spr_pizzascoretimer, _image_index, newhudx, newhudy + textyoffset, 1, 1, 0, c_white, alpha)
+			draw_sprite_ext(spr_pizzascoretimer, _image_index, newhudx, newhudy - 2 + textyoffset, 1, 1, 0, c_white, alpha)
 			draw_set_halign(fa_center);
 			draw_set_color(c_white);
 			draw_set_font(global.timerfont);	
 			var _min = string(global.taminutes < 10 ? ("0" + string(global.taminutes)) : string(global.taminutes));
 			var _sec = string(global.taseconds < 10 ? ("0" + string(global.taseconds)) : string(global.taseconds));
 			var _string = string(_min) + ":" + string(_sec);
-			draw_text(newhudx-5,newhudy-52+textyoffset,_string)
+			draw_text(newhudx-5,newhudy-54+textyoffset,_string)
 			#endregion
 			break;
 		}
+
+		#region Murder
+		var murdersprite = (player.character == "N" ? spr_playerN_noisebomb : spr_peppinobullethud)
+		if (player.murderammo >= 1)
+		{
+			for (var i = 0; i < player.murderammo; ++i)
+			{
+				draw_sprite_ext(murdersprite, -1, (newhudx - 75) + (16*i), newhudy + 70, 1, 1, 0, c_white, alpha)
+			}
+		}	
+		#endregion		
+		/*
 		#region Backup
 		if (player.pizzashieldbackup >= 1)
 		{
@@ -417,6 +442,7 @@ if (player.state != 55)
 			}
 		}	
 		#endregion
+		*/
 		}
 		#endregion
 		break;
@@ -433,6 +459,10 @@ if (player.state != 55)
     draw_set_color(c_white)
 	if (room != rank_room && room != strongcold_endscreen)
     {
+		switch (global.newhud)
+		{
+			case 0:
+			#region Old HUD
 		var vdrawx = 190
 		var vdrawy = 65
 		if player.hurted = 1 {
@@ -445,6 +475,36 @@ if (player.state != 55)
 		}
         if (player.character == "V")
             draw_text(vdrawx, vdrawy + newhudyoffset, player.vigihealth)
+			#endregion
+			break;
+			case 1:
+			#region New HUD
+				var vdrawx = 100
+				var vdrawy = 465
+				var shake1 = 0, shake2 = 0;
+				if player.hurted = 1 
+				{
+					shake1 = random_range(-1,1)
+					shake2 =  random_range(-1,1)
+				}
+				if (player.character == "V")
+				{
+					//Draw Bar
+					var spriteWidth = sprite_get_width(spr_vigihealth_filled);
+					var spriteHeight = sprite_get_height(spr_vigihealth_filled);
+					var hpPercent = player.vigihealth/100;
+					//draw_sprite_part(sprHealthBar, 0, 0, 0, spriteWidth*hpPercent, spriteHeight, x, y+5);
+					draw_sprite_ext(spr_vigihealth_empty, -1, vdrawx, vdrawy, 1, 1, 0, c_white, 1)
+					draw_sprite_part_ext(spr_vigihealth_filled,-1,0,0,spriteWidth,spriteHeight*hpPercent,vdrawx - 50,vdrawy + 50,1,-1,c_white,1)
+					
+					//Draw Frame
+					draw_sprite_ext(spr_vigihealth_frame, -1, vdrawx, vdrawy, 1, 1, 0, c_white, 1)
+					//Draw Health Text
+					draw_text(vdrawx + shake1, vdrawy + shake2 - 16, player.vigihealth)			
+				}
+			#endregion
+			break;
+		}
     }
 	#endregion
 	#region Timer
@@ -474,21 +534,26 @@ if (player.state != 55)
 	ini_open("playerData_"+global.savefile+".ini");
 	var ranks = ini_read_string("Ranks", string(global.levelname), "none"); 
 	ini_close();
-	if global.levelname != "none" && (ranks != "none") && room != hub_room1 && room != hub_room2 && room != hub_room3 && room != cowboytask && room != timesuproom && room != Scootertransition && room != Tutorialtrap  && room != Titlescreen  && room != Realtitlescreen
+	if global.levelname != "none" && (ranks != "none") && room != hub_room1 && room != hub_room2 && room != hub_room3 && room != cowboytask && room != timesuproom && room != Scootertransition && room != Tutorialtrap  && room != Titlescreen  && room != Realtitlescreen && !instance_exists(obj_endlevelfade)
 	{
+		if global.bonustimer = false
+			global.bonustimer = true;
 		var tiny = ":"
 		var tinier = ":"
+		var tinyish = ":"
 		if (global.bonusseconds < 10)
 			tiny = ":0"
 		if (global.bonusmiliseconds < 10)
-			tinier = ":0"			
+			tinier = ":0"	
+		if (global.bonusminutes < 10)
+			tinyish = ":0"
 		draw_set_color(c_white)
 		draw_set_halign(fa_left)
 		draw_set_font(global.smallfont)
-		draw_text(832, 512, string_hash_to_newline(((string(global.bonusminutes) + string(tiny)) + string(global.bonusseconds) + string(tinier) + string(global.bonusmiliseconds))))
+		draw_text(823, 512, string_hash_to_newline(((string(global.bonushour) + string(tinyish) + string(global.bonusminutes) + string(tiny)) + string(global.bonusseconds) + string(tinier) + string(global.bonusmiliseconds))))
 	}
 	#endregion
-	
+
 	#endregion
 }
 draw_set_blend_mode(0)

@@ -22,6 +22,14 @@ if (keyboard_check_pressed(vk_return) && input != "")
 				obj_player1.targetDoor = arg2
 				obj_player2.targetDoor = arg2
 				instance_create(0, 0, obj_fadeout) } break
+			case "fart":
+			case "poop":
+			case "crap":
+			case "fard":
+			case "shart":
+			case "shit":
+			audio_sound_gain(audio_play_sound(sfx_fart, 1, false), (1 * global.soundeffectsvolume), 0)
+			break;
 				/*
 			case "create":
 				if DEBUG {
@@ -92,7 +100,8 @@ if (keyboard_check_pressed(vk_return) && input != "")
 				global.maxwave = (((global.minutes * 60) + global.seconds) * 60)
 				if global.panicbg = true
 					scr_panicbg_init()			
-				obj_camera.alarm[1] = 60 break
+				obj_camera.alarm[1] = 60
+				break
 			case "standardhitstun":
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = 70 else arg1 = ds_list_find_value(_commands, 1)
 				global.defaulttime = real(arg1)		
@@ -109,14 +118,17 @@ if (keyboard_check_pressed(vk_return) && input != "")
 				break;						
 			case "togglecollision": //Could probably use simplification
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !showcollisions else arg1 = ds_list_find_value(_commands, 1)
-
+				
 				switch arg1
 				{
 					case "true": arg1 = true
 					case "false": arg1 = false
 					default: arg1 = !showcollisions
 				}
-				showcollisions = arg1 break
+				
+				showcollisions = arg1 
+				event_user(0);
+				break
 			case "newhud": //MAMA
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.newhud else arg1 = ds_list_find_value(_commands, 1)	
 				switch arg1
@@ -204,7 +216,9 @@ if (keyboard_check_pressed(vk_return) && input != "")
 		active = false
     }
 }
-	
+
+
+/*
 with (obj_solid)
 {
     if (object_index == obj_solid || object_index == obj_secretbigblock || object_index == obj_secretbigblock2 || object_index == obj_secretonewaybigblock || object_index == obj_secretblock || object_index == obj_secretblock2 || object_index == obj_secretmetalblock)
@@ -225,3 +239,10 @@ with (obj_platformside)
     if (object_index == obj_platformside)
         visible = other.showcollisions
 }
+
+with (obj_movingplatformtrigger)
+{
+    if (object_index == obj_movingplatformtrigger)
+        visible = other.showcollisions
+}
+*/

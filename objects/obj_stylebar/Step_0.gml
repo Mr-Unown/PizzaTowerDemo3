@@ -24,19 +24,19 @@ _image_speed = 0;
 }
 else if global.stylethreshold = 1 {
 intensity = 0.0020
-_image_speed = 0.1875 * global.stylethreshold;
+_image_speed = 0.2;
 }
 else if global.stylethreshold = 2 {
 intensity = 0.0025
-_image_speed = 0.1875 * global.stylethreshold;
+_image_speed = 0.25;
 }
 else if global.stylethreshold = 3 {
 intensity = 0.0030
-_image_speed = 0.1875 * global.stylethreshold;
+_image_speed = 0.3;
 }
 else if global.stylethreshold >= 4 {
 intensity = 0.0035
-_image_speed = 0.1875 * global.stylethreshold;
+_image_speed = 0.35;
 }
 
 

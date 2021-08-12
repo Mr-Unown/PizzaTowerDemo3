@@ -1,5 +1,8 @@
 landAnim = 1
-vsp = 15
+if vsp < 15
+	vsp = 15;
+vsp = clamp(vsp + 0.15,15,20);
+freefallsmash += clamp(vsp/15,1,2);
 move = (key_left + key_right)
 if (!grounded)
 {
@@ -35,7 +38,7 @@ if (!grounded)
         xscale = move
 }
 
-freefallsmash++
+
 if (freefallsmash > 10 && (!instance_exists(superslameffectid)))
 {
     with (instance_create(x, y, obj_superslameffect))
@@ -44,8 +47,36 @@ if (freefallsmash > 10 && (!instance_exists(superslameffectid)))
         other.superslameffectid = id
     }
 }
-if (grounded && (!input_buffer_jump < 8) && (!place_meeting(x, (y + 1), obj_destructibles)))
+if (grounded && (!input_buffer_jump < 8) && scr_slope() && freefallsmash > 10 && key_down && (!place_meeting(x, (y + 1), obj_destructibles)))
 {
+	#region Roll
+	with instance_place(x,y+1,obj_slope)
+	{
+		other.xscale = -sign(image_xscale)
+	}
+    with (instance_create(x, y, obj_jumpdust))
+        image_xscale = other.xscale
+	with instance_create(x, y, obj_landcloud)
+	{
+		playerid = other.id
+		image_xscale = other.xscale
+	}			
+	movespeed = clamp(abs(vsp),3,12)
+    flash = 0
+    state = 37
+    vsp = 10
+	jumpAnim = 1
+    jumpstop = 0
+
+    freefallstart = 0
+	freefallsmash = 0
+	combo = 0
+    bounce = 0	
+	#endregion
+}
+else if (grounded && (!input_buffer_jump < 8) && (!place_meeting(x, (y + 1), obj_destructibles)) /* && !key_down*/ )
+{
+	#region Land
     scr_soundeffect(15)
     freefallsmash = 0
     if (shotgunAnim == 0)
@@ -74,27 +105,54 @@ if (grounded && (!input_buffer_jump < 8) && (!place_meeting(x, (y + 1), obj_dest
         shake_mag = 10
         shake_mag_acc = (30 / room_speed)
     }
-    combo = 0
-    bounce = 0
+
 	with instance_create(x, y, obj_landcloud)
 	{
 		playerid = other.id
 		image_xscale = other.xscale
 	}	
     freefallstart = 0
+	combo = 0
+    bounce = 0
+	#endregion
 }
-if (key_attack2) && character = "PZ" && !grounded && freefallsmash > 10
+
+//Groundpound Cancel
+if (key_attack2) && !(character = "N" && pogo = true) && !grounded && freefallsmash > 10
 {		
         if (move != 0)
             xscale = move
         movespeed = 10
         machhitAnim = 0
-        state = 70
+        state = states.mach2
         flash = 1
 		vsp = -2
-        flash = 1
         sprite_index = spr_mach2jump
         with (instance_create(x, y, obj_jumpdust))
             image_xscale = other.xscale
-}	
+		scr_soundeffect(sfx_rollgetup)			
+}
+if key_attack && (character == "N" && pogo = true) && !key_slap2 && pogojetcharge = false
+{
+    sprite_index = spr_playerN_pogostart
+    state = states.pogo
+    image_index = 0
+	pogomovespeed = 6	
+}
+if key_attack2 && (character == "N" && pogo = true) && pogojetcharge = true
+{
+	scr_soundeffect(sfx_noisewoah)	
+    if !key_up
+	sprite_index = spr_playerN_jetpackstart
+	else
+	sprite_index = spr_superjumpprep
+    state = states.jetpackstart
+	if move != 0
+		xscale = move
+    hsp = 0
+	vsp = 0
+    image_index = 0
+    superjumpprepsnd = audio_play_sound(sfx_superjumpprep, 1, false)
+    audio_sound_gain(superjumpprepsnd, (1 * global.soundeffectsvolume), 0)
+}
 image_speed = 0.35

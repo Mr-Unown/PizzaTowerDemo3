@@ -114,7 +114,7 @@
         input_buffer_jump = 0
     if (grounded && input_buffer_jump < 8 && (!key_down) && (!key_attack) && vsp > 0 && sprite_index != spr_swingding)
     {
-        scr_soundeffect(0)
+        scr_soundeffect(sfx_jump)
         sprite_index = spr_haulingjump
         instance_create(x, y, obj_highjumpcloud2)
         if (heavy == 0)

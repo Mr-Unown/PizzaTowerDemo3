@@ -12,5 +12,5 @@ peppinoselected = false
 
 done = false
 
-global.savefileselected = false
+//global.savefilechoosen = false
 

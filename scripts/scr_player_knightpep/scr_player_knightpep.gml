@@ -13,13 +13,14 @@ if (sprite_index == spr_knightpepwalk || sprite_index = spr_knightpepland || spr
 }
 else
 {
+	move = 0	
     if ((!place_meeting(x, (y + 1), obj_railh)) && (!place_meeting(x, (y + 1), obj_railh2)))
         hsp = (move * movespeed)
     else if place_meeting(x, (y + 1), obj_railh)
         hsp = ((move * movespeed) - 5)
     else if place_meeting(x, (y + 1), obj_railh2)
         hsp = ((move * movespeed) + 5)
-	move = 0		
+	
 }
 
 if key_jump
@@ -47,7 +48,7 @@ if (input_buffer_jump < 8 && vsp > 0 && grounded && (sprite_index == spr_knightp
 }
 if (floor(image_index) == (image_number - 1) && sprite_index == spr_knightpepjumpstart)
 {
-    scr_soundeffect(0)
+    scr_soundeffect(sfx_jump)
     vsp = -11
     if key_right
         hsp = 4
@@ -109,7 +110,8 @@ else
 //Groundpound
 if !grounded && key_down2
 {	
-	knightmaxy = y;	
+	knightmaxy = y;
+	knightroomy = y;
 	image_index = 0
 	sprite_index = spr_knightpepattack;
 	vsp = -5;

@@ -1,6 +1,6 @@
 with (obj_player1)
 {
-    if (state == 22 && other.hurted == 0 && other.state != 73 && other.state != 18 && other.state != 24 && other.state != 2 && other.state != 6 && other.state != 27 && other.cutscene == 0 && other.hurted == 0 && hurted == 0) && other.cutscene = false
+    if (state == 22 && other.hurted == 0 && other.state != 73 && other.state != states.changing && other.state != 18 && other.state != 24 && other.state != 2 && other.state != 6 && other.state != 27 && other.cutscene == 0 && other.hurted == 0 && hurted == 0) && other.cutscene = false
     {
         if (obj_player1.spotlight == 0)
         {
@@ -30,7 +30,7 @@ with (obj_player1)
                 }
         }
     }
-    if (state == 74 && other.hurted == 0 && other.state != 31 && other.state != 73 && hurted == 0) && other.cutscene = false
+    if (state == 74 && other.hurted == 0 && other.state != 31  && other.state != states.changing && other.state != 73 && hurted == 0) && other.cutscene = false
     {
         if (obj_player1.spotlight == 0)
         {
