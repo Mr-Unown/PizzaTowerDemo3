@@ -1,8 +1,15 @@
+global.toppinlist = ds_list_create();
+global.follower = ds_list_create();
+
 scr_initinput()
 scr_playercreate()
 
+//CustomPaletteChoosyFILE
+customsavedpalette = 1;
+oldcustomsavedpalette = 1;
 characters = "Peppino"
 colorheight = 8;
+
 
 global.has_drawnpeter = false;
 global.oldmeter = 0;

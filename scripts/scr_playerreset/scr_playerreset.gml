@@ -140,6 +140,8 @@ ds_list_clear(global.saveroom);
 ds_list_clear(global.baddieroom);
 ds_list_clear(global.gooproom);
 
+ds_list_clear(global.toppinlist);
+ds_list_clear(global.follower);
 
 global.ruinmusic = 0;
 with (obj_player1)

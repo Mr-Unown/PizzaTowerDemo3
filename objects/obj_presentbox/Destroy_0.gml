@@ -18,5 +18,12 @@ if (ds_list_find_index(global.saveroom, id) == -1)
     instance_destroy(obj_doorblocked)
     instance_destroy(obj_iceblockminiboss)
 }
-
+else
+{
+	var door = obj_doorblocked
+	with door
+	{
+		instance_destroy(id,false);
+	}
+}
 

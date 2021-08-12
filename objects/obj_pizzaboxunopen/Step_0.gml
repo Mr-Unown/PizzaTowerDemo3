@@ -23,6 +23,7 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
             sprite_index = spr_toppinshroom_intro
 			//Follower DS_list
 			ds_list_add(global.follower, id);
+			ds_list_add(global.toppinlist,id);
 		}
         if (global.toppintotal < 5)
             obj_tv.message = (("YOU NEED " + string((5 - global.toppintotal))) + " MORE TOPPINS!")
@@ -43,6 +44,7 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
             sprite_index = spr_toppincheese_intro
 			//Follower DS_list
 			ds_list_add(global.follower, id);
+			ds_list_add(global.toppinlist,id);			
 
 		}
         instance_create(x, y, obj_taunteffect)
@@ -69,6 +71,7 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
             sprite_index = spr_toppintomato_intro
 			//Follower DS_list
 			ds_list_add(global.follower, id);
+			ds_list_add(global.toppinlist,id);			
 		}			
         instance_create(x, y, obj_taunteffect)
 		global.combotime = 60
@@ -94,6 +97,7 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
             sprite_index = spr_toppinsausage_intro
 			//Follower DS_list
 			ds_list_add(global.follower, id);
+			ds_list_add(global.toppinlist,id);			
 		}
         instance_create(x, y, obj_taunteffect)
 		global.combotime = 60
@@ -119,6 +123,7 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
             sprite_index = spr_toppinpineapple_intro
 			//Follower DS_list
 			ds_list_add(global.follower, id);
+			ds_list_add(global.toppinlist,id);			
 
 		}			
 

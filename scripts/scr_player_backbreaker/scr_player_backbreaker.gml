@@ -57,6 +57,7 @@ if (sprite_index == spr_taunt)
             with (instance_create(x, y, obj_shake))
                 sprite_index = other.sprite_index
 			relax = true
+			pizzafacetimer = 500
 		}		
         with (instance_create(x, y, obj_tauntaftereffectspawner))
             playerid = other.id
@@ -236,6 +237,7 @@ if (sprite_index == spr_supertaunt1 || sprite_index == spr_supertaunt2 || sprite
             with (instance_create(x, y, obj_shake))
                 sprite_index = other.sprite_index
 			relax = true
+			pizzafacetimer = 500			
 		}	
         with (instance_create(x, y, obj_tauntaftereffectspawner))
             playerid = other.id

@@ -9,9 +9,9 @@ if (relax == 1 )
 	can_countdown = true;
 	if pizzafacetimer <= 0
 	{
-	scr_soundeffect(sfx_pizzaface)
-    relax = 0
-    maxspeed = 1
+		scr_soundeffect(sfx_pizzaface)
+		relax = 0
+		maxspeed = 1
 	}
 }
 else

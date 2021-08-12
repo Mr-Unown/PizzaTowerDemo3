@@ -18,9 +18,6 @@ show_tricks = false;
 tricksperformed = 0;
 //Slope Angle
 draw_angle = 0;
-//CustomPaletteChoosyFILE
-customsavedpalette = 1;
-oldcustomsavedpalette = 1;
 //Global Time Events
 global.timeevent = 0 //1 = Xmas 2 = April 3 = Halloween
 //Bumbo want coin
@@ -136,7 +133,8 @@ if instance_exists(obj_gerome)
 if instance_exists(obj_peshino)
 	instance_destroy(obj_peshino)	
 	
-global.follower = ds_list_create();
+
+ds_list_clear(global.toppinlist);
 ds_list_clear(global.follower);
 
 global.shroomfollow = false;
