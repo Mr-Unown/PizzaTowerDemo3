@@ -13,7 +13,7 @@ if active = true
 	//draw_text(431, 204, string(commands[b]))
 	//draw_text(431, 260, "Press UP or DOWN to scroll through KEYBOARD COMMANDS")
 	draw_text(431, 160, "Press F6 to close this menu")
-	draw_text(431, 204, string(input))
+	draw_text(431, 204, string(input) + cursor)
 	
 	draw_set_halign(fa_left)
 	

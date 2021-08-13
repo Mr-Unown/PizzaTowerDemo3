@@ -54,3 +54,7 @@ showcollisionarray[i++] = obj_secretmetalblock;
 showcollisionarray[i++] = obj_crashplaneblock;
 showcollisionarray[i++] = obj_pitcollider;
 
+//Funny Cursor
+cursor = "|";
+delay = 20;
+alarm[0] = delay;

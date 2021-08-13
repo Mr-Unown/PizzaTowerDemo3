@@ -37,6 +37,8 @@ if other.key_up2 && !instance_exists(obj_palettechanger)
 					break;		
 				}
 				ini_close()
+				input = string( round(colorvalue * 255 ));
+				keyboard_string = string( round(colorvalue*255) );				
 				#endregion
 			}
 		i++

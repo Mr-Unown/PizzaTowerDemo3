@@ -88,8 +88,8 @@ if (keyboard_check_pressed(vk_return) && input != "")
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = 0 else arg1 = ds_list_find_value(_commands, 1)
 				var arg2 if ds_list_find_value(_commands, 2) == undefined arg2 = 10 else arg2 = ds_list_find_value(_commands, 2)
 				global.panic = !global.panic
-				global.minutes = real(arg1)
-				global.seconds = real(arg2)
+				global.minutes = real(string_digits(arg1))
+				global.seconds = real(string_digits(arg2))
 				if instance_exists(obj_minipillar)
 					with (obj_minipillar)
 						fadetopanic = 1
@@ -104,16 +104,16 @@ if (keyboard_check_pressed(vk_return) && input != "")
 				break
 			case "standardhitstun":
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = 70 else arg1 = ds_list_find_value(_commands, 1)
-				global.defaulttime = real(arg1)		
+				global.defaulttime = real(string_digits(arg1))		
 				ini_open("saveData.ini")
-				ini_write_real("Option", "secrethitstuntimer", real(arg1))
+				ini_write_real("Option", "secrethitstuntimer", real(string_digits(arg1)))
 				ini_close()
 				break;		
 			case "voicefrequency":
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = 0 else arg1 = ds_list_find_value(_commands, 1)
-				global.quipsfrequency = real(arg1)		
+				global.quipsfrequency = real(string_digits(arg1))
 				ini_open("saveData.ini")
-				ini_write_real("Option", "quips", real(arg1))
+				ini_write_real("Option", "quips", real(string_digits(arg1)))
 				ini_close()
 				break;						
 			case "togglecollision": //Could probably use simplification
