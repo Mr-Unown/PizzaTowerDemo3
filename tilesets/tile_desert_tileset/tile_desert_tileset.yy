@@ -4,7 +4,56 @@
     "mvc": "1.11",
     "name": "tile_desert_tileset",
     "auto_tile_sets": [
-        
+        {
+            "id": "ea874c1d-8236-4f53-884a-cac27d3f7e2d",
+            "modelName": "GMAutoTileSet",
+            "mvc": "1.0",
+            "closed_edge": false,
+            "name": "autotile_2",
+            "tiles": [
+                49,
+                162,
+                160,
+                46,
+                142,
+                54,
+                0,
+                44,
+                140,
+                0,
+                57,
+                47,
+                65,
+                64,
+                67,
+                0
+            ]
+        },
+        {
+            "id": "aacb8066-64f1-4a4a-b1ea-80d8a331aadf",
+            "modelName": "GMAutoTileSet",
+            "mvc": "1.0",
+            "closed_edge": false,
+            "name": "autotile_3",
+            "tiles": [
+                87,
+                165,
+                163,
+                77,
+                0,
+                86,
+                0,
+                76,
+                143,
+                0,
+                88,
+                78,
+                97,
+                96,
+                98,
+                49
+            ]
+        }
     ],
     "macroPageTiles": {
         "SerialiseData": null,

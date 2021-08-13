@@ -8,13 +8,15 @@ if place_meeting(x, y, obj_solid)
     y = old_y
     return 1;
 }
-if (y > old_y) && (state == 91 || sprite_index == spr_mach3boost) && !place_meeting(x, old_y, obj_water) && place_meeting(x, y, obj_water)
+var water = noone
+if place_meeting(x, y, obj_water)
 {
-	if (state != 59)
-    {
-    x = old_x
-    y = old_y
-    return 1;
+	var water = instance_place(x, y, obj_water)
+	if y > old_y && (!place_meeting(x, old_y, water)) && (state == states.mach3 || state == states.backbreaker || (state == states.jetpack && vsp = 0) || sprite_index == spr_mach3boost)
+	{
+		x = old_x
+		y = old_y
+		return 1;
 	}
 }
 var movingplatform = noone
