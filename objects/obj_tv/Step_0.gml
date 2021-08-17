@@ -268,35 +268,6 @@ else if (global.combotime == 0 && tvsprite == spr_tvcombo)
     image_index = imageindexstore
     alarm[0] = 50
 }
-else if (room == Realtitlescreen)
-{
-    image_speed = 0.1
-    tvsprite = spr_tvbanana
-    alarm[0] = 2
-    if (obj_mainmenuselect.selected == 0)
-    {
-        if (obj_mainmenuselect.optionselected == 0)
-        {
-            showtext = 1
-            message = "START GAME"
-        }
-        if (obj_mainmenuselect.optionselected == 1)
-        {
-            showtext = 1
-            message = "OPTION"
-        }
-        if (obj_mainmenuselect.optionselected == 2)
-        {
-            showtext = 1
-            message = "EXIT GAME"
-        }
-    }
-    else
-    {
-        showtext = 1
-        message = ""
-    }
-}
 else if (obj_player.state == states.keyget)
 {
     showtext = 1

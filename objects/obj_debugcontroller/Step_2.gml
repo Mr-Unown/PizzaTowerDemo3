@@ -213,36 +213,9 @@ if (keyboard_check_pressed(vk_return) && input != "")
 			default:
 				show_debug_message("FAIL TBH!")
 		}
-		active = false
+		//active = false
+		input = ""
+		keyboard_string = ""		
     }
 }
 
-
-/*
-with (obj_solid)
-{
-    if (object_index == obj_solid || object_index == obj_secretbigblock || object_index == obj_secretbigblock2 || object_index == obj_secretonewaybigblock || object_index == obj_secretblock || object_index == obj_secretblock2 || object_index == obj_secretmetalblock)
-        visible = other.showcollisions
-}
-with (obj_slope)
-{
-    if (object_index == obj_slope)
-        visible = other.showcollisions
-}
-with (obj_platform)
-{
-    if (object_index == obj_platform)
-        visible = other.showcollisions
-}
-with (obj_platformside)
-{
-    if (object_index == obj_platformside)
-        visible = other.showcollisions
-}
-
-with (obj_movingplatformtrigger)
-{
-    if (object_index == obj_movingplatformtrigger)
-        visible = other.showcollisions
-}
-*/
