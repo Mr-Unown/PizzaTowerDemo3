@@ -57,6 +57,7 @@ if (sprite_index == spr_taunt)
             with (instance_create(x, y, obj_shake))
                 sprite_index = other.sprite_index
 			relax = true
+			pizzafacetimer = 500
 		}		
         with (instance_create(x, y, obj_tauntaftereffectspawner))
             playerid = other.id
@@ -72,9 +73,10 @@ if (sprite_index == spr_taunt)
 				blowdirection = 5;
 				blowintensity = 1;
 				playerxscale = choose(1,-1)
+				newshakebuffer = 15;
 				state = enemystates.enemyshake;	
 				var vec = point_direction(other.x,other.y,x,y)
-				var len = random_range(6,14)
+				var len = random_range(15,25)
 				initialvsp = lengthdir_y(len,vec)
 				initialhsp = lengthdir_x(len,vec)
 			}
@@ -99,17 +101,32 @@ if (sprite_index == spr_taunt)
 			{
 				if (paletteselect < sprite_get_width(spr_palette) - 1)
 					paletteselect += 1
+				else if customsavedpalette < 5
+					customsavedpalette += 1				
 				else
+				{
 					paletteselect = 1
+					customsavedpalette = 1
+				}
 			}
 			else
 			{
 				if (paletteselect < sprite_get_width(spr_palette) - 1)
 					paletteselect += 1
+				else if customsavedpalette < 5
+					customsavedpalette += 1				
 				else
-					paletteselect = 0
+				{
+					paletteselect = 0	
+					customsavedpalette = 1
+				}
 			}
 			taunttimer = 20
+			if paletteselect >= sprite_get_width(spr_palette) - 1
+			{
+				scr_playercolors();
+				customupdate = true;	
+			}			
 		}
         if key_up2
         {
@@ -220,6 +237,7 @@ if (sprite_index == spr_supertaunt1 || sprite_index == spr_supertaunt2 || sprite
             with (instance_create(x, y, obj_shake))
                 sprite_index = other.sprite_index
 			relax = true
+			pizzafacetimer = 500			
 		}	
         with (instance_create(x, y, obj_tauntaftereffectspawner))
             playerid = other.id
@@ -235,9 +253,10 @@ if (sprite_index == spr_supertaunt1 || sprite_index == spr_supertaunt2 || sprite
 				blowdirection = 5;
 				blowintensity = 1;
 				playerxscale = choose(1,-1)
+				newshakebuffer = 15;
 				state = enemystates.enemyshake;	
 				var vec = point_direction(other.x,other.y,x,y)
-				var len = random_range(6,14)
+				var len = random_range(15,25)
 				initialvsp = lengthdir_y(len,vec)
 				initialhsp = lengthdir_x(len,vec)
 			}

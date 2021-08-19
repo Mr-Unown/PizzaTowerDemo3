@@ -1,5 +1,5 @@
-fadealpha -= 0.005
-if (fadealpha == 0)
+fadealpha -= 0.375
+if (fadealpha <= 0)
     instance_destroy()
 
 

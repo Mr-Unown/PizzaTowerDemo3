@@ -1,66 +1,39 @@
-if (!instance_exists(obj_keyconfig))
+//Inputs
+scr_getinput()
+if instance_exists(obj_debugcontroller) && obj_debugcontroller.active = true
+	return;
+	
+//Select your Option
+if ((-key_left2 || keyboard_check_pressed(vk_left)) && optionselected > 0 && global.savefilechoosen = false)
 {
-    if (((-obj_player.key_left2) || keyboard_check_pressed(vk_left)) && optionselected > 0)
-    {
-        optionselected -= 1
-        scr_soundeffect(29)
-    }
-    if ((obj_player.key_right2 || keyboard_check_pressed(vk_right)) && optionselected < 1)
-    {
-        optionselected += 1
-        scr_soundeffect(29)
-    }
+    optionselected -= 1
+    scr_soundeffect(sfx_step)
 }
-if (optionselected == 1 && (obj_player.key_jump || keyboard_check_pressed(vk_return)))
+if ((key_right2 || keyboard_check_pressed(vk_right)) && optionselected < 1 && global.savefilechoosen = false)
 {
-    file_delete("playerData_"+global.savefile+".ini")
-    scr_initinput()
-    scr_soundeffect(3)
-    ini_open("playerData_"+global.savefile+".ini")
-    if (!ini_section_exists("SAGE2019"))
-    {
-        ini_write_string("SAGE2019", "shotgunsnick", 0)
-        ini_write_string("SAGE2019", "dungeonbackup", 0)
-        ini_write_string("SAGE2019", "srank", 0)
-        ini_write_string("SAGE2019", "snicksrank", 0)
-        ini_write_string("SAGE2019", "combo10", 0)
-        ini_write_string("SAGE2019", "secret", 0)
-        ini_write_string("SAGE2019", "knight", 0)
-        ini_write_string("SAGE2019", "toppin", 0)
-        ini_write_string("SAGE2019", "treasure", 0)
-        ini_close()
-    }
-    global.SAGEshotgunsnick = 0
-    global.SAGEshotgunsnicknumber = 0
-    global.SAGEdungeonbackup = 0
-    global.SAGEsrank = 0
-    global.SAGEsnicksrank = 0
-    global.SAGEcombo10 = 0
-    global.SAGEsecret = 0
-    global.SAGEknight = 0
-    global.SAGEknighttaken = 0
-    global.SAGEtoppin = 0
-    global.SAGEtreasure = 0
-	/*
-    with (obj_SAGE2019achievementmarker)
-    {
-        snickshotgun = 0
-        dungeonbackup = 0
-        srank = 0
-        snicksrank = 0
-        combo10 = 0
-        secret = 0
-        knight = 0
-        toppin = 0
-        treasure = 0
-    }*/
-    obj_mainmenuselect.selected = 0
+    optionselected += 1
+    scr_soundeffect(sfx_step)
+}
+
+if (optionselected == 1 && (key_jump || keyboard_check_pressed(vk_return)))
+{
+	file_delete((("playerData_" + global.savefile) + ".ini"))
+    scr_soundeffect(sfx_breakblock1)
+	global.savefile_optionselected = false;
+	with obj_savefilechooser
+	{
+		inputbuffer = 100;
+	}
     instance_destroy()
 }
-if (obj_player.key_slap2 || keyboard_check_pressed(vk_escape) || (optionselected == 0 && (obj_player.key_jump || keyboard_check_pressed(vk_return))))
+if (key_slap2 || keyboard_check_pressed(vk_escape) || (optionselected == 0 && (key_jump || keyboard_check_pressed(vk_return))))
 {
-    scr_soundeffect(8)
-    obj_mainmenuselect.selected = 0
+    scr_soundeffect(sfx_enemyprojectile)
+	global.savefile_optionselected = false;
+	with obj_savefilechooser
+	{
+		inputbuffer = 100;
+	}	
     instance_destroy()
 }
 

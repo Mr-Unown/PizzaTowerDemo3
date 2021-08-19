@@ -6,7 +6,7 @@ if (ds_list_find_index(global.saveroom, id) == -1)
 	repeat(6)
     with (instance_create((x + 32), (y + 32), obj_debris))
 	{
-		initialhsp = player.hsp / 2
+		initialhsp = player.hsp / 1.7
 		initialvsp = clamp(player.vsp / 1.3,-12,random_range(0,-5))
         sprite_index = spr_bigdebris
 	}
@@ -18,7 +18,7 @@ if (ds_list_find_index(global.saveroom, id) == -1)
     scr_soundeffect(3, 4)
     ds_list_add(global.saveroom, id)
     var pizzacoin = random_range(1, 100)
-    if (pizzacoin >= 90)
+    if (pizzacoin >= 85)
     {
         with (instance_create(x, y, obj_pizzacoin))
             hsp = choose(-2, 2)

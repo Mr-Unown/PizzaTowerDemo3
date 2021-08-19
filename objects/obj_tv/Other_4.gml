@@ -9,8 +9,8 @@ if global.snickchallenge == false
 			global.srank = 14500
 		break;
 		case "medieval":
-			global.stimerank = 2.15;
-			global.srank = 13500	
+			global.stimerank = 2.30;
+			global.srank = 14000	
 		break;
 		case "ruin":
 			global.stimerank = 3.00;
@@ -21,12 +21,12 @@ if global.snickchallenge == false
 			global.srank = 17500	
 		break;
 		case "ancient":
-			global.stimerank = 3.35;
+			global.stimerank = 3.40;
 			global.srank = 21500	
 		break;
 		case "chateau":
-			global.stimerank = 3.15;
-			global.srank = 14500	
+			global.stimerank = 3.30;
+			global.srank = 15000	
 		break;		
 		case "strongcold":
 			global.stimerank = 6.30;
@@ -49,7 +49,8 @@ if global.snickchallenge == false
 }
 else
 {
-    global.srank = 8300
+	//Snick Challenge
+    global.srank = 8000
     global.arank = (global.srank - (global.srank / 4))
     global.brank = (global.srank - ((global.srank / 4) * 2))
     global.crank = (global.srank - ((global.srank / 4) * 3))	

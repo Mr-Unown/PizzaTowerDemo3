@@ -6,7 +6,7 @@ if key_jump
 {
     vsp = -6
     instance_create(x, y, obj_washingmachine)
-    scr_soundeffect(0)
+    scr_soundeffect(sfx_jump)
     sprite_index = spr_jump
     stompAnim = 0
     state = 58

@@ -1,20 +1,41 @@
-if character = "P"
-characters = "Peppino"
-if character = "N"
-characters = "Noise"
-if character = "S"
-characters = "Snick"
-if character = "V"
-characters = "Vigilante"
-if character = "PM"
-characters = "Pepperman"
-if character = "D"
-characters = "Dougie"
-if character = "PZ"
-characters = "Pizzelle"
-
-
-//Colorindex Comment: what the fuck is the point of this
+#region Characters
+switch character
+{
+	case "P":
+	characters = "Peppino"
+	colorheight = 8;
+	break;
+	case "N":
+	characters = "Noise"
+	colorheight = 8;
+	break;
+	case "S":
+	characters = "Snick"
+	colorheight = 7;
+	break;
+	case "V":
+	characters = "Vigilante"
+	colorheight = 7;
+	break;
+	case "PM":
+	characters = "Pepperman"
+	colorheight = 6;
+	break;	
+	case "D":
+	characters = "Dougie"
+	colorheight = 0;
+	break;	
+	case "PZ":
+	characters = "Pizzelle"
+	colorheight = 10;
+	break;
+	default:
+	characters = "BF"
+	colorheight = 0;
+	break;
+}
+#endregion
+//Colorindex (Pratically useless remove later pls)
 colorindex[0] = 0
 colorindex[1] = 1
 colorindex[2] = 2
@@ -23,104 +44,43 @@ colorindex[4] = 4
 colorindex[5] = 5
 colorindex[6] = 6
 colorindex[7] = 7
+colorindex[8] = 8
+colorindex[9] = 9
+colorindex[10] = 10
 
 
 //Saved Colors
 #region Spaghetti
-ini_open(string(characters)+"_palettes.ini")
+ini_open("Custom/"+string(characters)+"_"+string(customsavedpalette)+"_palettes.ini")
 if !ini_section_exists(string(characters)+"Colors"+string(colorindex[0])) 
 {
  ini_write_real(string(characters)+"Colors"+string(colorindex[0]), "Red", 0);
  ini_write_real(string(characters)+"Colors"+string(colorindex[0]), "Green", 0);
  ini_write_real(string(characters)+"Colors"+string(colorindex[0]), "Blue", 0);
 }
-if !ini_section_exists(string(characters)+"Colors"+string(colorindex[1])) 
+for (var i = 1; i < colorheight; ++i) 
 {
- ini_write_real(string(characters)+"Colors"+string(colorindex[1]), "Red", 255);
- ini_write_real(string(characters)+"Colors"+string(colorindex[1]), "Green", 255);
- ini_write_real(string(characters)+"Colors"+string(colorindex[1]), "Blue", 255);
+	if !ini_section_exists(string(characters)+"Colors"+string(colorindex[i])) 
+	{
+		ini_write_real(string(characters)+"Colors"+string(colorindex[i]), "Red", 255);
+		ini_write_real(string(characters)+"Colors"+string(colorindex[i]), "Green", 255);
+		ini_write_real(string(characters)+"Colors"+string(colorindex[i]), "Blue", 255);
+	}	
 }
-if !ini_section_exists(string(characters)+"Colors"+string(colorindex[2])) 
+ini_open("Custom/"+string(characters)+"_"+string(customsavedpalette)+"_palettes.ini")
+
+for (var i = 0; i < colorheight; ++i) 
 {
- ini_write_real(string(characters)+"Colors"+string(colorindex[2]), "Red", 255);
- ini_write_real(string(characters)+"Colors"+string(colorindex[2]), "Green", 255);
- ini_write_real(string(characters)+"Colors"+string(colorindex[2]), "Blue", 255);
+	colored[colorindex[i],0] = ini_read_real(string(characters)+"Colors"+string(colorindex[i]), "Red", 0);
+	colored[colorindex[i],1] = ini_read_real(string(characters)+"Colors"+string(colorindex[i]), "Green", 0);
+	colored[colorindex[i],2] = ini_read_real(string(characters)+"Colors"+string(colorindex[i]), "Blue", 0);
 }
-if !ini_section_exists(string(characters)+"Colors"+string(colorindex[3])) 
-{
- ini_write_real(string(characters)+"Colors"+string(colorindex[3]), "Red", 255);
- ini_write_real(string(characters)+"Colors"+string(colorindex[3]), "Green", 255);
- ini_write_real(string(characters)+"Colors"+string(colorindex[3]), "Blue", 255);
-}
-if !ini_section_exists(string(characters)+"Colors"+string(colorindex[4])) 
-{
- ini_write_real(string(characters)+"Colors"+string(colorindex[4]), "Red", 255);
- ini_write_real(string(characters)+"Colors"+string(colorindex[4]), "Green", 255);
- ini_write_real(string(characters)+"Colors"+string(colorindex[4]), "Blue", 255);
-}
-if !ini_section_exists(string(characters)+"Colors"+string(colorindex[5])) 
-{
- ini_write_real(string(characters)+"Colors"+string(colorindex[5]), "Red", 255);
- ini_write_real(string(characters)+"Colors"+string(colorindex[5]), "Green", 255);
- ini_write_real(string(characters)+"Colors"+string(colorindex[5]), "Blue", 255);
-}
-if !ini_section_exists(string(characters)+"Colors"+string(colorindex[6])) 
-{
- ini_write_real(string(characters)+"Colors"+string(colorindex[6]), "Red", 255);
- ini_write_real(string(characters)+"Colors"+string(colorindex[6]), "Green", 255);
- ini_write_real(string(characters)+"Colors"+string(colorindex[6]), "Blue", 255);
-}
-if !ini_section_exists(string(characters)+"Colors"+string(colorindex[7])) 
-{
- ini_write_real(string(characters)+"Colors"+string(colorindex[7]), "Red", 255);
- ini_write_real(string(characters)+"Colors"+string(colorindex[7]), "Green", 255);
- ini_write_real(string(characters)+"Colors"+string(colorindex[7]), "Blue", 255);
-}
-
-
-colored[colorindex[0],0] = ini_read_real(string(characters)+"Colors"+string(colorindex[0]), "Red", 0);
-colored[colorindex[0],1] = ini_read_real(string(characters)+"Colors"+string(colorindex[0]), "Green", 0);
-colored[colorindex[0],2] = ini_read_real(string(characters)+"Colors"+string(colorindex[0]), "Blue", 0);
-
-colored[colorindex[1],0] = ini_read_real(string(characters)+"Colors"+string(colorindex[1]), "Red", 255);
-colored[colorindex[1],1] = ini_read_real(string(characters)+"Colors"+string(colorindex[1]), "Green", 255);
-colored[colorindex[1],2] = ini_read_real(string(characters)+"Colors"+string(colorindex[1]), "Blue", 255);
-
-colored[colorindex[2],0] = ini_read_real(string(characters)+"Colors"+string(colorindex[2]), "Red", 255);
-colored[colorindex[2],1] = ini_read_real(string(characters)+"Colors"+string(colorindex[2]), "Green", 255);
-colored[colorindex[2],2] = ini_read_real(string(characters)+"Colors"+string(colorindex[2]), "Blue", 255);
-
-colored[colorindex[3],0] = ini_read_real(string(characters)+"Colors"+string(colorindex[3]), "Red", 255);
-colored[colorindex[3],1] = ini_read_real(string(characters)+"Colors"+string(colorindex[3]), "Green", 255);
-colored[colorindex[3],2] = ini_read_real(string(characters)+"Colors"+string(colorindex[3]), "Blue", 255);
-
-colored[colorindex[4],0] = ini_read_real(string(characters)+"Colors"+string(colorindex[4]), "Red", 255);
-colored[colorindex[4],1] = ini_read_real(string(characters)+"Colors"+string(colorindex[4]), "Green", 255);
-colored[colorindex[4],2] = ini_read_real(string(characters)+"Colors"+string(colorindex[4]), "Blue", 255);
-
-colored[colorindex[5],0] = ini_read_real(string(characters)+"Colors"+string(colorindex[5]), "Red", 255);
-colored[colorindex[5],1] = ini_read_real(string(characters)+"Colors"+string(colorindex[5]), "Green", 255);
-colored[colorindex[5],2] = ini_read_real(string(characters)+"Colors"+string(colorindex[5]), "Blue", 255);
-
-colored[colorindex[6],0] = ini_read_real(string(characters)+"Colors"+string(colorindex[6]), "Red", 255);
-colored[colorindex[6],1] = ini_read_real(string(characters)+"Colors"+string(colorindex[6]), "Green", 255);
-colored[colorindex[6],2] = ini_read_real(string(characters)+"Colors"+string(colorindex[6]), "Blue", 255);
-
-colored[colorindex[7],0] = ini_read_real(string(characters)+"Colors"+string(colorindex[7]), "Red", 255);
-colored[colorindex[7],1] = ini_read_real(string(characters)+"Colors"+string(colorindex[7]), "Green", 255);
-colored[colorindex[7],2] = ini_read_real(string(characters)+"Colors"+string(colorindex[7]), "Blue", 255);
-
-//ini_write_real(string(characters["P"])+"Colors", "Red", color[0])
 ini_close()
 #endregion
 
 
-//Colors					//RED		//GREEN		//BLUE
-color[0] = make_color_rgb(colored[0,0],colored[0,1],colored[0,2])
-color[1] = make_color_rgb(colored[1,0],colored[1,1],colored[1,2])
-color[2] = make_color_rgb(colored[2,0],colored[2,1],colored[2,2])
-color[3] = make_color_rgb(colored[3,0],colored[3,1],colored[3,2])
-color[4] = make_color_rgb(colored[4,0],colored[4,1],colored[4,2])
-color[5] = make_color_rgb(colored[5,0],colored[5,1],colored[5,2])
-color[6] = make_color_rgb(colored[6,0],colored[6,1],colored[6,2])
-color[7] = make_color_rgb(colored[7,0],colored[7,1],colored[7,2])
+//Colors					    //RED		//GREEN		//BLUE
+for (var i = 0; i < colorheight; ++i) 
+{
+	color[i] = make_color_rgb(colored[i,0],colored[i,1],colored[i,2])
+}

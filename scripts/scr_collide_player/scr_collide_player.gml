@@ -1,4 +1,5 @@
-
+if global.freezeframe = true
+	return false;
 //Variables
 grounded = false
 grinding = false
@@ -16,6 +17,8 @@ repeat(abs(vsp)) {
 
 // Horizontal
 repeat(abs(hsp)) {
+
+	
     // Move up slope
     if scr_solid_player(x + sign(hsp), y) && !scr_solid_player(x + sign(hsp), y - 1)
         y--
@@ -23,7 +26,8 @@ repeat(abs(hsp)) {
     // Move down slope
     if !scr_solid_player(x + sign(hsp), y) && !scr_solid_player(x + sign(hsp), y + 1) && scr_solid_player(x + sign(hsp), y + 2)
         y++;
-
+		
+		
     if !scr_solid_player(x + sign(hsp), y)
         x += sign(hsp); 
     else {

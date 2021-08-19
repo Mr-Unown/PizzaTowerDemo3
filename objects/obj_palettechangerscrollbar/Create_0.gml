@@ -1,23 +1,18 @@
-depth = -1000
-_sprite_width = sprite_get_width(spr_scrollbar)
-_sprite_height = sprite_get_height(spr_scrollbar)
-button_sprite_width = sprite_get_width(spr_scrollbarbutton)
-button_sprite_height = sprite_get_height(spr_scrollbarbutton)
-
-indexedcolor = 0; //PAL1
-customcolor = 0; //RED
-value = 0; //Value
- 
-
-draw_x = x
-draw_y = y
-
-
-
-
-max_value = 1;
+depth = -1000;
+colorchannel = 0;
+draw_x = -100;
+draw_y = -100;
+button_x = -100;
+draw_color = c_red;
+colorvalue = 1;
+finalvalue = 0;
 selected = false;
-image_speed = 0;
-image_index = 0;
-
-
+player = obj_player1
+//Text Input
+input = "0"
+keyboard_string = "0"
+input_text = false
+//Edit Cursor
+cursor = "|";
+delay = 20;
+alarm[0] = delay;

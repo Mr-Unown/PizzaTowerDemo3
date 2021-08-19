@@ -56,8 +56,11 @@ if (global.coop == 0)
     fightball = 0
 if (state != 91 && state != 109)
     fightball = 0
-if (key_start && global.coop == 1 && fightball == 0)
+//Coop GONE
+if (key_start && global.coop == 1 && fightball == 0 && !instance_exists(obj_palettechanger))
 {
+	if (!instance_exists(obj_coopflag))
+		instance_destroy(obj_coopflag);
     with (instance_create(x, y, obj_dashcloud))
         sprite_index = spr_bombexplosion
     repeat (6)
@@ -65,7 +68,7 @@ if (key_start && global.coop == 1 && fightball == 0)
     global.coop = 0
     obj_player1.spotlight = 1
     obj_player1.depth = -7
-    scr_soundeffect(2)
+    scr_soundeffect(sfx_explosion)
 }
 if (global.coop == 0)
 {
@@ -188,10 +191,7 @@ if (state == 41 || state == 47 || state == 48 || state == 50 || state == 49)
 else
     grabbing = 0
 
-if (state == 91 || sprite_index = spr_swingding || sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump || state == 86 || state == states.breakdance || state == states.jetpack || state == states.pogo || state == 60 || (state == 73 && thrown == 1) || state == 70 || state == 17 || state == 74 || state == 2 || state == 6 || state == 7 || state == 9 || state == 44 || state == 35 || state == 63 || state == 37 || state == 40 || state == 10 || (state == 43 && sprite_index == spr_piledriver) || state == 24 || state == 25 || state == 18 || state == 15 || state == 13 || state == 11)
-    instakillmove = 1
-else
-    instakillmove = 0
+
 if (flash == 1 && alarm[0] <= 0)
     alarm[0] = (0.15 * room_speed)
 if (state != 91 && state != 71)

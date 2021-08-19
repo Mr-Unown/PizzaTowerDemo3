@@ -1,4 +1,4 @@
-if global.savefileselected = true {
+if global.savefilechoosen = true {
 if (readynow == 0)
 {
     if (selection == 0)

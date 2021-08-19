@@ -43,7 +43,7 @@ if (levelselect == 1)
                 state = 0
             with (obj_player2)
                 state = 0
-            scr_soundeffect(7)
+            scr_soundeffect(sfx_collecttoppin)
         }
     }
     with (obj_levelcomputer)
@@ -96,13 +96,13 @@ else if (levelselect == 0)
 {
     if (obj_player.key_up && (!instance_exists(obj_keyconfig)) && optionselect == 1)
     {
-        scr_soundeffect(29)
+        scr_soundeffect(sfx_step)
         optionselect = 0
     }
     else if (obj_player.key_down && (!instance_exists(obj_keyconfig)) && optionselect == 0)
     {
         optionselect = 1
-        scr_soundeffect(29)
+        scr_soundeffect(sfx_step)
     }
     if (optionselect == 0)
         obj_cursor.y = (y - 24)
@@ -110,7 +110,7 @@ else if (levelselect == 0)
         obj_cursor.y = (y + 18)
     if (optionselect == 0 && obj_player.key_jump && (!instance_exists(obj_keyconfig)))
     {
-        scr_soundeffect(7)
+        scr_soundeffect(sfx_collecttoppin)
         levelselect = 1
         sprite_index = spr_null
     }
@@ -122,7 +122,7 @@ else if (levelselect == 0)
                 state = 0
             with (obj_player2)
                 state = 0
-            scr_soundeffect(7)
+            scr_soundeffect(sfx_collecttoppin)
             instance_destroy()
             if instance_exists(obj_cursor)
                 instance_destroy(obj_cursor)

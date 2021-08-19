@@ -1,5 +1,6 @@
 global.newhudmessage = ds_queue_create();
-
+frozenalarm = -1;
+frozen = false;
 //oldcombometersurface = surface_create(200,200);
 textbubblesprites = spr_tv_bubble;
 textbubbleframes = 0;

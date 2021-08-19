@@ -15,6 +15,9 @@ switch color
     case 4: //Black
         draw_set_color(make_colour_rgb(0, 0, 0))
         break
+    case 5: //Yellow
+        draw_set_color(make_colour_rgb(244, 144, 0))
+        break		
 }
 
 draw_set_font(global.smallnumber)

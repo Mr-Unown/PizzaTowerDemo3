@@ -62,7 +62,7 @@ if (visible == false && global.boxhp <= 5)
         }
     }
     if (!audio_is_playing(sfx_breakblock1))
-        scr_soundeffect(3)
+        scr_soundeffect(sfx_breakblock1)
     mask_index = sprite_index
 }
 

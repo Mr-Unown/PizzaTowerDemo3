@@ -61,7 +61,7 @@ if (move != 0)
 }
 if (key_jump && grounded && (!scr_solid(x, (y - 16))) && (!scr_solid(x, (y - 32))))
 {
-    scr_soundeffect(0)
+    scr_soundeffect(sfx_jump)
     vsp = -8
     state = 67
     movespeed = 4

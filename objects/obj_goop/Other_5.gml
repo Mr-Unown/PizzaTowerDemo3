@@ -1,4 +1,3 @@
-
 //This should force the goop to land
 var _collision = collision_line(x, y, x, y + room_height, group_collision, false, true);
 if (_collision != noone)
@@ -18,16 +17,19 @@ else if !grounded
 	y = room_height + 32
 hsp = 0
 vsp = 0
-var _sprite = sprite_index;
+var _sprite;
+_sprite = sprite_index;
 if _sprite != spr_goop_1 && _sprite != spr_goop_2 && _sprite != spr_goop_3 && _sprite != spr_goop_4  && _sprite != spr_goop_5
 {
-_sprite = choose(spr_goop_1,spr_goop_2,spr_goop_3,spr_goop_4,spr_goop_5)
-image_index = 0
+	_sprite = choose(spr_goop_1,spr_goop_2,spr_goop_3,spr_goop_4,spr_goop_5)
+	image_index = 0
 }
-sprite = _sprite
-image = image_index
+
+sprite = _sprite;
+image = image_index;
 roomx = x;
 roomy = y;
-maxspeed = 0
-if (ds_list_find_index(global.saveroom, pooid) == -1)
-ds_list_add(global.gooproom,[pooid,room,x,y,sprite,image,paletteselect])
+maxspeed = 0;
+//FIX
+if created = false
+	ds_list_add(global.gooproom,[pooid,room,x,y,sprite,image,paletteselect])

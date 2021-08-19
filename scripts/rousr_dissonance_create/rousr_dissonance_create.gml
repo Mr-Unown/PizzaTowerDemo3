@@ -33,7 +33,8 @@ with(global.__rousr_dissonance) {
   Avatars     = [ ];
   Num_avatars = 0;
   
-  if (!Discord_initialized) {
+  if (!Discord_initialized) 
+  {
     Discord_initialized = discord_init(_application_id, _steam_id) == 1.0;
   }
  

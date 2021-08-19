@@ -6,7 +6,7 @@ if instance_exists(baddieID) && global.freezeframe = false
         with (baddieID)
         {
             if (!audio_is_playing(sfx_killingblow))
-                scr_soundeffect(14)
+                scr_soundeffect(sfx_killingblow)
             image_xscale = (-obj_slaphitbox2.image_xscale)
 			if stunned < 200
 				stunned = 200

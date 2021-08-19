@@ -2,16 +2,16 @@ scr_getinput()
 if ((key_up2 || keyboard_check_pressed(vk_up)) && optionselected > 0 && selected == 0)
 {
     optionselected -= 1
-    scr_soundeffect(29)
+    scr_soundeffect(sfx_step)
 }
 if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 2 && selected == 0)
 {
     optionselected += 1
-    scr_soundeffect(29)
+    scr_soundeffect(sfx_step)
 }
 if ((key_slap2 || key_start) && selected == 0)
 {
-    scr_soundeffect(8)
+    scr_soundeffect(sfx_enemyprojectile)
     if (room == Realtitlescreen)
 	{
         obj_mainmenuselect.selected = 0

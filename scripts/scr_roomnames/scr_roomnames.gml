@@ -66,6 +66,9 @@ switch room
 	case medieval_3:
 		message = "Thunderstruck";
 		break;	
+	case medieval_3_1:
+		message = "Banquet Hall";
+		break;			
 	case medieval_4:
 		message = "Medieval Fantasy";
 		break;	
@@ -84,6 +87,9 @@ switch room
 	case medieval_9:
 		message = "Treasure Room";
 		break;	
+	case medieval_9_1:
+		message = "Golden Bricks"
+		break;
 	case medieval_10:
 		message = "John Throne";
 		break;	
@@ -265,7 +271,10 @@ switch room
 		message = "Revenge of John";
 		break;	
 	case ancient_10_1:
-		message = "Pit of John";
+		message = "Dark Hallway";
+		break;
+	case ancient_10_2:
+		message = "Pit of John";		
 		break;			
 	case ancient_11:
 		message = "Emergency Exit";
@@ -302,6 +311,9 @@ switch room
 	case chateau_3:
 		message = "Sorcerer Apprentice";
 		break;	
+	case chateau_3_1:
+		message = "Hallway of Terror!";
+		break;			
 	case chateau_4:
 		message = "Goblin Massacre";
 		break;	
@@ -320,6 +332,9 @@ switch room
 	case chateau_9:
 		message = "Thriller Flight";
 		break;	
+	case chateau_9_1:
+		message = "Brown Bricks";
+		break;			
 	case chateau_10:
 		message = "Pizzard Council";
 		break;	
@@ -336,13 +351,13 @@ switch room
 		message = "Just Run... Away";
 		break;	
 	case chateau_secret3:
-		message = "Scariest Roll";
+		message = "Scariest Jump";
 		break;
 	case chateau_secret4:
 		message = "Pizza Block of Terror";
 		break;			
 	case chateau_secret5:
-		message = "No Wallrunning";
+		message = "Too Heavy and Too Fast";
 		break;			
 	case chateau_secret6:
 		message = "The Terrifying Giant Pizza";

@@ -1,3 +1,32 @@
 depth = -999;
 player = obj_player1;
-has_selectedoption = false;
+has_selectedoption = 0;
+slider[0] = noone;
+slider[1] = noone;
+slider[2] = noone;
+//Draw Surface
+surface = noone;
+color[0] = 0;
+color[1] = 0;
+color[2] = 0;
+color[3] = 0;
+color[4] = 0;
+color[5] = 0;
+color[6] = 0;
+color[7] = 0;
+color[8] = 0;
+color[9] = 0;
+color[10] = 0;
+//Update Colors
+//customupdate = false;
+showtext = true;
+_draw_x = 480;
+_draw_y = -64;
+choosen = false;
+message = noone;
+storemessage[0] = "USE THE MOUSE TO DRAG THE SLIDERS"
+storemessage[1] = "PRESS LEFT AND RIGHT TO CHANGE\n WHICH CUSTOM PALETTE TO CHANGE"
+storemessage[2] = "PRESS UP AND DOWN TO CHANGE\n WHICH COLOR TO EDIT"
+storemessage[3] = "PRESS SLAP TO EXIT AND SAVE CHANGES"
+messageindex = 0;
+alarm[1] = 50;

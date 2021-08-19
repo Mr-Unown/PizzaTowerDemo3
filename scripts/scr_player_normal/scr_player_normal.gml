@@ -235,10 +235,14 @@ if (landAnim == 0)
     else if (shotgunAnim == 1 && sprite_index != spr_shotgunshoot)
         sprite_index = spr_shotgunwalk
 }
+/*
 if (scr_solid((x + sign(hsp)), y) && xscale == 1 && move == 1 && (!place_meeting((x + 1), y, obj_slope)))
     movespeed = 0
 if (scr_solid((x + sign(hsp)), y) && xscale == -1 && move == -1 && (!place_meeting((x - 1), y, obj_slope)))
     movespeed = 0
+*/	
+if scr_solid(x + sign(hsp),y) && move != 0 && !scr_slope_ext(x + sign(hsp),y)
+	movespeed = 0
 jumpstop = 0
 if ((!grounded) && (!key_jump))
 {
@@ -252,7 +256,7 @@ if ((!grounded) && (!key_jump))
 }
 if (key_jump && grounded && (!key_down))
 {
-    scr_soundeffect(0)
+    scr_soundeffect(sfx_jump)
     sprite_index = spr_jump
     if (shotgunAnim == 1)
         sprite_index = spr_shotgunjump
@@ -270,7 +274,7 @@ if (key_jump && grounded && (!key_down))
 }
 if (grounded && input_buffer_jump < 8 && (!key_down) && (!key_attack) && vsp > 0)
 {
-    scr_soundeffect(0)
+    scr_soundeffect(sfx_jump)
     sprite_index = spr_jump
     if (shotgunAnim == 1)
         sprite_index = spr_shotgunjump
@@ -451,7 +455,7 @@ if (key_shoot2 && shotgunAnim == 0) && character != "V" && character != "D"
 			
 			break;
 		}
-		scr_soundeffect(14)
+		scr_soundeffect(sfx_killingblow)
 		murderammo -= 1
 	}
 	else
@@ -469,7 +473,7 @@ if (key_shoot2 && shotgunAnim == 0) && character != "V" && character != "D"
 //Shotgun
 if (key_shoot2 && shotgunAnim == 1 && character != "V" && character != "S")
 {
-    scr_soundeffect(14)
+    scr_soundeffect(sfx_killingblow)
     state = 38
     with (instance_create(x, y, obj_pistoleffect))
         image_xscale = other.image_xscale
@@ -507,8 +511,9 @@ if (key_slap2 && character == "S")
     state = 12
     image_index = 0
 }
-if (key_attack && (!place_meeting((x + xscale), y, obj_solid)) && (character == "P" || (character == "N" && pogo != true) || character == "PZ"  || (character = "D" && spellselect = 2) || character == "V"))
+if (key_attack && (character == "P" || (character == "N" && pogo != true) || character == "PZ"  || (character = "D" && spellselect = 2) || character == "V")) && !scr_solidwall_noslope(x + xscale,y)
 {
+	hsp = 0;
     movespeed = 6
     sprite_index = spr_mach1
     jumpAnim = 1

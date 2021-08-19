@@ -1,10 +1,4 @@
 /// @description activity check
-/*
-if global.flushtextures == true
-{
-	showloadbar = true;
-	global.moppingframes = 0;
-}*/
 
 if active = true
 {

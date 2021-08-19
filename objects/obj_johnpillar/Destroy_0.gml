@@ -36,6 +36,8 @@ if (ds_list_find_index(global.saveroom, id) == -1 && global.snickchallenge == 0)
         sprite_index = spr_hungrypillar_dead
 		image_xscale = other.image_xscale
 		canrotate = true
+		hsp = other.initialhsp
+		vsp = other.initialvsp
 	}
     scr_soundeffect(11)
     instance_create(x, (y + 600), obj_itspizzatime)

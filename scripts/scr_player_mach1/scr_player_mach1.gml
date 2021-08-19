@@ -1,6 +1,7 @@
 dir = xscale
 move = (key_left + key_right)
 landAnim = 0
+/*
 if (scr_solid((x + 1), y) && xscale == 1 && (!place_meeting((x + 1), y, obj_slope)))
 {
     mach2 = 0
@@ -12,7 +13,14 @@ if (scr_solid((x - 1), y) && xscale == -1 && (!place_meeting((x - 1), y, obj_slo
     mach2 = 0
     state = 0
     movespeed = 0
-}
+}*/
+if scr_solid(x + xscale, y) && !scr_slope_ext(x + xscale,y)
+{
+	hsp = 0
+    mach2 = 0
+    state = 0
+    movespeed = 0	
+}	
 machhitAnim = 0
 crouchslideAnim = 1
 if ((!place_meeting(x, (y + 1), obj_railh)) && (!place_meeting(x, (y + 1), obj_railh2)))
@@ -21,6 +29,7 @@ else if place_meeting(x, (y + 1), obj_railh)
     hsp = ((xscale * movespeed) - 5)
 else if place_meeting(x, (y + 1), obj_railh2)
     hsp = ((xscale * movespeed) + 5)
+
 if (xscale == 1 && move == -1)
 {
     sprite_index = spr_mach1
@@ -89,14 +98,22 @@ if (key_slap2 && key_down)
     else
         vsp = -7
 }
-if (grounded && sprite_index != spr_mach1 && vsp > 0)
+if sprite_index = spr_rollgetup && floor(image_index) >= image_number - 1
+{
+	if (grounded && sprite_index != spr_mach1 && vsp > 0)
+	{
+		sprite_index = spr_mach1
+		image_index = 0
+	}
+}
+if (grounded && sprite_index != spr_mach1 &&  sprite_index != spr_rollgetup  && vsp > 0)
 {
     sprite_index = spr_mach1
     image_index = 0
 }
 if (key_jump && grounded)
 {
-    scr_soundeffect(0)
+    scr_soundeffect(sfx_jump)
     sprite_index = spr_airdash1
     dir = xscale
     momemtum = 1
@@ -180,7 +197,7 @@ if (key_slap2 && character == "V")
     sprite_index = spr_playerV_airrevolver
     image_index = 0
     instance_create((x + (image_xscale * 20)), (y + 20), obj_shotgunbullet)
-    scr_soundeffect(14)
+    scr_soundeffect(sfx_killingblow)
 }
 if (key_shoot2 && character == "V" && (!instance_exists(obj_vigidynamite)))
 {

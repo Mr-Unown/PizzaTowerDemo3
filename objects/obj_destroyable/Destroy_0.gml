@@ -15,7 +15,7 @@ if (ds_list_find_index(global.saveroom, id) == -1)
     if (string_letters(roomname) != "PProom")
     {
         var pizzacoin = random_range(1, 100)
-        if (pizzacoin >= 90)
+        if (pizzacoin >= 85)
         {
             with (instance_create(x, y, obj_pizzacoin))
                 hsp = choose(-2, 2)

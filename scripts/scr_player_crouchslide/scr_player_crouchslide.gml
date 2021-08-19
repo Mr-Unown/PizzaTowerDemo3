@@ -25,7 +25,7 @@ if (input_buffer_jump < 8 && grounded && (!scr_solid((x + 27), (y - 32))) && (!s
         other.dashcloudid = id
     }
 	/*
-    scr_soundeffect(0)
+    scr_soundeffect(sfx_jump)
     sprite_index = spr_jump
     if (shotgunAnim == 1)
         sprite_index = spr_shotgunjump
@@ -70,7 +70,7 @@ if grounded && vsp > 0 && (sprite_index == spr_crouchslipjump || sprite_index ==
 }
 if sprite_index == spr_crouchslipjump && floor(image_index) = image_number - 1
     sprite_index = spr_crouchslipfall
-if (((hsp == 0 || (scr_solid((x + 1), y) && xscale == 1) || (scr_solid((x - 1), y) && xscale == -1)) && (!place_meeting((x + sign(hsp)), y, obj_slope))) || movespeed <= 0)
+if (movespeed <= 0)
 {
     state = 66
     movespeed = 0
@@ -81,18 +81,18 @@ if (((hsp == 0 || (scr_solid((x + 1), y) && xscale == 1) || (scr_solid((x - 1), 
     start_running = 1
     alarm[4] = 14
 }
-if (scr_solid((x + 1), y) && xscale == 1 && (!place_meeting((x + sign(hsp)), y, obj_slope)))
+if (scr_solid((x + xscale), y) && !scr_slope_ext(x + sign(hsp),y) && (!place_meeting((x + sign(hsp)), y, obj_destructibles)))
 {
     movespeed = 0
     state = 72
-    hsp = -2.5
+    hsp = -2.5 * xscale
     vsp = -3
     mach2 = 0
     image_index = 0
     machslideAnim = 1
     machhitAnim = 0
-    instance_create((x + 10), (y + 10), obj_bumpeffect)
-}
+    instance_create((x + (10 * xscale)), (y + 10), obj_bumpeffect)
+}/*
 if (scr_solid((x - 1), y) && xscale == -1 && (!place_meeting((x + sign(hsp)), y, obj_slope)))
 {
     movespeed = 0
@@ -104,7 +104,7 @@ if (scr_solid((x - 1), y) && xscale == -1 && (!place_meeting((x + sign(hsp)), y,
     machslideAnim = 1
     machhitAnim = 0
     instance_create((x - 10), (y + 10), obj_bumpeffect)
-}
+}*/
 if ((!instance_exists(obj_slidecloud)) && grounded && movespeed > 5)
 {
     with (instance_create(x, y, obj_slidecloud))

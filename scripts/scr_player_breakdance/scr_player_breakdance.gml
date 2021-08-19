@@ -75,7 +75,7 @@ doublejump = 0
 if sprite_index = spr_breakdanceattack2 || sprite_index = spr_breakdanceattack2start
 {
 #region Hitwall
-if (scr_solid((x + xscale), y) && (!place_meeting((x + sign(hsp)), y, obj_slope)) && (!place_meeting((x + xscale), y, obj_destructibles)))
+if (scr_solid((x + xscale), y) && !scr_slope_ext(x + sign(hsp),y) && (!place_meeting((x + sign(hsp)), y, obj_destructibles)))
 {
     sprite_index = spr_hitwall
     scr_soundeffect(15)
@@ -97,18 +97,18 @@ if (scr_solid((x + xscale), y) && (!place_meeting((x + sign(hsp)), y, obj_slope)
     }
     flash = 0
     state = 72
-    hsp = 2.5
+    hsp = -2.5 * xscale
     vsp = -3
     mach2 = 0
     image_index = 0
-    instance_create((x - 10), (y + 16), obj_bumpeffect)
+    instance_create((x + (10 * xscale)), (y + 16), obj_bumpeffect)
 }
 #endregion
 }
 if sprite_index = spr_breakdanceattack1
 {
 #region Bumpwall
-if (scr_solid((x + xscale), y) && (!place_meeting((x + sign(hsp)), y, obj_slope)) && (!place_meeting((x + xscale), y, obj_destructibles)))
+if (scr_solid((x + xscale), y) && !scr_slope_ext(x + sign(hsp),y) && (!place_meeting((x + sign(hsp)), y, obj_destructibles)))
 {
     instance_create((x + 10), (y + 16), obj_bumpeffect)
     xscale *= -1
@@ -118,7 +118,7 @@ if (scr_solid((x + xscale), y) && (!place_meeting((x + sign(hsp)), y, obj_slope)
 if sprite_index = spr_breakdanceattack2ground
 {
 #region Bumpwall
-if (scr_solid((x + xscale), y) && (!place_meeting((x + sign(hsp)), y, obj_slope)) && (!place_meeting((x + xscale), y, obj_destructibles)))
+if (scr_solid((x + xscale), y) && !scr_slope_ext(x + sign(hsp),y) && (!place_meeting((x + sign(hsp)), y, obj_destructibles)))
 {
 	if movespeed > 5
 		movespeed = 5

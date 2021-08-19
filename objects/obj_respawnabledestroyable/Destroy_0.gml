@@ -4,7 +4,7 @@
 	repeat(6)
     with (instance_create((x + 32), (y + 32), obj_debris))
 	{
-		initialhsp = player.hsp / 2
+		initialhsp = player.hsp / 1.7
 		initialvsp = clamp(player.vsp / 1.3,-12,random_range(0,-5))		
         sprite_index = spr_bigdebris_respawn
 	}

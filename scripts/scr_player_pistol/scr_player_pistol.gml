@@ -23,7 +23,7 @@ if ((sprite_index == spr_playerV_revolverhold || sprite_index == spr_playerV_air
     image_index = 0
     with (instance_create((x + (xscale * 25)), (y + 20), obj_shotgunbullet))
         playerid = other.id
-    scr_soundeffect(14)
+    scr_soundeffect(sfx_killingblow)
 }
 if (floor(image_index) == (image_number - 1) && sprite_index == spr_playerV_revolvershoot)
 {

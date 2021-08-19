@@ -18,3 +18,6 @@ if (floor(image_index) == (image_number - 1))
     state = 0
     image_index = 0
 }
+global.combotime = 60
+global.pausecombotime = true
+obj_tv.alarm[1] = 75

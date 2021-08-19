@@ -1,3 +1,11 @@
+//Stored Alarm
+frozen = false;
+frozenalarm[0] = -1;
+frozenalarm[1] = -1;
+frozenalarm[2] = -1;
+
+hsp = 0;
+vsp = 0;
 playerid = obj_player1
 image_speed = 0
 image_index = playerid.image_index

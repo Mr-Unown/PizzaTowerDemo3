@@ -35,7 +35,7 @@ if (place_meeting(x, y, obj_player1) && player == 0)
             {
                 state = 23
                 scr_soundeffect(sfx_secretfound)
-				scr_soundeffect(sfx_smallvictory)
+				scr_soundstop(sfx_smallvictory)
             }
             other.sprite_index = other.sprgot
             other.x = obj_player1.x
@@ -79,7 +79,7 @@ if (place_meeting(x, y, obj_player2) && player == 0)
             {
                 state = 23
                 scr_soundeffect(sfx_secretfound)
-				scr_soundeffect(sfx_smallvictory)				
+				scr_soundstop(sfx_smallvictory)				
             }
             other.sprite_index = other.sprgot
             other.x = obj_player2.x

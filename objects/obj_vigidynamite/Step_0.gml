@@ -22,11 +22,13 @@ if (place_meeting((x + hsp), (y + vsp), obj_destructibles) || place_meeting((x +
 		playerid = other.playerid
 	}
 }
+
 if ((place_meeting((x + hsp), (y + vsp), obj_metalblock) && (!place_meeting((x + hsp), (y + vsp), obj_metalblockhard))) || place_meeting((x + hsp), (y + vsp), obj_metalblockescape))
 {
     instance_destroy()
-    with instance_create(x, y, obj_dynamiteexplosion) {
-			playerid = other.playerid
+    with instance_create(x, y, obj_dynamiteexplosion) 
+	{
+		playerid = other.playerid
 	}
 }
 if (place_meeting((x + hsp), (y + vsp), obj_tntblock) || place_meeting((x + hsp), (y + vsp), obj_rockblock))

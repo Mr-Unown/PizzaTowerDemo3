@@ -1,8 +1,10 @@
 var drawx = x
 var drawy = y
+if global.freezeframe = false
+{
 drawx += random_range(-1, 1)
 drawy += random_range(-1, 1)
-
+}
 if custompalette = true
 	pal_swap_set(playerid.surf_pallete, 1, true);
 else if	custompalette = false

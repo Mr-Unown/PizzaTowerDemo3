@@ -29,9 +29,9 @@ if (optionsaved_resolution == 1)
 else
     draw_text_colour(480, 225 - 25, "960X540", c_white, c_white, c_white, c_white, 0.5)
 if (optionsaved_resolution == 2)
-    draw_text_colour(680, 225 - 25, "1980X1080", c_white, c_white, c_white, c_white, 1)
+    draw_text_colour(680, 225 - 25, "1920X1080", c_white, c_white, c_white, c_white, 1)
 else
-    draw_text_colour(680, 225 - 25, "1980X1080", c_white, c_white, c_white, c_white, 0.5)
+    draw_text_colour(680, 225 - 25, "1920X1080", c_white, c_white, c_white, c_white, 0.5)
 if (optionselected == 2)
     draw_text_colour(480, 325 - 25, "MOTION BLUR", c_white, c_white, c_white, c_white, 1)
 else

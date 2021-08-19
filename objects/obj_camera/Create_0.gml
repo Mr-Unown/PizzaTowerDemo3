@@ -1,4 +1,6 @@
+
 depth = -11
+
 //Stinky Thing
 oldfacesprite = spr_null
 //global.startgate
@@ -11,6 +13,12 @@ startgateoffsety = 0;
 
 //Shaders
 greyscalefade = 0;
+//Frozenarray
+frozenalarm[0] = -1
+frozenalarm[1] = -1
+frozenalarm[2] = -1
+frozenalarm[3] = -1
+frozen = false;
 
 //Number
 _image_index = 0;
@@ -36,7 +44,8 @@ global.minutes = 0
 global.bonusmiliseconds = 0;
 global.bonusseconds = 0;
 global.bonusminutes = 0;
-
+global.bonushour = 0;
+global.bonustimer = false;
 global.miniboss = 0
 angle = 0
 frame = 0

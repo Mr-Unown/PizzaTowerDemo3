@@ -17,7 +17,7 @@ with (other.id)
         sprite_index = spr_cheesepep_intro
         state = 13
         bombpeptimer = 3
-        scr_soundeffect(8)
+        scr_soundeffect(sfx_enemyprojectile)
         instance_destroy(other.id)
     }
     else
@@ -30,7 +30,7 @@ with (other.id)
         instance_create(x, y, obj_slimedebris)
         instance_create(x, y, obj_slimedebris)
         instance_create(x, y, obj_slimedebris)
-        scr_soundeffect(8)
+        scr_soundeffect(sfx_enemyprojectile)
         instance_destroy(other.id)
     }
 }

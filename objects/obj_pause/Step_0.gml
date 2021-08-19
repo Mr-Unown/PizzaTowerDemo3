@@ -139,22 +139,22 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
     if ((key_down2 || key_right2) && selected < 2)
     {
         selected += 1
-        scr_soundeffect(29)
+        scr_soundeffect(sfx_step)
     }
     else if (key_down2 || key_right2)
     {
         selected = -1
-        scr_soundeffect(29)
+        scr_soundeffect(sfx_step)
     }
     if ((key_up2 || (-key_left2)) && selected > -1)
     {
         selected -= 1
-        scr_soundeffect(29)
+        scr_soundeffect(sfx_step)
     }
     else if (key_up2 || (-key_left2))
     {
         selected = 2
-        scr_soundeffect(29)
+        scr_soundeffect(sfx_step)
     }
 	if key_jump
 	{
@@ -164,7 +164,7 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
 		#region Config
         if (!instance_exists(obj_mainconfig))
             instance_create(x, y, obj_mainconfig)
-        scr_soundeffect(8)
+        scr_soundeffect(sfx_enemyprojectile)
         if (!audio_is_playing(global.pausenicemusic))
         {
             global.pausenicemusic = audio_play_sound(mu_options, 10, true)

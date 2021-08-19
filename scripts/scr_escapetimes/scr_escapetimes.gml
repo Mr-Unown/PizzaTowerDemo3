@@ -17,12 +17,12 @@
             global.seconds = 30
             break
         case ancient_10:
-            global.minutes = 3
-            global.seconds = 50
+            global.minutes = 4
+            global.seconds = 00
             break					
         case chateau_6:
             global.minutes = 3
-            global.seconds = 15
+            global.seconds = 25
             break	
         case strongcold_1:
             global.minutes = 3
