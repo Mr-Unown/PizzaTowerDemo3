@@ -16,12 +16,15 @@ if active = true
 	var length = -(string_width(string(input))/ 2) + string_width(string(input));
 	draw_text(431 + length + 3, 204, cursor);
 	
-	
+	//Command History
+	draw_set_halign(fa_left)
+	draw_text(100, 90  - 64, string_hash_to_newline(commandhistory))
+	/*
 	//Command List
 	draw_set_halign(fa_left)
 	draw_text(100, 80 - 64, "COMMAND LIST:")
 	for(var i = 0; i < array_length_1d(commands); i++)
 		draw_text(100, 100  - 64 + (i * 16), string(commands[i]))
-	
+	*/
 }
 
