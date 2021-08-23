@@ -6,6 +6,8 @@ if (bulletbuffer == 0) && global.freezeframe = false
         {
             if (baddieID.state == 106 && baddieID.thrown == 1)
             {
+				other.baddieID.initialvsp = baddieID.hsp/1.5
+				other.baddieID.initialhsp = baddieID.vsp/1.5					
                 baddieID.grabbedby = other.baddieID.grabbedby
                 if (other.baddieID.hp > 1)
                 {
@@ -20,9 +22,7 @@ if (bulletbuffer == 0) && global.freezeframe = false
                     other.baddieID.thrown = 0
                 }
                 else
-                    instance_destroy(other.baddieID)
-				other.baddieID.initialvsp = baddieID.hsp
-				other.baddieID.initialhsp = baddieID.vsp				
+                    instance_destroy(other.baddieID)			
             }
         }
     }
