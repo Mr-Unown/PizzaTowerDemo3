@@ -36,32 +36,36 @@ var back_id15 = layer_background_get_id(lay_id15)
 
 if (room != hub_room1 && room != hub_room3  && room != hub_room2 && room != cowboytask && obj_pause.pause == 0)
     global.scrolloffset += 1
-//Disgusting
+	
+#region Freezeframe
 var _speedmodifier = 4
 if (global.freezeframe = false)
 {
 	_speedmodifier = 1
 }
-    x_shift_1 += (layer_get_hspeed("Backgrounds_sky") /_speedmodifier)
-    y_shift_1 += (layer_get_vspeed("Backgrounds_sky") /_speedmodifier)
-    x_shift_2 += (layer_get_hspeed("Backgrounds_sky2") /_speedmodifier)
-    y_shift_2 += (layer_get_vspeed("Backgrounds_sky2") /_speedmodifier)
-    x_shift_3 += (layer_get_hspeed("Backgrounds_scroll") /_speedmodifier)
-    y_shift_3 += (layer_get_vspeed("Backgrounds_scroll") /_speedmodifier)
-    layer_background_speed(back_id, (back1 /_speedmodifier))
-    layer_background_speed(back_id2, (back2 /_speedmodifier))
-    layer_background_speed(back_id3, (back3 /_speedmodifier))
-    layer_background_speed(back_id4, (back4 /_speedmodifier))
-    layer_background_speed(back_id5, (back5 /_speedmodifier))
-    layer_background_speed(back_id6, (back6 /_speedmodifier))
-    layer_background_speed(back_id7, (back7 /_speedmodifier))
-    layer_background_speed(back_id8, (back8 /_speedmodifier))
-    layer_background_speed(back_id9, (back9 /_speedmodifier))
-    layer_background_speed(back_id10, (back10 /_speedmodifier))
-	layer_background_speed(back_id11, (back11 /_speedmodifier))
-	layer_background_speed(back_id12, (back12 /_speedmodifier))
-	layer_background_speed(back_id14, (back14 /_speedmodifier))
-	layer_background_speed(back_id15, (back15 /_speedmodifier))	
+
+x_shift_1 += (layer_get_hspeed("Backgrounds_sky") /_speedmodifier)
+y_shift_1 += (layer_get_vspeed("Backgrounds_sky") /_speedmodifier)
+x_shift_2 += (layer_get_hspeed("Backgrounds_sky2") /_speedmodifier)
+y_shift_2 += (layer_get_vspeed("Backgrounds_sky2") /_speedmodifier)
+x_shift_3 += (layer_get_hspeed("Backgrounds_scroll") /_speedmodifier)
+y_shift_3 += (layer_get_vspeed("Backgrounds_scroll") /_speedmodifier)
+layer_background_speed(back_id, (back1 /_speedmodifier))
+layer_background_speed(back_id2, (back2 /_speedmodifier))
+layer_background_speed(back_id3, (back3 /_speedmodifier))
+layer_background_speed(back_id4, (back4 /_speedmodifier))
+layer_background_speed(back_id5, (back5 /_speedmodifier))
+layer_background_speed(back_id6, (back6 /_speedmodifier))
+layer_background_speed(back_id7, (back7 /_speedmodifier))
+layer_background_speed(back_id8, (back8 /_speedmodifier))
+layer_background_speed(back_id9, (back9 /_speedmodifier))
+layer_background_speed(back_id10, (back10 /_speedmodifier))
+layer_background_speed(back_id11, (back11 /_speedmodifier))
+layer_background_speed(back_id12, (back12 /_speedmodifier))
+layer_background_speed(back_id14, (back14 /_speedmodifier))
+layer_background_speed(back_id15, (back15 /_speedmodifier))	
+#endregion
+
 var foregroundoffsety = (room_height - sprite_get_height(layer_background_get_sprite(back_id13)))
 layer_x("Backgrounds_foreground", (_centeredcam_x * 0.90))
 layer_y("Backgrounds_foreground",clamp(((_centeredcam_y * 0.90) +  camera_get_view_height(view_camera[0])  - sprite_get_height(layer_background_get_sprite(back_id13))  ) ,foregroundoffsety,foregroundoffsety + 8))
