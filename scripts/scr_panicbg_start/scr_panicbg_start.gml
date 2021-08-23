@@ -20,6 +20,8 @@ if event_type == ev_draw and event_number == 0
 	var bg10 = layer_get_id("Backgrounds_far")
 	var bg11 = layer_get_id("Backgrounds_4")	
 	var bg12 = layer_get_id("Backgrounds_long")	
+    var bg13 = layer_get_id("Backgrounds_H1")
+    var bg14 = layer_get_id("Backgrounds_H2")	
     layer_x(bg1, ((layer_get_x(bg1) - _cam_x) + 64))
     layer_y(bg1, ((layer_get_y(bg1) - _cam_y) + 64))
     layer_x(bg2, ((layer_get_x(bg2) - _cam_x) + 64))
@@ -43,5 +45,10 @@ if event_type == ev_draw and event_number == 0
     layer_x(bg11, ((layer_get_x(bg11) - _cam_x) + 64))
     layer_y(bg11, ((layer_get_y(bg11) - _cam_y) + 64))	
     layer_x(bg12, ((layer_get_x(bg12) - _cam_x) + 64))
-    layer_y(bg12, ((layer_get_y(bg12) - _cam_y) + 64))		
+    layer_y(bg12, ((layer_get_y(bg12) - _cam_y) + 64))	
+	
+    layer_x(bg13, ((layer_get_x(bg13) - _cam_x) + 64))
+    layer_y(bg13, ((layer_get_y(bg13) - _cam_y) + 64))
+    layer_x(bg14, ((layer_get_x(bg14) - _cam_x) + 64))
+    layer_y(bg14, ((layer_get_y(bg14) - _cam_y) + 64))	
 }
