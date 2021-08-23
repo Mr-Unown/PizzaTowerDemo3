@@ -1,3 +1,5 @@
+var vec = point_direction(other.x,other.y,x,y)
+var len = random_range(15,25)
 if (bulletbuffer == 0) && global.freezeframe = false
 {
     if instance_exists(baddieID)
@@ -32,6 +34,8 @@ if (bulletbuffer == 0) && global.freezeframe = false
         {
             with (baddieID)
             {
+				initialvsp = lengthdir_y(len,vec)
+				initialhsp = lengthdir_x(len,vec)					
                 instance_create(x, y, obj_baddiegibs)
                 instance_destroy()
             }

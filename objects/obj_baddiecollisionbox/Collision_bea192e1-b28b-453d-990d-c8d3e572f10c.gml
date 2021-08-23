@@ -21,6 +21,8 @@ if (bulletbuffer == 0) && global.freezeframe = false
                 }
                 else
                     instance_destroy(other.baddieID)
+				other.baddieID.initialvsp = baddieID.hsp
+				other.baddieID.initialhsp = baddieID.vsp				
             }
         }
     }

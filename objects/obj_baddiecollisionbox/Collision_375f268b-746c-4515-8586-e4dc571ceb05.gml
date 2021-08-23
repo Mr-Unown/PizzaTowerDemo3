@@ -1,4 +1,6 @@
 var _grabbedby = (other.playerid == obj_player1 ? 1 : 2)
+var vec = point_direction(other.x,other.y,x,y)
+var len = random_range(15,25)
 if (bulletbuffer == 0) && global.freezeframe = false
 {
     if instance_exists(baddieID)
@@ -29,12 +31,18 @@ if (bulletbuffer == 0) && global.freezeframe = false
                 baddieID.hsp = (other.image_xscale * 8)
             else if (!grounded)
                 baddieID.hsp = (other.image_xscale * 10)
-            instance_destroy(other.id)
+			//Bullet HP
+			if other.hp <= 1
+				instance_destroy(other.id)
+			else
+				other.hp = other.hp - 1
         }
         else
         {
             with (baddieID)
             {
+				initialvsp = lengthdir_y(len,vec)
+				initialhsp = lengthdir_x(len,vec)				
 				grabbedby = _grabbedby
                 instance_create(x, y, obj_baddiegibs)
                 instance_destroy()

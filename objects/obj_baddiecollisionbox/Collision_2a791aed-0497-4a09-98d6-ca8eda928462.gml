@@ -1,5 +1,7 @@
 if instance_exists(baddieID) && global.freezeframe = false
 {
+	var vec = point_direction(other.x,other.y,x,y)
+	var len = random_range(10,15)
     with (baddieID)
     {
         if (state != enemystates.enemyshake && state != enemystates.enemyfrozen)
@@ -14,6 +16,8 @@ if instance_exists(baddieID) && global.freezeframe = false
 				hp = (hp - 1)
 			}
 			else {
+				initialvsp = lengthdir_y(len,vec)
+				initialhsp = lengthdir_x(len,vec)
 				dying = true
 				scarebuffer = 0
 				blowdirection = 5;

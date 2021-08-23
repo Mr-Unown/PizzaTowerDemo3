@@ -23,8 +23,6 @@ y += floor(vsp)
 if canrotate = true
 image_angle += rotatevalue * rotatedirection
 
-if sprite_index = spr_hungrypillar_dead
-rotatevalue = clamp(abs(rotatevalue),0,3)
 //Potato
 drawx = x
 drawy = y
