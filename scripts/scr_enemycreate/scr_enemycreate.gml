@@ -12,6 +12,9 @@ deathbuffer = 100
 playerxscale = obj_player1.xscale
 dying = false
 creatorid = noone
+//Squash and Stretch
+squashval = 0;
+squashed = false;
 //Funny Dramatic Supertaunt shake
 newshakebuffer = 0;
 //Stupid anti Strongcold softlock

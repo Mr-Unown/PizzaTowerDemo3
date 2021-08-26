@@ -115,7 +115,7 @@
             "modelName": "GMAutoTileSet",
             "mvc": "1.0",
             "closed_edge": false,
-            "name": "autotile_4",
+            "name": "Platform",
             "tiles": [
                 10,
                 0,

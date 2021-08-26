@@ -10,8 +10,17 @@ else if global.heatmeter < 4 && object_index != obj_shrimp && object_index != ob
 {
 	paletteselect = 0
 }
-
-
+//Squash and Stretch
+if squashed = true
+{
+	squashval = approach(squashval,0.4,0.15)
+	if squashval >= 0.4
+		squashed = false
+}
+else if squashed = false
+{
+	squashval = approach(squashval,0,0.05)
+}
 //Stun
 if stuntouch > 0
 stuntouch--

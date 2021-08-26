@@ -236,6 +236,8 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                     other.baddieID.image_xscale = (-sign((other.baddieID.x - x)))
                 image_index = 0
                 other.baddieID.state = 106
+				other.baddieID.squashed = true
+				other.baddieID.squashval = 0						
                 if (other.baddieID.stunned < 100)
                     other.baddieID.stunned = 100
                 if key_jump2
@@ -573,6 +575,8 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player2) && obj_player2
                     other.baddieID.image_xscale = (-sign((other.baddieID.x - x)))
                 image_index = 0
                 other.baddieID.state = 106
+				other.baddieID.squashed = true
+				other.baddieID.squashval = 0						
                 if (other.baddieID.stunned < 100)
                     other.baddieID.stunned = 100
                 if key_jump2
