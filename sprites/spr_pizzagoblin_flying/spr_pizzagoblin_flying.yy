@@ -1,92 +1,82 @@
 {
-    "id": "c8fb419c-f59d-43fc-b242-18797b5135a3",
-    "modelName": "GMSprite",
-    "mvc": "1.12",
-    "name": "spr_pizzagoblin_flying",
-    "For3D": false,
-    "HTile": false,
-    "VTile": false,
-    "bbox_bottom": 96,
-    "bbox_left": 16,
-    "bbox_right": 91,
-    "bbox_top": 21,
-    "bboxmode": 0,
-    "colkind": 0,
-    "coltolerance": 0,
-    "edgeFiltering": false,
-    "frames": [
-        {
-            "id": "3c722a77-2340-44ab-a8aa-b91cd377de92",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "c8fb419c-f59d-43fc-b242-18797b5135a3",
-            "compositeImage": {
-                "id": "d80f6d66-ab20-4f6f-ab74-b7cd62d102ec",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "3c722a77-2340-44ab-a8aa-b91cd377de92",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "7fb2a790-6819-4e4a-aea7-21dcd96483d2",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "3c722a77-2340-44ab-a8aa-b91cd377de92",
-                    "LayerId": "03bb2624-5bcd-4092-9822-7d9ee691a6e4"
-                }
-            ]
-        },
-        {
-            "id": "80e9abf4-0a19-43d6-9e5a-58ef60dfec96",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "c8fb419c-f59d-43fc-b242-18797b5135a3",
-            "compositeImage": {
-                "id": "19e7ef78-f085-411a-a090-31100ff5aff0",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "80e9abf4-0a19-43d6-9e5a-58ef60dfec96",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "5b4752b5-936d-4815-8ff6-7a3881a599c8",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "80e9abf4-0a19-43d6-9e5a-58ef60dfec96",
-                    "LayerId": "03bb2624-5bcd-4092-9822-7d9ee691a6e4"
-                }
-            ]
-        }
-    ],
-    "gridX": 0,
-    "gridY": 0,
-    "height": 100,
-    "layers": [
-        {
-            "id": "03bb2624-5bcd-4092-9822-7d9ee691a6e4",
-            "modelName": "GMImageLayer",
-            "mvc": "1.0",
-            "SpriteId": "c8fb419c-f59d-43fc-b242-18797b5135a3",
-            "blendMode": 0,
-            "isLocked": false,
-            "name": "default",
-            "opacity": 100,
-            "visible": true
-        }
-    ],
-    "origin": 0,
-    "originLocked": false,
-    "playbackSpeed": 1,
+  "bboxMode": 0,
+  "collisionKind": 0,
+  "type": 0,
+  "origin": 4,
+  "preMultiplyAlpha": false,
+  "edgeFiltering": false,
+  "collisionTolerance": 0,
+  "swfPrecision": 2.525,
+  "bbox_left": 16,
+  "bbox_right": 91,
+  "bbox_top": 21,
+  "bbox_bottom": 96,
+  "HTile": false,
+  "VTile": false,
+  "For3D": false,
+  "width": 100,
+  "height": 100,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
+  "swatchColours": null,
+  "gridX": 0,
+  "gridY": 0,
+  "frames": [
+    {"compositeImage":{"FrameId":{"name":"3c722a77-2340-44ab-a8aa-b91cd377de92","path":"sprites/spr_pizzagoblin_flying/spr_pizzagoblin_flying.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"3c722a77-2340-44ab-a8aa-b91cd377de92","path":"sprites/spr_pizzagoblin_flying/spr_pizzagoblin_flying.yy",},"LayerId":{"name":"03bb2624-5bcd-4092-9822-7d9ee691a6e4","path":"sprites/spr_pizzagoblin_flying/spr_pizzagoblin_flying.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_pizzagoblin_flying","path":"sprites/spr_pizzagoblin_flying/spr_pizzagoblin_flying.yy",},"resourceVersion":"1.0","name":"3c722a77-2340-44ab-a8aa-b91cd377de92","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"80e9abf4-0a19-43d6-9e5a-58ef60dfec96","path":"sprites/spr_pizzagoblin_flying/spr_pizzagoblin_flying.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"80e9abf4-0a19-43d6-9e5a-58ef60dfec96","path":"sprites/spr_pizzagoblin_flying/spr_pizzagoblin_flying.yy",},"LayerId":{"name":"03bb2624-5bcd-4092-9822-7d9ee691a6e4","path":"sprites/spr_pizzagoblin_flying/spr_pizzagoblin_flying.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_pizzagoblin_flying","path":"sprites/spr_pizzagoblin_flying/spr_pizzagoblin_flying.yy",},"resourceVersion":"1.0","name":"80e9abf4-0a19-43d6-9e5a-58ef60dfec96","tags":[],"resourceType":"GMSpriteFrame",},
+  ],
+  "sequence": {
+    "spriteId": {"name":"spr_pizzagoblin_flying","path":"sprites/spr_pizzagoblin_flying/spr_pizzagoblin_flying.yy",},
+    "timeUnits": 1,
+    "playback": 1,
+    "playbackSpeed": 1.0,
     "playbackSpeedType": 1,
-    "premultiplyAlpha": false,
-    "sepmasks": false,
-    "swatchColours": null,
-    "swfPrecision": 2.525,
-    "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
-    "type": 0,
-    "width": 100,
-    "xorig": 50,
-    "yorig": 50
+    "autoRecord": true,
+    "volume": 1.0,
+    "length": 2.0,
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
+    "tracks": [
+      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"539f7a4f-2d66-43b3-a9bb-32463c392e24","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3c722a77-2340-44ab-a8aa-b91cd377de92","path":"sprites/spr_pizzagoblin_flying/spr_pizzagoblin_flying.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"a0ac52ae-5c4e-40aa-8f8d-b42f0e8a7124","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"80e9abf4-0a19-43d6-9e5a-58ef60dfec96","path":"sprites/spr_pizzagoblin_flying/spr_pizzagoblin_flying.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+    ],
+    "visibleRange": {"x":0.0,"y":0.0,},
+    "lockOrigin": false,
+    "showBackdrop": true,
+    "showBackdropImage": false,
+    "backdropImagePath": "",
+    "backdropImageOpacity": 0.5,
+    "backdropWidth": 1920,
+    "backdropHeight": 1080,
+    "backdropXOffset": 0.0,
+    "backdropYOffset": 0.0,
+    "xorigin": 50,
+    "yorigin": 50,
+    "eventToFunction": {},
+    "eventStubScript": null,
+    "parent": {"name":"spr_pizzagoblin_flying","path":"sprites/spr_pizzagoblin_flying/spr_pizzagoblin_flying.yy",},
+    "resourceVersion": "1.3",
+    "name": "",
+    "tags": [],
+    "resourceType": "GMSequence",
+  },
+  "layers": [
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"03bb2624-5bcd-4092-9822-7d9ee691a6e4","tags":[],"resourceType":"GMImageLayer",},
+  ],
+  "parent": {
+    "name": "Sprites",
+    "path": "folders/Sprites.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "spr_pizzagoblin_flying",
+  "tags": [],
+  "resourceType": "GMSprite",
 }

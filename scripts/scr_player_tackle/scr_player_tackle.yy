@@ -1,8 +1,12 @@
 {
-    "id": "2e08219c-9f85-4b54-9656-fd12326f549c",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_player_tackle",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "player",
+    "path": "folders/Scripts/player.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_player_tackle",
+  "tags": [],
+  "resourceType": "GMScript",
 }

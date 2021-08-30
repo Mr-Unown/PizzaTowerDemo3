@@ -1,8 +1,12 @@
 {
-    "id": "aecab029-ff81-418f-b1ba-813bc5216d0e",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_player_tumble",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "player",
+    "path": "folders/Scripts/player.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_player_tumble",
+  "tags": [],
+  "resourceType": "GMScript",
 }
