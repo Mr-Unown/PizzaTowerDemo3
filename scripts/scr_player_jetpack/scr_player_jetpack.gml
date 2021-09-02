@@ -117,8 +117,8 @@ function scr_player_jetpack() {
 	    if (fightball == 0)
 	    {
 	        sprite_index = spr_hitwall
-	        scr_soundeffect(15)
-	        scr_soundeffect(16)
+	        scr_soundeffect(sfx_groundpound)
+	        scr_soundeffect(sfx_bumpwall)
 	        with (obj_camera)
 	        {
 	            shake_mag = 20
@@ -150,8 +150,8 @@ function scr_player_jetpack() {
 	        with (obj_player)
 	        {
 	            sprite_index = spr_hitwall
-	            scr_soundeffect(15)
-	            scr_soundeffect(16)
+	            scr_soundeffect(sfx_groundpound)
+	            scr_soundeffect(sfx_bumpwall)
 	            with (obj_camera)
 	            {
 	                shake_mag = 20

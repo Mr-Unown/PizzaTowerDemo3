@@ -118,8 +118,8 @@ with (other.id)
                     instance_create(x, y, obj_metaldebris)
             }
 			#endregion
-        scr_soundeffect(16)
-        scr_soundeffect(17)
+        scr_soundeffect(sfx_bumpwall)
+        scr_soundeffect(sfx_loseknight)
         image_index = 0
 		xscale = other.image_xscale
 		mach2 = 100
@@ -137,8 +137,8 @@ with (other.id)
 	{
 		repeat (4)
 			instance_create(x, y, obj_wooddebris)
-        scr_soundeffect(16)
-        scr_soundeffect(17)
+        scr_soundeffect(sfx_bumpwall)
+        scr_soundeffect(sfx_loseknight)
         image_index = 0
         xscale = other.image_xscale
 		mach2 = 100

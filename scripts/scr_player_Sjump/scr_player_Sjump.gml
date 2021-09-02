@@ -46,7 +46,7 @@ function scr_player_Sjump() {
 	                vsp = -7
 	        }
 	    }
-	    scr_soundeffect(15)
+	    scr_soundeffect(sfx_groundpound)
 	    image_index = 0
 	    state = 93
 	    machhitAnim = 0

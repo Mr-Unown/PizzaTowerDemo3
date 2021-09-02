@@ -1,2 +1,2 @@
-targetRoom = ruin_pizzamart
+targetRoom = sanctum_pizzamart
 visible = false

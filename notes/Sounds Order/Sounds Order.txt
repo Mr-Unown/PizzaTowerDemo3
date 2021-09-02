@@ -1,4 +1,3 @@
-sfx_jump
 sfx_becomeknight
 sfx_explosion
 sfx_breakblock1

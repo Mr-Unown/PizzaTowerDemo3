@@ -8,7 +8,7 @@ if (sprite_index != spr_present && collisionbuffer == 0)
             shake_mag_acc = (40 / room_speed)
         }
         global.boxhp = (global.boxhp - 1)
-        scr_soundeffect(11)
+        scr_soundeffect(sfx_killenemy)
         instance_create(x, y, obj_slapstar)
         instance_create(x, y, obj_slapstar)
         instance_create(x, y, obj_slapstar)
@@ -30,7 +30,7 @@ if (sprite_index != spr_present && collisionbuffer == 0)
             shake_mag = 20
             shake_mag_acc = (40 / room_speed)
         }
-        scr_soundeffect(11)
+        scr_soundeffect(sfx_killenemy)
         instance_create(x, y, obj_slapstar)
         instance_create(x, y, obj_slapstar)
         instance_create(x, y, obj_slapstar)

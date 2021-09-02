@@ -1,6 +1,6 @@
 if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
 {
-    scr_soundeffect(11)
+    scr_soundeffect(sfx_killenemy)
     instance_create(x, y, obj_slapstar)
     instance_create(x, y, obj_slapstar)
     instance_create(x, y, obj_slapstar)

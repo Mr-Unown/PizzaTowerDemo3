@@ -76,7 +76,7 @@ function scr_player_parry() {
 	    {
 	        if (distance_to_object(other.id) < 64)
 	        {
-	            scr_soundeffect(15)
+	            scr_soundeffect(sfx_groundpound)
 	            with (instance_create(x, y, obj_shake))
 	                sprite_index = other.sprite_index
 				scr_sleep();

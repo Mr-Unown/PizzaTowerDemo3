@@ -12,7 +12,7 @@ if (bulletbuffer == 0) && global.freezeframe = false
                 if (other.baddieID.hp > 1)
                 {
                     other.bulletbuffer = 25
-                    scr_soundeffect(16)
+                    scr_soundeffect(sfx_bumpwall)
                     if (other.baddieID.stunned < 100)
                         other.baddieID.stunned = 100
                     other.baddieID.vsp = -5

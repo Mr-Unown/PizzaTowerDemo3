@@ -1,7 +1,7 @@
 with other.id {
 	if y < other.y && sprite_index != spr_player_mach2jump && (state == 58 || state == 69 || state == 46) && sprite_index != spr_stompprep
 	{
-		scr_soundeffect(12)
+		scr_soundeffect(sfx_stompenemy)
 		image_index = 0
 		instance_create(x, (y + 50), obj_stompeffect)
 		stompAnim = 1

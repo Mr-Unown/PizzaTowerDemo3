@@ -79,7 +79,7 @@ function scr_player_knightpep() {
 	    image_index = 0
 	    freefallstart = 0
 	    momemtum = 0
-	    scr_soundeffect(15)
+	    scr_soundeffect(sfx_groundpound)
 		with instance_create(x, y, obj_landcloud)
 		{
 			playerid = other.id

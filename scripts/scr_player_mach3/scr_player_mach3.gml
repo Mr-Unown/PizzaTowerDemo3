@@ -11,7 +11,7 @@ function scr_player_mach3() {
 	    else if (character == "N")
 	    {
 	        sprite_index = spr_playerN_spin
-	        scr_soundeffect(126)
+	        scr_soundeffect(sfx_spin)
 	    }
 		else
 		{
@@ -194,13 +194,13 @@ function scr_player_mach3() {
 	if ((((!key_attack) && fightball == 0 && grounded && character != "S") || (character == "S" && (move == 0 || move != xscale) && turnbuffer >= 50 && grounded && fightball == 0))) && !place_meeting(x, y, obj_dashpad) && mach3dash = false
 	{
 	    sprite_index = spr_machslidestart
-	    scr_soundeffect(65)
+	    scr_soundeffect(sfx_break)
 	    state = 71
 	    image_index = 0
 	}
 	if (move == (-xscale) && grounded && character != "S" && fightball == 0) && !place_meeting(x, y, obj_dashpad) && mach3dash = false
 	{
-	    scr_soundeffect(62)
+	    scr_soundeffect(sfx_machslideboost)
 	    sprite_index = spr_mach3boost
 	    state = 71
 	    image_index = 0
@@ -226,8 +226,8 @@ function scr_player_mach3() {
 	    if (fightball == 0)
 	    {
 	        sprite_index = spr_hitwall
-	        scr_soundeffect(15)
-	        scr_soundeffect(16)
+	        scr_soundeffect(sfx_groundpound)
+	        scr_soundeffect(sfx_bumpwall)
 	        with (obj_camera)
 	        {
 	            shake_mag = 20
@@ -259,8 +259,8 @@ function scr_player_mach3() {
 	        with (obj_player)
 	        {
 	            sprite_index = spr_hitwall
-	            scr_soundeffect(15)
-	            scr_soundeffect(16)
+	            scr_soundeffect(sfx_groundpound)
+	            scr_soundeffect(sfx_bumpwall)
 	            with (obj_camera)
 	            {
 	                shake_mag = 20
@@ -363,8 +363,8 @@ function scr_player_mach3() {
 	{
 	    suplexmove = 1
 	    vsp = -5
-	    scr_soundeffect(126)
-	    scr_soundeffect(33)
+	    scr_soundeffect(sfx_spin)
+	    scr_soundeffect(sfx_suplexdash)
 	    sprite_index = spr_snick_jump
 	    state = 12
 	    image_index = 0

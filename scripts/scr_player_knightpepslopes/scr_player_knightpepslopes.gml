@@ -143,8 +143,8 @@ function scr_player_knightpepslopes() {
 	    }
 		hsp = 5 * -xscale
 	    vsp = -3
-	    scr_soundeffect(16)
-	    scr_soundeffect(17)
+	    scr_soundeffect(sfx_bumpwall)
+	    scr_soundeffect(sfx_loseknight)
 	    image_index = 0
 	    flash = 1
 	    state = 72

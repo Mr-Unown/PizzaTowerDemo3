@@ -6,8 +6,8 @@ function scr_player_kingknightroll() {
 	if (scr_solid((x + xscale), y) && !scr_slope_ext(x + sign(hsp),y) && (!place_meeting((x + xscale), y, obj_destructibles)))
 	{
 	    sprite_index = spr_hitwall
-	    scr_soundeffect(15)
-	    scr_soundeffect(16)
+	    scr_soundeffect(sfx_groundpound)
+	    scr_soundeffect(sfx_bumpwall)
 	    with (obj_camera)
 	    {
 	        shake_mag = 20
@@ -35,8 +35,8 @@ function scr_player_kingknightroll() {
 	if (scr_solid((x - 1), y) && xscale == -1 && (!place_meeting((x + sign(hsp)), y, obj_slope)) && (!place_meeting((x + xscale), y, obj_destructibles)))
 	{
 	    sprite_index = spr_hitwall
-	    scr_soundeffect(15)
-	    scr_soundeffect(16)
+	    scr_soundeffect(sfx_groundpound)
+	    scr_soundeffect(sfx_bumpwall)
 	    with (obj_camera)
 	    {
 	        shake_mag = 20
@@ -97,7 +97,7 @@ function scr_player_kingknightroll() {
 	    else if (character == "N")
 	    {
 	        sprite_index = spr_playerN_spin
-	        scr_soundeffect(126)
+	        scr_soundeffect(sfx_spin)
 	    }
 		else
 		{

@@ -89,8 +89,8 @@ with (other)
             else
                 hsp = 5
             vsp = -3
-            scr_soundeffect(16)
-            scr_soundeffect(17)
+            scr_soundeffect(sfx_bumpwall)
+            scr_soundeffect(sfx_loseknight)
             image_index = 0
             image_index = 0
             flash = 1
@@ -98,8 +98,8 @@ with (other)
         }
         else if (state == 15)
         {
-            scr_soundeffect(16)
-            scr_soundeffect(17)
+            scr_soundeffect(sfx_bumpwall)
+            scr_soundeffect(sfx_loseknight)
             with (instance_create(x, y, obj_boxxeddebris))
                 image_index = 0
             with (instance_create(x, y, obj_boxxeddebris))
@@ -122,8 +122,8 @@ with (other)
         }
         else if (state == 11 || state == 13 || state == 14)
         {
-            scr_soundeffect(16)
-            scr_soundeffect(17)
+            scr_soundeffect(sfx_bumpwall)
+            scr_soundeffect(sfx_loseknight)
             scr_soundeffect(sfx_enemyprojectile)
             grav = 0.5
             repeat (8)

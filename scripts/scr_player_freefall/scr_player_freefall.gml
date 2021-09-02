@@ -78,7 +78,7 @@ function scr_player_freefall() {
 	else if (grounded && (!input_buffer_jump < 8) && (!place_meeting(x, (y + 1), obj_destructibles)) /* && !key_down*/ )
 	{
 	#region Land
-	    scr_soundeffect(15)
+	    scr_soundeffect(sfx_groundpound)
 	    freefallsmash = 0
 	    if (shotgunAnim == 0)
 	        sprite_index = spr_bodyslamland

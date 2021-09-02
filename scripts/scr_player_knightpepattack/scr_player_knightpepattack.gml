@@ -84,7 +84,7 @@ function scr_player_knightpepattack() {
 	    image_index = 0
 	    freefallstart = 0
 	    momemtum = 0
-	    scr_soundeffect(15)
+	    scr_soundeffect(sfx_groundpound)
 		with instance_create(x, y, obj_landcloud)
 		{
 			playerid = other.id
@@ -115,7 +115,7 @@ function scr_player_knightpepattack() {
 	        shake_mag = 10
 	        shake_mag_acc = (30 / room_speed)
 	    }
-		scr_soundeffect(15)
+		scr_soundeffect(sfx_groundpound)
 		knightpoundbuffer = 0
 		if state != states.knightpepslopes
 		var _speed = abs((y - knightmaxy));
@@ -146,7 +146,7 @@ function scr_player_knightpepattack() {
 	        shake_mag = 10
 	        shake_mag_acc = (30 / room_speed)
 	    }
-		scr_soundeffect(15)
+		scr_soundeffect(sfx_groundpound)
 		knightpoundbuffer = 0
 		var _speed = abs((y - knightmaxy)/2);
 		knightslidespeed += _speed

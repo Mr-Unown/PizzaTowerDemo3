@@ -12,7 +12,7 @@ else
 global.combotime = 60
 global.pausecombotime = true
 obj_tv.alarm[1] = 75
-scr_soundeffect(6)
+scr_soundeffect(sfx_collectgiantpizza)
 instance_destroy()
 
 repeat 10

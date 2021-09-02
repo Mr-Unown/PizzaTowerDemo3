@@ -207,7 +207,7 @@ function scr_player_jump() {
 	        shake_mag = 10
 	        shake_mag_acc = (30 / room_speed)
 	    }
-	    scr_soundeffect(15)
+	    scr_soundeffect(sfx_groundpound)
 	    image_index = 0
 	    sprite_index = spr_freefallland
 	    state = 77
@@ -400,8 +400,8 @@ function scr_player_jump() {
 	    if (move != 0)
 	        movespeed = 10
 	    suplexmove = 1
-	    scr_soundeffect(126)
-	    scr_soundeffect(33)
+	    scr_soundeffect(sfx_spin)
+	    scr_soundeffect(sfx_suplexdash)
 	    sprite_index = spr_snick_jump
 	    state = 12
 	    image_index = 0

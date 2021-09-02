@@ -31,7 +31,7 @@ pos_x = other.x;
 					obj_player2.hallwaydirection = other.image_yscale
                 }
                 other.visited = 1
-                scr_soundeffect(52)
+                scr_soundeffect(sfx_door)
                 if (other.acttransition == 1)
                 {
                     with (instance_create(x, y, obj_fadeout))

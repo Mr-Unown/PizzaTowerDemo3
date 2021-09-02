@@ -25,7 +25,7 @@ if (vertical == 0 && newvertical == 0)
                 other.visited = 1
                 if (state == 71)
                     state = 0
-                scr_soundeffect(52)
+                scr_soundeffect(sfx_door)
                 if (other.acttransition == 1)
                 {
                     with (instance_create(x, y, obj_fadeout))
@@ -79,7 +79,7 @@ else if (vertical == 1 && newvertical == 0)
                 image_index = 0
                 if (state == 71)
                     state = 0
-                scr_soundeffect(52)
+                scr_soundeffect(sfx_door)
                 if (other.acttransition == 1)
                 {
                     with (instance_create(x, y, obj_fadeout))
@@ -138,7 +138,7 @@ else if (newvertical == 1 && vertical == 0)
                 other.visited = 1
                 if (state == 71)
                     state = 0
-                scr_soundeffect(52)
+                scr_soundeffect(sfx_door)
                 if (other.acttransition == 1)
                 {
                     with (instance_create(x, y, obj_fadeout))

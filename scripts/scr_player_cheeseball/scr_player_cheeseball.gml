@@ -3,8 +3,8 @@ function scr_player_cheeseball() {
 	hsp = (xscale * 12)
 	if ((!scr_slope()) && instance_place((x + sign(hsp)), y, obj_solid))
 	{
-	    scr_soundeffect(16)
-	    scr_soundeffect(17)
+	    scr_soundeffect(sfx_bumpwall)
+	    scr_soundeffect(sfx_loseknight)
 	    grav = 0.5
 	    repeat (8)
 	    {
@@ -27,7 +27,7 @@ function scr_player_cheeseball() {
 	}
 	if instance_place(x, y, obj_water)
 	{
-	    scr_soundeffect(17)
+	    scr_soundeffect(sfx_loseknight)
 	    grav = 0.5
 	    repeat (8)
 	    {

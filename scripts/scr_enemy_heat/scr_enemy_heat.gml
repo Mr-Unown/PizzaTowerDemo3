@@ -91,7 +91,7 @@ function scr_enemy_heat() {
 			vsp = 10
 			if grounded
 			{
-				scr_soundeffect(15);
+				scr_soundeffect(sfx_groundpound);
 				with (obj_camera)
 				{
 					shake_mag = 10

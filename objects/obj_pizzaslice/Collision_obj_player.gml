@@ -14,7 +14,7 @@ if audio_is_playing(sfx_collecttopping)
 	global.combotime = 60
 	global.pausecombotime = true
     obj_tv.alarm[1] = 75
-scr_soundeffect(5)
+scr_soundeffect(sfx_collecttopping)
 instance_destroy()
 repeat 3
 	instance_create(x + random_range(-3,3),y + random_range(-3,3), obj_collecteffect)

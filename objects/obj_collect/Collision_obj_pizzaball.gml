@@ -1,7 +1,7 @@
 if other.state = 100 {
 if audio_is_playing(sfx_collecttopping)
     audio_stop_sound(sfx_collecttopping)
-scr_soundeffect(5)
+scr_soundeffect(sfx_collecttopping)
 with other.id
 {
 	if grabbedby = 1

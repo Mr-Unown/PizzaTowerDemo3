@@ -396,7 +396,7 @@ with (obj_destroyable2_bigescape)
 			global.lapping = (global.lapping + 1)
 			if global.lapping >= 3
 				global.deathmode = true;
-            scr_soundeffect(6)
+            scr_soundeffect(sfx_collectgiantpizza)
 			with obj_timeattack
 			{
 			alarm[1] = 60
@@ -616,7 +616,7 @@ if (object_index == obj_player2)
 			global.lapping = (global.lapping + 1)
 			if global.lapping >= 3
 				global.deathmode = true;
-            scr_soundeffect(6)
+            scr_soundeffect(sfx_collectgiantpizza)
 			with obj_timeattack
 			{
 			alarm[1] = 60

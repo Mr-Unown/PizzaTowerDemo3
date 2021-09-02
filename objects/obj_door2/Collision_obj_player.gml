@@ -7,7 +7,7 @@ if (!place_meeting(x, y, obj_doorblocked))
             lastroom_x = other.x
             lastroom_y = other.y
             lastroom = room
-            scr_soundeffect(52)
+            scr_soundeffect(sfx_door)
             obj_camera.chargecamera = 0
             ds_list_add(global.saveroom, id)
             if (object_index == obj_player1)

@@ -125,7 +125,7 @@ function scr_player_handstandjump() {
 	    {
 			if character == "P" || character == "N"
 			{
-			    scr_soundeffect(16)
+			    scr_soundeffect(sfx_bumpwall)
 				grav = 0.5
 				movespeed = 0
 				state = 58
@@ -142,7 +142,7 @@ function scr_player_handstandjump() {
 			}
 			else
 			{
-				scr_soundeffect(16)
+				scr_soundeffect(sfx_bumpwall)
 				grav = 0.5
 				movespeed = 0
 				state = 72
@@ -190,7 +190,7 @@ function scr_player_handstandjump() {
 				else if (character == "N")
 				{
 					sprite_index = spr_playerN_spin
-					scr_soundeffect(126)
+					scr_soundeffect(sfx_spin)
 				}
 				else
 				{

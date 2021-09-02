@@ -1,1 +1,1 @@
-targetRoom = ruin_12
+targetRoom = sanctum_12

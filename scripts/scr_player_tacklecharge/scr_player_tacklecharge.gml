@@ -52,8 +52,8 @@ function scr_player_tacklecharge() {
 	        {
 	            with (baddiegrabbedID)
 	            {
-	                scr_soundeffect(15)
-	                scr_soundeffect(16)
+	                scr_soundeffect(sfx_groundpound)
+	                scr_soundeffect(sfx_bumpwall)
 	                other.thrown = 1
 	                instance_create(x, y, obj_slapstar)
 	                instance_create(x, y, obj_baddiegibs)
@@ -72,7 +72,7 @@ function scr_player_tacklecharge() {
 	        {
 	            with (baddiegrabbedID)
 	            {
-	                scr_soundeffect(30)
+	                scr_soundeffect(sfx_hitenemy)
 	                grabbed = 0
 	                grav = 0.5
 	                instance_create(x, y, obj_bangeffect)

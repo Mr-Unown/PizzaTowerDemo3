@@ -4,7 +4,7 @@ if (image_index == 1 && global.panic == 0 && global.snickchallenge == 0)
     {
         if (state == 61 && floor(image_index) == (image_number - 2))
         {
-            scr_soundeffect(15)
+            scr_soundeffect(sfx_groundpound)
             with (obj_player1)
             {
                 sprite_index = spr_Timesup

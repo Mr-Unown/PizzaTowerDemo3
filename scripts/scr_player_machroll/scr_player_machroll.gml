@@ -73,7 +73,7 @@ function scr_player_machroll() {
 	//Collide with Wall
 	if (scr_solid((x + xscale), y) && !scr_slope_ext(x + sign(hsp),y) && (!place_meeting((x + sign(hsp)), y, obj_destructibles)))
 	{
-	    scr_soundeffect(16)
+	    scr_soundeffect(sfx_bumpwall)
 	    hsp = 0
 	    image_speed = 0.35
 	    flash = 0
@@ -174,7 +174,7 @@ function scr_player_machroll() {
 	if (scr_solid((x + 1), y) && xscale == 1 && !scr_slope_ext(x + sign(hsp),y) && (!place_meeting((x + sign(hsp)), y, obj_destructibles)))
 	{
 		jetpacking = false
-	    scr_soundeffect(16)
+	    scr_soundeffect(sfx_bumpwall)
 	    hsp = 0
 	    image_speed = 0.35
 	    flash = 0
@@ -189,7 +189,7 @@ function scr_player_machroll() {
 	if (scr_solid((x - 1), y) && xscale == -1 && !scr_slope_ext(x + sign(hsp),y) && (!place_meeting((x + sign(hsp)), y, obj_destructibles)))
 	{
 		jetpacking = false	
-	    scr_soundeffect(16)
+	    scr_soundeffect(sfx_bumpwall)
 	    hsp = 0
 	    image_speed = 0.35
 	    flash = 0

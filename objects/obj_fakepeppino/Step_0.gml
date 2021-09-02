@@ -32,7 +32,7 @@ if (global.fakepeppino == 1)
             appeartimer--
         if (appeartimer == 0)
         {
-            scr_soundeffect(52)
+            scr_soundeffect(sfx_door)
             x = start_x
             y = start_y
             repeat (10)
@@ -59,7 +59,7 @@ if (global.fakepeppino == 1)
                 if (distance_to_object(playerid) > 2000)
                 {
                     sprite_index = spr_fakepeppino_jump
-                    scr_soundeffect(52)
+                    scr_soundeffect(sfx_door)
                     vsp = -15
                     movespeed = 8
                     state = 58
