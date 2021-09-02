@@ -97,12 +97,12 @@ function scr_player_frozen() {
 					{
 						image_index = 0
 						frozenstate = 71
-						scr_soundeffect(65)
+						scr_soundeffect(sfx_break)
 						sprite_index = spr_machslidestart
 					}
 					if (move == (-xscale) && grounded && character != "S")
 					{
-						scr_soundeffect(62)
+						scr_soundeffect(sfx_machslideboost)
 						image_index = 0
 						frozenstate = 71
 						sprite_index = spr_machslideboost
@@ -114,13 +114,13 @@ function scr_player_frozen() {
 					if ((((!key_attack) && fightball == 0 && grounded && character != "S") || (character == "S" && (move == 0 || move != xscale) && turnbuffer >= 50 && grounded && fightball == 0))) && !place_meeting(x, y, obj_dashpad) && mach3dash = false
 					{
 						sprite_index = spr_machslidestart
-						scr_soundeffect(65)
+						scr_soundeffect(sfx_break)
 						frozenstate = 71
 						image_index = 0
 					}
 					if (move == (-xscale) && grounded && character != "S" && fightball == 0) && !place_meeting(x, y, obj_dashpad) && mach3dash = false
 					{
-						scr_soundeffect(62)
+						scr_soundeffect(sfx_machslideboost)
 						sprite_index = spr_mach3boost
 						frozenstate = 71
 						image_index = 0

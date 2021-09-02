@@ -20,7 +20,7 @@ with (other)
         x = other.x
         if (state == 27)
             instance_create(x, y, obj_bombexplosion)
-        scr_soundeffect(20)
+        scr_soundeffect(sfx_superjumprelease)
         sprite_index = spr_superjump
         state = 63
         vsp = -20

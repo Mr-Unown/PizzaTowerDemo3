@@ -5,7 +5,7 @@ if (character != "V")
     {
         if (state == 24 || state == 25)
         {
-            scr_soundeffect(17)
+            scr_soundeffect(sfx_loseknight)
             with (instance_create(x, y, obj_knightdebris))
                 image_index = 0
             with (instance_create(x, y, obj_knightdebris))

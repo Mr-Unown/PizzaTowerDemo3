@@ -45,7 +45,7 @@ function scr_player_crouchslide() {
 	{
 		if !(character == "N" && pogo = true)
 		{
-	    scr_soundeffect(66)
+	    scr_soundeffect(sfx_rollgetup)
 	    machhitAnim = 1
 	    machhitAnimtimer = 500
 	    rollmove = 1

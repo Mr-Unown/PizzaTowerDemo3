@@ -73,7 +73,7 @@ function scr_player_Sjumpprep() {
 	    sprite_index = spr_superjumppreplight
 	if ((!key_up) && (character == "S" || sprite_index == spr_superjumppreplight || sprite_index == spr_superjumpleft || sprite_index == spr_superjumpright) && (!scr_solid(x, (y - 16))) && (!scr_solid(x, (y - 32))))
 	{
-	    scr_soundeffect(20)
+	    scr_soundeffect(sfx_superjumprelease)
 	    instance_create(x, y, obj_explosioneffect)
 	    sprite_index = spr_superjump
 	    state = 63

@@ -38,7 +38,7 @@ if (ds_list_find_index(global.saveroom, id) == -1)
         shake_mag = 20
         shake_mag_acc = (40 / room_speed)
     }
-    scr_soundeffect(59)
+    scr_soundeffect(sfx_breakmetal)
     ds_list_add(global.saveroom, id)
     data = tile_set_empty(data)
     data2 = tile_set_empty(data2)

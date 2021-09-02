@@ -21,7 +21,7 @@ function scr_player_Sjumpjetpackprep() {
 	{
 		if sprite_index = spr_playerN_jetpackstart
 		{
-			scr_soundeffect(20)		
+			scr_soundeffect(sfx_superjumprelease)		
 			mach2 = 100
 			machhitAnim = 0
 			state = states.jetpack
@@ -31,7 +31,7 @@ function scr_player_Sjumpjetpackprep() {
 		}
 		else if sprite_index = spr_superjumpprep
 		{
-			scr_soundeffect(20)
+			scr_soundeffect(sfx_superjumprelease)
 			instance_create(x, y, obj_explosioneffect)
 			sprite_index = spr_superjump
 			state = 63

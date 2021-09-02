@@ -190,12 +190,12 @@ function scr_player_mach2() {
 	{
 	    image_index = 0
 	    state = 71
-	    scr_soundeffect(65)
+	    scr_soundeffect(sfx_break)
 	    sprite_index = spr_machslidestart
 	}
 	if (move == (-xscale) && grounded && character != "S")
 	{
-	    scr_soundeffect(62)
+	    scr_soundeffect(sfx_machslideboost)
 	    image_index = 0
 	    state = 71
 	    sprite_index = spr_machslideboost
@@ -277,8 +277,8 @@ function scr_player_mach2() {
 	{
 	    suplexmove = 1
 	    vsp = -5
-	    scr_soundeffect(126)
-	    scr_soundeffect(33)
+	    scr_soundeffect(sfx_spin)
+	    scr_soundeffect(sfx_suplexdash)
 	    sprite_index = spr_snick_jump
 	    state = 12
 	    image_index = 0

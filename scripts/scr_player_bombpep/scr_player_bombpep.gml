@@ -54,7 +54,7 @@ function scr_player_bombpep() {
 	{
 		global.pausecombotime = true		
 		obj_tv.alarm[1] = 75		
-	    scr_soundeffect(58)
+	    scr_soundeffect(sfx_bombpep2)
 	    hurted = 1
 	    instance_create(x, y, obj_bombexplosion)
 	    sprite_index = spr_bombpepend

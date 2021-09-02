@@ -421,8 +421,8 @@ function scr_player_normal() {
 	        vsp = -5
 	    }
 	    suplexmove = 1
-	    scr_soundeffect(126)
-	    scr_soundeffect(33)
+	    scr_soundeffect(sfx_spin)
+	    scr_soundeffect(sfx_suplexdash)
 	    sprite_index = spr_playerP_shoulder
 	    state = states.kingknightroll
 	    image_index = 0
@@ -506,8 +506,8 @@ function scr_player_normal() {
 	        vsp = -5
 	    }
 	    suplexmove = 1
-	    scr_soundeffect(126)
-	    scr_soundeffect(33)
+	    scr_soundeffect(sfx_spin)
+	    scr_soundeffect(sfx_suplexdash)
 	    sprite_index = spr_snick_jump
 	    state = 12
 	    image_index = 0

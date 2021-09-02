@@ -11,8 +11,8 @@ if (bulletbuffer == 0) && global.freezeframe = false
 			baddieID.grabbedby = _grabbedby
             bulletbuffer = 25
             baddieID.hp -= 1
-            scr_soundeffect(13)
-            scr_soundeffect(30)
+            scr_soundeffect(sfx_machpunch)
+            scr_soundeffect(sfx_hitenemy)
             instance_create(baddieID.x, baddieID.y, obj_slapstar)
             baddieID.flash = 1
             global.combotime = 60

@@ -49,7 +49,7 @@ if (global.snickchallenge == 1 && global.rank == 0)
         sprite_index = spr_deathstart
         image_index = 0
         scr_soundstopall()
-        scr_soundeffect(87)
+        scr_soundeffect(mu_timesup)
         obj_player1.spotlight = 1
         player = 3
         player2 = 4
@@ -66,7 +66,7 @@ if (global.miniboss == 1)
         state = 4
         vsp = -10
         scr_soundstopall()
-        scr_soundeffect(87)
+        scr_soundeffect(mu_timesup)
 		#region Hurtplayer
         if (obj_player1.collectscore > 100)
         {

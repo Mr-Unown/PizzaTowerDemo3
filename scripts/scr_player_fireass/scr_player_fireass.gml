@@ -18,12 +18,12 @@ function scr_player_fireass() {
 	    if place_meeting(x, (y + 1), obj_haystack)
 	    {
 	        obj_player1.firebutt += 1
-	        scr_soundeffect(44)
+	        scr_soundeffect(sfx_scream5)
 	        vsp = -25
 	    }
 	    else if (grounded && vsp > 0)
 	    {
-	        scr_soundeffect(51)
+	        scr_soundeffect(sfx_fireassend)
 	        movespeed = 6
 	        sprite_index = spr_fireassground
 	        image_index = 0

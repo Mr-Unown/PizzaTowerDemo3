@@ -35,7 +35,7 @@ function scr_player_slap() {
 	        if grounded
 	        {
 	            sprite_index = spr_machslidestart
-	            scr_soundeffect(62)
+	            scr_soundeffect(sfx_machslideboost)
 	            image_index = 0
 	        }
 	        turnbuffer = 50

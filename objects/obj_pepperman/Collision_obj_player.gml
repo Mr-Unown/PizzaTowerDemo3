@@ -10,7 +10,7 @@ with (other.id)
         {
             scr_soundstopall()
             state = 4
-            scr_soundeffect(87)
+            scr_soundeffect(mu_timesup)
         }
         else if (global.coop == 1)
         {
@@ -20,7 +20,7 @@ with (other.id)
                 {
                     scr_soundstopall()
                     state = 4
-                    scr_soundeffect(87)
+                    scr_soundeffect(mu_timesup)
                 }
                 with (obj_player2)
                 {
@@ -34,7 +34,7 @@ with (other.id)
                 {
                     scr_soundstopall()
                     state = 4
-                    scr_soundeffect(87)
+                    scr_soundeffect(mu_timesup)
                 }
                 with (obj_player1)
                 {

@@ -190,7 +190,7 @@ function scr_player_grab() {
 	        sprite_index = spr_charge
 	        with (instance_create(x, y, obj_jumpdust))
 	            image_xscale = other.xscale
-	        scr_soundeffect(33)
+	        scr_soundeffect(sfx_suplexdash)
 	    }
 	    if (key_down && (!grounded))
 	    {

@@ -217,8 +217,8 @@ function scr_player_mach1() {
 	{
 	    suplexmove = 1
 	    vsp = -5
-	    scr_soundeffect(126)
-	    scr_soundeffect(33)
+	    scr_soundeffect(sfx_spin)
+	    scr_soundeffect(sfx_suplexdash)
 	    sprite_index = spr_snick_jump
 	    state = 12
 	    image_index = 0

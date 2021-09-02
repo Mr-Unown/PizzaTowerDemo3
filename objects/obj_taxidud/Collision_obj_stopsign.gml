@@ -2,7 +2,7 @@ if (playerid.visible == false)
 {
     with (obj_player1)
     {
-        scr_soundeffect(69)
+        scr_soundeffect(sfx_taxi1)
         state = 0
         cutscene = 0
     }

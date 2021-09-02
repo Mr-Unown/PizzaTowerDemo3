@@ -27,7 +27,7 @@ function scr_player_tumble() {
 	}
 	if (scr_solid((x + xscale), y) && !scr_slope_ext(x + sign(hsp),y) && (!place_meeting((x + sign(hsp)), y, obj_destructibles)))
 	{
-	    scr_soundeffect(38)
+	    scr_soundeffect(sfx_tumble4)
 	    hsp = 0
 	    movespeed = 0
 	    sprite_index = spr_tumbleend

@@ -45,7 +45,7 @@ if (room == mansion_miniboss)
 {
     with (obj_peppermandestroyable)
         instance_destroy()
-    scr_soundeffect(120)
+    scr_soundeffect(sfx_smallvictory)
     if audio_is_playing(mu_chase)
         audio_stop_sound(mu_chase)
 }
