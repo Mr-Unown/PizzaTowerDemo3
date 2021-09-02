@@ -274,7 +274,7 @@
   },
   "parent": {
     "name": "Entrance",
-    "path": "folders/Rooms/Levels/World Castle/Entrance.yy",
+    "path": "folders/Rooms/Levels/Others/World Castle/Entrance.yy",
   },
   "resourceVersion": "1.0",
   "name": "entrance_10",

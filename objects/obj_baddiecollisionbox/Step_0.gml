@@ -1,4 +1,4 @@
-var angle,xmovespeed,ymovespeed,vdirection;
+var angle,ymovespeed,vdirection;
 if (!instance_exists(baddieID))
     instance_destroy()
 if instance_exists(baddieID)

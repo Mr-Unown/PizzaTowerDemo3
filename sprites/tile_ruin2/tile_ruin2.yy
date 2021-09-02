@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"tile_ruin2","path":"sprites/tile_ruin2/tile_ruin2.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "tile_ruin2",
     "tags": [],
     "resourceType": "GMSequence",
   },

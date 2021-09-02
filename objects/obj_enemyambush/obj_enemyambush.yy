@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_desertdestroyable",
-    "path": "sprites/spr_desertdestroyable/spr_desertdestroyable.yy",
+    "name": "spr_indiancheese_spotted",
+    "path": "sprites/spr_indiancheese_spotted/spr_indiancheese_spotted.yy",
   },
   "solid": false,
   "visible": true,

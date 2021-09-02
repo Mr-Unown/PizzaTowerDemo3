@@ -143,7 +143,7 @@
   },
   "parent": {
     "name": "Dungeon",
-    "path": "folders/Rooms/Levels/World Castle/Dungeon.yy",
+    "path": "folders/Rooms/Levels/Others/World Castle/Dungeon.yy",
   },
   "resourceVersion": "1.0",
   "name": "dungeon_secret6",
