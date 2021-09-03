@@ -12,7 +12,7 @@ if (other.object_index == obj_player1)
             obj_player1.image_index = 0
             obj_player1.sprite_index = obj_player1.spr_shotgunpullout
             global.gotshotgun = 1
-            scr_soundeffect(64)
+            scr_soundeffect(sfx_shotgungot)
             instance_destroy()
         }
     }
@@ -30,7 +30,7 @@ if (other.object_index == obj_player2)
             obj_player2.image_index = 0
             obj_player2.sprite_index = obj_player2.spr_shotgunpullout
             global.gotshotgun = 1
-            scr_soundeffect(64)
+            scr_soundeffect(sfx_shotgungot)
             instance_destroy()
         }
     }
