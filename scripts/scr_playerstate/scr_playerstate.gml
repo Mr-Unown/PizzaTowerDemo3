@@ -445,11 +445,10 @@ function scr_playerstate() {
 	}
 #endregion
 	//Water
-	if place_meeting(x,y,group_cheesewater) 
+	if instance_exists(obj_water) 
 	{
-		with instance_place(x,y,group_cheesewater)
-		if other.bbox_top > bbox_top
-			other.in_water = true
+		if obj_water.bbox_top < bbox_top
+			in_water = true
 	}
 	else
 	{

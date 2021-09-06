@@ -98,7 +98,12 @@ switch(global.levelname)
 		global.prefetcharray[0] = bg_chateau1
 		global.prefetcharray[1] = spr_chateaudoor
 		global.prefetcharray[2] = bg_chateautowers
-	break;		
+	break;	
+	case "sanctum":
+		global.prefetcharray[0] = bg_sanctum
+		global.prefetcharray[1] = bg_sanctumarchitecture3
+		global.prefetcharray[2] = bg_sanctumsky
+	break;	
 	case "strongcold":
 		global.prefetcharray[0] = bg_strongcold1
 		global.prefetcharray[1] = spr_xmasdecotree

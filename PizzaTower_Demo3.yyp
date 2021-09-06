@@ -1592,6 +1592,7 @@
     {"id":{"name":"spr_snickpresentup","path":"sprites/spr_snickpresentup/spr_snickpresentup.yy",},"order":1563,},
     {"id":{"name":"spr_spaghetti","path":"sprites/spr_spaghetti/spr_spaghetti.yy",},"order":1564,},
     {"id":{"name":"spr_specialtitle","path":"sprites/spr_specialtitle/spr_specialtitle.yy",},"order":1565,},
+    {"id":{"name":"bg_sanctumsky","path":"sprites/bg_sanctumsky/bg_sanctumsky.yy",},"order":2025,},
     {"id":{"name":"spr_speedbar","path":"sprites/spr_speedbar/spr_speedbar.yy",},"order":1566,},
     {"id":{"name":"spr_speedbarmax","path":"sprites/spr_speedbarmax/spr_speedbarmax.yy",},"order":1567,},
     {"id":{"name":"spr_speedlines","path":"sprites/spr_speedlines/spr_speedlines.yy",},"order":1568,},

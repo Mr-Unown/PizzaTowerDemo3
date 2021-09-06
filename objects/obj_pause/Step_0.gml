@@ -246,6 +246,16 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
                 obj_player1.targetDoor = "A";
                 if instance_exists(obj_player2)
                     obj_player2.targetDoor = "A";
+            }		
+            else if (string_letters(roomname) == "sanctum" || string_letters(roomname) == "sanctumsecret") || room = sanctum_pizzamart || room = sanctum_treasure
+            {
+                instance_activate_all();
+				room_goto(sanctum_1);
+                script_execute(scr_playerreset);
+                pause = 0;
+                obj_player1.targetDoor = "A";
+                if instance_exists(obj_player2)
+                    obj_player2.targetDoor = "A";
             }			
             else if (string_letters(roomname) == "strongcold" || string_letters(roomname) == "strongcoldsecret") ||  room = strongcold_miniboss || room = strongcold_pizzamart || room = strongcold_treasure
             {
