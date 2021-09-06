@@ -35,11 +35,11 @@ function scr_player_newbomb() {
 	    image_speed = 0.35
 	    flash = 0
 	    state = 72
-	    hsp = -2.5 * xscale
+	    hsp = -2.5 * sign(hsp)
 	    vsp = -3
 	    mach2 = 0
 	    image_index = 0
-	    instance_create((x + 10 * xscale), (y + 10 ), obj_bumpeffect)
+	    instance_create((x + 10 * sign(hsp)), (y + 10 ), obj_bumpeffect)
 	}
 	if (scr_solid(x, (y + vsp)) && (!place_meeting(x, (y + vsp), obj_destructibles))) && !place_meeting(x, y + vsp, obj_metalblockhard) && !place_meeting(x, y + vsp, obj_metalblock) && hsp = 0
 	{
@@ -64,6 +64,7 @@ function scr_player_newbomb() {
 	            hsp = 0
 	        }
 	    }
+		scr_soundeffect(sfx_bumpwall)
 	    scr_soundeffect(sfx_groundpound)
 	    image_index = 0
 	    state = 93

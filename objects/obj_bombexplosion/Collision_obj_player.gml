@@ -12,7 +12,7 @@ with other.id
 			sprite_index = spr_hurt
 			var _direction = point_direction(other.x,other.y,x,y)
 			playerdirection = (round(_direction / 90) * 90)
-			if bombjump = true
+			if other.bombjump = true
 				playerdirection = 90
 			movespeed = 14;
 			state = states.newbomb			

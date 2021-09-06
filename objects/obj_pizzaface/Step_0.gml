@@ -1,6 +1,4 @@
-var playerid = obj_player1
-if (global.coop = true)
-    playerid = instance_nearest(x,y,obj_player)
+var playerid = (global.coop = false ? obj_player1 : instance_nearest(x,y,obj_player));
 
 if relax = false && global.freezeframe = false && room != rank_room && !instance_exists(obj_safespace) && !instance_exists(obj_treasureshadow)
 {

@@ -30,7 +30,7 @@ if y > (room_height * 1.3)
 //Stuck
 if scr_solid(x,y) && !place_meeting(x,y,obj_metalblockescape) && !place_meeting(x,y,obj_destructibles) 
 {
-	var player = instance_nearest(x,y,obj_player)
+	var player = (global.coop = false ? obj_player1 : instance_nearest(x,y,obj_player));
 	maxspeed += 0.1
     x = median((x - maxspeed), player.x, (x + maxspeed))
     y = median((y - maxspeed), player.y, (y + maxspeed))
