@@ -16,9 +16,13 @@ with other.id
 				sprite_index = spr_bombpepintro
 				instance_destroy(other.id)
 			}
-			if (hurted == 0 && other.grounded == 0)
+			//Bomb Jump
+			if (state == states.freefall && other.grounded == true)
 			{
-				instance_create(x, y, obj_bombexplosion)
+				with instance_create(x, y, obj_bombexplosion)
+				{
+					bombjump = true;
+				}
 				instance_destroy(other.id)
 			}
 		}

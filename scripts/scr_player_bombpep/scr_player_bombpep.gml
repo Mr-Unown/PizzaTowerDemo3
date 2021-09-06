@@ -1,6 +1,7 @@
 function scr_player_bombpep() {
 	alarm[8] = 60
-	alarm[7] = 120
+	alarm[5] = 2
+	alarm[7] = 60
 	hurted = 1
 	if key_jump
 	    input_buffer_jump = 0
@@ -13,7 +14,6 @@ function scr_player_bombpep() {
 	    jumpstop = 0
 	mach2 = 0
 	landAnim = 0
-	alarm[5] = 2
 	if (sprite_index == spr_bombpepintro && floor(image_index) == (image_number - 1)) {
 		obj_tv.alarm[1] = 75
 	    sprite_index = spr_bombpeprun
@@ -50,7 +50,7 @@ function scr_player_bombpep() {
 			image_index = 0
 		}
 	}
-	if (bombpeptimer == 0 && sprite_index == spr_bombpeprunabouttoexplode)
+	if (bombpeptimer <= 0 && sprite_index == spr_bombpeprunabouttoexplode)
 	{
 		global.pausecombotime = true		
 		obj_tv.alarm[1] = 75		

@@ -2368,6 +2368,7 @@
     {"id":{"name":"sfx_pizzacoin","path":"sounds/sfx_pizzacoin/sfx_pizzacoin.yy",},"order":56,},
     {"id":{"name":"sfx_bombpep1","path":"sounds/sfx_bombpep1/sfx_bombpep1.yy",},"order":57,},
     {"id":{"name":"sfx_bombpep2","path":"sounds/sfx_bombpep2/sfx_bombpep2.yy",},"order":58,},
+    {"id":{"name":"spr_explosionmask","path":"sprites/spr_explosionmask/spr_explosionmask.yy",},"order":2024,},
     {"id":{"name":"sfx_breakmetal","path":"sounds/sfx_breakmetal/sfx_breakmetal.yy",},"order":59,},
     {"id":{"name":"sfx_taunt","path":"sounds/sfx_taunt/sfx_taunt.yy",},"order":60,},
     {"id":{"name":"sfx_box","path":"sounds/sfx_box/sfx_box.yy",},"order":61,},

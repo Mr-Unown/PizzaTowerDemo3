@@ -5,7 +5,10 @@
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_explosionmask",
+    "path": "sprites/spr_explosionmask/spr_explosionmask.yy",
+  },
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,

@@ -1,12 +1,16 @@
 #region New Bomb
 function scr_player_newbomb() {
+	alarm[5] = 2
+	alarm[7] = 60
+	hurted = 1
 	sprite_index = spr_hurt;
 	image_speed = 0.4;
-	movespeed = clamp(movespeed + 0.25,0,15);
+	movespeed += 0.1
+	movespeed = clamp(movespeed,14,24);
 	hsp = lengthdir_x(movespeed,playerdirection);
 	vsp = lengthdir_y(movespeed,playerdirection);
 	//Hitwall
-	if (scr_solid((x + sign(hsp)), y) && !(scr_slope() && !scr_solid(x + sign(hsp),y - 2)) && (!place_meeting((x + sign(hsp)), y, obj_metalblock)) && (!place_meeting((x + sign(hsp)), y, obj_destructibles))) && (playerdirection = 0 || playerdirection = 180) 
+	if (scr_solid((x + sign(hsp)), y) && !(scr_slope() && !scr_solid(x + sign(hsp),y - 2)) && (!place_meeting((x + sign(hsp)), y, obj_metalblock)) && (!place_meeting((x + sign(hsp)), y, obj_destructibles))) && (vsp = 0) 
 	{
 		sprite_index = spr_hitwall
 		scr_soundeffect(sfx_groundpound)
@@ -37,7 +41,7 @@ function scr_player_newbomb() {
 	    image_index = 0
 	    instance_create((x + 10 * xscale), (y + 10 ), obj_bumpeffect)
 	}
-	else if (scr_solid(x, (y + vsp)) && (!place_meeting(x, (y + vsp), obj_destructibles))) && !place_meeting(x, y + vsp, obj_metalblock)
+	if (scr_solid(x, (y + vsp)) && (!place_meeting(x, (y + vsp), obj_destructibles))) && !place_meeting(x, y + vsp, obj_metalblockhard) && !place_meeting(x, y + vsp, obj_metalblock) && hsp = 0
 	{
 	    a = 0
 	    if (sprite_index == spr_player_supersidejump)
