@@ -16,6 +16,27 @@ function scr_collide_destructibles() {
 	                machpunchAnim = 1
 	        }
 	    }
+		if state == states.newbomb
+		{
+	        if place_meeting((x + hsp), y + (vsp), obj_destructibles)
+	        {
+	            with (instance_place((x + hsp), y + (vsp), obj_destructibles))
+	            {
+					initialhsp = other.hsp
+					initialvsp = other.vsp
+	                instance_destroy()
+				}
+	        }
+	        if place_meeting((x + sign(hsp)), y + sign((vsp)), obj_destructibles)
+	        {
+	            with (instance_place((x + sign(hsp)), y + sign((vsp)), obj_destructibles))
+	            {
+					initialhsp = other.hsp
+					initialvsp = other.vsp
+	                instance_destroy()
+				}
+	        }			
+		}		
 		if state == states.pogo && movespeed > 6
 		{
 	        if place_meeting((x + hsp), y + (vsp), obj_destructibles)
@@ -335,6 +356,27 @@ function scr_collide_destructibles() {
 	                machpunchAnim = 1
 	        }
 	    }
+		if state == states.newbomb
+		{
+	        if place_meeting((x + hsp), y + (vsp), obj_destructibles)
+	        {
+	            with (instance_place((x + hsp), y + (vsp), obj_destructibles))
+	            {
+					initialhsp = other.hsp
+					initialvsp = other.vsp
+	                instance_destroy()
+				}
+	        }
+	        if place_meeting((x + sign(hsp)), y + sign((vsp)), obj_destructibles)
+	        {
+	            with (instance_place((x + sign(hsp)), y + sign((vsp)), obj_destructibles))
+	            {
+					initialhsp = other.hsp
+					initialvsp = other.vsp
+	                instance_destroy()
+				}
+	        }			
+		}			
 		if state == states.pogo && movespeed > 7
 		{
 	        if place_meeting((x + hsp), y, obj_destructibles)

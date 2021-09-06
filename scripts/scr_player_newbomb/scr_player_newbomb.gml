@@ -10,7 +10,7 @@ function scr_player_newbomb() {
 	hsp = lengthdir_x(movespeed,playerdirection);
 	vsp = lengthdir_y(movespeed,playerdirection);
 	//Hitwall
-	if (scr_solid((x + sign(hsp)), y) && !(scr_slope() && !scr_solid(x + sign(hsp),y - 2)) && (!place_meeting((x + sign(hsp)), y, obj_metalblock)) && (!place_meeting((x + sign(hsp)), y, obj_destructibles))) && (vsp = 0) 
+	if (scr_solid((x + sign(hsp)), y) && !(scr_slope() && !scr_solid(x + sign(hsp),y - 2)) && (!place_meeting((x + sign(hsp)), y, obj_metalblock) && !place_meeting((x + sign(hsp)), y, obj_metalblockhard)) && (!place_meeting((x + sign(hsp)), y, obj_destructibles))) && (vsp = 0) 
 	{
 		sprite_index = spr_hitwall
 		scr_soundeffect(sfx_groundpound)
