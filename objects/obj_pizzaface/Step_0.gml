@@ -14,7 +14,7 @@ if relax = false && global.freezeframe = false && room != rank_room && !instance
 		/*
         
         {
-            scr_soundeffect(15)
+            scr_soundeffect(sfx_groundpound)
             scr_hurtplayer(playerid)
             with (instance_create(x, y, obj_shake))
                 sprite_index = other.sprite_index
@@ -103,7 +103,7 @@ if relax = false && global.freezeframe = false && room != rank_room && !instance
 					
 					
 					#endregion				
-				scr_soundeffect(15)
+				scr_soundeffect(sfx_groundpound)
 
 				with (instance_create(x, y, obj_shake))
 					sprite_index = other.sprite_index

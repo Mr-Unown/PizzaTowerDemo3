@@ -1,4 +1,4 @@
-var angle,xmovespeed,ymovespeed,vdirection;
+var angle,ymovespeed,vdirection;
 if (!instance_exists(baddieID))
     instance_destroy()
 if instance_exists(baddieID)
@@ -64,7 +64,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
 					sprite_index = spr_bigpoofclouds
 					image_angle = choose(0,90,180,270)
 				}				
-                if ((!grounded) && state != 74 && key_jump2) 
+                if ((!grounded) && state != 74 && state != states.newbomb && key_jump2) 
                 {
                     if (state == 70 || (state == 91 && fightball == 0))
                     {
@@ -231,7 +231,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
 			}
             if (instance_exists(other.baddieID) && instakillmove = 0 && other.baddieID.state != "punch" && other.baddieID.dying = false && y < other.baddieID.y && attacking == 0 && sprite_index != spr_player_mach2jump && (state == 58 || state == 69 || state == 46) && vsp > 0 && other.baddieID.vsp >= 0 && sprite_index != spr_stompprep)
             {
-                scr_soundeffect(12)
+                scr_soundeffect(sfx_stompenemy)
                 if (x != other.baddieID.x)
                     other.baddieID.image_xscale = (-sign((other.baddieID.x - x)))
                 image_index = 0
@@ -266,7 +266,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                     if (state != 73 && state != 12) && other.baddieID.stuntouch <= 0
                     {
 						other.baddieID.stuntouch = 50
-                        scr_soundeffect(16)
+                        scr_soundeffect(sfx_bumpwall)
                         if (state != 27 && state != 69 && state != 68 && state != 111)
                             movespeed = 0
                         if (other.baddieID.object_index == obj_pizzaball)
@@ -285,7 +285,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
 			/*
             if (instance_exists(other.baddieID) && (state == 43 || state == 74))
             {
-                scr_soundeffect(30)
+                scr_soundeffect(sfx_hitenemy)
                 global.combotime = 60
 				global.pausecombotime = true
 				obj_tv.alarm[1] = 75				
@@ -402,7 +402,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player2) && obj_player2
 					image_angle = choose(0,90,180,270)
 				}
 								
-                if ((!grounded) && state != 74 && key_jump2)
+                if ((!grounded) && state != 74 && state != states.newbomb && key_jump2)
                 {
                     if (state == 70 || (state == 91 && fightball == 0))
                     {
@@ -570,7 +570,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player2) && obj_player2
 			}
             if (instance_exists(other.baddieID) && instakillmove = 0 && other.baddieID.state != "punch" && other.baddieID.dying = false && y < other.baddieID.y && attacking == 0 && sprite_index != spr_player_mach2jump && (state == 58 || state == 69 || state == 46) && vsp > 0 && other.baddieID.vsp >= 0 && sprite_index != spr_stompprep)
             {
-                scr_soundeffect(12)
+                scr_soundeffect(sfx_stompenemy)
                 if (x != other.baddieID.x)
                     other.baddieID.image_xscale = (-sign((other.baddieID.x - x)))
                 image_index = 0
@@ -605,7 +605,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player2) && obj_player2
                     if (state != 73 && state != 12) && other.baddieID.stuntouch <= 0
                     {
 						other.baddieID.stuntouch = 50
-                        scr_soundeffect(16)
+                        scr_soundeffect(sfx_bumpwall)
                         if (state != 27 && state != 69 && state != 68 && state != 111)
                             movespeed = 0
                         if (other.baddieID.object_index == obj_pizzaball)
@@ -624,7 +624,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player2) && obj_player2
 			/*
             if (instance_exists(other.baddieID) && (state == 43 || state == 74))
             {
-                scr_soundeffect(30)
+                scr_soundeffect(sfx_hitenemy)
                 global.combotime = 60
 				global.pausecombotime = true
 				obj_tv.alarm[1] = 75				

@@ -1,8 +1,12 @@
 {
-    "id": "50daae4c-1aa0-49a1-891e-babbb6c4677c",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_player_parry",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "player",
+    "path": "folders/Scripts/player.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_player_parry",
+  "tags": [],
+  "resourceType": "GMScript",
 }

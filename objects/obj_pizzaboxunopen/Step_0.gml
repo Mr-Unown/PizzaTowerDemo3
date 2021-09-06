@@ -164,7 +164,7 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
 		state = 51
 		sprite_index = spr_bossintro
 		image_index = 0
-		scr_soundeffect(44)
+		scr_soundeffect(sfx_scream5)
 		}			
     }	
     sprite_index = spr_pizzaboxopen

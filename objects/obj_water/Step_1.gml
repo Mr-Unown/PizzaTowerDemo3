@@ -20,8 +20,8 @@ if y != targety
 {
 	if _speed = undefined
 	{
-		vsp = 4 * sign(y - targety);
-		_speed = 4;
+		vsp = 8 * sign(y - targety);
+		_speed = 8;
 	}
 	y = approach(y,targety,_speed)
 	

@@ -341,6 +341,7 @@ else if global.newhud = true && oldcharacter == player.character && (sprite_inde
 		switch(_state)
 		{
 			case states.bombpep:
+			case states.newbomb:
 			newtvsprite = spr_tv_bombpep;
 			break;			
 			case states.fireass:
@@ -380,6 +381,7 @@ else if global.newhud = true && oldcharacter == player.character && (sprite_inde
 		switch(_state)
 		{
 			case states.bombpep:
+			case states.newbomb:
 			newtvsprite = spr_tv_bombpepN;
 			break;			
 			case states.fireass:

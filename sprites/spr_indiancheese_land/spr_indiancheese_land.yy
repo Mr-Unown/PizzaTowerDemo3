@@ -1,180 +1,98 @@
 {
-    "id": "1b2dffb5-d111-4ba4-b9bc-b3d25416c877",
-    "modelName": "GMSprite",
-    "mvc": "1.12",
-    "name": "spr_indiancheese_land",
-    "For3D": false,
-    "HTile": false,
-    "VTile": false,
-    "bbox_bottom": 95,
-    "bbox_left": 4,
-    "bbox_right": 99,
-    "bbox_top": 25,
-    "bboxmode": 0,
-    "colkind": 0,
-    "coltolerance": 0,
-    "edgeFiltering": false,
-    "frames": [
-        {
-            "id": "82908dac-6972-480d-b0fd-50d6e1d24d4c",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "1b2dffb5-d111-4ba4-b9bc-b3d25416c877",
-            "compositeImage": {
-                "id": "39c93ced-3552-4829-93fd-6e830054985f",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "82908dac-6972-480d-b0fd-50d6e1d24d4c",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "188d9998-57e6-485c-a961-9203132f51d7",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "82908dac-6972-480d-b0fd-50d6e1d24d4c",
-                    "LayerId": "035b299b-b237-4d42-8302-e19751dff407"
-                }
-            ]
-        },
-        {
-            "id": "067ee24c-ce7b-4bad-b05d-de4b11c585df",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "1b2dffb5-d111-4ba4-b9bc-b3d25416c877",
-            "compositeImage": {
-                "id": "4474c81d-0460-442f-b030-4af6cf7f6bab",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "067ee24c-ce7b-4bad-b05d-de4b11c585df",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "1032a6a6-097c-43f7-a434-95898376d452",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "067ee24c-ce7b-4bad-b05d-de4b11c585df",
-                    "LayerId": "035b299b-b237-4d42-8302-e19751dff407"
-                }
-            ]
-        },
-        {
-            "id": "8dfd4852-6183-472b-8485-022e524ac55a",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "1b2dffb5-d111-4ba4-b9bc-b3d25416c877",
-            "compositeImage": {
-                "id": "d7dd04f5-a4c0-4ad3-8b92-f58662346cb3",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "8dfd4852-6183-472b-8485-022e524ac55a",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "47110b11-c4fd-4f1b-933c-3c97de014450",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "8dfd4852-6183-472b-8485-022e524ac55a",
-                    "LayerId": "035b299b-b237-4d42-8302-e19751dff407"
-                }
-            ]
-        },
-        {
-            "id": "983bf011-de8f-40fd-9cac-ebd3dcabfcdb",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "1b2dffb5-d111-4ba4-b9bc-b3d25416c877",
-            "compositeImage": {
-                "id": "76c3d25f-be8d-49dc-883e-fa801d5f8606",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "983bf011-de8f-40fd-9cac-ebd3dcabfcdb",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "23ea7105-543c-4e53-ae32-0c580f7d73b3",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "983bf011-de8f-40fd-9cac-ebd3dcabfcdb",
-                    "LayerId": "035b299b-b237-4d42-8302-e19751dff407"
-                }
-            ]
-        },
-        {
-            "id": "c4da3d97-5af9-4c36-bf89-a36fdd503881",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "1b2dffb5-d111-4ba4-b9bc-b3d25416c877",
-            "compositeImage": {
-                "id": "bf8eafd9-decf-46d2-9efb-7d9ceff6ae1a",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "c4da3d97-5af9-4c36-bf89-a36fdd503881",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "2ddea390-158e-433c-b236-c3b83421e150",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "c4da3d97-5af9-4c36-bf89-a36fdd503881",
-                    "LayerId": "035b299b-b237-4d42-8302-e19751dff407"
-                }
-            ]
-        },
-        {
-            "id": "c3c3157a-8bca-42d8-84e7-f39f956bb3f0",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "1b2dffb5-d111-4ba4-b9bc-b3d25416c877",
-            "compositeImage": {
-                "id": "9b6adc1d-7032-4076-b2ab-a36699b52cec",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "c3c3157a-8bca-42d8-84e7-f39f956bb3f0",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "88f9c664-9b8b-462a-b585-7de2df0ce31a",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "c3c3157a-8bca-42d8-84e7-f39f956bb3f0",
-                    "LayerId": "035b299b-b237-4d42-8302-e19751dff407"
-                }
-            ]
-        }
-    ],
-    "gridX": 0,
-    "gridY": 0,
-    "height": 100,
-    "layers": [
-        {
-            "id": "035b299b-b237-4d42-8302-e19751dff407",
-            "modelName": "GMImageLayer",
-            "mvc": "1.0",
-            "SpriteId": "1b2dffb5-d111-4ba4-b9bc-b3d25416c877",
-            "blendMode": 0,
-            "isLocked": false,
-            "name": "default",
-            "opacity": 100,
-            "visible": true
-        }
-    ],
-    "origin": 0,
-    "originLocked": false,
-    "playbackSpeed": 1,
+  "bboxMode": 0,
+  "collisionKind": 0,
+  "type": 0,
+  "origin": 9,
+  "preMultiplyAlpha": false,
+  "edgeFiltering": false,
+  "collisionTolerance": 0,
+  "swfPrecision": 2.525,
+  "bbox_left": 4,
+  "bbox_right": 99,
+  "bbox_top": 25,
+  "bbox_bottom": 95,
+  "HTile": false,
+  "VTile": false,
+  "For3D": false,
+  "width": 100,
+  "height": 100,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
+  "swatchColours": null,
+  "gridX": 0,
+  "gridY": 0,
+  "frames": [
+    {"compositeImage":{"FrameId":{"name":"82908dac-6972-480d-b0fd-50d6e1d24d4c","path":"sprites/spr_indiancheese_land/spr_indiancheese_land.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"82908dac-6972-480d-b0fd-50d6e1d24d4c","path":"sprites/spr_indiancheese_land/spr_indiancheese_land.yy",},"LayerId":{"name":"035b299b-b237-4d42-8302-e19751dff407","path":"sprites/spr_indiancheese_land/spr_indiancheese_land.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_indiancheese_land","path":"sprites/spr_indiancheese_land/spr_indiancheese_land.yy",},"resourceVersion":"1.0","name":"82908dac-6972-480d-b0fd-50d6e1d24d4c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"067ee24c-ce7b-4bad-b05d-de4b11c585df","path":"sprites/spr_indiancheese_land/spr_indiancheese_land.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"067ee24c-ce7b-4bad-b05d-de4b11c585df","path":"sprites/spr_indiancheese_land/spr_indiancheese_land.yy",},"LayerId":{"name":"035b299b-b237-4d42-8302-e19751dff407","path":"sprites/spr_indiancheese_land/spr_indiancheese_land.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_indiancheese_land","path":"sprites/spr_indiancheese_land/spr_indiancheese_land.yy",},"resourceVersion":"1.0","name":"067ee24c-ce7b-4bad-b05d-de4b11c585df","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"8dfd4852-6183-472b-8485-022e524ac55a","path":"sprites/spr_indiancheese_land/spr_indiancheese_land.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"8dfd4852-6183-472b-8485-022e524ac55a","path":"sprites/spr_indiancheese_land/spr_indiancheese_land.yy",},"LayerId":{"name":"035b299b-b237-4d42-8302-e19751dff407","path":"sprites/spr_indiancheese_land/spr_indiancheese_land.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_indiancheese_land","path":"sprites/spr_indiancheese_land/spr_indiancheese_land.yy",},"resourceVersion":"1.0","name":"8dfd4852-6183-472b-8485-022e524ac55a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"983bf011-de8f-40fd-9cac-ebd3dcabfcdb","path":"sprites/spr_indiancheese_land/spr_indiancheese_land.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"983bf011-de8f-40fd-9cac-ebd3dcabfcdb","path":"sprites/spr_indiancheese_land/spr_indiancheese_land.yy",},"LayerId":{"name":"035b299b-b237-4d42-8302-e19751dff407","path":"sprites/spr_indiancheese_land/spr_indiancheese_land.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_indiancheese_land","path":"sprites/spr_indiancheese_land/spr_indiancheese_land.yy",},"resourceVersion":"1.0","name":"983bf011-de8f-40fd-9cac-ebd3dcabfcdb","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"c4da3d97-5af9-4c36-bf89-a36fdd503881","path":"sprites/spr_indiancheese_land/spr_indiancheese_land.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"c4da3d97-5af9-4c36-bf89-a36fdd503881","path":"sprites/spr_indiancheese_land/spr_indiancheese_land.yy",},"LayerId":{"name":"035b299b-b237-4d42-8302-e19751dff407","path":"sprites/spr_indiancheese_land/spr_indiancheese_land.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_indiancheese_land","path":"sprites/spr_indiancheese_land/spr_indiancheese_land.yy",},"resourceVersion":"1.0","name":"c4da3d97-5af9-4c36-bf89-a36fdd503881","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"c3c3157a-8bca-42d8-84e7-f39f956bb3f0","path":"sprites/spr_indiancheese_land/spr_indiancheese_land.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"c3c3157a-8bca-42d8-84e7-f39f956bb3f0","path":"sprites/spr_indiancheese_land/spr_indiancheese_land.yy",},"LayerId":{"name":"035b299b-b237-4d42-8302-e19751dff407","path":"sprites/spr_indiancheese_land/spr_indiancheese_land.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_indiancheese_land","path":"sprites/spr_indiancheese_land/spr_indiancheese_land.yy",},"resourceVersion":"1.0","name":"c3c3157a-8bca-42d8-84e7-f39f956bb3f0","tags":[],"resourceType":"GMSpriteFrame",},
+  ],
+  "sequence": {
+    "spriteId": {"name":"spr_indiancheese_land","path":"sprites/spr_indiancheese_land/spr_indiancheese_land.yy",},
+    "timeUnits": 1,
+    "playback": 1,
+    "playbackSpeed": 1.0,
     "playbackSpeedType": 1,
-    "premultiplyAlpha": false,
-    "sepmasks": false,
-    "swatchColours": null,
-    "swfPrecision": 2.525,
-    "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
-    "type": 0,
-    "width": 100,
-    "xorig": 40,
-    "yorig": 50
+    "autoRecord": true,
+    "volume": 1.0,
+    "length": 6.0,
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
+    "tracks": [
+      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"04b1c5a3-cb61-4040-a24b-1fd2841bfc9f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"82908dac-6972-480d-b0fd-50d6e1d24d4c","path":"sprites/spr_indiancheese_land/spr_indiancheese_land.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"cfe3d081-70df-48ce-b7f7-d02b5d6541a3","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"067ee24c-ce7b-4bad-b05d-de4b11c585df","path":"sprites/spr_indiancheese_land/spr_indiancheese_land.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5c0c1456-54ef-4eb0-8b6b-e1e84d922e65","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8dfd4852-6183-472b-8485-022e524ac55a","path":"sprites/spr_indiancheese_land/spr_indiancheese_land.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"1204836b-a3be-4863-a516-be9b91947205","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"983bf011-de8f-40fd-9cac-ebd3dcabfcdb","path":"sprites/spr_indiancheese_land/spr_indiancheese_land.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"8c86ebe5-a890-466d-abcd-dbf6dbcca648","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c4da3d97-5af9-4c36-bf89-a36fdd503881","path":"sprites/spr_indiancheese_land/spr_indiancheese_land.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"bfbbb78c-928e-4020-93b2-9d6c9e0088de","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c3c3157a-8bca-42d8-84e7-f39f956bb3f0","path":"sprites/spr_indiancheese_land/spr_indiancheese_land.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+    ],
+    "visibleRange": {"x":0.0,"y":0.0,},
+    "lockOrigin": false,
+    "showBackdrop": true,
+    "showBackdropImage": false,
+    "backdropImagePath": "",
+    "backdropImageOpacity": 0.5,
+    "backdropWidth": 1920,
+    "backdropHeight": 1080,
+    "backdropXOffset": 0.0,
+    "backdropYOffset": 0.0,
+    "xorigin": 40,
+    "yorigin": 50,
+    "eventToFunction": {},
+    "eventStubScript": null,
+    "parent": {"name":"spr_indiancheese_land","path":"sprites/spr_indiancheese_land/spr_indiancheese_land.yy",},
+    "resourceVersion": "1.3",
+    "name": "",
+    "tags": [],
+    "resourceType": "GMSequence",
+  },
+  "layers": [
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"035b299b-b237-4d42-8302-e19751dff407","tags":[],"resourceType":"GMImageLayer",},
+  ],
+  "parent": {
+    "name": "Sprites",
+    "path": "folders/Sprites.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "spr_indiancheese_land",
+  "tags": [],
+  "resourceType": "GMSprite",
 }

@@ -40,7 +40,7 @@ if (ds_list_find_index(global.saveroom, id) == -1 && global.snickchallenge == 0)
 		hsp = irandom_range(8, 15) * sign(other.initialhsp)	
 		vsp = other.initialvsp
 	}
-    scr_soundeffect(11);
+    scr_soundeffect(sfx_killenemy);
     instance_create(x, y, obj_itspizzatime);
 
     global.panic = 1

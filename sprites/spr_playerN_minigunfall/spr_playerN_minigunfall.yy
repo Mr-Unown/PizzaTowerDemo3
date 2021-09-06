@@ -1,114 +1,86 @@
 {
-    "id": "83bb79e1-bf18-4a30-a973-b45f7482084f",
-    "modelName": "GMSprite",
-    "mvc": "1.12",
-    "name": "spr_playerN_minigunfall",
-    "For3D": false,
-    "HTile": false,
-    "VTile": false,
-    "bbox_bottom": 88,
-    "bbox_left": 97,
-    "bbox_right": 196,
-    "bbox_top": 7,
-    "bboxmode": 0,
-    "colkind": 0,
-    "coltolerance": 0,
-    "edgeFiltering": false,
-    "frames": [
-        {
-            "id": "318d0990-9f44-4eaa-a571-043f1c7243fc",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "83bb79e1-bf18-4a30-a973-b45f7482084f",
-            "compositeImage": {
-                "id": "4293b079-c51d-4953-b78e-12ca9ac09a60",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "318d0990-9f44-4eaa-a571-043f1c7243fc",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "e381904e-8962-422f-92b6-3e287fc4cfd3",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "318d0990-9f44-4eaa-a571-043f1c7243fc",
-                    "LayerId": "34801976-c114-420c-bdfc-7874c5c4961b"
-                }
-            ]
-        },
-        {
-            "id": "ff4006a8-5fcb-4219-af05-dd2e75a10aae",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "83bb79e1-bf18-4a30-a973-b45f7482084f",
-            "compositeImage": {
-                "id": "1958c6fc-bd46-4a5e-a4f6-ff2401c8abca",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "ff4006a8-5fcb-4219-af05-dd2e75a10aae",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "8a3be6cd-1829-4352-8549-f093fc9c43a2",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "ff4006a8-5fcb-4219-af05-dd2e75a10aae",
-                    "LayerId": "34801976-c114-420c-bdfc-7874c5c4961b"
-                }
-            ]
-        },
-        {
-            "id": "0b9d6b14-4d7f-4024-b99f-f74f3cd4c0ae",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "83bb79e1-bf18-4a30-a973-b45f7482084f",
-            "compositeImage": {
-                "id": "239f10a7-9be6-4d5c-b99c-692a0d669b88",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "0b9d6b14-4d7f-4024-b99f-f74f3cd4c0ae",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "7475421e-be52-4840-8e1a-908799cb0949",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "0b9d6b14-4d7f-4024-b99f-f74f3cd4c0ae",
-                    "LayerId": "34801976-c114-420c-bdfc-7874c5c4961b"
-                }
-            ]
-        }
-    ],
-    "gridX": 0,
-    "gridY": 0,
-    "height": 100,
-    "layers": [
-        {
-            "id": "34801976-c114-420c-bdfc-7874c5c4961b",
-            "modelName": "GMImageLayer",
-            "mvc": "1.0",
-            "SpriteId": "83bb79e1-bf18-4a30-a973-b45f7482084f",
-            "blendMode": 0,
-            "isLocked": false,
-            "name": "default",
-            "opacity": 100,
-            "visible": true
-        }
-    ],
-    "origin": 0,
-    "originLocked": false,
-    "playbackSpeed": 1,
+  "bboxMode": 0,
+  "collisionKind": 0,
+  "type": 0,
+  "origin": 4,
+  "preMultiplyAlpha": false,
+  "edgeFiltering": false,
+  "collisionTolerance": 0,
+  "swfPrecision": 2.525,
+  "bbox_left": 97,
+  "bbox_right": 196,
+  "bbox_top": 7,
+  "bbox_bottom": 88,
+  "HTile": false,
+  "VTile": false,
+  "For3D": false,
+  "width": 300,
+  "height": 100,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
+  "swatchColours": null,
+  "gridX": 0,
+  "gridY": 0,
+  "frames": [
+    {"compositeImage":{"FrameId":{"name":"318d0990-9f44-4eaa-a571-043f1c7243fc","path":"sprites/spr_playerN_minigunfall/spr_playerN_minigunfall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"318d0990-9f44-4eaa-a571-043f1c7243fc","path":"sprites/spr_playerN_minigunfall/spr_playerN_minigunfall.yy",},"LayerId":{"name":"34801976-c114-420c-bdfc-7874c5c4961b","path":"sprites/spr_playerN_minigunfall/spr_playerN_minigunfall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_playerN_minigunfall","path":"sprites/spr_playerN_minigunfall/spr_playerN_minigunfall.yy",},"resourceVersion":"1.0","name":"318d0990-9f44-4eaa-a571-043f1c7243fc","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"ff4006a8-5fcb-4219-af05-dd2e75a10aae","path":"sprites/spr_playerN_minigunfall/spr_playerN_minigunfall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"ff4006a8-5fcb-4219-af05-dd2e75a10aae","path":"sprites/spr_playerN_minigunfall/spr_playerN_minigunfall.yy",},"LayerId":{"name":"34801976-c114-420c-bdfc-7874c5c4961b","path":"sprites/spr_playerN_minigunfall/spr_playerN_minigunfall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_playerN_minigunfall","path":"sprites/spr_playerN_minigunfall/spr_playerN_minigunfall.yy",},"resourceVersion":"1.0","name":"ff4006a8-5fcb-4219-af05-dd2e75a10aae","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"0b9d6b14-4d7f-4024-b99f-f74f3cd4c0ae","path":"sprites/spr_playerN_minigunfall/spr_playerN_minigunfall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"0b9d6b14-4d7f-4024-b99f-f74f3cd4c0ae","path":"sprites/spr_playerN_minigunfall/spr_playerN_minigunfall.yy",},"LayerId":{"name":"34801976-c114-420c-bdfc-7874c5c4961b","path":"sprites/spr_playerN_minigunfall/spr_playerN_minigunfall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_playerN_minigunfall","path":"sprites/spr_playerN_minigunfall/spr_playerN_minigunfall.yy",},"resourceVersion":"1.0","name":"0b9d6b14-4d7f-4024-b99f-f74f3cd4c0ae","tags":[],"resourceType":"GMSpriteFrame",},
+  ],
+  "sequence": {
+    "spriteId": {"name":"spr_playerN_minigunfall","path":"sprites/spr_playerN_minigunfall/spr_playerN_minigunfall.yy",},
+    "timeUnits": 1,
+    "playback": 1,
+    "playbackSpeed": 1.0,
     "playbackSpeedType": 1,
-    "premultiplyAlpha": false,
-    "sepmasks": false,
-    "swatchColours": null,
-    "swfPrecision": 2.525,
-    "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
-    "type": 0,
-    "width": 300,
-    "xorig": 150,
-    "yorig": 50
+    "autoRecord": true,
+    "volume": 1.0,
+    "length": 3.0,
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
+    "tracks": [
+      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"0d2c2401-13ce-45d7-9dae-02cb11a5e6b1","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"318d0990-9f44-4eaa-a571-043f1c7243fc","path":"sprites/spr_playerN_minigunfall/spr_playerN_minigunfall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"0030201b-1798-480a-bf87-1180e125c6d9","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ff4006a8-5fcb-4219-af05-dd2e75a10aae","path":"sprites/spr_playerN_minigunfall/spr_playerN_minigunfall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"ac27cc77-54ba-400c-a8b6-d8044ea734c3","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0b9d6b14-4d7f-4024-b99f-f74f3cd4c0ae","path":"sprites/spr_playerN_minigunfall/spr_playerN_minigunfall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+    ],
+    "visibleRange": {"x":0.0,"y":0.0,},
+    "lockOrigin": false,
+    "showBackdrop": true,
+    "showBackdropImage": false,
+    "backdropImagePath": "",
+    "backdropImageOpacity": 0.5,
+    "backdropWidth": 1920,
+    "backdropHeight": 1080,
+    "backdropXOffset": 0.0,
+    "backdropYOffset": 0.0,
+    "xorigin": 150,
+    "yorigin": 50,
+    "eventToFunction": {},
+    "eventStubScript": null,
+    "parent": {"name":"spr_playerN_minigunfall","path":"sprites/spr_playerN_minigunfall/spr_playerN_minigunfall.yy",},
+    "resourceVersion": "1.3",
+    "name": "",
+    "tags": [],
+    "resourceType": "GMSequence",
+  },
+  "layers": [
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"34801976-c114-420c-bdfc-7874c5c4961b","tags":[],"resourceType":"GMImageLayer",},
+  ],
+  "parent": {
+    "name": "Sprites",
+    "path": "folders/Sprites.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "spr_playerN_minigunfall",
+  "tags": [],
+  "resourceType": "GMSprite",
 }

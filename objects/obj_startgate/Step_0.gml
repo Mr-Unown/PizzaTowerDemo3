@@ -97,6 +97,11 @@ if (distance_to_object(player) < 50)
 		            showtext = 1
 		            alarm[0] = 2
 			break;
+			case "sanctum": 
+		            message = "LA BURRATA TEMPLE"
+		            showtext = 1
+		            alarm[0] = 2
+			break;			
 			case "dungeon": 
 		            message = "BLOODSAUCE DUNGEON"
 		            showtext = 1

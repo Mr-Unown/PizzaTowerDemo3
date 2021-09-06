@@ -1,224 +1,106 @@
 {
-    "id": "341c8a33-eaea-4e95-af32-7a0e960f3543",
-    "modelName": "GMSprite",
-    "mvc": "1.12",
-    "name": "spr_indiancheese_scared",
-    "For3D": false,
-    "HTile": false,
-    "VTile": false,
-    "bbox_bottom": 95,
-    "bbox_left": 13,
-    "bbox_right": 86,
-    "bbox_top": 8,
-    "bboxmode": 0,
-    "colkind": 0,
-    "coltolerance": 0,
-    "edgeFiltering": false,
-    "frames": [
-        {
-            "id": "5b942ca8-0707-4a51-8f94-ede09abbf3b0",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "341c8a33-eaea-4e95-af32-7a0e960f3543",
-            "compositeImage": {
-                "id": "4364ea92-5ca9-4f9d-bf4d-4e326fb579d1",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "5b942ca8-0707-4a51-8f94-ede09abbf3b0",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "c0460c21-7250-4461-b4aa-abbadae36255",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "5b942ca8-0707-4a51-8f94-ede09abbf3b0",
-                    "LayerId": "d80c28ce-9da7-40fb-8759-019c679af26b"
-                }
-            ]
-        },
-        {
-            "id": "9ae3456f-1d46-4832-af0d-a5e65e77e4f3",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "341c8a33-eaea-4e95-af32-7a0e960f3543",
-            "compositeImage": {
-                "id": "c92b83a8-eb55-4d43-ac1b-74aacc7c8d37",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "9ae3456f-1d46-4832-af0d-a5e65e77e4f3",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "4ad2ca0d-f905-4d4c-9083-2bf895ea1d3f",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "9ae3456f-1d46-4832-af0d-a5e65e77e4f3",
-                    "LayerId": "d80c28ce-9da7-40fb-8759-019c679af26b"
-                }
-            ]
-        },
-        {
-            "id": "b5401ad0-323b-4806-b31b-b1bd6eb277ad",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "341c8a33-eaea-4e95-af32-7a0e960f3543",
-            "compositeImage": {
-                "id": "6f1b5af6-9902-46fe-9271-25771367d0b9",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "b5401ad0-323b-4806-b31b-b1bd6eb277ad",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "1a1bb2ac-688d-426d-a719-a7e393b4c7b5",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "b5401ad0-323b-4806-b31b-b1bd6eb277ad",
-                    "LayerId": "d80c28ce-9da7-40fb-8759-019c679af26b"
-                }
-            ]
-        },
-        {
-            "id": "df6464c3-fc7f-44af-95a1-be49e4e77079",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "341c8a33-eaea-4e95-af32-7a0e960f3543",
-            "compositeImage": {
-                "id": "ce634396-440b-4561-b199-f80c998c74a8",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "df6464c3-fc7f-44af-95a1-be49e4e77079",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "6cbc8f78-275c-4eeb-9b69-6ae48e888a9c",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "df6464c3-fc7f-44af-95a1-be49e4e77079",
-                    "LayerId": "d80c28ce-9da7-40fb-8759-019c679af26b"
-                }
-            ]
-        },
-        {
-            "id": "a22ee8e5-ca2d-4888-b786-42e23dba175c",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "341c8a33-eaea-4e95-af32-7a0e960f3543",
-            "compositeImage": {
-                "id": "8d63ef43-143a-4dd3-b4ea-87d29367ec7b",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "a22ee8e5-ca2d-4888-b786-42e23dba175c",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "fed83b2d-1097-4ed1-8cee-42046fe0a4a6",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "a22ee8e5-ca2d-4888-b786-42e23dba175c",
-                    "LayerId": "d80c28ce-9da7-40fb-8759-019c679af26b"
-                }
-            ]
-        },
-        {
-            "id": "6257d576-1d0c-457b-bf45-887c44cd98f8",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "341c8a33-eaea-4e95-af32-7a0e960f3543",
-            "compositeImage": {
-                "id": "fedd2da9-7bd5-45e1-804e-93e669b1aa42",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "6257d576-1d0c-457b-bf45-887c44cd98f8",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "f7c5b813-aa12-4cbb-ad17-cd937b0f77d1",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "6257d576-1d0c-457b-bf45-887c44cd98f8",
-                    "LayerId": "d80c28ce-9da7-40fb-8759-019c679af26b"
-                }
-            ]
-        },
-        {
-            "id": "6f2d77db-7029-40ba-86ba-80a5046777db",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "341c8a33-eaea-4e95-af32-7a0e960f3543",
-            "compositeImage": {
-                "id": "a666017f-abd1-47b5-8a87-d978487d5619",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "6f2d77db-7029-40ba-86ba-80a5046777db",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "9e0e1dea-a69d-4666-a69c-20821b1858fd",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "6f2d77db-7029-40ba-86ba-80a5046777db",
-                    "LayerId": "d80c28ce-9da7-40fb-8759-019c679af26b"
-                }
-            ]
-        },
-        {
-            "id": "63c3cbb8-c54c-4971-b289-a5ca000945e5",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "341c8a33-eaea-4e95-af32-7a0e960f3543",
-            "compositeImage": {
-                "id": "79578fda-eb1f-4327-9cd1-a067ef41d68f",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "63c3cbb8-c54c-4971-b289-a5ca000945e5",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "3c308bc0-461d-49ee-aa5e-da6d1e1cf52c",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "63c3cbb8-c54c-4971-b289-a5ca000945e5",
-                    "LayerId": "d80c28ce-9da7-40fb-8759-019c679af26b"
-                }
-            ]
-        }
-    ],
-    "gridX": 0,
-    "gridY": 0,
-    "height": 100,
-    "layers": [
-        {
-            "id": "d80c28ce-9da7-40fb-8759-019c679af26b",
-            "modelName": "GMImageLayer",
-            "mvc": "1.0",
-            "SpriteId": "341c8a33-eaea-4e95-af32-7a0e960f3543",
-            "blendMode": 0,
-            "isLocked": false,
-            "name": "default",
-            "opacity": 100,
-            "visible": true
-        }
-    ],
-    "origin": 0,
-    "originLocked": false,
-    "playbackSpeed": 1,
+  "bboxMode": 0,
+  "collisionKind": 0,
+  "type": 0,
+  "origin": 4,
+  "preMultiplyAlpha": false,
+  "edgeFiltering": false,
+  "collisionTolerance": 0,
+  "swfPrecision": 2.525,
+  "bbox_left": 13,
+  "bbox_right": 86,
+  "bbox_top": 8,
+  "bbox_bottom": 95,
+  "HTile": false,
+  "VTile": false,
+  "For3D": false,
+  "width": 100,
+  "height": 100,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
+  "swatchColours": null,
+  "gridX": 0,
+  "gridY": 0,
+  "frames": [
+    {"compositeImage":{"FrameId":{"name":"5b942ca8-0707-4a51-8f94-ede09abbf3b0","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"5b942ca8-0707-4a51-8f94-ede09abbf3b0","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"LayerId":{"name":"d80c28ce-9da7-40fb-8759-019c679af26b","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_indiancheese_scared","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","name":"5b942ca8-0707-4a51-8f94-ede09abbf3b0","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"9ae3456f-1d46-4832-af0d-a5e65e77e4f3","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"9ae3456f-1d46-4832-af0d-a5e65e77e4f3","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"LayerId":{"name":"d80c28ce-9da7-40fb-8759-019c679af26b","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_indiancheese_scared","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","name":"9ae3456f-1d46-4832-af0d-a5e65e77e4f3","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"b5401ad0-323b-4806-b31b-b1bd6eb277ad","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"b5401ad0-323b-4806-b31b-b1bd6eb277ad","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"LayerId":{"name":"d80c28ce-9da7-40fb-8759-019c679af26b","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_indiancheese_scared","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","name":"b5401ad0-323b-4806-b31b-b1bd6eb277ad","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"df6464c3-fc7f-44af-95a1-be49e4e77079","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"df6464c3-fc7f-44af-95a1-be49e4e77079","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"LayerId":{"name":"d80c28ce-9da7-40fb-8759-019c679af26b","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_indiancheese_scared","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","name":"df6464c3-fc7f-44af-95a1-be49e4e77079","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"a22ee8e5-ca2d-4888-b786-42e23dba175c","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"a22ee8e5-ca2d-4888-b786-42e23dba175c","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"LayerId":{"name":"d80c28ce-9da7-40fb-8759-019c679af26b","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_indiancheese_scared","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","name":"a22ee8e5-ca2d-4888-b786-42e23dba175c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"6257d576-1d0c-457b-bf45-887c44cd98f8","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"6257d576-1d0c-457b-bf45-887c44cd98f8","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"LayerId":{"name":"d80c28ce-9da7-40fb-8759-019c679af26b","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_indiancheese_scared","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","name":"6257d576-1d0c-457b-bf45-887c44cd98f8","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"6f2d77db-7029-40ba-86ba-80a5046777db","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"6f2d77db-7029-40ba-86ba-80a5046777db","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"LayerId":{"name":"d80c28ce-9da7-40fb-8759-019c679af26b","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_indiancheese_scared","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","name":"6f2d77db-7029-40ba-86ba-80a5046777db","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"63c3cbb8-c54c-4971-b289-a5ca000945e5","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"63c3cbb8-c54c-4971-b289-a5ca000945e5","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"LayerId":{"name":"d80c28ce-9da7-40fb-8759-019c679af26b","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_indiancheese_scared","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","name":"63c3cbb8-c54c-4971-b289-a5ca000945e5","tags":[],"resourceType":"GMSpriteFrame",},
+  ],
+  "sequence": {
+    "spriteId": {"name":"spr_indiancheese_scared","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},
+    "timeUnits": 1,
+    "playback": 1,
+    "playbackSpeed": 1.0,
     "playbackSpeedType": 1,
-    "premultiplyAlpha": false,
-    "sepmasks": false,
-    "swatchColours": null,
-    "swfPrecision": 2.525,
-    "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
-    "type": 0,
-    "width": 100,
-    "xorig": 50,
-    "yorig": 50
+    "autoRecord": true,
+    "volume": 1.0,
+    "length": 8.0,
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
+    "tracks": [
+      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"e533309b-d2c5-4c32-b671-f2332e26b7d4","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5b942ca8-0707-4a51-8f94-ede09abbf3b0","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"e61330f5-bc2a-415a-bbf5-fbace98d3ff2","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9ae3456f-1d46-4832-af0d-a5e65e77e4f3","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"00f50487-d70f-4d5f-81ad-48eb21160160","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b5401ad0-323b-4806-b31b-b1bd6eb277ad","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"264d24a2-9155-45f6-b375-bac778043fa5","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"df6464c3-fc7f-44af-95a1-be49e4e77079","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5e5563a2-4b63-4cc5-8bd7-92ad39874552","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a22ee8e5-ca2d-4888-b786-42e23dba175c","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"a5e9f7e3-11d4-4ccc-8512-134d56802bc6","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6257d576-1d0c-457b-bf45-887c44cd98f8","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"1f03f13e-0c84-4bfd-bd18-c62c60d3327c","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6f2d77db-7029-40ba-86ba-80a5046777db","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"1774c2cd-2ead-49b6-b9c3-f981a273fa5e","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"63c3cbb8-c54c-4971-b289-a5ca000945e5","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+    ],
+    "visibleRange": {"x":0.0,"y":0.0,},
+    "lockOrigin": false,
+    "showBackdrop": true,
+    "showBackdropImage": false,
+    "backdropImagePath": "",
+    "backdropImageOpacity": 0.5,
+    "backdropWidth": 1920,
+    "backdropHeight": 1080,
+    "backdropXOffset": 0.0,
+    "backdropYOffset": 0.0,
+    "xorigin": 50,
+    "yorigin": 50,
+    "eventToFunction": {},
+    "eventStubScript": null,
+    "parent": {"name":"spr_indiancheese_scared","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},
+    "resourceVersion": "1.3",
+    "name": "",
+    "tags": [],
+    "resourceType": "GMSequence",
+  },
+  "layers": [
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d80c28ce-9da7-40fb-8759-019c679af26b","tags":[],"resourceType":"GMImageLayer",},
+  ],
+  "parent": {
+    "name": "Sprites",
+    "path": "folders/Sprites.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "spr_indiancheese_scared",
+  "tags": [],
+  "resourceType": "GMSprite",
 }

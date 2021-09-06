@@ -1,180 +1,98 @@
 {
-    "id": "343a5587-4bcf-49f0-b552-f10702adcb90",
-    "modelName": "GMSprite",
-    "mvc": "1.12",
-    "name": "spr_pizzagoblin_stunland",
-    "For3D": false,
-    "HTile": false,
-    "VTile": false,
-    "bbox_bottom": 97,
-    "bbox_left": 6,
-    "bbox_right": 95,
-    "bbox_top": 37,
-    "bboxmode": 0,
-    "colkind": 0,
-    "coltolerance": 0,
-    "edgeFiltering": false,
-    "frames": [
-        {
-            "id": "4af45a53-faca-421e-a081-8f0a4691f716",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "343a5587-4bcf-49f0-b552-f10702adcb90",
-            "compositeImage": {
-                "id": "f52ed53f-d034-4186-b2bd-31e2afd1d53c",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "4af45a53-faca-421e-a081-8f0a4691f716",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "e24afaf5-dc38-4618-aa1b-ca5937f9d462",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "4af45a53-faca-421e-a081-8f0a4691f716",
-                    "LayerId": "8a133ed9-1c15-4cf9-a166-4c12ac3a8158"
-                }
-            ]
-        },
-        {
-            "id": "f1d3c79c-f359-41fa-8108-26e1b86a51de",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "343a5587-4bcf-49f0-b552-f10702adcb90",
-            "compositeImage": {
-                "id": "a0617e68-882f-4cc0-adac-b0da1ad657e0",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "f1d3c79c-f359-41fa-8108-26e1b86a51de",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "906b6c95-559c-4bad-8b52-c63364780b29",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "f1d3c79c-f359-41fa-8108-26e1b86a51de",
-                    "LayerId": "8a133ed9-1c15-4cf9-a166-4c12ac3a8158"
-                }
-            ]
-        },
-        {
-            "id": "218ebf66-0929-463b-95c4-2f2357228de7",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "343a5587-4bcf-49f0-b552-f10702adcb90",
-            "compositeImage": {
-                "id": "121cbf6a-18c8-4b02-8ce3-7c009f768b84",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "218ebf66-0929-463b-95c4-2f2357228de7",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "c78445c1-010e-43c1-aad0-68028af3ef9b",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "218ebf66-0929-463b-95c4-2f2357228de7",
-                    "LayerId": "8a133ed9-1c15-4cf9-a166-4c12ac3a8158"
-                }
-            ]
-        },
-        {
-            "id": "450caacd-e2e3-46ca-b26b-4d97e792c176",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "343a5587-4bcf-49f0-b552-f10702adcb90",
-            "compositeImage": {
-                "id": "633bb549-75f2-47ee-8834-50c16535e454",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "450caacd-e2e3-46ca-b26b-4d97e792c176",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "33df9fd7-8e52-4f56-82db-98bbb4450822",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "450caacd-e2e3-46ca-b26b-4d97e792c176",
-                    "LayerId": "8a133ed9-1c15-4cf9-a166-4c12ac3a8158"
-                }
-            ]
-        },
-        {
-            "id": "78e8bc02-6a9f-4aef-99fc-766b7377b741",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "343a5587-4bcf-49f0-b552-f10702adcb90",
-            "compositeImage": {
-                "id": "548de452-5bbe-4fc7-abc5-92a42f4b8f10",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "78e8bc02-6a9f-4aef-99fc-766b7377b741",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "9a690b77-437e-46f5-8410-0e1d65b64e96",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "78e8bc02-6a9f-4aef-99fc-766b7377b741",
-                    "LayerId": "8a133ed9-1c15-4cf9-a166-4c12ac3a8158"
-                }
-            ]
-        },
-        {
-            "id": "6f257cac-26ab-4caf-871a-beef437c0e19",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "343a5587-4bcf-49f0-b552-f10702adcb90",
-            "compositeImage": {
-                "id": "3ecbfd69-ef71-4553-94c5-d73c779d0f6e",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "6f257cac-26ab-4caf-871a-beef437c0e19",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "8219b6e7-3b4e-4077-86ef-459bd4606858",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "6f257cac-26ab-4caf-871a-beef437c0e19",
-                    "LayerId": "8a133ed9-1c15-4cf9-a166-4c12ac3a8158"
-                }
-            ]
-        }
-    ],
-    "gridX": 0,
-    "gridY": 0,
-    "height": 100,
-    "layers": [
-        {
-            "id": "8a133ed9-1c15-4cf9-a166-4c12ac3a8158",
-            "modelName": "GMImageLayer",
-            "mvc": "1.0",
-            "SpriteId": "343a5587-4bcf-49f0-b552-f10702adcb90",
-            "blendMode": 0,
-            "isLocked": false,
-            "name": "default",
-            "opacity": 100,
-            "visible": true
-        }
-    ],
-    "origin": 0,
-    "originLocked": false,
-    "playbackSpeed": 1,
+  "bboxMode": 0,
+  "collisionKind": 0,
+  "type": 0,
+  "origin": 4,
+  "preMultiplyAlpha": false,
+  "edgeFiltering": false,
+  "collisionTolerance": 0,
+  "swfPrecision": 2.525,
+  "bbox_left": 6,
+  "bbox_right": 95,
+  "bbox_top": 37,
+  "bbox_bottom": 97,
+  "HTile": false,
+  "VTile": false,
+  "For3D": false,
+  "width": 100,
+  "height": 100,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
+  "swatchColours": null,
+  "gridX": 0,
+  "gridY": 0,
+  "frames": [
+    {"compositeImage":{"FrameId":{"name":"4af45a53-faca-421e-a081-8f0a4691f716","path":"sprites/spr_pizzagoblin_stunland/spr_pizzagoblin_stunland.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"4af45a53-faca-421e-a081-8f0a4691f716","path":"sprites/spr_pizzagoblin_stunland/spr_pizzagoblin_stunland.yy",},"LayerId":{"name":"8a133ed9-1c15-4cf9-a166-4c12ac3a8158","path":"sprites/spr_pizzagoblin_stunland/spr_pizzagoblin_stunland.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_pizzagoblin_stunland","path":"sprites/spr_pizzagoblin_stunland/spr_pizzagoblin_stunland.yy",},"resourceVersion":"1.0","name":"4af45a53-faca-421e-a081-8f0a4691f716","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"f1d3c79c-f359-41fa-8108-26e1b86a51de","path":"sprites/spr_pizzagoblin_stunland/spr_pizzagoblin_stunland.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"f1d3c79c-f359-41fa-8108-26e1b86a51de","path":"sprites/spr_pizzagoblin_stunland/spr_pizzagoblin_stunland.yy",},"LayerId":{"name":"8a133ed9-1c15-4cf9-a166-4c12ac3a8158","path":"sprites/spr_pizzagoblin_stunland/spr_pizzagoblin_stunland.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_pizzagoblin_stunland","path":"sprites/spr_pizzagoblin_stunland/spr_pizzagoblin_stunland.yy",},"resourceVersion":"1.0","name":"f1d3c79c-f359-41fa-8108-26e1b86a51de","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"218ebf66-0929-463b-95c4-2f2357228de7","path":"sprites/spr_pizzagoblin_stunland/spr_pizzagoblin_stunland.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"218ebf66-0929-463b-95c4-2f2357228de7","path":"sprites/spr_pizzagoblin_stunland/spr_pizzagoblin_stunland.yy",},"LayerId":{"name":"8a133ed9-1c15-4cf9-a166-4c12ac3a8158","path":"sprites/spr_pizzagoblin_stunland/spr_pizzagoblin_stunland.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_pizzagoblin_stunland","path":"sprites/spr_pizzagoblin_stunland/spr_pizzagoblin_stunland.yy",},"resourceVersion":"1.0","name":"218ebf66-0929-463b-95c4-2f2357228de7","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"450caacd-e2e3-46ca-b26b-4d97e792c176","path":"sprites/spr_pizzagoblin_stunland/spr_pizzagoblin_stunland.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"450caacd-e2e3-46ca-b26b-4d97e792c176","path":"sprites/spr_pizzagoblin_stunland/spr_pizzagoblin_stunland.yy",},"LayerId":{"name":"8a133ed9-1c15-4cf9-a166-4c12ac3a8158","path":"sprites/spr_pizzagoblin_stunland/spr_pizzagoblin_stunland.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_pizzagoblin_stunland","path":"sprites/spr_pizzagoblin_stunland/spr_pizzagoblin_stunland.yy",},"resourceVersion":"1.0","name":"450caacd-e2e3-46ca-b26b-4d97e792c176","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"78e8bc02-6a9f-4aef-99fc-766b7377b741","path":"sprites/spr_pizzagoblin_stunland/spr_pizzagoblin_stunland.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"78e8bc02-6a9f-4aef-99fc-766b7377b741","path":"sprites/spr_pizzagoblin_stunland/spr_pizzagoblin_stunland.yy",},"LayerId":{"name":"8a133ed9-1c15-4cf9-a166-4c12ac3a8158","path":"sprites/spr_pizzagoblin_stunland/spr_pizzagoblin_stunland.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_pizzagoblin_stunland","path":"sprites/spr_pizzagoblin_stunland/spr_pizzagoblin_stunland.yy",},"resourceVersion":"1.0","name":"78e8bc02-6a9f-4aef-99fc-766b7377b741","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"6f257cac-26ab-4caf-871a-beef437c0e19","path":"sprites/spr_pizzagoblin_stunland/spr_pizzagoblin_stunland.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"6f257cac-26ab-4caf-871a-beef437c0e19","path":"sprites/spr_pizzagoblin_stunland/spr_pizzagoblin_stunland.yy",},"LayerId":{"name":"8a133ed9-1c15-4cf9-a166-4c12ac3a8158","path":"sprites/spr_pizzagoblin_stunland/spr_pizzagoblin_stunland.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_pizzagoblin_stunland","path":"sprites/spr_pizzagoblin_stunland/spr_pizzagoblin_stunland.yy",},"resourceVersion":"1.0","name":"6f257cac-26ab-4caf-871a-beef437c0e19","tags":[],"resourceType":"GMSpriteFrame",},
+  ],
+  "sequence": {
+    "spriteId": {"name":"spr_pizzagoblin_stunland","path":"sprites/spr_pizzagoblin_stunland/spr_pizzagoblin_stunland.yy",},
+    "timeUnits": 1,
+    "playback": 1,
+    "playbackSpeed": 1.0,
     "playbackSpeedType": 1,
-    "premultiplyAlpha": false,
-    "sepmasks": false,
-    "swatchColours": null,
-    "swfPrecision": 2.525,
-    "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
-    "type": 0,
-    "width": 100,
-    "xorig": 50,
-    "yorig": 50
+    "autoRecord": true,
+    "volume": 1.0,
+    "length": 6.0,
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
+    "tracks": [
+      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"a77b21e4-3843-4e00-85ca-603d099de035","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4af45a53-faca-421e-a081-8f0a4691f716","path":"sprites/spr_pizzagoblin_stunland/spr_pizzagoblin_stunland.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5858b9d1-3fdb-40ce-922b-91ed46942acf","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f1d3c79c-f359-41fa-8108-26e1b86a51de","path":"sprites/spr_pizzagoblin_stunland/spr_pizzagoblin_stunland.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"94d72ae4-c96e-4262-a896-98e8fb7dc31f","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"218ebf66-0929-463b-95c4-2f2357228de7","path":"sprites/spr_pizzagoblin_stunland/spr_pizzagoblin_stunland.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"fd01f7b5-ba90-425d-8c97-0163645395d1","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"450caacd-e2e3-46ca-b26b-4d97e792c176","path":"sprites/spr_pizzagoblin_stunland/spr_pizzagoblin_stunland.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9a38433a-c1cb-4714-8b28-ac4c4426fc47","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"78e8bc02-6a9f-4aef-99fc-766b7377b741","path":"sprites/spr_pizzagoblin_stunland/spr_pizzagoblin_stunland.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"466e741b-c4bf-4b72-829c-7baa6deef21f","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6f257cac-26ab-4caf-871a-beef437c0e19","path":"sprites/spr_pizzagoblin_stunland/spr_pizzagoblin_stunland.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+    ],
+    "visibleRange": {"x":0.0,"y":0.0,},
+    "lockOrigin": false,
+    "showBackdrop": true,
+    "showBackdropImage": false,
+    "backdropImagePath": "",
+    "backdropImageOpacity": 0.5,
+    "backdropWidth": 1920,
+    "backdropHeight": 1080,
+    "backdropXOffset": 0.0,
+    "backdropYOffset": 0.0,
+    "xorigin": 50,
+    "yorigin": 50,
+    "eventToFunction": {},
+    "eventStubScript": null,
+    "parent": {"name":"spr_pizzagoblin_stunland","path":"sprites/spr_pizzagoblin_stunland/spr_pizzagoblin_stunland.yy",},
+    "resourceVersion": "1.3",
+    "name": "",
+    "tags": [],
+    "resourceType": "GMSequence",
+  },
+  "layers": [
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"8a133ed9-1c15-4cf9-a166-4c12ac3a8158","tags":[],"resourceType":"GMImageLayer",},
+  ],
+  "parent": {
+    "name": "Sprites",
+    "path": "folders/Sprites.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "spr_pizzagoblin_stunland",
+  "tags": [],
+  "resourceType": "GMSprite",
 }

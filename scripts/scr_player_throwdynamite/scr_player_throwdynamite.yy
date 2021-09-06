@@ -1,8 +1,12 @@
 {
-    "id": "e711f393-807a-492b-817a-1ee99c4c93d7",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_player_throwdynamite",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "player",
+    "path": "folders/Scripts/player.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_player_throwdynamite",
+  "tags": [],
+  "resourceType": "GMScript",
 }

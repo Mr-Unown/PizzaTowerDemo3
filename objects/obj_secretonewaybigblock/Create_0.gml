@@ -1,3 +1,4 @@
+visible = obj_debugcontroller.showcollisions
 global.breaksound = 0
 initialhsp = random_range(-4, 4)
 initialvsp = random_range(-4, 0)
