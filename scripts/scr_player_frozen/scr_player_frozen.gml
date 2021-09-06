@@ -39,7 +39,7 @@ function scr_player_frozen() {
 		if input_buffer_jump < 8
 		{
 		#region Jumping
-		if place_meeting(x,y,obj_baddiecollisionbox) && (!grounded && frozenstate != 74 && instakillmove = true)
+		if place_meeting(x,y,obj_baddiecollisionbox) && (!grounded && frozenstate != 74 && frozenstate != states.newbomb && instakillmove = true)
 	    {
 			if (frozenstate == 70 || (frozenstate == 91 && fightball == 0))
 	        {

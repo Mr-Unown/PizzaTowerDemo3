@@ -109,7 +109,8 @@ function scr_playerstate() {
 		frozen = 122,
 		changing = 123,
 		murder = 124,
-		trick = 125
+		trick = 125,
+		newbomb = 126
 
 	} 
 	//I made some changes to it so that we can know at a glance what number it gets converted to.
@@ -120,6 +121,9 @@ function scr_playerstate() {
 	    case 0:
 	        scr_player_normal()
 	        break
+	    case states.newbomb:
+	        scr_player_newbomb()
+	        break			
 	    case states.frozen:
 	        scr_player_frozen()
 	        break	
@@ -666,7 +670,7 @@ function scr_playerstate() {
 	//Instakill Move
 	if global.freezeframe = false
 	{
-		if state != states.frozen && (state == 68 || sprite_index = spr_swingding || sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump || state == 86 || state == states.breakdance ||	state == states.jetpack || state == states.pogo || state == 91 || state == 60 || (state == 73 && thrown == 1) || state == 70 || state == 17 || state == 74 || state == 2 || state == 6 || state == 7 || state == 9 || state == 44 || state == 35 || state == 63 || state == 37 || state == 40 || state == 10 || (state == 43 && sprite_index == spr_piledriver) || state == 24 || state == 25 || state == 18 || state == 15 || state == 13 || state == 11)
+		if state != states.frozen && (state == 68 || sprite_index = spr_swingding || sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump || state == 86 || state == states.breakdance ||	state == states.jetpack || state == states.pogo || state == 91 || state == 60 || (state == 73 && thrown == 1) || state == 70 || state == 17 || state == states.newbomb || state == 74 || state == 2 || state == 6 || state == 7 || state == 9 || state == 44 || state == 35 || state == 63 || state == 37 || state == 40 || state == 10 || (state == 43 && sprite_index == spr_piledriver) || state == 24 || state == 25 || state == 18 || state == 15 || state == 13 || state == 11)
 			instakillmove = 1
 		else if state != states.frozen
 			instakillmove = 0

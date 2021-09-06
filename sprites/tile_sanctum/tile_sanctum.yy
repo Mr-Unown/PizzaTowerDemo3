@@ -10,7 +10,7 @@
   "bbox_left": 32,
   "bbox_right": 317,
   "bbox_top": 0,
-  "bbox_bottom": 350,
+  "bbox_bottom": 351,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"82a304c2-c4f7-4b66-9b3e-c284b5be905c","path":"sprites/tile_sanctum/tile_sanctum.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"82a304c2-c4f7-4b66-9b3e-c284b5be905c","path":"sprites/tile_sanctum/tile_sanctum.yy",},"LayerId":{"name":"24ffde7f-2b1c-40e0-9ad0-4b76b8f3e35b","path":"sprites/tile_sanctum/tile_sanctum.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"tile_sanctum","path":"sprites/tile_sanctum/tile_sanctum.yy",},"resourceVersion":"1.0","name":"82a304c2-c4f7-4b66-9b3e-c284b5be905c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"811c4e83-e485-47f0-aa0c-54d85005547d","path":"sprites/tile_sanctum/tile_sanctum.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"811c4e83-e485-47f0-aa0c-54d85005547d","path":"sprites/tile_sanctum/tile_sanctum.yy",},"LayerId":{"name":"f6044933-823f-4968-85fe-154ab64fe63e","path":"sprites/tile_sanctum/tile_sanctum.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"tile_sanctum","path":"sprites/tile_sanctum/tile_sanctum.yy",},"resourceVersion":"1.0","name":"811c4e83-e485-47f0-aa0c-54d85005547d","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"tile_sanctum","path":"sprites/tile_sanctum/tile_sanctum.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"1d0d9bab-7d1f-4dff-9e28-8a6201a75b24","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"82a304c2-c4f7-4b66-9b3e-c284b5be905c","path":"sprites/tile_sanctum/tile_sanctum.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"f8bc5b85-7c9e-40df-9b02-5651961e8429","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"811c4e83-e485-47f0-aa0c-54d85005547d","path":"sprites/tile_sanctum/tile_sanctum.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"24ffde7f-2b1c-40e0-9ad0-4b76b8f3e35b","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f6044933-823f-4968-85fe-154ab64fe63e","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Sprites",

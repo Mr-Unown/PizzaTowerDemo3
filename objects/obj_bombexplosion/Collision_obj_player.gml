@@ -1,7 +1,45 @@
-with other.id {
+with other.id 
+{
+	if instance_exists(obj_water) && other.y < obj_water.bbox_top
+	{
+		#region Below Water
+		if (hurted == 0 && cutscene == 0 && state != 114 && state != 113 && state != 27 && sprite_index != spr_bombpep_end && state != 63 && state != 65) && distance_to_object(other.id) < 128 && distance_to_object(other.id) > 16
+		{
+			image_index = 0
+			hurted = 1
+			global.pausecombotime = true			
+			obj_tv.alarm[1] = 75		
+			sprite_index = spr_hurt
+			
+			var _direction = point_direction(x,y,other.x,other.y)
+			playerdirection = (round(_direction / 90) * 90)
+			movespeed = 0;
+			state = states.newbomb			
+		}
+		else if (state != 114 && state != 113) && character = "V" && distance_to_object(other.id) <= 16
+		{
+			vsp = -2
+			scr_hurtplayer(object_index)
+		}		
+		else if (hurted == 0 && cutscene == 0 && state != states.newbomb && state != 114 && state != 113 && state != 27 && sprite_index != spr_bombpep_end && state != 63 && state != 65) && distance_to_object(other.id) <= 16
+		{
+			image_index = 0
+			hurted = 1
+			vsp = -4
+			global.pausecombotime = true			
+			obj_tv.alarm[1] = 75		
+			sprite_index = spr_bombpepend
+			state = 27
+			bombpeptimer = 0
+		}
+		#endregion
+	}
+	else
+	{
+		#region Above Water
 if (character != "V")
 {
-    if (hurted == 0 && cutscene == 0 && state != 114 && state != 113 && state != 27 && sprite_index != spr_bombpep_end && state != 63 && state != 65)
+    if (hurted == 0 && cutscene == 0 && state != states.newbomb && state != 114 && state != 113 && state != 27 && sprite_index != spr_bombpep_end && state != 63 && state != 65)
     {
         if (state == 24 || state == 25)
         {
@@ -36,5 +74,6 @@ else if (state != 114 && state != 113)
     vsp = -2
     scr_hurtplayer(object_index)
 }
-
+#endregion
+	}
 }

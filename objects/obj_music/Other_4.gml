@@ -360,7 +360,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
             scr_soundstopall()
             scr_sound(mu_ruinremix)
             audio_sound_set_track_position(global.music, fadeoff)
-            pausedmusic = mu_dungeon
+            pausedmusic = mu_ruinremix
         }		
 	}
     if (string_letters(roomname) == "ruin")

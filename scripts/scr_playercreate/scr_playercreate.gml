@@ -8,6 +8,8 @@ function scr_playercreate() {
 	knightmaxy = 0;
 	knightroomy = 0;
 	knightslidespeed = 0;
+	//Direction Bomb
+	playerdirection = 0;
 	//Super cool Movespeed Buff
 	maxmachspeed = 24;
 	//Swordhitbox
@@ -61,7 +63,7 @@ function scr_playercreate() {
 	//Mach3DashBuffer
 	mach3dash = false;
 	mach3dashbuffer = 0;
-	//mahrol
+	//Machroll
 	machrolljump = false;
 	global.freezeframe = false;
 	global.freezeframetimer = 200;
