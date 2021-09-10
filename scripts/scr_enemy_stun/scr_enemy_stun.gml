@@ -26,7 +26,7 @@ function scr_enemy_stun() {
 	    hsp = -5
 	else if place_meeting(x, (y + 1), obj_railh2)
 	    hsp = 5
-	if (place_meeting((x - image_xscale), y, obj_solid) && (!place_meeting((x - image_xscale), y, obj_destructibles)))
+	if scr_solid(x - image_xscale,y) && !place_meeting((x - image_xscale), y, obj_destructibles)
 	{
 	    with (instance_create(x, y, obj_bulletimpact))
 	        image_xscale = (-other.image_xscale)

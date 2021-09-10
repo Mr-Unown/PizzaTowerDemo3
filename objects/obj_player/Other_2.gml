@@ -1,6 +1,5 @@
 global.saveroom = ds_list_create()
 global.savefile = "a"
-
 //Start by cleaning
 global.flushtextures = true;
 global.moppingframes = 0;

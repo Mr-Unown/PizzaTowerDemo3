@@ -10,7 +10,7 @@ if (_collision != noone)
 		hsp = 0;
 		vsp = 10; //Well this works...
 		scr_collide();
-		_collision = collision_line(x, y, x, y + room_height, group_collision, false, true);
+		_collision |= collision_line(x, y, x, y + room_height, group_collision, false, true);
 	}
 }
 else if !grounded

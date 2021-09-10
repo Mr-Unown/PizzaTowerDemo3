@@ -1,4 +1,4 @@
-function scr_collide() {
+function scr_collide() {	
 	if global.freezeframe = true
 		return false;
 	//Variables

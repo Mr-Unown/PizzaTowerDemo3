@@ -3,23 +3,8 @@ function scr_solid_player(argument0, argument1) {
 	var old_y = y
 	x = argument0
 	y = argument1
-	if place_meeting(x, y, obj_solid)
-	{
-	    x = old_x
-	    y = old_y
-	    return 1;
-	}
-	var water = noone
-	if place_meeting(x, y, obj_water)
-	{
-		var water = instance_place(x, y, obj_water)
-		if y > old_y && (!place_meeting(x, old_y, water)) && (state == states.mach3 || state == states.backbreaker || (state == states.jetpack && vsp = 0) || sprite_index == spr_mach3boost)
-		{
-			x = old_x
-			y = old_y
-			return 1;
-		}
-	}
+	
+	#region Moving Platform
 	var movingplatform = noone
 	if place_meeting(x, y, obj_movingplatform)
 	{
@@ -31,46 +16,81 @@ function scr_solid_player(argument0, argument1) {
 			return 1;
 		}
 	}
+	#endregion 
+	
+	
+	#region Solid
+	//Object
+	if place_meeting(x, y, obj_solid)
+	{
+	    x = old_x
+	    y = old_y
+	    return 1;
+	}
+	//Tile
+	if layer_exists("Tiles_Solid")
+	{
+		if tile_meeting_precise(x,y,"Tiles_Solid") == tiletype.solids
+		{
+			x = old_x
+			y = old_y
+			return 1;
+		}
+	}
+	#endregion
+	
+	#region Platform
+	if state != states.ladder {
+	#region Object
 	var platform = noone
 	if place_meeting(x, y, obj_platform)
 	{
 		var platform = instance_place(x, y, obj_platform)
-		if (platform.image_yscale > 0)
+		if y > old_y && (sign(platform.image_yscale) >= 1)
 		{
-			if y > old_y && (!place_meeting(x, old_y, platform))
+			var _list = ds_list_create();
+			var _num = instance_place_list(x, y, obj_platform, _list, false);
+			var collided = false;
+			if _num > 0
 			{
-				if (state != 59)
+				for (var i = 0; i < _num; ++i;)
 				{
-					x = old_x
-					y = old_y
-				return 1;
+					var platform = (_list[| i]);
+					if place_meeting(x, y, platform) && !place_meeting(x, old_y, platform)
+					{
+						collided = true;
+					}
 				}
 			}
-		}
-		else
-		{
-			if y <= old_y && (!place_meeting(x, old_y, platform))
+			ds_list_destroy(_list);
+			if collided
 			{
-				if (state != 59)
-				{
 				x = old_x
 				y = old_y
-				return 1;
-				}
+				return true;
+			}
+		}
+		else if y <= old_y && (sign(platform.image_yscale) <= -1)
+		{
+			if (!place_meeting(x, old_y, platform))
+			{
+				x = old_x
+				y = old_y
+				return true;
 			}
 		}	
 	}
 	var platformside = noone
 	if place_meeting(x, y, obj_platformside)
 	{
-		var platformside = instance_place(x, y, obj_platformside)
+		var platformside = instance_place(x, y, obj_platformside)	
 		if (platformside.image_xscale > 0)
 		{
 			if x <= old_x && !place_meeting(old_x, y, platformside)
 			{
 				x = old_x
 				y = old_y
-				return 1;
+				return true;
 			}
 		}
 		else
@@ -79,20 +99,72 @@ function scr_solid_player(argument0, argument1) {
 			{
 				x = old_x
 				y = old_y
-				return 1;
+				return true;
 			}
 		}	
 	}
-	if (y > old_y && /*(bbox_bottom % 16) == 0 &&*/ (!place_meeting(x, old_y, obj_grindrail)) && place_meeting(x, y, obj_grindrail))
-	{
-		if !cutscene && !scr_transformationcheck(other)
+	#endregion
+	
+	
+	#region Tiles
+	if layer_exists("Tiles_Solid")
+	{	
+		var type = tile_meeting_precise(x,y,"Tiles_Solid")
+		switch(type)
 		{
-		grinding = true
-		x = old_x
-		y = old_y
-		return 1;
+			case tiletype.upplatform:
+			if y > old_y
+			{
+				var collide = false
+				if tile_meeting_precise(x,y,"Tiles_Solid") == type &&  tile_meeting_precise(x,old_y,"Tiles_Solid") != type
+					collide = true
+				if collide = true
+				{
+					x = old_x
+					y = old_y
+					return true;
+				}
+			}
+			break;
+			case tiletype.downplatform:
+			if y <= old_y
+			{
+				if tile_meeting_precise(x,y,"Tiles_Solid") == type &&  tile_meeting_precise(x,old_y,"Tiles_Solid") != type
+				{
+					x = old_x
+					y = old_y
+					return true;
+				}
+			}
+			break;
+			case tiletype.rightplatform:
+			if x <= old_x
+			{
+				if tile_meeting_precise(x,y,"Tiles_Solid") == type &&  tile_meeting_precise(old_x,y,"Tiles_Solid") != type
+				{
+					x = old_x
+					y = old_y
+					return true;
+				}
+			}
+			break;
+			case tiletype.leftplatform:
+			if x >= old_x
+			{
+				if tile_meeting_precise(x,y,"Tiles_Solid") == type &&  tile_meeting_precise(old_x,y,"Tiles_Solid") != type
+				{
+					x = old_x
+					y = old_y
+					return true;
+				}				
+			}
+			break;			
 		}
 	}
+	#endregion
+	}
+	#endregion
+	
 	var slope = instance_place(x, y, obj_slope)
 	if slope
 	{
@@ -124,6 +196,31 @@ function scr_solid_player(argument0, argument1) {
 	    }
 	}
 
+	#region Player Only Collisions
+	
+	#region Water
+	var water = noone
+	if place_meeting(x, y, obj_water)
+	{
+		var water = instance_place(x, y, obj_water)
+		if y > old_y && (!place_meeting(x, old_y, water)) && (state == states.mach3 || state == states.backbreaker || (state == states.jetpack && vsp = 0) || sprite_index == spr_mach3boost)
+		{
+			x = old_x
+			y = old_y
+			return 1;
+		}
+	}
+	#endregion	
+	if (y > old_y && /*(bbox_bottom % 16) == 0 &&*/ (!place_meeting(x, old_y, obj_grindrail)) && place_meeting(x, y, obj_grindrail))
+	{
+		if !cutscene && !scr_transformationcheck(other)
+		{
+		grinding = true
+		x = old_x
+		y = old_y
+		return 1;
+		}
+	}
 	var grindslope = instance_place(x, y, obj_grindrailslope)
 	if grindslope
 	{
@@ -155,7 +252,7 @@ function scr_solid_player(argument0, argument1) {
 	        }
 	    }
 	}
-
+	#endregion
 	x = old_x
 	y = old_y
 	return 0;

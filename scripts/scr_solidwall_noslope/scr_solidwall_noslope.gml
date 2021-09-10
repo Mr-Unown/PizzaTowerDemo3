@@ -6,12 +6,27 @@ function scr_solidwall_noslope(argument0, argument1) {
 	var old_y = y
 	x = argument0
 	y = argument1
+	
+	#region Solid
+	//Object
 	if place_meeting(x, y, obj_solid)
 	{
 	    x = old_x
 	    y = old_y
 	    return 1;
 	}
+	//Tile
+	if layer_exists("Tiles_Solid")
+	{
+		if tile_meeting_precise(x,y,"Tiles_Solid") == tiletype.solids
+		{
+			x = old_x
+			y = old_y
+			return 1;
+		}
+	}
+	#endregion
+
 	var movingplatform = noone
 	if place_meeting(x, y, obj_movingplatform)
 	{

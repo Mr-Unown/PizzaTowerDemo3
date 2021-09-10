@@ -1,7 +1,8 @@
 /// @description scr_slope_ext - an advanced slope collision detection code
 /// @param x
 /// @param y
-function scr_slope_ext(argument0, argument1) {
+function scr_slope_ext(argument0, argument1) 
+{
 	var old_x = x;
 	var old_y = y;
 	x = argument0
