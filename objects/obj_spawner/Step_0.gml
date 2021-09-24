@@ -10,7 +10,7 @@ image_speed = 0.35
 			{
 				other.createdid = id
 				image_xscale = other.image_xscale
-				if variable_instance_exists(id,vsp)
+				if variable_instance_exists(id,"vsp")
 					vsp = -3
 			}
 	refresh = 100

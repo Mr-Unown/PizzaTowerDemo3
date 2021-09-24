@@ -1,4 +1,4 @@
-if place_meeting(x,y,obj_water) && other.bbox_top >= obj_water.bbox_top + 32
+if other.bbox_top >= obj_water.bbox_top + 32
 {
 	with (other)
 	{
