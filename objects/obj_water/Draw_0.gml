@@ -1,5 +1,11 @@
-
-
+	#region Draw itself
+	for (var i = 0; i < abs(image_xscale); i++)
+	{
+		draw_sprite_ext(spr_cheesewater, -1, (x + (32 * i)), y, 1, 1, image_angle, image_blend, alpha)
+	}
+	draw_sprite_ext(spr_cheesewater2, -1, x, y + 32, image_xscale, round((room_height + 128)/32), image_angle, image_blend, alpha)
+	#endregion
+/*
 var _cam_x = camera_get_view_x(view_camera[0])
 var _cam_y = camera_get_view_y(view_camera[0])
 if (!surface_exists(watersurface)) 
@@ -15,12 +21,6 @@ if surface_exists(masksurface)
 	#region Draw itself
 	for (var i = 0; i < abs(image_xscale); i++)
 		draw_sprite_ext(spr_cheesewater, -1, (x + (32 * i)), y, 1, 1, image_angle, image_blend, 1)
-		/*
-	for (var o = 1; o < abs(image_yscale); o++)
-	{	
-		for (var z = 0; z < abs(image_xscale); z++)
-			draw_sprite_ext(spr_cheesewater2, -1, (x + (32 * z)), (y + (32 * o)), 1, 1, image_angle, image_blend, 1)
-	}*/
 	draw_sprite_ext(spr_cheesewater2, -1, x, y + 32, image_xscale, round((room_height + 128)/32), image_angle, image_blend, 1)
 	#endregion
 	draw_set_blend_mode(bm_normal);
@@ -60,7 +60,7 @@ if surface_exists(watersurface)
 		}
 	}
 	draw_set_blend_mode(bm_subtract);
-	draw_surface(masksurface, 0 - _cam_x, 0 - _cam_y);
+	draw_surface(masksurface, _cam_x, _cam_y);
 	draw_set_blend_mode(bm_normal);
 	for (var i = 0; i < abs(image_xscale); i++)
 		draw_sprite_ext(spr_cheesewater, -1, (x + (32 * i)  - _cam_x), y  - _cam_y, 1, 1, image_angle, image_blend, 1)	
