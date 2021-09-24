@@ -299,15 +299,6 @@ function scr_collide_destructibles() {
 					initialvsp = other.vsp
 	                instance_destroy()
 				}
-	        }
-	        if (place_meeting(x, (y + 1), obj_metalblockhard) && freefallsmash > 10)
-	        {
-	            with (instance_place(x, (y + 1), obj_metalblockhard))
-	            {
-					initialhsp = other.hsp
-					initialvsp = other.vsp
-	                instance_destroy()
-				}
 	        }		
 	    }
 	    if (state == 22)
@@ -646,15 +637,6 @@ function scr_collide_destructibles() {
 	        if (place_meeting(x, (y + 1), obj_metalblock) && freefallsmash > 10)
 	        {
 	            with (instance_place(x, (y + 1), obj_metalblock))
-	            {
-					initialhsp = other.hsp
-					initialvsp = other.vsp
-	                instance_destroy()
-				}
-	        }
-	        if (place_meeting(x, (y + 1), obj_metalblockhard) && freefallsmash > 10)
-	        {
-	            with (instance_place(x, (y + 1), obj_metalblockhard))
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp

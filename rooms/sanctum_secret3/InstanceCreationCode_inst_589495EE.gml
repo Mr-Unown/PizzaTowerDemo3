@@ -1,3 +1,2 @@
-content = obj_pizzard_bolt
-spawny = y - 14
-refresh = 0.5
+content = obj_pizzard
+refresh = 0

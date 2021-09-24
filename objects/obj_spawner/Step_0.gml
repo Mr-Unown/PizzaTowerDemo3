@@ -11,6 +11,7 @@ if (refresh <= 0)
 			{
 				other.createdid = id
 				image_xscale = other.image_xscale
+
 				if variable_instance_exists(id,"vsp")
 					vsp = -3
 			}
