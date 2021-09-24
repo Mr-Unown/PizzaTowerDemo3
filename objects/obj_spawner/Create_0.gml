@@ -6,4 +6,4 @@ depth = 5
 vsp = 0
 hsp = 0
 grav = 0.35
-
+spawny = (y - 35)

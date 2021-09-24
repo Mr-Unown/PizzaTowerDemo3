@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_mysteryspawner",
-    "path": "sprites/spr_mysteryspawner/spr_mysteryspawner.yy",
+    "name": "spr_baddiespawner",
+    "path": "sprites/spr_baddiespawner/spr_baddiespawner.yy",
   },
   "solid": false,
   "visible": true,
