@@ -55,7 +55,15 @@ function scr_player_freefall() {
 		{
 			other.xscale = -sign(image_xscale)
 		}
-		
+		if tile_meeting_precise(x,y + 1,"Tiles_Solid") == tiletype.leftslope1 || tile_meeting_precise(x,y + 1,"Tiles_Solid") == tiletype.leftslope2 || tile_meeting_precise(x,y + 1,"Tiles_Solid") == tiletype.leftsteepslope || tile_meeting_precise(x,y + 1,"Tiles_Solid") == tiletype.rightsteepslope || tile_meeting_precise(x,y + 1,"Tiles_Solid") == tiletype.rightslope1 || tile_meeting_precise(x,y + 1,"Tiles_Solid") == tiletype.rightslope2
+		{
+			var _slope = scr_tileslope(x, y + 1)
+			if _slope[0] != noone
+			{
+				var _xscale = _slope[1]
+				xscale = -sign(_xscale)		
+			}
+		}
 	    with (instance_create(x, y, obj_jumpdust))
 	        image_xscale = other.xscale
 		with instance_create(x, y, obj_landcloud)

@@ -31,7 +31,7 @@ if surface_exists(watersurface)
 	surface_set_target(watersurface)
 	draw_clear_alpha(c_black, 0);
 	#region Draw itself
-	draw_sprite_ext(spr_cheesewater2, -1, x - _cam_x, y + 32 - _cam_y, image_xscale, round((room_height + 128)/32), image_angle, image_blend, 1)
+	draw_sprite_ext(spr_cheesewater2, -1, x - _cam_x, (y + 32) - _cam_y, image_xscale, round((room_height + 128)/32), image_angle, image_blend, 1)
 	#endregion
 	with obj_watercurrent
 	{
@@ -60,7 +60,7 @@ if surface_exists(watersurface)
 		}
 	}
 	draw_set_blend_mode(bm_subtract);
-	draw_surface(masksurface, 0, 0);
+	draw_surface(masksurface, 0 - _cam_x, 0 - _cam_y);
 	draw_set_blend_mode(bm_normal);
 	for (var i = 0; i < abs(image_xscale); i++)
 		draw_sprite_ext(spr_cheesewater, -1, (x + (32 * i)  - _cam_x), y  - _cam_y, 1, 1, image_angle, image_blend, 1)	
