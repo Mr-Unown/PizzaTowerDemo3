@@ -87,7 +87,7 @@ function scr_player_cheesepep() {
 	else
 	    movespeed = 0
 	//Stick to Walls and Such
-	if place_meeting((x + hsp), y, obj_solid) && !place_meeting((x + sign(hsp)), y, obj_slope)
+	if place_meeting((x + hsp), y, obj_solid) && !scr_slope_ext(x + sign(hsp), y)
 	{
 		state = 14
 		sprite_index = spr_cheesepep_stickwall	
@@ -97,7 +97,7 @@ function scr_player_cheesepep() {
 		_direction = -1	
 	}
 	//Stick to Walls when falling
-	if move != 0 && !scr_solid(x + sign(hsp),y + 1) && grounded && place_meeting(x, y + 1, obj_solid) && !place_meeting(x + sign(hsp), y + 1, obj_solid) && !place_meeting((x + sign(hsp)), y + 1, obj_slope) && !place_meeting((x + sign(hsp)), y, obj_slope)
+	if move != 0 && !scr_solid(x + sign(hsp),y + 1) && grounded && place_meeting(x, y + 1, obj_solid) && !place_meeting(x + sign(hsp), y + 1, obj_solid) && !scr_slope_ext(x + sign(hsp), y + 1) && !scr_slope_ext(x + sign(hsp), y)
 	{
 		x = x + sign(hsp)
 		y = y + 3

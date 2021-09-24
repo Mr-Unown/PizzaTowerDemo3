@@ -11,14 +11,27 @@ function scr_player_knightpepslopes() {
 	hurted = 1
 	if (sprite_index == spr_knightpepdownslope)
 	    movespeed = clamp(movespeed,15,movespeed + 100)
-	var slope = instance_place(x,y+1,obj_slope) 
 	if place_meeting(x,y + 1,obj_slope) && grounded = true
 	{
+		var slope = instance_place(x, y + 1,obj_slope) 
 		if sign(slope.image_xscale) != xscale
 			sprite_index = spr_knightpepdownslope
 		else
 			sprite_index = spr_knightpepcharge
 	}
+	else if tile_meeting_precise(x,y + 1,"Tiles_Solid") == tiletype.leftslope1 || tile_meeting_precise(x,y + 1,"Tiles_Solid") == tiletype.leftslope2 || tile_meeting_precise(x,y + 1,"Tiles_Solid") == tiletype.leftsteepslope || tile_meeting_precise(x,y + 1,"Tiles_Solid") == tiletype.rightsteepslope || tile_meeting_precise(x,y + 1,"Tiles_Solid") == tiletype.rightslope1 || tile_meeting_precise(x,y + 1,"Tiles_Solid") == tiletype.rightslope2
+	{
+		var _slope = scr_tileslope(x, y + 1)
+		if _slope[0] != noone
+		{
+			var _xscale = _slope[1]
+			if sign(_xscale) != xscale
+				sprite_index = spr_knightpepdownslope
+			else
+				sprite_index = spr_knightpepcharge			
+		}
+
+	}	
 	else if grounded = true
 		sprite_index = spr_knightpepcharge
 	//Jump
@@ -61,7 +74,7 @@ function scr_player_knightpepslopes() {
 	if sprite_index = spr_knightpepjump && floor(image_index) >= image_number - 1
 		sprite_index = spr_knightpepfall
 	//Bump into wall
-	if ( ( scr_slope() && scr_solid(x+ sign(hsp),y - 2) && !place_meeting(x + sign(hsp),y,obj_slope)) || scr_solid(x+ sign(hsp),y) && !place_meeting(x + sign(hsp),y,obj_slope) && !scr_slope() ) && (!place_meeting((x + sign(hsp)), y, obj_metalblock) && !place_meeting((x + sign(hsp)), y, obj_metalblockhard) && (!place_meeting((x + sign(hsp)), y, obj_destructibles))) 
+	if ( ( scr_slope() && scr_solid(x+ sign(hsp),y - 2) && !scr_slope_ext(x + sign(hsp), y)) || scr_solid(x+ sign(hsp),y) && !scr_slope_ext(x + sign(hsp), y) && !scr_slope() ) && (!place_meeting((x + sign(hsp)), y, obj_metalblock) && !place_meeting((x + sign(hsp)), y, obj_metalblockhard) && (!place_meeting((x + sign(hsp)), y, obj_destructibles))) 
 	{
 	    if (character == "P")
 	    {

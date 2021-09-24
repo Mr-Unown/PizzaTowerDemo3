@@ -27,7 +27,7 @@ function rousr_dissonance_set_timestamps() {
 	    endTimeLo = endTimeStamp & 0xFFFFFFFF;
 	    endTimeHi = endTimeStamp >> 32;  
   
-	    var test = endTimeLo + (endTimeHi << 32);
+	    //var test = endTimeLo + (endTimeHi << 32);
 	  }
   
 	  Is_dirty = true; 

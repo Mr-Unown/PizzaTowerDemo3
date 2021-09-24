@@ -1,1 +1,1 @@
-image_yscale = round((room_height + 128)/32)
+//image_yscale = round((room_height + 128)/32)

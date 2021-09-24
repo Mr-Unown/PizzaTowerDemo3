@@ -27,13 +27,13 @@ else if !surface_exists(surf_pallete)
 	#endregion	
 }
 //Stolen Angle Code thing
-var offset_x = 0
-var offset_y = 0
-var _cos = cos(draw_angle)
-var _sin = sin(draw_angle)
-var drawx = x + _cos * offset_x - _sin * offset_y;
-var drawy = y + _sin * offset_x + _cos * offset_y;
-//var draw_angle = image_angle;
+//var offset_x = 0
+//var offset_y = 0
+//var _cos = cos(draw_angle)
+//var _sin = sin(draw_angle)
+var drawx = x //+ _cos * offset_x - _sin * offset_y;
+var drawy = y //+ _sin * offset_x + _cos * offset_y;
+var draw_angle = image_angle;
 
 
 if surface_exists(surf_pallete) && (paletteselect >= sprite_get_width(spr_palette) - 1)
@@ -94,4 +94,13 @@ if show_tricks
 	draw_set_color(c_white)
 	draw_text(x,y - 90,string(tricksperformed))
 }
-//draw_text(x,y - 180,string(maxmachspeed))
+/*
+if scr_slope_ext(x,y+1)
+{
+	var _angle = scr_slopeangle(x,y+1)
+	draw_set_font(font1)
+	draw_text(x,y - 180,string(_angle))
+	draw_text(x,y - 64,string(_angle))
+}*/
+	draw_set_font(font1)
+	draw_text(x,y - 64,string(instance_number(all)))

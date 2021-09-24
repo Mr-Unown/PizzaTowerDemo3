@@ -54,8 +54,8 @@ function scr_player_ladder() {
 	    vsp = -9
 	    image_index = 0
 	}
-	var solidcheck = ( place_meeting(x, y, obj_platform) || (layer_exists("Tiles_Solid") && tile_meeting_precise(x, y, "Tiles_Solid") == tiletype.upplatform) )
-	if (key_down && grounded && !solidcheck)
+	var solidcheck = ( place_meeting(x, y + 1, obj_platform) || (layer_exists("Tiles_Solid") && tile_meeting_precise(x, y + 1, "Tiles_Solid") == tiletype.upplatform) )
+	if (key_down && scr_solid(x, y + 1) && !solidcheck)
 	{
 	    state = 0
 	    image_index = 0

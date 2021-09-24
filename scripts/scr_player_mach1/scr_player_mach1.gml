@@ -76,7 +76,7 @@ function scr_player_mach1() {
 	}
 	if (grounded && vsp > 0)
 	    jumpstop = 0
-	if (place_meeting((x + xscale), y, obj_solid) && (!place_meeting((x + sign(hsp)), y, obj_slope)))
+	if (place_meeting((x + xscale), y, obj_solid) && (!scr_slope_ext(x + sign(hsp), y)))
 	{
 	    movespeed = 0
 	    state = 0

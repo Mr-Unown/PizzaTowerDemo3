@@ -54,6 +54,7 @@ customupdate = true;
 //Things
 if (object_index == obj_player1)
 {
+	//room_set_live(room, true);
     if (global.coop == 1)
 	{
         #region Changetoppings

@@ -26,8 +26,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Level Collision",
-    "path": "folders/Objects/Level Structure/Level Collision.yy",
+    "name": "Tile Collisions",
+    "path": "folders/Objects/Level Structure/Level Collision/Tile Collisions.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_precise_tile_checker",

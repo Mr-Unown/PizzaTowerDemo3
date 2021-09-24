@@ -5,7 +5,8 @@ function scr_collide() {
 	grounded = false
 
 	// Vertical
-	repeat(abs(vsp)) {
+	repeat(abs(vsp)) 
+	{
 	    if !scr_solid(x, y + sign(vsp))
 	        y += sign(vsp); 
 	    else {
@@ -15,7 +16,8 @@ function scr_collide() {
 	}
 
 	// Horizontal
-	repeat(abs(hsp)) {
+	repeat(abs(hsp)) 
+	{
 	    // Move up slope
 	    if scr_solid(x + sign(hsp), y) && !scr_solid(x + sign(hsp), y - 1)
 	        y--

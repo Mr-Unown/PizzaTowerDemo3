@@ -74,12 +74,12 @@ if ((!pause) && (!instance_exists(obj_fadeout)))
 				screenshot_surface = surface_create(960,540)
 				surface_set_target(screenshot_surface)
 				draw_clear_alpha(c_black, 0)
+				gpu_set_blendenable(false)
 				draw_surface(application_surface,0,0)
-				gpu_set_blendenable(0)
 				gpu_set_colorwriteenable(0, 0, 0, 1)
 				draw_set_color(c_white)
 				draw_rectangle(-192, -192, 960 + 192, 540 + 192, 0)
-				gpu_set_blendenable(1)
+				gpu_set_blendenable(true)
 				gpu_set_colorwriteenable(1, 1, 1, 1)
 				surface_reset_target()
 	
@@ -135,7 +135,7 @@ if (instance_exists(obj_pausefadeout) && instance_exists(obj_fadeout))
 if (pause == 1 && (!instance_exists(obj_mainconfig)))
 {
     scr_getinput()
-    application_surface_draw_enable(1)
+    application_surface_draw_enable(true)
     if ((key_down2 || key_right2) && selected < 2)
     {
         selected += 1

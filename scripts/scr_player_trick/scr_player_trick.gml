@@ -22,7 +22,7 @@ function scr_player_trick() {
 		instance_create(x, y, obj_tauntaftereffectspawner)
 	}
 	//Wallrun
-	if (((!grounded) && scr_solid(x + hsp,y) && (!place_meeting((x + hsp), y, obj_destructibles)) && (!place_meeting((x + sign(hsp)), y, obj_slope))) || (grounded && (scr_solid(x + sign(hsp),y - 2) && !place_meeting(x + sign(hsp),y,obj_slope)) && (!place_meeting((x + hsp), y, obj_destructibles))  && scr_slope() ) )
+	if (((!grounded) && scr_solid(x + hsp,y) && (!place_meeting((x + hsp), y, obj_destructibles)) && (!scr_slope_ext(x + sign(hsp), y))) || (grounded && (scr_solid(x + sign(hsp),y - 2) && !scr_slope_ext(x + sign(hsp), y)) && (!place_meeting((x + hsp), y, obj_destructibles))  && scr_slope() ) )
 	{
 	    wallspeed = clamp(movespeed,0,24)
 	    state = 17

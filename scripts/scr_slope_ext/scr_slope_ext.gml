@@ -37,6 +37,16 @@ function scr_slope_ext(argument0, argument1)
 	        }
 	    }
 	}
+	//Tile
+	if layer_exists("Tiles_Solid")
+	{
+		if tile_meeting_precise(x,y,"Tiles_Solid") == tiletype.leftslope1 || tile_meeting_precise(x,y,"Tiles_Solid") == tiletype.leftslope2 || tile_meeting_precise(x,y,"Tiles_Solid") == tiletype.leftsteepslope || tile_meeting_precise(x,y,"Tiles_Solid") == tiletype.rightsteepslope || tile_meeting_precise(x,y,"Tiles_Solid") == tiletype.rightslope1 || tile_meeting_precise(x,y,"Tiles_Solid") == tiletype.rightslope2
+		{
+			x = old_x
+			y = old_y
+			return 1;
+		}
+	}		
 	x = old_x
 	y = old_y
 	return 0;

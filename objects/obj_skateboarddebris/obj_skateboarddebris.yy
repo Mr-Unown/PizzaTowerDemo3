@@ -8,8 +8,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_parentparticle",
-    "path": "objects/obj_parentparticle/obj_parentparticle.yy",
+    "name": "obj_debrisgroup",
+    "path": "objects/obj_debrisgroup/obj_debrisgroup.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,

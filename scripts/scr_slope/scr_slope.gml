@@ -29,6 +29,15 @@ function scr_slope() {
 	        }
 	    }
 	}
+	//Tile
+	if layer_exists("Tiles_Solid")
+	{
+		if tile_meeting_precise(x,y,"Tiles_Solid") == tiletype.leftslope1 || tile_meeting_precise(x,y,"Tiles_Solid") == tiletype.leftslope2 || tile_meeting_precise(x,y,"Tiles_Solid") == tiletype.leftsteepslope || tile_meeting_precise(x,y,"Tiles_Solid") == tiletype.rightsteepslope || tile_meeting_precise(x,y,"Tiles_Solid") == tiletype.rightslope1 || tile_meeting_precise(x,y,"Tiles_Solid") == tiletype.rightslope2
+		{
+			y--
+			return true;
+		}
+	}		
 	y--
 	return 0;
 

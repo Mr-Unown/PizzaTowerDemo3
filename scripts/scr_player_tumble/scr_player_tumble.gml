@@ -7,15 +7,34 @@ function scr_player_tumble() {
 	//Slopes
 	if scr_slope() && vsp >= 0
 	{
-		with (instance_place(x, (y + 1), obj_slope))
+		if place_meeting(x, y + 1,obj_slope)
 		{
-			var slope_acceleration = abs(image_yscale) / abs(image_xscale)
-			if other.movespeed > 8 && other.xscale == sign(image_xscale)
+			with (instance_place(x, (y + 1), obj_slope))
 			{
-				other.movespeed -= (0.25 * slope_acceleration)
+				var slope_acceleration = abs(image_yscale) / abs(image_xscale)
+				if other.movespeed > 8 && other.xscale == sign(image_xscale)
+				{
+					other.movespeed -= (0.25 * slope_acceleration)
+				}
+				else if other.movespeed < 20 && other.xscale == -sign(image_xscale)
+					other.movespeed += (0.25 * slope_acceleration)
 			}
-			else if other.movespeed < 20 && other.xscale == -sign(image_xscale)
-				other.movespeed += (0.25 * slope_acceleration)
+		}
+		if tile_meeting_precise(x,y + 1,"Tiles_Solid") == tiletype.leftslope1 || tile_meeting_precise(x,y + 1,"Tiles_Solid") == tiletype.leftslope2 || tile_meeting_precise(x,y + 1,"Tiles_Solid") == tiletype.leftsteepslope || tile_meeting_precise(x,y + 1,"Tiles_Solid") == tiletype.rightsteepslope || tile_meeting_precise(x,y + 1,"Tiles_Solid") == tiletype.rightslope1 || tile_meeting_precise(x,y + 1,"Tiles_Solid") == tiletype.rightslope2
+		{
+			var _slope = scr_tileslope(x, y + 1)
+			if _slope[0] != noone
+			{
+				var _xscale = _slope[1]
+				var _yscale = _slope[2]
+				var slope_acceleration = abs(_yscale) / abs(_xscale)
+				if other.movespeed > 8 && other.xscale == sign(_xscale)
+				{
+					other.movespeed -= (0.25 * slope_acceleration)
+				}
+				else if other.movespeed < 20 && other.xscale == -sign(_xscale)
+					other.movespeed += (0.25 * slope_acceleration)				
+			}
 		}
 	}	
 	if ((!scr_slope()) && sprite_index == spr_tumblestart && floor(image_index) < 11)

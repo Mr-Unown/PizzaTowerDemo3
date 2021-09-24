@@ -2,7 +2,7 @@
 
 if active = true
 {
-if (keyboard_check_pressed(vk_return) && input != "")
+	if (keyboard_check_pressed(vk_return) && input != "")
     {
 		var _commands = string_split(input, " ")
 		

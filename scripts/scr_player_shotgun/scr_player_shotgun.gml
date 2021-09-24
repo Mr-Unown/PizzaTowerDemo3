@@ -20,9 +20,9 @@ function scr_player_shotgun() {
 	    movespeed -= 0.1
 	if (sprite_index == spr_shotgunpullout)
 	    movespeed = 0
-	if (scr_solid((x + sign(hsp)), y) && xscale == 1 && move == 1 && (!place_meeting((x + 1), y, obj_slope)))
+	if (scr_solid((x + sign(hsp)), y) && xscale == 1 && move == 1 && (!scr_slope_ext(x + 1, y)))
 	    movespeed = 0
-	if (scr_solid((x + sign(hsp)), y) && xscale == -1 && move == -1 && (!place_meeting((x - 1), y, obj_slope)))
+	if (scr_solid((x + sign(hsp)), y) && xscale == -1 && move == -1 && (!scr_slope_ext(x - 1, y)))
 	    movespeed = 0
 	landAnim = 0
 	momemtum = 1

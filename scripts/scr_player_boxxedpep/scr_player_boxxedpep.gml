@@ -28,9 +28,9 @@ function scr_player_boxxedpep() {
 	    else if place_meeting(x, (y + 1), obj_railh2)
 	        hsp = ((move * movespeed) + 5)
 	}
-	if (scr_solid((x + sign(hsp)), y) && xscale == 1 && move == 1 && (!place_meeting((x + 1), y, obj_slope)))
+	if (scr_solid((x + sign(hsp)), y) && xscale == 1 && move == 1 && (!scr_slope_ext(x + 1, y)))
 	    movespeed = 0
-	if (scr_solid((x + sign(hsp)), y) && xscale == -1 && move == -1 && (!place_meeting((x - 1), y, obj_slope)))
+	if (scr_solid((x + sign(hsp)), y) && xscale == -1 && move == -1 && (!scr_slope_ext(x - 1, y)))
 	    movespeed = 0
 	if (grounded && input_buffer_jump < 8 && vsp > 0 && (!scr_solid(x, (y - 16))) && (!scr_solid(x, (y - 32))))
 	{

@@ -7,7 +7,8 @@ function scr_collide_player() {
 
 
 	// Vertical
-	repeat(abs(vsp)) {
+	repeat(abs(vsp)) 
+	{
 	    if !scr_solid_player(x, y + sign(vsp))
 	        y += sign(vsp); 
 	    else {
@@ -17,9 +18,8 @@ function scr_collide_player() {
 	}
 
 	// Horizontal
-	repeat(abs(hsp)) {
-
-	
+	repeat(abs(hsp)) 
+	{
 	    // Move up slope
 	    if scr_solid_player(x + sign(hsp), y) && !scr_solid_player(x + sign(hsp), y - 1)
 	        y--

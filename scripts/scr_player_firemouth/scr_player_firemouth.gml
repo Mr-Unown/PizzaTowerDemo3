@@ -74,13 +74,13 @@ function scr_player_firemouth() {
 	    sprite_index = spr_firemouth
 	    image_index = 0
 	}
-	if (scr_solid((x + 1), y) && xscale == 1 && hsp != 0 && (!place_meeting((x + sign(hsp)), y, obj_slope)) && sprite_index != spr_firemouthshoot)
+	if (scr_solid((x + 1), y) && xscale == 1 && hsp != 0 && (!scr_slope_ext(x + sign(hsp), y)) && sprite_index != spr_firemouthshoot)
 	{
 	    instance_create((x + 10), (y + 10), obj_bumpeffect)
 	    xscale *= -1
 	    movespeed /= 2
 	}
-	if (scr_solid((x - 1), y) && xscale == -1 && hsp != 0 && (!place_meeting((x + sign(hsp)), y, obj_slope)) && sprite_index != spr_firemouthshoot)
+	if (scr_solid((x - 1), y) && xscale == -1 && hsp != 0 && (!scr_slope_ext(x + sign(hsp), y)) && sprite_index != spr_firemouthshoot)
 	{
 	    instance_create((x - 10), (y + 10), obj_bumpeffect)
 	    xscale *= -1

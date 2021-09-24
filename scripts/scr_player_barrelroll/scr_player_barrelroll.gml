@@ -10,7 +10,7 @@ function scr_player_barrelroll() {
 	    movespeed = 11
 
 	//Collide with Wall
-	if place_meeting((x + sign(hsp)), y, obj_solid) && (!place_meeting((x), y + 1, obj_slope) && !scr_slope()) && !place_meeting((x + hsp), y, obj_barrelblock) && !place_meeting((x + hsp), y, obj_destructibles)
+	if place_meeting((x + sign(hsp)), y, obj_solid) && (!scr_slope_ext(x, y + 1) && !scr_slope()) && !place_meeting((x + hsp), y, obj_barrelblock) && !place_meeting((x + hsp), y, obj_destructibles)
 	{
 	    state = 72
 	    hsp = (2.5 * -xscale)
@@ -18,7 +18,7 @@ function scr_player_barrelroll() {
 	    repeat (4)
 	        instance_create(x, y, obj_wooddebris)
 	}
-	else if place_meeting((x + sign(hsp)), y, obj_solid) && (place_meeting((x), y + 1, obj_slope) || scr_slope()) && !place_meeting((x + hsp), y, obj_barrelblock) && !place_meeting((x + hsp), y, obj_destructibles)
+	else if place_meeting((x + sign(hsp)), y, obj_solid) && (scr_slope_ext(x, y + 1) || scr_slope()) && !place_meeting((x + hsp), y, obj_barrelblock) && !place_meeting((x + hsp), y, obj_destructibles)
 	{
 		vsp = -9
 		jumpstop = 1

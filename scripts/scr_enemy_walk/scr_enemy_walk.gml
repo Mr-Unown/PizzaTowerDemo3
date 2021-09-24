@@ -22,7 +22,7 @@ function scr_enemy_walk() {
 	image_speed = _image_speed
 	if ((scr_solid((x + 1), y) && image_xscale == 1) || (scr_solid((x - 1), y) && image_xscale == -1) || place_meeting((x + hsp), y, obj_hallway)) 
 	{
-	    if (!place_meeting((x + sign(hsp)), y, obj_slope)) && grounded
+	    if !scr_slope_ext(x + sign(hsp),y) && grounded
 	    {
 	        if (object_index == obj_forknight)
 	        {
@@ -41,7 +41,7 @@ function scr_enemy_walk() {
 	        else if grounded
 	            image_xscale *= -1
 	    }
-		else if object_index = obj_ufoolive && (!place_meeting((x + sign(hsp)), y, obj_slope))
+		else if object_index = obj_ufoolive && (!scr_slope_ext(x + sign(hsp),y))
 			image_xscale *= -1
 	}
 	if (object_index != obj_ancho) && object_index != obj_ufoolive

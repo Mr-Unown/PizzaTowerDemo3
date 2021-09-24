@@ -19,33 +19,73 @@ function scr_player_machroll() {
 	//Slopes
 	if scr_slope() && vsp >= 0
 	{
-		with (instance_place(x, (y + 1), obj_slope))
-		{
-			var slope_acceleration = abs(image_yscale) / abs(image_xscale)
-			//Roll Momentum
-			if other.xscale == sign(image_xscale)
+		if place_meeting(x, y + 1,obj_slope)
+		{		
+			#region Object
+			with (instance_place(x, (y + 1), obj_slope))
 			{
-				if other.movespeed > 0 
+				var slope_acceleration = abs(image_yscale) / abs(image_xscale)
+				//Roll Momentum
+				if other.xscale == sign(image_xscale)
 				{
-				other.movespeed -= (0.25 * slope_acceleration)
-					if other.movespeed <= 0
+					if other.movespeed > 0 
 					{
-						other.xscale = -sign(image_xscale)
-						other.maxmachspeed = 24
+					other.movespeed -= (0.25 * slope_acceleration)
+						if other.movespeed <= 0
+						{
+							other.xscale = -sign(image_xscale)
+							other.maxmachspeed = 24
+						}
 					}
+					if other.maxmachspeed > 24
+						other.maxmachspeed -= (0.25 * slope_acceleration)
 				}
-				if other.maxmachspeed > 24
-					other.maxmachspeed -= (0.25 * slope_acceleration)
-			}
-			else if other.xscale == -sign(image_xscale)
-			{
-				if other.movespeed < other.maxmachspeed
-					other.movespeed += (0.25 * slope_acceleration)
-				if other.maxmachspeed < 28
-					other.maxmachspeed += (0.125 * slope_acceleration)
+				else if other.xscale == -sign(image_xscale)
+				{
+					if other.movespeed < other.maxmachspeed
+						other.movespeed += (0.25 * slope_acceleration)
+					if other.maxmachspeed < 28
+						other.maxmachspeed += (0.125 * slope_acceleration)
 				
+				}
 			}
+			#endregion
 		}
+		if tile_meeting_precise(x,y + 1,"Tiles_Solid") == tiletype.leftslope1 || tile_meeting_precise(x,y + 1,"Tiles_Solid") == tiletype.leftslope2 || tile_meeting_precise(x,y + 1,"Tiles_Solid") == tiletype.leftsteepslope || tile_meeting_precise(x,y + 1,"Tiles_Solid") == tiletype.rightsteepslope || tile_meeting_precise(x,y + 1,"Tiles_Solid") == tiletype.rightslope1 || tile_meeting_precise(x,y + 1,"Tiles_Solid") == tiletype.rightslope2
+		{
+			#region Tile
+			var _slope = scr_tileslope(x, y + 1)
+			if _slope[0] != noone
+			{
+				var _xscale = _slope[1]
+				var _yscale = _slope[2]
+				var slope_acceleration = abs(_yscale) / abs(_xscale)
+				//Roll Momentum
+				if other.xscale == sign(_xscale)
+				{
+					if other.movespeed > 0 
+					{
+					other.movespeed -= (0.25 * slope_acceleration)
+						if other.movespeed <= 0
+						{
+							other.xscale = -sign(_xscale)
+							other.maxmachspeed = 24
+						}
+					}
+					if other.maxmachspeed > 24
+						other.maxmachspeed -= (0.25 * slope_acceleration)
+				}
+				else if other.xscale == -sign(_xscale)
+				{
+					if other.movespeed < other.maxmachspeed
+						other.movespeed += (0.25 * slope_acceleration)
+					if other.maxmachspeed < 28
+						other.maxmachspeed += (0.125 * slope_acceleration)
+				
+				}			
+			}
+			#endregion
+		}		
 	}
 	if (machhitAnim == 1 || rollmove == 1)
 	{

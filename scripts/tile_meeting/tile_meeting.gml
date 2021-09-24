@@ -1,4 +1,4 @@
-function tile_meeting(x,y,layer){
+function tile_meeting(argument0,argument1,argument2){
 ///@description tile_meeting(x,y,layer)
 ///@param x
 ///@param y

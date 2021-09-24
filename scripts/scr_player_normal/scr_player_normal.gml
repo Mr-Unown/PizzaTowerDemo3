@@ -512,7 +512,7 @@ function scr_player_normal() {
 	    state = 12
 	    image_index = 0
 	}
-	if (key_attack && (character == "P" || (character == "N" && pogo != true) || character == "PZ"  || (character = "D" && spellselect = 2) || character == "V")) && !scr_solidwall_noslope(x + xscale,y)
+	if (key_attack && (character == "P" || (character == "N" && pogo != true) || character == "PZ"  || (character = "D" && spellselect = 2) || character == "V")) && (!scr_solid(x + xscale,y) || scr_slope_ext(x + xscale,y))
 	{
 		hsp = 0;
 	    movespeed = 6

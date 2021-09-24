@@ -21,14 +21,14 @@ function scr_player_slipnslide() {
 	    mach2 = 0
 	    image_index = 0
 	}
-	if (scr_solid((x + 1), y) && xscale == 1 && (!place_meeting((x + sign(hsp)), y, obj_slope))) && !place_meeting((x + sign(hsp)), y, obj_destructibles)
+	if (scr_solid((x + 1), y) && xscale == 1 && (!scr_slope_ext(x + sign(hsp), y))) && !place_meeting((x + sign(hsp)), y, obj_destructibles)
 	{
 	    state = states.jump
 		vsp = -11
 		jumpstop = 1
 		movespeed = 0
 	}
-	if (scr_solid((x - 1), y) && xscale == -1 && (!place_meeting((x + sign(hsp)), y, obj_slope))) && !place_meeting((x + sign(hsp)), y, obj_destructibles)
+	if (scr_solid((x - 1), y) && xscale == -1 && (!scr_slope_ext(x + sign(hsp), y))) && !place_meeting((x + sign(hsp)), y, obj_destructibles)
 	{
 		state = states.jump
 		vsp = -11

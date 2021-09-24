@@ -55,6 +55,7 @@ function scr_player_freefall() {
 		{
 			other.xscale = -sign(image_xscale)
 		}
+		
 	    with (instance_create(x, y, obj_jumpdust))
 	        image_xscale = other.xscale
 		with instance_create(x, y, obj_landcloud)

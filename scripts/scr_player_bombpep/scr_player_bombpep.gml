@@ -83,12 +83,12 @@ function scr_player_bombpep() {
 		sprite_index = spr_idle
 		image_index = 0
 	}
-	if (scr_solid((x + 1), y) && xscale == 1 && hsp != 0 && (!place_meeting((x + sign(hsp)), y, obj_slope)))
+	if (scr_solid((x + 1), y) && xscale == 1 && hsp != 0 && (!scr_slope_ext(x + sign(hsp), y)))
 	{
 	    instance_create((x + 10), (y + 10), obj_bumpeffect)
 	    xscale *= -1
 	}
-	if (scr_solid((x - 1), y) && xscale == -1 && hsp != 0 && (!place_meeting((x + sign(hsp)), y, obj_slope)))
+	if (scr_solid((x - 1), y) && xscale == -1 && hsp != 0 && (!scr_slope_ext(x + sign(hsp), y)))
 	{
 	    instance_create((x - 10), (y + 10), obj_bumpeffect)
 	    xscale *= -1

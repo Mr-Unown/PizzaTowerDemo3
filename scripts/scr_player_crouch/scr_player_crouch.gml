@@ -75,6 +75,15 @@ function scr_player_crouch() {
 	    movespeed = 14
 	    with (instance_place((x + xscale), (y + 1), obj_slope))
 	        other.xscale = (-sign(image_xscale))
+		if tile_meeting_precise(x + xscale,y + 1,"Tiles_Solid") == tiletype.leftslope1 || tile_meeting_precise(x+ xscale,y + 1,"Tiles_Solid") == tiletype.leftslope2 || tile_meeting_precise(x+ xscale,y + 1,"Tiles_Solid") == tiletype.leftsteepslope || tile_meeting_precise(x+ xscale,y + 1,"Tiles_Solid") == tiletype.rightsteepslope || tile_meeting_precise(x+ xscale,y + 1,"Tiles_Solid") == tiletype.rightslope1 || tile_meeting_precise(x+ xscale,y + 1,"Tiles_Solid") == tiletype.rightslope2
+		{
+			var _slope = scr_tileslope(x + xscale, y + 1)
+			if _slope[0] != noone
+			{
+				var _xscale = _slope[1]
+				 xscale = (-sign(_xscale))
+			}
+		}			
 	    state = 2
 	    sprite_index = spr_tumblestart
 	}

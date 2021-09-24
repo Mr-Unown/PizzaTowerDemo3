@@ -6,7 +6,7 @@
     "path": "folders/Scripts/collision.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scr_slopeangle",
+  "name": "tile_meeting_slope",
   "tags": [],
   "resourceType": "GMScript",
 }

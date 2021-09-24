@@ -135,6 +135,18 @@ function scr_collide_destructibles() {
 				}
 	        }
 	    }
+		if state = states.tackle
+		{
+	        if place_meeting((x + hsp), y, obj_destructibles)
+	        {
+	            with (instance_place((x + hsp), y, obj_destructibles))
+	            {
+					initialhsp = other.hsp
+					initialvsp = other.vsp
+	                instance_destroy()
+				}
+	        }			
+		}
 		if state = states.breakdance 
 		{
 	        if place_meeting((x + hsp), y, obj_destructibles)
@@ -328,8 +340,7 @@ function scr_collide_destructibles() {
 	                            sprite_index = choose(spr_suplexmash1, spr_suplexmash2, spr_suplexmash3, spr_suplexmash4, spr_punch)
 	                            image_index = 0
 	                            state = 57
-	                            movespeed = 3
-	                            vsp = -3
+	                            vsp = 0
 	                            instance_destroy(other.id)
 	                        }
 	                    }
@@ -509,6 +520,18 @@ function scr_collide_destructibles() {
 				}
 	        }		
 		}		
+		if state = states.tackle
+		{
+	        if place_meeting((x + hsp), y, obj_destructibles)
+	        {
+	            with (instance_place((x + hsp), y, obj_destructibles))
+	            {
+					initialhsp = other.hsp
+					initialvsp = other.vsp
+	                instance_destroy()
+				}
+	        }			
+		}		
 		if state = states.breakdance 
 		{
 	        if place_meeting((x + hsp), y, obj_destructibles)
@@ -669,8 +692,7 @@ function scr_collide_destructibles() {
 	                            sprite_index = choose(spr_suplexmash1, spr_suplexmash2, spr_suplexmash3, spr_suplexmash4, spr_punch)
 	                            image_index = 0
 	                            state = 57
-	                            movespeed = 3
-	                            vsp = -3
+	                            vsp = 0
 	                            instance_destroy(other.id)
 	                        }
 	                    }
