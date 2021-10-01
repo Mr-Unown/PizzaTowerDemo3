@@ -1,5 +1,6 @@
 if (ds_list_find_index(global.saveroom, id) == -1 && global.snickchallenge == 0)
 {
+	
     repeat (6)
     {
         with (instance_create((x + 16), y + 16, obj_pizzadebris))

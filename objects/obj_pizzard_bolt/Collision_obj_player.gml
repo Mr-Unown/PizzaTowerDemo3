@@ -4,7 +4,7 @@ with (other.id)
     {
         if (character != "V")
         {
-            if (state != 24 && hurted == 0)
+            if (state != 24 && (hurted == 0 || state == states.newbomb))
             {
                 scr_soundeffect(sfx_becomeknight)
 				var randomchance = irandom_range(0,100);

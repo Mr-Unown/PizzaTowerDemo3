@@ -9,6 +9,12 @@ if (ds_list_find_index(global.saveroom, id) == -1)
     var data4 = tilemap_get_at_pixel(map_id, (x + 33), (y + 33))
     repeat (2)
         instance_create((x + 32), (y + 32), obj_metaldebris)
+	repeat (3)
+	with (instance_create((x + 32 + random_range(-16, 16)), (y + 32 + random_range(-16, 16)), obj_balloonpop))
+	{
+		image_index = 0.35
+		sprite_index = spr_destroyablepoof
+	}				
     with (instance_create((x + 32), (y + 32), obj_secretdebris))
     {
         tile_dataid = other.datas

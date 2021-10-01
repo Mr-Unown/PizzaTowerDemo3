@@ -657,6 +657,7 @@
     {"id":{"name":"spr_peasanto_idle","path":"sprites/spr_peasanto_idle/spr_peasanto_idle.yy",},"order":638,},
     {"id":{"name":"spr_peasanto_stun","path":"sprites/spr_peasanto_stun/spr_peasanto_stun.yy",},"order":639,},
     {"id":{"name":"spr_peasanto_walk","path":"sprites/spr_peasanto_walk/spr_peasanto_walk.yy",},"order":640,},
+    {"id":{"name":"spr_destroyablepoof","path":"sprites/spr_destroyablepoof/spr_destroyablepoof.yy",},"order":2029,},
     {"id":{"name":"spr_pepcooter","path":"sprites/spr_pepcooter/spr_pepcooter.yy",},"order":641,},
     {"id":{"name":"spr_pepgoblin","path":"sprites/spr_pepgoblin/spr_pepgoblin.yy",},"order":642,},
     {"id":{"name":"spr_pepgoblin_dead","path":"sprites/spr_pepgoblin_dead/spr_pepgoblin_dead.yy",},"order":643,},

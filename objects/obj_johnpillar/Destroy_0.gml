@@ -37,7 +37,7 @@ if (ds_list_find_index(global.saveroom, id) == -1 && global.snickchallenge == 0)
 		image_xscale = other.image_xscale
 		canrotate = true
 		//Death Sprite
-		hsp = irandom_range(8, 15) * sign(other.initialhsp)	
+		hsp = irandom_range(8, 15) * sign(-other.initialhsp)	
 		vsp = other.initialvsp
 	}
     scr_soundeffect(sfx_killenemy);

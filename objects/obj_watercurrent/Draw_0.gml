@@ -1,4 +1,4 @@
-		for (var o = 0; o < abs(image_yscale); o++)
+/*		for (var o = 0; o < abs(image_yscale); o++)
 		{
 			for (var z = 0; z < abs(image_xscale); z++)
 			{

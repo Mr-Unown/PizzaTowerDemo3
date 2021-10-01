@@ -1,3 +1,4 @@
+
 if vertical = 1
 {
 	knightmaxy = knightroomy - (room_height * sign(hallwaydirection));
