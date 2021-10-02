@@ -1,5 +1,8 @@
-if place_meeting((x + hsp), y, obj_solid)
-    hsp *= -1
+hsp = _dir * 2
+if place_meeting((x + _dir), y, obj_solid)
+{
+    _dir *= -1
+}	
 if (outside_room == 0)
     out_timer -= 1
 if place_meeting(x, y, obj_solid) 
@@ -18,7 +21,7 @@ else
 if (recreate == 1 && (!place_meeting(x, y, obj_solid)) && outside_room == 0)
 {
     recreate = 0
-    hsp = choose(2, -2)
+	_dir = choose(1, -1)
     vsp = random_range(-2, -4)
 }
 scr_collide()

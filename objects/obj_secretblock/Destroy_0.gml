@@ -16,7 +16,10 @@ if (ds_list_find_index(global.saveroom, id) == -1)
     if (pizzacoin >= 85)
     {
         with (instance_create(x, y, obj_pizzacoin))
-            hsp = choose(-2, 2)
+		{
+			_dir = choose(1,-1)
+            hsp = 2
+		}
     }
     repeat (8)
     {

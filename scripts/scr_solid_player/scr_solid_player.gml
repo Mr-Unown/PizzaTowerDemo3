@@ -17,7 +17,20 @@ function scr_solid_player(argument0, argument1) {
 		}
 	}
 	#endregion 
-	
+
+	#region Floating Platform
+	var floatingplatform = noone
+	if place_meeting(x, y, obj_floatingplatform)
+	{
+		var floatingplatform = instance_place(x, y, obj_floatingplatform)
+		if y > old_y && (!place_meeting(x, old_y, floatingplatform))
+		{
+			x = old_x
+			y = old_y
+			return true;
+		}
+	}	
+	#endregion
 	
 	#region Solid
 	//Object

@@ -1,9 +1,9 @@
 //Player 1
 with (obj_player1)
 {
-    if ((place_meeting((x + hsp), y, other.id) || place_meeting((x + xscale), y, other.id)) && (state == states.mach3 || state == states.jetpack || state == states.knightpepslopes))
+    if ((place_meeting((x + hsp), y, other.id) || place_meeting((x + xscale), y, other.id)) && (state == states.mach3 || state == states.jetpack || state == states.knightpepslopes || state == states.newbomb))
         instance_destroy(other.id)
-	if (state = states.knightpepattack)
+	if (state = states.knightpepattack || state == states.newbomb)
 	{
 		if place_meeting(x + hsp, y + vsp, other.id)
         {
@@ -25,9 +25,9 @@ if place_meeting(x, (y + 40), obj_player1) && (obj_player1.state == states.Sjump
 //Player 2
 with (obj_player2)
 {
-    if ((place_meeting((x + hsp), y, other.id) || place_meeting((x + xscale), y, other.id)) && (state == states.mach3 || state == states.jetpack || state == states.knightpepslopes))
+    if ((place_meeting((x + hsp), y, other.id) || place_meeting((x + xscale), y, other.id)) && (state == states.mach3 || state == states.jetpack || state == states.knightpepslopes || state == states.newbomb))
         instance_destroy(other.id)
-	if (state = states.knightpepattack)
+	if (state = states.knightpepattack || state == states.newbomb)
 	{
 		if place_meeting(x + hsp, y + vsp, other.id)
         {

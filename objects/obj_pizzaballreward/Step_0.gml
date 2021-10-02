@@ -4,6 +4,7 @@ if (floor(image_index) == (image_number - 1) && sprite_index == spr_pizzaportald
     {
         vsp = choose(-1, 1)
         hsp = choose(2, -2)
+		_dir = choose(-1,1);
     }
     sprite_index = spr_pizzaportalfade
     image_speed = 0

@@ -1,4 +1,4 @@
-global.newhud_message = ds_queue_create();
+global.newhudmessage = ds_queue_create();
 frozenalarm = -1;
 frozen = false;
 //oldcombometersurface = surface_create(200,200);

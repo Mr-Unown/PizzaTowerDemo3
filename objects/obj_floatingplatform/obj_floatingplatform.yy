@@ -1,10 +1,10 @@
 {
   "spriteId": {
-    "name": "spr_hurtbox",
-    "path": "sprites/spr_hurtbox/spr_hurtbox.yy",
+    "name": "spr_pepperblock",
+    "path": "sprites/spr_pepperblock/spr_pepperblock.yy",
   },
   "solid": false,
-  "visible": false,
+  "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
@@ -23,7 +23,11 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":1,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_floatingplatform","path":"objects/obj_floatingplatform/obj_floatingplatform.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_floatingplatform","path":"objects/obj_floatingplatform/obj_floatingplatform.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"obj_floatingplatform","path":"objects/obj_floatingplatform/obj_floatingplatform.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {

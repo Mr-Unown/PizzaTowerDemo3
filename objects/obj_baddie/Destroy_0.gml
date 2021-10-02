@@ -175,7 +175,10 @@ else if (ds_list_find_index(global.baddieroom, id) == -1 && important == 1)
 if (dropcoin == 1)
 {
     with (instance_create(x, y, obj_pizzacoin))
-        hsp = choose(-2, 2)
+	{
+		_dir = choose(1,-1)
+        hsp = 2
+	}
 }
 
 
