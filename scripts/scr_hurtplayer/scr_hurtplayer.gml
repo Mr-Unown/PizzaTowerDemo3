@@ -84,7 +84,7 @@ function scr_hurtplayer(argument0) {
 			{
 				image_speed = 0.1
 				showtext = 1
-				message = choose("OW!", "OUCH!", "OH!", "WOH!")
+				_message = choose("OW!", "OUCH!", "OH!", "WOH!")
 				alarm[0] = 50
 				chose = 1
 				tvsprite = spr_tvhurt

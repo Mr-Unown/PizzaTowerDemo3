@@ -8,9 +8,12 @@
 	var shader = noone;
 	
 	if global.snickchallenge = true && global.minutes < 2
-		shader = shd_posterization
+		shader = shd_posterization;
 	else if global.panic && global.minutes <= 1
-		shader = shd_greyscale
+		shader = shd_greyscale;
+	else
+		shader = noone;
+		
 	if shader != noone
 	{
 		shader_set(shader);

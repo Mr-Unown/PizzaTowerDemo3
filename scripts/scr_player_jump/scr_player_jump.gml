@@ -451,6 +451,7 @@ function scr_player_jump() {
 	    tauntstoredmovespeed = movespeed
 	    tauntstoredsprite = sprite_index
 	    tauntstoredstate = state
+		tauntstoredimage = image_index
 	    state = 51
 		if supertauntcharged = true && (character == "P" || character == "N")
 		{

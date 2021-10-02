@@ -1,5 +1,5 @@
 showtext = 0
-oldmessage = ""
+old_message = ""
 if global.snickchallenge == false
 {
 	switch(global.levelname)
@@ -65,55 +65,4 @@ if bootingup = false
 	tvsprite = spr_tvboot;
 	newtvsprite = spr_tv_open;
 	sprite_index = spr_tvboot
-}
-//Spriteprefetch Thingys
-switch(global.levelname)
-{
-	case "entrance":
-		global.prefetcharray[0] = bg_entrance1
-		global.prefetcharray[1] = spr_entrancebgpillar
-		global.prefetcharray[2] = bg_entranceforeground
-	break;
-	case "medieval":
-		global.prefetcharray[0] = bg_medieval1
-		global.prefetcharray[1] = spr_medievaldoor
-		global.prefetcharray[2] = bg_medievaltowers
-	break;
-	case "ruin":
-		global.prefetcharray[0] = bg_ruin
-		global.prefetcharray[1] = bg_ruinarchitecture3
-		global.prefetcharray[2] = bg_ruincloud
-	break;
-	case "dungeon":
-		global.prefetcharray[0] = bg_dungeon1
-		global.prefetcharray[1] = bg_dungeon1start
-		global.prefetcharray[2] = bg_dungeonskeleton1
-	break;
-	case "ancient":
-		global.prefetcharray[0] = bg_entrance1
-		global.prefetcharray[1] = spr_ancienttv
-		global.prefetcharray[2] = bg_darkjohn
-	break;
-	case "chateau":
-		global.prefetcharray[0] = bg_chateau1
-		global.prefetcharray[1] = spr_chateaudoor
-		global.prefetcharray[2] = bg_chateautowers
-	break;	
-	case "sanctum":
-		global.prefetcharray[0] = bg_sanctum
-		global.prefetcharray[1] = bg_sanctumarchitecture3
-		global.prefetcharray[2] = bg_sanctumsky
-	break;	
-	case "strongcold":
-		global.prefetcharray[0] = bg_strongcold1
-		global.prefetcharray[1] = spr_xmasdecotree
-		global.prefetcharray[2] = bg_dungeonskeleton1
-	break;
-	default:
-		global.prefetcharray[0] = bg_hubroom1
-		global.prefetcharray[1] = bg_hubroom2
-		global.prefetcharray[2] = spr_player_3hpidle
-	break;
-	global.prefetcharray[3] = spr_player_3hpidle
-	global.moppingframes = 0;
 }

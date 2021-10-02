@@ -94,7 +94,7 @@ switch(global.newhud)
 	draw_set_font(global.font)
 	draw_set_halign(fa_center)
 	draw_set_color(c_white)
-	draw_text(xi, yi, string_hash_to_newline(message))
+	draw_text(xi, yi, string_hash_to_newline(_message))
 	#endregion		
 	#endregion
 	break;
@@ -187,37 +187,37 @@ else
 	surface_set_target(textpromptsurface)
 	draw_clear_alpha(c_black, 0)
 	//var pizzafont = true;
-	var _newmessage = newmessage;
+	var _new_message = new_message;
 	//Font Options
 	//if pizzafont = false
 	//{
 		draw_set_font(font1);
 		draw_set_halign(fa_left);
 		draw_set_color(c_black);
-		_newmessage = newmessage;
+		_new_message = new_message;
 	/*}
 	else
 	{
 		draw_set_font(global.smallfont);
 		draw_set_halign(fa_left);
 		draw_set_color(make_color_rgb(255,240,240));//c_white);
-		_newmessage = string_upper(newmessage);
+		_new_message = string_upper(new_message);
 	}*/	
 	//Text
 	if textbubblesprites = spr_tv_bubble
 	{
 		//CONT. So I moved it here 
-		if floor(text_x) <= -(floor(string_width(_newmessage)) + 5) //- 775)
+		if floor(text_x) <= -(floor(string_width(_new_message)) + 5) //- 775)
 		{
 			textbubblesprites = spr_tv_bubbleclose;
 			textbubbleframes = 0;
 		}
-		draw_text(text_x, 45, _newmessage)
+		draw_text(text_x, 45, _new_message)
 	}
 
 	surface_reset_target()
 	//draw_text(367, 300, string(floor(text_x)))
-	//draw_text(367, 350, string(string_width(newmessage)))	
+	//draw_text(367, 350, string(string_width(new_message)))	
 	if surface_exists(textpromptsurface)
 		draw_surface(textpromptsurface, 367, -10 + newhudyoffset)
 	}
@@ -226,7 +226,7 @@ else
 	draw_set_font(global.font)
 	draw_set_halign(fa_center)
 	draw_set_color(c_white)
-	draw_text(xi, yi, string_hash_to_newline(oldmessage))
+	draw_text(xi, yi, string_hash_to_newline(old_message))
 	#endregion
 	
 	#endregion

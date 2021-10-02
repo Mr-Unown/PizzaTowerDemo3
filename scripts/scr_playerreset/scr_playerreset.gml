@@ -79,7 +79,7 @@ function scr_playerreset() {
 	}
 	if instance_exists(obj_coopflag)
 	    instance_destroy(obj_coopflag);
-	ds_queue_clear(global.newhudmessage);
+	ds_queue_clear(global.newhud_message);
 	global.miniboss = 0;
 	global.lapping = 0;
 	global.laptouched = 0;
@@ -109,8 +109,8 @@ function scr_playerreset() {
 		showtext = false;
 		tvsprite = spr_tvboot;
 		newtvsprite = spr_tv_open;
-		ds_queue_clear(global.newhudmessage)
-		newmessage = ""
+		ds_queue_clear(global.newhud_message)
+		new_message = ""
 		shownewtext = false;
 		showingnewtext = false;
 		textbubbleframes = 0;

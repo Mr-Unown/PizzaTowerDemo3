@@ -171,6 +171,32 @@ function scr_player_mach3() {
 	    image_speed = 0.4
 	if (sprite_index == spr_player_machhit)
 	    image_speed = 0.65
+	if (key_taunt2 && fightball == 0)
+	{
+	    scr_soundeffect(sfx_taunt)
+	    taunttimer = 20
+	    tauntstoredmovespeed = movespeed
+	    tauntstoredsprite = sprite_index
+	    tauntstoredstate = state
+		tauntstoredimage = image_index
+	    state = 51
+		if supertauntcharged = true && (character == "P" || character == "N")
+		{
+			image_index = 0
+			sprite_index = choose(spr_supertaunt1,spr_supertaunt2,spr_supertaunt3,spr_supertaunt4)
+		}
+		else
+		{
+			image_index = irandom_range(0, sprite_get_number(spr_taunt))
+			sprite_index = spr_taunt
+		}
+	    with (instance_create(x, y, obj_taunteffect))
+	    {
+	        playerid = other.id
+	        baddie = 0
+	    }
+		scr_baddietauntfakeout();
+	}		
 	if key_jump
 	    input_buffer_jump = 0
 	if (key_up && character != "V") && !place_meeting(x, y, obj_dashpad)
@@ -303,31 +329,7 @@ function scr_player_mach3() {
 	            sprite_index = spr_waterdash
 	    }
 	}
-	if (key_taunt2 && fightball == 0)
-	{
-	    scr_soundeffect(sfx_taunt)
-	    taunttimer = 20
-	    tauntstoredmovespeed = movespeed
-	    tauntstoredsprite = sprite_index
-	    tauntstoredstate = state
-	    state = 51
-		if supertauntcharged = true && (character == "P" || character == "N")
-		{
-			image_index = 0
-			sprite_index = choose(spr_supertaunt1,spr_supertaunt2,spr_supertaunt3,spr_supertaunt4)
-		}
-		else
-		{
-			image_index = irandom_range(0, sprite_get_number(spr_taunt))
-			sprite_index = spr_taunt
-		}
-	    with (instance_create(x, y, obj_taunteffect))
-	    {
-	        playerid = other.id
-	        baddie = 0
-	    }
-		scr_baddietauntfakeout();
-	}
+
 	if (!instance_exists(chargeeffectid))
 	{
 	    with (instance_create(x, y, obj_chargeeffect))

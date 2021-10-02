@@ -1,6 +1,6 @@
 scr_roomnames()
-if message != noone
-	string_roomname = message
+if _message != noone
+	string_roomname = _message
 else
 	string_roomname = ""
 //Level Names

@@ -16,6 +16,7 @@ while global.flushtextures = true
 	show_debug_message("Flushed Textures");
 }
 
+
 //Uncomment to simulate YYC in VM
 //What this does is turn off loads of checks GMS2 does
 gml_release_mode(true);

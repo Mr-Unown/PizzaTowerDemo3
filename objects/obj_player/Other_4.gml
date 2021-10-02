@@ -1,8 +1,6 @@
 
 if vertical = 1
-{
 	knightmaxy = knightroomy - (room_height * sign(hallwaydirection));
-}
 var yoffset = 160
 
 switch current_month
@@ -55,6 +53,57 @@ customupdate = true;
 //Things
 if (object_index == obj_player1)
 {
+	#region Perfetch Array
+switch(global.levelname)
+{
+	case "entrance":
+		global.prefetcharray[0] = bg_entrance1
+		global.prefetcharray[1] = spr_entrancebgpillar
+		global.prefetcharray[2] = bg_entranceforeground
+	break;
+	case "medieval":
+		global.prefetcharray[0] = bg_medieval1
+		global.prefetcharray[1] = spr_medievaldoor
+		global.prefetcharray[2] = bg_medievaltowers
+	break;
+	case "ruin":
+		global.prefetcharray[0] = bg_ruin
+		global.prefetcharray[1] = bg_ruinarchitecture3
+		global.prefetcharray[2] = bg_ruincloud
+	break;
+	case "dungeon":
+		global.prefetcharray[0] = bg_dungeon1
+		global.prefetcharray[1] = bg_dungeon1start
+		global.prefetcharray[2] = bg_dungeonskeleton1
+	break;
+	case "ancient":
+		global.prefetcharray[0] = bg_entrance1
+		global.prefetcharray[1] = spr_ancienttv
+		global.prefetcharray[2] = bg_darkjohn
+	break;
+	case "chateau":
+		global.prefetcharray[0] = bg_chateau1
+		global.prefetcharray[1] = spr_chateaudoor
+		global.prefetcharray[2] = bg_chateautowers
+	break;	
+	case "sanctum":
+		global.prefetcharray[0] = bg_sanctum
+		global.prefetcharray[1] = bg_sanctumarchitecture3
+		global.prefetcharray[2] = bg_sanctumsky
+	break;	
+	case "strongcold":
+		global.prefetcharray[0] = bg_strongcold1
+		global.prefetcharray[1] = spr_xmasdecotree
+		global.prefetcharray[2] = bg_dungeonskeleton1
+	break;
+	default:
+		global.prefetcharray[0] = bg_hubroom1
+		global.prefetcharray[1] = bg_hubroom2
+		global.prefetcharray[2] = spr_entrancegate
+	break;
+	global.prefetcharray[3] = spr_player_3hpidle
+}
+#endregion			
 	//room_set_live(room, true);
     if (global.coop == 1)
 	{
@@ -408,8 +457,8 @@ with (obj_destroyable2_bigescape)
             with (obj_tv)
             {
 				showtext = 1
-                message = "LAP "+ string(global.lapping)+" OUT OF 3!"
-				scr_queuemessage("PTV Racing Division announces that the local Pizzaman has done "+ string(global.lapping)+" out of 3 Laps!");
+                _message = "LAP "+ string(global.lapping)+" OUT OF 3!"
+				scr_queue_message("PTV Racing Division announces that the local Pizzaman has done "+ string(global.lapping)+" out of 3 Laps!");
                 alarm[0] = 100
             } 
 			portal = 0
@@ -628,8 +677,8 @@ if (object_index == obj_player2)
             with (obj_tv)
             {
 				showtext = 1
-                message = "LAP "+ string(global.lapping)+" OUT OF 3!"
-				scr_queuemessage("PTV Racing Division announces that the local Pizzaman has done "+ string(global.lapping)+" out of 3 Laps!");
+                _message = "LAP "+ string(global.lapping)+" OUT OF 3!"
+				scr_queue_message("PTV Racing Division announces that the local Pizzaman has done "+ string(global.lapping)+" out of 3 Laps!");
                 alarm[0] = 100
             } 
 			portal = 0

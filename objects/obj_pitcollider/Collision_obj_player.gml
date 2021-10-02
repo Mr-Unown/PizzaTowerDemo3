@@ -23,7 +23,7 @@ with other.id
 				sprite_index = spr_hurt
 		with obj_tv 
 		{
-	        message = choose("OW!", "OUCH!", "OH!", "WOH!")
+	        _message = choose("OW!", "OUCH!", "OH!", "WOH!")
 			chose = 0		
 		}
 		movespeed = 1

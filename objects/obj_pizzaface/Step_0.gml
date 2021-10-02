@@ -129,6 +129,7 @@ if relax = false && global.freezeframe = false && room != rank_room && !instance
 				tauntstoredstate = states.normal
 				tauntstoredmovespeed = 0
 				tauntstoredsprite = spr_idle
+				tauntstoredimage = image_index
 			}
 		}
     }

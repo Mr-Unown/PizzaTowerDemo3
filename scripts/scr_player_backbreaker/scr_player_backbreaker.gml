@@ -137,7 +137,8 @@ function scr_player_backbreaker() {
 					pogo = false
 	                paletteselect = 0
 					scr_characterspr();
-	                tauntstoredsprite = spr_idle
+	                tauntstoredsprite = spr_idle;
+					tauntstoredimage = 0;
 	            }
 	            else if (character == "N") && pogo = false
 	            {
@@ -145,7 +146,8 @@ function scr_player_backbreaker() {
 					pogo = true
 	                paletteselect = 0
 					scr_characterspr();
-	                tauntstoredsprite = spr_idle
+	                tauntstoredsprite = spr_idle;
+					tauntstoredimage = 0;
 	            }			
 	            else if (character == "N") && pogo = true
 	            {
@@ -153,21 +155,24 @@ function scr_player_backbreaker() {
 					pogo = false
 	                paletteselect = 0
 					scr_characterspr();
-	                tauntstoredsprite = spr_idle
+	                tauntstoredsprite = spr_idle;
+					tauntstoredimage = 0;
 	            }
 	            else if (character == "S")
 	            {
 	                character = "V"
 	                paletteselect = 0
 					scr_characterspr();
-	                tauntstoredsprite = spr_idle
+	                tauntstoredsprite = spr_idle;
+					tauntstoredimage = 0;
 	            }
 				else if (character == "V")
 	            {
 	                character = "PZ"
 	                paletteselect = 0
 					scr_characterspr();
-	                tauntstoredsprite = spr_idle
+	                tauntstoredsprite = spr_idle;
+					tauntstoredimage = 0;
 	            }
 				else if (character == "PZ")
 	            {
@@ -178,21 +183,24 @@ function scr_player_backbreaker() {
 						character = "PM"
 	                paletteselect = 0
 					scr_characterspr();
-	                tauntstoredsprite = spr_idle
+	                tauntstoredsprite = spr_idle;
+					tauntstoredimage = 0;
 	            }			
 	            else if (character == "D")
 	            {
 	                character = "PM"
 	                paletteselect = 0
 					scr_characterspr();
-	                tauntstoredsprite = spr_idle
+	                tauntstoredsprite = spr_idle;
+					tauntstoredimage = 0;
 	            }
 	            else if (character == "PM")
 	            {
 	                character = "P"
 	                paletteselect = 1
 					scr_characterspr()
-	                tauntstoredsprite = spr_idle
+	                tauntstoredsprite = spr_idle;
+					tauntstoredimage = 0;
 	            }
 	            scr_characterspr()
 	            scr_changetoppings()
@@ -217,6 +225,7 @@ function scr_player_backbreaker() {
 	    movespeed = tauntstoredmovespeed
 	    sprite_index = tauntstoredsprite
 	    state = tauntstoredstate
+		image_index = tauntstoredimage;
 	    if instance_exists(parry_id)
 	    {
 	        instance_destroy(parry_id)
@@ -280,6 +289,7 @@ function scr_player_backbreaker() {
 	    movespeed = tauntstoredmovespeed
 	    sprite_index = tauntstoredsprite
 	    state = tauntstoredstate
+		image_index = tauntstoredimage;		
 	    if instance_exists(parry_id)
 	    {
 	        instance_destroy(parry_id)
@@ -306,7 +316,7 @@ function scr_player_backbreaker() {
 	if (global.miniboss == 1 && sprite_index == spr_bossintro && floor(image_index) == (image_number - 1))
 	    state = 0
 	if sprite_index != spr_taunt &&  !(sprite_index == spr_supertaunt1 || sprite_index == spr_supertaunt2 || sprite_index == spr_supertaunt3 || sprite_index == spr_supertaunt4)
-	image_speed = 0.35
+		image_speed = 0.35
 	if (character == "N" && sprite_index == spr_playerN_dab)
 	{
 	    image_index = (gamepad_button_value(0, gp_shoulderlb) * 20)

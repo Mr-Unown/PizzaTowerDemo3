@@ -3,13 +3,14 @@ function scr_player_parry() {
 	if (object_index == obj_player2)
 	    localvargrabbedby = 2
 	hsp = (movespeed * (-xscale))
-	if (floor(image_index) == (image_number - 1))
+	if (floor(image_index) >= (image_number - 1))
 	{
 	    taunttimer = 0
 	    parry = 0
 	    state = tauntstoredstate
 	    movespeed = tauntstoredmovespeed
 	    sprite_index = tauntstoredsprite
+		tauntstoredimage = image_index
 	}
 	if (floor(image_index) == (image_number - 10))
 	{

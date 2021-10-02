@@ -73,74 +73,74 @@ if (distance_to_object(player) < 50)
 		switch (other.level)
 		{
 			case "entrance": 
-		            message = "ENTRANCE"
+		            _message = "ENTRANCE"
 		            showtext = 1
 		            alarm[0] = 2
 			break;
 			case "ancient": 
-		            message = "ANCIENT PASSAGEWAY"
+		            _message = "ANCIENT PASSAGEWAY"
 		            showtext = 1
 		            alarm[0] = 2
 			break;			
 			case "medieval": 
-		            message = "PIZZASCAPE"
+		            _message = "PIZZASCAPE"
 		            showtext = 1
 		            alarm[0] = 2
 			break;
 			case "chateau": 
-		            message = "PIZZASCARE"
+		            _message = "PIZZASCARE"
 		            showtext = 1
 		            alarm[0] = 2
 			break;
 			case "ruin": 
-		            message = "THE ANCIENT CHEESE"
+		            _message = "THE ANCIENT CHEESE"
 		            showtext = 1
 		            alarm[0] = 2
 			break;
 			case "sanctum": 
-		            message = "LA BURRATA TEMPLE"
+		            _message = "LA BURRATA TEMPLE"
 		            showtext = 1
 		            alarm[0] = 2
 			break;			
 			case "dungeon": 
-		            message = "BLOODSAUCE DUNGEON"
+		            _message = "BLOODSAUCE DUNGEON"
 		            showtext = 1
 		            alarm[0] = 2
 			break;
 			case "strongcold": 
-		            message = "STRONGCOLD"
+		            _message = "STRONGCOLD"
 		            showtext = 1
 		            alarm[0] = 2
 			break;
 			case "snickchallenge": 
-		            message = "SNICK CHALLENGE"
+		            _message = "SNICK CHALLENGE"
 		            showtext = 1
 		            alarm[0] = 2
 			break;
 			case "kungfu": 
-		            message = "WIP STREETS OF PIZZA"
+		            _message = "WIP STREETS OF PIZZA"
 		            showtext = 1
 		            alarm[0] = 2
 			break;		
 			case "resto": 
-		            message = "WIP GOLF EATIN'"
+		            _message = "WIP GOLF EATIN'"
 		            showtext = 1
 		            alarm[0] = 2
 			break;	
 			case "rooftop": 
-		            message = "WIP ROOF LEVEL"
+		            _message = "WIP ROOF LEVEL"
 		            showtext = 1
 		            alarm[0] = 2
 			break;				
 			default: 
-					message = "NONE"
+					_message = "NONE"
 					showtext = 1
 					alarm[0] = 2
 			break;
 			
 		}
 #endregion
-		oldmessage = message					
+		old_message = _message					
 	 }
 
 }

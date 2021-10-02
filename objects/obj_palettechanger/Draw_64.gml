@@ -38,7 +38,7 @@ pal_swap_reset();
 draw_set_font(global.smallfont)
 draw_set_halign(fa_center)
 draw_set_color(c_white)
-draw_text(_draw_x, _draw_y, string_upper(message))
+draw_text(_draw_x, _draw_y, string_upper(_message))
 
 
 

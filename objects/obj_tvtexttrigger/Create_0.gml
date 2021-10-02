@@ -1,5 +1,5 @@
-message = noone
-message_array[0] = noone
+_message = noone
+_message_array[0] = noone
 unid = 0
 mode = 0
 activated = false

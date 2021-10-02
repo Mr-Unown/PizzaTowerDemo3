@@ -9,17 +9,17 @@ instance_destroy(obj_pizzaballblock)
 with (obj_tv)
 {
     if (global.golfhit <= 1)
-        message = "HOLE IN ONE!!!"
+        _message = "HOLE IN ONE!!!"
     else if (global.golfhit <= 5)
-        message = "NICE SHOT!"
+        _message = "NICE SHOT!"
     else if (global.golfhit <= 10)
-        message = "GREAT!"
+        _message = "GREAT!"
     else if (global.golfhit <= 20)
-        message = "GOOD!"
+        _message = "GOOD!"
     else if (global.golfhit <= 30)
-        message = "OK"
+        _message = "OK"
     else
-        message = "TRY AGAIN"
+        _message = "TRY AGAIN"
     showtext = 1
     alarm[0] = 100
 }

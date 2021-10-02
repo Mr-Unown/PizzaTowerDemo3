@@ -22,7 +22,7 @@ if ((!pause) && (!instance_exists(obj_fadeout)))
         }
         with (obj_tv)
         {
-            message = "PLAYER 2 HAS ENTERED THE GAME"
+            _message = "PLAYER 2 HAS ENTERED THE GAME"
             showtext = 1
             alarm[0] = 100
         }
@@ -44,7 +44,7 @@ if ((!pause) && (!instance_exists(obj_fadeout)))
             }
             with (obj_tv)
             {
-                message = "PLAYER 2 HAS ENTERED THE GAME"
+                _message = "PLAYER 2 HAS ENTERED THE GAME"
                 showtext = 1
                 alarm[0] = 100
             }
@@ -99,14 +99,14 @@ if ((!pause) && (!instance_exists(obj_fadeout)))
 //	if global.debugmode = 1
 //    with (obj_tv)
 //    {
-//        message = "DEBUG MODE ON"
+//        _message = "DEBUG MODE ON"
 //        showtext = 1
 //        alarm[0] = 100
 //    }
 //	else
 //	with (obj_tv)
 //    {
-//        message = "DEBUG MODE OFF"
+//        _message = "DEBUG MODE OFF"
 //        showtext = 1
 //        alarm[0] = 100
 //    }
@@ -117,14 +117,14 @@ if keyboard_check_pressed(vk_f7)
 	if global.hudmode = 1
     with (obj_tv)
     {
-        message = "HUD OFF"
+        _message = "HUD OFF"
         showtext = 1
         alarm[0] = 100
     }
 	else
 	with (obj_tv)
     {
-        message = "HUD ON"
+        _message = "HUD ON"
         showtext = 1
         alarm[0] = 100
     }

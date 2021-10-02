@@ -9,7 +9,7 @@ with (obj_player1)
 		obj_tv.image_index = 0
 		obj_tv.image_speed = 0
 		obj_tv.bootingup = false
-		ds_queue_clear(global.newhudmessage);
+		ds_queue_clear(global.newhud_message);
 		global.levelname = other.level
         scr_soundstopall()
 		x = other.cplayer1x
@@ -50,7 +50,7 @@ with (obj_player2)
 		obj_tv.image_index = 0
 		obj_tv.image_speed = 0
 		obj_tv.bootingup = false
-		ds_queue_clear(global.newhudmessage);	
+		ds_queue_clear(global.newhud_message);	
 		global.levelname = other.level
         scr_soundstopall()
 		x = other.cplayer1x
@@ -109,11 +109,14 @@ if can_gotolevel = true && (((floor(obj_player1.image_index) >= (obj_player1.ima
         targetRoom = other.targetRoom;
 		global.timeattack = other.selection;
 		obj_timeattack.alarm[1] = 60
+
         if (!instance_exists(obj_fadeout))
+		{
 			with instance_create(x, y, obj_fadeout)
 			{
 				global.flushtextures = true
 			}
+		}
     }
 	#endregion
 }

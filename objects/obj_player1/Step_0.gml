@@ -1,4 +1,3 @@
-scr_getinput()
 scr_playerstate()
 
 //Heat Meter
@@ -114,7 +113,7 @@ if state != 55 && !instance_exists(obj_fadeout) && !place_meeting(x,y,obj_hallwa
 		image_speed = 0.1
 		showtext = 1
 		if (chose == 0)
-			message = choose("OW!", "OUCH!", "OH!", "WOH!")
+			_message = choose("OW!", "OUCH!", "OH!", "WOH!")
 		alarm[0] = 50
 		chose = 1
 		tvsprite = spr_tvhurt

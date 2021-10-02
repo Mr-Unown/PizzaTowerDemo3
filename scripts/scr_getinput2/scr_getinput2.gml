@@ -70,7 +70,7 @@ function scr_getinput2() {
 	    ini_close()
 	    with (obj_tv)
 	    {
-	        message = "PLAYER 2 CONTROLS RESET"
+	        _message = "PLAYER 2 CONTROLS RESET"
 	        showtext = 1
 	        alarm[0] = 150
 	    }

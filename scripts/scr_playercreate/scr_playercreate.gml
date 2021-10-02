@@ -8,6 +8,12 @@ function scr_playercreate() {
 	knightmaxy = 0;
 	knightroomy = 0;
 	knightslidespeed = 0;
+	//Taunt shit
+	tauntstoredstate = 0
+	tauntstoredmovespeed = 6
+	tauntstoredsprite = spr_null
+	tauntstoredimage = 0
+	taunttimer = 20	
 	//Direction Bomb
 	playerdirection = 0;
 	//Super cool Movespeed Buff
