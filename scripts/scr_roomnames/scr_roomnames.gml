@@ -183,7 +183,7 @@ function scr_roomnames() {
 		case ruin_secret6:
 			_message = "Dashing Maniac";
 			break;			
-	#endregion		
+	#endregion			
 	#region Dungeon
 		case dungeon_1:
 			_message = "Pizza Tower of Hell!";
@@ -364,6 +364,74 @@ function scr_roomnames() {
 			_message = "The Terrifying Giant Pizza";
 			break;			
 	#endregion		
+	#region Sanctum
+		case sanctum_1:
+			_message = "Temple of the Pizza Tower";
+			break;
+		case sanctum_2:
+			_message = "Ruinous Road";
+			break;		
+		case sanctum_3:
+			_message = "Bizzarely Dissimilar";
+			break;	
+		case sanctum_4:
+			_message = "Cheesy Smell";
+			break;	
+		case sanctum_5:
+			_message = "Sticky Ruin";
+			break;	
+		case sanctum_6:
+			_message = "Dangerous Path";
+			break;	
+		case sanctum_7:
+			_message = "Spaghetti Junction";
+			break;	
+		case sanctum_7_1:
+			_message = "Janitor Shrine";
+			break;				
+		case sanctum_8:
+			_message = "Something Wicked";
+			break;	
+		case sanctum_9:
+			_message = "Blue Cheese";
+			break;	
+		case sanctum_10:
+			_message = "Sanctum of Cheese";
+			break;	
+		case sanctum_11:
+			_message = "Ancient Gods and PB 2";
+			break;		
+		case sanctum_12:
+			_message = "Messy Stains";
+			break;				
+		case sanctum_13:
+			_message = "and Dirty Surfaces";
+			break;						
+		case sanctum_treasure:
+			_message = "Kitchen Object?";
+			break;	
+		case sanctum_pizzamart:
+			_message = "Modern Convenience";
+			break;						
+		case sanctum_secret1:
+			_message = "Bizzarely Familiar";
+			break;	
+		case sanctum_secret2:
+			_message = "Hidden and Ancient Box";
+			break;	
+		case sanctum_secret3:
+			_message = "Action Block Destruction";
+			break;
+		case sanctum_secret4:
+			_message = "Blue Ball";
+			break;			
+		case sanctum_secret5:
+			_message = "All Cheese Here";
+			break;			
+		case sanctum_secret6:
+			_message = "Dashing Psycho";
+			break;			
+	#endregion			
 	#region Strongcold
 		case strongcold_10:
 			_message = "Pizza Tower and it's Christmas!";
