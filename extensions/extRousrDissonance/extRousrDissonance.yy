@@ -104,7 +104,7 @@
   "maclinkerflags": "",
   "tvosmaclinkerflags": null,
   "iosplistinject": "",
-  "tvosplistinject": null,
+  "tvosplistinject": "",
   "androidinject": "",
   "androidmanifestinject": "",
   "androidactivityinject": "",

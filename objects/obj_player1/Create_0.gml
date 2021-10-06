@@ -11,6 +11,7 @@ characters = "Peppino"
 colorheight = 8;
 
 
+
 global.has_drawnpeter = false;
 global.oldmeter = 0;
 selectedcharacter = 0;

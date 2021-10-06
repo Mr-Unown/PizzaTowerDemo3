@@ -24,9 +24,9 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_pizzacutter2","path":"objects/obj_pizzacutter2/obj_pizzacutter2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_pizzacutter1","path":"objects/obj_pizzacutter1/obj_pizzacutter1.yy",},"parent":{"name":"obj_pizzacutter2","path":"objects/obj_pizzacutter2/obj_pizzacutter2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_pizzacutterthwomp1","path":"objects/obj_pizzacutterthwomp1/obj_pizzacutterthwomp1.yy",},"parent":{"name":"obj_pizzacutter2","path":"objects/obj_pizzacutter2/obj_pizzacutter2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_pizzacutter1","path":"objects/obj_pizzacutter1/obj_pizzacutter1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_pizzacutterthwomp1","path":"objects/obj_pizzacutterthwomp1/obj_pizzacutterthwomp1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
