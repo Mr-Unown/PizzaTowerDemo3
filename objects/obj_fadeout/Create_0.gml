@@ -7,5 +7,5 @@ resetDoor = false
 depth = -9995
 if instance_exists(obj_pausefadeout)
     instance_destroy(obj_pausefadeout)
-
+//room_set_live(obj_player1.targetroom,true)
 
