@@ -381,7 +381,7 @@ function scr_roomnames() {
 			_message = "Sticky Ruin";
 			break;	
 		case sanctum_6:
-			_message = "Dangerous Path";
+			_message = "Tourist Trap";
 			break;	
 		case sanctum_7:
 			_message = "Spaghetti Junction";
@@ -408,7 +408,7 @@ function scr_roomnames() {
 			_message = "and Dirty Surfaces";
 			break;						
 		case sanctum_treasure:
-			_message = "Kitchen Object?";
+			_message = "Kitchen Object!?";
 			break;	
 		case sanctum_pizzamart:
 			_message = "Modern Convenience";
