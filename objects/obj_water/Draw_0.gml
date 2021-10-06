@@ -71,19 +71,10 @@ if (!surface_exists(watersurface))
     watersurface = surface_create(960,540);
 if (!surface_exists(masksurface)) 
 {
-    masksurface = surface_create(960, 540);
+    masksurface = surface_create(960 + 64, 540 + 64);
 	//Set Surface target to Mask
 	surface_set_target(masksurface)
 	draw_clear_alpha(c_white,255);
-	
-	/*Draw Top
-	for (var i = 0; i < abs(image_xscale); i++)
-		draw_sprite_ext(spr_cheesewater, -1, (x + (32 * i)), y, 1, 1, image_angle, image_blend, 1)
-	draw_sprite_ext(spr_cheesewater2, -1, x, y + 32, image_xscale, round((room_height + 128)/32), image_angle, image_blend, 1)
-	*/
-	//draw_sprite_ext(spr_cheesewater2,-1,x - 32,clamp(y - 32,bbox_top + 32,room_height + 550),32,20,image_angle,c_white,1)
-	
-	//Reset Target
 	surface_reset_target()	
 }
 
@@ -126,7 +117,9 @@ if surface_exists(watersurface)
 		
 	//Draw Clipping Mask
 	draw_set_blend_mode(bm_subtract);
-	draw_surface(masksurface, x, y);
+	draw_set_color(c_white)
+	draw_rectangle(0,0,960,540,false)
+	draw_surface(masksurface, _cam_x - 32, clamp(_cam_y - 32,bbox_top + 32, room_height + 960));
 	draw_set_blend_mode(bm_normal);
 	for (var i = 0; i < abs(image_xscale); i++)
 		draw_sprite_ext(spr_cheesewater, -1, (x + (32 * i)  - _cam_x), y  - _cam_y, 1, 1, image_angle, image_blend, 1)	
