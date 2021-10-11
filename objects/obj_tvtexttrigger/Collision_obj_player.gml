@@ -20,7 +20,7 @@ if ds_list_find_index(global.saveroom, id) == -1 && _message_array[0] != noone &
 			can_activate = true
 	}
 	activated = true
-	for (var i = 0; i < array_length_1d(_message_array); ++i) 
+	for (var i = 0; i < array_length(_message_array); ++i) 
 	{
 	    scr_queue_message(_message_array[i]);
 	}
