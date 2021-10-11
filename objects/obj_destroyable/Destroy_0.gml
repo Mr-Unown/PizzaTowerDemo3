@@ -2,7 +2,13 @@ if (ds_list_find_index(global.saveroom, id) == -1)
 {
 	repeat(4)
 		instance_create((x + 16), y + 16, obj_debris)
-
+	with (instance_create((x + 16 + random_range(-16, 16)), (y + 16 + random_range(-16, 16)), obj_balloonpop))
+	{
+		image_index = 0.35
+		sprite_index = spr_destroyablecloud
+		image_angle = choose(0,90,180,270)
+		vspeed = -3
+	}	
 
     if (audio_is_playing(sfx_breakblock1) || audio_is_playing(sfx_breakblock2))
     {

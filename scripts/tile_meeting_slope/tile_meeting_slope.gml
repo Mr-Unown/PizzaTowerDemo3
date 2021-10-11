@@ -5,7 +5,7 @@ function tile_meeting_slope(argument0,argument1,argument2){
 ///@param layer
 var answer = 0;
 var _layer = argument2,
-    _tm = layer_tilemap_get_id(_layer),
+    _tm = layer_tilemap_get_id_fixed(_layer),
     _checker = noone,
 	_point1 = noone,
 	_point2 = noone;

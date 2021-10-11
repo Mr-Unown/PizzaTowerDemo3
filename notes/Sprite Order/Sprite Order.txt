@@ -1170,7 +1170,7 @@ spr_minipillarsleep
 spr_slope
 spr_baddie
 spr_ladder
-spr_wall
+spr_solid
 spr_hurtbox
 spr_pizzaportal
 spr_pizzaportalfade

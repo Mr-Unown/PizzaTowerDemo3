@@ -198,7 +198,6 @@ function scr_solid(argument0, argument1)
 	#endregion
 	
 	#region Slopes
-	
 	#region Object
 	var slope = instance_place(x, y, obj_slope)
 	if slope
@@ -222,25 +221,28 @@ function scr_solid(argument0, argument1)
 	        }
 	        var m = ((sign(image_xscale) * (bbox_bottom - bbox_top)) / (bbox_right - bbox_left))
 	        var sslope = (slope_start - round((m * (object_side - bbox_left))))
-	        if (other.bbox_bottom >= sslope)
-	        {
-	            other.x = old_x
-	            other.y = old_y
-	            return 1;
+	        if other.bbox_bottom = sslope && other.bbox_top < sslope && object_side != sslope 
+	        {	
+				other.x = old_x
+				other.y = old_y
+	            return true;
 	        }
 	    }
 	}
 	#endregion
-	//Tile
+	
+	#region Tile
 	if layer_exists("Tiles_Solid")
 	{
 		if tile_meeting_precise(x,y,"Tiles_Solid") == tiletype.leftslope1 || tile_meeting_precise(x,y,"Tiles_Solid") == tiletype.leftslope2 || tile_meeting_precise(x,y,"Tiles_Solid") == tiletype.leftsteepslope || tile_meeting_precise(x,y,"Tiles_Solid") == tiletype.rightsteepslope || tile_meeting_precise(x,y,"Tiles_Solid") == tiletype.rightslope1 || tile_meeting_precise(x,y,"Tiles_Solid") == tiletype.rightslope2
 		{
 			x = old_x
 			y = old_y
-			return 1;
+			return true;
 		}
-	}	
+	}		
+	#endregion
+
 	#endregion
 
 	x = old_x

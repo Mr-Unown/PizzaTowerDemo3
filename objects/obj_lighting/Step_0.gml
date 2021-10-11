@@ -2,41 +2,17 @@ switch room
 {
 	#region Ancient
 	case ancient_1:
-		can_draw = true;
-		targetdarkness = 0.75;
-		break;
 	case ancient_2:
-		can_draw = true;
-		targetdarkness = 0.75;
-		break;		
 	case ancient_3:
-		can_draw = true;
-		targetdarkness = 0.75;
-		break;	
 	case ancient_4:
-		can_draw = true;
-		targetdarkness = 0.75;
-		break;	
 	case ancient_5:
-		can_draw = true;	
-		targetdarkness = 0.75;
-		break;	
 	case ancient_6:
-		can_draw = true;
-		targetdarkness = 0.75;
-		break;	
-	case ancient_7:
-		can_draw = true;
-		targetdarkness = 0.75;
-		break;	
+	case ancient_7:	
 	case ancient_8:
-		can_draw = true;
-		targetdarkness = 0.75;
-		break;	
 	case ancient_9:
 		can_draw = true;
 		targetdarkness = 0.75;
-		break;	
+		break;
 	case ancient_10:
 		can_draw = true;
 		var _dark = clamp(camera_get_view_y(view_camera[0]),864,2756)/2756
@@ -64,4 +40,8 @@ switch room
 }
 //Change Darkness
 darkness = approach(darkness,targetdarkness,0.015)
-
+//Performance
+if can_draw = false
+visible = false;
+else
+visible = true;

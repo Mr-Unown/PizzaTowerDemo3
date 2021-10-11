@@ -81,5 +81,5 @@ function scr_getinput() {
 	}
 	}
 
-
+	return;
 }

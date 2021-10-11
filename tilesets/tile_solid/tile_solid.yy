@@ -72,6 +72,8 @@
   },
   "resourceVersion": "1.0",
   "name": "tile_solid",
-  "tags": [],
+  "tags": [
+    "Solid",
+  ],
   "resourceType": "GMTileSet",
 }

@@ -76,6 +76,6 @@ function scr_getinput2() {
 	    }
 	}
 
-
+	return;
 
 }

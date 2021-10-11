@@ -9,5 +9,8 @@ if instance_exists(obj_pausefadeout)
     instance_destroy(obj_pausefadeout)
 	
 if live_enabled == 1
-	room_set_live(obj_player1.targetRoom,true)
+{
+	if obj_player1.targetRoom != Realtitlescreen
+		room_set_live(obj_player1.targetRoom,true)
+}
 

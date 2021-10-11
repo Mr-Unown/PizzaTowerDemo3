@@ -4,7 +4,7 @@ function tile_meeting_precise(argument0,argument1,argument2){
 ///@param y
 ///@param layer
 var _layer = argument2,
-    _tm = layer_tilemap_get_id(_layer),
+    _tm = layer_tilemap_get_id_fixed(_layer),
     _checker = obj_precise_tile_checker;
 if(!instance_exists(_checker)) instance_create_depth(0,0,0,_checker); 
 

@@ -10,7 +10,7 @@ function scr_collide_destructibles() {
 				{
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+					event_user(0)
 				}
 	            if (state == 70)
 	                machpunchAnim = 1
@@ -24,7 +24,7 @@ function scr_collide_destructibles() {
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 				}
 	        }
 	        if place_meeting((x + sign(hsp)), y + sign((vsp)), obj_destructibles)
@@ -33,7 +33,7 @@ function scr_collide_destructibles() {
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 				}
 	        }			
 		}		
@@ -45,7 +45,7 @@ function scr_collide_destructibles() {
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 				}
 	            if (state == 70)
 	                machpunchAnim = 1
@@ -59,7 +59,7 @@ function scr_collide_destructibles() {
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 				}
 	        }
 	    }
@@ -71,7 +71,7 @@ function scr_collide_destructibles() {
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 				}
 	        }
 	    }
@@ -83,7 +83,7 @@ function scr_collide_destructibles() {
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 				}
 	        }
 		}
@@ -95,7 +95,7 @@ function scr_collide_destructibles() {
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 				}
 	        }
 		}	
@@ -107,7 +107,7 @@ function scr_collide_destructibles() {
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 				}
 	        }
 		}	
@@ -119,7 +119,7 @@ function scr_collide_destructibles() {
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 				}
 	        }
 	    }
@@ -131,7 +131,7 @@ function scr_collide_destructibles() {
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 				}
 	        }
 	    }
@@ -143,7 +143,7 @@ function scr_collide_destructibles() {
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 				}
 	        }			
 		}
@@ -155,7 +155,7 @@ function scr_collide_destructibles() {
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 				}
 	        }
 	    }
@@ -166,7 +166,7 @@ function scr_collide_destructibles() {
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 				}
 	        }		
 		}
@@ -177,7 +177,7 @@ function scr_collide_destructibles() {
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 				}
 	        }		
 		}	
@@ -189,7 +189,7 @@ function scr_collide_destructibles() {
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 				}
 	        }
 	        if place_meeting((x + hsp), y, obj_destructibles)
@@ -198,7 +198,7 @@ function scr_collide_destructibles() {
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 				}
 	        }		
 	    }	
@@ -210,7 +210,7 @@ function scr_collide_destructibles() {
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 				}
 	        }
 	    }	
@@ -231,7 +231,7 @@ function scr_collide_destructibles() {
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 				}
 	        }		
 		}
@@ -243,7 +243,7 @@ function scr_collide_destructibles() {
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 	                with (other.id)
 	                {
 	                    if (state != states.Sjump && state != 17)
@@ -273,7 +273,7 @@ function scr_collide_destructibles() {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
 					
-	                instance_destroy()
+	                event_user(0)
 	            }
 	        }
 	    }
@@ -285,7 +285,7 @@ function scr_collide_destructibles() {
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 				}
 	        }
 	    }
@@ -297,7 +297,7 @@ function scr_collide_destructibles() {
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 				}
 	        }		
 	    }
@@ -352,7 +352,7 @@ function scr_collide_destructibles() {
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 				}
 	            if (state == 70)
 	                machpunchAnim = 1
@@ -366,7 +366,7 @@ function scr_collide_destructibles() {
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 				}
 	        }
 	        if place_meeting((x + sign(hsp)), y + sign((vsp)), obj_destructibles)
@@ -375,7 +375,7 @@ function scr_collide_destructibles() {
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 				}
 	        }			
 		}			
@@ -387,7 +387,7 @@ function scr_collide_destructibles() {
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 				}
 	            if (state == 70)
 	                machpunchAnim = 1
@@ -401,7 +401,7 @@ function scr_collide_destructibles() {
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 				}
 	        }		
 		}	
@@ -413,7 +413,7 @@ function scr_collide_destructibles() {
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 				}
 	        }
 	    }
@@ -425,7 +425,7 @@ function scr_collide_destructibles() {
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 				}
 	        }
 	    }
@@ -437,7 +437,7 @@ function scr_collide_destructibles() {
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 				}
 	        }
 	    }
@@ -449,7 +449,7 @@ function scr_collide_destructibles() {
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 				}
 	        }
 	    }
@@ -461,7 +461,7 @@ function scr_collide_destructibles() {
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 				}
 	        }
 		}
@@ -473,7 +473,7 @@ function scr_collide_destructibles() {
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 				}
 	        }
 		}		
@@ -485,7 +485,7 @@ function scr_collide_destructibles() {
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 				}
 	        }
 		}		
@@ -496,7 +496,7 @@ function scr_collide_destructibles() {
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 				}
 	        }		
 		}
@@ -507,7 +507,7 @@ function scr_collide_destructibles() {
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 				}
 	        }		
 		}		
@@ -519,7 +519,7 @@ function scr_collide_destructibles() {
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 				}
 	        }			
 		}		
@@ -531,7 +531,7 @@ function scr_collide_destructibles() {
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 				}
 	        }
 	    }
@@ -543,7 +543,7 @@ function scr_collide_destructibles() {
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 				}
 	        }
 	        if place_meeting((x + hsp), y, obj_destructibles)
@@ -552,7 +552,7 @@ function scr_collide_destructibles() {
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 				}
 	        }		
 	    }	
@@ -564,7 +564,7 @@ function scr_collide_destructibles() {
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 				}
 	        }
 	    }		
@@ -585,7 +585,7 @@ function scr_collide_destructibles() {
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 	                with (other.id)
 	                {
 	                    if (state != states.Sjump && state != 17)
@@ -615,7 +615,7 @@ function scr_collide_destructibles() {
             
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 			
 	            }
 	        }
@@ -628,7 +628,7 @@ function scr_collide_destructibles() {
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 				}
 	        }
 	    }
@@ -640,7 +640,7 @@ function scr_collide_destructibles() {
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-	                instance_destroy()
+	                event_user(0)
 				}
 	        }		
 	    }
@@ -695,7 +695,7 @@ function scr_collide_destructibles() {
 	        {
 				initialhsp = other.hsp
 				initialvsp = other.vsp
-	            instance_destroy()
+	            event_user(0)
 			}		
 		}
 	    if (place_meeting(x, (y + vsp), obj_destructibles) && thrown == 1)
@@ -704,7 +704,7 @@ function scr_collide_destructibles() {
 	        {
 				initialhsp = other.hsp
 				initialvsp = other.vsp
-	            instance_destroy()
+	            event_user(0)
 			}		
 		}
 		if (movespeed) > 0 && thrown == 1
@@ -715,7 +715,7 @@ function scr_collide_destructibles() {
 				{
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-					instance_destroy()
+					event_user(0)
 				}		
 			}
 		}	 
@@ -726,7 +726,7 @@ function scr_collide_destructibles() {
 	        {
 				initialhsp = other.hsp
 				initialvsp = other.vsp
-	            instance_destroy()
+	            event_user(0)
 			}		
 		}
 	    if (place_meeting(x, (y +  sign(vsp)), obj_destructibles) && thrown == 1)
@@ -735,7 +735,7 @@ function scr_collide_destructibles() {
 	        {
 				initialhsp = other.hsp
 				initialvsp = other.vsp
-	            instance_destroy()
+	            event_user(0)
 			}		
 		}	
 	}
@@ -747,7 +747,7 @@ function scr_collide_destructibles() {
 	        {
 				initialhsp = other.hsp
 				initialvsp = other.vsp
-	            instance_destroy()
+	            event_user(0)
 			}		
 		}
 	    if (place_meeting(drawx, (drawy + vsp), obj_destructibles) && collided == true)
@@ -756,7 +756,7 @@ function scr_collide_destructibles() {
 	        {
 				initialhsp = other.hsp
 				initialvsp = other.vsp
-	            instance_destroy()
+	            event_user(0)
 			}		
 		}
 	}
@@ -768,7 +768,7 @@ function scr_collide_destructibles() {
 	        {
 				initialhsp = other.hsp
 				initialvsp = other.vsp
-	            instance_destroy()
+	            event_user(0)
 			}		
 		}
 	    if (place_meeting(x, (y + vsp), obj_destructibles) && (thrown = 1 || state = "punch"))
@@ -777,7 +777,7 @@ function scr_collide_destructibles() {
 	        {
 				initialhsp = other.hsp
 				initialvsp = other.vsp
-	            instance_destroy()
+	            event_user(0)
 			}		
 		}
 		
@@ -789,7 +789,7 @@ function scr_collide_destructibles() {
 				{
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-					instance_destroy()
+					event_user(0)
 				}		
 			}
 		}		
@@ -801,7 +801,7 @@ function scr_collide_destructibles() {
 				{
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-					instance_destroy()
+					event_user(0)
 				}		
 			}
 		}
@@ -814,7 +814,7 @@ function scr_collide_destructibles() {
 	        {
 				initialhsp = other.hsp
 				initialvsp = other.vsp
-	            instance_destroy()
+	            event_user(0)
 			}		
 		}
 		if (movespeed) > 0
@@ -825,7 +825,7 @@ function scr_collide_destructibles() {
 				{
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-					instance_destroy()
+					event_user(0)
 				}		
 			}
 		}	   
@@ -838,7 +838,7 @@ function scr_collide_destructibles() {
 	        {
 				initialhsp = other.hsp
 				initialvsp = other.vsp
-	            instance_destroy()
+	            event_user(0)
 			}		
 		}
 	    if place_meeting(x, (y + vsp), obj_destructibles) && (thrown = 1)
@@ -847,7 +847,7 @@ function scr_collide_destructibles() {
 	        {
 				initialhsp = other.hsp
 				initialvsp = other.vsp
-	            instance_destroy()
+	            event_user(0)
 			}		
 		}
 	}

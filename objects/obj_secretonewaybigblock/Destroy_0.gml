@@ -1,7 +1,7 @@
 if (ds_list_find_index(global.saveroom, id) == -1)
 {
     var lay_id = layer_get_id(tiles)
-    var map_id = layer_tilemap_get_id(lay_id)
+    var map_id = layer_tilemap_get_id_fixed(lay_id)
 	var offset = 0;
 	if image_xscale < 1
 	offset = -1	

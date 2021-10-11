@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_pepperblock",
-    "path": "sprites/spr_pepperblock/spr_pepperblock.yy",
+    "name": "spr_movingplatform",
+    "path": "sprites/spr_movingplatform/spr_movingplatform.yy",
   },
   "solid": false,
   "visible": true,

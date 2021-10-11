@@ -82,29 +82,11 @@ if surface_exists(watersurface)
 	
 	with obj_watercurrent
 	{
-		for (var o = 0; o < abs(image_yscale); o++)
-		{
-			for (var z = 0; z < abs(image_xscale); z++)
-			{
-				if (sign(image_xscale) == 1)
-					draw_sprite_ext(spr_watercurrent, -1, (x + (32 * z)) - _cam_x, (y + (32 * o)) - _cam_y, sign(image_xscale), 1, image_angle, image_blend, 1)
-				else
-					draw_sprite_ext(spr_watercurrent, -1, (x - (32 * z)) - _cam_x, (y + (32 * o)) - _cam_y, sign(image_xscale), 1, image_angle, image_blend, 1)
-			}
-		}
+		draw_sprite_ext(sprite_index, -1, x - _cam_x, y - _cam_y, image_xscale, image_yscale, image_angle, image_blend, 1)
 	}
 	with obj_waterdraft
 	{
-		for (var o = 0; o < abs(image_yscale); o++)
-		{
-			for (var z = 0; z < abs(image_xscale); z++)
-			{
-				if (sign(image_yscale) == 1)
-					draw_sprite_ext(spr_waterdraft, -1, (x + (32 * z)) - _cam_x, (y + (32 * o)) - _cam_y, 1, sign(image_yscale), image_angle, image_blend, 1)
-				else
-					draw_sprite_ext(spr_waterdraft, -1, (x + (32 * z)) - _cam_x, (y - (32 * o)) - _cam_y, 1, sign(image_yscale), image_angle, image_blend, 1)
-			}
-		}
+		draw_sprite_ext(sprite_index, -1, x - _cam_x, y - _cam_y, image_xscale, image_yscale, image_angle, image_blend, 1)
 	}
 		
 	//Draw Clipping Mask
@@ -112,8 +94,11 @@ if surface_exists(watersurface)
 	draw_set_color(c_black);
 	draw_rectangle(0,0,960, ( bbox_top + 16 ) -_cam_y,false)
 	gpu_set_blendmode(bm_normal);
+	/*
 	for (var i = 0; i < abs(image_xscale); i++)
 		draw_sprite_ext(spr_cheesewater, -1, (x + (32 * i)  - _cam_x), y  - _cam_y, 1, 1, image_angle, image_blend, 1)	
+		*/
+	draw_sprite_ext(sprite_index,-1,x - _cam_x, y - _cam_y,image_xscale,1,0,c_white,1)
 	surface_reset_target();
 }
 //Draw Surface

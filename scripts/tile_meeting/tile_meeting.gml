@@ -5,7 +5,7 @@ function tile_meeting(argument0,argument1,argument2){
 ///@param layer
 
 var _layer = argument2,
-    _tm = layer_tilemap_get_id(_layer);
+    _tm = layer_tilemap_get_id_fixed(_layer);
 
 var _x1 = tilemap_get_cell_x_at_pixel(_tm, bbox_left + (argument0 - x), y),
     _y1 = tilemap_get_cell_y_at_pixel(_tm, x, bbox_top + (argument1 - y)),

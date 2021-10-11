@@ -7,13 +7,15 @@ if (refresh <= 0)
 	{
 		if content != noone
 		{
-			with (instance_create(x, (spawny), content))
+			with (instance_create(x, (y - spawny), content))
 			{
 				other.createdid = id
 				image_xscale = other.image_xscale
 
 				if variable_instance_exists(id,"vsp")
 					vsp = -3
+				if variable_instance_exists(id,"important")
+					important = other.important				
 			}
 		}
 	refresh = 100
