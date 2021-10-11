@@ -487,7 +487,7 @@ if oldcombo != global.combo && global.newhud = true
 //Textbubble
 if ds_queue_size(global.newhudmessage) > 0 && showingnewtext = false && newtvsprite != spr_tv_open && newtvsprite != spr_tv_static
 {
-	newmessage = ds_queue_dequeue(global.newhudmessage);
+	new_message = ds_queue_dequeue(global.newhudmessage);
 	shownewtext = true;
 	showingnewtext = true;
 	textbubblesprites = spr_tv_bubbleopen;
@@ -500,7 +500,7 @@ if textbubblesprites = spr_tv_bubble
 {
 	text_x += -3.5
 	/* I was thinking why there was a disconnect between the draw and this CONT. in Draw GUI
-	if floor(text_x) <= -(floor(string_width(string_upper(newmessage))) - 775)
+	if floor(text_x) <= -(floor(string_width(string_upper(new_message))) - 775)
 	{
 		textbubblesprites = spr_tv_bubbleclose;
 		textbubbleframes = 0;
@@ -508,7 +508,7 @@ if textbubblesprites = spr_tv_bubble
 }
 if textbubblesprites = spr_tv_bubbleclose && floor(textbubbleframes) >= sprite_get_number(spr_tv_bubbleclose) - 1
 {
-	newmessage = ""
+	new_message = ""
 	shownewtext = false;
 	showingnewtext = false;
 	textbubbleframes = 0;
