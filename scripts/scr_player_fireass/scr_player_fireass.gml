@@ -1,7 +1,7 @@
 function scr_player_fireass() {
 	buttanim = 100
 	image_speed = 0.35
-	if place_meeting((x + hsp), y, obj_solid)
+	if scr_solid((x + hsp), y)
 	    image_xscale *= -1
 	if (sprite_index == spr_fireass)
 	{

@@ -1,6 +1,6 @@
 var size = random_range(0.6, 1.2)
 hsp = (image_xscale * movespeed)
-if ((!scr_slope()) && place_meeting((x + sign(hsp)), y, obj_solid))
+if scr_solid(x + sign(hsp),y) && !scr_slope_ext(x + sign(hsp),y) //((!scr_slope()) && place_meeting((x + sign(hsp)), y, obj_solid))
 {
     repeat (8)
     {

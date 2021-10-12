@@ -2582,6 +2582,7 @@
     {"id":{"name":"scr_player_bossintro","path":"scripts/scr_player_bossintro/scr_player_bossintro.yy",},"order":18,},
     {"id":{"name":"scr_player_boulder","path":"scripts/scr_player_boulder/scr_player_boulder.yy",},"order":19,},
     {"id":{"name":"scr_player_boxxedpep","path":"scripts/scr_player_boxxedpep/scr_player_boxxedpep.yy",},"order":20,},
+    {"id":{"name":"obj_cameraregion","path":"objects/obj_cameraregion/obj_cameraregion.yy",},"order":27,},
     {"id":{"name":"scr_player_bump","path":"scripts/scr_player_bump/scr_player_bump.yy",},"order":21,},
     {"id":{"name":"scr_player_chainsaw","path":"scripts/scr_player_chainsaw/scr_player_chainsaw.yy",},"order":22,},
     {"id":{"name":"scr_player_chainsawbump","path":"scripts/scr_player_chainsawbump/scr_player_chainsawbump.yy",},"order":23,},

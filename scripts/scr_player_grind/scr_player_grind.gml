@@ -43,7 +43,7 @@ function scr_player_grind() {
 	    scr_soundeffect(sfx_jump)
 	}
 	//Bump
-	if place_meeting(x + xscale ,y, obj_solid)
+	if scr_solid(x + xscale ,y) && !scr_slope_ext(x + xscale,y)
 	{
 		grinding = true
 		instance_create((x + (10 * sign(xscale))), (y + 10), obj_bumpeffect)

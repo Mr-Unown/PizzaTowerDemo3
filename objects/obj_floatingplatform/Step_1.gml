@@ -12,10 +12,7 @@ else if instance_exists(obj_water) && y < obj_water.bbox_top
 	if !scr_solid(x, y + 1) 
 		vsp = 8
 }
-else
-{
-	vsp = clamp(vsp + 0.35,-8,10)
-}
+
 #region Vertical
 repeat(abs(vsp)) 
 {

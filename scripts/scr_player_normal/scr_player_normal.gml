@@ -544,7 +544,7 @@ function scr_player_normal() {
 	    superjumpprepsnd = audio_play_sound(sfx_superjumpprep, 1, false)
 	    audio_sound_gain(superjumpprepsnd, (1 * global.soundeffectsvolume), 0)
 	}
-	if (character == "S" && move != 0 && (!place_meeting((x + xscale), y, obj_solid)))
+	if (character == "S" && move != 0 && (!scr_solid(x + xscale,y) || scr_slope_ext(x + xscale, y)))
 	{
 	    movespeed = 6
 	    sprite_index = spr_mach1
@@ -552,7 +552,7 @@ function scr_player_normal() {
 	    state = 69
 	    image_index = 0
 	}
-	if (key_attack && (!place_meeting((x + xscale), y, obj_solid)) && character == "S" && grounded)
+	if (key_attack && ((!scr_solid(x + xscale,y) || scr_slope_ext(x + xscale, y))) && character == "S" && grounded)
 	{
 	    state = 22
 	    movespeed = 0

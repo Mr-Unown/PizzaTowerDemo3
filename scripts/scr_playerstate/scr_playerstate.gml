@@ -576,8 +576,22 @@ function scr_playerstate() {
 		vigitimer = 100
 	if global.freezeframe = false
 	vigitimer--
-
+	
 	vigihealth = clamp(vigihealth,0,250)
+	//Collision Mask
+	if !scr_solid() && !scr_slope()
+	{
+		if (state != 72 && state != states.jetpackstart && state != 86 && sprite_index != spr_breakdanceattack1 && sprite_index != spr_bombpepintro && sprite_index != spr_knightpepthunder && state != 2 && state != 6 && state != 66 && state != 15 && state != 39 && sprite_index != spr_player_crouchshoot && state != 65 && state != 33 && state != 37 && state != 73 && state != 68 && state != 67)
+			mask_index = spr_player_mask
+		else
+			mask_index = spr_crouchmask
+	}
+	else if scr_solid()
+		mask_index = spr_crouchmask
+	if (character == "S" && state == 27)
+		mask_index = spr_player_mask
+	else if (character == "S")
+	    mask_index = spr_crouchmask
 	//Supertaunt
 	if global.freezeframe = false
 	{

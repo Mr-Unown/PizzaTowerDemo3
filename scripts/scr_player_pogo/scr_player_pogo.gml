@@ -95,7 +95,7 @@ function scr_player_pogo() {
 		pogomovespeed = 6
 	
 	//Wall
-	if place_meeting(x + sign(hsp), y, obj_solid) && (movespeed > 0 && !place_meeting(x + sign(hsp), y, obj_destructibles)) {
+	if (scr_solid(x + sign(hsp),y) && !scr_slope_ext(x + sign(hsp), y)) && (movespeed > 0 && !place_meeting(x + sign(hsp), y, obj_destructibles)) {
 		movespeed = 0
 		pogobounces = 0
 		pogomovespeed = 6

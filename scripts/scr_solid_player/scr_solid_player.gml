@@ -1,4 +1,4 @@
-function scr_solid_player(argument0, argument1) {
+function scr_solid_player(argument0 = x, argument1 = y) {
 	var old_x = x
 	var old_y = y
 	x = argument0
@@ -180,9 +180,9 @@ function scr_solid_player(argument0, argument1) {
 	
 	#region Slopes
 	#region Object
-	var slope = instance_place(x, y, obj_slope)
-	if slope
+	if place_meeting(x,y, obj_slope)
 	{
+		var slope = instance_place(x, y, obj_slope)
 	    with (slope)
 	    {
 	        var object_side = 0
@@ -252,9 +252,9 @@ function scr_solid_player(argument0, argument1) {
 		return 1;
 		}
 	}
-	var grindslope = instance_place(x, y, obj_grindrailslope)
-	if grindslope
+	if place_meeting(x,y, obj_grindrailslope)
 	{
+		var grindslope = instance_place(x, y, obj_grindrailslope)
 	    with (grindslope)
 	    {
 	        var gobject_side = 0

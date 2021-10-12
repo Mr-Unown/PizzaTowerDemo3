@@ -123,7 +123,7 @@ function scr_enemy_charge() {
 	if (object_index == obj_ancho)
 	{
 	    hsp = (image_xscale * movespeed)
-	    if place_meeting((x + hsp), y, obj_solid)
+	    if scr_solid(x + hsp,y)//place_meeting((x + hsp), y, obj_solid)
 	    {
 	        state = 106
 	        stunned = 100

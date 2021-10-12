@@ -14,11 +14,12 @@ enum tiletype
 	rightslope2 = 34
 }	
 #endregion
-/// @description Checks location for Solids
-/// @param x 
-/// @param y 
-function scr_solid(argument0, argument1) 
+
+function scr_solid(argument0 = x, argument1 = y) 
 {
+	/// @description Checks location for Solids
+	/// @param x 
+	/// @param y 
 	var old_x = x
 	var old_y = y
 	x = argument0
@@ -198,10 +199,11 @@ function scr_solid(argument0, argument1)
 	#endregion
 	
 	#region Slopes
+	
 	#region Object
-	var slope = instance_place(x, y, obj_slope)
-	if slope
+	if place_meeting(x,y, obj_slope)
 	{
+		var slope = instance_place(x, y, obj_slope)
 	    with (slope)
 	    {
 	        var object_side = 0

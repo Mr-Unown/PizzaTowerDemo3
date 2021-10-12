@@ -76,7 +76,7 @@ function scr_player_mach1() {
 	}
 	if (grounded && vsp > 0)
 	    jumpstop = 0
-	if (place_meeting((x + xscale), y, obj_solid) && (!scr_slope_ext(x + sign(hsp), y)))
+	if scr_solid(x + xscale,y)  && (!scr_slope_ext(x + sign(hsp), y))
 	{
 	    movespeed = 0
 	    state = 0
@@ -125,7 +125,7 @@ function scr_player_mach1() {
 	    jumpAnim = 1
 	    image_index = 0
 	}
-	if (key_attack && (!place_meeting((x + xscale), y, obj_solid)) && character == "S" && grounded)
+	if (key_attack && !scr_solid(x + xscale,y)  && character == "S" && grounded)
 	{
 	    state = 22
 	    movespeed = 0

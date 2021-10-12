@@ -15,14 +15,30 @@ function scr_player_throwdynamite() {
 	{
 	    if (key_attack && hsp != 0)
 	        state = 70
+		else if scr_solid(x,y-3)
+		{
+			state = 66
+			landAnim = 0
+			image_index = 0
+			idle = 0
+		}
 	    else
 	        state = 0
 	}
 	if (floor(image_index) == (image_number - 1) && sprite_index == spr_playerN_noisebombthrow)
 	{
-		state = 0
+		if scr_solid(x,y-3)
+		{
+			state = 66
+			landAnim = 0
+			image_index = 0
+			idle = 0
+		}
+		else
+			state = 0
 	}
 	image_speed = 0.4
+	
 
 
 }

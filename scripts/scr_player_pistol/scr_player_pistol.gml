@@ -28,15 +28,33 @@ function scr_player_pistol() {
 	}
 	if (floor(image_index) == (image_number - 1) && sprite_index == spr_playerV_revolvershoot)
 	{
-	    image_index = 0
-	    state = 0
-	    sprite_index = spr_playerV_revolverend
-	    movespeed = 2
+		if scr_solid(x,y-3)
+		{
+			state = 66
+			landAnim = 0
+			image_index = 0
+			idle = 0
+			movespeed  = 2
+		}
+		else
+		{
+			image_index = 0
+			state = 0
+			sprite_index = spr_playerV_revolverend
+			movespeed = 2
+		}
 	}
 	if ((sprite_index == spr_playerV_airrevolverend || sprite_index == spr_playerV_airrevolver || sprite_index == spr_playerV_airrevolverstart) && grounded)
 	{
 	    if (key_attack && movespeed >= 6)
 	        state = 70
+		else if scr_solid(x,y-3)
+		{
+			state = 66
+			landAnim = 0
+			image_index = 0
+			idle = 0
+		}			
 	    else
 	        state = 0
 	}
@@ -44,6 +62,13 @@ function scr_player_pistol() {
 	{
 	    if (key_attack && movespeed >= 6)
 	        state = 70
+		else if scr_solid(x,y-3)
+		{
+			state = 66
+			landAnim = 0
+			image_index = 0
+			idle = 0
+		}			
 	    else
 	    {
 	        image_index = 0

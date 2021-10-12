@@ -8,9 +8,9 @@ function scr_slope_ext(argument0, argument1)
 	x = argument0
 	y = argument1
 	#region Object
-	var slope = instance_place(x, y, obj_slope)
-	if slope
+	if place_meeting(x,y, obj_slope)
 	{
+		var slope = instance_place(x, y, obj_slope)
 	    with (slope)
 	    {
 	        var object_side = 0

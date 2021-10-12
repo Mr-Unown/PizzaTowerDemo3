@@ -1,11 +1,11 @@
 hsp = _dir * 2
-if place_meeting((x + _dir), y, obj_solid)
+if !scr_slope_ext(x + _dir,y) && scr_solid(x + _dir,y)
 {
     _dir *= -1
 }	
 if (outside_room == 0)
     out_timer -= 1
-if place_meeting(x, y, obj_solid) 
+if scr_solid(x,y)
 {
     recreate = 1
     maxspeed += 0.05
@@ -18,7 +18,7 @@ else
     outside_room = 0
     maxspeed = 0
 }
-if (recreate == 1 && (!place_meeting(x, y, obj_solid)) && outside_room == 0)
+if (recreate == 1 && (!scr_solid()) && outside_room == 0)
 {
     recreate = 0
 	_dir = choose(1, -1)

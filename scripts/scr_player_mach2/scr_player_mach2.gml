@@ -156,7 +156,7 @@ function scr_player_mach2() {
 	    sprite_index = spr_walljumpend
 	if (floor(image_index) == (image_number - 1) && sprite_index == spr_player_machhit && machhitAnim == 0)
 	    sprite_index = spr_mach
-	if (key_attack && (!place_meeting((x + xscale), y, obj_solid)) && character == "S" && grounded)
+	if (key_attack && !scr_solid(x + xscale,y) && character == "S" && grounded)
 	{
 	    state = 22
 	    movespeed = 0
