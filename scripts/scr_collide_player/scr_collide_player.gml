@@ -22,7 +22,7 @@ function scr_collide_player() {
 	{
 	    // Move up slope
 	    if scr_solid_player(x + sign(hsp), y) && !scr_solid_player(x + sign(hsp), y - 1)
-	        y--
+	        y--;
     
 	    // Move down slope
 	    if !scr_solid_player(x + sign(hsp), y) && !scr_solid_player(x + sign(hsp), y + 1) && scr_solid_player(x + sign(hsp), y + 2)

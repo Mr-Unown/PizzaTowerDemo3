@@ -179,6 +179,7 @@ function scr_solid_player(argument0 = x, argument1 = y) {
 	#endregion
 	
 	#region Slopes
+	
 	#region Object
 	if place_meeting(x,y, obj_slope)
 	{
@@ -202,7 +203,7 @@ function scr_solid_player(argument0 = x, argument1 = y) {
 	        }
 	        var m = ((sign(image_xscale) * (bbox_bottom - bbox_top)) / (bbox_right - bbox_left))
 	        var sslope = (slope_start - round((m * (object_side - bbox_left))))
-	        if other.bbox_bottom = sslope && other.bbox_top < sslope && object_side != sslope 
+	        if other.bbox_bottom >= sslope
 	        {	
 				other.x = old_x
 				other.y = old_y
@@ -223,8 +224,6 @@ function scr_solid_player(argument0 = x, argument1 = y) {
 		}
 	}		
 	#endregion
-
-	
 
 	#endregion
 	#region Player Only Collisions

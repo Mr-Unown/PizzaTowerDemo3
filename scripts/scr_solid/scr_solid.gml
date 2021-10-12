@@ -223,7 +223,7 @@ function scr_solid(argument0 = x, argument1 = y)
 	        }
 	        var m = ((sign(image_xscale) * (bbox_bottom - bbox_top)) / (bbox_right - bbox_left))
 	        var sslope = (slope_start - round((m * (object_side - bbox_left))))
-	        if other.bbox_bottom = sslope && other.bbox_top < sslope && object_side != sslope 
+	        if other.bbox_bottom >= sslope
 	        {	
 				other.x = old_x
 				other.y = old_y
@@ -253,4 +253,25 @@ function scr_solid(argument0 = x, argument1 = y)
 
 
 
+}
+/*
+function scr_solid_slope(argument0 = x,argument1 = y)
+{
+	var old_x = x
+    var old_y = y
+    x = argument0
+    y = argument1
+    if scr_slope_ext(x,y)
+    {
+        var slope = instance_place(x, y, obj_slope)
+        if (sign(slope.image_xscale) != sign(image_xscale))
+        {
+            x = old_x
+            y = old_y
+            return true;
+        }
+    }
+    x = old_x
+    y = old_y
+    return true;
 }

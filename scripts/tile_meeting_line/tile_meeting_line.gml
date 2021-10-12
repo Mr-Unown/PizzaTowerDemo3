@@ -5,7 +5,9 @@
 ///@param y2
 ///@param layer
 
-function tile_meeting_line(argument0,argument1,argument2,argument3,argument4){
+function tile_meeting_line(argument0,argument1,argument2,argument3,argument4 = "Tiles_Solid"){
+if !layer_exists(argument4)
+	return false;	
 #macro tile_size 32
 #macro tile_bit_shift 5
 var x1 = argument0

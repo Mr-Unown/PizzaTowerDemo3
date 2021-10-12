@@ -30,7 +30,7 @@ function scr_slope_ext(argument0, argument1)
 	        }
 	        var m = ((sign(image_xscale) * (bbox_bottom - bbox_top)) / (bbox_right - bbox_left))
 	        var sslope = (slope_start - round((m * (object_side - bbox_left))))
-	        if other.bbox_bottom = sslope && other.bbox_top < sslope && object_side != sslope 
+	        if other.bbox_bottom >= sslope
 	        {	
 				other.x = old_x
 				other.y = old_y

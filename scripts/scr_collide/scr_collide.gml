@@ -20,7 +20,7 @@ function scr_collide() {
 	{
 	    // Move up slope
 	    if scr_solid(x + sign(hsp), y) && !scr_solid(x + sign(hsp), y - 1)
-	        y--
+	        y--;
     
 	    // Move down slope
 	    if !scr_solid(x + sign(hsp), y) && !scr_solid(x + sign(hsp), y + 1) && scr_solid(x + sign(hsp), y + 2)

@@ -104,3 +104,8 @@ if scr_slope_ext(x,y+1)
 }*/
 	draw_set_font(font1)
 	draw_text(x,y - 64,string(instance_number(all)))
+	
+with all
+{
+	draw_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,true)
+}

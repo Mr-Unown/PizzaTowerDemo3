@@ -1,9 +1,10 @@
-function tile_meeting_id(argument0,argument1,argument2){
+function tile_meeting_id(argument0,argument1,argument2 = "Tiles_Solid"){
 ///@description tile_meeting_id(x,y,layer)
 ///@param x
 ///@param y
 ///@param layer
-
+if !layer_exists(argument2)
+	return false;
 var _layer = argument2,
     _tm = layer_tilemap_get_id_fixed(_layer);
 

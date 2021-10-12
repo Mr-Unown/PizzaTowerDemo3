@@ -15,7 +15,7 @@ function scr_player_mach1() {
 	    state = 0
 	    movespeed = 0
 	}*/
-	if scr_solid(x + xscale, y) && !scr_slope_ext(x + xscale,y)
+	if scr_solid(x + xscale, y) && ( !scr_slope_ext(x + xscale,y)  )
 	{
 		hsp = 0
 	    mach2 = 0
@@ -76,7 +76,7 @@ function scr_player_mach1() {
 	}
 	if (grounded && vsp > 0)
 	    jumpstop = 0
-	if scr_solid(x + xscale,y)  && (!scr_slope_ext(x + sign(hsp), y))
+	if scr_solid(x + xscale,y)  && (!scr_slope_ext(x + sign(hsp), y)  )
 	{
 	    movespeed = 0
 	    state = 0
