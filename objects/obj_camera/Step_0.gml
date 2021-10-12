@@ -164,7 +164,7 @@ if (global.seconds > 59)
 }
 if (global.panic == 1)
 {
-    panicshake = lerp(2, 0.45,(global.wave / global.maxwave))
+    panicshake = lerp(0.45, 2,(global.wave / global.maxwave))
     panicshakeacc = (3 / room_speed)
 }
 else
