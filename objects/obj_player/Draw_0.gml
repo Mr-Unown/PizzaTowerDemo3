@@ -94,18 +94,3 @@ if show_tricks
 	draw_set_color(c_white)
 	draw_text(x,y - 90,string(tricksperformed))
 }
-/*
-if scr_slope_ext(x,y+1)
-{
-	var _angle = scr_slopeangle(x,y+1)
-	draw_set_font(font1)
-	draw_text(x,y - 180,string(_angle))
-	draw_text(x,y - 64,string(_angle))
-}*/
-	draw_set_font(font1)
-	draw_text(x,y - 64,string(instance_number(all)))
-	
-with all
-{
-	draw_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,true)
-}
