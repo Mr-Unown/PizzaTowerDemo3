@@ -11,4 +11,5 @@ objects[3] = obj_throwableparent;
 objects[4] = obj_goop;
 objects[5] = obj_pizzaslice;
 objects[6] = obj_shotgun;
+objects[7] = obj_pizzacoin;
 

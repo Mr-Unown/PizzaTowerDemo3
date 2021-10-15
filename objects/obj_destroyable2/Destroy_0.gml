@@ -19,7 +19,7 @@ if (ds_list_find_index(global.saveroom, id) == -1 && global.snickchallenge == 0)
     }
 	with (instance_create((x + 16 + random_range(-16, 16)), (y + 16 + random_range(-16, 16)), obj_balloonpop))
 	{
-		image_index = 0.35
+		image_speed = 0.35
 		sprite_index = spr_destroyablecloud
 		image_angle = choose(0,90,180,270)
 		vspeed = -3

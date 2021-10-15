@@ -7,6 +7,12 @@ var _drawy = 100 + _cam_y
 //Maxangle
 
 maxangle = clamp(floor(arctan((room_height/room_width)/_cam_y)), 0, 3)
+/*var cam_width = camera_get_view_width(view_camera[0]) , cam_height = camera_get_view_height(view_camera[0]) 
+, camsqr = sqr(cam_width) + sqr(cam_height) ,
+camsqrt = sqrt(camsqr), camarctan = arctan(cam_height/cam_width),
+maximumangle =  arccos( (room_width / camsqrt) - camarctan       )
+
+maxangle = clamp(maximumangle,0,3)*/
 
 
 //Collided with Player

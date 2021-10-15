@@ -1,11 +1,14 @@
 {
   "spriteId": {
-    "name": "spr_movingplatform",
-    "path": "sprites/spr_movingplatform/spr_movingplatform.yy",
+    "name": "spr_floatingplatform",
+    "path": "sprites/spr_floatingplatform/spr_floatingplatform.yy",
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_solid",
+    "path": "sprites/spr_solid/spr_solid.yy",
+  },
   "persistent": false,
   "parentObjectId": {
     "name": "group_collision",

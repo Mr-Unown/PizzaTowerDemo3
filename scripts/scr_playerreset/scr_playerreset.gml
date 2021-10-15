@@ -249,7 +249,7 @@ function scr_playerreset() {
 	    global.SAGEtoppin = ini_read_string("SAGE2019", "toppin", 0);
 	    global.SAGEtreasure = ini_read_string("SAGE2019", "treasure", 0);
 	    ini_close()
-	    in_water = 0;
+	    in_water = false;
 	    key_particles = 0;
 	    barrel = 0;
 	    bounce = 0;
@@ -389,7 +389,7 @@ function scr_playerreset() {
 	    global.SAGEtoppin = ini_read_string("SAGE2019", "toppin", 0);
 	    global.SAGEtreasure = ini_read_string("SAGE2019", "treasure", 0);
 	    ini_close()
-	    in_water = 0;
+	    in_water = false;
 	    key_particles = 0;
 	    barrel = 0;
 	    bounce = 0;

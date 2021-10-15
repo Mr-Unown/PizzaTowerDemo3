@@ -17,11 +17,6 @@ switch room
 		targetdarkness = clamp(_dark * 0.85,0.75,0.85)
 		break;		
 	#endregion
-	default:
-		targetdarkness = 0;
-		darkness = 0
-		can_draw = false;
-		break;
 }
 //Change Darkness
 darkness = approach(darkness,targetdarkness,0.015)

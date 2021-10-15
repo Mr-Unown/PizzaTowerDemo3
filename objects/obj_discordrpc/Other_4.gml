@@ -21,7 +21,7 @@ if (global.snickchallenge == false)
     }
     else if (string_letters(roomname) == "ruin" || string_letters(roomname) == "ruinsecret") || room = ruin_pizzamart || room = ruin_treasure
     {
-	string_status = "Ancient Cheese"
+	string_status = "The Ancient Cheese"
 	string_imagekey = "ruin"
 	in_a_level = true;
     }
@@ -43,6 +43,12 @@ if (global.snickchallenge == false)
 	string_imagekey = "chateau"
 	in_a_level = true;
     }			
+    else if (string_letters(roomname) == "sanctum" || string_letters(roomname) == "sanctumsecret") || room = sanctum_pizzamart || room = sanctum_treasure
+    {
+	string_status = "La Burrata Temple"
+	string_imagekey = "sanctum"
+	in_a_level = true;
+    }	
     else if (string_letters(roomname) == "strongcold" || string_letters(roomname) == "strongcoldsecret") || room = strongcold_pizzamart || room = strongcold_miniboss || room = strongcold_treasure
     {
 	string_status = "Strongcold"
@@ -75,7 +81,7 @@ if (global.snickchallenge == false)
     }	
     else if (string_letters(roomname) == "factory" || string_letters(roomname) == "factorysecret")
     {
-	string_status = "Playing a level"
+	string_status = "Pizzasauce Factory"
 	string_imagekey = "default"
 	in_a_level = true;
     }

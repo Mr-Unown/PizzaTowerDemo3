@@ -12,8 +12,8 @@ switch current_month
 		global.timeevent = 2; //April fools
 		if global.has_drawnpeter = false && object_index = obj_player1
 		{
-			var chance = random_range(0,200);
-			var yes = (chance >= 200 ? true : false);
+			var _chance = random_range(0,200);
+			var yes = (_chance >= 200 ? true : false);
 			global.draw_peter = yes;
 		}
 		else if global.has_drawnpeter = true

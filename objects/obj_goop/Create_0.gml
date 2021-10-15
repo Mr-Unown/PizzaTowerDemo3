@@ -3,8 +3,8 @@ playerid = obj_player1;
 pooid = id;
 created = false;
 
-chance = random_range(0,100);
-if chance <= 97
+_chance = random_range(0,100);
+if _chance <= 97
 	paletteselect = choose(0,1); //Sauce or Cheese Goop
 else
 {

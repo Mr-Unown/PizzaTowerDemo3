@@ -6,7 +6,7 @@
     "path": "folders/Scripts/utility.yy",
   },
   "resourceVersion": "1.0",
-  "name": "approach",
+  "name": "scr_basicfunctions",
   "tags": [],
   "resourceType": "GMScript",
 }

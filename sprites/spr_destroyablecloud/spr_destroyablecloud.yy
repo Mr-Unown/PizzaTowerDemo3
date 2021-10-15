@@ -65,7 +65,7 @@
     "spriteId": {"name":"spr_destroyablecloud","path":"sprites/spr_destroyablecloud/spr_destroyablecloud.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 1.0,
+    "playbackSpeed": 1.5,
     "playbackSpeedType": 1,
     "autoRecord": true,
     "volume": 1.0,

@@ -1,5 +1,10 @@
 function scr_playercreate() {
-	global.wateralpha = 0.85
+	//Jump Height Trolling
+	jumpheight = -11;
+	
+	in_water = false;
+	
+	//global.wateralpha = 0.85
 	global.storedtaminute = 0;
 	global.storedtasecond = 0;
 	breakdancebuffer = 50

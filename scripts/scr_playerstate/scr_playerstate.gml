@@ -444,32 +444,53 @@ function scr_playerstate() {
 	        break
 	}
 #endregion
+	#region Jump Height
+	var _jumpheight = 0;
+	switch character
+	{
+		case "P":
+			_jumpheight = -11;
+		break;
+		case "N":
+			_jumpheight = (pogo == true ? -9 : -13);
+		break;
+		case "S":
+			_jumpheight = -12;
+		break;
+		case "V":
+			_jumpheight = -13;
+		break;
+		case "PM":
+			_jumpheight = -9;
+		break;	
+		case "D":
+			_jumpheight = -13;
+		break;	
+		case "PZ":
+			_jumpheight = -12;
+		break;
+		default:
+			_jumpheight = -11;
+		break;
+	}
+	
+	jumpheight = _jumpheight + (in_water == true ? -2 : 0)
+	#endregion
+	
 	//Water
-	if instance_exists(obj_water) 
-	{
-		if obj_water.bbox_top < bbox_top
-			in_water = true
-	}
-	else
-	{
-		in_water = false
-	}
-
+	in_water = (instance_exists(obj_water) && obj_water.bbox_top < y);
 	if in_water = true
 	{
-		if vsp > 15
-			vsp = 15
-	    var bubble = random_range(1, 100)
-	    if (bubble >= 99)
-	    {
-			with instance_create(x,y,obj_waterbubble)
+		if vsp > 10
+			vsp = 10
+	    if chance(0.99) == false
+		{
+			with instance_create(x , y, obj_waterbubble)
 				depth = other.depth - 5
-	    }	
-	
+		}
 	}
 
-//Disabled since it really looks bad
-#region Slope Angle
+	#region Slope Angles - Disabled since it really looks bad
 /*
 	//Angle Strength
 	var subtle_var = 5;
@@ -528,9 +549,8 @@ function scr_playerstate() {
 
 	//Speedboost
 	if grounded && (state != states.mach2 && state != states.frozen && state != states.backbreaker && state != states.trick && state != states.mach3 && state != states.jetpack && state != states.machroll)
-	{
 		maxmachspeed = approach(maxmachspeed,24,1)
-	}
+		
 	//Firetrail
 	if firetrailbuffer > 0 && global.freezeframe = false
 	firetrailbuffer -= movespeed/24 * 26
@@ -578,6 +598,7 @@ function scr_playerstate() {
 	vigitimer--
 	
 	vigihealth = clamp(vigihealth,0,250)
+	
 	//Collision Mask
 	if !scr_solid() && !scr_slope()
 	{
@@ -592,6 +613,7 @@ function scr_playerstate() {
 		mask_index = spr_player_mask
 	else if (character == "S")
 	    mask_index = spr_crouchmask
+		
 	//Supertaunt
 	if global.freezeframe = false
 	{

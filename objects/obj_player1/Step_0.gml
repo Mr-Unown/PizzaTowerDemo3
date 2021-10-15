@@ -13,7 +13,7 @@ if global.oldmeter != global.heatmeter
 			flash = true
 			with (instance_create((x + random_range(-5, 5)), (y + random_range(-5, 5)), obj_balloonpop))
 			{
-				image_index = 0.35
+				image_speed = 0.35
 				sprite_index = spr_bigpoofclouds
 				image_angle = choose(0,90,180,270)
 			}	
