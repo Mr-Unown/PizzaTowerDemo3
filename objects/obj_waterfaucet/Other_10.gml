@@ -9,4 +9,7 @@ var _targety = targety
 targety = targety2
 targety2 = _targety
 can_switch = true
-alarm[0] = -1
+with obj_waterfaucet
+{
+	alarm[0] = -1
+}

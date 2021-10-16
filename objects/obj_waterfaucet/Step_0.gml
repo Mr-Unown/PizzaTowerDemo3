@@ -26,7 +26,7 @@ if ((player.instakillmove = true  || player.state = 22 || player.state = states.
 				else
 					sprite_index = spr_onoffswitch_redtoblue
 				can_switch = false
-				alarm[0] = 90
+				alarm[0] = 50
 			}
         }		
     }
