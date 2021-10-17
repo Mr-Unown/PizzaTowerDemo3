@@ -1,4 +1,9 @@
-scr_getinput()
+function scr_player_bossdefeat() {
+	scr_getinput()
 
 
 
+
+
+
+}

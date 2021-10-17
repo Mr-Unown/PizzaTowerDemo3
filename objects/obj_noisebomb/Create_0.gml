@@ -15,7 +15,7 @@ if room = strongcold_miniboss
     state = 51
     sprite_index = spr_bossintro
     image_index = 0
-    scr_soundeffect(44)
+    scr_soundeffect(sfx_scream5)
 }
 sprite_index = spr_noisebomb_intro
 instance_create(x, y, obj_taunteffect)

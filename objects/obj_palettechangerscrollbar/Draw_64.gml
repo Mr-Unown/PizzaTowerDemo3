@@ -11,3 +11,4 @@ draw_sprite_ext(spr_palettechanger_textbox,-1,bottom_x + 8 + sprite_get_xoffset(
 draw_set_font(global.smallfont);
 draw_set_halign(fa_center);
 draw_text(bottom_x + 8 + sprite_get_xoffset(spr_palettechanger_textbox),draw_y - 5,string(round(colorvalue*255)));
+draw_text(bottom_x + 8 + sprite_get_xoffset(spr_palettechanger_textbox),draw_y - 5, string(input) + cursor );

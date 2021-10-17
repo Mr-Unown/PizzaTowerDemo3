@@ -1,8 +1,12 @@
 {
-    "id": "806e882c-b74c-4265-8a65-412ac64ddb2d",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_player_Sjumpjetpackprep",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "player",
+    "path": "folders/Scripts/player.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_player_Sjumpjetpackprep",
+  "tags": [],
+  "resourceType": "GMScript",
 }

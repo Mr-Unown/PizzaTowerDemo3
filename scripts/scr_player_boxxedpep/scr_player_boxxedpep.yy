@@ -1,8 +1,12 @@
 {
-    "id": "4580d0b6-d7ce-4d00-8156-f59abf0503cb",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_player_boxxedpep",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "player",
+    "path": "folders/Scripts/player.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_player_boxxedpep",
+  "tags": [],
+  "resourceType": "GMScript",
 }

@@ -43,7 +43,7 @@ if ((global.noisebombfollow = true && sprite_index != spr_noisebomb_intro) && ro
 
 
 if playerid.hsp = 0 && playerid.state != states.door && playerid.grounded && image_xscale = playerid.xscale {
-	if magnitude < 32 && ((place_meeting(x, bbox_bottom + 1,obj_solid) || (!place_meeting(x, y, obj_platform) && place_meeting(x, bbox_bottom + 1, obj_platform)))) && !place_meeting(x - image_xscale, y, obj_solid) 
+	if magnitude < 32 && ((scr_solid(x - distance, bbox_bottom + 1) || (!place_meeting(x, y, obj_platform) && place_meeting(x, bbox_bottom + 1, obj_platform)))) && !scr_solid(x - image_xscale, y) 
 	 magnitude += 0.5
 }
 else if magnitude > 0

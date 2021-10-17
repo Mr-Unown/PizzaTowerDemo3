@@ -127,11 +127,11 @@ if (showtext == true)
 {
 	if choosen = false
 	{
-		message = storemessage[messageindex]
-		if messageindex < 3
-			messageindex += 1
+		_message = store_message[_messageindex]
+		if _messageindex < 3
+			_messageindex += 1
 		else
-			messageindex = 0
+			_messageindex = 0
 		choosen = true
 	}
     if (_draw_y < 35)
@@ -145,7 +145,7 @@ if (showtext == false)
         _draw_y -= 1
 	else
 	{
-		message = ""
+		_message = ""
 		_draw_y = -64
 	}
 }

@@ -2,7 +2,7 @@
 
 if active = true
 {
-if (keyboard_check_pressed(vk_return) && input != "")
+	if (keyboard_check_pressed(vk_return) && input != "")
     {
 		var _commands = string_split(input, " ")
 		
@@ -30,66 +30,26 @@ if (keyboard_check_pressed(vk_return) && input != "")
 			case "shit":
 			audio_sound_gain(audio_play_sound(sfx_fart, 1, false), (1 * global.soundeffectsvolume), 0)
 			break;
-				/*
-			case "create":
-				if DEBUG {
-				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = noone else arg1 = ds_list_find_value(_commands, 1)
-				var arg2 if ds_list_find_value(_commands, 2) == undefined arg2 = 0 else arg2 = real(ds_list_find_value(_commands, 2))
-				var arg3 if ds_list_find_value(_commands, 3) == undefined arg3 = 0 else arg3 = real(ds_list_find_value(_commands, 3))
-				
 			
-				if asset_get_type(arg1) = asset_object
-					instance_create(arg2, arg3,asset_get_index(arg1))
-
-				} 
-				break;
-			case "destroy":
-				if DEBUG {
-				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = noone else arg1 = ds_list_find_value(_commands, 1)
-				var arg2 if ds_list_find_value(_commands, 2) == undefined arg2 = true else arg2 = ds_list_find_value(_commands, 2)
-				
-				if asset_get_type(arg1) != asset_object
-					break;
-				
-				switch arg2
-				{
-					case "true": arg2 = true
-					default: arg2 = false
-				}
-				instance_destroy(asset_get_index(arg1),arg2)
-
-				} 
-				break;	
-			case "set":
-				if DEBUG {
-				var arg1 if ds_list_find_value(_commands, 1) == undefined break; else arg1 = ds_list_find_value(_commands, 1)
-				var arg2 if ds_list_find_value(_commands, 2) == undefined arg2 = 0 else arg2 = ds_list_find_value(_commands, 2)
-				
-				var _split = string_split(arg1,".")
-				var _instance if ds_list_find_value(_split, 1) == undefined _instance = "global" else _instance = ds_list_find_value(_commands, 1)
-				var _value if ds_list_find_value(_split, 2) == undefined _value = 0 else _value = ds_list_find_value(_commands, 2)					
-				
-				if _instance != "global"
-				{
-				//arg1 = variable_instance_get(asset_get_index(_instance),_value);
-				variable_instance_set(asset_get_index(_instance),_value,real(arg2))
-				}
-				else
-				{
-				//arg1 = variable_global_get(_value);
-				variable_global_set(_value,real(arg2));
-				}
-				
-				
 			
-				} 
-				break;			*/		
+			case "help":
+			var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = 0 else arg1 = ds_list_find_value(_commands, 1)
+			var page = clamp(real(string_digits(arg1)),1,pagenumber)
+			var first = pagelength * (page - 1)
+			var last = clamp(pagelength * page,1,array_length_1d(commands))
+			commandhistory = "COMMAND LIST (PAGE " + string(page) + " OF " + string(pagenumber) +")#"
+			for(var i = first; i < last; i++)
+			{
+				commandhistory += (string(commands[i]) + "#")
+			}
+			break;			
+			
 			case "escape":
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = 0 else arg1 = ds_list_find_value(_commands, 1)
 				var arg2 if ds_list_find_value(_commands, 2) == undefined arg2 = 10 else arg2 = ds_list_find_value(_commands, 2)
 				global.panic = !global.panic
-				global.minutes = real(arg1)
-				global.seconds = real(arg2)
+				global.minutes = real(string_digits(arg1))
+				global.seconds = real(string_digits(arg2))
 				if instance_exists(obj_minipillar)
 					with (obj_minipillar)
 						fadetopanic = 1
@@ -101,19 +61,20 @@ if (keyboard_check_pressed(vk_return) && input != "")
 				if global.panicbg = true
 					scr_panicbg_init()			
 				obj_camera.alarm[1] = 60
+				
 				break
 			case "standardhitstun":
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = 70 else arg1 = ds_list_find_value(_commands, 1)
-				global.defaulttime = real(arg1)		
+				global.defaulttime = real(string_digits(arg1))		
 				ini_open("saveData.ini")
-				ini_write_real("Option", "secrethitstuntimer", real(arg1))
+				ini_write_real("Option", "secrethitstuntimer", real(string_digits(arg1)))
 				ini_close()
 				break;		
 			case "voicefrequency":
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = 0 else arg1 = ds_list_find_value(_commands, 1)
-				global.quipsfrequency = real(arg1)		
+				global.quipsfrequency = real(string_digits(arg1))
 				ini_open("saveData.ini")
-				ini_write_real("Option", "quips", real(arg1))
+				ini_write_real("Option", "quips", real(string_digits(arg1)))
 				ini_close()
 				break;						
 			case "togglecollision": //Could probably use simplification
@@ -213,36 +174,9 @@ if (keyboard_check_pressed(vk_return) && input != "")
 			default:
 				show_debug_message("FAIL TBH!")
 		}
-		active = false
+		//active = false
+		input = ""
+		keyboard_string = ""		
     }
 }
 
-
-/*
-with (obj_solid)
-{
-    if (object_index == obj_solid || object_index == obj_secretbigblock || object_index == obj_secretbigblock2 || object_index == obj_secretonewaybigblock || object_index == obj_secretblock || object_index == obj_secretblock2 || object_index == obj_secretmetalblock)
-        visible = other.showcollisions
-}
-with (obj_slope)
-{
-    if (object_index == obj_slope)
-        visible = other.showcollisions
-}
-with (obj_platform)
-{
-    if (object_index == obj_platform)
-        visible = other.showcollisions
-}
-with (obj_platformside)
-{
-    if (object_index == obj_platformside)
-        visible = other.showcollisions
-}
-
-with (obj_movingplatformtrigger)
-{
-    if (object_index == obj_movingplatformtrigger)
-        visible = other.showcollisions
-}
-*/

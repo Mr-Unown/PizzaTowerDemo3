@@ -14,7 +14,7 @@ if sprite_index != spr_onoffswitch_bluetored && sprite_index != spr_onoffswitch_
 	sprite_index = spr_onoffswitch_blue
 }
 
-var player = instance_nearest(x,y,obj_player)
+var player = (global.coop = false ? obj_player1 : instance_nearest(x,y,obj_player));
 if global.coop = false
 player = obj_player1
 if ((player.instakillmove = true  || player.state = 22 || player.state = states.kingknightroll || player.state = states.parry) && player.state != states.slipnslide && place_meeting(x, y, player)) && player.state != states.pogo

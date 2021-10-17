@@ -1,4 +1,4 @@
-global.smallfont = font_add_sprite_ext(spr_smallerfont, "ABCDEFGHIJKLMNOPQRSTUVWXYZ!.,'\"-:?1234567890", 1, 0)
+global.smallfont = font_add_sprite_ext(spr_smallerfont, "ABCDEFGHIJKLMNOPQRSTUVWXYZ!.,'\"-:?1234567890|", 1, 0)
 global.font = font_add_sprite_ext(spr_font, "ABCDEFGHIJKLMNOPQRSTUVWXYZ!.1234567890:", 1, 0)
 global.pointsfont = font_add_sprite_ext(spr_font_collect, "0123456789", 1, 0)
 global.combofont = font_add_sprite_ext(spr_font_combo, "0123456789", 1, 0)

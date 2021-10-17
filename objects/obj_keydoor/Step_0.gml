@@ -44,7 +44,7 @@ with (obj_player)
 {
     if (place_meeting(x, y, obj_keydoor) && other.sprite_index == spr_doorvisited && (key_up && (state == 0 || state == 69 || state == 70 || state == 91 || state == 65) && y == (other.y + 50) && (!instance_exists(obj_noisesatellite)) && (!instance_exists(obj_fadeout)) && state != 78 && state != 61 && ((obj_player1.spotlight == 1 && object_index == obj_player1) || (obj_player1.spotlight == 0 && object_index == obj_player2))))
     {
-        scr_soundeffect(52)
+        scr_soundeffect(sfx_door)
         mach2 = 0
         image_index = 0
         obj_camera.chargecamera = 0
@@ -88,7 +88,7 @@ if (floor(obj_player.image_index) == (obj_player.image_number - 1) && obj_player
         }
         if (!instance_exists(obj_fadeout))
         {
-            scr_soundeffect(52)
+            scr_soundeffect(sfx_door)
             if (other.acttransition == 1)
             {
                 with (instance_create(x, y, obj_fadeout))

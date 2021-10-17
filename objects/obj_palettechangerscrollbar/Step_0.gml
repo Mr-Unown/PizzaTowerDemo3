@@ -18,6 +18,8 @@ while readcolor = true
 	}
 	ini_close()
 	finalvalue = round(colorvalue*255);
+	input = string(finalvalue);
+	keyboard_string = string(finalvalue);
 	readcolor = false;
 	#endregion
 }
@@ -83,7 +85,11 @@ if readcolor = false
 	finalvalue = round(colorvalue*255);
 }
 
-
+//Text
+if (string_length(keyboard_string)<4) 
+    input = real(string_digits(keyboard_string));
+else
+    keyboard_string = string(input);
 
 
 #endregion

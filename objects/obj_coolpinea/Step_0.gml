@@ -63,7 +63,7 @@ if (parrying == 1)
     image_xscale = (-sign(targetxscaleposition))
     sprite_index = spr_coolpinea_parry
     parrymovespeed = 8
-    scr_soundeffect(126)
+    scr_soundeffect(sfx_spin)
     if ((!instance_exists(taunteffect)) && instance_exists(id))
     {
         with (instance_create(x, y, obj_taunteffect))

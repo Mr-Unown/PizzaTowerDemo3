@@ -1,8 +1,12 @@
 {
-    "id": "4195d815-da98-475a-b192-0530eccde823",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_player_backbreaker",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "player",
+    "path": "folders/Scripts/player.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_player_backbreaker",
+  "tags": [],
+  "resourceType": "GMScript",
 }

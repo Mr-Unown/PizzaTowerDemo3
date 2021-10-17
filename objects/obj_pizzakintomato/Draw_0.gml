@@ -1,4 +1,4 @@
-if place_meeting(x,y, obj_water) || place_meeting(x,y, obj_watercurrent) || place_meeting(x,y, obj_waterdraft)
+if instance_exists(obj_water) && y > obj_water.bbox_top // || place_meeting(x,y, obj_watercurrent) || place_meeting(x,y, obj_waterdraft)
 {
 	if drawy < 10
 	drawy += 0.5

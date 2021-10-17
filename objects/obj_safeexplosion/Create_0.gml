@@ -1,3 +1,4 @@
+mask_index = spr_explosionmask
 image_speed = 0.5
 vigiexplode = 0
 if audio_is_playing(sfx_explosion)

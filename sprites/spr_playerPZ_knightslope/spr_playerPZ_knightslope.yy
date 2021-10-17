@@ -1,114 +1,87 @@
 {
-    "id": "04e49c8a-4945-44ee-9307-f3aefa6802a2",
-    "modelName": "GMSprite",
-    "mvc": "1.12",
-    "name": "spr_playerPZ_knightslope",
-    "For3D": false,
-    "HTile": false,
-    "VTile": false,
-    "bbox_bottom": 93,
-    "bbox_left": 4,
-    "bbox_right": 111,
-    "bbox_top": 15,
-    "bboxmode": 0,
-    "colkind": 1,
-    "coltolerance": 0,
-    "edgeFiltering": false,
-    "frames": [
-        {
-            "id": "bf622d23-e900-427e-b992-6c49a9e7dcc3",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "04e49c8a-4945-44ee-9307-f3aefa6802a2",
-            "compositeImage": {
-                "id": "419f0f1b-fe6f-4108-a4c0-2163eb716afd",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "bf622d23-e900-427e-b992-6c49a9e7dcc3",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "ad614cff-98f0-4eb7-b4bf-552977573aeb",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "bf622d23-e900-427e-b992-6c49a9e7dcc3",
-                    "LayerId": "1036d396-f52d-460a-a571-456fd6b4876a"
-                }
-            ]
-        },
-        {
-            "id": "ab641215-7fab-4544-9edd-7d21bc0f1119",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "04e49c8a-4945-44ee-9307-f3aefa6802a2",
-            "compositeImage": {
-                "id": "9c09d8ef-1318-447f-819b-bf3050174b83",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "ab641215-7fab-4544-9edd-7d21bc0f1119",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "0935a312-75bb-47ae-80f0-5e077931234f",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "ab641215-7fab-4544-9edd-7d21bc0f1119",
-                    "LayerId": "1036d396-f52d-460a-a571-456fd6b4876a"
-                }
-            ]
-        },
-        {
-            "id": "653c4621-bf5c-4509-a985-b1f30f273a79",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "04e49c8a-4945-44ee-9307-f3aefa6802a2",
-            "compositeImage": {
-                "id": "42663e00-28bf-4ce1-9600-e1b573a75107",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "653c4621-bf5c-4509-a985-b1f30f273a79",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "0d84b3db-0e5a-4099-b818-847c65393e9d",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "653c4621-bf5c-4509-a985-b1f30f273a79",
-                    "LayerId": "1036d396-f52d-460a-a571-456fd6b4876a"
-                }
-            ]
-        }
-    ],
-    "gridX": 0,
-    "gridY": 0,
-    "height": 100,
-    "layers": [
-        {
-            "id": "1036d396-f52d-460a-a571-456fd6b4876a",
-            "modelName": "GMImageLayer",
-            "mvc": "1.0",
-            "SpriteId": "04e49c8a-4945-44ee-9307-f3aefa6802a2",
-            "blendMode": 0,
-            "isLocked": false,
-            "name": "default",
-            "opacity": 100,
-            "visible": true
-        }
-    ],
-    "origin": 4,
-    "originLocked": false,
-    "playbackSpeed": 1,
+  "bboxMode": 0,
+  "collisionKind": 1,
+  "type": 0,
+  "origin": 4,
+  "preMultiplyAlpha": false,
+  "edgeFiltering": false,
+  "collisionTolerance": 0,
+  "swfPrecision": 2.525,
+  "bbox_left": 4,
+  "bbox_right": 111,
+  "bbox_top": 15,
+  "bbox_bottom": 93,
+  "HTile": false,
+  "VTile": false,
+  "For3D": false,
+  "width": 126,
+  "height": 100,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
+  "swatchColours": null,
+  "gridX": 0,
+  "gridY": 0,
+  "frames": [
+    {"compositeImage":{"FrameId":{"name":"bf622d23-e900-427e-b992-6c49a9e7dcc3","path":"sprites/spr_playerPZ_knightslope/spr_playerPZ_knightslope.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"bf622d23-e900-427e-b992-6c49a9e7dcc3","path":"sprites/spr_playerPZ_knightslope/spr_playerPZ_knightslope.yy",},"LayerId":{"name":"1036d396-f52d-460a-a571-456fd6b4876a","path":"sprites/spr_playerPZ_knightslope/spr_playerPZ_knightslope.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_playerPZ_knightslope","path":"sprites/spr_playerPZ_knightslope/spr_playerPZ_knightslope.yy",},"resourceVersion":"1.0","name":"bf622d23-e900-427e-b992-6c49a9e7dcc3","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"ab641215-7fab-4544-9edd-7d21bc0f1119","path":"sprites/spr_playerPZ_knightslope/spr_playerPZ_knightslope.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"ab641215-7fab-4544-9edd-7d21bc0f1119","path":"sprites/spr_playerPZ_knightslope/spr_playerPZ_knightslope.yy",},"LayerId":{"name":"1036d396-f52d-460a-a571-456fd6b4876a","path":"sprites/spr_playerPZ_knightslope/spr_playerPZ_knightslope.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_playerPZ_knightslope","path":"sprites/spr_playerPZ_knightslope/spr_playerPZ_knightslope.yy",},"resourceVersion":"1.0","name":"ab641215-7fab-4544-9edd-7d21bc0f1119","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"653c4621-bf5c-4509-a985-b1f30f273a79","path":"sprites/spr_playerPZ_knightslope/spr_playerPZ_knightslope.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"653c4621-bf5c-4509-a985-b1f30f273a79","path":"sprites/spr_playerPZ_knightslope/spr_playerPZ_knightslope.yy",},"LayerId":{"name":"1036d396-f52d-460a-a571-456fd6b4876a","path":"sprites/spr_playerPZ_knightslope/spr_playerPZ_knightslope.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_playerPZ_knightslope","path":"sprites/spr_playerPZ_knightslope/spr_playerPZ_knightslope.yy",},"resourceVersion":"1.0","name":"653c4621-bf5c-4509-a985-b1f30f273a79","tags":[],"resourceType":"GMSpriteFrame",},
+  ],
+  "sequence": {
+    "spriteId": {"name":"spr_playerPZ_knightslope","path":"sprites/spr_playerPZ_knightslope/spr_playerPZ_knightslope.yy",},
+    "timeUnits": 1,
+    "playback": 1,
+    "playbackSpeed": 1.0,
     "playbackSpeedType": 1,
-    "premultiplyAlpha": false,
-    "sepmasks": false,
-    "swatchColours": null,
-    "swfPrecision": 2.525,
-    "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
-    "type": 0,
-    "width": 126,
-    "xorig": 63,
-    "yorig": 50
+    "autoRecord": true,
+    "volume": 1.0,
+    "length": 3.0,
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
+    "tracks": [
+      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"f4f18051-b4ca-46ed-963a-e67d404948ba","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bf622d23-e900-427e-b992-6c49a9e7dcc3","path":"sprites/spr_playerPZ_knightslope/spr_playerPZ_knightslope.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"ff1e4938-b294-4096-8430-5f8ad3096fa1","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ab641215-7fab-4544-9edd-7d21bc0f1119","path":"sprites/spr_playerPZ_knightslope/spr_playerPZ_knightslope.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"6b6499e9-f46b-4507-aef5-31870f8db82b","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"653c4621-bf5c-4509-a985-b1f30f273a79","path":"sprites/spr_playerPZ_knightslope/spr_playerPZ_knightslope.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+    ],
+    "visibleRange": {"x":0.0,"y":0.0,},
+    "lockOrigin": false,
+    "showBackdrop": true,
+    "showBackdropImage": false,
+    "backdropImagePath": "",
+    "backdropImageOpacity": 0.5,
+    "backdropWidth": 1920,
+    "backdropHeight": 1080,
+    "backdropXOffset": 0.0,
+    "backdropYOffset": 0.0,
+    "xorigin": 63,
+    "yorigin": 50,
+    "eventToFunction": {},
+    "eventStubScript": null,
+    "parent": {"name":"spr_playerPZ_knightslope","path":"sprites/spr_playerPZ_knightslope/spr_playerPZ_knightslope.yy",},
+    "resourceVersion": "1.3",
+    "name": "",
+    "tags": [],
+    "resourceType": "GMSequence",
+  },
+  "layers": [
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"1036d396-f52d-460a-a571-456fd6b4876a","tags":[],"resourceType":"GMImageLayer",},
+  ],
+  "nineSlice": null,
+  "parent": {
+    "name": "Pizzelle",
+    "path": "folders/Sprites/Characters/Playable Characters Sprites/Pizzelle.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "spr_playerPZ_knightslope",
+  "tags": [],
+  "resourceType": "GMSprite",
 }

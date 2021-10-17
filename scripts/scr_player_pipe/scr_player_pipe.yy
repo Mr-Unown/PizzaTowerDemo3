@@ -1,8 +1,12 @@
 {
-    "id": "bf414014-6029-43c3-9867-c4fb896d2e9b",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_player_pipe",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "player",
+    "path": "folders/Scripts/player.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_player_pipe",
+  "tags": [],
+  "resourceType": "GMScript",
 }

@@ -268,35 +268,6 @@ else if (global.combotime == 0 && tvsprite == spr_tvcombo)
     image_index = imageindexstore
     alarm[0] = 50
 }
-else if (room == Realtitlescreen)
-{
-    image_speed = 0.1
-    tvsprite = spr_tvbanana
-    alarm[0] = 2
-    if (obj_mainmenuselect.selected == 0)
-    {
-        if (obj_mainmenuselect.optionselected == 0)
-        {
-            showtext = 1
-            message = "START GAME"
-        }
-        if (obj_mainmenuselect.optionselected == 1)
-        {
-            showtext = 1
-            message = "OPTION"
-        }
-        if (obj_mainmenuselect.optionselected == 2)
-        {
-            showtext = 1
-            message = "EXIT GAME"
-        }
-    }
-    else
-    {
-        showtext = 1
-        message = ""
-    }
-}
 else if (obj_player.state == states.keyget)
 {
     showtext = 1
@@ -370,6 +341,7 @@ else if global.newhud = true && oldcharacter == player.character && (sprite_inde
 		switch(_state)
 		{
 			case states.bombpep:
+			case states.newbomb:
 			newtvsprite = spr_tv_bombpep;
 			break;			
 			case states.fireass:
@@ -409,6 +381,7 @@ else if global.newhud = true && oldcharacter == player.character && (sprite_inde
 		switch(_state)
 		{
 			case states.bombpep:
+			case states.newbomb:
 			newtvsprite = spr_tv_bombpepN;
 			break;			
 			case states.fireass:
@@ -514,7 +487,7 @@ if oldcombo != global.combo && global.newhud = true
 //Textbubble
 if ds_queue_size(global.newhudmessage) > 0 && showingnewtext = false && newtvsprite != spr_tv_open && newtvsprite != spr_tv_static
 {
-	newmessage = ds_queue_dequeue(global.newhudmessage);
+	new_message = ds_queue_dequeue(global.newhudmessage);
 	shownewtext = true;
 	showingnewtext = true;
 	textbubblesprites = spr_tv_bubbleopen;
@@ -527,7 +500,7 @@ if textbubblesprites = spr_tv_bubble
 {
 	text_x += -3.5
 	/* I was thinking why there was a disconnect between the draw and this CONT. in Draw GUI
-	if floor(text_x) <= -(floor(string_width(string_upper(newmessage))) - 775)
+	if floor(text_x) <= -(floor(string_width(string_upper(new_message))) - 775)
 	{
 		textbubblesprites = spr_tv_bubbleclose;
 		textbubbleframes = 0;
@@ -535,7 +508,7 @@ if textbubblesprites = spr_tv_bubble
 }
 if textbubblesprites = spr_tv_bubbleclose && floor(textbubbleframes) >= sprite_get_number(spr_tv_bubbleclose) - 1
 {
-	newmessage = ""
+	new_message = ""
 	shownewtext = false;
 	showingnewtext = false;
 	textbubbleframes = 0;

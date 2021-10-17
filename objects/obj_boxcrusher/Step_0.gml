@@ -7,7 +7,7 @@ if (y == ystart && obj_player.x > (x - 50) && obj_player.x < (x + 50) && obj_pla
 }
 if (grounded && sprite_index == spr_boxcrusher_fall)
 {
-    scr_soundeffect(15)
+    scr_soundeffect(sfx_groundpound)
     with (obj_camera)
     {
         shake_mag = 10

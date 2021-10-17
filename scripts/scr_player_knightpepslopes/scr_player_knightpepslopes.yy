@@ -1,8 +1,12 @@
 {
-    "id": "4cb16cca-2de4-4700-ad7d-15469be41efd",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_player_knightpepslopes",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "player",
+    "path": "folders/Scripts/player.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_player_knightpepslopes",
+  "tags": [],
+  "resourceType": "GMScript",
 }

@@ -22,6 +22,6 @@ oldstring_smallimagekey = ""
 oldstring_characterstring = ""
 
 
-message = ""
+_message = ""
 is_discord_ready = false;
 
