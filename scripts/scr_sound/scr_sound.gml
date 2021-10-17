@@ -5,7 +5,4 @@ function scr_sound() {
 	global.musicvolume = ini_read_real("Option", "musicvolume", 1)
 	ini_close()
 	audio_sound_gain(global.music, (0.6 * global.musicvolume), 0)
-
-
-
 }

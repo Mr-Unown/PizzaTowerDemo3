@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Fencer",
+    "path": "folders/Sprites/Characters/Baddies/Fencer.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_fencer_dead",

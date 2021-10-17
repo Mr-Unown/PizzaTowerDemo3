@@ -141,8 +141,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Objects",
+    "path": "folders/Sprites/Objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_cheesemaker",

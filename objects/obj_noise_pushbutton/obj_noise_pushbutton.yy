@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "spr_noise_walk",
-    "path": "sprites/spr_noise_walk/spr_noise_walk.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": {

@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Grandpa",
+    "path": "folders/Sprites/Characters/Baddies/Grandpa.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_grandpa_dead",

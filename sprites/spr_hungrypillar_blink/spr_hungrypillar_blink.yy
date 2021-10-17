@@ -133,8 +133,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Pillar John",
+    "path": "folders/Sprites/Characters/Baddies/Pillar John.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_hungrypillar_blink",

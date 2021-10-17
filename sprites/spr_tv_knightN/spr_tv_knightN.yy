@@ -73,8 +73,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "PTV",
-    "path": "folders/Sprites/NEW HUD/PTV.yy",
+    "name": "Noise",
+    "path": "folders/Sprites/Hud & Menus/New Hud/PTV/Noise.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_tv_knightN",

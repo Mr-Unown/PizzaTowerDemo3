@@ -73,8 +73,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Achievements",
+    "path": "folders/Sprites/Hud & Menus/Achievements.yy",
   },
   "resourceVersion": "1.0",
   "name": "bg_SAGEknight",

@@ -81,8 +81,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Pausescreen",
+    "path": "folders/Sprites/Hud & Menus/Pausescreen.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_pausescreen",

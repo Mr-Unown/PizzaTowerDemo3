@@ -153,8 +153,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Grabbie Hand",
+    "path": "folders/Sprites/Characters/Baddies/Grabbie Hand.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_grabbiehand_hifive",

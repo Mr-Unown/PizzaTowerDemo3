@@ -77,8 +77,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "HUD",
-    "path": "folders/Sprites/Pizzelle Sprite/HUD.yy",
+    "name": "Pizzelle",
+    "path": "folders/Sprites/Hud & Menus/Old Hud/Faces/Pizzelle.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_playerPZ_mach3HUD",

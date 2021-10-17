@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "bg_grindrail",
-    "path": "sprites/bg_grindrail/bg_grindrail.yy",
+    "name": "spr_grindrail",
+    "path": "sprites/spr_grindrail/spr_grindrail.yy",
   },
   "tileWidth": 32,
   "tileHeight": 32,

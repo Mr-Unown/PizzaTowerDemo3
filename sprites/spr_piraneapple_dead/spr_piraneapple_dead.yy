@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Piraneapple",
+    "path": "folders/Sprites/Characters/Baddies/Piraneapple.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_piraneapple_dead",

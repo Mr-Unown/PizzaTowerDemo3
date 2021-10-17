@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "TILESETS",
-    "path": "folders/Sprites/TILESETS.yy",
+    "name": "Tileset Sprites",
+    "path": "folders/Sprites/Tileset Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "bg_hubroom2TILE",

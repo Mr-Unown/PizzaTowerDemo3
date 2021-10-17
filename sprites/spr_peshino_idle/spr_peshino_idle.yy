@@ -77,8 +77,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Peshino",
+    "path": "folders/Sprites/Characters/Followers/Peshino.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_peshino_idle",

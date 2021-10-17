@@ -81,8 +81,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Pepperman Boss",
+    "path": "folders/Sprites/Characters/Baddies/Pepperman Boss.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_peppermanlow_hurt",

@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Box Crusher",
+    "path": "folders/Sprites/Characters/Baddies/Box Crusher.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_boxcrusher_fall",

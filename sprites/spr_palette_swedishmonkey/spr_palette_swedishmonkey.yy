@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Swedish Monkey",
+    "path": "folders/Sprites/Characters/Baddies/Swedish Monkey.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_palette_swedishmonkey",

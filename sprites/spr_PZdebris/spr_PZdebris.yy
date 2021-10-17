@@ -89,8 +89,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Collectable",
-    "path": "folders/Sprites/Pizzelle Sprite/Collectable.yy",
+    "name": "Objects",
+    "path": "folders/Sprites/Objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_PZdebris",

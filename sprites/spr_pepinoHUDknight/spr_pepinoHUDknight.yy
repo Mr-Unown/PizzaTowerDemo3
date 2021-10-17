@@ -77,8 +77,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Peppino",
+    "path": "folders/Sprites/Hud & Menus/Old Hud/Faces/Peppino.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_pepinoHUDknight",

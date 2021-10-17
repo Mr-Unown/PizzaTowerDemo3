@@ -1,4 +1,4 @@
-function tile_meeting_precise(argument0,argument1,argument2 = "Tiles_Solid"){
+function tile_meeting_precise(argument0,argument1,argument2 = "Tiles_Solid") {
 ///@description tile_meeting_precise(x,y,layer)
 ///@param x
 ///@param y

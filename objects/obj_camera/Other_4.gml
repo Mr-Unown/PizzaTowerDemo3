@@ -1,5 +1,5 @@
 //Attempt at Pixel Perfect
-//surface_resize(application_surface, 1920, 1080);
+surface_resize(application_surface, 960, 540);
 	
 x = obj_player1.x
 y = obj_player1.y

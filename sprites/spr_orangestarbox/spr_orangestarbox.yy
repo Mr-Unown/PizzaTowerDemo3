@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Placeholders",
+    "path": "folders/Sprites/Misc Sprites/Misc/Placeholders.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_orangestarbox",

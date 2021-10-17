@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Tribal Cheese",
+    "path": "folders/Sprites/Characters/Baddies/Tribal Cheese.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_indiancheese_dead",

@@ -153,8 +153,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Pizzelle Sprite",
-    "path": "folders/Sprites/Pizzelle Sprite.yy",
+    "name": "Pizzelle",
+    "path": "folders/Sprites/Characters/Playable Characters Sprites/Pizzelle.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_playerPZ_crouch",

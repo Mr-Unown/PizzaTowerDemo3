@@ -101,8 +101,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Pepgoblin",
+    "path": "folders/Sprites/Characters/Baddies/Pepgoblin.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_pepgoblin_kick",

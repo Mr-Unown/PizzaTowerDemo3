@@ -106,7 +106,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Rank",
-    "path": "folders/Sprites/Pizzelle Sprite/Rank.yy",
+    "path": "folders/Sprites/Hud & Menus/Rank.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_playerPZ_rankC",

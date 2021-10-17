@@ -101,8 +101,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Minijohn",
+    "path": "folders/Sprites/Characters/Baddies/Minijohn.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_minijohn_heatstart",

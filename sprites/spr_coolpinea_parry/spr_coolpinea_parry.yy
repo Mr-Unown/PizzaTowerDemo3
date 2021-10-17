@@ -137,8 +137,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Cool Pineapple",
+    "path": "folders/Sprites/Characters/Baddies/Cool Pineapple.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_coolpinea_parry",

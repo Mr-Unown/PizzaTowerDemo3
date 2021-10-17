@@ -121,8 +121,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Cheese Robot",
+    "path": "folders/Sprites/Characters/Baddies/Robot/Cheese Robot.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_cheeserobot_attack",

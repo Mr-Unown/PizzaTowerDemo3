@@ -58,7 +58,7 @@ function scr_solid(argument0 = x, argument1 = y)
 	{
 	    x = old_x
 	    y = old_y
-	    return 1;
+	    return true;
 	}
 	//Tile
 	if layer_exists("Tiles_Solid")

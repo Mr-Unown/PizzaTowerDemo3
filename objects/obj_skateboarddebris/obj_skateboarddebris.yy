@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "obj_skateboardebris",
-    "path": "sprites/obj_skateboardebris/obj_skateboardebris.yy",
+    "name": "spr_skateboardebris",
+    "path": "sprites/spr_skateboardebris/spr_skateboardebris.yy",
   },
   "solid": false,
   "visible": true,

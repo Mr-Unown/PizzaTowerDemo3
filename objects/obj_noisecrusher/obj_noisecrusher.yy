@@ -1,14 +1,8 @@
 {
-  "spriteId": {
-    "name": "spr_noisecrusher_air",
-    "path": "sprites/spr_noisecrusher_air/spr_noisecrusher_air.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
-  "spriteMaskId": {
-    "name": "spr_noisecrusher_mask",
-    "path": "sprites/spr_noisecrusher_mask/spr_noisecrusher_mask.yy",
-  },
+  "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
     "name": "obj_baddie",

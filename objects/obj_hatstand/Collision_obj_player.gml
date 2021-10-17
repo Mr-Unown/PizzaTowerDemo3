@@ -2,7 +2,7 @@ with other.id
 {
 	if key_up2
 	{
-		if choosenhat < 5
+		if choosenhat < global.hatarraylength
 			choosenhat += 1
 		else
 			choosenhat = 0

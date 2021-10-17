@@ -93,8 +93,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Hats",
+    "path": "folders/Sprites/Characters/Hats.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_hat_cowboy",

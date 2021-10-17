@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Gerome",
+    "path": "folders/Sprites/Characters/Followers/Gerome.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_gerome_dead",

@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Goop",
+    "path": "folders/Sprites/Objects/Goop.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_goop_3",

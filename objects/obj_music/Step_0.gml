@@ -1,8 +1,3 @@
-ini_open("saveData.ini")
-global.mastervolume = ini_read_real("Option", "mastervolume", 1)
-global.musicvolume = ini_read_real("Option", "musicvolume", 1)
-global.soundeffectsvolume = ini_read_real("Option", "soundeffectsvolume", 1)
-ini_close()
 var roomname = room_get_name(room)
 if (room != hub_room1 && room != hub_room2 && room != hub_room3 && room != cowboytask && room != Tutorialtrap && room != Titlescreen)
     fadeoff = audio_sound_get_track_position(global.music)

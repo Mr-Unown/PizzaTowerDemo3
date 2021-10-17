@@ -85,8 +85,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Fake Peppino",
+    "path": "folders/Sprites/Characters/Baddies/Fake Peppino.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_fakepeppino_crawl",

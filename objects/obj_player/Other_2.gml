@@ -11,7 +11,7 @@ global.prefetcharray[3] = spr_player_3hpidle
 while global.flushtextures = true
 {
 	draw_texture_flush();
-	sprite_flush_multi(global.prefetcharray);
+	sprite_prefetch_multi(global.prefetcharray);
 	global.flushtextures = false
 	show_debug_message("Flushed Textures");
 }
@@ -21,7 +21,3 @@ while global.flushtextures = true
 //What this does is turn off loads of checks GMS2 does
 gml_release_mode(true);
 
-//Macros
-#macro appid 833960790238298123 //THIS IS FOR DISCORD INTEGRATION
-#macro DEBUG true // DISABLE THIS FOR RELEASE BUILDS!!!
-#macro DOUGIE true // DISABLE THIS FOR RELEASE BUILDS!!!

@@ -105,8 +105,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Bigcheese",
+    "path": "folders/Sprites/Characters/Baddies/Bigcheese.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_bigcheese_scared",

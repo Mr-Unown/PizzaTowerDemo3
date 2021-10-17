@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "spr_hookshot",
-    "path": "sprites/spr_hookshot/spr_hookshot.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

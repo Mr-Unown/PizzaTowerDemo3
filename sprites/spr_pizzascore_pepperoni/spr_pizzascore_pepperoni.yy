@@ -113,8 +113,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "NEW HUD",
-    "path": "folders/Sprites/NEW HUD.yy",
+    "name": "New Hud",
+    "path": "folders/Sprites/Hud & Menus/New Hud.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_pizzascore_pepperoni",

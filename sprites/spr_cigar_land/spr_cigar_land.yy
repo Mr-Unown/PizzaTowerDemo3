@@ -89,8 +89,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Smokey",
+    "path": "folders/Sprites/Characters/Baddies/Weenie/Smokey.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_cigar_land",

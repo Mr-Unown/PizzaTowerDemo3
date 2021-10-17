@@ -17,7 +17,7 @@ else
 	while global.flushtextures = true
 	{
 		draw_texture_flush();
-		sprite_flush_multi(global.prefetcharray);
+		sprite_prefetch_multi(global.prefetcharray);
 		global.flushtextures = false
 		show_debug_message("Flushed Textures");
 	}	

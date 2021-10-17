@@ -117,8 +117,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Anchovi",
+    "path": "folders/Sprites/Characters/Baddies/Anchovi.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_anchobounce",

@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Tutorial Signs",
-    "path": "folders/Sprites/Tutorial Signs.yy",
+    "path": "folders/Sprites/Asset Layer Sprites/Tutorial Signs.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_tile_downsign",

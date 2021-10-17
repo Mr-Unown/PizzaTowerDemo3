@@ -81,8 +81,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Greaseball Nerd",
+    "path": "folders/Sprites/Characters/Greaseball Nerd.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_pizzaball_flyingstop",

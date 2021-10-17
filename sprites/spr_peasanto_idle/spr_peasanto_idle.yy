@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Peasanto",
+    "path": "folders/Sprites/Characters/Baddies/Peasanto.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_peasanto_idle",

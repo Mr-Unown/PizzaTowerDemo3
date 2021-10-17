@@ -105,8 +105,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Noisebomb",
+    "path": "folders/Sprites/Characters/Followers/Noisebomb.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_noisebomb_idle",
