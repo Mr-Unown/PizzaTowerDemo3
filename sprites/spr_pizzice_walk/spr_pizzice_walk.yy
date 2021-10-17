@@ -97,8 +97,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Old",
+    "path": "folders/Sprites/Characters/Baddies/Pizzice/Old.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_pizzice_walk",

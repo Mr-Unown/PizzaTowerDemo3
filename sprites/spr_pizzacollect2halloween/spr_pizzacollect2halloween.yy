@@ -77,8 +77,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Tileset Sprites",
-    "path": "folders/Sprites/Tileset Sprites.yy",
+    "name": "Objects",
+    "path": "folders/Sprites/Objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_pizzacollect2halloween",

@@ -117,8 +117,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Noise",
+    "path": "folders/Sprites/Characters/Playable Characters Sprites/Noise.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_playerN_finishingblow3",

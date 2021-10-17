@@ -89,8 +89,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Pizzaface",
+    "path": "folders/Sprites/Characters/Baddies/Pizzaface.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_pizzaface",

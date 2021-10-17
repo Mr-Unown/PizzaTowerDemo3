@@ -113,8 +113,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Shroom",
+    "path": "folders/Sprites/Characters/Followers/Toppins/Shroom.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_pizzakinshroom",

@@ -78,7 +78,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Pizzacannon Goblin",
-    "path": "folders/Sprites/Pizzacannon Goblin.yy",
+    "path": "folders/Sprites/Characters/Baddies/Pizzacannon Goblin.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_pizzacannongoblin_stun",

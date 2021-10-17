@@ -101,8 +101,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Cheese",
+    "path": "folders/Sprites/Characters/Followers/Toppins/Cheese.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_pizzakincheese_panic",

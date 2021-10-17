@@ -113,8 +113,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Pinea",
+    "path": "folders/Sprites/Characters/Followers/Toppins/Pinea.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_pizzakinpineapple_panic",

@@ -89,8 +89,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Pizzabox Goblin",
+    "path": "folders/Sprites/Characters/Baddies/Pizzabox Goblin.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_pizzagoblin_stunland",

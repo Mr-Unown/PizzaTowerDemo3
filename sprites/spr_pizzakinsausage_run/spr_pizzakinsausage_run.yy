@@ -113,8 +113,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Sausage",
+    "path": "folders/Sprites/Characters/Followers/Toppins/Sausage.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_pizzakinsausage_run",

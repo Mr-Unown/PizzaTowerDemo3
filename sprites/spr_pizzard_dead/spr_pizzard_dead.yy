@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Pizzard",
+    "path": "folders/Sprites/Characters/Baddies/Pizzard.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_pizzard_dead",

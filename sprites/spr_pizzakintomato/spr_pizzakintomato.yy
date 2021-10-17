@@ -129,8 +129,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Tomato",
+    "path": "folders/Sprites/Characters/Followers/Toppins/Tomato.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_pizzakintomato",

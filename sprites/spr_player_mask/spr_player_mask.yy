@@ -93,8 +93,8 @@
     "resourceType": "GMNineSliceData",
   },
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Collision Masks",
+    "path": "folders/Sprites/Collision Masks.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_player_mask",
