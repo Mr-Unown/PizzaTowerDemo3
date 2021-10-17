@@ -161,8 +161,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Rank",
+    "path": "folders/Sprites/Hud & Menus/Rank.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_rankplus",

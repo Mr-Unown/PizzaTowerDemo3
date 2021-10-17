@@ -77,8 +77,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Rancher",
+    "path": "folders/Sprites/Characters/Baddies/Rancher.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_ranch_stun",
