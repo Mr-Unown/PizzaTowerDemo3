@@ -77,8 +77,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Robot",
+    "path": "folders/Sprites/Characters/Baddies/Robot.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_robot_knife",
