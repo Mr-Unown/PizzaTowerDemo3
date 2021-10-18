@@ -11,6 +11,7 @@ characters = "Peppino"
 colorheight = 8;
 
 
+
 global.has_drawnpeter = false;
 global.oldmeter = 0;
 selectedcharacter = 0;
@@ -138,7 +139,8 @@ treasure_room = 0
 wallspeed = 0
 tauntstoredstate = 0
 tauntstoredmovespeed = 6
-tauntstoredsprite = 538
+tauntstoredsprite = spr_null
+tauntstoredimage = 0;
 taunttimer = 20
 global.golfhit = 0
 ini_open("saveData.ini")

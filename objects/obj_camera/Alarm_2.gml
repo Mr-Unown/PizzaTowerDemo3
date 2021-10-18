@@ -7,32 +7,57 @@ if (global.seconds == 0 && global.minutes == 0)
 if (obj_player1.collectscore > 0)
 {
     with (instance_create(obj_player1.x, obj_player1.y, obj_pizzaloss))
-    {
-        if (obj_player1.character == "P")
-            sprite_index = choose(spr_shroomcollect, spr_tomatocollect, spr_cheesecollect, spr_sausagecollect, spr_pineapplecollect)
-        else if (obj_player1.character == "N")
-            sprite_index = choose(spr_halloweencollectibles1, spr_halloweencollectibles2, spr_halloweencollectibles3, spr_halloweencollectibles4, spr_halloweencollectibles5)
-        else if (obj_player1.character == "S")
-            sprite_index = spr_snickcollectible1
-        else if (obj_player1.character == "V")
-            sprite_index = choose(spr_cheesetopping1, spr_cheesetopping2, spr_cheesetopping3, spr_cheesetopping4, spr_cheesetopping5)
+    {       
+		playerid = obj_player1
+		switch playerid.character
+		{
+			case "P":
+				sprite_index = choose(spr_shroomcollect, spr_tomatocollect, spr_cheesecollect, spr_sausagecollect, spr_pineapplecollect)
+			break;
+			case "N":
+				sprite_index = choose(spr_halloweencollectibles1, spr_halloweencollectibles2, spr_halloweencollectibles3, spr_halloweencollectibles4, spr_halloweencollectibles5)
+			break;
+			case "S":
+				sprite_index = spr_snickcollectible1
+			break;
+			case "V":
+				sprite_index = choose(spr_cheesetopping1, spr_cheesetopping2, spr_cheesetopping3, spr_cheesetopping4, spr_cheesetopping5)
+			break;
+			case "PZ":
+				sprite_index = choose(spr_PZtopping1, spr_PZtopping2, spr_PZtopping3, spr_PZtopping4, spr_PZtopping5)
+			break;
+			default:
+				sprite_index = choose(spr_sausagecollect, spr_cheesetopping3, spr_halloweencollectibles1, spr_snickcollectible1, spr_PZtopping1)
+			break;
+		}
     }
 }
-if instance_exists(obj_player2)
+if instance_exists(obj_player2) && global.coop = true
 {
     if (obj_player2.collectscore > 0)
     {
-        with (instance_create(obj_player2.x, obj_player2.y, obj_pizzaloss))
-        {
-            if (obj_player2.character == "P")
-                sprite_index = choose(spr_shroomcollect, spr_tomatocollect, spr_cheesecollect, spr_sausagecollect, spr_pineapplecollect)
-            else if (obj_player2.character == "N")
-                sprite_index = choose(spr_halloweencollectibles1, spr_halloweencollectibles2, spr_halloweencollectibles3, spr_halloweencollectibles4, spr_halloweencollectibles5)
-            else if (obj_player2.character == "S")
-                sprite_index = spr_snickcollectible1
-            else if (obj_player2.character == "V")
-                sprite_index = choose(spr_cheesetopping1, spr_cheesetopping2, spr_cheesetopping3, spr_cheesetopping4, spr_cheesetopping5)
-        }
+		playerid = obj_player2
+		switch playerid.character
+		{
+			case "P":
+				sprite_index = choose(spr_shroomcollect, spr_tomatocollect, spr_cheesecollect, spr_sausagecollect, spr_pineapplecollect)
+			break;
+			case "N":
+				sprite_index = choose(spr_halloweencollectibles1, spr_halloweencollectibles2, spr_halloweencollectibles3, spr_halloweencollectibles4, spr_halloweencollectibles5)
+			break;
+			case "S":
+				sprite_index = spr_snickcollectible1
+			break;
+			case "V":
+				sprite_index = choose(spr_cheesetopping1, spr_cheesetopping2, spr_cheesetopping3, spr_cheesetopping4, spr_cheesetopping5)
+			break;
+			case "PZ":
+				sprite_index = choose(spr_PZtopping1, spr_PZtopping2, spr_PZtopping3, spr_PZtopping4, spr_PZtopping5)
+			break;
+			default:
+				sprite_index = choose(spr_sausagecollect, spr_cheesetopping3, spr_halloweencollectibles1, spr_snickcollectible1, spr_PZtopping1)
+			break;
+		}
     }
 }
 if (obj_player1.collectscore > 0)
@@ -49,7 +74,7 @@ if (global.snickchallenge == 1 && global.rank == 0)
         sprite_index = spr_deathstart
         image_index = 0
         scr_soundstopall()
-        scr_soundeffect(87)
+        scr_soundeffect(mu_timesup)
         obj_player1.spotlight = 1
         player = 3
         player2 = 4
@@ -66,7 +91,7 @@ if (global.miniboss == 1)
         state = 4
         vsp = -10
         scr_soundstopall()
-        scr_soundeffect(87)
+        scr_soundeffect(mu_timesup)
 		#region Hurtplayer
         if (obj_player1.collectscore > 100)
         {

@@ -1,4 +1,3 @@
-scr_getinput()
 scr_playerstate()
 
 //Heat Meter
@@ -14,7 +13,7 @@ if global.oldmeter != global.heatmeter
 			flash = true
 			with (instance_create((x + random_range(-5, 5)), (y + random_range(-5, 5)), obj_balloonpop))
 			{
-				image_index = 0.35
+				image_speed = 0.35
 				sprite_index = spr_bigpoofclouds
 				image_angle = choose(0,90,180,270)
 			}	
@@ -114,7 +113,7 @@ if state != 55 && !instance_exists(obj_fadeout) && !place_meeting(x,y,obj_hallwa
 		image_speed = 0.1
 		showtext = 1
 		if (chose == 0)
-			message = choose("OW!", "OUCH!", "OH!", "WOH!")
+			_message = choose("OW!", "OUCH!", "OH!", "WOH!")
 		alarm[0] = 50
 		chose = 1
 		tvsprite = spr_tvhurt
@@ -257,19 +256,7 @@ if (character == "S")
     if (state == 67 || state == 66)
         state = 0
 }
-if (!place_meeting(x, y, obj_solid))
-{
-    if (state != 72 && state != states.jetpackstart && state != 86 && sprite_index != spr_breakdanceattack1 && sprite_index != spr_bombpepintro && sprite_index != spr_knightpepthunder && state != 2 && state != 6 && state != 66 && state != 15 && state != 39 && sprite_index != spr_player_crouchshoot && state != 65 && state != 33 && state != 37 && state != 73 && state != 68 && state != 67)
-        mask_index = spr_player_mask
-    else
-        mask_index = spr_crouchmask
-}
-else if place_meeting(x, y, obj_solid)
-    mask_index = spr_crouchmask
-if (character == "S" && state == 27)
-    mask_index = spr_player_mask
-else if (character == "S")
-    mask_index = spr_crouchmask
+
 if (state == 23 || sprite_index == spr_knightpepstart || sprite_index == spr_knightpepthunder || state == 56 || state == 78 || state == 4 || state == 64 || state == 61 || state == 55)
     cutscene = 1
 else

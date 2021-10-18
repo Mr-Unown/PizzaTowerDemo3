@@ -1,8 +1,12 @@
 {
-    "id": "4e1e2c42-f69f-4b56-97e1-42ac7284e09e",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_transformationcheck",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Scripts",
+    "path": "folders/Scripts.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_transformationcheck",
+  "tags": [],
+  "resourceType": "GMScript",
 }

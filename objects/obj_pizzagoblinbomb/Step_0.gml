@@ -4,6 +4,7 @@ if (place_meeting((x + 1), y, obj_bombblock) || place_meeting((x - 1), y, obj_bo
 	instance_destroy()
 
 }
+
 if (scr_solid((x + 1), y) || scr_solid((x - 1), y))
     drop = 1
 if scr_solid(x, (y + 1))

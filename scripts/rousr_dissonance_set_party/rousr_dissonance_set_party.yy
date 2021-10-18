@@ -1,8 +1,12 @@
 {
-    "id": "72e10f47-bce0-44c7-ad92-0a0abbcc62bd",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "rousr_dissonance_set_party",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Dissonance",
+    "path": "folders/Scripts/Dissonance.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "rousr_dissonance_set_party",
+  "tags": [],
+  "resourceType": "GMScript",
 }

@@ -20,7 +20,7 @@ if (floor(image_index) == 53 && (!instance_exists(obj_noisebomb)))
 if (floor(image_index) == 31)
 {
     if (!audio_is_playing(sfx_noisewoah))
-        scr_soundeffect(21)
+        scr_soundeffect(sfx_noisewoah)
 }
 scr_collide()
 if (grounded && dust == 0)

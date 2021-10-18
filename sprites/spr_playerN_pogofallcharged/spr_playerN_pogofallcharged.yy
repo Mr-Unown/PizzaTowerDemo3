@@ -1,114 +1,87 @@
 {
-    "id": "f6597f56-ddb0-4e3b-a246-15e00113286f",
-    "modelName": "GMSprite",
-    "mvc": "1.12",
-    "name": "spr_playerN_pogofallcharged",
-    "For3D": false,
-    "HTile": false,
-    "VTile": false,
-    "bbox_bottom": 95,
-    "bbox_left": 21,
-    "bbox_right": 75,
-    "bbox_top": 13,
-    "bboxmode": 0,
-    "colkind": 1,
-    "coltolerance": 0,
-    "edgeFiltering": false,
-    "frames": [
-        {
-            "id": "866b4b17-04d8-4f1c-8557-7cf34a2d722e",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "f6597f56-ddb0-4e3b-a246-15e00113286f",
-            "compositeImage": {
-                "id": "e78cbe5e-a3c8-450c-9f71-3bfeb6e4fddb",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "866b4b17-04d8-4f1c-8557-7cf34a2d722e",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "b0b7aa09-e217-4ee7-9942-5d26cd4d1ec3",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "866b4b17-04d8-4f1c-8557-7cf34a2d722e",
-                    "LayerId": "6ad1bffc-4152-4490-8037-2c6d1ba6b573"
-                }
-            ]
-        },
-        {
-            "id": "20ea932d-f4b3-4d2b-8b16-cc8c7d50daa6",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "f6597f56-ddb0-4e3b-a246-15e00113286f",
-            "compositeImage": {
-                "id": "07d34b6e-4ddb-4564-9b4f-4e488a34a439",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "20ea932d-f4b3-4d2b-8b16-cc8c7d50daa6",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "777b6bd9-eaf1-4a1e-98d8-b608effe99e8",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "20ea932d-f4b3-4d2b-8b16-cc8c7d50daa6",
-                    "LayerId": "6ad1bffc-4152-4490-8037-2c6d1ba6b573"
-                }
-            ]
-        },
-        {
-            "id": "4c1b7cd0-b466-4752-aa86-edb18ff12d9e",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "f6597f56-ddb0-4e3b-a246-15e00113286f",
-            "compositeImage": {
-                "id": "953add19-afb0-4ef9-a18c-0bacb19efcf8",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "4c1b7cd0-b466-4752-aa86-edb18ff12d9e",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "0ab957f7-eb32-4831-b8af-9866ec3492a5",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "4c1b7cd0-b466-4752-aa86-edb18ff12d9e",
-                    "LayerId": "6ad1bffc-4152-4490-8037-2c6d1ba6b573"
-                }
-            ]
-        }
-    ],
-    "gridX": 0,
-    "gridY": 0,
-    "height": 100,
-    "layers": [
-        {
-            "id": "6ad1bffc-4152-4490-8037-2c6d1ba6b573",
-            "modelName": "GMImageLayer",
-            "mvc": "1.0",
-            "SpriteId": "f6597f56-ddb0-4e3b-a246-15e00113286f",
-            "blendMode": 0,
-            "isLocked": false,
-            "name": "default",
-            "opacity": 100,
-            "visible": true
-        }
-    ],
-    "origin": 4,
-    "originLocked": false,
-    "playbackSpeed": 1,
+  "bboxMode": 0,
+  "collisionKind": 1,
+  "type": 0,
+  "origin": 4,
+  "preMultiplyAlpha": false,
+  "edgeFiltering": false,
+  "collisionTolerance": 0,
+  "swfPrecision": 2.525,
+  "bbox_left": 21,
+  "bbox_right": 75,
+  "bbox_top": 13,
+  "bbox_bottom": 95,
+  "HTile": false,
+  "VTile": false,
+  "For3D": false,
+  "width": 100,
+  "height": 100,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
+  "swatchColours": null,
+  "gridX": 0,
+  "gridY": 0,
+  "frames": [
+    {"compositeImage":{"FrameId":{"name":"866b4b17-04d8-4f1c-8557-7cf34a2d722e","path":"sprites/spr_playerN_pogofallcharged/spr_playerN_pogofallcharged.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"866b4b17-04d8-4f1c-8557-7cf34a2d722e","path":"sprites/spr_playerN_pogofallcharged/spr_playerN_pogofallcharged.yy",},"LayerId":{"name":"6ad1bffc-4152-4490-8037-2c6d1ba6b573","path":"sprites/spr_playerN_pogofallcharged/spr_playerN_pogofallcharged.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_playerN_pogofallcharged","path":"sprites/spr_playerN_pogofallcharged/spr_playerN_pogofallcharged.yy",},"resourceVersion":"1.0","name":"866b4b17-04d8-4f1c-8557-7cf34a2d722e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"20ea932d-f4b3-4d2b-8b16-cc8c7d50daa6","path":"sprites/spr_playerN_pogofallcharged/spr_playerN_pogofallcharged.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"20ea932d-f4b3-4d2b-8b16-cc8c7d50daa6","path":"sprites/spr_playerN_pogofallcharged/spr_playerN_pogofallcharged.yy",},"LayerId":{"name":"6ad1bffc-4152-4490-8037-2c6d1ba6b573","path":"sprites/spr_playerN_pogofallcharged/spr_playerN_pogofallcharged.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_playerN_pogofallcharged","path":"sprites/spr_playerN_pogofallcharged/spr_playerN_pogofallcharged.yy",},"resourceVersion":"1.0","name":"20ea932d-f4b3-4d2b-8b16-cc8c7d50daa6","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"4c1b7cd0-b466-4752-aa86-edb18ff12d9e","path":"sprites/spr_playerN_pogofallcharged/spr_playerN_pogofallcharged.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"4c1b7cd0-b466-4752-aa86-edb18ff12d9e","path":"sprites/spr_playerN_pogofallcharged/spr_playerN_pogofallcharged.yy",},"LayerId":{"name":"6ad1bffc-4152-4490-8037-2c6d1ba6b573","path":"sprites/spr_playerN_pogofallcharged/spr_playerN_pogofallcharged.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_playerN_pogofallcharged","path":"sprites/spr_playerN_pogofallcharged/spr_playerN_pogofallcharged.yy",},"resourceVersion":"1.0","name":"4c1b7cd0-b466-4752-aa86-edb18ff12d9e","tags":[],"resourceType":"GMSpriteFrame",},
+  ],
+  "sequence": {
+    "spriteId": {"name":"spr_playerN_pogofallcharged","path":"sprites/spr_playerN_pogofallcharged/spr_playerN_pogofallcharged.yy",},
+    "timeUnits": 1,
+    "playback": 1,
+    "playbackSpeed": 1.0,
     "playbackSpeedType": 1,
-    "premultiplyAlpha": false,
-    "sepmasks": false,
-    "swatchColours": null,
-    "swfPrecision": 2.525,
-    "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
-    "type": 0,
-    "width": 100,
-    "xorig": 50,
-    "yorig": 50
+    "autoRecord": true,
+    "volume": 1.0,
+    "length": 3.0,
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
+    "tracks": [
+      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"ce607b26-a9af-4081-85d2-9822a3a24b6e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"866b4b17-04d8-4f1c-8557-7cf34a2d722e","path":"sprites/spr_playerN_pogofallcharged/spr_playerN_pogofallcharged.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c159d939-1e84-4601-94aa-a77e91bbc1f1","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"20ea932d-f4b3-4d2b-8b16-cc8c7d50daa6","path":"sprites/spr_playerN_pogofallcharged/spr_playerN_pogofallcharged.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"dea6cc74-c3c2-46fa-b133-75fdf1240e46","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4c1b7cd0-b466-4752-aa86-edb18ff12d9e","path":"sprites/spr_playerN_pogofallcharged/spr_playerN_pogofallcharged.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+    ],
+    "visibleRange": {"x":0.0,"y":0.0,},
+    "lockOrigin": false,
+    "showBackdrop": true,
+    "showBackdropImage": false,
+    "backdropImagePath": "",
+    "backdropImageOpacity": 0.5,
+    "backdropWidth": 1920,
+    "backdropHeight": 1080,
+    "backdropXOffset": 0.0,
+    "backdropYOffset": 0.0,
+    "xorigin": 50,
+    "yorigin": 50,
+    "eventToFunction": {},
+    "eventStubScript": null,
+    "parent": {"name":"spr_playerN_pogofallcharged","path":"sprites/spr_playerN_pogofallcharged/spr_playerN_pogofallcharged.yy",},
+    "resourceVersion": "1.3",
+    "name": "",
+    "tags": [],
+    "resourceType": "GMSequence",
+  },
+  "layers": [
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"6ad1bffc-4152-4490-8037-2c6d1ba6b573","tags":[],"resourceType":"GMImageLayer",},
+  ],
+  "nineSlice": null,
+  "parent": {
+    "name": "Noise",
+    "path": "folders/Sprites/Characters/Playable Characters Sprites/Noise.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "spr_playerN_pogofallcharged",
+  "tags": [],
+  "resourceType": "GMSprite",
 }

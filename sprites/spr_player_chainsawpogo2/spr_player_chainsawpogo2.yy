@@ -1,114 +1,87 @@
 {
-    "id": "ec3df557-91ba-441a-97ec-fd40facdb6bb",
-    "modelName": "GMSprite",
-    "mvc": "1.12",
-    "name": "spr_player_chainsawpogo2",
-    "For3D": false,
-    "HTile": false,
-    "VTile": false,
-    "bbox_bottom": 136,
-    "bbox_left": 15,
-    "bbox_right": 97,
-    "bbox_top": 7,
-    "bboxmode": 0,
-    "colkind": 0,
-    "coltolerance": 0,
-    "edgeFiltering": false,
-    "frames": [
-        {
-            "id": "ed8cc75b-9fa6-4fdf-815a-0c0aeaf49d15",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "ec3df557-91ba-441a-97ec-fd40facdb6bb",
-            "compositeImage": {
-                "id": "842ae8ec-73eb-4a41-a7d1-274587dc18d0",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "ed8cc75b-9fa6-4fdf-815a-0c0aeaf49d15",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "123311b0-c51e-41d5-96c3-282b6dcde9fa",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "ed8cc75b-9fa6-4fdf-815a-0c0aeaf49d15",
-                    "LayerId": "f86b8c83-a36a-46e4-97ef-37a2cfa6e06d"
-                }
-            ]
-        },
-        {
-            "id": "cb5855e9-0fe1-4b4e-a2ae-498d45779407",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "ec3df557-91ba-441a-97ec-fd40facdb6bb",
-            "compositeImage": {
-                "id": "e6b1452c-5525-4112-82e4-a596f081d4df",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "cb5855e9-0fe1-4b4e-a2ae-498d45779407",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "9b5bc1fc-60a9-481d-9b30-fbb6185aa279",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "cb5855e9-0fe1-4b4e-a2ae-498d45779407",
-                    "LayerId": "f86b8c83-a36a-46e4-97ef-37a2cfa6e06d"
-                }
-            ]
-        },
-        {
-            "id": "6523f55c-4721-4fa9-a505-a2214079e49e",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "ec3df557-91ba-441a-97ec-fd40facdb6bb",
-            "compositeImage": {
-                "id": "dc241434-d4f1-445e-b631-46a829c77b49",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "6523f55c-4721-4fa9-a505-a2214079e49e",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "5ee5b01e-889a-41d6-85db-ffa36d59d4d6",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "6523f55c-4721-4fa9-a505-a2214079e49e",
-                    "LayerId": "f86b8c83-a36a-46e4-97ef-37a2cfa6e06d"
-                }
-            ]
-        }
-    ],
-    "gridX": 0,
-    "gridY": 0,
-    "height": 200,
-    "layers": [
-        {
-            "id": "f86b8c83-a36a-46e4-97ef-37a2cfa6e06d",
-            "modelName": "GMImageLayer",
-            "mvc": "1.0",
-            "SpriteId": "ec3df557-91ba-441a-97ec-fd40facdb6bb",
-            "blendMode": 0,
-            "isLocked": false,
-            "name": "default",
-            "opacity": 100,
-            "visible": true
-        }
-    ],
-    "origin": 0,
-    "originLocked": false,
-    "playbackSpeed": 1,
+  "bboxMode": 0,
+  "collisionKind": 0,
+  "type": 0,
+  "origin": 9,
+  "preMultiplyAlpha": false,
+  "edgeFiltering": false,
+  "collisionTolerance": 0,
+  "swfPrecision": 2.525,
+  "bbox_left": 15,
+  "bbox_right": 97,
+  "bbox_top": 7,
+  "bbox_bottom": 136,
+  "HTile": false,
+  "VTile": false,
+  "For3D": false,
+  "width": 100,
+  "height": 200,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
+  "swatchColours": null,
+  "gridX": 0,
+  "gridY": 0,
+  "frames": [
+    {"compositeImage":{"FrameId":{"name":"ed8cc75b-9fa6-4fdf-815a-0c0aeaf49d15","path":"sprites/spr_player_chainsawpogo2/spr_player_chainsawpogo2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"ed8cc75b-9fa6-4fdf-815a-0c0aeaf49d15","path":"sprites/spr_player_chainsawpogo2/spr_player_chainsawpogo2.yy",},"LayerId":{"name":"f86b8c83-a36a-46e4-97ef-37a2cfa6e06d","path":"sprites/spr_player_chainsawpogo2/spr_player_chainsawpogo2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_player_chainsawpogo2","path":"sprites/spr_player_chainsawpogo2/spr_player_chainsawpogo2.yy",},"resourceVersion":"1.0","name":"ed8cc75b-9fa6-4fdf-815a-0c0aeaf49d15","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"cb5855e9-0fe1-4b4e-a2ae-498d45779407","path":"sprites/spr_player_chainsawpogo2/spr_player_chainsawpogo2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"cb5855e9-0fe1-4b4e-a2ae-498d45779407","path":"sprites/spr_player_chainsawpogo2/spr_player_chainsawpogo2.yy",},"LayerId":{"name":"f86b8c83-a36a-46e4-97ef-37a2cfa6e06d","path":"sprites/spr_player_chainsawpogo2/spr_player_chainsawpogo2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_player_chainsawpogo2","path":"sprites/spr_player_chainsawpogo2/spr_player_chainsawpogo2.yy",},"resourceVersion":"1.0","name":"cb5855e9-0fe1-4b4e-a2ae-498d45779407","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"6523f55c-4721-4fa9-a505-a2214079e49e","path":"sprites/spr_player_chainsawpogo2/spr_player_chainsawpogo2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"6523f55c-4721-4fa9-a505-a2214079e49e","path":"sprites/spr_player_chainsawpogo2/spr_player_chainsawpogo2.yy",},"LayerId":{"name":"f86b8c83-a36a-46e4-97ef-37a2cfa6e06d","path":"sprites/spr_player_chainsawpogo2/spr_player_chainsawpogo2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_player_chainsawpogo2","path":"sprites/spr_player_chainsawpogo2/spr_player_chainsawpogo2.yy",},"resourceVersion":"1.0","name":"6523f55c-4721-4fa9-a505-a2214079e49e","tags":[],"resourceType":"GMSpriteFrame",},
+  ],
+  "sequence": {
+    "spriteId": {"name":"spr_player_chainsawpogo2","path":"sprites/spr_player_chainsawpogo2/spr_player_chainsawpogo2.yy",},
+    "timeUnits": 1,
+    "playback": 1,
+    "playbackSpeed": 1.0,
     "playbackSpeedType": 1,
-    "premultiplyAlpha": false,
-    "sepmasks": false,
-    "swatchColours": null,
-    "swfPrecision": 2.525,
-    "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
-    "type": 0,
-    "width": 100,
-    "xorig": 50,
-    "yorig": 40
+    "autoRecord": true,
+    "volume": 1.0,
+    "length": 3.0,
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
+    "tracks": [
+      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"653d7490-b803-4f65-b794-7e0f8b6f92ee","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ed8cc75b-9fa6-4fdf-815a-0c0aeaf49d15","path":"sprites/spr_player_chainsawpogo2/spr_player_chainsawpogo2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4be38ddc-3a19-4b6c-ae50-ce91fd2a41c0","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cb5855e9-0fe1-4b4e-a2ae-498d45779407","path":"sprites/spr_player_chainsawpogo2/spr_player_chainsawpogo2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"804fe087-f5cc-40df-9cf8-a923690df3f5","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6523f55c-4721-4fa9-a505-a2214079e49e","path":"sprites/spr_player_chainsawpogo2/spr_player_chainsawpogo2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+    ],
+    "visibleRange": {"x":0.0,"y":0.0,},
+    "lockOrigin": false,
+    "showBackdrop": true,
+    "showBackdropImage": false,
+    "backdropImagePath": "",
+    "backdropImageOpacity": 0.5,
+    "backdropWidth": 1920,
+    "backdropHeight": 1080,
+    "backdropXOffset": 0.0,
+    "backdropYOffset": 0.0,
+    "xorigin": 50,
+    "yorigin": 40,
+    "eventToFunction": {},
+    "eventStubScript": null,
+    "parent": {"name":"spr_player_chainsawpogo2","path":"sprites/spr_player_chainsawpogo2/spr_player_chainsawpogo2.yy",},
+    "resourceVersion": "1.3",
+    "name": "",
+    "tags": [],
+    "resourceType": "GMSequence",
+  },
+  "layers": [
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f86b8c83-a36a-46e4-97ef-37a2cfa6e06d","tags":[],"resourceType":"GMImageLayer",},
+  ],
+  "nineSlice": null,
+  "parent": {
+    "name": "Peppino",
+    "path": "folders/Sprites/Characters/Playable Characters Sprites/Peppino.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "spr_player_chainsawpogo2",
+  "tags": [],
+  "resourceType": "GMSprite",
 }

@@ -1,114 +1,87 @@
 {
-    "id": "92292c01-999e-42e7-8c3f-762555acb0ee",
-    "modelName": "GMSprite",
-    "mvc": "1.12",
-    "name": "spr_playerPZ_haulingfall",
-    "For3D": false,
-    "HTile": false,
-    "VTile": false,
-    "bbox_bottom": 91,
-    "bbox_left": 20,
-    "bbox_right": 82,
-    "bbox_top": 38,
-    "bboxmode": 0,
-    "colkind": 1,
-    "coltolerance": 0,
-    "edgeFiltering": false,
-    "frames": [
-        {
-            "id": "857329d4-97a6-4314-8e31-746c0f9c1bc0",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "92292c01-999e-42e7-8c3f-762555acb0ee",
-            "compositeImage": {
-                "id": "483cbade-ad02-42f9-9979-327aa3961a4f",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "857329d4-97a6-4314-8e31-746c0f9c1bc0",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "ea99f37a-0384-404c-a414-3f892b1e809f",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "857329d4-97a6-4314-8e31-746c0f9c1bc0",
-                    "LayerId": "f2d80b1d-ecce-4474-abf2-dd35be0bc34b"
-                }
-            ]
-        },
-        {
-            "id": "2b1186bf-ba35-484b-9246-e59f500a209d",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "92292c01-999e-42e7-8c3f-762555acb0ee",
-            "compositeImage": {
-                "id": "84e2cfdc-2aee-4b49-93a5-7afedb704831",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "2b1186bf-ba35-484b-9246-e59f500a209d",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "197f859a-0974-4b85-8f40-50abdcf13cb6",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "2b1186bf-ba35-484b-9246-e59f500a209d",
-                    "LayerId": "f2d80b1d-ecce-4474-abf2-dd35be0bc34b"
-                }
-            ]
-        },
-        {
-            "id": "395503ac-4f5b-4b90-ae6a-3ecf0af4cf69",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "92292c01-999e-42e7-8c3f-762555acb0ee",
-            "compositeImage": {
-                "id": "cbb2900e-4a77-4e16-be92-6ca60ddebf98",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "395503ac-4f5b-4b90-ae6a-3ecf0af4cf69",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "aa29472a-3233-4067-a68e-3a0d0de7ccaa",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "395503ac-4f5b-4b90-ae6a-3ecf0af4cf69",
-                    "LayerId": "f2d80b1d-ecce-4474-abf2-dd35be0bc34b"
-                }
-            ]
-        }
-    ],
-    "gridX": 0,
-    "gridY": 0,
-    "height": 100,
-    "layers": [
-        {
-            "id": "f2d80b1d-ecce-4474-abf2-dd35be0bc34b",
-            "modelName": "GMImageLayer",
-            "mvc": "1.0",
-            "SpriteId": "92292c01-999e-42e7-8c3f-762555acb0ee",
-            "blendMode": 0,
-            "isLocked": false,
-            "name": "default",
-            "opacity": 100,
-            "visible": true
-        }
-    ],
-    "origin": 4,
-    "originLocked": false,
-    "playbackSpeed": 1,
+  "bboxMode": 0,
+  "collisionKind": 1,
+  "type": 0,
+  "origin": 4,
+  "preMultiplyAlpha": false,
+  "edgeFiltering": false,
+  "collisionTolerance": 0,
+  "swfPrecision": 2.525,
+  "bbox_left": 20,
+  "bbox_right": 82,
+  "bbox_top": 38,
+  "bbox_bottom": 91,
+  "HTile": false,
+  "VTile": false,
+  "For3D": false,
+  "width": 100,
+  "height": 100,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
+  "swatchColours": null,
+  "gridX": 0,
+  "gridY": 0,
+  "frames": [
+    {"compositeImage":{"FrameId":{"name":"857329d4-97a6-4314-8e31-746c0f9c1bc0","path":"sprites/spr_playerPZ_haulingfall/spr_playerPZ_haulingfall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"857329d4-97a6-4314-8e31-746c0f9c1bc0","path":"sprites/spr_playerPZ_haulingfall/spr_playerPZ_haulingfall.yy",},"LayerId":{"name":"f2d80b1d-ecce-4474-abf2-dd35be0bc34b","path":"sprites/spr_playerPZ_haulingfall/spr_playerPZ_haulingfall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_playerPZ_haulingfall","path":"sprites/spr_playerPZ_haulingfall/spr_playerPZ_haulingfall.yy",},"resourceVersion":"1.0","name":"857329d4-97a6-4314-8e31-746c0f9c1bc0","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"2b1186bf-ba35-484b-9246-e59f500a209d","path":"sprites/spr_playerPZ_haulingfall/spr_playerPZ_haulingfall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"2b1186bf-ba35-484b-9246-e59f500a209d","path":"sprites/spr_playerPZ_haulingfall/spr_playerPZ_haulingfall.yy",},"LayerId":{"name":"f2d80b1d-ecce-4474-abf2-dd35be0bc34b","path":"sprites/spr_playerPZ_haulingfall/spr_playerPZ_haulingfall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_playerPZ_haulingfall","path":"sprites/spr_playerPZ_haulingfall/spr_playerPZ_haulingfall.yy",},"resourceVersion":"1.0","name":"2b1186bf-ba35-484b-9246-e59f500a209d","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"395503ac-4f5b-4b90-ae6a-3ecf0af4cf69","path":"sprites/spr_playerPZ_haulingfall/spr_playerPZ_haulingfall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"395503ac-4f5b-4b90-ae6a-3ecf0af4cf69","path":"sprites/spr_playerPZ_haulingfall/spr_playerPZ_haulingfall.yy",},"LayerId":{"name":"f2d80b1d-ecce-4474-abf2-dd35be0bc34b","path":"sprites/spr_playerPZ_haulingfall/spr_playerPZ_haulingfall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_playerPZ_haulingfall","path":"sprites/spr_playerPZ_haulingfall/spr_playerPZ_haulingfall.yy",},"resourceVersion":"1.0","name":"395503ac-4f5b-4b90-ae6a-3ecf0af4cf69","tags":[],"resourceType":"GMSpriteFrame",},
+  ],
+  "sequence": {
+    "spriteId": {"name":"spr_playerPZ_haulingfall","path":"sprites/spr_playerPZ_haulingfall/spr_playerPZ_haulingfall.yy",},
+    "timeUnits": 1,
+    "playback": 1,
+    "playbackSpeed": 1.0,
     "playbackSpeedType": 1,
-    "premultiplyAlpha": false,
-    "sepmasks": false,
-    "swatchColours": null,
-    "swfPrecision": 2.525,
-    "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
-    "type": 0,
-    "width": 100,
-    "xorig": 50,
-    "yorig": 50
+    "autoRecord": true,
+    "volume": 1.0,
+    "length": 3.0,
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
+    "tracks": [
+      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"04d0b287-8a67-4a52-9d9c-d711465e81a7","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"857329d4-97a6-4314-8e31-746c0f9c1bc0","path":"sprites/spr_playerPZ_haulingfall/spr_playerPZ_haulingfall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5c9ea693-4609-478c-9c76-1469e9971d97","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2b1186bf-ba35-484b-9246-e59f500a209d","path":"sprites/spr_playerPZ_haulingfall/spr_playerPZ_haulingfall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"ebb35db6-dc02-49d8-b312-96ebcb6c6f2b","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"395503ac-4f5b-4b90-ae6a-3ecf0af4cf69","path":"sprites/spr_playerPZ_haulingfall/spr_playerPZ_haulingfall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+    ],
+    "visibleRange": {"x":0.0,"y":0.0,},
+    "lockOrigin": false,
+    "showBackdrop": true,
+    "showBackdropImage": false,
+    "backdropImagePath": "",
+    "backdropImageOpacity": 0.5,
+    "backdropWidth": 1920,
+    "backdropHeight": 1080,
+    "backdropXOffset": 0.0,
+    "backdropYOffset": 0.0,
+    "xorigin": 50,
+    "yorigin": 50,
+    "eventToFunction": {},
+    "eventStubScript": null,
+    "parent": {"name":"spr_playerPZ_haulingfall","path":"sprites/spr_playerPZ_haulingfall/spr_playerPZ_haulingfall.yy",},
+    "resourceVersion": "1.3",
+    "name": "",
+    "tags": [],
+    "resourceType": "GMSequence",
+  },
+  "layers": [
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f2d80b1d-ecce-4474-abf2-dd35be0bc34b","tags":[],"resourceType":"GMImageLayer",},
+  ],
+  "nineSlice": null,
+  "parent": {
+    "name": "Pizzelle",
+    "path": "folders/Sprites/Characters/Playable Characters Sprites/Pizzelle.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "spr_playerPZ_haulingfall",
+  "tags": [],
+  "resourceType": "GMSprite",
 }

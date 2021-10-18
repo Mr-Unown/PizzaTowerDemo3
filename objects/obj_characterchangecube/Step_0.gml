@@ -197,6 +197,7 @@ if (place_meeting(x, (y + 1), obj_player) && activated == 0)
             tauntstoredmovespeed = 0
             tauntstoredsprite = spr_fall
             tauntstoredstate = 58
+			tauntstoredimage = 0;
             scr_soundeffect(sfx_taunt)
             state = 51
             image_index = random_range(0, (sprite_get_number(spr_taunt) - 1))

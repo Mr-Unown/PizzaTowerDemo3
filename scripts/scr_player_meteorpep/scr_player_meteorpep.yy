@@ -1,8 +1,12 @@
 {
-    "id": "7486084c-e6d8-414b-975c-2d60a9eda512",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_player_meteorpep",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "player",
+    "path": "folders/Scripts/player.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_player_meteorpep",
+  "tags": [],
+  "resourceType": "GMScript",
 }

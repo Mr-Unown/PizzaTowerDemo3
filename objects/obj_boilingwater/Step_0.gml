@@ -9,7 +9,7 @@ with (instance_place(x, (y - 1), obj_player))
 			image_index = 0;
 			vsp = -25;
 			sprite_index = spr_fireass;
-			scr_soundeffect(44);
+			scr_soundeffect(sfx_scream5);
 		}
 		else
 			scr_hurtplayer(id);

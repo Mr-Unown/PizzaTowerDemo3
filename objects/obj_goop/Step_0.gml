@@ -15,7 +15,7 @@ if floor(image_index) = image_number -1 && sprite_index = spr_goop_land
 	sprite_index = choose(spr_goop_1,spr_goop_2,spr_goop_3,spr_goop_4,spr_goop_5)
 	
 //Wallstop
-if place_meeting(x + hsp,y,obj_solid)
+if  scr_solid(+ hsp,y)
 	movespeed = 0
 	
 if y > (room_height * 1.3)
@@ -30,7 +30,7 @@ if y > (room_height * 1.3)
 //Stuck
 if scr_solid(x,y) && !place_meeting(x,y,obj_metalblockescape) && !place_meeting(x,y,obj_destructibles) 
 {
-	var player = instance_nearest(x,y,obj_player)
+	var player = (global.coop = false ? obj_player1 : instance_nearest(x,y,obj_player));
 	maxspeed += 0.1
     x = median((x - maxspeed), player.x, (x + maxspeed))
     y = median((y - maxspeed), player.y, (y + maxspeed))

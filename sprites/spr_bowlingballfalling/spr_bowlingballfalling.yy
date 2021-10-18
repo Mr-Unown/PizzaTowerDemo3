@@ -1,114 +1,87 @@
 {
-    "id": "52cdf479-a4f2-43bd-9290-829e49a4ca90",
-    "modelName": "GMSprite",
-    "mvc": "1.12",
-    "name": "spr_bowlingballfalling",
-    "For3D": false,
-    "HTile": false,
-    "VTile": false,
-    "bbox_bottom": 48,
-    "bbox_left": 15,
-    "bbox_right": 54,
-    "bbox_top": 13,
-    "bboxmode": 0,
-    "colkind": 0,
-    "coltolerance": 0,
-    "edgeFiltering": false,
-    "frames": [
-        {
-            "id": "ddf4c5d3-dfdf-427f-afda-9244a0cfbac5",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "52cdf479-a4f2-43bd-9290-829e49a4ca90",
-            "compositeImage": {
-                "id": "5223a0ba-2105-47ef-92e0-c8280870bf2b",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "ddf4c5d3-dfdf-427f-afda-9244a0cfbac5",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "7251cc53-69df-4632-be5d-4d4bb04185f1",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "ddf4c5d3-dfdf-427f-afda-9244a0cfbac5",
-                    "LayerId": "80589703-705f-4616-bf94-bd0925f1f7ba"
-                }
-            ]
-        },
-        {
-            "id": "68d6447e-b194-4882-ae5b-2ce0557f5bc8",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "52cdf479-a4f2-43bd-9290-829e49a4ca90",
-            "compositeImage": {
-                "id": "ad632be6-db3a-47af-8b8a-2864b40c067e",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "68d6447e-b194-4882-ae5b-2ce0557f5bc8",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "5eb6778d-00a2-4855-9fbf-0490a06bfc4d",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "68d6447e-b194-4882-ae5b-2ce0557f5bc8",
-                    "LayerId": "80589703-705f-4616-bf94-bd0925f1f7ba"
-                }
-            ]
-        },
-        {
-            "id": "34365598-e2e1-47f4-9be7-5b3b48472d15",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "52cdf479-a4f2-43bd-9290-829e49a4ca90",
-            "compositeImage": {
-                "id": "a889015c-10bb-475c-ae09-533982912c49",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "34365598-e2e1-47f4-9be7-5b3b48472d15",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "60404940-a53a-4778-92d4-848250ac5622",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "34365598-e2e1-47f4-9be7-5b3b48472d15",
-                    "LayerId": "80589703-705f-4616-bf94-bd0925f1f7ba"
-                }
-            ]
-        }
-    ],
-    "gridX": 0,
-    "gridY": 0,
-    "height": 64,
-    "layers": [
-        {
-            "id": "80589703-705f-4616-bf94-bd0925f1f7ba",
-            "modelName": "GMImageLayer",
-            "mvc": "1.0",
-            "SpriteId": "52cdf479-a4f2-43bd-9290-829e49a4ca90",
-            "blendMode": 0,
-            "isLocked": false,
-            "name": "default",
-            "opacity": 100,
-            "visible": true
-        }
-    ],
-    "origin": 0,
-    "originLocked": false,
-    "playbackSpeed": 1,
+  "bboxMode": 0,
+  "collisionKind": 4,
+  "type": 0,
+  "origin": 4,
+  "preMultiplyAlpha": false,
+  "edgeFiltering": false,
+  "collisionTolerance": 0,
+  "swfPrecision": 2.525,
+  "bbox_left": 15,
+  "bbox_right": 54,
+  "bbox_top": 13,
+  "bbox_bottom": 48,
+  "HTile": false,
+  "VTile": false,
+  "For3D": false,
+  "width": 64,
+  "height": 64,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
+  "swatchColours": null,
+  "gridX": 0,
+  "gridY": 0,
+  "frames": [
+    {"compositeImage":{"FrameId":{"name":"ddf4c5d3-dfdf-427f-afda-9244a0cfbac5","path":"sprites/spr_bowlingballfalling/spr_bowlingballfalling.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"ddf4c5d3-dfdf-427f-afda-9244a0cfbac5","path":"sprites/spr_bowlingballfalling/spr_bowlingballfalling.yy",},"LayerId":{"name":"80589703-705f-4616-bf94-bd0925f1f7ba","path":"sprites/spr_bowlingballfalling/spr_bowlingballfalling.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_bowlingballfalling","path":"sprites/spr_bowlingballfalling/spr_bowlingballfalling.yy",},"resourceVersion":"1.0","name":"ddf4c5d3-dfdf-427f-afda-9244a0cfbac5","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"68d6447e-b194-4882-ae5b-2ce0557f5bc8","path":"sprites/spr_bowlingballfalling/spr_bowlingballfalling.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"68d6447e-b194-4882-ae5b-2ce0557f5bc8","path":"sprites/spr_bowlingballfalling/spr_bowlingballfalling.yy",},"LayerId":{"name":"80589703-705f-4616-bf94-bd0925f1f7ba","path":"sprites/spr_bowlingballfalling/spr_bowlingballfalling.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_bowlingballfalling","path":"sprites/spr_bowlingballfalling/spr_bowlingballfalling.yy",},"resourceVersion":"1.0","name":"68d6447e-b194-4882-ae5b-2ce0557f5bc8","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"34365598-e2e1-47f4-9be7-5b3b48472d15","path":"sprites/spr_bowlingballfalling/spr_bowlingballfalling.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"34365598-e2e1-47f4-9be7-5b3b48472d15","path":"sprites/spr_bowlingballfalling/spr_bowlingballfalling.yy",},"LayerId":{"name":"80589703-705f-4616-bf94-bd0925f1f7ba","path":"sprites/spr_bowlingballfalling/spr_bowlingballfalling.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_bowlingballfalling","path":"sprites/spr_bowlingballfalling/spr_bowlingballfalling.yy",},"resourceVersion":"1.0","name":"34365598-e2e1-47f4-9be7-5b3b48472d15","tags":[],"resourceType":"GMSpriteFrame",},
+  ],
+  "sequence": {
+    "spriteId": {"name":"spr_bowlingballfalling","path":"sprites/spr_bowlingballfalling/spr_bowlingballfalling.yy",},
+    "timeUnits": 1,
+    "playback": 1,
+    "playbackSpeed": 1.0,
     "playbackSpeedType": 1,
-    "premultiplyAlpha": false,
-    "sepmasks": true,
-    "swatchColours": null,
-    "swfPrecision": 2.525,
-    "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
-    "type": 0,
-    "width": 64,
-    "xorig": 32,
-    "yorig": 32
+    "autoRecord": true,
+    "volume": 1.0,
+    "length": 3.0,
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
+    "tracks": [
+      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"8149ca0f-a2a6-4fc7-9cfd-7cf24c8301bb","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ddf4c5d3-dfdf-427f-afda-9244a0cfbac5","path":"sprites/spr_bowlingballfalling/spr_bowlingballfalling.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"e884e13b-c137-4967-aa10-166b88841caa","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"68d6447e-b194-4882-ae5b-2ce0557f5bc8","path":"sprites/spr_bowlingballfalling/spr_bowlingballfalling.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9c96959f-814d-4f36-859e-260196541ab0","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"34365598-e2e1-47f4-9be7-5b3b48472d15","path":"sprites/spr_bowlingballfalling/spr_bowlingballfalling.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+    ],
+    "visibleRange": {"x":0.0,"y":0.0,},
+    "lockOrigin": false,
+    "showBackdrop": true,
+    "showBackdropImage": false,
+    "backdropImagePath": "",
+    "backdropImageOpacity": 0.5,
+    "backdropWidth": 1920,
+    "backdropHeight": 1080,
+    "backdropXOffset": 0.0,
+    "backdropYOffset": 0.0,
+    "xorigin": 32,
+    "yorigin": 32,
+    "eventToFunction": {},
+    "eventStubScript": null,
+    "parent": {"name":"spr_bowlingballfalling","path":"sprites/spr_bowlingballfalling/spr_bowlingballfalling.yy",},
+    "resourceVersion": "1.3",
+    "name": "",
+    "tags": [],
+    "resourceType": "GMSequence",
+  },
+  "layers": [
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"80589703-705f-4616-bf94-bd0925f1f7ba","tags":[],"resourceType":"GMImageLayer",},
+  ],
+  "nineSlice": null,
+  "parent": {
+    "name": "Objects",
+    "path": "folders/Sprites/Objects.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "spr_bowlingballfalling",
+  "tags": [],
+  "resourceType": "GMSprite",
 }

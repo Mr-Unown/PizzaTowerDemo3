@@ -1,7 +1,7 @@
 if ds_list_find_index(global.saveroom, room) = -1
 {
 	scr_roomnames()
-	if message != noone 
+	if _message != noone 
 	{
 		showtext = 1
 		alarm[0] = 200

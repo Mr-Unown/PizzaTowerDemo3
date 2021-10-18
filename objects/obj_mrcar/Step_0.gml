@@ -48,7 +48,7 @@ else
 	if abs(rot) < abs(maxrot)
 		rot += 0.5 * sign(maxrot)
 	//Destroy
-    if (place_meeting((drawx + hsp), drawy, obj_solid) && !place_meeting((drawx + hsp), drawy, obj_mrcar) && (!place_meeting((drawx + hsp), drawy, obj_destructibles)))
+    if ((!scr_slope_ext(drawx + hsp,drawy + 1) && scr_solid(drawx + hsp,drawy)) && !place_meeting((drawx + hsp), drawy, obj_mrcar) && (!place_meeting((drawx + hsp), drawy, obj_destructibles)))
         instance_destroy()
 	//Into another Car
 	with instance_place((drawx + hsp), drawy, obj_mrcar) {	

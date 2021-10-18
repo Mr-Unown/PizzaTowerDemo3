@@ -1,5 +1,5 @@
 //Attempt at Pixel Perfect
-surface_resize(application_surface, 1920, 1080);
+surface_resize(application_surface, 960, 540);
 	
 x = obj_player1.x
 y = obj_player1.y
@@ -17,7 +17,7 @@ with (obj_camera)
 }
 if ((global.panic == 1 || global.snickchallenge == 1) && global.panicbg = true)
     scr_panicbg_init()
-application_surface_draw_enable(1)
+application_surface_draw_enable(true)
 global.wave = (global.maxwave - (((global.minutes * 60) + global.seconds) * 60))
 
 angle = 0
