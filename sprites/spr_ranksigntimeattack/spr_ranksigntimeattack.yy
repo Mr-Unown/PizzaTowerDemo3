@@ -88,6 +88,10 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f1215a5b-cea7-4823-80bd-1302be5d6b8e","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
+  "parent": {
+    "name": "Objects",
+    "path": "folders/Sprites/Objects.yy",
+  },
   "resourceVersion": "1.0",
   "name": "spr_ranksigntimeattack",
   "tags": [],
