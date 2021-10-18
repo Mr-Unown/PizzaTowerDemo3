@@ -172,7 +172,7 @@ if active = true
 				break
 				
 			default:
-				show_debug_message("FAIL TBH!")
+				demo3_show_debug_message("FAIL TBH!")
 		}
 		//active = false
 		input = ""

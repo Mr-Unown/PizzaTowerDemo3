@@ -6,10 +6,10 @@ switch(type_event)
 		buffer = ds_map_find_value(async_load,"buffer");
 		buffer_seek(buffer,buffer_seek_start,0);
 		client_receive_packet(buffer);
-		show_debug_message("Client Received Data")
+		demo3_show_debug_message("Client Received Data")
 		break;			
 	default:
-		show_debug_message("Null Type");
+		demo3_show_debug_message("Null Type");
 		break;
 	
 }

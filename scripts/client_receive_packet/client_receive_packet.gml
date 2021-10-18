@@ -11,7 +11,7 @@ function client_receive_packet(argument0) {
 			{
 				socket = _socket
 				ds_map_add(global.socket_instanceid,string(_socket),id)
-				show_debug_message("Created Player ghost:" + string(_socket))
+				demo3_show_debug_message("Created Player ghost:" + string(_socket))
 			}
 
 				break;
@@ -41,13 +41,13 @@ function client_receive_packet(argument0) {
 			}		
 				break;		
 		case msg_id.playerposition:
-			show_debug_message("MSG_ID: Playerposition")
+			demo3_show_debug_message("MSG_ID: Playerposition")
 			var _sock = buffer_peek(buffer, 1, buffer_u8);
 			var xx = buffer_peek(buffer, 2, buffer_s16);
 			var yy = buffer_peek(buffer, 3, buffer_s16);
 		
 			var _player = (ds_map_find_value(global.socket_instanceid,string(_sock)))
-			show_debug_message("Updated Playerposition id:" + string(_sock))
+			demo3_show_debug_message("Updated Playerposition id:" + string(_sock))
 			if _player != undefined
 			{
 				with _player
@@ -76,7 +76,7 @@ function client_receive_packet(argument0) {
 			}			
 				break;					
 		default:
-			show_debug_message("Null Packet")
+			demo3_show_debug_message("Null Packet")
 			break;
 	}
 

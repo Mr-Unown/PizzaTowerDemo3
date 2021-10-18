@@ -75,7 +75,7 @@ function server_receive_packet(argument0, argument1, argument2) {
 			}	
 			break;				
 		default:
-			show_debug_message("Null Packet")
+			demo3_show_debug_message("Null Packet")
 			break;	
 	}
 

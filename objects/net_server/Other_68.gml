@@ -10,7 +10,7 @@ switch(type_event)
 		{
 			socket = other.socket
 			ds_map_add(global.socket_instanceid,string(other.socket),id)	
-			show_debug_message("Created Player ghost S:" + string(socket))
+			demo3_show_debug_message("Created Player ghost S:" + string(socket))
 		}
 		
 		//Create Host to the Join
@@ -38,7 +38,7 @@ switch(type_event)
 				network_send_packet(_sock,server_buffer,buffer_tell(server_buffer));
 			}
 		}
-		show_debug_message("Server Connected")
+		demo3_show_debug_message("Server Connected")
 		break;
 	case network_type_disconnect:
 		socket = ds_map_find_value(async_load,"socket");
@@ -63,7 +63,7 @@ switch(type_event)
 			}
 		}
 		
-		show_debug_message("Server Disconnected")
+		demo3_show_debug_message("Server Disconnected")
 		break;		
 	case network_type_data:
 	
@@ -72,11 +72,11 @@ switch(type_event)
 		_id = ds_map_find_value(async_load,"socket");
 		buffer_seek(buffer,buffer_seek_start,0);
 		server_receive_packet(buffer,socket,_id);
-		show_debug_message("Server Received Data")
+		demo3_show_debug_message("Server Received Data")
 		
 		break;			
 	default:
-		show_debug_message("Null Type");
+		demo3_show_debug_message("Null Type");
 		break;
 	
 }

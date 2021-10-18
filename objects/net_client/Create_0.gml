@@ -9,7 +9,7 @@ global.connected = network_connect(client,global.ip,port)
 
 if global.connected >= 0
 {
-	show_debug_message("Client has connected to server");
+	demo3_show_debug_message("Client has connected to server");
 }
 client_buffer = buffer_create(2000,buffer_fixed,1);
 
