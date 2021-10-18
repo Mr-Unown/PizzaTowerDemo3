@@ -1,9 +1,8 @@
 depth = -20
-alpha = 0.60
+alpha = 0.45
 watersurface = noone;
-masksurface = noone;
+//masksurface = noone;
 created = 0
 image_speed = 1
-_speed = undefined
 targety = ystart
 vsp = 0;

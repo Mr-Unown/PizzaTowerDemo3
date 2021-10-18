@@ -28,13 +28,13 @@ if sprite_index = spr_peppinobulletbump && floor(image_index) >= image_number - 
 with (instance_place((x + hsp), y + vsp, obj_destructibles))
 {
 	if object_index != obj_onewaybigblock && object_index != obj_secretonewaybigblock
-		instance_destroy()
+		event_user(0)
 	else if object_index = obj_onewaybigblock || object_index = obj_secretonewaybigblock
 	{
 		if sign(image_xscale) = 1 && other.x > x
-			instance_destroy()
+			event_user(0)
 		else if sign(image_xscale) = -1 && other.x < x
-			instance_destroy()
+			event_user(0)
 		else
 			instance_destroy(other.id)
 	}

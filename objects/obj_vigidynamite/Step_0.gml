@@ -13,7 +13,7 @@ if (playerid.key_shoot2 && playerid.state != 110)
 		playerid = other.playerid
 	}
 }
-if ((place_meeting((x + hsp), y, obj_solid) || place_meeting((x + hsp), (y + vsp), obj_destructibles) || place_meeting(x, y, obj_baddie)) && (!place_meeting(x, (y - 16), obj_solid)) && (!place_meeting(x, (y + 16), obj_solid)))
+if ((scr_solid(x + hsp,y) || place_meeting((x + hsp), (y + vsp), obj_destructibles) || place_meeting(x, y, obj_baddie)) && (!scr_solid(x,y - 16)) && (!scr_solid(x,y + 16)))
     image_xscale *= -1
 if (place_meeting((x + hsp), (y + vsp), obj_destructibles) || place_meeting((x + hsp), (y + vsp), obj_bombblock) || place_meeting(x, y, obj_baddie))
 {

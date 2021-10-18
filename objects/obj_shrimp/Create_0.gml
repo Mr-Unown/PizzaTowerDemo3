@@ -38,6 +38,7 @@ boundbox = 0
 attack = 0
 important = 0
 paletteselect = 0
+spr_palette = spr_shrimp_palette
 spr_dead = spr_shrimp_dead
 heavy = 0
 depth = 0

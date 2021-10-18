@@ -73,7 +73,7 @@ with (obj_player)
 			ds_list_delete(global.follower, ds_list_find_index(global.follower, id));
 			global.geromefollowing = false;
 		}		
-        scr_soundeffect(52)
+        scr_soundeffect(sfx_door)
         mach2 = 0
         image_index = 0
         obj_camera.chargecamera = 0
@@ -117,7 +117,7 @@ if (floor(obj_player.image_index) == (obj_player.image_number - 1) && obj_player
         }
         if (!instance_exists(obj_fadeout))
         {
-            scr_soundeffect(52)
+            scr_soundeffect(sfx_door)
             if (other.acttransition == 1)
             {
                 with (instance_create(x, y, obj_fadeout))

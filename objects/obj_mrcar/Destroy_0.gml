@@ -12,7 +12,9 @@ if (ds_list_find_index(global.saveroom, id) == -1)
     instance_create(drawx, drawy, obj_baddiegibs)
 	
 	with instance_create(drawx, drawy, obj_pizzaslice)
-		hsp = choose(2,-2)
+	{
+		_dir = choose(-1,1);
+	}
 		
 	with instance_create(x, y, obj_goop) {
 	vsp = random_range(-2,-8)

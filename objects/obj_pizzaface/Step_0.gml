@@ -1,6 +1,4 @@
-var playerid = obj_player1
-if (global.coop = true)
-    playerid = instance_nearest(x,y,obj_player)
+var playerid = (global.coop = false ? obj_player1 : instance_nearest(x,y,obj_player));
 
 if relax = false && global.freezeframe = false && room != rank_room && !instance_exists(obj_safespace) && !instance_exists(obj_treasureshadow)
 {
@@ -14,7 +12,7 @@ if relax = false && global.freezeframe = false && room != rank_room && !instance
 		/*
         
         {
-            scr_soundeffect(15)
+            scr_soundeffect(sfx_groundpound)
             scr_hurtplayer(playerid)
             with (instance_create(x, y, obj_shake))
                 sprite_index = other.sprite_index
@@ -103,7 +101,7 @@ if relax = false && global.freezeframe = false && room != rank_room && !instance
 					
 					
 					#endregion				
-				scr_soundeffect(15)
+				scr_soundeffect(sfx_groundpound)
 
 				with (instance_create(x, y, obj_shake))
 					sprite_index = other.sprite_index
@@ -131,6 +129,7 @@ if relax = false && global.freezeframe = false && room != rank_room && !instance
 				tauntstoredstate = states.normal
 				tauntstoredmovespeed = 0
 				tauntstoredsprite = spr_idle
+				tauntstoredimage = image_index
 			}
 		}
     }

@@ -18,7 +18,7 @@ if (reset < 0 && (!place_meeting(x, y, obj_player)))
     falling = 0;
     x = xstart;
     y = ystart;
-    mask_index = spr_wall;
+    mask_index = spr_solid;
     sprite_index = spr_cheeseblockreform;
 }
 if (sprite_index == spr_cheeseblockreform && floor(image_index) == (image_number - 1))

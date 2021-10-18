@@ -92,7 +92,7 @@ switch global.boxhp
         instance_destroy(obj_presentbox)
         break
 }
-var player = instance_nearest(x,y,obj_player)
+var player = (global.coop = false ? obj_player1 : instance_nearest(x,y,obj_player));
 if global.coop = false
 player = obj_player1
 if ((player.instakillmove = true  || player.state = 22 || player.state = states.kingknightroll || player.state = states.parry) && player.state != states.slipnslide && place_meeting(x, y, player) && sprite_index != spr_present) && player.state != states.pogo
@@ -121,7 +121,7 @@ if ((player.instakillmove = true  || player.state = 22 || player.state = states.
 			alarm[2] = 20
 		}
         global.boxhp = (global.boxhp - 1)
-        scr_soundeffect(11)
+        scr_soundeffect(sfx_killenemy)
         instance_create(x, y, obj_slapstar)
         instance_create(x, y, obj_slapstar)
         instance_create(x, y, obj_slapstar)
@@ -143,7 +143,7 @@ if ((player.instakillmove = true  || player.state = 22 || player.state = states.
             shake_mag = 20
             shake_mag_acc = (40 / room_speed)
         }
-        scr_soundeffect(11)
+        scr_soundeffect(sfx_killenemy)
         instance_create(x, y, obj_slapstar)
         instance_create(x, y, obj_slapstar)
         instance_create(x, y, obj_slapstar)
@@ -182,7 +182,7 @@ if (place_meeting(x, y, obj_baddie) && obj_baddie.thrown == 1 && sprite_index !=
 			alarm[2] = 20
 		}		
         global.boxhp = (global.boxhp - 1)
-        scr_soundeffect(11)
+        scr_soundeffect(sfx_killenemy)
         instance_create(x, y, obj_slapstar)
         instance_create(x, y, obj_slapstar)
         instance_create(x, y, obj_slapstar)
@@ -204,7 +204,7 @@ if (place_meeting(x, y, obj_baddie) && obj_baddie.thrown == 1 && sprite_index !=
             shake_mag = 20
             shake_mag_acc = (40 / room_speed)
         }
-        scr_soundeffect(11)
+        scr_soundeffect(sfx_killenemy)
         instance_create(x, y, obj_slapstar)
         instance_create(x, y, obj_slapstar)
         instance_create(x, y, obj_slapstar)

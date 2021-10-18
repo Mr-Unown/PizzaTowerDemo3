@@ -1,8 +1,12 @@
 {
-    "id": "3ee05f39-d817-4e3c-a9a2-354d4a1c8b1f",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_player_climbwall",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "player",
+    "path": "folders/Scripts/player.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_player_climbwall",
+  "tags": [],
+  "resourceType": "GMScript",
 }

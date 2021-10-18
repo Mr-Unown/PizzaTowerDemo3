@@ -32,7 +32,7 @@ if (obj_player1.state != 61 && screamintro == 0)
         image_index = 0
         state = 51
         sprite_index = spr_bossintro
-        scr_soundeffect(44)
+        scr_soundeffect(sfx_scream5)
     }
     with (obj_player2)
     {

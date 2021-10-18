@@ -1,5 +1,4 @@
 scr_commonenemy()
-var player = instance_nearest(x, y, obj_player)
 if (markedfordeath == 1 && markedfordeathbuffer <= 0 && thrown == 1)
     instance_destroy()
 if (thrown == 0 || markedfordeath == 0)

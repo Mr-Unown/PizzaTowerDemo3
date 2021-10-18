@@ -12,7 +12,7 @@ if (scr_solid((x + 1), y) || scr_solid((x - 1), y))
 	else
 		drop = 1
 }
-if place_meeting(x, (y + 1), obj_solid)
+if scr_solid(x, y + 1)
     hsp = 0
 if (vsp < 12)
     vsp += grav

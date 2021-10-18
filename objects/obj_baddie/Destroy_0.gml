@@ -3,7 +3,7 @@ if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
     var i = random_range(0, 100)
     if (i >= 95)
 		scr_soundeffect(sfx_scream1, sfx_scream2, sfx_scream3, sfx_scream4, sfx_scream5, sfx_scream6, sfx_scream7, sfx_scream8, sfx_scream9, sfx_scream10, sfx_screamhurt);
-    scr_soundeffect(11)
+    scr_soundeffect(sfx_killenemy)
 
     instance_create(x, y, obj_slapstar)
     instance_create(x, y, obj_slapstar)
@@ -147,7 +147,7 @@ if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
 }
 else if (ds_list_find_index(global.baddieroom, id) == -1 && important == 1)
 {
-    scr_soundeffect(11)
+    scr_soundeffect(sfx_killenemy)
     instance_create(x, y, obj_slapstar)
     instance_create(x, y, obj_slapstar)
     instance_create(x, y, obj_slapstar)
@@ -175,7 +175,10 @@ else if (ds_list_find_index(global.baddieroom, id) == -1 && important == 1)
 if (dropcoin == 1)
 {
     with (instance_create(x, y, obj_pizzacoin))
-        hsp = choose(-2, 2)
+	{
+		_dir = choose(1,-1)
+        hsp = 2
+	}
 }
 
 

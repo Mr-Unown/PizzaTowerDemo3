@@ -1,4 +1,5 @@
 ini_open("saveData.ini")
+global.mastervolume = ini_read_real("Option", "mastervolume", 1)
 global.musicvolume = ini_read_real("Option", "musicvolume", 1)
 global.soundeffectsvolume = ini_read_real("Option", "soundeffectsvolume", 1)
 ini_close()
@@ -353,6 +354,16 @@ if (global.panic == 0 && global.snickchallenge == 0)
             }
         }
     }
+    if (string_letters(roomname) == "sanctum")
+    {	
+        if (!audio_is_playing(mu_ruinremix))
+        {
+            scr_soundstopall()
+            scr_sound(mu_ruinremix)
+            audio_sound_set_track_position(global.music, fadeoff)
+            pausedmusic = mu_ruinremix
+        }		
+	}
     if (string_letters(roomname) == "ruin")
     {
         for (i = 0; i < 20; i++)
@@ -399,7 +410,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
             pausedmusic = mu_chateau
         }
     }
-    if (string_letters(roomname) == "ruinsecret")
+    if (string_letters(roomname) == "ruinsecret") || (string_letters(roomname) == "sanctumsecret")
     {
         if (!audio_is_playing(mu_ruinsecret))
         {
@@ -479,6 +490,16 @@ if (global.panic == 0 && global.snickchallenge == 0)
              pausedmusic = mu_freezer2
         }	
 	}
+	if room = room_test4 || room = room_test3
+	{
+	    if (!audio_is_playing(mu_desert))
+        {
+             scr_soundstopall()
+             scr_sound(mu_desert)
+             pausedmusic = mu_desert
+        }	
+	}	
+	
 	audio_sound_gain(global.music, (0.6 * global.musicvolume), 0)
 }
 

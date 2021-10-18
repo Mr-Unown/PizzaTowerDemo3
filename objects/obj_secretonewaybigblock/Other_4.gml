@@ -1,5 +1,5 @@
 var lay_id = layer_get_id(tiles)
-var map_id = layer_tilemap_get_id(lay_id)
+var map_id = layer_tilemap_get_id_fixed(lay_id)
 var set_id = tilemap_get_tileset(map_id)
 var offset = 0;
 if image_xscale < 1

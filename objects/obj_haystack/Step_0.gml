@@ -3,7 +3,7 @@ with (obj_peasanto)
     if (place_meeting((x + hsp), y, other.id) && state == 96 && other.sprite_index != spr_haystackburning && other.sprite_index != spr_haystackburningup)
     {
         other.sprite_index = spr_haystackburningup
-        scr_soundeffect(51)
+        scr_soundeffect(sfx_fireassend)
     }
 }
 if (place_meeting((x + 1), y, obj_haystack) && sprite_index == spr_haystackburning)
@@ -71,7 +71,7 @@ with (instance_place(x, (y - 1), obj_player))
     if state == 6 && other.sprite_index != spr_haystackburning && other.sprite_index != spr_haystackburningup
     {
         other.sprite_index = spr_haystackburningup
-        scr_soundeffect(51)
+        scr_soundeffect(sfx_fireassend)
     }
 }
 

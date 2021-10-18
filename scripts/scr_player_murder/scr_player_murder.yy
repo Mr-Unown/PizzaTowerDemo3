@@ -1,8 +1,12 @@
 {
-    "id": "6d30efc2-71cc-474f-9abc-f5f82306be26",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_player_murder",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "player",
+    "path": "folders/Scripts/player.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_player_murder",
+  "tags": [],
+  "resourceType": "GMScript",
 }
