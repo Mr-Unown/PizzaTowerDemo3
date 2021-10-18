@@ -66,7 +66,6 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_hat","path":"objects/obj_hat/obj_hat.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-416.0,"y":338.0,"resourceVersion":"1.0","name":"inst_3E3404CF","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_goopcontroller","path":"objects/obj_goopcontroller/obj_goopcontroller.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-256.0,"y":32.0,"resourceVersion":"1.0","name":"inst_1A775983","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_gmlive","path":"objects/obj_gmlive/obj_gmlive.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-288.0,"y":-128.0,"resourceVersion":"1.0","name":"inst_72CE3D71","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"net_initializer","path":"objects/net_initializer/net_initializer.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-288.0,"y":640.0,"resourceVersion":"1.0","name":"inst_3F4C4993","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances_1","tags":[],"resourceType":"GMRInstanceLayer",},
     {"assets":[
         {"spriteId":{"name":"spr_manualicon","path":"sprites/spr_manualicon/spr_manualicon.yy",},"headPosition":-1.0,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-16.0,"y":-16.0,"resourceVersion":"1.0","name":"graphic_2E71EB32","tags":[],"resourceType":"GMRSpriteGraphic",},
@@ -114,7 +113,6 @@
     {"name":"inst_3E3404CF","path":"rooms/Realtitlescreen/Realtitlescreen.yy",},
     {"name":"inst_1A775983","path":"rooms/Realtitlescreen/Realtitlescreen.yy",},
     {"name":"inst_72CE3D71","path":"rooms/Realtitlescreen/Realtitlescreen.yy",},
-    {"name":"inst_3F4C4993","path":"rooms/Realtitlescreen/Realtitlescreen.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

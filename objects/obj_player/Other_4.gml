@@ -407,10 +407,10 @@ with (obj_destroyable2_bigescape)
             }
 			else
 			{
-				demo3_show_debug_message("Specified Target Door not found...")
+				show_debug_message("Specified Target Door not found...")
 				if instance_exists(group_doortriggers)
 				{
-					demo3_show_debug_message("Found Subtitute Door")
+					show_debug_message("Found Subtitute Door")
 					var door = group_doortriggers
 					if (hallway == 1)
 						x = (door.x + (hallwaydirection * 100))
@@ -428,7 +428,7 @@ with (obj_destroyable2_bigescape)
 						y = (door.y - 14)
 				}
 				else
-					demo3_show_debug_message("Cannot find Subtitute Door")
+					show_debug_message("Cannot find Subtitute Door")
 			}
         }
         if (global.verticalh == 1)
@@ -627,10 +627,10 @@ if (object_index == obj_player2)
             }
 			else
 			{
-				demo3_show_debug_message("Specified Target Door not found...")
+				show_debug_message("Specified Target Door not found...")
 				if instance_exists(group_doortriggers)
 				{
-					demo3_show_debug_message("Found Subtitute Door")
+					show_debug_message("Found Subtitute Door")
 					var door = group_doortriggers
 					if (hallway == 1)
 						x = (door.x + (hallwaydirection * 100))
@@ -648,7 +648,7 @@ if (object_index == obj_player2)
 					y = (door.y - 14)
 				}
 				else
-					demo3_show_debug_message("Cannot find Subtitute Door")
+					show_debug_message("Cannot find Subtitute Door")
 			}
         }
         if (global.verticalh == 1)

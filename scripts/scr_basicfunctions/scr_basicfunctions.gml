@@ -43,13 +43,3 @@ var range = _max - _min + 1; // + 1 is because max bound is inclusive
 return (((value - _min) % range) + range) % range + _min;
 }
 
-//Test
-function demo3_show_debug_message(argument0) {
-	if DEBUG
-	{
-		if global.debugmode
-			scr_queue_message(argument0);
-	}
-	show_debug_message(string(argument0));
-	return;
-}

@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Network Features",
-    "path": "folders/Objects/Core/Network Features.yy",
+    "name": "Core",
+    "path": "folders/Objects/Core.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_discordrpc",

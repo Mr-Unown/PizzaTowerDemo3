@@ -19,12 +19,12 @@ function pal_swap_index_palette() {
 	            ds_list_add(_pal, surface_getpixel(_surface, i, ii))
 	        ds_list_add(_palettes, _pal)
 	    }
-	    demo3_show_debug_message(((string(_num) + " palettes indexed for sprite: ") + sprite_get_name(_spr)))
+	    show_debug_message(((string(_num) + " palettes indexed for sprite: ") + sprite_get_name(_spr)))
 	    surface_reset_target()
 	    surface_free(_surface)
 	}
 	else
-	    demo3_show_debug_message("That palette has already been indexed.")
+	    show_debug_message("That palette has already been indexed.")
 
 
 

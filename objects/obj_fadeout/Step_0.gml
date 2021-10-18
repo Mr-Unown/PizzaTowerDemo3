@@ -7,7 +7,7 @@ if (fadealpha > 1)
 		draw_texture_flush();
 		sprite_prefetch_multi(global.prefetcharray);
 		global.flushtextures = false
-		demo3_show_debug_message("Flushed Textures");
+		show_debug_message("Flushed Textures");
 	}
 	global.geromeopen = false;
     fadein = 1

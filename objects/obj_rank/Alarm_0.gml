@@ -19,7 +19,7 @@ else
 		draw_texture_flush();
 		sprite_prefetch_multi(global.prefetcharray);
 		global.flushtextures = false
-		demo3_show_debug_message("Flushed Textures");
+		show_debug_message("Flushed Textures");
 	}	
 	script_execute(scr_playerreset);
 	var _backtohubroom = hub_room1;

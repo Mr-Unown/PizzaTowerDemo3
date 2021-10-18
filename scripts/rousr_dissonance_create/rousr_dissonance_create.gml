@@ -40,7 +40,7 @@ function rousr_dissonance_create() {
 	  }
  
 	  if (!Discord_initialized) {
-	    demo3_show_debug_message("Discord RPC not initalized!");
+	    show_debug_message("Discord RPC not initalized!");
 	    return false;
 	  }
 	}
