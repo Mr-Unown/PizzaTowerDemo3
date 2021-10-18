@@ -1,0 +1,2 @@
+ds_queue_clear(position_queue)
+ds_queue_clear(sprite_queue)
