@@ -2113,6 +2113,7 @@
     {"id":{"name":"spr_hat_pizza","path":"sprites/spr_hat_pizza/spr_hat_pizza.yy",},"order":5,},
     {"id":{"name":"spr_noisey_turn","path":"sprites/spr_noisey_turn/spr_noisey_turn.yy",},"order":3,},
     {"id":{"name":"spr_noisey_scared","path":"sprites/spr_noisey_scared/spr_noisey_scared.yy",},"order":1,},
+    {"id":{"name":"net_initializer","path":"objects/net_initializer/net_initializer.yy",},"order":4,},
     {"id":{"name":"spr_playerN_dashpad","path":"sprites/spr_playerN_dashpad/spr_playerN_dashpad.yy",},"order":32,},
     {"id":{"name":"spr_player_dashpad","path":"sprites/spr_player_dashpad/spr_player_dashpad.yy",},"order":99,},
     {"id":{"name":"spr_playerN_grinding","path":"sprites/spr_playerN_grinding/spr_playerN_grinding.yy",},"order":61,},
