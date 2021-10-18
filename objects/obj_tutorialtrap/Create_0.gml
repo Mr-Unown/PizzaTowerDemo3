@@ -1,3 +1,5 @@
+initialhsp = random_range(-4, 4)
+initialvsp = random_range(-4, 0)
 lay_id = layer_get_id("Assets_1")
 s = layer_sprite_get_id(lay_id, "trapscreenasset")
 ini_open("playerData_"+global.savefile+".ini")

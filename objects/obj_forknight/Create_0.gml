@@ -24,7 +24,7 @@ stunfallspr = spr_forknight_stun
 walkspr = spr_forknight_walk
 grabbedspr = spr_forknight_stun
 scaredspr = spr_forknight_scared
-spr_palette = palette_forknight
+spr_palette = spr_palette_forknight
 flash = 0
 slapped = 0
 birdcreated = 0
@@ -33,7 +33,7 @@ spr_dead = spr_forknight_dead
 important = 0
 heavy = 0
 depth = 0
-paletteselect = 1
+paletteselect = 0
 grabbedby = 0
 dropcoin = 0
 

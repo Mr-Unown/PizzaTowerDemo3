@@ -1,3 +1,4 @@
+scr_enemycreate();
 grav = 0.5
 hsp = 0
 vsp = 0
@@ -21,6 +22,7 @@ grounded = 1
 bombreset = 0
 idlespr = spr_trash
 stunfallspr = spr_trash_bump
+scaredspr = spr_trash_bump
 walkspr = spr_trash
 grabbedspr = spr_trash_bump
 flash = 0
@@ -34,6 +36,6 @@ heavy = 1
 depth = 0
 grabbedby = 0
 dropcoin = 0
-scr_enemycreate()
+
 
 

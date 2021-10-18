@@ -1,5 +1,10 @@
+// Inherit the parent event
+event_inherited();
+#region Bandage
 var drawx = x
 var drawy = y
+var xscale = (abs(image_xscale) + (squashval)) * sign(image_xscale)
+var yscale = image_yscale - squashval
 if (shake == 1)
 {
     drawx += random_range(-5, 5)
@@ -12,8 +17,8 @@ else
 }
 if (bandaged == 1)
 {
-    var bandagex = x
-    var bandagey = y
+    var bandagex = drawx
+    var bandagey = drawy
     if (sprite_index == spr_bigcheese_walk)
     {
         if (floor(image_index) == 0)
@@ -125,25 +130,12 @@ if (bandaged == 1)
         bandagey = drawy
         bandagex = drawx
     }
-    draw_sprite_ext(sprite_index, image_index, drawx, drawy, image_xscale, image_yscale, image_angle, image_blend, image_alpha)
-    draw_sprite_ext(spr_enemybandaid, 0, bandagex, bandagey, image_xscale, image_yscale, image_angle, image_blend, image_alpha)
+    draw_sprite_ext(spr_enemybandaid, 0, bandagex, bandagey + (46* squashval) , xscale, yscale, image_angle, image_blend, image_alpha)
     if flash
     {
         shader_set(shd_hit)
-        draw_sprite_ext(sprite_index, image_index, drawx, drawy, image_xscale, image_yscale, image_angle, image_blend, image_alpha)
-        draw_sprite_ext(spr_enemybandaid, 0, bandagex, bandagey, image_xscale, image_yscale, image_angle, image_blend, image_alpha)
+        draw_sprite_ext(spr_enemybandaid, 0, bandagex, bandagey + (46* squashval) , xscale, yscale, image_angle, image_blend, image_alpha)
         shader_reset()
     }
 }
-else
-{
-    draw_sprite_ext(sprite_index, image_index, drawx, drawy, image_xscale, image_yscale, image_angle, image_blend, image_alpha)
-    if flash
-    {
-        shader_set(shd_hit)
-        draw_sprite_ext(sprite_index, image_index, drawx, drawy, image_xscale, image_yscale, image_angle, image_blend, image_alpha)
-        shader_reset()
-    }
-}
-
-
+#endregion

@@ -1,3 +1,4 @@
+
 if (floor(image_index) == (image_number - 1))
 {
     image_speed = 0
@@ -7,7 +8,7 @@ if (floor(image_index) == (image_number - 1))
         {
             with (obj_tv)
             {
-                message = "YOU GOT RANK S"
+                _message = "YOU GOT RANK S"
                 showtext = 1
                 alarm[0] = 50
             }
@@ -16,7 +17,7 @@ if (floor(image_index) == (image_number - 1))
         {
             with (obj_tv)
             {
-                message = "YOU GOT RANK A"
+                _message = "YOU GOT RANK A"
                 showtext = 1
                 alarm[0] = 50
             }
@@ -25,7 +26,7 @@ if (floor(image_index) == (image_number - 1))
         {
             with (obj_tv)
             {
-                message = "YOU GOT RANK B"
+                _message = "YOU GOT RANK B"
                 showtext = 1
                 alarm[0] = 50
             }
@@ -34,7 +35,7 @@ if (floor(image_index) == (image_number - 1))
         {
             with (obj_tv)
             {
-                message = "YOU GOT RANK C"
+                _message = "YOU GOT RANK C"
                 showtext = 1
                 alarm[0] = 50
             }
@@ -43,7 +44,7 @@ if (floor(image_index) == (image_number - 1))
         {
             with (obj_tv)
             {
-                message = "YOU GOT RANK D"
+                _message = "YOU GOT RANK D"
                 showtext = 1
                 alarm[0] = 50
             }
@@ -57,7 +58,7 @@ if (obj_player.character == "V")
         image_speed = 0
         with (obj_tv)
         {
-            message = "YOU GOT RANK S"
+            _message = "YOU GOT RANK S"
             showtext = 1
             alarm[0] = 50
         }
@@ -67,7 +68,7 @@ if (obj_player.character == "V")
         image_speed = 0
         with (obj_tv)
         {
-            message = "YOU GOT RANK A"
+            _message = "YOU GOT RANK A"
             showtext = 1
             alarm[0] = 50
         }
@@ -77,7 +78,7 @@ if (obj_player.character == "V")
         image_speed = 0
         with (obj_tv)
         {
-            message = "YOU GOT RANK B"
+            _message = "YOU GOT RANK B"
             showtext = 1
             alarm[0] = 50
         }
@@ -87,7 +88,7 @@ if (obj_player.character == "V")
         image_speed = 0
         with (obj_tv)
         {
-            message = "YOU GOT RANK C"
+            _message = "YOU GOT RANK C"
             showtext = 1
             alarm[0] = 50
         }
@@ -97,7 +98,7 @@ if (obj_player.character == "V")
         image_speed = 0
         with (obj_tv)
         {
-            message = "YOU GOT RANK D"
+            _message = "YOU GOT RANK D"
             showtext = 1
             alarm[0] = 50
         }
@@ -131,6 +132,19 @@ if (obj_player1.collectscore >= obj_player2.collectscore)
         if (global.rank == "d")
             sprite_index = spr_rankND
     }
+    else if (obj_player1.character == "PZ")
+    {
+        if (global.rank == "s")
+            sprite_index = spr_playerPZ_rankS
+        if (global.rank == "a")
+            sprite_index = spr_playerPZ_rankA
+        if (global.rank == "b")
+            sprite_index = spr_playerPZ_rankB
+        if (global.rank == "c")
+            sprite_index = spr_playerPZ_rankC
+        if (global.rank == "d")
+            sprite_index = spr_playerPZ_rankD
+    }	
     else if (obj_player1.character == "S")
     {
         if (global.rank == "s")
@@ -192,6 +206,19 @@ if (obj_player2.collectscore > obj_player1.collectscore)
         if (global.rank == "d")
             sprite_index = spr_rankND
     }
+    else if (obj_player2.character == "PZ")
+    {
+        if (global.rank == "s")
+            sprite_index = spr_playerPZ_rankS
+        if (global.rank == "a")
+            sprite_index = spr_playerPZ_rankA
+        if (global.rank == "b")
+            sprite_index = spr_playerPZ_rankB
+        if (global.rank == "c")
+            sprite_index = spr_playerPZ_rankC
+        if (global.rank == "d")
+            sprite_index = spr_playerPZ_rankD
+    }		
     else if (obj_player2.character == "S")
     {
         if (global.rank == "s")

@@ -2,63 +2,14 @@ if instance_exists(obj_pausefadeout)
     instance_destroy(obj_pausefadeout)
 if (fadealpha > 1)
 {
+	while global.flushtextures = true
+	{
+		draw_texture_flush();
+		sprite_prefetch_multi(global.prefetcharray);
+		global.flushtextures = false
+		demo3_show_debug_message("Flushed Textures");
+	}
 	global.geromeopen = false;
-	#region Toppins
-	    if (global.shroomfollow == 1) && instance_exists(obj_pizzakinshroom) {
-		with obj_pizzakinshroom {
-        x = obj_player1.x
-		y = obj_player1.y
-		ds_queue_clear(followQueue)
-		ds_queue_enqueue(followQueue, obj_player1.x) 
-		ds_queue_enqueue(followQueue, obj_player1.y)
-		}
-	}
-    if (global.cheesefollow == 1) && instance_exists(obj_pizzakincheese) {
-		with obj_pizzakincheese {
-        x = obj_player1.x
-		y = obj_player1.y
-		ds_queue_clear(followQueue)
-		ds_queue_enqueue(followQueue, obj_player1.x) 
-		ds_queue_enqueue(followQueue, obj_player1.y)
-		}
-	}
-    if (global.tomatofollow == 1) && instance_exists(obj_pizzakintomato) {
-		with obj_pizzakintomato {
-        x = obj_player1.x
-		y = obj_player1.y
-		ds_queue_clear(followQueue)
-		ds_queue_enqueue(followQueue, obj_player1.x) 
-		ds_queue_enqueue(followQueue, obj_player1.y)
-		}
-	}
-    if (global.sausagefollow == 1) && instance_exists(obj_pizzakinsausage){
-		with obj_pizzakinsausage {
-        x = obj_player1.x
-		y = obj_player1.y
-		ds_queue_clear(followQueue)
-		ds_queue_enqueue(followQueue, obj_player1.x) 
-		ds_queue_enqueue(followQueue, obj_player1.y)
-		}
-	}
-    if (global.pineapplefollow == 1) && instance_exists(obj_pizzakinpineapple){
-		with obj_pizzakinpineapple {
-        x = obj_player1.x
-		y = obj_player1.y
-		ds_queue_clear(followQueue)
-		ds_queue_enqueue(followQueue, obj_player1.x) 
-		ds_queue_enqueue(followQueue, obj_player1.y)
-		}
-	}
-	if global.geromefollowing = true  && instance_exists(obj_gerome){
-		with obj_gerome {
-        x = obj_player1.x
-		y = obj_player1.y
-		ds_queue_clear(followQueue)
-		ds_queue_enqueue(followQueue, obj_player1.x) 
-		ds_queue_enqueue(followQueue, obj_player1.y)
-		}
-	}
-	#endregion
     fadein = 1
     if instance_exists(obj_player)
     {
@@ -72,12 +23,17 @@ if (fadealpha > 1)
             with (obj_music)
                 fadeoff = 0
         }
+
         if (room != obj_player1.targetRoom)
+		{
             room_goto(obj_player1.targetRoom)
+		}
         if (global.coop == 1)
         {
             if (room != obj_player2.targetRoom)
+			{
                 room_goto(obj_player2.targetRoom)
+			}
         }
     }
 }
@@ -89,7 +45,7 @@ if instance_exists(obj_player)
 {
     with (obj_player1)
     {
-        if (other.fadein == 1 && (obj_player1.state == 78 || obj_player1.state == 64) && (place_meeting(x, y, obj_door) || place_meeting(x, y, obj_levelcomputer) || place_meeting(x, y, obj_startgate)))
+        if (other.fadein == 1 && (obj_player1.state == 78 || obj_player1.state == 64) && (place_meeting(x, y, obj_door) || place_meeting(x,y, obj_doorblocked) || place_meeting(x, y, obj_geromedoor) || place_meeting(x, y, obj_keydoor) || place_meeting(x, y, obj_levelcomputer) || place_meeting(x, y, obj_startgate)))
         {
             state = 61
             image_index = 0
@@ -120,7 +76,7 @@ if instance_exists(obj_player)
     {
         with (obj_player2)
         {
-            if (other.fadein == 1 && (obj_player2.state == 78 || obj_player2.state == 64) && (place_meeting(x, y, obj_door) || place_meeting(x, y, obj_levelcomputer) || place_meeting(x, y, obj_startgate)))
+            if (other.fadein == 1 && (obj_player2.state == 78 || obj_player2.state == 64) && (place_meeting(x, y, obj_door) || place_meeting(x,y, obj_doorblocked) || place_meeting(x, y, obj_geromedoor) || place_meeting(x, y, obj_keydoor) || place_meeting(x, y, obj_levelcomputer) || place_meeting(x, y, obj_startgate)))
             {
                 state = 61
                 image_index = 0

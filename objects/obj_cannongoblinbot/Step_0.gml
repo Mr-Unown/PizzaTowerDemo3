@@ -1,9 +1,11 @@
+//Bomb
 if (bombreset > 0)
-    bombreset--
+    bombreset -= 1
+    
 if (bombreset <= 0 && sprite_index == spr_cannongoblinbot)
 {
     if point_in_rectangle(x, y, camera_get_view_x(view_camera[0]), camera_get_view_y(view_camera[0]), (camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0])), (camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0])))
-        scr_soundeffect(8)
+        scr_soundeffect(sfx_enemyprojectile)
     image_index = 0
     sprite_index = spr_cannongoblinbot_shoot
 }

@@ -1,532 +1,163 @@
 {
-    "id": "d80d63ed-9bfb-4e88-b681-0f1ea1304aea",
-    "modelName": "GMSprite",
-    "mvc": "1.12",
-    "name": "spr_gamepadbuttons",
-    "For3D": false,
-    "HTile": false,
-    "VTile": false,
-    "bbox_bottom": 61,
-    "bbox_left": 1,
-    "bbox_right": 62,
-    "bbox_top": 2,
-    "bboxmode": 0,
-    "colkind": 0,
-    "coltolerance": 0,
-    "edgeFiltering": false,
-    "frames": [
-        {
-            "id": "e5a95edb-8131-4496-95af-68971db4bc3b",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "d80d63ed-9bfb-4e88-b681-0f1ea1304aea",
-            "compositeImage": {
-                "id": "d07b238b-1e00-4dba-8c47-42867dea2d13",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "e5a95edb-8131-4496-95af-68971db4bc3b",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "f5023702-e0a5-4ceb-8a96-919db97d4aac",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "e5a95edb-8131-4496-95af-68971db4bc3b",
-                    "LayerId": "9da74c28-ab2a-427e-ba89-81d07cfabcb9"
-                }
-            ]
-        },
-        {
-            "id": "141d78d6-9fe6-4369-8f56-19655ff26435",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "d80d63ed-9bfb-4e88-b681-0f1ea1304aea",
-            "compositeImage": {
-                "id": "b82a69c8-d409-49f0-a561-8e822241f0ec",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "141d78d6-9fe6-4369-8f56-19655ff26435",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "1eb34fcf-d325-4ef6-b067-dc1935647009",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "141d78d6-9fe6-4369-8f56-19655ff26435",
-                    "LayerId": "9da74c28-ab2a-427e-ba89-81d07cfabcb9"
-                }
-            ]
-        },
-        {
-            "id": "1ef10242-75e0-4c2e-bd46-8c2d48375794",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "d80d63ed-9bfb-4e88-b681-0f1ea1304aea",
-            "compositeImage": {
-                "id": "411713c7-df6d-4e98-8d30-9a2aa273d576",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "1ef10242-75e0-4c2e-bd46-8c2d48375794",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "4ed20c30-7696-4e75-ae07-10c031a4f504",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "1ef10242-75e0-4c2e-bd46-8c2d48375794",
-                    "LayerId": "9da74c28-ab2a-427e-ba89-81d07cfabcb9"
-                }
-            ]
-        },
-        {
-            "id": "c365a3d8-96ad-4d24-aefd-f76bd4cce01f",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "d80d63ed-9bfb-4e88-b681-0f1ea1304aea",
-            "compositeImage": {
-                "id": "863006f7-986f-4948-8e77-b910b8c87268",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "c365a3d8-96ad-4d24-aefd-f76bd4cce01f",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "285c9a16-9c0e-429b-a788-de230b13777d",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "c365a3d8-96ad-4d24-aefd-f76bd4cce01f",
-                    "LayerId": "9da74c28-ab2a-427e-ba89-81d07cfabcb9"
-                }
-            ]
-        },
-        {
-            "id": "b522d7cc-3a3e-44a1-b714-0059cc7d9b68",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "d80d63ed-9bfb-4e88-b681-0f1ea1304aea",
-            "compositeImage": {
-                "id": "26003ac7-3ee3-4d8f-9d69-2151c9c823fd",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "b522d7cc-3a3e-44a1-b714-0059cc7d9b68",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "660e41b9-493a-432f-8ebd-629fb773e752",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "b522d7cc-3a3e-44a1-b714-0059cc7d9b68",
-                    "LayerId": "9da74c28-ab2a-427e-ba89-81d07cfabcb9"
-                }
-            ]
-        },
-        {
-            "id": "2807eef7-3aa0-43e5-83d0-ec67ecc785ee",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "d80d63ed-9bfb-4e88-b681-0f1ea1304aea",
-            "compositeImage": {
-                "id": "26970313-4682-4674-bc9e-6f485d159527",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "2807eef7-3aa0-43e5-83d0-ec67ecc785ee",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "360b2a15-e2b8-4558-ae12-34db52a5f0a4",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "2807eef7-3aa0-43e5-83d0-ec67ecc785ee",
-                    "LayerId": "9da74c28-ab2a-427e-ba89-81d07cfabcb9"
-                }
-            ]
-        },
-        {
-            "id": "3035165e-c7bd-441b-8cbd-25a1d48eae22",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "d80d63ed-9bfb-4e88-b681-0f1ea1304aea",
-            "compositeImage": {
-                "id": "2b7b80a7-4bc2-42be-ad9f-b743a7ca3fb0",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "3035165e-c7bd-441b-8cbd-25a1d48eae22",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "4c5a4505-5494-4053-8728-ed8cdfd3b2d8",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "3035165e-c7bd-441b-8cbd-25a1d48eae22",
-                    "LayerId": "9da74c28-ab2a-427e-ba89-81d07cfabcb9"
-                }
-            ]
-        },
-        {
-            "id": "58e2595b-5479-4fc6-929b-a3726ea77738",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "d80d63ed-9bfb-4e88-b681-0f1ea1304aea",
-            "compositeImage": {
-                "id": "e605b53e-3a46-4d1a-a8da-37382ec5f1e7",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "58e2595b-5479-4fc6-929b-a3726ea77738",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "73876511-61c7-4eec-bd55-5bce495a938b",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "58e2595b-5479-4fc6-929b-a3726ea77738",
-                    "LayerId": "9da74c28-ab2a-427e-ba89-81d07cfabcb9"
-                }
-            ]
-        },
-        {
-            "id": "94bfc269-73ac-4d15-ae2a-bbe4f52ce095",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "d80d63ed-9bfb-4e88-b681-0f1ea1304aea",
-            "compositeImage": {
-                "id": "b25bcc09-fd74-4c9b-bea1-2b985cf3b15e",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "94bfc269-73ac-4d15-ae2a-bbe4f52ce095",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "e4dde941-5c1e-4179-9f65-abe2aee1dcc4",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "94bfc269-73ac-4d15-ae2a-bbe4f52ce095",
-                    "LayerId": "9da74c28-ab2a-427e-ba89-81d07cfabcb9"
-                }
-            ]
-        },
-        {
-            "id": "078461af-26cb-49c3-be22-8e398ebe138e",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "d80d63ed-9bfb-4e88-b681-0f1ea1304aea",
-            "compositeImage": {
-                "id": "f7a4360d-0a33-49b3-b561-6d978849e808",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "078461af-26cb-49c3-be22-8e398ebe138e",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "7100079b-eff8-43f2-97d7-c4c99e8bdb50",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "078461af-26cb-49c3-be22-8e398ebe138e",
-                    "LayerId": "9da74c28-ab2a-427e-ba89-81d07cfabcb9"
-                }
-            ]
-        },
-        {
-            "id": "79505f5d-5d11-4061-b23e-bd2b412b1282",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "d80d63ed-9bfb-4e88-b681-0f1ea1304aea",
-            "compositeImage": {
-                "id": "1c4dae2c-a2db-4ca6-a388-28b928ad275d",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "79505f5d-5d11-4061-b23e-bd2b412b1282",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "5bc2eb99-ba77-45af-aa3b-31b8dadd06a1",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "79505f5d-5d11-4061-b23e-bd2b412b1282",
-                    "LayerId": "9da74c28-ab2a-427e-ba89-81d07cfabcb9"
-                }
-            ]
-        },
-        {
-            "id": "1346ec35-f3e6-44ef-9e28-a6077fcfeb97",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "d80d63ed-9bfb-4e88-b681-0f1ea1304aea",
-            "compositeImage": {
-                "id": "75f54a2b-c1b0-4fea-8157-93e62da03c4e",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "1346ec35-f3e6-44ef-9e28-a6077fcfeb97",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "1aeb80e4-119f-4cc5-ae48-e155b2dc6518",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "1346ec35-f3e6-44ef-9e28-a6077fcfeb97",
-                    "LayerId": "9da74c28-ab2a-427e-ba89-81d07cfabcb9"
-                }
-            ]
-        },
-        {
-            "id": "eb40d77f-60c3-47cf-a342-6a1f059f7094",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "d80d63ed-9bfb-4e88-b681-0f1ea1304aea",
-            "compositeImage": {
-                "id": "133fef63-eedb-4b21-91b6-c6912d363d8e",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "eb40d77f-60c3-47cf-a342-6a1f059f7094",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "9ddbf5e0-5424-420e-ad21-62c2ff65d335",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "eb40d77f-60c3-47cf-a342-6a1f059f7094",
-                    "LayerId": "9da74c28-ab2a-427e-ba89-81d07cfabcb9"
-                }
-            ]
-        },
-        {
-            "id": "2b4cc22d-912f-4a53-b8d4-b880b47d5962",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "d80d63ed-9bfb-4e88-b681-0f1ea1304aea",
-            "compositeImage": {
-                "id": "63efc4db-dc30-4236-8087-374319858920",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "2b4cc22d-912f-4a53-b8d4-b880b47d5962",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "24c075f7-12cc-4fb8-8580-304bd8547fcc",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "2b4cc22d-912f-4a53-b8d4-b880b47d5962",
-                    "LayerId": "9da74c28-ab2a-427e-ba89-81d07cfabcb9"
-                }
-            ]
-        },
-        {
-            "id": "c7bf6f17-2ff6-4368-bd46-17d4e5a0a468",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "d80d63ed-9bfb-4e88-b681-0f1ea1304aea",
-            "compositeImage": {
-                "id": "3f69314f-3d95-4f77-ace6-f7ad0737b9ea",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "c7bf6f17-2ff6-4368-bd46-17d4e5a0a468",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "9cac7f5a-b7c9-481b-bd7a-55121f3e5268",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "c7bf6f17-2ff6-4368-bd46-17d4e5a0a468",
-                    "LayerId": "9da74c28-ab2a-427e-ba89-81d07cfabcb9"
-                }
-            ]
-        },
-        {
-            "id": "e1e9a356-cd3e-41bd-b051-d9a6557183c5",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "d80d63ed-9bfb-4e88-b681-0f1ea1304aea",
-            "compositeImage": {
-                "id": "3f61d694-e397-4105-a80e-d58dba26e5e1",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "e1e9a356-cd3e-41bd-b051-d9a6557183c5",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "4b18d481-ac5a-4587-8775-bdfe18b6bd2d",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "e1e9a356-cd3e-41bd-b051-d9a6557183c5",
-                    "LayerId": "9da74c28-ab2a-427e-ba89-81d07cfabcb9"
-                }
-            ]
-        },
-        {
-            "id": "c21d7f7f-4210-4e3d-aff2-0966821fce57",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "d80d63ed-9bfb-4e88-b681-0f1ea1304aea",
-            "compositeImage": {
-                "id": "5ccba89a-6d4b-4d62-b3bd-c093f95be6ee",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "c21d7f7f-4210-4e3d-aff2-0966821fce57",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "4491d1c9-a8e1-4ddd-a051-5abd24191850",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "c21d7f7f-4210-4e3d-aff2-0966821fce57",
-                    "LayerId": "9da74c28-ab2a-427e-ba89-81d07cfabcb9"
-                }
-            ]
-        },
-        {
-            "id": "f7c6aeb1-7d9e-451f-876a-c2caa177000b",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "d80d63ed-9bfb-4e88-b681-0f1ea1304aea",
-            "compositeImage": {
-                "id": "89c5c067-eed6-4c0a-95e7-d37fbaece4db",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "f7c6aeb1-7d9e-451f-876a-c2caa177000b",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "cd4408c5-9396-42c0-8324-e4d9b70259fd",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "f7c6aeb1-7d9e-451f-876a-c2caa177000b",
-                    "LayerId": "9da74c28-ab2a-427e-ba89-81d07cfabcb9"
-                }
-            ]
-        },
-        {
-            "id": "c6c13f20-7b7e-4645-baab-fbcfb82d9d89",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "d80d63ed-9bfb-4e88-b681-0f1ea1304aea",
-            "compositeImage": {
-                "id": "0db81e73-c04e-4e53-970e-455fccd5fafe",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "c6c13f20-7b7e-4645-baab-fbcfb82d9d89",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "4c12d295-4c74-4d73-b9df-5b74dbc28f75",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "c6c13f20-7b7e-4645-baab-fbcfb82d9d89",
-                    "LayerId": "9da74c28-ab2a-427e-ba89-81d07cfabcb9"
-                }
-            ]
-        },
-        {
-            "id": "ff9851a9-465a-4b60-96b2-43e8b51b6a47",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "d80d63ed-9bfb-4e88-b681-0f1ea1304aea",
-            "compositeImage": {
-                "id": "21285bf4-888d-4aa9-9b6c-829b962307a8",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "ff9851a9-465a-4b60-96b2-43e8b51b6a47",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "cc9b9a8a-90a2-438e-ac10-0d7dbc8d24d4",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "ff9851a9-465a-4b60-96b2-43e8b51b6a47",
-                    "LayerId": "9da74c28-ab2a-427e-ba89-81d07cfabcb9"
-                }
-            ]
-        },
-        {
-            "id": "8e15f939-20a0-4b8a-9ca9-e8c4b9593858",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "d80d63ed-9bfb-4e88-b681-0f1ea1304aea",
-            "compositeImage": {
-                "id": "3c031c46-a666-4f31-886b-b942bb06aab5",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "8e15f939-20a0-4b8a-9ca9-e8c4b9593858",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "b0cfc965-1246-4376-9a22-4ad0774c8edd",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "8e15f939-20a0-4b8a-9ca9-e8c4b9593858",
-                    "LayerId": "9da74c28-ab2a-427e-ba89-81d07cfabcb9"
-                }
-            ]
-        },
-        {
-            "id": "afd299d7-3731-4e0b-9317-8e7d07fc6d69",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "d80d63ed-9bfb-4e88-b681-0f1ea1304aea",
-            "compositeImage": {
-                "id": "03898cf8-ac71-4de8-8dfa-199e5aa0f6a1",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "afd299d7-3731-4e0b-9317-8e7d07fc6d69",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "ca82fea8-6737-4cdd-ba30-86f20723e46a",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "afd299d7-3731-4e0b-9317-8e7d07fc6d69",
-                    "LayerId": "9da74c28-ab2a-427e-ba89-81d07cfabcb9"
-                }
-            ]
-        }
-    ],
-    "gridX": 0,
-    "gridY": 0,
-    "height": 64,
-    "layers": [
-        {
-            "id": "9da74c28-ab2a-427e-ba89-81d07cfabcb9",
-            "modelName": "GMImageLayer",
-            "mvc": "1.0",
-            "SpriteId": "d80d63ed-9bfb-4e88-b681-0f1ea1304aea",
-            "blendMode": 0,
-            "isLocked": false,
-            "name": "default",
-            "opacity": 100,
-            "visible": true
-        }
-    ],
-    "origin": 0,
-    "originLocked": false,
-    "playbackSpeed": 1,
+  "bboxMode": 0,
+  "collisionKind": 0,
+  "type": 0,
+  "origin": 9,
+  "preMultiplyAlpha": false,
+  "edgeFiltering": false,
+  "collisionTolerance": 0,
+  "swfPrecision": 2.525,
+  "bbox_left": 1,
+  "bbox_right": 62,
+  "bbox_top": 2,
+  "bbox_bottom": 61,
+  "HTile": false,
+  "VTile": false,
+  "For3D": false,
+  "width": 64,
+  "height": 64,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
+  "swatchColours": null,
+  "gridX": 0,
+  "gridY": 0,
+  "frames": [
+    {"compositeImage":{"FrameId":{"name":"e5a95edb-8131-4496-95af-68971db4bc3b","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"e5a95edb-8131-4496-95af-68971db4bc3b","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"e5a95edb-8131-4496-95af-68971db4bc3b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"141d78d6-9fe6-4369-8f56-19655ff26435","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"141d78d6-9fe6-4369-8f56-19655ff26435","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"141d78d6-9fe6-4369-8f56-19655ff26435","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"1ef10242-75e0-4c2e-bd46-8c2d48375794","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"1ef10242-75e0-4c2e-bd46-8c2d48375794","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"1ef10242-75e0-4c2e-bd46-8c2d48375794","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"c365a3d8-96ad-4d24-aefd-f76bd4cce01f","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"c365a3d8-96ad-4d24-aefd-f76bd4cce01f","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"c365a3d8-96ad-4d24-aefd-f76bd4cce01f","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"b522d7cc-3a3e-44a1-b714-0059cc7d9b68","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"b522d7cc-3a3e-44a1-b714-0059cc7d9b68","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"b522d7cc-3a3e-44a1-b714-0059cc7d9b68","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"2807eef7-3aa0-43e5-83d0-ec67ecc785ee","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"2807eef7-3aa0-43e5-83d0-ec67ecc785ee","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"2807eef7-3aa0-43e5-83d0-ec67ecc785ee","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"3035165e-c7bd-441b-8cbd-25a1d48eae22","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"3035165e-c7bd-441b-8cbd-25a1d48eae22","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"3035165e-c7bd-441b-8cbd-25a1d48eae22","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"58e2595b-5479-4fc6-929b-a3726ea77738","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"58e2595b-5479-4fc6-929b-a3726ea77738","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"58e2595b-5479-4fc6-929b-a3726ea77738","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"94bfc269-73ac-4d15-ae2a-bbe4f52ce095","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"94bfc269-73ac-4d15-ae2a-bbe4f52ce095","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"94bfc269-73ac-4d15-ae2a-bbe4f52ce095","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"078461af-26cb-49c3-be22-8e398ebe138e","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"078461af-26cb-49c3-be22-8e398ebe138e","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"078461af-26cb-49c3-be22-8e398ebe138e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"79505f5d-5d11-4061-b23e-bd2b412b1282","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"79505f5d-5d11-4061-b23e-bd2b412b1282","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"79505f5d-5d11-4061-b23e-bd2b412b1282","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"1346ec35-f3e6-44ef-9e28-a6077fcfeb97","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"1346ec35-f3e6-44ef-9e28-a6077fcfeb97","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"1346ec35-f3e6-44ef-9e28-a6077fcfeb97","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"eb40d77f-60c3-47cf-a342-6a1f059f7094","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"eb40d77f-60c3-47cf-a342-6a1f059f7094","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"eb40d77f-60c3-47cf-a342-6a1f059f7094","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"2b4cc22d-912f-4a53-b8d4-b880b47d5962","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"2b4cc22d-912f-4a53-b8d4-b880b47d5962","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"2b4cc22d-912f-4a53-b8d4-b880b47d5962","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"c7bf6f17-2ff6-4368-bd46-17d4e5a0a468","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"c7bf6f17-2ff6-4368-bd46-17d4e5a0a468","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"c7bf6f17-2ff6-4368-bd46-17d4e5a0a468","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"e1e9a356-cd3e-41bd-b051-d9a6557183c5","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"e1e9a356-cd3e-41bd-b051-d9a6557183c5","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"e1e9a356-cd3e-41bd-b051-d9a6557183c5","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"c21d7f7f-4210-4e3d-aff2-0966821fce57","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"c21d7f7f-4210-4e3d-aff2-0966821fce57","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"c21d7f7f-4210-4e3d-aff2-0966821fce57","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"f7c6aeb1-7d9e-451f-876a-c2caa177000b","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"f7c6aeb1-7d9e-451f-876a-c2caa177000b","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"f7c6aeb1-7d9e-451f-876a-c2caa177000b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"c6c13f20-7b7e-4645-baab-fbcfb82d9d89","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"c6c13f20-7b7e-4645-baab-fbcfb82d9d89","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"c6c13f20-7b7e-4645-baab-fbcfb82d9d89","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"ff9851a9-465a-4b60-96b2-43e8b51b6a47","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"ff9851a9-465a-4b60-96b2-43e8b51b6a47","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"ff9851a9-465a-4b60-96b2-43e8b51b6a47","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"8e15f939-20a0-4b8a-9ca9-e8c4b9593858","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"8e15f939-20a0-4b8a-9ca9-e8c4b9593858","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"8e15f939-20a0-4b8a-9ca9-e8c4b9593858","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"afd299d7-3731-4e0b-9317-8e7d07fc6d69","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"afd299d7-3731-4e0b-9317-8e7d07fc6d69","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"afd299d7-3731-4e0b-9317-8e7d07fc6d69","tags":[],"resourceType":"GMSpriteFrame",},
+  ],
+  "sequence": {
+    "spriteId": {"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},
+    "timeUnits": 1,
+    "playback": 1,
+    "playbackSpeed": 1.0,
     "playbackSpeedType": 1,
-    "premultiplyAlpha": false,
-    "sepmasks": false,
-    "swatchColours": null,
-    "swfPrecision": 2.525,
-    "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
-    "type": 0,
-    "width": 64,
-    "xorig": -24,
-    "yorig": 15
+    "autoRecord": true,
+    "volume": 1.0,
+    "length": 22.0,
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
+    "tracks": [
+      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"af4240e9-d2a9-4056-9d83-af19f480d4b0","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e5a95edb-8131-4496-95af-68971db4bc3b","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"da0cdd28-5433-401a-b6c1-b1ebb9260422","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"141d78d6-9fe6-4369-8f56-19655ff26435","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4cbb90d3-2e3e-40da-a466-e431e714689c","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1ef10242-75e0-4c2e-bd46-8c2d48375794","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"a60a6e73-43e1-4602-8a76-d8dfa5edf612","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c365a3d8-96ad-4d24-aefd-f76bd4cce01f","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d9f64c21-1dec-41ea-a732-4e55f2a1204d","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b522d7cc-3a3e-44a1-b714-0059cc7d9b68","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7bdbe064-4117-449c-8496-97cf1dc169cd","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2807eef7-3aa0-43e5-83d0-ec67ecc785ee","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"707f1e5d-84a9-43cd-a906-bc28c28f8553","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3035165e-c7bd-441b-8cbd-25a1d48eae22","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"42d065a0-03f7-4029-adc2-258c278b2098","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"58e2595b-5479-4fc6-929b-a3726ea77738","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"69edf928-edf7-41ea-a15f-8484a6c53fe9","Key":8.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"94bfc269-73ac-4d15-ae2a-bbe4f52ce095","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"e57b825a-11d1-4074-bc7e-4f7626d40b95","Key":9.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"078461af-26cb-49c3-be22-8e398ebe138e","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"888e6861-71a2-4e8b-bb8d-a0c8a3230f55","Key":10.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"79505f5d-5d11-4061-b23e-bd2b412b1282","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5cb2669f-ad53-4e6b-a0f7-448bb0f86c78","Key":11.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1346ec35-f3e6-44ef-9e28-a6077fcfeb97","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4ae6933e-8fc5-4fc0-a47b-4b347ed3266f","Key":12.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"eb40d77f-60c3-47cf-a342-6a1f059f7094","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4c892bd5-6aae-43a9-b96b-09cc08faf49a","Key":13.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2b4cc22d-912f-4a53-b8d4-b880b47d5962","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5369f3ba-1886-4bb7-9b91-02e07cbeecb4","Key":14.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c7bf6f17-2ff6-4368-bd46-17d4e5a0a468","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b5d16c88-93cf-4a3e-b47f-1db53e370249","Key":15.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e1e9a356-cd3e-41bd-b051-d9a6557183c5","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"1a3695b4-89b5-4e3c-a666-6e2bb4663a52","Key":16.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c21d7f7f-4210-4e3d-aff2-0966821fce57","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"45f55f35-8198-4f6f-80ba-bbee6b754571","Key":17.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f7c6aeb1-7d9e-451f-876a-c2caa177000b","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"3729cb52-9ed4-4029-ac75-b55f919cba47","Key":18.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c6c13f20-7b7e-4645-baab-fbcfb82d9d89","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4b278bbd-0b28-4898-a016-a59a0a3a87bf","Key":19.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ff9851a9-465a-4b60-96b2-43e8b51b6a47","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b8ea7e14-fadc-408c-8785-fb12f2ba67b2","Key":20.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8e15f939-20a0-4b8a-9ca9-e8c4b9593858","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5ae6e554-bcba-440d-853e-4d0affdfe629","Key":21.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"afd299d7-3731-4e0b-9317-8e7d07fc6d69","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+    ],
+    "visibleRange": {"x":0.0,"y":0.0,},
+    "lockOrigin": false,
+    "showBackdrop": true,
+    "showBackdropImage": false,
+    "backdropImagePath": "",
+    "backdropImageOpacity": 0.5,
+    "backdropWidth": 1920,
+    "backdropHeight": 1080,
+    "backdropXOffset": 0.0,
+    "backdropYOffset": 0.0,
+    "xorigin": -24,
+    "yorigin": 15,
+    "eventToFunction": {},
+    "eventStubScript": null,
+    "parent": {"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},
+    "resourceVersion": "1.3",
+    "name": "",
+    "tags": [],
+    "resourceType": "GMSequence",
+  },
+  "layers": [
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","tags":[],"resourceType":"GMImageLayer",},
+  ],
+  "nineSlice": null,
+  "parent": {
+    "name": "Objects",
+    "path": "folders/Sprites/Objects.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "spr_gamepadbuttons",
+  "tags": [],
+  "resourceType": "GMSprite",
 }

@@ -1,120 +1,130 @@
-ini_open("saveData.ini")
-global.mastervolume = ini_read_real("Option", "mastervolume", 1)
-global.musicvolume = ini_read_real("Option", "musicvolume", 1)
-global.soundeffectsvolume = ini_read_real("Option", "soundeffectsvolume", 1)
-ini_close()
 var roomname = room_get_name(room)
-if (room != hub_room1)
+if (room != hub_room1 && room != hub_room2 && room != hub_room3 && room != cowboytask && room != Tutorialtrap && room != Titlescreen)
     fadeoff = audio_sound_get_track_position(global.music)
 else
     fadeoff = 0
+
 if (global.panic == 1 && obj_pause.pause == 0)
 {
-
     if (global.lapping == 0)
     {
-        if ((!audio_is_playing(mu_pizzatime)) && (!audio_is_playing(mu_noiseescape)) && (!audio_is_playing(mu_snickescape)) && (!audio_is_playing(mu_vigiescape)))
+        if ((!audio_is_playing(mu_pizzatime)) && (!audio_is_playing(mu_noiseescape)) && (!audio_is_playing(mu_snickescape)) && !audio_is_playing(mu_pizzelleescape) && (!audio_is_playing(mu_vigiescape)))
         {
             scr_soundstopall()
             if (obj_player1.character == "P")
             {
-                scr_sound(74)
-                pausedmusic = 74
+                scr_sound(mu_pizzatime)
+                pausedmusic = mu_pizzatime
             }
             else if (obj_player1.character == "N")
             {
-                scr_sound(97)
-                pausedmusic = 97
+                scr_sound(mu_noiseescape)
+                pausedmusic = mu_noiseescape
             }
             else if (obj_player1.character == "S")
             {
-                scr_sound(104)
-                pausedmusic = 104
+                scr_sound(mu_snickescape)
+                pausedmusic = mu_snickescape
             }
             else if (obj_player1.character == "V")
             {
-                scr_sound(123)
-                pausedmusic = 123
+                scr_sound(mu_vigiescape)
+                pausedmusic = mu_vigiescape
             }
+			else
+			{
+                scr_sound(mu_pizzelleescape)
+                pausedmusic = mu_pizzelleescape				
+			}
         }
     }
     else if (global.lapping == 1)
     {
-        if ((!audio_is_playing(mu_pizzatimeremix)) && (!audio_is_playing(mu_noiseescaperequiem)) && (!audio_is_playing(mu_snickescaperequiem)) && (!audio_is_playing(mu_vigiescaperequiem)) && (!audio_is_playing(mu_desertescape)) && (!audio_is_playing(mu_mansionescape)) && (!audio_is_playing(mu_factoryescape)) && (!audio_is_playing(mu_sewerescape)) && (!audio_is_playing(mu_freezerescape)))
+        if ((!audio_is_playing(mu_pizzatimeremix)) && (!audio_is_playing(mu_noiseescaperequiem)) && (!audio_is_playing(mu_snickescaperequiem)) && (!audio_is_playing(mu_vigiescaperequiem)) && (!audio_is_playing(mu_desertescape)) && (!audio_is_playing(mu_mansionescape)) && (!audio_is_playing(mu_factoryescape)) && (!audio_is_playing(mu_sewerescape)) && !audio_is_playing(mu_pizzelleescaperequiem) && (!audio_is_playing(mu_freezerescape)))
         {
             scr_soundstopall()
             if (string_letters(roomname) == "desert") && global.extraescapemusic = 1
             {
-                scr_sound(132)
-                pausedmusic = 132
+                scr_sound(mu_desertescape)
+                pausedmusic = mu_desertescape
             }
             else if (string_letters(roomname) == "mansion" || string_letters(roomname) == "medieval") && global.extraescapemusic = 1
             {
-                scr_sound(133)
-                pausedmusic = 133
+                scr_sound(mu_mansionescape)
+                pausedmusic = mu_mansionescape
             }
             else if (string_letters(roomname) == "factory") && global.extraescapemusic = 1
             {
-                scr_sound(134)
-                pausedmusic = 134
+                scr_sound(mu_factoryescape)
+                pausedmusic = mu_factoryescape
             }
             else if (string_letters(roomname) == "sewer") && global.extraescapemusic = 1
             {
-                scr_sound(135)
-                pausedmusic = 135
+                scr_sound(mu_sewerescape)
+                pausedmusic = mu_sewerescape
             }
             else if (string_letters(roomname) == "freezer") && global.extraescapemusic = 1
             {
-                scr_sound(136)
-                pausedmusic = 136
+                scr_sound(mu_freezerescape)
+                pausedmusic = mu_freezerescape
             }
             else if (obj_player1.character == "P")
             {
-                scr_sound(129)
-                pausedmusic = 129
+                scr_sound(mu_pizzatimeremix)
+                pausedmusic = mu_pizzatimeremix
             }
             else if (obj_player1.character == "N")
             {
-                scr_sound(121)
-                pausedmusic = 121
+                scr_sound(mu_noiseescaperequiem)
+                pausedmusic = mu_noiseescaperequiem
             }
             else if (obj_player1.character == "S")
             {
-                scr_sound(128)
-                pausedmusic = 128
+                scr_sound(mu_snickescaperequiem)
+                pausedmusic = mu_snickescaperequiem
             }
             else if (obj_player1.character == "V")
             {
-                scr_sound(130)
-                pausedmusic = 130
+                scr_sound(mu_vigiescaperequiem)
+                pausedmusic = mu_vigiescaperequiem
             }
+			else
+			{
+                scr_sound(mu_pizzelleescaperequiem)
+                pausedmusic = mu_pizzelleescaperequiem			
+			}
         }
     }
     else if (global.lapping == 2)
     {
-        if ((!audio_is_playing(mu_pizzatimeremix)) && (!audio_is_playing(mu_noiseescaperequiem)) && (!audio_is_playing(mu_snickescaperequiem)) && (!audio_is_playing(mu_vigiescaperequiem)))
+        if ((!audio_is_playing(mu_pizzatimeremix)) && !audio_is_playing(mu_pizzelleescaperequiem) && (!audio_is_playing(mu_noiseescaperequiem)) && (!audio_is_playing(mu_snickescaperequiem)) && (!audio_is_playing(mu_vigiescaperequiem)))
         {
             scr_soundstopall()
             if (obj_player1.character == "P")
             {
-                scr_sound(129)
-                pausedmusic = 129
+                scr_sound(mu_pizzatimeremix)
+                pausedmusic = mu_pizzatimeremix
             }
             else if (obj_player1.character == "N")
             {
-                scr_sound(121)
-                pausedmusic = 121
+                scr_sound(mu_noiseescaperequiem)
+                pausedmusic = mu_noiseescaperequiem
             }
             else if (obj_player1.character == "S")
             {
-                scr_sound(128)
-                pausedmusic = 128
+                scr_sound(mu_snickescaperequiem)
+                pausedmusic = mu_snickescaperequiem
             }
             else if (obj_player1.character == "V")
             {
-                scr_sound(130)
-                pausedmusic = 130
+                scr_sound(mu_vigiescaperequiem)
+                pausedmusic = mu_vigiescaperequiem
             }
+			else
+			{
+                scr_sound(mu_pizzelleescaperequiem)
+                pausedmusic = mu_pizzelleescaperequiem			
+			}
         }
     }
     else if (global.lapping >= 3)
@@ -122,13 +132,19 @@ if (global.panic == 1 && obj_pause.pause == 0)
         if (!audio_is_playing(mu_pizzamayhem))
         {
             scr_soundstopall()
-            scr_sound(131)
-            pausedmusic = 131
+            scr_sound(mu_pizzamayhem)
+            pausedmusic = mu_pizzamayhem
         }
     }
 }
-audio_sound_gain(global.music, (0.6 * global.musicvolume), 0)
-audio_sound_gain(global.music2, (0.6 * global.musicvolume), 0)	
+if (global.panic == 1 && obj_pause.pause == 0) && (global.minutes <= 0 && global.seconds <= 0 && global.timeattack = false)
+{
+	if (!audio_is_playing(mu_escaperumble))
+    {
+		global.escaperumblemusic = audio_play_sound(mu_escaperumble, 10, true)
+		audio_sound_gain(global.escaperumblemusic, (0.6 * global.musicvolume), 0)
+    }	
+}
 
 if (global.miniboss == 0 && audio_is_playing(mu_miniboss))
     audio_stop_sound(mu_miniboss)
@@ -144,15 +160,15 @@ else if ((!audio_is_playing(mu_snickchallengeend)) && global.snickchallenge == 1
     scr_sound(mu_snickchallengeend)
     pausedmusic = mu_snickchallengeend
 }
-/*
+
 if (room == strongcold_miniboss && global.miniboss == 1)
 {
     if (!audio_is_playing(mu_miniboss))
     {
         scr_soundstopall()
-        scr_sound(72)
-        scr_soundeffect(44)
-        pausedmusic = 72
+        scr_sound(mu_miniboss)
+        scr_soundeffect(sfx_scream5)
+        pausedmusic = mu_miniboss
     }
 }
 else if (room == strongcold_endscreen)
@@ -160,10 +176,10 @@ else if (room == strongcold_endscreen)
     if (!audio_is_playing(mu_entrance))
     {
         scr_soundstopall()
-        scr_sound(78)
-        pausedmusic = 78
+        scr_sound(mu_entrance)
+        pausedmusic = mu_entrance
     }
-}
+}/*
 if (room == mansion_miniboss)
 {
     if instance_exists(obj_pepperman)
@@ -186,8 +202,8 @@ if (room == mansion_miniboss)
     }
     if audio_is_playing(sfx_scream5)
         audio_stop_sound(mu_mansion)
-}
-//TODO: Make this Better
+}*/ 
+
 if instance_exists(obj_johnpillar)
 {
     if ((!audio_is_playing(mu_scary)) && obj_pause.pause == 0)
@@ -195,11 +211,16 @@ if instance_exists(obj_johnpillar)
         global.scarysound = audio_play_sound(mu_scary, 10, true)
         audio_sound_gain(global.scarysound, (0 * global.musicvolume), 0)
     }
-    if (audio_is_playing(mu_scary) && obj_pause.pause == 0)
+    if (audio_is_playing(global.scarysound) && obj_pause.pause == 0)
     {
         with (obj_johnpillar)
         {
             var player = instance_nearest(x, y, obj_player)
+			if global.coop = false
+			player = obj_player1
+			//I know this looks bad but this is the way I want it
+			//I don't want it to grow stronger only when you move closer
+			//It's more of when you are in its vicinity
             if point_in_rectangle(player.x, player.y, (x - 424), (y - 64), (x + 424), (y + 288))
             {
                 audio_sound_gain(global.music, (0 * global.musicvolume), 2000)
@@ -224,14 +245,15 @@ else if audio_is_playing(global.scarysound)
     if (audio_sound_get_gain(global.scarysound) == 0)
     {
         audio_stop_sound(global.scarysound)
-        scarysound = -4
+        global.scarysound = noone
     }
     audio_sound_gain(global.music, (0.6 * global.musicvolume), 2000)
 }
 else
-*/
-
-	
+{
+audio_sound_gain(global.music, (0.6 * global.musicvolume), 0)
+audio_sound_gain(global.music2, (0.6 * global.musicvolume), 0)
+}
 if audio_is_playing(mu_ruin) && audio_is_playing(mu_ruinbmix)
 {
 	if global.ruinmusic = 0 {

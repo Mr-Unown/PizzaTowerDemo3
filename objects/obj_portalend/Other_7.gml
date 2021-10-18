@@ -22,11 +22,11 @@ if (sprite_index == spr_pizzaportalend)
             obj_player2.portal = 1
         }
         other.visited = 1
-        scr_soundeffect(52)
+        scr_soundeffect(sfx_door)
         instance_create(x, y, obj_fadeout)
     }
-    image_index = 0
-    sprite_index = spr_pizzaportal
+    image_speed = 0
+    visible = false
     ds_list_clear(global.baddieroom)
 }
 

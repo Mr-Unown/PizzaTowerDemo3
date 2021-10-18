@@ -1,0 +1,1 @@
+targetRoom = sanctum_treasure

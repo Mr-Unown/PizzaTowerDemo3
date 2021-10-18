@@ -1,7 +1,7 @@
 if (ds_list_find_index(global.saveroom, id) == -1)
 {
-    var lay_id = layer_get_id("Tiles_1")
-    var map_id = layer_tilemap_get_id(lay_id)
+    var lay_id = layer_get_id(tiles)
+    var map_id = layer_tilemap_get_id_fixed(lay_id)
     var set_id = tilemap_get_tileset(map_id)
     var data = tilemap_get_at_pixel(map_id, x, y)
     var data2 = tilemap_get_at_pixel(map_id, (x + 33), y)
@@ -9,6 +9,14 @@ if (ds_list_find_index(global.saveroom, id) == -1)
     var data4 = tilemap_get_at_pixel(map_id, (x + 33), (y + 33))
     repeat (2)
         instance_create((x + 32), (y + 32), obj_metaldebris)
+	repeat (3)
+	with (instance_create((x + 32 + random_range(-32, 32)), (y + 32 + random_range(-32, 32)), obj_balloonpop))
+	{
+		image_speed = 0.35
+		sprite_index = spr_destroyablecloud
+		image_angle = choose(0,90,180,270)
+		vspeed = -3
+	}						
     with (instance_create((x + 32), (y + 32), obj_secretdebris))
     {
         tile_dataid = other.datas
@@ -38,7 +46,7 @@ if (ds_list_find_index(global.saveroom, id) == -1)
         shake_mag = 20
         shake_mag_acc = (40 / room_speed)
     }
-    scr_soundeffect(59)
+    scr_soundeffect(sfx_breakmetal)
     ds_list_add(global.saveroom, id)
     data = tile_set_empty(data)
     data2 = tile_set_empty(data2)

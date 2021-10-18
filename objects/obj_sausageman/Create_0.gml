@@ -39,6 +39,6 @@ hp = 5
 grounded = 1
 slapped = 0
 birdcreated = 0
-render_angle = 0
+//render_angle = 0
 
 

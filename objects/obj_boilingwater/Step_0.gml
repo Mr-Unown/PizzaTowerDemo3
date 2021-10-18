@@ -1,6 +1,6 @@
 with (instance_place(x, (y - 1), obj_player))
 {
-    if (state != 91 && sprite_index != spr_playerN_jetpackslide && state != "jetpack" && sprite_index != spr_mach3boost)
+    if (state != 91 && sprite_index != spr_playerN_jetpackslide && state != states.jetpack && sprite_index != spr_mach3boost)
     {
 		if character != "V"
 		{
@@ -9,12 +9,12 @@ with (instance_place(x, (y - 1), obj_player))
 			image_index = 0;
 			vsp = -25;
 			sprite_index = spr_fireass;
-			scr_soundeffect(44);
+			scr_soundeffect(sfx_scream5);
 		}
 		else
 			scr_hurtplayer(id);
     }
-	else if state = 91 || (grounded && state = "jetpack") || sprite_index = spr_playerN_jetpackslide
+	else if state = 91 || (grounded && state = states.jetpack) || sprite_index = spr_playerN_jetpackslide
 	{
 	    repeat (5)
         {

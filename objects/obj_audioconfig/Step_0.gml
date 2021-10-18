@@ -56,20 +56,20 @@ if (optionselected == 2)
 if ((key_up2 || keyboard_check_pressed(vk_up)) && optionselected > -1)
 {
     optionselected -= 1
-    scr_soundeffect(29)
+    scr_soundeffect(sfx_step)
     change = 0
 }
 if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 2)
 {
     optionselected += 1
-    scr_soundeffect(29)
+    scr_soundeffect(sfx_step)
     change = 0
 }
 if (optionselected == -1)
 {
     if (key_jump2 || keyboard_check_pressed(vk_return))
     {
-        scr_soundeffect(8)
+        scr_soundeffect(sfx_enemyprojectile)
         if instance_exists(obj_mainconfig)
             obj_mainconfig.visible = true
         instance_destroy()
@@ -81,6 +81,9 @@ if (optionselected == -1)
         audio_master_gain(global.mastervolume)
         audio_sound_gain(global.pausenicemusic, (0.6 * global.musicvolume), 0)
         audio_sound_gain(global.music, (0.6 * global.musicvolume), 0)
+		audio_sound_gain(global.music2, (0.6 * global.musicvolume), 0)
+		audio_sound_gain(global.scarysound, (0.6 * global.musicvolume), 0)
+		audio_sound_gain(global.escaperumblemusic, (0.6 * global.musicvolume), 0)
     }
 }
 if (optionselected == 0)
@@ -129,9 +132,10 @@ if (optionselected == 0)
     if (key_jump || keyboard_check_pressed(vk_return))
     {
         ini_open("saveData.ini")
-        global.mastervolume = ini_write_real("Option", "mastervolume", value)
+        ini_write_real("Option", "mastervolume", value)
         ini_close()
         audio_master_gain(value)
+		global.mastervolume = value
     }
 }
 if (optionselected == 1)
@@ -181,10 +185,12 @@ if (optionselected == 1)
     if (key_jump || keyboard_check_pressed(vk_return))
     {
         ini_open("saveData.ini")
-        global.musicvolume = ini_write_real("Option", "musicvolume", value)
+        ini_write_real("Option", "musicvolume", value)
         ini_close()
+		global.musicvolume = value
         audio_sound_gain(global.music, (0.6 * value), 0)
         audio_sound_gain(global.pausenicemusic, (0.6 * value), 0)
+		audio_sound_gain(global.scarysound, (0.6 * value), 0)
     }
 }
 if (optionselected == 2)
@@ -240,8 +246,9 @@ if (optionselected == 2)
     if (key_jump || keyboard_check_pressed(vk_return))
     {
         ini_open("saveData.ini")
-        global.soundeffectsvolume = ini_write_real("Option", "soundeffectsvolume", value)
+        ini_write_real("Option", "soundeffectsvolume", value)
         ini_close()
+		global.soundeffectsvolume = value
     }
 }
 

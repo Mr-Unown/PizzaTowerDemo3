@@ -1,36 +1,3 @@
-switch state
-{
-    case 94:
-        scr_enemy_idle()
-        break
-    case 96:
-        scr_enemy_charge()
-        break
-    case 98:
-        scr_enemy_turn()
-        break
-    case 102:
-        scr_enemy_walk()
-        break
-    case 104:
-        scr_enemy_land()
-        break
-    case 105:
-        scr_enemy_hit()
-        break
-    case 106:
-        scr_enemy_stun()
-        break
-    case 97:
-        scr_pizzagoblin_throw()
-        break
-    case 109:
-        scr_enemy_grabbed()
-        break
-    case 200:
-        scr_enemy_shake()
-        break
-}
 scr_commonenemy()
 if (state == 106 && stunned > 40 && birdcreated == 0)
 {
@@ -53,8 +20,10 @@ if (attack == 0 && state != 109 && state != 200 && state != 106)
     state = 94
     roaming = 0
 }
-if (state != 94)
+if (state != 94) {
     roaming = 1
+	movespeed = 4
+}
 if (x != obj_player.x)
 {
     if (obj_player.x > (x - 200) && obj_player.x < (x + 200) && obj_player.y == y)
@@ -67,8 +36,8 @@ if (x != obj_player.x)
             roaming = 1
             attack = 1
             vsp = -11
-            scr_soundeffect(8)
-            scr_soundeffect(0)
+            scr_soundeffect(sfx_enemyprojectile)
+            scr_soundeffect(sfx_jump)
             image_index = 0
             image_xscale = (-sign((x - obj_player.x)))
             state = 96

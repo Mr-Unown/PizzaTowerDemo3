@@ -1,5 +1,9 @@
 if (room == Titlescreen && obj_player.state == 8)
 {
+	with obj_player 
+	{
+		scr_characterspr()
+	}
     if (obj_player1.character == "P")
     {
         obj_player1.sprite_index = spr_player_machfreefall
@@ -43,5 +47,4 @@ if (room == Titlescreen && obj_player.state == 8)
         }
     }
 }
-
 

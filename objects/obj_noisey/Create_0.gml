@@ -1,3 +1,4 @@
+scr_enemycreate();
 grav = 0.5
 hsp = 0
 vsp = 0
@@ -22,7 +23,8 @@ idlespr = spr_noisey_walk
 stunfallspr = spr_noisey_stun
 walkspr = spr_noisey_walk
 grabbedspr = spr_noisey_stun
-scaredspr = spr_noisey_stun
+scaredspr = spr_noisey_scared
+turnspr = spr_noisey_turn
 flash = 0
 slapped = 0
 birdcreated = 0
@@ -32,9 +34,8 @@ important = 0
 heavy = 0
 depth = 0
 paletteselect = 0
-spr_palette = palette_cheeseslime
+spr_palette = spr_noisepalette
 grabbedby = 0
 dropcoin = 0
-scr_enemycreate()
 
 

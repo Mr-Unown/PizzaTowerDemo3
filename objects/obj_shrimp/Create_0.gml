@@ -1,3 +1,4 @@
+scr_enemycreate()
 shrimptype = 0
 cautious = 1
 runbuffer = 0
@@ -37,6 +38,7 @@ boundbox = 0
 attack = 0
 important = 0
 paletteselect = 0
+spr_palette = spr_shrimp_palette
 spr_dead = spr_shrimp_dead
 heavy = 0
 depth = 0
@@ -46,6 +48,6 @@ if shrimptype = 0
 	paletteselect = 0 
 else
 	paletteselect = 1
-scr_enemycreate()
+
 
 

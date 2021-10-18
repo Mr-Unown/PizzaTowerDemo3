@@ -1,36 +1,3 @@
-switch state
-{
-    case 94:
-        scr_enemy_idle()
-        break
-    case 96:
-        scr_enemy_charge()
-        break
-    case 98:
-        scr_enemy_turn()
-        break
-    case 102:
-        scr_enemy_walk()
-        break
-    case 104:
-        scr_enemy_land()
-        break
-    case 105:
-        scr_enemy_hit()
-        break
-    case 106:
-        scr_enemy_stun()
-        break
-    case 97:
-        scr_pizzagoblin_throw()
-        break
-    case 109:
-        scr_enemy_grabbed()
-        break
-    case 200:
-        scr_enemy_shake()
-        break
-}
 scr_commonenemy()
 if (state == 106 && stunned > 100 && birdcreated == 0)
 {
@@ -47,37 +14,23 @@ if (state != 109)
 if (state != 106)
     thrown = 0
 scr_scareenemy()
-if (bombreset > 0)
-    bombreset--
-if (x != obj_player1.x && state != 97 && obj_player.state != 2 && bombreset == 0 && grounded)
+
+    
+var player = (global.coop ? instance_nearest(x, y, obj_player) : obj_player1)	
+if (x != player.x && state != 97 && player.state != states.breakdance && player.state != 2 && bombreset == 0 && grounded)
 {
-    if (obj_player1.x > (x - 80) && obj_player1.x < (x + 80) && y <= (obj_player1.y + 100) && y >= (obj_player1.y - 100))
+    if (player.x > (x - 80) && player.x < (x + 80) && y <= (player.y + 100) && y >= (player.y - 100))
     {
         if (state == 102)
         {
             image_index = 0
             sprite_index = spr_pepgoblin_kick
-            image_xscale = (-sign((x - obj_player.x)))
+            image_xscale = (-sign((x - player.x)))
             state = 97
         }
     }
 }
-if instance_exists(obj_player2)
-{
-    if (x != obj_player2.x && state != 97 && bombreset == 0 && grounded)
-    {
-        if (obj_player2.x > (x - 100) && obj_player2.x < (x + 100) && y <= (obj_player2.y + 100) && y >= (obj_player2.y - 100))
-        {
-            if (state == 102 || state == 94)
-            {
-                image_index = 0
-                sprite_index = spr_pepgoblin_kick
-                image_xscale = (-sign((x - obj_player.x)))
-                state = 97
-            }
-        }
-    }
-}
+
 if (grounded && state == 97 && floor(image_index) == 3)
     vsp = -5
 if (boundbox == 0)

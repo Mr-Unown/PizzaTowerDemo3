@@ -1,11 +1,22 @@
-//Room Specific Light Levels
-if room = entrance_2
-targetdarkness = 0.95
+//Performance
+if can_draw = false
+	visible = false;
 else
-targetdarkness = 0.4
+	visible = true;
+switch room
+{
+	#region Special
+	case ancient_10:
+		can_draw = true;
+		var _dark = clamp(camera_get_view_y(view_camera[0]),864,2756)/2756
+		targetdarkness = clamp(_dark * 0.85,0.75,0.85)
+		break;		
+	case ancient_10_2:
+		can_draw = true;
+		var _dark = clamp(camera_get_view_y(view_camera[0]),864,1632)/1632
+		targetdarkness = clamp(_dark * 0.85,0.75,0.85)
+		break;		
+	#endregion
+}
 //Change Darkness
-if abs(darkness) < abs(targetdarkness)
-darkness += 0.005
-if abs(darkness) > abs(targetdarkness)
-darkness -= 0.005
-
+darkness = approach(darkness,targetdarkness,0.015)

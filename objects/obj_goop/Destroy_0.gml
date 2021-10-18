@@ -1,5 +1,2 @@
-repeat (6)
-{
-        with instance_create(x, y, obj_balloonpop)
-            sprite_index = spr_shotgunimpact
-}
+if (ds_list_find_index(global.saveroom, pooid) == -1)
+	ds_list_add(global.saveroom,pooid);

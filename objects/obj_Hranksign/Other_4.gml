@@ -1,5 +1,6 @@
 ini_open("playerData_"+global.savefile+".ini")
 timerank = ini_read_string("Time", string(levelsign), "none")
+deathmode = ini_read_string("Deathmode", string(levelsign), 0)
 ini_close()
 
 if (timerank == "none")
@@ -7,15 +8,21 @@ if (timerank == "none")
 else
     visible = true
 if (timerank == "s")
-    image_index = 0
-if (timerank == "a")
+{
+if deathmode != 0
+	image_index = 0
+else
     image_index = 1
-if (timerank == "b")
+
+}
+if (timerank == "a")
     image_index = 2
-if (timerank == "c")
+if (timerank == "b")
     image_index = 3
-if (timerank == "d")
+if (timerank == "c")
     image_index = 4
+if (timerank == "d")
+    image_index = 5
 
 
 

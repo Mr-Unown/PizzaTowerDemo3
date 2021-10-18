@@ -1,11 +1,20 @@
 scr_initinput2()
 scr_playercreate()
+//CustomPaletteChoosyFILE
+customsavedpalette = 1;
+oldcustomsavedpalette = 1;
+characters = "Noise"
+colorheight = 7;
+
+global.has_drawnpeter = false;
+selectedcharacter = 1;
 pogo = false
 pipedirection = "none"
 tauntcooleffect = noone
 parry_id = -4
+equippedhat = false;
+choosenhat = 0;
 parried_baddie = 0
-tauntparry_max = 10
 parry_max = 8
 superspringjump = 0
 bufferslap = 8
@@ -55,7 +64,7 @@ input_buffer_secondjump = 8
 input_buffer_highjump = 8
 player_x = x
 player_y = y
-targetRoom = 0
+targetRoom = Realtitlescreen
 targetDoor = "A"
 flash = 0
 global.key_inv = 0
@@ -107,7 +116,7 @@ suplexmove = 0
 suplexhavetomash = 0
 anger = 0
 angry = 0
-baddiegrabbedID = 0
+baddiegrabbedID = noone
 spr_palette = 372
 character = "N"
 scr_characterspr()
@@ -121,12 +130,13 @@ treasure_room = 0
 wallspeed = 0
 tauntstoredstate = 0
 tauntstoredmovespeed = 6
-tauntstoredsprite = 538
+tauntstoredsprite = spr_null
+tauntstoredimage = 0
 taunttimer = 20
 global.golfhit = 0
 backtohubstartx = x
 backtohubstarty = y
-backtohubroom = 0
+backtohubroom = hub_room1
 global.style = 0
 slapcharge = 0
 slaphand = 1
@@ -171,6 +181,6 @@ superjumpholdsnd = -1
 superjumpprepsnd = -1
 suplexdashsnd = -1
 obj_player2.hp = 5
-c = 0
+blackblend = 0
 
 

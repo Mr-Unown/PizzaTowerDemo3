@@ -28,9 +28,9 @@ if place_meeting((x + hsp), y, obj_destructibles)
     with (instance_place((x + hsp), y, obj_destructibles))
         instance_destroy()
 }
-if ((!place_meeting((x + hsp), y, obj_destructibles)) && place_meeting((x + hsp), y, obj_solid) && activated == 1 && (!place_meeting((x + hsp), y, obj_slope)) && hitwall == 0 && scr_solid(x, (y + 1)))
+if ((!place_meeting((x + hsp), y, obj_destructibles)) && place_meeting((x + hsp), y, obj_solid) && activated == 1 && (!scr_slope_ext(x + (hsp), y)) && hitwall == 0 && scr_solid(x, (y + 1)))
 {
-    with (instance_create(x, y, obj_sausageman_dead))
+    with (instance_create(x, y,  obj_baddie_dead))
         sprite_index = spr_noiseboulder
     instance_destroy()
 }

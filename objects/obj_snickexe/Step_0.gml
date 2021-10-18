@@ -1,10 +1,14 @@
+if global.freezeframe = false
+{
 if (obj_player1.spotlight == 1)
     playerid = obj_player1
 else
     playerid = obj_player2
 var anyplayer = instance_nearest(x, y, obj_player)
+
 x = median((x - maxspeed), playerid.x, (x + maxspeed))
 y = median((y - maxspeed), playerid.y, (y + maxspeed))
+
 if (x != playerid.x)
     image_xscale = (-sign((x - playerid.x)))
 if (global.snickchallenge == 0)
@@ -28,10 +32,15 @@ if (place_meeting(x, y, anyplayer) && (anyplayer.instakillmove == 1 || anyplayer
     x = (room_width / 2)
     y = -100
 }
+
 if (global.snickchallenge == 1 && global.minutes < 2 && warning == 0)
 {
-    instance_create(x, y, obj_panicchanger)
+    with instance_create(x, y, obj_panicchanger)
+	{
+		depth = -99999
+	}
     warning = 1
 }
 
 
+}

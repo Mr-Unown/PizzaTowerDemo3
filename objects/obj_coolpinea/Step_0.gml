@@ -1,36 +1,3 @@
-switch state
-{
-    case 94:
-        scr_enemy_idle()
-        break
-    case 96:
-        scr_enemy_charge()
-        break
-    case 98:
-        scr_enemy_turn()
-        break
-    case 102:
-        scr_enemy_walk()
-        break
-    case 104:
-        scr_enemy_land()
-        break
-    case 105:
-        scr_enemy_hit()
-        break
-    case 106:
-        scr_enemy_stun()
-        break
-    case 97:
-        scr_pizzagoblin_throw()
-        break
-    case 109:
-        scr_enemy_grabbed()
-        break
-    case 200:
-        scr_enemy_shake()
-        break
-}
 scr_commonenemy()
 scr_scareenemy()
 if (state == 106 && stunned > 40 && birdcreated == 0)
@@ -50,21 +17,53 @@ if (hitboxcreate == 0 && (state == 94 || state == 102))
     {
         ID = other.id
         sprite_index = spr_coolpinea_taunt
+		mask_index = spr_player_mask
     }
 }
 if (state != 109)
     depth = 0
 if (state != 106)
     thrown = 0
-if (state == 102 && (!alarm[5]))
-    alarm[5] = 100
+tauntreset = approach(tauntreset,0, 1 + (global.heatmeter*0.25)  )
+//taunt
+if (state != 94 && state == 102) && tauntreset <= 0
+{
+    if point_in_rectangle(x, y, camera_get_view_x(view_camera[0]), camera_get_view_y(view_camera[0]), (camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0])), (camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0])))
+    {
+        if audio_is_playing(sfx_taunt)
+            audio_stop_sound(sfx_taunt)
+        scr_soundeffect(sfx_taunt)
+    }
+    image_index = random_range(0, sprite_get_number(spr_coolpinea_taunt))
+    sprite_index = spr_coolpinea_taunt
+    if (!instance_exists(taunteffect))
+    {
+        with (instance_create(x, y, obj_taunteffect))
+        {
+            depth = 0.5
+            other.taunteffect = id
+            baddie = 1
+            baddieid = other.id
+        }
+    }
+	taunttimer = 20
+    state = 94
+    tauntreset = 100
+    vsp = 0
+    if (parrying == 0)
+        hsp = 0
+}
+
+
+
+
 if (parrying == 1)
 {
     var targetxscaleposition = (x - hurtedplayeridx)
     image_xscale = (-sign(targetxscaleposition))
     sprite_index = spr_coolpinea_parry
     parrymovespeed = 8
-    scr_soundeffect(126)
+    scr_soundeffect(sfx_spin)
     if ((!instance_exists(taunteffect)) && instance_exists(id))
     {
         with (instance_create(x, y, obj_taunteffect))

@@ -1,0 +1,1 @@
+targetRoom = resto_7

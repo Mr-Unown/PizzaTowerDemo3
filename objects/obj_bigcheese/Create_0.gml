@@ -1,3 +1,4 @@
+scr_enemycreate();
 grav = 0.5
 hsp = 0
 vsp = 0
@@ -36,6 +37,6 @@ dropcoin = 0
 bandaged = 0
 time = 150
 bandeging = 0
-scr_enemycreate()
+
 
 

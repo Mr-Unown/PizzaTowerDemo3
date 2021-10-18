@@ -1,3 +1,9 @@
+//Stored Alarm
+frozen = false;
+frozenalarm[0] = -1;
+frozenalarm[1] = -1;
+frozenalarm[2] = -1;
+
 playerid = obj_player1
 image_speed = 0
 randomize()
@@ -8,4 +14,4 @@ gonealpha = 1
 vanish = 0
 spr_palette = playerid.spr_palette
 paletteselect = playerid.paletteselect
-
+custompalette = playerid.custompalette

@@ -138,7 +138,7 @@ if (grabbed == 1)
         y = playerid.y
         if (playerid.sprite_index == spr_shoulder)
             vsp = 15
-        if (playerid.sprite_index == spr_diagonaldownthrow)
+        /*if (playerid.sprite_index == spr_diagonaldownthrow)
         {
             hsp = ((-image_xscale) * 10)
             vsp = 15
@@ -147,7 +147,7 @@ if (grabbed == 1)
         {
             hsp = ((-image_xscale) * 10)
             vsp = -15
-        }
+        }*/
         instance_create(x, y, obj_slapstar)
         instance_create(x, y, obj_baddiegibs)
         with (obj_camera)
@@ -253,12 +253,6 @@ if (grabbed == 1)
         }
         if (playerid.sprite_index == playerid.spr_piledriverland && floor(playerid.image_index) == (playerid.image_number - 1))
         {
-            with (playerid)
-            {
-                state = 58
-                vsp = -8
-                sprite_index = spr_machfreefall
-            }
             flash = 1
             hp -= 5
             instance_create(x, y, obj_slapstar)

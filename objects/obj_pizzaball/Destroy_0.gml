@@ -1,11 +1,11 @@
 if (ds_list_find_index(global.baddieroom, id) == -1)
 {
     ds_list_add(global.baddieroom, id)
-    scr_soundeffect(11)
+    scr_soundeffect(sfx_killenemy)
     obj_tv.image_index = random_range(0, 4)
-    scr_sleep(50)
     with (obj_camera)
     {
+		
         shake_mag = 3
         shake_mag_acc = (3 / room_speed)
         golf = 0

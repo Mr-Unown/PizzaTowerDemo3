@@ -1,8 +1,25 @@
+global.toppinlist = ds_list_create();
+global.follower = ds_list_create();
+
 scr_initinput()
 scr_playercreate()
+
+//CustomPaletteChoosyFILE
+customsavedpalette = 1;
+oldcustomsavedpalette = 1;
+characters = "Peppino"
+colorheight = 8;
+
+
+
+global.has_drawnpeter = false;
+global.oldmeter = 0;
+selectedcharacter = 0;
 pogo = false
 pipedirection = "none"
-tauntparry_max = 10
+global.savefile = "a"
+equippedhat = false;
+choosenhat = 0;
 parry_id = -4
 parried_baddie = 0
 parry_max = 8
@@ -56,7 +73,7 @@ input_buffer_secondjump = 8
 input_buffer_highjump = 8
 player_x = x
 player_y = y
-targetRoom = 0
+targetRoom = Realtitlescreen
 targetDoor = "A"
 flash = 0
 global.key_inv = 0
@@ -108,7 +125,7 @@ suplexmove = 0
 suplexhavetomash = 0
 anger = 0
 angry = 0
-baddiegrabbedID = 0
+baddiegrabbedID = noone
 spr_palette = 372
 character = "P"
 scr_characterspr()
@@ -122,7 +139,8 @@ treasure_room = 0
 wallspeed = 0
 tauntstoredstate = 0
 tauntstoredmovespeed = 6
-tauntstoredsprite = 538
+tauntstoredsprite = spr_null
+tauntstoredimage = 0;
 taunttimer = 20
 global.golfhit = 0
 ini_open("saveData.ini")
@@ -141,7 +159,7 @@ if (global.option_resolution == 2)
     window_set_size(1920, 1080)
 backtohubstartx = x
 backtohubstarty = y
-backtohubroom = 0
+backtohubroom = hub_room1
 global.style = 0
 slapcharge = 0
 slaphand = 1
@@ -189,6 +207,4 @@ superjumpholdsnd = -1
 superjumpprepsnd = -1
 suplexdashsnd = -1
 obj_player1.hp = 5
-c = 0
-
-
+blackblend = 0

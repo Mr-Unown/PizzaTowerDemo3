@@ -1,13 +1,13 @@
 if (y == ystart && obj_player.x > (x - 50) && obj_player.x < (x + 50) && obj_player.y > y && obj_player.y < (y + 200))
 {
-    scr_soundeffect(8)
+    scr_soundeffect(sfx_enemyprojectile)
     grav = 0.35
     vsp = 10
     sprite_index = spr_boxcrusher_fall
 }
 if (grounded && sprite_index == spr_boxcrusher_fall)
 {
-    scr_soundeffect(15)
+    scr_soundeffect(sfx_groundpound)
     with (obj_camera)
     {
         shake_mag = 10

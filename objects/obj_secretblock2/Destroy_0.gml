@@ -5,17 +5,24 @@ if (ds_list_find_index(global.saveroom, id) == -1)
         audio_stop_sound(sfx_breakblock1)
         audio_stop_sound(sfx_breakblock2)
     }
-    scr_soundeffect(3, 4)
+    scr_soundeffect(sfx_breakblock1, sfx_breakblock2)
     ds_list_add(global.saveroom, id)
-    var lay_id = layer_get_id("Tiles_1")
-    var map_id = layer_tilemap_get_id(lay_id)
+    var lay_id = layer_get_id(tiles)
+    var map_id = layer_tilemap_get_id_fixed(lay_id)
     var data = tilemap_get_at_pixel(map_id, x, y)
     data = tile_set_empty(data)
     tilemap_set_at_pixel(map_id, data, x, y)
+	with (instance_create((x + 16 + random_range(-16, 16)), (y + 16 + random_range(-16, 16)), obj_balloonpop))
+	{
+		image_speed = 0.35
+		sprite_index = spr_destroyablecloud
+		image_angle = choose(0,90,180,270)
+		vspeed = -3
+	}		
 	instance_create(x, y, obj_collect)
     repeat (8)
     {
-        with (instance_create((x + 16), y, obj_secretdebris))
+        with (instance_create((x + 16), y + 16, obj_secretdebris))
         {
             sprite_index = spr_secretdebris
             tile_dataid = other.datas

@@ -1,0 +1,2 @@
+_message_array[0] = "Did you know? Each and Every single Boiling Sauce that you see here and anywhere in the local area was so generously provided by the Pizzamart Company. I only knew about this now, but our sponsers really wanted to let you viewers know."
+_message_array[1] = "On an unrelated note, with each purchase of Pizzamart Brand Pizzashield half of the funds gathered will be placed into the Boiling sauce Charity Drive."

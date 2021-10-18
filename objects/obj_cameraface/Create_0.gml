@@ -1,10 +1,8 @@
 n = 0
+depth = -11
 image_speed = 0.35
 angle = 0
 frame = 0
-global.pizza = 0
-global.pizzameter = 0
-global.pillarhunger = 4000
 basement = 0
 zoom = 0
 chargecamera = 0

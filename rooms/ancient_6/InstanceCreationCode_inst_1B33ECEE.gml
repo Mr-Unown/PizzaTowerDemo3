@@ -1,1 +1,1 @@
- targetRoom = ancient_secret4 
+targetRoom = ancient_secret4 

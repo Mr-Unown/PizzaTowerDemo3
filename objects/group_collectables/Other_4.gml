@@ -1,15 +1,16 @@
-with instance_place(x,y, obj_collectablebox) {
+with instance_place(x,y, obj_collectablebox) 
+{
 	if ds_list_find_index(global.saveroom, id) == -1 && activated = false
 	{
 		other.collectvanish = true
 		other.collectboxid = id
 		other.x = -200	
-		other.y = -200		
+		other.y = -200	
+		in_the_void = true;
 	}
 }
 
-if (global.timeattack == 1)
-    instance_destroy()
+
 if (ds_list_find_index(global.saveroom, id) != -1)
     instance_destroy()
 if (global.snickchallenge == 1)

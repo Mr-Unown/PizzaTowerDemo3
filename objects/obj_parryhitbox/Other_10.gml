@@ -1,5 +1,6 @@
 with (playerid)
 {
+	scr_soundeffect(sfx_parry)
     state = 114
     sprite_index = choose(spr_parry1, spr_parry2, spr_parry3)
     image_index = 0
@@ -9,9 +10,7 @@ with (playerid)
     parried_baddie = 8
     flash = 1
     movespeed = 8
-    with (obj_camera)
-        zoom = 1
-	obj_camera.alarm[3] = 20		
+	//scr_sleep();	
 }
 alarm[0] = 3
 collided = 1
