@@ -34,6 +34,9 @@ var back_id14 = layer_background_get_id_fixed(lay_id14)
 var lay_id15 = layer_get_id("Backgrounds_H2")
 var back_id15 = layer_background_get_id_fixed(lay_id15)
 
+var lay_id16 = layer_get_id("Backgrounds_long2")
+var back_id16 = layer_background_get_id_fixed(lay_id16)
+
 if (room != hub_room1 && room != hub_room3  && room != hub_room2 && room != cowboytask && obj_pause.pause == 0)
     global.scrolloffset += 1
 	
@@ -64,6 +67,7 @@ layer_background_speed(back_id11, (back11 /_speedmodifier))
 layer_background_speed(back_id12, (back12 /_speedmodifier))
 layer_background_speed(back_id14, (back14 /_speedmodifier))
 layer_background_speed(back_id15, (back15 /_speedmodifier))	
+layer_background_speed(back_id16, (back16 /_speedmodifier))	
 #endregion
 
 var foregroundoffsety = (room_height - sprite_get_height(layer_background_get_sprite(back_id13)))
@@ -76,7 +80,9 @@ layer_y("Backgrounds_1", (_centeredcam_y * 0.25))
 layer_x("Backgrounds_2", (_centeredcam_x * 0.15))
 layer_y("Backgrounds_2", (_centeredcam_y * 0.15))
 layer_x("Backgrounds_long", (_centeredcam_x * 0.15))
-layer_y("Backgrounds_long",clamp(((_centeredcam_y * 0.15) + longy),longy - 192,longy + 32))
+layer_y("Backgrounds_long",clamp( ( (_centeredcam_y * 0.15) + longy),room_height - sprite_get_height(layer_background_get_sprite(back_id12)), longy + 32   ) )
+layer_x("Backgrounds_long2", (_centeredcam_x * 0.25))
+layer_y("Backgrounds_long2",clamp(((_centeredcam_y * 0.25) + longy2),room_height - sprite_get_height(layer_background_get_sprite(back_id16)),longy2 + 32))
 layer_x("Backgrounds_3", (_centeredcam_x * 0.05))
 layer_y("Backgrounds_3", (_centeredcam_y * 0.05))
 layer_x("Backgrounds_4", (_centeredcam_x * 0.0005))

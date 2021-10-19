@@ -23,6 +23,7 @@ function scr_panicbg_start() {
 		var bg12 = layer_get_id("Backgrounds_long")	
 	    var bg13 = layer_get_id("Backgrounds_H1")
 	    var bg14 = layer_get_id("Backgrounds_H2")	
+		var bg15 = layer_get_id("Backgrounds_long2")	
 	    layer_x(bg1, ((layer_get_x(bg1) - _cam_x) + 64))
 	    layer_y(bg1, ((layer_get_y(bg1) - _cam_y) + 64))
 	    layer_x(bg2, ((layer_get_x(bg2) - _cam_x) + 64))
@@ -52,6 +53,9 @@ function scr_panicbg_start() {
 	    layer_y(bg13, ((layer_get_y(bg13) - _cam_y) + 64))
 	    layer_x(bg14, ((layer_get_x(bg14) - _cam_x) + 64))
 	    layer_y(bg14, ((layer_get_y(bg14) - _cam_y) + 64))	
+		
+	    layer_x(bg15, ((layer_get_x(bg15) - _cam_x) + 64))
+	    layer_y(bg15, ((layer_get_y(bg15) - _cam_y) + 64))			
 	}
 
 

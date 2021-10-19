@@ -13,6 +13,8 @@ function scr_panicbg_init() {
 	    layers[layernum++] = "Backgrounds_H2"	
 	if layer_exists("Backgrounds_Ground2")
 	    layers[layernum++] = "Backgrounds_Ground2"
+	if layer_exists("Backgrounds_long2")
+	    layers[layernum++] = "Backgrounds_long2"			
 	if layer_exists("Backgrounds_sky")
 	    layers[layernum++] = "Backgrounds_sky"
 	if layer_exists("Backgrounds_H1")
