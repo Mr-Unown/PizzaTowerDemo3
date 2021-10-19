@@ -384,7 +384,7 @@ else if global.newhud = true && oldcharacter == player.character && (sprite_inde
 	{
 		newtvspritestore = channel
 		drawstatic = true
-		drawstatictimer = 20
+		drawstatictimer = 15
 	}
 }
 else if global.newhud = true && ((oldcharacter != player.character) || (oldplayer != player))
