@@ -31,7 +31,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Tile Collisions",
-    "path": "folders/Objects/Level Structure/Level Collision/Tile Collisions.yy",
+    "path": "folders/Objects/Level Structure/Level Structure/Tile Collisions.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_slope_tile_checker",

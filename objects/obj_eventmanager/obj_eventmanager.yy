@@ -1,12 +1,9 @@
 {
-  "spriteId": {
-    "name": "spr_mask_solidtile",
-    "path": "sprites/spr_mask_solidtile/spr_mask_solidtile.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": false,
   "spriteMaskId": null,
-  "persistent": false,
+  "persistent": true,
   "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
@@ -20,17 +17,15 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Tile Collisions",
-    "path": "folders/Objects/Level Structure/Level Structure/Tile Collisions.yy",
+    "name": "Core",
+    "path": "folders/Objects/Core.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_precise_tile_checker",
+  "name": "obj_eventmanager",
   "tags": [],
   "resourceType": "GMObject",
 }

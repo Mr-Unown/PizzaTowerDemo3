@@ -32,7 +32,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Water",
-    "path": "folders/Objects/Level Structure/Level Collision/Water.yy",
+    "path": "folders/Objects/Level Structure/Level Structure/Water.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_waterdraft",
