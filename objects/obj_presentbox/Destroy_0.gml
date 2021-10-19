@@ -2,14 +2,14 @@ if (ds_list_find_index(global.saveroom, id) == -1)
 {
 	with obj_tv
 	{
-	image_speed = 0.35
-	sprite_index = spr_tv_static	
-	tvsprite = spr_tvoff
-	newtvsprite = spr_tv_static
-	alarm[0] = -1
-	imageindexstore = 0
-	bootingup = false
-	idle = 0	
+		image_speed = 0.35
+		sprite_index = spr_tv_static	
+		tvsprite = spr_tvoff
+		newtvsprite = spr_tv_static
+		alarm[0] = -1
+		imageindexstore = 0
+		bootingup = false
+		idle = 0	
 	}
     instance_create(x, y, obj_safeexplosion)
     global.miniboss = 0

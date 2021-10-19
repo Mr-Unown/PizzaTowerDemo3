@@ -125,8 +125,8 @@
   "iosCocoaPodDependencies": "",
   "tvosCocoaPodDependencies": "",
   "parent": {
-    "name": "Extensions",
-    "path": "folders/Extensions.yy",
+    "name": "Dissonance",
+    "path": "folders/Extensions/Dissonance.yy",
   },
   "resourceVersion": "1.2",
   "name": "extRousrDissonance",

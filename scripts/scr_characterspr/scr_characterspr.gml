@@ -4,6 +4,15 @@ function scr_characterspr() {
 	#region Peppino
 	    {
 		selectedcharacter = 0;
+		#region TV Sprites
+		spr_playertv_bomb = spr_tv_bombpep;
+		spr_playertv_fireass = spr_tv_fireass;
+		spr_playertv_knight = spr_tv_knight;
+		spr_playertv_tumble = spr_tv_tumble;
+		spr_playertv_normal = spr_tv_idle;
+		spr_playertv_normalidle1 = spr_tv_idleanim1;
+		spr_playertv_normalidle2 = spr_tv_idleanim2;
+		#endregion
 		spr_idle = spr_player_idle
 		spr_move = spr_player_move
 		spr_crawl = spr_player_crawl
@@ -222,6 +231,15 @@ function scr_characterspr() {
 			selectedcharacter = 1;
 		else
 			selectedcharacter = 2;
+		#region TV Sprites
+		spr_playertv_bomb = spr_tv_bombpepN;
+		spr_playertv_fireass = spr_tv_fireassN;
+		spr_playertv_knight = spr_tv_knightN;
+		spr_playertv_tumble = spr_tv_tumbleN;
+		spr_playertv_normal = spr_tv_idleN;
+		spr_playertv_normalidle1 = spr_tv_idleanim1N;
+		spr_playertv_normalidle2 = spr_tv_idleanim2N;
+		#endregion			
 	    spr_idle = spr_playerN_idle
 	    spr_move = spr_playerN_move
 	    spr_crawl = spr_playerN_crawl
@@ -449,6 +467,15 @@ function scr_characterspr() {
 	#region Snick
 		{
 		selectedcharacter = 3;
+		#region TV Sprites
+		spr_playertv_bomb = spr_tv_bombpep;
+		spr_playertv_fireass = spr_tv_fireass;
+		spr_playertv_knight = spr_tv_knight;
+		spr_playertv_tumble = spr_tv_tumble;
+		spr_playertv_normal = spr_tv_idle;
+		spr_playertv_normalidle1 = spr_tv_idleanim1;
+		spr_playertv_normalidle2 = spr_tv_idleanim2;
+		#endregion		
 		spr_idle = spr_snick_idle
 		spr_move = spr_snick_walk
 		spr_crawl =  spr_snick_idle
@@ -634,6 +661,15 @@ function scr_characterspr() {
 	#region Vigilante
 		{
 		selectedcharacter = 4;
+		#region TV Sprites
+		spr_playertv_bomb = spr_tv_bombpep;
+		spr_playertv_fireass = spr_tv_fireass;
+		spr_playertv_knight = spr_tv_knight;
+		spr_playertv_tumble = spr_tv_tumble;
+		spr_playertv_normal = spr_tv_idle;
+		spr_playertv_normalidle1 = spr_tv_idleanim1;
+		spr_playertv_normalidle2 = spr_tv_idleanim2;
+		#endregion		
 	    spr_idle = spr_playerV_idle
 	    spr_move = spr_playerV_move
 	    spr_crawl = spr_playerV_crouchmove
@@ -848,6 +884,15 @@ function scr_characterspr() {
 	#region Pepperman
 		{
 		selectedcharacter = 7;		
+		#region TV Sprites
+		spr_playertv_bomb = spr_tv_bombpep;
+		spr_playertv_fireass = spr_tv_fireass;
+		spr_playertv_knight = spr_tv_knight;
+		spr_playertv_tumble = spr_tv_tumble;
+		spr_playertv_normal = spr_tv_idle;
+		spr_playertv_normalidle1 = spr_tv_idleanim1;
+		spr_playertv_normalidle2 = spr_tv_idleanim2;
+		#endregion		
 	    spr_idle = spr_playerP_idle
 	    spr_move = spr_playerP_move
 	    spr_crawl = spr_playerN_crawl
@@ -1062,7 +1107,16 @@ function scr_characterspr() {
 		case "D": //The Named One
 	#region Dougie
 		{
-		selectedcharacter = 6;		
+		selectedcharacter = 6;	
+		#region TV Sprites
+		spr_playertv_bomb = spr_tv_bombpep;
+		spr_playertv_fireass = spr_tv_fireass;
+		spr_playertv_knight = spr_tv_knight;
+		spr_playertv_tumble = spr_tv_tumble;
+		spr_playertv_normal = spr_tv_idle;
+		spr_playertv_normalidle1 = spr_tv_idleanim1;
+		spr_playertv_normalidle2 = spr_tv_idleanim2;
+		#endregion		
 	    spr_idle = spr_pizzard_scared
 	    spr_move = spr_pizzard_walk
 	    spr_crawl = spr_playerN_crawl
@@ -1279,6 +1333,15 @@ function scr_characterspr() {
 	#region Pizzelle
 	    {
 		selectedcharacter = 5;
+		#region TV Sprites
+		spr_playertv_bomb = spr_tv_bombpep;
+		spr_playertv_fireass = spr_tv_fireass;
+		spr_playertv_knight = spr_tv_knight;
+		spr_playertv_tumble = spr_tv_tumble;
+		spr_playertv_normal = spr_tv_idle;
+		spr_playertv_normalidle1 = spr_tv_idleanim1;
+		spr_playertv_normalidle2 = spr_tv_idleanim2;
+		#endregion		
 		spr_idle = spr_playerPZ_idle
 		spr_move = spr_playerPZ_move
 		spr_crawl = spr_playerPZ_crawl

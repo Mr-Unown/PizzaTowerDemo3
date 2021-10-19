@@ -333,92 +333,59 @@ else if newtvsprite = spr_tv_open && bootingup = true
 }
 else if global.newhud = true && oldcharacter == player.character && (sprite_index != spr_tv_open && newtvsprite != spr_tv_open)
 {
+	var channel = 0;
 	image_speed = 0.35
 	#region NEW TV
-	switch(player.character)
+	switch(_state)
 	{
-		case "P":
-		switch(_state)
-		{
-			case states.bombpep:
-			case states.newbomb:
-			newtvsprite = spr_tv_bombpep;
-			break;			
-			case states.fireass:
-			newtvsprite = spr_tv_fireass;
-			break;			
-			case states.knightpep:
-			case states.knightpepattack:
-			case states.knightpepslopes:
-			newtvsprite = spr_tv_knight;
-			break;		
-			case states.tumble:
-			newtvsprite = spr_tv_tumble;
-			break;
-			default:
-			#region Normal
-            if (idle < 400)
-                idle++
-            if (idle >= 300 && floor(image_index) >= (image_number - 1)) && (newtvsprite = spr_tv_idleanim1 || newtvsprite = spr_tv_idleanim2)
-            {
-                idle = 0
-                image_index = 0
-				newtvsprite = spr_tv_idle
-            }
-            if (idle >= 300 && newtvsprite != spr_tv_idleanim1 && newtvsprite != spr_tv_idleanim2)
-            {
-                newtvsprite = choose(spr_tv_idleanim1, spr_tv_idleanim2)
-                image_index = 0
-            }
-			if idle < 300
-				newtvsprite = spr_tv_idle
-			#endregion
-			break;
-		}
+		case states.bombpep:
+		case states.newbomb:
+		newtvsprite = player.spr_playertv_bomb;
+		channel = 4;
+		break;			
+		case states.fireass:
+		newtvsprite = player.spr_playertv_fireass;
+		channel = 3;
+		break;			
+		case states.knightpep:
+		case states.knightpepattack:
+		case states.knightpepslopes:
+		newtvsprite = player.spr_playertv_knight;
+		channel = 2;
+		break;		
+		case states.tumble:
+		newtvsprite = player.spr_playertv_tumble;
+		channel = 1;
 		break;
-		
 		default:
-		switch(_state)
-		{
-			case states.bombpep:
-			case states.newbomb:
-			newtvsprite = spr_tv_bombpepN;
-			break;			
-			case states.fireass:
-			newtvsprite = spr_tv_fireassN;
-			break;			
-			case states.knightpep:
-			case states.knightpepattack:
-			case states.knightpepslopes:
-			newtvsprite = spr_tv_knightN;
-			break;		
-			case states.tumble:
-			newtvsprite = spr_tv_tumbleN;
-			break;
-			default:
-			#region Normal
+		#region Normal
             if (idle < 400)
                 idle++
-            if (idle >= 300 && floor(image_index) >= (image_number - 1)) && (newtvsprite = spr_tv_idleanim1N || newtvsprite = spr_tv_idleanim2N)
+            if (idle >= 300 && floor(image_index) >= (image_number - 1)) && (newtvsprite = player.spr_playertv_normalidle1 || newtvsprite = player.spr_playertv_normalidle2)
             {
                 idle = 0
                 image_index = 0
-				newtvsprite = spr_tv_idleN
+				newtvsprite = player.spr_playertv_normal
             }
-            if (idle >= 300 && newtvsprite != spr_tv_idleanim1N && newtvsprite != spr_tv_idleanim2N)
+            if (idle >= 300 && newtvsprite != player.spr_playertv_normalidle1 && newtvsprite != player.spr_playertv_normalidle2)
             {
-                newtvsprite = choose(spr_tv_idleanim1N, spr_tv_idleanim2N)
+                newtvsprite = choose(player.spr_playertv_normalidle1, player.spr_playertv_normalidle2)
                 image_index = 0
             }
 			if idle < 300
-				newtvsprite = spr_tv_idleN
+				newtvsprite = player.spr_playertv_normal
+			channel = 0;
 			#endregion
-			break;
-		}
 		break;
-
 	}
 	#endregion	
+	
+	if newtvspritestore != channel && global.freezeframe = false
+	{
+		newtvspritestore = channel
+		drawstatic = true
+		drawstatictimer = 20
+	}
 }
 else if global.newhud = true && ((oldcharacter != player.character) || (oldplayer != player))
 {
@@ -497,15 +464,7 @@ if ds_queue_size(global.newhudmessage) > 0 && showingnewtext = false && newtvspr
 if textbubblesprites = spr_tv_bubbleopen && floor(textbubbleframes) >= sprite_get_number(spr_tv_bubbleopen) - 1
 	textbubblesprites = spr_tv_bubble
 if textbubblesprites = spr_tv_bubble
-{
 	text_x += -3.5
-	/* I was thinking why there was a disconnect between the draw and this CONT. in Draw GUI
-	if floor(text_x) <= -(floor(string_width(string_upper(new_message))) - 775)
-	{
-		textbubblesprites = spr_tv_bubbleclose;
-		textbubbleframes = 0;
-	}*/
-}
 if textbubblesprites = spr_tv_bubbleclose && floor(textbubbleframes) >= sprite_get_number(spr_tv_bubbleclose) - 1
 {
 	new_message = ""
@@ -514,6 +473,14 @@ if textbubblesprites = spr_tv_bubbleclose && floor(textbubbleframes) >= sprite_g
 	textbubbleframes = 0;
 	text_x = 300;	
 }
-
-
+//Static
+if global.freezeframe = false
+{
+	if drawstatic = true && drawstatictimer > 0
+		drawstaticalpha = 1
+	else
+		drawstaticalpha = approach(drawstaticalpha,0,0.30)
+	
+	drawstatictimer--
+}
 textbubbleframes += 0.35

@@ -89,6 +89,9 @@ function scr_playerreset() {
 	global.golfhit = 0;
 	with (obj_tv)
 	{
+		drawstatic = false
+		drawstatictimer = 0
+		drawstaticalpha = 0		
 		frozenalarm = -1;
 		frozen = false;
 		bootingup = false;
@@ -121,6 +124,7 @@ function scr_playerreset() {
 		yi = 600;
 		newshake = false;
 		shake = false;
+		newtvspritestore = 0
 	}
 	global.SAGEshotgunsnicknumber = 0;
 	with obj_music
