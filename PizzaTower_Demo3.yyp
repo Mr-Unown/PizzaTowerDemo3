@@ -618,6 +618,7 @@
     {"id":{"name":"spr_noiseselected","path":"sprites/spr_noiseselected/spr_noiseselected.yy",},"order":15,},
     {"id":{"name":"spr_noisey_dead","path":"sprites/spr_noisey_dead/spr_noisey_dead.yy",},"order":0,},
     {"id":{"name":"spr_noisey_stun","path":"sprites/spr_noisey_stun/spr_noisey_stun.yy",},"order":2,},
+    {"id":{"name":"spr_tv_frame","path":"sprites/spr_tv_frame/spr_tv_frame.yy",},"order":9,},
     {"id":{"name":"spr_noisey_walk","path":"sprites/spr_noisey_walk/spr_noisey_walk.yy",},"order":4,},
     {"id":{"name":"spr_null","path":"sprites/spr_null/spr_null.yy",},"order":7,},
     {"id":{"name":"spr_numbers","path":"sprites/spr_numbers/spr_numbers.yy",},"order":1,},
