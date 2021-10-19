@@ -105,7 +105,7 @@ function scr_playercreate() {
 	customupdate = true;
 	//Stored Stuff
 	frozenstate = 0;
-	frozenspriteindex = spr_player_idle;
+	frozenspriteindex = spr_file2;
 	frozenimageindex = 0;
 	frozenimagespeed = 0.35;
 	frozenmovespeed = 0;

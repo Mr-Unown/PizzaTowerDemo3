@@ -14,8 +14,7 @@ if ((key_slap2 || key_start) && selected == 0)
     scr_soundeffect(sfx_enemyprojectile)
     if (room == Realtitlescreen)
 	{
-        obj_mainmenuselect.selected = 0
-		obj_file2.sprite_index = spr_file2
+        obj_player.state = 0
 	}
     instance_destroy()
 }

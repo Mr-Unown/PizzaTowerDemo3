@@ -70,7 +70,7 @@ flashingtimer++
 	}
 }
 
-if (room == Realtitlescreen || room == characterselect)
+if (room == characterselect)
     state = 8
 scr_playersounds()
 if (global.coop == 0)
