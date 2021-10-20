@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"015ba047-c081-4606-9fba-65fe4d7643f5","path":"sprites/bg_sanctumstatue3/bg_sanctumstatue3.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"015ba047-c081-4606-9fba-65fe4d7643f5","path":"sprites/bg_sanctumstatue3/bg_sanctumstatue3.yy",},"LayerId":{"name":"1321c80d-8e54-4e6d-8f0c-020b175bb7ec","path":"sprites/bg_sanctumstatue3/bg_sanctumstatue3.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"bg_sanctumstatue3","path":"sprites/bg_sanctumstatue3/bg_sanctumstatue3.yy",},"resourceVersion":"1.0","name":"015ba047-c081-4606-9fba-65fe4d7643f5","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"737ee5d6-506a-4d24-aec8-a7704cc5f855","path":"sprites/bg_sanctumstatue3/bg_sanctumstatue3.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"737ee5d6-506a-4d24-aec8-a7704cc5f855","path":"sprites/bg_sanctumstatue3/bg_sanctumstatue3.yy",},"LayerId":{"name":"43a90644-981e-4ec7-a46b-b24db0d7eebf","path":"sprites/bg_sanctumstatue3/bg_sanctumstatue3.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"bg_sanctumstatue3","path":"sprites/bg_sanctumstatue3/bg_sanctumstatue3.yy",},"resourceVersion":"1.0","name":"737ee5d6-506a-4d24-aec8-a7704cc5f855","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"bg_sanctumstatue3","path":"sprites/bg_sanctumstatue3/bg_sanctumstatue3.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"27c9f693-69d0-4bed-a228-09b1426c9c8a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"015ba047-c081-4606-9fba-65fe4d7643f5","path":"sprites/bg_sanctumstatue3/bg_sanctumstatue3.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"064e86e8-14c7-4242-9201-b604e075c164","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"737ee5d6-506a-4d24-aec8-a7704cc5f855","path":"sprites/bg_sanctumstatue3/bg_sanctumstatue3.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"1321c80d-8e54-4e6d-8f0c-020b175bb7ec","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"43a90644-981e-4ec7-a46b-b24db0d7eebf","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
