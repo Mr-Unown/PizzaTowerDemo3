@@ -270,6 +270,7 @@
     {"id":{"name":"spr_cheeseballblockdebris","path":"sprites/spr_cheeseballblockdebris/spr_cheeseballblockdebris.yy",},"order":17,},
     {"id":{"name":"spr_cheesebigblock","path":"sprites/spr_cheesebigblock/spr_cheesebigblock.yy",},"order":34,},
     {"id":{"name":"spr_cheesebigblockescape","path":"sprites/spr_cheesebigblockescape/spr_cheesebigblockescape.yy",},"order":35,},
+    {"id":{"name":"spr_queen_talisman","path":"sprites/spr_queen_talisman/spr_queen_talisman.yy",},"order":29,},
     {"id":{"name":"spr_cheeseblob","path":"sprites/spr_cheeseblob/spr_cheeseblob.yy",},"order":36,},
     {"id":{"name":"spr_cheeseblock","path":"sprites/spr_cheeseblock/spr_cheeseblock.yy",},"order":37,},
     {"id":{"name":"spr_cheeseblockdestroyed","path":"sprites/spr_cheeseblockdestroyed/spr_cheeseblockdestroyed.yy",},"order":38,},

@@ -13,11 +13,11 @@ uniform float panic;
 void main() {
     // Wobble back and forth more with time.
 	vec2 uv = v_vTexcoord;
-    uv.x += sin(WAVELENGTH * uv.y + 3.0 * time * panic) * AMPLITUDE * panic;
+    uv.x += sin(WAVELENGTH * uv.y + 3.0 * time ) * AMPLITUDE * panic;
 
     // Tint background more with time.
     vec4 texel = texture2D(gm_BaseTexture, uv);
-    texel.r += (0.5 + 0.5 * sin(TINTSPEED * time * panic)) * TINTAMOUNT * panic;
+    texel.r += (0.5 + 0.5 * sin(TINTSPEED * time )) * TINTAMOUNT * panic;
 	
     gl_FragColor = texel;
 }
