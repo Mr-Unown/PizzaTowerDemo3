@@ -17,8 +17,8 @@
   "width": 150,
   "height": 100,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Pizzelle_Sprites",
+    "path": "texturegroups/Pizzelle_Sprites",
   },
   "swatchColours": null,
   "gridX": 0,

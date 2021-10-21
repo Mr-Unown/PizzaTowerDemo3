@@ -1,6 +1,6 @@
 {
   "bboxMode": 0,
-  "collisionKind": 0,
+  "collisionKind": 1,
   "type": 0,
   "origin": 0,
   "preMultiplyAlpha": false,
@@ -17,8 +17,8 @@
   "width": 12,
   "height": 10,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Noise_Sprites",
+    "path": "texturegroups/Noise_Sprites",
   },
   "swatchColours": null,
   "gridX": 0,
@@ -44,7 +44,7 @@
             {"id":"9c441d3b-3eba-4318-8b4c-42c7f2c37ce6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f3c3531e-fd46-4747-8614-e62e24e9b7f6","path":"sprites/spr_noisepalette/spr_noisepalette.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Noise",
-    "path": "folders/Sprites/Characters/Playable Characters Sprites/Noise.yy",
+    "name": "Palettes",
+    "path": "folders/Sprites/Characters/Playable Characters Sprites/Palettes.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_noisepalette",

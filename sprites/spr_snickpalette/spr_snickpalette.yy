@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Palettes",
+    "path": "folders/Sprites/Characters/Playable Characters Sprites/Palettes.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_snickpalette",

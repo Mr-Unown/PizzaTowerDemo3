@@ -17,8 +17,8 @@
   "width": 100,
   "height": 100,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Peppino_Sprites",
+    "path": "texturegroups/Peppino_Sprites",
   },
   "swatchColours": null,
   "gridX": 0,
@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Peppino",
+    "path": "folders/Sprites/Characters/Playable Characters Sprites/Peppino.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_shotgun_duck",

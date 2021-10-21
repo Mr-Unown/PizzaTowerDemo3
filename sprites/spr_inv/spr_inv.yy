@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Hud & Menus",
-    "path": "folders/Sprites/Hud & Menus.yy",
+    "name": "Misc",
+    "path": "folders/Sprites/Hud & Menus/Misc.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_inv",

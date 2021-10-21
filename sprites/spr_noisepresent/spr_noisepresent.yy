@@ -17,8 +17,8 @@
   "width": 100,
   "height": 100,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Strongcold",
+    "path": "texturegroups/Strongcold",
   },
   "swatchColours": null,
   "gridX": 0,
