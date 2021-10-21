@@ -89,6 +89,7 @@ function scr_playerreset() {
 	global.golfhit = 0;
 	with (obj_tv)
 	{
+		staticframe = 0;
 		drawstatic = false
 		drawstatictimer = 0
 		drawstaticalpha = 0		

@@ -122,13 +122,9 @@ else
 			draw_sprite_ext(newtvsprite, -1, 832, 100 + newhudyoffset, 1, 1, 0, c_white, 1)
 			pal_swap_reset()
 			if drawstaticalpha > 0
-			{
-				//It now has it's own Frame Thingy
-				static staticframe = 0;
 				draw_sprite_ext(spr_tv_static, staticframe, 832, 100 + newhudyoffset, 1, 1, 0, c_white, drawstaticalpha)
-				if global.freezeframe = false
-					staticframe = wrap(staticframe + 0.35,0,6)
-			}
+			//Added a frame sprite as a quick workaround for
+			//Character Palettes that modify TV Sprites' Palettes...
 			draw_sprite_ext(spr_tv_frame, -1, 832, 100 + newhudyoffset, 1, 1, 0, c_white, 1)
 		}
 		else

@@ -19,7 +19,7 @@ function scr_player_current() {
 	with instance_place(x, y, obj_waterdraft)
 	{
 	    other.sprite_index = other.spr_machfreefall
-		vdir = -sign(image_xscale)
+		vdir = -sign(image_yscale)
 	    if (vmovespeed < 10)
 	        vmovespeed += 1		
 	    if (sign(image_yscale) == 1)
@@ -27,9 +27,11 @@ function scr_player_current() {
 	}
 	//Sorta Swimming
 	move = (key_right + key_left)
+	//Horizontal
 	movehsp = 4 * sign(move)
 	if move != 0 
 		xscale = move
+	//Vertical
 	if key_up
 		movevsp = -4
 	if key_down
