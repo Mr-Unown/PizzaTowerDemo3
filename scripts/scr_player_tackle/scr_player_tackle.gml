@@ -12,18 +12,18 @@ function scr_player_tackle() {
 	stopAnim = 1
 	crouchslideAnim = 1
 	crouchAnim = 1
-	if (floor(image_index) == (image_number - 1))
+	if (floor(image_index) >= (image_number - 1))
 	    image_speed = 0
 	else
 		image_speed = 0.35
 	//Regular Stop
-	if floor(image_index) >= (image_number - 1) && grounded && !key_attack && vsp > 0
+	if movespeed <= 0 && !key_attack 
 	{
 		image_speed = 0.35
 	    state = 0
 	}
 	//Mach Stop
-	if ((floor(image_index) == (image_number - 1) || sprite_index == spr_suplexdashjump || sprite_index == spr_suplexdashjumpstart) && (grounded || character = "PZ") && key_attack)
+	if (grounded || character = "PZ") && key_attack
 	{
 		image_speed = 0.35
 		if (character == "N" && pogo = true) && !key_slap2 
@@ -34,8 +34,11 @@ function scr_player_tackle() {
 			pogomovespeed = 9
 		}
 		else
+		{
+			movespeed = 9
 			state = 70
-			grav = 0.5
+		}
+		grav = 0.5
 	}
 	//Crouchslip
 	if (key_down && grounded && vsp > 0)
@@ -44,7 +47,7 @@ function scr_player_tackle() {
 	    sprite_index = spr_crouchslip
 	    machhitAnim = 0
 	    state = 68
-	    movespeed = 15
+	    movespeed = clamp(movespeed + 5,5,15)
 	}
 
 

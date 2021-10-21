@@ -69,6 +69,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_fencer","path":"objects/obj_fencer/obj_fencer.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":800.0,"y":882.0,"resourceVersion":"1.0","name":"inst_67F8BECC","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_fencer","path":"objects/obj_fencer/obj_fencer.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":384.0,"y":626.0,"resourceVersion":"1.0","name":"inst_F458F48","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_collect","path":"objects/obj_collect/obj_collect.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1280.0,"y":448.0,"resourceVersion":"1.0","name":"inst_14451774","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_bigrespawnabledestroyable","path":"objects/obj_bigrespawnabledestroyable/obj_bigrespawnabledestroyable.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":416.0,"y":320.0,"resourceVersion":"1.0","name":"inst_3BBE0F54","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances_1","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"tileset_sanctumdecoration3","path":"tilesets/tileset_sanctumdecoration3/tileset_sanctumdecoration3.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":55,"SerialiseHeight":39,"TileSerialiseData":[
 281,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,531,532,2147483648,2147483648,2147483648,805,806,807,808,2147483648,2147483648,2147483648,0,0,0,0,0,0,0,0,0,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,0,0,0,0,2147483648,531,532,0,0,0,805,806,
@@ -259,6 +260,7 @@
     {"name":"inst_67F8BECC","path":"rooms/sanctum_8/sanctum_8.yy",},
     {"name":"inst_F458F48","path":"rooms/sanctum_8/sanctum_8.yy",},
     {"name":"inst_14451774","path":"rooms/sanctum_8/sanctum_8.yy",},
+    {"name":"inst_3BBE0F54","path":"rooms/sanctum_8/sanctum_8.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

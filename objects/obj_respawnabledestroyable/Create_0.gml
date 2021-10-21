@@ -1,6 +1,6 @@
 event_inherited();
 depth = 1
-spr_dead = spr_debris
+spr_dead = spr_debris_respawn
 respawnblock = 100
 destroyed = false
 

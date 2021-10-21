@@ -324,7 +324,7 @@ function scr_collide_destructibles() {
 	                                with (instance_create((x + (image_xscale * 20)), (y + 20), obj_shotgunbullet))
 	                                    spdh = -4
 	                            }
-	                            instance_destroy(other.id)
+	                            with other { event_user(0) } //One Line Pog
 	                        }
 	                        else
 	                        {
@@ -332,11 +332,11 @@ function scr_collide_destructibles() {
 	                            image_index = 0
 	                            state = 57
 	                            vsp = 0
-	                            instance_destroy(other.id)
+	                            with other { event_user(0) } //One Line Pog
 	                        }
 	                    }
 	                    else if (other.object_index != obj_bigdestructibles)
-	                        instance_destroy(other.id)
+	                        with other { event_user(0) } //One Line Pog
 	                }
 	            }
 	        }
@@ -667,7 +667,7 @@ function scr_collide_destructibles() {
 	                                with (instance_create((x + (image_xscale * 20)), (y + 20), obj_shotgunbullet))
 	                                    spdh = -4
 	                            }
-	                            instance_destroy(other.id)
+	                            with other { event_user(0) } //One Line Pog
 	                        }
 	                        else
 	                        {
@@ -675,11 +675,11 @@ function scr_collide_destructibles() {
 	                            image_index = 0
 	                            state = 57
 	                            vsp = 0
-	                            instance_destroy(other.id)
+								with other { event_user(0) } //One Line Pog
 	                        }
 	                    }
 	                    else if (other.object_index != obj_bigdestructibles)
-	                        instance_destroy(other.id)
+	                        with other { event_user(0) } //One Line Pog
 	                }
 	            }
 	        }

@@ -89,7 +89,10 @@ function scr_player_handstandjump() {
 				pogomovespeed = 9
 			}
 			else
+			{
+				movespeed = 9
 				state = 70
+			}
 	        grav = 0.5
 	    }
 	    if (floor(image_index) == (image_number - 1) && sprite_index == spr_suplexdashjumpstart)
@@ -100,7 +103,7 @@ function scr_player_handstandjump() {
 	        sprite_index = spr_crouchslip
 	        machhitAnim = 0
 	        state = 68
-	        movespeed = 15
+	        movespeed = clamp(movespeed + 5,5,15)
 	    }
 	    if ((!grounded) && (sprite_index == spr_suplexdash || sprite_index == spr_shotgunsuplexdash)) && character != "PZ"
 	    {
