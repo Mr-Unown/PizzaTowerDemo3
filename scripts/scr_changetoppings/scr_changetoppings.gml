@@ -88,7 +88,7 @@ function scr_changetoppings() {
 	        else if ((obj_player1.character == "V" && obj_player1.spotlight == 1) || (obj_player2.character == "V" && obj_player1.spotlight == 0))
 	            sprite_index = spr_cheesespinningslice
 			else if ((obj_player1.character == "PZ" && obj_player1.spotlight == 1) || (obj_player2.character == "PZ" && obj_player1.spotlight == 0))
-				sprite_index = spr_xmasspinningslice					
+				sprite_index = spr_sweetspinningslice					
 	        instance_create(x, y, obj_cloudeffect)
 	        repeat (3)
 	            instance_create((x + random_range(-10, 10)), (y + random_range(-10, 10)), obj_cloudeffect)
@@ -103,7 +103,7 @@ function scr_changetoppings() {
 	        else if ((obj_player1.character == "N" && obj_player1.spotlight == 1) || (obj_player2.character == "N" && obj_player1.spotlight == 0))
 	            sprite_index = spr_halloweensmallblock
 	        else if ((obj_player1.character == "S" && obj_player1.spotlight == 1) || (obj_player2.character == "S" && obj_player1.spotlight == 0))
-	            sprite_index = spr_xmasblock
+	            sprite_index = spr_snickblock
 	        else if ((obj_player1.character == "V" && obj_player1.spotlight == 1) || (obj_player2.character == "V" && obj_player1.spotlight == 0))
 	            sprite_index = spr_cheesedestroyableblock
 			else if ((obj_player1.character == "PZ" && obj_player1.spotlight == 1) || (obj_player2.character == "PZ" && obj_player1.spotlight == 0))
@@ -122,7 +122,7 @@ function scr_changetoppings() {
 	        else if ((obj_player1.character == "N" && obj_player1.spotlight == 1) || (obj_player2.character == "N" && obj_player1.spotlight == 0))
 	            sprite_index = spr_halloweensmallblockescape
 	        else if ((obj_player1.character == "S" && obj_player1.spotlight == 1) || (obj_player2.character == "S" && obj_player1.spotlight == 0))
-	            sprite_index = spr_xmasblockescape
+	            sprite_index = spr_snickblockescape
 	        else if ((obj_player1.character == "V" && obj_player1.spotlight == 1) || (obj_player2.character == "V" && obj_player1.spotlight == 0))
 	            sprite_index = spr_cheesedestroyableblockescape
 			else if ((obj_player1.character == "PZ" && obj_player1.spotlight == 1) || (obj_player2.character == "PZ" && obj_player1.spotlight == 0))
@@ -141,7 +141,7 @@ function scr_changetoppings() {
 	        else if ((obj_player1.character == "N" && obj_player1.spotlight == 1) || (obj_player2.character == "N" && obj_player1.spotlight == 0))
 	            sprite_index = spr_halloweenbigblock
 	        else if ((obj_player1.character == "S" && obj_player1.spotlight == 1) || (obj_player2.character == "S" && obj_player1.spotlight == 0))
-	            sprite_index = spr_xmasbigblock
+	            sprite_index = spr_snickbigblock
 	        else if ((obj_player1.character == "V" && obj_player1.spotlight == 1) || (obj_player2.character == "V" && obj_player1.spotlight == 0))
 	            sprite_index = spr_cheesebigblock
 			else if ((obj_player1.character == "PZ" && obj_player1.spotlight == 1) || (obj_player2.character == "PZ" && obj_player1.spotlight == 0))
@@ -160,7 +160,7 @@ function scr_changetoppings() {
 	        else if ((obj_player1.character == "N" && obj_player1.spotlight == 1) || (obj_player2.character == "N" && obj_player1.spotlight == 0))
 	            sprite_index = spr_halloweenbigblockescape
 	        else if ((obj_player1.character == "S" && obj_player1.spotlight == 1) || (obj_player2.character == "S" && obj_player1.spotlight == 0))
-	            sprite_index = spr_xmasbigblockescape
+	            sprite_index = spr_snickbigblockescape
 	        else if ((obj_player1.character == "V" && obj_player1.spotlight == 1) || (obj_player2.character == "V" && obj_player1.spotlight == 0))
 	            sprite_index = spr_cheesebigblockescape
 			else if ((obj_player1.character == "PZ" && obj_player1.spotlight == 1) || (obj_player2.character == "PZ" && obj_player1.spotlight == 0))

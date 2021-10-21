@@ -17,8 +17,8 @@
   "width": 64,
   "height": 64,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Strongcold",
+    "path": "texturegroups/Strongcold",
   },
   "swatchColours": null,
   "gridX": 0,
@@ -137,8 +137,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Xmas Event",
+    "path": "folders/Sprites/Asset Layer Sprites/Xmas Event.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_xmassausagetoppin_intro",
