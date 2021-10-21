@@ -21,7 +21,7 @@ if (ds_list_find_index(global.saveroom, id) == -1 && global.snickchallenge == 0)
                 sprite_index = spr_bigpizzadebris
             else if (other.sprite_index == spr_halloweenbigblock)
                 sprite_index = spr_halloweenbigdebris
-            else if (other.sprite_index == spr_xmasbigblock)
+            else if (other.sprite_index == spr_snickbigblock)
                 sprite_index = spr_bigdebris
             else if (other.sprite_index == spr_cheesebigblock)
                 sprite_index = spr_bigpizzadebris

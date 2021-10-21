@@ -482,5 +482,6 @@ if global.freezeframe = false
 		drawstaticalpha = approach(drawstaticalpha,0,0.30)
 	
 	drawstatictimer--
+	staticframe += 0.35;
 }
-textbubbleframes += 0.35
+textbubbleframes += 0.35;

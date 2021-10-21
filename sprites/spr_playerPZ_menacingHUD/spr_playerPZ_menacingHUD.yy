@@ -17,8 +17,8 @@
   "width": 175,
   "height": 175,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "OLDHUD",
+    "path": "texturegroups/OLDHUD",
   },
   "swatchColours": null,
   "gridX": 0,

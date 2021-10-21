@@ -106,6 +106,7 @@ switch(global.newhud)
 	{
 		if newtvsprite != spr_tv_open
 		{
+
 			#region Palette		
 if (obj_player1.spotlight == 1)
 	if	obj_player1.custompalette = true
@@ -121,7 +122,9 @@ else
 			draw_sprite_ext(newtvsprite, -1, 832, 100 + newhudyoffset, 1, 1, 0, c_white, 1)
 			pal_swap_reset()
 			if drawstaticalpha > 0
-				draw_sprite_ext(spr_tv_static, -1, 832, 100 + newhudyoffset, 1, 1, 0, c_white, drawstaticalpha)
+				draw_sprite_ext(spr_tv_static, staticframe, 832, 100 + newhudyoffset, 1, 1, 0, c_white, drawstaticalpha)
+			//Added a frame sprite as a quick workaround for
+			//Character Palettes that modify TV Sprites' Palettes...
 			draw_sprite_ext(spr_tv_frame, -1, 832, 100 + newhudyoffset, 1, 1, 0, c_white, 1)
 		}
 		else

@@ -17,8 +17,8 @@
   "width": 271,
   "height": 175,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "NEWHUD",
+    "path": "texturegroups/NEWHUD",
   },
   "swatchColours": null,
   "gridX": 0,
@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "New Hud",
-    "path": "folders/Sprites/Hud & Menus/New Hud.yy",
+    "name": "Other",
+    "path": "folders/Sprites/Hud & Menus/New Hud/Other.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_pizzascoretimer",

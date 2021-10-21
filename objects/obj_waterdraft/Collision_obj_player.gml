@@ -1,11 +1,11 @@
-if other.bbox_top >= obj_water.bbox_top + 32
+if other.in_water == true
 {
 	with (other)
 	{
-		if (state != 87)
+		if (state != states.current)
 		{
 			sprite_index = spr_machfreefall
-			state = 87
+			state = states.current
 		}
 	}
 }
