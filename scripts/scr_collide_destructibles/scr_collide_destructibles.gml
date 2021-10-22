@@ -229,8 +229,8 @@ function scr_collide_destructibles() {
 	        {
 	            with (instance_place(x, (y + vsp), obj_destructibles))
 	            {
-					initialhsp = other.hsp
-					initialvsp = other.vsp
+					initialhsp = random_range(-5, 5)
+					initialvsp = other.vsp - 3
 	                event_user(0)
 				}
 	        }		
@@ -241,8 +241,8 @@ function scr_collide_destructibles() {
 	        {
 	            with (instance_place(x, (y - 1), obj_destructibles))
 	            {
-					initialhsp = other.hsp
-					initialvsp = other.vsp
+					initialhsp = random_range(-2, 2) + other.hsp
+					initialvsp = other.vsp - 3
 	                event_user(0)
 	                with (other.id)
 	                {
@@ -270,8 +270,8 @@ function scr_collide_destructibles() {
 	                        image_index = 0
 	                    }
 	                }
-					initialhsp = other.hsp
-					initialvsp = other.vsp
+					initialhsp = random_range(-5, 5)
+					initialvsp = other.vsp - 3
 					
 	                event_user(0)
 	            }
@@ -295,8 +295,8 @@ function scr_collide_destructibles() {
 	        {
 	            with (instance_place(x, (y + 1), obj_metalblock))
 	            {
-					initialhsp = other.hsp
-					initialvsp = other.vsp
+					initialhsp = random_range(-5, 5)
+					initialvsp = other.vsp - 3
 	                event_user(0)
 				}
 	        }		
@@ -324,7 +324,12 @@ function scr_collide_destructibles() {
 	                                with (instance_create((x + (image_xscale * 20)), (y + 20), obj_shotgunbullet))
 	                                    spdh = -4
 	                            }
-	                            with other { event_user(0) } //One Line Pog
+	                            with other 
+								{ 	
+									initialhsp = 7 * sign(other.image_xscale)
+									initialvsp = random_range(-4, -1)
+									event_user(0) 
+								}
 	                        }
 	                        else
 	                        {
@@ -332,11 +337,23 @@ function scr_collide_destructibles() {
 	                            image_index = 0
 	                            state = 57
 	                            vsp = 0
-	                            with other { event_user(0) } //One Line Pog
+	                            with other 
+								{ 	
+									initialhsp = 9 * sign(other.image_xscale)
+									initialvsp = random_range(-4, -1)
+									event_user(0) 
+								}
 	                        }
 	                    }
 	                    else if (other.object_index != obj_bigdestructibles)
-	                        with other { event_user(0) } //One Line Pog
+						{
+	                            with other 
+								{ 	
+									initialhsp = 8 * sign(other.image_xscale)
+									initialvsp = random_range(-4, -1)
+									event_user(0) 
+								}
+						}
 	                }
 	            }
 	        }
@@ -399,8 +416,8 @@ function scr_collide_destructibles() {
 	        {
 	            with (instance_place(x, (y + vsp), obj_destructibles))
 	            {
-					initialhsp = other.hsp
-					initialvsp = other.vsp
+					initialhsp = random_range(-5, 5)
+					initialvsp = other.vsp - 3
 	                event_user(0)
 				}
 	        }		
@@ -583,8 +600,8 @@ function scr_collide_destructibles() {
 	        {
 	            with (instance_place(x, (y - 1), obj_destructibles))
 	            {
-					initialhsp = other.hsp
-					initialvsp = other.vsp
+					initialhsp = random_range(-2, 2) + other.hsp
+					initialvsp = other.vsp - 3
 	                event_user(0)
 	                with (other.id)
 	                {
@@ -613,8 +630,8 @@ function scr_collide_destructibles() {
 	                    }
 	                }
             
-					initialhsp = other.hsp
-					initialvsp = other.vsp
+					initialhsp = random_range(-5, 5)
+					initialvsp = other.vsp - 3
 	                event_user(0)
 			
 	            }
@@ -638,8 +655,8 @@ function scr_collide_destructibles() {
 	        {
 	            with (instance_place(x, (y + 1), obj_metalblock))
 	            {
-					initialhsp = other.hsp
-					initialvsp = other.vsp
+					initialhsp = random_range(-5, 5)
+					initialvsp = other.vsp - 3
 	                event_user(0)
 				}
 	        }		
@@ -667,7 +684,12 @@ function scr_collide_destructibles() {
 	                                with (instance_create((x + (image_xscale * 20)), (y + 20), obj_shotgunbullet))
 	                                    spdh = -4
 	                            }
-	                            with other { event_user(0) } //One Line Pog
+	                            with other 
+								{ 	
+									initialhsp = 7 * sign(other.image_xscale)
+									initialvsp = random_range(-4, -1)
+									event_user(0) 
+								}
 	                        }
 	                        else
 	                        {
@@ -675,11 +697,23 @@ function scr_collide_destructibles() {
 	                            image_index = 0
 	                            state = 57
 	                            vsp = 0
-								with other { event_user(0) } //One Line Pog
+	                            with other 
+								{ 	
+									initialhsp = 9 * sign(other.image_xscale)
+									initialvsp = random_range(-4, -1)
+									event_user(0) 
+								}
 	                        }
 	                    }
 	                    else if (other.object_index != obj_bigdestructibles)
-	                        with other { event_user(0) } //One Line Pog
+						{
+	                            with other 
+								{ 	
+									initialhsp = 9 * sign(other.image_xscale)
+									initialvsp = random_range(-4, -1)
+									event_user(0) 
+								}
+						}
 	                }
 	            }
 	        }
