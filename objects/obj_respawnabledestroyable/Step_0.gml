@@ -8,7 +8,7 @@ if destroyed = true
     mask_index = spr_null;
 }
 //Restore to Normal
-if respawnblock <= 0 && !place_meeting(xstart, ystart, obj_player) && !place_meeting(xstart, ystart, obj_baddie)
+if destroyed = true && respawnblock <= 0 && !place_meeting(xstart, ystart, obj_player) && !place_meeting(xstart, ystart, obj_baddie)
 {
 	instance_create((xstart + (sprite_width / 2)), (ystart + (sprite_height / 2)), obj_cloudeffect)
 	repeat (3)

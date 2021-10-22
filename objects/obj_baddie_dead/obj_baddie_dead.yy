@@ -10,7 +10,10 @@
     "path": "sprites/spr_player_mask/spr_player_mask.yy",
   },
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_parentparticle",
+    "path": "objects/obj_parentparticle/obj_parentparticle.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 0,

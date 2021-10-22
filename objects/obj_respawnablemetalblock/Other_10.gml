@@ -3,6 +3,9 @@ if destroyed = false
 {
 	respawnblock = 100;
 	destroyed = true
+	x = -960;
+    y = -100;
+    mask_index = spr_null;
 	with (obj_camera)
 	{
 		shake_mag = 20
@@ -23,7 +26,7 @@ if destroyed = false
 		canrotate = true
 		image_xscale = other.image_xscale
         sprite_index = other.spr_dead
-		hsp = other.initialhsp
-		vsp = other.initialvsp
+		hsp = (other.initialhsp * 1.5)
+		vsp = clamp(other.initialvsp,other.initialvsp - 32,-4)
 	}	
 }

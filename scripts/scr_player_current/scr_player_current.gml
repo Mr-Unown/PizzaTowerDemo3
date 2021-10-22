@@ -11,8 +11,8 @@ function scr_player_current() {
 	{
 	    other.sprite_index = other.spr_slipnslide
 		other.xscale = sign(image_xscale)
-	    if (movespeed < 10)
-	        movespeed += 1
+	    if (other.movespeed < 10)
+	        other.movespeed += 1
 
 	}
 	//Water Drafts
