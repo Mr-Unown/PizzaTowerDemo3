@@ -110,7 +110,8 @@ function scr_playerstate() {
 		changing = 123,
 		murder = 124,
 		trick = 125,
-		newbomb = 126
+		newbomb = 126,
+		startgate = 127
 
 	} 
 	//I made some changes to it so that we can know at a glance what number it gets converted to.
@@ -121,6 +122,9 @@ function scr_playerstate() {
 	    case 0:
 	        scr_player_normal()
 	        break
+	    case states.startgate:
+	        scr_player_startgate()
+	        break			
 	    case states.newbomb:
 	        scr_player_newbomb()
 	        break			
@@ -579,7 +583,11 @@ function scr_playerstate() {
 	{
 		combothreshold = 0;
 	}
-
+	//Cutscene Variable
+	if global.freezeframe = false && (state == 23 || sprite_index == spr_knightpepstart || sprite_index == spr_knightpepthunder || state == 56 || state == 78 || state == 4 || state == states.startgate || state == 64 || state == 61 || state == 55)
+		cutscene = 1
+	else if global.freezeframe = false
+		cutscene = 0
 	//Palette
 	if surface_exists(surf_pallete) && (paletteselect >= sprite_get_width(spr_palette) - 1)
 		custompalette = true

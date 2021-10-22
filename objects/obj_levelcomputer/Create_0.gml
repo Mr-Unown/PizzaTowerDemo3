@@ -1,4 +1,4 @@
-bgalpha = 1
+/*bgalpha = 1
 bgalpha2 = 1
 bgalpha3 = 1
 bgalpha4 = 1

@@ -1654,6 +1654,7 @@
     {"id":{"name":"spr_tvbomb","path":"sprites/spr_tvbomb/spr_tvbomb.yy",},"order":2,},
     {"id":{"name":"spr_tvclap","path":"sprites/spr_tvclap/spr_tvclap.yy",},"order":4,},
     {"id":{"name":"spr_tvcombo","path":"sprites/spr_tvcombo/spr_tvcombo.yy",},"order":5,},
+    {"id":{"name":"scr_player_startgate","path":"scripts/scr_player_startgate/scr_player_startgate.yy",},"order":108,},
     {"id":{"name":"spr_tvcombotext","path":"sprites/spr_tvcombotext/spr_tvcombotext.yy",},"order":7,},
     {"id":{"name":"spr_tvcomboresult","path":"sprites/spr_tvcomboresult/spr_tvcomboresult.yy",},"order":6,},
     {"id":{"name":"spr_tvdebris","path":"sprites/spr_tvdebris/spr_tvdebris.yy",},"order":8,},

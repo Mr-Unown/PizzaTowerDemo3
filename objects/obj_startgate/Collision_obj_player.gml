@@ -1,6 +1,6 @@
 with (obj_player1)
 {
-    if (place_meeting(x, y, other) && key_up && grounded && (state == 0 || state == 69 || state == 70 || state == 91) && (!instance_exists(obj_noisesatellite)) && (!instance_exists(obj_fadeout)) && state != 64 && state != 61 && obj_player1.spotlight == 1)
+    if (place_meeting(x, y, other) && key_up && grounded && (state == 0 || state == 69 || state == 70 || state == 91) && (!instance_exists(obj_noisesatellite)) && (!instance_exists(obj_fadeout)) && state != states.startgate && state != 61 && obj_player1.spotlight == 1)
     {
 		#region Collided
 		other.selected = true;
@@ -19,7 +19,7 @@ with (obj_player1)
         mach2 = 0
         obj_camera.chargecamera = 0
         image_index = 0
-        state = 64
+        state = states.startgate
 		
         if (global.coop == 1)
         {
@@ -33,7 +33,7 @@ with (obj_player1)
                 mach2 = 0
                 obj_camera.chargecamera = 0
                 image_index = 0
-                state = 64
+                state = states.startgate
             }
         }
 		#endregion
@@ -41,7 +41,7 @@ with (obj_player1)
 }
 with (obj_player2)
 {
-    if (place_meeting(x, y, other) && key_up && grounded && (state == 0 || state == 69 || state == 70 || state == 91) && (!instance_exists(obj_noisesatellite)) && (!instance_exists(obj_fadeout)) && state != 64 && state != 61 && obj_player1.spotlight == 0)
+    if (place_meeting(x, y, other) && key_up && grounded && (state == 0 || state == 69 || state == 70 || state == 91) && (!instance_exists(obj_noisesatellite)) && (!instance_exists(obj_fadeout)) && state != states.startgate && state != 61 && obj_player1.spotlight == 0)
     {
 		#region Collided
 		other.selected = true;
@@ -60,7 +60,7 @@ with (obj_player2)
         mach2 = 0
         obj_camera.chargecamera = 0
         image_index = 0
-        state = 64
+        state = states.startgate
         if (global.coop == 1)
         {
             with (obj_player1)
@@ -73,13 +73,13 @@ with (obj_player2)
                 mach2 = 0
                 obj_camera.chargecamera = 0
                 image_index = 0
-                state = 64
+                state = states.startgate
             }
         }
 		#endregion
     }
 }
-if can_gotolevel = true && (((floor(obj_player1.image_index) >= (obj_player1.image_number - 1) && obj_player1.state == 64) || (floor(obj_player2.image_index) >= (obj_player2.image_number - 1) && obj_player2.state == 64)))
+if can_gotolevel = true && (((floor(obj_player1.image_index) >= (obj_player1.image_number - 1) && obj_player1.state == states.startgate) || (floor(obj_player2.image_index) >= (obj_player2.image_number - 1) && obj_player2.state == states.startgate)))
 {
 	#region Go to Level
     with (obj_player)
