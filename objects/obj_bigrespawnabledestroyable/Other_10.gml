@@ -19,7 +19,7 @@ if destroyed = false
 		canrotate = true
 		image_xscale = other.image_xscale
         sprite_index = other.spr_dead
-		hsp = (other.initialhsp * 1.5)
+		hsp = (other.initialhsp * 1.05)
 		vsp = clamp(other.initialvsp,other.initialvsp - 32,-4)
 	}	
     if (audio_is_playing(sfx_breakblock1) || audio_is_playing(sfx_breakblock2))

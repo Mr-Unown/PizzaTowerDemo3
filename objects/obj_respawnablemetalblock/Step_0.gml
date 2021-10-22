@@ -3,12 +3,12 @@ var player = (global.coop == true ? instance_nearest(x, y, obj_player) : obj_pla
 with (player)
 {
     if ((place_meeting((x + hsp), y, other.id) || place_meeting((x + xscale), y, other.id)) && (state == states.mach3 || state == states.jetpack || state == states.knightpepslopes || state == states.newbomb))
-        with other { event_user(0) } //One Line Pog
+        with other { initialhsp = random_range(-4, 4); initialvsp = random_range(-4, 0); event_user(0);		} //One Line Pog
 	if (state = states.knightpepattack || state == states.newbomb)
 	{
 		if place_meeting(x + hsp, y + vsp, other.id)
         {
-			with other { event_user(0) } //One Line Pog
+			with other { initialhsp = random_range(-4, 4); initialvsp = random_range(-4, 0); event_user(0);		} //One Line Pog
         }		
 	}
 }
@@ -36,16 +36,22 @@ if destroyed = true
     mask_index = spr_null;
 }
 //Restore to Normal
-if destroyed = true && respawnblock <= 0 && !place_meeting(xstart, ystart, obj_player) && !place_meeting(xstart, ystart, obj_baddie)
+if destroyed = true && respawnblock <= 0 
 {
-	instance_create((xstart + (sprite_width / 2)), (ystart + (sprite_height / 2)), obj_cloudeffect)
-	repeat (3)
-		instance_create(((xstart + (sprite_width / 2)) + random_range(-5, 5)), ((ystart + (sprite_height / 2)) + random_range(-5, 5)), obj_cloudeffect)		
-    respawnblock = 100;
-	destroyed = false
-    visible = true;
-    x = xstart;
-    y = ystart;
-    mask_index = sprite_index;
+	mask_index = sprite_index;
+	if !place_meeting(xstart, ystart, obj_player) && !place_meeting(xstart, ystart, obj_baddie)
+	{
+		instance_create((xstart + (sprite_width / 2)), (ystart + (sprite_height / 2)), obj_cloudeffect)
+		repeat (3)
+			instance_create(((xstart + (sprite_width / 2)) + random_range(-5, 5)), ((ystart + (sprite_height / 2)) + random_range(-5, 5)), obj_cloudeffect)		
+		respawnblock = 100;
+		destroyed = false
+		initialhsp = random_range(-4, 4)
+		initialvsp = random_range(-4, 0)
+		visible = true;
+		x = xstart;
+		y = ystart;
+	}
 }
+
 

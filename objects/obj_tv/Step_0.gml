@@ -338,6 +338,11 @@ else if global.newhud = true && oldcharacter == player.character && (sprite_inde
 	#region NEW TV
 	switch(_state)
 	{
+		case states.keyget:
+		case states.victory:
+		newtvsprite = player.spr_playertv_victory;
+		channel = 5;
+		break;			
 		case states.bombpep:
 		case states.newbomb:
 		newtvsprite = player.spr_playertv_bomb;
@@ -361,15 +366,15 @@ else if global.newhud = true && oldcharacter == player.character && (sprite_inde
 		#region Normal
             if (idle < 400)
                 idle++
-            if (idle >= 300 && floor(image_index) >= (image_number - 1)) && (newtvsprite = player.spr_playertv_normalidle1 || newtvsprite = player.spr_playertv_normalidle2)
+            if (idle >= 300 && floor(image_index) >= (image_number - 1)) && (newtvsprite = player.spr_playertv_normalidle1 || newtvsprite = player.spr_playertv_normalidle2 || newtvsprite = player.spr_playertv_normalidle3)
             {
                 idle = 0
                 image_index = 0
 				newtvsprite = player.spr_playertv_normal
             }
-            if (idle >= 300 && newtvsprite != player.spr_playertv_normalidle1 && newtvsprite != player.spr_playertv_normalidle2)
+            if (idle >= 300 && newtvsprite != player.spr_playertv_normalidle1 && newtvsprite != player.spr_playertv_normalidle2 && newtvsprite != player.spr_playertv_normalidle3)
             {
-                newtvsprite = choose(player.spr_playertv_normalidle1, player.spr_playertv_normalidle2)
+                newtvsprite = choose(player.spr_playertv_normalidle1, player.spr_playertv_normalidle2, player.spr_playertv_normalidle3)
                 image_index = 0
             }
 			if idle < 300
@@ -385,6 +390,7 @@ else if global.newhud = true && oldcharacter == player.character && (sprite_inde
 		newtvspritestore = channel
 		drawstatic = true
 		drawstatictimer = 15
+		oldsprite = newtvsprite 
 	}
 }
 else if global.newhud = true && ((oldcharacter != player.character) || (oldplayer != player))
