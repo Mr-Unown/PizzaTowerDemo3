@@ -302,6 +302,7 @@
     {"id":{"name":"spr_cheesetopping4","path":"sprites/spr_cheesetopping4/spr_cheesetopping4.yy",},"order":48,},
     {"id":{"name":"spr_cheesetopping5","path":"sprites/spr_cheesetopping5/spr_cheesetopping5.yy",},"order":49,},
     {"id":{"name":"spr_christmasendscreen","path":"sprites/spr_christmasendscreen/spr_christmasendscreen.yy",},"order":1,},
+    {"id":{"name":"PP_room6","path":"rooms/PP_room6/PP_room6.yy",},"order":13,},
     {"id":{"name":"spr_cigar_fall","path":"sprites/spr_cigar_fall/spr_cigar_fall.yy",},"order":0,},
     {"id":{"name":"spr_cigar_idle","path":"sprites/spr_cigar_idle/spr_cigar_idle.yy",},"order":1,},
     {"id":{"name":"spr_cigar_land","path":"sprites/spr_cigar_land/spr_cigar_land.yy",},"order":2,},
@@ -3607,6 +3608,7 @@
     {"roomId":{"name":"room_test4","path":"rooms/room_test4/room_test4.yy",},},
     {"roomId":{"name":"sanctum_7","path":"rooms/sanctum_7/sanctum_7.yy",},},
     {"roomId":{"name":"room_gmliveblank","path":"rooms/room_gmliveblank/room_gmliveblank.yy",},},
+    {"roomId":{"name":"PP_room6","path":"rooms/PP_room6/PP_room6.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -3851,7 +3853,7 @@
     {"CopyToMask":-1,"filePath":"datafiles/GMLive","resourceVersion":"1.0","name":"temp.shader","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
-    "IDEVersion": "2.3.5.589",
+    "IDEVersion": "23.1.1.412",
   },
   "resourceVersion": "1.4",
   "name": "PizzaTower_Demo3",
