@@ -3,7 +3,7 @@ function scr_collide() {
 		return false;
 	//Variables
 	grounded = false
-
+	in_water = (instance_exists(obj_water) && obj_water.bbox_top < y);
 	// Vertical
 	repeat(abs(vsp)) 
 	{
@@ -35,9 +35,9 @@ function scr_collide() {
 	}
 
 
-
+	var _grav = (in_water == true ? grav / 1.15 : grav);
 	if (vsp < 10)
-	  vsp += grav;
+	  vsp += _grav;
 
 	grounded |= scr_solid(x, y + 1)
 	grounded |= !place_meeting(x, y, obj_platform) && place_meeting(x, y + 1, obj_platform)

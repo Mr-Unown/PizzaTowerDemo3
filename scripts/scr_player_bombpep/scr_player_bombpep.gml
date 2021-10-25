@@ -52,12 +52,29 @@ function scr_player_bombpep() {
 	}
 	if (bombpeptimer <= 0 && sprite_index == spr_bombpeprunabouttoexplode)
 	{
-		global.pausecombotime = true		
-		obj_tv.alarm[1] = 75		
-	    scr_soundeffect(sfx_bombpep2)
-	    hurted = 1
-	    instance_create(x, y, obj_bombexplosion)
-	    sprite_index = spr_bombpepend
+		//New Bomb Buff
+		if instance_exists(obj_water) && in_water == true
+		{
+			image_index = 0
+			hurted = 1
+			global.pausecombotime = true			
+			obj_tv.alarm[1] = 75		
+			sprite_index = spr_hurt
+			playerdirection = 90
+			//playerdirection = (round(_direction / 90) * 90)
+			movespeed = 14;
+			scr_soundeffect(sfx_bombpep2)
+			state = states.newbomb						
+		}
+		else
+		{
+			global.pausecombotime = true		
+			obj_tv.alarm[1] = 75		
+			scr_soundeffect(sfx_bombpep2)
+			hurted = 1
+			instance_create(x, y, obj_bombexplosion)
+			sprite_index = spr_bombpepend
+		}
 	}
 	if (bombpeptimer > 0)
 	    bombpeptimer -= 0.5

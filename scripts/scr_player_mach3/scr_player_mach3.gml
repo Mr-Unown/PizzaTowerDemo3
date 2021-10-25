@@ -235,7 +235,7 @@ function scr_player_mach3() {
 	{
 	    with (instance_create(x, y, obj_jumpdust))
 	        image_xscale = other.xscale
-		movespeed = clamp(movespeed,12,15)
+		movespeed = clamp(movespeed,12,maxmachspeed)
 	    flash = 0
 	    state = 37
 	    vsp = 10
