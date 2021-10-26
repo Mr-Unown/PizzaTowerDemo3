@@ -3,5 +3,5 @@ instance_destroy()
 
 y += vsp
 var strength = irandom_range(0,4)
-xoffset = wave(-strength,strength,2 * (strength/2),0)
-drawx = xoffset
+xoffset = wave(-strength,strength, 2 ,0)
+drawx = x + xoffset
