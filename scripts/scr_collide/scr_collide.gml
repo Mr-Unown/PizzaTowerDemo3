@@ -35,13 +35,13 @@ function scr_collide() {
 	}
 
 
-	var _grav = (in_water == true ? grav / 1.15 : grav);
+	var _grav = (in_water == true ? grav / 1.25 : grav);
 	if (vsp < 10)
 	  vsp += _grav;
 
 	grounded |= scr_solid(x, y + 1)
 	grounded |= !place_meeting(x, y, obj_platform) && place_meeting(x, y + 1, obj_platform)
-	grounded |= (!place_meeting(x, y, obj_grindrail) && place_meeting(x, y + 1, obj_grindrail)) || (place_meeting(x, y + 1, obj_grindrailslope)) 
+	//grounded |= (!place_meeting(x, y, obj_grindrail) && place_meeting(x, y + 1, obj_grindrail)) || (place_meeting(x, y + 1, obj_grindrailslope)) 
 
 
 }

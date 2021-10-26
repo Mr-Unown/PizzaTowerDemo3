@@ -3,7 +3,7 @@
     "name": "spr_respawnblock",
     "path": "sprites/spr_respawnblock/spr_respawnblock.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,

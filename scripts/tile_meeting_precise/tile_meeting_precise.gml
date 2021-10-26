@@ -6,9 +6,9 @@ function tile_meeting_precise(argument0,argument1,argument2 = "Tiles_Solid") {
 if !layer_exists(argument2)
 	return false;
 var _layer = argument2,
-    _tm = layer_tilemap_get_id_fixed(_layer),
-    _checker = obj_precise_tile_checker;
-if(!instance_exists(_checker)) instance_create_depth(0,0,0,_checker); 
+    _tm = layer_tilemap_get_id_fixed(_layer)
+    //_checker = obj_precise_tile_checker;
+//if(!instance_exists(_checker)) instance_create_depth(0,0,0,_checker); 
 
 
 var _x1 = tilemap_get_cell_x_at_pixel(_tm, bbox_left + (argument0 - x), y),
@@ -23,14 +23,16 @@ for(var _x = _x1; _x <= _x2; _x++)
 		var _tile = tile_get_index(tilemap_get(_tm, _x, _y));
 		if(_tile)
 		{
-			if(_tile == 1) //If Tile is Just Solid it's fine otherwise..
+			if(_tile == tiletype.solids) //If Tile is Just Solid it's fine otherwise..
 				return _tile;
-
+				
+			//Old Precise Checker
+			/*
 			_checker.x = _x * tilemap_get_tile_width(_tm);
 			_checker.y = _y * tilemap_get_tile_height(_tm);
 			_checker.image_index = _tile;
 			if(place_meeting(argument0,argument1,_checker)) 
-				return _tile;
+				return _tile;*/
 		}
 	}
 }
