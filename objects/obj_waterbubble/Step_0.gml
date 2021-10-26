@@ -1,5 +1,7 @@
-if (!place_meeting(x,y - random_range(0,2), obj_water) && !place_meeting(x,y - random_range(0,2), obj_boilingwater) && !place_meeting(x,y - random_range(0,2), obj_watercurrent) && !place_meeting(x,y - random_range(0,2), obj_waterdraft))
+if instance_exists(obj_water) && y < obj_water.bbox_top + (random_range(-2,2))
 instance_destroy()
 
 y += vsp
-x = median(x, (x + random_range(-5,5)), (x + random_range(-5,5)))
+var strength = irandom_range(0,4)
+xoffset = wave(-strength,strength,2 * (strength/2),0)
+drawx = xoffset
