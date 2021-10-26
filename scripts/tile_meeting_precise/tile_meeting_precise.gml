@@ -25,7 +25,10 @@ for(var _x = _x1; _x <= _x2; _x++)
 		{
 			if(_tile == tiletype.solids) //If Tile is Just Solid it's fine otherwise..
 				return _tile;
-				
+			//New One
+			
+			
+			
 			//Old Precise Checker
 			/*
 			_checker.x = _x * tilemap_get_tile_width(_tm);
