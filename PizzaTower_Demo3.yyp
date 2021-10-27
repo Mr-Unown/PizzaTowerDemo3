@@ -3385,6 +3385,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"room_initializer","path":"rooms/room_initializer/room_initializer.yy",},},
     {"roomId":{"name":"Realtitlescreen","path":"rooms/Realtitlescreen/Realtitlescreen.yy",},},
     {"roomId":{"name":"characterselect","path":"rooms/characterselect/characterselect.yy",},},
     {"roomId":{"name":"Scootertransition","path":"rooms/Scootertransition/Scootertransition.yy",},},
@@ -3608,7 +3609,6 @@
     {"roomId":{"name":"room_gmliveblank","path":"rooms/room_gmliveblank/room_gmliveblank.yy",},},
     {"roomId":{"name":"PP_room6","path":"rooms/PP_room6/PP_room6.yy",},},
     {"roomId":{"name":"sanctum_7_2","path":"rooms/sanctum_7_2/sanctum_7_2.yy",},},
-    {"roomId":{"name":"room_initializer","path":"rooms/room_initializer/room_initializer.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

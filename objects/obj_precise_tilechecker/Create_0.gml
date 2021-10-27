@@ -8,6 +8,7 @@ collisionheight = height / TILE_SIZE;
 //tiles = ;
 
 //Create Tile Layer
+/*
 var layerid = layer_create(0,"Tiles")
 tilemapid = layer_tilemap_create(layerid,0,0,tile_solid,collisionwidth,collisionheight);
 
