@@ -28,13 +28,15 @@ for(var _x = _x1; _x <= _x2; _x++)
 			else
 			{
 				//Precise Tile Checker poggers
-				/*
-				var pos = tilemap_get_at_pixel(_tm,_x,_y)
+				var pos = (tilemap_get_at_pixel(_tm,_x,_y))
+				if pos > 0
+				{
 				var column = sprite_get_height(spr_solidtile) / TILE_SIZE;
-				var thefloor = global.heights[_tile mod column][(_x mod TILE_SIZE) + (pos * TILE_SIZE)];
-				var donkeykong = ((_y mod TILE_SIZE) - thefloor);
+				var mapped = global.tile_heightmap[_tile mod column][(_x mod TILE_SIZE) + (pos * TILE_SIZE)];
+				var donkeykong = ((_y mod TILE_SIZE) - mapped);
 				if donkeykong >= 0
-					return _tile;*/
+					return _tile;
+				}
 			}
 			//Old Precise Checker
 			/*
