@@ -16,7 +16,7 @@ if vsp < 12 && vsp > 10
 if (scr_solid((x + sign(image_xscale)), y) && !scr_slope_ext(x + sign(image_xscale),y) && (!place_meeting((x + sign(image_xscale)), y, obj_destructibles))) && movespeed > 0 
 {
 	image_xscale *= -1
-	if (movespeed >= 0.25)
+	if (movespeed >= 0.5)
 		movespeed /= 2
 	if !instance_exists(bumpid)
 		with (instance_create(x, y, obj_bumpeffect))
@@ -28,13 +28,29 @@ if place_meeting(x, y + 1,obj_slope)
 {
 	with (instance_place(x, (y + 1), obj_slope))
 	{
-		if (other.movespeed > other.grav && other.image_xscale == sign(image_xscale))
-	        other.movespeed -= 0.25
-		else if (other.movespeed <= 10 || other.image_xscale == sign((-image_xscale)))
-		{
-			other.image_xscale = sign((-image_xscale))
-			other.movespeed += 0.25
-		}
+			#region Object
+			with (instance_place(x, (y + 1), obj_slope))
+			{
+				var slope_acceleration = abs(image_yscale) / abs(image_xscale)
+				//Roll Momentum
+				if sign(other.image_xscale) == sign(image_xscale)
+				{
+					if other.movespeed > 0 
+					{
+					other.movespeed -= (0.5 * slope_acceleration)
+						if other.movespeed <= 0
+						{
+							(other.image_xscale) = -sign(image_xscale)
+						}
+					}
+				}
+				else if sign(other.image_xscale) == -sign(image_xscale)
+				{
+					if other.movespeed < other.maxmachspeed
+						other.movespeed += (0.5 * slope_acceleration)
+				}
+			}
+			#endregion
 	}
 }
 #endregion
@@ -51,3 +67,4 @@ if (countdown <= 0) {
     instance_destroy()
 }
 
+devvsp = (vsp / 2)

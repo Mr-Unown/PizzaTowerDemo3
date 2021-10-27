@@ -64,7 +64,8 @@ function scr_player_bombpep() {
 			//playerdirection = (round(_direction / 90) * 90)
 			movespeed = 14;
 			scr_soundeffect(sfx_bombpep2)
-			state = states.newbomb						
+			state = states.newbomb		
+			instance_create(x, y, obj_bombexplosion)
 		}
 		else
 		{

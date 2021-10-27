@@ -35,7 +35,7 @@ function scr_collide() {
 	}
 
 
-	var _grav = (in_water == true ? (grav / 1.15) : grav);
+	var _grav = (in_water == true ? round((grav / 1.25) * 100) / 100 : grav);
 	if (vsp < 10)
 	  vsp += _grav;
 
