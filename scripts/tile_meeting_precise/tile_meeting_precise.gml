@@ -32,12 +32,13 @@ for(var _x = _x1; _x <= _x2; _x++)
 				var row = sprite_get_width(spr_solidtile) / TILE_SIZE;
 				if _tile < (column * row) - 1
 				{
-					var posx = (_tile mod column);
-					var posy = floor(_tile / row);
-					var mapped = global.tile_heightmap[posx][((_x mod TILE_SIZE) + (_tile * TILE_SIZE))];
-					var donkeykong = ((_y mod TILE_SIZE) - mapped);
-					if donkeykong >= 0
+					var posy = (_tile mod column);
+					var posx = floor(_tile / row);
+					var mapped = global.tile_heightmap[posy][((argument0 mod TILE_SIZE) + (posx * TILE_SIZE))]; //returns in pixels the distance from which there are empty pixels.
+					var donkeykong = ((_y * tilemap_get_tile_height(_tm)) + -mapped);
+					if argument1 >= donkeykong
 						return _tile;
+					
 				}
 			}
 			//Old Precise Checker

@@ -9,7 +9,7 @@
     "name": "spr_solidtile",
     "path": "sprites/spr_solidtile/spr_solidtile.yy",
   },
-  "persistent": true,
+  "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,

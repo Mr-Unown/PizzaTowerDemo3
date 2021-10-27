@@ -1,5 +1,5 @@
 /// @description Generate Height Map
-draw_tilemap(tilemapid,0,0)
+//draw_tilemap(tilemapid,0,0)
 //draw_sprite(spr_solidtile,0,0,0)
 /*
 for (var i = heightstoget - 1; i >= 0; i--)
@@ -22,9 +22,10 @@ for (var i = collisionheight - 1; i >= 0; i--) //loop for each row
 		var check = 0;
 		while (check <= TILE_SIZE)
 		{
-			if check == TILE_SIZE 
+//							 X	 Y	    Adjust for ROW
+			if place_meeting(z,check + (i * TILE_SIZE),obj_precise_tileinitializer) 
 				break;
-			if (surface_getpixel(application_surface,z,check)) != c_black //if place_meeting(z,check,obj_precise_tileinitializer) 
+			if check == TILE_SIZE 
 				break;
 			check++
 		}
