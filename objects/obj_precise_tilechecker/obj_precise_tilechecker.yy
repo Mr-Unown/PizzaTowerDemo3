@@ -2,7 +2,10 @@
   "spriteId": null,
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_debugpointer",
+    "path": "sprites/spr_debugpointer/spr_debugpointer.yy",
+  },
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,

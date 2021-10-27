@@ -21,21 +21,23 @@ for(var _x = _x1; _x <= _x2; _x++)
 	for(var _y = _y1; _y <= _y2; _y++)
 	{
 		var _tile = tile_get_index(tilemap_get(_tm, _x, _y));
-		if(_tile)
+		if _tile > 0
 		{
-			if(_tile == tiletype.solids)
+			if (_tile == tiletype.solids)
 				return _tile; //If Tile is Just Solid it's fine otherwise...
 			else
 			{
 				//Precise Tile Checker poggers
-				var pos = (tilemap_get_at_pixel(_tm,_x,_y))
-				if pos > 0
-				{
 				var column = sprite_get_height(spr_solidtile) / TILE_SIZE;
-				var mapped = global.tile_heightmap[_tile mod column][(_x mod TILE_SIZE) + (pos * TILE_SIZE)];
-				var donkeykong = ((_y mod TILE_SIZE) - mapped);
-				if donkeykong >= 0
-					return _tile;
+				var row = sprite_get_width(spr_solidtile) / TILE_SIZE;
+				if _tile < (column * row) - 1
+				{
+					var posx = (_tile mod column);
+					var posy = floor(_tile / row);
+					var mapped = global.tile_heightmap[posx][((_x mod TILE_SIZE) + (_tile * TILE_SIZE))];
+					var donkeykong = ((_y mod TILE_SIZE) - mapped);
+					if donkeykong >= 0
+						return _tile;
 				}
 			}
 			//Old Precise Checker
