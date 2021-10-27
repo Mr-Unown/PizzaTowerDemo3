@@ -1,5 +1,5 @@
 /// @description Generate Height Map
-draw_sprite(spr_solidtile,0,0,0)
+//draw_sprite(spr_solidtile,0,0,0)
 /*
 for (var i = heightstoget - 1; i >= 0; i--)
 {
@@ -14,19 +14,19 @@ for (var i = heightstoget - 1; i >= 0; i--)
 		
 	}
 }*/
-for (var i = collisionheight - 1; i >= 0; i--)
+for (var i = collisionheight - 1; i >= 0; i--) //for each row
 {
 	for (var z = width - 1; z >= 0; z--)
 	{
 		var check = 0;
 		while (check <= TILE_SIZE)
 		{
-			global.heights[z][i] = check;
-			if check >= TILE_SIZE 
+			global.heights[i][z] = check;
+			if check == TILE_SIZE 
 				break;
-			if (surface_getpixel(application_surface,z,check)) != c_black
-				check++
-		
+			if instance_position(z,check,obj_precise_tileinitializer) 
+				break;
+			check++
 		}
 	}	
 }

@@ -762,6 +762,7 @@
     {"id":{"name":"spr_pizzakinpineapple_underwater","path":"sprites/spr_pizzakinpineapple_underwater/spr_pizzakinpineapple_underwater.yy",},"order":4,},
     {"id":{"name":"spr_pizzakinsausage","path":"sprites/spr_pizzakinsausage/spr_pizzakinsausage.yy",},"order":0,},
     {"id":{"name":"spr_pizzakinsausage_panic","path":"sprites/spr_pizzakinsausage_panic/spr_pizzakinsausage_panic.yy",},"order":1,},
+    {"id":{"name":"obj_precise_tileinitializer","path":"objects/obj_precise_tileinitializer/obj_precise_tileinitializer.yy",},"order":1,},
     {"id":{"name":"spr_pizzakinsausage_pause","path":"sprites/spr_pizzakinsausage_pause/spr_pizzakinsausage_pause.yy",},"order":2,},
     {"id":{"name":"spr_pizzakinsausage_run","path":"sprites/spr_pizzakinsausage_run/spr_pizzakinsausage_run.yy",},"order":3,},
     {"id":{"name":"spr_pizzakinsausage_underwater","path":"sprites/spr_pizzakinsausage_underwater/spr_pizzakinsausage_underwater.yy",},"order":4,},
