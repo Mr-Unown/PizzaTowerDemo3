@@ -87,7 +87,8 @@ function scr_player_bombpep() {
 		{			
 			countdown = clamp(floor(other.bombpeptimer/2),0,60)
 			thrownbyplayer = true;
-	        hsp = (other.xscale * 10)
+	        movespeed =  10
+			image_xscale = other.xscale
 	        vsp = -8    
 		}
 		bombpeptimer = 100

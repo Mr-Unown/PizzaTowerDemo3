@@ -275,9 +275,10 @@ if (floor(image_index) == (image_number - 1) && sprite_index == upspr)
         with (instance_create(x, y, obj_pizzagoblinbomb))
         {
             var a = 1
-            if (x != obj_player1.x)
-                a = (-sign((x - obj_player1.x)))
-            hsp = (a * 10)
+            if (x != player.x)
+                a = (-sign((x - player.x)))
+            movespeed = 10
+			image_xscale = a
             vsp = -8
         }
     }
