@@ -325,8 +325,14 @@ function scr_player_mach3() {
 	            instance_create(obj_player.x, obj_player.y, obj_slapstar)
 	        image_xscale = other.xscale
 	        other.dashcloudid = id
-	        if (place_meeting(other.x, (other.y + 1), obj_boilingwater) || place_meeting(other.x, (other.y + 1), obj_water)) && (!place_meeting(other.x, other.y, obj_water) && !place_meeting(other.x, other.y, obj_boilingwater))
+	        if place_meeting(other.x, (other.y + 1), obj_boilingwater) && !place_meeting(other.x, other.y, obj_boilingwater)
+			{
 	            sprite_index = spr_waterdash
+			}
+			else if place_meeting(other.x, (other.y + 1), obj_water) && !place_meeting(other.x, other.y, obj_water)
+			{
+				sprite_index = spr_cheesedash	
+			}
 	    }
 	}
 

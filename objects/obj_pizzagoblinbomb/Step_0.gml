@@ -5,19 +5,25 @@ hsp = (image_xscale * (movespeed))
 if (grounded && (!scr_slope_ext(x, y + 1)))
 {
     if (movespeed > 0)
-        movespeed -= 0.5
-    if (vsp > 0.5)
+        movespeed -= 0.7
+    if (vsp >= 0.25)
         vsp = (-devvsp)
 }
+if movespeed <= 0 && (grounded && (!scr_slope_ext(x, y + 1)))
+	drop = true
+else
+	drop = false
 if vsp < 12 && vsp > 10
     vsp += grav
 #endregion
 #region Bump into walls
-if (scr_solid((x + sign(image_xscale)), y) && !scr_slope_ext(x + sign(image_xscale),y) && (!place_meeting((x + sign(image_xscale)), y, obj_destructibles))) && movespeed > 0 
+if (scr_solid(x + sign(image_xscale),y) && !scr_slope_ext(x + sign(image_xscale),y)) && movespeed > 0
 {
-	image_xscale *= -1
-	if (movespeed >= 0.5)
-		movespeed /= 2
+	image_xscale *= -1;
+	vsp = round(movespeed) / -3;
+	if (movespeed >= 0.7)
+		movespeed /= 2;
+	//hsp = (image_xscale * (movespeed))		
 	if !instance_exists(bumpid)
 		with (instance_create(x, y, obj_bumpeffect))
 			other.bumpid = id
@@ -26,9 +32,7 @@ if (scr_solid((x + sign(image_xscale)), y) && !scr_slope_ext(x + sign(image_xsca
 #region Slope Physics
 if place_meeting(x, y + 1,obj_slope)
 {
-	with (instance_place(x, (y + 1), obj_slope))
-	{
-			#region Object
+	#region Object
 			with (instance_place(x, (y + 1), obj_slope))
 			{
 				var slope_acceleration = abs(image_yscale) / abs(image_xscale)
@@ -37,7 +41,7 @@ if place_meeting(x, y + 1,obj_slope)
 				{
 					if other.movespeed > 0 
 					{
-					other.movespeed -= (0.5 * slope_acceleration)
+					other.movespeed -= (0.7 * slope_acceleration)
 						if other.movespeed <= 0
 						{
 							(other.image_xscale) = -sign(image_xscale)
@@ -46,12 +50,11 @@ if place_meeting(x, y + 1,obj_slope)
 				}
 				else if sign(other.image_xscale) == -sign(image_xscale)
 				{
-					if other.movespeed < other.maxmachspeed
-						other.movespeed += (0.5 * slope_acceleration)
+					if other.movespeed < 10
+						other.movespeed += (0.7 * slope_acceleration)
 				}
 			}
-			#endregion
-	}
+	#endregion
 }
 #endregion
 //Explody

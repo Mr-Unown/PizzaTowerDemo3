@@ -26,8 +26,8 @@ function scr_escapetimes() {
 	            global.seconds = 25
 	            break	
 	        case sanctum_11:
-	            global.minutes = 2
-	            global.seconds = 30
+	            global.minutes = 3
+	            global.seconds = 00
 	            break				
 	        case strongcold_1:
 	            global.minutes = 3

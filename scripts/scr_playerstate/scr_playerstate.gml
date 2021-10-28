@@ -564,10 +564,14 @@ function scr_playerstate() {
 			with (instance_create(x, y, obj_superdashcloud))
 			{
 				image_speed = 0.35
-				sprite_index = spr_flamecloud
+				
 				image_xscale = other.xscale
 				if place_meeting(other.x, (other.y + 1), obj_boilingwater) && !place_meeting(other.x, other.y, obj_boilingwater)
 					sprite_index = spr_watersplashsmall
+				else if place_meeting(other.x, (other.y + 1), obj_water) && !place_meeting(other.x, other.y, obj_water)
+					sprite_index = spr_cheesesplashsmall	
+				else 
+					sprite_index = spr_flamecloud
 			}
 		}
 		firetrailbuffer = 100;
