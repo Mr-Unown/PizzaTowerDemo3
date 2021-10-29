@@ -1,6 +1,6 @@
 
     alpha = obj_tv.alpha
-    if (room == Realtitlescreen || room == Titlescreen || room == rank_room || room == cowboytask || room == hub_room2 || room == hub_room1)
+    if (room == New_Realtitlescreen || room == Titlescreen || room == rank_room || room == cowboytask || room == hub_room2 || room == hub_room1)
         alpha = obj_tv.alpha
     if (room == Titlescreen || room == rank_room || room == cowboytask || room == hub_room2 || room == hub_room1)
         visible = false
@@ -12,7 +12,7 @@
     {
         if (obj_player.y < 200 && obj_player.x > (room_width - 200))
             alpha = obj_tv.alpha
-        else if (!(room == rank_room || room == timesuproom || room == boss_room1 || room == Realtitlescreen || room == Scootertransition || room == Titlescreen || room == rank_room || room == cowboytask || room == hub_room2 || room == hub_room1))
+        else if (!(room == rank_room || room == timesuproom || room == boss_room1 || room == New_Realtitlescreen || room == Scootertransition || room == Titlescreen || room == rank_room || room == cowboytask || room == hub_room2 || room == hub_room1))
             alpha = obj_tv.alpha
     }
 

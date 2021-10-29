@@ -257,7 +257,7 @@ if (player.state != 55)
 		#region NEW HUD
 		var newhudx = 150 + irandom_range(-shakemag,shakemag);
 	    var newhudy = 100 + irandom_range(-shakemag,shakemag) + newhudyoffset;		
-		if global.levelname != "none" && (!(room == timesuproom || room == boss_room1 || room == Scootertransition || room == characterselect || room == Realtitlescreen || room == Tutorialtrap ||  room == Titlescreen || room == rank_room || room == cowboytask || room == Tutorialtrap || room == cowboytask || room == timesuproom || room == hub_room3 || room == hub_room2 || room == hub_room1))
+		if global.levelname != "none" && (!(room == timesuproom || room == boss_room1 || room == Scootertransition || room == characterselect || room == New_Realtitlescreen || room == Tutorialtrap ||  room == Titlescreen || room == rank_room || room == cowboytask || room == Tutorialtrap || room == cowboytask || room == timesuproom || room == hub_room3 || room == hub_room2 || room == hub_room1))
 		{
 		if global.stylethreshold > 0
 		{
@@ -534,7 +534,7 @@ if (player.state != 55)
 	ini_open("playerData_"+global.savefile+".ini");
 	var ranks = ini_read_string("Ranks", string(global.levelname), "none"); 
 	ini_close();
-	if global.levelname != "none" && (ranks != "none") && room != hub_room1 && room != hub_room2 && room != hub_room3 && room != cowboytask && room != timesuproom && room != Scootertransition && room != Tutorialtrap  && room != Titlescreen  && room != Realtitlescreen && !instance_exists(obj_endlevelfade)
+	if global.levelname != "none" && (ranks != "none") && room != hub_room1 && room != hub_room2 && room != hub_room3 && room != cowboytask && room != timesuproom && room != Scootertransition && room != Tutorialtrap  && room != Titlescreen  && room != New_Realtitlescreen && !instance_exists(obj_endlevelfade)
 	{
 		if global.bonustimer = false
 			global.bonustimer = true;

@@ -1,1 +1,1 @@
-player = obj_player1
+player = obj_player1;

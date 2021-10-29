@@ -97,8 +97,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "PizzaTower_Demo3",
-    "path": "PizzaTower_Demo3.yyp",
+    "name": "Peppino",
+    "path": "folders/Sprites/Characters/Playable Characters Sprites/Peppino.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_player_groundpoundjump",

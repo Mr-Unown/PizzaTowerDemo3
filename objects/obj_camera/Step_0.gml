@@ -49,7 +49,7 @@ if global.panicbg = true && (global.panic = 1 || global.snickchallenge = true)
 	global.wave = clamp(clamp(global.wave + 0.0625,0,(global.maxwave - (((global.minutes * 60) + global.seconds) * 60))),0,global.maxwave)
 }	
 
-if (room == strongcold_endscreen || room == rank_room || room == timesuproom || room == Realtitlescreen || room == Scootertransition || room == characterselect)
+if (room == strongcold_endscreen || room == rank_room || room == timesuproom || room == New_Realtitlescreen || room == Scootertransition || room == characterselect)
     visible = false
 else
     visible = true
@@ -319,7 +319,7 @@ if frozen = true && global.freezeframe = false
 	frozen = false;
 }
 //Speedrun Timer
-if room != hub_room1 && room != hub_room2 && room != hub_room3 && room != cowboytask && room != timesuproom && room != Scootertransition && room != Tutorialtrap  && room != Titlescreen  && room != Realtitlescreen
+if room != hub_room1 && room != hub_room2 && room != hub_room3 && room != cowboytask && room != timesuproom && room != Scootertransition && room != Tutorialtrap  && room != Titlescreen  && room != New_Realtitlescreen
 {
 	if obj_player.state != states.gottreasure  && room != rank_room && !instance_exists(obj_endlevelfade) && !instance_exists(obj_gatetransition)
 	{

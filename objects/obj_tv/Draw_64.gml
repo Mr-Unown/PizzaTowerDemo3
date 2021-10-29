@@ -102,7 +102,7 @@ switch(global.newhud)
 	#region NEW TV
 	//if surface_exists(oldcombometersurface)
 	//	surface_free(oldcombometersurface);
-	if !(room == Realtitlescreen || room == rank_room || room == timesuproom || room == boss_room1)
+	if !(room == New_Realtitlescreen || room == rank_room || room == timesuproom || room == boss_room1)
 	{
 		#region Palette		
 if (obj_player1.spotlight == 1)

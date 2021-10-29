@@ -26,7 +26,7 @@ if is_discord_ready = true
 	#region Player 1 Chara Icon
 	if obj_pause.pause != 1
 	{
-		if room != Realtitlescreen && room != characterselect
+		if room != New_Realtitlescreen && room != characterselect
 		{
 			switch obj_player1.character
 			{

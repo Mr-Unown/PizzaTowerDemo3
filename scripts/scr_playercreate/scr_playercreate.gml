@@ -3,7 +3,7 @@ function scr_playercreate() {
 	jumpheight = -11;
 	
 	in_water = false;
-	
+	toomanytoppings = 0;
 	//global.wateralpha = 0.85
 	global.storedtaminute = 0;
 	global.storedtasecond = 0;
