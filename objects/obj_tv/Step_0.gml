@@ -41,7 +41,7 @@ if frozen = true && global.freezeframe = false
 if global.snickchallenge = true
 	global.pausecombotime = false
 
-    if (room == Realtitlescreen || room == Tutorialtrap ||  room == Titlescreen || room == rank_room || room == cowboytask || room == hub_room3 || room == hub_room2 || room == hub_room1)
+    if (room == global.roomstart[global.newtitlescreen] || room == Tutorialtrap ||  room == Titlescreen || room == rank_room || room == cowboytask || room == hub_room3 || room == hub_room2 || room == hub_room1)
         alpha = 0
     if (room == Titlescreen || room == Tutorialtrap || room == rank_room || room == cowboytask || room == hub_room3 || room == hub_room2 || room == hub_room1)
         tvsprite = spr_tvknight
@@ -53,7 +53,7 @@ if global.snickchallenge = true
     {
         if collided = true
             alpha = 0.5
-        else if (!(room == rank_room || room == timesuproom || room == boss_room1 || room == Realtitlescreen || room == Scootertransition || room == Titlescreen || room == Tutorialtrap || room == rank_room || room == cowboytask ||room == hub_room3   || room == hub_room2 || room == hub_room1))
+        else if (!(room == rank_room || room == timesuproom || room == boss_room1 || room == global.roomstart[global.newtitlescreen] || room == Scootertransition || room == Titlescreen || room == Tutorialtrap || room == rank_room || room == cowboytask ||room == hub_room3   || room == hub_room2 || room == hub_room1))
             alpha = 1
     }
 if global.newhud = true

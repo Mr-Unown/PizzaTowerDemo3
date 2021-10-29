@@ -203,6 +203,8 @@ function scr_characterspr() {
 		spr_parry1 = spr_player_parry1
 		spr_parry2 = spr_player_parry2
 		spr_parry3 = spr_player_parry3
+		spr_groundpoundjump = spr_player_groundpoundjump
+		spr_groundpoundjumpend = spr_player_fall
 		spr_breakdancestart = spr_player_breakdancestart
 		spr_breakdance = spr_player_breakdance
 		spr_breakdanceattack1 = spr_player_breakdance_attack

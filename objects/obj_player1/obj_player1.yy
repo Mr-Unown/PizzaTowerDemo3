@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_pepcooter",
-    "path": "sprites/spr_pepcooter/spr_pepcooter.yy",
+    "name": "spr_file2",
+    "path": "sprites/spr_file2/spr_file2.yy",
   },
   "solid": false,
   "visible": true,

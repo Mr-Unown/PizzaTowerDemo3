@@ -3,10 +3,11 @@ function scr_playercreate() {
 	jumpheight = -11;
 	
 	in_water = false;
+	//Topping Trail
+	toomanytoppings = 0;
 	//Suplex
+
 	suplexdashtimer = 0;
-	
-	
 	//global.wateralpha = 0.85
 	global.storedtaminute = 0;
 	global.storedtasecond = 0;
@@ -108,7 +109,7 @@ function scr_playercreate() {
 	customupdate = true;
 	//Stored Stuff
 	frozenstate = 0;
-	frozenspriteindex = spr_player_idle;
+	frozenspriteindex = spr_file2;
 	frozenimageindex = 0;
 	frozenimagespeed = 0.35;
 	frozenmovespeed = 0;
