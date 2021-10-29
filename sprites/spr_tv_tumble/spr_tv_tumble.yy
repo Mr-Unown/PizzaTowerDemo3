@@ -17,8 +17,8 @@
   "width": 278,
   "height": 268,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "NEWHUD",
+    "path": "texturegroups/NEWHUD",
   },
   "swatchColours": null,
   "gridX": 0,

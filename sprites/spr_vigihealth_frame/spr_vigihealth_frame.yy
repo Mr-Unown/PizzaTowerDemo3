@@ -17,8 +17,8 @@
   "width": 100,
   "height": 100,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "NEWHUD",
+    "path": "texturegroups/NEWHUD",
   },
   "swatchColours": null,
   "gridX": 0,
@@ -185,8 +185,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "PizzaTower_Demo3",
-    "path": "PizzaTower_Demo3.yyp",
+    "name": "Other",
+    "path": "folders/Sprites/Hud & Menus/New Hud/Other.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_vigihealth_frame",
