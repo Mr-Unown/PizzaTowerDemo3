@@ -3,6 +3,9 @@ if destroyed = false
 {
 	respawnblock = 100;
 	destroyed = true
+    x = -960;
+    y = -100;
+    mask_index = spr_null;	
 	repeat (3)
 	with (instance_create((xstart + 32 + random_range(-32, 32)), (ystart + 32 + random_range(-32, 32)), obj_balloonpop))
 	{
@@ -16,8 +19,8 @@ if destroyed = false
 		canrotate = true
 		image_xscale = other.image_xscale
         sprite_index = other.spr_dead
-		hsp = other.initialhsp
-		vsp = other.initialvsp
+		hsp = (other.initialhsp * 1.05)
+		vsp = clamp(other.initialvsp,other.initialvsp - 32,-4)
 	}	
     if (audio_is_playing(sfx_breakblock1) || audio_is_playing(sfx_breakblock2))
     {

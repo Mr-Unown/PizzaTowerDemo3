@@ -1,4 +1,4 @@
-if (global.levelselected == 0)
+/*if (global.levelselected == 0)
 {
     with (obj_player1)
     {

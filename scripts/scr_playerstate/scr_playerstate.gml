@@ -110,7 +110,8 @@ function scr_playerstate() {
 		changing = 123,
 		murder = 124,
 		trick = 125,
-		newbomb = 126
+		newbomb = 126,
+		startgate = 127
 
 	} 
 	//I made some changes to it so that we can know at a glance what number it gets converted to.
@@ -121,6 +122,9 @@ function scr_playerstate() {
 	    case 0:
 	        scr_player_normal()
 	        break
+	    case states.startgate:
+	        scr_player_startgate()
+	        break			
 	    case states.newbomb:
 	        scr_player_newbomb()
 	        break			
@@ -445,6 +449,7 @@ function scr_playerstate() {
 	}
 #endregion
 	#region Jump Height
+	/*
 	var _jumpheight = 0;
 	switch character
 	{
@@ -474,15 +479,13 @@ function scr_playerstate() {
 		break;
 	}
 	
-	jumpheight = _jumpheight + (in_water == true ? -2 : 0)
+	jumpheight = _jumpheight + (in_water == true ? -2 : 0)*/
 	#endregion
 	
 	//Water
 	in_water = (instance_exists(obj_water) && obj_water.bbox_top < y);
 	if in_water = true
 	{
-		if vsp > 10
-			vsp = 10
 	    if chance(0.99) == false
 		{
 			with instance_create(x , y, obj_waterbubble)
@@ -561,10 +564,14 @@ function scr_playerstate() {
 			with (instance_create(x, y, obj_superdashcloud))
 			{
 				image_speed = 0.35
-				sprite_index = spr_flamecloud
+				
 				image_xscale = other.xscale
 				if place_meeting(other.x, (other.y + 1), obj_boilingwater) && !place_meeting(other.x, other.y, obj_boilingwater)
 					sprite_index = spr_watersplashsmall
+				else if place_meeting(other.x, (other.y + 1), obj_water) && !place_meeting(other.x, other.y, obj_water)
+					sprite_index = spr_cheesesplashsmall	
+				else 
+					sprite_index = spr_flamecloud
 			}
 		}
 		firetrailbuffer = 100;
@@ -579,7 +586,11 @@ function scr_playerstate() {
 	{
 		combothreshold = 0;
 	}
-
+	//Cutscene Variable
+	if global.freezeframe = false && (state == 23 || sprite_index == spr_knightpepstart || sprite_index == spr_knightpepthunder || state == 56 || state == 78 || state == 4 || state == states.startgate || state == 64 || state == 61 || state == 55)
+		cutscene = 1
+	else if global.freezeframe = false
+		cutscene = 0
 	//Palette
 	if surface_exists(surf_pallete) && (paletteselect >= sprite_get_width(spr_palette) - 1)
 		custompalette = true

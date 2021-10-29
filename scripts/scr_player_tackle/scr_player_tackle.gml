@@ -1,9 +1,35 @@
 function scr_player_tackle() {
+	#region Movespeed
+	    if (character == "P")
+	    {
+	        if (movespeed < 10 && grounded)
+	            movespeed += 0.5
+	        else if (!grounded)
+	            movespeed = 10
+	    }
+		if character = "PZ"
+		{
+	       movespeed = 10
+		}
+	    if (character == "N")
+	    {
+			if pogo == true
+			{
+				if (movespeed < 8 && grounded)
+					movespeed += 0.5
+				else if (!grounded)
+					movespeed = 8
+			}
+			else
+			{
+				if (movespeed < 9 && grounded)
+					movespeed += 0.5
+				else if (!grounded)
+					movespeed = 9
+			}
+	    }
 	combo = 0
 	mach2 = 0
-	hsp = xscale * movespeed
-	if (movespeed > 0)
-	    movespeed -= 0.35
 	start_running = 1
 	jumpAnim = 1
 	dashAnim = 1
@@ -11,16 +37,31 @@ function scr_player_tackle() {
 	moveAnim = 1
 	stopAnim = 1
 	crouchslideAnim = 1
-	crouchAnim = 1
+	crouchAnim = 1		
+	#endregion
+	var slowdownspeed = 9 * (suplexdashtimer/12);
+	hsp = xscale * abs(movespeed - slowdownspeed)	
+
 	if (floor(image_index) >= (image_number - 1))
 	    image_speed = 0
 	else
 		image_speed = 0.35
 	//Regular Stop
-	if movespeed <= 0 && !key_attack 
+	if suplexdashtimer >= 12 && slowdownspeed >= 9 && !key_attack 
 	{
 		image_speed = 0.35
 	    state = 0
+	}
+	//Jump
+	if (key_jump && grounded)
+	{
+		movespeed = 9
+	    sprite_index = spr_mach2jump
+	    state = 70
+		grav = 0.5
+	    instance_create(x, y, obj_jumpdust)
+	    suplexmove = 0
+		vsp = -11
 	}
 	//Mach Stop
 	if (grounded || character = "PZ") && key_attack
@@ -49,6 +90,6 @@ function scr_player_tackle() {
 	    state = 68
 	    movespeed = clamp(movespeed + 5,5,15)
 	}
-
+    suplexdashtimer += 0.35
 
 }

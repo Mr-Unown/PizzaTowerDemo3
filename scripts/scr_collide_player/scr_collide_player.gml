@@ -38,12 +38,13 @@ function scr_collide_player() {
 	}
 
 
-	if vsp < 20
-	    vsp += grav;
+	var _grav = (in_water == true ? grav / 1.5 : grav);
+	if (vsp < 20)
+	  vsp += _grav;
 
 	grounded |= scr_solid(x, y + 1)
 	grounded |= !place_meeting(x, y, obj_platform) && place_meeting(x, y + 1, obj_platform)
-	grounded |= !place_meeting(x, y, obj_water) && place_meeting(x, y + 1, obj_water)
+	grounded |= scr_solid_player(x,y + 1) && (!place_meeting(x, y, obj_water) && place_meeting(x, y + 1, obj_water))
 	grounded |= grinding
 
 

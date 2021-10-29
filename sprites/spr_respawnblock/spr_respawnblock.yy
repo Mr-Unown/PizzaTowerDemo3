@@ -53,7 +53,7 @@
     "spriteId": {"name":"spr_respawnblock","path":"sprites/spr_respawnblock/spr_respawnblock.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 20.0,
+    "playbackSpeed": 1.0,
     "playbackSpeedType": 1,
     "autoRecord": true,
     "volume": 1.0,

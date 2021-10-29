@@ -8,7 +8,6 @@
 function tile_meeting_line(argument0,argument1,argument2,argument3,argument4 = "Tiles_Solid"){
 if !layer_exists(argument4)
 	return false;	
-#macro tile_size 32
 #macro tile_bit_shift 5
 var x1 = argument0
 var y1 = argument1
@@ -25,22 +24,22 @@ var hwall_x, hwall_shift_x, hwall_y, hwall_shift_y;
 var vwall_x, vwall_shift_x, vwall_y, vwall_shift_y;
 
 if ang_sin > 0 {
-    hwall_y = (y1 div tile_size) * tile_size - 0.01;
-    hwall_shift_y = -tile_size;
+    hwall_y = (y1 div TILE_SIZE) * TILE_SIZE - 0.01;
+    hwall_shift_y = -TILE_SIZE;
 } else {
-    hwall_y = (y1 div tile_size) * tile_size + tile_size;
-    hwall_shift_y = tile_size;
+    hwall_y = (y1 div TILE_SIZE) * TILE_SIZE + TILE_SIZE;
+    hwall_shift_y = TILE_SIZE;
 }
 
 hwall_x = x1 + (y1 - hwall_y) / ang_tan;
 hwall_shift_x = -hwall_shift_y / ang_tan;
   
 if ang_cos < 0 {
-    vwall_x = (x1 div tile_size) * tile_size - 0.01;
-    vwall_shift_x = -tile_size;
+    vwall_x = (x1 div TILE_SIZE) * TILE_SIZE - 0.01;
+    vwall_shift_x = -TILE_SIZE;
 } else {
-    vwall_x = (x1 div tile_size) * tile_size + tile_size;
-    vwall_shift_x = tile_size;
+    vwall_x = (x1 div TILE_SIZE) * TILE_SIZE + TILE_SIZE;
+    vwall_shift_x = TILE_SIZE;
 }
 
 vwall_y = y1 + (x1 - vwall_x) * ang_tan;

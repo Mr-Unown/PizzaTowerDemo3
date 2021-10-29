@@ -236,10 +236,7 @@ if (character == "S")
 }
 
 
-if (state == 23 || sprite_index == spr_knightpepstart || sprite_index == spr_knightpepthunder || state == 56 || state == 78 || state == 4 || state == 64 || state == 61 || state == 55)
-    cutscene = 1
-else
-    cutscene = 0
+
 if (((place_meeting(x, y, obj_door) && (!place_meeting(x, y, obj_doorblocked))) || place_meeting(x, y, obj_hatstand) || place_meeting(x, y, obj_olddresser) || place_meeting(x, y, obj_dresser) || place_meeting(x,y, obj_door2) || place_meeting(x,y,obj_geromedoor)|| place_meeting(x, y, obj_snick) || place_meeting(x, y, obj_keydoor) || (place_meeting(x, y, obj_exitgate) && (global.panic == 1 || global.snickchallenge == true))) && (!instance_exists(uparrowid)) && scr_solid(x, (y + 1)) && state == 0 && obj_player1.spotlight == 1)
 {
     with (instance_create(x, y, obj_uparrow))

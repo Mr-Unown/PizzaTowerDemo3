@@ -235,7 +235,7 @@ else if (global.hurtcounter >= global.hurtmilestone)
     else if (obj_player.character == "D")
         character = "DOUGIE"	
     message = (((("YOU HAVE HURT " + string(character)) + " ") + string(global.hurtmilestone)) + " TIMES...")
-	scr_queuemessage("It seems that our counters indicate that some "+ choose("idiot","moron","ignoramus","dingus","buffon") + " Pizzaman has been hurt " + string(global.hurtmilestone)+ " times...");
+	scr_queue_message("It seems that our counters indicate that some "+ choose("idiot","moron","ignoramus","dingus","buffon") + " Pizzaman has been hurt " + string(global.hurtmilestone)+ " times...");
     if (tvsprite != spr_tvtalking1 && tvsprite != spr_tvtalking2 && tvsprite != spr_tvtalking3 && tvsprite != spr_tvtalking4)
         tvsprite = choose(spr_tvtalking1, spr_tvtalking2, spr_tvtalking3, spr_tvtalking4)
 	var randomchance = irandom_range(0,100);
@@ -338,6 +338,11 @@ else if global.newhud = true && oldcharacter == player.character && (sprite_inde
 	#region NEW TV
 	switch(_state)
 	{
+		case states.keyget:
+		case states.victory:
+		newtvsprite = player.spr_playertv_victory;
+		channel = 5;
+		break;			
 		case states.bombpep:
 		case states.newbomb:
 		newtvsprite = player.spr_playertv_bomb;
@@ -361,15 +366,15 @@ else if global.newhud = true && oldcharacter == player.character && (sprite_inde
 		#region Normal
             if (idle < 400)
                 idle++
-            if (idle >= 300 && floor(image_index) >= (image_number - 1)) && (newtvsprite = player.spr_playertv_normalidle1 || newtvsprite = player.spr_playertv_normalidle2)
+            if (idle >= 300 && floor(image_index) >= (image_number - 1)) && (newtvsprite = player.spr_playertv_normalidle1 || newtvsprite = player.spr_playertv_normalidle2 || newtvsprite = player.spr_playertv_normalidle3)
             {
                 idle = 0
                 image_index = 0
 				newtvsprite = player.spr_playertv_normal
             }
-            if (idle >= 300 && newtvsprite != player.spr_playertv_normalidle1 && newtvsprite != player.spr_playertv_normalidle2)
+            if (idle >= 300 && newtvsprite != player.spr_playertv_normalidle1 && newtvsprite != player.spr_playertv_normalidle2 && newtvsprite != player.spr_playertv_normalidle3)
             {
-                newtvsprite = choose(player.spr_playertv_normalidle1, player.spr_playertv_normalidle2)
+                newtvsprite = choose(player.spr_playertv_normalidle1, player.spr_playertv_normalidle2, player.spr_playertv_normalidle3)
                 image_index = 0
             }
 			if idle < 300
@@ -385,6 +390,7 @@ else if global.newhud = true && oldcharacter == player.character && (sprite_inde
 		newtvspritestore = channel
 		drawstatic = true
 		drawstatictimer = 15
+		oldsprite = newtvsprite 
 	}
 }
 else if global.newhud = true && ((oldcharacter != player.character) || (oldplayer != player))
@@ -409,32 +415,32 @@ switch(obj_player.state)
 	case states.knightpepattack:
 	if ds_list_find_index(global.saveroom, "knight") = -1  
 	{
-		scr_queuemessage("Wow! It seems that thunder has turned a seemingly-unknown-as-of-now fat man into a valiant and more easily identifiable knight! What mighty stead will he ride? What epic quest will he accomplish?");
-		scr_queuemessage("Maybe he will just slam into a wall and become incredibly boring again?");
+		scr_queue_message("Wow! It seems that thunder has turned a seemingly-unknown-as-of-now fat man into a valiant and more easily identifiable knight! What mighty stead will he ride? What epic quest will he accomplish?");
+		scr_queue_message("Maybe he will just slam into a wall and become incredibly boring again?");
 		ds_list_add(global.saveroom, "knight")
 	}
 	break;
 	case states.bombpep:
 	if ds_list_find_index(global.saveroom, "bomb") = -1  
 	{
-		scr_queuemessage("Whew... That Strange Unknown Pizzaman better be careful you might never know when that bomb will blow up!");
-		scr_queuemessage("I sure hope this strange man knows how to play Bomb Throw, if not... well I'm sure he'll be fine.");
+		scr_queue_message("Whew... That Strange Unknown Pizzaman better be careful you might never know when that bomb will blow up!");
+		scr_queue_message("I sure hope this strange man knows how to play Bomb Throw, if not... well I'm sure he'll be fine.");
 		ds_list_add(global.saveroom, "bomb")
 	}
 	break;		
 	case states.fireass:
 	if ds_list_find_index(global.saveroom, "fireass") = -1  
 	{
-		scr_queuemessage("Ouch! That's gotta hurt! Quickly, Stop, Drop, and Mope!");
-		scr_queuemessage("I sure hope that man has some asbestos pants...");
+		scr_queue_message("Ouch! That's gotta hurt! Quickly, Stop, Drop, and Mope!");
+		scr_queue_message("I sure hope that man has some asbestos pants...");
 		ds_list_add(global.saveroom, "fireass")
 	}	
 	break;	
 	case states.tumble:
 	if ds_list_find_index(global.saveroom, "tumble") = -1  
 	{
-		scr_queuemessage("Oh, looks like this man has taken the tumble! You better watch your step folks or this could happen to you!");
-		scr_queuemessage("At this point there is nothing you can do but hope to get bumped into a wall and not into a death trap!");
+		scr_queue_message("Oh, looks like this man has taken the tumble! You better watch your step folks or this could happen to you!");
+		scr_queue_message("At this point there is nothing you can do but hope to get bumped into a wall and not into a death trap!");
 		ds_list_add(global.saveroom, "tumble")
 	}	
 	break;		

@@ -1,4 +1,4 @@
-if (obj_player1.spotlight == 1)
+/*if (obj_player1.spotlight == 1)
 {
     player = obj_player1
     player2 = obj_player2

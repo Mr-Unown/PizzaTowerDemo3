@@ -9,9 +9,11 @@ function scr_characterspr() {
 		spr_playertv_fireass = spr_tv_fireass;
 		spr_playertv_knight = spr_tv_knight;
 		spr_playertv_tumble = spr_tv_tumble;
+		spr_playertv_victory = spr_tv_victory;
 		spr_playertv_normal = spr_tv_idle;
 		spr_playertv_normalidle1 = spr_tv_idleanim1;
 		spr_playertv_normalidle2 = spr_tv_idleanim2;
+		spr_playertv_normalidle3 = spr_tv_idleanim3;
 		#endregion
 		spr_idle = spr_player_idle
 		spr_move = spr_player_move
@@ -235,11 +237,13 @@ function scr_characterspr() {
 		spr_playertv_bomb = spr_tv_bombpepN;
 		spr_playertv_fireass = spr_tv_fireassN;
 		spr_playertv_knight = spr_tv_knightN;
-		spr_playertv_tumble = spr_tv_tumbleN;
+		spr_playertv_tumble = spr_tv_tumbleN
+		spr_playertv_victory = spr_tv_victoryN;
 		spr_playertv_normal = spr_tv_idleN;
 		spr_playertv_normalidle1 = spr_tv_idleanim1N;
 		spr_playertv_normalidle2 = spr_tv_idleanim2N;
-		#endregion			
+		spr_playertv_normalidle3 = spr_tv_idleanim3N;
+		#endregion		
 	    spr_idle = spr_playerN_idle
 	    spr_move = spr_playerN_move
 	    spr_crawl = spr_playerN_crawl
@@ -468,14 +472,16 @@ function scr_characterspr() {
 		{
 		selectedcharacter = 3;
 		#region TV Sprites
-		spr_playertv_bomb = spr_tv_bombpep;
-		spr_playertv_fireass = spr_tv_fireass;
-		spr_playertv_knight = spr_tv_knight;
-		spr_playertv_tumble = spr_tv_tumble;
-		spr_playertv_normal = spr_tv_idle;
-		spr_playertv_normalidle1 = spr_tv_idleanim1;
-		spr_playertv_normalidle2 = spr_tv_idleanim2;
-		#endregion		
+		spr_playertv_bomb = spr_tv_snicktemp;
+		spr_playertv_fireass = spr_tv_snicktemp;
+		spr_playertv_knight = spr_tv_snicktemp;
+		spr_playertv_tumble = spr_tv_snicktemp;
+		spr_playertv_victory = spr_tv_snicktemp;
+		spr_playertv_normal = spr_tv_snicktemp;
+		spr_playertv_normalidle1 = spr_tv_snicktemp;
+		spr_playertv_normalidle2 = spr_tv_snicktemp;
+		spr_playertv_normalidle3 = spr_tv_snicktemp;
+		#endregion	
 		spr_idle = spr_snick_idle
 		spr_move = spr_snick_walk
 		spr_crawl =  spr_snick_idle
@@ -662,13 +668,15 @@ function scr_characterspr() {
 		{
 		selectedcharacter = 4;
 		#region TV Sprites
-		spr_playertv_bomb = spr_tv_bombpep;
-		spr_playertv_fireass = spr_tv_fireass;
-		spr_playertv_knight = spr_tv_knight;
-		spr_playertv_tumble = spr_tv_tumble;
-		spr_playertv_normal = spr_tv_idle;
-		spr_playertv_normalidle1 = spr_tv_idleanim1;
-		spr_playertv_normalidle2 = spr_tv_idleanim2;
+		spr_playertv_bomb = spr_tv_vigitemp;
+		spr_playertv_fireass = spr_tv_vigitemp;
+		spr_playertv_knight = spr_tv_vigitemp;
+		spr_playertv_tumble = spr_tv_vigitemp;
+		spr_playertv_victory = spr_tv_vigitemp;
+		spr_playertv_normal = spr_tv_vigitemp;
+		spr_playertv_normalidle1 = spr_tv_vigitemp;
+		spr_playertv_normalidle2 = spr_tv_vigitemp;
+		spr_playertv_normalidle3 = spr_tv_vigitemp;
 		#endregion		
 	    spr_idle = spr_playerV_idle
 	    spr_move = spr_playerV_move
@@ -885,13 +893,15 @@ function scr_characterspr() {
 		{
 		selectedcharacter = 7;		
 		#region TV Sprites
-		spr_playertv_bomb = spr_tv_bombpep;
-		spr_playertv_fireass = spr_tv_fireass;
-		spr_playertv_knight = spr_tv_knight;
-		spr_playertv_tumble = spr_tv_tumble;
-		spr_playertv_normal = spr_tv_idle;
-		spr_playertv_normalidle1 = spr_tv_idleanim1;
-		spr_playertv_normalidle2 = spr_tv_idleanim2;
+		spr_playertv_bomb = spr_tv_peppermantemp;
+		spr_playertv_fireass = spr_tv_peppermantemp;
+		spr_playertv_knight = spr_tv_peppermantemp;
+		spr_playertv_tumble = spr_tv_peppermantemp;
+		spr_playertv_victory = spr_tv_peppermantemp;
+		spr_playertv_normal = spr_tv_peppermantemp;
+		spr_playertv_normalidle1 = spr_tv_peppermantemp;
+		spr_playertv_normalidle2 = spr_tv_peppermantemp;
+		spr_playertv_normalidle3 = spr_tv_peppermantemp;
 		#endregion		
 	    spr_idle = spr_playerP_idle
 	    spr_move = spr_playerP_move
@@ -1113,9 +1123,11 @@ function scr_characterspr() {
 		spr_playertv_fireass = spr_tv_fireass;
 		spr_playertv_knight = spr_tv_knight;
 		spr_playertv_tumble = spr_tv_tumble;
+		spr_playertv_victory = spr_tv_victory;
 		spr_playertv_normal = spr_tv_idle;
 		spr_playertv_normalidle1 = spr_tv_idleanim1;
 		spr_playertv_normalidle2 = spr_tv_idleanim2;
+		spr_playertv_normalidle3 = spr_tv_idleanim3;
 		#endregion		
 	    spr_idle = spr_pizzard_scared
 	    spr_move = spr_pizzard_walk
@@ -1334,13 +1346,15 @@ function scr_characterspr() {
 	    {
 		selectedcharacter = 5;
 		#region TV Sprites
-		spr_playertv_bomb = spr_tv_bombpep;
-		spr_playertv_fireass = spr_tv_fireass;
-		spr_playertv_knight = spr_tv_knight;
-		spr_playertv_tumble = spr_tv_tumble;
-		spr_playertv_normal = spr_tv_idle;
-		spr_playertv_normalidle1 = spr_tv_idleanim1;
-		spr_playertv_normalidle2 = spr_tv_idleanim2;
+		spr_playertv_bomb = spr_tv_idlePZ;
+		spr_playertv_fireass = spr_tv_idlePZ;
+		spr_playertv_knight = spr_tv_idlePZ;
+		spr_playertv_tumble = spr_tv_idlePZ;
+		spr_playertv_victory = spr_tv_idlePZ;
+		spr_playertv_normal = spr_tv_idlePZ;
+		spr_playertv_normalidle1 = spr_tv_idleanim1PZ;
+		spr_playertv_normalidle2 = spr_tv_idleanim2PZ;
+		spr_playertv_normalidle3 = spr_tv_idleanim3PZ;
 		#endregion		
 		spr_idle = spr_playerPZ_idle
 		spr_move = spr_playerPZ_move

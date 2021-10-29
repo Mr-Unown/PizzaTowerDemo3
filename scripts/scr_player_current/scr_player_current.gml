@@ -1,18 +1,20 @@
 function scr_player_current() {
 	var drafty = 0;
 	static movehsp = 0;
+	static hdir = -1;
 	static movevsp = 0;
 	static vmovespeed = 0;
 	static vdir = -1;
-	hsp = (movespeed * xscale) + movehsp
+	hsp = (movespeed * hdir) + movehsp
 	vsp = (vmovespeed * vdir) + movevsp
 	//Water Currents
 	with instance_place(x, y, obj_watercurrent)
 	{
 	    other.sprite_index = other.spr_slipnslide
 		other.xscale = sign(image_xscale)
-	    if (movespeed < 10)
-	        movespeed += 1
+		hdir = sign(image_xscale)
+	    if (other.movespeed < 10)
+	        other.movespeed += 1
 
 	}
 	//Water Drafts

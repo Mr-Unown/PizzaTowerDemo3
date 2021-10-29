@@ -15,6 +15,7 @@ with other.id
 			if other.bombjump = true
 				playerdirection = 90
 			movespeed = 14;
+			scr_soundeffect(sfx_bombpep2)
 			state = states.newbomb			
 		}
 		else if (state != 114 && state != states.newbomb && state != 113) && character = "V"

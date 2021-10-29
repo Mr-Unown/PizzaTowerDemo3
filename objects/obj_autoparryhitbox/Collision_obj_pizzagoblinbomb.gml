@@ -5,6 +5,7 @@ with (other.id)
     if (x != other.x)
         vdirection = sign((x - other.x))
     hsp = (vdirection * magnitude)
+	movespeed = magnitude
     image_xscale = vdirection
     playermode = 1
     playerid = other.playerid
