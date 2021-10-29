@@ -28,8 +28,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Level Collision",
-    "path": "folders/Objects/Level Structure/Level Collision.yy",
+    "name": "Level Structure",
+    "path": "folders/Objects/Level Structure/Level Structure.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_ladder",

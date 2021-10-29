@@ -82,11 +82,11 @@ function scr_solid(argument0 = x, argument1 = y)
 		if y > old_y && (sign(platform.image_yscale) >= 1)
 		{
 			var _list = ds_list_create();
-			var _num = instance_place_list(x, y, obj_platform, _list, false);
+			var _platforms = instance_place_list(x, y, obj_platform, _list, false);
 			var collided = false;
-			if _num > 0
+			if _platforms > 0
 			{
-				for (var i = 0; i < _num; ++i;)
+				for (var i = 0; i < _platforms; ++i;)
 				{
 					var platform = (_list[| i]);
 					if place_meeting(x, y, platform) && !place_meeting(x, old_y, platform)

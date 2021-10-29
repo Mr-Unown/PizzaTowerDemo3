@@ -1,7 +1,4 @@
-function scr_queue_message(argument0) {
-	var arg0 = argument0;
-	ds_queue_enqueue(global.newhudmessage,arg0);
-
-
-
+function scr_queue_message(argument0 = "") {
+	///@param string
+	ds_queue_enqueue(global.newhudmessage,argument0);
 }

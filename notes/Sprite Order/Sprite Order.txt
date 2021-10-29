@@ -1436,8 +1436,8 @@ spr_xmastopping2
 spr_xmastopping3
 spr_xmastopping4
 spr_xmastopping5
-spr_xmasblock
-spr_xmasbigblock
+spr_snickblock
+spr_snickbigblock
 bg_xmastreasure
 spr_xmasdecotree
 spr_graybox
@@ -1492,8 +1492,8 @@ bg_hubroom1
 bg_hubroom2TILE
 bg_cowboytaskTILE
 bg_levelmart
-spr_xmasblockescape
-spr_xmasbigblockescape
+spr_snickblockescape
+spr_snickbigblockescape
 spr_snickcollectible4
 spr_snick_walkfront
 spr_ladder_top

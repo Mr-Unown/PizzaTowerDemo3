@@ -17,8 +17,8 @@
   "width": 12,
   "height": 10,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Vigi_Sprites",
+    "path": "texturegroups/Vigi_Sprites",
   },
   "swatchColours": null,
   "gridX": 0,
@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Palettes",
+    "path": "folders/Sprites/Characters/Playable Characters Sprites/Palettes.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_vigipalette",

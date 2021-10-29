@@ -46,7 +46,7 @@ greyscalefade = approach(greyscalefade,0,0.005)
 //Panic Bg Update
 if global.panicbg = true && (global.panic = 1 || global.snickchallenge = true)
 {
-	global.wave = clamp(clamp(global.wave + 0.0625,0,(global.maxwave - (((global.minutes * 60) + global.seconds) * 60))),0,global.maxwave)
+	global.wave = clamp(clamp(global.wave + (60/room_speed),0,(global.maxwave - (((global.minutes * 60) + global.seconds) * 60))),0,global.maxwave)
 }	
 
 if (room == strongcold_endscreen || room == rank_room || room == timesuproom || room == New_Realtitlescreen || room == Scootertransition || room == characterselect)
@@ -170,7 +170,7 @@ if (global.seconds > 59)
 }
 if (global.panic == 1)
 {
-    panicshake = clamp(lerp(1, 2.15,(global.wave / global.maxwave)),1,2)
+    panicshake = clamp(lerp(1, 2.15,(global.wave / global.maxwave)),1,2.15)
     panicshakeacc = (3 / room_speed)
 }
 else
@@ -293,11 +293,11 @@ if target = player
 }
 
 //Camera X
-camera_set_view_pos(view_camera[0],target_x - (targetzoom1 / 2) + (chargecamera + startgateoffsetx + golfdistancex + p2pdistancex) + floor(irandom_range(-panicshake, panicshake)/2)  + floor(irandom_range(-shake_mag, shake_mag)/2), camera_get_view_y(view_camera[0]))			
-camera_set_view_pos(view_camera[0],clamp(camera_get_view_x(view_camera[0]), 0 + floor(irandom_range(-panicshake, panicshake)/2) + floor(irandom_range(-shake_mag, shake_mag)/2), (room_width - targetzoom1) + floor(irandom_range(-panicshake, panicshake)/2) + floor(irandom_range(-shake_mag, shake_mag)/2)),camera_get_view_y(view_camera[0]))
+camera_set_view_pos(view_camera[0],target_x - (targetzoom1 / 2) + (chargecamera + startgateoffsetx + golfdistancex + p2pdistancex) + (random_range(-panicshake, panicshake)/2)  + floor(irandom_range(-shake_mag, shake_mag)/2), camera_get_view_y(view_camera[0]))			
+camera_set_view_pos(view_camera[0],clamp(camera_get_view_x(view_camera[0]), 0 + floor(irandom_range(-panicshake, panicshake)/2) + floor(irandom_range(-shake_mag, shake_mag)/2), (room_width - targetzoom1) + (random_range(-panicshake, panicshake)/2) + floor(irandom_range(-shake_mag, shake_mag)/2)),camera_get_view_y(view_camera[0]))
 //Camera Y	
-camera_set_view_pos(view_camera[0],camera_get_view_x(view_camera[0]), ((target_y - (targetzoom2 / 2)) + startgateoffsety + golfdistancey + p2pdistancey ) + floor(irandom_range(-panicshake, panicshake)) + irandom_range(-shake_mag, shake_mag))		
-camera_set_view_pos(view_camera[0],camera_get_view_x(view_camera[0]),clamp(camera_get_view_y(view_camera[0]), 0 + irandom_range(-shake_mag, shake_mag), (room_height - targetzoom2) + floor(irandom_range(-panicshake, panicshake)) + irandom_range(-shake_mag, shake_mag)))
+camera_set_view_pos(view_camera[0],camera_get_view_x(view_camera[0]), ((target_y - (targetzoom2 / 2)) + startgateoffsety + golfdistancey + p2pdistancey ) + (random_range(-panicshake, panicshake)) + irandom_range(-shake_mag, shake_mag))		
+camera_set_view_pos(view_camera[0],camera_get_view_x(view_camera[0]),clamp(camera_get_view_y(view_camera[0]), 0 + irandom_range(-shake_mag, shake_mag), (room_height - targetzoom2) + (random_range(-panicshake, panicshake)) + irandom_range(-shake_mag, shake_mag)))
 #endregion
 target_xold = target_x
 target_yold = target_y

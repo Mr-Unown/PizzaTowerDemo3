@@ -17,8 +17,8 @@
   "width": 150,
   "height": 150,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Peppino_Sprites",
+    "path": "texturegroups/Peppino_Sprites",
   },
   "swatchColours": null,
   "gridX": 0,

@@ -81,13 +81,9 @@ if surface_exists(watersurface)
 	
 	
 	with obj_watercurrent
-	{
 		draw_sprite_ext(sprite_index, -1, x - _cam_x, y - _cam_y, image_xscale, image_yscale, image_angle, image_blend, 1)
-	}
 	with obj_waterdraft
-	{
 		draw_sprite_ext(sprite_index, -1, x - _cam_x, y - _cam_y, image_xscale, image_yscale, image_angle, image_blend, 1)
-	}
 		
 	//Draw Clipping Mask
 	gpu_set_blendmode(bm_subtract);

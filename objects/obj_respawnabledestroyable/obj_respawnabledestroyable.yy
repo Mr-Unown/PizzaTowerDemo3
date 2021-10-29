@@ -8,8 +8,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_bigdestructibles",
-    "path": "objects/obj_bigdestructibles/obj_bigdestructibles.yy",
+    "name": "obj_destructibles",
+    "path": "objects/obj_destructibles/obj_destructibles.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,

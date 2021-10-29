@@ -11,7 +11,7 @@ if instance_exists(ID)
     {
         if (object_index == obj_cheeseslime)
         {
-            if (state != enemystates.enemyheat || player.state = states.breakdance)
+            if ( !(state == enemystates.enemyheat && floor(image_index) <= 5 && sprite_index = spr_cheeseslime_heat) || player.state = states.breakdance)
             {
                 hitboxcreate = 0
                 instance_destroy(other.id)

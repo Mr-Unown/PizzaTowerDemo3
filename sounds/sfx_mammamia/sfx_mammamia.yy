@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_mammamia",
-  "duration": 3.32905912,
+  "duration": 3.324059,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

@@ -1,11 +1,16 @@
-if other.bbox_top >= obj_water.bbox_top + 32
+if other.in_water == true
 {
 	with (other)
 	{
-		if (state != 87)
+		if (state != states.current)
 		{
-			sprite_index = spr_machfreefall
-			state = 87
+			if (vsp = 0 || sign(vsp) == -sign(other.image_yscale))
+			{
+				sprite_index = spr_machfreefall
+				state = states.current
+			}
+			else if (vsp != 0)
+				vsp = approach(vsp,0,1)		
 		}
 	}
 }

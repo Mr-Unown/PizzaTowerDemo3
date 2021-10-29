@@ -102,6 +102,7 @@ if ((player.instakillmove = true  || player.state = 22 || player.state = states.
         if (state == 22) || (state == states.kingknightroll) || state = states.mach2 || state = states.mach3 || state = states.jetpack
         {
             sprite_index = choose(spr_suplexmash1, spr_suplexmash2, spr_suplexmash3, spr_suplexmash4, spr_punch)
+			suplexdashtimer = 7;
             image_index = 0
             state = 57
             movespeed = 3
@@ -274,9 +275,10 @@ if (floor(image_index) == (image_number - 1) && sprite_index == upspr)
         with (instance_create(x, y, obj_pizzagoblinbomb))
         {
             var a = 1
-            if (x != obj_player1.x)
-                a = (-sign((x - obj_player1.x)))
-            hsp = (a * 10)
+            if (x != player.x)
+                a = (-sign((x - player.x)))
+            movespeed = 10
+			image_xscale = a
             vsp = -8
         }
     }

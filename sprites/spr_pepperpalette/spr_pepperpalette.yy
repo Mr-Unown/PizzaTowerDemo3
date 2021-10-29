@@ -17,8 +17,8 @@
   "width": 6,
   "height": 10,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Pepper_Sprite",
+    "path": "texturegroups/Pepper_Sprite",
   },
   "swatchColours": null,
   "gridX": 0,
@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Pepperman",
-    "path": "folders/Sprites/Characters/Playable Characters Sprites/Pepperman.yy",
+    "name": "Palettes",
+    "path": "folders/Sprites/Characters/Playable Characters Sprites/Palettes.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_pepperpalette",

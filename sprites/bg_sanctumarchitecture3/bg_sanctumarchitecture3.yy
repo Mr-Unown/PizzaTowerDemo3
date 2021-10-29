@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"1c904051-b636-468c-95d5-75dc0ab9f512","path":"sprites/bg_sanctumarchitecture3/bg_sanctumarchitecture3.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1c904051-b636-468c-95d5-75dc0ab9f512","path":"sprites/bg_sanctumarchitecture3/bg_sanctumarchitecture3.yy",},"LayerId":{"name":"9ec24f76-09d7-4bca-9cec-89277c0fb285","path":"sprites/bg_sanctumarchitecture3/bg_sanctumarchitecture3.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"bg_sanctumarchitecture3","path":"sprites/bg_sanctumarchitecture3/bg_sanctumarchitecture3.yy",},"resourceVersion":"1.0","name":"1c904051-b636-468c-95d5-75dc0ab9f512","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"05bd28b9-c14b-42f0-87f0-8bcb62bd37ce","path":"sprites/bg_sanctumarchitecture3/bg_sanctumarchitecture3.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"05bd28b9-c14b-42f0-87f0-8bcb62bd37ce","path":"sprites/bg_sanctumarchitecture3/bg_sanctumarchitecture3.yy",},"LayerId":{"name":"50b771f9-6c98-4146-bd36-1fe902aae47c","path":"sprites/bg_sanctumarchitecture3/bg_sanctumarchitecture3.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"bg_sanctumarchitecture3","path":"sprites/bg_sanctumarchitecture3/bg_sanctumarchitecture3.yy",},"resourceVersion":"1.0","name":"05bd28b9-c14b-42f0-87f0-8bcb62bd37ce","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"bg_sanctumarchitecture3","path":"sprites/bg_sanctumarchitecture3/bg_sanctumarchitecture3.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"d930bd42-a83d-4e81-839c-adce689547b2","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1c904051-b636-468c-95d5-75dc0ab9f512","path":"sprites/bg_sanctumarchitecture3/bg_sanctumarchitecture3.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"e5a85bf7-7d35-4488-bd5e-d1d7e15ec480","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"05bd28b9-c14b-42f0-87f0-8bcb62bd37ce","path":"sprites/bg_sanctumarchitecture3/bg_sanctumarchitecture3.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"9ec24f76-09d7-4bca-9cec-89277c0fb285","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"50b771f9-6c98-4146-bd36-1fe902aae47c","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {

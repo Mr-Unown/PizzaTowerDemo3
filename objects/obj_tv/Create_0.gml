@@ -1,6 +1,7 @@
 global.newhudmessage = ds_queue_create();
 frozenalarm = -1;
 frozen = false;
+staticframe = 0;
 //oldcombometersurface = surface_create(200,200);
 textbubblesprites = spr_tv_bubble;
 textbubbleframes = 0;
@@ -65,5 +66,8 @@ drawy2 = -14;
 combolast = 0;
 global.combobuffer = 0;
 display_set_gui_size(960, 540)
-
-
+newtvspritestore = 0
+drawstatic = false
+drawstaticalpha = 0
+drawstatictimer = 0
+drawstaticchannel = 0

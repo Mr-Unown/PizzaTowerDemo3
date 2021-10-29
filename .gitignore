@@ -1,4 +1,3 @@
-
 datafiles/GMLive/gcmt-dll.dll
 datafiles/GMLive/gmlive-server.exe
 datafiles/GMLive/gmlive-server.n
@@ -9,6 +8,7 @@ datafiles/GMLive/std.ndll
 datafiles/GMLive/temp.shader
 objects/obj_gmlive/Create_0.gml
 objects/obj_gmlive/Draw_0.gml
+objects/obj_gmlive/Step_0.gml
 objects/obj_gmlive/obj_gmlive.yy
 objects/obj_gmlive/Other_62.gml
 scripts/GMLive/GMLive.gml
@@ -58,4 +58,4 @@ scripts/GMLive_vm_init/GMLive_vm_init.gml
 scripts/GMLive_vm_init/GMLive_vm_init.yy
 scripts/GMLiveAPI/GMLiveAPI.gml
 scripts/GMLiveAPI/GMLiveAPI.yy
-objects/obj_gmlive/Step_0.gml
+

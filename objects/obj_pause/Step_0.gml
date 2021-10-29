@@ -429,20 +429,29 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
             instance_activate_all();
             global.lapping = 0;
             global.laptouched = 0;
-			global.levelname = "none";
 			global.fakepeppino = 0;
 			global.timeattack = 0;
 			script_execute(scr_playerreset);
 			var _backtohubroom = hub_room1;
-			with obj_player1
+			var roomname = room_get_name(room)
+			if global.levelname != "none"
 			{
-				targetDoor = "start";
-				_backtohubroom = backtohubroom;
+				with obj_player1
+				{
+					targetDoor = "start";
+					_backtohubroom = backtohubroom;
+				}
+				with obj_player2
+				{
+					targetDoor = "start";
+				}		
 			}
-			with obj_player2
+			else
 			{
-				targetDoor = "start";
-			}		
+				targetDoor = "A";
+				_backtohubroom = hub_room1;
+			}
+			global.levelname = "none";
 			room_goto(_backtohubroom); 
         }
 		#endregion		

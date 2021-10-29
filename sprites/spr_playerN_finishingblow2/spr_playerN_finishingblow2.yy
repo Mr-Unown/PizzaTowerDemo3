@@ -17,8 +17,8 @@
   "width": 200,
   "height": 100,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Noise_Sprites",
+    "path": "texturegroups/Noise_Sprites",
   },
   "swatchColours": null,
   "gridX": 0,

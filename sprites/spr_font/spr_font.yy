@@ -17,8 +17,8 @@
   "width": 32,
   "height": 32,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Menus",
+    "path": "texturegroups/Menus",
   },
   "swatchColours": null,
   "gridX": 0,
@@ -222,7 +222,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Fonts",
-    "path": "folders/Sprites/Fonts.yy",
+    "path": "folders/Sprites/Hud & Menus/Fonts.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_font",

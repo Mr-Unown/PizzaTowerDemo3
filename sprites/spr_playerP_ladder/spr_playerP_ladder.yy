@@ -17,8 +17,8 @@
   "width": 160,
   "height": 160,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Pepper_Sprite",
+    "path": "texturegroups/Pepper_Sprite",
   },
   "swatchColours": null,
   "gridX": 0,
