@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Tiles",
-    "path": "folders/Sprites/Tiles.yy",
+    "name": "Tileset Sprites",
+    "path": "folders/Sprites/Tileset Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "tile_cavern",

@@ -114,6 +114,20 @@ if active = true
 				ini_write_real("Option", "newhud", arg1);
 				ini_close()
 				break;
+			case "newtitlescreen": //MAMA
+				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.newhud else arg1 = ds_list_find_value(_commands, 1)	
+				switch arg1
+				{
+					case "true": arg1 = true
+					case "false": arg1 = false
+					default: arg1 = !global.newtitlescreen
+				}
+				global.newtitlescreen = arg1
+				ini_open("saveData.ini")
+				ini_write_real("Option", "newtitlescreen", arg1);
+				ini_close()
+				
+				break;				
 			case "debugmode": //Could probably use optimization
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.debugmode else arg1 = ds_list_find_value(_commands, 1)
 				//if arg1 = "true"

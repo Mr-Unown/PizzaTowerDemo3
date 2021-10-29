@@ -19,6 +19,7 @@ commands[arrayi++] = "voicefrequency [value]"
 commands[arrayi++] = "escape [minutes] [seconds]"
 commands[arrayi++] = "togglecollision (true/false)"
 commands[arrayi++] = "debugmode (true/false)"
+commands[arrayi++] = "newtitlescreen (true/false)"
 if DEBUG 
 {
 	commands[arrayi++] = "changecharacter [player] [character] (true/false)"

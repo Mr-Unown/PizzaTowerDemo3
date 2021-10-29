@@ -1,6 +1,6 @@
 
 
-if (room == strongcold_endscreen || room == rank_room || room == timesuproom || room == New_Realtitlescreen || room == Scootertransition || room == characterselect)
+if (room == strongcold_endscreen || room == rank_room || room == timesuproom || room == global.roomstart[global.newtitlescreen] || room == Scootertransition || room == characterselect)
     visible = false
 else
     visible = true

@@ -12,7 +12,7 @@ if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 2 && sele
 if ((key_slap2 || key_start) && selected == 0)
 {
     scr_soundeffect(sfx_enemyprojectile)
-    if (room == New_Realtitlescreen)
+    if (room == global.roomstart[global.newtitlescreen])
 	{
         obj_player.state = 0
 	}

@@ -1,4 +1,4 @@
-if (global.timeattack == 1) && room != hub_room1 && room != hub_room2 && room != hub_room3 && room != cowboytask && room != timesuproom && room != Scootertransition && room != Tutorialtrap  && room != Titlescreen  && room != New_Realtitlescreen && global.newhud = false
+if (global.timeattack == 1) && room != hub_room1 && room != hub_room2 && room != hub_room3 && room != cowboytask && room != timesuproom && room != Scootertransition && room != Tutorialtrap  && room != Titlescreen  && room != global.roomstart[global.newtitlescreen] && global.newhud = false
 {
     if (global.taseconds < 10)
     {

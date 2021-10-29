@@ -1,4 +1,4 @@
-/// @description Generate Height Map
+/// @description Tile Collisions Generate Height Map
 //draw_tilemap(tilemapid,0,0)
 //draw_sprite(spr_solidtile,0,0,0)
 /*
@@ -34,4 +34,4 @@ for (var i = collisionheight - 1; i >= 0; i--) //loop for each row
 }
 //GET OUT OF HERE
 show_debug_message("Generated Heightmap Array")
-room_goto(Realtitlescreen);
+room_goto(global.roomstart[global.newtitlescreen]);

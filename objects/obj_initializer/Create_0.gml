@@ -18,3 +18,9 @@ for (var i = 0; i <= collisionheight; ++i)
 		tilemap_set(tilemapid,z,z,i)
 	}	
 }*/
+global.newtitlescreen = 0;
+ini_open("saveData.ini")
+global.newtitlescreen = ini_read_real("Option", "newtitlescreen", false);
+ini_close()
+global.roomstart[0] = Realtitlescreen;
+global.roomstart[1] = global.roomstart[global.newtitlescreen];
