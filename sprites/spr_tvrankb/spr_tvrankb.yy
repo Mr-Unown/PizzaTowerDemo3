@@ -17,8 +17,8 @@
   "width": 164,
   "height": 177,
   "textureGroupId": {
-    "name": "OLDHUD",
-    "path": "texturegroups/OLDHUD",
+    "name": "Default",
+    "path": "texturegroups/Default",
   },
   "swatchColours": null,
   "gridX": 0,
@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "PTV",
-    "path": "folders/Sprites/Hud & Menus/Old Hud/PTV.yy",
+    "name": "PizzaTower_Demo3",
+    "path": "PizzaTower_Demo3.yyp",
   },
   "resourceVersion": "1.0",
   "name": "spr_tvrankb",

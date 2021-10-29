@@ -17,8 +17,8 @@
   "width": 12,
   "height": 10,
   "textureGroupId": {
-    "name": "Vigi_Sprites",
-    "path": "texturegroups/Vigi_Sprites",
+    "name": "Default",
+    "path": "texturegroups/Default",
   },
   "swatchColours": null,
   "gridX": 0,
@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Palettes",
-    "path": "folders/Sprites/Characters/Playable Characters Sprites/Palettes.yy",
+    "name": "PizzaTower_Demo3",
+    "path": "PizzaTower_Demo3.yyp",
   },
   "resourceVersion": "1.0",
   "name": "spr_vigipalette",
