@@ -27,6 +27,10 @@ if global.snickchallenge == false
 		case "chateau":
 			global.stimerank = 3.30;
 			global.srank = 15000	
+		break;	
+		case "sanctum":
+			global.stimerank = 3.00;
+			global.srank = 17000
 		break;		
 		case "strongcold":
 			global.stimerank = 6.30;

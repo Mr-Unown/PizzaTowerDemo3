@@ -334,6 +334,7 @@ function scr_collide_destructibles() {
 	                        else
 	                        {
 	                            sprite_index = choose(spr_suplexmash1, spr_suplexmash2, spr_suplexmash3, spr_suplexmash4, spr_punch)
+								suplexdashtimer = image_index;
 	                            image_index = 0
 	                            state = 57
 	                            vsp = 0
@@ -694,6 +695,7 @@ function scr_collide_destructibles() {
 	                        else
 	                        {
 	                            sprite_index = choose(spr_suplexmash1, spr_suplexmash2, spr_suplexmash3, spr_suplexmash4, spr_punch)
+								suplexdashtimer = image_index;								
 	                            image_index = 0
 	                            state = 57
 	                            vsp = 0

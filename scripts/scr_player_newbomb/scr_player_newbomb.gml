@@ -10,8 +10,10 @@ function scr_player_newbomb() {
 	hsp = lengthdir_x(movespeed,playerdirection);
 	vsp = lengthdir_y(movespeed,playerdirection);
 	//Hitwall
-	if (scr_solid((x + sign(hsp)), y) && !(scr_slope() && !scr_solid(x + sign(hsp),y - 2)) && (!place_meeting((x + sign(hsp)), y, obj_metalblock) && !place_meeting((x + sign(hsp)), y, obj_metalblockhard)) && (!place_meeting((x + sign(hsp)), y, obj_destructibles))) && (vsp = 0) 
+	if vsp == 0 && (scr_solid((x + sign(hsp)), y) && !(scr_slope() && !scr_solid(x + sign(hsp),y - 2)) && (!place_meeting((x + sign(hsp)), y, obj_metalblock) && !place_meeting(x, y + sign(hsp), obj_metalblockhard) ) && (!place_meeting((x + sign(hsp)), y, obj_destructibles))) 
 	{
+		if hsp != 0
+			xscale = sign(hsp)
 		sprite_index = spr_hitwall
 		scr_soundeffect(sfx_groundpound)
 		scr_soundeffect(sfx_bumpwall)
@@ -19,17 +21,6 @@ function scr_player_newbomb() {
 	    {
 			shake_mag = 20
 	        shake_mag_acc = (40 / room_speed)
-	    }
-	    with (obj_baddie)
-	    {
-			if point_in_rectangle(x, y, __view_get(0, 0), __view_get(1, 0), (__view_get(0, 0) + __view_get(2, 0)), (__view_get(1, 0) + __view_get(3, 0)))
-	        {
-				stun = 1
-	            alarm[0] = 200
-	            ministun = 0
-	            vsp = -5
-	            hsp = 0
-	        }
 	    }
 	    hsp = 0
 	    image_speed = 0.35
@@ -41,28 +32,15 @@ function scr_player_newbomb() {
 	    image_index = 0
 	    instance_create((x + 10 * sign(hsp)), (y + 10 ), obj_bumpeffect)
 	}
-	if (scr_solid(x, (y + vsp)) && (!place_meeting(x, (y + vsp), obj_destructibles))) && !place_meeting(x, y + vsp, obj_metalblockhard) && !place_meeting(x, y + vsp, obj_metalblock) && hsp = 0
+	//Hit Ceiling
+	if hsp == 0 && (scr_solid(x, (y + vsp)) && (!place_meeting(x, (y + vsp), obj_destructibles))) && !place_meeting(x, y + vsp, obj_metalblockhard) && !place_meeting(x, y + vsp, obj_metalblock) && !place_meeting(x, y + vsp, obj_metalblockhard)
 	{
 	    a = 0
-	    if (sprite_index == spr_player_supersidejump)
-	        sprite_index = spr_player_supersidejumpland
-	    if (sprite_index == spr_superjump)
-	        sprite_index = spr_superjumpland
+	    sprite_index = spr_superjumpland
 		with (obj_camera)
 	    {
 			shake_mag = 20
 	        shake_mag_acc = (40 / room_speed)
-	    }
-	    with (obj_baddie)
-	    {
-			if point_in_rectangle(x, y, __view_get(0, 0), __view_get(1, 0), (__view_get(0, 0) + __view_get(2, 0)), (__view_get(1, 0) + __view_get(3, 0)))
-	        {
-				stun = 1
-	            alarm[0] = 200
-	            ministun = 0
-	            vsp = -5
-	            hsp = 0
-	        }
 	    }
 		scr_soundeffect(sfx_bumpwall)
 	    scr_soundeffect(sfx_groundpound)

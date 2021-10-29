@@ -449,6 +449,7 @@ function scr_playerstate() {
 	}
 #endregion
 	#region Jump Height
+	/*
 	var _jumpheight = 0;
 	switch character
 	{
@@ -478,15 +479,13 @@ function scr_playerstate() {
 		break;
 	}
 	
-	jumpheight = _jumpheight + (in_water == true ? -2 : 0)
+	jumpheight = _jumpheight + (in_water == true ? -2 : 0)*/
 	#endregion
 	
 	//Water
 	in_water = (instance_exists(obj_water) && obj_water.bbox_top < y);
 	if in_water = true
 	{
-		if vsp > 10
-			vsp = 10
 	    if chance(0.99) == false
 		{
 			with instance_create(x , y, obj_waterbubble)
@@ -565,10 +564,14 @@ function scr_playerstate() {
 			with (instance_create(x, y, obj_superdashcloud))
 			{
 				image_speed = 0.35
-				sprite_index = spr_flamecloud
+				
 				image_xscale = other.xscale
 				if place_meeting(other.x, (other.y + 1), obj_boilingwater) && !place_meeting(other.x, other.y, obj_boilingwater)
 					sprite_index = spr_watersplashsmall
+				else if place_meeting(other.x, (other.y + 1), obj_water) && !place_meeting(other.x, other.y, obj_water)
+					sprite_index = spr_cheesesplashsmall	
+				else 
+					sprite_index = spr_flamecloud
 			}
 		}
 		firetrailbuffer = 100;

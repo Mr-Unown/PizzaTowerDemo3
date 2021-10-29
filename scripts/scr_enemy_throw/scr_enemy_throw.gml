@@ -66,7 +66,8 @@ function scr_enemy_throw() {
 	        case obj_pizzagoblin:
 	            with (instance_create(x, y, obj_pizzagoblinbomb))
 	            {
-	                hsp = (other.image_xscale * 10)
+	                movespeed = (10)
+					image_xscale = other.image_xscale
 	                vsp = -8
 	            }
 	            break
