@@ -719,6 +719,16 @@ function scr_playerstate() {
 	        toomuchalarm1 = 6
 	    }
 	}
+	
+	//Topping trail
+	if (toomanytoppings > 0)
+	    toomanytoppings -= 0.8
+	if ((toomanytoppings <= 0) && ((state == 91) && (mach2 >= 100)))
+	{
+	    instance_create(x, (y + 17), obj_toppingtrail)
+	    toomanytoppings = 6
+	}
+	
 	}
 	//Instakill Move
 	if global.freezeframe = false

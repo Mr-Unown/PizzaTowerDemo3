@@ -10,7 +10,7 @@ if instance_exists(obj_pausefadeout)
 	
 if live_enabled == 1
 {
-	if obj_player1.targetRoom != Realtitlescreen
+	if obj_player1.targetRoom != global.roomstart[global.newtitlescreen]
 		room_set_live(obj_player1.targetRoom,true)
 }
 

@@ -1,13 +1,13 @@
 if ((!pause) && (!instance_exists(obj_fadeout)))
 {
 	
-    if (obj_player1.key_start && room != rank_room && room != Realtitlescreen && room != timesuproom)
+    if (obj_player1.key_start && room != rank_room && room != global.roomstart[global.newtitlescreen] && room != timesuproom)
     {
         selected = 0
         if (!instance_exists(obj_pausefadeout))
             instance_create(x, y, obj_pausefadeout)
     }
-    if ((obj_player2.key_jump || keyboard_check_pressed(vk_f5)) && global.coop == 0 && room != rank_room && room != Scootertransition && room != Realtitlescreen && room != timesuproom) && obj_debugcontroller.active = false
+    if ((obj_player2.key_jump || keyboard_check_pressed(vk_f5)) && global.coop == 0 && room != rank_room && room != Scootertransition && room != global.roomstart[global.newtitlescreen] && room != timesuproom) && obj_debugcontroller.active = false
     {
         global.coop = 1
         with (obj_player2)
@@ -402,7 +402,7 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
             global.laptouched = 0;
 			global.levelname = "none";
 			global.timeattack = 0;
-			room_goto(Realtitlescreen);
+			room_goto(global.roomstart[global.newtitlescreen]);
             with (obj_player1)
             {
                 character = "P";

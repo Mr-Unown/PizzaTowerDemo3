@@ -22,7 +22,9 @@ function scr_player_freefallland() {
 		jumpAnim = 0
 	    state = 58
 	    vsp = -12
-	    sprite_index = spr_machfreefall
+		image_speed = 0.35
+	    sprite_index = spr_groundpoundjump
+		image_index = 0
 		scr_soundeffect(sfx_jump)
 		scr_soundeffect(sfx_rollgetup)
 		with (instance_create(x, y, obj_highjumpcloud2))

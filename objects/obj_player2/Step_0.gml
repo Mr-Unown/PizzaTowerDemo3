@@ -47,7 +47,7 @@ flashingtimer++
 }
 
 
-if (room == Realtitlescreen || room == characterselect)
+if (room == global.roomstart[global.newtitlescreen] || room == characterselect)
     state = 8
 if (state != 109 && state != 73)
     thrown = 0

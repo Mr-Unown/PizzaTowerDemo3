@@ -19,6 +19,7 @@ commands[arrayi++] = "voicefrequency [value]"
 commands[arrayi++] = "escape [minutes] [seconds]"
 commands[arrayi++] = "togglecollision (true/false)"
 commands[arrayi++] = "debugmode (true/false)"
+commands[arrayi++] = "newtitlescreen (true/false)"
 if DEBUG 
 {
 	commands[arrayi++] = "changecharacter [player] [character] (true/false)"
@@ -64,7 +65,7 @@ alarm[0] = delay;
 //D3G: Right now it's a help page thingy but it could be used as a Command History lolled
 var page = 1
 var first = pagelength * (page - 1)
-var last = clamp(pagelength * page,1,array_length_1d(commands))
+var last = clamp(pagelength * page,1,array_length(commands))
 commandhistory = "COMMAND LIST (PAGE " + string(page) + " OF " + string(pagenumber) +")#"
 for(var i = first; i < last; i++)
 {
