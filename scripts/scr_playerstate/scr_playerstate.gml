@@ -697,8 +697,22 @@ function scr_playerstate() {
 		show_tricks = false;
 		tricksperformed = 0;
 	}
-	//Mach 3 Effect
+
 	if global.freezeframe = false {
+
+
+	//Topping trail
+	if (toomanytoppings > 0)
+	    toomanytoppings -= 0.85
+	if ((toomanytoppings <= 0) && ((state == 91) && (mach2 >= 100))) && global.panic == true
+	{
+	    with instance_create(x, (y + 17), obj_toppingtrail)
+		{
+			playerid = other.id
+		}
+	    toomanytoppings = 6
+	}
+	//Mach 3 Effect
 	if ((state == 91 || state == states.Sjump || state == states.breakdance || (state != 51 && (sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump))  || (pogomovespeed >= 12  && state == states.pogo) ||state == states.jetpack || (state == 109 && instance_exists(obj_player2) && obj_player2.state == 91) || state == 114 || state == 70 || state == 17 || state == 9 || state == 37 || state == 10 || state == 22 || state == 71 || pogojetcharge = true) && macheffect == 0)
 	{
 	    macheffect = 1
@@ -728,18 +742,7 @@ function scr_playerstate() {
 	        toomuchalarm1 = 6
 	    }
 	}
-	
-	//Topping trail
-	if (toomanytoppings > 0)
-	    toomanytoppings -= 0.8
-	if ((toomanytoppings <= 0) && ((state == 91) && (mach2 >= 100))) && global.panic == true
-	{
-	    with instance_create(x, (y + 17), obj_toppingtrail)
-		{
-			playerid = other.id
-		}
-	    toomanytoppings = 6
-	}
+
 	
 	}
 	//Instakill Move

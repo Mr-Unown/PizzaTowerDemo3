@@ -1,2 +1,2 @@
-start = 0
-
+start = 0;
+timer = 5;

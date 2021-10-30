@@ -268,7 +268,7 @@ if (getout == 0 && sprite_index == spr_present && (character == 0 || global.boxh
     image_index = 0
     sprite_index = upspr
 }
-if (floor(image_index) == (image_number - 1) && sprite_index == upspr)
+if (floor(image_index) >= (image_number - 1) && sprite_index == upspr)
 {
     if (character == 0 && global.boxhp < 3 && global.boxhp != 1)
     {
@@ -280,6 +280,7 @@ if (floor(image_index) == (image_number - 1) && sprite_index == upspr)
             movespeed = 10
 			image_xscale = a
             vsp = -8
+			countdown = 60;
         }
     }
     sprite_index = spr
