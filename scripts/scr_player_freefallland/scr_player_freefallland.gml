@@ -19,15 +19,15 @@ function scr_player_freefallland() {
 	if key_jump2 && floor(image_index) >= 2 && floor(image_index) != image_number - 1
 	{
 		facehurt = 0
-		jumpAnim = 0
+		jumpAnim = 1
 	    state = 58
 	    vsp = -12
+		image_index = 0
 		image_speed = 0.35
-		if spr_groundpoundjump != spr_machfreefall
+		if character == "P"
 			sprite_index = spr_groundpoundjump
 		else
 			sprite_index = spr_machfreefall
-		image_index = 0
 		scr_soundeffect(sfx_jump)
 		scr_soundeffect(sfx_rollgetup)
 		with (instance_create(x, y, obj_highjumpcloud2))

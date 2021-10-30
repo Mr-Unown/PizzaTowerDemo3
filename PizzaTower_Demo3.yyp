@@ -2125,6 +2125,7 @@
     {"id":{"name":"spr_playerN_dashpad","path":"sprites/spr_playerN_dashpad/spr_playerN_dashpad.yy",},"order":32,},
     {"id":{"name":"spr_player_dashpad","path":"sprites/spr_player_dashpad/spr_player_dashpad.yy",},"order":98,},
     {"id":{"name":"spr_playerN_grinding","path":"sprites/spr_playerN_grinding/spr_playerN_grinding.yy",},"order":61,},
+    {"id":{"name":"obj_newmainmenuselect","path":"objects/obj_newmainmenuselect/obj_newmainmenuselect.yy",},"order":13,},
     {"id":{"name":"spr_player_grinding","path":"sprites/spr_player_grinding/spr_player_grinding.yy",},"order":143,},
     {"id":{"name":"bg_purplesewer","path":"sprites/bg_purplesewer/bg_purplesewer.yy",},"order":101,},
     {"id":{"name":"spr_palettemenu","path":"sprites/spr_palettemenu/spr_palettemenu.yy",},"order":4,},

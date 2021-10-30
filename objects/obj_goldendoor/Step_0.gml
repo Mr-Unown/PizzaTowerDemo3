@@ -1,3 +1,14 @@
-if (visited == 1)
-    sprite_index = spr_goldendoorvisited
+var _player = (global.coop == true ? instance_nearest(x, y, obj_player) : obj_player1)
+if (distance_to_object(_player) < 50)
+{
+	with obj_newmainmenuselect
+	{
+		_message = "START GAME"
+		showtext = 1
+		alarm[0] = 2
+	}
+}
+// Inherit the parent event
+event_inherited();
+
 
