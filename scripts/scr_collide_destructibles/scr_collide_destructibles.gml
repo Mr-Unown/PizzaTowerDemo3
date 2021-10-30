@@ -18,6 +18,45 @@ function scr_collide_destructibles() {
 	    }
 		if state == states.newbomb
 		{
+			#region Metalblock
+	        if place_meeting((x + hsp), y + (vsp), obj_metalblock)
+	        {
+	            with (instance_place((x + hsp), y + (vsp), obj_metalblock))
+	            {
+					initialhsp = other.hsp
+					initialvsp = other.vsp
+	                event_user(0)
+				}
+	        }
+	        if place_meeting((x + hsp), y + (vsp), obj_metalblockhard)
+	        {
+	            with (instance_place((x + hsp), y + (vsp), obj_metalblockhard))
+	            {
+					initialhsp = other.hsp
+					initialvsp = other.vsp
+	                event_user(0)
+				}
+	        }			
+			
+	        if place_meeting((x +sign(hsp)), y + sign(vsp), obj_metalblock)
+	        {
+	            with (instance_place((x +sign(hsp)), y + sign(vsp), obj_metalblock))
+	            {
+					initialhsp = other.hsp
+					initialvsp = other.vsp
+	                event_user(0)
+				}
+	        }
+	        if place_meeting((x +sign(hsp)), y + sign(vsp), obj_metalblockhard)
+	        {
+	            with (instance_place((x +sign(hsp)), y + sign(vsp), obj_metalblockhard))
+	            {
+					initialhsp = other.hsp
+					initialvsp = other.vsp
+	                event_user(0)
+				}
+	        }	
+			#endregion
 	        if place_meeting((x + hsp), y + (vsp), obj_destructibles)
 	        {
 	            with (instance_place((x + hsp), y + (vsp), obj_destructibles))
@@ -378,6 +417,45 @@ function scr_collide_destructibles() {
 	    }
 		if state == states.newbomb
 		{
+			#region Metalblock
+	        if place_meeting((x + hsp), y + (vsp), obj_metalblock)
+	        {
+	            with (instance_place((x + hsp), y + (vsp), obj_metalblock))
+	            {
+					initialhsp = other.hsp
+					initialvsp = other.vsp
+	                event_user(0)
+				}
+	        }
+	        if place_meeting((x + hsp), y + (vsp), obj_metalblockhard)
+	        {
+	            with (instance_place((x + hsp), y + (vsp), obj_metalblockhard))
+	            {
+					initialhsp = other.hsp
+					initialvsp = other.vsp
+	                event_user(0)
+				}
+	        }			
+			
+	        if place_meeting((x +sign(hsp)), y + sign(vsp), obj_metalblock)
+	        {
+	            with (instance_place((x +sign(hsp)), y + sign(vsp), obj_metalblock))
+	            {
+					initialhsp = other.hsp
+					initialvsp = other.vsp
+	                event_user(0)
+				}
+	        }
+	        if place_meeting((x +sign(hsp)), y + sign(vsp), obj_metalblockhard)
+	        {
+	            with (instance_place((x +sign(hsp)), y + sign(vsp), obj_metalblockhard))
+	            {
+					initialhsp = other.hsp
+					initialvsp = other.vsp
+	                event_user(0)
+				}
+	        }	
+			#endregion			
 	        if place_meeting((x + hsp), y + (vsp), obj_destructibles)
 	        {
 	            with (instance_place((x + hsp), y + (vsp), obj_destructibles))
