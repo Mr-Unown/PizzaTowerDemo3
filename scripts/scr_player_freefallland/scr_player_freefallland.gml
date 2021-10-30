@@ -23,7 +23,10 @@ function scr_player_freefallland() {
 	    state = 58
 	    vsp = -12
 		image_speed = 0.35
-	    sprite_index = spr_groundpoundjump
+		if spr_groundpoundjump != spr_machfreefall
+			sprite_index = spr_groundpoundjump
+		else
+			sprite_index = spr_machfreefall
 		image_index = 0
 		scr_soundeffect(sfx_jump)
 		scr_soundeffect(sfx_rollgetup)

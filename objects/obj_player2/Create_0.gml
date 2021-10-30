@@ -183,4 +183,4 @@ suplexdashsnd = -1
 obj_player2.hp = 5
 blackblend = 0
 
-
+state = 8

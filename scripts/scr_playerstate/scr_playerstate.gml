@@ -723,9 +723,12 @@ function scr_playerstate() {
 	//Topping trail
 	if (toomanytoppings > 0)
 	    toomanytoppings -= 0.8
-	if ((toomanytoppings <= 0) && ((state == 91) && (mach2 >= 100)))
+	if ((toomanytoppings <= 0) && ((state == 91) && (mach2 >= 100))) && global.panic == true
 	{
-	    instance_create(x, (y + 17), obj_toppingtrail)
+	    with instance_create(x, (y + 17), obj_toppingtrail)
+		{
+			playerid = other.id
+		}
 	    toomanytoppings = 6
 	}
 	

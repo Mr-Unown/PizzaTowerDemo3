@@ -9,7 +9,6 @@ datafiles/GMLive/temp.shader
 objects/obj_gmlive/Create_0.gml
 objects/obj_gmlive/Draw_0.gml
 objects/obj_gmlive/Step_0.gml
-objects/obj_gmlive/obj_gmlive.yy
 objects/obj_gmlive/Other_62.gml
 scripts/GMLive/GMLive.gml
 scripts/GMLive/GMLive.yy

@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "mu_ruinbmix",
-  "duration": 115.658264,
+  "duration": 115.653267,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

@@ -10,7 +10,7 @@ function scr_player_newbomb() {
 	hsp = lengthdir_x(movespeed,playerdirection);
 	vsp = lengthdir_y(movespeed,playerdirection);
 	//Hitwall
-	if vsp == 0 && (scr_solid((x + sign(hsp)), y) && !(scr_slope() && !scr_solid(x + sign(hsp),y - 2)) && (!place_meeting((x + sign(hsp)), y, obj_metalblock) && !place_meeting(x, y + sign(hsp), obj_metalblockhard) ) && (!place_meeting((x + sign(hsp)), y, obj_destructibles))) 
+	if (scr_solid((x + sign(hsp)), y) && !(scr_slope() && !scr_solid(x + sign(hsp),y - 2)) && (!place_meeting((x + sign(hsp)), y, obj_metalblock) && !place_meeting(x, y + sign(hsp), obj_metalblockhard) ) && (!place_meeting((x + sign(hsp)), y, obj_destructibles))) 
 	{
 		if hsp != 0
 			xscale = sign(hsp)
@@ -33,7 +33,7 @@ function scr_player_newbomb() {
 	    instance_create((x + 10 * sign(hsp)), (y + 10 ), obj_bumpeffect)
 	}
 	//Hit Ceiling
-	if hsp == 0 && (scr_solid(x, (y + vsp)) && (!place_meeting(x, (y + vsp), obj_destructibles))) && !place_meeting(x, y + vsp, obj_metalblockhard) && !place_meeting(x, y + vsp, obj_metalblock) && !place_meeting(x, y + vsp, obj_metalblockhard)
+	if (scr_solid(x, (y + vsp)) && (!place_meeting(x, (y + vsp), obj_destructibles))) && !place_meeting(x, y + vsp, obj_metalblockhard) && !place_meeting(x, y + vsp, obj_metalblock) && !place_meeting(x, y + vsp, obj_metalblockhard)
 	{
 	    a = 0
 	    sprite_index = spr_superjumpland
