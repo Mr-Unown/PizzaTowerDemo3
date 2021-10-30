@@ -10,5 +10,3 @@ if (distance_to_object(_player) < 50)
 }
 // Inherit the parent event
 event_inherited();
-
-
