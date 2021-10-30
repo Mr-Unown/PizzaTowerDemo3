@@ -434,12 +434,12 @@ if (global.panic == 0 && global.snickchallenge == 0)
     }
     if (string_letters(roomname) == "chateausecret" || string_letters(roomname) == "medievalsecret")
     {
-        if (!audio_is_playing(mu_secret))
+        if (!audio_is_playing(mu_medievalsecret))
         {
             scr_soundstopall()
-            scr_sound(mu_secret)
+            scr_sound(mu_medievalsecret)
             audio_sound_set_track_position(global.music, fadeoff)
-            pausedmusic = mu_secret
+            pausedmusic = mu_medievalsecret
         }
     }/*
     if (string_letters(roomname) == "desertsecret" && global.desertnight != 1)

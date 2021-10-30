@@ -41,7 +41,7 @@ if place_meeting(x, y + 1,obj_slope)
 				{
 					if other.movespeed > 0 
 					{
-					other.movespeed -= (0.7 * slope_acceleration)
+					other.movespeed -= (0.8 * slope_acceleration)
 						if other.movespeed <= 0
 						{
 							(other.image_xscale) = -sign(image_xscale)

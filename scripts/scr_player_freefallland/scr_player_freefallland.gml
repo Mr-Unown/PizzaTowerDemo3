@@ -23,7 +23,7 @@ function scr_player_freefallland() {
 	    vsp = -12
 		image_index = 0
 		image_speed = 0.35
-		if spr_groundpoundjump != spr_machfreefall
+		if character == "P"
 		{
 			jumpAnim = 1
 			sprite_index = spr_groundpoundjump
