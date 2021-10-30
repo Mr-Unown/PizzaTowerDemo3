@@ -111,8 +111,8 @@ function scr_playerstate() {
 		murder = 124,
 		trick = 125,
 		newbomb = 126,
-		startgate = 127
-
+		startgate = 127,
+		pepperunning = 1000
 	} 
 	//I made some changes to it so that we can know at a glance what number it gets converted to.
 #endregion
@@ -122,6 +122,9 @@ function scr_playerstate() {
 	    case 0:
 	        scr_player_normal()
 	        break
+		case states.pepperunning:
+			scr_pepperman_run()
+			break
 	    case states.startgate:
 	        scr_player_startgate()
 	        break			
@@ -568,7 +571,7 @@ function scr_playerstate() {
 	firetrailbuffer -= movespeed/24 * 26
 	if firetrailbuffer <= 0
 	{
-		if movespeed >= 12 && (state == states.mach2 || state == states.mach3 || state == states.jetpack || state == states.trick || state == states.machroll)
+		if movespeed >= 12 && (state == states.mach2 || state == states.pepperunning || state == states.mach3 || state == states.jetpack || state == states.trick || state == states.machroll)
 		{
 			with (instance_create(x, y, obj_superdashcloud))
 			{
@@ -730,7 +733,7 @@ function scr_playerstate() {
 	if (toomuchalarm1 > 0)
 	{
 	    toomuchalarm1 -= 1
-	    if (toomuchalarm1 <= 0 && (state == 91  || state == states.Sjump || state == states.breakdance ||(state != 51 && (sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump)) || (pogomovespeed >= 12  && state == states.pogo) || state == states.jetpack || state == 111 || state == 114 || (state == 109 && instance_exists(obj_player2) && obj_player2.state == 91) || state == 17 || state == 9 || state == 70 || state == 10 || state == 71 || pogojetcharge = true || state == 37 || state == 22 || (state == 33 && mach2 >= 100)))
+	    if (toomuchalarm1 <= 0 && (state == 91  || state == states.pepperunning || state == states.Sjump || state == states.breakdance ||(state != 51 && (sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump)) || (pogomovespeed >= 12  && state == states.pogo) || state == states.jetpack || state == 111 || state == 114 || (state == 109 && instance_exists(obj_player2) && obj_player2.state == 91) || state == 17 || state == 9 || state == 70 || state == 10 || state == 71 || pogojetcharge = true || state == 37 || state == 22 || (state == 33 && mach2 >= 100)))
 	    {
 	        with (instance_create(x, y, obj_mach3effect))
 	        {
@@ -748,7 +751,7 @@ function scr_playerstate() {
 	//Instakill Move
 	if global.freezeframe = false
 	{
-		if state != states.frozen && (state == 68 || sprite_index = spr_swingding || sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump || state == 86 || state == states.breakdance ||	state == states.jetpack || state == states.pogo || state == 91 || state == 60 || (state == 73 && thrown == 1) || state == 70 || state == 17 || state == states.newbomb || state == 74 || state == 2 || state == 6 || state == 7 || state == 9 || state == 44 || state == 35 || state == 63 || state == 37 || state == 40 || state == 10 || (state == 43 && sprite_index == spr_piledriver) || state == 24 || state == 25 || state == 18 || state == 15 || state == 13 || state == 11)
+		if state != states.frozen && (state == 68 || sprite_index = spr_swingding || sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump || state == 86 || state = states.pepperunning || state == states.breakdance ||	state == states.jetpack || state == states.pogo || state == 91 || state == 60 || (state == 73 && thrown == 1) || state == 70 || state == 17 || state == states.newbomb || state == 74 || state == 2 || state == 6 || state == 7 || state == 9 || state == 44 || state == 35 || state == 63 || state == 37 || state == 40 || state == 10 || (state == 43 && sprite_index == spr_piledriver) || state == 24 || state == 25 || state == 18 || state == 15 || state == 13 || state == 11)
 			instakillmove = 1
 		else if state != states.frozen
 			instakillmove = 0

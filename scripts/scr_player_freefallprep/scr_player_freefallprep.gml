@@ -2,6 +2,10 @@ function scr_player_freefallprep() {
 	move = (key_left + key_right)
 	if (!grounded)
 	{
+		if (character = "PM") && (sprite_index = spr_playerP_bodyslamstart)
+		{
+			vsp = 0
+		}
 	    hsp = (move * movespeed)
 	    if (move != xscale && momemtum == 1 && movespeed != 0)
 	        movespeed -= 0.05

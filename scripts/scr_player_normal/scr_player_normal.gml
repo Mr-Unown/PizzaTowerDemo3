@@ -413,18 +413,11 @@ function scr_player_normal() {
 	//Pepperman Attack
 	if (key_slap2 && character == "PM")
 	{
-	    if (move == 0)
-	        movespeed = 0
-	    else
-	    {
-	        movespeed = 10
-	        vsp = -5
-	    }
+		movespeed = 13
 	    suplexmove = 1
-	    scr_soundeffect(sfx_spin)
 	    scr_soundeffect(sfx_suplexdash)
 	    sprite_index = spr_playerP_shoulder
-	    state = states.kingknightroll
+	    state = states.pepperunning
 	    image_index = 0
 	}
 	//Breakdance
@@ -512,7 +505,7 @@ function scr_player_normal() {
 	    state = 12
 	    image_index = 0
 	}
-	if (key_attack && (character == "P" || (character == "N" && pogo != true) || character == "PZ"  || (character = "D" && spellselect = 2) || character == "V")) && (!scr_solid(x + xscale,y) || scr_slope_ext(x + xscale,y))
+	if (key_attack && (character == "P" || character == "PM" || (character == "N" && pogo != true) || character == "PZ"  || (character = "D" && spellselect = 2) || character == "V")) && (!scr_solid(x + xscale,y) || scr_slope_ext(x + xscale,y))
 	{
 		hsp = 0;
 	    movespeed = 6

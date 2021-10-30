@@ -16,6 +16,36 @@ function scr_collide_destructibles() {
 	                machpunchAnim = 1
 	        }
 	    }
+		if state == 1000
+		{
+			if place_meeting((x + hsp), y, obj_destructibles)
+	        {
+	            with (instance_place((x + hsp), y, obj_destructibles))
+				{
+					initialhsp = other.hsp
+					initialvsp = other.vsp
+					event_user(0)
+				}
+	        }
+			if place_meeting((x + hsp), y, obj_bigdestructibles)
+	        {
+	            with (instance_place((x + hsp), y, obj_bigdestructibles))
+				{
+					initialhsp = other.hsp
+					initialvsp = other.vsp
+					event_user(0)
+				}
+				movespeed = 5
+	        }
+			if place_meeting((x + hsp), y, obj_metalblock)
+	        {
+	            with (instance_place((x + hsp), y, obj_metalblock))
+				{
+					instance_destroy()
+				}
+				movespeed = 2
+	        }
+		}
 		if state == states.newbomb
 		{
 			#region Metalblock

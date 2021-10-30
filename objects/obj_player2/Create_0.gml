@@ -5,6 +5,7 @@ customsavedpalette = 1;
 oldcustomsavedpalette = 1;
 characters = "Noise"
 colorheight = 7;
+hittingwall = 0
 
 global.has_drawnpeter = false;
 selectedcharacter = 1;

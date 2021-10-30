@@ -25,6 +25,11 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                     image_index = 0
 
                 }
+				if (state = 1000)
+				{
+					movespeed = 3
+					image_index = 0
+				}
                 if (state == 70 && grounded)
                 {
                     machpunchAnim = 1
