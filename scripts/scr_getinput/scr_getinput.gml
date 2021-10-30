@@ -1,7 +1,31 @@
 function scr_getinput() {
 	gamepad_set_axis_deadzone(0, 0.4)
 	if instance_exists(obj_debugcontroller) && obj_debugcontroller.active = true
+	{
+		#region Anti-Crash
+	key_up = false
+	key_up2 = false
+	key_right = false
+	key_right2 = false
+	key_left = false
+	key_left2 = false
+	key_down = false
+	key_down2 = false
+	key_jump = false
+	key_jump2 = false
+	key_slap = false
+	key_slap2 = false
+	key_taunt = false
+	key_taunt2 = false
+	key_attack = false
+	key_attack2 = false
+	key_shoot = false
+	key_shoot2 = false
+	key_start = false
+	key_escape = false
+		#endregion
 		return;
+	}
 	else
 	{
 	key_up = (keyboard_check(global.key_up) || gamepad_button_check(0, global.key_upC) || gamepad_axis_value(0, gp_axislv) < 0)

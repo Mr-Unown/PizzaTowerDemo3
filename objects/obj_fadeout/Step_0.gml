@@ -13,11 +13,6 @@ if (fadealpha > 1)
     fadein = 1
     if instance_exists(obj_player)
     {
-        with (obj_player)
-        {
-            if place_meeting(x, y, obj_goldendoor)
-                game_restart()
-        }
         if (acttransition == 1)
         {
             with (obj_music)

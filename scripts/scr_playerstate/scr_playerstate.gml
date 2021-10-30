@@ -492,7 +492,16 @@ function scr_playerstate() {
 				depth = other.depth - 5
 		}
 	}
-
+	
+	//Up Arrow
+	if (((place_meeting(x, y, obj_door) && (!place_meeting(x, y, obj_doorblocked))) || place_meeting(x, y, obj_olddresser) || place_meeting(x, y, obj_optionsdoor) || place_meeting(x, y, obj_dresser) || place_meeting(x,y, obj_door2) || place_meeting(x,y,obj_geromedoor) || place_meeting(x, y, obj_hatstand) || place_meeting(x, y, obj_snick) || place_meeting(x, y, obj_keydoor) || (place_meeting(x, y, obj_exitgate) && (global.panic == 1 || global.snickchallenge == true))) && (!instance_exists(uparrowid)) && scr_solid(x, (y + 1)) && state == 0 && obj_player1.spotlight == 1)
+	{
+		with (instance_create(x, y, obj_uparrow))
+		{
+			other.uparrowid = id
+	        playerid = other.object_index
+		}
+	}	
 	#region Slope Angles - Disabled since it really looks bad
 /*
 	//Angle Strength
@@ -723,9 +732,12 @@ function scr_playerstate() {
 	//Topping trail
 	if (toomanytoppings > 0)
 	    toomanytoppings -= 0.8
-	if ((toomanytoppings <= 0) && ((state == 91) && (mach2 >= 100)))
+	if ((toomanytoppings <= 0) && ((state == 91) && (mach2 >= 100))) && global.panic == true
 	{
-	    instance_create(x, (y + 17), obj_toppingtrail)
+	    with instance_create(x, (y + 17), obj_toppingtrail)
+		{
+			playerid = other.id
+		}
 	    toomanytoppings = 6
 	}
 	

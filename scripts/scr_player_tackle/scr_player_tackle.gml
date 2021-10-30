@@ -51,6 +51,7 @@ function scr_player_tackle() {
 	{
 		image_speed = 0.35
 	    state = 0
+		movespeed = abs(movespeed - slowdownspeed)
 	}
 	//Jump
 	if (key_jump && grounded)
@@ -88,7 +89,7 @@ function scr_player_tackle() {
 	    sprite_index = spr_crouchslip
 	    machhitAnim = 0
 	    state = 68
-	    movespeed = clamp(movespeed + 5,5,15)
+	    movespeed = clamp((movespeed - slowdownspeed) + 5,5,15)
 	}
     suplexdashtimer += 0.35
 

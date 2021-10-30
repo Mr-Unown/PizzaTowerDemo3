@@ -11,7 +11,18 @@ if ((-obj_player.key_left2) && i > 0)
 if (obj_player.key_slap2 || keyboard_check_pressed(vk_f5) || obj_player.key_start)
 {
     instance_destroy()
-    obj_mainmenuselect.selected = 0
+
+    if (room == New_Realtitlescreen)
+	{
+        obj_player1.state = states.normal;
+		if global.coop == true
+			obj_player2.state = states.normal;
+		obj_newmainmenuselect.selected = 0
+	}
+	else if room == Realtitlescreen
+	{
+		obj_mainmenuselect.selected = 0
+	}
 }
 
 
