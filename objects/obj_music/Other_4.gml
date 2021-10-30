@@ -16,7 +16,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
             pausedmusic = mu_characterselect
         }
     }
-    if (string_letters(roomname) == "New_Realtitlescreen" || string_letters(roomname) == "Realtitlescreen")
+    if (string_letters(roomname) == "NewRealtitlescreen" || string_letters(roomname) == "Realtitlescreen")
     {
         if (!audio_is_playing(mu_title))
         {
@@ -26,7 +26,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
         }
     }
 	
-    if (string_letters(roomname) == "characterselect" || string_letters(roomname) == "characterselect")
+    if (string_letters(roomname) == "characterselect")
     {
         if (!audio_is_playing(mu_characterselect))
         {
