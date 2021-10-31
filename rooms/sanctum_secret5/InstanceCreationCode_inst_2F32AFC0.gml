@@ -1,1 +1,1 @@
-targetRoom = sanctum_11
+targetRoom = sanctum_10
