@@ -54,6 +54,8 @@ function scr_player_current() {
 	{
 	    if (drafty == 1)
 	    {
+			if vsp > -8
+				vsp = -8
 	        state = 58
 	        sprite_index = spr_machfreefall
 	        jumpstop = 1
