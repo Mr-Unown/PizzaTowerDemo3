@@ -16,7 +16,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
             pausedmusic = mu_characterselect
         }
     }
-    if (string_letters(roomname) == "NewRealtitlescreen" || string_letters(roomname) == "Realtitlescreen")
+    if (string_letters(roomname) == "Realtitlescreen" || room = New_Realtitlescreen)
     {
         if (!audio_is_playing(mu_title))
         {
@@ -26,7 +26,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
         }
     }
 	
-    if (string_letters(roomname) == "characterselect")
+    if (string_letters(roomname) == "characterselect" || string_letters(roomname) == "characterselect")
     {
         if (!audio_is_playing(mu_characterselect))
         {
@@ -140,7 +140,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
             pausedmusic = mu_dungeon
         }
     }
-	/*
+	
     if (string_letters(roomname) == "desert" && global.desertnight != 1)
     {
         for (i = 0; i < 20; i++)
@@ -150,9 +150,9 @@ if (global.panic == 0 && global.snickchallenge == 0)
                 if (!audio_is_playing(mu_desert))
                 {
                     scr_soundstopall()
-                    scr_sound(71)
+                    scr_sound(mu_desert)
                     audio_sound_set_track_position(global.music, fadeoff)
-                    pausedmusic = 71
+                    pausedmusic = mu_desert
                 }
             }
             else if (roomname == ("desert_" + string(i)) && i > 14)
@@ -160,9 +160,9 @@ if (global.panic == 0 && global.snickchallenge == 0)
                 if (!audio_is_playing(mu_ufo))
                 {
                     scr_soundstopall()
-                    scr_sound(73)
+                    scr_sound(mu_ufo)
                     audio_sound_set_track_position(global.music, fadeoff)
-                    pausedmusic = 73
+                    pausedmusic = mu_ufo
                 }
             }
         }
@@ -176,9 +176,9 @@ if (global.panic == 0 && global.snickchallenge == 0)
                 if (!audio_is_playing(mu_cowboy))
                 {
                     scr_soundstopall()
-                    scr_sound(110)
+                    scr_sound(mu_cowboy)
                     audio_sound_set_track_position(global.music, fadeoff)
-                    pausedmusic = 110
+                    pausedmusic = mu_cowboy
                 }
             }
             else if (roomname == ("desert_" + string(i)) && i > 14)
@@ -186,14 +186,14 @@ if (global.panic == 0 && global.snickchallenge == 0)
                 if (!audio_is_playing(mu_cowboyufo))
                 {
                     scr_soundstopall()
-                    scr_sound(119)
+                    scr_sound(mu_cowboyufo)
                     audio_sound_set_track_position(global.music, fadeoff)
-                    pausedmusic = 119
+                    pausedmusic = mu_cowboyufo
                 }
             }
         }
     }
-    if (string_letters(roomname) == "factory")
+/*    if (string_letters(roomname) == "factory")
     {
         for (i = 0; i < 20; i++)
         {
@@ -357,12 +357,12 @@ if (global.panic == 0 && global.snickchallenge == 0)
     }
     if (string_letters(roomname) == "sanctum")
     {	
-        if (!audio_is_playing(mu_sanctum))
+        if (!audio_is_playing(mu_ruinremix))
         {
             scr_soundstopall()
-            scr_sound(mu_sanctum)
+            scr_sound(mu_ruinremix)
             audio_sound_set_track_position(global.music, fadeoff)
-            pausedmusic = mu_sanctum
+            pausedmusic = mu_ruinremix
         }		
 	}
     if (string_letters(roomname) == "ruin")
@@ -434,12 +434,12 @@ if (global.panic == 0 && global.snickchallenge == 0)
     }
     if (string_letters(roomname) == "chateausecret" || string_letters(roomname) == "medievalsecret")
     {
-        if (!audio_is_playing(mu_medievalsecret))
+        if (!audio_is_playing(mu_secret))
         {
             scr_soundstopall()
-            scr_sound(mu_medievalsecret)
+            scr_sound(mu_secret)
             audio_sound_set_track_position(global.music, fadeoff)
-            pausedmusic = mu_medievalsecret
+            pausedmusic = mu_secret
         }
     }/*
     if (string_letters(roomname) == "desertsecret" && global.desertnight != 1)
