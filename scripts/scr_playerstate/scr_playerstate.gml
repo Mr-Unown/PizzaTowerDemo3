@@ -493,8 +493,8 @@ function scr_playerstate() {
 		}
 	}
 
-	#region Slope Angles - Disabled since it really looks bad
-/*
+	#region Slope Angles
+
 	//Angle Strength
 	var subtle_var = 5;
 #region State Stuff
@@ -531,23 +531,17 @@ function scr_playerstate() {
 	}
 #endregion
 
-	//Slope Angles 
-	//Spaghetti Code Strikes Back
-	if global.freezeframe = false && sprite_index != spr_tumblestart && sprite_index != spr_knightpepdownslope && scr_slope_ext(x, y + 1) && vsp >= 0 
+#endregion Slope Angles
+	if global.freezeframe = false && sprite_index != spr_knightpepdownslope && place_meeting(x,y+1,obj_slope) && vsp >= 0 
 	{
-		var angle = scr_slopeangle(x, y + 1)
-		draw_angle = ( (approach(draw_angle,angle ,16)) / (subtle_var) )
-		
-		with instance_place(x,y + 1,obj_slope)
-		{
-			var _xscale = sign(image_xscale)
-			var flip = _xscale = -1 ? 180 : 0
-			other.draw_angle = ( (approach(other.draw_angle,(point_direction(x,y + sprite_height,x + sprite_width,y) - flip),16)) / (subtle_var) );
-		}
+	    with instance_place(x,y + 1,obj_slope)
+	    {
+	        var flip = sign(image_xscale) = -1 ? 180 : 0
+	        other.draw_angle = ( (approach(other.draw_angle,(point_direction(x,y + sprite_height,x + sprite_width,y) - flip),16)) / (subtle_var) );
+	    }
 	}
 	else if global.freezeframe = false
-		draw_angle = approach(draw_angle,0,32);
-*/		
+	    draw_angle = approach(draw_angle,0,32);
 #endregion	
 
 	//Speedboost

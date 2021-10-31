@@ -19,7 +19,7 @@ function scr_player_freefallland() {
 	if key_jump2 && floor(image_index) >= 2 && floor(image_index) != image_number - 1
 	{
 		facehurt = 0
-		jumpAnim = 0
+		jumpAnim = 1
 	    state = 58
 	    vsp = -12
 		image_speed = 0.35

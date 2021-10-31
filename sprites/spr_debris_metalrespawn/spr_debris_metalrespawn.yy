@@ -8,9 +8,9 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 12,
-  "bbox_right": 86,
-  "bbox_top": 7,
-  "bbox_bottom": 93,
+  "bbox_right": 89,
+  "bbox_top": 8,
+  "bbox_bottom": 91,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"3b386882-81c9-42dc-892f-5fc0431f8d88","path":"sprites/spr_debris_metalrespawn/spr_debris_metalrespawn.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3b386882-81c9-42dc-892f-5fc0431f8d88","path":"sprites/spr_debris_metalrespawn/spr_debris_metalrespawn.yy",},"LayerId":{"name":"e3d6cc34-1154-4ddd-9b83-253d3fc9f7e4","path":"sprites/spr_debris_metalrespawn/spr_debris_metalrespawn.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_debris_metalrespawn","path":"sprites/spr_debris_metalrespawn/spr_debris_metalrespawn.yy",},"resourceVersion":"1.0","name":"3b386882-81c9-42dc-892f-5fc0431f8d88","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"fd6b36f7-5764-44ba-8328-99c770d896cb","path":"sprites/spr_debris_metalrespawn/spr_debris_metalrespawn.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"fd6b36f7-5764-44ba-8328-99c770d896cb","path":"sprites/spr_debris_metalrespawn/spr_debris_metalrespawn.yy",},"LayerId":{"name":"0572e054-0342-48bd-93f4-6043796cf57c","path":"sprites/spr_debris_metalrespawn/spr_debris_metalrespawn.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_debris_metalrespawn","path":"sprites/spr_debris_metalrespawn/spr_debris_metalrespawn.yy",},"resourceVersion":"1.0","name":"fd6b36f7-5764-44ba-8328-99c770d896cb","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_debris_metalrespawn","path":"sprites/spr_debris_metalrespawn/spr_debris_metalrespawn.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"12336ad4-7659-4fdf-86b7-834afb439916","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3b386882-81c9-42dc-892f-5fc0431f8d88","path":"sprites/spr_debris_metalrespawn/spr_debris_metalrespawn.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"13764aa3-260d-4053-abb8-25e0180e190a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fd6b36f7-5764-44ba-8328-99c770d896cb","path":"sprites/spr_debris_metalrespawn/spr_debris_metalrespawn.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e3d6cc34-1154-4ddd-9b83-253d3fc9f7e4","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0572e054-0342-48bd-93f4-6043796cf57c","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
