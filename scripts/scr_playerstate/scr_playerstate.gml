@@ -502,7 +502,10 @@ function scr_playerstate() {
 	        playerid = other.object_index
 		}
 	}	
+	#region Slope Angles
 
+	//Angle Strength
+	var subtle_var = 5;
 #region State Stuff
 	switch state
 	{
@@ -537,9 +540,7 @@ function scr_playerstate() {
 	}
 #endregion
 
-#region Slope Angles
-	//Angle Strength
-	var subtle_var = 5;
+#endregion Slope Angles
 	if global.freezeframe = false && sprite_index != spr_knightpepdownslope && place_meeting(x,y+1,obj_slope) && vsp >= 0 
 	{
 	    with instance_place(x,y + 1,obj_slope)
@@ -736,6 +737,8 @@ function scr_playerstate() {
 	    }
 	}
 
+	
+	}
 	//Instakill Move
 	if global.freezeframe = false
 	{
@@ -743,6 +746,7 @@ function scr_playerstate() {
 			instakillmove = 1
 		else if state != states.frozen
 			instakillmove = 0
-		}
 	}
+
+
 }
