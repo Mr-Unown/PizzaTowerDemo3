@@ -73,7 +73,7 @@ mu_miniboss
 mu_ufo
 mu_pizzatime
 mu_hub
-mu_secret
+mu_medievalsecret
 mu_chase
 mu_entrance
 mu_medieval

@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "mu_vigiescaperequiem",
-  "duration": 160.009079,
+  "duration": 160.004089,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

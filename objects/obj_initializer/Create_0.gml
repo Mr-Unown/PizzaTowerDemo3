@@ -22,5 +22,5 @@ global.newtitlescreen = 0;
 ini_open("saveData.ini")
 global.newtitlescreen = ini_read_real("Option", "newtitlescreen", false);
 ini_close()
-global.roomstart[false] = Realtitlescreen;
-global.roomstart[true] = New_Realtitlescreen;
+global.roomstart[0] = Realtitlescreen;
+global.roomstart[1] = New_Realtitlescreen;

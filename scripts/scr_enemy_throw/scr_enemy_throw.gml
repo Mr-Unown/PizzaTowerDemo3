@@ -44,14 +44,14 @@ function scr_enemy_throw() {
 	    global.reset_timer[obj_shrimpblue] = 100	
 	    global.reset_timer[obj_cannongoblin] = 200	
 	}
-		hsp = 0
+	hsp = 0
 	if place_meeting(x, (y + 1), obj_railh)
 	    hsp = -5
 	else if place_meeting(x, (y + 1), obj_railh2)
 	    hsp = 5
 	if sprite_index != global.throw_sprite[object_index]
 	    sprite_index = global.throw_sprite[object_index]	
-	if (floor(image_index) == (image_number - 1))
+	if (floor(image_index) >= (image_number - 1))
 	{
 		state = 102
 	}
@@ -66,9 +66,10 @@ function scr_enemy_throw() {
 	        case obj_pizzagoblin:
 	            with (instance_create(x, y, obj_pizzagoblinbomb))
 	            {
-	                movespeed = (10)
-					image_xscale = other.image_xscale
-	                vsp = -8
+	                movespeed = (10);
+					image_xscale = other.image_xscale;
+	                vsp = -8;
+					countdown = 60;
 	            }
 	            break
 	        case obj_cheeserobot:

@@ -14,6 +14,7 @@ draw_sparks = false;
 if (playerid.sprite_index == playerid.spr_supertaunt1 || playerid.sprite_index == playerid.spr_supertaunt2 || playerid.sprite_index == playerid.spr_supertaunt3 || playerid.sprite_index == playerid.spr_supertaunt4)
 draw_sparks = true;
 sprite_index = playerid.sprite_index
+image_alpha = 0.85
 randomize()
 image_blend = choose(make_color_rgb(255, 0, 0), make_color_rgb(0, 255, 0))
 alarm[1] = 3

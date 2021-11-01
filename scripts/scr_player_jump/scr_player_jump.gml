@@ -121,7 +121,7 @@ function scr_player_jump() {
 	        if (sprite_index == spr_shotgunjump)
 	            sprite_index = spr_shotgunfall
 	        if (sprite_index == spr_groundpoundjump)
-	            sprite_index = spr_groundpoundjumpend
+	            sprite_index = spr_fall
 	        if (sprite_index == spr_jump)
 	            sprite_index = spr_fall
 	        if (sprite_index == spr_player_Sjumpstart)

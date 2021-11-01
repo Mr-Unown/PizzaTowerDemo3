@@ -405,10 +405,13 @@ function scr_roomnames() {
 			_message = "Ancient Gods and PB 2";
 			break;		
 		case sanctum_12:
-			_message = "Messy Stains";
-			break;				
-		case sanctum_13:
+			_message = "Daily Stains";
+			break;		
+		case sanctum_12_1:
 			_message = "and Dirty Surfaces!";
+			break;							
+		case sanctum_13:
+			_message = "Escape Pit";
 			break;						
 		case sanctum_treasure:
 			_message = "Kitchen Object!?";
@@ -426,7 +429,7 @@ function scr_roomnames() {
 			_message = "Action Block Destruction";
 			break;
 		case sanctum_secret4:
-			_message = "Blue Ball";
+			_message = "Spectacular Man of Ball";
 			break;			
 		case sanctum_secret5:
 			_message = "All Cheese Here";

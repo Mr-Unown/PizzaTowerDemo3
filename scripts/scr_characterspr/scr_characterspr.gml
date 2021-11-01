@@ -204,7 +204,6 @@ function scr_characterspr() {
 		spr_parry2 = spr_player_parry2
 		spr_parry3 = spr_player_parry3
 		spr_groundpoundjump = spr_player_groundpoundjump
-		spr_groundpoundjumpend = spr_player_fall
 		spr_breakdancestart = spr_player_breakdancestart
 		spr_breakdance = spr_player_breakdance
 		spr_breakdanceattack1 = spr_player_breakdance_attack
@@ -435,8 +434,7 @@ function scr_characterspr() {
 		spr_parry1 = spr_playerN_parry1
 		spr_parry2 = spr_playerN_parry2
 		spr_parry3 = spr_playerN_parry3
-		spr_groundpoundjump = spr_playerN_fall
-		spr_groundpoundjumpend = spr_playerN_fall
+		spr_groundpoundjump = spr_machfreefall		
 		spr_breakdancestart = spr_player_breakdancestart
 		spr_breakdance = spr_player_breakdance
 		spr_breakdanceattack1 = spr_player_breakdance_attack
@@ -644,8 +642,7 @@ function scr_characterspr() {
 		spr_parry1 = spr_player_parry1
 		spr_parry2 = spr_player_parry2
 		spr_parry3 = spr_player_breakdance
-		spr_groundpoundjump = spr_snick_fall
-		spr_groundpoundjumpend = spr_snick_fall
+		spr_groundpoundjump = spr_machfreefall		
 		spr_breakdancestart = spr_player_breakdancestart
 		spr_breakdance = spr_player_breakdance
 		spr_breakdanceattack1 = spr_player_breakdance_attack
@@ -871,8 +868,7 @@ function scr_characterspr() {
 		spr_parry1 = spr_player_parry1
 		spr_parry2 = spr_player_parry2
 		spr_parry3 = spr_player_breakdance
-		spr_groundpoundjump = spr_playerV_fall
-		spr_groundpoundjumpend = spr_playerV_fall
+		spr_groundpoundjump = spr_machfreefall		
 		spr_breakdancestart = spr_player_breakdancestart
 		spr_breakdance = spr_player_breakdance
 		spr_breakdanceattack1 = spr_player_breakdance_attack
@@ -1099,8 +1095,7 @@ function scr_characterspr() {
 		spr_parry1 = spr_player_parry1
 		spr_parry2 = spr_player_parry2
 		spr_parry3 = spr_player_breakdance
-		spr_groundpoundjump = spr_playerP_fall
-		spr_groundpoundjumpend = spr_playerP_fall
+		spr_groundpoundjump = spr_machfreefall		
 		spr_breakdancestart = spr_player_breakdancestart
 		spr_breakdance = spr_player_breakdance
 		spr_breakdanceattack1 = spr_player_breakdance_attack
@@ -1328,6 +1323,7 @@ function scr_characterspr() {
 		spr_parry1 = spr_player_parry1
 		spr_parry2 = spr_player_parry2
 		spr_parry3 = spr_player_breakdance
+		spr_groundpoundjump = spr_machfreefall		
 		spr_breakdancestart = spr_player_breakdancestart
 		spr_breakdance = spr_player_breakdance
 		spr_breakdanceattack1 = spr_player_breakdance_attack
@@ -1553,6 +1549,7 @@ function scr_characterspr() {
 		spr_parry1 = spr_playerPZ_parry1
 		spr_parry2 = spr_playerPZ_parry2
 		spr_parry3 = spr_playerPZ_parry3
+		spr_groundpoundjump = spr_machfreefall //Missing		
 		spr_breakdancestart = spr_player_breakdancestart //Missing 
 		spr_breakdance = spr_player_breakdance //Missing
 		spr_breakdanceattack1 = spr_player_breakdance_attack //Missing

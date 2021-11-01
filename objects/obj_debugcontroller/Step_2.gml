@@ -126,7 +126,15 @@ if active = true
 				ini_open("saveData.ini")
 				ini_write_real("Option", "newtitlescreen", arg1);
 				ini_close()
-				
+				if room == New_Realtitlescreen || room == Realtitlescreen
+				{
+					if room != global.roomstart[global.newtitlescreen]
+						room = global.roomstart[global.newtitlescreen];
+					with obj_player
+					{
+						state = states.titlescreen;
+					}
+				}
 				break;				
 			case "debugmode": //Could probably use optimization
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.debugmode else arg1 = ds_list_find_value(_commands, 1)

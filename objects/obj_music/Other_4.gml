@@ -16,7 +16,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
             pausedmusic = mu_characterselect
         }
     }
-    if (string_letters(roomname) == "Realtitlescreen" || room = New_Realtitlescreen)
+    if (string_letters(roomname) == "NewRealtitlescreen" || string_letters(roomname) == "Realtitlescreen")
     {
         if (!audio_is_playing(mu_title))
         {
@@ -26,7 +26,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
         }
     }
 	
-    if (string_letters(roomname) == "characterselect" || string_letters(roomname) == "characterselect")
+    if (string_letters(roomname) == "characterselect")
     {
         if (!audio_is_playing(mu_characterselect))
         {
@@ -357,12 +357,12 @@ if (global.panic == 0 && global.snickchallenge == 0)
     }
     if (string_letters(roomname) == "sanctum")
     {	
-        if (!audio_is_playing(mu_ruinremix))
+        if (!audio_is_playing(mu_sanctum))
         {
             scr_soundstopall()
-            scr_sound(mu_ruinremix)
+            scr_sound(mu_sanctum)
             audio_sound_set_track_position(global.music, fadeoff)
-            pausedmusic = mu_ruinremix
+            pausedmusic = mu_sanctum
         }		
 	}
     if (string_letters(roomname) == "ruin")
@@ -434,12 +434,12 @@ if (global.panic == 0 && global.snickchallenge == 0)
     }
     if (string_letters(roomname) == "chateausecret" || string_letters(roomname) == "medievalsecret")
     {
-        if (!audio_is_playing(mu_secret))
+        if (!audio_is_playing(mu_medievalsecret))
         {
             scr_soundstopall()
-            scr_sound(mu_secret)
+            scr_sound(mu_medievalsecret)
             audio_sound_set_track_position(global.music, fadeoff)
-            pausedmusic = mu_secret
+            pausedmusic = mu_medievalsecret
         }
     }/*
     if (string_letters(roomname) == "desertsecret" && global.desertnight != 1)

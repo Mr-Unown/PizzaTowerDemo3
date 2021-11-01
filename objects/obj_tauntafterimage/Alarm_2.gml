@@ -1,4 +1,4 @@
-image_alpha = 1
+image_alpha = 0.85
 alarm[1] = 3
 
 
