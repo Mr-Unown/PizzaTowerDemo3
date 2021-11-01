@@ -84,7 +84,9 @@ function scr_player_boxxedpep() {
 	    {
 	        if (move != 0)
 	            sprite_index = spr_boxxedwalk
-	        else
+	        else if movespeed = 10
+			sprite_index = spr_boxxedintro
+			else
 	            sprite_index = spr_boxxedidle
 	    }
 	    else
