@@ -1,5 +1,5 @@
 depth = -20
-alpha = 0.45
+alpha = 0.35
 watersurface = noone;
 //masksurface = noone;
 created = 0
