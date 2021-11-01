@@ -334,23 +334,12 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                 }
                 else
                 {
-                     sprite_index = choose(spr_finishingblow1, spr_finishingblow2, spr_finishingblow3, spr_finishingblow4, spr_finishingblow5, spr_suplexmash1, spr_suplexmash2, spr_suplexmash3, spr_suplexmash4)
-					 image_speed = .01
-								suplexdashtimer = 3
-								global.hitstunalarm = 5
-	                            image_index = 0
-								if image_number = 1
-								hsp = 0
-	                            vsp = 0
-                    other.baddieID.state = 106
-					other.baddieID.hp -= 1
+                    movespeed = 0
+                    image_index = 0
+                    sprite_index = spr_haulingstart
+                    state = 46
+                    other.baddieID.state = 109
                     other.baddieID.grabbedby = 1
-					other.baddieID.hsp = hsp
-					other.baddieID.vsp = vsp
-			if !audio_is_playing(sfx_punch)
-            scr_soundeffect(sfx_punch)
-            instance_create(other.baddieID.x, other.baddieID.y, obj_slapstar)
-            global.combotime = 60
                     if (other.baddieID == obj_pizzaball)
                         golf = 1
                     else

@@ -261,8 +261,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "factory",
-    "path": "folders/Sprites/tilesets/factory.yy",
+    "name": "Sprites",
+    "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "bg_factoryindustrial",

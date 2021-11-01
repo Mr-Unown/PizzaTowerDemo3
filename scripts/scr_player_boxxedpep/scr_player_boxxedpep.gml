@@ -38,15 +38,40 @@ function scr_player_boxxedpep() {
 	    instance_create(x, y, obj_highjumpcloud2)
 	    vsp = -11
 	}
-	if (move != 0)
-	{
-	    if (movespeed < 8)
-	        movespeed += 0.5
-	    else if (floor(movespeed) == 8)
-	        movespeed = 8
-	}
-	else
-	    movespeed = 0
+	if (!key_attack)
+    {
+        if (move != 0)
+        {
+            if (movespeed < 6)
+                movespeed += 0.5
+            else if (floor(movespeed) == 6)
+                movespeed = 6
+        }
+        else
+            movespeed = 0
+        if (movespeed > 6)
+            movespeed -= 0.1
+    }
+    else if (movespeed < 10 && (!grounded))
+    {
+        if (dir != xscale)
+        {
+            dir = xscale
+            movespeed = 0
+        }
+        if (move != 0)
+        {
+            if (movespeed < 6)
+                movespeed += 0.5
+            else if (floor(movespeed) == 6)
+                movespeed = 6
+            xscale = move
+        }
+        else
+            movespeed = 0
+    }
+    else
+        movespeed = 10
 	if (movespeed > 8)
 	    movespeed -= 0.1
 	if (sprite_index == spr_boxxedintro && floor(image_index) == (image_number - 1))

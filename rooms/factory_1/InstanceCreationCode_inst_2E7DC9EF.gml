@@ -1,1 +1,1 @@
-targetRoom = dungeon_secret6
+targetRoom = factory_2
