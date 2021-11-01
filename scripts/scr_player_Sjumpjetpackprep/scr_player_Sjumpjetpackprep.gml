@@ -17,6 +17,20 @@ function scr_player_Sjumpjetpackprep() {
 	pogojetcharge = false
 	pogojetchargebuffer = 50
 
+	if (floor(image_index) = image_number - 1 && character == "P")
+	{
+		if sprite_index = spr_player_sjumpcancelprep
+		{
+			scr_soundeffect(sfx_superjumprelease)		
+			mach2 = 100
+			machhitAnim = 0
+			state = states.tumble
+			sprite_index = spr_player_sjumpcancel
+			image_index = 0
+			movespeed = 14
+		}
+	}
+
 	if floor(image_index) = image_number - 1
 	{
 		if sprite_index = spr_playerN_jetpackstart
