@@ -32,8 +32,8 @@ pal_swap_set(surface, 1, true);
 draw_sprite_ext(player.sprite_index,player.image_index,draw_x - 152,draw_y + 16,4,4,0,c_white,1)
 pal_swap_reset();
 #region HUD Stuff
-if global.newhud == true
-{
+//if global.newhud == true
+//{
 	with obj_tv
 	{
 		pal_swap_set(other.surface, 1, true);
@@ -44,7 +44,8 @@ if global.newhud == true
 		//Character Palettes that modify TV Sprites' Palettes...
 		draw_sprite_ext(spr_tv_frame, -1, 832, 100, 1, 1, 0, c_white, 1)
 	}	
-}
+//}
+/*
 else
 {
 	var _sprite = spr_pepinoHUD;
@@ -68,12 +69,12 @@ else
 		default:
 			_sprite = spr_pepinoHUD;
 		break;
-		pal_swap_set(surface, 1, true);
+		pal_swap_set(surface, 1, true); //Why is this not working wow
 		draw_sprite_ext(_sprite, -1, 832, 100, -1, 1, 0, c_white, 1)		
 		pal_swap_reset()		
 		 
 	}
-}
+}*/
 #endregion
 //Text
 draw_set_font(global.smallfont)

@@ -1,5 +1,5 @@
 //Draw Slider
-draw_sprite_ext(spr_palettechanger_scrollbar,-1,draw_x,draw_y,1,1,0,c_white,1);
+draw_sprite_ext(spr_palettechanger_scrollbar,selected,draw_x,draw_y,1,1,0,c_white,1);
 var top_x = draw_x - sprite_get_xoffset(spr_palettechanger_scrollbar),top_y = draw_y - sprite_get_yoffset(spr_palettechanger_scrollbar), bottom_x = draw_x + sprite_get_xoffset(spr_palettechanger_scrollbar),bottom_y = draw_y + sprite_get_yoffset(spr_palettechanger_scrollbar);
 draw_rectangle_color(top_x + 4,top_y + 4,bottom_x - 5,bottom_y - 5,c_black,draw_color,draw_color,c_black,false);
 
