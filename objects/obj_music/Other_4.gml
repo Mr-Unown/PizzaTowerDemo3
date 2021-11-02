@@ -140,7 +140,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
             pausedmusic = mu_dungeon
         }
     }
-	
+	/*
     if (string_letters(roomname) == "desert" && global.desertnight != 1)
     {
         for (i = 0; i < 20; i++)
@@ -150,9 +150,9 @@ if (global.panic == 0 && global.snickchallenge == 0)
                 if (!audio_is_playing(mu_desert))
                 {
                     scr_soundstopall()
-                    scr_sound(mu_desert)
+                    scr_sound(71)
                     audio_sound_set_track_position(global.music, fadeoff)
-                    pausedmusic = mu_desert
+                    pausedmusic = 71
                 }
             }
             else if (roomname == ("desert_" + string(i)) && i > 14)
@@ -160,9 +160,9 @@ if (global.panic == 0 && global.snickchallenge == 0)
                 if (!audio_is_playing(mu_ufo))
                 {
                     scr_soundstopall()
-                    scr_sound(mu_ufo)
+                    scr_sound(73)
                     audio_sound_set_track_position(global.music, fadeoff)
-                    pausedmusic = mu_ufo
+                    pausedmusic = 73
                 }
             }
         }
@@ -176,9 +176,9 @@ if (global.panic == 0 && global.snickchallenge == 0)
                 if (!audio_is_playing(mu_cowboy))
                 {
                     scr_soundstopall()
-                    scr_sound(mu_cowboy)
+                    scr_sound(110)
                     audio_sound_set_track_position(global.music, fadeoff)
-                    pausedmusic = mu_cowboy
+                    pausedmusic = 110
                 }
             }
             else if (roomname == ("desert_" + string(i)) && i > 14)
@@ -186,14 +186,14 @@ if (global.panic == 0 && global.snickchallenge == 0)
                 if (!audio_is_playing(mu_cowboyufo))
                 {
                     scr_soundstopall()
-                    scr_sound(mu_cowboyufo)
+                    scr_sound(119)
                     audio_sound_set_track_position(global.music, fadeoff)
-                    pausedmusic = mu_cowboyufo
+                    pausedmusic = 119
                 }
             }
         }
     }
-/*    if (string_letters(roomname) == "factory")
+    if (string_letters(roomname) == "factory")
     {
         for (i = 0; i < 20; i++)
         {
