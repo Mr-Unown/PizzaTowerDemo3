@@ -458,6 +458,7 @@
     {"id":{"name":"spr_grandpa_punch","path":"sprites/spr_grandpa_punch/spr_grandpa_punch.yy",},"order":2,},
     {"id":{"name":"spr_graybox","path":"sprites/spr_graybox/spr_graybox.yy",},"order":5,},
     {"id":{"name":"spr_grindeffect","path":"sprites/spr_grindeffect/spr_grindeffect.yy",},"order":33,},
+    {"id":{"name":"spr_boxxednoise_dash","path":"sprites/spr_boxxednoise_dash/spr_boxxednoise_dash.yy",},"order":197,},
     {"id":{"name":"spr_gustavopresent","path":"sprites/spr_gustavopresent/spr_gustavopresent.yy",},"order":127,},
     {"id":{"name":"spr_gustavopresentdead","path":"sprites/spr_gustavopresentdead/spr_gustavopresentdead.yy",},"order":128,},
     {"id":{"name":"spr_gustavopresentdown","path":"sprites/spr_gustavopresentdown/spr_gustavopresentdown.yy",},"order":129,},
@@ -2173,6 +2174,7 @@
     {"id":{"name":"spr_tv_bubbleopen","path":"sprites/spr_tv_bubbleopen/spr_tv_bubbleopen.yy",},"order":3,},
     {"id":{"name":"spr_tv_bubble","path":"sprites/spr_tv_bubble/spr_tv_bubble.yy",},"order":1,},
     {"id":{"name":"spr_tv_bubbleclose","path":"sprites/spr_tv_bubbleclose/spr_tv_bubbleclose.yy",},"order":2,},
+    {"id":{"name":"spr_boxxedpep_dash","path":"sprites/spr_boxxedpep_dash/spr_boxxedpep_dash.yy",},"order":320,},
     {"id":{"name":"spr_pizzascoretimer","path":"sprites/spr_pizzascoretimer/spr_pizzascoretimer.yy",},"order":12,},
     {"id":{"name":"spr_vigihealth_empty","path":"sprites/spr_vigihealth_empty/spr_vigihealth_empty.yy",},"order":13,},
     {"id":{"name":"spr_vigihealth_filled","path":"sprites/spr_vigihealth_filled/spr_vigihealth_filled.yy",},"order":14,},
@@ -3611,8 +3613,11 @@
     {"roomId":{"name":"PP_room6","path":"rooms/PP_room6/PP_room6.yy",},},
     {"roomId":{"name":"sanctum_7_2","path":"rooms/sanctum_7_2/sanctum_7_2.yy",},},
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     {"roomId":{"name":"desert_1","path":"rooms/desert_1/desert_1.yy",},},
 =======
+=======
+>>>>>>> Stashed changes
     {"roomId":{"name":"sanctum_12_1","path":"rooms/sanctum_12_1/sanctum_12_1.yy",},},
     {"roomId":{"name":"factory_1","path":"rooms/factory_1/factory_1.yy",},},
     {"roomId":{"name":"factory_2","path":"rooms/factory_2/factory_2.yy",},},
@@ -3620,6 +3625,9 @@
     {"roomId":{"name":"factory_4","path":"rooms/factory_4/factory_4.yy",},},
     {"roomId":{"name":"factory_5","path":"rooms/factory_5/factory_5.yy",},},
     {"roomId":{"name":"factory_6","path":"rooms/factory_6/factory_6.yy",},},
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   ],
   "Folders": [

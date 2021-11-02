@@ -5,11 +5,44 @@ function scr_player_boxxedpep() {
 	alarm[7] = 60
 	hurted = 1
 	if key_jump
-	    input_buffer_jump = 0
+	input_buffer_jump = 0
 	if ((!key_jump2) && jumpstop == 0 && vsp < 0.5 && stompAnim == 0)
 	{
 	    vsp /= 2
 	    jumpstop = 1
+	}
+	if key_jump && !grounded
+	{	
+		if boxxedjump = 0
+		{
+		boxxedjump += 1
+		vsp = -11
+		}
+		else if boxxedjump = 1
+		{
+		boxxedjump += 1
+		vsp = -9
+		}
+		else if boxxedjump = 2
+		{
+		boxxedjump += 1
+		vsp = -7
+		}
+		else if boxxedjump = 3
+		{
+		boxxedjump += 1
+		vsp = -5
+		}
+		else if boxxedjump = 4
+		{
+		boxxedjump += 1
+		vsp = -3
+		}
+		else if boxxedjump = 5
+		{
+		boxxedjump += 1
+		vsp = -1
+		}	
 	}
 	if (grounded && vsp > 0)
 	    jumpstop = 0
@@ -32,13 +65,58 @@ function scr_player_boxxedpep() {
 	    movespeed = 0
 	if (scr_solid((x + sign(hsp)), y) && xscale == -1 && move == -1 && (!scr_slope_ext(x - 1, y)))
 	    movespeed = 0
-	if (grounded && input_buffer_jump < 8 && vsp > 0 && (!scr_solid(x, (y - 16))) && (!scr_solid(x, (y - 32))))
+	if (input_buffer_jump < 8 && vsp > 0 && (!scr_solid(x, (y - 16))) && (!scr_solid(x, (y - 32))))
 	{
-	    scr_soundeffect(sfx_jump)
+			{	
+		if boxxedjump = 0
+		{
+		boxxedjump += 1
+		vsp = -11
+		scr_soundeffect(sfx_jump)
 	    instance_create(x, y, obj_highjumpcloud2)
-	    vsp = -11
+		}
+		else if boxxedjump = 1
+		{
+		boxxedjump += 1
+		vsp = -9
+		scr_soundeffect(sfx_jump)
+	    instance_create(x, y, obj_highjumpcloud2)
+		}
+		else if boxxedjump = 2
+		{
+		boxxedjump += 1
+		vsp = -7
+		scr_soundeffect(sfx_jump)
+	    instance_create(x, y, obj_highjumpcloud2)
+		}
+		else if boxxedjump = 3
+		{
+		boxxedjump += 1
+		vsp = -5
+		scr_soundeffect(sfx_jump)
+	    instance_create(x, y, obj_highjumpcloud2)
+		}
+		else if boxxedjump = 4
+		{
+		boxxedjump += 1
+		vsp = -3
+		scr_soundeffect(sfx_jump)
+	    instance_create(x, y, obj_highjumpcloud2)
+		}
+		else if boxxedjump = 5
+		{
+		boxxedjump += 1
+		vsp = -1
+		scr_soundeffect(sfx_jump)
+	    instance_create(x, y, obj_highjumpcloud2)
+		}	
 	}
+<<<<<<< Updated upstream
 	if (!key_attack)
+=======
+	}
+    if (!key_attack)
+>>>>>>> Stashed changes
     {
         if (move != 0)
         {
@@ -72,8 +150,11 @@ function scr_player_boxxedpep() {
     }
     else
         movespeed = 10
+<<<<<<< Updated upstream
 	if (movespeed > 8)
 	    movespeed -= 0.1
+=======
+>>>>>>> Stashed changes
 	if (sprite_index == spr_boxxedintro && floor(image_index) == (image_number - 1))
 	    sprite_index = spr_boxxedidle
 	if (sprite_index != spr_boxxedintro)
@@ -83,13 +164,22 @@ function scr_player_boxxedpep() {
 	    if grounded
 	    {
 	        if (move != 0)
+			{
+				if movespeed >= 9
+				sprite_index = spr_boxxeddash
+				else
 	            sprite_index = spr_boxxedwalk
+<<<<<<< Updated upstream
 	        else if movespeed = 10
 			sprite_index = spr_boxxedintro
 			else
+=======
+			}
+	        else
+>>>>>>> Stashed changes
 	            sprite_index = spr_boxxedidle
 	    }
-	    else
+	    else if movespeed < 9
 	        sprite_index = spr_boxxedair
 	}
 	if ((!instance_exists(obj_cloudeffect)) && grounded && move != 0 && (floor(image_index) == 4 || floor(image_index) == 10))
@@ -117,7 +207,6 @@ function scr_player_boxxedpep() {
 	    obj_player.flash = 1
 	    state = 72
 	}
-
-
-
+	if grounded
+	boxxedjump = 0
 }
