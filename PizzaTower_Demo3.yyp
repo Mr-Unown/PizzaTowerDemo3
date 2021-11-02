@@ -2220,6 +2220,7 @@
     {"id":{"name":"spr_minijohn_heatstart","path":"sprites/spr_minijohn_heatstart/spr_minijohn_heatstart.yy",},"order":2,},
     {"id":{"name":"spr_minijohn_heat","path":"sprites/spr_minijohn_heat/spr_minijohn_heat.yy",},"order":1,},
     {"id":{"name":"spr_ancho_heatstart","path":"sprites/spr_ancho_heatstart/spr_ancho_heatstart.yy",},"order":5,},
+    {"id":{"name":"factory_8","path":"rooms/factory_8/factory_8.yy",},"order":7,},
     {"id":{"name":"spr_ancho_heat","path":"sprites/spr_ancho_heat/spr_ancho_heat.yy",},"order":3,},
     {"id":{"name":"spr_ancho_heatland","path":"sprites/spr_ancho_heatland/spr_ancho_heatland.yy",},"order":4,},
     {"id":{"name":"factory_7","path":"rooms/factory_7/factory_7.yy",},"order":6,},
@@ -3635,6 +3636,7 @@
     {"roomId":{"name":"factory_5","path":"rooms/factory_5/factory_5.yy",},},
     {"roomId":{"name":"factory_6","path":"rooms/factory_6/factory_6.yy",},},
     {"roomId":{"name":"factory_7","path":"rooms/factory_7/factory_7.yy",},},
+    {"roomId":{"name":"factory_8","path":"rooms/factory_8/factory_8.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
