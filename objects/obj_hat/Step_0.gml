@@ -10,7 +10,7 @@ image_xscale = player.xscale
 image_alpha = player.image_alpha
 //image_blend = player.image_blend
 image_angle = player.image_angle
-if (player.state = states.gottreasure || room = Realtitlescreen  || room = timesuproom || room = Scootertransition || room = rank_room)
+if (player.state = states.gottreasure || room = global.roomstart[global.newtitlescreen]  || room = timesuproom || room = Scootertransition || room = rank_room)
     visible = false
 else if (player.equippedhat == 1)
     visible = player.visible

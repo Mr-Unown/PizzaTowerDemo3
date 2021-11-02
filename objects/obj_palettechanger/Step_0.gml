@@ -98,7 +98,15 @@ else if player.key_up2
 #endregion
 
 //Get Out
-if (player.key_slap2 || keyboard_check_pressed(vk_return)) && has_selectedoption <= 0
+
+var _stop = false; //For to Stop Fucking
+with obj_palettechangerscrollbar
+{
+	if selected == true || input_text == true
+		_stop = true;
+}
+
+if (player.key_slap2 || keyboard_check_pressed(vk_return)) && _stop == false && has_selectedoption <= 0
 {
 	#region Save Palette to INI
 	ini_open("Custom/"+string(player.characters)+"_"+string(player.customsavedpalette)+"_palettes.ini")	
@@ -127,11 +135,11 @@ if (showtext == true)
 {
 	if choosen = false
 	{
-		message = storemessage[messageindex]
-		if messageindex < 3
-			messageindex += 1
+		_message = store_message[_messageindex]
+		if _messageindex < array_length(store_message) - 1
+			_messageindex += 1
 		else
-			messageindex = 0
+			_messageindex = 0
 		choosen = true
 	}
     if (_draw_y < 35)
@@ -145,7 +153,7 @@ if (showtext == false)
         _draw_y -= 1
 	else
 	{
-		message = ""
+		_message = ""
 		_draw_y = -64
 	}
 }

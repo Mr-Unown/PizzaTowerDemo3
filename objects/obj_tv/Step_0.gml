@@ -31,11 +31,17 @@ if global.miniboss = true
 	global.pausecombotime = true
 	obj_tv.alarm[1] = 75	
 }
+//Time
+if frozen = true && global.freezeframe = false
+{
+	alarm[1] = frozenalarm;
+	frozen = false;		
+}
 //Pause Combo
 if global.snickchallenge = true
 	global.pausecombotime = false
 
-    if (room == Realtitlescreen || room == Tutorialtrap ||  room == Titlescreen || room == rank_room || room == cowboytask || room == hub_room3 || room == hub_room2 || room == hub_room1)
+    if (room == global.roomstart[global.newtitlescreen] || room == Tutorialtrap ||  room == Titlescreen || room == rank_room || room == cowboytask || room == hub_room3 || room == hub_room2 || room == hub_room1)
         alpha = 0
     if (room == Titlescreen || room == Tutorialtrap || room == rank_room || room == cowboytask || room == hub_room3 || room == hub_room2 || room == hub_room1)
         tvsprite = spr_tvknight
@@ -47,7 +53,7 @@ if global.snickchallenge = true
     {
         if collided = true
             alpha = 0.5
-        else if (!(room == rank_room || room == timesuproom || room == boss_room1 || room == Realtitlescreen || room == Scootertransition || room == Titlescreen || room == Tutorialtrap || room == rank_room || room == cowboytask ||room == hub_room3   || room == hub_room2 || room == hub_room1))
+        else if (!(room == rank_room || room == timesuproom || room == boss_room1 || room == global.roomstart[global.newtitlescreen] || room == Scootertransition || room == Titlescreen || room == Tutorialtrap || room == rank_room || room == cowboytask ||room == hub_room3   || room == hub_room2 || room == hub_room1))
             alpha = 1
     }
 if global.newhud = true
@@ -229,7 +235,7 @@ else if (global.hurtcounter >= global.hurtmilestone)
     else if (obj_player.character == "D")
         character = "DOUGIE"	
     message = (((("YOU HAVE HURT " + string(character)) + " ") + string(global.hurtmilestone)) + " TIMES...")
-	scr_queuemessage("It seems that our counters indicate that some "+ choose("idiot","moron","ignoramus","dingus","buffon") + " Pizzaman has been hurt " + string(global.hurtmilestone)+ " times...");
+	scr_queue_message("It seems that our counters indicate that some "+ choose("idiot","moron","ignoramus","dingus","buffon") + " Pizzaman has been hurt " + string(global.hurtmilestone)+ " times...");
     if (tvsprite != spr_tvtalking1 && tvsprite != spr_tvtalking2 && tvsprite != spr_tvtalking3 && tvsprite != spr_tvtalking4)
         tvsprite = choose(spr_tvtalking1, spr_tvtalking2, spr_tvtalking3, spr_tvtalking4)
 	var randomchance = irandom_range(0,100);
@@ -261,35 +267,6 @@ else if (global.combotime == 0 && tvsprite == spr_tvcombo)
     tvsprite = spr_tvcomboresult
     image_index = imageindexstore
     alarm[0] = 50
-}
-else if (room == Realtitlescreen)
-{
-    image_speed = 0.1
-    tvsprite = spr_tvbanana
-    alarm[0] = 2
-    if (obj_mainmenuselect.selected == 0)
-    {
-        if (obj_mainmenuselect.optionselected == 0)
-        {
-            showtext = 1
-            message = "START GAME"
-        }
-        if (obj_mainmenuselect.optionselected == 1)
-        {
-            showtext = 1
-            message = "OPTION"
-        }
-        if (obj_mainmenuselect.optionselected == 2)
-        {
-            showtext = 1
-            message = "EXIT GAME"
-        }
-    }
-    else
-    {
-        showtext = 1
-        message = ""
-    }
 }
 else if (obj_player.state == states.keyget)
 {
@@ -356,90 +333,65 @@ else if newtvsprite = spr_tv_open && bootingup = true
 }
 else if global.newhud = true && oldcharacter == player.character && (sprite_index != spr_tv_open && newtvsprite != spr_tv_open)
 {
+	var channel = 0;
 	image_speed = 0.35
 	#region NEW TV
-	switch(player.character)
+	switch(_state)
 	{
-		case "P":
-		switch(_state)
-		{
-			case states.bombpep:
-			newtvsprite = spr_tv_bombpep;
-			break;			
-			case states.fireass:
-			newtvsprite = spr_tv_fireass;
-			break;			
-			case states.knightpep:
-			case states.knightpepattack:
-			case states.knightpepslopes:
-			newtvsprite = spr_tv_knight;
-			break;		
-			case states.tumble:
-			newtvsprite = spr_tv_tumble;
-			break;
-			default:
-			#region Normal
-            if (idle < 400)
-                idle++
-            if (idle >= 300 && floor(image_index) >= (image_number - 1)) && (newtvsprite = spr_tv_idleanim1 || newtvsprite = spr_tv_idleanim2)
-            {
-                idle = 0
-                image_index = 0
-				newtvsprite = spr_tv_idle
-            }
-            if (idle >= 300 && newtvsprite != spr_tv_idleanim1 && newtvsprite != spr_tv_idleanim2)
-            {
-                newtvsprite = choose(spr_tv_idleanim1, spr_tv_idleanim2)
-                image_index = 0
-            }
-			if idle < 300
-				newtvsprite = spr_tv_idle
-			#endregion
-			break;
-		}
+		case states.keyget:
+		case states.victory:
+		newtvsprite = player.spr_playertv_victory;
+		channel = 5;
+		break;			
+		case states.bombpep:
+		case states.newbomb:
+		newtvsprite = player.spr_playertv_bomb;
+		channel = 4;
+		break;			
+		case states.fireass:
+		newtvsprite = player.spr_playertv_fireass;
+		channel = 3;
+		break;			
+		case states.knightpep:
+		case states.knightpepattack:
+		case states.knightpepslopes:
+		newtvsprite = player.spr_playertv_knight;
+		channel = 2;
+		break;		
+		case states.tumble:
+		newtvsprite = player.spr_playertv_tumble;
+		channel = 1;
 		break;
-		
 		default:
-		switch(_state)
-		{
-			case states.bombpep:
-			newtvsprite = spr_tv_bombpepN;
-			break;			
-			case states.fireass:
-			newtvsprite = spr_tv_fireassN;
-			break;			
-			case states.knightpep:
-			case states.knightpepattack:
-			case states.knightpepslopes:
-			newtvsprite = spr_tv_knightN;
-			break;		
-			case states.tumble:
-			newtvsprite = spr_tv_tumbleN;
-			break;
-			default:
-			#region Normal
+		#region Normal
             if (idle < 400)
                 idle++
-            if (idle >= 300 && floor(image_index) >= (image_number - 1)) && (newtvsprite = spr_tv_idleanim1N || newtvsprite = spr_tv_idleanim2N)
+            if (idle >= 300 && floor(image_index) >= (image_number - 1)) && (newtvsprite = player.spr_playertv_normalidle1 || newtvsprite = player.spr_playertv_normalidle2 || newtvsprite = player.spr_playertv_normalidle3)
             {
                 idle = 0
                 image_index = 0
-				newtvsprite = spr_tv_idleN
+				newtvsprite = player.spr_playertv_normal
             }
-            if (idle >= 300 && newtvsprite != spr_tv_idleanim1N && newtvsprite != spr_tv_idleanim2N)
+            if (idle >= 300 && newtvsprite != player.spr_playertv_normalidle1 && newtvsprite != player.spr_playertv_normalidle2 && newtvsprite != player.spr_playertv_normalidle3)
             {
-                newtvsprite = choose(spr_tv_idleanim1N, spr_tv_idleanim2N)
+                newtvsprite = choose(player.spr_playertv_normalidle1, player.spr_playertv_normalidle2, player.spr_playertv_normalidle3)
                 image_index = 0
             }
 			if idle < 300
-				newtvsprite = spr_tv_idleN
+				newtvsprite = player.spr_playertv_normal
+			channel = 0;
 			#endregion
-			break;
-		}
 		break;
-
 	}
 	#endregion	
+	
+	if newtvspritestore != channel && global.freezeframe = false
+	{
+		newtvspritestore = channel
+		drawstatic = true
+		drawstatictimer = 15
+		oldsprite = newtvsprite 
+	}
 }
 else if global.newhud = true && ((oldcharacter != player.character) || (oldplayer != player))
 {
@@ -463,32 +415,32 @@ switch(obj_player.state)
 	case states.knightpepattack:
 	if ds_list_find_index(global.saveroom, "knight") = -1  
 	{
-		scr_queuemessage("Wow! It seems that thunder has turned a seemingly-unknown-as-of-now fat man into a valiant and more easily identifiable knight! What mighty stead will he ride? What epic quest will he accomplish?");
-		scr_queuemessage("Maybe he will just slam into a wall and become incredibly boring again?");
+		scr_queue_message("Wow! It seems that thunder has turned a seemingly-unknown-as-of-now fat man into a valiant and more easily identifiable knight! What mighty stead will he ride? What epic quest will he accomplish?");
+		scr_queue_message("Maybe he will just slam into a wall and become incredibly boring again?");
 		ds_list_add(global.saveroom, "knight")
 	}
 	break;
 	case states.bombpep:
 	if ds_list_find_index(global.saveroom, "bomb") = -1  
 	{
-		scr_queuemessage("Whew... That Strange Unknown Pizzaman better be careful you might never know when that bomb will blow up!");
-		scr_queuemessage("I sure hope this strange man knows how to play Bomb Throw, if not... well I'm sure he'll be fine.");
+		scr_queue_message("Whew... That Strange Unknown Pizzaman better be careful you might never know when that bomb will blow up!");
+		scr_queue_message("I sure hope this strange man knows how to play Bomb Throw, if not... well I'm sure he'll be fine.");
 		ds_list_add(global.saveroom, "bomb")
 	}
 	break;		
 	case states.fireass:
 	if ds_list_find_index(global.saveroom, "fireass") = -1  
 	{
-		scr_queuemessage("Ouch! That's gotta hurt! Quickly, Stop, Drop, and Mope!");
-		scr_queuemessage("I sure hope that man has some asbestos pants...");
+		scr_queue_message("Ouch! That's gotta hurt! Quickly, Stop, Drop, and Mope!");
+		scr_queue_message("I sure hope that man has some asbestos pants...");
 		ds_list_add(global.saveroom, "fireass")
 	}	
 	break;	
 	case states.tumble:
 	if ds_list_find_index(global.saveroom, "tumble") = -1  
 	{
-		scr_queuemessage("Oh, looks like this man has taken the tumble! You better watch your step folks or this could happen to you!");
-		scr_queuemessage("At this point there is nothing you can do but hope to get bumped into a wall and not into a death trap!");
+		scr_queue_message("Oh, looks like this man has taken the tumble! You better watch your step folks or this could happen to you!");
+		scr_queue_message("At this point there is nothing you can do but hope to get bumped into a wall and not into a death trap!");
 		ds_list_add(global.saveroom, "tumble")
 	}	
 	break;		
@@ -508,7 +460,7 @@ if oldcombo != global.combo && global.newhud = true
 //Textbubble
 if ds_queue_size(global.newhudmessage) > 0 && showingnewtext = false && newtvsprite != spr_tv_open && newtvsprite != spr_tv_static
 {
-	newmessage = ds_queue_dequeue(global.newhudmessage);
+	new_message = ds_queue_dequeue(global.newhudmessage);
 	shownewtext = true;
 	showingnewtext = true;
 	textbubblesprites = spr_tv_bubbleopen;
@@ -518,23 +470,24 @@ if ds_queue_size(global.newhudmessage) > 0 && showingnewtext = false && newtvspr
 if textbubblesprites = spr_tv_bubbleopen && floor(textbubbleframes) >= sprite_get_number(spr_tv_bubbleopen) - 1
 	textbubblesprites = spr_tv_bubble
 if textbubblesprites = spr_tv_bubble
-{
 	text_x += -3.5
-	/* I was thinking why there was a disconnect between the draw and this CONT. in Draw GUI
-	if floor(text_x) <= -(floor(string_width(string_upper(newmessage))) - 775)
-	{
-		textbubblesprites = spr_tv_bubbleclose;
-		textbubbleframes = 0;
-	}*/
-}
 if textbubblesprites = spr_tv_bubbleclose && floor(textbubbleframes) >= sprite_get_number(spr_tv_bubbleclose) - 1
 {
-	newmessage = ""
+	new_message = ""
 	shownewtext = false;
 	showingnewtext = false;
 	textbubbleframes = 0;
 	text_x = 300;	
 }
-
-
-textbubbleframes += 0.35
+//Static
+if global.freezeframe = false
+{
+	if drawstatic = true && drawstatictimer > 0
+		drawstaticalpha = 1
+	else
+		drawstaticalpha = approach(drawstaticalpha,0,0.30)
+	
+	drawstatictimer--
+	staticframe += 0.35;
+}
+textbubbleframes += 0.35;

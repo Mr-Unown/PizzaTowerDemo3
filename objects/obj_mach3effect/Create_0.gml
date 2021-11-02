@@ -6,6 +6,7 @@ frozenalarm[2] = -1;
 
 playerid = obj_player1
 image_speed = 0
+image_alpha = 0.85
 randomize()
 image_blend = choose(make_color_rgb(255, 0, 0), make_color_rgb(0, 255, 0))
 alarm[1] = 3

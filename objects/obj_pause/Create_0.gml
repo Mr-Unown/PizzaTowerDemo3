@@ -1,4 +1,4 @@
-global.smallfont = font_add_sprite_ext(spr_smallerfont, "ABCDEFGHIJKLMNOPQRSTUVWXYZ!.,'\"-:?1234567890", 1, 0)
+global.smallfont = font_add_sprite_ext(spr_smallerfont, "ABCDEFGHIJKLMNOPQRSTUVWXYZ!.,'\"-:?1234567890|", 1, 0)
 global.font = font_add_sprite_ext(spr_font, "ABCDEFGHIJKLMNOPQRSTUVWXYZ!.1234567890:", 1, 0)
 global.pointsfont = font_add_sprite_ext(spr_font_collect, "0123456789", 1, 0)
 global.combofont = font_add_sprite_ext(spr_font_combo, "0123456789", 1, 0)
@@ -22,7 +22,7 @@ pineappledone = 0
 depth = -98
 draw_screen = 0
 global.nocombo = 0
-global.pausenicemusic = -4;
+global.pausenicemusic = noone;
 //global.pausenicetrack = 0;
 
 global.tutorialtrap = 0

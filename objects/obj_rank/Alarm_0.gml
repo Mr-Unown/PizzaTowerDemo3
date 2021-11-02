@@ -10,16 +10,17 @@
 }
 else
 {*/
-	while global.flushtextures = true
-	{
-		draw_texture_flush();
-		sprite_flush_multi(global.prefetcharray);
-		global.flushtextures = false
-		show_debug_message("Flushed Textures");
-	}
+
 	global.timeattack = 0;
 	global.levelname = "none"
     global.fakepeppino = 0
+	while global.flushtextures = true
+	{
+		draw_texture_flush();
+		sprite_prefetch_multi(global.prefetcharray);
+		global.flushtextures = false
+		show_debug_message("Flushed Textures");
+	}	
 	script_execute(scr_playerreset);
 	var _backtohubroom = hub_room1;
 	with obj_player1

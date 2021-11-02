@@ -1,114 +1,87 @@
 {
-    "id": "e2415738-d902-4bc6-9945-dff1444f7ba9",
-    "modelName": "GMSprite",
-    "mvc": "1.12",
-    "name": "spr_player_bodyslamfall",
-    "For3D": false,
-    "HTile": false,
-    "VTile": false,
-    "bbox_bottom": 91,
-    "bbox_left": 24,
-    "bbox_right": 77,
-    "bbox_top": 22,
-    "bboxmode": 0,
-    "colkind": 0,
-    "coltolerance": 0,
-    "edgeFiltering": false,
-    "frames": [
-        {
-            "id": "bf28cd6d-d0d8-45ce-add9-cf536a84ec75",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "e2415738-d902-4bc6-9945-dff1444f7ba9",
-            "compositeImage": {
-                "id": "2ac07339-1c5e-462d-8bbf-6d38af9b108b",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "bf28cd6d-d0d8-45ce-add9-cf536a84ec75",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "bb2a40b1-938c-4915-88f3-eba5d0ef34e3",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "bf28cd6d-d0d8-45ce-add9-cf536a84ec75",
-                    "LayerId": "be681262-3d7d-4a80-94a2-7448b6825225"
-                }
-            ]
-        },
-        {
-            "id": "0f2069dd-18fb-4056-9770-91a1c8d3feea",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "e2415738-d902-4bc6-9945-dff1444f7ba9",
-            "compositeImage": {
-                "id": "5da1d088-45e9-4040-9598-a9a5ae8af459",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "0f2069dd-18fb-4056-9770-91a1c8d3feea",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "0b10a422-a159-4386-bccf-99681d2be83b",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "0f2069dd-18fb-4056-9770-91a1c8d3feea",
-                    "LayerId": "be681262-3d7d-4a80-94a2-7448b6825225"
-                }
-            ]
-        },
-        {
-            "id": "f066553a-4afb-4b6f-b3b9-67a17c42534a",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "e2415738-d902-4bc6-9945-dff1444f7ba9",
-            "compositeImage": {
-                "id": "6dbe7af1-4ee0-4ac9-8f4a-a7938f27f974",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "f066553a-4afb-4b6f-b3b9-67a17c42534a",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "76446de7-5083-4997-b2fa-17c4efcf8a2e",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "f066553a-4afb-4b6f-b3b9-67a17c42534a",
-                    "LayerId": "be681262-3d7d-4a80-94a2-7448b6825225"
-                }
-            ]
-        }
-    ],
-    "gridX": 0,
-    "gridY": 0,
-    "height": 100,
-    "layers": [
-        {
-            "id": "be681262-3d7d-4a80-94a2-7448b6825225",
-            "modelName": "GMImageLayer",
-            "mvc": "1.0",
-            "SpriteId": "e2415738-d902-4bc6-9945-dff1444f7ba9",
-            "blendMode": 0,
-            "isLocked": false,
-            "name": "default",
-            "opacity": 100,
-            "visible": true
-        }
-    ],
-    "origin": 0,
-    "originLocked": false,
-    "playbackSpeed": 1,
+  "bboxMode": 0,
+  "collisionKind": 0,
+  "type": 0,
+  "origin": 9,
+  "preMultiplyAlpha": false,
+  "edgeFiltering": false,
+  "collisionTolerance": 0,
+  "swfPrecision": 2.525,
+  "bbox_left": 24,
+  "bbox_right": 77,
+  "bbox_top": 22,
+  "bbox_bottom": 91,
+  "HTile": false,
+  "VTile": false,
+  "For3D": false,
+  "width": 100,
+  "height": 100,
+  "textureGroupId": {
+    "name": "Peppino_Sprites",
+    "path": "texturegroups/Peppino_Sprites",
+  },
+  "swatchColours": null,
+  "gridX": 0,
+  "gridY": 0,
+  "frames": [
+    {"compositeImage":{"FrameId":{"name":"bf28cd6d-d0d8-45ce-add9-cf536a84ec75","path":"sprites/spr_player_bodyslamfall/spr_player_bodyslamfall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"bf28cd6d-d0d8-45ce-add9-cf536a84ec75","path":"sprites/spr_player_bodyslamfall/spr_player_bodyslamfall.yy",},"LayerId":{"name":"be681262-3d7d-4a80-94a2-7448b6825225","path":"sprites/spr_player_bodyslamfall/spr_player_bodyslamfall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_player_bodyslamfall","path":"sprites/spr_player_bodyslamfall/spr_player_bodyslamfall.yy",},"resourceVersion":"1.0","name":"bf28cd6d-d0d8-45ce-add9-cf536a84ec75","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"0f2069dd-18fb-4056-9770-91a1c8d3feea","path":"sprites/spr_player_bodyslamfall/spr_player_bodyslamfall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"0f2069dd-18fb-4056-9770-91a1c8d3feea","path":"sprites/spr_player_bodyslamfall/spr_player_bodyslamfall.yy",},"LayerId":{"name":"be681262-3d7d-4a80-94a2-7448b6825225","path":"sprites/spr_player_bodyslamfall/spr_player_bodyslamfall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_player_bodyslamfall","path":"sprites/spr_player_bodyslamfall/spr_player_bodyslamfall.yy",},"resourceVersion":"1.0","name":"0f2069dd-18fb-4056-9770-91a1c8d3feea","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"f066553a-4afb-4b6f-b3b9-67a17c42534a","path":"sprites/spr_player_bodyslamfall/spr_player_bodyslamfall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"f066553a-4afb-4b6f-b3b9-67a17c42534a","path":"sprites/spr_player_bodyslamfall/spr_player_bodyslamfall.yy",},"LayerId":{"name":"be681262-3d7d-4a80-94a2-7448b6825225","path":"sprites/spr_player_bodyslamfall/spr_player_bodyslamfall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_player_bodyslamfall","path":"sprites/spr_player_bodyslamfall/spr_player_bodyslamfall.yy",},"resourceVersion":"1.0","name":"f066553a-4afb-4b6f-b3b9-67a17c42534a","tags":[],"resourceType":"GMSpriteFrame",},
+  ],
+  "sequence": {
+    "spriteId": {"name":"spr_player_bodyslamfall","path":"sprites/spr_player_bodyslamfall/spr_player_bodyslamfall.yy",},
+    "timeUnits": 1,
+    "playback": 1,
+    "playbackSpeed": 1.0,
     "playbackSpeedType": 1,
-    "premultiplyAlpha": false,
-    "sepmasks": false,
-    "swatchColours": null,
-    "swfPrecision": 2.525,
-    "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
-    "type": 0,
-    "width": 100,
-    "xorig": 50,
-    "yorig": 40
+    "autoRecord": true,
+    "volume": 1.0,
+    "length": 3.0,
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
+    "tracks": [
+      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"728b9894-aa0e-438a-8526-cca13e5da1a0","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bf28cd6d-d0d8-45ce-add9-cf536a84ec75","path":"sprites/spr_player_bodyslamfall/spr_player_bodyslamfall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"3041d3ce-076a-46f2-88d3-5d53a306483a","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0f2069dd-18fb-4056-9770-91a1c8d3feea","path":"sprites/spr_player_bodyslamfall/spr_player_bodyslamfall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c66a04d9-a9a3-4724-8504-57e6f3c388c2","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f066553a-4afb-4b6f-b3b9-67a17c42534a","path":"sprites/spr_player_bodyslamfall/spr_player_bodyslamfall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+    ],
+    "visibleRange": {"x":0.0,"y":0.0,},
+    "lockOrigin": false,
+    "showBackdrop": true,
+    "showBackdropImage": false,
+    "backdropImagePath": "",
+    "backdropImageOpacity": 0.5,
+    "backdropWidth": 1920,
+    "backdropHeight": 1080,
+    "backdropXOffset": 0.0,
+    "backdropYOffset": 0.0,
+    "xorigin": 50,
+    "yorigin": 40,
+    "eventToFunction": {},
+    "eventStubScript": null,
+    "parent": {"name":"spr_player_bodyslamfall","path":"sprites/spr_player_bodyslamfall/spr_player_bodyslamfall.yy",},
+    "resourceVersion": "1.3",
+    "name": "",
+    "tags": [],
+    "resourceType": "GMSequence",
+  },
+  "layers": [
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"be681262-3d7d-4a80-94a2-7448b6825225","tags":[],"resourceType":"GMImageLayer",},
+  ],
+  "nineSlice": null,
+  "parent": {
+    "name": "Peppino",
+    "path": "folders/Sprites/Characters/Playable Characters Sprites/Peppino.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "spr_player_bodyslamfall",
+  "tags": [],
+  "resourceType": "GMSprite",
 }

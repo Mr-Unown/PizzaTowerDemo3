@@ -3,9 +3,9 @@ if (ds_list_find_index(global.saveroom, id) == -1)
     instance_create(x, y, obj_bangeffect)
     instance_create(x, y, obj_safeexplosion)
     with (instance_create(x, y, obj_pizzaslice))
-        hsp = 2
+        _dir = 1
     with (instance_create(x, y, obj_pizzaslice))
-        hsp = -2
+        _dir = -1
     repeat (6)
     {
         with (instance_create(x, y, obj_debris))

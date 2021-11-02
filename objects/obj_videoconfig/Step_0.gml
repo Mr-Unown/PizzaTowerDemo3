@@ -70,7 +70,7 @@ if (optionselected == 1)
     }
     if ((key_jump || keyboard_check_pressed(vk_return)) && optionsaved_resolution == 2)
     {
-        window_set_size(1980, 1080)
+        window_set_size(1920, 1080)
         ini_open("saveData.ini")
         ini_write_real("Option", "resolution", 2)
         ini_close()

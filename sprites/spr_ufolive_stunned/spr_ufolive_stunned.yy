@@ -1,114 +1,87 @@
 {
-    "id": "24e44b96-5fc1-4929-a1a2-cd1d5f48f831",
-    "modelName": "GMSprite",
-    "mvc": "1.12",
-    "name": "spr_ufolive_stunned",
-    "For3D": false,
-    "HTile": false,
-    "VTile": false,
-    "bbox_bottom": 95,
-    "bbox_left": 23,
-    "bbox_right": 85,
-    "bbox_top": 19,
-    "bboxmode": 0,
-    "colkind": 1,
-    "coltolerance": 0,
-    "edgeFiltering": false,
-    "frames": [
-        {
-            "id": "aef8b88b-68e5-4db9-9fcd-d959c05c7477",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "24e44b96-5fc1-4929-a1a2-cd1d5f48f831",
-            "compositeImage": {
-                "id": "f983fbef-24ac-4d35-8766-3f316595a08e",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "aef8b88b-68e5-4db9-9fcd-d959c05c7477",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "68e1e633-61ea-4797-bae1-f0002000390e",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "aef8b88b-68e5-4db9-9fcd-d959c05c7477",
-                    "LayerId": "f19479b5-8cce-4df8-a3c5-accd88e00c23"
-                }
-            ]
-        },
-        {
-            "id": "ccf58594-1592-4564-9adc-1e93ba86f399",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "24e44b96-5fc1-4929-a1a2-cd1d5f48f831",
-            "compositeImage": {
-                "id": "5cd9fa98-0dfd-400c-adf7-0ce61924f5e9",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "ccf58594-1592-4564-9adc-1e93ba86f399",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "60b831e6-bc0e-42cf-9759-76a5115e081b",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "ccf58594-1592-4564-9adc-1e93ba86f399",
-                    "LayerId": "f19479b5-8cce-4df8-a3c5-accd88e00c23"
-                }
-            ]
-        },
-        {
-            "id": "8727ac6c-90bd-444a-a330-07fad46695f3",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "24e44b96-5fc1-4929-a1a2-cd1d5f48f831",
-            "compositeImage": {
-                "id": "6b197372-bec5-4685-bfda-e253ce4b2ce1",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "8727ac6c-90bd-444a-a330-07fad46695f3",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "8e4afb39-8b02-4da7-b939-352eb8e2ca23",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "8727ac6c-90bd-444a-a330-07fad46695f3",
-                    "LayerId": "f19479b5-8cce-4df8-a3c5-accd88e00c23"
-                }
-            ]
-        }
-    ],
-    "gridX": 0,
-    "gridY": 0,
-    "height": 100,
-    "layers": [
-        {
-            "id": "f19479b5-8cce-4df8-a3c5-accd88e00c23",
-            "modelName": "GMImageLayer",
-            "mvc": "1.0",
-            "SpriteId": "24e44b96-5fc1-4929-a1a2-cd1d5f48f831",
-            "blendMode": 0,
-            "isLocked": false,
-            "name": "default",
-            "opacity": 100,
-            "visible": true
-        }
-    ],
-    "origin": 4,
-    "originLocked": false,
-    "playbackSpeed": 1,
+  "bboxMode": 0,
+  "collisionKind": 1,
+  "type": 0,
+  "origin": 4,
+  "preMultiplyAlpha": false,
+  "edgeFiltering": false,
+  "collisionTolerance": 0,
+  "swfPrecision": 2.525,
+  "bbox_left": 23,
+  "bbox_right": 85,
+  "bbox_top": 19,
+  "bbox_bottom": 95,
+  "HTile": false,
+  "VTile": false,
+  "For3D": false,
+  "width": 100,
+  "height": 100,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
+  "swatchColours": null,
+  "gridX": 0,
+  "gridY": 0,
+  "frames": [
+    {"compositeImage":{"FrameId":{"name":"aef8b88b-68e5-4db9-9fcd-d959c05c7477","path":"sprites/spr_ufolive_stunned/spr_ufolive_stunned.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"aef8b88b-68e5-4db9-9fcd-d959c05c7477","path":"sprites/spr_ufolive_stunned/spr_ufolive_stunned.yy",},"LayerId":{"name":"f19479b5-8cce-4df8-a3c5-accd88e00c23","path":"sprites/spr_ufolive_stunned/spr_ufolive_stunned.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_ufolive_stunned","path":"sprites/spr_ufolive_stunned/spr_ufolive_stunned.yy",},"resourceVersion":"1.0","name":"aef8b88b-68e5-4db9-9fcd-d959c05c7477","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"ccf58594-1592-4564-9adc-1e93ba86f399","path":"sprites/spr_ufolive_stunned/spr_ufolive_stunned.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"ccf58594-1592-4564-9adc-1e93ba86f399","path":"sprites/spr_ufolive_stunned/spr_ufolive_stunned.yy",},"LayerId":{"name":"f19479b5-8cce-4df8-a3c5-accd88e00c23","path":"sprites/spr_ufolive_stunned/spr_ufolive_stunned.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_ufolive_stunned","path":"sprites/spr_ufolive_stunned/spr_ufolive_stunned.yy",},"resourceVersion":"1.0","name":"ccf58594-1592-4564-9adc-1e93ba86f399","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"8727ac6c-90bd-444a-a330-07fad46695f3","path":"sprites/spr_ufolive_stunned/spr_ufolive_stunned.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"8727ac6c-90bd-444a-a330-07fad46695f3","path":"sprites/spr_ufolive_stunned/spr_ufolive_stunned.yy",},"LayerId":{"name":"f19479b5-8cce-4df8-a3c5-accd88e00c23","path":"sprites/spr_ufolive_stunned/spr_ufolive_stunned.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_ufolive_stunned","path":"sprites/spr_ufolive_stunned/spr_ufolive_stunned.yy",},"resourceVersion":"1.0","name":"8727ac6c-90bd-444a-a330-07fad46695f3","tags":[],"resourceType":"GMSpriteFrame",},
+  ],
+  "sequence": {
+    "spriteId": {"name":"spr_ufolive_stunned","path":"sprites/spr_ufolive_stunned/spr_ufolive_stunned.yy",},
+    "timeUnits": 1,
+    "playback": 1,
+    "playbackSpeed": 1.0,
     "playbackSpeedType": 1,
-    "premultiplyAlpha": false,
-    "sepmasks": false,
-    "swatchColours": null,
-    "swfPrecision": 2.525,
-    "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
-    "type": 0,
-    "width": 100,
-    "xorig": 50,
-    "yorig": 50
+    "autoRecord": true,
+    "volume": 1.0,
+    "length": 3.0,
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
+    "tracks": [
+      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"a09ed7bf-1572-46ab-a329-12f5b0ac5550","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"aef8b88b-68e5-4db9-9fcd-d959c05c7477","path":"sprites/spr_ufolive_stunned/spr_ufolive_stunned.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"13661324-d373-4dde-99b8-d63e7d29f34e","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ccf58594-1592-4564-9adc-1e93ba86f399","path":"sprites/spr_ufolive_stunned/spr_ufolive_stunned.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"cba49d5d-3f3d-47e0-8ff8-cc604a2ae51c","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8727ac6c-90bd-444a-a330-07fad46695f3","path":"sprites/spr_ufolive_stunned/spr_ufolive_stunned.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+    ],
+    "visibleRange": {"x":0.0,"y":0.0,},
+    "lockOrigin": false,
+    "showBackdrop": true,
+    "showBackdropImage": false,
+    "backdropImagePath": "",
+    "backdropImageOpacity": 0.5,
+    "backdropWidth": 1920,
+    "backdropHeight": 1080,
+    "backdropXOffset": 0.0,
+    "backdropYOffset": 0.0,
+    "xorigin": 50,
+    "yorigin": 50,
+    "eventToFunction": {},
+    "eventStubScript": null,
+    "parent": {"name":"spr_ufolive_stunned","path":"sprites/spr_ufolive_stunned/spr_ufolive_stunned.yy",},
+    "resourceVersion": "1.3",
+    "name": "",
+    "tags": [],
+    "resourceType": "GMSequence",
+  },
+  "layers": [
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f19479b5-8cce-4df8-a3c5-accd88e00c23","tags":[],"resourceType":"GMImageLayer",},
+  ],
+  "nineSlice": null,
+  "parent": {
+    "name": "Sprites",
+    "path": "folders/Sprites.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "spr_ufolive_stunned",
+  "tags": [],
+  "resourceType": "GMSprite",
 }

@@ -1,114 +1,87 @@
 {
-    "id": "aab18549-93eb-4207-8e25-d56644a437fc",
-    "modelName": "GMSprite",
-    "mvc": "1.12",
-    "name": "spr_playerPZ_knightHUD",
-    "For3D": false,
-    "HTile": false,
-    "VTile": false,
-    "bbox_bottom": 136,
-    "bbox_left": 9,
-    "bbox_right": 162,
-    "bbox_top": 20,
-    "bboxmode": 0,
-    "colkind": 1,
-    "coltolerance": 0,
-    "edgeFiltering": false,
-    "frames": [
-        {
-            "id": "8e0cc0f4-e7a1-4adf-bbdb-576f9cbd5209",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "aab18549-93eb-4207-8e25-d56644a437fc",
-            "compositeImage": {
-                "id": "35367fc5-96ef-4b98-bc1f-e23775aa57e6",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "8e0cc0f4-e7a1-4adf-bbdb-576f9cbd5209",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "87e2a611-be74-48ab-85d2-c20679ec8fcf",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "8e0cc0f4-e7a1-4adf-bbdb-576f9cbd5209",
-                    "LayerId": "c64357e2-2c51-4202-92a1-c07ebdaaa25a"
-                }
-            ]
-        },
-        {
-            "id": "5342c186-9005-4d0d-a97a-e60d0ad0bb66",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "aab18549-93eb-4207-8e25-d56644a437fc",
-            "compositeImage": {
-                "id": "65b1b2e5-a77a-47e5-a622-695c7a25eb65",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "5342c186-9005-4d0d-a97a-e60d0ad0bb66",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "e853dc76-a4ea-4095-98b0-30f0121c2e23",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "5342c186-9005-4d0d-a97a-e60d0ad0bb66",
-                    "LayerId": "c64357e2-2c51-4202-92a1-c07ebdaaa25a"
-                }
-            ]
-        },
-        {
-            "id": "2a30211a-db58-4e17-9a0a-10a06f2c2ea5",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "aab18549-93eb-4207-8e25-d56644a437fc",
-            "compositeImage": {
-                "id": "49ee719d-4f66-40b6-8db8-b16fc1755d22",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "2a30211a-db58-4e17-9a0a-10a06f2c2ea5",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "252ee1d1-d52d-42fa-985f-902b6f45ef4b",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "2a30211a-db58-4e17-9a0a-10a06f2c2ea5",
-                    "LayerId": "c64357e2-2c51-4202-92a1-c07ebdaaa25a"
-                }
-            ]
-        }
-    ],
-    "gridX": 0,
-    "gridY": 0,
-    "height": 175,
-    "layers": [
-        {
-            "id": "c64357e2-2c51-4202-92a1-c07ebdaaa25a",
-            "modelName": "GMImageLayer",
-            "mvc": "1.0",
-            "SpriteId": "aab18549-93eb-4207-8e25-d56644a437fc",
-            "blendMode": 0,
-            "isLocked": false,
-            "name": "default",
-            "opacity": 100,
-            "visible": true
-        }
-    ],
-    "origin": 4,
-    "originLocked": false,
-    "playbackSpeed": 1,
+  "bboxMode": 0,
+  "collisionKind": 1,
+  "type": 0,
+  "origin": 4,
+  "preMultiplyAlpha": false,
+  "edgeFiltering": false,
+  "collisionTolerance": 0,
+  "swfPrecision": 2.525,
+  "bbox_left": 9,
+  "bbox_right": 162,
+  "bbox_top": 20,
+  "bbox_bottom": 136,
+  "HTile": false,
+  "VTile": false,
+  "For3D": false,
+  "width": 175,
+  "height": 175,
+  "textureGroupId": {
+    "name": "OLDHUD",
+    "path": "texturegroups/OLDHUD",
+  },
+  "swatchColours": null,
+  "gridX": 0,
+  "gridY": 0,
+  "frames": [
+    {"compositeImage":{"FrameId":{"name":"8e0cc0f4-e7a1-4adf-bbdb-576f9cbd5209","path":"sprites/spr_playerPZ_knightHUD/spr_playerPZ_knightHUD.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"8e0cc0f4-e7a1-4adf-bbdb-576f9cbd5209","path":"sprites/spr_playerPZ_knightHUD/spr_playerPZ_knightHUD.yy",},"LayerId":{"name":"c64357e2-2c51-4202-92a1-c07ebdaaa25a","path":"sprites/spr_playerPZ_knightHUD/spr_playerPZ_knightHUD.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_playerPZ_knightHUD","path":"sprites/spr_playerPZ_knightHUD/spr_playerPZ_knightHUD.yy",},"resourceVersion":"1.0","name":"8e0cc0f4-e7a1-4adf-bbdb-576f9cbd5209","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"5342c186-9005-4d0d-a97a-e60d0ad0bb66","path":"sprites/spr_playerPZ_knightHUD/spr_playerPZ_knightHUD.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"5342c186-9005-4d0d-a97a-e60d0ad0bb66","path":"sprites/spr_playerPZ_knightHUD/spr_playerPZ_knightHUD.yy",},"LayerId":{"name":"c64357e2-2c51-4202-92a1-c07ebdaaa25a","path":"sprites/spr_playerPZ_knightHUD/spr_playerPZ_knightHUD.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_playerPZ_knightHUD","path":"sprites/spr_playerPZ_knightHUD/spr_playerPZ_knightHUD.yy",},"resourceVersion":"1.0","name":"5342c186-9005-4d0d-a97a-e60d0ad0bb66","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"2a30211a-db58-4e17-9a0a-10a06f2c2ea5","path":"sprites/spr_playerPZ_knightHUD/spr_playerPZ_knightHUD.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"2a30211a-db58-4e17-9a0a-10a06f2c2ea5","path":"sprites/spr_playerPZ_knightHUD/spr_playerPZ_knightHUD.yy",},"LayerId":{"name":"c64357e2-2c51-4202-92a1-c07ebdaaa25a","path":"sprites/spr_playerPZ_knightHUD/spr_playerPZ_knightHUD.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_playerPZ_knightHUD","path":"sprites/spr_playerPZ_knightHUD/spr_playerPZ_knightHUD.yy",},"resourceVersion":"1.0","name":"2a30211a-db58-4e17-9a0a-10a06f2c2ea5","tags":[],"resourceType":"GMSpriteFrame",},
+  ],
+  "sequence": {
+    "spriteId": {"name":"spr_playerPZ_knightHUD","path":"sprites/spr_playerPZ_knightHUD/spr_playerPZ_knightHUD.yy",},
+    "timeUnits": 1,
+    "playback": 1,
+    "playbackSpeed": 1.0,
     "playbackSpeedType": 1,
-    "premultiplyAlpha": false,
-    "sepmasks": false,
-    "swatchColours": null,
-    "swfPrecision": 2.525,
-    "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
-    "type": 0,
-    "width": 175,
-    "xorig": 87,
-    "yorig": 87
+    "autoRecord": true,
+    "volume": 1.0,
+    "length": 3.0,
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
+    "tracks": [
+      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"b3f23642-a6ab-471a-8d81-c1f4910ace53","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8e0cc0f4-e7a1-4adf-bbdb-576f9cbd5209","path":"sprites/spr_playerPZ_knightHUD/spr_playerPZ_knightHUD.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"1f70075d-f567-4ce5-8171-50216f9b6c6b","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5342c186-9005-4d0d-a97a-e60d0ad0bb66","path":"sprites/spr_playerPZ_knightHUD/spr_playerPZ_knightHUD.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"65fd7d41-032c-465b-905e-b0613e099640","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2a30211a-db58-4e17-9a0a-10a06f2c2ea5","path":"sprites/spr_playerPZ_knightHUD/spr_playerPZ_knightHUD.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+    ],
+    "visibleRange": {"x":0.0,"y":0.0,},
+    "lockOrigin": false,
+    "showBackdrop": true,
+    "showBackdropImage": false,
+    "backdropImagePath": "",
+    "backdropImageOpacity": 0.5,
+    "backdropWidth": 1920,
+    "backdropHeight": 1080,
+    "backdropXOffset": 0.0,
+    "backdropYOffset": 0.0,
+    "xorigin": 87,
+    "yorigin": 87,
+    "eventToFunction": {},
+    "eventStubScript": null,
+    "parent": {"name":"spr_playerPZ_knightHUD","path":"sprites/spr_playerPZ_knightHUD/spr_playerPZ_knightHUD.yy",},
+    "resourceVersion": "1.3",
+    "name": "",
+    "tags": [],
+    "resourceType": "GMSequence",
+  },
+  "layers": [
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c64357e2-2c51-4202-92a1-c07ebdaaa25a","tags":[],"resourceType":"GMImageLayer",},
+  ],
+  "nineSlice": null,
+  "parent": {
+    "name": "Pizzelle",
+    "path": "folders/Sprites/Hud & Menus/Old Hud/Faces/Pizzelle.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "spr_playerPZ_knightHUD",
+  "tags": [],
+  "resourceType": "GMSprite",
 }

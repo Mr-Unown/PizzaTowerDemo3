@@ -1,13 +1,13 @@
 if ((!pause) && (!instance_exists(obj_fadeout)))
 {
 	
-    if (obj_player1.key_start && room != rank_room && room != Realtitlescreen && room != timesuproom)
+    if (obj_player1.key_start && room != rank_room && room != global.roomstart[global.newtitlescreen] && room != timesuproom)
     {
         selected = 0
         if (!instance_exists(obj_pausefadeout))
             instance_create(x, y, obj_pausefadeout)
     }
-    if ((obj_player2.key_jump || keyboard_check_pressed(vk_f5)) && global.coop == 0 && room != rank_room && room != Scootertransition && room != Realtitlescreen && room != timesuproom) && obj_debugcontroller.active = false
+    if ((obj_player2.key_jump || keyboard_check_pressed(vk_f5)) && global.coop == 0 && room != rank_room && room != Scootertransition && room != global.roomstart[global.newtitlescreen] && room != timesuproom) && obj_debugcontroller.active = false
     {
         global.coop = 1
         with (obj_player2)
@@ -22,7 +22,7 @@ if ((!pause) && (!instance_exists(obj_fadeout)))
         }
         with (obj_tv)
         {
-            message = "PLAYER 2 HAS ENTERED THE GAME"
+            _message = "PLAYER 2 HAS ENTERED THE GAME"
             showtext = 1
             alarm[0] = 100
         }
@@ -44,7 +44,7 @@ if ((!pause) && (!instance_exists(obj_fadeout)))
             }
             with (obj_tv)
             {
-                message = "PLAYER 2 HAS ENTERED THE GAME"
+                _message = "PLAYER 2 HAS ENTERED THE GAME"
                 showtext = 1
                 alarm[0] = 100
             }
@@ -74,12 +74,12 @@ if ((!pause) && (!instance_exists(obj_fadeout)))
 				screenshot_surface = surface_create(960,540)
 				surface_set_target(screenshot_surface)
 				draw_clear_alpha(c_black, 0)
+				gpu_set_blendenable(false)
 				draw_surface(application_surface,0,0)
-				gpu_set_blendenable(0)
 				gpu_set_colorwriteenable(0, 0, 0, 1)
 				draw_set_color(c_white)
 				draw_rectangle(-192, -192, 960 + 192, 540 + 192, 0)
-				gpu_set_blendenable(1)
+				gpu_set_blendenable(true)
 				gpu_set_colorwriteenable(1, 1, 1, 1)
 				surface_reset_target()
 	
@@ -99,14 +99,14 @@ if ((!pause) && (!instance_exists(obj_fadeout)))
 //	if global.debugmode = 1
 //    with (obj_tv)
 //    {
-//        message = "DEBUG MODE ON"
+//        _message = "DEBUG MODE ON"
 //        showtext = 1
 //        alarm[0] = 100
 //    }
 //	else
 //	with (obj_tv)
 //    {
-//        message = "DEBUG MODE OFF"
+//        _message = "DEBUG MODE OFF"
 //        showtext = 1
 //        alarm[0] = 100
 //    }
@@ -117,14 +117,14 @@ if keyboard_check_pressed(vk_f7)
 	if global.hudmode = 1
     with (obj_tv)
     {
-        message = "HUD OFF"
+        _message = "HUD OFF"
         showtext = 1
         alarm[0] = 100
     }
 	else
 	with (obj_tv)
     {
-        message = "HUD ON"
+        _message = "HUD ON"
         showtext = 1
         alarm[0] = 100
     }
@@ -135,7 +135,7 @@ if (instance_exists(obj_pausefadeout) && instance_exists(obj_fadeout))
 if (pause == 1 && (!instance_exists(obj_mainconfig)))
 {
     scr_getinput()
-    application_surface_draw_enable(1)
+    application_surface_draw_enable(true)
     if ((key_down2 || key_right2) && selected < 2)
     {
         selected += 1
@@ -241,6 +241,16 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
             {
                 instance_activate_all();
                 room_goto(chateau_1);
+                script_execute(scr_playerreset);
+                pause = 0;
+                obj_player1.targetDoor = "A";
+                if instance_exists(obj_player2)
+                    obj_player2.targetDoor = "A";
+            }		
+            else if (string_letters(roomname) == "sanctum" || string_letters(roomname) == "sanctumsecret") || room = sanctum_pizzamart || room = sanctum_treasure
+            {
+                instance_activate_all();
+				room_goto(sanctum_1);
                 script_execute(scr_playerreset);
                 pause = 0;
                 obj_player1.targetDoor = "A";
@@ -392,7 +402,7 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
             global.laptouched = 0;
 			global.levelname = "none";
 			global.timeattack = 0;
-			room_goto(Realtitlescreen);
+			room_goto(global.roomstart[global.newtitlescreen]);
             with (obj_player1)
             {
                 character = "P";
@@ -419,20 +429,29 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
             instance_activate_all();
             global.lapping = 0;
             global.laptouched = 0;
-			global.levelname = "none";
 			global.fakepeppino = 0;
 			global.timeattack = 0;
 			script_execute(scr_playerreset);
 			var _backtohubroom = hub_room1;
-			with obj_player1
+			var roomname = room_get_name(room)
+			if global.levelname != "none"
 			{
-				targetDoor = "start";
-				_backtohubroom = backtohubroom;
+				with obj_player1
+				{
+					targetDoor = "start";
+					_backtohubroom = backtohubroom;
+				}
+				with obj_player2
+				{
+					targetDoor = "start";
+				}		
 			}
-			with obj_player2
+			else
 			{
-				targetDoor = "start";
-			}		
+				targetDoor = "A";
+				_backtohubroom = hub_room1;
+			}
+			global.levelname = "none";
 			room_goto(_backtohubroom); 
         }
 		#endregion		

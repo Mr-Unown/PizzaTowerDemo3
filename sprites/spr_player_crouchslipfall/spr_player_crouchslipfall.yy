@@ -1,114 +1,87 @@
 {
-    "id": "f2539c0f-96c3-451a-b571-85794fbbf789",
-    "modelName": "GMSprite",
-    "mvc": "1.12",
-    "name": "spr_player_crouchslipfall",
-    "For3D": false,
-    "HTile": false,
-    "VTile": false,
-    "bbox_bottom": 95,
-    "bbox_left": 13,
-    "bbox_right": 113,
-    "bbox_top": 48,
-    "bboxmode": 0,
-    "colkind": 1,
-    "coltolerance": 0,
-    "edgeFiltering": false,
-    "frames": [
-        {
-            "id": "70982263-4183-470b-bb41-a380409ce968",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "f2539c0f-96c3-451a-b571-85794fbbf789",
-            "compositeImage": {
-                "id": "dfda7aa7-bb10-4964-afa3-3dc0ab503369",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "70982263-4183-470b-bb41-a380409ce968",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "9412ac61-e0e4-49e6-a57f-4bdd4c4494ea",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "70982263-4183-470b-bb41-a380409ce968",
-                    "LayerId": "dbfc30c3-6385-47bd-ab55-1de83262a55b"
-                }
-            ]
-        },
-        {
-            "id": "4e42cefc-2f60-46d9-9580-5b23a88f20b8",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "f2539c0f-96c3-451a-b571-85794fbbf789",
-            "compositeImage": {
-                "id": "150c2a4d-6dbd-4dbf-8aa4-9d3abc1ef486",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "4e42cefc-2f60-46d9-9580-5b23a88f20b8",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "685e0a15-c74f-42f4-aecc-30abd1106423",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "4e42cefc-2f60-46d9-9580-5b23a88f20b8",
-                    "LayerId": "dbfc30c3-6385-47bd-ab55-1de83262a55b"
-                }
-            ]
-        },
-        {
-            "id": "10e1cbd2-2429-478e-9b9e-1cb89ad93726",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "f2539c0f-96c3-451a-b571-85794fbbf789",
-            "compositeImage": {
-                "id": "f7e4753e-9159-48fe-be6e-13c92d749ee9",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "10e1cbd2-2429-478e-9b9e-1cb89ad93726",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "7c36b999-3774-4205-ba1e-a7ab9c5fefc2",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "10e1cbd2-2429-478e-9b9e-1cb89ad93726",
-                    "LayerId": "dbfc30c3-6385-47bd-ab55-1de83262a55b"
-                }
-            ]
-        }
-    ],
-    "gridX": 0,
-    "gridY": 0,
-    "height": 100,
-    "layers": [
-        {
-            "id": "dbfc30c3-6385-47bd-ab55-1de83262a55b",
-            "modelName": "GMImageLayer",
-            "mvc": "1.0",
-            "SpriteId": "f2539c0f-96c3-451a-b571-85794fbbf789",
-            "blendMode": 0,
-            "isLocked": false,
-            "name": "default",
-            "opacity": 100,
-            "visible": true
-        }
-    ],
-    "origin": 4,
-    "originLocked": false,
-    "playbackSpeed": 1,
+  "bboxMode": 0,
+  "collisionKind": 1,
+  "type": 0,
+  "origin": 4,
+  "preMultiplyAlpha": false,
+  "edgeFiltering": false,
+  "collisionTolerance": 0,
+  "swfPrecision": 2.525,
+  "bbox_left": 13,
+  "bbox_right": 113,
+  "bbox_top": 48,
+  "bbox_bottom": 95,
+  "HTile": false,
+  "VTile": false,
+  "For3D": false,
+  "width": 120,
+  "height": 100,
+  "textureGroupId": {
+    "name": "Peppino_Sprites",
+    "path": "texturegroups/Peppino_Sprites",
+  },
+  "swatchColours": null,
+  "gridX": 0,
+  "gridY": 0,
+  "frames": [
+    {"compositeImage":{"FrameId":{"name":"70982263-4183-470b-bb41-a380409ce968","path":"sprites/spr_player_crouchslipfall/spr_player_crouchslipfall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"70982263-4183-470b-bb41-a380409ce968","path":"sprites/spr_player_crouchslipfall/spr_player_crouchslipfall.yy",},"LayerId":{"name":"dbfc30c3-6385-47bd-ab55-1de83262a55b","path":"sprites/spr_player_crouchslipfall/spr_player_crouchslipfall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_player_crouchslipfall","path":"sprites/spr_player_crouchslipfall/spr_player_crouchslipfall.yy",},"resourceVersion":"1.0","name":"70982263-4183-470b-bb41-a380409ce968","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"4e42cefc-2f60-46d9-9580-5b23a88f20b8","path":"sprites/spr_player_crouchslipfall/spr_player_crouchslipfall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"4e42cefc-2f60-46d9-9580-5b23a88f20b8","path":"sprites/spr_player_crouchslipfall/spr_player_crouchslipfall.yy",},"LayerId":{"name":"dbfc30c3-6385-47bd-ab55-1de83262a55b","path":"sprites/spr_player_crouchslipfall/spr_player_crouchslipfall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_player_crouchslipfall","path":"sprites/spr_player_crouchslipfall/spr_player_crouchslipfall.yy",},"resourceVersion":"1.0","name":"4e42cefc-2f60-46d9-9580-5b23a88f20b8","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"10e1cbd2-2429-478e-9b9e-1cb89ad93726","path":"sprites/spr_player_crouchslipfall/spr_player_crouchslipfall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"10e1cbd2-2429-478e-9b9e-1cb89ad93726","path":"sprites/spr_player_crouchslipfall/spr_player_crouchslipfall.yy",},"LayerId":{"name":"dbfc30c3-6385-47bd-ab55-1de83262a55b","path":"sprites/spr_player_crouchslipfall/spr_player_crouchslipfall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_player_crouchslipfall","path":"sprites/spr_player_crouchslipfall/spr_player_crouchslipfall.yy",},"resourceVersion":"1.0","name":"10e1cbd2-2429-478e-9b9e-1cb89ad93726","tags":[],"resourceType":"GMSpriteFrame",},
+  ],
+  "sequence": {
+    "spriteId": {"name":"spr_player_crouchslipfall","path":"sprites/spr_player_crouchslipfall/spr_player_crouchslipfall.yy",},
+    "timeUnits": 1,
+    "playback": 1,
+    "playbackSpeed": 1.0,
     "playbackSpeedType": 1,
-    "premultiplyAlpha": false,
-    "sepmasks": false,
-    "swatchColours": null,
-    "swfPrecision": 2.525,
-    "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
-    "type": 0,
-    "width": 120,
-    "xorig": 60,
-    "yorig": 50
+    "autoRecord": true,
+    "volume": 1.0,
+    "length": 3.0,
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
+    "tracks": [
+      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"ba16ef5c-300b-4552-9ba7-eccacc06c090","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"70982263-4183-470b-bb41-a380409ce968","path":"sprites/spr_player_crouchslipfall/spr_player_crouchslipfall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"e73037cc-58cd-48bb-9ec1-dcf4e62d95c5","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4e42cefc-2f60-46d9-9580-5b23a88f20b8","path":"sprites/spr_player_crouchslipfall/spr_player_crouchslipfall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4b6c9f39-c790-4346-87bb-a708e99774ea","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"10e1cbd2-2429-478e-9b9e-1cb89ad93726","path":"sprites/spr_player_crouchslipfall/spr_player_crouchslipfall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+    ],
+    "visibleRange": {"x":0.0,"y":0.0,},
+    "lockOrigin": false,
+    "showBackdrop": true,
+    "showBackdropImage": false,
+    "backdropImagePath": "",
+    "backdropImageOpacity": 0.5,
+    "backdropWidth": 1920,
+    "backdropHeight": 1080,
+    "backdropXOffset": 0.0,
+    "backdropYOffset": 0.0,
+    "xorigin": 60,
+    "yorigin": 50,
+    "eventToFunction": {},
+    "eventStubScript": null,
+    "parent": {"name":"spr_player_crouchslipfall","path":"sprites/spr_player_crouchslipfall/spr_player_crouchslipfall.yy",},
+    "resourceVersion": "1.3",
+    "name": "",
+    "tags": [],
+    "resourceType": "GMSequence",
+  },
+  "layers": [
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"dbfc30c3-6385-47bd-ab55-1de83262a55b","tags":[],"resourceType":"GMImageLayer",},
+  ],
+  "nineSlice": null,
+  "parent": {
+    "name": "Peppino",
+    "path": "folders/Sprites/Characters/Playable Characters Sprites/Peppino.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "spr_player_crouchslipfall",
+  "tags": [],
+  "resourceType": "GMSprite",
 }

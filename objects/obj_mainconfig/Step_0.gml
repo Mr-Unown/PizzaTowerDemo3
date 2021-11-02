@@ -12,6 +12,12 @@ if ((key_down2 || keyboard_check_pressed(vk_down)) && optionselected < 2 && sele
 if ((key_slap2 || key_start) && selected == 0)
 {
     scr_soundeffect(sfx_enemyprojectile)
+    if (room == New_Realtitlescreen)
+	{
+        obj_player1.state = states.normal;
+		if global.coop == true
+			obj_player2.state = states.normal;
+	}
     if (room == Realtitlescreen)
 	{
         obj_mainmenuselect.selected = 0

@@ -1,7 +1,6 @@
+
 if vertical = 1
-{
 	knightmaxy = knightroomy - (room_height * sign(hallwaydirection));
-}
 var yoffset = 160
 
 switch current_month
@@ -13,8 +12,8 @@ switch current_month
 		global.timeevent = 2; //April fools
 		if global.has_drawnpeter = false && object_index = obj_player1
 		{
-			var chance = random_range(0,200);
-			var yes = (chance >= 200 ? true : false);
+			var _chance = random_range(0,200);
+			var yes = (_chance >= 200 ? true : false);
 			global.draw_peter = yes;
 		}
 		else if global.has_drawnpeter = true
@@ -54,6 +53,58 @@ customupdate = true;
 //Things
 if (object_index == obj_player1)
 {
+	#region Perfetch Array
+switch(global.levelname)
+{
+	case "entrance":
+		global.prefetcharray[0] = bg_entrance1
+		global.prefetcharray[1] = spr_entrancebgpillar
+		global.prefetcharray[2] = bg_entranceforeground
+	break;
+	case "medieval":
+		global.prefetcharray[0] = bg_medieval1
+		global.prefetcharray[1] = spr_medievaldoor
+		global.prefetcharray[2] = bg_medievaltowers
+	break;
+	case "ruin":
+		global.prefetcharray[0] = bg_ruin
+		global.prefetcharray[1] = bg_ruinarchitecture3
+		global.prefetcharray[2] = bg_ruincloud
+	break;
+	case "dungeon":
+		global.prefetcharray[0] = bg_dungeon1
+		global.prefetcharray[1] = bg_dungeon1start
+		global.prefetcharray[2] = bg_dungeonskeleton1
+	break;
+	case "ancient":
+		global.prefetcharray[0] = bg_entrance1
+		global.prefetcharray[1] = spr_ancienttv
+		global.prefetcharray[2] = bg_darkjohn
+	break;
+	case "chateau":
+		global.prefetcharray[0] = bg_chateau1
+		global.prefetcharray[1] = spr_chateaudoor
+		global.prefetcharray[2] = bg_chateautowers
+	break;	
+	case "sanctum":
+		global.prefetcharray[0] = bg_sanctum
+		global.prefetcharray[1] = bg_sanctumarchitecture3
+		global.prefetcharray[2] = bg_sanctumsky
+	break;	
+	case "strongcold":
+		global.prefetcharray[0] = bg_strongcold1
+		global.prefetcharray[1] = spr_xmasdecotree
+		global.prefetcharray[2] = bg_dungeonskeleton1
+	break;
+	default:
+		global.prefetcharray[0] = bg_hubroom1
+		global.prefetcharray[1] = bg_hubroom2
+		global.prefetcharray[2] = spr_entrancegate
+	break;
+	global.prefetcharray[3] = spr_player_3hpidle
+}
+#endregion			
+	//room_set_live(room, true);
     if (global.coop == 1)
 	{
         #region Changetoppings
@@ -134,7 +185,7 @@ with (obj_pizzaslice)
         else if ((obj_player1.character == "V" && obj_player1.spotlight == 1) || (obj_player2.character == "V" && obj_player1.spotlight == 0))
             sprite_index = spr_cheesespinningslice
 		else if ((obj_player1.character == "PZ" && obj_player1.spotlight == 1) || (obj_player2.character == "PZ" && obj_player1.spotlight == 0))
-			sprite_index = spr_xmasspinningslice				
+			sprite_index = spr_sweetspinningslice				
     }
 }
 with (obj_destroyable2)
@@ -146,7 +197,7 @@ with (obj_destroyable2)
         else if ((obj_player1.character == "N" && obj_player1.spotlight == 1) || (obj_player2.character == "N" && obj_player1.spotlight == 0))
             sprite_index = spr_halloweensmallblock
         else if ((obj_player1.character == "S" && obj_player1.spotlight == 1) || (obj_player2.character == "S" && obj_player1.spotlight == 0))
-            sprite_index = spr_xmasblock
+            sprite_index = spr_snickblock
         else if ((obj_player1.character == "V" && obj_player1.spotlight == 1) || (obj_player2.character == "V" && obj_player1.spotlight == 0))
             sprite_index = spr_cheesedestroyableblock
 		else if ((obj_player1.character == "PZ" && obj_player1.spotlight == 1) || (obj_player2.character == "PZ" && obj_player1.spotlight == 0))
@@ -162,7 +213,7 @@ with (obj_destroyable2escape)
         else if ((obj_player1.character == "N" && obj_player1.spotlight == 1) || (obj_player2.character == "N" && obj_player1.spotlight == 0))
             sprite_index = spr_halloweensmallblockescape
         else if ((obj_player1.character == "S" && obj_player1.spotlight == 1) || (obj_player2.character == "S" && obj_player1.spotlight == 0))
-            sprite_index = spr_xmasblockescape
+            sprite_index = spr_snickblockescape
         else if ((obj_player1.character == "V" && obj_player1.spotlight == 1) || (obj_player2.character == "V" && obj_player1.spotlight == 0))
             sprite_index = spr_cheesedestroyableblockescape
 		else if ((obj_player1.character == "PZ" && obj_player1.spotlight == 1) || (obj_player2.character == "PZ" && obj_player1.spotlight == 0))
@@ -178,7 +229,7 @@ with (obj_destroyable2_big)
         else if ((obj_player1.character == "N" && obj_player1.spotlight == 1) || (obj_player2.character == "N" && obj_player1.spotlight == 0))
             sprite_index = spr_halloweenbigblock
         else if ((obj_player1.character == "S" && obj_player1.spotlight == 1) || (obj_player2.character == "S" && obj_player1.spotlight == 0))
-            sprite_index = spr_xmasbigblock
+            sprite_index = spr_snickbigblock
         else if ((obj_player1.character == "V" && obj_player1.spotlight == 1) || (obj_player2.character == "V" && obj_player1.spotlight == 0))
             sprite_index = spr_cheesebigblock
 		else if ((obj_player1.character == "PZ" && obj_player1.spotlight == 1) || (obj_player2.character == "PZ" && obj_player1.spotlight == 0))
@@ -194,7 +245,7 @@ with (obj_destroyable2_bigescape)
         else if ((obj_player1.character == "N" && obj_player1.spotlight == 1) || (obj_player2.character == "N" && obj_player1.spotlight == 0))
             sprite_index = spr_halloweenbigblockescape
         else if ((obj_player1.character == "S" && obj_player1.spotlight == 1) || (obj_player2.character == "S" && obj_player1.spotlight == 0))
-            sprite_index = spr_xmasbigblockescape
+            sprite_index = spr_snickbigblockescape
         else if ((obj_player1.character == "V" && obj_player1.spotlight == 1) || (obj_player2.character == "V" && obj_player1.spotlight == 0))
             sprite_index = spr_cheesebigblockescape
 		else if ((obj_player1.character == "PZ" && obj_player1.spotlight == 1) || (obj_player2.character == "PZ" && obj_player1.spotlight == 0))
@@ -396,7 +447,7 @@ with (obj_destroyable2_bigescape)
 			global.lapping = (global.lapping + 1)
 			if global.lapping >= 3
 				global.deathmode = true;
-            scr_soundeffect(6)
+            scr_soundeffect(sfx_collectgiantpizza)
 			with obj_timeattack
 			{
 			alarm[1] = 60
@@ -406,8 +457,8 @@ with (obj_destroyable2_bigescape)
             with (obj_tv)
             {
 				showtext = 1
-                message = "LAP "+ string(global.lapping)+" OUT OF 3!"
-				scr_queuemessage("PTV Racing Division announces that the local Pizzaman has done "+ string(global.lapping)+" out of 3 Laps!");
+                _message = "LAP "+ string(global.lapping)+" OUT OF 3!"
+				scr_queue_message("PTV Racing Division announces that the local Pizzaman has done "+ string(global.lapping)+" out of 3 Laps!");
                 alarm[0] = 100
             } 
 			portal = 0
@@ -616,7 +667,7 @@ if (object_index == obj_player2)
 			global.lapping = (global.lapping + 1)
 			if global.lapping >= 3
 				global.deathmode = true;
-            scr_soundeffect(6)
+            scr_soundeffect(sfx_collectgiantpizza)
 			with obj_timeattack
 			{
 			alarm[1] = 60
@@ -626,8 +677,8 @@ if (object_index == obj_player2)
             with (obj_tv)
             {
 				showtext = 1
-                message = "LAP "+ string(global.lapping)+" OUT OF 3!"
-				scr_queuemessage("PTV Racing Division announces that the local Pizzaman has done "+ string(global.lapping)+" out of 3 Laps!");
+                _message = "LAP "+ string(global.lapping)+" OUT OF 3!"
+				scr_queue_message("PTV Racing Division announces that the local Pizzaman has done "+ string(global.lapping)+" out of 3 Laps!");
                 alarm[0] = 100
             } 
 			portal = 0

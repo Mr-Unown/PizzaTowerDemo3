@@ -86,7 +86,12 @@ if global.freezeframe = false
 			alarm[1] = -1;
 			frozen = true;
 		}
-		
+		with obj_tv
+		{
+			frozenalarm = alarm[1];
+			alarm[1] = -1;
+			frozen = true;
+		}
 		#endregion
 		global.freezeframe = true;
 		#region Zoom in

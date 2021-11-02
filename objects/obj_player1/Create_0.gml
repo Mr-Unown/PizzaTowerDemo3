@@ -1,8 +1,16 @@
+global.toppinlist = ds_list_create();
+global.follower = ds_list_create();
+
 scr_initinput()
 scr_playercreate()
 
+//CustomPaletteChoosyFILE
+customsavedpalette = 1;
+oldcustomsavedpalette = 1;
 characters = "Peppino"
 colorheight = 8;
+
+
 
 global.has_drawnpeter = false;
 global.oldmeter = 0;
@@ -46,6 +54,7 @@ golf = 0
 movespeed = 19
 jumpstop = 0
 visible = true
+sprite_index = spr_file2
 state = 8
 jumpAnim = 1
 landAnim = 0
@@ -65,7 +74,7 @@ input_buffer_secondjump = 8
 input_buffer_highjump = 8
 player_x = x
 player_y = y
-targetRoom = Realtitlescreen
+targetRoom = global.roomstart[global.newtitlescreen]
 targetDoor = "A"
 flash = 0
 global.key_inv = 0
@@ -103,6 +112,8 @@ facestompAnim = 0
 ladderbuffer = 0
 toomuchalarm1 = 0
 toomuchalarm2 = 0
+toomuchalarm3 = 0
+toomanytoppings = 0
 idleanim = 0
 momemtum = 0
 cutscene = 0
@@ -131,7 +142,8 @@ treasure_room = 0
 wallspeed = 0
 tauntstoredstate = 0
 tauntstoredmovespeed = 6
-tauntstoredsprite = 538
+tauntstoredsprite = spr_null
+tauntstoredimage = 0;
 taunttimer = 20
 global.golfhit = 0
 ini_open("saveData.ini")

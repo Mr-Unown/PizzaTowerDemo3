@@ -41,7 +41,7 @@ if (place_meeting(x, y, obj_player1) && player == 0)
             other.x = obj_player1.x
             other.y = (obj_player1.y - 35)
             obj_tv.showtext = 1
-            obj_tv.message = "YOU GOT A TOWER SECRET TREASURE!!!"
+            obj_tv._message = "YOU GOT A TOWER SECRET TREASURE!!!"
             obj_tv.alarm[0] = 200
             other.player = 1
 	
@@ -85,7 +85,7 @@ if (place_meeting(x, y, obj_player2) && player == 0)
             other.x = obj_player2.x
             other.y = (obj_player2.y - 35)
             obj_tv.showtext = 1
-            obj_tv.message = "YOU GOT A TOWER SECRET TREASURE!!!"
+            obj_tv._message = "YOU GOT A TOWER SECRET TREASURE!!!"
             obj_tv.alarm[0] = 200
             other.player = 2
 

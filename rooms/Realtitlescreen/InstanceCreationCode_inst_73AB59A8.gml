@@ -1,0 +1,2 @@
+targetRoom = characterselect
+visible = false

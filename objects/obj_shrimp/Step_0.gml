@@ -80,7 +80,7 @@ if state = "punch"
 if runbuffer > 0
 runbuffer--
 //Jump
-if ((scr_solid(x + image_xscale,y)) && (!place_meeting((x + sign(hsp)), y, obj_slope))) && grounded && state != "punch" && state = 96 { 
+if ((scr_solid(x + image_xscale,y)) && (!scr_slope_ext(x + sign(hsp), y))) && grounded && state != "punch" && state = 96 { 
 	movespeed = 2
 	vsp = -11
 	state = 94

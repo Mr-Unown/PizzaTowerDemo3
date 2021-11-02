@@ -1,114 +1,87 @@
 {
-    "id": "a86ce83b-00a5-45df-87f9-cd8489099650",
-    "modelName": "GMSprite",
-    "mvc": "1.12",
-    "name": "spr_playerPZ_knightfall",
-    "For3D": false,
-    "HTile": false,
-    "VTile": false,
-    "bbox_bottom": 89,
-    "bbox_left": 23,
-    "bbox_right": 120,
-    "bbox_top": 14,
-    "bboxmode": 0,
-    "colkind": 1,
-    "coltolerance": 0,
-    "edgeFiltering": false,
-    "frames": [
-        {
-            "id": "7c5ed770-e98e-434b-9451-53e0e3facab6",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "a86ce83b-00a5-45df-87f9-cd8489099650",
-            "compositeImage": {
-                "id": "edb0799c-57be-4dc5-a765-6bc9ce840f9a",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "7c5ed770-e98e-434b-9451-53e0e3facab6",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "802519a9-ecce-4f45-aedc-94685c3cb3a6",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "7c5ed770-e98e-434b-9451-53e0e3facab6",
-                    "LayerId": "6a8781d9-0fa5-4d56-a7de-d6cbc78eaba3"
-                }
-            ]
-        },
-        {
-            "id": "b1b6565b-a9ab-4137-ab34-86353ba43825",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "a86ce83b-00a5-45df-87f9-cd8489099650",
-            "compositeImage": {
-                "id": "eec5f417-5f6b-4af9-9413-1835e3cfbd31",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "b1b6565b-a9ab-4137-ab34-86353ba43825",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "7d9fd582-9930-4f5f-ae81-c736e93aed5b",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "b1b6565b-a9ab-4137-ab34-86353ba43825",
-                    "LayerId": "6a8781d9-0fa5-4d56-a7de-d6cbc78eaba3"
-                }
-            ]
-        },
-        {
-            "id": "3e9bee8e-f4ea-4a07-94b4-cd9b0c34e939",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "a86ce83b-00a5-45df-87f9-cd8489099650",
-            "compositeImage": {
-                "id": "9a455285-fbba-4a4f-ad07-070679180949",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "3e9bee8e-f4ea-4a07-94b4-cd9b0c34e939",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "4b7e502b-2c29-4a6e-b91a-e76ca66afdd4",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "3e9bee8e-f4ea-4a07-94b4-cd9b0c34e939",
-                    "LayerId": "6a8781d9-0fa5-4d56-a7de-d6cbc78eaba3"
-                }
-            ]
-        }
-    ],
-    "gridX": 0,
-    "gridY": 0,
-    "height": 100,
-    "layers": [
-        {
-            "id": "6a8781d9-0fa5-4d56-a7de-d6cbc78eaba3",
-            "modelName": "GMImageLayer",
-            "mvc": "1.0",
-            "SpriteId": "a86ce83b-00a5-45df-87f9-cd8489099650",
-            "blendMode": 0,
-            "isLocked": false,
-            "name": "default",
-            "opacity": 100,
-            "visible": true
-        }
-    ],
-    "origin": 4,
-    "originLocked": false,
-    "playbackSpeed": 1,
+  "bboxMode": 0,
+  "collisionKind": 1,
+  "type": 0,
+  "origin": 4,
+  "preMultiplyAlpha": false,
+  "edgeFiltering": false,
+  "collisionTolerance": 0,
+  "swfPrecision": 2.525,
+  "bbox_left": 23,
+  "bbox_right": 120,
+  "bbox_top": 14,
+  "bbox_bottom": 89,
+  "HTile": false,
+  "VTile": false,
+  "For3D": false,
+  "width": 126,
+  "height": 100,
+  "textureGroupId": {
+    "name": "Pizzelle_Sprites",
+    "path": "texturegroups/Pizzelle_Sprites",
+  },
+  "swatchColours": null,
+  "gridX": 0,
+  "gridY": 0,
+  "frames": [
+    {"compositeImage":{"FrameId":{"name":"7c5ed770-e98e-434b-9451-53e0e3facab6","path":"sprites/spr_playerPZ_knightfall/spr_playerPZ_knightfall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"7c5ed770-e98e-434b-9451-53e0e3facab6","path":"sprites/spr_playerPZ_knightfall/spr_playerPZ_knightfall.yy",},"LayerId":{"name":"6a8781d9-0fa5-4d56-a7de-d6cbc78eaba3","path":"sprites/spr_playerPZ_knightfall/spr_playerPZ_knightfall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_playerPZ_knightfall","path":"sprites/spr_playerPZ_knightfall/spr_playerPZ_knightfall.yy",},"resourceVersion":"1.0","name":"7c5ed770-e98e-434b-9451-53e0e3facab6","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"b1b6565b-a9ab-4137-ab34-86353ba43825","path":"sprites/spr_playerPZ_knightfall/spr_playerPZ_knightfall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"b1b6565b-a9ab-4137-ab34-86353ba43825","path":"sprites/spr_playerPZ_knightfall/spr_playerPZ_knightfall.yy",},"LayerId":{"name":"6a8781d9-0fa5-4d56-a7de-d6cbc78eaba3","path":"sprites/spr_playerPZ_knightfall/spr_playerPZ_knightfall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_playerPZ_knightfall","path":"sprites/spr_playerPZ_knightfall/spr_playerPZ_knightfall.yy",},"resourceVersion":"1.0","name":"b1b6565b-a9ab-4137-ab34-86353ba43825","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"3e9bee8e-f4ea-4a07-94b4-cd9b0c34e939","path":"sprites/spr_playerPZ_knightfall/spr_playerPZ_knightfall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"3e9bee8e-f4ea-4a07-94b4-cd9b0c34e939","path":"sprites/spr_playerPZ_knightfall/spr_playerPZ_knightfall.yy",},"LayerId":{"name":"6a8781d9-0fa5-4d56-a7de-d6cbc78eaba3","path":"sprites/spr_playerPZ_knightfall/spr_playerPZ_knightfall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_playerPZ_knightfall","path":"sprites/spr_playerPZ_knightfall/spr_playerPZ_knightfall.yy",},"resourceVersion":"1.0","name":"3e9bee8e-f4ea-4a07-94b4-cd9b0c34e939","tags":[],"resourceType":"GMSpriteFrame",},
+  ],
+  "sequence": {
+    "spriteId": {"name":"spr_playerPZ_knightfall","path":"sprites/spr_playerPZ_knightfall/spr_playerPZ_knightfall.yy",},
+    "timeUnits": 1,
+    "playback": 1,
+    "playbackSpeed": 1.0,
     "playbackSpeedType": 1,
-    "premultiplyAlpha": false,
-    "sepmasks": false,
-    "swatchColours": null,
-    "swfPrecision": 2.525,
-    "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
-    "type": 0,
-    "width": 126,
-    "xorig": 63,
-    "yorig": 50
+    "autoRecord": true,
+    "volume": 1.0,
+    "length": 3.0,
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
+    "tracks": [
+      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"f500cd61-0a39-4430-8e1c-bab567d908d0","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7c5ed770-e98e-434b-9451-53e0e3facab6","path":"sprites/spr_playerPZ_knightfall/spr_playerPZ_knightfall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b7d9b4ba-94c2-46f7-b476-ffaf55e01748","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b1b6565b-a9ab-4137-ab34-86353ba43825","path":"sprites/spr_playerPZ_knightfall/spr_playerPZ_knightfall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"845f89a1-7c76-4e2b-8a24-6dc268c1b6dd","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3e9bee8e-f4ea-4a07-94b4-cd9b0c34e939","path":"sprites/spr_playerPZ_knightfall/spr_playerPZ_knightfall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+    ],
+    "visibleRange": {"x":0.0,"y":0.0,},
+    "lockOrigin": false,
+    "showBackdrop": true,
+    "showBackdropImage": false,
+    "backdropImagePath": "",
+    "backdropImageOpacity": 0.5,
+    "backdropWidth": 1920,
+    "backdropHeight": 1080,
+    "backdropXOffset": 0.0,
+    "backdropYOffset": 0.0,
+    "xorigin": 63,
+    "yorigin": 50,
+    "eventToFunction": {},
+    "eventStubScript": null,
+    "parent": {"name":"spr_playerPZ_knightfall","path":"sprites/spr_playerPZ_knightfall/spr_playerPZ_knightfall.yy",},
+    "resourceVersion": "1.3",
+    "name": "",
+    "tags": [],
+    "resourceType": "GMSequence",
+  },
+  "layers": [
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"6a8781d9-0fa5-4d56-a7de-d6cbc78eaba3","tags":[],"resourceType":"GMImageLayer",},
+  ],
+  "nineSlice": null,
+  "parent": {
+    "name": "Pizzelle",
+    "path": "folders/Sprites/Characters/Playable Characters Sprites/Pizzelle.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "spr_playerPZ_knightfall",
+  "tags": [],
+  "resourceType": "GMSprite",
 }

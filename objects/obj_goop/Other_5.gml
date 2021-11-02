@@ -1,8 +1,11 @@
 //This should force the goop to land
-var _collision = collision_line(x, y, x, y + room_height, group_collision, false, true);
-if (_collision != noone)
+var _collision = noone, _tilecollision = false;
+if layer_exists("Tiles_Solid")
+	_tilecollision = tile_meeting_line(x, y, x, y + room_height, "Tiles_Solid");
+_collision = collision_line(x, y, x, y + room_height, group_collision, false, true);
+if (_collision != noone || _tilecollision != false)
 {
-	while ((!grounded) && _collision != noone)
+	while (!grounded && (_collision != noone || _tilecollision != false) )
 	{
 		//var _dis = distance_to_point(x,_collision.y) fuck this is not workinf
 		//var _dir = point_direction(x,y,x,y + room_height)
@@ -10,6 +13,8 @@ if (_collision != noone)
 		hsp = 0;
 		vsp = 10; //Well this works...
 		scr_collide();
+		if layer_exists("Tiles_Solid")
+			_tilecollision = tile_meeting_line(x, y, x, y + room_height, "Tiles_Solid");		
 		_collision = collision_line(x, y, x, y + room_height, group_collision, false, true);
 	}
 }

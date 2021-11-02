@@ -1,9 +1,5 @@
-ini_open("saveData.ini")
-global.mastervolume = ini_read_real("Option", "mastervolume", 1)
-global.musicvolume = ini_read_real("Option", "musicvolume", 1)
-global.soundeffectsvolume = ini_read_real("Option", "soundeffectsvolume", 1)
-ini_close()
 var roomname = room_get_name(room)
+
 if (room != hub_room1 && room != hub_room2 && room != hub_room3 && room != cowboytask && room != Tutorialtrap && room != Titlescreen)
     fadeoff = audio_sound_get_track_position(global.music)
 else
@@ -50,28 +46,28 @@ if (global.panic == 1 && obj_pause.pause == 0)
             scr_soundstopall()
             if (string_letters(roomname) == "desert") && global.extraescapemusic = 1
             {
-                scr_sound(132)
-                pausedmusic = 132
+                scr_sound(mu_desertescape)
+                pausedmusic = mu_desertescape
             }
             else if (string_letters(roomname) == "mansion" || string_letters(roomname) == "medieval") && global.extraescapemusic = 1
             {
-                scr_sound(133)
-                pausedmusic = 133
+                scr_sound(mu_mansionescape)
+                pausedmusic = mu_mansionescape
             }
             else if (string_letters(roomname) == "factory") && global.extraescapemusic = 1
             {
-                scr_sound(134)
-                pausedmusic = 134
+                scr_sound(mu_factoryescape)
+                pausedmusic = mu_factoryescape
             }
             else if (string_letters(roomname) == "sewer") && global.extraescapemusic = 1
             {
-                scr_sound(135)
-                pausedmusic = 135
+                scr_sound(mu_sewerescape)
+                pausedmusic = mu_sewerescape
             }
             else if (string_letters(roomname) == "freezer") && global.extraescapemusic = 1
             {
-                scr_sound(136)
-                pausedmusic = 136
+                scr_sound(mu_freezerescape)
+                pausedmusic = mu_freezerescape
             }
             else if (obj_player1.character == "P")
             {

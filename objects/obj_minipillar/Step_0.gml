@@ -11,7 +11,11 @@ else if (fadetopanic == 1)
     x = xstart
     y = ystart
 	mask_index = spr_masknull
-    sprite_index = spr_minipillarwaking
+    if sprite_index != spr_minipillarwaking
+	{
+		image_index = 0
+		sprite_index = spr_minipillarwaking
+	}
     if (image_alpha < 1)
         image_alpha += 0.05
 	if floor(image_index) >= image_number - 1 && sprite_index = spr_minipillarwaking

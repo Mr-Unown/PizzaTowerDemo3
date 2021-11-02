@@ -1,92 +1,83 @@
 {
-    "id": "ab02394b-f380-4eb5-88a1-a1ac9eeb0e31",
-    "modelName": "GMSprite",
-    "mvc": "1.12",
-    "name": "bg_golf2escape",
-    "For3D": false,
-    "HTile": false,
-    "VTile": false,
-    "bbox_bottom": 539,
-    "bbox_left": 0,
-    "bbox_right": 999,
-    "bbox_top": 194,
-    "bboxmode": 0,
-    "colkind": 0,
-    "coltolerance": 0,
-    "edgeFiltering": false,
-    "frames": [
-        {
-            "id": "50590e96-25a0-4ce1-9945-0213161581dd",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "ab02394b-f380-4eb5-88a1-a1ac9eeb0e31",
-            "compositeImage": {
-                "id": "55e7b4e1-703b-4f59-9775-fd80a1cf45ce",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "50590e96-25a0-4ce1-9945-0213161581dd",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "9fa72575-c6d0-46d9-8747-d9228ccb2144",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "50590e96-25a0-4ce1-9945-0213161581dd",
-                    "LayerId": "5c2f88a1-9a93-4b59-b63c-acf2468e0f88"
-                }
-            ]
-        },
-        {
-            "id": "8730f74c-99bb-4a54-a52a-ad1c7ff37886",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "ab02394b-f380-4eb5-88a1-a1ac9eeb0e31",
-            "compositeImage": {
-                "id": "4cc7ae9c-4fa0-4ca6-b4f2-316a0c420c2e",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "8730f74c-99bb-4a54-a52a-ad1c7ff37886",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "4ff11e89-57f9-4a19-ac14-e77b18fdf0f7",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "8730f74c-99bb-4a54-a52a-ad1c7ff37886",
-                    "LayerId": "5c2f88a1-9a93-4b59-b63c-acf2468e0f88"
-                }
-            ]
-        }
-    ],
-    "gridX": 0,
-    "gridY": 0,
-    "height": 540,
-    "layers": [
-        {
-            "id": "5c2f88a1-9a93-4b59-b63c-acf2468e0f88",
-            "modelName": "GMImageLayer",
-            "mvc": "1.0",
-            "SpriteId": "ab02394b-f380-4eb5-88a1-a1ac9eeb0e31",
-            "blendMode": 0,
-            "isLocked": false,
-            "name": "default",
-            "opacity": 100,
-            "visible": true
-        }
-    ],
-    "origin": 0,
-    "originLocked": false,
-    "playbackSpeed": 1,
+  "bboxMode": 0,
+  "collisionKind": 0,
+  "type": 0,
+  "origin": 0,
+  "preMultiplyAlpha": false,
+  "edgeFiltering": false,
+  "collisionTolerance": 0,
+  "swfPrecision": 2.525,
+  "bbox_left": 0,
+  "bbox_right": 999,
+  "bbox_top": 194,
+  "bbox_bottom": 539,
+  "HTile": false,
+  "VTile": false,
+  "For3D": false,
+  "width": 1000,
+  "height": 540,
+  "textureGroupId": {
+    "name": "Unused",
+    "path": "texturegroups/Unused",
+  },
+  "swatchColours": null,
+  "gridX": 0,
+  "gridY": 0,
+  "frames": [
+    {"compositeImage":{"FrameId":{"name":"50590e96-25a0-4ce1-9945-0213161581dd","path":"sprites/bg_golf2escape/bg_golf2escape.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"50590e96-25a0-4ce1-9945-0213161581dd","path":"sprites/bg_golf2escape/bg_golf2escape.yy",},"LayerId":{"name":"5c2f88a1-9a93-4b59-b63c-acf2468e0f88","path":"sprites/bg_golf2escape/bg_golf2escape.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"bg_golf2escape","path":"sprites/bg_golf2escape/bg_golf2escape.yy",},"resourceVersion":"1.0","name":"50590e96-25a0-4ce1-9945-0213161581dd","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"8730f74c-99bb-4a54-a52a-ad1c7ff37886","path":"sprites/bg_golf2escape/bg_golf2escape.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"8730f74c-99bb-4a54-a52a-ad1c7ff37886","path":"sprites/bg_golf2escape/bg_golf2escape.yy",},"LayerId":{"name":"5c2f88a1-9a93-4b59-b63c-acf2468e0f88","path":"sprites/bg_golf2escape/bg_golf2escape.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"bg_golf2escape","path":"sprites/bg_golf2escape/bg_golf2escape.yy",},"resourceVersion":"1.0","name":"8730f74c-99bb-4a54-a52a-ad1c7ff37886","tags":[],"resourceType":"GMSpriteFrame",},
+  ],
+  "sequence": {
+    "spriteId": {"name":"bg_golf2escape","path":"sprites/bg_golf2escape/bg_golf2escape.yy",},
+    "timeUnits": 1,
+    "playback": 1,
+    "playbackSpeed": 1.0,
     "playbackSpeedType": 1,
-    "premultiplyAlpha": false,
-    "sepmasks": false,
-    "swatchColours": null,
-    "swfPrecision": 2.525,
-    "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
-    "type": 0,
-    "width": 1000,
-    "xorig": 0,
-    "yorig": 0
+    "autoRecord": true,
+    "volume": 1.0,
+    "length": 2.0,
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
+    "tracks": [
+      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"6113c19d-08b7-49e3-ba2a-68cc9fa55e1f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"50590e96-25a0-4ce1-9945-0213161581dd","path":"sprites/bg_golf2escape/bg_golf2escape.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b27e5087-73c8-4d8d-99ad-f778e339c71d","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8730f74c-99bb-4a54-a52a-ad1c7ff37886","path":"sprites/bg_golf2escape/bg_golf2escape.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+    ],
+    "visibleRange": {"x":0.0,"y":0.0,},
+    "lockOrigin": false,
+    "showBackdrop": true,
+    "showBackdropImage": false,
+    "backdropImagePath": "",
+    "backdropImageOpacity": 0.5,
+    "backdropWidth": 1920,
+    "backdropHeight": 1080,
+    "backdropXOffset": 0.0,
+    "backdropYOffset": 0.0,
+    "xorigin": 0,
+    "yorigin": 0,
+    "eventToFunction": {},
+    "eventStubScript": null,
+    "parent": {"name":"bg_golf2escape","path":"sprites/bg_golf2escape/bg_golf2escape.yy",},
+    "resourceVersion": "1.3",
+    "name": "",
+    "tags": [],
+    "resourceType": "GMSequence",
+  },
+  "layers": [
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5c2f88a1-9a93-4b59-b63c-acf2468e0f88","tags":[],"resourceType":"GMImageLayer",},
+  ],
+  "nineSlice": null,
+  "parent": {
+    "name": "Backgrounds",
+    "path": "folders/Sprites/Backgrounds.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "bg_golf2escape",
+  "tags": [],
+  "resourceType": "GMSprite",
 }

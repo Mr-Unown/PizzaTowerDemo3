@@ -1,8 +1,12 @@
 {
-    "id": "4d4f3810-2ad2-472e-94a4-ebb1e975dd2c",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_player_victory",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "player",
+    "path": "folders/Scripts/player.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_player_victory",
+  "tags": [],
+  "resourceType": "GMScript",
 }

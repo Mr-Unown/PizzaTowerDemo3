@@ -1,4 +1,8 @@
+//Panic Shake
+panicshake = 0;
+panicshakeacc = 0;
 depth = -11
+
 //Stinky Thing
 oldfacesprite = spr_null
 //global.startgate

@@ -1,6 +1,8 @@
 scr_initinput2()
 scr_playercreate()
-
+//CustomPaletteChoosyFILE
+customsavedpalette = 1;
+oldcustomsavedpalette = 1;
 characters = "Noise"
 colorheight = 7;
 
@@ -62,7 +64,7 @@ input_buffer_secondjump = 8
 input_buffer_highjump = 8
 player_x = x
 player_y = y
-targetRoom = Realtitlescreen
+targetRoom = global.roomstart[global.newtitlescreen]
 targetDoor = "A"
 flash = 0
 global.key_inv = 0
@@ -128,7 +130,8 @@ treasure_room = 0
 wallspeed = 0
 tauntstoredstate = 0
 tauntstoredmovespeed = 6
-tauntstoredsprite = 538
+tauntstoredsprite = spr_null
+tauntstoredimage = 0
 taunttimer = 20
 global.golfhit = 0
 backtohubstartx = x
@@ -180,4 +183,4 @@ suplexdashsnd = -1
 obj_player2.hp = 5
 blackblend = 0
 
-
+state = 8

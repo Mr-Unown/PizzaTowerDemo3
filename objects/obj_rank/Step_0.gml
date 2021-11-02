@@ -8,7 +8,7 @@ if (floor(image_index) == (image_number - 1))
         {
             with (obj_tv)
             {
-                message = "YOU GOT RANK S"
+                _message = "YOU GOT RANK S"
                 showtext = 1
                 alarm[0] = 50
             }
@@ -17,7 +17,7 @@ if (floor(image_index) == (image_number - 1))
         {
             with (obj_tv)
             {
-                message = "YOU GOT RANK A"
+                _message = "YOU GOT RANK A"
                 showtext = 1
                 alarm[0] = 50
             }
@@ -26,7 +26,7 @@ if (floor(image_index) == (image_number - 1))
         {
             with (obj_tv)
             {
-                message = "YOU GOT RANK B"
+                _message = "YOU GOT RANK B"
                 showtext = 1
                 alarm[0] = 50
             }
@@ -35,7 +35,7 @@ if (floor(image_index) == (image_number - 1))
         {
             with (obj_tv)
             {
-                message = "YOU GOT RANK C"
+                _message = "YOU GOT RANK C"
                 showtext = 1
                 alarm[0] = 50
             }
@@ -44,7 +44,7 @@ if (floor(image_index) == (image_number - 1))
         {
             with (obj_tv)
             {
-                message = "YOU GOT RANK D"
+                _message = "YOU GOT RANK D"
                 showtext = 1
                 alarm[0] = 50
             }
@@ -58,7 +58,7 @@ if (obj_player.character == "V")
         image_speed = 0
         with (obj_tv)
         {
-            message = "YOU GOT RANK S"
+            _message = "YOU GOT RANK S"
             showtext = 1
             alarm[0] = 50
         }
@@ -68,7 +68,7 @@ if (obj_player.character == "V")
         image_speed = 0
         with (obj_tv)
         {
-            message = "YOU GOT RANK A"
+            _message = "YOU GOT RANK A"
             showtext = 1
             alarm[0] = 50
         }
@@ -78,7 +78,7 @@ if (obj_player.character == "V")
         image_speed = 0
         with (obj_tv)
         {
-            message = "YOU GOT RANK B"
+            _message = "YOU GOT RANK B"
             showtext = 1
             alarm[0] = 50
         }
@@ -88,7 +88,7 @@ if (obj_player.character == "V")
         image_speed = 0
         with (obj_tv)
         {
-            message = "YOU GOT RANK C"
+            _message = "YOU GOT RANK C"
             showtext = 1
             alarm[0] = 50
         }
@@ -98,7 +98,7 @@ if (obj_player.character == "V")
         image_speed = 0
         with (obj_tv)
         {
-            message = "YOU GOT RANK D"
+            _message = "YOU GOT RANK D"
             showtext = 1
             alarm[0] = 50
         }

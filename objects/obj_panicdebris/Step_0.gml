@@ -1,9 +1,18 @@
-if (global.panic == 1 && start == 0)
+if (global.panic == true && global.freezeframe = false)
 {
-    alarm[0] = 5
-    start = 1
+	timer--
+	if timer <= 0
+	{
+		with instance_create(random(room_width), -16, obj_debris)
+		{
+			image_speed = irandom_range(35,50) / 100
+			sprite_index = spr_brickdebris
+			vsp = 12
+			rotatedirection = choose(-1,0,1)
+			rotatevalue = irandom_range(-10,10)			
+		}
+		timer = 5;
+	}
 }
-if (global.panic == 0)
-    alarm[0] = -1
-
-
+else if (global.panic == false)
+	timer = 0;

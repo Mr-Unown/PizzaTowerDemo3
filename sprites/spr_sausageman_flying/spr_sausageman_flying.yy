@@ -1,92 +1,83 @@
 {
-    "id": "76a54b2c-ee41-487d-8d7b-8594a30a0880",
-    "modelName": "GMSprite",
-    "mvc": "1.12",
-    "name": "spr_sausageman_flying",
-    "For3D": false,
-    "HTile": false,
-    "VTile": false,
-    "bbox_bottom": 87,
-    "bbox_left": 14,
-    "bbox_right": 81,
-    "bbox_top": 42,
-    "bboxmode": 0,
-    "colkind": 0,
-    "coltolerance": 0,
-    "edgeFiltering": false,
-    "frames": [
-        {
-            "id": "d4023fd4-6b23-4e01-8302-663f8ff8749e",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "76a54b2c-ee41-487d-8d7b-8594a30a0880",
-            "compositeImage": {
-                "id": "e622185d-5dc7-4f56-b7d1-3c875dd45896",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "d4023fd4-6b23-4e01-8302-663f8ff8749e",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "4b4a5025-3522-4d7a-859e-d6d7e82d00bc",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "d4023fd4-6b23-4e01-8302-663f8ff8749e",
-                    "LayerId": "75d5b3f2-7b15-4aed-9ef2-97f928dd2283"
-                }
-            ]
-        },
-        {
-            "id": "18cfc28b-e795-4926-80c3-0e0d9ede80e9",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "76a54b2c-ee41-487d-8d7b-8594a30a0880",
-            "compositeImage": {
-                "id": "73646af0-3384-4205-9752-fbfe3b231b8e",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "18cfc28b-e795-4926-80c3-0e0d9ede80e9",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "352c9d82-6d88-44fa-b058-47fedd9bb10d",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "18cfc28b-e795-4926-80c3-0e0d9ede80e9",
-                    "LayerId": "75d5b3f2-7b15-4aed-9ef2-97f928dd2283"
-                }
-            ]
-        }
-    ],
-    "gridX": 0,
-    "gridY": 0,
-    "height": 100,
-    "layers": [
-        {
-            "id": "75d5b3f2-7b15-4aed-9ef2-97f928dd2283",
-            "modelName": "GMImageLayer",
-            "mvc": "1.0",
-            "SpriteId": "76a54b2c-ee41-487d-8d7b-8594a30a0880",
-            "blendMode": 0,
-            "isLocked": false,
-            "name": "default",
-            "opacity": 100,
-            "visible": true
-        }
-    ],
-    "origin": 0,
-    "originLocked": false,
-    "playbackSpeed": 1,
+  "bboxMode": 0,
+  "collisionKind": 0,
+  "type": 0,
+  "origin": 4,
+  "preMultiplyAlpha": false,
+  "edgeFiltering": false,
+  "collisionTolerance": 0,
+  "swfPrecision": 2.525,
+  "bbox_left": 14,
+  "bbox_right": 81,
+  "bbox_top": 42,
+  "bbox_bottom": 87,
+  "HTile": false,
+  "VTile": false,
+  "For3D": false,
+  "width": 100,
+  "height": 100,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
+  "swatchColours": null,
+  "gridX": 0,
+  "gridY": 0,
+  "frames": [
+    {"compositeImage":{"FrameId":{"name":"d4023fd4-6b23-4e01-8302-663f8ff8749e","path":"sprites/spr_sausageman_flying/spr_sausageman_flying.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"d4023fd4-6b23-4e01-8302-663f8ff8749e","path":"sprites/spr_sausageman_flying/spr_sausageman_flying.yy",},"LayerId":{"name":"75d5b3f2-7b15-4aed-9ef2-97f928dd2283","path":"sprites/spr_sausageman_flying/spr_sausageman_flying.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_sausageman_flying","path":"sprites/spr_sausageman_flying/spr_sausageman_flying.yy",},"resourceVersion":"1.0","name":"d4023fd4-6b23-4e01-8302-663f8ff8749e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"18cfc28b-e795-4926-80c3-0e0d9ede80e9","path":"sprites/spr_sausageman_flying/spr_sausageman_flying.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"18cfc28b-e795-4926-80c3-0e0d9ede80e9","path":"sprites/spr_sausageman_flying/spr_sausageman_flying.yy",},"LayerId":{"name":"75d5b3f2-7b15-4aed-9ef2-97f928dd2283","path":"sprites/spr_sausageman_flying/spr_sausageman_flying.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_sausageman_flying","path":"sprites/spr_sausageman_flying/spr_sausageman_flying.yy",},"resourceVersion":"1.0","name":"18cfc28b-e795-4926-80c3-0e0d9ede80e9","tags":[],"resourceType":"GMSpriteFrame",},
+  ],
+  "sequence": {
+    "spriteId": {"name":"spr_sausageman_flying","path":"sprites/spr_sausageman_flying/spr_sausageman_flying.yy",},
+    "timeUnits": 1,
+    "playback": 1,
+    "playbackSpeed": 1.0,
     "playbackSpeedType": 1,
-    "premultiplyAlpha": false,
-    "sepmasks": false,
-    "swatchColours": null,
-    "swfPrecision": 2.525,
-    "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
-    "type": 0,
-    "width": 100,
-    "xorig": 50,
-    "yorig": 50
+    "autoRecord": true,
+    "volume": 1.0,
+    "length": 2.0,
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
+    "tracks": [
+      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"cb6b757e-6c04-49ce-8d3d-0a03a83a6278","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d4023fd4-6b23-4e01-8302-663f8ff8749e","path":"sprites/spr_sausageman_flying/spr_sausageman_flying.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"af2c59a2-fac2-4102-a469-4d1824e77e5c","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"18cfc28b-e795-4926-80c3-0e0d9ede80e9","path":"sprites/spr_sausageman_flying/spr_sausageman_flying.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+    ],
+    "visibleRange": {"x":0.0,"y":0.0,},
+    "lockOrigin": false,
+    "showBackdrop": true,
+    "showBackdropImage": false,
+    "backdropImagePath": "",
+    "backdropImageOpacity": 0.5,
+    "backdropWidth": 1920,
+    "backdropHeight": 1080,
+    "backdropXOffset": 0.0,
+    "backdropYOffset": 0.0,
+    "xorigin": 50,
+    "yorigin": 50,
+    "eventToFunction": {},
+    "eventStubScript": null,
+    "parent": {"name":"spr_sausageman_flying","path":"sprites/spr_sausageman_flying/spr_sausageman_flying.yy",},
+    "resourceVersion": "1.3",
+    "name": "",
+    "tags": [],
+    "resourceType": "GMSequence",
+  },
+  "layers": [
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"75d5b3f2-7b15-4aed-9ef2-97f928dd2283","tags":[],"resourceType":"GMImageLayer",},
+  ],
+  "nineSlice": null,
+  "parent": {
+    "name": "Weenie",
+    "path": "folders/Sprites/Characters/Baddies/Weenie.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "spr_sausageman_flying",
+  "tags": [],
+  "resourceType": "GMSprite",
 }

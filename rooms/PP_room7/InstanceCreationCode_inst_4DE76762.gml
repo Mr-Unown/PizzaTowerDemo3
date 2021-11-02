@@ -1,1 +1,1 @@
-targetRoom = PP_room5
+targetRoom = PP_room6

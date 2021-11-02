@@ -1,92 +1,83 @@
 {
-    "id": "ca824d2e-d537-4c77-96c1-c6f25d221d58",
-    "modelName": "GMSprite",
-    "mvc": "1.12",
-    "name": "bg_castle3escape",
-    "For3D": false,
-    "HTile": false,
-    "VTile": false,
-    "bbox_bottom": 559,
-    "bbox_left": 0,
-    "bbox_right": 999,
-    "bbox_top": 0,
-    "bboxmode": 0,
-    "colkind": 0,
-    "coltolerance": 0,
-    "edgeFiltering": false,
-    "frames": [
-        {
-            "id": "422dac9b-da6f-445c-be6d-6739b679df10",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "ca824d2e-d537-4c77-96c1-c6f25d221d58",
-            "compositeImage": {
-                "id": "46bd01dc-59b4-478a-8878-2190012982a2",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "422dac9b-da6f-445c-be6d-6739b679df10",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "b7767bf4-65bd-4558-ab00-1859cb4e671b",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "422dac9b-da6f-445c-be6d-6739b679df10",
-                    "LayerId": "c9ca2b95-5ec9-4e3f-8c91-d3a966cded53"
-                }
-            ]
-        },
-        {
-            "id": "57ef6069-3cab-4a4c-9bcb-fbd53dc35634",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "ca824d2e-d537-4c77-96c1-c6f25d221d58",
-            "compositeImage": {
-                "id": "6f964faf-50af-4099-a1f7-ce41f4e0e6ff",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "57ef6069-3cab-4a4c-9bcb-fbd53dc35634",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "11bb086e-fde6-473f-91ff-e9780074e0a2",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "57ef6069-3cab-4a4c-9bcb-fbd53dc35634",
-                    "LayerId": "c9ca2b95-5ec9-4e3f-8c91-d3a966cded53"
-                }
-            ]
-        }
-    ],
-    "gridX": 0,
-    "gridY": 0,
-    "height": 560,
-    "layers": [
-        {
-            "id": "c9ca2b95-5ec9-4e3f-8c91-d3a966cded53",
-            "modelName": "GMImageLayer",
-            "mvc": "1.0",
-            "SpriteId": "ca824d2e-d537-4c77-96c1-c6f25d221d58",
-            "blendMode": 0,
-            "isLocked": false,
-            "name": "default",
-            "opacity": 100,
-            "visible": true
-        }
-    ],
-    "origin": 0,
-    "originLocked": false,
-    "playbackSpeed": 1,
+  "bboxMode": 0,
+  "collisionKind": 0,
+  "type": 0,
+  "origin": 0,
+  "preMultiplyAlpha": false,
+  "edgeFiltering": false,
+  "collisionTolerance": 0,
+  "swfPrecision": 2.525,
+  "bbox_left": 0,
+  "bbox_right": 999,
+  "bbox_top": 0,
+  "bbox_bottom": 559,
+  "HTile": false,
+  "VTile": false,
+  "For3D": false,
+  "width": 1000,
+  "height": 560,
+  "textureGroupId": {
+    "name": "Unused",
+    "path": "texturegroups/Unused",
+  },
+  "swatchColours": null,
+  "gridX": 0,
+  "gridY": 0,
+  "frames": [
+    {"compositeImage":{"FrameId":{"name":"422dac9b-da6f-445c-be6d-6739b679df10","path":"sprites/bg_castle3escape/bg_castle3escape.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"422dac9b-da6f-445c-be6d-6739b679df10","path":"sprites/bg_castle3escape/bg_castle3escape.yy",},"LayerId":{"name":"c9ca2b95-5ec9-4e3f-8c91-d3a966cded53","path":"sprites/bg_castle3escape/bg_castle3escape.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"bg_castle3escape","path":"sprites/bg_castle3escape/bg_castle3escape.yy",},"resourceVersion":"1.0","name":"422dac9b-da6f-445c-be6d-6739b679df10","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"57ef6069-3cab-4a4c-9bcb-fbd53dc35634","path":"sprites/bg_castle3escape/bg_castle3escape.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"57ef6069-3cab-4a4c-9bcb-fbd53dc35634","path":"sprites/bg_castle3escape/bg_castle3escape.yy",},"LayerId":{"name":"c9ca2b95-5ec9-4e3f-8c91-d3a966cded53","path":"sprites/bg_castle3escape/bg_castle3escape.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"bg_castle3escape","path":"sprites/bg_castle3escape/bg_castle3escape.yy",},"resourceVersion":"1.0","name":"57ef6069-3cab-4a4c-9bcb-fbd53dc35634","tags":[],"resourceType":"GMSpriteFrame",},
+  ],
+  "sequence": {
+    "spriteId": {"name":"bg_castle3escape","path":"sprites/bg_castle3escape/bg_castle3escape.yy",},
+    "timeUnits": 1,
+    "playback": 1,
+    "playbackSpeed": 1.0,
     "playbackSpeedType": 1,
-    "premultiplyAlpha": false,
-    "sepmasks": false,
-    "swatchColours": null,
-    "swfPrecision": 2.525,
-    "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
-    "type": 0,
-    "width": 1000,
-    "xorig": 0,
-    "yorig": 0
+    "autoRecord": true,
+    "volume": 1.0,
+    "length": 2.0,
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
+    "tracks": [
+      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"3cd1fdab-4c76-49e2-8743-b95f3c10f088","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"422dac9b-da6f-445c-be6d-6739b679df10","path":"sprites/bg_castle3escape/bg_castle3escape.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7517dad1-f656-4874-a9d0-53ce02059c18","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"57ef6069-3cab-4a4c-9bcb-fbd53dc35634","path":"sprites/bg_castle3escape/bg_castle3escape.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+    ],
+    "visibleRange": {"x":0.0,"y":0.0,},
+    "lockOrigin": false,
+    "showBackdrop": true,
+    "showBackdropImage": false,
+    "backdropImagePath": "",
+    "backdropImageOpacity": 0.5,
+    "backdropWidth": 1920,
+    "backdropHeight": 1080,
+    "backdropXOffset": 0.0,
+    "backdropYOffset": 0.0,
+    "xorigin": 0,
+    "yorigin": 0,
+    "eventToFunction": {},
+    "eventStubScript": null,
+    "parent": {"name":"bg_castle3escape","path":"sprites/bg_castle3escape/bg_castle3escape.yy",},
+    "resourceVersion": "1.3",
+    "name": "",
+    "tags": [],
+    "resourceType": "GMSequence",
+  },
+  "layers": [
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c9ca2b95-5ec9-4e3f-8c91-d3a966cded53","tags":[],"resourceType":"GMImageLayer",},
+  ],
+  "nineSlice": null,
+  "parent": {
+    "name": "Backgrounds",
+    "path": "folders/Sprites/Backgrounds.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "bg_castle3escape",
+  "tags": [],
+  "resourceType": "GMSprite",
 }

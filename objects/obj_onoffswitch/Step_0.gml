@@ -14,7 +14,7 @@ if sprite_index != spr_onoffswitch_bluetored && sprite_index != spr_onoffswitch_
 	sprite_index = spr_onoffswitch_blue
 }
 
-var player = instance_nearest(x,y,obj_player)
+var player = (global.coop = false ? obj_player1 : instance_nearest(x,y,obj_player));
 if global.coop = false
 player = obj_player1
 if ((player.instakillmove = true  || player.state = 22 || player.state = states.kingknightroll || player.state = states.parry) && player.state != states.slipnslide && place_meeting(x, y, player)) && player.state != states.pogo
@@ -24,7 +24,9 @@ if ((player.instakillmove = true  || player.state = 22 || player.state = states.
         if (state == 22) || (state == states.kingknightroll) || state = states.mach2 || state = states.mach3 || state = states.jetpack
         {
             sprite_index = choose(spr_suplexmash1, spr_suplexmash2, spr_suplexmash3, spr_suplexmash4, spr_punch)
+			suplexdashtimer = 7;
             image_index = 0
+			
             state = 57
             movespeed = 3
             vsp = -3

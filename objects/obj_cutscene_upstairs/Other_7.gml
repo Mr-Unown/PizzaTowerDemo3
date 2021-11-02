@@ -14,7 +14,7 @@ if instance_exists(obj_pizzakinpineapple)
     obj_pizzakinpineapple.visible = true
 with (obj_player)
     targetroom = destroom
-scr_soundeffect(52)
+scr_soundeffect(sfx_door)
 if (!instance_exists(obj_fadeout))
     instance_create(x, y, obj_fadeout)
 

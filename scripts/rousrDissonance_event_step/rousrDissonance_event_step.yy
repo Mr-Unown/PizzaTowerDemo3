@@ -1,8 +1,12 @@
 {
-    "id": "b63b4e69-1587-446b-809b-7e8eacbec1aa",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "rousrDissonance_event_step",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Scripts",
+    "path": "folders/Extensions/Dissonance/Scripts.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "rousrDissonance_event_step",
+  "tags": [],
+  "resourceType": "GMScript",
 }

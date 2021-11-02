@@ -7,7 +7,7 @@ if place_meeting(x,y,obj_player)
 {
 	with instance_place(x,y,obj_player)
 	{
-		other.initialhsp = hsp / 2
+		other.initialhsp = hsp / 1.7
 		other.initialvsp = clamp(vsp / 1.3,-12,random_range(0,-5))
 	}
 }
@@ -17,7 +17,7 @@ if place_meeting(x,y,group_pushables)
 	{
 		if thrown = true || state == "punch"
 		{
-		other.initialhsp = hsp / 2
+		other.initialhsp = hsp / 1.7
 		other.initialvsp = clamp(vsp / 1.3,-12,random_range(0,-5))
 		}
 	}

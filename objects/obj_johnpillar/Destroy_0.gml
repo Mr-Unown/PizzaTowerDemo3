@@ -8,14 +8,14 @@ if (ds_list_find_index(global.saveroom, id) == -1 && global.snickchallenge == 0)
 	global.storedtasecond = global.taseconds;
     var cx = (x + (sprite_width / 2))
     var cy = (y + (sprite_height / 2))
-    instance_create(cx, cy, obj_bangeffect)
-    instance_create(cx, cy, obj_slapstar)
-    instance_create(cx, cy, obj_slapstar)
-    instance_create(cx, cy, obj_slapstar)
-    instance_create(cx, cy, obj_baddiegibs)
-    instance_create(cx, cy, obj_baddiegibs)
-    instance_create(cx, cy, obj_baddiegibs)
-    instance_create(x, y, obj_panicchanger)
+    instance_create(cx, cy, obj_bangeffect);
+    instance_create(cx, cy, obj_slapstar);
+    instance_create(cx, cy, obj_slapstar);
+    instance_create(cx, cy, obj_slapstar);
+    instance_create(cx, cy, obj_baddiegibs);
+    instance_create(cx, cy, obj_baddiegibs);
+    instance_create(cx, cy, obj_baddiegibs);
+    instance_create(x, y, obj_panicchanger);
 	with (obj_camera)
     {
         shake_mag = 3
@@ -36,9 +36,12 @@ if (ds_list_find_index(global.saveroom, id) == -1 && global.snickchallenge == 0)
         sprite_index = spr_hungrypillar_dead
 		image_xscale = other.image_xscale
 		canrotate = true
+		//Death Sprite
+		hsp = irandom_range(8, 15) * sign(-other.initialhsp)	
+		vsp = other.initialvsp
 	}
-    scr_soundeffect(11)
-    instance_create(x, (y + 600), obj_itspizzatime)
+    scr_soundeffect(sfx_killenemy);
+    instance_create(x, y, obj_itspizzatime);
 
     global.panic = 1
 	//Escape Time

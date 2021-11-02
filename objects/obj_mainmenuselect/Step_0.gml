@@ -38,7 +38,8 @@ if (selected == 0)
     }
 }
 var lay_id = layer_get_id("Backgrounds_mainmenulight")
-var back_id = layer_background_get_id(lay_id)
+var back_id = layer_background_get_id_fixed(lay_id)
 layer_background_index(back_id, optionselected)
-
-
+//Text
+xi = 500 + random_range(1, -1);
+yi = approach(yi,500,5);

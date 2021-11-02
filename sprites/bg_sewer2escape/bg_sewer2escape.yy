@@ -1,92 +1,83 @@
 {
-    "id": "b785bf0c-3e3d-49ae-83e8-7d45ace41e7a",
-    "modelName": "GMSprite",
-    "mvc": "1.12",
-    "name": "bg_sewer2escape",
-    "For3D": false,
-    "HTile": false,
-    "VTile": false,
-    "bbox_bottom": 539,
-    "bbox_left": 0,
-    "bbox_right": 959,
-    "bbox_top": 0,
-    "bboxmode": 0,
-    "colkind": 0,
-    "coltolerance": 0,
-    "edgeFiltering": false,
-    "frames": [
-        {
-            "id": "62bdf425-b5c9-427f-8b4c-6de642af6cb3",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "b785bf0c-3e3d-49ae-83e8-7d45ace41e7a",
-            "compositeImage": {
-                "id": "59909087-ce71-4b0f-a31b-844f958346e1",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "62bdf425-b5c9-427f-8b4c-6de642af6cb3",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "90a0479c-15f1-451c-8550-a8ed5fac1683",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "62bdf425-b5c9-427f-8b4c-6de642af6cb3",
-                    "LayerId": "a24735a4-c535-478c-8ae1-aa8adba4d013"
-                }
-            ]
-        },
-        {
-            "id": "f346c7b8-797c-493e-a826-0c85bc6da612",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "b785bf0c-3e3d-49ae-83e8-7d45ace41e7a",
-            "compositeImage": {
-                "id": "d55b0fce-89c1-4f07-b883-3372cb9a548d",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "f346c7b8-797c-493e-a826-0c85bc6da612",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "15fb5c69-aacb-4f52-b6ae-15c20c05166f",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "f346c7b8-797c-493e-a826-0c85bc6da612",
-                    "LayerId": "a24735a4-c535-478c-8ae1-aa8adba4d013"
-                }
-            ]
-        }
-    ],
-    "gridX": 0,
-    "gridY": 0,
-    "height": 540,
-    "layers": [
-        {
-            "id": "a24735a4-c535-478c-8ae1-aa8adba4d013",
-            "modelName": "GMImageLayer",
-            "mvc": "1.0",
-            "SpriteId": "b785bf0c-3e3d-49ae-83e8-7d45ace41e7a",
-            "blendMode": 0,
-            "isLocked": false,
-            "name": "default",
-            "opacity": 100,
-            "visible": true
-        }
-    ],
-    "origin": 0,
-    "originLocked": false,
-    "playbackSpeed": 1,
+  "bboxMode": 0,
+  "collisionKind": 0,
+  "type": 0,
+  "origin": 0,
+  "preMultiplyAlpha": false,
+  "edgeFiltering": false,
+  "collisionTolerance": 0,
+  "swfPrecision": 2.525,
+  "bbox_left": 0,
+  "bbox_right": 959,
+  "bbox_top": 0,
+  "bbox_bottom": 539,
+  "HTile": false,
+  "VTile": false,
+  "For3D": false,
+  "width": 960,
+  "height": 540,
+  "textureGroupId": {
+    "name": "Unused",
+    "path": "texturegroups/Unused",
+  },
+  "swatchColours": null,
+  "gridX": 0,
+  "gridY": 0,
+  "frames": [
+    {"compositeImage":{"FrameId":{"name":"62bdf425-b5c9-427f-8b4c-6de642af6cb3","path":"sprites/bg_sewer2escape/bg_sewer2escape.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"62bdf425-b5c9-427f-8b4c-6de642af6cb3","path":"sprites/bg_sewer2escape/bg_sewer2escape.yy",},"LayerId":{"name":"a24735a4-c535-478c-8ae1-aa8adba4d013","path":"sprites/bg_sewer2escape/bg_sewer2escape.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"bg_sewer2escape","path":"sprites/bg_sewer2escape/bg_sewer2escape.yy",},"resourceVersion":"1.0","name":"62bdf425-b5c9-427f-8b4c-6de642af6cb3","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"f346c7b8-797c-493e-a826-0c85bc6da612","path":"sprites/bg_sewer2escape/bg_sewer2escape.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"f346c7b8-797c-493e-a826-0c85bc6da612","path":"sprites/bg_sewer2escape/bg_sewer2escape.yy",},"LayerId":{"name":"a24735a4-c535-478c-8ae1-aa8adba4d013","path":"sprites/bg_sewer2escape/bg_sewer2escape.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"bg_sewer2escape","path":"sprites/bg_sewer2escape/bg_sewer2escape.yy",},"resourceVersion":"1.0","name":"f346c7b8-797c-493e-a826-0c85bc6da612","tags":[],"resourceType":"GMSpriteFrame",},
+  ],
+  "sequence": {
+    "spriteId": {"name":"bg_sewer2escape","path":"sprites/bg_sewer2escape/bg_sewer2escape.yy",},
+    "timeUnits": 1,
+    "playback": 1,
+    "playbackSpeed": 1.0,
     "playbackSpeedType": 1,
-    "premultiplyAlpha": false,
-    "sepmasks": false,
-    "swatchColours": null,
-    "swfPrecision": 2.525,
-    "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
-    "type": 0,
-    "width": 960,
-    "xorig": 0,
-    "yorig": 0
+    "autoRecord": true,
+    "volume": 1.0,
+    "length": 2.0,
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
+    "tracks": [
+      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"79190448-9c32-4558-b432-e89ee5c9ed07","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"62bdf425-b5c9-427f-8b4c-6de642af6cb3","path":"sprites/bg_sewer2escape/bg_sewer2escape.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"3229c193-ebc0-44ad-a537-9d7046932dc4","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f346c7b8-797c-493e-a826-0c85bc6da612","path":"sprites/bg_sewer2escape/bg_sewer2escape.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+    ],
+    "visibleRange": {"x":0.0,"y":0.0,},
+    "lockOrigin": false,
+    "showBackdrop": true,
+    "showBackdropImage": false,
+    "backdropImagePath": "",
+    "backdropImageOpacity": 0.5,
+    "backdropWidth": 1920,
+    "backdropHeight": 1080,
+    "backdropXOffset": 0.0,
+    "backdropYOffset": 0.0,
+    "xorigin": 0,
+    "yorigin": 0,
+    "eventToFunction": {},
+    "eventStubScript": null,
+    "parent": {"name":"bg_sewer2escape","path":"sprites/bg_sewer2escape/bg_sewer2escape.yy",},
+    "resourceVersion": "1.3",
+    "name": "",
+    "tags": [],
+    "resourceType": "GMSequence",
+  },
+  "layers": [
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a24735a4-c535-478c-8ae1-aa8adba4d013","tags":[],"resourceType":"GMImageLayer",},
+  ],
+  "nineSlice": null,
+  "parent": {
+    "name": "Backgrounds",
+    "path": "folders/Sprites/Backgrounds.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "bg_sewer2escape",
+  "tags": [],
+  "resourceType": "GMSprite",
 }

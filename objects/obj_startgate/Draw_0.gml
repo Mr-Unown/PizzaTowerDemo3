@@ -3,9 +3,10 @@ draw_self()
 draw_set_font(global.font)
 draw_set_halign(fa_center)
 draw_set_color(c_white)
-ini_open("playerData_"+global.savefile+".ini")
 if drawtext = true
 {
+	ini_open("playerData_"+global.savefile+".ini")
+	
 	if (level != "snickchallenge")
 	{
 		draw_text(x, (y - 100), ini_read_string("Highscore", string(level), 0))
@@ -56,10 +57,12 @@ if drawtext = true
             draw_text(x, (y - 100), "NO RANK")
     }
 
-
+	ini_close()
 }
-if selected = true && ini_read_string("Ranks", string(level), "none") != "none" && string(level) != "snickchallenge"
+if selected = true
 {
-	draw_sprite_ext(spr_attackselect,selection,x,y,1,1,0,c_white,1)
+	ini_open("playerData_"+global.savefile+".ini")
+	if ini_read_string("Ranks", string(level), "none") != "none" && string(level) != "snickchallenge"
+		draw_sprite_ext(spr_attackselect,selection,x,y,1,1,0,c_white,1)
+	ini_close()		
 }
-ini_close()

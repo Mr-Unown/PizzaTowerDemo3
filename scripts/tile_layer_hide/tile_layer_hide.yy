@@ -1,8 +1,12 @@
 {
-    "id": "c54ec9ab-dadc-4df1-b585-c04901de8430",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "tile_layer_hide",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Scripts",
+    "path": "folders/Scripts.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "tile_layer_hide",
+  "tags": [],
+  "resourceType": "GMScript",
 }

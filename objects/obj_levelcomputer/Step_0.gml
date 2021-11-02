@@ -1,4 +1,4 @@
-if (obj_player1.spotlight == 1)
+/*if (obj_player1.spotlight == 1)
 {
     player = obj_player1
     player2 = obj_player2
@@ -31,7 +31,7 @@ if (global.level == "none")
     {
         with (obj_tv)
         {
-            message = "PLEASE SELECT A LEVEL"
+            _message = "PLEASE SELECT A LEVEL"
             showtext = 1
             alarm[0] = 2
         }
@@ -46,7 +46,7 @@ if (global.level == "desert")
     {
         with (obj_tv)
         {
-            message = "OREGANO MIRAGE"
+            _message = "OREGANO MIRAGE"
             showtext = 1
             alarm[0] = 2
         }
@@ -61,7 +61,7 @@ if (global.level == "desertnight")
     {
         with (obj_tv)
         {
-            message = "MARJORAM DREAM"
+            _message = "MARJORAM DREAM"
             showtext = 1
             alarm[0] = 2
         }
@@ -76,7 +76,7 @@ if (global.level == "mansion")
     {
         with (obj_tv)
         {
-            message = "PEPPER MANSION"
+            _message = "PEPPER MANSION"
             showtext = 1
             alarm[0] = 2
         }
@@ -91,7 +91,7 @@ if (global.level == "factory")
     {
         with (obj_tv)
         {
-            message = "PIZZASAUCE FACTORY"
+            _message = "PIZZASAUCE FACTORY"
             showtext = 1
             alarm[0] = 2
         }
@@ -106,7 +106,7 @@ if (global.level == "sewer")
     {
         with (obj_tv)
         {
-            message = "TUBULAR TRASH ZONE"
+            _message = "TUBULAR TRASH ZONE"
             showtext = 1
             alarm[0] = 2
         }
@@ -121,7 +121,7 @@ if (global.level == "freezer")
     {
         with (obj_tv)
         {
-            message = "THE FREEZER"
+            _message = "THE FREEZER"
             showtext = 1
             alarm[0] = 2
         }
@@ -136,7 +136,7 @@ if (global.level == "golf")
     {
         with (obj_tv)
         {
-            message = "PIZZAGOLF"
+            _message = "PIZZAGOLF"
             showtext = 1
             alarm[0] = 2
         }
