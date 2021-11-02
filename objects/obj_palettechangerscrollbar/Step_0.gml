@@ -76,8 +76,10 @@ else if !mouse_check_button(mb_left) && input_text = false
 
 //Change Value based on Mouse Position
 if (selected == 1)
+{
 	colorvalue = clamp( (_mouse_x - _draw_x) / (sprite_get_width(spr_palettechanger_scrollbar) - 5),0,1)
-
+	input = round(colorvalue*255);
+}
 
 
 #region Text
@@ -91,7 +93,7 @@ if mouse_check_button_pressed(mb_left) && selected = false && obj_palettechanger
 if ((key_jump2 || keyboard_check_pressed(vk_return)) || key_slap2) && selected = false
 {
 	input_text = false;
-	if key_jump2		
+	if key_jump2 || keyboard_check_pressed(vk_return)		 
 		colorvalue = real(input)/255;
 }
 if input_text = true
