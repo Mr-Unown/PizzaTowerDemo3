@@ -2592,7 +2592,6 @@
     {"id":{"name":"scr_player_keyget","path":"scripts/scr_player_keyget/scr_player_keyget.yy",},"order":54,},
     {"id":{"name":"scr_player_kingknightroll","path":"scripts/scr_player_kingknightroll/scr_player_kingknightroll.yy",},"order":55,},
     {"id":{"name":"scr_player_knightpep","path":"scripts/scr_player_knightpep/scr_player_knightpep.yy",},"order":56,},
-    {"id":{"name":"obj_eventmanager","path":"objects/obj_eventmanager/obj_eventmanager.yy",},"order":28,},
     {"id":{"name":"scr_player_knightpepattack","path":"scripts/scr_player_knightpepattack/scr_player_knightpepattack.yy",},"order":57,},
     {"id":{"name":"scr_player_knightpepslopes","path":"scripts/scr_player_knightpepslopes/scr_player_knightpepslopes.yy",},"order":58,},
     {"id":{"name":"scr_player_ladder","path":"scripts/scr_player_ladder/scr_player_ladder.yy",},"order":59,},
