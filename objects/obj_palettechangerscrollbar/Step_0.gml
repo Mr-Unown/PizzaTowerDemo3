@@ -61,7 +61,7 @@ var _mouse_y = (mouse_y - _cam_y)
 #endregion
 
 //Check if Mouse Click in Button Radius
-if mouse_check_button_pressed(mb_left) && input_text = false
+if mouse_check_button_pressed(mb_left) && input_text = false && obj_palettechanger.stop = false
 {
 	if point_in_circle(_mouse_x, _mouse_y, button_x, draw_y, button_radius)
     {
@@ -81,14 +81,14 @@ if (selected == 1)
 
 
 #region Text
-if mouse_check_button_pressed(mb_left) && selected = false
+if mouse_check_button_pressed(mb_left) && selected = false && obj_palettechanger.stop = false
 {
 	//if point_in_circle(_mouse_x, _mouse_y, button_x, draw_y, button_radius)
 	var _button_x = bottom_x + 8 + sprite_get_xoffset(spr_palettechanger_textbox);
     if point_in_rectangle(_mouse_x,_mouse_y,_button_x - sprite_get_xoffset(spr_palettechanger_textbox),draw_y - sprite_get_yoffset(spr_palettechanger_textbox),_button_x + sprite_get_xoffset(spr_palettechanger_textbox), draw_y + sprite_get_yoffset(spr_palettechanger_textbox))
         input_text = true
 }
-if (key_jump2 || key_slap2) && selected = false
+if ((key_jump2 || keyboard_check_pressed(vk_return)) || key_slap2) && selected = false
 {
 	input_text = false;
 	if key_jump2		

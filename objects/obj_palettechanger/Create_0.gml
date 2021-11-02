@@ -31,3 +31,4 @@ store_message[3] = "PRESS UP AND DOWN TO CHANGE\n WHICH COLOR TO EDIT"
 store_message[4] = "PRESS SLAP TO EXIT AND SAVE CHANGES"
 _messageindex = 0;
 alarm[1] = 50;
+stop = false;
