@@ -128,7 +128,7 @@ if (showtext == true)
 	if choosen = false
 	{
 		_message = store_message[_messageindex]
-		if _messageindex < 3
+		if _messageindex < array_length(store_message) - 1
 			_messageindex += 1
 		else
 			_messageindex = 0

@@ -36,7 +36,7 @@ if global.newhud == true
 {
 	with obj_tv
 	{
-		pal_swap_set(surface, 1, true);
+		pal_swap_set(other.surface, 1, true);
 		draw_sprite_ext(newtvsprite, -1, 832, 100 + newhudyoffset, 1, 1, 0, c_white, 1)
 		pal_swap_reset()
 		
