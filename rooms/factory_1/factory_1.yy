@@ -101,24 +101,14 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_collect","path":"objects/obj_collect/obj_collect.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2560.0,"y":1056.0,"resourceVersion":"1.0","name":"inst_68968830","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_reverseminipillar","path":"objects/obj_reverseminipillar/obj_reverseminipillar.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":576.0,"y":736.0,"resourceVersion":"1.0","name":"inst_3145A54A","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_reverseminipillar","path":"objects/obj_reverseminipillar/obj_reverseminipillar.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":544.0,"y":736.0,"resourceVersion":"1.0","name":"inst_4CD9E7DF","tags":[],"resourceType":"GMRInstance",},
-<<<<<<< Updated upstream
-        {"properties":[],"isDnd":false,"objectId":{"name":"obj_hallway","path":"objects/obj_hallway/obj_hallway.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":-2.0,"scaleY":0.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3.0,"y":1408.0,"resourceVersion":"1.0","name":"inst_2E7DC9EF","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"obj_doorC","path":"objects/obj_doorC/obj_doorC.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3.0,"y":1408.0,"resourceVersion":"1.0","name":"inst_788FDE39","tags":[],"resourceType":"GMRInstance",},
-=======
->>>>>>> Stashed changes
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_slope","path":"objects/obj_slope/obj_slope.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":6.0,"scaleY":2.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2304.0,"y":1376.0,"resourceVersion":"1.0","name":"inst_14F77DF9","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":6.0,"scaleY":3.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2496.0,"y":1376.0,"resourceVersion":"1.0","name":"inst_3D0494EC","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_parrallax","path":"objects/obj_parrallax/obj_parrallax.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":864.0,"y":608.0,"resourceVersion":"1.0","name":"inst_18517D3B","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_robot","path":"objects/obj_robot/obj_robot.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":539.0,"y":1138.0,"resourceVersion":"1.0","name":"inst_151D2079","tags":[],"resourceType":"GMRInstance",},
-<<<<<<< Updated upstream
-      ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
-    {"spriteId":{"name":"bg_factoryindustrial","path":"sprites/bg_factoryindustrial/bg_factoryindustrial.yy",},"colour":4294967295,"x":0,"y":0,"htiled":true,"vtiled":true,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":15.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Backgrounds_long","tags":[],"resourceType":"GMRBackgroundLayer",},
-=======
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_hallway","path":"objects/obj_hallway/obj_hallway.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":-2.0,"scaleY":0.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-32.0,"y":1408.0,"resourceVersion":"1.0","name":"inst_6CC6F593","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_doorB","path":"objects/obj_doorB/obj_doorB.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-64.0,"y":1408.0,"resourceVersion":"1.0","name":"inst_2440FA25","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"spriteId":{"name":"bg_factory3","path":"sprites/bg_factory3/bg_factory3.yy",},"colour":4294967295,"x":0,"y":0,"htiled":true,"vtiled":true,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":1.0,"animationSpeedType":1,"userdefinedAnimFPS":false,"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Backgrounds_long","tags":[],"resourceType":"GMRBackgroundLayer",},
->>>>>>> Stashed changes
   ],
   "inheritLayers": false,
   "creationCodeFile": "",
@@ -211,20 +201,12 @@
     {"name":"inst_68968830","path":"rooms/factory_1/factory_1.yy",},
     {"name":"inst_3145A54A","path":"rooms/factory_1/factory_1.yy",},
     {"name":"inst_4CD9E7DF","path":"rooms/factory_1/factory_1.yy",},
-<<<<<<< Updated upstream
-    {"name":"inst_2E7DC9EF","path":"rooms/factory_1/factory_1.yy",},
-    {"name":"inst_788FDE39","path":"rooms/factory_1/factory_1.yy",},
-=======
->>>>>>> Stashed changes
     {"name":"inst_14F77DF9","path":"rooms/factory_1/factory_1.yy",},
     {"name":"inst_3D0494EC","path":"rooms/factory_1/factory_1.yy",},
     {"name":"inst_18517D3B","path":"rooms/factory_1/factory_1.yy",},
     {"name":"inst_151D2079","path":"rooms/factory_1/factory_1.yy",},
-<<<<<<< Updated upstream
-=======
     {"name":"inst_6CC6F593","path":"rooms/factory_1/factory_1.yy",},
     {"name":"inst_2440FA25","path":"rooms/factory_1/factory_1.yy",},
->>>>>>> Stashed changes
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

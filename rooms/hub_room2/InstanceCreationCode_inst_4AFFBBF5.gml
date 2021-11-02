@@ -1,2 +1,2 @@
 level = "ancient"
-targetRoom = factory_1
+targetRoom = ancient_1
