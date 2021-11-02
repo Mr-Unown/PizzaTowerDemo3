@@ -190,6 +190,7 @@ function scr_characterspr() {
 	    spr_boxxedwalk = spr_boxxedpep_walk
 	    spr_boxxedidle = spr_boxxedpep_idle
 	    spr_boxxedintro = spr_boxxedpep_intro
+		spr_boxxeddashstart = spr_boxxedpep_dashstart
 		spr_boxxeddash = spr_boxxedpep_dash
 	    spr_firemouthintro = spr_player_firemouthintro
 	    spr_firemouthend = spr_player_firemouthend
@@ -423,6 +424,7 @@ function scr_characterspr() {
 	    spr_boxxedidle = spr_boxxednoise_idle
 	    spr_boxxedintro = spr_boxxednoise_intro
 		spr_boxxeddash = spr_boxxednoise_dash
+		spr_boxxeddashstart = spr_boxxednoise_dashstart
 	    spr_firemouthintro = spr_playerN_firemouthintro
 	    spr_firemouthend = spr_playerN_firemouthend
 	    spr_firemouth = spr_playerN_firemouth

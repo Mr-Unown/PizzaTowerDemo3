@@ -537,7 +537,7 @@ function scr_playerstate() {
 	    with instance_place(x,y + 1,obj_slope)
 	    {
 	        var flip = sign(image_xscale) = -1 ? 180 : 0
-	        other.draw_angle = ( (approach(other.draw_angle,(point_direction(x,y + sprite_height,x + sprite_width,y) - flip),16)) / (subtle_var) );
+	        other.draw_angle = ( (approach(other.draw_angle,(point_direction(x,y + sprite_height,x + sprite_width,y) - flip),32)) / (subtle_var) );
 	    }
 	}
 	else if global.freezeframe = false

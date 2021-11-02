@@ -149,24 +149,23 @@ function scr_player_boxxedpep() {
 	if (sprite_index == spr_boxxedintro && floor(image_index) == (image_number - 1))
 	    sprite_index = spr_boxxedidle
 	if (sprite_index != spr_boxxedintro)
-	{
 	    if (move != 0)
 	        xscale = move
-	    if grounded
-	    {
 	        if (move != 0)
 			{
-				if movespeed >= 9
+				if movespeed = 10
+				{
+				sprite_index = spr_boxxeddashstart
+				if (sprite_index == spr_boxxeddashstart && floor(image_index) == (image_number - 1))
 				sprite_index = spr_boxxeddash
+				}
 				else
 	            sprite_index = spr_boxxedwalk
 			}
 	        else
 	            sprite_index = spr_boxxedidle
-	    }
-	    else if movespeed < 9
-	        sprite_index = spr_boxxedair
-	}
+				if !grounded
+				sprite_index = spr_boxxedair
 	if ((!instance_exists(obj_cloudeffect)) && grounded && move != 0 && (floor(image_index) == 4 || floor(image_index) == 10))
 	    instance_create(x, (y + 43), obj_cloudeffect)
 	if ((!instance_exists(obj_cloudeffect)) && grounded && move != 0 && (sprite_index == spr_player_downslopes || sprite_index == spr_player_upslopes))
