@@ -37,12 +37,12 @@ if global.newhud == true
 	with obj_tv
 	{
 		pal_swap_set(other.surface, 1, true);
-		draw_sprite_ext(newtvsprite, -1, 832, 100 + newhudyoffset, 1, 1, 0, c_white, 1)
+		draw_sprite_ext(newtvsprite, -1, 832, 100, 1, 1, 0, c_white, 1)
 		pal_swap_reset()
 		
 		//Added a frame sprite as a quick workaround for
 		//Character Palettes that modify TV Sprites' Palettes...
-		draw_sprite_ext(spr_tv_frame, -1, 832, 100 + newhudyoffset, 1, 1, 0, c_white, 1)
+		draw_sprite_ext(spr_tv_frame, -1, 832, 100, 1, 1, 0, c_white, 1)
 	}	
 }
 else

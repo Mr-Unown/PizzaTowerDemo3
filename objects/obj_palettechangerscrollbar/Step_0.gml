@@ -20,7 +20,6 @@ while readcolor = true
 	ini_close()
 	finalvalue = round(colorvalue*255);
 	input = string(finalvalue);
-	keyboard_string = string(finalvalue);
 	readcolor = false;
 	#endregion
 }
@@ -77,14 +76,9 @@ else if !mouse_check_button(mb_left) && input_text = false
 
 //Change Value based on Mouse Position
 if (selected == 1)
-{
 	colorvalue = clamp( (_mouse_x - _draw_x) / (sprite_get_width(spr_palettechanger_scrollbar) - 5),0,1)
-}
 
-if readcolor = false
-{
-	finalvalue = round(colorvalue*255);
-}
+
 
 #region Text
 if mouse_check_button_pressed(mb_left) && selected = false
@@ -94,10 +88,11 @@ if mouse_check_button_pressed(mb_left) && selected = false
     if point_in_rectangle(_mouse_x,_mouse_y,_button_x - sprite_get_xoffset(spr_palettechanger_textbox),draw_y - sprite_get_yoffset(spr_palettechanger_textbox),_button_x + sprite_get_xoffset(spr_palettechanger_textbox), draw_y + sprite_get_yoffset(spr_palettechanger_textbox))
         input_text = true
 }
-if key_jump2 || keyboard_check_pressed(vk_enter) && selected = false
+if (key_jump2 || key_slap2) && selected = false
 {
 	input_text = false;
-	finalvalue = real(input);
+	if key_jump2		
+		colorvalue = real(input)/255;
 }
 if input_text = true
 {
@@ -132,5 +127,7 @@ switch input
 
 
 #endregion
-
+//Done All
+if readcolor = false
+	finalvalue = round(colorvalue*255);
 

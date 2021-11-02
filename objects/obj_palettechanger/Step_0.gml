@@ -98,7 +98,7 @@ else if player.key_up2
 #endregion
 
 //Get Out
-if (player.key_slap2 || keyboard_check_pressed(vk_return)) && has_selectedoption <= 0
+if (player.key_slap2 || keyboard_check_pressed(vk_return)) && obj_palettechangerscrollbar.input_text == false && has_selectedoption <= 0
 {
 	#region Save Palette to INI
 	ini_open("Custom/"+string(player.characters)+"_"+string(player.customsavedpalette)+"_palettes.ini")	
