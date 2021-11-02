@@ -2,6 +2,7 @@
 while readcolor = true
 {
 	selected = false;
+	input_text = false;
 	#region Read Colors
 	ini_open("Custom/"+string(player.characters)+"_"+string(player.customsavedpalette)+"_palettes.ini")
 	switch colorchannel
@@ -61,14 +62,14 @@ var _mouse_y = (mouse_y - _cam_y)
 #endregion
 
 //Check if Mouse Click in Button Radius
-if mouse_check_button_pressed(mb_left)
+if mouse_check_button_pressed(mb_left) && input_text = false
 {
 	if point_in_circle(_mouse_x, _mouse_y, button_x, draw_y, button_radius)
     {
         selected = true
 	}
 }
-else if !mouse_check_button(mb_left)
+else if !mouse_check_button(mb_left) && input_text = false
 {
 	selected = false
 }
@@ -85,11 +86,49 @@ if readcolor = false
 	finalvalue = round(colorvalue*255);
 }
 
-//Text
-if (string_length(keyboard_string)<4) 
-    input = real(string_digits(keyboard_string));
-else
-    keyboard_string = string(input);
+#region Text
+if mouse_check_button_pressed(mb_left) && selected = false
+{
+	//if point_in_circle(_mouse_x, _mouse_y, button_x, draw_y, button_radius)
+	var _button_x = bottom_x + 8 + sprite_get_xoffset(spr_palettechanger_textbox);
+    if point_in_rectangle(_mouse_x,_mouse_y,_button_x - sprite_get_xoffset(spr_palettechanger_textbox),draw_y - sprite_get_yoffset(spr_palettechanger_textbox),_button_x + sprite_get_xoffset(spr_palettechanger_textbox), draw_y + sprite_get_yoffset(spr_palettechanger_textbox))
+        input_text = true
+}
+if key_jump2 || keyboard_check_pressed(vk_enter) && selected = false
+{
+	input_text = false;
+	finalvalue = real(input);
+}
+if input_text = true
+{
+	var is_number = string_digits(keyboard_lastchar), 
+	is_backspace = keyboard_check(vk_backspace), 
+	_keypressed = (string_length(is_number) == true ? string_length(is_number) : is_backspace); //Funny Tenary
+	if _keypressed && (keyboard_check_pressed(vk_anykey))
+	{ 
+		if is_backspace && string_length(input) > 0
+			input = string_delete(input, string_length(input), 1);
+		else if !is_backspace
+			input += string(keyboard_lastchar); //it already returns as a string lmao
+	
+		if (string_length(input) > 3)
+		{
+			input = string_copy(input, 1, 3);
+		}	
+	}
+}
+
+switch input
+{
+	case "":
+		input = "0"
+	break;
+	default: 
+		input = string(clamp(real(input),0,255));
+	break;
+}
+
+#endregion
 
 
 #endregion

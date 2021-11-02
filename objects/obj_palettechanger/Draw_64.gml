@@ -31,9 +31,50 @@ draw_sprite(spr_palettechanger_selection,-1,96,(draw_y - 160) + (40 * global.col
 pal_swap_set(surface, 1, true);
 draw_sprite_ext(player.sprite_index,player.image_index,draw_x - 152,draw_y + 16,4,4,0,c_white,1)
 pal_swap_reset();
-
-
-
+#region HUD Stuff
+if global.newhud == true
+{
+	with obj_tv
+	{
+		pal_swap_set(surface, 1, true);
+		draw_sprite_ext(newtvsprite, -1, 832, 100 + newhudyoffset, 1, 1, 0, c_white, 1)
+		pal_swap_reset()
+		
+		//Added a frame sprite as a quick workaround for
+		//Character Palettes that modify TV Sprites' Palettes...
+		draw_sprite_ext(spr_tv_frame, -1, 832, 100 + newhudyoffset, 1, 1, 0, c_white, 1)
+	}	
+}
+else
+{
+	var _sprite = spr_pepinoHUD;
+	switch player.character	
+	{
+		case "P":
+			_sprite = spr_pepinoHUD;
+		break;
+		case "N":
+			_sprite = spr_noiseHUD_idle;
+		break;
+		case "S":
+			_sprite = spr_snickHUD_normal;
+		break;
+		case "V":
+			_sprite = spr_playerV_normalHUD;
+		break;
+		case "PZ":
+			_sprite = spr_playerPZ_normalHUD;
+		break;
+		default:
+			_sprite = spr_pepinoHUD;
+		break;
+		pal_swap_set(surface, 1, true);
+		draw_sprite_ext(_sprite, -1, 832, 100, -1, 1, 0, c_white, 1)		
+		pal_swap_reset()		
+		 
+	}
+}
+#endregion
 //Text
 draw_set_font(global.smallfont)
 draw_set_halign(fa_center)
