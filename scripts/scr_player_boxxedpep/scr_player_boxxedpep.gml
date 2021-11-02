@@ -111,12 +111,8 @@ function scr_player_boxxedpep() {
 	    instance_create(x, y, obj_highjumpcloud2)
 		}	
 	}
-<<<<<<< Updated upstream
-	if (!key_attack)
-=======
 	}
     if (!key_attack)
->>>>>>> Stashed changes
     {
         if (move != 0)
         {
@@ -150,11 +146,6 @@ function scr_player_boxxedpep() {
     }
     else
         movespeed = 10
-<<<<<<< Updated upstream
-	if (movespeed > 8)
-	    movespeed -= 0.1
-=======
->>>>>>> Stashed changes
 	if (sprite_index == spr_boxxedintro && floor(image_index) == (image_number - 1))
 	    sprite_index = spr_boxxedidle
 	if (sprite_index != spr_boxxedintro)
@@ -169,14 +160,8 @@ function scr_player_boxxedpep() {
 				sprite_index = spr_boxxeddash
 				else
 	            sprite_index = spr_boxxedwalk
-<<<<<<< Updated upstream
-	        else if movespeed = 10
-			sprite_index = spr_boxxedintro
-			else
-=======
 			}
 	        else
->>>>>>> Stashed changes
 	            sprite_index = spr_boxxedidle
 	    }
 	    else if movespeed < 9
