@@ -961,7 +961,7 @@ function scr_characterspr() {
 	    spr_machpunch1 = spr_playerN_machpunch1
 	    spr_machpunch2 = spr_playerN_machpunch2
 	    spr_hurtjump = spr_playerN_hurtjump
-	    spr_entergate = spr_playerN_entergate
+	    spr_entergate = spr_playerP_doorgate
 	    spr_gottreasure = spr_playerN_gottreasure
 	    spr_bossintro = spr_playerN_bossintro
 	    spr_hurtidle = spr_playerN_hurtidle
@@ -996,10 +996,10 @@ function scr_characterspr() {
 	    spr_superjump = spr_playerN_Sjump
 	    spr_machfreefall = spr_playerP_freefall
 	    spr_mach3hit = spr_playerN_machpunch1
-	    spr_knightpepwalk = spr_playerN_knightmove
+	    spr_knightpepwalk = spr_playerP_metalmove
 	    spr_knightpepjump = spr_playerN_knightjump
 	    spr_knightpepfall = spr_playerN_knightfall
-	    spr_knightpepidle = spr_playerN_knightidle
+	    spr_knightpepidle = spr_playerP_metalidle
 	    spr_knightpepjumpstart = spr_playerN_knightjumpstart
 	    spr_knightpepthunder = spr_playerN_knightstart
 	    spr_knightpepland = spr_playerN_knightland

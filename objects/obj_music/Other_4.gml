@@ -88,6 +88,16 @@ if (global.panic == 0 && global.snickchallenge == 0)
                 pausedmusic = mu_entranceN
             }
         }
+		else if (obj_player1.character == "PM")
+        {
+            if (!audio_is_playing(mu_PMentrance))
+            {
+                scr_soundstopall()
+                scr_sound(mu_PMentrance)
+                audio_sound_set_track_position(global.music, fadeoff)
+                pausedmusic = mu_PMentrance
+            }
+        }
         else if (obj_player1.character == "S")
         {
             if (!audio_is_playing(mu_entranceS))

@@ -46,7 +46,7 @@ function scr_pepperman_run(){
 		jumpstop = 1
 	}
 
-	image_speed = 1
+	image_speed = 0.75
 	if (!grounded)
 	{
 		sprite_index = spr_playerP_dash

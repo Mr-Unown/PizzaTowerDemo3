@@ -3,6 +3,16 @@ function scr_player_jump() {
 	    hsp = (move * movespeed)
 	else
 	    hsp = (xscale * movespeed)
+			//Pepperman Attack
+	if (key_slap2 && character == "PM")
+	{
+		movespeed = 13
+	    suplexmove = 1
+	    scr_soundeffect(sfx_suplexdash)
+	    sprite_index = spr_playerP_shoulder
+	    state = states.pepperunning
+	    image_index = 0
+	}
 	if (dir != xscale)
 	{
 	    dir = xscale

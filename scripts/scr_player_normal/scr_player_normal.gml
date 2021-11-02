@@ -1,4 +1,9 @@
 function scr_player_normal() {
+	if (sprite_index = spr_player_downslopes)
+	{
+	}
+	else
+	{
 	if (dir != xscale)
 	{
 	    dir = xscale
@@ -629,7 +634,7 @@ function scr_player_normal() {
 			scr_soundeffect(sfx_superjumprelease)
 		}
 	}
-
+	}
 
 
 

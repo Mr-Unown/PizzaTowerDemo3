@@ -10,7 +10,7 @@ oldcustomsavedpalette = 1;
 characters = "Peppino"
 colorheight = 8;
 hittingwall = 0
-
+theslope = 0
 
 global.has_drawnpeter = false;
 global.oldmeter = 0;

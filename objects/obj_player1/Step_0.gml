@@ -1,5 +1,46 @@
 scr_playerstate()
+if place_meeting(x, y, obj_unslopes) && grounded
+{
+	theslope = 1
+	if (movespeed > 0) && (grounded)
+	{
+		movespeed -= 0.1
+	}
+	if (movespeed > 0) && (grounded)
+	{
+		sprite_index = spr_player_upslopes
+	}
+	if ((movespeed <= 0) || (state = 0)) && grounded
+	{
+		if (sprite_index != spr_player_downslopes)
+		{
+		state = 0
+		sprite_index = spr_player_downslopes
+		}
+		if (obj_unslopes.image_xscale > 0)
+		{
+			xscale = -1
+			hsp = -5
+		}
+		else{
+			xscale = 1
+			hsp = 5
+		}
+	}
+}
 
+if (theslope = 1)
+{
+		if  !place_meeting(x, y, obj_unslopes) && (state = 0)
+		{
+			theslope = 0
+			sprite_index = spr_idle
+		}
+		else if !place_meeting(x, y, obj_unslopes)
+		{
+			theslope = 0
+		}
+}
 //Heat Meter
 var style = (global.heatmeteroption == true ? global.stylethreshold : 0)
 global.heatmeter = clamp(style,global.lapping,4)
