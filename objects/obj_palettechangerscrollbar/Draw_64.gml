@@ -1,5 +1,5 @@
 //Draw Slider
-draw_sprite_ext(spr_palettechanger_scrollbar,-1,draw_x,draw_y,1,1,0,c_white,1);
+draw_sprite_ext(spr_palettechanger_scrollbar,selected,draw_x,draw_y,1,1,0,c_white,1);
 var top_x = draw_x - sprite_get_xoffset(spr_palettechanger_scrollbar),top_y = draw_y - sprite_get_yoffset(spr_palettechanger_scrollbar), bottom_x = draw_x + sprite_get_xoffset(spr_palettechanger_scrollbar),bottom_y = draw_y + sprite_get_yoffset(spr_palettechanger_scrollbar);
 draw_rectangle_color(top_x + 4,top_y + 4,bottom_x - 5,bottom_y - 5,c_black,draw_color,draw_color,c_black,false);
 
@@ -7,8 +7,15 @@ draw_rectangle_color(top_x + 4,top_y + 4,bottom_x - 5,bottom_y - 5,c_black,draw_
 draw_sprite_ext(spr_palettechanger_scrollbarbutton,-1,button_x,draw_y,1,1,0,c_white,1);
 
 //Draw Slider Box
-draw_sprite_ext(spr_palettechanger_textbox,-1,bottom_x + 8 + sprite_get_xoffset(spr_palettechanger_textbox),draw_y,1,1,0,c_white,1);
+draw_sprite_ext(spr_palettechanger_textbox,input_text,bottom_x + 8 + sprite_get_xoffset(spr_palettechanger_textbox),draw_y,1,1,0,c_white,1);
 draw_set_font(global.smallfont);
 draw_set_halign(fa_center);
-draw_text(bottom_x + 8 + sprite_get_xoffset(spr_palettechanger_textbox),draw_y - 5,string(round(colorvalue*255)));
-draw_text(bottom_x + 8 + sprite_get_xoffset(spr_palettechanger_textbox),draw_y - 5, string(input) + cursor );
+//Value Text
+if input_text = true
+{
+	var length = -(string_width(string(input))/ 2) + string_width(string(input));
+	draw_text(bottom_x + 8 + sprite_get_xoffset(spr_palettechanger_textbox),draw_y - 5, string(input));
+	draw_text(bottom_x + 8 + sprite_get_xoffset(spr_palettechanger_textbox) + length + 5,draw_y - 5, cursor);
+}
+else
+	draw_text(bottom_x + 8 + sprite_get_xoffset(spr_palettechanger_textbox),draw_y - 5,string(round(colorvalue*255)));
