@@ -95,6 +95,8 @@ if ((key_jump2 || keyboard_check_pressed(vk_return)) || key_slap2) && selected =
 	input_text = false;
 	if key_jump2 || keyboard_check_pressed(vk_return)		 
 		colorvalue = real(input)/255;
+	else
+		input = string(finalvalue);
 }
 if input_text = true
 {
