@@ -30,7 +30,7 @@ if global.snickchallenge == false
 		break;	
 		case "sanctum":
 			global.stimerank = 8.10;
-			global.srank = 19500
+			global.srank = 19800
 		break;		
 		case "strongcold":
 			global.stimerank = 6.30;

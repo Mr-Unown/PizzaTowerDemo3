@@ -8,6 +8,7 @@ if player.key_right2
 		ini_write_real(string(player.characters)+"Colors"+string(global.colorchoosen), "Red", slider[0].finalvalue);
 		ini_write_real(string(player.characters)+"Colors"+string(global.colorchoosen), "Green", slider[1].finalvalue);
 		ini_write_real(string(player.characters)+"Colors"+string(global.colorchoosen), "Blue", slider[2].finalvalue);
+		palettename = ini_read_string("General","PaletteName","Palette 1")
 	ini_close()
 	#endregion	
 	player.customsavedpalette = clamp(player.customsavedpalette + 1,1,5)
@@ -70,6 +71,7 @@ if global.colorchoosen != global.oldcolorchoosen
 		ini_write_real(string(player.characters)+"Colors"+string(global.colorchoosen), "Red", slider[0].finalvalue);
 		ini_write_real(string(player.characters)+"Colors"+string(global.colorchoosen), "Green", slider[1].finalvalue);
 		ini_write_real(string(player.characters)+"Colors"+string(global.colorchoosen), "Blue", slider[2].finalvalue);
+		palettename = ini_read_string("General","PaletteName","Palette 1")
 	ini_close()
 	#endregion
 	global.colorchoosen = clamp(global.oldcolorchoosen,0,player.colorheight - 1)
@@ -97,7 +99,7 @@ else if player.key_up2
 
 #endregion
 
-//Get Out
+#region Get Out of Menu
 
 var _stop = false; //For to Stop Fucking
 with obj_palettechangerscrollbar
@@ -129,8 +131,35 @@ if (player.key_slap2 || keyboard_check_pressed(vk_return)) && _stop == false && 
 	}
 	instance_destroy();
 }
+#endregion
+
+#region Export and Import
+
+#region Import
+
+#endregion
 
 
+#region Export
+if keyboard_check_pressed(vk_home)
+{
+	var file;
+	file = get_save_filename_ext("Palettes|*.d3palette", string(player.characters), working_directory, "Export your Palette");
+	if file != ""
+	{
+		//surface_save(screenshot_surface, file);
+		var _original = "Custom/"+string(player.characters)+"_"+string(player.customsavedpalette)+"_palettes.ini";
+		file_copy(_original,file)
+	}	
+}
+#endregion
+
+
+#endregion
+
+
+#region Showtext
+yi = approach(yi,500,5)
 if (showtext == true)
 {
 	if choosen = false
@@ -157,3 +186,4 @@ if (showtext == false)
 		_draw_y = -64
 	}
 }
+#endregion

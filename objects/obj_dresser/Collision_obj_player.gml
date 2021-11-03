@@ -12,7 +12,10 @@ if other.key_up2 && !instance_exists(obj_palettechanger)
 		{
 		   color[i] = player.color[i]
 		}
-
+		ini_open("Custom/"+string(_players.characters)+"_"+string(_players.customsavedpalette)+"_palettes.ini")
+		//ini_write_string("General","PaletteName","Palette " + string(customsavedpalette));
+		palettename = ini_read_string("General","PaletteName","Palette 1")
+		ini_close()
 		#region Scrollbars
 		var i = 0;
 		repeat(3)

@@ -19,6 +19,8 @@ color[9] = 0;
 color[10] = 0;
 //Update Colors
 //customupdate = false;
+yi = 600;
+palettename = "Palette 1"
 showtext = true;
 _draw_x = 480;
 _draw_y = -64;
