@@ -4,7 +4,7 @@ if(obj_player.state == 22 || obj_player.state == 70)
 	{
 		with (obj_player1)
 		{
-			if place_meeting((x + hsp), y, obj_pillardestroyparent)
+			if place_meeting((x + hsp), y, obj_pillardestroyablebig)
 			{
 				with(other.id)
 				{
@@ -20,12 +20,6 @@ if(obj_player.state == 22 || obj_player.state == 70)
 				state = 72
 				hsp = (-3.2 * xscale)
 				vsp = -3
-				with other 
-				{ 	
-					initialhsp = 9 * sign(other.image_xscale)
-					initialvsp = random_range(-4, -1)
-					event_user(0) 
-				}
 			}
 		}
 	}

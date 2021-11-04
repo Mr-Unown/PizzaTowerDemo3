@@ -34,11 +34,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Misc Blocks",
+    "path": "folders/Objects/Level Structure/Blocks and Destroyables/Misc Blocks.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_pillardestroyparent",
+  "name": "obj_pillardestroyablebig",
   "tags": [],
   "resourceType": "GMObject",
 }

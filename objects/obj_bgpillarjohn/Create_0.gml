@@ -1,4 +1,7 @@
 image_speed = 0.35
+shakemag = 0
+shaketime = 0
+
 
 var layers;
 var layernum = 0;
