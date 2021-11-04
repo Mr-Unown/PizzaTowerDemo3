@@ -5,11 +5,22 @@ draw_set_alpha(0.5)
 draw_rectangle_color(-32, -32, 992, 572, c_black, c_black, c_black, c_black, 0)
 draw_set_alpha(1)
 
-if !surface_exists(surface)
+if !surface_exists(surface) 
 {
 	surface = surface_create(2,10);
-	if surface_exists(player.surf_pallete)
-		surface_copy(surface,0,0,player.surf_pallete);
+	#region Surface
+	surface_set_target(surface);
+	with player
+	{
+		draw_clear_alpha(c_white,0)
+		pal_swap_draw_palette(spr_palette,0,0,0)
+		pal_swap_draw_palette(spr_palette,paletteselect,1,0)
+		for (var i = 0; i < colorheight; i++) {
+			draw_point_color(1,i,color[i]);
+		}
+	}
+	surface_reset_target();	
+	#endregion
 }
 
 
