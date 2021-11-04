@@ -1,4 +1,5 @@
 depth = -999;
+image_speed = 0.35;
 player = obj_player1;
 has_selectedoption = 0;
 slider[0] = noone;
@@ -21,6 +22,7 @@ color[10] = 0;
 //customupdate = false;
 yi = 600;
 palettename = "Palette 1"
+image_idnex = 0;
 showtext = true;
 _draw_x = 480;
 _draw_y = -64;
@@ -34,3 +36,15 @@ store_message[4] = "PRESS SLAP TO EXIT AND SAVE CHANGES"
 _messageindex = 0;
 alarm[1] = 50;
 stop = false;
+//Text Input
+input = "Palette 0"
+input_text = false
+keyboard_string = ""
+inputbuffer = 2
+inputmax = 2
+deletebuffer = 6
+deletemax = 6
+//Edit Cursor
+cursor = "|";
+delay = 20;
+alarm[2] = delay;

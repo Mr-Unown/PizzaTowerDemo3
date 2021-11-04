@@ -26,6 +26,8 @@ if surface_exists(surface)
 	surface_reset_target()
 	draw_surface_ext(surface, 96, draw_y - 160,40,40,0,c_white,1)
 }
+var offsetscale = (0.815 *  clamp(player.colorheight - 1,0,player.colorheight));
+draw_sprite_ext(spr_palettechanger_window,-1,96 - 3,(draw_y - 160) - 3,1,1 + offsetscale,0,c_white,1)
 draw_sprite(spr_palettechanger_selection,-1,96,(draw_y - 160) + (40 * global.colorchoosen))
 
 //Player Sprite
@@ -38,12 +40,12 @@ pal_swap_reset();
 //if global.newhud == true
 //{
 pal_swap_set(surface, 1, true);
-draw_sprite_ext(player.spr_playertv_normal, -1, 832, 100, 1, 1, 0, c_white, 1);
+draw_sprite_ext(player.spr_playertv_normal, image_idnex, 832, 100, 1, 1, 0, c_white, 1);
 pal_swap_reset();
 
 //Added a frame sprite as a quick workaround for
 //Character Palettes that modify TV Sprites' Palettes...
-draw_sprite_ext(spr_tv_frame, -1, 832, 100, 1, 1, 0, c_white, 1);
+draw_sprite_ext(spr_tv_frame, 0, 832, 100, 1, 1, 0, c_white, 1);
 
 //}
 /*
@@ -84,7 +86,17 @@ draw_set_halign(fa_center)
 draw_set_color(c_white)
 draw_text(_draw_x, _draw_y, string_upper(_message))
 //Palette Name
-draw_set_font(global.font)
+draw_sprite_ext(spr_palettechanger_textbox,input_text,480,yi,5,1,0,c_white,1);
+draw_set_font(arial_17)
 draw_set_halign(fa_center)
-draw_set_color(c_white)
-draw_text(500 + random_range(1, -1), yi, string_upper(palettename))
+draw_set_valign(fa_middle)
+if input_text == true
+{
+	var length = -(string_width(string(input))/ 2) + string_width(string(input));
+	draw_text_color(480, yi, string(input),c_black,c_black,c_black,c_black,1);
+	draw_text_color(480 + length, yi, cursor,c_black,c_black,c_black,c_black,1);
+}
+else
+	draw_text_color(480, yi, string(palettename),c_black,c_black,c_black,c_black,1)
+//Reset LUWU
+draw_set_valign(fa_top)
