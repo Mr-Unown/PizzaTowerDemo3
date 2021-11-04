@@ -144,7 +144,24 @@ if (player.key_slap2 || keyboard_check_pressed(vk_return)) && _stop == false && 
 #region Export and Import
 
 #region Import
-
+if keyboard_check_pressed(vk_end)
+{
+	var file;
+	file = get_open_filename_ext("Palettes|*.d3palette", "", working_directory, "Import your Palette");
+	if file != ""
+	{
+		ini_open(file);
+		var character = ini_read_string("General","Character","");
+		ini_close();
+		if character == "" && character == player.characters
+		{
+			var _original = "Custom/"+string(player.characters)+"_"+string(player.customsavedpalette)+"_palettes.ini";
+			file_copy(file,_original)
+		}
+		//var _original = "Custom/"+string(player.characters)+"_"+string(player.customsavedpalette)+"_palettes.ini";
+		//file_copy(_original,file)
+	}	
+}
 #endregion
 
 
@@ -174,7 +191,11 @@ var _mouse_y = (mouse_y - _cam_y)
 if mouse_check_button_pressed(mb_left) && input_text = false && stop = false
 {
     if point_in_rectangle(_mouse_x,_mouse_y,480 - 147,yi - 43,480 + 147,yi + 43) && yi <= 500
+	{
         input_text = true;	
+		keyboard_string = ""
+		input = palettename;
+	}
 	//draw_sprite_ext(spr_palettechanger_textbox,input_text,480,yi,5,1,0,c_white,1);
 }
 if ( (player.key_jump2 || keyboard_check_pressed(vk_return) ) || player.key_slap2) && input_text = true
