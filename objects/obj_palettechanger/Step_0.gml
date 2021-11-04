@@ -1,14 +1,21 @@
+var _stop = false; //For to Stop Fucking
+with obj_palettechangerscrollbar
+{
+	if selected == true || input_text == true
+		_stop |= true;
+}
+_stop |= input_text
+
 #region Change Palette 
 
 //Change Palette Set to EDIT
-if player.key_right2
+if player.key_right2 && _stop == false
 {
 	#region Save Palette to INI
 	ini_open("Custom/"+string(player.characters)+"_"+string(player.customsavedpalette)+"_palettes.ini")	
 		ini_write_real(string(player.characters)+"Colors"+string(global.colorchoosen), "Red", slider[0].finalvalue);
 		ini_write_real(string(player.characters)+"Colors"+string(global.colorchoosen), "Green", slider[1].finalvalue);
 		ini_write_real(string(player.characters)+"Colors"+string(global.colorchoosen), "Blue", slider[2].finalvalue);
-		palettename = ini_read_string("General","PaletteName","Palette 1")
 	ini_close()
 	#endregion	
 	player.customsavedpalette = clamp(player.customsavedpalette + 1,1,5)
@@ -18,6 +25,10 @@ if player.key_right2
 		scr_playercolors();
 		customupdate = true;	
 	}
+	ini_open("Custom/"+string(player.characters)+"_"+string(player.customsavedpalette)+"_palettes.ini")
+	palettename = ini_read_string("General","PaletteName","Palette 1")		
+	ini_close()	
+	input = palettename
 	global.oldcolorchoosen = 0;
 	global.colorchoosen = 0;
 	with obj_palettechangerscrollbar
@@ -32,7 +43,7 @@ if player.key_right2
 	
 	#endregion
 }
-if -player.key_left2
+if -player.key_left2 && _stop == false
 {
 	#region Save Palette to INI
 	ini_open("Custom/"+string(player.characters)+"_"+string(player.customsavedpalette)+"_palettes.ini")	
@@ -48,6 +59,10 @@ if -player.key_left2
 		scr_playercolors();
 		customupdate = true;	
 	}
+	ini_open("Custom/"+string(player.characters)+"_"+string(player.customsavedpalette)+"_palettes.ini")
+	palettename = ini_read_string("General","PaletteName","Palette 1")		
+	ini_close()	
+	input = palettename
 	global.oldcolorchoosen = 0;
 	global.colorchoosen = 0;
 	with obj_palettechangerscrollbar
@@ -71,7 +86,6 @@ if global.colorchoosen != global.oldcolorchoosen
 		ini_write_real(string(player.characters)+"Colors"+string(global.colorchoosen), "Red", slider[0].finalvalue);
 		ini_write_real(string(player.characters)+"Colors"+string(global.colorchoosen), "Green", slider[1].finalvalue);
 		ini_write_real(string(player.characters)+"Colors"+string(global.colorchoosen), "Blue", slider[2].finalvalue);
-		palettename = ini_read_string("General","PaletteName","Palette 1")
 	ini_close()
 	#endregion
 	global.colorchoosen = clamp(global.oldcolorchoosen,0,player.colorheight - 1)
@@ -87,12 +101,12 @@ if global.colorchoosen == global.oldcolorchoosen
 	color[global.colorchoosen] = make_color_rgb(slider[0].finalvalue,slider[1].finalvalue,slider[2].finalvalue)
 }
 //Change Palette to be changed
-if player.key_down2 
+if player.key_down2 && _stop == false
 {
 
 	global.oldcolorchoosen = clamp(global.colorchoosen + 1,0,player.colorheight - 1)
 }
-else if player.key_up2
+else if player.key_up2 && _stop == false
 {
 	global.oldcolorchoosen = clamp(global.colorchoosen - 1,0,player.colorheight - 1)
 }
@@ -101,12 +115,6 @@ else if player.key_up2
 
 #region Get Out of Menu
 
-var _stop = false; //For to Stop Fucking
-with obj_palettechangerscrollbar
-{
-	if selected == true || input_text == true
-		_stop = true;
-}
 
 if (player.key_slap2 || keyboard_check_pressed(vk_return)) && _stop == false && has_selectedoption <= 0
 {
@@ -136,7 +144,45 @@ if (player.key_slap2 || keyboard_check_pressed(vk_return)) && _stop == false && 
 #region Export and Import
 
 #region Import
-
+if keyboard_check_pressed(vk_end)
+{
+	var file;
+	file = get_open_filename_ext("Palettes|*.d3palette", "", working_directory, "Import your Palette");
+	if file != ""
+	{
+		ini_open(file);
+		var character = ini_read_string("General","Character","");
+		ini_close();
+		if character != "BF" && character == string(player.characters)
+		{
+			var _original = "Custom/"+string(player.characters)+"_"+string(player.customsavedpalette)+"_palettes.ini";
+			file_copy(file,_original)
+			#region Update
+				with player
+				{
+					scr_playercolors();
+					customupdate = true;	
+				}
+				ini_open("Custom/"+string(player.characters)+"_"+string(player.customsavedpalette)+"_palettes.ini")
+				palettename = ini_read_string("General","PaletteName","Palette 1")		
+				ini_close()	
+				input = palettename
+				global.oldcolorchoosen = 0;
+				global.colorchoosen = 0;
+				with obj_palettechangerscrollbar
+				{
+					readcolor = true;
+				}		
+				for (var i = 0; i < player.colorheight; i++) 
+				{
+					color[i] = player.color[i]
+				}		
+		#endregion
+		}
+		//var _original = "Custom/"+string(player.characters)+"_"+string(player.customsavedpalette)+"_palettes.ini";
+		//file_copy(_original,file)
+	}	
+}
 #endregion
 
 
@@ -157,7 +203,53 @@ if keyboard_check_pressed(vk_home)
 
 #endregion
 
+#region Name Editing
+var _cam_x = camera_get_view_x(view_camera[0])
+var _cam_y = camera_get_view_y(view_camera[0])
+var _mouse_x = (mouse_x - _cam_x)
+var _mouse_y = (mouse_y - _cam_y)
 
+if mouse_check_button_pressed(mb_left) && input_text = false && stop = false
+{
+    if point_in_rectangle(_mouse_x,_mouse_y,480 - 147,yi - 43,480 + 147,yi + 43) && yi <= 500
+	{
+        input_text = true;	
+		keyboard_string = ""
+		input = palettename;
+	}
+	//draw_sprite_ext(spr_palettechanger_textbox,input_text,480,yi,5,1,0,c_white,1);
+}
+if ( (player.key_jump2 || keyboard_check_pressed(vk_return) ) || player.key_slap2) && input_text = true
+{
+	input_text = false;
+	if player.key_jump2 || keyboard_check_pressed(vk_return)	
+	{
+		palettename = string(input);
+		ini_open("Custom/"+string(player.characters)+"_"+string(player.customsavedpalette)+"_palettes.ini")	
+		ini_write_string("General","PaletteName",string(palettename));
+		ini_close()
+	}
+	else
+		input = palettename;
+}
+if input_text = true
+{
+	if keyboard_check(vk_anykey) && inputbuffer = 0
+	{
+		input += keyboard_string
+		keyboard_string = ""
+		inputbuffer = inputmax
+	}
+	
+	if keyboard_check(vk_backspace) && deletebuffer = 0
+	{
+		input = string_delete(input, string_length(input), 1)
+		deletebuffer = deletemax
+	}
+}
+#endregion
+
+#region Misc
 #region Showtext
 yi = approach(yi,500,5)
 if (showtext == true)
@@ -186,4 +278,10 @@ if (showtext == false)
 		_draw_y = -64
 	}
 }
+#endregion
+var _sprite = player.spr_playertv_normal;
+if floor(image_idnex) >= sprite_get_number(_sprite) - 1
+image_idnex = 0
+else
+image_idnex += 0.35
 #endregion

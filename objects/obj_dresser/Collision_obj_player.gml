@@ -16,6 +16,7 @@ if other.key_up2 && !instance_exists(obj_palettechanger)
 		//ini_write_string("General","PaletteName","Palette " + string(customsavedpalette));
 		palettename = ini_read_string("General","PaletteName","Palette 1")
 		ini_close()
+		input = palettename
 		#region Scrollbars
 		var i = 0;
 		repeat(3)
