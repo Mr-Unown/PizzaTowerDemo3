@@ -1,15 +1,17 @@
-var _stop = false; //For to Stop Fucking
+stop = false; //For to Stop Fucking
+var _stop = false;
 with obj_palettechangerscrollbar
 {
 	if selected == true || input_text == true
-		_stop |= true;
+		_stop = true;
 }
-_stop |= input_text
+if input_text == true || _stop == true
+stop = true;
 
 #region Change Palette 
 
 //Change Palette Set to EDIT
-if player.key_right2 && _stop == false
+if player.key_right2 && stop == false
 {
 	#region Save Palette to INI
 	ini_open("Custom/"+string(player.characters)+"_"+string(player.customsavedpalette)+"_palettes.ini")	
@@ -43,7 +45,7 @@ if player.key_right2 && _stop == false
 	
 	#endregion
 }
-if -player.key_left2 && _stop == false
+if -player.key_left2 && stop == false
 {
 	#region Save Palette to INI
 	ini_open("Custom/"+string(player.characters)+"_"+string(player.customsavedpalette)+"_palettes.ini")	
@@ -101,12 +103,12 @@ if global.colorchoosen == global.oldcolorchoosen
 	color[global.colorchoosen] = make_color_rgb(slider[0].finalvalue,slider[1].finalvalue,slider[2].finalvalue)
 }
 //Change Palette to be changed
-if player.key_down2 && _stop == false
+if player.key_down2 && stop == false
 {
 
 	global.oldcolorchoosen = clamp(global.colorchoosen + 1,0,player.colorheight - 1)
 }
-else if player.key_up2 && _stop == false
+else if player.key_up2 && stop == false
 {
 	global.oldcolorchoosen = clamp(global.colorchoosen - 1,0,player.colorheight - 1)
 }
@@ -116,7 +118,7 @@ else if player.key_up2 && _stop == false
 #region Get Out of Menu
 
 
-if (player.key_slap2 || keyboard_check_pressed(vk_return)) && _stop == false && has_selectedoption <= 0
+if (player.key_slap2 || keyboard_check_pressed(vk_return)) && stop == false && has_selectedoption <= 0
 {
 	#region Save Palette to INI
 	ini_open("Custom/"+string(player.characters)+"_"+string(player.customsavedpalette)+"_palettes.ini")	
@@ -146,42 +148,7 @@ if (player.key_slap2 || keyboard_check_pressed(vk_return)) && _stop == false && 
 #region Import
 if keyboard_check_pressed(vk_end)
 {
-	var file;
-	file = get_open_filename_ext("Palettes|*.d3palette", "", working_directory, "Import your Palette");
-	if file != ""
-	{
-		ini_open(file);
-		var character = ini_read_string("General","Character","");
-		ini_close();
-		if character != "BF" && character == string(player.characters)
-		{
-			var _original = "Custom/"+string(player.characters)+"_"+string(player.customsavedpalette)+"_palettes.ini";
-			file_copy(file,_original)
-			#region Update
-				with player
-				{
-					scr_playercolors();
-					customupdate = true;	
-				}
-				ini_open("Custom/"+string(player.characters)+"_"+string(player.customsavedpalette)+"_palettes.ini")
-				palettename = ini_read_string("General","PaletteName","Palette 1")		
-				ini_close()	
-				input = palettename
-				global.oldcolorchoosen = 0;
-				global.colorchoosen = 0;
-				with obj_palettechangerscrollbar
-				{
-					readcolor = true;
-				}		
-				for (var i = 0; i < player.colorheight; i++) 
-				{
-					color[i] = player.color[i]
-				}		
-		#endregion
-		}
-		//var _original = "Custom/"+string(player.characters)+"_"+string(player.customsavedpalette)+"_palettes.ini";
-		//file_copy(_original,file)
-	}	
+	event_user(1);
 }
 #endregion
 
@@ -189,14 +156,7 @@ if keyboard_check_pressed(vk_end)
 #region Export
 if keyboard_check_pressed(vk_home)
 {
-	var file;
-	file = get_save_filename_ext("Palettes|*.d3palette", string(player.characters), working_directory, "Export your Palette");
-	if file != ""
-	{
-		//surface_save(screenshot_surface, file);
-		var _original = "Custom/"+string(player.characters)+"_"+string(player.customsavedpalette)+"_palettes.ini";
-		file_copy(_original,file)
-	}	
+	event_user(0);
 }
 #endregion
 
