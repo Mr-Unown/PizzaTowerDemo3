@@ -1,10 +1,12 @@
 stop = false; //For to Stop Fucking
+var _stop = false;
 with obj_palettechangerscrollbar
 {
 	if selected == true || input_text == true
-		stop |= true;
+		_stop = true;
 }
-stop |= input_text
+if input_text == true || _stop == true
+stop = true;
 
 #region Change Palette 
 
