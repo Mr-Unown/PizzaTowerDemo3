@@ -1,3 +1,8 @@
+#region Variables
+var _cam_x = camera_get_view_x(view_camera[0])
+var _cam_y = camera_get_view_y(view_camera[0])
+var _mouse_x = (mouse_x - _cam_x)
+var _mouse_y = (mouse_y - _cam_y)
 stop = false; //For to Stop Fucking
 var _stop = false;
 with obj_palettechangerscrollbar
@@ -6,7 +11,8 @@ with obj_palettechangerscrollbar
 		_stop = true;
 }
 if input_text == true || _stop == true
-stop = true;
+	stop = true;
+#endregion
 
 #region Change Palette 
 
@@ -145,30 +151,34 @@ if (player.key_slap2 || keyboard_check_pressed(vk_return)) && stop == false && h
 
 #region Export and Import
 
-#region Import
-if keyboard_check_pressed(vk_end)
-{
-	event_user(1);
-}
-#endregion
-
-
 #region Export
-if keyboard_check_pressed(vk_home)
+if mouse_check_button_pressed(mb_left) && input_text = false && stop = false
 {
-	event_user(0);
+    if point_in_rectangle(_mouse_x,_mouse_y,ExportButton.xpos - 28,ExportButton.ypos - 25,ExportButton.xpos + 28,ExportButton.ypos + 28)
+	{
+		ExportButton.activated = true;
+		ExportButton.buffertimer = 10;
+		if ExportButton.activated
+		event_user(0);
+	}
 }
 #endregion
-
+#region Import
+if mouse_check_button_pressed(mb_left) && input_text = false && stop = false
+{
+    if point_in_rectangle(_mouse_x,_mouse_y,ImportButton.xpos - 28,ImportButton.ypos - 25,ImportButton.xpos + 28,ImportButton.ypos + 28)
+	{
+		ImportButton.activated = true;
+		ImportButton.buffertimer = 10;
+		if ImportButton.activated
+		event_user(1);
+	}
+}
+#endregion
 
 #endregion
 
 #region Name Editing
-var _cam_x = camera_get_view_x(view_camera[0])
-var _cam_y = camera_get_view_y(view_camera[0])
-var _mouse_x = (mouse_x - _cam_x)
-var _mouse_y = (mouse_y - _cam_y)
-
 if mouse_check_button_pressed(mb_left) && input_text = false && stop = false
 {
     if point_in_rectangle(_mouse_x,_mouse_y,480 - 147,yi - 43,480 + 147,yi + 43) && yi <= 500

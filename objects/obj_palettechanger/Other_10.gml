@@ -1,4 +1,5 @@
 /// @description Export Palettes
+ExportButton.activated = true;
 var file;
 file = get_save_filename_ext("Palettes|*.d3palette", string(player.characters), working_directory, "Export your Palette");
 if file != ""
