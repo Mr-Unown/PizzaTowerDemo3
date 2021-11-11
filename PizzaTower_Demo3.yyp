@@ -1073,6 +1073,7 @@
     {"id":{"name":"spr_playerV_revolverend","path":"sprites/spr_playerV_revolverend/spr_playerV_revolverend.yy",},"order":79,},
     {"id":{"name":"spr_playerV_revolverhold","path":"sprites/spr_playerV_revolverhold/spr_playerV_revolverhold.yy",},"order":80,},
     {"id":{"name":"spr_playerV_revolvershoot","path":"sprites/spr_playerV_revolvershoot/spr_playerV_revolvershoot.yy",},"order":81,},
+    {"id":{"name":"beach_5","path":"rooms/beach_5/beach_5.yy",},"order":14,},
     {"id":{"name":"spr_playerV_revolverslide","path":"sprites/spr_playerV_revolverslide/spr_playerV_revolverslide.yy",},"order":82,},
     {"id":{"name":"spr_playerV_revolverstart","path":"sprites/spr_playerV_revolverstart/spr_playerV_revolverstart.yy",},"order":83,},
     {"id":{"name":"spr_playerV_slipping","path":"sprites/spr_playerV_slipping/spr_playerV_slipping.yy",},"order":84,},
@@ -2048,6 +2049,7 @@
     {"id":{"name":"spr_playerPZ_parry2","path":"sprites/spr_playerPZ_parry2/spr_playerPZ_parry2.yy",},"order":96,},
     {"id":{"name":"spr_playerPZ_parry3","path":"sprites/spr_playerPZ_parry3/spr_playerPZ_parry3.yy",},"order":97,},
     {"id":{"name":"spr_playerPZ_angrymove","path":"sprites/spr_playerPZ_angrymove/spr_playerPZ_angrymove.yy",},"order":98,},
+    {"id":{"name":"roomt","path":"sprites/roomt/roomt.yy",},"order":223,},
     {"id":{"name":"spr_playerPZ_angryidle","path":"sprites/spr_playerPZ_angryidle/spr_playerPZ_angryidle.yy",},"order":99,},
     {"id":{"name":"spr_playerPZ_dashpad","path":"sprites/spr_playerPZ_dashpad/spr_playerPZ_dashpad.yy",},"order":100,},
     {"id":{"name":"spr_playerPZ_faceplant","path":"sprites/spr_playerPZ_faceplant/spr_playerPZ_faceplant.yy",},"order":101,},
@@ -3620,6 +3622,7 @@
     {"roomId":{"name":"beach_2","path":"rooms/beach_2/beach_2.yy",},},
     {"roomId":{"name":"beach_3","path":"rooms/beach_3/beach_3.yy",},},
     {"roomId":{"name":"beach_4","path":"rooms/beach_4/beach_4.yy",},},
+    {"roomId":{"name":"beach_5","path":"rooms/beach_5/beach_5.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
