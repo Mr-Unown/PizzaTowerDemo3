@@ -131,7 +131,12 @@ if (distance_to_object(player) < 50)
 		            _message = "WIP ROOF LEVEL"
 		            showtext = 1
 		            alarm[0] = 2
-			break;				
+			break;		
+			case "beach": 
+		            _message = "PINEAPPLE BEACH"
+		            showtext = 1
+		            alarm[0] = 2
+			break;
 			default: 
 					_message = "NONE"
 					showtext = 1
