@@ -1,5 +1,5 @@
-function scr_characterspr() {
-	switch character {
+function scr_characterspr(player_character = character) {
+	switch player_character {
 	    case "P": //The Fat Italian Hero
 	#region Peppino
 	    {

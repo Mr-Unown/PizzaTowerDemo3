@@ -10,8 +10,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "mu_entrancePZ",
-  "duration": 207.051529,
+  "soundFile": "mu_entrancePZ.ogg",
+  "duration": 200.72728,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

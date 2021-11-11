@@ -29,17 +29,17 @@ switch colorchannel
 {
 	case 0:
 	draw_x = 682
-	draw_y = 302 +  64
+	draw_y = 302 +  32
 	draw_color = c_red
 	break;
 	case 1:
 	draw_x = 682
-	draw_y = 350 +  64
+	draw_y = 350 +  32
 	draw_color = c_green
 	break;
 	case 2:
 	draw_x = 682
-	draw_y = 398 +  64
+	draw_y = 398 +  32
 	draw_color = c_blue
 	break;
 
@@ -48,7 +48,7 @@ switch colorchannel
 #endregion
 #region Better Code Pls
 #region Variables
-scr_getinput()
+//scr_getinput()
 player = obj_palettechanger.player
 var top_x = draw_x - sprite_get_xoffset(spr_palettechanger_scrollbar),top_y = draw_y - sprite_get_yoffset(spr_palettechanger_scrollbar), bottom_x = draw_x + sprite_get_xoffset(spr_palettechanger_scrollbar),bottom_y = draw_y + sprite_get_yoffset(spr_palettechanger_scrollbar);
 var _draw_x = top_x + 4
@@ -83,18 +83,23 @@ if (selected == 1)
 
 
 #region Text
-if mouse_check_button_pressed(mb_left) && selected = false && obj_palettechanger.stop = false
+if mouse_check_button_pressed(mb_left) && obj_palettechanger.stop = false && selected = false && input_text = false && obj_palettechanger.stop = false
 {
 	//if point_in_circle(_mouse_x, _mouse_y, button_x, draw_y, button_radius)
 	var _button_x = bottom_x + 8 + sprite_get_xoffset(spr_palettechanger_textbox);
     if point_in_rectangle(_mouse_x,_mouse_y,_button_x - sprite_get_xoffset(spr_palettechanger_textbox),draw_y - sprite_get_yoffset(spr_palettechanger_textbox),_button_x + sprite_get_xoffset(spr_palettechanger_textbox), draw_y + sprite_get_yoffset(spr_palettechanger_textbox))
+	{
         input_text = true
+		keyboard_lastchar = ""
+	}
 }
-if ((key_jump2 || keyboard_check_pressed(vk_return)) || key_slap2) && selected = false
+if ((player.key_jump2 || keyboard_check_pressed(vk_return)) || player.key_slap2) && selected = false && input_text = true
 {
 	input_text = false;
-	if key_jump2 || keyboard_check_pressed(vk_return)		 
+	if player.key_jump2 || keyboard_check_pressed(vk_return)		 
 		colorvalue = real(input)/255;
+	else
+		input = string(finalvalue);
 }
 if input_text = true
 {
