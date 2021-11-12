@@ -192,6 +192,7 @@ function scr_characterspr(player_character = character) {
 	    spr_boxxedintro = spr_boxxedpep_intro
 		spr_boxxeddashstart = spr_boxxedpep_dashstart
 		spr_boxxeddash = spr_boxxedpep_dash
+		spr_boxxedairstart = spr_boxxedpep_jumpstart
 	    spr_firemouthintro = spr_player_firemouthintro
 	    spr_firemouthend = spr_player_firemouthend
 	    spr_firemouth = spr_player_firemouth
