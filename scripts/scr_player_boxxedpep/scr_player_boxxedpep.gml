@@ -34,7 +34,7 @@ if (scr_solid((x + sign(hsp)), y) && xscale == -1 && move == -1 && (!place_meeti
     movespeed = 0
 if (grounded && input_buffer_jump < 8 && vsp > 0 && (!scr_solid(x, (y - 16))) && (!scr_solid(x, (y - 32))))
 {
-    scr_soundeffect(0)
+    scr_soundeffect(sfx_jump)
     instance_create(x, y, obj_highjumpcloud2)
     vsp = -11
 }
@@ -71,7 +71,7 @@ if ((!instance_exists(obj_cloudeffect)) && grounded && move != 0 && (sprite_inde
     instance_create(x, (y + 43), obj_cloudeffect)
 if (move != 0 && (floor(image_index) == 3 || floor(image_index) == 8) && steppy == 0)
 {
-    scr_soundeffect(29)
+    scr_soundeffect(sfx_step)
     steppy = 1
 }
 if (move != 0 && floor(image_index) != 3 && floor(image_index) != 8)
@@ -83,8 +83,8 @@ if (place_meeting(x, y, obj_spike) || place_meeting(x, y, obj_baddie))
     else
         obj_player.hsp = 5
     vsp = -3
-    scr_soundeffect(16)
-    scr_soundeffect(17)
+    scr_soundeffect(sfx_loseknight)
+    scr_soundeffect(sfx_bumpwall)
     image_index = 0
     obj_player.image_index = 0
     obj_player.flash = 1
