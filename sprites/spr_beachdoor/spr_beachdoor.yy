@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 0,
-  "bbox_right": 1023,
-  "bbox_top": 0,
-  "bbox_bottom": 1023,
+  "bbox_left": 20,
+  "bbox_right": 124,
+  "bbox_top": 12,
+  "bbox_bottom": 120,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 1024,
-  "height": 1024,
+  "width": 150,
+  "height": 150,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"5c65367e-95df-434a-aed9-a81ef6190e50","path":"sprites/spr_tile_beach/spr_tile_beach.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5c65367e-95df-434a-aed9-a81ef6190e50","path":"sprites/spr_tile_beach/spr_tile_beach.yy",},"LayerId":{"name":"cd4cb01d-9f2a-4ae1-9f97-f2b9facdd62f","path":"sprites/spr_tile_beach/spr_tile_beach.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_tile_beach","path":"sprites/spr_tile_beach/spr_tile_beach.yy",},"resourceVersion":"1.0","name":"5c65367e-95df-434a-aed9-a81ef6190e50","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"5b5c44a6-d0e2-44dd-b21e-9fe58afec52c","path":"sprites/spr_beachdoor/spr_beachdoor.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"5b5c44a6-d0e2-44dd-b21e-9fe58afec52c","path":"sprites/spr_beachdoor/spr_beachdoor.yy",},"LayerId":{"name":"7204919c-35f5-4c14-afed-0e37a6471f42","path":"sprites/spr_beachdoor/spr_beachdoor.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_beachdoor","path":"sprites/spr_beachdoor/spr_beachdoor.yy",},"resourceVersion":"1.0","name":"5b5c44a6-d0e2-44dd-b21e-9fe58afec52c","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_tile_beach","path":"sprites/spr_tile_beach/spr_tile_beach.yy",},
+    "spriteId": {"name":"spr_beachdoor","path":"sprites/spr_beachdoor/spr_beachdoor.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"ad618565-77f1-42e7-b247-4dd7e13db0a1","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5c65367e-95df-434a-aed9-a81ef6190e50","path":"sprites/spr_tile_beach/spr_tile_beach.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"09b0ee32-f76a-4309-8172-fcf7f360eb6d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5b5c44a6-d0e2-44dd-b21e-9fe58afec52c","path":"sprites/spr_beachdoor/spr_beachdoor.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_tile_beach","path":"sprites/spr_tile_beach/spr_tile_beach.yy",},
+    "parent": {"name":"spr_beachdoor","path":"sprites/spr_beachdoor/spr_beachdoor.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_tile_beach",
+    "name": "spr_beachdoor",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"cd4cb01d-9f2a-4ae1-9f97-f2b9facdd62f","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"7204919c-35f5-4c14-afed-0e37a6471f42","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_tile_beach",
+  "name": "spr_beachdoor",
   "tags": [],
   "resourceType": "GMSprite",
 }
