@@ -58,6 +58,8 @@ showcollisionarray[i++] = obj_secretblock2;
 showcollisionarray[i++] = obj_secretmetalblock;
 showcollisionarray[i++] = obj_crashplaneblock;
 showcollisionarray[i++] = obj_pitcollider;
+showcollisionarray[i++] = obj_eventtrigger;
+
 //showcollisionarray[i++] = obj_precise_tile_checker;
 
 //Funny Cursor
