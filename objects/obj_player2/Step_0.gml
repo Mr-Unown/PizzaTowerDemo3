@@ -1,4 +1,4 @@
-scr_playerstate()
+scr_playerstep()
 //No more Shadows
 if image_blend != make_colour_hsv(0, 0, 255) && state != states.comingoutdoor {
 	image_blend = make_colour_hsv(0, 0, 255)
