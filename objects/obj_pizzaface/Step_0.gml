@@ -25,7 +25,7 @@ if relax = false && global.freezeframe = false && room != rank_room && !instance
 			{
 				#region Timesup
 
-				with obj_player
+				with obj_player1
 				{
 					if room != timesuproom
 					{

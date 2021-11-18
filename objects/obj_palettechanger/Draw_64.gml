@@ -5,6 +5,10 @@ draw_set_alpha(0.5)
 draw_rectangle_color(-32, -32, 992, 572, c_black, c_black, c_black, c_black, 0)
 draw_set_alpha(1)
 
+//Export and Import Buttons
+draw_sprite_ext(spr_palettechanger_import,ImportButton.activated,ImportButton.xpos,ImportButton.ypos,1,1,0,c_white,1);
+draw_sprite_ext(spr_palettechanger_export,ExportButton.activated,ExportButton.xpos,ExportButton.ypos,1,1,0,c_white,1);
+
 if !surface_exists(surface) 
 {
 	surface = surface_create(2,10);

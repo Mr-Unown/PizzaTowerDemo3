@@ -4,3 +4,5 @@ vsp = random_range(-1,-1.5)
 xoffset = 0;
 drawx = x;
 depth = -11
+strength = irandom_range(0,16);
+time = irandom_range(3,6);

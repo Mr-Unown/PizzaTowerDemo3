@@ -1,5 +1,21 @@
 function scr_player_tackle() {
-	#region Movespeed
+	switch substate
+	{
+		default:
+			scr_player_substate_tackle()
+		break;
+		case 1:
+			scr_player_substate_bounce()
+		break;
+		
+	}
+
+}
+
+
+function scr_player_substate_tackle()
+{
+		#region Movespeed
 	    if (character == "P")
 	    {
 	        if (movespeed < 10 && grounded)
@@ -92,5 +108,27 @@ function scr_player_tackle() {
 	    movespeed = clamp((movespeed - slowdownspeed) + 5,5,15)
 	}
     suplexdashtimer += 0.35
+}
+
+function scr_player_substate_bounce()
+{
+	hsp = -xscale * movespeed
+	movespeed = approach(movespeed,0,0.25)
+	combo = 0
+	mach2 = 0
+	start_running = 1
+	jumpAnim = 1
+	dashAnim = 1
+	landAnim = 0
+	moveAnim = 1
+	stopAnim = 1
+	crouchslideAnim = 1
+	crouchAnim = 1
+	if (floor(image_index) >= (image_number - 1))
+	{
+	    state = states.normal
+		substate = 0;
+	}
+	image_speed = 0.35
 
 }
