@@ -141,11 +141,11 @@ if (global.panic == 0 && global.snickchallenge == 0)
         }
     }
 	
-    if (string_letters(roomname) == "desert" && global.desertnight != 1)
+    if (string_letters(roomname) == "desert" || string_letters(roomname) == "olddesert")
     {
         for (i = 0; i < 20; i++)
         {
-            if (roomname == ("desert_" + string(i)) && i <= 14)
+            if (roomname == ("desert_" + string(i)) && i <= 14) || (roomname == ("old_desert_" + string(i)) && i <= 14)
             {
                 if (!audio_is_playing(mu_desert))
                 {
@@ -155,7 +155,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
                     pausedmusic = mu_desert
                 }
             }
-            else if (roomname == ("desert_" + string(i)) && i > 14)
+            else if (roomname == ("desert_" + string(i)) && i > 14) || (roomname == ("old_desert_" + string(i)) && i > 14)
             {
                 if (!audio_is_playing(mu_ufo))
                 {
@@ -167,6 +167,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
             }
         }
     }
+	/*
     if (string_letters(roomname) == "desert" && global.desertnight == 1)
     {
         for (i = 0; i < 20; i++)
@@ -192,7 +193,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
                 }
             }
         }
-    }
+    }*/
 /*    if (string_letters(roomname) == "factory")
     {
         for (i = 0; i < 20; i++)

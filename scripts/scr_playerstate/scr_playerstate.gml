@@ -116,7 +116,8 @@ function scr_playerstate() {
 	} 
 	//I made some changes to it so that we can know at a glance what number it gets converted to.
 #endregion
-
+if actor = false
+{
 	switch state
 	{
 	    case 0:
@@ -447,6 +448,11 @@ function scr_playerstate() {
 	        scr_player_taxi()
 	        break
 	}
+}
+else if actor = true
+{
+	scr_player_actor();
+}
 #endregion
 	#region Jump Height
 	/*
@@ -745,4 +751,13 @@ function scr_playerstate() {
 			instakillmove = 0
 		}
 	}
+}
+//Wow
+scr_collide_destructibles()
+if actor = false
+{
+	if (state != 8 && state != 109 && state != 78 && state != 63 && state != 4 && state != 61 && state != 88 && state != 56 && state != 64 && state != 19 && state != 36 && state != 23 && state != 55)
+	    scr_collide_player()
+	if (state == 88)
+	   scr_collide_player()
 }
