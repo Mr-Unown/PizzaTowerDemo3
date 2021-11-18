@@ -34,7 +34,7 @@ switch playerid.character
 	break;
 	
 }
-depth = -19
+depth = -1
 image_index = random_range(0, image_number);
 image_speed = 0
 image_angle = irandom_range(0, 360)
