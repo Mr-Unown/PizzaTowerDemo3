@@ -17,8 +17,8 @@
   "width": 960,
   "height": 528,
   "textureGroupId": {
-    "name": "Entrance",
-    "path": "texturegroups/Entrance",
+    "name": "Ancient",
+    "path": "texturegroups/Ancient",
   },
   "swatchColours": null,
   "gridX": 0,

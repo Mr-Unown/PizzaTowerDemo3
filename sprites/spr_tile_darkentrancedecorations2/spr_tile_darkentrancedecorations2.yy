@@ -17,19 +17,19 @@
   "width": 1056,
   "height": 1092,
   "textureGroupId": {
-    "name": "Entrance",
-    "path": "texturegroups/Entrance",
+    "name": "Ancient",
+    "path": "texturegroups/Ancient",
   },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"367b0335-245a-47c5-9924-023b8e2c7dcb","path":"sprites/spr_tile_entrancedecorations2/spr_tile_entrancedecorations2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"367b0335-245a-47c5-9924-023b8e2c7dcb","path":"sprites/spr_tile_entrancedecorations2/spr_tile_entrancedecorations2.yy",},"LayerId":{"name":"b13e388c-236f-4dbb-8963-bbc9b35f936c","path":"sprites/spr_tile_entrancedecorations2/spr_tile_entrancedecorations2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_tile_entrancedecorations2","path":"sprites/spr_tile_entrancedecorations2/spr_tile_entrancedecorations2.yy",},"resourceVersion":"1.0","name":"367b0335-245a-47c5-9924-023b8e2c7dcb","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"367b0335-245a-47c5-9924-023b8e2c7dcb","path":"sprites/spr_tile_darkentrancedecorations2/spr_tile_darkentrancedecorations2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"367b0335-245a-47c5-9924-023b8e2c7dcb","path":"sprites/spr_tile_darkentrancedecorations2/spr_tile_darkentrancedecorations2.yy",},"LayerId":{"name":"b13e388c-236f-4dbb-8963-bbc9b35f936c","path":"sprites/spr_tile_darkentrancedecorations2/spr_tile_darkentrancedecorations2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_tile_darkentrancedecorations2","path":"sprites/spr_tile_darkentrancedecorations2/spr_tile_darkentrancedecorations2.yy",},"resourceVersion":"1.0","name":"367b0335-245a-47c5-9924-023b8e2c7dcb","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_tile_entrancedecorations2","path":"sprites/spr_tile_entrancedecorations2/spr_tile_entrancedecorations2.yy",},
+    "spriteId": {"name":"spr_tile_darkentrancedecorations2","path":"sprites/spr_tile_darkentrancedecorations2/spr_tile_darkentrancedecorations2.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"4dda88ab-4b67-4adf-aaeb-9c77f5ee47bb","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"367b0335-245a-47c5-9924-023b8e2c7dcb","path":"sprites/spr_tile_entrancedecorations2/spr_tile_entrancedecorations2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"f453fd1b-ba69-4c98-90ff-14593a098cd1","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"367b0335-245a-47c5-9924-023b8e2c7dcb","path":"sprites/spr_tile_darkentrancedecorations2/spr_tile_darkentrancedecorations2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_tile_entrancedecorations2","path":"sprites/spr_tile_entrancedecorations2/spr_tile_entrancedecorations2.yy",},
+    "parent": {"name":"spr_tile_darkentrancedecorations2","path":"sprites/spr_tile_darkentrancedecorations2/spr_tile_darkentrancedecorations2.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_tile_entrancedecorations2",
+    "name": "spr_tile_darkentrancedecorations2",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -73,7 +73,7 @@
     "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_tile_entrancedecorations2",
+  "name": "spr_tile_darkentrancedecorations2",
   "tags": [],
   "resourceType": "GMSprite",
 }
