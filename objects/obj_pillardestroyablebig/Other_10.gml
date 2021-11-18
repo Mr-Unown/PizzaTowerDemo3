@@ -12,13 +12,14 @@ if(obj_player.state == 22 || obj_player.state == 70)
 					if (hp <= 1)
 						instance_destroy()
 					if (hp > 1)
-						hp--
+						hp -= 1
 				}
 				sprite_index = choose(spr_suplexmash1, spr_suplexmash2, spr_suplexmash3, spr_suplexmash4, spr_punch)
 				suplexdashtimer = image_index;
 				image_index = 0
-				state = 72
-				hsp = (-3.2 * xscale)
+				state = states.tackle;
+				substate = 1;
+				movespeed = 3;
 				vsp = -3
 			}
 		}

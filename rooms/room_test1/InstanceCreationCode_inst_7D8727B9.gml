@@ -5,6 +5,7 @@ condition = function()
 }
 output = function()
 {
-	with inst_33E76174
+	with obj_secreteye
 		activated = true
+	instance_create(x,y,obj_safeexplosion)
 }

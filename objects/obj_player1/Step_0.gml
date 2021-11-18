@@ -1,4 +1,4 @@
-scr_playerstate()
+scr_playerstep()
 
 //Heat Meter
 var style = (global.heatmeteroption == true ? global.stylethreshold : 0)
