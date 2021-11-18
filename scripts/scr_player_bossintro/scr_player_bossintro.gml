@@ -6,6 +6,7 @@ function scr_player_bossintro() {
 	if (sprite_index == spr_bossintro && floor(image_index) == (image_number - 1))
 	{
 	    state = 0
+		movespeed = 0
 	    image_index = 0
 	}
 	if (sprite_index == spr_player_levelcomplete && floor(image_index) == (image_number - 1))

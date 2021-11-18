@@ -32,6 +32,21 @@ if active = true
 			break;
 			
 			
+			case "instance_create": //Create object
+				if DEBUG {
+				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = 0 else arg1 = ds_list_find_value(_commands, 1)
+				var arg2 if ds_list_find_value(_commands, 2) == undefined arg2 = 0 else arg2 = ds_list_find_value(_commands, 2)
+				var arg3 if ds_list_find_value(_commands, 3) == undefined arg3 = 0 else arg3 = ds_list_find_value(_commands, 3)
+				if asset_get_type(arg1) = asset_object
+				{
+					objectarray = asset_get_index(arg1)
+					objectx = arg2
+					objecty = arg3
+					with(instance_create(objectx, objecty, objectarray))
+						depth = 0
+				}
+			} break
+			
 			case "help":
 			var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = 0 else arg1 = ds_list_find_value(_commands, 1)
 			var page = clamp(real(string_digits(arg1)),1,pagenumber)

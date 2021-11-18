@@ -103,7 +103,7 @@ function scr_player_Sjump() {
 	        with (instance_create(x, y, obj_jumpdust))
 	            image_xscale = other.xscale
 		}	
-	    else if (key_attack2) && !(character == "N" && pogo = true) && jetpacking = false
+	    else if (key_attack2) && character != "P" && !(character == "N" && pogo = true) && jetpacking = false
 	    {
 			jetpacking = false
 	        if (move != 0)
@@ -114,6 +114,20 @@ function scr_player_Sjump() {
 	        flash = 1
 	        image_index = 0
 	        sprite_index = spr_mach3dashpad
+	        with (instance_create(x, y, obj_jumpdust))
+	            image_xscale = other.xscale
+	    }	
+	    else if (key_attack2) && character == "P"
+	    {
+			jetpacking = false
+	        if (move != 0)
+	            xscale = move
+	        movespeed = 12
+	        machhitAnim = 0
+	        state = states.jetpackstart
+	        flash = 1
+	        image_index = 0
+	        sprite_index = spr_player_sjumpcancelprep
 	        with (instance_create(x, y, obj_jumpdust))
 	            image_xscale = other.xscale
 	    }	
