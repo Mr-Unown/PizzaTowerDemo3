@@ -1,5 +1,3 @@
-function scr_playerstate() {
-#region Enum and State
 #region Enum
 	enum states
 	{
@@ -116,6 +114,11 @@ function scr_playerstate() {
 	} 
 	//I made some changes to it so that we can know at a glance what number it gets converted to.
 #endregion
+function scr_playerstep() {
+	
+if actor = false
+{
+#region States
 
 	switch state
 	{
@@ -447,7 +450,16 @@ function scr_playerstate() {
 	        scr_player_taxi()
 	        break
 	}
+
 #endregion
+}
+else if actor = true
+{
+	scr_player_actor();
+}
+
+
+
 	#region Jump Height
 	/*
 	var _jumpheight = 0;
@@ -493,10 +505,16 @@ function scr_playerstate() {
 		}
 	}
 
-	#region Slope Angles
+	//Up Arrow
+	if (((place_meeting(x, y, obj_door) && (!place_meeting(x, y, obj_doorblocked))) || place_meeting(x, y, obj_olddresser) || place_meeting(x, y, obj_optionsdoor) || place_meeting(x, y, obj_dresser) || place_meeting(x,y, obj_door2) || place_meeting(x,y,obj_geromedoor) || place_meeting(x, y, obj_hatstand) || place_meeting(x, y, obj_snick) || place_meeting(x, y, obj_keydoor) || (place_meeting(x, y, obj_exitgate) && (global.panic == 1 || global.snickchallenge == true))) && (!instance_exists(uparrowid)) && scr_solid(x, (y + 1)) && state == 0 && obj_player1.spotlight == 1)
+	{
+		with (instance_create(x, y, obj_uparrow))
+		{
+			other.uparrowid = id
+	        playerid = other.object_index
+		}
+	}	
 
-	//Angle Strength
-	var subtle_var = 5;
 #region State Stuff
 	switch state
 	{
@@ -531,13 +549,15 @@ function scr_playerstate() {
 	}
 #endregion
 
-#endregion Slope Angles
+#region Slope Angles
+	//Angle Strength
+	var subtle_var = 5;
 	if global.freezeframe = false && sprite_index != spr_knightpepdownslope && place_meeting(x,y+1,obj_slope) && vsp >= 0 
 	{
 	    with instance_place(x,y + 1,obj_slope)
 	    {
 	        var flip = sign(image_xscale) = -1 ? 180 : 0
-	        other.draw_angle = ( (approach(other.draw_angle,(point_direction(x,y + sprite_height,x + sprite_width,y) - flip),32)) / (subtle_var) );
+	        other.draw_angle = ( (approach(other.draw_angle,(point_direction(x,y + sprite_height,x + sprite_width,y) - flip),16)) / (subtle_var) );
 	    }
 	}
 	else if global.freezeframe = false
@@ -682,8 +702,22 @@ function scr_playerstate() {
 		show_tricks = false;
 		tricksperformed = 0;
 	}
-	//Mach 3 Effect
+
 	if global.freezeframe = false {
+
+
+	//Topping trail
+	if (toomanytoppings > 0)
+	    toomanytoppings -= 0.85
+	if ((toomanytoppings <= 0) && ((state == 91) && (mach2 >= 100))) && global.panic == true
+	{
+	    with instance_create(x, (y + 17), obj_toppingtrail)
+		{
+			playerid = other.id
+		}
+	    toomanytoppings = 6
+	}
+	//Mach 3 Effect
 	if ((state == 91 || state == states.Sjump || state == states.breakdance || (state != 51 && (sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump))  || (pogomovespeed >= 12  && state == states.pogo) ||state == states.jetpack || (state == 109 && instance_exists(obj_player2) && obj_player2.state == 91) || state == 114 || state == 70 || state == 17 || state == 9 || state == 37 || state == 10 || state == 22 || state == 71 || pogojetcharge = true) && macheffect == 0)
 	{
 	    macheffect = 1
@@ -713,17 +747,7 @@ function scr_playerstate() {
 	        toomuchalarm1 = 6
 	    }
 	}
-	
-	//Topping trail
-	if (toomanytoppings > 0)
-	    toomanytoppings -= 0.8
-	if ((toomanytoppings <= 0) && ((state == 91) && (mach2 >= 100)))
-	{
-	    instance_create(x, (y + 17), obj_toppingtrail)
-	    toomanytoppings = 6
-	}
-	
-	}
+
 	//Instakill Move
 	if global.freezeframe = false
 	{
@@ -731,7 +755,15 @@ function scr_playerstate() {
 			instakillmove = 1
 		else if state != states.frozen
 			instakillmove = 0
+		}
 	}
-
-
+	//Wow
+	scr_collide_destructibles()
+	if actor = false
+	{
+		if (state != 8 && state != 109 && state != 78 && state != 63 && state != 4 && state != 61 && state != 88 && state != 56 && state != 64 && state != 19 && state != 36 && state != 23 && state != 55)
+		    scr_collide_player()
+		if (state == 88)
+		   scr_collide_player()
+	}	
 }

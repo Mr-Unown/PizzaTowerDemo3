@@ -1,12 +1,11 @@
-function scr_characterspr() {
-	switch character {
+function scr_characterspr(player_character = character) {
+	switch player_character {
 	    case "P": //The Fat Italian Hero
 	#region Peppino
 	    {
 		selectedcharacter = 0;
 		#region TV Sprites
 		spr_playertv_bomb = spr_tv_bombpep;
-		spr_playertv_boxxed = spr_tv_boxxed;
 		spr_playertv_fireass = spr_tv_fireass;
 		spr_playertv_knight = spr_tv_knight;
 		spr_playertv_tumble = spr_tv_tumble;
@@ -191,8 +190,6 @@ function scr_characterspr() {
 	    spr_boxxedwalk = spr_boxxedpep_walk
 	    spr_boxxedidle = spr_boxxedpep_idle
 	    spr_boxxedintro = spr_boxxedpep_intro
-		spr_boxxeddashstart = spr_boxxedpep_dashstart
-		spr_boxxeddash = spr_boxxedpep_dash
 	    spr_firemouthintro = spr_player_firemouthintro
 	    spr_firemouthend = spr_player_firemouthend
 	    spr_firemouth = spr_player_firemouth
@@ -424,8 +421,6 @@ function scr_characterspr() {
 	    spr_boxxedwalk = spr_boxxednoise_walk
 	    spr_boxxedidle = spr_boxxednoise_idle
 	    spr_boxxedintro = spr_boxxednoise_intro
-		spr_boxxeddash = spr_boxxednoise_dash
-		spr_boxxeddashstart = spr_boxxednoise_dashstart
 	    spr_firemouthintro = spr_playerN_firemouthintro
 	    spr_firemouthend = spr_playerN_firemouthend
 	    spr_firemouth = spr_playerN_firemouth

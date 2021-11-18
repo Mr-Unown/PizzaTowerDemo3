@@ -4,7 +4,7 @@ function scr_hurtplayer(argument0) {
 	    if ((state == 24 || state == 25 || state == 18) && cutscene == 0)
 	    {
 	    }
-	    else if (state == 27 && hurted == 0)
+	    else if (state == 27 && hurted == 0) || actor = true
 	    {
 	    }
 		else if state = states.newbomb

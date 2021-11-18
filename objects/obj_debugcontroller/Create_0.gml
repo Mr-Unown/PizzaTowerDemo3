@@ -8,6 +8,9 @@ inputmax = 2
 deletebuffer = 6
 deletemax = 6
 arrayi = 0
+objectarray = 0
+objectx = 0
+objecty = 0
 //This is for listing commands and functions, all the adding is done with end step.
 //Items in brackets are required
 //Items in parentheses are optional
@@ -20,10 +23,12 @@ commands[arrayi++] = "escape [minutes] [seconds]"
 commands[arrayi++] = "togglecollision (true/false)"
 commands[arrayi++] = "debugmode (true/false)"
 commands[arrayi++] = "newtitlescreen (true/false)"
+commands[arrayi++] = "newsjumpcancel (true/false)"
 if DEBUG 
 {
 	commands[arrayi++] = "changecharacter [player] [character] (true/false)"
 	commands[arrayi++] = "room_goto [roomname] [targetdoor]"
+	commands[arrayi++] = "instance_create [object] [x] [y]"
 }
 
 

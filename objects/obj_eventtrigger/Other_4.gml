@@ -1,5 +1,8 @@
-if ds_list_find_index(global.saveroom, id) != -1
+if (ds_list_find_index(flags.saveroom, id) != -1)
 {
-	output();
-	instance_destroy()
+    if flags.do_once_per_save != false
+    {
+		output();
+		activated = true;
+    }
 }

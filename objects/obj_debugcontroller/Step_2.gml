@@ -32,6 +32,21 @@ if active = true
 			break;
 			
 			
+			case "instance_create": //Create object
+				if DEBUG {
+				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = 0 else arg1 = ds_list_find_value(_commands, 1)
+				var arg2 if ds_list_find_value(_commands, 2) == undefined arg2 = 0 else arg2 = ds_list_find_value(_commands, 2)
+				var arg3 if ds_list_find_value(_commands, 3) == undefined arg3 = 0 else arg3 = ds_list_find_value(_commands, 3)
+				if asset_get_type(arg1) = asset_object
+				{
+					objectarray = asset_get_index(arg1)
+					objectx = arg2
+					objecty = arg3
+					with(instance_create(objectx, objecty, objectarray))
+						depth = 0
+				}
+			} break
+			
 			case "help":
 			var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = 0 else arg1 = ds_list_find_value(_commands, 1)
 			var page = clamp(real(string_digits(arg1)),1,pagenumber)
@@ -135,7 +150,20 @@ if active = true
 						state = states.titlescreen;
 					}
 				}
-				break;				
+				break;		
+			case "newsjumpcancel": //Switches Sjumpcancel
+				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.newhud else arg1 = ds_list_find_value(_commands, 1)	
+				switch arg1
+				{
+					case "true": arg1 = true
+					case "false": arg1 = false
+					default: arg1 = !global.newsjumpcancel
+				}
+				global.newsjumpcancel = arg1
+				ini_open("saveData.ini")
+				ini_write_real("Option", "newsjumpcancel", arg1);
+				ini_close()
+				break;					
 			case "debugmode": //Could probably use optimization
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.debugmode else arg1 = ds_list_find_value(_commands, 1)
 				switch arg1

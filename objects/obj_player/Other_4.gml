@@ -1,6 +1,6 @@
 
 if vertical = 1
-	knightmaxy = knightroomy - (room_height * sign(hallwaydirection));
+	knightmaxy = knightroomy - (room_height * sign(hallwaydirection));	
 var yoffset = 160
 
 switch current_month
@@ -281,6 +281,8 @@ with (obj_destroyable2_bigescape)
                     x = (obj_doorA.x + 32)
                 else if (portal == 1)
                     x = (obj_doorA.x + 16)
+                else if (secreteye == 1)
+                    x = (obj_doorA.x + 16)					
                 else if (vertical == 1)
                     x = (obj_doorA.x + verticaloffset)
                 else
@@ -297,6 +299,8 @@ with (obj_destroyable2_bigescape)
                 else if (box == 1)
                     x = (obj_doorB.x + 32)
                 else if (portal == 1)
+                    x = (obj_doorB.x + 16)
+                else if (secreteye == 1)					
                     x = (obj_doorB.x + 16)
                 else if (vertical == 1)
                     x = (obj_doorB.x + verticaloffset)
@@ -315,6 +319,8 @@ with (obj_destroyable2_bigescape)
                     x = (obj_doorC.x + 32)
                 else if (portal == 1)
                     x = (obj_doorC.x + 16)
+                else if (secreteye == 1)					
+                    x = (obj_doorC.x + 16)
                 else if (vertical == 1)
                     x = (obj_doorC.x + verticaloffset)
                 else
@@ -331,6 +337,8 @@ with (obj_destroyable2_bigescape)
                 else if (box == 1)
                     x = (obj_doorD.x + 32)
                 else if (portal == 1)
+                    x = (obj_doorD.x + 16)
+                else if (secreteye == 1)					
                     x = (obj_doorD.x + 16)
                 else if (vertical == 1)
                     x = (obj_doorD.x + verticaloffset)
@@ -349,6 +357,8 @@ with (obj_destroyable2_bigescape)
                     x = (obj_doorE.x + 32)
                 else if (portal == 1)
                     x = (obj_doorE.x + 16)
+                else if (secreteye == 1)					
+                    x = (obj_doorE.x + 16)
                 else if (vertical == 1)
                     x = (obj_doorE.x + verticaloffset)
                 else
@@ -366,6 +376,8 @@ with (obj_destroyable2_bigescape)
                     x = (obj_doorF.x + 32)
                 else if (portal == 1)
                     x = (obj_doorF.x + 16)
+                else if (secreteye == 1)					
+                    x = (obj_doorF.x + 16)
                 else if (vertical == 1)
                     x = (obj_doorF.x + verticaloffset)
                 else
@@ -382,6 +394,8 @@ with (obj_destroyable2_bigescape)
                 else if (box == 1)
                     x = (obj_doorG.x + 32)
                 else if (portal == 1)
+                    x = (obj_doorG.x + 16)
+                else if (secreteye == 1)					
                     x = (obj_doorG.x + 16)
                 else if (vertical == 1)
                     x = (obj_doorG.x + verticaloffset)
@@ -417,6 +431,8 @@ with (obj_destroyable2_bigescape)
 					else if (box == 1)
 						x = (door.x + 32)
 					else if (portal == 1)
+						x = (door.x + 16)
+					else if (secreteye == 1)						
 						x = (door.x + 16)
 					else if (vertical == 1)
 						x = (door.x + verticaloffset)
@@ -464,7 +480,9 @@ with (obj_destroyable2_bigescape)
 			portal = 0
         }
     }
-	
+	if secreteye == true
+		substate = "secret_out"
+	secreteye = 0 
     vertical = 0
     hallway = 0
     box = 0
@@ -501,6 +519,8 @@ if (object_index == obj_player2)
                     x = (obj_doorA.x + 32)
                 else if (portal == 1)
                     x = (obj_doorA.x + 16)
+                else if (secreteye == 1)
+                    x = (obj_doorA.x + 16)					
                 else if (vertical == 1)
                     x = (obj_doorA.x + verticaloffset)
                 else
@@ -517,6 +537,8 @@ if (object_index == obj_player2)
                 else if (box == 1)
                     x = (obj_doorB.x + 32)
                 else if (portal == 1)
+                    x = (obj_doorB.x + 16)
+                else if (secreteye == 1)					
                     x = (obj_doorB.x + 16)
                 else if (vertical == 1)
                     x = (obj_doorB.x + verticaloffset)
@@ -535,6 +557,8 @@ if (object_index == obj_player2)
                     x = (obj_doorC.x + 32)
                 else if (portal == 1)
                     x = (obj_doorC.x + 16)
+                else if (secreteye == 1)					
+                    x = (obj_doorC.x + 16)
                 else if (vertical == 1)
                     x = (obj_doorC.x + verticaloffset)
                 else
@@ -551,6 +575,8 @@ if (object_index == obj_player2)
                 else if (box == 1)
                     x = (obj_doorD.x + 32)
                 else if (portal == 1)
+                    x = (obj_doorD.x + 16)
+                else if (secreteye == 1)					
                     x = (obj_doorD.x + 16)
                 else if (vertical == 1)
                     x = (obj_doorD.x + verticaloffset)
@@ -569,6 +595,8 @@ if (object_index == obj_player2)
                     x = (obj_doorE.x + 32)
                 else if (portal == 1)
                     x = (obj_doorE.x + 16)
+                else if (secreteye == 1)					
+                    x = (obj_doorE.x + 16)
                 else if (vertical == 1)
                     x = (obj_doorE.x + verticaloffset)
                 else
@@ -585,6 +613,8 @@ if (object_index == obj_player2)
                 else if (box == 1)
                     x = (obj_doorF.x + 32)
                 else if (portal == 1)
+                    x = (obj_doorF.x + 16)
+                else if (secreteye == 1)					
                     x = (obj_doorF.x + 16)
                 else if (vertical == 1)
                     x = (obj_doorF.x + verticaloffset)
@@ -603,6 +633,8 @@ if (object_index == obj_player2)
                     x = (obj_doorG.x + 32)
                 else if (portal == 1)
                     x = (obj_doorG.x + 16)
+                else if (secreteye == 1)					
+                    x = (obj_doorG.x + 16)
                 else if (vertical == 1)
                     x = (obj_doorG.x + verticaloffset)
                 else
@@ -611,7 +643,7 @@ if (object_index == obj_player2)
 				y = (obj_doorG.y + hallwaydirection * yoffset)
 				else					
                 y = (obj_doorG.y - 14)
-            }						
+            }			
 			else if (targetDoor = "start")
             {
 				if (global.coop == 0)
@@ -638,14 +670,16 @@ if (object_index == obj_player2)
 						x = (door.x + 32)
 					else if (portal == 1)
 						x = (door.x + 16)
+					else if (secreteye == 1)						
+						x = (door.x + 16)
 					else if (vertical == 1)
 						x = (door.x + verticaloffset)
 					else
 						x = (door.x + 16)
 					if vertical == 1
-					y = (door.y + hallwaydirection * yoffset)
+						y = (door.y + hallwaydirection * yoffset)
 					else						
-					y = (door.y - 14)
+						y = (door.y - 14)
 				}
 				else
 					show_debug_message("Cannot find Subtitute Door")
@@ -684,17 +718,9 @@ if (object_index == obj_player2)
 			portal = 0
         }
     }
-	if vertical = 1
-	{
-		if hallwaydirection >= 1
-		{
-			knightmaxy = knightroomy  - room_height;
-		}
-		else
-		{
-			knightmaxy = knightroomy  + room_height;
-		}
-	}	
+	if secreteye == true
+		substate = "secret_out"	
+	secreteye = 0 
     vertical = 0
     hallway = 0
     box = 0
