@@ -1,4 +1,8 @@
 function scr_playercreate() {
+	//Wow
+	scale = 1;
+	secreteye = false;
+	actor = false;
 	//Jump Height Trolling
 	jumpheight = -11;
 	in_water = false;
@@ -8,6 +12,8 @@ function scr_playercreate() {
 	substate = 0;
 	//Suplex
 	suplexdashtimer = 0;
+	//Newsjumpcancel
+	global.newsjumpcancel = false
 	//global.wateralpha = 0.85
 	global.storedtaminute = 0;
 	global.storedtasecond = 0;

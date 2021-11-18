@@ -103,7 +103,7 @@ function scr_player_Sjump() {
 	        with (instance_create(x, y, obj_jumpdust))
 	            image_xscale = other.xscale
 		}	
-	    else if (key_attack2) && character != "P" && !(character == "N" && pogo = true) && jetpacking = false
+	    else if (key_attack2) && (character != "P" || global.newsjumpcancel == false) && !(character == "N" && pogo = true) && jetpacking = false
 	    {
 			jetpacking = false
 	        if (move != 0)
@@ -117,7 +117,7 @@ function scr_player_Sjump() {
 	        with (instance_create(x, y, obj_jumpdust))
 	            image_xscale = other.xscale
 	    }	
-	    else if (key_attack2) && character == "P"
+	    else if (key_attack2) && (character == "P" && global.newsjumpcancel == true)
 	    {
 			jetpacking = false
 	        if (move != 0)
