@@ -11,8 +11,8 @@
   "tilevsep": 0,
   "spriteNoExport": false,
   "textureGroupId": {
-    "name": "Entrance",
-    "path": "texturegroups/Entrance",
+    "name": "Ancient",
+    "path": "texturegroups/Ancient",
   },
   "out_tilehborder": 2,
   "out_tilevborder": 2,
