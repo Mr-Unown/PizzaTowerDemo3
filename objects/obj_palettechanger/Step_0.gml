@@ -1,17 +1,7 @@
-stop = false; //For to Stop Fucking
-var _stop = false;
-with obj_palettechangerscrollbar
-{
-	if selected == true || input_text == true
-		_stop = true;
-}
-if input_text == true || _stop == true
-stop = true;
-
 #region Change Palette 
 
 //Change Palette Set to EDIT
-if player.key_right2 && stop == false
+if player.key_right2
 {
 	#region Save Palette to INI
 	ini_open("Custom/"+string(player.characters)+"_"+string(player.customsavedpalette)+"_palettes.ini")	
@@ -27,10 +17,6 @@ if player.key_right2 && stop == false
 		scr_playercolors();
 		customupdate = true;	
 	}
-	ini_open("Custom/"+string(player.characters)+"_"+string(player.customsavedpalette)+"_palettes.ini")
-	palettename = ini_read_string("General","PaletteName","Palette 1")		
-	ini_close()	
-	input = palettename
 	global.oldcolorchoosen = 0;
 	global.colorchoosen = 0;
 	with obj_palettechangerscrollbar
@@ -45,7 +31,7 @@ if player.key_right2 && stop == false
 	
 	#endregion
 }
-if -player.key_left2 && stop == false
+if -player.key_left2
 {
 	#region Save Palette to INI
 	ini_open("Custom/"+string(player.characters)+"_"+string(player.customsavedpalette)+"_palettes.ini")	
@@ -61,10 +47,6 @@ if -player.key_left2 && stop == false
 		scr_playercolors();
 		customupdate = true;	
 	}
-	ini_open("Custom/"+string(player.characters)+"_"+string(player.customsavedpalette)+"_palettes.ini")
-	palettename = ini_read_string("General","PaletteName","Palette 1")		
-	ini_close()	
-	input = palettename
 	global.oldcolorchoosen = 0;
 	global.colorchoosen = 0;
 	with obj_palettechangerscrollbar
@@ -103,22 +85,20 @@ if global.colorchoosen == global.oldcolorchoosen
 	color[global.colorchoosen] = make_color_rgb(slider[0].finalvalue,slider[1].finalvalue,slider[2].finalvalue)
 }
 //Change Palette to be changed
-if player.key_down2 && stop == false
+if player.key_down2 
 {
 
 	global.oldcolorchoosen = clamp(global.colorchoosen + 1,0,player.colorheight - 1)
 }
-else if player.key_up2 && stop == false
+else if player.key_up2
 {
 	global.oldcolorchoosen = clamp(global.colorchoosen - 1,0,player.colorheight - 1)
 }
 
 #endregion
 
-#region Get Out of Menu
-
-
-if (player.key_slap2 || keyboard_check_pressed(vk_return)) && stop == false && has_selectedoption <= 0
+//Get Out
+if (player.key_slap2 || keyboard_check_pressed(vk_return)) && has_selectedoption <= 0
 {
 	#region Save Palette to INI
 	ini_open("Custom/"+string(player.characters)+"_"+string(player.customsavedpalette)+"_palettes.ini")	
@@ -141,83 +121,14 @@ if (player.key_slap2 || keyboard_check_pressed(vk_return)) && stop == false && h
 	}
 	instance_destroy();
 }
-#endregion
-
-#region Export and Import
-
-#region Import
-if keyboard_check_pressed(vk_end)
-{
-	event_user(1);
-}
-#endregion
 
 
-#region Export
-if keyboard_check_pressed(vk_home)
-{
-	event_user(0);
-}
-#endregion
-
-
-#endregion
-
-#region Name Editing
-var _cam_x = camera_get_view_x(view_camera[0])
-var _cam_y = camera_get_view_y(view_camera[0])
-var _mouse_x = (mouse_x - _cam_x)
-var _mouse_y = (mouse_y - _cam_y)
-
-if mouse_check_button_pressed(mb_left) && input_text = false && stop = false
-{
-    if point_in_rectangle(_mouse_x,_mouse_y,480 - 147,yi - 43,480 + 147,yi + 43) && yi <= 500
-	{
-        input_text = true;	
-		keyboard_string = ""
-		input = palettename;
-	}
-	//draw_sprite_ext(spr_palettechanger_textbox,input_text,480,yi,5,1,0,c_white,1);
-}
-if ( (player.key_jump2 || keyboard_check_pressed(vk_return) ) || player.key_slap2) && input_text = true
-{
-	input_text = false;
-	if player.key_jump2 || keyboard_check_pressed(vk_return)	
-	{
-		palettename = string(input);
-		ini_open("Custom/"+string(player.characters)+"_"+string(player.customsavedpalette)+"_palettes.ini")	
-		ini_write_string("General","PaletteName",string(palettename));
-		ini_close()
-	}
-	else
-		input = palettename;
-}
-if input_text = true
-{
-	if keyboard_check(vk_anykey) && inputbuffer = 0
-	{
-		input += keyboard_string
-		keyboard_string = ""
-		inputbuffer = inputmax
-	}
-	
-	if keyboard_check(vk_backspace) && deletebuffer = 0
-	{
-		input = string_delete(input, string_length(input), 1)
-		deletebuffer = deletemax
-	}
-}
-#endregion
-
-#region Misc
-#region Showtext
-yi = approach(yi,500,5)
 if (showtext == true)
 {
 	if choosen = false
 	{
 		_message = store_message[_messageindex]
-		if _messageindex < array_length(store_message) - 1
+		if _messageindex < 3
 			_messageindex += 1
 		else
 			_messageindex = 0
@@ -238,10 +149,3 @@ if (showtext == false)
 		_draw_y = -64
 	}
 }
-#endregion
-var _sprite = player.spr_playertv_normal;
-if floor(image_idnex) >= sprite_get_number(_sprite) - 1
-image_idnex = 0
-else
-image_idnex += 0.35
-#endregion
