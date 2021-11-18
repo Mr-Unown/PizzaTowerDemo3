@@ -5,6 +5,7 @@ scr_initinput()
 scr_playercreate()
 
 //CustomPaletteChoosyFILE
+actor = false;
 customsavedpalette = 1;
 oldcustomsavedpalette = 1;
 characters = "Peppino"
