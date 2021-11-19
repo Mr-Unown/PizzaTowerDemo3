@@ -338,10 +338,6 @@ else if global.newhud = true && oldcharacter == player.character && (sprite_inde
 	#region NEW TV
 	switch(_state)
 	{
-		case states.boxxedpep:
-		newtvsprite = player.spr_playertv_boxxed;
-		channel = 6;
-		break;
 		case states.keyget:
 		case states.victory:
 		newtvsprite = player.spr_playertv_victory;
@@ -447,14 +443,7 @@ switch(obj_player.state)
 		scr_queue_message("At this point there is nothing you can do but hope to get bumped into a wall and not into a death trap!");
 		ds_list_add(global.saveroom, "tumble")
 	}	
-	break;	
-	case states.boxxedpep:
-	if ds_list_find_index(global.saveroom, "boxxed") = -1  
-	{
-		scr_queue_message("Lol he got flat.");
-		scr_queue_message("What a dumbass.");
-		ds_list_add(global.saveroom, "boxxed")
-	}	
+	break;		
 }
 #endregion
 //Sprite_index

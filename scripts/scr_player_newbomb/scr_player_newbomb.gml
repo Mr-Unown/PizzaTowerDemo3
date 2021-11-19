@@ -2,6 +2,9 @@
 function scr_player_newbomb() {
 	alarm[5] = 2
 	alarm[7] = 60
+	//Pause Combo in new bomb
+	global.pausecombotime = true
+	obj_tv.alarm[1] = 75	
 	hurted = 1
 	sprite_index = spr_hurt;
 	image_speed = 0.4;

@@ -17,7 +17,7 @@ with other.id
 				instance_destroy(other.id)
 			}
 			//Bomb Jump
-			if (state == states.freefall && (other.x >= x - 45 && other.x <= x + 45)  && y <= other.y && other.grounded == true)
+			if (state == states.freefall && y <= other.y && other.grounded == true)
 			{
 				with instance_create(x, y, obj_bombexplosion)
 				{
