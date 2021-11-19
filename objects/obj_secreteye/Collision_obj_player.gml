@@ -1,5 +1,5 @@
 //When player touches the funny
-if activated = true && sprite_index = spr_secreteye_idle
+if activated = true && sprite_index == spr_secreteye_idle
 {
 	sprite_index = spr_secreteye_teleport;
 	image_index = 0;
