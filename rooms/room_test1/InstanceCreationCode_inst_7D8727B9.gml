@@ -6,6 +6,11 @@ condition = function()
 output = function()
 {
 	with obj_secreteye
+	{
 		activated = true
+		sprite_index = spr_secreteye_spawning;
+		image_index = 0;
+		visible = true;		
+	}
 	instance_create(x,y,obj_safeexplosion)
 }
