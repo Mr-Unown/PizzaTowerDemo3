@@ -64,7 +64,7 @@
     "eventStubScript": null,
     "parent": {"name":"spr_tv_bombpepN","path":"sprites/spr_tv_bombpepN/spr_tv_bombpepN.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "spr_tv_bombpepN",
     "tags": [],
     "resourceType": "GMSequence",
   },

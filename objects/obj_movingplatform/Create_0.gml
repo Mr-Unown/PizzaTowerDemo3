@@ -1,15 +1,36 @@
 depth = 5;
-hsp = 0;
-vsp = 0;
-movespeed = 5;
-_direction = 0;
 
-objects[0] = obj_player;
-objects[1] = obj_baddie;
-objects[2] = obj_dashpad;
-objects[3] = obj_throwableparent;
-objects[4] = obj_goop;
-objects[5] = obj_pizzaslice;
-objects[6] = obj_shotgun;
-objects[7] = obj_pizzacoin;
+movespeed = 3
+movespeed_max = 3
+speed_acc = 0.5
 
+hsp = 0
+vsp = 0
+
+h_vel = 0
+v_vel = 0
+
+v_corr = 0
+
+timer = 0
+
+enum _DIRECTION
+{
+	forward = 1,
+	backward = -1,
+	none = 0
+}
+
+hdir = _DIRECTION.forward
+vdir = _DIRECTION.none
+
+queued_hdir = 0
+queued_vdir = 0
+
+	
+stop = 0
+stop_max = 3
+stop_acc = 0.5
+stop_decc = 0.5
+stopped = false
+stopid = noone

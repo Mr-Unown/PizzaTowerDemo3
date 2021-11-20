@@ -1477,6 +1477,7 @@
     {"id":{"name":"spr_sausageman_stunfall","path":"sprites/spr_sausageman_stunfall/spr_sausageman_stunfall.yy",},"order":15,},
     {"id":{"name":"spr_sausageman_stunfalltrans","path":"sprites/spr_sausageman_stunfalltrans/spr_sausageman_stunfalltrans.yy",},"order":16,},
     {"id":{"name":"spr_sausageman_stunland","path":"sprites/spr_sausageman_stunland/spr_sausageman_stunland.yy",},"order":17,},
+    {"id":{"name":"spr_tv_boxxedN","path":"sprites/spr_tv_boxxedN/spr_tv_boxxedN.yy",},"order":9,},
     {"id":{"name":"spr_sausageman_turn","path":"sprites/spr_sausageman_turn/spr_sausageman_turn.yy",},"order":18,},
     {"id":{"name":"spr_sausageman_walk","path":"sprites/spr_sausageman_walk/spr_sausageman_walk.yy",},"order":19,},
     {"id":{"name":"bg_sanctumstatue2","path":"sprites/bg_sanctumstatue2/bg_sanctumstatue2.yy",},"order":128,},
