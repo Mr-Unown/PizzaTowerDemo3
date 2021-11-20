@@ -5,7 +5,7 @@
   "option_windows_company_info": "",
   "option_windows_product_info": "",
   "option_windows_copyright_info": "Pizza Tower Guy",
-  "option_windows_description_info": "",
+  "option_windows_description_info": "Pizza Tower Demo 3-type Leading Brand Software",
   "option_windows_display_cursor": true,
   "option_windows_icon": "icons/icon.ico",
   "option_windows_save_location": 0,
