@@ -1,4 +1,4 @@
-if (y == ystart && obj_player.x > (x - 50) && obj_player.x < (x + 50) && obj_player.y > y && obj_player.y < (y + 200))
+if (y == ystart && obj_player.x > (x - 50) && obj_player.x < (x + 50) && obj_player.y > y && obj_player.y < (y + 200) && obj_player.state != 15)
 {
     scr_soundeffect(sfx_enemyprojectile)
     grav = 0.35

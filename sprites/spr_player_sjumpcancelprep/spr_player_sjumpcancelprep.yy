@@ -107,6 +107,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"1109cc73-f282-4ae0-8170-ca4115fbd7dc","tags":[],"resourceType":"GMImageLayer",},
   ],
+
   "nineSlice": {
     "left": 0,
     "top": 0,

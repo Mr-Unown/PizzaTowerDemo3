@@ -202,7 +202,7 @@ else
 	//Font Options
 	//if pizzafont = false
 	//{
-		draw_set_font(arial_12);
+		draw_set_font(font1);
 		draw_set_halign(fa_left);
 		draw_set_color(c_black);
 		_new_message = new_message;

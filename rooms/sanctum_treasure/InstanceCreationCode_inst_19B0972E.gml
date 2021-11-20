@@ -1,2 +1,2 @@
-sprgot = spr_beantreasuregotH
-spridle = spr_beantreasureH
+sprgot = spr_beantreasuregot
+spridle = spr_beantreasure
