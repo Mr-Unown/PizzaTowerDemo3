@@ -145,7 +145,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
     {
         for (i = 0; i < 20; i++)
         {
-            if (roomname == ("desert_" + string(i)) && i <= 14) || (roomname == ("old_desert_" + string(i)) && i <= 14)
+            if (roomname == ("desert_" + string(i)) && i <= 14)
             {
                 if (!audio_is_playing(mu_desert))
                 {
@@ -155,7 +155,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
                     pausedmusic = mu_desert
                 }
             }
-            else if (roomname == ("desert_" + string(i)) && i > 14) || (roomname == ("old_desert_" + string(i)) && i > 14)
+            else if (roomname == ("desert_" + string(i)) && i > 12)
             {
                 if (!audio_is_playing(mu_ufo))
                 {
@@ -442,17 +442,17 @@ if (global.panic == 0 && global.snickchallenge == 0)
             audio_sound_set_track_position(global.music, fadeoff)
             pausedmusic = mu_medievalsecret
         }
-    }/*
+    }
     if (string_letters(roomname) == "desertsecret" && global.desertnight != 1)
     {
         if (!audio_is_playing(mu_desertsecret))
         {
             scr_soundstopall()
-            scr_sound(105)
+            scr_sound(mu_desertsecret)
             audio_sound_set_track_position(global.music, fadeoff)
-            pausedmusic = 105
+            pausedmusic = mu_desertsecret
         }
-    }
+    }/*
     if (string_letters(roomname) == "desertsecret" && global.desertnight == 1)
     {
         if (!audio_is_playing(mu_cowboysecret))
