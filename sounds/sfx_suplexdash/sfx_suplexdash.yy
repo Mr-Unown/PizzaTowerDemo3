@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_suplexdash",
-  "duration": 1.089331,
+  "duration": 1.084331,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

@@ -1,5 +1,5 @@
 function scr_enemy_stun() {
-	var angle = point_direction(x,y,x + hsp, y + vsp );		
+	var angle = point_direction(x + hsp, y + vsp,x,y );		
 	var ymovespeed = 2 + abs(vsp)
 	var vdirection = sign(hsp)
 	if (object_index == obj_ninja)
@@ -12,7 +12,7 @@ function scr_enemy_stun() {
 	{
 	    if (thrown == 1 && hp <= 0) || (dying = true)
 		{
-			initialvsp = clamp(-lengthdir_y(ymovespeed, angle) - 2,-20,(random_range(0,-10)))
+			initialvsp = clamp(lengthdir_y(ymovespeed, -angle) - 2,-20,(random_range(0,-10)))
 			initialhsp = (-vdirection * ((random_range(1,7)) + abs(floor(hsp))))	
 	        instance_destroy()
 		}
@@ -32,7 +32,7 @@ function scr_enemy_stun() {
 	        image_xscale = (-other.image_xscale)
 	    if (thrown == 1 && hp <= 0 || dying = true) 
 		{
-			initialvsp = clamp(-lengthdir_y(ymovespeed, angle) - 2,-20,(random_range(0,-10)))
+			initialvsp = clamp(lengthdir_y(ymovespeed, angle) - 2,-20,(random_range(0,-10)))
 			initialhsp = (-vdirection * ((random_range(1,7)) + abs(floor(hsp))))	
 	        instance_destroy()
 		}

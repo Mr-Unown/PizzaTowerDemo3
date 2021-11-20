@@ -186,10 +186,15 @@ function scr_characterspr(player_character = character) {
 	    spr_squished = spr_player_squished
 	    spr_palette = spr_peppalette
 	    spr_tomatojump = spr_player_Sjump
-	    spr_boxxedair = spr_boxxedpep_air
-	    spr_boxxedwalk = spr_boxxedpep_walk
-	    spr_boxxedidle = spr_boxxedpep_idle
-	    spr_boxxedintro = spr_boxxedpep_intro
+		//Boxxed Transfo
+	    spr_boxxedair = spr_boxxedpep_air;
+	    spr_boxxedwalk = spr_boxxedpep_walk;
+	    spr_boxxedidle = spr_boxxedpep_idle;
+	    spr_boxxedintro = spr_boxxedpep_intro;
+	    spr_boxxeddash = spr_boxxedpep_dash;
+	    spr_boxxeddashstart = spr_boxxedpep_dashstart;
+		spr_boxxedjumpstart = spr_boxxedpep_jumpstart;
+		
 	    spr_firemouthintro = spr_player_firemouthintro
 	    spr_firemouthend = spr_player_firemouthend
 	    spr_firemouth = spr_player_firemouth
@@ -417,10 +422,15 @@ function scr_characterspr(player_character = character) {
 	    spr_squished = spr_playerN_squished
 
 	    spr_tomatojump = spr_playerN_glide
-	    spr_boxxedair = spr_boxxednoise_air
-	    spr_boxxedwalk = spr_boxxednoise_walk
-	    spr_boxxedidle = spr_boxxednoise_idle
-	    spr_boxxedintro = spr_boxxednoise_intro
+		//Boxxed Transfo
+	    spr_boxxedair = spr_boxxednoise_air;
+	    spr_boxxedwalk = spr_boxxednoise_walk;
+	    spr_boxxedidle = spr_boxxednoise_idle;
+	    spr_boxxedintro = spr_boxxednoise_intro;
+	    spr_boxxeddash = spr_boxxednoise_dash;
+	    spr_boxxeddashstart = spr_boxxednoise_dash;
+		spr_boxxedjumpstart = spr_boxxednoise_jumpstart;
+		
 	    spr_firemouthintro = spr_playerN_firemouthintro
 	    spr_firemouthend = spr_playerN_firemouthend
 	    spr_firemouth = spr_playerN_firemouth
@@ -623,10 +633,15 @@ function scr_characterspr(player_character = character) {
 	    spr_bossintro = spr_snick_hurt
 	    spr_knightpepstart = spr_snick_robotsword
 	    spr_tomatojump = spr_snick_fall
-	    spr_boxxedair = spr_boxxednoise_air
-	    spr_boxxedwalk = spr_boxxednoise_walk
-	    spr_boxxedidle = spr_boxxednoise_idle
-	    spr_boxxedintro = spr_boxxednoise_intro
+		//Boxxed Transfo
+	    spr_boxxedair = spr_boxxednoise_air;
+	    spr_boxxedwalk = spr_boxxednoise_walk;
+	    spr_boxxedidle = spr_boxxednoise_idle;
+	    spr_boxxedintro = spr_boxxednoise_intro;
+	    spr_boxxeddash = spr_boxxednoise_dash;
+	    spr_boxxeddashstart = spr_boxxednoise_dash;
+		spr_boxxedjumpstart = spr_boxxednoise_jumpstart;
+		
 	    spr_firemouthintro = spr_playerN_firemouthintro
 	    spr_firemouthend = spr_playerN_firemouthend
 	    spr_firemouth = spr_playerN_firemouth
@@ -851,10 +866,17 @@ function scr_characterspr(player_character = character) {
 	    spr_squished = spr_playerV_squished
 	    spr_palette = spr_vigipalette
 	    spr_tomatojump = spr_playerV_superjump
-	    spr_boxxedair = spr_boxxedvigi_air
-	    spr_boxxedwalk = spr_boxxedvigi_walk
-	    spr_boxxedidle = spr_boxxedvigi_idle
-	    spr_boxxedintro = spr_boxxedpep_intro
+		
+		//Boxxed Transfo
+	    spr_boxxedair = spr_boxxedvigi_air;
+	    spr_boxxedwalk = spr_boxxedvigi_walk;
+	    spr_boxxedidle = spr_boxxedvigi_idle;
+	    spr_boxxedintro = spr_boxxednoise_intro;
+	    spr_boxxeddash =  spr_boxxedpep_intro;
+	    spr_boxxeddashstart =spr_boxxedvigi_walk;
+		spr_boxxedjumpstart = spr_boxxedvigi_air;		
+		
+		
 	    spr_firemouthintro = spr_player_firemouthintro
 	    spr_firemouthend = spr_player_firemouthend
 	    spr_firemouth = spr_player_firemouth
@@ -1078,10 +1100,15 @@ function scr_characterspr(player_character = character) {
 	    spr_squished = spr_playerV_squished
 	    spr_palette = spr_pepperpalette
 	    spr_tomatojump = spr_playerV_superjump
-	    spr_boxxedair = spr_boxxedvigi_air
-	    spr_boxxedwalk = spr_boxxedvigi_walk
-	    spr_boxxedidle = spr_boxxedvigi_idle
-	    spr_boxxedintro = spr_boxxedpep_intro
+		//Boxxed Transfo
+	    spr_boxxedair = spr_boxxedvigi_air;
+	    spr_boxxedwalk = spr_boxxedvigi_walk;
+	    spr_boxxedidle = spr_boxxedvigi_idle;
+	    spr_boxxedintro = spr_boxxednoise_intro;
+	    spr_boxxeddash =  spr_boxxedpep_intro;
+	    spr_boxxeddashstart =spr_boxxedvigi_walk;
+		spr_boxxedjumpstart = spr_boxxedvigi_air;		
+		
 	    spr_firemouthintro = spr_player_firemouthintro
 	    spr_firemouthend = spr_player_firemouthend
 	    spr_firemouth = spr_player_firemouth
@@ -1306,10 +1333,15 @@ function scr_characterspr(player_character = character) {
 	    spr_squished = spr_playerN_squished
 		spr_palette = spr_orangepalette;
 	    spr_tomatojump = spr_playerN_glide
-	    spr_boxxedair = spr_boxxednoise_air
-	    spr_boxxedwalk = spr_boxxednoise_walk
-	    spr_boxxedidle = spr_boxxednoise_idle
-	    spr_boxxedintro = spr_boxxednoise_intro
+		//Boxxed Transfo
+	    spr_boxxedair = spr_boxxedvigi_air;
+	    spr_boxxedwalk = spr_boxxedvigi_walk;
+	    spr_boxxedidle = spr_boxxedvigi_idle;
+	    spr_boxxedintro = spr_boxxednoise_intro;
+	    spr_boxxeddash =  spr_boxxedpep_intro;
+	    spr_boxxeddashstart =spr_boxxedvigi_walk;
+		spr_boxxedjumpstart = spr_boxxedvigi_air;		
+		
 	    spr_firemouthintro = spr_playerN_firemouthintro
 	    spr_firemouthend = spr_playerN_firemouthend
 	    spr_firemouth = spr_playerN_firemouth
@@ -1532,10 +1564,15 @@ function scr_characterspr(player_character = character) {
 	    spr_squished = spr_player_squished //Missing
 	    spr_palette = spr_pizzellepalette
 	    spr_tomatojump = spr_playerPZ_jump //Missing
-	    spr_boxxedair = spr_playerPZ_boxxed_air
-	    spr_boxxedwalk = spr_playerPZ_boxxed_walk
-	    spr_boxxedidle = spr_playerPZ_boxxed_idle
-	    spr_boxxedintro = spr_playerPZ_boxxed_intro
+		//Boxxed Transfo
+	    spr_boxxedair = spr_playerPZ_boxxed_air;
+	    spr_boxxedwalk = spr_playerPZ_boxxed_walk;
+	    spr_boxxedidle = spr_playerPZ_boxxed_idle;
+	    spr_boxxedintro = spr_playerPZ_boxxed_intro;
+	    spr_boxxeddash =   spr_playerPZ_boxxed_walk;
+	    spr_boxxeddashstart = spr_playerPZ_boxxed_walk;
+		spr_boxxedjumpstart = spr_playerPZ_boxxed_air;		
+		
 	    spr_firemouthintro = spr_playerN_firemouthintro //Missing
 	    spr_firemouthend = spr_playerN_firemouthend //Missing
 	    spr_firemouth = spr_playerN_firemouth //Missing

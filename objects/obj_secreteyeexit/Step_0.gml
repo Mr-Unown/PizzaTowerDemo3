@@ -18,6 +18,7 @@ if activated == true
 	{
 		image_index = 0;
 		sprite_index = spr_secreteyeexit_dissappear;
+		activated = false;
 	}
 }
 

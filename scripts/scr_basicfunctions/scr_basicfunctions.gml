@@ -51,3 +51,10 @@ function animation_end(value = floor(image_index) ,endpoint = image_number - 1)
 	/// @param endpoint The Value considered the end
 	return value >= endpoint;
 }
+
+function nearest_player()
+{
+	/// @description Returns Nearest Player
+	/// @function nearest_player
+	return (global.coop = false ? obj_player1 : instance_nearest(x,y,obj_player));
+}
