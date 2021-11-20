@@ -1,2 +1,2 @@
 level = "rooftop"
-targetRoom = rooftop_1
+targetRoom = factory_1

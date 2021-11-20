@@ -53,21 +53,12 @@ function scr_playercolors() {
 	//Saved Colors
 #region Spaghetti
 	ini_open("Custom/"+string(characters)+"_"+string(customsavedpalette)+"_palettes.ini")
-	//Write Character who is this
-	if !ini_section_exists("General") 
-	{
-		ini_write_string("General","Character",string(characters));
-		ini_write_string("General","PaletteName","Palette " + string(customsavedpalette));
-	 //ini_write_real(string(characters)+"Colors"+string(colorindex[0]), "Red", 0);
-	}	
-	//Write 1st color
 	if !ini_section_exists(string(characters)+"Colors"+string(colorindex[0])) 
 	{
 	 ini_write_real(string(characters)+"Colors"+string(colorindex[0]), "Red", 0);
 	 ini_write_real(string(characters)+"Colors"+string(colorindex[0]), "Green", 0);
 	 ini_write_real(string(characters)+"Colors"+string(colorindex[0]), "Blue", 0);
 	}
-	//Write the rest
 	for (var i = 1; i < colorheight; ++i) 
 	{
 		if !ini_section_exists(string(characters)+"Colors"+string(colorindex[i])) 
@@ -77,8 +68,7 @@ function scr_playercolors() {
 			ini_write_real(string(characters)+"Colors"+string(colorindex[i]), "Blue", 255);
 		}	
 	}
-	
-	//ini_open("Custom/"+string(characters)+"_"+string(customsavedpalette)+"_palettes.ini")
+	ini_open("Custom/"+string(characters)+"_"+string(customsavedpalette)+"_palettes.ini")
 
 	for (var i = 0; i < colorheight; ++i) 
 	{

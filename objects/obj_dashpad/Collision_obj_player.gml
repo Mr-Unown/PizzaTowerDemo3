@@ -1,6 +1,6 @@
 with (other.id)
 {
-    if (state == 69 || state == states.throwdynamite || state == states.shotgun || state == states.pistol || state == 70 || state == states.machslide || state == states.machroll || state == states.freefallland || state == states.freefall || state == states.freefallprep || state == states.Sjumpprep || state == states.jump || state == states.normal || state == states.handstandjump || state == states.kingknightroll || state == states.crouch || state == states.crouchjump || state == states.crouchslide || state == states.slipnslide)
+    if (state == 69 || state == states.throwdynamite || state == states.shotgun || state == states.pistol || state == 70 || state == states.machslide || state == states.machroll || state == states.freefallland || state == states.freefall || state == states.freefallprep || state == states.Sjumpprep || state == states.jump || state == states.normal || state == states.handstandjump || state == states.kingknightroll || state == states.crouch || state == states.crouchjump || state == states.crouchslide || state == states.slipnslide || state == states.boxxedpep)
     {
         xscale = other.image_xscale
         mach2 = 100

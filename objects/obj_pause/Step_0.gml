@@ -7,7 +7,7 @@ if ((!pause) && (!instance_exists(obj_fadeout)))
         if (!instance_exists(obj_pausefadeout))
             instance_create(x, y, obj_pausefadeout)
     }
-    if ((obj_player2.key_jump || keyboard_check_pressed(vk_f5)) && global.coop == 0 && room != rank_room && room != Scootertransition && room != global.roomstart[global.newtitlescreen] && room != timesuproom) && obj_debugcontroller.active = false && !instance_exists(obj_palettechanger)
+    if ((obj_player2.key_jump || keyboard_check_pressed(vk_f5)) && global.coop == 0 && room != rank_room && room != Scootertransition && room != global.roomstart[global.newtitlescreen] && room != timesuproom) && obj_debugcontroller.active = false
     {
         global.coop = 1
         with (obj_player2)
@@ -347,6 +347,16 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
                 if instance_exists(obj_player2)
                     obj_player2.targetDoor = "A";
             }			
+			else if (string_letters(roomname) == "factory" || string_letters(roomname) == "factorysecret")
+            {
+                instance_activate_all();;
+                room_goto(factory_1);
+                script_execute(scr_playerreset);
+                pause = 0;
+                obj_player1.targetDoor = "A";
+                if instance_exists(obj_player2)
+                    obj_player2.targetDoor = "A";
+            }
             else if !audio_is_playing(sfx_enemyprojectile)
                 scr_soundeffect(sfx_enemyprojectile);
         }

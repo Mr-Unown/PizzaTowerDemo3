@@ -767,3 +767,4 @@ else if actor = true
 		   scr_collide_player()
 	}	
 }
+
