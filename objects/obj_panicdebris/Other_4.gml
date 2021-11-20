@@ -1,5 +1,5 @@
 //Debris
-if global.panic == true
+if global.panic == true && !instance_exists(obj_treasure)
 {
 	repeat(10)
 	with instance_create(random(room_width), random(room_height + 32) - 16, obj_debris)
