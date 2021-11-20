@@ -103,7 +103,7 @@ function scr_enemy_shake() {
 		}
 
 	}
-	sprite_index = stunfallspr
+	sprite_index = spr_dead
 
 
 

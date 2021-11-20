@@ -90,7 +90,7 @@
   },
   "parent": {
     "name": "Medieval",
-    "path": "folders/Rooms/Levels/Others/World Castle/Medieval.yy",
+    "path": "folders/Rooms/Levels/World Castle/Medieval.yy",
   },
   "resourceVersion": "1.0",
   "name": "medieval_pizzamart",

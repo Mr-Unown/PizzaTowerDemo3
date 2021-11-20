@@ -6,7 +6,12 @@ function scr_enemy_stun() {
 	    attack = 1
 	stunned--
 	if (sprite_index != spr_bigcheese_land && sprite_index != spr_bigcheese_fall)
+	{
+		if thrown = 0
 	    sprite_index = stunfallspr
+		else 
+		sprite_index = spr_dead
+	}
 	image_speed = 0.35
 	if ((grounded || (grounded && (!place_meeting(x, y, obj_platform)))) && vsp > 0)
 	{
@@ -105,7 +110,13 @@ function scr_enemy_stun() {
 	        movespeed = 1
 	    }
 	}
-
+	if sprite_index = spr_dead
+	{
+		rotatedirection = choose(-1,0,1)
+		rotatevalue = irandom_range(-1,10)
+		if !instance_exists(obj_chargeeffect)
+		instance_create(x,y,obj_chargeeffect)
+	}
 
 
 }

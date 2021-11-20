@@ -137,11 +137,18 @@ function scr_player_machroll() {
 	}
 	else if (sprite_index != spr_dive) 
 	{
-	    sprite_index = spr_dive
-	    vsp = 10
+		if global.newdive = false
+		{
+			sprite_index = spr_dive
+			vsp = 10
+		}
+		else if global.newdive = true
+		{
+			sprite_index = spr_mach2jump
+			vsp = 12
+		}
 	}
-
-
+			
 	//Breakdance Roll
 	if (key_shoot2) && character != "V"
 	{

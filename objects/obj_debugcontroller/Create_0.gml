@@ -24,6 +24,9 @@ commands[arrayi++] = "togglecollision (true/false)"
 commands[arrayi++] = "debugmode (true/false)"
 commands[arrayi++] = "newtitlescreen (true/false)"
 commands[arrayi++] = "newsjumpcancel (true/false)"
+commands[arrayi++] = "enemymachhit (true/false)"
+commands[arrayi++] = "newdive (true/false)"
+commands[arrayi++] = "newafterimages (true/false)"
 if DEBUG 
 {
 	commands[arrayi++] = "changecharacter [player] [character] (true/false)"

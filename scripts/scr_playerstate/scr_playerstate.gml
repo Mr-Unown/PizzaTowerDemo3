@@ -718,7 +718,7 @@ else if actor = true
 	    toomanytoppings = 6
 	}
 	//Mach 3 Effect
-	if ((state == 91 || state == states.Sjump || state == states.breakdance || (state != 51 && (sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump))  || (pogomovespeed >= 12  && state == states.pogo) ||state == states.jetpack || (state == 109 && instance_exists(obj_player2) && obj_player2.state == 91) || state == 114 || state == 70 || state == 17 || state == 9 || state == 37 || state == 10 || state == 22 || state == 71 || pogojetcharge = true) && macheffect == 0)
+	if ((state == 91 || state == states.Sjump || state == states.breakdance || (state != 51 && (sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump) && global.newafterimages = false)  || (pogomovespeed >= 12  && state == states.pogo) ||state == states.jetpack || (state == 109 && instance_exists(obj_player2) && obj_player2.state == 91) || state == 114 || state == 70 || state == 17 || state == 9 || state == 37 && global.newafterimages = false || state == 10 || state == 22 || state == 71 || pogojetcharge = true) && macheffect == 0)
 	{
 	    macheffect = 1
 	    toomuchalarm1 = 6
@@ -747,11 +747,18 @@ else if actor = true
 	        toomuchalarm1 = 6
 	    }
 	}
-
+	//NewTrail
+	if (toomuchalarm1 > 0) && (global.newafterimages = true)
+	toomuchalarm1--
+	if ((toomuchalarm1 <= 0) && (global.newafterimages = true) && (state == states.machroll || state = states.freefall || state = states.tumble || sprite_index == spr_player_shoryumineken) && sprite_index != spr_tumblestart)
+	{
+		instance_create(x, y, obj_newtrail)
+		toomuchalarm1 = 5
+	}
 	//Instakill Move
 	if global.freezeframe = false
 	{
-		if state != states.frozen && (state == 68 || sprite_index = spr_swingding || sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump || state == 86 || state == states.breakdance ||	state == states.jetpack || state == states.pogo || state == 91 || state == 60 || (state == 73 && thrown == 1) || state == 70 || state == 17 || state == states.newbomb || state == 74 || state == 2 || state == 6 || state == 7 || state == 9 || state == 44 || state == 35 || state == 63 || state == 37 || state == 40 || state == 10 || (state == 43 && sprite_index == spr_piledriver) || state == 24 || state == 25 || state == 18 || state == 15 || state == 13 || state == 11)
+		if state != states.frozen && (state == 68 || sprite_index = spr_swingding || sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump || state == 86 || state == states.breakdance ||	state == states.jetpack || state == states.pogo || state == 91 || state == 60 || (state == 73 && thrown == 1 && global.enemymachhit = true) || state == 70 || state == 17 || state == states.newbomb || state == 74 || state == 2 || state == 6 || state == 7 || state == 9 || state == 44 || state == 35 || state == 63 || state == 37 || state == 40 || state == 10 || (state == 43 && sprite_index == spr_piledriver) || state == 24 || state == 25 || state == 18 || state == 15 || state == 13 || state == 11)
 			instakillmove = 1
 		else if state != states.frozen
 			instakillmove = 0

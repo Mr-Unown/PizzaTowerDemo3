@@ -15,6 +15,9 @@ function scr_playercreate() {
 	//Newsjumpcancel
 	global.newsjumpcancel = false
 	//global.wateralpha = 0.85
+	global.baddiehp = false
+	global.newdive = false
+	global.newafterimages = false
 	global.storedtaminute = 0;
 	global.storedtasecond = 0;
 	breakdancebuffer = 50
