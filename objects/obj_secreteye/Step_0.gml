@@ -18,7 +18,8 @@ if sprite_index == spr_secreteye_teleport
 	{
 		event_user(0);
 		once = true;
-		visible = false
+		instance_destroy()
+		
 	}
 }
 
