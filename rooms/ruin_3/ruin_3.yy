@@ -477,7 +477,7 @@
   },
   "parent": {
     "name": "Ruin",
-    "path": "folders/Rooms/Levels/Others/World Castle/Ruin.yy",
+    "path": "folders/Rooms/Levels/World Castle/Ruin.yy",
   },
   "resourceVersion": "1.0",
   "name": "ruin_3",
