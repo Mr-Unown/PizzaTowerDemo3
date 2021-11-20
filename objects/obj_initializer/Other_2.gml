@@ -4,6 +4,8 @@ global.saveroom = ds_list_create()
 global.savefile = "a"
 ini_open("saveData.ini")
 global.newtitlescreen = ini_read_real("Option", "newtitlescreen", false);
+global.newsjumpcancel = ini_write_real("Option", "newsjumpcancel", false);
+global.wallrunstyle = ini_write_real("Option", "wallrunstyle", 0);
 ini_close()
 //Start by cleaning
 global.flushtextures = true;

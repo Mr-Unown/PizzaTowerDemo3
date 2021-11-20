@@ -22,6 +22,7 @@ global.newtitlescreen = 0;
 ini_open("saveData.ini")
 global.newsjumpcancel = ini_read_real("Option", "newsjumpcancel", false)
 global.newtitlescreen = ini_read_real("Option", "newtitlescreen", false);
+global.wallrunstyle = ini_write_real("Option", "wallrunstyle", 0);
 ini_close()
 global.roomstart[0] = Realtitlescreen;
 global.roomstart[1] = New_Realtitlescreen;

@@ -39,7 +39,20 @@ function scr_player_climbwall() {
 			wallspeed = 0
 	}
 	crouchslideAnim = 1
+	if character != "P"
 	sprite_index = spr_machclimbwall
+	else
+	{
+		if global.wallrunstyle = 1
+		{
+			if wallspeed < 5
+			sprite_index = spr_player_NEWwallclimb
+			else 
+			sprite_index = spr_player_NEWwallclimb2
+		}
+		else
+		sprite_index = spr_machclimbwall	
+	}
 	if (character != "S")
 	{
 	    if (!key_attack)
