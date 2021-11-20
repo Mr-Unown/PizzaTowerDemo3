@@ -6,7 +6,7 @@ grabbing = false;
 grabbed = false;
 release = false;
 //Certain Delays
-returndelay = 50;
+returndelay = 0;
 attackdelay = 0;
 
 

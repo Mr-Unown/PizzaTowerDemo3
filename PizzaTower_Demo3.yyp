@@ -3291,6 +3291,7 @@
     {"id":{"name":"ruin_4","path":"rooms/ruin_4/ruin_4.yy",},"order":3,},
     {"id":{"name":"ruin_5","path":"rooms/ruin_5/ruin_5.yy",},"order":4,},
     {"id":{"name":"ruin_6","path":"rooms/ruin_6/ruin_6.yy",},"order":5,},
+    {"id":{"name":"spr_boxxednoise_jumpstart","path":"sprites/spr_boxxednoise_jumpstart/spr_boxxednoise_jumpstart.yy",},"order":198,},
     {"id":{"name":"tile_factoryNEW_tileset","path":"tilesets/tile_factoryNEW_tileset/tile_factoryNEW_tileset.yy",},"order":2,},
     {"id":{"name":"ruin_7","path":"rooms/ruin_7/ruin_7.yy",},"order":6,},
     {"id":{"name":"ruin_8","path":"rooms/ruin_8/ruin_8.yy",},"order":7,},

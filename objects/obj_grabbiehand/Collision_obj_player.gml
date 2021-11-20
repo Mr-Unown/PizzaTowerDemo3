@@ -19,6 +19,7 @@ if (sprite_index == spr_grabbiehand_fall)
         }
         if state == states.cheesepepstick || state == states.cheesepep
         {
+			var size = random_range(0.6, 1.2)
             scr_soundeffect(sfx_bumpwall)
             scr_soundeffect(sfx_loseknight)
             repeat (8)

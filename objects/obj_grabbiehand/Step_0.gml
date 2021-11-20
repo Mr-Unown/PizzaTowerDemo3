@@ -1,22 +1,6 @@
 var player = nearest_player();
 if grabbed = false {
 #region Attacking
-//If player is within Range
-if distance_to_object(player) <= 300 && (x == xstart && y == ystart) && sprite_index != spr_grabbiehand_hifive
-{
-	sprite_index = spr_grabbiehand_hifive;
-	image_index = 0;
-	grabbing = false;
-	targetpos.xx = lerp(player.x,player.x + hsp,0.5);
-	targetpos.yy = lerp(player.y,player.y + vsp,0.5);
-}
-//Target Spotted
-if animation_end() && sprite_index == spr_grabbiehand_hifive
-{
-	sprite_index = spr_grabbiehand_fall;
-	grabbing = true;
-	scr_soundeffect(sfx_enemyprojectile);
-}
 //Go towards player
 if grabbing = true
 {
@@ -30,13 +14,43 @@ if grabbing = true
 		grabbing = false;
 		sprite_index = spr_grabbiehand_idle;
 	}
+	attackdelay = 50;
 }
 else if (x != xstart && y != ystart) && release == false && returndelay <= 0 //Return to old spot
 {
 	var old = point_direction(x,y,xstart,ystart);
-	hsp = lengthdir_x(5,old)
-	vsp = lengthdir_y(5,old)	
+	if point_distance(x,y,xstart,ystart) > 16
+	{
+		hsp = lengthdir_x(5,old)
+		vsp = lengthdir_y(5,old)	
+	}
+	else
+	{
+		hsp = 0;
+		vsp = 0;
+		x = approach(x,xstart,5)
+		y = approach(y,ystart,5)
+	}
 	sprite_index = spr_grabbiehand_idle;
+	attackdelay = 50;
+}
+else
+{
+	//If player is within Range
+	if distance_to_object(player) <= 300 && (x == xstart && y == ystart)  && attackdelay <= 0 && sprite_index == spr_grabbiehand_idle
+	{
+		sprite_index = spr_grabbiehand_hifive;
+		image_index = 0;
+		targetpos.xx = lerp(player.x,player.x + hsp,0.5);
+		targetpos.yy = lerp(player.y,player.y + vsp,0.5);
+	}
+	//Target Spotted
+	if animation_end() && sprite_index == spr_grabbiehand_hifive
+	{
+		sprite_index = spr_grabbiehand_fall;
+		grabbing = true;
+		scr_soundeffect(sfx_enemyprojectile);
+	}
 }
 #endregion
 }
@@ -44,8 +58,16 @@ else {
 #region Taking
 //Go towards Target
 var target = point_direction(x,y,dropspotx,dropspoty);
-x += floor( lengthdir_x(5,target) )
-y += floor( lengthdir_y(5,target) )
+if point_distance(x,y,dropspotx,dropspoty) > 16
+{
+	x += floor( lengthdir_x(5,target) )
+	y += floor( lengthdir_y(5,target) )	
+}
+else
+{
+	x = approach(x,dropspotx,5)
+	y = approach(y,dropspoty,5)	
+}
 sprite_index = spr_grabbiehand_catch
 
 with obj_player
@@ -77,6 +99,7 @@ if x == dropspotx && y == dropspoty
 }
 //Timers
 returndelay = approach(returndelay,0,1)
+attackdelay = approach(attackdelay,0,1)
 //Animation
 if animation_end() && sprite_index = spr_grabbiehand_release
 {
