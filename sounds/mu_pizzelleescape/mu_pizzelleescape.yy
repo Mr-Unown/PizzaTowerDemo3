@@ -10,8 +10,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "mu_pizzelleescape",
-  "duration": 214.6241,
+  "soundFile": "mu_pizzelleescape.ogg",
+  "duration": 255.941513,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

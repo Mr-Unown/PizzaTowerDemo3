@@ -68,7 +68,7 @@
     {"spriteId":{"name":"bg_kungfu1_0","path":"sprites/bg_kungfu1_0/bg_kungfu1_0.yy",},"colour":4294967295,"x":0,"y":0,"htiled":true,"vtiled":true,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":10.0,"animationSpeedType":1,"userdefinedAnimFPS":false,"visible":true,"depth":500,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Backgrounds_far","tags":[],"resourceType":"GMRBackgroundLayer",},
   ],
   "inheritLayers": false,
-  "creationCodeFile": "RoomCreationCode.gml",
+  "creationCodeFile": "${project_dir}/rooms/kungfu_0/RoomCreationCode.gml",
   "inheritCode": false,
   "instanceCreationOrder": [
     {"name":"inst_4F15B018","path":"rooms/kungfu_0/kungfu_0.yy",},
