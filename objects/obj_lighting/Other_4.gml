@@ -22,6 +22,7 @@ switch room
 		targetdarkness = clamp(_dark * 0.85,0.75,0.85)
 		break;		
 	case ancient_10_1:
+	case factory_8:
 		can_draw = true;
 		targetdarkness = 0.85
 		break;	

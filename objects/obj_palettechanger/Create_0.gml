@@ -50,6 +50,7 @@ deletemax = 6
 //Edit Cursor
 cursor = "|";
 delay = 20;
+<<<<<<< HEAD
 alarm[2] = delay;
 
 
@@ -68,3 +69,6 @@ ExportButton =
 	activated : false,
 	buffertimer : 0
 };
+=======
+alarm[2] = delay;
+>>>>>>> parent of cddaf45c2 (nothimf)

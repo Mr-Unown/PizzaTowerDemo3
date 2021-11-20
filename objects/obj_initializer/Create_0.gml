@@ -22,6 +22,10 @@ global.newtitlescreen = 0;
 ini_open("saveData.ini")
 global.newsjumpcancel = ini_read_real("Option", "newsjumpcancel", false)
 global.newtitlescreen = ini_read_real("Option", "newtitlescreen", false);
+global.enemymachhit = ini_read_real("Option", "enemymachhit", false);
+global.newdive = ini_read_real("Option", "newdive", false);
+global.newafterimages = ini_read_real("Option", "newafterimages", false);
+
 ini_close()
 global.roomstart[0] = Realtitlescreen;
 global.roomstart[1] = New_Realtitlescreen;

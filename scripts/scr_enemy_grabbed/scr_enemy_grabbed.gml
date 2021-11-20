@@ -202,6 +202,7 @@ function scr_enemy_grabbed() {
 	        x = obj_player1.x
 	        y = obj_player1.y
 	        state = 106
+			other.sprite_index = spr_dead
 	        hsp = ((-image_xscale) * 8)
 	        vsp = -6
 	    }
@@ -736,6 +737,7 @@ function scr_enemy_grabbed() {
 	        }
 	    }
 	}
+	if sprite_index != spr_dead
 	sprite_index = grabbedspr
 	image_speed = 0.35
 

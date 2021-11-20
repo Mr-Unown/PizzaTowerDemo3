@@ -5,10 +5,13 @@ draw_set_alpha(0.5)
 draw_rectangle_color(-32, -32, 992, 572, c_black, c_black, c_black, c_black, 0)
 draw_set_alpha(1)
 
+<<<<<<< HEAD
 //Export and Import Buttons
 draw_sprite_ext(spr_palettechanger_import,ImportButton.activated,ImportButton.xpos,ImportButton.ypos,1,1,0,c_white,1);
 draw_sprite_ext(spr_palettechanger_export,ExportButton.activated,ExportButton.xpos,ExportButton.ypos,1,1,0,c_white,1);
 
+=======
+>>>>>>> parent of cddaf45c2 (nothimf)
 if !surface_exists(surface) 
 {
 	surface = surface_create(2,10);
@@ -114,4 +117,8 @@ if input_text == true
 else
 	draw_text_color(480, yi, string(palettename),c_black,c_black,c_black,c_black,1)
 //Reset LUWU
+<<<<<<< HEAD
 draw_set_valign(fa_top)
+=======
+draw_set_valign(fa_top)
+>>>>>>> parent of cddaf45c2 (nothimf)

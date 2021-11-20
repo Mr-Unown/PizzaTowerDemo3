@@ -190,6 +190,12 @@ function scr_characterspr(player_character = character) {
 	    spr_boxxedwalk = spr_boxxedpep_walk
 	    spr_boxxedidle = spr_boxxedpep_idle
 	    spr_boxxedintro = spr_boxxedpep_intro
+<<<<<<< HEAD
+=======
+		spr_boxxeddashstart = spr_boxxedpep_dashstart
+		spr_boxxeddash = spr_boxxedpep_dash
+		spr_boxxedairstart = spr_boxxedpep_jumpstart
+>>>>>>> parent of cddaf45c2 (nothimf)
 	    spr_firemouthintro = spr_player_firemouthintro
 	    spr_firemouthend = spr_player_firemouthend
 	    spr_firemouth = spr_player_firemouth
