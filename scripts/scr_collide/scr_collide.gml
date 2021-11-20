@@ -40,7 +40,7 @@ function scr_collide() {
 	  vsp += grav;
 
 	grounded |= scr_solid(x, y + 1)
-	grounded |= !place_meeting(x, y, obj_platform) && place_meeting(x, y + 1, obj_platform)
+	//grounded |= !place_meeting(x, y, obj_platform) && place_meeting(x, y + 1, obj_platform)
 	//grounded |= (!place_meeting(x, y, obj_grindrail) && place_meeting(x, y + 1, obj_grindrail)) || (place_meeting(x, y + 1, obj_grindrailslope)) 
 
 

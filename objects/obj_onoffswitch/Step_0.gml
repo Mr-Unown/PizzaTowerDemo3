@@ -27,8 +27,9 @@ if ((player.instakillmove = true  || player.state = 22 || player.state = states.
 			suplexdashtimer = 7;
             image_index = 0
 			
-            state = 57
-            movespeed = 3
+            state = states.tackle;
+			substate = 1;
+            movespeed = 5;
             vsp = -3
 			global.switchblock = !global.switchblock
 			with obj_onoffswitch

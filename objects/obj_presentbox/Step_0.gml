@@ -104,8 +104,9 @@ if ((player.instakillmove = true  || player.state = 22 || player.state = states.
             sprite_index = choose(spr_suplexmash1, spr_suplexmash2, spr_suplexmash3, spr_suplexmash4, spr_punch)
 			suplexdashtimer = 7;
             image_index = 0
-            state = 57
-            movespeed = 3
+            state = states.tackle;
+			substate = 1;
+            movespeed = 5;
             vsp = -3
         }		
     }

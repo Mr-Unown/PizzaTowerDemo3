@@ -43,3 +43,11 @@ var range = _max - _min + 1; // + 1 is because max bound is inclusive
 return (((value - _min) % range) + range) % range + _min;
 }
 
+function animation_end(value = floor(image_index) ,endpoint = image_number - 1)
+{
+	/// @description animation_end(value, endpoint)
+	/// @function animation_end
+	/// @param value The Value to check
+	/// @param endpoint The Value considered the end
+	return value >= endpoint;
+}

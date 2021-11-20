@@ -33,7 +33,7 @@ var _cos = cos(draw_angle)
 var _sin = sin(draw_angle)
 var drawx = x + _cos * offset_x - _sin * offset_y;
 var drawy = y + _sin * offset_x + _cos * offset_y;
-//var draw_angle = image_angle;
+var player_xscale = xscale * scale, player_yscale = yscale * scale;
 
 
 if surface_exists(surf_pallete) && (paletteselect >= sprite_get_width(spr_palette) - 1)
@@ -46,15 +46,15 @@ else if (paletteselect < sprite_get_width(spr_palette) - 1)
 if global.draw_peter = true && (character == "P" || character == "N")
 {
 	if character == "P"
-	draw_sprite_ext(spr_peter, -1, drawx, drawy, xscale, yscale, draw_angle, image_blend, image_alpha)
+	draw_sprite_ext(spr_peter, -1, drawx, drawy, player_xscale, player_yscale, draw_angle, image_blend, image_alpha)
 	else
-	draw_sprite_ext(spr_chungus, -1, drawx, drawy, xscale, yscale, draw_angle, image_blend, image_alpha)
+	draw_sprite_ext(spr_chungus, -1, drawx, drawy, player_xscale, player_yscale, draw_angle, image_blend, image_alpha)
 }
 else
-draw_sprite_ext(sprite_index, image_index, drawx, drawy, xscale, yscale, draw_angle, image_blend, image_alpha)
+draw_sprite_ext(sprite_index, image_index, drawx, drawy, player_xscale, player_yscale, draw_angle, image_blend, image_alpha)
 
 if (character == "P" && sprite_index == spr_taunt && floor(image_index) == 11)
-    draw_sprite_ext(spr_promotion, image_index, drawx, drawy, 1, yscale, draw_angle, image_blend, image_alpha)
+    draw_sprite_ext(spr_promotion, image_index, drawx, drawy, 1, player_yscale, draw_angle, image_blend, image_alpha)
 	
 
 	
@@ -65,19 +65,19 @@ if flash
 	if global.draw_peter = true && (character == "P" || character == "N")
 	{
 		if character == "P"
-		draw_sprite_ext(spr_peter, -1, drawx, drawy, xscale, yscale, draw_angle, image_blend, image_alpha)
+		draw_sprite_ext(spr_peter, -1, drawx, drawy, player_xscale, player_yscale, draw_angle, image_blend, image_alpha)
 		else
-		draw_sprite_ext(spr_chungus, -1, drawx, drawy, xscale, yscale, draw_angle, image_blend, image_alpha)
+		draw_sprite_ext(spr_chungus, -1, drawx, drawy, player_xscale, player_yscale, draw_angle, image_blend, image_alpha)
 	}
 	else	
-	draw_sprite_ext(sprite_index, image_index, drawx, drawy, xscale, yscale, draw_angle, image_blend, image_alpha)
+	draw_sprite_ext(sprite_index, image_index, drawx, drawy, player_xscale, player_yscale, draw_angle, image_blend, image_alpha)
     if (character == "P" && sprite_index == spr_taunt && floor(image_index) == 11)
-        draw_sprite_ext(spr_promotion, image_index, drawx, drawy, 1, yscale, draw_angle, image_blend, image_alpha)
+        draw_sprite_ext(spr_promotion, image_index, drawx, drawy, 1, player_yscale, draw_angle, image_blend, image_alpha)
     shader_reset()
 }
 //Pizzashield
 if pizzashield = true && room != rank_room && room != timesuproom
-	draw_sprite_ext(spr_pizzashield, pizzashieldframes , drawx, drawy, xscale, yscale, draw_angle, image_blend, image_alpha)
+	draw_sprite_ext(spr_pizzashield, pizzashieldframes , drawx, drawy, player_xscale, player_yscale, draw_angle, image_blend, image_alpha)
 if global.freezeframe = false
 	pizzashieldframes += 0.35
 if pizzashieldframes > 16

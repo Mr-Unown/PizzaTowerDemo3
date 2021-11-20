@@ -4,7 +4,7 @@ if (ds_list_find_index(global.saveroom, id) == -1)
 	if global.coop = true
 	player = instance_nearest(x,y,obj_player)	
 	repeat (3)
-	with (instance_create((x + 32 + random_range(-32, 32)), (y + 32 + random_range(-32, 32)), obj_balloonpop))
+	with (instance_create((x + (image_xscale * 32) + random_range(-32, 32)), (y + 32 + random_range(-32, 32)), obj_balloonpop))
 	{
 		image_speed = 0.35
 		sprite_index = spr_destroyablecloud
@@ -13,7 +13,7 @@ if (ds_list_find_index(global.saveroom, id) == -1)
 	}				
     repeat (6)
     {
-        with (instance_create((x + (image_xscale * 16)), (y + 32), obj_debris))
+        with (instance_create((x + (image_xscale * 32)), (y + 32), obj_debris))
 		{
 			initialhsp = player.hsp / 1.7
 			initialvsp = clamp(player.vsp / 1.3,-12,random_range(0,-5))

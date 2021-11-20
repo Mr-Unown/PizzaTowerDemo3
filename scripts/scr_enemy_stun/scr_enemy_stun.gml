@@ -13,7 +13,7 @@ function scr_enemy_stun() {
 	    if (thrown == 1 && hp <= 0) || (dying = true)
 		{
 			initialvsp = clamp(-lengthdir_y(ymovespeed, angle) - 2,-20,(random_range(0,-10)))
-			initialhsp = (vdirection * ((random_range(1,7)) + abs(floor(hsp))))	
+			initialhsp = (-vdirection * ((random_range(1,7)) + abs(floor(hsp))))	
 	        instance_destroy()
 		}
 	    if (hp > 0 && object_index == obj_bigcheese && sprite_index == spr_bigcheese_fall)
@@ -33,7 +33,7 @@ function scr_enemy_stun() {
 	    if (thrown == 1 && hp <= 0 || dying = true) 
 		{
 			initialvsp = clamp(-lengthdir_y(ymovespeed, angle) - 2,-20,(random_range(0,-10)))
-			initialhsp = (vdirection * ((random_range(1,7)) + abs(floor(hsp))))		
+			initialhsp = (-vdirection * ((random_range(1,7)) + abs(floor(hsp))))	
 	        instance_destroy()
 		}
 	    if (thrown == 1 && hp > 0 && object_index == obj_bigcheese && sprite_index == stunfallspr)

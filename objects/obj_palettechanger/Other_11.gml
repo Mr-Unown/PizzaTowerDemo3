@@ -1,4 +1,5 @@
 /// @description Import Palettes
+ImportButton.activated = true;
 var file;
 file = get_open_filename_ext("Palettes|*.d3palette", "", working_directory, "Import your Palette");
 if file != ""
