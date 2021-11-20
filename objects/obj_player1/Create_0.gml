@@ -212,3 +212,4 @@ superjumpprepsnd = -1
 suplexdashsnd = -1
 obj_player1.hp = 5
 blackblend = 0
+boxxedjump = 0

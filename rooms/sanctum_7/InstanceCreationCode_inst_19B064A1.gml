@@ -11,8 +11,6 @@ output = function()
 	}
 	with inst_1C19FFE0
 		y = 448
-	with inst_45B712F1
+	with inst_4001115B
 		y = 448
-	with inst_34D0A894
-		y = 448		
 }
