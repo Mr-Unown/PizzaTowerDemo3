@@ -6,10 +6,6 @@ datafiles/GMLive/neko.dll
 datafiles/GMLive/regexp.ndll
 datafiles/GMLive/std.ndll
 datafiles/GMLive/temp.shader
-objects/obj_gmlive/Create_0.gml
-objects/obj_gmlive/Draw_0.gml
-objects/obj_gmlive/Step_0.gml
-objects/obj_gmlive/Other_62.gml
 scripts/GMLive/GMLive.gml
 scripts/GMLive/GMLive.yy
 scripts/GMLive/GMLive.yy._
