@@ -7,7 +7,7 @@ function scr_collide() {
 	vsp_carry = 0;
 	hsp_carry = 0;
 	platformid = noone;
-	// Moving Platform
+	/*Moving Platform
 	with instance_place(x, y + 2, obj_movingplatform)
 	{
 		with other
@@ -20,8 +20,8 @@ function scr_collide() {
 					vsp_carry = other.vsp
 			}
 		}
-	}
-	var vsp_final = vsp + vsp_carry
+	}*/
+	var vsp_final = vsp //+ vsp_carry
 	
 	// Vertical
 	repeat(abs(vsp_final)) {
@@ -33,7 +33,7 @@ function scr_collide() {
 	    }
 	}
 
-	var hsp_final = hsp + hsp_carry
+	var hsp_final = hsp //+ hsp_carry
 	
 
 	// Horizontal
@@ -53,7 +53,9 @@ function scr_collide() {
 	        break;
 	    }
 	}
+	
 	#region Better Moving Platforms
+	/*
 	if platformid != noone
 	{
 		if vsp < 0 or !instance_exists(platformid) or !place_meeting(x, y + 32 + abs(platformid.v_vel) * 2, platformid)
@@ -108,7 +110,7 @@ function scr_collide() {
 			}
 		
 		}
-	}
+	}*/
 	#endregion
 	
 	//Gravity
@@ -119,7 +121,5 @@ function scr_collide() {
 	grounded |= scr_solid(x, y + 1)
 	//grounded |= !place_meeting(x, y, obj_platform) && place_meeting(x, y + 1, obj_platform)
 	//grounded |= (!place_meeting(x, y, obj_grindrail) && place_meeting(x, y + 1, obj_grindrail)) || (place_meeting(x, y + 1, obj_grindrailslope)) 
-	if platformid != noone or (place_meeting(x, y + 1, obj_movingplatform) and !place_meeting(x, y - 2, obj_movingplatform))
-		grounded |= true	
 
 }

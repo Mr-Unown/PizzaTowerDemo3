@@ -8,7 +8,7 @@ function scr_collide_player() {
 	hsp_carry = 0;
 	platformid = noone;
 	
-	// Moving Platform
+	/* Moving Platform
 	with instance_place(x, y + 2, obj_movingplatform)
 	{
 		with other
@@ -21,8 +21,8 @@ function scr_collide_player() {
 					vsp_carry = other.vsp
 			}
 		}
-	}
-	var vsp_final = vsp + vsp_carry
+	}*/
+	var vsp_final = vsp //+ vsp_carry
 
 	
 	// Vertical
@@ -35,7 +35,7 @@ function scr_collide_player() {
 	    }
 	}
 
-	var hsp_final = hsp + hsp_carry
+	var hsp_final = hsp //+ hsp_carry
 
 	// Horizontal
 	repeat(abs(hsp_final)) {
@@ -55,6 +55,7 @@ function scr_collide_player() {
 	    }
 	}
 	#region Better Moving Platforms
+	/*
 	if platformid != noone
 	{
 		if vsp < 0 or !instance_exists(platformid) or !place_meeting(x, y + 32 + abs(platformid.v_vel) * 2, platformid)
@@ -109,7 +110,7 @@ function scr_collide_player() {
 			}
 		
 		}
-	}
+	}*/
 	#endregion
 
 
@@ -121,8 +122,8 @@ function scr_collide_player() {
 	//grounded |= !place_meeting(x, y, obj_platform) && place_meeting(x, y + 1, obj_platform)
 	grounded |= scr_solid_player(x,y + 1) && (!place_meeting(x, y, obj_water) && place_meeting(x, y + 1, obj_water))
 	//grounded |= grinding
-	if platformid != noone or (place_meeting(x, y + 1, obj_movingplatform) and !place_meeting(x, y - 2, obj_movingplatform))
-		grounded |= true	
+	//if platformid != noone or (place_meeting(x, y + 1, obj_movingplatform) and !place_meeting(x, y - 2, obj_movingplatform))
+	//	grounded |= true	
 
 
 
