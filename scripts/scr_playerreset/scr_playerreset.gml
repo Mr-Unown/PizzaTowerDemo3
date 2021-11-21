@@ -371,6 +371,7 @@ function scr_playerreset() {
 	    global.tomatofollow = 0;
 	    global.sausagefollow = 0;
 	    global.pineapplefollow = 0;
+		global.factoryfollow = 0;
 	    global.keyget = 0;
 	    collectscore = 0;
 	    collectscore = 0;

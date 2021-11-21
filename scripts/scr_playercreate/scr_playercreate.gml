@@ -153,7 +153,9 @@ function scr_playercreate() {
 	if instance_exists(obj_gerome)
 		instance_destroy(obj_gerome)
 	if instance_exists(obj_peshino)
-		instance_destroy(obj_peshino)	
+		instance_destroy(obj_peshino)
+	if instance_exists(obj_factoryfollower)
+		instance_destroy(obj_factoryfollower)
 	
 
 	ds_list_clear(global.toppinlist);
@@ -167,6 +169,7 @@ function scr_playercreate() {
 	global.noisebombfollow = false;
 	global.geromefollowing = false;
 	global.peshinofollowing = false;
+	global.factoryfollow = false;
 	global.geromeopen = false;
 #endregion
 

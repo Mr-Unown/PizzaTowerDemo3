@@ -1,4 +1,4 @@
-/*if global.npcs = false
+if global.npcs = false
 instance_destroy()
 if place_meeting(x, y, obj_player)
 {
@@ -9,10 +9,9 @@ if place_meeting(x, y, obj_player)
 		{
 			{
 			newtvsprite = spr_tv_factorynpc_1
-			scr_queue_message("Try to find the secret in the next room. Keep an eye out for a crack in the floor");
+			scr_queue_message("Find my brother");
 			}
 		}
 	}
 }
-*/
 			

@@ -28,7 +28,7 @@ commands[arrayi++] = "newsjumpcancel (true/false)"
 commands[arrayi++] = "wallrunstyle (older/old/new)"
 commands[arrayi++] = "pitchshift (on/off)"
 commands[arrayi++] = "escapecollect (old/new)"
-
+commands[arrayi++] = "freefallstyle (old/new)"
 if DEBUG 
 {
 	commands[arrayi++] = "changecharacter [player] [character] (true/false)"

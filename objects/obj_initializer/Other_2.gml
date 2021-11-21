@@ -9,7 +9,7 @@ global.wallrunstyle = ini_read_real("Option", "wallrunstyle", 0);
 global.collectstyle = ini_read_real("Option", "collectstyle", 0);
 global.pitchshift = ini_read_real("Option", "pitchshift", 0);
 global.escapecollect = ini_read_real("Option", "escapecollect", 0);
-global.wallrunstyle = ini_read_real("Option", "wallrunstyle", 0);
+global.freefallstyle = ini_read_real("Option", "freefallstyle", 0);
 ini_close()
 //Start by cleaning
 global.flushtextures = true;

@@ -217,6 +217,19 @@ if active = true
 				ini_write_real("Option", "wallrunstyle", arg1);
 				ini_close()
 				break;
+			case "freefallstyle": //Switches transformation pitch shift feature
+				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.newhud else arg1 = ds_list_find_value(_commands, 1)	
+				switch arg1
+				{
+					case "old": arg1 = 0
+					case "new": arg1 = 1
+					default: arg1 = !global.freefallstyle
+				}
+				global.freefallstyle = arg1
+				ini_open("saveData.ini")
+				ini_write_real("Option", "freefallstyle", arg1);
+				ini_close()
+				break;
 			case "debugmode": //Could probably use optimization
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.debugmode else arg1 = ds_list_find_value(_commands, 1)
 				switch arg1
