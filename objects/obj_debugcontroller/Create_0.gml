@@ -22,8 +22,13 @@ commands[arrayi++] = "voicefrequency [value]"
 commands[arrayi++] = "escape [minutes] [seconds]"
 commands[arrayi++] = "togglecollision (true/false)"
 commands[arrayi++] = "debugmode (true/false)"
+commands[arrayi++] = "collectstyle (old/new)"
 commands[arrayi++] = "newtitlescreen (true/false)"
 commands[arrayi++] = "newsjumpcancel (true/false)"
+commands[arrayi++] = "wallrunstyle (older/old/new)"
+commands[arrayi++] = "pitchshift (on/off)"
+commands[arrayi++] = "escapecollect (old/new)"
+
 if DEBUG 
 {
 	commands[arrayi++] = "changecharacter [player] [character] (true/false)"

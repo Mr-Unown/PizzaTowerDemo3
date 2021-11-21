@@ -163,7 +163,60 @@ if active = true
 				ini_open("saveData.ini")
 				ini_write_real("Option", "newsjumpcancel", arg1);
 				ini_close()
-				break;					
+				break;
+			case "collectstyle": //Switches main collect sprites
+				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.newhud else arg1 = ds_list_find_value(_commands, 1)	
+				switch arg1
+				{
+					case "old": arg1 = 0
+					case "new": arg1 = 1
+					default: arg1 = !global.collectstyle
+				}
+				global.collectstyle = arg1
+				ini_open("saveData.ini")
+				ini_write_real("Option", "collectstyle", arg1);
+				ini_close()
+				break;			
+			case "pitchshift": //Switches transformation pitch shift feature
+				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.newhud else arg1 = ds_list_find_value(_commands, 1)	
+				switch arg1
+				{
+					case "on": arg1 = 1
+					case "off": arg1 = 0
+					default: arg1 = !global.pitchshift
+				}
+				global.pitchshift = arg1
+				ini_open("saveData.ini")
+				ini_write_real("Option", "pitchshift", arg1);
+				ini_close()
+				break;
+			case "escapecollect": //Switches transformation pitch shift feature
+				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.newhud else arg1 = ds_list_find_value(_commands, 1)	
+				switch arg1
+				{
+					case "new": arg1 = 1
+					case "old": arg1 = 0
+					default: arg1 = !global.escapecollect
+				}
+				global.escapecollect = arg1
+				ini_open("saveData.ini")
+				ini_write_real("Option", "escapecollect", arg1);
+				ini_close()
+				break;		
+			case "wallrunstyle": //Switches transformation pitch shift feature
+				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.newhud else arg1 = ds_list_find_value(_commands, 1)	
+				switch arg1
+				{
+					case "new": arg1 = 0
+					case "old": arg1 = 1
+					case "older": arg1 = 2
+					default: arg1 = !global.wallrunstyle
+				}
+				global.wallrunstyle = arg1
+				ini_open("saveData.ini")
+				ini_write_real("Option", "wallrunstyle", arg1);
+				ini_close()
+				break;
 			case "debugmode": //Could probably use optimization
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.debugmode else arg1 = ds_list_find_value(_commands, 1)
 				switch arg1
@@ -174,6 +227,7 @@ if active = true
 				}
 				global.debugmode = arg1 
 				break		
+			
 			case "heatmeter": 
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.heatmeteroption  else arg1 = ds_list_find_value(_commands, 1)
 				switch arg1

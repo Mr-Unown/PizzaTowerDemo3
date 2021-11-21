@@ -4,8 +4,12 @@ global.saveroom = ds_list_create()
 global.savefile = "a"
 ini_open("saveData.ini")
 global.newtitlescreen = ini_read_real("Option", "newtitlescreen", false);
-global.newsjumpcancel = ini_write_real("Option", "newsjumpcancel", false);
-global.wallrunstyle = ini_write_real("Option", "wallrunstyle", 0);
+global.newsjumpcancel = ini_read_real("Option", "newsjumpcancel", false);
+global.wallrunstyle = ini_read_real("Option", "wallrunstyle", 0);
+global.collectstyle = ini_read_real("Option", "collectstyle", 0);
+global.pitchshift = ini_read_real("Option", "pitchshift", 0);
+global.escapecollect = ini_read_real("Option", "escapecollect", 0);
+global.wallrunstyle = ini_read_real("Option", "wallrunstyle", 0);
 ini_close()
 //Start by cleaning
 global.flushtextures = true;

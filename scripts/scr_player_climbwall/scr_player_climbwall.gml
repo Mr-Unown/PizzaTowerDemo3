@@ -43,15 +43,17 @@ function scr_player_climbwall() {
 	sprite_index = spr_machclimbwall
 	else
 	{
-		if global.wallrunstyle = 1
+		if global.wallrunstyle = 0
 		{
 			if wallspeed < 5
 			sprite_index = spr_player_NEWwallclimb
 			else 
 			sprite_index = spr_player_NEWwallclimb2
 		}
-		else
+		else if global.wallrunstyle = 1
 		sprite_index = spr_machclimbwall	
+		else if global.wallrunstyle = 2
+		sprite_index = spr_oldclimbwall
 	}
 	if (character != "S")
 	{

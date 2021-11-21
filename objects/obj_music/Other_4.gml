@@ -483,6 +483,23 @@ if (global.panic == 0 && global.snickchallenge == 0)
             pausedmusic = mu_kungfu
         }
     }
+	if (string_letters(roomname) == "factory")
+    {
+        {
+        for (i = 0; i < 20; i++)
+        {
+            if (roomname == ("factory_" + string(i)) && i <= 5)
+            {
+			if (!audio_is_playing(mu_factory1))
+        {
+            scr_soundstopall()
+            scr_sound(mu_factory1)
+            pausedmusic = mu_factory1
+        }
+    }
+		}
+		}
+	}
 	if room = room_test1
 	{
 	    if (!audio_is_playing(mu_freezer2))
