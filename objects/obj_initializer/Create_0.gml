@@ -19,6 +19,7 @@ for (var i = 0; i <= collisionheight; ++i)
 	}	
 }*/
 global.newtitlescreen = 0;
+global.npcs = true;
 ini_open("saveData.ini")
 global.newsjumpcancel = ini_read_real("Option", "newsjumpcancel", false)
 global.newtitlescreen = ini_read_real("Option", "newtitlescreen", false);

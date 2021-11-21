@@ -88,7 +88,11 @@ layer_y("Backgrounds_3", (_centeredcam_y * 0.05))
 layer_x("Backgrounds_4", (_centeredcam_x * 0.0005))
 layer_y("Backgrounds_4", (_centeredcam_y * 0.0005))
 layer_x("Backgrounds_5", (_centeredcam_x * 0.90))
-layer_y("Backgrounds_5", (_centeredcam_y * 0.90))
+<<<<<<< Updated upstream
+layer_y("Backgrounds_5", clamp(((_centeredcam_y * 0.90) +  camera_get_view_height(view_camera[0])  - sprite_get_height(layer_background_get_sprite(back_id13))  ) ,foregroundoffsety,foregroundoffsety + 8))
+=======
+layer_y("Backgrounds_5", (_cam_y - clamp(_cam_y * 0.25 * (540 / room_height), 0, (sprite_get_height(layer_background_get_sprite(back_id15)) - 540 ) )))
+>>>>>>> Stashed changes
 layer_x("Backgrounds_Ground1", (_centeredcam_x * 0.15))
 layer_y("Backgrounds_Ground1", ((_cam_y * 0.15) + groundy))
 layer_x("Backgrounds_Ground2", (_centeredcam_x * 0.25))
