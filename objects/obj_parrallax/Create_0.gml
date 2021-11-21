@@ -1,3 +1,8 @@
+if (instance_number(obj_parrallax) > 1) {
+	var first = instance_find(obj_parrallax, 0);
+	if (id != first) { instance_destroy(); exit; }
+}
+
 bg = 1205
 global.scrolloffset = 0
 scrolloffset = global.scrolloffset
