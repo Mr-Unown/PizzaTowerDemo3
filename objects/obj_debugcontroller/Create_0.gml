@@ -24,6 +24,7 @@ commands[arrayi++] = "togglecollision (true/false)"
 commands[arrayi++] = "debugmode (true/false)"
 commands[arrayi++] = "newtitlescreen (true/false)"
 commands[arrayi++] = "newsjumpcancel (true/false)"
+commands[arrayi++] = "attackstyle (shoulder/grab)"
 if DEBUG 
 {
 	commands[arrayi++] = "changecharacter [player] [character] (true/false)"

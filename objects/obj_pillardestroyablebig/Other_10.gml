@@ -1,4 +1,4 @@
-if(obj_player.state == 22 || obj_player.state == 70)
+if(obj_player.state == 22 || obj_player.state == 70 || obj_player.state == 111)
 {
 	if place_meeting((x - obj_player1.hsp), y, obj_player1)
 	{

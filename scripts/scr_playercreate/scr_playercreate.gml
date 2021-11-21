@@ -12,8 +12,10 @@ function scr_playercreate() {
 	substate = 0;
 	//Suplex
 	suplexdashtimer = 0;
-	//Newsjumpcancel
-	global.newsjumpcancel = false
+	ini_open("saveData.ini")
+	global.newsjumpcancel = ini_read_real("Option", "newsjumpcancel", 1)
+	global.attackstyle = ini_read_real("Option", "attackstyle", 1)
+	ini_close()
 	//global.wateralpha = 0.85
 	global.storedtaminute = 0;
 	global.storedtasecond = 0;
