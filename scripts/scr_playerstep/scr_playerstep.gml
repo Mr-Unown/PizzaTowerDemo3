@@ -516,6 +516,7 @@ else if actor = true
 	}	
 
 #region State Stuff
+	var subtle_var = 5;
 	switch state
 	{
 		case states.normal:
@@ -551,7 +552,6 @@ else if actor = true
 
 #region Slope Angles
 	//Angle Strength
-	var subtle_var = 5;
 	if global.freezeframe = false && sprite_index != spr_knightpepdownslope && place_meeting(x,y+1,obj_slope) && vsp >= 0 
 	{
 	    with instance_place(x,y + 1,obj_slope)

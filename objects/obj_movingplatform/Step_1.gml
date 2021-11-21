@@ -62,6 +62,7 @@ for (var i = 0; i < array_length(objects) - 1; ++i)
 		}
 	}
 }
+
 #endregion
 
 

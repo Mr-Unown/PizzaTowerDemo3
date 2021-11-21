@@ -4,6 +4,7 @@ function scr_collide() {
 	//Variables
 	grounded = false
 	in_water = (instance_exists(obj_water) && obj_water.bbox_top < y);
+		
 	// Vertical
 	repeat(abs(vsp)) 
 	{
