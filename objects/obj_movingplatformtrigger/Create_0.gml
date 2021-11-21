@@ -1,7 +1,5 @@
-platID = 0
-
-hdir = _DIRECTION.backward
-vdir = _DIRECTION.none
+var flip = sign(image_xscale) = -1 ? 180 : 0
+_angle = image_angle + flip;
 
 // Inherit the parent event
 event_inherited();

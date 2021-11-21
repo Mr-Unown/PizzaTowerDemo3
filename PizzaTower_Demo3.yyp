@@ -2730,7 +2730,7 @@
     {"id":{"name":"scr_stopescapemusic","path":"scripts/scr_stopescapemusic/scr_stopescapemusic.yy",},"order":64,},
     {"id":{"name":"scr_playercreate","path":"scripts/scr_playercreate/scr_playercreate.yy",},"order":65,},
     {"id":{"name":"scr_escapetimes","path":"scripts/scr_escapetimes/scr_escapetimes.yy",},"order":66,},
-    {"id":{"name":"scr_playerstate","path":"scripts/scr_playerstate/scr_playerstate.yy",},"order":67,},
+    {"id":{"name":"scr_playerstep","path":"scripts/scr_playerstep/scr_playerstep.yy",},"order":67,},
     {"id":{"name":"scr_playercolors","path":"scripts/scr_playercolors/scr_playercolors.yy",},"order":68,},
     {"id":{"name":"scr_roomnames","path":"scripts/scr_roomnames/scr_roomnames.yy",},"order":69,},
     {"id":{"name":"scr_transformationcheck","path":"scripts/scr_transformationcheck/scr_transformationcheck.yy",},"order":70,},
