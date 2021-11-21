@@ -145,7 +145,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
     {
         for (i = 0; i < 20; i++)
         {
-            if (roomname == ("desert_" + string(i)) && i <= 14)
+            if (roomname == ("desert_" + string(i)) && i <= 11)
             {
                 if (!audio_is_playing(mu_desert))
                 {
@@ -155,7 +155,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
                     pausedmusic = mu_desert
                 }
             }
-            else if (roomname == ("desert_" + string(i)) && i > 12)
+            else if (roomname == ("desert_" + string(i)) && i > 11)
             {
                 if (!audio_is_playing(mu_ufo))
                 {
