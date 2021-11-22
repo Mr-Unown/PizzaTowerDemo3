@@ -266,6 +266,7 @@ if audio_is_playing(mu_ruin) && audio_is_playing(mu_ruinbmix)
 	audio_sound_gain(mu_ruinbmix, (1), 21000)					
 	}				
 }
+var pitchspd = (obj_player.movespeed/9.5) * 0.8
 if global.pitchshift = 1
 {
 	with (obj_player1)
@@ -273,7 +274,12 @@ if global.pitchshift = 1
 		if (state == states.knightpep)
 		audio_sound_pitch(global.music, 0.9);
 		else if (state == states.tumble or state == states.knightpepslopes)
-		audio_sound_pitch(global.music, 1.2);
+		{
+			if sprite_index != spr_tumblestart 
+			audio_sound_pitch(global.music, pitchspd);
+			else 
+			audio_sound_pitch(global.music, 1.2);
+		}
 		else
 		audio_sound_pitch(global.music, 1);
 	}

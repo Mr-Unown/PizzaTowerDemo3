@@ -500,7 +500,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
 		}
 		}
 	}
-	if room = room_test1
+	if room = room_test1 || room = room_test5
 	{
 	    if (!audio_is_playing(mu_freezer2))
         {

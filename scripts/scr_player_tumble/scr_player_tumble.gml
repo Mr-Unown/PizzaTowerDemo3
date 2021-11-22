@@ -14,7 +14,7 @@ function scr_player_tumble() {
 			with (instance_place(x, (y + 1), obj_slope))
 			{
 				var slope_acceleration = abs(image_yscale) / abs(image_xscale)
-				if other.movespeed > 8 && other.xscale == sign(image_xscale)
+				if other.movespeed > 0 && other.xscale == sign(image_xscale)
 				{
 					other.movespeed -= (0.25 * slope_acceleration)
 				}
@@ -30,13 +30,16 @@ function scr_player_tumble() {
 				var _xscale = _slope[1]
 				var _yscale = _slope[2]
 				var slope_acceleration = abs(_yscale) / abs(_xscale)
-				if other.movespeed > 8 && other.xscale == sign(_xscale)
+				if other.movespeed > 0 && other.xscale == sign(_xscale)
 				{
 					other.movespeed -= (0.25 * slope_acceleration)
 				}
-				else if other.movespeed < 20 && other.xscale == -sign(_xscale)
-					other.movespeed += (0.25 * slope_acceleration)				
+				else if other.movespeed < 22 && other.xscale == -sign(_xscale)
+					other.movespeed += (0.25 * slope_acceleration)
+				if other.movespeed <= 0
+				other.xscale = -sign(_xscale)
 			}
+			
 		}
 	}	
 	if ((!scr_slope()) && sprite_index == spr_tumblestart && floor(image_index) < 11)

@@ -1090,6 +1090,7 @@
     {"id":{"name":"spr_playerV_machslide","path":"sprites/spr_playerV_machslide/spr_playerV_machslide.yy",},"order":70,},
     {"id":{"name":"spr_playerV_machslideend","path":"sprites/spr_playerV_machslideend/spr_playerV_machslideend.yy",},"order":71,},
     {"id":{"name":"spr_playerV_machslidestart","path":"sprites/spr_playerV_machslidestart/spr_playerV_machslidestart.yy",},"order":72,},
+    {"id":{"name":"room_test5","path":"rooms/room_test5/room_test5.yy",},"order":6,},
     {"id":{"name":"spr_playerV_move","path":"sprites/spr_playerV_move/spr_playerV_move.yy",},"order":73,},
     {"id":{"name":"spr_playerV_normalHUD","path":"sprites/spr_playerV_normalHUD/spr_playerV_normalHUD.yy",},"order":74,},
     {"id":{"name":"spr_playerV_panic","path":"sprites/spr_playerV_panic/spr_playerV_panic.yy",},"order":75,},
@@ -3725,6 +3726,7 @@
     {"roomId":{"name":"factory_8","path":"rooms/factory_8/factory_8.yy",},},
     {"roomId":{"name":"dragonlairx_1","path":"rooms/dragonlairx_1/dragonlairx_1.yy",},},
     {"roomId":{"name":"factory_secret1","path":"rooms/factory_secret1/factory_secret1.yy",},},
+    {"roomId":{"name":"room_test5","path":"rooms/room_test5/room_test5.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
