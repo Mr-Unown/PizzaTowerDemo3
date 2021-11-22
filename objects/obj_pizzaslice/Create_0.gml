@@ -5,7 +5,6 @@ grav = 0.5
 recreate = 0
 maxspeed = 0
 outside_room = 0
-grounded = false;
 out_timer = 0
 _dir = 1
         if ((obj_player1.character == "P" && obj_player1.spotlight == 1) || (obj_player2.character == "P" && obj_player1.spotlight == 0))

@@ -15,7 +15,7 @@ enum tiletype
 }	
 #endregion
 
-function scr_solid(argument0 = x, argument1 = y,noslope = false) 
+function scr_solid(argument0 = x, argument1 = y) 
 {
 	/// @description Checks location for Solids
 	/// @param x 
@@ -197,9 +197,8 @@ function scr_solid(argument0 = x, argument1 = y,noslope = false)
 	#endregion
 	
 	#endregion
-	if noslope = false
-	{
-		#region Slopes
+	
+	#region Slopes
 	
 	#region Object
 	if place_meeting(x,y, obj_slope)
@@ -247,7 +246,7 @@ function scr_solid(argument0 = x, argument1 = y,noslope = false)
 	#endregion
 
 	#endregion
-	}
+
 	x = old_x
 	y = old_y
 	return false;

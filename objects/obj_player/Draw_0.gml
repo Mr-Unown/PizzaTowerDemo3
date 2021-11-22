@@ -27,12 +27,12 @@ else if !surface_exists(surf_pallete)
 	#endregion	
 }
 //Stolen Angle Code thing
-//var offset_x = 0
-//var offset_y = 0
-//var _cos = cos(draw_angle)
-//var _sin = sin(draw_angle)
-var drawx = x //+ _cos * offset_x - _sin * offset_y;
-var drawy = y //+ _sin * offset_x + _cos * offset_y;
+var offset_x = 0
+var offset_y = 0
+var _cos = cos(draw_angle)
+var _sin = sin(draw_angle)
+var drawx = x + _cos * offset_x - _sin * offset_y;
+var drawy = y + _sin * offset_x + _cos * offset_y;
 var player_xscale = xscale * scale, player_yscale = yscale * scale;
 
 

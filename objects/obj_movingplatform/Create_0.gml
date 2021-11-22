@@ -21,7 +21,3 @@ objects[i++] = obj_goop;
 objects[i++] = obj_pizzaslice;
 objects[i++] = obj_shotgun;
 objects[i++] = obj_pizzacoin;
-objects[i++] = obj_pizzagoblinbomb;
-objects[i++] = obj_banditochicken_dynamite;
-objects[i++] = obj_vigidynamite;
-objects[i++] = obj_noisekickbomb;

@@ -1,4 +1,4 @@
-function scr_solid_player(argument0 = x, argument1 = y, noslope = false) {
+function scr_solid_player(argument0 = x, argument1 = y) {
 	var old_x = x
 	var old_y = y
 	x = argument0
@@ -178,9 +178,7 @@ function scr_solid_player(argument0 = x, argument1 = y, noslope = false) {
 	}
 	#endregion
 	
-	if noslope = false
-	{	
-		#region Slopes
+	#region Slopes
 	
 	#region Object
 	if place_meeting(x,y, obj_slope)
@@ -228,7 +226,6 @@ function scr_solid_player(argument0 = x, argument1 = y, noslope = false) {
 	#endregion
 
 	#endregion
-	}
 	#region Player Only Collisions
 	
 	#region Water

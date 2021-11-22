@@ -116,7 +116,7 @@ function scr_player_mach2() {
 	    if (character == "V")
 	        sprite_index = spr_playerV_divekickgetup
 	}
-	if (((!grounded) && scr_solid(x + hsp,y,true) && (!place_meeting((x + hsp), y, obj_destructibles)) && (!scr_slope_ext(x + sign(hsp), y))) || (grounded && (scr_solid(x + sign(hsp),y - 2,true) && !scr_slope_ext(x + sign(hsp), y)) && (!place_meeting((x + hsp), y, obj_destructibles))  && scr_slope() ) )
+	if (((!grounded) && scr_solid(x + hsp,y) && (!place_meeting((x + hsp), y, obj_destructibles)) && (!scr_slope_ext(x + sign(hsp), y))) || (grounded && (scr_solid(x + sign(hsp),y - 2) && !scr_slope_ext(x + sign(hsp), y)) && (!place_meeting((x + hsp), y, obj_destructibles))  && scr_slope() ) )
 	{
 	    wallspeed = movespeed
 	    state = 17
