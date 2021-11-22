@@ -22,7 +22,7 @@ function scr_enemy_charge() {
 	{
 	    hsp = (image_xscale * movespeed)
 	    image_speed = 0.35
-	    if (((scr_solid((x + 1), y) && image_xscale == 1) || (scr_solid((x - 1), y) && image_xscale == -1)) && (!scr_slope_ext(x + sign(hsp),y)))
+	    if (scr_solid(x + sign(image_xscale),y) && !scr_slope_ext(x + sign(hsp),y)) || place_meeting((x + sign(image_xscale)), y, obj_hallway) 
 	        image_xscale *= -1
 	    sprite_index = spr_pizzice_walk
 	}
@@ -32,10 +32,21 @@ function scr_enemy_charge() {
 	        hsp = (image_xscale * movespeed)
 	    else
 	        hsp = 0
-	    if (((scr_solid((x + 1), y) && image_xscale == 1) || (scr_solid((x - 1), y) && image_xscale == -1)) && (!scr_slope_ext(x + sign(hsp),y)))
+	    if (scr_solid(x + sign(image_xscale),y) && !scr_slope_ext(x + sign(hsp),y)) || place_meeting((x + sign(image_xscale)), y, obj_hallway) 
 	        image_xscale *= -1
 		movespeed = approach(movespeed,5,0.5)
 	}
+	if (object_index == obj_banditochicken)
+	{
+	    if (grounded || (grounded && (!place_meeting(x, y, obj_platform))))
+	        hsp = (image_xscale * movespeed)
+	    else
+	        hsp = 0
+	    if (scr_solid(x + sign(image_xscale),y) && !scr_slope_ext(x + sign(hsp),y)) || place_meeting((x + sign(image_xscale)), y, obj_hallway) 
+	        image_xscale *= -1
+		movespeed = approach(movespeed,10,0.5)
+		sprite_index = spr_banditochicken_chase
+	}	
 	if (object_index == obj_minijohn || object_index == obj_piraneapple)
 	{
 		if global.coop = true
@@ -57,7 +68,7 @@ function scr_enemy_charge() {
 	    else if (slide > 0)
 	        slide -= 0.1
 	    hsp = ((image_xscale * movespeed) + slide)
-	    if (((scr_solid((x + 1), y) && image_xscale == 1) || (scr_solid((x - 1), y) && image_xscale == -1)) && (!scr_slope_ext(x + sign(hsp),y)))
+	    if (scr_solid(x + sign(image_xscale),y) && !scr_slope_ext(x + sign(hsp),y)) || place_meeting((x + sign(image_xscale)), y, obj_hallway) 
 	    {
 	        image_xscale *= -1
 	        if (object_index != obj_piraneapple)
@@ -135,7 +146,7 @@ function scr_enemy_charge() {
 	    image_speed = 0.35
 	    if (grounded && vsp > 0)
 	        state = 102
-	    if (((scr_solid((x + 1), y) && image_xscale == 1) || (scr_solid((x - 1), y) && image_xscale == -1)) && (!scr_slope_ext(x + sign(hsp),y)))
+	    if (scr_solid(x + sign(image_xscale),y) && !scr_slope_ext(x + sign(hsp),y)) || place_meeting((x + sign(image_xscale)), y, obj_hallway) 
 	        image_xscale *= -1
 	    if ((!(grounded || (grounded && (!place_meeting(x, y, obj_platform))))) && hsp < 0)
 	        hsp += 0.1
@@ -143,7 +154,11 @@ function scr_enemy_charge() {
 	        hsp -= 0.1
 	    sprite_index = spr_ninja_attack
 	}
-
+	//Rail Shit
+	var rail = 0;
+	rail = ( place_meeting(x,y+1,obj_railh) ? -5 : (place_meeting(x,y+1,obj_railh2) ? 5 : 0) )
+	if grounded
+		hsp += rail;
 
 
 }

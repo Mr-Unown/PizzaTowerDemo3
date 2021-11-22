@@ -52,9 +52,11 @@ function animation_end(value = floor(image_index) ,endpoint = image_number - 1)
 	return value >= endpoint;
 }
 
-function nearest_player()
+function nearest_player(argument0 = x, argument1 = y)
 {
 	/// @description Returns Nearest Player
 	/// @function nearest_player
-	return (global.coop = false ? obj_player1 : instance_nearest(x,y,obj_player));
+	/// @param x
+	/// @param y
+	return (global.coop = false ? obj_player1 : instance_nearest(argument0,argument1,obj_player));
 }
