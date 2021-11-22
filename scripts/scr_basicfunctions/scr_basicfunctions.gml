@@ -60,3 +60,10 @@ function nearest_player(argument0 = x, argument1 = y)
 	/// @param y
 	return (global.coop = false ? obj_player1 : instance_nearest(argument0,argument1,obj_player));
 }
+
+function focused_player()
+{
+	/// @description Returns Focused Player
+	/// @function focused_player
+	return (global.coop = false ? obj_player1 : (obj_player1.spotlight == false ? obj_player2 : obj_player1)) ;
+}

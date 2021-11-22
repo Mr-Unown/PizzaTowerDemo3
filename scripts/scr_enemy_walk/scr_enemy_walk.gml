@@ -11,18 +11,19 @@ function scr_enemy_walk() {
 	else if (object_index != obj_ancho)
 	    hsp = 0	
 	*/
-
-	if (object_index != obj_spitcheese && object_index != obj_ninja && object_index != obj_trash && object_index != obj_fencer && object_index != obj_rancher && object_index != obj_banditochicken && object_index != obj_ancho)
-		hsp = (image_xscale * _movespeed)	
-	else if (object_index == obj_ancho)
-		hsp = 0	
 	//Rail Shit
 	var rail = 0;
-	rail = ( place_meeting(x,y+1,obj_railh) ? -5 : (place_meeting(x,y+1,obj_railh2) ? 5 : 0) )
 	if grounded
-		hsp += rail;
+		rail = ( place_meeting(x,y+1,obj_railh) ? -5 : (place_meeting(x,y+1,obj_railh2) ? 5 : 0) )
+	else
+		rail = 0;
+	if (object_index != obj_spitcheese && object_index != obj_treasureguy && object_index != obj_ninja && object_index != obj_trash && object_index != obj_fencer && object_index != obj_rancher && object_index != obj_banditochicken && object_index != obj_ancho)
+		hsp = (image_xscale * _movespeed) + rail
+	else if (object_index == obj_ancho)
+		hsp = 0 + rail
+
 	
-	if (object_index != obj_indiancheese && object_index != obj_spitcheese)
+	if (object_index != obj_indiancheese && object_index != obj_treasureguy && object_index != obj_spitcheese)
 	    sprite_index = walkspr
 	else if (object_index == obj_spitcheese)
 	{

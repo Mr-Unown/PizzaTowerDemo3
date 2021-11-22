@@ -1,3 +1,5 @@
+flags.do_once = false;
+flags.do_save = false;
 condition = function()
 {
 	var player = (global.coop = false ? obj_player1 : instance_nearest(x,y,obj_player));
@@ -9,5 +11,6 @@ output = function()
 	{
 		sprite_index = spr_treasureguy_popout;
 		image_index = 0;
+		activated = false
 	}
 }

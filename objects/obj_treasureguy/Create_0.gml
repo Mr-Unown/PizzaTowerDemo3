@@ -3,7 +3,7 @@ grav = 0.5
 hsp = 0
 vsp = 0
 movespeed = 0
-state = enemystates.enemyidle
+state = enemystates.enemywalk
 stunned = 0
 activated = false;
 trailbuffer = 6;
@@ -11,6 +11,7 @@ trailbuffer = 6;
 content_arr[0] = obj_pizzaslice;
 content_arr[1] = obj_pizzaslice;
 content_arr[2] = obj_pizzaslice;
+
 //Treasure Port
 threshold_x = 400;
 threshold_y = 96;
@@ -43,7 +44,7 @@ walkspr = spr_treasureguy_idle
 turnspr = spr_slimeturn
 recoveryspr = spr_treasureguy_stun
 grabbedspr = spr_treasureguy_stun
-scaredspr = spr_treasureguy_escapestart
+scaredspr = spr_cheeseslime_heat
 hp = 1
 slapped = 0
 grounded = 1

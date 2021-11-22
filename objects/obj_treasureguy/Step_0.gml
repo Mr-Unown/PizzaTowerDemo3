@@ -6,13 +6,7 @@ if (state == 106 && stunned > 100 && birdcreated == 0)
         ID = other.id
 }
 //Treasure
-
 var targetplayer = nearest_player()
-if targetplayer.x > x - 400 && targetplayer.x < x + 400 && y <= targetplayer.y + 60 && y >= targetplayer.y - 60
-{
-    if (state == enemystates.enemyidle || state == enemystates.enemywalk) && sprite_index != spr_treasureguy_popout
-        activated = true
-}
 if activated == false && (state == enemystates.enemyidle || state == enemystates.enemywalk)
 {
 	if sprite_index == spr_treasureguy_popout 
@@ -23,35 +17,42 @@ if activated == false && (state == enemystates.enemyidle || state == enemystates
 	}
 	else
 		sprite_index = spr_treasureguy_idle
+	image_speed = 0.35
 }
-if activated == true && (state == enemystates.enemyidle || state == enemystates.enemywalk) && sprite_index != spr_treasureguy_escapestart
+if targetplayer.x > x - 400 && targetplayer.x < x + 400 && y <= targetplayer.y + 96 && y >= targetplayer.y - 96
+{
+    if sprite_index != spr_treasureguy_popout && (state == enemystates.enemyidle || state == enemystates.enemywalk)
+        activated = true
+}
+if activated == true && sprite_index != spr_treasureguy_escapestart && (state == enemystates.enemyidle || state == enemystates.enemywalk)
 {
     movespeed = 0
 	if x != targetplayer.x
-		image_xscale = -sign(x - targetplayer.x)
+		image_xscale = sign(x - targetplayer.x)
     image_index = 0
     sprite_index = spr_treasureguy_escapestart
+	image_speed = 0.35
 }
 if sprite_index == spr_treasureguy_escapestart && animation_end()
 {
-    image_xscale *= -1
+	movespeed = 0
     sprite_index = spr_treasureguy_escape
     state = enemystates.enemycharge
-    movespeed = 10
     with (instance_create(x, y, obj_jumpdust))
         image_xscale = other.image_xscale
 }
 //Funny Topping Trail
 var player = focused_player()
 if state == enemystates.enemycharge && trailbuffer > 0
-    trailbuffer--
+	trailbuffer -= 0.85
 if (trailbuffer <= 0)
 {
-	with instance_create(x, (y + 17), obj_toppingtrail)
+	with instance_create(x - (16 * image_xscale), (y + 17), obj_toppingtrail)
 	{
 		playerid = player.id
+		toppingalpha = 0.65
 	}
-	trailbuffer = 6;
+	trailbuffer = 10;
 }
 
 
