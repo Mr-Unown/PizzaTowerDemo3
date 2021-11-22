@@ -459,7 +459,7 @@ else if actor = true
 }
 
 
-
+	//Unused
 	#region Jump Height
 	/*
 	var _jumpheight = 0;
@@ -516,7 +516,7 @@ else if actor = true
 	}	
 
 #region State Stuff
-	var subtle_var = 5;
+	var subtle_var = 5, speed_var = 0;
 	switch state
 	{
 		case states.normal:
@@ -552,16 +552,23 @@ else if actor = true
 
 #region Slope Angles
 	//Angle Strength
-	if global.freezeframe = false && sprite_index != spr_knightpepdownslope && place_meeting(x,y+1,obj_slope) && vsp >= 0 
+	if global.freezeframe = false && sprite_index != spr_knightpepdownslope && scr_slope_ext(x, y + 1) && place_meeting(x,y+1,obj_slope) && vsp >= 0 
 	{
 	    with instance_place(x,y + 1,obj_slope)
 	    {
+			//some stuff stolen from orbinaut framework
 	        var flip = sign(image_xscale) = -1 ? 180 : 0
-	        other.draw_angle = ( (approach(other.draw_angle,(point_direction(x,y + sprite_height,x + sprite_width,y) - flip),16)) / (subtle_var) );
+	        var targetangle = point_direction(x,y + sprite_height,x + sprite_width,y) - flip;
+			var RotationStep = (abs(other.hsp) / 16 + abs(other.hsp) / 32 - 2) * -1
+			other.draw_angle =  darctan2(dsin(targetangle) + dsin(other.draw_angle) * RotationStep, dcos(targetangle) + dcos(other.draw_angle) * RotationStep);	
 	    }
 	}
 	else if global.freezeframe = false
-	    draw_angle = approach(draw_angle,0,32);
+	{
+		var targetangle = 0;
+		var RotationStep = (abs(hsp) / 16 + abs(hsp) / 32 - 2) * -1
+		draw_angle =  darctan2(dsin(targetangle) + dsin(draw_angle) * RotationStep, dcos(targetangle) + dcos(draw_angle) * RotationStep);	
+	}
 #endregion	
 
 	//Speedboost

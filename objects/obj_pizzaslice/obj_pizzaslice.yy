@@ -6,8 +6,8 @@
   "solid": false,
   "visible": true,
   "spriteMaskId": {
-    "name": "spr_pizzaslice",
-    "path": "sprites/spr_pizzaslice/spr_pizzaslice.yy",
+    "name": "spr_slicemask",
+    "path": "sprites/spr_slicemask/spr_slicemask.yy",
   },
   "persistent": false,
   "parentObjectId": {
