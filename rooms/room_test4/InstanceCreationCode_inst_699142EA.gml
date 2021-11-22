@@ -12,5 +12,4 @@ output = function()
 		image_index = 0;
 		visible = true;		
 	}
-	instance_create(x,y,obj_safeexplosion)
 }
