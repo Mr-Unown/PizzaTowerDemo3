@@ -6,11 +6,22 @@ movespeed = 0
 state = enemystates.enemyidle
 stunned = 0
 activated = false;
-bonebuffer = 100;
+trailbuffer = 6;
 //Inventory
 content_arr[0] = obj_pizzaslice;
 content_arr[1] = obj_pizzaslice;
 content_arr[2] = obj_pizzaslice;
+//Treasure Port
+threshold_x = 400;
+threshold_y = 96;
+targetplayer = noone;
+running = 0;
+scared_max = 50;
+runmovespeed = 0;
+runmovespeed_max = 8;
+accel = 0.25;
+jumped = 0;
+idle_threshold = 800;
 
 alarm[0] = 150
 roaming = 1

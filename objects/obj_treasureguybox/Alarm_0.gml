@@ -1,5 +1,9 @@
 if (current_arr > (array_length(content_arr) - 1))
+{
+	alarm[1] = 3
+	alarm[3] = 60
     return;
+}
 var _content = content_arr[current_arr]
 var _hsp = 0
 if ((current_arr % 2) == 0)
