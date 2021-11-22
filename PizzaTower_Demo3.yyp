@@ -1088,6 +1088,7 @@
     {"id":{"name":"spr_playerV_keydoor","path":"sprites/spr_playerV_keydoor/spr_playerV_keydoor.yy",},"order":57,},
     {"id":{"name":"spr_playerV_keyget","path":"sprites/spr_playerV_keyget/spr_playerV_keyget.yy",},"order":58,},
     {"id":{"name":"spr_playerV_ladderstill","path":"sprites/spr_playerV_ladderstill/spr_playerV_ladderstill.yy",},"order":59,},
+    {"id":{"name":"spr_slicemask","path":"sprites/spr_slicemask/spr_slicemask.yy",},"order":311,},
     {"id":{"name":"spr_playerV_land","path":"sprites/spr_playerV_land/spr_playerV_land.yy",},"order":60,},
     {"id":{"name":"spr_playerV_mach1","path":"sprites/spr_playerV_mach1/spr_playerV_mach1.yy",},"order":61,},
     {"id":{"name":"spr_playerV_mach2boost","path":"sprites/spr_playerV_mach2boost/spr_playerV_mach2boost.yy",},"order":62,},
