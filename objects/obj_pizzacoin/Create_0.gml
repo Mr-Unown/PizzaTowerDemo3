@@ -3,4 +3,5 @@ hsp = 0
 vsp = random_range(-2, -4)
 grav = 0.5
 _dir = 1
+grounded = false;
 

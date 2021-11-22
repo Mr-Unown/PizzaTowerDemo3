@@ -76,7 +76,7 @@ function scr_player_climbwall() {
 	    state = 93
 	    machhitAnim = 0
 	}
-	if (!scr_solid((x + xscale), y))
+	if (!scr_solid((x + xscale), y,true))
 	{
 	    instance_create(x, y, obj_jumpdust)
 	    vsp = 0
