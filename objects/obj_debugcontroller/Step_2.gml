@@ -243,6 +243,19 @@ if active = true
 				ini_write_real("Option", "divestyle", arg1);
 				ini_close()
 				break;
+			case "destroyablecollect": //Switches transformation pitch shift feature
+				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.newhud else arg1 = ds_list_find_value(_commands, 1)	
+				switch arg1
+				{
+					case "pizzaslice": arg1 = 0
+					case "topping": arg1 = 1
+					default: arg1 = !global.destroyablecollect
+				}
+				global.destroyablecollect = arg1
+				ini_open("saveData.ini")
+				ini_write_real("Option", "destroyablecollect", arg1);
+				ini_close()
+				break;
 			case "debugmode": //Could probably use optimization
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.debugmode else arg1 = ds_list_find_value(_commands, 1)
 				switch arg1

@@ -30,6 +30,7 @@ commands[arrayi++] = "pitchshift (on/off)"
 commands[arrayi++] = "escapecollect (old/new)"
 commands[arrayi++] = "groundpoundstyle (old/new)"
 commands[arrayi++] = "divestyle (old/new)"
+commands[arrayi++] = "destroyablecollect (pizza/topping)"
 
 if DEBUG 
 {
