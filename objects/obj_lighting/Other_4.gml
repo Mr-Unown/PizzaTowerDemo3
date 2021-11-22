@@ -35,6 +35,33 @@ switch room
 		targetdarkness = 0.75;
 		break;				
 	#endregion	
+	#region Desert
+	case desert_1:
+	case desert_2:
+	case desert_3:
+		can_draw = true;
+		targetdarkness = 0.15;
+		break;
+	case desert_4:
+		can_draw = true;
+		targetdarkness = 0.25;
+		break;
+	case desert_5:
+	case desert_6:
+	case desert_7:	
+	case desert_8:
+	case desert_9:
+	case desert_10:
+	case desert_11:
+		can_draw = true;
+		targetdarkness = 0.35;
+		break;
+	case desert_mart1:
+	case desert_mart2:
+		can_draw = true;
+		targetdarkness = 0.60;
+		break;
+	#endregion
 	default:
 		targetdarkness = 0;
 		darkness = 0

@@ -1945,6 +1945,7 @@
     {"id":{"name":"spr_gerome_idle","path":"sprites/spr_gerome_idle/spr_gerome_idle.yy",},"order":4,},
     {"id":{"name":"spr_gerome_sleeping","path":"sprites/spr_gerome_sleeping/spr_gerome_sleeping.yy",},"order":6,},
     {"id":{"name":"spr_gerome_eating","path":"sprites/spr_gerome_eating/spr_gerome_eating.yy",},"order":3,},
+    {"id":{"name":"bg_desertmart","path":"sprites/bg_desertmart/bg_desertmart.yy",},"order":4,},
     {"id":{"name":"spr_pizzacuttersaw_new","path":"sprites/spr_pizzacuttersaw_new/spr_pizzacuttersaw_new.yy",},"order":234,},
     {"id":{"name":"spr_pizzacuttersaw_button","path":"sprites/spr_pizzacuttersaw_button/spr_pizzacuttersaw_button.yy",},"order":233,},
     {"id":{"name":"spr_ufolive_stunned","path":"sprites/spr_ufolive_stunned/spr_ufolive_stunned.yy",},"order":189,},
