@@ -1,5 +1,5 @@
 var player = (global.coop = false ? obj_player1 : instance_nearest(x,y,obj_player));
-if (player.state == 22 || player.state == 70)
+if (player.state == 22 || player.state == 70 || player.state == 111)
 {
 	if place_meeting((x - player.hsp), y, player)
 	{

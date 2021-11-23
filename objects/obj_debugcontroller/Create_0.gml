@@ -32,7 +32,7 @@ commands[arrayi++] = "freefallstyle (old/new)"
 commands[arrayi++] = "divestyle (old/new)"
 commands[arrayi++] = "destroyablecollect (pizza/topping)"
 commands[arrayi++] = "ratmode (on/off)"
-
+commands[arrayi++] = "attackstyle (shoulder/grab)"
 if DEBUG 
 {
 	commands[arrayi++] = "changecharacter [player] [character] (true/false)"

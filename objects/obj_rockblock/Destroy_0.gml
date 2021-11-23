@@ -44,5 +44,25 @@ if place_meeting(x, (y - 1), obj_rockblock)
     with (instance_place(x, (y - 1), obj_rockblock))
         alarm[1] = 8
 }
+if place_meeting((x + 1), y, obj_destructiblerockblock)
+{
+    with (instance_place((x + 1), y, obj_destructiblerockblock))
+        alarm[1] = 8
+}
+if place_meeting((x - 1), y, obj_destructiblerockblock)
+{
+    with (instance_place((x - 1), y, obj_destructiblerockblock))
+        alarm[1] = 8
+}
+if place_meeting(x, (y + 1), obj_destructiblerockblock)
+{
+    with (instance_place(x, (y + 1), obj_destructiblerockblock))
+        alarm[1] = 8
+}
+if place_meeting(x, (y - 1), obj_destructiblerockblock)
+{
+    with (instance_place(x, (y - 1), obj_destructiblerockblock))
+        alarm[1] = 8
+}
 
 

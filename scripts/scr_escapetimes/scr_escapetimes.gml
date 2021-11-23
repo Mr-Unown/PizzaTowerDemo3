@@ -33,6 +33,10 @@ function scr_escapetimes() {
 	            global.minutes = 3
 	            global.seconds = 50
 	            break
+			case desert_15:
+				global.minutes = 2
+				global.seconds = 30
+				break
 				/*
 	        case desert_16:
 	            global.minutes = 2
