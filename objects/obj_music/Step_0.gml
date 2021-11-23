@@ -9,7 +9,8 @@ if (global.panic == 1 && obj_pause.pause == 0)
 {
     if (global.lapping == 0)
     {
-        if ((!audio_is_playing(mu_pizzatime)) && (!audio_is_playing(mu_noiseescape)) && (!audio_is_playing(mu_snickescape)) && !audio_is_playing(mu_pizzelleescape) && (!audio_is_playing(mu_vigiescape)))
+        if ((!audio_is_playing(mu_pizzatime)) && (!audio_is_playing(mu_noiseescape)) && (!audio_is_playing(mu_snickescape)) && !audio_is_playing(mu_pizzelleescape) && (!audio_is_playing(mu_vigiescape)
+		&& (!audio_is_playing(mu_mansionescape))))
         {
             scr_soundstopall()
             if (obj_player1.character == "P")
@@ -32,7 +33,12 @@ if (global.panic == 1 && obj_pause.pause == 0)
                 scr_sound(mu_vigiescape)
                 pausedmusic = mu_vigiescape
             }
-			else
+			else if (obj_player1.character == "PM")
+			{
+                scr_sound(mu_mansionescape)
+                pausedmusic = mu_mansionescape				
+			}
+			else 
 			{
                 scr_sound(mu_pizzelleescape)
                 pausedmusic = mu_pizzelleescape				
@@ -265,4 +271,33 @@ if audio_is_playing(mu_ruin) && audio_is_playing(mu_ruinbmix)
 	audio_sound_gain(mu_ruin, (0), 25000)					
 	audio_sound_gain(mu_ruinbmix, (1), 21000)					
 	}				
+}
+if audio_is_playing(mu_factory1) && audio_is_playing(mu_factory2)
+{
+	if global.factorymusic = 0 {
+	audio_sound_gain(mu_ruin, (1), 0)					
+	audio_sound_gain(mu_ruinbmix, (0), 0)					
+	}
+	else if global.factorymusic = 1 {
+	audio_sound_gain(mu_ruin, (0), 25000)					
+	audio_sound_gain(mu_ruinbmix, (1), 21000)					
+	}				
+}
+var pitchspd = clamp((obj_player.movespeed/9.5) * 0.8, .7, 1.5)
+if global.pitchshift = 1
+{
+	with (obj_player1)
+	{
+		if (state == states.knightpep)
+		audio_sound_pitch(global.music, 0.9);
+		else if (state == states.tumble or state == states.knightpepslopes)
+		{
+			if sprite_index != spr_tumblestart 
+			audio_sound_pitch(global.music, pitchspd);
+			else 
+			audio_sound_pitch(global.music, 1.2);
+		}
+		else
+		audio_sound_pitch(global.music, 1);
+	}
 }

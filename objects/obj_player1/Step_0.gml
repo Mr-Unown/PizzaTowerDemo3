@@ -259,7 +259,7 @@ if (character == "S")
 
 
 
-if (state == 70 && (!instance_exists(speedlineseffectid)))
+if ((state == 70 || state = states.machroll && movespeed >= 20 || state = states.tumble && movespeed >= 20) && (!instance_exists(speedlineseffectid)))
 {
     with (instance_create(x, y, obj_speedlines))
     {

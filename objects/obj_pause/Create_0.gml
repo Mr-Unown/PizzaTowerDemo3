@@ -39,6 +39,7 @@ global.debugmode = 0
 global.storedgun = 0
 global.hudmode = 0
 global.ruinmusic = 0
+global.factorymusic = 0
 global.fakepeppino = 0
 global.peppermode = 0
 

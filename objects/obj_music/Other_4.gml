@@ -483,7 +483,43 @@ if (global.panic == 0 && global.snickchallenge == 0)
             pausedmusic = mu_kungfu
         }
     }
-	if room = room_test1
+	if (string_letters(roomname) == "factory")
+    {
+        for (i = 0; i < 20; i++)
+        {
+            if (roomname == ("factory_" + string(i)) && i <= 6)
+            {
+                if ((!audio_is_playing(mu_factory1)) && global.factorymusic == 0)
+                {
+                    scr_soundstopall()
+                    scr_sound(mu_factory1)
+                    audio_sound_set_track_position(global.music, fadeoff)
+                    pausedmusic = mu_factory1
+					audio_sound_gain(mu_factory1, (1), 0)					
+					audio_sound_gain(mu_factory1, (1), 0)						
+                }
+                else if ((!audio_is_playing(mu_factory2)) && global.factorymusic == 1)
+                {
+                    scr_soundstopall()
+                    scr_sound(mu_factory2)
+                    audio_sound_set_track_position(global.music, fadeoff)
+                    pausedmusic = mu_factory2
+					audio_sound_gain(mu_factory2, (1), 0)								
+                }
+            }
+            else if (roomname == ("factory_" + string(i)) && i > 6)
+            {
+                if (!audio_is_playing(mu_factory2))
+                {
+                    scr_soundstopall()
+                    scr_sound(mu_factory2)
+                    audio_sound_set_track_position(global.music, fadeoff)
+                    pausedmusic = mu_factory2
+                }
+            }
+        }
+    }
+	if room = room_test1 || room = room_test5
 	{
 	    if (!audio_is_playing(mu_freezer2))
         {

@@ -50,7 +50,7 @@ function scr_player_knightpepslopes() {
 	    vsp = -10;
 		movespeed = clamp(movespeed - 2,13,100)
 		knightslidespeed = clamp(knightslidespeed - 64,0,500);
-	    sprite_index = spr_knightpepjump;	
+	    sprite_index = spr_knightpepslidejump;	
 	}
 	//Groundpound Again
 	if !grounded && key_down2
@@ -71,7 +71,7 @@ function scr_player_knightpepslopes() {
 		}	
 	}
 
-	if sprite_index = spr_knightpepjump && floor(image_index) >= image_number - 1
+	if sprite_index = spr_knightpepslidejump && floor(image_index) >= image_number - 1
 		sprite_index = spr_knightpepfall
 	//Bump into wall
 	if ( ( scr_slope() && scr_solid(x+ sign(hsp),y - 2) && !scr_slope_ext(x + sign(hsp), y)) || scr_solid(x+ sign(hsp),y) && !scr_slope_ext(x + sign(hsp), y) && !scr_slope() ) && (!place_meeting((x + sign(hsp)), y, obj_metalblock) && !place_meeting((x + sign(hsp)), y, obj_metalblockhard) && (!place_meeting((x + sign(hsp)), y, obj_destructibles))) 
