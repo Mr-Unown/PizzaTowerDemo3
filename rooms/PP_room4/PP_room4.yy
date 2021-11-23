@@ -116,7 +116,7 @@
   "viewSettings": {
     "inheritViewSettings": false,
     "enableViews": true,
-    "clearViewBackground": true,
+    "clearViewBackground": false,
     "clearDisplayBuffer": false,
   },
   "physicsSettings": {

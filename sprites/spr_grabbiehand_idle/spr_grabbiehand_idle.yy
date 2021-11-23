@@ -1,6 +1,6 @@
 {
   "bboxMode": 0,
-  "collisionKind": 0,
+  "collisionKind": 1,
   "type": 0,
   "origin": 4,
   "preMultiplyAlpha": false,
@@ -76,7 +76,7 @@
             {"id":"176693cc-8ce7-4c47-b099-e70699a2736f","Key":8.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0d60ac2a-491e-4770-826a-ce1250230e59","path":"sprites/spr_grabbiehand_idle/spr_grabbiehand_idle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,

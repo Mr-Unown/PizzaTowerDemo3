@@ -5,7 +5,7 @@ customsavedpalette = 1;
 oldcustomsavedpalette = 1;
 characters = "Noise"
 colorheight = 7;
-
+actor = false;
 global.has_drawnpeter = false;
 selectedcharacter = 1;
 pogo = false

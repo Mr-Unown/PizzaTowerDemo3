@@ -347,6 +347,16 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
                 if instance_exists(obj_player2)
                     obj_player2.targetDoor = "A";
             }			
+			else if (string_letters(roomname) == "factory" || string_letters(roomname) == "factorysecret")
+            {
+                instance_activate_all();;
+                room_goto(factory_1);
+                script_execute(scr_playerreset);
+                pause = 0;
+                obj_player1.targetDoor = "A";
+                if instance_exists(obj_player2)
+                    obj_player2.targetDoor = "A";
+            }
             else if !audio_is_playing(sfx_enemyprojectile)
                 scr_soundeffect(sfx_enemyprojectile);
         }

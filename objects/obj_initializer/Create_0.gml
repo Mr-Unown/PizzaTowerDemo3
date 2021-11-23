@@ -20,6 +20,7 @@ for (var i = 0; i <= collisionheight; ++i)
 }*/
 global.newtitlescreen = 0;
 ini_open("saveData.ini")
+global.newsjumpcancel = ini_read_real("Option", "newsjumpcancel", false)
 global.newtitlescreen = ini_read_real("Option", "newtitlescreen", false);
 ini_close()
 global.roomstart[0] = Realtitlescreen;
