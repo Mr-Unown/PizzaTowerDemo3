@@ -8,7 +8,7 @@ if activated = true
 		image_index = 0;
 		visible = true;
 	}
-	if animation_end() && sprite_index == spr_secreteye_spawning
+	if animation_end() && visible = true && sprite_index == spr_secreteye_spawning
 		sprite_index = spr_secreteye_idle
 }
 //Cutscene Moment
@@ -18,6 +18,8 @@ if sprite_index == spr_secreteye_teleport
 	{
 		event_user(0);
 		once = true;
+		instance_destroy()
+		
 	}
 }
 
