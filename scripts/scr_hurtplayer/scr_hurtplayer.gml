@@ -19,6 +19,9 @@ function scr_hurtplayer(argument0) {
 	    else if (state == 86)
 	    {
 	    }	
+	    else if (state == 7)
+	    {
+	    }	
 	    else if (state == 15)
 	    {
 	    }

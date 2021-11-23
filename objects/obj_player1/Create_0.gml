@@ -21,6 +21,7 @@ pipedirection = "none"
 global.savefile = "a"
 equippedhat = false;
 Talkie = 0
+firemouthtrail = 0
 choosenhat = 0;
 parry_id = -4
 parried_baddie = 0
