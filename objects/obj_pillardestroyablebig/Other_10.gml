@@ -1,8 +1,9 @@
-if(obj_player.state == 22 || obj_player.state == 70)
+var player = (global.coop = false ? obj_player1 : instance_nearest(x,y,obj_player));
+if (player.state == 22 || player.state == 70)
 {
-	if place_meeting((x - obj_player1.hsp), y, obj_player1)
+	if place_meeting((x - player.hsp), y, player)
 	{
-		with (obj_player1)
+		with (player)
 		{
 			if place_meeting((x + hsp), y, obj_pillardestroyablebig)
 			{
@@ -19,7 +20,7 @@ if(obj_player.state == 22 || obj_player.state == 70)
 				image_index = 0
 				state = states.tackle;
 				substate = 1;
-				movespeed = 3;
+				movespeed = 5;
 				vsp = -3
 			}
 		}

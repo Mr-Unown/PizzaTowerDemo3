@@ -191,7 +191,7 @@ if active = true
 				ini_write_real("Option", "pitchshift", arg1);
 				ini_close()
 				break;
-			case "escapecollect": //Switches transformation pitch shift feature
+			case "escapecollect": //Switches Escape Collects
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.newhud else arg1 = ds_list_find_value(_commands, 1)	
 				switch arg1
 				{
@@ -204,7 +204,7 @@ if active = true
 				ini_write_real("Option", "escapecollect", arg1);
 				ini_close()
 				break;		
-			case "wallrunstyle": //Switches transformation pitch shift feature
+			case "wallrunstyle": //Switches Wallrunstyle
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.newhud else arg1 = ds_list_find_value(_commands, 1)	
 				switch arg1
 				{
@@ -218,7 +218,7 @@ if active = true
 				ini_write_real("Option", "wallrunstyle", arg1);
 				ini_close()
 				break;
-			case "freefallstyle": //Switches transformation pitch shift feature
+			case "freefallstyle": //Switches freefall
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.newhud else arg1 = ds_list_find_value(_commands, 1)	
 				switch arg1
 				{
@@ -231,7 +231,7 @@ if active = true
 				ini_write_real("Option", "freefallstyle", arg1);
 				ini_close()
 				break;
-			case "divestyle": //Switches transformation pitch shift feature
+			case "divestyle": //Switches dive style
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.newhud else arg1 = ds_list_find_value(_commands, 1)	
 				switch arg1
 				{

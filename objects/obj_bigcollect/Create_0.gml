@@ -15,6 +15,6 @@ if global.collectstyle = 0
 			sprite_index = choose(spr_PZbigpizza1, spr_PZbigpizza2, spr_PZbigpizza3)
 }
 else if global.collectstyle = 1
-sprite_index = choose(spr_bigsausagecollect, spr_bigcheesecollect, spr_bigpineapplecollect, spr_bigtomatocollect, spr_bigshroomcollect)
+	sprite_index = choose(spr_bigsausagecollect, spr_bigcheesecollect, spr_bigpineapplecollect, spr_bigtomatocollect, spr_bigshroomcollect)
 
 

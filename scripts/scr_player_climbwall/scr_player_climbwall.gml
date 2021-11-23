@@ -40,7 +40,7 @@ function scr_player_climbwall() {
 	}
 	crouchslideAnim = 1
 	if character != "P"
-	sprite_index = spr_machclimbwall
+		sprite_index = spr_machclimbwall
 	else
 	{
 		if global.wallrunstyle = 0
