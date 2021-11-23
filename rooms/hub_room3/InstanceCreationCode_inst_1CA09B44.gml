@@ -1,3 +1,3 @@
 level = "desert"
-targetRoom = old_desert_1
+targetRoom = desert_1
 
