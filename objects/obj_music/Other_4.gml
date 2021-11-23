@@ -35,15 +35,6 @@ if (global.panic == 0 && global.snickchallenge == 0)
             pausedmusic = mu_characterselect
         }
     }
-    if (string_letters(roomname) == "hub_roomSNICK")
-    {
-        if (!audio_is_playing(mu_snickchallengeend))
-        {
-            scr_soundstopall()
-            scr_sound(mu_snickchallengeend)
-            pausedmusic = mu_snickchallengeend
-        }
-    }
     if (string_letters(roomname) == "hubroom" || room == Tutorialtrap || room = cowboytask || string_letters(roomname) == "Titlescreen")
     {
         if (!audio_is_playing(mu_hub))
@@ -53,7 +44,15 @@ if (global.panic == 0 && global.snickchallenge == 0)
             pausedmusic = mu_hub
         }
     }
-
+    if room = hub_roomSNICK
+    {
+        if (!audio_is_playing(mu_snickchallengeend))
+        {
+            scr_soundstopall()
+            scr_sound(mu_snickchallengeend)
+            pausedmusic = mu_snickchallengeend
+        }
+    }
     if (string_letters(roomname) == "PProom")
     {
         if (!audio_is_playing(mu_tutorial))
