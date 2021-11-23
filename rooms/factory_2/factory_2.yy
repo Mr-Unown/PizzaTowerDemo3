@@ -243,7 +243,10 @@
     {"spriteId":{"name":"bg_factoryindustrial","path":"sprites/bg_factoryindustrial/bg_factoryindustrial.yy",},"colour":4294967295,"x":0,"y":0,"htiled":true,"vtiled":true,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":15.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":500,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Backgrounds_87","tags":[],"resourceType":"GMRBackgroundLayer",},
 =======
     {"spriteId":{"name":"bg_factory1","path":"sprites/bg_factory1/bg_factory1.yy",},"colour":4294967295,"x":0,"y":0,"htiled":true,"vtiled":true,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":1.0,"animationSpeedType":1,"userdefinedAnimFPS":false,"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Backgrounds_1","tags":[],"resourceType":"GMRBackgroundLayer",},
+<<<<<<< HEAD
 >>>>>>> parent of a527af563 (Dummy DATA)
+=======
+>>>>>>> parent of a92699bce (Merge pull request #91 from Mr-Unown/master)
   ],
   "inheritLayers": false,
   "creationCodeFile": "${project_dir}/rooms/factory_2/RoomCreationCode.gml",

@@ -18,32 +18,25 @@ if can_draw = true
 		gpu_set_blendmode(bm_subtract);
 		draw_set_color(c_white)
 		//Player Holes
-		if spooky = false
+		with (obj_player1)
 		{
-			with (obj_player1)
+			draw_set_alpha(other.darkness);
+			draw_circle((x - cam_x + random_range(-1, 1)), (y - cam_y + random_range(-1, 1)), (300 + random_range(-1, 1)), 0);
+			draw_set_alpha(1);
+	        draw_circle((x - cam_x + random_range(-1, 1)), (y - cam_y + random_range(-1, 1)), (250 + random_range(-1, 1)), 0);
+		}
+		if global.coop = true
+		{
+			with (obj_player2)
 			{
 				draw_set_alpha(other.darkness);
 				draw_circle((x - cam_x + random_range(-1, 1)), (y - cam_y + random_range(-1, 1)), (300 + random_range(-1, 1)), 0);
 				draw_set_alpha(1);
-		        draw_circle((x - cam_x + random_range(-1, 1)), (y - cam_y + random_range(-1, 1)), (250 + random_range(-1, 1)), 0);
-			}
-			if global.coop = true
-			{
-				with (obj_player2)
-				{
-					draw_set_alpha(other.darkness);
-					draw_circle((x - cam_x + random_range(-1, 1)), (y - cam_y + random_range(-1, 1)), (300 + random_range(-1, 1)), 0);
-					draw_set_alpha(1);
-					draw_circle((x - cam_x+ random_range(-1, 1)), (y - cam_y + random_range(-1, 1)), (250 + random_range(-1, 1)), 0);
-				}
+				draw_circle((x - cam_x+ random_range(-1, 1)), (y - cam_y + random_range(-1, 1)), (250 + random_range(-1, 1)), 0);
 			}
 		}
 		//Other Lightsources
 		draw_set_alpha(1);
-		with obj_jumpscare
-		{
-			draw_sprite(spr_monster,1,x,y)
-		}
 		with (obj_lamp)
 			draw_circle(((x - cam_x + random_range(-1, 1))), (y - cam_y + random_range(-1, 1)), (40 + random_range(-1, 1)), 0)
 		with (obj_entrancelamp)
