@@ -166,19 +166,7 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
 		image_index = 0
 		scr_soundeffect(sfx_scream5)
 		}			
-    }	
-	if (content == obj_factoryfollower)
-    {
-        with (instance_create(x, (y - 25), obj_factoryfollower)) {
-            sprite_index = spr_factorynpc_1
-			//Follower DS_list
-			ds_list_add(global.follower, id);
-		}
-		global.combotime = 60
-		global.pausecombotime = true
-		obj_tv.alarm[1] = 75
-        global.factoryfollow = 1
-    }	
+    }		
     sprite_index = spr_pizzaboxopen
 	if (ds_list_find_index(global.saveroom, id) == -1)
 	ds_list_add(global.saveroom, id)

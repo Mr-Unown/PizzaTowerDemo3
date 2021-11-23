@@ -1,3 +1,17 @@
+/*if collectvanish = true && collectboxid.activated = true {
+	x =	xstart
+	y = ystart
+	instance_create((x + (sprite_width / 2)), (y + (sprite_height / 2)), obj_cloudeffect)
+	repeat (3)
+        instance_create(((x + (sprite_width / 2)) + random_range(-5, 5)), ((y + (sprite_height / 2)) + random_range(-5, 5)), obj_cloudeffect)
+	collectvanish = false
+	in_the_void = false;
+}*/
+
+
+
+if (global.collectsound  < 10)
+    global.collectsound  += 1
 scr_collide();
 
 var rail = 0;
@@ -39,3 +53,6 @@ else if stuck = true
 
 if grounded
 	movespeed = approach(movespeed,0,0.25)  //(abs(hsp) - 0.25) * _direction
+
+
+

@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "mu_desertescape",
-  "duration": 168.4028,
+  "duration": 168.3978,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

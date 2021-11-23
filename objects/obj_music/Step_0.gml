@@ -32,7 +32,12 @@ if (global.panic == 1 && obj_pause.pause == 0)
                 scr_sound(mu_vigiescape)
                 pausedmusic = mu_vigiescape
             }
-			else
+			else if (obj_player1.character == "PM")
+			{
+                scr_sound(mu_mansionescape)
+                pausedmusic = mu_pizzelleescape				
+			}
+			else 
 			{
                 scr_sound(mu_pizzelleescape)
                 pausedmusic = mu_pizzelleescape				
@@ -266,7 +271,18 @@ if audio_is_playing(mu_ruin) && audio_is_playing(mu_ruinbmix)
 	audio_sound_gain(mu_ruinbmix, (1), 21000)					
 	}				
 }
-var pitchspd = (obj_player.movespeed/9.5) * 0.8
+if audio_is_playing(mu_factory1) && audio_is_playing(mu_factory2)
+{
+	if global.factorymusic = 0 {
+	audio_sound_gain(mu_ruin, (1), 0)					
+	audio_sound_gain(mu_ruinbmix, (0), 0)					
+	}
+	else if global.factorymusic = 1 {
+	audio_sound_gain(mu_ruin, (0), 25000)					
+	audio_sound_gain(mu_ruinbmix, (1), 21000)					
+	}				
+}
+var pitchspd = clamp((obj_player.movespeed/9.5) * 0.8, .7, 1.5)
 if global.pitchshift = 1
 {
 	with (obj_player1)

@@ -31,6 +31,7 @@ commands[arrayi++] = "escapecollect (old/new)"
 commands[arrayi++] = "groundpoundstyle (old/new)"
 commands[arrayi++] = "divestyle (old/new)"
 commands[arrayi++] = "destroyablecollect (pizza/topping)"
+commands[arrayi++] = "ratmode (on/off)"
 
 if DEBUG 
 {

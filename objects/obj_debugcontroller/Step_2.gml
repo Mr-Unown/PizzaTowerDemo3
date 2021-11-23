@@ -76,7 +76,8 @@ if active = true
 				if global.panicbg = true
 					scr_panicbg_init()			
 				obj_camera.alarm[1] = 60
-				
+				if !instance_exists(obj_panicchanger)
+				instance_create(x, y, obj_panicchanger)
 				break
 			case "standardhitstun":
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = 70 else arg1 = ds_list_find_value(_commands, 1)
@@ -254,6 +255,19 @@ if active = true
 				global.destroyablecollect = arg1
 				ini_open("saveData.ini")
 				ini_write_real("Option", "destroyablecollect", arg1);
+				ini_close()
+				break;
+			case "ratmode": //rat destroyables
+				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.newhud else arg1 = ds_list_find_value(_commands, 1)	
+				switch arg1
+				{
+					case "off": arg1 = false
+					case "on": arg1 = true
+					default: arg1 = !global.ratmode
+				}
+				global.ratmode = arg1
+				ini_open("saveData.ini")
+				ini_write_real("Option", "ratmode", arg1);
 				ini_close()
 				break;
 			case "debugmode": //Could probably use optimization

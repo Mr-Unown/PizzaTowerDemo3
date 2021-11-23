@@ -20,6 +20,8 @@ var lay_id10 = layer_get_id("Backgrounds_Ground2")
 var back_id8 = layer_background_get_id_fixed(lay_id10)
 var lay_id11 = layer_get_id("Backgrounds_scroll")
 var back_id9 = layer_background_get_id_fixed(lay_id11)
+var lay_id12 = layer_get_id("Backgrounds_5")
+var back_id3 = layer_background_get_id_fixed(lay_id12)
 var roomname = room_get_name(room)
 if (fadealpha > 1)
     fadein = 1

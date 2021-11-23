@@ -150,6 +150,7 @@ function scr_playerreset() {
 	ds_list_clear(global.follower);
 
 	global.ruinmusic = 0;
+	global.factorymusic = 0;
 	with (obj_player1)
 	{
 		scr_playercreate();
@@ -371,7 +372,6 @@ function scr_playerreset() {
 	    global.tomatofollow = 0;
 	    global.sausagefollow = 0;
 	    global.pineapplefollow = 0;
-		global.factoryfollow = 0;
 	    global.keyget = 0;
 	    collectscore = 0;
 	    collectscore = 0;

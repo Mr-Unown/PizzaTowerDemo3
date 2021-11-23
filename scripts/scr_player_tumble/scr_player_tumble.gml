@@ -1,7 +1,9 @@
 function scr_player_tumble() {
 	hsp = (xscale * movespeed)
 	if (sprite_index == spr_tumblestart)
+	{
 	    movespeed = 6
+	}
 	if (sprite_index == spr_player_sjumpcancel)
 	    movespeed = 12
 	if (key_down2 && (!key_jump2))

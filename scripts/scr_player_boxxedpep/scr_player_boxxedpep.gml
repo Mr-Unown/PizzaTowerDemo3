@@ -31,7 +31,7 @@ function scr_player_boxxedpep() {
 	    movespeed = 0
 	if (scr_solid((x + sign(hsp)), y) && xscale == -1 && move == -1 && (!scr_slope_ext(x - 1, y)))
 	    movespeed = 0
-	if (grounded && input_buffer_jump < 8 && vsp > 0 && (!scr_solid(x, (y - 16))) && (!scr_solid(x, (y - 32))))
+	if (/*grounded && */  input_buffer_jump < 8 && vsp > 0 && (!scr_solid(x, (y - 16))) && (!scr_solid(x, (y - 32))))
     {
         instance_create(x, y, obj_highjumpcloud2)
         vsp = -11

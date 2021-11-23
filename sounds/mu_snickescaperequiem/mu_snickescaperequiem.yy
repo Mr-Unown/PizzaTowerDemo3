@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "mu_snickescaperequiem",
-  "duration": 130.924454,
+  "duration": 130.919449,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
