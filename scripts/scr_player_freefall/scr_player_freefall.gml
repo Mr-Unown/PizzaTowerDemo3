@@ -10,22 +10,22 @@ function scr_player_freefall() {
 	    hsp = (move * movespeed)
 		if global.freefallstyle = 0
 		{
-	    if (move != xscale && momemtum == 1 && movespeed != 0)
-	        movespeed -= 0.020
-	    if (movespeed == 0)
-	        momemtum = 0
-	    if ((move == 0 && momemtum == 0) || scr_solid((x + hsp), y))
-	    {
-	        movespeed = 0
-	        mach2 = 0
-	    }
-	    if (move != 0 && movespeed < 7)
-	        movespeed += 0.25
-	    if (movespeed > 7)
-	        movespeed -= 0.05
+			if (move != xscale && momemtum == 1 && movespeed != 0)
+				movespeed -= 0.020
+			if (movespeed == 0)
+		        momemtum = 0
+			if ((move == 0 && momemtum == 0) || scr_solid((x + hsp), y))
+			{
+				movespeed = 0
+				mach2 = 0
+			}
+			if (move != 0 && movespeed < 7)
+		        movespeed += 0.25
+			if (movespeed > 7)
+		        movespeed -= 0.05
 		}
 		else if global.freefallstyle = 1
-		movespeed = 7
+			movespeed = 7
 	    if ((scr_solid((x + 1), y) && move == 1) || (scr_solid((x - 1), y) && move == -1))
 	        movespeed = 0
 	    if (dir != xscale)
