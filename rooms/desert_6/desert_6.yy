@@ -209,7 +209,7 @@
   },
   "parent": {
     "name": "Desert",
-    "path": "folders/Rooms/Levels/World Legacy/Desert.yy",
+    "path": "folders/Rooms/Levels/Weird West/Desert.yy",
   },
   "resourceVersion": "1.0",
   "name": "desert_6",
