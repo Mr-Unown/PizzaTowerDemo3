@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_scream6",
-  "duration": 3.730351,
+  "duration": 3.725351,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

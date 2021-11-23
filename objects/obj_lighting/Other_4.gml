@@ -22,10 +22,9 @@ switch room
 		targetdarkness = clamp(_dark * 0.85,0.75,0.85)
 		break;		
 	case ancient_10_1:
-	case factory_8:
 		can_draw = true;
 		targetdarkness = 0.85
-		break;	
+		break;
 	case ancient_10_2:
 		can_draw = true;
 		var _dark = clamp(camera_get_view_y(view_camera[0]),864,1632)/1632
@@ -63,6 +62,17 @@ switch room
 		targetdarkness = 0.60;
 		break;
 	#endregion
+	#region Factory
+	case factory_8:		
+		can_draw = true;
+		targetdarkness = 0.85
+		break;		
+	#endregion
+	case hub_roomSNICK:
+		can_draw = true;
+		darkness = 0.90
+		targetdarkness = 0.90;
+		break;
 	default:
 		targetdarkness = 0;
 		darkness = 0

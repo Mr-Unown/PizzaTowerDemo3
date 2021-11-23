@@ -35,7 +35,15 @@ if (global.panic == 0 && global.snickchallenge == 0)
             pausedmusic = mu_characterselect
         }
     }
-
+    if (string_letters(roomname) == "hub_roomSNICK")
+    {
+        if (!audio_is_playing(mu_snickchallengeend))
+        {
+            scr_soundstopall()
+            scr_sound(mu_snickchallengeend)
+            pausedmusic = mu_snickchallengeend
+        }
+    }
     if (string_letters(roomname) == "hubroom" || room == Tutorialtrap || room = cowboytask || string_letters(roomname) == "Titlescreen")
     {
         if (!audio_is_playing(mu_hub))
@@ -167,6 +175,30 @@ if (global.panic == 0 && global.snickchallenge == 0)
             }
         }
     }
+	if (string_letters(roomname) == "factory")
+    {
+        for (i = 0; i < 20; i++)
+        {
+            if (roomname == ("factory_" + string(i)) && i <= 5)
+            {
+                if (!audio_is_playing(mu_factory1))
+                {
+                    scr_soundstopall()
+                    scr_sound(mu_factory1)
+                    pausedmusic = mu_factory1
+                }
+            }
+            else if (roomname == ("factory_" + string(i)) && i > 5)
+            {
+                if (!audio_is_playing(mu_factory2))
+                {
+                    scr_soundstopall()
+                    scr_sound(mu_factory2)
+                    pausedmusic = mu_factory2
+                }
+            }
+        }
+    }	
 	/*
     if (string_letters(roomname) == "desert" && global.desertnight == 1)
     {
@@ -194,30 +226,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
             }
         }
     }*/
-/*    if (string_letters(roomname) == "factory")
-    {
-        for (i = 0; i < 20; i++)
-        {
-            if ((roomname == ("factory_" + string(i)) && i <= 5) || room == factory_0 || room == factory_17)
-            {
-                if (!audio_is_playing(mu_factory1))
-                {
-                    scr_soundstopall()
-                    scr_sound(108)
-                    pausedmusic = 108
-                }
-            }
-            else if (((roomname == ("factory_" + string(i)) && i > 5) || room == factory_15 || room == factory_18) && room != factory_17)
-            {
-                if (!audio_is_playing(mu_factory2))
-                {
-                    scr_soundstopall()
-                    scr_sound(109)
-                    pausedmusic = 109
-                }
-            }
-        }
-    }
+/*    
     if (string_letters(roomname) == "sewer")
     {
         for (i = 0; i < 20; i++)
