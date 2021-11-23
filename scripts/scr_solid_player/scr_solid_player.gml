@@ -1,4 +1,6 @@
 function scr_solid_player(argument0 = x, argument1 = y, noslope = false) {
+	/// @param x
+	/// @param y	
 	var old_x = x
 	var old_y = y
 	x = argument0

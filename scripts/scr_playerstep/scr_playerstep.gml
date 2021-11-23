@@ -516,6 +516,7 @@ else if actor = true
 	}	
 
 #region State Stuff
+/*
 	var subtle_var = 5, speed_var = 0;
 	switch state
 	{
@@ -547,27 +548,39 @@ else if actor = true
 		default:
 		subtle_var = 5
 		break;
-	}
+	}*/
 #endregion
 
 #region Slope Angles
-	//Angle Strength
-	if global.freezeframe = false && sprite_index != spr_knightpepdownslope && scr_slope_ext(x, y + 1) && place_meeting(x,y+1,obj_slope) && vsp >= 0 
+	if global.freezeframe = false && actor = false && sprite_index != spr_knightpepdownslope && grounded && vsp >= 0 && !(state = states.climbwall || state = states.jetpack || state = states.tumble || state = states.wallcling || state = states.pogo || state = states.tacklecharge || state = states.grab || state  = states.freefallland || state = states.shotgun || state = states.finishingblow)
 	{
-	    with instance_place(x,y + 1,obj_slope)
-	    {
-			//some stuff stolen from orbinaut framework
-	        var flip = sign(image_xscale) = -1 ? 180 : 0
-	        var targetangle = point_direction(x,y + sprite_height,x + sprite_width,y) - flip;
-			var RotationStep = (abs(other.hsp) / 16 + abs(other.hsp) / 32 - 2) * -1
-			other.draw_angle =  darctan2(dsin(targetangle) + dsin(other.draw_angle) * RotationStep, dcos(targetangle) + dcos(other.draw_angle) * RotationStep);	
-	    }
+			//var f = true
+			//some stuff stolen from orbinaut framework		 :troll:
+			//TO DO: performance check
+			if abs(hsp) >= 8
+			{
+				var targetangle  = scr_slopeangle();
+				var RotationStep = (abs(hsp) / 16 + abs(hsp) / 32 - 2) * -1
+			}
+			else
+			{
+				var targetangle  = 360;		
+				var RotationStep = (abs(hsp) / 16 - 2) * -1
+			}			
+			draw_angle = darctan2(dsin(targetangle) + dsin(draw_angle) * RotationStep, dcos(targetangle) + dcos(draw_angle) * RotationStep);	
 	}
 	else if global.freezeframe = false
-	{
-		var targetangle = 0;
-		var RotationStep = (abs(hsp) / 16 + abs(hsp) / 32 - 2) * -1
-		draw_angle =  darctan2(dsin(targetangle) + dsin(draw_angle) * RotationStep, dcos(targetangle) + dcos(draw_angle) * RotationStep);	
+	{	
+		if draw_angle <= 0
+			draw_angle += 360;
+		// Rotate back to 360
+		if draw_angle < 180
+			draw_angle = max(draw_angle - 2.8125, 0);
+		else
+			draw_angle = min(draw_angle + 2.8125, 360);	
+			
+		if state == states.wallcling || state == states.climbwall
+			draw_angle = 0;
 	}
 #endregion	
 

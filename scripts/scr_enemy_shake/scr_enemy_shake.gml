@@ -98,7 +98,6 @@ function scr_enemy_shake() {
 		}
 		else
 		{
-		
 			instance_destroy()
 		}
 

@@ -234,6 +234,24 @@ function scr_player_jump() {
 			sprite_index = spr_player_shoryumineken		
 			image_index = 0
 		}
+		else if (character == "P" && global.attackstyle == 1)
+		{
+			suplexmove = 1
+			suplexdashsnd = audio_play_sound(sfx_suplexdash, 1, false)
+			audio_sound_gain(suplexdashsnd, (1 * global.soundeffectsvolume), 0)
+			state = 111
+			image_index = 0
+			sprite_index = spr_player_airbashstart
+		    movespeed = 6
+	        if (!instance_exists(crazyruneffectid))
+	        {
+				with (instance_create(x, y, obj_crazyrunothereffect))
+				{
+					playerid = other.object_index
+					other.crazyruneffectid = id
+				}
+			}
+		}
 		else
 		{
 			suplexmove = 1

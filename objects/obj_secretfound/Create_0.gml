@@ -1,4 +1,4 @@
-//var roomname = room_get_name(room)
+var roomname = room_get_name(room)
 if (ds_list_find_index(global.saveroom, id) == -1 && global.snickchallenge == 0)
 {
     global.secretfound = (global.secretfound + 1)
@@ -17,20 +17,21 @@ if (ds_list_find_index(global.saveroom, id) == -1 && global.snickchallenge == 0)
             showtext = 1
             alarm[0] = 150
         }
-        else if (string_letters(roomname) != "desertsecret")
-        {
-            _message = (("YOU HAVE FOUND " + string(global.secretfound)) + " SECRET OUT OF 6")
-            showtext = 1
-            alarm[0] = 150
-        }
-        else if (string_letters(roomname) == "desertsecret")
+		
+        if (string_letters(roomname) == "desertsecret")
         {
             _message = (("YOU HAVE FOUND " + string(global.secretfound)) + " SECRET OUT OF 7")
             showtext = 1
             alarm[0] = 150
         }
+        else if (string_letters(roomname) == "desertportal")
+        {
+            _message = "SUPER SECRET!!!"
+            showtext = 1
+            alarm[0] = 150
+        }
+		else
 		*/
-
             _message = (("YOU HAVE FOUND " + string(global.secretfound)) + " SECRET OUT OF 6")
             showtext = 1
             alarm[0] = 150
