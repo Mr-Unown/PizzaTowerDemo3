@@ -9,7 +9,8 @@ if (global.panic == 1 && obj_pause.pause == 0)
 {
     if (global.lapping == 0)
     {
-        if ((!audio_is_playing(mu_pizzatime)) && (!audio_is_playing(mu_noiseescape)) && (!audio_is_playing(mu_snickescape)) && !audio_is_playing(mu_pizzelleescape) && (!audio_is_playing(mu_vigiescape)))
+        if ((!audio_is_playing(mu_pizzatime)) && (!audio_is_playing(mu_noiseescape)) && (!audio_is_playing(mu_snickescape)) && !audio_is_playing(mu_pizzelleescape) && (!audio_is_playing(mu_vigiescape)
+		&& (!audio_is_playing(mu_mansionescape))))
         {
             scr_soundstopall()
             if (obj_player1.character == "P")
@@ -35,7 +36,7 @@ if (global.panic == 1 && obj_pause.pause == 0)
 			else if (obj_player1.character == "PM")
 			{
                 scr_sound(mu_mansionescape)
-                pausedmusic = mu_pizzelleescape				
+                pausedmusic = mu_mansionescape				
 			}
 			else 
 			{
