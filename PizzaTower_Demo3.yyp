@@ -2502,6 +2502,7 @@
     {"id":{"name":"mu_ufo","path":"sounds/mu_ufo/mu_ufo.yy",},"order":73,},
     {"id":{"name":"mu_pizzatime","path":"sounds/mu_pizzatime/mu_pizzatime.yy",},"order":74,},
     {"id":{"name":"mu_hub","path":"sounds/mu_hub/mu_hub.yy",},"order":75,},
+    {"id":{"name":"spr_robothead","path":"sprites/spr_robothead/spr_robothead.yy",},"order":231,},
     {"id":{"name":"mu_medievalsecret","path":"sounds/mu_medievalsecret/mu_medievalsecret.yy",},"order":76,},
     {"id":{"name":"mu_chase","path":"sounds/mu_chase/mu_chase.yy",},"order":77,},
     {"id":{"name":"mu_entrance","path":"sounds/mu_entrance/mu_entrance.yy",},"order":78,},

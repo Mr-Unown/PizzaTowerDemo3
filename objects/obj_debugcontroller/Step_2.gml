@@ -231,6 +231,19 @@ if active = true
 				ini_write_real("Option", "freefallstyle", arg1);
 				ini_close()
 				break;
+			case "attackstyle": //Switches transformation pitch shift feature
+				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.newhud else arg1 = ds_list_find_value(_commands, 1)	
+				switch arg1
+				{
+					case "0": arg1 = 0
+					case "1": arg1 = 1
+					default: arg1 = !global.attackstyle
+				}
+				global.attackstyle = arg1
+				ini_open("saveData.ini")
+				ini_write_real("Option", "attackstyle", arg1);
+				ini_close()
+				break;
 			case "divestyle": //Switches transformation pitch shift feature
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.newhud else arg1 = ds_list_find_value(_commands, 1)	
 				switch arg1
