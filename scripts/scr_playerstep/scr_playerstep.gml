@@ -516,6 +516,7 @@ else if actor = true
 	}	
 
 #region State Stuff
+/*
 	var subtle_var = 5, speed_var = 0;
 	switch state
 	{
@@ -547,7 +548,7 @@ else if actor = true
 		default:
 		subtle_var = 5
 		break;
-	}
+	}*/
 #endregion
 
 #region Slope Angles
