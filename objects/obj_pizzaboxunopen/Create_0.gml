@@ -2,7 +2,7 @@ image_speed = 0.35
 createdpizza = 0
 content = obj_bigcollect
 depth = 1
-var _depth = 310
+var _depth = 310;
 var roomname = room_get_name(room)
 if layer_exists("Tiles_1")
 {

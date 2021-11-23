@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_bumpwall",
-  "duration": 0.204909,
+  "duration": 0.199909,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

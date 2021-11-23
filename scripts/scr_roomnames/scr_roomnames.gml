@@ -414,7 +414,7 @@ function scr_roomnames() {
 			_message = "Escape Pit";
 			break;						
 		case sanctum_treasure:
-			_message = "Big Bean";
+			_message = "Kitchen Object!?";
 			break;	
 		case sanctum_pizzamart:
 			_message = "Modern Convenience";

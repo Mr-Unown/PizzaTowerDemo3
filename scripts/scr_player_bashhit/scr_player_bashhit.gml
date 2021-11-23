@@ -3,7 +3,7 @@ function scr_player_bashhit() {
 	anger = 100
 	if global.freezeframe = false
 	{
-	if (sprite_index == spr_player_bashblow1 && floor(image_index) >= (image_number - 3))
+	if (sprite_index == spr_player_bashblow1 || spr_finishingblow2 || spr_finishingblow3 || spr_finishingblow4 || spr_finishingblow5) && floor(image_index) >= (image_number - 1)
 	{
 	    sprite_index = spr_player_jugglebash
 	    vsp = -14

@@ -481,8 +481,10 @@ with (obj_destroyable2_bigescape)
         }
     }
 	if secreteye == true
-		substate = "secret_out"
-	secreteye = 0 
+	{
+		instance_create(x,y,obj_secreteyeexit)
+		secreteye = 0 
+	}
     vertical = 0
     hallway = 0
     box = 0
@@ -719,7 +721,10 @@ if (object_index == obj_player2)
         }
     }
 	if secreteye == true
-		substate = "secret_out"	
+	{
+		instance_create(x,y,obj_secreteyeexit)
+		secreteye = 0 
+	}
 	secreteye = 0 
     vertical = 0
     hallway = 0
