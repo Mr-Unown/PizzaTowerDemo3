@@ -12,6 +12,7 @@ pogo = false
 pipedirection = "none"
 tauntcooleffect = noone
 parry_id = -4
+firemouthtrail = 0
 equippedhat = false;
 choosenhat = 0;
 parried_baddie = 0
