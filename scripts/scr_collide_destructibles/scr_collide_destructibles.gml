@@ -126,6 +126,18 @@ function scr_collide_destructibles() {
 				}
 	        }
 		}
+		if (state = 7)
+		{
+			if place_meeting(x + sign(hsp), y, obj_destructibles)
+	        {
+	            with (instance_place(x + sign(hsp), y, obj_destructibles))
+	            {
+					initialhsp = other.hsp
+					initialvsp = other.vsp
+	                event_user(0)
+				}
+	        }
+		}
 		if (state = states.knightpepattack)
 		{
 			if place_meeting(x + hsp, y + vsp, obj_destructibles)

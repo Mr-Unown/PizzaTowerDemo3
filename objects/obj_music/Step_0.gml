@@ -152,7 +152,20 @@ if (global.panic == 1 && obj_pause.pause == 0) && (global.minutes <= 0 && global
 		audio_sound_gain(global.escaperumblemusic, (0.6 * global.musicvolume), 0)
     }	
 }
-
+//BEACHINTRO        
+if string_letters(roomname) = "beach" 
+{
+	if !audio_is_playing(mu_beachintro) && playintro = false
+	{
+		if !audio_is_playing(mu_beach) && playintro = false && nolag = 0 
+		{
+			nolag = 1
+			scr_sound(mu_beach)
+			audio_sound_set_track_position(global.music, 0)
+			pausedmusic = mu_beach
+		}
+	}
+}
 if (global.miniboss == 0 && audio_is_playing(mu_miniboss))
     audio_stop_sound(mu_miniboss)
 if ((!audio_is_playing(mu_snickchallenge)) && global.snickchallenge == 1 && obj_pause.pause == 0 && global.minutes >= 2 && obj_camera.ded == 0)
