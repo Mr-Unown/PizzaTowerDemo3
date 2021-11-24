@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_stompenemy",
-  "duration": 0.220805,
+  "duration": 0.215805,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
