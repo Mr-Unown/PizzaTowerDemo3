@@ -1,1 +1,2 @@
-targetRoom = beach_2
+targetRoom = beach_2_1
+visible = false
