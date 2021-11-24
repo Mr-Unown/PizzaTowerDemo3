@@ -1,6 +1,5 @@
 if (ds_list_find_index(global.saveroom, id) == -1)
 {
-    instance_create((x + 32), (y + 32), obj_safeexplosion)
     if place_meeting((x + 1), y, obj_rockblock)
     {
         with (instance_place((x + 1), y, obj_rockblock))
