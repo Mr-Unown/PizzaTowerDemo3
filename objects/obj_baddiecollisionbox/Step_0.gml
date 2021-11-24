@@ -9,7 +9,7 @@ if instance_exists(baddieID)
 }
 if (bulletbuffer > 0)
     bulletbuffer--
-if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1.cutscene == 0 && obj_player1.state != 7) && global.freezeframe = false
+if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1.cutscene == 0) && global.freezeframe = false
 {
     if (baddieID.state != enemystates.enemygrabbed && baddieID.state != enemystates.enemyfrozen && baddieID.state != enemystates.enemyshake)
     {
@@ -350,7 +350,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
         }
     }
 }
-if (instance_exists(baddieID) && place_meeting(x, y, obj_player2) && obj_player2.cutscene == 0 && obj_player2.state != 7) && global.freezeframe = false
+if (instance_exists(baddieID) && place_meeting(x, y, obj_player2) && obj_player2.cutscene == 0) && global.freezeframe = false
 {
     if (baddieID.state != enemystates.enemygrabbed && baddieID.state != enemystates.enemyfrozen && baddieID.state != enemystates.enemyshake)
     {

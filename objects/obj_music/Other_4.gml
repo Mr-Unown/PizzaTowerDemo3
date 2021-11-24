@@ -197,7 +197,34 @@ if (global.panic == 0 && global.snickchallenge == 0)
                 }
             }
         }
-    }	
+    }
+	if string_letters(roomname) = "beach" 
+	{
+		if !audio_is_playing(mu_beach) && playintro = true  
+		{
+			if !audio_is_playing(mu_beachintro)
+			{
+				scr_soundstopall()
+				playintro = false
+				#region Beach Intro
+				global.music = audio_play_sound(mu_beachintro, 10, false)
+				ini_open("saveData.ini")
+					global.musicvolume = ini_read_real("Option", "musicvolume", 1)
+				ini_close()
+				audio_sound_gain(global.music, (0.6 * global.musicvolume), 0)	
+				#endregion
+				audio_sound_set_track_position(global.music, 0)
+				pausedmusic = mu_beachintro
+			}
+		}
+		if !audio_is_playing(mu_beach) && !audio_is_playing(mu_beachintro) && playintro = false
+		{
+			scr_soundstopall()
+			scr_sound(mu_beach)
+			audio_sound_set_track_position(global.music, fadeoff)
+			pausedmusic = mu_beach
+		}	
+	}
 	/*
     if (string_letters(roomname) == "desert" && global.desertnight == 1)
     {
