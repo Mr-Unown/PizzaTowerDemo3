@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "mu_mansionescape",
-  "duration": 222.40686,
+  "duration": 222.401855,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

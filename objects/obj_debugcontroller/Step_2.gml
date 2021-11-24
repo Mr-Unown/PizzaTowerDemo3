@@ -76,7 +76,8 @@ if active = true
 				if global.panicbg = true
 					scr_panicbg_init()			
 				obj_camera.alarm[1] = 60
-				
+				if !instance_exists(obj_panicchanger)
+				instance_create(x, y, obj_panicchanger)
 				break
 			case "standardhitstun":
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = 70 else arg1 = ds_list_find_value(_commands, 1)
@@ -163,7 +164,125 @@ if active = true
 				ini_open("saveData.ini")
 				ini_write_real("Option", "newsjumpcancel", arg1);
 				ini_close()
-				break;					
+				break;
+			case "collectstyle": //Switches main collect sprites
+				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.newhud else arg1 = ds_list_find_value(_commands, 1)	
+				switch arg1
+				{
+					case "old": arg1 = 0
+					case "new": arg1 = 1
+					default: arg1 = !global.collectstyle
+				}
+				global.collectstyle = arg1
+				ini_open("saveData.ini")
+				ini_write_real("Option", "collectstyle", arg1);
+				ini_close()
+				break;			
+			case "pitchshift": //Switches transformation pitch shift feature
+				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.newhud else arg1 = ds_list_find_value(_commands, 1)	
+				switch arg1
+				{
+					case "on": arg1 = 1
+					case "off": arg1 = 0
+					default: arg1 = !global.pitchshift
+				}
+				global.pitchshift = arg1
+				ini_open("saveData.ini")
+				ini_write_real("Option", "pitchshift", arg1);
+				ini_close()
+				break;
+			case "escapecollect": //Switches Escape Collects
+				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.newhud else arg1 = ds_list_find_value(_commands, 1)	
+				switch arg1
+				{
+					case "new": arg1 = 1
+					case "old": arg1 = 0
+					default: arg1 = !global.escapecollect
+				}
+				global.escapecollect = arg1
+				ini_open("saveData.ini")
+				ini_write_real("Option", "escapecollect", arg1);
+				ini_close()
+				break;		
+			case "wallrunstyle": //Switches Wallrunstyle
+				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.newhud else arg1 = ds_list_find_value(_commands, 1)	
+				switch arg1
+				{
+					case "new": arg1 = 0
+					case "old": arg1 = 1
+					case "older": arg1 = 2
+					default: arg1 = !global.wallrunstyle
+				}
+				global.wallrunstyle = arg1
+				ini_open("saveData.ini")
+				ini_write_real("Option", "wallrunstyle", arg1);
+				ini_close()
+				break;
+			case "freefallstyle": //Switches freefall
+				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.newhud else arg1 = ds_list_find_value(_commands, 1)	
+				switch arg1
+				{
+					case "old": arg1 = 0
+					case "new": arg1 = 1
+					default: arg1 = !global.freefallstyle
+				}
+				global.freefallstyle = arg1
+				ini_open("saveData.ini")
+				ini_write_real("Option", "freefallstyle", arg1);
+				ini_close()
+				break;
+			case "divestyle": //Switches dive style
+				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.newhud else arg1 = ds_list_find_value(_commands, 1)	
+				switch arg1
+				{
+					case "old": arg1 = 0
+					case "new": arg1 = 1
+					default: arg1 = !global.divestyle
+				}
+				global.divestyle = arg1
+				ini_open("saveData.ini")
+				ini_write_real("Option", "divestyle", arg1);
+				ini_close()
+				break;
+			case "destroyablecollect": //Switches transformation pitch shift feature
+				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.newhud else arg1 = ds_list_find_value(_commands, 1)	
+				switch arg1
+				{
+					case "pizzaslice": arg1 = 0
+					case "topping": arg1 = 1
+					default: arg1 = !global.destroyablecollect
+				}
+				global.destroyablecollect = arg1
+				ini_open("saveData.ini")
+				ini_write_real("Option", "destroyablecollect", arg1);
+				ini_close()
+				break;
+			case "ratmode": //rat destroyables
+				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.newhud else arg1 = ds_list_find_value(_commands, 1)	
+				switch arg1
+				{
+					case "off": arg1 = false
+					case "on": arg1 = true
+					default: arg1 = !global.ratmode
+				}
+				global.ratmode = arg1
+				ini_open("saveData.ini")
+				ini_write_real("Option", "ratmode", arg1);
+				ini_close()
+				break;				
+			case "attackstyle": //Switches Attack style
+				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.newhud else arg1 = ds_list_find_value(_commands, 1)	
+				switch arg1
+				{
+					case "shoulder": arg1 = 1
+					case "grab": arg1 = 0
+					default: arg1 = !global.attackstyle
+				}
+				global.attackstyle = arg1
+				ini_open("saveData.ini")
+				ini_write_real("Option", "attackstyle", arg1);
+				ini_close()
+				break;	
 			case "debugmode": //Could probably use optimization
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.debugmode else arg1 = ds_list_find_value(_commands, 1)
 				switch arg1
@@ -174,6 +293,7 @@ if active = true
 				}
 				global.debugmode = arg1 
 				break		
+			
 			case "heatmeter": 
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.heatmeteroption  else arg1 = ds_list_find_value(_commands, 1)
 				switch arg1

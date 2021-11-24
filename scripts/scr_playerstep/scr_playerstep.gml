@@ -516,6 +516,7 @@ else if actor = true
 	}	
 
 #region State Stuff
+/*
 	var subtle_var = 5, speed_var = 0;
 	switch state
 	{
@@ -547,27 +548,39 @@ else if actor = true
 		default:
 		subtle_var = 5
 		break;
-	}
+	}*/
 #endregion
 
 #region Slope Angles
-	//Angle Strength
-	if global.freezeframe = false && sprite_index != spr_knightpepdownslope && scr_slope_ext(x, y + 1) && place_meeting(x,y+1,obj_slope) && vsp >= 0 
+	if global.freezeframe = false && actor = false && sprite_index != spr_knightpepdownslope && grounded && vsp >= 0 && !(state = states.climbwall || state = states.jetpack || state = states.tumble || state = states.wallcling || state = states.pogo || state = states.tacklecharge || state = states.grab || state  = states.freefallland || state = states.shotgun || state = states.finishingblow)
 	{
-	    with instance_place(x,y + 1,obj_slope)
-	    {
-			//some stuff stolen from orbinaut framework
-	        var flip = sign(image_xscale) = -1 ? 180 : 0
-	        var targetangle = point_direction(x,y + sprite_height,x + sprite_width,y) - flip;
-			var RotationStep = (abs(other.hsp) / 16 + abs(other.hsp) / 32 - 2) * -1
-			other.draw_angle =  darctan2(dsin(targetangle) + dsin(other.draw_angle) * RotationStep, dcos(targetangle) + dcos(other.draw_angle) * RotationStep);	
-	    }
+			//var f = true
+			//some stuff stolen from orbinaut framework		 :troll:
+			//TO DO: performance check
+			if abs(hsp) >= 8
+			{
+				var targetangle  = scr_slopeangle();
+				var RotationStep = (abs(hsp) / 16 + abs(hsp) / 32 - 2) * -1
+			}
+			else
+			{
+				var targetangle  = 360;		
+				var RotationStep = (abs(hsp) / 16 - 2) * -1
+			}			
+			draw_angle = darctan2(dsin(targetangle) + dsin(draw_angle) * RotationStep, dcos(targetangle) + dcos(draw_angle) * RotationStep);	
 	}
 	else if global.freezeframe = false
-	{
-		var targetangle = 0;
-		var RotationStep = (abs(hsp) / 16 + abs(hsp) / 32 - 2) * -1
-		draw_angle =  darctan2(dsin(targetangle) + dsin(draw_angle) * RotationStep, dcos(targetangle) + dcos(draw_angle) * RotationStep);	
+	{	
+		if draw_angle <= 0
+			draw_angle += 360;
+		// Rotate back to 360
+		if draw_angle < 180
+			draw_angle = max(draw_angle - 2.8125, 0);
+		else
+			draw_angle = min(draw_angle + 2.8125, 360);	
+			
+		if state == states.wallcling || state == states.climbwall
+			draw_angle = 0;
 	}
 #endregion	
 
@@ -724,6 +737,19 @@ else if actor = true
 		}
 	    toomanytoppings = 6
 	}
+	
+	//Firemouth Trail thingy
+	if (firemouthtrail > 0)
+	    firemouthtrail--
+		
+	if ((firemouthtrail <= 0) && state == states.firemouth)
+	{
+	    with instance_create(x, y, obj_firemouthafterimg)
+		{
+			playerid = other.id
+		}
+	    firemouthtrail = 6
+	}
 	//Mach 3 Effect
 	if ((state == 91 || state == states.Sjump || state == states.breakdance || (state != 51 && (sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump))  || (pogomovespeed >= 12  && state == states.pogo) ||state == states.jetpack || (state == 109 && instance_exists(obj_player2) && obj_player2.state == 91) || state == 114 || state == 70 || state == 17 || state == 9 || state == 37 || state == 10 || state == 22 || state == 71 || pogojetcharge = true) && macheffect == 0)
 	{
@@ -758,7 +784,7 @@ else if actor = true
 	//Instakill Move
 	if global.freezeframe = false
 	{
-		if state != states.frozen && (state == 68 || sprite_index = spr_swingding || sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump || state == 86 || state == states.breakdance ||	state == states.jetpack || state == states.pogo || state == 91 || state == 60 || (state == 73 && thrown == 1) || state == 70 || state == 17 || state == states.newbomb || state == 74 || state == 2 || state == 6 || state == 7 || state == 9 || state == 44 || state == 35 || state == 63 || state == 37 || state == 40 || state == 10 || (state == 43 && sprite_index == spr_piledriver) || state == 24 || state == 25 || state == 18 || state == 15 || state == 13 || state == 11)
+		if state != states.frozen && (state == 68 || sprite_index = spr_swingding || sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump || state == 86 || state == states.firemouth || state == states.breakdance ||	state == states.jetpack || state == states.pogo || state == 91 || state == 60 || (state == 73 && thrown == 1) || state == 70 || state == 17 || state == states.newbomb || state == 74 || state == 2 || state == 6 || state == 9 || state == 44 || state == 35 || state == 63 || state == 37 || state == 40 || state == 10 || (state == 43 && sprite_index == spr_piledriver) || state == 24 || state == 25 || state == 18 || state == 15 || state == 13 || state == 11)
 			instakillmove = 1
 		else if state != states.frozen
 			instakillmove = 0

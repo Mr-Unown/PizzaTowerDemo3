@@ -146,7 +146,7 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
     if (content == obj_noisebomb)
     {
         with (instance_create(x, (y - 25), content)) {
-            sprite_index = spr_noisebomb_intro
+
 			//Follower DS_list
 			ds_list_add(global.follower, id);
 		}
@@ -166,7 +166,7 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
 		image_index = 0
 		scr_soundeffect(sfx_scream5)
 		}			
-    }	
+    }		
     sprite_index = spr_pizzaboxopen
 	if (ds_list_find_index(global.saveroom, id) == -1)
 	ds_list_add(global.saveroom, id)

@@ -132,7 +132,7 @@ function scr_player_mach1() {
 	}
 	if (key_down && (!grounded))
 	{
-	    if (shotgunAnim == 0)
+	    if (shotgunAnim == 0 && global.freefallstyle = 1)
 	    {
 	        image_index = 0
 	        state = 92

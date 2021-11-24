@@ -1,11 +1,14 @@
 {
   "spriteId": {
-    "name": "spr_doorunvisited",
-    "path": "sprites/spr_doorunvisited/spr_doorunvisited.yy",
+    "name": "spr_goldendoorvisited",
+    "path": "sprites/spr_goldendoorvisited/spr_goldendoorvisited.yy",
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_doorvisited",
+    "path": "sprites/spr_doorvisited/spr_doorvisited.yy",
+  },
   "persistent": false,
   "parentObjectId": {
     "name": "group_door",

@@ -131,6 +131,9 @@ function scr_playerreset() {
 	with obj_music
 	{
 		fadeoff = 0;
+		//Beach Shit
+		playintro = true;
+		nolag = 0;		
 	}
 	if instance_exists(obj_timesup)
 	    instance_destroy(obj_timesup);
@@ -150,6 +153,7 @@ function scr_playerreset() {
 	ds_list_clear(global.follower);
 
 	global.ruinmusic = 0;
+	global.factorymusic = 0;
 	with (obj_player1)
 	{
 		scr_playercreate();

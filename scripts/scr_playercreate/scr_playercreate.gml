@@ -12,8 +12,6 @@ function scr_playercreate() {
 	substate = 0;
 	//Suplex
 	suplexdashtimer = 0;
-	//Newsjumpcancel
-	global.newsjumpcancel = false
 	//global.wateralpha = 0.85
 	global.storedtaminute = 0;
 	global.storedtasecond = 0;
@@ -155,7 +153,7 @@ function scr_playercreate() {
 	if instance_exists(obj_gerome)
 		instance_destroy(obj_gerome)
 	if instance_exists(obj_peshino)
-		instance_destroy(obj_peshino)	
+		instance_destroy(obj_peshino)
 	
 
 	ds_list_clear(global.toppinlist);

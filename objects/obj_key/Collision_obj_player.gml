@@ -65,4 +65,19 @@ if (room == ruin_4 && global.snickchallenge == 0 && global.panic == 0 && global.
 	}
 
 }
+if (room == factory_7 && global.snickchallenge == 0 && global.panic == 0 && global.timeattack == 0)
+{
+    global.factorymusic = 1
+	with (obj_music) {
+		if (!audio_is_playing(mu_factory2))
+		{
+			global.music2 = global.music
+			scr_sound(mu_factory2)
+			audio_sound_set_track_position(global.music, fadeoff)
+			pausedmusic = mu_factory2
+			audio_sound_gain(mu_factory2, (0), 0)
+		}
+	}
+
+}
 

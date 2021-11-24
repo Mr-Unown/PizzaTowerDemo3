@@ -11,6 +11,11 @@ with (other.id)
             sprite_index = spr_tumble
 			other.image_index = 0
 			other.sprite_index = spr_pepgoblinbot_kick
+			var randomchance = irandom_range(0,100);
+	    if (randomchance < global.quipsfrequency) && !audio_is_playing(sfx_dizzy)
+			{
+				scr_soundeffect(sfx_dizzy);
+			}					
         }
 		else if state = 86 || state = 2
 		{

@@ -5,7 +5,7 @@ if (y == ystart && obj_player.x > (x - 50) && obj_player.x < (x + 50) && obj_pla
     vsp = 10
     sprite_index = spr_boxcrusher_fall
 }
-if (grounded && sprite_index == spr_boxcrusher_fall)
+if (grounded && sprite_index == spr_boxcrusher_fall && !audio_is_playing(sfx_groundpound))
 {
     scr_soundeffect(sfx_groundpound)
     with (obj_camera)

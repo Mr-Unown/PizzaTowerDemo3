@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "mu_cowboyufo",
-  "duration": 135.536835,
+  "duration": 135.53183,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
