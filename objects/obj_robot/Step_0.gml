@@ -39,5 +39,5 @@ if (boundbox == 0)
     }
 }
 if obj_lighting.visible = true
-paletteselect = 3
+paletteselect = 2
 

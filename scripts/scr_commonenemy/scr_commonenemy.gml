@@ -8,14 +8,14 @@ function scr_commonenemy() {
 		if object_index != obj_robot
 		paletteselect = 1
 		else 
-		paletteselect = 4
+		paletteselect = 3
 	}
 	else if global.heatmeter < 4 && object_index != obj_shrimp && object_index != obj_shrimpred && object_index != obj_shrimpblue && (object_index = obj_robot && obj_lighting.visible = false)
 	{
 		if object_index != obj_robot
 		paletteselect = 0
 		else
-		paletteselect = 1
+		paletteselect = 2
 	}
 	//Squash and Stretch
 	if squashed = true
