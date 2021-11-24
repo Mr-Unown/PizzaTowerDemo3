@@ -2642,6 +2642,7 @@
     {"id":{"name":"scr_player_victory","path":"scripts/scr_player_victory/scr_player_victory.yy",},"order":97,},
     {"id":{"name":"scr_player_climbwall","path":"scripts/scr_player_climbwall/scr_player_climbwall.yy",},"order":98,},
     {"id":{"name":"scr_player_pipe","path":"scripts/scr_player_pipe/scr_player_pipe.yy",},"order":99,},
+    {"id":{"name":"beach_11","path":"rooms/beach_11/beach_11.yy",},"order":20,},
     {"id":{"name":"scr_player_jetpack","path":"scripts/scr_player_jetpack/scr_player_jetpack.yy",},"order":100,},
     {"id":{"name":"scr_player_pogo","path":"scripts/scr_player_pogo/scr_player_pogo.yy",},"order":101,},
     {"id":{"name":"scr_player_breakdance","path":"scripts/scr_player_breakdance/scr_player_breakdance.yy",},"order":102,},
@@ -3644,6 +3645,7 @@
     {"roomId":{"name":"beach_8","path":"rooms/beach_8/beach_8.yy",},},
     {"roomId":{"name":"beach_9","path":"rooms/beach_9/beach_9.yy",},},
     {"roomId":{"name":"beach_10","path":"rooms/beach_10/beach_10.yy",},},
+    {"roomId":{"name":"beach_11","path":"rooms/beach_11/beach_11.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
