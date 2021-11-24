@@ -35,6 +35,7 @@ heavy = 0
 depth = 0
 grabbedby = 0
 dropcoin = 0
-
+paletteselect = 0
+spr_palette = spr_palette_robot
 
 

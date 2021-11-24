@@ -38,5 +38,6 @@ if (boundbox == 0)
         other.boundbox = 1
     }
 }
-
+if obj_lighting.visible = true
+paletteselect = 3
 

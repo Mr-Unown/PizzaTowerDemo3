@@ -165,6 +165,19 @@ if active = true
 				ini_write_real("Option", "newsjumpcancel", arg1);
 				ini_close()
 				break;
+			case "vibration": //Controller vibration
+				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.newhud else arg1 = ds_list_find_value(_commands, 1)	
+				switch arg1
+				{
+					case "on": arg1 = true
+					case "off": arg1 = false
+					default: arg1 = !global.vibration
+				}
+				global.vibration = arg1
+				ini_open("saveData.ini")
+				ini_write_real("Option", "vibration", arg1);
+				ini_close()
+				break;
 			case "collectstyle": //Switches main collect sprites
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.newhud else arg1 = ds_list_find_value(_commands, 1)	
 				switch arg1
