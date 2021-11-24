@@ -85,8 +85,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Stylebar",
+    "path": "folders/Sprites/Hud & Menus/Stylebar.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_stylepizza",

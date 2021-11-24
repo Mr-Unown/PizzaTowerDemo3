@@ -77,8 +77,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Snick",
+    "path": "folders/Sprites/Hud & Menus/Old Hud/Faces/Snick.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_snickHUD_normal",
