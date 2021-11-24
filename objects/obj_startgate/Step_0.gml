@@ -133,20 +133,15 @@ if (distance_to_object(player) < 50)
 		            alarm[0] = 2
 			break;				
 			case "desert": 
-		            _message = "OREGANO DESERT"
+		            _message = "WIP DESERT"
 		            showtext = 1
 		            alarm[0] = 2
 			break;	
 			case "factory": 
 		            _message = "WIP FACTORY"
 		            showtext = 1
-		            alarm[0] = 2		
-			break;		
-			case "beach": 
-		            _message = "PINEAPPLE BEACH"
-		            showtext = 1
 		            alarm[0] = 2
-			break;
+			break;				
 			default: 
 					_message = "NONE"
 					showtext = 1

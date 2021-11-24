@@ -17,6 +17,4 @@ ini_close()
 
 global.scarysound = noone
 
-//Beach Shit
-playintro = true;
-nolag = 0;
+
