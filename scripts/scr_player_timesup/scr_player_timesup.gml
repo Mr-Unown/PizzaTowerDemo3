@@ -1,4 +1,5 @@
 function scr_player_timesup() {
+	var second_player = (object_index == obj_player2 ? obj_player1 : obj_player2)
 	xscale = 1
 	inv_frames = 0
 	sprite_index = spr_Timesup
@@ -15,9 +16,16 @@ function scr_player_timesup() {
 	}
 	if (room == timesuproom)
 	{
-	    obj_player.x = 480
-	    obj_player.y = 270
+	    x = 480
+	    y = 270
+		second_player.x = -1000
+		second_player.y = 500
+		second_player.state = 8		
 	}
+	if object_index == obj_player2 
+		obj_player1.spotlight = true;
+	if object_index == obj_player1 
+		obj_player1.spotlight = false;
 	if (floor(image_index) == 9)
 	    image_speed = 0
 

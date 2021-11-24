@@ -1,4 +1,6 @@
-if (ds_list_find_index(global.saveroom, id) == -1)
+if (ds_list_find_index(global.saveroom, id) == -1) 
+{
+	if sprite_index = spr_rolldestroyable
 {
     repeat (4)
     {
@@ -24,4 +26,20 @@ if (ds_list_find_index(global.saveroom, id) == -1)
     scr_soundeffect(sfx_breakblock1, sfx_breakblock2)
     ds_list_add(global.saveroom, id)
 }
-
+else if sprite_index = spr_stupidpinsmall
+{
+with (instance_create(x, y, obj_baddie_dead))
+	{
+        sprite_index = spr_stupidpinsmall_debris
+		rotatedirection = choose(-1,0,1)
+        rotatevalue = irandom_range(-20,20)
+	}
+	if (audio_is_playing(sfx_killingblow) || audio_is_playing(sfx_killingblow))
+    {
+        audio_stop_sound(sfx_killingblow)
+        audio_stop_sound(sfx_killingblow)
+    }
+    scr_soundeffect(sfx_killingblow, sfx_killingblow)
+    ds_list_add(global.saveroom, id)
+}
+}

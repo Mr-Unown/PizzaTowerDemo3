@@ -42,5 +42,5 @@ if (place_meeting(x, (y + 1), obj_player2) || place_meeting(x, (y - 1), obj_play
     if (place_meeting(x, (y - 1), obj_player2) && (obj_player2.state == states.knightpep || obj_player2.state == 9))
 		{ initialhsp = 8 * sign(other.image_xscale); initialvsp = random_range(-4, -1);	event_user(0); 	}
 }
-
-
+if global.ratmode = true
+instance_destroy()

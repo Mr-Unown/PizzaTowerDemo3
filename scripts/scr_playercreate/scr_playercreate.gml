@@ -1,12 +1,16 @@
 function scr_playercreate() {
+	//Wow
+	scale = 1;
+	secreteye = false;
+	actor = false;
 	//Jump Height Trolling
 	jumpheight = -11;
-	
 	in_water = false;
 	//Topping Trail
 	toomanytoppings = 0;
+	//Substate
+	substate = 0;
 	//Suplex
-
 	suplexdashtimer = 0;
 	//global.wateralpha = 0.85
 	global.storedtaminute = 0;
@@ -149,7 +153,7 @@ function scr_playercreate() {
 	if instance_exists(obj_gerome)
 		instance_destroy(obj_gerome)
 	if instance_exists(obj_peshino)
-		instance_destroy(obj_peshino)	
+		instance_destroy(obj_peshino)
 	
 
 	ds_list_clear(global.toppinlist);

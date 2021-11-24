@@ -5,6 +5,7 @@ scr_initinput()
 scr_playercreate()
 
 //CustomPaletteChoosyFILE
+actor = false;
 customsavedpalette = 1;
 oldcustomsavedpalette = 1;
 characters = "Peppino"
@@ -19,6 +20,8 @@ pogo = false
 pipedirection = "none"
 global.savefile = "a"
 equippedhat = false;
+Talkie = 0
+firemouthtrail = 0
 choosenhat = 0;
 parry_id = -4
 parried_baddie = 0
@@ -211,3 +214,4 @@ superjumpprepsnd = -1
 suplexdashsnd = -1
 obj_player1.hp = 5
 blackblend = 0
+boxxedjump = 0

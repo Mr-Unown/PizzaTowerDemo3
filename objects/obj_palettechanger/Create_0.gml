@@ -51,3 +51,20 @@ deletemax = 6
 cursor = "|";
 delay = 20;
 alarm[2] = delay;
+
+
+//Export and Import Buttons
+ImportButton =
+{
+	xpos : 63,
+	ypos : 495,
+	activated : false,
+	buffertimer : 0
+};
+ExportButton =
+{
+	xpos : 140,
+	ypos : 495,
+	activated : false,
+	buffertimer : 0
+};

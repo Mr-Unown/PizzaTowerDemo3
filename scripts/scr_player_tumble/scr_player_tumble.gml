@@ -1,7 +1,11 @@
 function scr_player_tumble() {
 	hsp = (xscale * movespeed)
 	if (sprite_index == spr_tumblestart)
+	{
 	    movespeed = 6
+	}
+	if (sprite_index == spr_player_sjumpcancel)
+	    movespeed = 12
 	if (key_down2 && (!key_jump2))
 	    vsp = 10
 	//Slopes
@@ -12,7 +16,7 @@ function scr_player_tumble() {
 			with (instance_place(x, (y + 1), obj_slope))
 			{
 				var slope_acceleration = abs(image_yscale) / abs(image_xscale)
-				if other.movespeed > 8 && other.xscale == sign(image_xscale)
+				if other.movespeed > 0 && other.xscale == sign(image_xscale)
 				{
 					other.movespeed -= (0.25 * slope_acceleration)
 				}
@@ -28,13 +32,16 @@ function scr_player_tumble() {
 				var _xscale = _slope[1]
 				var _yscale = _slope[2]
 				var slope_acceleration = abs(_yscale) / abs(_xscale)
-				if other.movespeed > 8 && other.xscale == sign(_xscale)
+				if other.movespeed > 0 && other.xscale == sign(_xscale)
 				{
 					other.movespeed -= (0.25 * slope_acceleration)
 				}
-				else if other.movespeed < 20 && other.xscale == -sign(_xscale)
-					other.movespeed += (0.25 * slope_acceleration)				
+				else if other.movespeed < 22 && other.xscale == -sign(_xscale)
+					other.movespeed += (0.25 * slope_acceleration)
+				if other.movespeed <= 0
+				other.xscale = -sign(_xscale)
 			}
+			
 		}
 	}	
 	if ((!scr_slope()) && sprite_index == spr_tumblestart && floor(image_index) < 11)
@@ -44,16 +51,35 @@ function scr_player_tumble() {
 	    sprite_index = spr_tumble
 		movespeed = 14
 	}
+	if (sprite_index == spr_player_sjumpcancel && floor(image_index) == (image_number - 1))
+	    image_speed = 0
+	if (sprite_index == spr_player_sjumpcancelslide && movespeed >= 0)
+	    movespeed -= 0.15
+	if (sprite_index == spr_player_sjumpcancelslide && movespeed <= 0)
+	    state = 0
+	if (grounded && sprite_index == spr_player_sjumpcancel)
+	{
+		sprite_index = spr_player_sjumpcancelland
+		image_index = 0
+		movespeed = 11
+	}
+	if (sprite_index == spr_player_sjumpcancelland && floor(image_index) == (image_number - 1))
+	    sprite_index = spr_player_sjumpcancelslide
 	if (scr_solid((x + xscale), y) && !scr_slope_ext(x + sign(hsp),y) && (!place_meeting((x + sign(hsp)), y, obj_destructibles)))
 	{
-	    scr_soundeffect(sfx_tumble4)
-	    hsp = 0
-	    movespeed = 0
-	    sprite_index = spr_tumbleend
-	    state = 72
-	    image_index = 0
+		hsp = 0
+		movespeed = 0
+		image_index = 0
+		if (sprite_index == spr_tumble || sprite_index == spr_tumblestart)
+		{
+		    scr_soundeffect(sfx_tumble4)
+		    sprite_index = spr_tumbleend
+		    state = 72
+		}
+		else if (sprite_index == spr_player_sjumpcancelslide || sprite_index == spr_player_sjumpcancelland || sprite_index == spr_player_sjumpcancel)
+		    state = 0
 	}
-	if key_jump
+	if key_jump && sprite_index != spr_player_sjumpcancelland && sprite_index != spr_player_sjumpcancelslide
 	    input_buffer_jump = 0
 	if ((!key_jump2) && jumpstop == 0 && vsp < 0.5 && stompAnim == 0)
 	{
@@ -64,10 +90,13 @@ function scr_player_tumble() {
 	    jumpstop = 0
 	if (input_buffer_jump < 8 && grounded && hsp != 0)
 	    vsp = -9
-	if sprite_index != spr_tumble	
-	image_speed = 0.35
-	else
-	image_speed = (movespeed/14) * 0.35
+	if (sprite_index != spr_player_sjumpcancel)
+	{
+		if sprite_index != spr_tumble
+		image_speed = 0.35
+		else
+		image_speed = (movespeed/14) * 0.8
+	}
 
 
 

@@ -1,6 +1,4 @@
 function scr_enemy_stun() {
-	var angle = point_direction(x,y,x + hsp, y + vsp );		
-	var ymovespeed = 2 + abs(vsp)
 	var vdirection = sign(hsp)
 	if (object_index == obj_ninja)
 	    attack = 1
@@ -12,8 +10,8 @@ function scr_enemy_stun() {
 	{
 	    if (thrown == 1 && hp <= 0) || (dying = true)
 		{
-			initialvsp = clamp(-lengthdir_y(ymovespeed, angle) - 2,-20,(random_range(0,-10)))
-			initialhsp = (vdirection * ((random_range(1,7)) + abs(floor(hsp))))	
+			initialvsp = irandom_range(5,-20)
+			initialhsp = irandom_range(5,10) * choose(-1,1)
 	        instance_destroy()
 		}
 	    if (hp > 0 && object_index == obj_bigcheese && sprite_index == spr_bigcheese_fall)
@@ -32,8 +30,8 @@ function scr_enemy_stun() {
 	        image_xscale = (-other.image_xscale)
 	    if (thrown == 1 && hp <= 0 || dying = true) 
 		{
-			initialvsp = clamp(-lengthdir_y(ymovespeed, angle) - 2,-20,(random_range(0,-10)))
-			initialhsp = (vdirection * ((random_range(1,7)) + abs(floor(hsp))))		
+			initialvsp = irandom_range(15,-15)
+			initialhsp = irandom_range(5,15) * -vdirection
 	        instance_destroy()
 		}
 	    if (thrown == 1 && hp > 0 && object_index == obj_bigcheese && sprite_index == stunfallspr)

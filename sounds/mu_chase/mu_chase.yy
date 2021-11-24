@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "mu_chase",
-  "duration": 120.144775,
+  "duration": 120.139771,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

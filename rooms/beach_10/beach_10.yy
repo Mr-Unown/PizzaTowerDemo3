@@ -559,8 +559,8 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "PizzaTower_Demo3",
-    "path": "PizzaTower_Demo3.yyp",
+    "name": "No Vacation Cruise",
+    "path": "folders/Rooms/Levels/No Vacation Cruise.yy",
   },
   "resourceVersion": "1.0",
   "name": "beach_10",

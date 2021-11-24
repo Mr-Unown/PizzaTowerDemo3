@@ -1,4 +1,4 @@
-scr_playerstate()
+scr_playerstep()
 //No more Shadows
 if image_blend != make_colour_hsv(0, 0, 255) && state != states.comingoutdoor {
 	image_blend = make_colour_hsv(0, 0, 255)
@@ -245,11 +245,7 @@ if (state == 70 && (!instance_exists(speedlineseffectid)))
         other.speedlineseffectid = id
     }
 }
-scr_collide_destructibles()
-if (state != 8 && state != 109 && state != 78 && state != 63 && state != 4 && state != 61 && state != 88 && state != 56 && state != 64 && state != 19 && state != 36 && state != 23 && state != 55)
-    scr_collide_player()
-if (state == 88)
-    scr_collide_player()
+
 if (GshotgunAnim == 1 && character != "S" && character != "V")
     shotgunAnim = 1
 else

@@ -1,6 +1,8 @@
 event_inherited();
 image_speed = 0.35
 depth = 4
+if global.collectstyle = 0
+{
         if ((obj_player1.character == "P" && obj_player1.spotlight == 1) || (obj_player2.character == "P" && obj_player1.spotlight == 0))
             sprite_index = choose(spr_pizzacollect1, spr_pizzacollect2, spr_pizzacollect3)
         else if ((obj_player1.character == "N" && obj_player1.spotlight == 1) || (obj_player2.character == "N" && obj_player1.spotlight == 0))
@@ -11,5 +13,8 @@ depth = 4
             sprite_index = choose(spr_pizzacollect1cheese, spr_pizzacollect2cheese, spr_pizzacollect3cheese)
 		else if ((obj_player1.character == "PZ" && obj_player1.spotlight == 1) || (obj_player2.character == "PZ" && obj_player1.spotlight == 0))
 			sprite_index = choose(spr_PZbigpizza1, spr_PZbigpizza2, spr_PZbigpizza3)
+}
+else if global.collectstyle = 1
+	sprite_index = choose(spr_bigsausagecollect, spr_bigcheesecollect, spr_bigpineapplecollect, spr_bigtomatocollect, spr_bigshroomcollect)
 
 

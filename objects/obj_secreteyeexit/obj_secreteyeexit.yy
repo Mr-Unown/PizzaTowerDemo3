@@ -1,0 +1,45 @@
+{
+  "spriteId": {
+    "name": "spr_secreteyeexit_idle",
+    "path": "sprites/spr_secreteyeexit_idle/spr_secreteyeexit_idle.yy",
+  },
+  "solid": false,
+  "visible": true,
+  "spriteMaskId": {
+    "name": "spr_secreteye_idle",
+    "path": "sprites/spr_secreteye_idle/spr_secreteye_idle.yy",
+  },
+  "persistent": false,
+  "parentObjectId": {
+    "name": "group_doortriggers",
+    "path": "objects/group_doortriggers/group_doortriggers.yy",
+  },
+  "physicsObject": false,
+  "physicsSensor": false,
+  "physicsShape": 0,
+  "physicsGroup": 0,
+  "physicsDensity": 0.5,
+  "physicsRestitution": 0.1,
+  "physicsLinearDamping": 0.1,
+  "physicsAngularDamping": 0.1,
+  "physicsFriction": 0.2,
+  "physicsStartAwake": true,
+  "physicsKinematic": false,
+  "physicsShapePoints": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
+  "properties": [
+    {"varType":2,"value":"\"A\"","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"targetDoor","tags":[],"resourceType":"GMObjectProperty",},
+  ],
+  "overriddenProperties": [],
+  "parent": {
+    "name": "Doors and Hallways",
+    "path": "folders/Objects/Level Structure/Doors and Hallways.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "obj_secreteyeexit",
+  "tags": [],
+  "resourceType": "GMObject",
+}

@@ -1,5 +1,8 @@
 if (ds_list_find_index(global.saveroom, id) == -1)
 {
+	if global.ratmode = false
+	{
+{
 	repeat(4)
     with instance_create((x + 32), (y + 32), obj_metaldebris)
 	{
@@ -21,6 +24,7 @@ if (ds_list_find_index(global.saveroom, id) == -1)
     scr_soundeffect(sfx_breakmetal)
     ds_list_add(global.saveroom, id)
 }
-
+	}
+}
 
 

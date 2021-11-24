@@ -1,4 +1,3 @@
-
 with (obj_enemyportal)
 {
     if (portalid == other.portalid)

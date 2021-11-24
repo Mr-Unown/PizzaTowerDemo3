@@ -39,7 +39,22 @@ function scr_player_climbwall() {
 			wallspeed = 0
 	}
 	crouchslideAnim = 1
-	sprite_index = spr_machclimbwall
+	if character != "P"
+		sprite_index = spr_machclimbwall
+	else
+	{
+		if global.wallrunstyle = 0
+		{
+			if wallspeed < 5
+			sprite_index = spr_player_NEWwallclimb
+			else 
+			sprite_index = spr_player_NEWwallclimb2
+		}
+		else if global.wallrunstyle = 1
+		sprite_index = spr_machclimbwall
+		else if global.wallrunstyle = 2 && character = "P"
+		sprite_index = spr_player_machclimbwall
+	}
 	if (character != "S")
 	{
 	    if (!key_attack)
@@ -61,7 +76,7 @@ function scr_player_climbwall() {
 	    state = 93
 	    machhitAnim = 0
 	}
-	if (!scr_solid((x + xscale), y))
+	if (!scr_solid((x + xscale), y,true))
 	{
 	    instance_create(x, y, obj_jumpdust)
 	    vsp = 0
