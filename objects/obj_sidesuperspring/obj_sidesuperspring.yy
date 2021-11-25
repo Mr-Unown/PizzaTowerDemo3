@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_spring",
-    "path": "sprites/spr_spring/spr_spring.yy",
+    "name": "spr_springblock",
+    "path": "sprites/spr_springblock/spr_springblock.yy",
   },
   "solid": false,
   "visible": true,

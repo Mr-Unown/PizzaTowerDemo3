@@ -574,11 +574,11 @@ if (global.panic == 0 && global.snickchallenge == 0)
 	}	
 		if room = room_test5
 	{
-	    if (!audio_is_playing(mu_forestsecret))
+	    if (!audio_is_playing(mu_freezer2))
         {
              scr_soundstopall()
-             scr_sound(mu_forestsecret)
-             pausedmusic = mu_forestsecret
+             scr_sound(mu_freezer2)
+             pausedmusic = mu_freezer2
         }	
 	}
 	

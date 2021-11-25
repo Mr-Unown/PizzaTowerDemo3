@@ -15,7 +15,7 @@ function scr_commonenemy() {
 		if object_index != obj_robot
 		paletteselect = 0
 		else
-		paletteselect = 2
+		paletteselect = 1
 	}
 	//Squash and Stretch
 	if squashed = true

@@ -58,9 +58,8 @@ if can_draw = true
 		}		
 		with (obj_robot)
 		{
-		    var _x = x - sprite_xoffset - cam_x
-				var _y = y - sprite_yoffset - cam_y
-				draw_circle((((x - 26) - cam_x + random_range(-1, 1))), ((y - 63) - cam_y + random_range(-1, 1)), (70 + random_range(-1, 1)), 0)
+		    draw_circle(((x - cam_x + random_range(-1, 1))), (y - cam_y + random_range(-1, 1)), (40 + random_range(-1, 1)), 0)
+			draw_set_color(c_yellow)
 		}
 		gpu_set_blendmode(bm_normal);
 		draw_set_alpha(1)
