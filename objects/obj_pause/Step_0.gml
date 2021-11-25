@@ -286,7 +286,7 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
                 obj_player1.targetDoor = "A";
                 if instance_exists(obj_player2)
                     obj_player2.targetDoor = "A";
-            }/*			
+            }			
             else if (string_letters(roomname) == "desert" || string_letters(roomname) == "desertsecret")
             {
                 instance_activate_all()
@@ -307,6 +307,7 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
                 if instance_exists(obj_player2)
                     obj_player2.targetDoor = "A"
             }
+			/*
             else if (string_letters(roomname) == "sewer" || string_letters(roomname) == "sewersecret")
             {
                 instance_activate_all()
