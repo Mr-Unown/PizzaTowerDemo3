@@ -9,13 +9,13 @@
   "swfPrecision": 2.525,
   "bbox_left": 0,
   "bbox_right": 11,
-  "bbox_top": 0,
-  "bbox_bottom": 6,
+  "bbox_top": 1,
+  "bbox_bottom": 8,
   "HTile": false,
   "VTile": false,
   "For3D": false,
   "width": 12,
-  "height": 10,
+  "height": 11,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"68204f0b-4b85-48d5-bf51-e5de354db0c8","path":"sprites/spr_snickpalette/spr_snickpalette.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"68204f0b-4b85-48d5-bf51-e5de354db0c8","path":"sprites/spr_snickpalette/spr_snickpalette.yy",},"LayerId":{"name":"ee741312-60c1-4dab-b52a-2e9100a23328","path":"sprites/spr_snickpalette/spr_snickpalette.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_snickpalette","path":"sprites/spr_snickpalette/spr_snickpalette.yy",},"resourceVersion":"1.0","name":"68204f0b-4b85-48d5-bf51-e5de354db0c8","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"d99ecaf8-7778-4893-86e8-ceba1bbc8dc1","path":"sprites/spr_snickpalette/spr_snickpalette.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"d99ecaf8-7778-4893-86e8-ceba1bbc8dc1","path":"sprites/spr_snickpalette/spr_snickpalette.yy",},"LayerId":{"name":"f5789df1-eb2b-41e3-92e8-593038b133da","path":"sprites/spr_snickpalette/spr_snickpalette.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_snickpalette","path":"sprites/spr_snickpalette/spr_snickpalette.yy",},"resourceVersion":"1.0","name":"d99ecaf8-7778-4893-86e8-ceba1bbc8dc1","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_snickpalette","path":"sprites/spr_snickpalette/spr_snickpalette.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"89c5dac4-225d-4267-b7e1-68633b8594a7","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"68204f0b-4b85-48d5-bf51-e5de354db0c8","path":"sprites/spr_snickpalette/spr_snickpalette.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"8a4d65ba-6c7e-42d5-b61e-e1380d7feaf7","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d99ecaf8-7778-4893-86e8-ceba1bbc8dc1","path":"sprites/spr_snickpalette/spr_snickpalette.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -65,9 +65,33 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ee741312-60c1-4dab-b52a-2e9100a23328","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f5789df1-eb2b-41e3-92e8-593038b133da","tags":[],"resourceType":"GMImageLayer",},
   ],
-  "nineSlice": null,
+  "nineSlice": {
+    "left": 0,
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "guideColour": [
+      4294902015,
+      4294902015,
+      4294902015,
+      4294902015,
+    ],
+    "highlightColour": 1728023040,
+    "highlightStyle": 0,
+    "enabled": false,
+    "tileMode": [
+      0,
+      0,
+      0,
+      0,
+      0,
+    ],
+    "resourceVersion": "1.0",
+    "loadedVersion": null,
+    "resourceType": "GMNineSliceData",
+  },
   "parent": {
     "name": "Palettes",
     "path": "folders/Sprites/Characters/Playable Characters Sprites/Palettes.yy",
