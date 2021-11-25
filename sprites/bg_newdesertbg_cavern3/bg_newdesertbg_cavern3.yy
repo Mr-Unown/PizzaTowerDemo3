@@ -10,12 +10,12 @@
   "bbox_left": 0,
   "bbox_right": 959,
   "bbox_top": 0,
-  "bbox_bottom": 539,
+  "bbox_bottom": 635,
   "HTile": false,
   "VTile": false,
   "For3D": false,
   "width": 960,
-  "height": 540,
+  "height": 636,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"45c20d31-306e-4b12-8694-9387e544ec15","path":"sprites/bg_newdesertbg_cavern3/bg_newdesertbg_cavern3.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"45c20d31-306e-4b12-8694-9387e544ec15","path":"sprites/bg_newdesertbg_cavern3/bg_newdesertbg_cavern3.yy",},"LayerId":{"name":"3aa91e91-3d05-4ea3-a325-912a1a148791","path":"sprites/bg_newdesertbg_cavern3/bg_newdesertbg_cavern3.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"bg_newdesertbg_cavern3","path":"sprites/bg_newdesertbg_cavern3/bg_newdesertbg_cavern3.yy",},"resourceVersion":"1.0","name":"45c20d31-306e-4b12-8694-9387e544ec15","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"4f71e3f4-25f4-42df-95eb-17f7eed0d5c1","path":"sprites/bg_newdesertbg_cavern3/bg_newdesertbg_cavern3.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"4f71e3f4-25f4-42df-95eb-17f7eed0d5c1","path":"sprites/bg_newdesertbg_cavern3/bg_newdesertbg_cavern3.yy",},"LayerId":{"name":"3d4ce15b-d99c-4663-ac59-96348bf5ead2","path":"sprites/bg_newdesertbg_cavern3/bg_newdesertbg_cavern3.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"bg_newdesertbg_cavern3","path":"sprites/bg_newdesertbg_cavern3/bg_newdesertbg_cavern3.yy",},"resourceVersion":"1.0","name":"4f71e3f4-25f4-42df-95eb-17f7eed0d5c1","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"bg_newdesertbg_cavern3","path":"sprites/bg_newdesertbg_cavern3/bg_newdesertbg_cavern3.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"c3c9dd11-ddf9-43cf-bcaf-4c20431b4f96","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"45c20d31-306e-4b12-8694-9387e544ec15","path":"sprites/bg_newdesertbg_cavern3/bg_newdesertbg_cavern3.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d883b13c-406c-4f37-9b93-242bb6661023","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4f71e3f4-25f4-42df-95eb-17f7eed0d5c1","path":"sprites/bg_newdesertbg_cavern3/bg_newdesertbg_cavern3.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -65,12 +65,12 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3aa91e91-3d05-4ea3-a325-912a1a148791","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3d4ce15b-d99c-4663-ac59-96348bf5ead2","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "New desert bg stuff",
-    "path": "folders/Sprites/Backgrounds/New desert bg stuff.yy",
+    "name": "Desert",
+    "path": "folders/Sprites/Backgrounds/Desert.yy",
   },
   "resourceVersion": "1.0",
   "name": "bg_newdesertbg_cavern3",
