@@ -25,7 +25,7 @@
     "path": "folders/Objects/Level Structure/Interactables/Gimmicks/Transport.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_objectteleport",
+  "name": "obj_objectteleportend",
   "tags": [],
   "resourceType": "GMObject",
 }
