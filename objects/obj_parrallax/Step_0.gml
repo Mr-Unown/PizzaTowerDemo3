@@ -94,10 +94,10 @@ layer_y("Backgrounds_Ground1", ((_cam_y * 0.15) + groundy))
 layer_x("Backgrounds_Ground2", (_centeredcam_x * 0.25))
 layer_y("Backgrounds_Ground2", ((_cam_y * 0.25) + ground2y))
 //New Horizontal Proof Parallax BGs
-layer_x("Backgrounds_H1", (_centeredcam_x * 0.15))
-layer_y("Backgrounds_H1",(_cam_y - clamp(_cam_y * 0.15 * (540 / room_height), 0, (sprite_get_height(layer_background_get_sprite(back_id14)) - 540 ) )))
-layer_x("Backgrounds_H2", (_centeredcam_x * 0.25))
-layer_y("Backgrounds_H2",(_cam_y - clamp(_cam_y * 0.25 * (540 / room_height), 0, (sprite_get_height(layer_background_get_sprite(back_id15)) - 540 ) )))
+layer_x("Backgrounds_H2", (_centeredcam_x * 0.15))
+layer_y("Backgrounds_H2",(_cam_y - clamp(_cam_y * 0.15 * (540 / room_height), 0, (sprite_get_height(layer_background_get_sprite(back_id14)) - 540 ) )))
+layer_x("Backgrounds_H1", (_centeredcam_x * 0.25))
+layer_y("Backgrounds_H1",(_cam_y - clamp(_cam_y * 0.25 * (540 / room_height), 0, (sprite_get_height(layer_background_get_sprite(back_id15)) - 540 ) )))
 //To Do: Redo Background Code
 
 

@@ -7,22 +7,22 @@ function scr_panicbg_init() {
 	    layers[layernum++] = "Backgrounds_far1"
 	if layer_exists("Backgrounds_scroll")
 	    layers[layernum++] = "Backgrounds_scroll"
+	if layer_exists("Backgrounds_H1")
+	    layers[layernum++] = "Backgrounds_H1"			
 	if layer_exists("Backgrounds_1")
 	    layers[layernum++] = "Backgrounds_1"
-	if layer_exists("Backgrounds_H2")
-	    layers[layernum++] = "Backgrounds_H2"	
 	if layer_exists("Backgrounds_Ground2")
 	    layers[layernum++] = "Backgrounds_Ground2"
 	if layer_exists("Backgrounds_long2")
 	    layers[layernum++] = "Backgrounds_long2"			
 	if layer_exists("Backgrounds_sky")
-	    layers[layernum++] = "Backgrounds_sky"
-	if layer_exists("Backgrounds_H1")
-	    layers[layernum++] = "Backgrounds_H1"		
+	    layers[layernum++] = "Backgrounds_sky"	
 	if layer_exists("Backgrounds_Ground1")
 	    layers[layernum++] = "Backgrounds_Ground1"
 	if layer_exists("Backgrounds_long")
 	    layers[layernum++] = "Backgrounds_long"	
+	if layer_exists("Backgrounds_H2")
+	    layers[layernum++] = "Backgrounds_H2"			
 	if layer_exists("Backgrounds_2")
 	    layers[layernum++] = "Backgrounds_2"
 	if layer_exists("Backgrounds_3")
