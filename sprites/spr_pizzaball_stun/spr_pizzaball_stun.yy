@@ -77,8 +77,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Greaseball Nerd",
-    "path": "folders/Sprites/Characters/Greaseball Nerd.yy",
+    "name": "Nerd",
+    "path": "folders/Sprites/Characters/Misc/Nerd.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_pizzaball_stun",
