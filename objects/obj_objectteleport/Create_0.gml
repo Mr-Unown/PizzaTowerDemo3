@@ -1,21 +1,23 @@
 i = 0
-target[0] = noone
+targets[0] = noone
 unid = 0;
 is_exit_portal = false;
 exit_id = noone;
 
-add_target = function(object,xoffset = 0,yoffset = 0)
+add_target = function(object,xoffset = 0,yoffset = 0,output_function = noone)
 {
 	/// @description Adds an object that can use it
 	/// @function add_target
 	/// @param object
 	/// @param xoffset
 	/// @param yoffset
+	/// @param output_function
 	targets[i++] = 
 	{
 		_object : object,
 		_xoffset : xoffset,
-		_yoffset : yoffset
+		_yoffset : yoffset,
+		_output_function : output_function
 	}
 	
 }
