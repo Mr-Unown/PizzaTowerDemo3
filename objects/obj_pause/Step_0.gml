@@ -55,6 +55,7 @@ if ((!pause) && (!instance_exists(obj_fadeout)))
 			global.pausecombotime = true
 			obj_tv.alarm[1] = 75
             global.combo += 3
+			global.style += 3
             //global.peppermode = 0
 			obj_player1.supertauntcharged = true;
 			obj_player2.supertauntcharged = true;

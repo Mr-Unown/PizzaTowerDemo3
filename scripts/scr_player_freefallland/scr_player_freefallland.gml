@@ -14,6 +14,7 @@ function scr_player_freefallland() {
 	alarm[4] = 14
 	vsp = 0
 	hsp = 0
+	GamepadSetVibration(1, 1, 1, 0.85)
   
 	//TODO: IDK
 	if key_jump2 && floor(image_index) >= 2 && floor(image_index) != image_number - 1

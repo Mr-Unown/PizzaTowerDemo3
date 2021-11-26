@@ -1,4 +1,4 @@
-if (!deactivated)
+if deactivated = 0
 {
     if (press_start && (!device_selected[0]))
     {
