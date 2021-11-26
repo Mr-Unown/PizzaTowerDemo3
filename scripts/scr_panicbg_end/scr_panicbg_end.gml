@@ -1,6 +1,7 @@
 function scr_panicbg_end() {
 	if event_type == ev_draw && event_number == 0
 	{	
+		
 	    gpu_set_blendenable(0)
 	    gpu_set_colorwriteenable(0, 0, 0, 1)
 	    draw_rectangle(-192, -192, camera_get_view_width(view_camera[0]) + 192, camera_get_view_height(view_camera[0]) + 192, 0)
