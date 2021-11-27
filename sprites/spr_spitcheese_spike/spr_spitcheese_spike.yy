@@ -73,8 +73,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Spit Cheese",
+    "path": "folders/Sprites/Characters/Baddies/Spit Cheese.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_spitcheese_spike",

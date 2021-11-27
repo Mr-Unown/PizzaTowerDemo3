@@ -125,8 +125,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "UFOlive",
+    "path": "folders/Sprites/Characters/Baddies/UFOlive.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_ufolive",

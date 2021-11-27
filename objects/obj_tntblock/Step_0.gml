@@ -1,2 +1,3 @@
-if ((place_meeting((x + 1), y, obj_player) || place_meeting((x - 1), y, obj_player)) && obj_player.state == 7)
+var player = (global.coop = false ? obj_player1 : instance_nearest(x,y,obj_player));
+if ((place_meeting((x + 1), y, player) || place_meeting((x - 1), y, player)) && player.state == states.firemouth)
     instance_destroy()

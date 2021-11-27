@@ -150,8 +150,8 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "No Vacation Cruise",
-    "path": "folders/Rooms/Levels/No Vacation Cruise.yy",
+    "name": "Beach",
+    "path": "folders/Rooms/Levels/World Vacation/Beach.yy",
   },
   "resourceVersion": "1.0",
   "name": "beach_2",

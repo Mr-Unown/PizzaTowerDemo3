@@ -68,7 +68,6 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_hallway","path":"objects/obj_hallway/obj_hallway.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":2.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2016.0,"y":672.0,"resourceVersion":"1.0","name":"inst_2ED25F45","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_doorB","path":"objects/obj_doorB/obj_doorB.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2016.0,"y":704.0,"resourceVersion":"1.0","name":"inst_5116467C","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_tntblock","path":"objects/obj_tntblock/obj_tntblock.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1760.0,"y":672.0,"resourceVersion":"1.0","name":"inst_5D09D217","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"obj_secretbigblock","path":"objects/obj_secretbigblock/obj_secretbigblock.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1760.0,"y":672.0,"resourceVersion":"1.0","name":"inst_654C76A7","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"assets":[
         {"spriteId":{"name":"spr_tile_ufodecoration","path":"sprites/spr_tile_ufodecoration/spr_tile_ufodecoration.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1856.0,"y":576.0,"resourceVersion":"1.0","name":"graphic_402024C6","tags":[],"resourceType":"GMRSpriteGraphic",},
@@ -128,7 +127,7 @@
 12,13,14,15,11,12,13,14,15,11,12,13,14,15,11,12,13,14,15,11,12,13,14,15,169,170,142,114,114,114,114,114,114,144,24,298,11,12,13,14,15,11,12,13,14,15,11,12,13,14,15,11,12,13,14,169,170,80,81,114,114,114,114,
 43,44,45,46,42,43,44,45,46,42,43,44,45,46,42,43,44,45,46,42,43,44,45,46,200,201,173,152,114,114,114,114,87,114,144,24,42,43,44,45,46,42,43,44,45,46,42,43,44,45,46,42,43,44,45,200,201,111,112,114,114,114,114,
 ],},"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Tiles_1","tags":[],"resourceType":"GMRTileLayer",},
-    {"spriteId":{"name":"bg_ufo","path":"sprites/bg_ufo/bg_ufo.yy",},"colour":4294967295,"x":0,"y":0,"htiled":true,"vtiled":true,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":1.0,"animationSpeedType":1,"userdefinedAnimFPS":false,"visible":true,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Background","tags":[],"resourceType":"GMRBackgroundLayer",},
+    {"spriteId":{"name":"bg_ufo","path":"sprites/bg_ufo/bg_ufo.yy",},"colour":4294967295,"x":0,"y":0,"htiled":true,"vtiled":true,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":1.0,"animationSpeedType":1,"userdefinedAnimFPS":false,"visible":true,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Backgrounds_3","tags":[],"resourceType":"GMRBackgroundLayer",},
   ],
   "inheritLayers": false,
   "creationCodeFile": "",
@@ -188,7 +187,6 @@
     {"name":"inst_2ED25F45","path":"rooms/desert_14/desert_14.yy",},
     {"name":"inst_5116467C","path":"rooms/desert_14/desert_14.yy",},
     {"name":"inst_5D09D217","path":"rooms/desert_14/desert_14.yy",},
-    {"name":"inst_654C76A7","path":"rooms/desert_14/desert_14.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
@@ -213,7 +211,7 @@
   },
   "parent": {
     "name": "Desert",
-    "path": "folders/Rooms/Levels/Weird West/Desert.yy",
+    "path": "folders/Rooms/Levels/World West/Desert.yy",
   },
   "resourceVersion": "1.0",
   "name": "desert_14",

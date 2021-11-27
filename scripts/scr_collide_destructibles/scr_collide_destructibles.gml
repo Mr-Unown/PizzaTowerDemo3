@@ -126,8 +126,18 @@ function scr_collide_destructibles() {
 				}
 	        }
 		}
-		if (state = 7)
+		if (state = states.firemouth)
 		{
+			//Horizontal
+			if place_meeting(x + hsp, y, obj_destructibles)
+	        {
+	            with (instance_place(x + hsp, y, obj_destructibles))
+	            {
+					initialhsp = other.hsp
+					initialvsp = other.vsp
+	                event_user(0)
+				}
+	        }
 			if place_meeting(x + sign(hsp), y, obj_destructibles)
 	        {
 	            with (instance_place(x + sign(hsp), y, obj_destructibles))
@@ -136,7 +146,36 @@ function scr_collide_destructibles() {
 					initialvsp = other.vsp
 	                event_user(0)
 				}
+	        }	
+			//Vertical
+			if place_meeting(x, y + vsp, obj_destructibles)
+	        {
+	            with (instance_place(x, y + 1, obj_destructibles))
+	            {
+					initialhsp = other.hsp
+					initialvsp = other.vsp
+	                event_user(0)
+				}
+				if vsp > 0
+				{
+                    suplexmove = 0
+                    vsp = -11					
+				}				
 	        }
+			if place_meeting(x, y + sign(vsp), obj_destructibles)
+	        {
+	            with (instance_place(x, y + sign(vsp), obj_destructibles))
+	            {
+					initialhsp = other.hsp
+					initialvsp = other.vsp
+	                event_user(0)
+				}
+				if vsp > 0
+				{
+                    suplexmove = 0
+                    vsp = -11					
+				}				
+	        }			
 		}
 		if (state = states.knightpepattack)
 		{
@@ -573,6 +612,57 @@ function scr_collide_destructibles() {
 				}
 	        }
 		}
+		if (state = states.firemouth)
+		{
+			//Horizontal
+			if place_meeting(x + hsp, y, obj_destructibles)
+	        {
+	            with (instance_place(x + hsp, y, obj_destructibles))
+	            {
+					initialhsp = other.hsp
+					initialvsp = other.vsp
+	                event_user(0)
+				}
+	        }
+			if place_meeting(x + sign(hsp), y, obj_destructibles)
+	        {
+	            with (instance_place(x + sign(hsp), y, obj_destructibles))
+	            {
+					initialhsp = other.hsp
+					initialvsp = other.vsp
+	                event_user(0)
+				}
+	        }	
+			//Vertical
+			if place_meeting(x, y + vsp, obj_destructibles)
+	        {
+	            with (instance_place(x, y + 1, obj_destructibles))
+	            {
+					initialhsp = other.hsp
+					initialvsp = other.vsp
+	                event_user(0)
+				}
+				if vsp > 0
+				{
+                    suplexmove = 0
+                    vsp = -11					
+				}				
+	        }
+			if place_meeting(x, y + sign(vsp), obj_destructibles)
+	        {
+	            with (instance_place(x, y + sign(vsp), obj_destructibles))
+	            {
+					initialhsp = other.hsp
+					initialvsp = other.vsp
+	                event_user(0)
+				}
+				if vsp > 0
+				{
+                    suplexmove = 0
+                    vsp = -11					
+				}				
+	        }			
+		}		
 		if (state = states.knightpepattack)
 		{
 			if place_meeting(x + hsp, y + vsp, obj_destructibles)
