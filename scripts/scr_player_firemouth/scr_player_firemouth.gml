@@ -103,7 +103,7 @@ function scr_player_firemouth() {
 		}*/
 		if (input_buffer_jump < 8 && grounded)
 		{
-		    vsp = -16
+		    vsp = -14
 			sprite_index = spr_player_firemouthjump
 			with(instance_create(x, y - 23, obj_jumpdust))
 				sprite_index = spr_firemouthjumpeffect

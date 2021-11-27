@@ -11,6 +11,7 @@ if ((grounded || (grounded && (!place_meeting(x, y, obj_platform)))) && vsp > 0)
 }
 if (grabbed == 1)
 {
+	alarm[1] = 5
     image_xscale = (-playerid.xscale)
     grav = 0
     depth = 0
