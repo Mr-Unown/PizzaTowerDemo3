@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_objectplatform",
-    "path": "sprites/spr_objectplatform/spr_objectplatform.yy",
+    "name": "spr_objectteleportal",
+    "path": "sprites/spr_objectteleportal/spr_objectteleportal.yy",
   },
   "solid": false,
   "visible": false,
@@ -34,7 +34,7 @@
     "path": "folders/Objects/Level Structure/Interactables/Gimmicks/Transport.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_objectteleport",
+  "name": "obj_objectteleportal",
   "tags": [],
   "resourceType": "GMObject",
 }
