@@ -235,9 +235,9 @@ function scr_player_mach3() {
 	{
 	    with (instance_create(x, y, obj_jumpdust))
 	        image_xscale = other.xscale
-		movespeed = clamp(movespeed,12,maxmachspeed)
+		movespeed = max(movespeed,12)
 	    flash = 0
-	    state = 37
+	    state = states.machroll
 	    vsp = 10
 	}
 	//Hitwall
