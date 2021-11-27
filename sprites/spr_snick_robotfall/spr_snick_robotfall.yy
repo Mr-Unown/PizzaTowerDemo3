@@ -7,10 +7,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 4,
-  "bbox_right": 88,
-  "bbox_top": 46,
-  "bbox_bottom": 94,
+  "bbox_left": 9,
+  "bbox_right": 92,
+  "bbox_top": 37,
+  "bbox_bottom": 97,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"605eec33-af49-4bc9-973a-04e02f3bf39a","path":"sprites/spr_snick_robotfall/spr_snick_robotfall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"605eec33-af49-4bc9-973a-04e02f3bf39a","path":"sprites/spr_snick_robotfall/spr_snick_robotfall.yy",},"LayerId":{"name":"157120a9-7830-4f61-9fbe-5e87067eaf2e","path":"sprites/spr_snick_robotfall/spr_snick_robotfall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_snick_robotfall","path":"sprites/spr_snick_robotfall/spr_snick_robotfall.yy",},"resourceVersion":"1.0","name":"605eec33-af49-4bc9-973a-04e02f3bf39a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"7c377220-1c6a-495c-8e53-078d0e0ee7b8","path":"sprites/spr_snick_robotfall/spr_snick_robotfall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"7c377220-1c6a-495c-8e53-078d0e0ee7b8","path":"sprites/spr_snick_robotfall/spr_snick_robotfall.yy",},"LayerId":{"name":"1e18cc1c-3274-4358-963e-694f3688db6d","path":"sprites/spr_snick_robotfall/spr_snick_robotfall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_snick_robotfall","path":"sprites/spr_snick_robotfall/spr_snick_robotfall.yy",},"resourceVersion":"1.0","name":"7c377220-1c6a-495c-8e53-078d0e0ee7b8","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_snick_robotfall","path":"sprites/spr_snick_robotfall/spr_snick_robotfall.yy",},
@@ -41,10 +41,10 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"fdf63658-2692-410a-a679-c9e09d255650","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"605eec33-af49-4bc9-973a-04e02f3bf39a","path":"sprites/spr_snick_robotfall/spr_snick_robotfall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"a7015dba-6d62-4249-95d5-f0b619efabbd","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7c377220-1c6a-495c-8e53-078d0e0ee7b8","path":"sprites/spr_snick_robotfall/spr_snick_robotfall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -65,12 +65,12 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"157120a9-7830-4f61-9fbe-5e87067eaf2e","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"1e18cc1c-3274-4358-963e-694f3688db6d","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Snick",
+    "path": "folders/Sprites/Characters/Playable Characters Sprites/Snick.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_snick_robotfall",

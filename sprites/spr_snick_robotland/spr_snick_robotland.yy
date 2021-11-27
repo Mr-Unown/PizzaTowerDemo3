@@ -7,9 +7,9 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 4,
-  "bbox_right": 88,
-  "bbox_top": 59,
+  "bbox_left": 5,
+  "bbox_right": 93,
+  "bbox_top": 61,
   "bbox_bottom": 95,
   "HTile": false,
   "VTile": false,
@@ -24,15 +24,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"111726b9-1282-499d-8e58-ca945021e582","path":"sprites/spr_snick_robotland/spr_snick_robotland.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"111726b9-1282-499d-8e58-ca945021e582","path":"sprites/spr_snick_robotland/spr_snick_robotland.yy",},"LayerId":{"name":"1161495e-b758-48d8-8c1f-43456c45de9a","path":"sprites/spr_snick_robotland/spr_snick_robotland.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_snick_robotland","path":"sprites/spr_snick_robotland/spr_snick_robotland.yy",},"resourceVersion":"1.0","name":"111726b9-1282-499d-8e58-ca945021e582","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"4f01bf36-70a2-48a3-9175-70f623d96ad5","path":"sprites/spr_snick_robotland/spr_snick_robotland.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4f01bf36-70a2-48a3-9175-70f623d96ad5","path":"sprites/spr_snick_robotland/spr_snick_robotland.yy",},"LayerId":{"name":"1161495e-b758-48d8-8c1f-43456c45de9a","path":"sprites/spr_snick_robotland/spr_snick_robotland.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_snick_robotland","path":"sprites/spr_snick_robotland/spr_snick_robotland.yy",},"resourceVersion":"1.0","name":"4f01bf36-70a2-48a3-9175-70f623d96ad5","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"b8db55bb-6944-4c0e-95c4-4149039e27e6","path":"sprites/spr_snick_robotland/spr_snick_robotland.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b8db55bb-6944-4c0e-95c4-4149039e27e6","path":"sprites/spr_snick_robotland/spr_snick_robotland.yy",},"LayerId":{"name":"1161495e-b758-48d8-8c1f-43456c45de9a","path":"sprites/spr_snick_robotland/spr_snick_robotland.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_snick_robotland","path":"sprites/spr_snick_robotland/spr_snick_robotland.yy",},"resourceVersion":"1.0","name":"b8db55bb-6944-4c0e-95c4-4149039e27e6","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"aebcd209-eca7-4b6e-bd75-a86dd4bc0667","path":"sprites/spr_snick_robotland/spr_snick_robotland.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"aebcd209-eca7-4b6e-bd75-a86dd4bc0667","path":"sprites/spr_snick_robotland/spr_snick_robotland.yy",},"LayerId":{"name":"7f7b0488-495c-4823-b5d9-dcdf21a4c72c","path":"sprites/spr_snick_robotland/spr_snick_robotland.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_snick_robotland","path":"sprites/spr_snick_robotland/spr_snick_robotland.yy",},"resourceVersion":"1.0","name":"aebcd209-eca7-4b6e-bd75-a86dd4bc0667","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"a53a86fa-ef81-4a3e-9566-d2c406075e00","path":"sprites/spr_snick_robotland/spr_snick_robotland.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"a53a86fa-ef81-4a3e-9566-d2c406075e00","path":"sprites/spr_snick_robotland/spr_snick_robotland.yy",},"LayerId":{"name":"7f7b0488-495c-4823-b5d9-dcdf21a4c72c","path":"sprites/spr_snick_robotland/spr_snick_robotland.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_snick_robotland","path":"sprites/spr_snick_robotland/spr_snick_robotland.yy",},"resourceVersion":"1.0","name":"a53a86fa-ef81-4a3e-9566-d2c406075e00","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"37aa5dea-b8c6-4ce5-a948-1e8ff8949d16","path":"sprites/spr_snick_robotland/spr_snick_robotland.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"37aa5dea-b8c6-4ce5-a948-1e8ff8949d16","path":"sprites/spr_snick_robotland/spr_snick_robotland.yy",},"LayerId":{"name":"7f7b0488-495c-4823-b5d9-dcdf21a4c72c","path":"sprites/spr_snick_robotland/spr_snick_robotland.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_snick_robotland","path":"sprites/spr_snick_robotland/spr_snick_robotland.yy",},"resourceVersion":"1.0","name":"37aa5dea-b8c6-4ce5-a948-1e8ff8949d16","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_snick_robotland","path":"sprites/spr_snick_robotland/spr_snick_robotland.yy",},
@@ -47,12 +47,12 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"a5765da3-0bad-48ee-a638-8e874c23edc9","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"111726b9-1282-499d-8e58-ca945021e582","path":"sprites/spr_snick_robotland/spr_snick_robotland.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"38150286-eef6-44ef-9fa4-be21ac161e4c","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4f01bf36-70a2-48a3-9175-70f623d96ad5","path":"sprites/spr_snick_robotland/spr_snick_robotland.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"c6d1a237-5284-489e-ae85-0cff295b215b","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b8db55bb-6944-4c0e-95c4-4149039e27e6","path":"sprites/spr_snick_robotland/spr_snick_robotland.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d1d4d265-2011-4b71-8b46-9f7d04c092e5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"aebcd209-eca7-4b6e-bd75-a86dd4bc0667","path":"sprites/spr_snick_robotland/spr_snick_robotland.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"24554318-dd5c-4864-a813-1efc742ffcd6","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a53a86fa-ef81-4a3e-9566-d2c406075e00","path":"sprites/spr_snick_robotland/spr_snick_robotland.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"35859cba-fabc-450f-8799-5f454b01b493","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"37aa5dea-b8c6-4ce5-a948-1e8ff8949d16","path":"sprites/spr_snick_robotland/spr_snick_robotland.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -73,12 +73,12 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"1161495e-b758-48d8-8c1f-43456c45de9a","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"7f7b0488-495c-4823-b5d9-dcdf21a4c72c","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Snick",
+    "path": "folders/Sprites/Characters/Playable Characters Sprites/Snick.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_snick_robotland",
