@@ -1,4 +1,3 @@
-
 if vertical = 1
 	knightmaxy = knightroomy - (room_height * sign(hallwaydirection));	
 var yoffset = 160

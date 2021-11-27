@@ -31,6 +31,8 @@ function scr_player_firemouth() {
 		}
 		 add_to = 0;
 		 movespeed = 0;
+		 hsp = 0;
+		 vsp = 10;
 	}
 	if sprite_index == spr_firemouthintro && animation_end()
 	    sprite_index = spr_player_firemouthidle	
@@ -87,7 +89,7 @@ function scr_player_firemouth() {
 		}
 		if(sprite_index = spr_player_firemouthjump && grounded)
 			sprite_index = spr_player_firemouthidle
-		if(sprite_index = spr_player_firemouthidle && !grounded && !key_slap2 && sprite_index != spr_player_firemouthdash)
+		if(!grounded && sprite_index != spr_player_firemouthdash)
 			sprite_index = spr_player_firemouthjump
 /*		if (scr_solid((x + 1), y) && xscale == 1 && hsp != 0 && (!scr_slope_ext(x + sign(hsp), y)) && sprite_index != spr_firemouthshoot)
 		{
