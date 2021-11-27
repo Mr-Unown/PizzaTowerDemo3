@@ -1,7 +1,7 @@
 function scr_player_firemouth() {
 	//Firemouth Movespeed funnies
 	static add_to = 0;
-	show_debug_message(string(add_to));
+	//show_debug_message(string(add_to));
 	//Rail Shit
 	var rail = 0;
 	if grounded 
@@ -103,7 +103,7 @@ function scr_player_firemouth() {
 		}*/
 		if (input_buffer_jump < 8 && grounded)
 		{
-		    vsp = -11
+		    vsp = -16
 			sprite_index = spr_player_firemouthjump
 			with(instance_create(x, y - 23, obj_jumpdust))
 				sprite_index = spr_firemouthjumpeffect

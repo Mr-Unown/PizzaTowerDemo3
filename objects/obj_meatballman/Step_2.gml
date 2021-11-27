@@ -1,2 +1,2 @@
-if grabbed = 0 && activated = true
+if grabbed = 0 && state != meatballstate.waiting
 scr_collide()

@@ -1046,6 +1046,27 @@ function scr_collide_destructibles() {
 			}
 		}	   
 	}
+	with (obj_meatballman)
+	{
+	    if place_meeting((x + hsp), y, obj_destructibles) && state = meatballstate.rolling
+		{
+	        with instance_place(x + hsp, y, obj_destructibles)
+	        {
+				initialhsp = other.hsp
+				initialvsp = other.vsp
+	            event_user(0)
+			}		
+		}
+	    if place_meeting((x + sign(hsp)), y, obj_destructibles) && state = meatballstate.rolling
+		{
+	        with instance_place(x + sign(hsp), y, obj_destructibles)
+	        {
+				initialhsp = other.hsp
+				initialvsp = other.vsp
+	            event_user(0)
+			}		
+		}		
+	}
 	with (obj_throwableparent)
 	{
 	    if place_meeting((x + hsp), y, obj_destructibles) && (thrown = 1)

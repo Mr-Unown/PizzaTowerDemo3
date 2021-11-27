@@ -60,35 +60,54 @@ function scr_player_superslam() {
 			{
 				if object_index != obj_player 
 				{
-				instance_create(x, y, obj_slapstar)
-				instance_create(x, y, obj_baddiegibs)
-				flash = 1
-				global.combotime = 60
-				global.pausecombotime = true
-				obj_tv.alarm[1] = 75			
-				global.hit = (global.hit + 1)
-				hp -= 1
-				alarm[1] = 5
-				thrown = 1
-				x = other.x
-				y = other.y
-				state = 106
-				hsp = ((-image_xscale) * 10)
-				vsp = -10		
+					instance_create(x, y, obj_slapstar)
+					instance_create(x, y, obj_baddiegibs)
+					flash = 1
+					global.combotime = 60
+					global.pausecombotime = true
+					obj_tv.alarm[1] = 75			
+					global.hit = (global.hit + 1)
+					hp -= 1
+					alarm[1] = 5
+					thrown = 1
+					x = other.x
+					y = other.y
+					state = 106
+					hsp = ((-image_xscale) * 10)
+					vsp = -10		
+				}
+				else if object_index = obj_throwableparent
+				{
+					instance_create(x, y, obj_slapstar)
+					instance_create(x, y, obj_baddiegibs)
+					flash = 1
+					global.combotime = 60
+					global.pausecombotime = true
+					obj_tv.alarm[1] = 75			
+					global.hit = (global.hit + 1)
+					hp -= 1
+					alarm[1] = 5
+					thrown = 1
+					x = other.x
+					y = other.y
+					grabbed = false
+					meatstate = meatballstate.stunned
+					hsp = ((-image_xscale) * 10)
+					vsp = -10					
 				}
 				else 
 				{
-				thrown = 1
-	            instance_create(x, y, obj_slapstar)
-	            instance_create(x, y, obj_baddiegibs)
-	            flash = 1
-	            x = other.x
-	            y = other.y
-	            state = 73
-	            hsp = ((-image_xscale) * 10)
-	            vsp = -10
-	            other.alarm[8] = 60
-	            other.alarm[7] = 120	
+					thrown = 1
+					instance_create(x, y, obj_slapstar)
+					instance_create(x, y, obj_baddiegibs)
+					flash = 1
+					x = other.x
+					y = other.y
+					state = 73
+					hsp = ((-image_xscale) * 10)
+					vsp = -10
+					other.alarm[8] = 60
+					other.alarm[7] = 120	
 				}
 			}
 	}
