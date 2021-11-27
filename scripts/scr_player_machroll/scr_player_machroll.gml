@@ -28,14 +28,20 @@ function scr_player_machroll() {
 				//Roll Momentum
 				if other.xscale == sign(image_xscale)
 				{
-					if other.movespeed > 0 
+					if other.movespeed > 4
 					{
-					other.movespeed -= (0.25 * slope_acceleration)
+						other.movespeed -= (0.25 * slope_acceleration)
+						if other.movespeed <= 4
+						{
+							other.movespeed = 4
+						}
+						/*
 						if other.movespeed <= 0
 						{
 							other.xscale = -sign(image_xscale)
 							other.maxmachspeed = 24
 						}
+						*/
 					}
 					if other.maxmachspeed > 24
 						other.maxmachspeed -= (0.25 * slope_acceleration)
