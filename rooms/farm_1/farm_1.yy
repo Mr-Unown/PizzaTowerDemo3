@@ -128,8 +128,8 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Mort's Farm",
-    "path": "folders/Rooms/Levels/World Extra/Mort's Farm.yy",
+    "name": "Farm",
+    "path": "folders/Rooms/Levels/World West/Farm.yy",
   },
   "resourceVersion": "1.0",
   "name": "farm_1",

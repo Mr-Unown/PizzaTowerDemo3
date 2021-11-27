@@ -17,8 +17,8 @@
   "width": 500,
   "height": 500,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Beach",
+    "path": "texturegroups/Beach",
   },
   "swatchColours": null,
   "gridX": 0,
