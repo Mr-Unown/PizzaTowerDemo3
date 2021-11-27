@@ -8,13 +8,13 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 1599,
+  "bbox_right": 1759,
   "bbox_top": 0,
-  "bbox_bottom": 999,
+  "bbox_bottom": 959,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 1600,
+  "width": 1800,
   "height": 1000,
   "textureGroupId": {
     "name": "Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"df405f20-aab5-4259-9de8-8877a828a8a4","path":"sprites/roomt/roomt.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"df405f20-aab5-4259-9de8-8877a828a8a4","path":"sprites/roomt/roomt.yy",},"LayerId":{"name":"c631d0d2-6f2e-4e15-8f36-1b1a322768ef","path":"sprites/roomt/roomt.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"roomt","path":"sprites/roomt/roomt.yy",},"resourceVersion":"1.0","name":"df405f20-aab5-4259-9de8-8877a828a8a4","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"421cbfe4-0396-4e4d-af57-b35256532207","path":"sprites/spr_tile_pinball/spr_tile_pinball.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"421cbfe4-0396-4e4d-af57-b35256532207","path":"sprites/spr_tile_pinball/spr_tile_pinball.yy",},"LayerId":{"name":"542b7dd5-5b37-4cce-96e1-15f1e76b3ded","path":"sprites/spr_tile_pinball/spr_tile_pinball.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_tile_pinball","path":"sprites/spr_tile_pinball/spr_tile_pinball.yy",},"resourceVersion":"1.0","name":"421cbfe4-0396-4e4d-af57-b35256532207","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"roomt","path":"sprites/roomt/roomt.yy",},
+    "spriteId": {"name":"spr_tile_pinball","path":"sprites/spr_tile_pinball/spr_tile_pinball.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"0fb42285-2dbc-4e33-8f71-2e2d87db18e4","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"df405f20-aab5-4259-9de8-8877a828a8a4","path":"sprites/roomt/roomt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"6a268d56-4cf2-44f0-adb7-b76d57ddcf10","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"421cbfe4-0396-4e4d-af57-b35256532207","path":"sprites/spr_tile_pinball/spr_tile_pinball.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,22 +58,22 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"roomt","path":"sprites/roomt/roomt.yy",},
+    "parent": {"name":"spr_tile_pinball","path":"sprites/spr_tile_pinball/spr_tile_pinball.yy",},
     "resourceVersion": "1.3",
-    "name": "roomt",
+    "name": "spr_tile_pinball",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c631d0d2-6f2e-4e15-8f36-1b1a322768ef","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"542b7dd5-5b37-4cce-96e1-15f1e76b3ded","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Tileset Sprites",
+    "path": "folders/Sprites/Tileset Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "roomt",
+  "name": "spr_tile_pinball",
   "tags": [],
   "resourceType": "GMSprite",
 }
