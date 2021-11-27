@@ -73,8 +73,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Speedbar",
-    "path": "folders/Sprites/Hud & Menus/Old Hud/Speedbar.yy",
+    "name": "Speed Bar",
+    "path": "folders/Sprites/Hud & Menus/Old Hud/Speed Bar.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_speedbarmax",

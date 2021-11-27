@@ -85,8 +85,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Stylebar",
-    "path": "folders/Sprites/Hud & Menus/Stylebar.yy",
+    "name": "Style Bar",
+    "path": "folders/Sprites/Hud & Menus/Old Hud/Style Bar.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_styles",

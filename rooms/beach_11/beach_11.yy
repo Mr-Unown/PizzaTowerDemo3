@@ -290,7 +290,7 @@
   },
   "parent": {
     "name": "No Vacation Cruise",
-    "path": "folders/Rooms/Levels/No Vacation Cruise.yy",
+    "path": "folders/Rooms/Levels/World Extra/No Vacation Cruise.yy",
   },
   "resourceVersion": "1.0",
   "name": "beach_11",
