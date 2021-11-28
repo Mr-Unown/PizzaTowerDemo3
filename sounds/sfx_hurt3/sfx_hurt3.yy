@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_hurt3",
-  "duration": 1.316927,
+  "duration": 1.311927,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

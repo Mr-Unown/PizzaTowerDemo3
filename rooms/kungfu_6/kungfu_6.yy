@@ -235,7 +235,7 @@
   },
   "parent": {
     "name": "Kung Fu",
-    "path": "folders/Rooms/Levels/World City/Kung Fu.yy",
+    "path": "folders/Rooms/Levels/World Vacation/Kung Fu.yy",
   },
   "resourceVersion": "1.0",
   "name": "kungfu_6",

@@ -1,4 +1,7 @@
 scr_enemycreate()
+machspeed = 16
+startmachspeed = 8
+tacklespeed = 11
 grav = 0.5
 hsp = 0
 vsp = 0
@@ -25,6 +28,7 @@ walkspr = spr_robot_walk
 stunspr = spr_robot_stun
 scaredspr = spr_robot_stun
 grabbedspr = spr_robot_stun
+landspr = spr_robot_stun
 flash = 0
 slapped = 0
 birdcreated = 0
@@ -35,6 +39,7 @@ heavy = 0
 depth = 0
 grabbedby = 0
 dropcoin = 0
-
+paletteselect = 0
+spr_palette = spr_palette_robot
 
 
