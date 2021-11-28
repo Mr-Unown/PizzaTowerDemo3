@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 1599,
+  "bbox_right": 2399,
   "bbox_top": 0,
-  "bbox_bottom": 999,
+  "bbox_bottom": 639,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 1600,
-  "height": 1000,
+  "width": 2400,
+  "height": 640,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"df405f20-aab5-4259-9de8-8877a828a8a4","path":"sprites/roomt/roomt.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"df405f20-aab5-4259-9de8-8877a828a8a4","path":"sprites/roomt/roomt.yy",},"LayerId":{"name":"c631d0d2-6f2e-4e15-8f36-1b1a322768ef","path":"sprites/roomt/roomt.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"roomt","path":"sprites/roomt/roomt.yy",},"resourceVersion":"1.0","name":"df405f20-aab5-4259-9de8-8877a828a8a4","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"e1e139fc-8582-4186-a3b6-1be5abcad5a3","path":"sprites/roomtracer/roomtracer.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"e1e139fc-8582-4186-a3b6-1be5abcad5a3","path":"sprites/roomtracer/roomtracer.yy",},"LayerId":{"name":"f9b0b403-735d-43f5-ae8a-8820a8666148","path":"sprites/roomtracer/roomtracer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"roomtracer","path":"sprites/roomtracer/roomtracer.yy",},"resourceVersion":"1.0","name":"e1e139fc-8582-4186-a3b6-1be5abcad5a3","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"roomt","path":"sprites/roomt/roomt.yy",},
+    "spriteId": {"name":"roomtracer","path":"sprites/roomtracer/roomtracer.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"0fb42285-2dbc-4e33-8f71-2e2d87db18e4","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"df405f20-aab5-4259-9de8-8877a828a8a4","path":"sprites/roomt/roomt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4767ec2c-687e-4e10-8a11-38eeeec90209","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e1e139fc-8582-4186-a3b6-1be5abcad5a3","path":"sprites/roomtracer/roomtracer.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"roomt","path":"sprites/roomt/roomt.yy",},
+    "parent": {"name":"roomtracer","path":"sprites/roomtracer/roomtracer.yy",},
     "resourceVersion": "1.3",
-    "name": "roomt",
+    "name": "roomtracer",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c631d0d2-6f2e-4e15-8f36-1b1a322768ef","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f9b0b403-735d-43f5-ae8a-8820a8666148","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "roomt",
+  "name": "roomtracer",
   "tags": [],
   "resourceType": "GMSprite",
 }
