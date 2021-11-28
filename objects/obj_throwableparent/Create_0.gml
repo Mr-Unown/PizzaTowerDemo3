@@ -8,6 +8,6 @@ flash = 1
 hp = 1
 grounded = 1
 state = 0
-
+heavy = false
 
 

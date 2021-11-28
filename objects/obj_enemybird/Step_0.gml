@@ -5,7 +5,7 @@ if instance_exists(ID)
         y = (ID.y - 60)
     else
         y = (ID.y - 40)
-    if (ID.state != 106 || ID.stunned < 100)
+    if (ID.state != checkstate || ID.stunned < stunnedcheck)
     {
         ID.birdcreated = 0
         instance_destroy()

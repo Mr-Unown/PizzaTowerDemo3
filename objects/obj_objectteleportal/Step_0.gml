@@ -1,5 +1,5 @@
 //Find the Funny
-with obj_objectteleport
+with obj_objectteleportal
 {
 	if other.unid = unid && is_exit_portal = true
 		other.exit_id = id

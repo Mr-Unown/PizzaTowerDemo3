@@ -10,7 +10,7 @@ if (markedfordeath == 1)
     markedfordeathbuffer--
 if (thrown == 1 && place_meeting((x + hsp), (y + vsp), obj_hallway))
     markedfordeath = 1
-if (state == 106 && stunned > 40 && birdcreated == 0)
+if (state == 106 && stunned > 60 && birdcreated == 0)
 {
     birdcreated = 1
     with (instance_create(x, y, obj_enemybird))

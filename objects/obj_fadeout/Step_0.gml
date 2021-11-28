@@ -21,13 +21,19 @@ if (fadealpha > 1)
 
         if (room != obj_player1.targetRoom)
 		{
-            room_goto(obj_player1.targetRoom)
+			if live_enabled == 1
+				room_goto_live(obj_player1.targetRoom)	
+			else
+				room_goto(obj_player1.targetRoom)
 		}
         if (global.coop == 1)
         {
             if (room != obj_player2.targetRoom)
 			{
-                room_goto(obj_player2.targetRoom)
+				if live_enabled == 1
+					room_goto_live(obj_player2.targetRoom)	
+				else
+					room_goto(obj_player2.targetRoom)
 			}
         }
     }

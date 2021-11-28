@@ -1,4 +1,4 @@
-if (thrown == 0)
+if (thrown == 0 && grabbed = true)
 {
     grabbedby = other.playerid
     with (id)

@@ -150,7 +150,7 @@ function scr_collide_destructibles() {
 			//Vertical
 			if place_meeting(x, y + vsp, obj_destructibles)
 	        {
-	            with (instance_place(x, y + 1, obj_destructibles))
+	            with (instance_place(x, y + vsp, obj_destructibles))
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
@@ -158,9 +158,12 @@ function scr_collide_destructibles() {
 				}
 				if vsp > 0
 				{
-                    suplexmove = 0
-                    vsp = -11					
-				}				
+					sprite_index = spr_player_firemouthjump
+					if key_jump2
+						vsp = -12					
+					else
+						vsp = -4
+				}
 	        }
 			if place_meeting(x, y + sign(vsp), obj_destructibles)
 	        {
@@ -169,12 +172,15 @@ function scr_collide_destructibles() {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
 	                event_user(0)
-				}
+				}	
 				if vsp > 0
 				{
-                    suplexmove = 0
-                    vsp = -11					
-				}				
+					sprite_index = spr_player_firemouthjump
+					if key_jump2
+						vsp = -12					
+					else
+						vsp = -4
+				}			
 	        }			
 		}
 		if (state = states.knightpepattack)
@@ -636,7 +642,7 @@ function scr_collide_destructibles() {
 			//Vertical
 			if place_meeting(x, y + vsp, obj_destructibles)
 	        {
-	            with (instance_place(x, y + 1, obj_destructibles))
+	            with (instance_place(x, y + vsp, obj_destructibles))
 	            {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
@@ -644,9 +650,12 @@ function scr_collide_destructibles() {
 				}
 				if vsp > 0
 				{
-                    suplexmove = 0
-                    vsp = -11					
-				}				
+					sprite_index = spr_player_firemouthjump
+					if key_jump2
+						vsp = -12					
+					else
+						vsp = -4
+				}
 	        }
 			if place_meeting(x, y + sign(vsp), obj_destructibles)
 	        {
@@ -655,13 +664,16 @@ function scr_collide_destructibles() {
 					initialhsp = other.hsp
 					initialvsp = other.vsp
 	                event_user(0)
-				}
+				}	
 				if vsp > 0
 				{
-                    suplexmove = 0
-                    vsp = -11					
+					sprite_index = spr_player_firemouthjump
+					if key_jump2
+						vsp = -12					
+					else
+						vsp = -4
 				}				
-	        }			
+	        }		
 		}		
 		if (state = states.knightpepattack)
 		{
@@ -1045,6 +1057,27 @@ function scr_collide_destructibles() {
 				}		
 			}
 		}	   
+	}
+	with (obj_meatballman)
+	{
+	    if place_meeting((x + hsp), y, obj_destructibles) && state = meatballstate.rolling
+		{
+	        with instance_place(x + hsp, y, obj_destructibles)
+	        {
+				initialhsp = other.hsp
+				initialvsp = other.vsp
+	            event_user(0)
+			}		
+		}
+	    if place_meeting((x + sign(hsp)), y, obj_destructibles) && state = meatballstate.rolling
+		{
+	        with instance_place(x + sign(hsp), y, obj_destructibles)
+	        {
+				initialhsp = other.hsp
+				initialvsp = other.vsp
+	            event_user(0)
+			}		
+		}		
 	}
 	with (obj_throwableparent)
 	{
