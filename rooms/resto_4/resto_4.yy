@@ -460,7 +460,7 @@
   },
   "parent": {
     "name": "Resto Golf",
-    "path": "folders/Rooms/Levels/World City/Resto Golf.yy",
+    "path": "folders/Rooms/Levels/World Vacation/Resto Golf.yy",
   },
   "resourceVersion": "1.0",
   "name": "resto_4",

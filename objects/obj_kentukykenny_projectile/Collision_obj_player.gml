@@ -1,19 +1,17 @@
 with (other.id)
 {
-    if (state != 114 && (!(state == 51 && instance_exists(parry_id))))
+    if (state != 114 && (!(state == 51 && instance_exists(parry_id)))) && global.freezeframe = false
     {
         if (character != "V")
         {
-            if (state != 7 && hurted == 0)
+            if (state != states.firemouth && hurted == 0)
             {
                 hsp = 0
                 movespeed = 0
-                state = 7
                 hurted = 1
                 image_index = 0
                 sprite_index = spr_firemouthintro
-                state = 7
-                bombpeptimer = 3
+                state = states.firemouth
                 instance_destroy(other.id)
             }
         }

@@ -151,7 +151,7 @@
   },
   "parent": {
     "name": "Factory",
-    "path": "folders/Rooms/Levels/21st Century Empire/Factory.yy",
+    "path": "folders/Rooms/Levels/World City/Factory.yy",
   },
   "resourceVersion": "1.0",
   "name": "factory_3",

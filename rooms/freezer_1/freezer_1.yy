@@ -149,7 +149,7 @@
   },
   "parent": {
     "name": "Freezer",
-    "path": "folders/Rooms/Levels/21st Century Empire/Freezer.yy",
+    "path": "folders/Rooms/Levels/World City/Freezer.yy",
   },
   "resourceVersion": "1.0",
   "name": "freezer_1",
