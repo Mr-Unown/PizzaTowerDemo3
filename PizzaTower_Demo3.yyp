@@ -552,6 +552,7 @@
     {"id":{"name":"spr_kentukykenny_idle","path":"sprites/spr_kentukykenny_idle/spr_kentukykenny_idle.yy",},"order":1,},
     {"id":{"name":"spr_kentukykenny_projectile","path":"sprites/spr_kentukykenny_projectile/spr_kentukykenny_projectile.yy",},"order":2,},
     {"id":{"name":"spr_kentukykenny_scared","path":"sprites/spr_kentukykenny_scared/spr_kentukykenny_scared.yy",},"order":3,},
+    {"id":{"name":"desertopen","path":"sprites/desertopen/desertopen.yy",},"order":145,},
     {"id":{"name":"spr_kentukykenny_stun","path":"sprites/spr_kentukykenny_stun/spr_kentukykenny_stun.yy",},"order":4,},
     {"id":{"name":"spr_kentukykenny_throw","path":"sprites/spr_kentukykenny_throw/spr_kentukykenny_throw.yy",},"order":5,},
     {"id":{"name":"spr_kentukykenny_walk","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"order":6,},
@@ -3555,6 +3556,7 @@
     {"id":{"name":"strongcold_treasure","path":"rooms/strongcold_treasure/strongcold_treasure.yy",},"order":11,},
     {"id":{"name":"strongcold_secret1","path":"rooms/strongcold_secret1/strongcold_secret1.yy",},"order":12,},
     {"id":{"name":"strongcold_secret2","path":"rooms/strongcold_secret2/strongcold_secret2.yy",},"order":13,},
+    {"id":{"name":"desert_9_1","path":"rooms/desert_9_1/desert_9_1.yy",},"order":25,},
     {"id":{"name":"strongcold_secret3","path":"rooms/strongcold_secret3/strongcold_secret3.yy",},"order":14,},
     {"id":{"name":"strongcold_secret4","path":"rooms/strongcold_secret4/strongcold_secret4.yy",},"order":15,},
     {"id":{"name":"strongcold_secret5","path":"rooms/strongcold_secret5/strongcold_secret5.yy",},"order":16,},
@@ -3913,6 +3915,7 @@
     {"roomId":{"name":"beach_secret5","path":"rooms/beach_secret5/beach_secret5.yy",},},
     {"roomId":{"name":"beach_secret6","path":"rooms/beach_secret6/beach_secret6.yy",},},
     {"roomId":{"name":"farm_1","path":"rooms/farm_1/farm_1.yy",},},
+    {"roomId":{"name":"desert_9_1","path":"rooms/desert_9_1/desert_9_1.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
