@@ -165,6 +165,19 @@ if active = true
 				ini_write_real("Option", "newsjumpcancel", arg1);
 				ini_close()
 				break;
+			case "vibration": //Controller vibration
+				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.newhud else arg1 = ds_list_find_value(_commands, 1)	
+				switch arg1
+				{
+					case "on": arg1 = true
+					case "off": arg1 = false
+					default: arg1 = !global.vibration
+				}
+				global.vibration = arg1
+				ini_open("saveData.ini")
+				ini_write_real("Option", "vibration", arg1);
+				ini_close()
+				break;
 			case "collectstyle": //Switches main collect sprites
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.newhud else arg1 = ds_list_find_value(_commands, 1)	
 				switch arg1
@@ -191,7 +204,7 @@ if active = true
 				ini_write_real("Option", "pitchshift", arg1);
 				ini_close()
 				break;
-			case "escapecollect": //Switches Escape Collects
+			case "escapecollect": //Switches transformation pitch shift feature
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.newhud else arg1 = ds_list_find_value(_commands, 1)	
 				switch arg1
 				{
@@ -204,7 +217,7 @@ if active = true
 				ini_write_real("Option", "escapecollect", arg1);
 				ini_close()
 				break;		
-			case "wallrunstyle": //Switches Wallrunstyle
+			case "wallrunstyle": //Switches transformation pitch shift feature
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.newhud else arg1 = ds_list_find_value(_commands, 1)	
 				switch arg1
 				{
@@ -218,7 +231,7 @@ if active = true
 				ini_write_real("Option", "wallrunstyle", arg1);
 				ini_close()
 				break;
-			case "freefallstyle": //Switches freefall
+			case "freefallstyle": //Switches transformation pitch shift feature
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.newhud else arg1 = ds_list_find_value(_commands, 1)	
 				switch arg1
 				{
@@ -231,7 +244,20 @@ if active = true
 				ini_write_real("Option", "freefallstyle", arg1);
 				ini_close()
 				break;
-			case "divestyle": //Switches dive style
+			case "attackstyle": //Switches transformation pitch shift feature
+				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.newhud else arg1 = ds_list_find_value(_commands, 1)	
+				switch arg1
+				{
+					case "0": arg1 = 0
+					case "1": arg1 = 1
+					default: arg1 = !global.attackstyle
+				}
+				global.attackstyle = arg1
+				ini_open("saveData.ini")
+				ini_write_real("Option", "attackstyle", arg1);
+				ini_close()
+				break;
+			case "divestyle": //Switches transformation pitch shift feature
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.newhud else arg1 = ds_list_find_value(_commands, 1)	
 				switch arg1
 				{
@@ -269,20 +295,7 @@ if active = true
 				ini_open("saveData.ini")
 				ini_write_real("Option", "ratmode", arg1);
 				ini_close()
-				break;				
-			case "attackstyle": //Switches Attack style
-				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.newhud else arg1 = ds_list_find_value(_commands, 1)	
-				switch arg1
-				{
-					case "shoulder": arg1 = 1
-					case "grab": arg1 = 0
-					default: arg1 = !global.attackstyle
-				}
-				global.attackstyle = arg1
-				ini_open("saveData.ini")
-				ini_write_real("Option", "attackstyle", arg1);
-				ini_close()
-				break;	
+				break;
 			case "debugmode": //Could probably use optimization
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.debugmode else arg1 = ds_list_find_value(_commands, 1)
 				switch arg1

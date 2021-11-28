@@ -28,11 +28,13 @@ commands[arrayi++] = "newsjumpcancel (true/false)"
 commands[arrayi++] = "wallrunstyle (older/old/new)"
 commands[arrayi++] = "pitchshift (on/off)"
 commands[arrayi++] = "escapecollect (old/new)"
-commands[arrayi++] = "freefallstyle (old/new)"
+commands[arrayi++] = "groundpoundstyle (old/new)"
 commands[arrayi++] = "divestyle (old/new)"
 commands[arrayi++] = "destroyablecollect (pizza/topping)"
 commands[arrayi++] = "ratmode (on/off)"
-commands[arrayi++] = "attackstyle (shoulder/grab)"
+commands[arrayi++] = "attackstyle (1/2)"
+commands[arrayi++] = "vibration (on/off)"
+
 if DEBUG 
 {
 	commands[arrayi++] = "changecharacter [player] [character] (true/false)"

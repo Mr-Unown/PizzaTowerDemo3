@@ -11,8 +11,10 @@ global.pitchshift = ini_read_real("Option", "pitchshift", 0);
 global.escapecollect = ini_read_real("Option", "escapecollect", 0);
 global.freefallstyle = ini_read_real("Option", "freefallstyle", 0);
 global.divestyle = ini_read_real("Option", "divestyle", 0);
+global.attackstyle = ini_read_real("Option", "attackstyle", 0);
 global.destroyablecollect = ini_read_real("Option", "destroyablecollect", 0);
 global.ratmode = ini_read_real("Option", "ratmode", false);
+global.vibration = ini_read_real("Option", "vibration", false);
 ini_close()
 //Start by cleaning
 global.flushtextures = true;

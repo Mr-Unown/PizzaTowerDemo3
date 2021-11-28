@@ -1,6 +1,6 @@
 with other.id 
 {
-	if instance_exists(obj_water) && other.y >= obj_water.bbox_top
+	if instance_exists(obj_water) && other.y >= obj_water.bbox_top || room = factory_5
 	{
 		#region Below Water
 		if (hurted == 0 && cutscene == 0 && state != 114 && state != 113 && state != 27 && sprite_index != spr_bombpep_end && state != 63 && state != 65) && (distance_to_point(other.x,other.y) >= 10 || other.bombjump = true)

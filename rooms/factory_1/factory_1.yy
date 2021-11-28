@@ -113,7 +113,7 @@
         {"properties":[
             {"propertyId":{"name":"dropspotx","path":"objects/obj_grabbiehand/obj_grabbiehand.yy",},"objectId":{"name":"obj_grabbiehand","path":"objects/obj_grabbiehand/obj_grabbiehand.yy",},"value":"976","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
             {"propertyId":{"name":"dropspoty","path":"objects/obj_grabbiehand/obj_grabbiehand.yy",},"objectId":{"name":"obj_grabbiehand","path":"objects/obj_grabbiehand/obj_grabbiehand.yy",},"value":"100","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-          ],"isDnd":false,"objectId":{"name":"obj_grabbiehand","path":"objects/obj_grabbiehand/obj_grabbiehand.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":768.0,"y":160.0,"resourceVersion":"1.0","name":"inst_792F37D7","tags":[],"resourceType":"GMRInstance",},
+          ],"isDnd":false,"objectId":{"name":"obj_grabbiehand","path":"objects/obj_grabbiehand/obj_grabbiehand.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":864.0,"y":448.0,"resourceVersion":"1.0","name":"inst_792F37D7","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_parrallax","path":"objects/obj_parrallax/obj_parrallax.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":672.0,"y":512.0,"resourceVersion":"1.0","name":"inst_75117900","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances_1","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"tile_factoryNEW_tileset","path":"tilesets/tile_factoryNEW_tileset/tile_factoryNEW_tileset.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":93,"SerialiseHeight":50,"TileSerialiseData":[
@@ -272,7 +272,7 @@
 2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,814,814,814,814,814,814,814,814,814,814,814,814,814,814,814,814,814,814,2147483648,
 2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,814,814,814,814,814,814,814,814,814,814,814,814,814,814,814,814,814,814,2147483648,
 ],},"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Tiles_2","tags":[],"resourceType":"GMRTileLayer",},
-    {"spriteId":{"name":"bg_factoryindustrial","path":"sprites/bg_factoryindustrial/bg_factoryindustrial.yy",},"colour":4294967295,"x":0,"y":0,"htiled":true,"vtiled":true,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":15.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Backgrounds_H1","tags":[],"resourceType":"GMRBackgroundLayer",},
+    {"spriteId":{"name":"bg_factoryindustrial","path":"sprites/bg_factoryindustrial/bg_factoryindustrial.yy",},"colour":4294967295,"x":0,"y":0,"htiled":true,"vtiled":true,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":15.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Backgrounds_5","tags":[],"resourceType":"GMRBackgroundLayer",},
   ],
   "inheritLayers": false,
   "creationCodeFile": "${project_dir}/rooms/factory_1/RoomCreationCode.gml",
@@ -374,8 +374,8 @@
     {"name":"inst_50E0F0F7","path":"rooms/factory_1/factory_1.yy",},
     {"name":"inst_218A14C4","path":"rooms/factory_1/factory_1.yy",},
     {"name":"inst_6B3FA2A8","path":"rooms/factory_1/factory_1.yy",},
-    {"name":"inst_75117900","path":"rooms/factory_1/factory_1.yy",},
     {"name":"inst_792F37D7","path":"rooms/factory_1/factory_1.yy",},
+    {"name":"inst_75117900","path":"rooms/factory_1/factory_1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
@@ -400,7 +400,7 @@
   },
   "parent": {
     "name": "Factory",
-    "path": "folders/Rooms/Levels/World Horror/Factory.yy",
+    "path": "folders/Rooms/Levels/21st Century Empire/Factory.yy",
   },
   "resourceVersion": "1.0",
   "name": "factory_1",
