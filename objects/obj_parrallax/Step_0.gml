@@ -73,8 +73,8 @@ layer_background_speed(back_id16, (back16 /_speedmodifier))
 var foregroundoffsety = (room_height - sprite_get_height(layer_background_get_sprite(back_id13)))
 layer_x("Backgrounds_foreground", (_centeredcam_x * 0.90))
 layer_y("Backgrounds_foreground",clamp(((_centeredcam_y * 0.90) +  camera_get_view_height(view_camera[0])  - sprite_get_height(layer_background_get_sprite(back_id13))  ) ,foregroundoffsety,foregroundoffsety + 8))
-layer_x("Backgrounds_scroll", (((_centeredcam_x * 0.25) + x_shift_3) + (scrolloffset * layer_get_hspeed("Backgrounds_scroll"))))
-layer_y("Backgrounds_scroll", (((_centeredcam_y * 0.25) + y_shift_3) + (scrolloffset * layer_get_vspeed("Backgrounds_scroll"))))
+layer_x("Backgrounds_scroll", (((_cam_x * 0.25) + x_shift_3) + (scrolloffset * layer_get_hspeed("Backgrounds_scroll"))))
+layer_y("Backgrounds_scroll", (((_cam_y * 0.25) + y_shift_3) + (scrolloffset * layer_get_vspeed("Backgrounds_scroll"))))
 layer_x("Backgrounds_1", (_centeredcam_x * 0.25))
 layer_y("Backgrounds_1", (_centeredcam_y * 0.25))
 layer_x("Backgrounds_2", (_centeredcam_x * 0.15))
@@ -98,6 +98,7 @@ layer_x("Backgrounds_H1", (_centeredcam_x * 0.15))
 layer_y("Backgrounds_H1",(_cam_y - clamp(_cam_y * 0.15 * (540 / room_height), 0, (sprite_get_height(layer_background_get_sprite(back_id14)) - 540 ) )))
 layer_x("Backgrounds_H2", (_centeredcam_x * 0.25))
 layer_y("Backgrounds_H2",(_cam_y - clamp(_cam_y * 0.25 * (540 / room_height), 0, (sprite_get_height(layer_background_get_sprite(back_id15)) - 540 ) )))
+//To Do: Redo Background Code
 
 
 layer_x("Backgrounds_sky", (((_centeredcam_x * 0.15) + x_shift_1) + (scrolloffset * layer_get_hspeed("Backgrounds_sky"))))

@@ -7,8 +7,6 @@ function scr_panicbg_start() {
 	    draw_clear_alpha(c_black, 0)
 	    var _cam_x = camera_get_view_x(view_camera[0])
 	    var _cam_y = camera_get_view_y(view_camera[0])
-		//var _cam_x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0])/2
-		//var _cam_y = camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0])/2	
 	    var bg1 = layer_get_id("Backgrounds_1")
 	    var bg2 = layer_get_id("Backgrounds_2")
 	    var bg3 = layer_get_id("Backgrounds_3")

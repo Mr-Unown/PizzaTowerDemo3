@@ -1,2 +1,2 @@
-if grabbed = 0
-scr_collide()
+if grabbed = false
+	scr_collide()

@@ -111,10 +111,11 @@ function scr_player_mach2() {
 	    with (instance_create(x, y, obj_jumpdust))
 	        image_xscale = other.xscale
 	    flash = 0
-	    state = 37
+	    state = states.machroll
 	    vsp = 10
+		/*
 	    if (character == "V")
-	        sprite_index = spr_playerV_divekickgetup
+	        sprite_index = spr_playerV_divekickgetup*/
 	}
 	if (((!grounded) && scr_solid(x + hsp,y,true) && (!place_meeting((x + hsp), y, obj_destructibles)) && (!scr_slope_ext(x + sign(hsp), y))) || (grounded && (scr_solid(x + sign(hsp),y - 2,true) && !scr_slope_ext(x + sign(hsp), y)) && (!place_meeting((x + hsp), y, obj_destructibles))  && scr_slope() ) )
 	{

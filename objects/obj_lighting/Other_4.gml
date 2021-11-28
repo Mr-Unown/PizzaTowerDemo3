@@ -36,16 +36,6 @@ switch room
 		break;				
 	#endregion	
 	#region Desert
-	case desert_1:
-	case desert_2:
-	case desert_3:
-		can_draw = true;
-		targetdarkness = 0.15;
-		break;
-	case desert_4:
-		can_draw = true;
-		targetdarkness = 0.25;
-		break;
 	case desert_5:
 	case desert_6:
 	case desert_7:	

@@ -1,4 +1,5 @@
 scr_commonenemy()
+
 if state == 110
 {
         if (image_index > (image_number - 1))
@@ -54,7 +55,7 @@ if state == 112
             sprite_index = walkspr
         }
 }
-if (state == 106 && stunned > 40 && birdcreated == 0)
+if (state == 106 && stunned > 60 && birdcreated == 0)
 {
     birdcreated = 1
     with (instance_create(x, y, obj_enemybird))

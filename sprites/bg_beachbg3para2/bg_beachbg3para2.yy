@@ -17,8 +17,8 @@
   "width": 960,
   "height": 540,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Beach",
+    "path": "texturegroups/Beach",
   },
   "swatchColours": null,
   "gridX": 0,
@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Backgrounds",
+    "path": "folders/Sprites/Backgrounds.yy",
   },
   "resourceVersion": "1.0",
   "name": "bg_beachbg3para2",

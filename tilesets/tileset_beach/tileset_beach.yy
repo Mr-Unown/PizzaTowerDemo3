@@ -1106,8 +1106,8 @@
     "TileSerialiseData": [],
   },
   "parent": {
-    "name": "Tile Sets",
-    "path": "folders/Tile Sets.yy",
+    "name": "Beach",
+    "path": "folders/Tile Sets/Beach.yy",
   },
   "resourceVersion": "1.0",
   "name": "tileset_beach",
