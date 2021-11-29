@@ -17,8 +17,8 @@
   "includeTTF": true,
   "TTFName": "${project_dir}\\fonts\\font_console\\font_console.png",
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Menus",
+    "path": "texturegroups/Menus",
   },
   "ascenderOffset": 0,
   "glyphs": {

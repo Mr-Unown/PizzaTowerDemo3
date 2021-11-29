@@ -93,8 +93,8 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Core",
-    "path": "folders/Objects/Core.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_shell",

@@ -1,5 +1,8 @@
 function scr_init() {
 /// @description Initialize Game Stuff
+global.shellactivate = false;
+global.showcollisions = false;
+display_set_gui_size(960, 540);
 
 ini_open("saveData.ini")
 global.newtitlescreen = ini_read_real("Option", "newtitlescreen", false);

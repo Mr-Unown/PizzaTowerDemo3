@@ -1,6 +1,6 @@
 //Inputs
 scr_getinput()
-if instance_exists(obj_debugcontroller) && obj_debugcontroller.active = true
+if global.shellactivate == true//instance_exists(obj_debugcontroller) && obj_debugcontroller.active = true
 	return;
 	
 //Select your Option
