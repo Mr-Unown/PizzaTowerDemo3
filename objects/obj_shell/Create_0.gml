@@ -1,3 +1,4 @@
+depth = -9999;
 isOpen = false;
 isAutocompleteOpen = false;
 
