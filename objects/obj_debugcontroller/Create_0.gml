@@ -33,7 +33,6 @@ commands[arrayi++] = "divestyle (old/new)"
 commands[arrayi++] = "destroyablecollect (pizza/topping)"
 commands[arrayi++] = "ratmode (on/off)"
 commands[arrayi++] = "attackstyle (1/2)"
-commands[arrayi++] = "vibration (on/off)"
 
 if DEBUG 
 {
