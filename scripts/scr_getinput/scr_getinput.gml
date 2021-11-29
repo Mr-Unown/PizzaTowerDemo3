@@ -1,6 +1,6 @@
 function scr_getinput() {
 	gamepad_set_axis_deadzone(0, 0.4)
-	if instance_exists(obj_debugcontroller) && obj_debugcontroller.active = true
+	if global.shellactivate = true
 	{
 		#region Anti-Crash
 	key_up = false

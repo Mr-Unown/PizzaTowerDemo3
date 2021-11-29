@@ -11,7 +11,7 @@ for (var i = 0; i < array_length(showcollisionarray); ++i)
 {
 	if object_index = showcollisionarray[i]
 	{
-		visible = obj_debugcontroller.showcollisions
+		visible = global.showcollisions
 		break;
 	}
 }

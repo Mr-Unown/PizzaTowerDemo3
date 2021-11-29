@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "utility",
-    "path": "folders/Scripts/utility.yy",
+    "name": "Shell Stuff",
+    "path": "folders/Scripts/Shell Stuff.yy",
   },
   "resourceVersion": "1.0",
-  "name": "string_split",
+  "name": "scr_shell_commands",
   "tags": [],
   "resourceType": "GMScript",
 }
