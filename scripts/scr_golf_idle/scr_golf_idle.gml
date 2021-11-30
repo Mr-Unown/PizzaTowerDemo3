@@ -112,6 +112,7 @@ function scr_golf_idle() {
 	{
 	    sprite_index = spr_pizzaball_stun
 	    image_index = 0
+		jspd = 8
 	}
 	if (sprite_index == spr_pizzaball_stun && stunned <= 0 && floor(image_index) == (image_number - 1))
 	{

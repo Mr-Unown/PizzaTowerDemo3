@@ -26,5 +26,6 @@ important = 0
 railspeed = 0
 xback = x
 yback = y
+jspd = 8
 
 

@@ -187,6 +187,7 @@ function scr_characterspr(player_character = character) {
 	    spr_fightball1 = spr_player_fightball1
 		spr_fightball2 = spr_player_fightball2
 	    spr_squished = spr_player_squished
+		spr_golfidle = spr_player_golfidle
 	    spr_palette = spr_peppalette
 	    spr_tomatojump = spr_player_Sjump
 		//Boxxed Transfo
