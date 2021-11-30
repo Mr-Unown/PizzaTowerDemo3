@@ -4,7 +4,7 @@ scr_soundeffect(sfx_collecttopping)
 with other.id
 {
     obj_player1.collectscore = (obj_player1.collectscore + 10)
-    if (character == "V") && obj_player1.vigihealth < 250
+    if (obj_player1.character == "V") && obj_player1.vigihealth < 250
         obj_player1.vigihealth += 5
 }
 if global.combotime < 60

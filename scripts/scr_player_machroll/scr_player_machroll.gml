@@ -11,7 +11,21 @@ function scr_player_machroll() {
 	    hsp = (xscale * movespeed)
 	else if place_meeting(x, (y + 1), obj_railh)
 	{
-		if other.xscale == -sign(image_xscale)
+		if other.xscale == sign(image_xscale)
+		{
+		if movespeed > 0
+		movespeed -= .1
+		}
+		else
+		if movespeed < 24
+		movespeed += .1
+		if movespeed <= 0
+		state = states.crouch
+		hsp = (xscale * movespeed)
+	}
+	else if place_meeting(x, (y + 1), obj_railh2)
+	{
+		if other.xscale == sign(image_xscale)
 		{
 		if movespeed < 24
 		movespeed += .1
@@ -22,16 +36,6 @@ function scr_player_machroll() {
 		if movespeed <= 0
 		state = states.crouch
 		hsp = (xscale * movespeed)
-	}
-	else if place_meeting(x, (y + 1), obj_railh2)
-	{
-		if other.xscale == -sign(image_xscale)
-		{
-			if movespeed < 24
-		movespeed += .25
-		else
-		movespeed -= .25
-		}
 	}
 	mach2 = 100
 	machslideAnim = 1
