@@ -1936,6 +1936,7 @@
     {"id":{"name":"bg_kungfu3","path":"sprites/bg_kungfu3/bg_kungfu3.yy",},"order":77,},
     {"id":{"name":"spr_shrimp_idle","path":"sprites/spr_shrimp_idle/spr_shrimp_idle.yy",},"order":2,},
     {"id":{"name":"spr_shrimp_charge","path":"sprites/spr_shrimp_charge/spr_shrimp_charge.yy",},"order":0,},
+    {"id":{"name":"mu_pinball","path":"sounds/mu_pinball/mu_pinball.yy",},"order":159,},
     {"id":{"name":"spr_shrimp_jumpstart","path":"sprites/spr_shrimp_jumpstart/spr_shrimp_jumpstart.yy",},"order":4,},
     {"id":{"name":"spr_shrimp_jump","path":"sprites/spr_shrimp_jump/spr_shrimp_jump.yy",},"order":3,},
     {"id":{"name":"spr_banditochicken_stun","path":"sprites/spr_banditochicken_stun/spr_banditochicken_stun.yy",},"order":5,},
