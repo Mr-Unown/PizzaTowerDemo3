@@ -18,7 +18,7 @@ function scr_player_golf() {
 	{
 	    jumpstop = 0
 	    anger = 100
-	    if (sprite_index != spr_punch)
+	    if (sprite_index != spr_golfidle)
 	    {
 	        if ((!place_meeting(x, (y + 1), obj_railh)) && (!place_meeting(x, (y + 1), obj_railh2)))
 	            hsp = (movespeed * xscale)
@@ -33,7 +33,7 @@ function scr_player_golf() {
 	        movespeed = 0
 	}
 	if (sprite_index == spr_haulingstart && floor(image_index) == (image_number - 1))
-	    sprite_index = spr_haulingidle
+	    sprite_index = spr_golfidle
 	if ((sprite_index == spr_haulingjump && floor(image_index) == (image_number - 1)) || ((!grounded) && (sprite_index == spr_haulingwalk || sprite_index == spr_haulingidle)))
 	    sprite_index = spr_haulingfall
 	if (grounded && vsp > 0 && (sprite_index == spr_haulingfall || sprite_index == spr_haulingjump))
