@@ -16,6 +16,7 @@ function scr_enemy_throw() {
 		global.throw_frame[obj_shrimpblue] = 9
 		global.throw_frame[obj_cannongoblin] = 6
 		global.throw_frame[obj_noiserobot] = 0
+		global.throw_frame[obj_pickle] = 2
 	    global.throw_sprite = spr_plug
 	    global.throw_sprite[obj_pizzagoblin] = spr_pizzagoblin_throwbomb
 	    global.throw_sprite[obj_cheeserobot] = spr_cheeserobot_attack
@@ -31,6 +32,7 @@ function scr_enemy_throw() {
 	    global.throw_sprite[obj_shrimpblue] = spr_shrimp_knife
 	    global.throw_sprite[obj_cannongoblin] = spr_pizzacannongoblin_throwbomb
 		global.throw_sprite[obj_noiserobot] = spr_noiserobot_shoot
+		global.throw_sprite[obj_pickle] = spr_pickle_attack
 	    global.reset_timer = 0
 	    global.reset_timer[obj_pizzagoblin] = 200
 	    global.reset_timer[obj_cheeserobot] = 200
@@ -46,6 +48,7 @@ function scr_enemy_throw() {
 	    global.reset_timer[obj_shrimpblue] = 100	
 	    global.reset_timer[obj_cannongoblin] = 200	
 		global.reset_timer[obj_noiserobot] = 140
+		global.reset_timer[obj_pickle] = 200
 	}
 	hsp = 0
 	if place_meeting(x, (y + 1), obj_railh)
@@ -169,7 +172,16 @@ function scr_enemy_throw() {
 					grav = 0
 					sprite_index = spr_sausageman_rolling
 	            }
-	            break			
+	            break
+			case obj_pickle:
+                attacking = 0
+                with (instance_create(x, y, obj_forkhitbox))
+                {
+                    ID = other.id
+                    image_xscale = other.image_xscale
+                    sprite_index = other.sprite_index
+                }
+                break
 	    }
     
 	}

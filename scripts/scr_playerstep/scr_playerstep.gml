@@ -109,7 +109,8 @@
 		murder = 124,
 		trick = 125,
 		newbomb = 126,
-		startgate = 127
+		startgate = 127,
+		rocket = 128
 
 	} 
 	//I made some changes to it so that we can know at a glance what number it gets converted to.
@@ -164,6 +165,9 @@ if actor = false
 		case states.breakdance:
 	        scr_player_breakdance()
 	        break
+		case states.rocket:
+			scr_player_rocket()
+			break
 	    case 110:
 	        scr_player_throwdynamite()
 	        break

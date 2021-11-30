@@ -15,6 +15,7 @@ function scr_characterspr(player_character = character) {
 		spr_playertv_normalidle1 = spr_tv_idleanim1;
 		spr_playertv_normalidle2 = spr_tv_idleanim2;
 		spr_playertv_normalidle3 = spr_tv_idleanim3;
+		spr_playertv_rocket = spr_tv_rocket;
 		#endregion
 		spr_idle = spr_player_idle
 		spr_move = spr_player_move
@@ -231,6 +232,12 @@ function scr_characterspr(player_character = character) {
 		spr_supertaunt4 = spr_player_supertaunt4 
 		//Murder
 		spr_murder = spr_player_revolvershoot
+		//Rocket
+		spr_rocket = spr_player_rocket
+		spr_rocketstart = spr_player_rocketstart
+		spr_rockethitwall = spr_player_rockethitwall
+		spr_rocketup = spr_player_rocketup
+		spr_rocketupstart = spr_player_rocketupstart
 	    paletteselect = 1
 		}
 	#endregion
