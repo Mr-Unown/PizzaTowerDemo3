@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_tile_sanctumdecorations",
-    "path": "sprites/spr_tile_sanctumdecorations/spr_tile_sanctumdecorations.yy",
+    "name": "spr_sanctumdecoration4",
+    "path": "sprites/spr_sanctumdecoration4/spr_sanctumdecoration4.yy",
   },
   "tileWidth": 32,
   "tileHeight": 32,

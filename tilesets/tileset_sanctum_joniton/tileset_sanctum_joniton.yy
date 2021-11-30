@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "tile_sanctum_jonitron",
-    "path": "sprites/tile_sanctum_jonitron/tile_sanctum_jonitron.yy",
+    "name": "tile_sanctum_joniton",
+    "path": "sprites/tile_sanctum_joniton/tile_sanctum_joniton.yy",
   },
   "tileWidth": 32,
   "tileHeight": 32,
