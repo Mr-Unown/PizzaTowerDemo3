@@ -7,7 +7,7 @@ if ((!pause) && (!instance_exists(obj_fadeout)))
         if (!instance_exists(obj_pausefadeout))
             instance_create(x, y, obj_pausefadeout)
     }
-    if ((obj_player2.key_jump || keyboard_check_pressed(vk_f5)) && global.coop == 0 && room != rank_room && room != Scootertransition && room != global.roomstart[global.newtitlescreen] && room != timesuproom) && obj_debugcontroller.active = false && !instance_exists(obj_palettechanger)
+    if global.shellactivate == false && ((obj_player2.key_jump || keyboard_check_pressed(vk_f5)) && global.coop == 0 && room != rank_room && room != Scootertransition && room != global.roomstart[global.newtitlescreen] && room != timesuproom) && !instance_exists(obj_palettechanger)
     {
         global.coop = 1
         with (obj_player2)
@@ -27,9 +27,9 @@ if ((!pause) && (!instance_exists(obj_fadeout)))
             alarm[0] = 100
         }
     }
-    if (global.debugmode == 1)
+    if (global.debugmode == 1) && global.shellactivate == false
     {
-        if (keyboard_check_pressed(vk_f5) && global.coop == 0) && obj_debugcontroller.active = false
+        if (keyboard_check_pressed(vk_f5) && global.coop == 0)
         {
             global.coop = 1
             with (obj_player2)
@@ -55,6 +55,7 @@ if ((!pause) && (!instance_exists(obj_fadeout)))
 			global.pausecombotime = true
 			obj_tv.alarm[1] = 75
             global.combo += 3
+			global.style += 3
             //global.peppermode = 0
 			obj_player1.supertauntcharged = true;
 			obj_player2.supertauntcharged = true;

@@ -148,15 +148,15 @@ if (obj_player1.collectscore >= obj_player2.collectscore)
     else if (obj_player1.character == "S")
     {
         if (global.rank == "s")
-            sprite_index = spr_snick_victory
+            sprite_index = spr_snick_rankS
         if (global.rank == "a")
-            sprite_index = spr_snick_idleanim
+            sprite_index = spr_snick_rankA
         if (global.rank == "b")
-            sprite_index = spr_snick_hitwall
+            sprite_index = spr_snick_rankB
         if (global.rank == "c")
-            sprite_index = spr_snick_stunned
+            sprite_index = spr_snick_rankC
         if (global.rank == "d")
-            sprite_index = spr_snick_exe
+            sprite_index = spr_snick_rankD
     }
     else if (obj_player1.character == "V")
     {
@@ -222,15 +222,15 @@ if (obj_player2.collectscore > obj_player1.collectscore)
     else if (obj_player2.character == "S")
     {
         if (global.rank == "s")
-            sprite_index = spr_snick_victory
+            sprite_index = spr_snick_rankS
         if (global.rank == "a")
-            sprite_index = spr_snick_idleanim
+            sprite_index = spr_snick_rankA
         if (global.rank == "b")
-            sprite_index = spr_snick_stunned
+            sprite_index = spr_snick_rankB
         if (global.rank == "c")
-            sprite_index = spr_snick_hitwall
+            sprite_index = spr_snick_rankC
         if (global.rank == "d")
-            sprite_index = spr_snick_exe
+            sprite_index = spr_snick_rankD
     }
     else if (obj_player2.character == "V")
     {

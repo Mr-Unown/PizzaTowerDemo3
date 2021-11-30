@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 0,
-  "bbox_right": 698,
-  "bbox_top": 0,
-  "bbox_bottom": 511,
+  "bbox_left": 32,
+  "bbox_right": 991,
+  "bbox_top": 32,
+  "bbox_bottom": 929,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 815,
-  "height": 554,
+  "width": 1024,
+  "height": 1024,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"8fb9702c-5f65-44f5-8947-28122c92af50","path":"sprites/tile_factorynew2/tile_factorynew2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8fb9702c-5f65-44f5-8947-28122c92af50","path":"sprites/tile_factorynew2/tile_factorynew2.yy",},"LayerId":{"name":"ef5de1c6-6efb-4331-8332-edbfe5af838f","path":"sprites/tile_factorynew2/tile_factorynew2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"tile_factorynew2","path":"sprites/tile_factorynew2/tile_factorynew2.yy",},"resourceVersion":"1.0","name":"8fb9702c-5f65-44f5-8947-28122c92af50","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"717f2211-b9f0-4121-90d5-303c1d3484b7","path":"sprites/tile_factorynew2/tile_factorynew2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"717f2211-b9f0-4121-90d5-303c1d3484b7","path":"sprites/tile_factorynew2/tile_factorynew2.yy",},"LayerId":{"name":"a353d0a2-4f6a-49e9-aadc-81c292f7cbdd","path":"sprites/tile_factorynew2/tile_factorynew2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"tile_factorynew2","path":"sprites/tile_factorynew2/tile_factorynew2.yy",},"resourceVersion":"1.0","name":"717f2211-b9f0-4121-90d5-303c1d3484b7","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"tile_factorynew2","path":"sprites/tile_factorynew2/tile_factorynew2.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"86180c7d-c707-4340-be8f-edf106775aa3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8fb9702c-5f65-44f5-8947-28122c92af50","path":"sprites/tile_factorynew2/tile_factorynew2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"dae2f200-e2de-4c7e-a665-14898da43d68","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"717f2211-b9f0-4121-90d5-303c1d3484b7","path":"sprites/tile_factorynew2/tile_factorynew2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ef5de1c6-6efb-4331-8332-edbfe5af838f","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a353d0a2-4f6a-49e9-aadc-81c292f7cbdd","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {

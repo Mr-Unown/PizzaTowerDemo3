@@ -187,6 +187,7 @@ function scr_characterspr(player_character = character) {
 	    spr_fightball1 = spr_player_fightball1
 		spr_fightball2 = spr_player_fightball2
 	    spr_squished = spr_player_squished
+		spr_golfidle = spr_player_golfidle
 	    spr_palette = spr_peppalette
 	    spr_tomatojump = spr_player_Sjump
 		//Boxxed Transfo
@@ -424,7 +425,7 @@ function scr_characterspr(player_character = character) {
 	    spr_fightball1 = spr_playerN_fightball1
 		spr_fightball2 = spr_playerN_fightball2
 	    spr_squished = spr_playerN_squished
-
+		spr_golfidle = spr_playerN_grab
 	    spr_tomatojump = spr_playerN_glide
 		//Boxxed Transfo
 	    spr_boxxedair = spr_boxxednoise_air;
@@ -488,16 +489,16 @@ function scr_characterspr(player_character = character) {
 		{
 		selectedcharacter = 3;
 		#region TV Sprites
-		spr_playertv_bomb = spr_tv_snicktemp;
-		spr_playertv_fireass = spr_tv_snicktemp;
-		spr_playertv_knight = spr_tv_snicktemp;
-		spr_playertv_tumble = spr_tv_snicktemp;
-		spr_playertv_victory = spr_tv_snicktemp;
+		spr_playertv_bomb = spr_tv_snickbomb;
+		spr_playertv_fireass = spr_tv_snickfireass;
+		spr_playertv_knight = spr_tv_snickrobot;
+		spr_playertv_tumble = spr_tv_snicktumble;
+		spr_playertv_victory = spr_tv_snickvictory;
 		spr_playertv_boxxed = spr_tv_snicktemp;
 		spr_playertv_normal = spr_tv_snicktemp;
-		spr_playertv_normalidle1 = spr_tv_snicktemp;
-		spr_playertv_normalidle2 = spr_tv_snicktemp;
-		spr_playertv_normalidle3 = spr_tv_snicktemp;
+		spr_playertv_normalidle1 = spr_tv_snickanim1;
+		spr_playertv_normalidle2 = spr_tv_snickanim1;
+		spr_playertv_normalidle3 = spr_tv_snickanim1;
 		#endregion	
 		spr_idle = spr_snick_idle
 		spr_move = spr_snick_walk
@@ -553,9 +554,9 @@ function scr_characterspr(player_character = character) {
 		spr_deathend = spr_snick_stunned
 		spr_machpunch1 = spr_snick_mach3
 		spr_machpunch2 = spr_snick_mach3
-		spr_hurtjump = spr_snick_hurt
+		spr_hurtjump = spr_snick_hurtjump
 		spr_entergate = spr_snick_keydoor
-		spr_gottreasure = spr_snick_gotkey
+		spr_gottreasure = spr_snick_gottreasure
 		spr_bossintro = spr_snick_gotkey
 		spr_hurtidle = spr_snick_idle
 		spr_hurtwalk = spr_snick_walk
@@ -621,7 +622,7 @@ function scr_characterspr(player_character = character) {
 	    spr_uppizzabox = spr_snick_upbox
 	    spr_taunt = spr_snick_taunt
 	    spr_slipnslide = spr_snick_hurt
-	    spr_gottreasure = spr_snick_victory
+	    spr_gottreasure = spr_snick_gottreasure
 	    spr_shotgunland = spr_snick_idle
 	    spr_shotgunshoot = spr_snick_idle
 	    spr_shotgunidle = spr_snick_idle
@@ -638,6 +639,9 @@ function scr_characterspr(player_character = character) {
 	    spr_bossintro = spr_snick_hurt
 	    spr_knightpepstart = spr_snick_robotsword
 	    spr_tomatojump = spr_snick_fall
+		spr_panic = spr_snick_panic
+		spr_3hpwalk = spr_snick_angrywalk
+		spr_3hpidle = spr_snick_angryidle
 		//Boxxed Transfo
 	    spr_boxxedair = spr_boxxednoise_air;
 	    spr_boxxedwalk = spr_boxxednoise_walk;
@@ -698,9 +702,9 @@ function scr_characterspr(player_character = character) {
 		spr_playertv_victory = spr_tv_vigitemp;
 		spr_playertv_boxxed = spr_tv_vigitemp;
 		spr_playertv_normal = spr_tv_vigitemp;
-		spr_playertv_normalidle1 = spr_tv_vigitemp;
-		spr_playertv_normalidle2 = spr_tv_vigitemp;
-		spr_playertv_normalidle3 = spr_tv_vigitemp;
+		spr_playertv_normalidle1 = spr_tv_vigianim1;
+		spr_playertv_normalidle2 = spr_tv_vigianim2;
+		spr_playertv_normalidle3 = spr_tv_vigianim1;
 		#endregion		
 	    spr_idle = spr_playerV_idle
 	    spr_move = spr_playerV_move
@@ -870,6 +874,7 @@ function scr_characterspr(player_character = character) {
 	    spr_fightball1 = spr_player_fightball1
 		spr_fightball2 = spr_player_fightball2
 	    spr_squished = spr_playerV_squished
+		spr_golfidle = spr_playerN_grab
 	    spr_palette = spr_vigipalette
 	    spr_tomatojump = spr_playerV_superjump
 		
@@ -1105,6 +1110,7 @@ function scr_characterspr(player_character = character) {
 	    spr_fightball1 = spr_player_fightball1
 		spr_fightball2 = spr_player_fightball2
 	    spr_squished = spr_playerV_squished
+		spr_golfidle = spr_playerN_grab
 	    spr_palette = spr_pepperpalette
 	    spr_tomatojump = spr_playerV_superjump
 		//Boxxed Transfo
@@ -1339,6 +1345,7 @@ function scr_characterspr(player_character = character) {
 	    spr_fightball1 = spr_playerN_fightball1
 		spr_fightball2 = spr_playerN_fightball2
 	    spr_squished = spr_playerN_squished
+		spr_golfidle = spr_playerN_grab
 		spr_palette = spr_orangepalette;
 	    spr_tomatojump = spr_playerN_glide
 		//Boxxed Transfo
@@ -1571,6 +1578,7 @@ function scr_characterspr(player_character = character) {
 	    spr_fightball1 = spr_player_fightball1 //Missing
 		spr_fightball2 = spr_player_fightball2 //Missing
 	    spr_squished = spr_player_squished //Missing
+		spr_golfidle = spr_playerN_grab
 	    spr_palette = spr_pizzellepalette
 	    spr_tomatojump = spr_playerPZ_jump //Missing
 		//Boxxed Transfo

@@ -1,5 +1,5 @@
 scr_commonenemy()
-if (state == 106 && stunned > 100 && birdcreated == 0)
+if (state == 106 && stunned > 60 && birdcreated == 0)
 {
     birdcreated = 1
     with (instance_create(x, y, obj_enemybird))
@@ -33,17 +33,6 @@ if (x != player.x && player.state != 27 && state != enemystates.enemyheat && gro
     }
 }
 #endregion
-
-
-if (hitboxcreate == 0 && state == enemystates.enemyheat && floor(image_index) <= 5 && sprite_index = spr_cheeseslime_heat )
-{
-    hitboxcreate = 1
-    with (instance_create(x, y, obj_forkhitbox))
-        ID = other.id
-}
-
-
-
 if (state != 106)
     birdcreated = 0
 if (flash == 1 && alarm[2] <= 0)
@@ -63,5 +52,3 @@ if (boundbox == 0)
         other.boundbox = 1
     }
 }
-
-

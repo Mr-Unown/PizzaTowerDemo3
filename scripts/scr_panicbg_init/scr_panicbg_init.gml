@@ -31,6 +31,8 @@ function scr_panicbg_init() {
 	    layers[layernum++] = "Backgrounds_sky2"
 	if layer_exists("Backgrounds_4")
 	    layers[layernum++] = "Backgrounds_4"	
+	if layer_exists("Backgrounds_5")
+	    layers[layernum++] = "Backgrounds_5"			
 	if (!layernum)
 	    return;
 	var bottom_id = layer_get_id(layers[0])

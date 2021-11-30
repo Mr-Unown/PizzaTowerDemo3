@@ -16,6 +16,12 @@ switch room
 		var _dark = clamp(camera_get_view_y(view_camera[0]),864,1632)/1632
 		targetdarkness = clamp(_dark * 0.85,0.75,0.85)
 		break;		
+	case factory_8:
+	    can_draw = true;
+		var _dark = clamp(camera_get_view_y(view_camera[0]),864,1632)/1632
+		targetdarkness = clamp(_dark * 0.85,0.75,0.85)
+		break;
+	
 	#endregion
 }
 //Change Darkness

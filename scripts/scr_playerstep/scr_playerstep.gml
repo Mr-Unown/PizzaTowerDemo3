@@ -742,7 +742,7 @@ else if actor = true
 	if (firemouthtrail > 0)
 	    firemouthtrail--
 		
-	if ((firemouthtrail <= 0) && state == states.firemouth)
+	if ((firemouthtrail <= 0) && state == states.firemouth && sprite_index != spr_firemouthend)
 	{
 	    with instance_create(x, y, obj_firemouthafterimg)
 		{

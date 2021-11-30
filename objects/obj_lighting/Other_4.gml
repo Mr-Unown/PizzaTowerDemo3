@@ -52,12 +52,14 @@ switch room
 		targetdarkness = 0.60;
 		break;
 	#endregion
-	#region Factory
-	case factory_8:		
+	/*#region Factory
+	case factory_8:	
+	if place_meeting(x,y, obj_eventtrigger)
 		can_draw = true;
 		targetdarkness = 0.85
 		break;		
 	#endregion
+	*/
 	case hub_roomSNICK:
 		can_draw = true;
 		darkness = 0.90

@@ -10,6 +10,7 @@ if activated = true
 	}
 	if animation_end() && visible = true && sprite_index == spr_secreteye_spawning
 		sprite_index = spr_secreteye_idle
+	image_speed = 0.35
 }
 //Cutscene Moment
 if sprite_index == spr_secreteye_teleport

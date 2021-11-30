@@ -152,30 +152,28 @@ if (player.key_slap2 || keyboard_check_pressed(vk_return)) && stop == false && h
 #region Export and Import
 
 #region Export
-if point_in_rectangle(_mouse_x,_mouse_y,ExportButton.xpos - 28,ExportButton.ypos - 25,ExportButton.xpos + 28,ExportButton.ypos + 28)
+if mouse_check_button_pressed(mb_left) && input_text = false && stop = false
 {
-	if mouse_check_button(mb_left) && input_text = false && stop = false
+    if point_in_rectangle(_mouse_x,_mouse_y,ExportButton.xpos - 28,ExportButton.ypos - 25,ExportButton.xpos + 28,ExportButton.ypos + 28)
 	{
 		ExportButton.activated = true;
-		ExportButton.buffertimer = 3;		
+		ExportButton.buffertimer = 10;
+		if ExportButton.activated
+		event_user(0);
 	}
-	if ExportButton.activated && mouse_check_button_released(mb_left) && input_text = false && stop = false
-	event_user(0);
 }
-
 #endregion
 #region Import
-if point_in_rectangle(_mouse_x,_mouse_y,ImportButton.xpos - 28,ImportButton.ypos - 25,ImportButton.xpos + 28,ImportButton.ypos + 28)
+if mouse_check_button_pressed(mb_left) && input_text = false && stop = false
 {
-	if mouse_check_button(mb_left) && input_text = false && stop = false
-	{	
+    if point_in_rectangle(_mouse_x,_mouse_y,ImportButton.xpos - 28,ImportButton.ypos - 25,ImportButton.xpos + 28,ImportButton.ypos + 28)
+	{
 		ImportButton.activated = true;
-		ImportButton.buffertimer = 3;
+		ImportButton.buffertimer = 10;
+		if ImportButton.activated
+		event_user(1);
 	}
-	if ImportButton.activated && mouse_check_button_released(mb_left) && input_text = false && stop = false	
-	event_user(1);
 }
-
 #endregion
 
 #endregion

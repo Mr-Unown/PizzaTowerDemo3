@@ -1,4 +1,4 @@
-if (obj_debugcontroller.showcollisions = true) 
+if (global.showcollisions = true) 
     visible = true
 else
     visible = false

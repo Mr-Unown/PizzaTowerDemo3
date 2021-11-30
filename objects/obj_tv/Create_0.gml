@@ -65,7 +65,6 @@ drawx2 = 750;
 drawy2 = -14;
 combolast = 0;
 global.combobuffer = 0;
-display_set_gui_size(960, 540)
 newtvspritestore = 0
 drawstatic = false
 drawstaticalpha = 0

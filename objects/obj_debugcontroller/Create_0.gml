@@ -22,17 +22,19 @@ commands[arrayi++] = "voicefrequency [value]"
 commands[arrayi++] = "escape [minutes] [seconds]"
 commands[arrayi++] = "togglecollision (true/false)"
 commands[arrayi++] = "debugmode (true/false)"
+//
 commands[arrayi++] = "collectstyle (old/new)"
 commands[arrayi++] = "newtitlescreen (true/false)"
 commands[arrayi++] = "newsjumpcancel (true/false)"
 commands[arrayi++] = "wallrunstyle (older/old/new)"
 commands[arrayi++] = "pitchshift (on/off)"
 commands[arrayi++] = "escapecollect (old/new)"
-commands[arrayi++] = "freefallstyle (old/new)"
+commands[arrayi++] = "groundpoundstyle (old/new)"
 commands[arrayi++] = "divestyle (old/new)"
 commands[arrayi++] = "destroyablecollect (pizza/topping)"
 commands[arrayi++] = "ratmode (on/off)"
-commands[arrayi++] = "attackstyle (shoulder/grab)"
+commands[arrayi++] = "attackstyle (1/2)"
+//
 if DEBUG 
 {
 	commands[arrayi++] = "changecharacter [player] [character] (true/false)"
@@ -69,7 +71,7 @@ showcollisionarray[i++] = obj_secretmetalblock;
 showcollisionarray[i++] = obj_crashplaneblock;
 showcollisionarray[i++] = obj_pitcollider;
 showcollisionarray[i++] = obj_eventtrigger;
-showcollisionarray[i++] = obj_objectteleport
+showcollisionarray[i++] = obj_objectteleportal
 //showcollisionarray[i++] = obj_precise_tile_checker;
 
 //Funny Cursor
