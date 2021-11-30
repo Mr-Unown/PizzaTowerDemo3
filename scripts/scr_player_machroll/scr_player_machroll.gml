@@ -13,28 +13,26 @@ function scr_player_machroll() {
 	{
 		if other.xscale == sign(image_xscale)
 		{
-		if movespeed > 0
-		movespeed -= .1
+			if movespeed > 0
+				movespeed -= .1
 		}
-		else
-		if movespeed < 24
-		movespeed += .1
+			else if movespeed < 24
+				movespeed += .1
 		if movespeed <= 0
-		state = states.crouch
+			state = states.crouch
 		hsp = (xscale * movespeed)
 	}
 	else if place_meeting(x, (y + 1), obj_railh2)
 	{
 		if other.xscale == sign(image_xscale)
 		{
-		if movespeed < 24
-		movespeed += .1
+			if movespeed < 24
+				movespeed += .1
 		}
-		else
-		if movespeed > 0
-		movespeed -= .1
+		else if movespeed > 0
+				movespeed -= .1
 		if movespeed <= 0
-		state = states.crouch
+			state = states.crouch
 		hsp = (xscale * movespeed)
 	}
 	mach2 = 100
@@ -42,8 +40,8 @@ function scr_player_machroll() {
 	move = (key_right + key_left)
 	if movespeed <= 0
 	{
-	with state = states.normal
-	sprite_index = spr_crouch
+		state = states.normal
+		sprite_index = spr_crouch
 	}
 	//Slopes
 	if scr_slope() && vsp >= 0

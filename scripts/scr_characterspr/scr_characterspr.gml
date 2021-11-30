@@ -425,7 +425,7 @@ function scr_characterspr(player_character = character) {
 	    spr_fightball1 = spr_playerN_fightball1
 		spr_fightball2 = spr_playerN_fightball2
 	    spr_squished = spr_playerN_squished
-
+		spr_golfidle = spr_playerN_grab
 	    spr_tomatojump = spr_playerN_glide
 		//Boxxed Transfo
 	    spr_boxxedair = spr_boxxednoise_air;
@@ -874,6 +874,7 @@ function scr_characterspr(player_character = character) {
 	    spr_fightball1 = spr_player_fightball1
 		spr_fightball2 = spr_player_fightball2
 	    spr_squished = spr_playerV_squished
+		spr_golfidle = spr_playerN_grab
 	    spr_palette = spr_vigipalette
 	    spr_tomatojump = spr_playerV_superjump
 		
@@ -1109,6 +1110,7 @@ function scr_characterspr(player_character = character) {
 	    spr_fightball1 = spr_player_fightball1
 		spr_fightball2 = spr_player_fightball2
 	    spr_squished = spr_playerV_squished
+		spr_golfidle = spr_playerN_grab
 	    spr_palette = spr_pepperpalette
 	    spr_tomatojump = spr_playerV_superjump
 		//Boxxed Transfo
@@ -1343,6 +1345,7 @@ function scr_characterspr(player_character = character) {
 	    spr_fightball1 = spr_playerN_fightball1
 		spr_fightball2 = spr_playerN_fightball2
 	    spr_squished = spr_playerN_squished
+		spr_golfidle = spr_playerN_grab
 		spr_palette = spr_orangepalette;
 	    spr_tomatojump = spr_playerN_glide
 		//Boxxed Transfo
@@ -1575,6 +1578,7 @@ function scr_characterspr(player_character = character) {
 	    spr_fightball1 = spr_player_fightball1 //Missing
 		spr_fightball2 = spr_player_fightball2 //Missing
 	    spr_squished = spr_player_squished //Missing
+		spr_golfidle = spr_playerN_grab
 	    spr_palette = spr_pizzellepalette
 	    spr_tomatojump = spr_playerPZ_jump //Missing
 		//Boxxed Transfo
