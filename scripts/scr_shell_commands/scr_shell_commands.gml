@@ -413,7 +413,7 @@ if DEBUG
 	function meta_instance_create() 
 	{
 		return {
-			description: "create a balloon",
+			description: "create an onject",
 			arguments: ["<x>", "<y>","<object>"],
 			suggestions: [
 				[],
