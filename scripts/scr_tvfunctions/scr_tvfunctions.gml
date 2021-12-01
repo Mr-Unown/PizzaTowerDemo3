@@ -5,7 +5,7 @@ function scr_queue_message(argument0 = "",argument1 = noone) {
 	ds_queue_enqueue(global.newhudmessage,argument1);
 }
 
-function scr_queue_tvanim(argument0 = spr_tv_open,argument1 = 100) 
+function scr_queue_tvanim(argument0 = noone,argument1 = 150) 
 {
 	///@param sprite_index
 	///@param anim_length

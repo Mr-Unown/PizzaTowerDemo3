@@ -4,6 +4,7 @@ global.newhudtvanim = ds_queue_create();
 tvanim = 0;
 tvanimtimer = 0;
 tvanimtext = false;
+tvanimsprite = noone
 
 frozenalarm = -1;
 frozen = false;

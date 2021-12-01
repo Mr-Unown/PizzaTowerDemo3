@@ -322,11 +322,11 @@ if DEBUG
 		var arg1 = string(args[1]), arg2 = args[2];
 		switch arg1
 		{
-			case "obj_player1": 
+			case "player1": 
 			case "1": 
 			arg1 = obj_player1 
 			break;
-			case "obj_player2": 
+			case "player2": 
 			case "2": 
 			arg1 = obj_player2
 			break;
@@ -360,7 +360,7 @@ if DEBUG
 			description: "changes character of player",
 			arguments: ["<player>","<character>"],
 			suggestions: [
-				["obj_player1","obj_player2"],
+				["player1","player2"],
 				["Peppino","S-Noise","P-Noise","Snick","Vigi","Pizzy","Dougie","Pepperman"]
 			],
 			argumentDescriptions: [

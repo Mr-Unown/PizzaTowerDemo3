@@ -333,24 +333,27 @@ else if newtvsprite = spr_tv_open && bootingup = true
 }
 else if global.newhud = true && tvanim = false && ds_queue_size(global.newhudtvanim) > 1 && newtvsprite != spr_tv_open && newtvsprite != spr_tv_static
 {
-	newtvsprite = ds_queue_dequeue(global.newhudtvanim);
+	tvanimsprite = ds_queue_dequeue(global.newhudtvanim);
 	tvanimtimer = ds_queue_dequeue(global.newhudtvanim);
 	tvanim = true
 	drawstatic = true
 	drawstatictimer = 15
 	oldsprite = newtvsprite 
+	newtvsprite = tvanimsprite
 }
-else if global.newhud = true && tvanim = true
+else if global.newhud = true && tvanim = true && newtvsprite != spr_tv_open && newtvsprite != spr_tv_static
 {
+	newtvsprite = tvanimsprite
+	image_speed = 0.35
 	if tvanimtext = false
 	{
-		tvanimtimer -= 3.5	
+		tvanimtimer -= 1	
 		if tvanimtimer <= 0
 		{
 			tvanim = false
 			drawstatic = true
 			drawstatictimer = 15
-			oldsprite = newtvsprite 		
+			oldsprite = noone		
 		}
 	}
 }
@@ -366,10 +369,12 @@ else if global.newhud = true && oldcharacter == player.character && (sprite_inde
 		//channel = 10;			
 		case states.golf:
 		newtvsprite = player.spr_playertv_golf
-		channel = 9;		
+		channel = 9;	
+		break;
 		case states.firemouth:
 		newtvsprite = player.spr_playertv_firemouth
-		channel = 8;		
+		channel = 8;	
+		break;
 		case states.rocket:
 		newtvsprite = player.spr_playertv_rocket
 		channel = 7;

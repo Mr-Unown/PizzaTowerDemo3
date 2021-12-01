@@ -156,7 +156,7 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
     if (content == obj_noisebomb)
     {
 		var player = focused_player()
-		scr_queue_tvanim(player.spr_playertv_victory,50)		
+		scr_queue_tvanim(player.spr_playertv_victory,150)		
         with (instance_create(x, (y - 25), content)) {
 
 			//Follower DS_list
