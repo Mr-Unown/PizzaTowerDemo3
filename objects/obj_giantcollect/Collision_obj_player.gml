@@ -13,6 +13,8 @@ global.combotime = 60
 global.pausecombotime = true
 obj_tv.alarm[1] = 75
 scr_soundeffect(sfx_collectgiantpizza)
+var player = focused_player()
+scr_queue_tvanim(player.spr_playertv_victory)
 instance_destroy()
 
 repeat 10

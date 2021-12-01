@@ -382,10 +382,7 @@ if DEBUG
 			obj_player2.targetRoom = arg1
 			obj_player1.targetDoor = arg2
 			obj_player2.targetDoor = arg2
-			if room != arg1
-				instance_create(0, 0, obj_fadeout) 			
-			else
-				room_restart()
+			instance_create(0, 0, obj_fadeout) 			
 		}
 	}
 	function meta_room_goto() 
