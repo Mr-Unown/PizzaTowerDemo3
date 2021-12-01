@@ -2954,7 +2954,7 @@
     {"id":{"name":"rousr_dissonance_handler_on_join_request","path":"scripts/rousr_dissonance_handler_on_join_request/rousr_dissonance_handler_on_join_request.yy",},"order":6,},
     {"id":{"name":"rousr_dissonance_set_match_secret","path":"scripts/rousr_dissonance_set_match_secret/rousr_dissonance_set_match_secret.yy",},"order":13,},
     {"id":{"name":"scr_baddietauntfakeout","path":"scripts/scr_baddietauntfakeout/scr_baddietauntfakeout.yy",},"order":73,},
-    {"id":{"name":"scr_queuemessage","path":"scripts/scr_queuemessage/scr_queuemessage.yy",},"order":74,},
+    {"id":{"name":"scr_tvfunctions","path":"scripts/scr_tvfunctions/scr_tvfunctions.yy",},"order":74,},
     {"id":{"name":"scr_secrettiles_add","path":"scripts/scr_secrettiles_add/scr_secrettiles_add.yy",},"order":75,},
     {"id":{"name":"spr_banditochicken_wake","path":"sprites/spr_banditochicken_wake/spr_banditochicken_wake.yy",},"order":6,},
     {"id":{"name":"scr_savefile_delete","path":"scripts/scr_savefile_delete/scr_savefile_delete.yy",},"order":76,},

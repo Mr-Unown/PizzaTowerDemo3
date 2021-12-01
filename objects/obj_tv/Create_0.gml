@@ -1,4 +1,10 @@
 global.newhudmessage = ds_queue_create();
+//Show Anim
+global.newhudtvanim = ds_queue_create();
+tvanim = 0;
+tvanimtimer = 0;
+tvanimtext = false;
+
 frozenalarm = -1;
 frozen = false;
 staticframe = 0;

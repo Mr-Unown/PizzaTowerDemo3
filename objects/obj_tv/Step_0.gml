@@ -331,7 +331,30 @@ else if newtvsprite = spr_tv_open && bootingup = true
 		image_speed = 0.35
 	}
 }
-else if global.newhud = true && oldcharacter == player.character && (sprite_index != spr_tv_open && newtvsprite != spr_tv_open)
+else if global.newhud = true && tvanim = false && ds_queue_size(global.newhudtvanim) > 1 && newtvsprite != spr_tv_open && newtvsprite != spr_tv_static
+{
+	newtvsprite = ds_queue_dequeue(global.newhudtvanim);
+	tvanimtimer = ds_queue_dequeue(global.newhudtvanim);
+	tvanim = true
+	drawstatic = true
+	drawstatictimer = 15
+	oldsprite = newtvsprite 
+}
+else if global.newhud = true && tvanim = true
+{
+	if tvanimtext = false
+	{
+		tvanimtimer -= 3.5	
+		if tvanimtimer <= 0
+		{
+			tvanim = false
+			drawstatic = true
+			drawstatictimer = 15
+			oldsprite = newtvsprite 		
+		}
+	}
+}
+else if global.newhud = true && oldcharacter == player.character && (sprite_index != spr_tv_open && newtvsprite != spr_tv_open) && tvanim = false
 {
 	var channel = 0;
 	image_speed = 0.35
@@ -410,7 +433,7 @@ else if global.newhud = true && oldcharacter == player.character && (sprite_inde
 		oldsprite = newtvsprite 
 	}
 }
-else if global.newhud = true && ((oldcharacter != player.character) || (oldplayer != player))
+else if global.newhud = true && ((oldcharacter != player.character) || (oldplayer != player)) && tvanim = false
 {
 	alarm[0] = -1
 	imageindexstore = 0
@@ -482,9 +505,20 @@ if oldcombo != global.combo && global.newhud = true
 	alarm[2] = 20
 }
 //Textbubble
-if ds_queue_size(global.newhudmessage) > 0 && showingnewtext = false && newtvsprite != spr_tv_open && newtvsprite != spr_tv_static
+if ds_queue_size(global.newhudmessage) > 1 && showingnewtext = false && newtvsprite != spr_tv_open && newtvsprite != spr_tv_static
 {
 	new_message = ds_queue_dequeue(global.newhudmessage);
+	var tvspr = ds_queue_dequeue(global.newhudmessage);
+	//Anim Spr
+	if tvspr != noone
+	{
+		newtvsprite = tvspr
+		tvanimtext = true;
+		tvanim = true
+		drawstatic = true
+		drawstatictimer = 15
+		oldsprite = newtvsprite 
+	}
 	shownewtext = true;
 	showingnewtext = true;
 	textbubblesprites = spr_tv_bubbleopen;
@@ -502,6 +536,15 @@ if textbubblesprites = spr_tv_bubbleclose && floor(textbubbleframes) >= sprite_g
 	showingnewtext = false;
 	textbubbleframes = 0;
 	text_x = 300;	
+	//Anim Spr
+	if tvanimtext = true
+	{
+		tvanimtext = false;
+		tvanim = false
+		drawstatic = true
+		drawstatictimer = 15
+		oldsprite = newtvsprite 
+	}	
 }
 //Static
 if global.freezeframe = false
