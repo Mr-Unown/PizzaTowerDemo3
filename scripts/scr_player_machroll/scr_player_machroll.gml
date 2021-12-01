@@ -27,15 +27,16 @@ function scr_player_machroll() {
 	{
 		if other.xscale == sign(image_xscale)
 		{
-		if movespeed < 24
-		movespeed += .1
-		}
-		else
 		if movespeed > 0
 		movespeed -= .1
+		}
+		else
+		if movespeed < 24
+		movespeed += .1
+		if movespeed <= 0
+		hsp = (xscale * movespeed)
 		if movespeed <= 0
 		state = states.crouch
-		hsp = (xscale * movespeed)
 	}
 	mach2 = 100
 	machslideAnim = 1
