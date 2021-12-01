@@ -338,6 +338,15 @@ else if global.newhud = true && oldcharacter == player.character && (sprite_inde
 	#region NEW TV
 	switch(_state)
 	{
+		//case states.scaredjump:
+		//newtvsprite = player.spr_playertv_scaredjump
+		//channel = 10;			
+		case states.golf:
+		newtvsprite = player.spr_playertv_golf
+		channel = 9;		
+		case states.firemouth:
+		newtvsprite = player.spr_playertv_firemouth
+		channel = 8;		
 		case states.rocket:
 		newtvsprite = player.spr_playertv_rocket
 		channel = 7;
@@ -455,8 +464,8 @@ switch(obj_player.state)
 	case states.boxxedpep:
 	if ds_list_find_index(global.saveroom, "boxxed") = -1  
 	{
-		scr_queue_message("Lol he got flat.");
-		scr_queue_message("What a dumbass.");
+		scr_queue_message("Think about this! You were normal once, but after being crushed by that crusher now you have shrunken to a small size.");
+		scr_queue_message("What a dingus! He should've watched more workplace safety videos. Luckily he can just jump into some cleansing water.");
 		ds_list_add(global.saveroom, "boxxed")
 	}	
 }

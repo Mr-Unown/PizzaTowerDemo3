@@ -16,6 +16,9 @@ function scr_characterspr(player_character = character) {
 		spr_playertv_normalidle2 = spr_tv_idleanim2;
 		spr_playertv_normalidle3 = spr_tv_idleanim3;
 		spr_playertv_rocket = spr_tv_rocket;
+		spr_playertv_golf = spr_tv_golf;
+		spr_playertv_firemouth = spr_tv_firemouth;
+		spr_playertv_scaredjump = spr_tv_scaredjump;
 		#endregion
 		spr_idle = spr_player_idle
 		spr_move = spr_player_move
@@ -261,6 +264,10 @@ function scr_characterspr(player_character = character) {
 		spr_playertv_normalidle1 = spr_tv_idleanim1N;
 		spr_playertv_normalidle2 = spr_tv_idleanim2N;
 		spr_playertv_normalidle3 = spr_tv_idleanim3N;
+		spr_playertv_rocket = spr_tv_rocketN;		
+		spr_playertv_golf = spr_tv_golfN;
+		spr_playertv_firemouth = spr_tv_firemouthN;
+		spr_playertv_scaredjump = spr_tv_scaredjumpN;		
 		#endregion		
 	    spr_idle = spr_playerN_idle
 	    spr_move = spr_playerN_move
@@ -476,6 +483,12 @@ function scr_characterspr(player_character = character) {
 		spr_supertaunt4 = spr_playerN_supertaunt4 	
 		//Murder
 		spr_murder = spr_playerN_bombkick
+		//Rocket
+		spr_rocket = spr_player_rocket
+		spr_rocketstart = spr_player_rocketstart
+		spr_rockethitwall = spr_player_rockethitwall
+		spr_rocketup = spr_player_rocketup
+		spr_rocketupstart = spr_player_rocketupstart		
 		//Palette
 		if pogo = false
 		{
@@ -506,6 +519,10 @@ function scr_characterspr(player_character = character) {
 		spr_playertv_normalidle1 = spr_tv_snickanim1;
 		spr_playertv_normalidle2 = spr_tv_snickanim1;
 		spr_playertv_normalidle3 = spr_tv_snickanim1;
+		spr_playertv_rocket = spr_tv_snicktemp;
+		spr_playertv_golf = spr_tv_snicktemp;
+		spr_playertv_firemouth = spr_tv_snicktemp;
+		spr_playertv_scaredjump = spr_tv_snicktemp;		
 		#endregion	
 		spr_idle = spr_snick_idle
 		spr_move = spr_snick_walk
@@ -693,6 +710,12 @@ function scr_characterspr(player_character = character) {
 		spr_supertaunt4 = spr_player_supertaunt4 
 		//Murder
 		spr_murder = spr_player_revolvershoot	
+		//Rocket
+		spr_rocket = spr_player_rocket
+		spr_rocketstart = spr_player_rocketstart
+		spr_rockethitwall = spr_player_rockethitwall
+		spr_rocketup = spr_player_rocketup
+		spr_rocketupstart = spr_player_rocketupstart		
 		paletteselect = 0
 		}	
 	#endregion
@@ -712,6 +735,10 @@ function scr_characterspr(player_character = character) {
 		spr_playertv_normalidle1 = spr_tv_vigianim1;
 		spr_playertv_normalidle2 = spr_tv_vigianim2;
 		spr_playertv_normalidle3 = spr_tv_vigianim1;
+		spr_playertv_rocket = spr_tv_vigitemp;
+		spr_playertv_golf = spr_tv_vigitemp;
+		spr_playertv_firemouth = spr_tv_vigitemp;
+		spr_playertv_scaredjump = spr_tv_vigitemp;		
 		#endregion		
 	    spr_idle = spr_playerV_idle
 	    spr_move = spr_playerV_move
@@ -928,6 +955,12 @@ function scr_characterspr(player_character = character) {
 		spr_supertaunt4 = spr_player_supertaunt4 	
 		//Murder
 		spr_murder = spr_playerV_revolvershoot	
+		//Rocket
+		spr_rocket = spr_player_rocket
+		spr_rocketstart = spr_player_rocketstart
+		spr_rockethitwall = spr_player_rockethitwall
+		spr_rocketup = spr_player_rocketup
+		spr_rocketupstart = spr_player_rocketupstart		
 	    paletteselect = 0
 		}	
 	#endregion
@@ -947,6 +980,10 @@ function scr_characterspr(player_character = character) {
 		spr_playertv_normalidle1 = spr_tv_peppermantemp;
 		spr_playertv_normalidle2 = spr_tv_peppermantemp;
 		spr_playertv_normalidle3 = spr_tv_peppermantemp;
+		spr_playertv_rocket = spr_tv_peppermantemp;
+		spr_playertv_golf = spr_tv_peppermantemp;
+		spr_playertv_firemouth = spr_tv_peppermantemp;
+		spr_playertv_scaredjump = spr_tv_peppermantemp;		
 		#endregion		
 	    spr_idle = spr_playerP_idle
 	    spr_move = spr_playerP_move
@@ -1162,6 +1199,12 @@ function scr_characterspr(player_character = character) {
 		spr_supertaunt4 = spr_player_supertaunt4 	
 		//Murder
 		spr_murder = spr_player_revolvershoot	
+		//Rocket
+		spr_rocket = spr_player_rocket
+		spr_rocketstart = spr_player_rocketstart
+		spr_rockethitwall = spr_player_rockethitwall
+		spr_rocketup = spr_player_rocketup
+		spr_rocketupstart = spr_player_rocketupstart		
 	    paletteselect = 0
 		}	
 	#endregion
@@ -1181,6 +1224,10 @@ function scr_characterspr(player_character = character) {
 		spr_playertv_normalidle1 = spr_tv_idleanim1;
 		spr_playertv_normalidle2 = spr_tv_idleanim2;
 		spr_playertv_normalidle3 = spr_tv_idleanim3;
+		spr_playertv_rocket = spr_tv_rocket;	
+		spr_playertv_golf = spr_tv_golf;
+		spr_playertv_firemouth = spr_tv_firemouth;
+		spr_playertv_scaredjump = spr_tv_scaredjump;		
 		#endregion		
 	    spr_idle = spr_pizzard_scared
 	    spr_move = spr_pizzard_walk
@@ -1396,7 +1443,13 @@ function scr_characterspr(player_character = character) {
 		spr_supertaunt3 = spr_player_supertaunt3 
 		spr_supertaunt4 = spr_player_supertaunt4 	
 		//Murder
-		spr_murder = spr_player_revolvershoot	
+		spr_murder = spr_player_revolvershoot
+		//Rocket
+		spr_rocket = spr_player_rocket
+		spr_rocketstart = spr_player_rocketstart
+		spr_rockethitwall = spr_player_rockethitwall
+		spr_rocketup = spr_player_rocketup
+		spr_rocketupstart = spr_player_rocketupstart		
 	    paletteselect = 0
 		}	
 	#endregion
@@ -1416,6 +1469,10 @@ function scr_characterspr(player_character = character) {
 		spr_playertv_normalidle1 = spr_tv_idleanim1PZ;
 		spr_playertv_normalidle2 = spr_tv_idleanim2PZ;
 		spr_playertv_normalidle3 = spr_tv_idleanim3PZ;
+		spr_playertv_rocket = spr_tv_idlePZ;	
+		spr_playertv_golf = spr_tv_idlePZ;
+		spr_playertv_firemouth = spr_tv_idlePZ;
+		spr_playertv_scaredjump = spr_tv_idlePZ;		
 		#endregion		
 		spr_idle = spr_playerPZ_idle
 		spr_move = spr_playerPZ_move
@@ -1631,6 +1688,12 @@ function scr_characterspr(player_character = character) {
 		spr_supertaunt4 = spr_playerN_supertaunt4 	
 		//Murder
 		spr_murder = spr_player_revolvershoot	
+		//Rocket
+		spr_rocket = spr_player_rocket
+		spr_rocketstart = spr_player_rocketstart
+		spr_rockethitwall = spr_player_rockethitwall
+		spr_rocketup = spr_player_rocketup
+		spr_rocketupstart = spr_player_rocketupstart		
 	    paletteselect = 1
 		}
 	#endregion
