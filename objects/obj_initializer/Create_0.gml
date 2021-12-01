@@ -23,5 +23,5 @@ for (var i = 0; i <= collisionheight; ++i)
 //global.wallrunstyle = 0;
 //global.collectstyle = 0;
 //global.npcs = true;
-scr_init();
+//scr_init();
 

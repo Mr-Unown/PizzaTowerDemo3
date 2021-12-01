@@ -1,4 +1,4 @@
-function scr_init() {
+//function scr_init() {
 /// @description Initialize Game Stuff
 global.shellactivate = false;
 global.showcollisions = false;
@@ -38,4 +38,4 @@ while global.flushtextures = true
 //Uncomment to simulate YYC in VM
 //What this does is turn off loads of checks GMS2 does
 gml_release_mode(true);
-}
+//}

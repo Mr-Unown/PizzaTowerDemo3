@@ -383,12 +383,22 @@ if DEBUG
 	}
 	function meta_room_goto() 
 	{
+		//Roomnames
+		if !variable_global_exists("roomlist")
+		{
+			var i = room_last;
+			while (i > room_first) 
+			{
+				global.roomlist[i] = room_get_name(i)
+				i--
+			}
+		}		
 		return {
 			description: "allows you to go to another room",
 			arguments: ["<room>","<door>"],
 			suggestions: [
-				[],
-				["A","B","C","D","E","F","G","start","N/A"]
+				global.roomlist,
+				["N/A","A","B","C","D","E","F","G","start"]
 			],
 			argumentDescriptions: [
 				"sets targetRoom",
