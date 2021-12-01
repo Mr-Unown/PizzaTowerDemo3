@@ -13,7 +13,8 @@ function scr_enemystates() {
 		enemygrabbed = 109,
 		enemyshake = 200,
 		enemyfrozen = 201,
-		enemyheat = 202
+		enemyheat = 202,
+		enemychase = 203
 	}
 	//Also added baddiestates enum
 #endregion
@@ -56,6 +57,9 @@ function scr_enemystates() {
 	    case enemystates.enemyheat:
 	        scr_enemy_heat()
 	        break				
+		case enemystates.enemychase:
+			scr_enemy_chase()
+			break
 	}
 
 

@@ -338,6 +338,10 @@ else if global.newhud = true && oldcharacter == player.character && (sprite_inde
 	#region NEW TV
 	switch(_state)
 	{
+		case states.rocket:
+		newtvsprite = player.spr_playertv_rocket
+		channel = 7;
+		break;
 		case states.boxxedpep:
 		newtvsprite = player.spr_playertv_boxxed;
 		channel = 6;
