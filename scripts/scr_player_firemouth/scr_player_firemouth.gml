@@ -34,8 +34,14 @@ function scr_player_firemouth() {
 		 hsp = 0;
 		 vsp = 10;
 	}
-	if sprite_index == spr_firemouthintro && animation_end()
-	    sprite_index = spr_player_firemouthidle	
+	if sprite_index == spr_firemouthintro 
+	{
+		if animation_end()
+			sprite_index = spr_player_firemouthidle	
+		image_speed = 0.35			
+		global.pausecombotime = true
+		obj_tv.alarm[1] = 75;
+	}
 	if (sprite_index != spr_firemouthintro && sprite_index != spr_firemouthend)
 	{
 		if ((!key_jump2) && jumpstop == 0 && vsp < 0.5 && stompAnim == 0)

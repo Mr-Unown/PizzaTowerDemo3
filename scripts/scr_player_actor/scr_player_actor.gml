@@ -8,10 +8,11 @@ function scr_player_actor()
 	{
 		case "secret_in":
 		scale = approach(scale,0,0.025)
-		image_index = image_index;
+		image_speed = 0;
 		break;
 		case "secret_out":
 		scale = approach(scale,1,0.025)
+		image_speed = 0;
 		if scale >= 1
 		{
 			scale = 1;

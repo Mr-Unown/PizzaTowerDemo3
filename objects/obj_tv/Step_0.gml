@@ -331,13 +331,54 @@ else if newtvsprite = spr_tv_open && bootingup = true
 		image_speed = 0.35
 	}
 }
-else if global.newhud = true && oldcharacter == player.character && (sprite_index != spr_tv_open && newtvsprite != spr_tv_open)
+else if global.newhud = true && tvanim = false && ds_queue_size(global.newhudtvanim) > 1 && newtvsprite != spr_tv_open && newtvsprite != spr_tv_static
+{
+	tvanimsprite = ds_queue_dequeue(global.newhudtvanim);
+	tvanimtimer = ds_queue_dequeue(global.newhudtvanim);
+	tvanim = true
+	drawstatic = true
+	drawstatictimer = 15
+	oldsprite = newtvsprite 
+	newtvsprite = tvanimsprite
+}
+else if global.newhud = true && tvanim = true && newtvsprite != spr_tv_open && newtvsprite != spr_tv_static
+{
+	newtvsprite = tvanimsprite
+	image_speed = 0.35
+	if tvanimtext = false
+	{
+		tvanimtimer -= 1	
+		if tvanimtimer <= 0
+		{
+			tvanim = false
+			drawstatic = true
+			drawstatictimer = 15
+			oldsprite = noone		
+		}
+	}
+}
+else if global.newhud = true && oldcharacter == player.character && (sprite_index != spr_tv_open && newtvsprite != spr_tv_open) && tvanim = false
 {
 	var channel = 0;
 	image_speed = 0.35
 	#region NEW TV
 	switch(_state)
 	{
+		//case states.scaredjump:
+		//newtvsprite = player.spr_playertv_scaredjump
+		//channel = 10;			
+		case states.golf:
+		newtvsprite = player.spr_playertv_golf
+		channel = 9;	
+		break;
+		case states.firemouth:
+		newtvsprite = player.spr_playertv_firemouth
+		channel = 8;	
+		break;
+		case states.rocket:
+		newtvsprite = player.spr_playertv_rocket
+		channel = 7;
+		break;
 		case states.boxxedpep:
 		newtvsprite = player.spr_playertv_boxxed;
 		channel = 6;
@@ -397,7 +438,7 @@ else if global.newhud = true && oldcharacter == player.character && (sprite_inde
 		oldsprite = newtvsprite 
 	}
 }
-else if global.newhud = true && ((oldcharacter != player.character) || (oldplayer != player))
+else if global.newhud = true && ((oldcharacter != player.character) || (oldplayer != player)) && tvanim = false
 {
 	alarm[0] = -1
 	imageindexstore = 0
@@ -451,8 +492,8 @@ switch(obj_player.state)
 	case states.boxxedpep:
 	if ds_list_find_index(global.saveroom, "boxxed") = -1  
 	{
-		scr_queue_message("Lol he got flat.");
-		scr_queue_message("What a dumbass.");
+		scr_queue_message("Think about this! You were normal once, but after being crushed by that crusher now you have shrunken to a small size.");
+		scr_queue_message("What a dingus! He should've watched more workplace safety videos. Luckily he can just jump into some cleansing water.");
 		ds_list_add(global.saveroom, "boxxed")
 	}	
 }
@@ -469,9 +510,20 @@ if oldcombo != global.combo && global.newhud = true
 	alarm[2] = 20
 }
 //Textbubble
-if ds_queue_size(global.newhudmessage) > 0 && showingnewtext = false && newtvsprite != spr_tv_open && newtvsprite != spr_tv_static
+if ds_queue_size(global.newhudmessage) > 1 && showingnewtext = false && newtvsprite != spr_tv_open && newtvsprite != spr_tv_static
 {
 	new_message = ds_queue_dequeue(global.newhudmessage);
+	var tvspr = ds_queue_dequeue(global.newhudmessage);
+	//Anim Spr
+	if tvspr != noone
+	{
+		newtvsprite = tvspr
+		tvanimtext = true;
+		tvanim = true
+		drawstatic = true
+		drawstatictimer = 15
+		oldsprite = newtvsprite 
+	}
 	shownewtext = true;
 	showingnewtext = true;
 	textbubblesprites = spr_tv_bubbleopen;
@@ -489,6 +541,15 @@ if textbubblesprites = spr_tv_bubbleclose && floor(textbubbleframes) >= sprite_g
 	showingnewtext = false;
 	textbubbleframes = 0;
 	text_x = 300;	
+	//Anim Spr
+	if tvanimtext = true
+	{
+		tvanimtext = false;
+		tvanim = false
+		drawstatic = true
+		drawstatictimer = 15
+		oldsprite = newtvsprite 
+	}	
 }
 //Static
 if global.freezeframe = false

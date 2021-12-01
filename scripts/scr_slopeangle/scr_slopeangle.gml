@@ -7,7 +7,7 @@ function scr_slopeangle()
 	var array = 0;
 	var checkside = -1
 	var height = sprite_get_bbox_bottom(mask_index) - sprite_get_bbox_top(mask_index)
-	var top = -height;
+	var top = -3;
 	var i = 0;	
 	array[0] = y
 	array[1] = y

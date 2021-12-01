@@ -26,6 +26,11 @@ if (fadealpha > 1)
 			else
 				room_goto(obj_player1.targetRoom)
 		}
+		else if once = false
+		{
+			once = true
+			room_restart()
+		}
         if (global.coop == 1)
         {
             if (room != obj_player2.targetRoom)
@@ -34,6 +39,11 @@ if (fadealpha > 1)
 					room_goto_live(obj_player2.targetRoom)	
 				else
 					room_goto(obj_player2.targetRoom)
+			}
+			else if once = false
+			{
+				once = true
+				room_restart()
 			}
         }
     }

@@ -12,6 +12,8 @@ with (other.id)
                 image_index = 0
                 sprite_index = spr_firemouthintro
                 state = states.firemouth
+				global.pausecombotime = true
+				obj_tv.alarm[1] = 75;
                 instance_destroy(other.id)
             }
         }
