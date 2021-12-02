@@ -134,14 +134,25 @@ else
 			if global.combobuffer > 0
 			{
 				//Combo text
-				draw_sprite_ext(spr_tv_combo, image_index, 832, 100 + newhudyoffset, 1, 1, 0, c_white, 1)		
+				if global.combostyle = 0
+				draw_sprite_ext(spr_tv_combo, image_index, 832, 100 + newhudyoffset, 1, 1, 0, c_white, 1)	
+				else if global.combostyle = 1
+				draw_sprite_ext(spr_comboplay, image_index, 512, -32 + newhudyoffset, 1, 1, 0, c_white, 1)
 				//Combo counter
+				if global.combostyle = 0
+				{
 				draw_set_font(global.combofont)
 				draw_set_halign(fa_center)
 				draw_set_color(c_white)
-
+				}
+				else if global.combostyle = 1
+				{
+				draw_set_font(global.combofont2)
+				draw_set_halign(fa_center)
+				draw_set_color(c_white)
+				}
 				var _combo = string(global.combo)
-				if (global.combo < 10)
+				if (global.combo < 10 && global.combostyle = 0)
 					_combo = "0" + string(global.combo)
 				var _string_length = string_length(_combo);
 				for (var i = 0; i < _string_length; i++) 
@@ -153,7 +164,10 @@ else
 					var _xx = (-(string_width(_combo)/ 2) + ((string_width(_combo)/_string_length) * i)) + irandom_range(-2,2)
 					var _yy = (i * -4) + irandom_range(-2,2)
 					}
+					if global.combostyle = 0
 					draw_text(835 + _xx, 82 + _yy + newhudyoffset, string_char_at(_combo,i + 1));
+					else if global.combostyle = 1
+					draw_text(527 + _xx, 44 + _yy + newhudyoffset, string_char_at(_combo,i + 1));
 				}
 			}
 			//Combobar

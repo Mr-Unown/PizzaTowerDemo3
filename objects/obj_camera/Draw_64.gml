@@ -280,6 +280,14 @@ if (player.state != 55)
 		shader_reset();
 		//Pizzascore thing
 		draw_sprite_ext(spr_pizzascore, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
+		//Rank bubble
+		if global.collect < global.crank
+		var bubbleWidth = sprite_get_width(spr_rankbubble_dfilled);
+		var bubbleHeight = sprite_get_height(spr_rankbubble_dfilled);
+		var rankpercent = (global.collect - global.crank) / 10;
+					//draw_sprite_part(sprHealthBar, 0, 0, 0, spriteWidth*hpPercent, spriteHeight, x, y+5);
+					draw_sprite_ext(spr_rankbubble_d, -1, 215, -11, 1, 1, 0, c_white, 1)
+					draw_sprite_part_ext(spr_rankbubble_dfilled,-1,0,0,bubbleWidth,bubbleHeight*rankpercent,215,-11,1,-1,c_white,1)
 		
 		//Rank Topppings
 		if global.timeattack = false
@@ -553,7 +561,6 @@ if (player.state != 55)
 		draw_text(823, 512, string_hash_to_newline(((string(global.bonushour) + string(tinyish) + string(global.bonusminutes) + string(tiny)) + string(global.bonusseconds) + string(tinier) + string(global.bonusmiliseconds))))
 	}
 	#endregion
-
 	#endregion
 }
 draw_set_blend_mode(0)
