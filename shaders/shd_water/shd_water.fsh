@@ -17,7 +17,7 @@ void main() {
     // Wobble back and forth
 	//vec2 uv = v_vTexcoord;
     //uv.x += sin(WAVELENGTH * uv.y + 3.0 * time ) * AMPLITUDE;
-	float Xwave = sin(time*Xspeed + v_vTexcoord.y*Xfreq) * (Xsize*texel.x) * v_vTexcoord.y
+	float Xwave = sin(time*Xspeed + v_vTexcoord.y*Xfreq) * (Xsize*texel.x) * (v_vTexcoord.y);
    
     gl_FragColor = v_vColour * texture2D( gm_BaseTexture, v_vTexcoord + vec2(Xwave,0.0));
 }
