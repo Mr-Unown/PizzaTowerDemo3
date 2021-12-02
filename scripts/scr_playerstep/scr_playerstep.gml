@@ -109,7 +109,8 @@
 		murder = 124,
 		trick = 125,
 		newbomb = 126,
-		startgate = 127
+		startgate = 127,
+		rocket = 128
 
 	} 
 	//I made some changes to it so that we can know at a glance what number it gets converted to.
@@ -164,6 +165,9 @@ if actor = false
 		case states.breakdance:
 	        scr_player_breakdance()
 	        break
+		case states.rocket:
+			scr_player_rocket()
+			break
 	    case 110:
 	        scr_player_throwdynamite()
 	        break
@@ -552,7 +556,7 @@ else if actor = true
 #endregion
 
 #region Slope Angles
-	if global.freezeframe = false && actor = false && sprite_index != spr_knightpepdownslope && grounded && vsp >= 0 && !(state = states.climbwall || state = states.jetpack || state = states.tumble || state = states.wallcling || state = states.pogo || state = states.tacklecharge || state = states.grab || state  = states.freefallland || state = states.shotgun || state = states.finishingblow)
+	if global.freezeframe = false && actor = false && sprite_index != spr_knightpepdownslope && grounded && vsp >= 0 && !(state = states.climbwall || state = states.jetpack || state = states.tumble || state = states.wallcling || state = states.machslide || state = states.pogo || state = states.tacklecharge || state = states.grab || state  = states.freefallland || state = states.shotgun || state = states.finishingblow)
 	{
 			//var f = true
 			//some stuff stolen from orbinaut framework		 :troll:
@@ -562,11 +566,11 @@ else if actor = true
 				var targetangle  = scr_slopeangle();
 				var RotationStep = (abs(hsp) / 16 + abs(hsp) / 32 - 2) * -1
 			}
-			else
+			else 
 			{
 				var targetangle  = 360;		
 				var RotationStep = (abs(hsp) / 16 - 2) * -1
-			}			
+			}		
 			draw_angle = darctan2(dsin(targetangle) + dsin(draw_angle) * RotationStep, dcos(targetangle) + dcos(draw_angle) * RotationStep);	
 	}
 	else if global.freezeframe = false

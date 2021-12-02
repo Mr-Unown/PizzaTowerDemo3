@@ -1,6 +1,6 @@
 global.toppinlist = ds_list_create();
 global.follower = ds_list_create();
-
+//scr_init()
 scr_initinput()
 scr_playercreate()
 
