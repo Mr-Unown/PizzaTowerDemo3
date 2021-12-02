@@ -93,7 +93,44 @@ function scr_player_crouchslide() {
 	    machslideAnim = 1
 	    machhitAnim = 0
 	    instance_create((x + (10 * xscale)), (y + 10), obj_bumpeffect)
-	}/*
+	}
+		//Slopes
+	if scr_slope() && vsp >= 0
+	{
+		if place_meeting(x, y + 1,obj_slope)
+		{
+			with (instance_place(x, (y + 1), obj_slope))
+			{
+				var slope_acceleration = abs(image_yscale) / abs(image_xscale)
+				if other.movespeed > 0 && other.xscale == sign(image_xscale)
+				{
+					other.movespeed -= (0.25 * slope_acceleration)
+				}
+				else if other.movespeed < 20 && other.xscale == -sign(image_xscale)
+					other.movespeed += (0.3 * slope_acceleration)
+			}
+		}
+		if tile_meeting_precise(x,y + 1,"Tiles_Solid") == tiletype.leftslope1 || tile_meeting_precise(x,y + 1,"Tiles_Solid") == tiletype.leftslope2 || tile_meeting_precise(x,y + 1,"Tiles_Solid") == tiletype.leftsteepslope || tile_meeting_precise(x,y + 1,"Tiles_Solid") == tiletype.rightsteepslope || tile_meeting_precise(x,y + 1,"Tiles_Solid") == tiletype.rightslope1 || tile_meeting_precise(x,y + 1,"Tiles_Solid") == tiletype.rightslope2
+		{
+			var _slope = scr_tileslope(x, y + 1)
+			if _slope[0] != noone
+			{
+				var _xscale = _slope[1]
+				var _yscale = _slope[2]
+				var slope_acceleration = abs(_yscale) / abs(_xscale)
+				if other.movespeed > 0 && other.xscale == sign(_xscale)
+				{
+					other.movespeed -= (0.25 * slope_acceleration)
+				}
+				else if other.movespeed < 22 && other.xscale == -sign(_xscale)
+					other.movespeed += (0.25 * slope_acceleration)
+				if other.movespeed <= 0
+				other.xscale = -sign(_xscale)
+			}
+			
+		}
+	}
+	/*
 	if (scr_solid((x - 1), y) && xscale == -1 && (!place_meeting((x + sign(hsp)), y, obj_slope)))
 	{
 	    movespeed = 0
