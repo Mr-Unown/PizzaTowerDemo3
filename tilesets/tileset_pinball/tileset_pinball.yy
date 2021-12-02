@@ -1772,7 +1772,7 @@
     "path": "folders/Tile Sets/Pinball.yy",
   },
   "resourceVersion": "1.0",
-  "name": "TileSet71",
+  "name": "tileset_pinball",
   "tags": [],
   "resourceType": "GMTileSet",
 }
