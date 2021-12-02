@@ -42,7 +42,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
 				other.baddieID.initialhsp = (vdirection * ((random_range(1,7)) + abs(floor(hsp * 1.2))))				
                 scr_soundeffect(sfx_punch)
 				//New Hitstun
-				if other.baddieID.hp <= 1
+				if other.baddieID.hp <= 1 
 					other.baddieID.dying = true
 				other.baddieID.scarebuffer = 0
 				scr_sleep();

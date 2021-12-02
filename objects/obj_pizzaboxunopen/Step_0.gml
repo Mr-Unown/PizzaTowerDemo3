@@ -10,6 +10,8 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
     }
     if (content == obj_pizzakinshroom)
     {
+		var player = focused_player()
+		scr_queue_tvanim(player.spr_playertv_victory)		
         with (instance_create(x, y, obj_smallnumber))
             number = "1000"
         with instance_place(x, y, obj_player)
@@ -36,6 +38,8 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
     }
     if (content == obj_pizzakincheese)
     {
+		var player = focused_player()
+		scr_queue_tvanim(player.spr_playertv_victory)		
         with (instance_create(x, y, obj_smallnumber))
             number = "1000"
         with instance_place(x, y, obj_player)
@@ -63,6 +67,8 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
     }
     if (content == obj_pizzakintomato)
     {
+		var player = focused_player()
+		scr_queue_tvanim(player.spr_playertv_victory)		
         with (instance_create(x, y, obj_smallnumber))
             number = "1000"
         with instance_place(x, y, obj_player)
@@ -89,6 +95,8 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
     }
     if (content == obj_pizzakinsausage)
     {
+		var player = focused_player()
+		scr_queue_tvanim(player.spr_playertv_victory)		
         with (instance_create(x, y, obj_smallnumber))
             number = "1000"
         with instance_place(x, y, obj_player)
@@ -115,6 +123,8 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
     }
     if (content == obj_pizzakinpineapple)
     {
+		var player = focused_player()
+		scr_queue_tvanim(player.spr_playertv_victory)		
         with (instance_create(x, y, obj_smallnumber))
             number = "1000"
         with instance_place(x, y, obj_player)
@@ -145,6 +155,8 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
     }
     if (content == obj_noisebomb)
     {
+		var player = focused_player()
+		scr_queue_tvanim(player.spr_playertv_victory,150)		
         with (instance_create(x, (y - 25), content)) {
 
 			//Follower DS_list

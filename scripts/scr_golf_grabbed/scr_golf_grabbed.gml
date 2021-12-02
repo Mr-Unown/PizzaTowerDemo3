@@ -27,12 +27,12 @@ function scr_golf_grabbed() {
 	    {
 	        other.x = x
 	        other.y = y
-	        if (sprite_index != spr_haulingstart && sprite_index != spr_punchprep)
+	        if (sprite_index != spr_haulingstart && sprite_index != spr_golfidle)
 	        {
 	            other.ydraw = (y - 40)
 	            other.xdraw = x
 	        }
-	        else if (sprite_index == spr_punchprep)
+	        else if (sprite_index == spr_golfidle)
 	        {
 	            other.ydraw = (lengthdir_y(20, other.angle) + other.y)
 	            other.xdraw = (lengthdir_x(20, other.angle) + other.x)
@@ -89,7 +89,7 @@ function scr_golf_grabbed() {
 	    if (other.hit == 0 && key_slap2 && other.poweringup == 0)
 	    {
 	        other.poweringup = 1
-	        sprite_index = spr_punchprep
+	        sprite_index = spr_golfidle
 	    }
 	    if (other.hit == 1 && key_slap2 && other.poweringup == 1)
 	    {
@@ -109,7 +109,7 @@ function scr_golf_grabbed() {
 	        other.hit = 0
 	        other.angle = 0
 	        other.poweringup = 0
-	        other.sprite_index = spr_pizzaball_flying
+	        other.sprite_index = spr_pizzaball_wallbounce
 	        sprite_index = spr_punch
 	        if (!audio_is_playing(sfx_punch))
 	            scr_soundeffect(sfx_punch)

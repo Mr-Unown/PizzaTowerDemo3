@@ -16,6 +16,9 @@ function scr_characterspr(player_character = character) {
 		spr_playertv_normalidle2 = spr_tv_idleanim2;
 		spr_playertv_normalidle3 = spr_tv_idleanim3;
 		spr_playertv_rocket = spr_tv_rocket;
+		spr_playertv_golf = spr_tv_golf;
+		spr_playertv_firemouth = spr_tv_firemouth;
+		spr_playertv_scaredjump = spr_tv_scaredjump;
 		#endregion
 		spr_idle = spr_player_idle
 		spr_move = spr_player_move
@@ -188,6 +191,7 @@ function scr_characterspr(player_character = character) {
 	    spr_fightball1 = spr_player_fightball1
 		spr_fightball2 = spr_player_fightball2
 	    spr_squished = spr_player_squished
+		spr_golfidle = spr_player_golfidle
 	    spr_palette = spr_peppalette
 	    spr_tomatojump = spr_player_Sjump
 		//Boxxed Transfo
@@ -260,6 +264,10 @@ function scr_characterspr(player_character = character) {
 		spr_playertv_normalidle1 = spr_tv_idleanim1N;
 		spr_playertv_normalidle2 = spr_tv_idleanim2N;
 		spr_playertv_normalidle3 = spr_tv_idleanim3N;
+		spr_playertv_rocket = spr_tv_rocketN;		
+		spr_playertv_golf = spr_tv_golfN;
+		spr_playertv_firemouth = spr_tv_firemouthN;
+		spr_playertv_scaredjump = spr_tv_scaredjumpN;		
 		#endregion		
 	    spr_idle = spr_playerN_idle
 	    spr_move = spr_playerN_move
@@ -431,7 +439,7 @@ function scr_characterspr(player_character = character) {
 	    spr_fightball1 = spr_playerN_fightball1
 		spr_fightball2 = spr_playerN_fightball2
 	    spr_squished = spr_playerN_squished
-
+		spr_golfidle = spr_playerN_grab
 	    spr_tomatojump = spr_playerN_glide
 		//Boxxed Transfo
 	    spr_boxxedair = spr_boxxednoise_air;
@@ -475,6 +483,12 @@ function scr_characterspr(player_character = character) {
 		spr_supertaunt4 = spr_playerN_supertaunt4 	
 		//Murder
 		spr_murder = spr_playerN_bombkick
+		//Rocket
+		spr_rocket = spr_player_rocket
+		spr_rocketstart = spr_player_rocketstart
+		spr_rockethitwall = spr_player_rockethitwall
+		spr_rocketup = spr_player_rocketup
+		spr_rocketupstart = spr_player_rocketupstart		
 		//Palette
 		if pogo = false
 		{
@@ -505,6 +519,10 @@ function scr_characterspr(player_character = character) {
 		spr_playertv_normalidle1 = spr_tv_snickanim1;
 		spr_playertv_normalidle2 = spr_tv_snickanim1;
 		spr_playertv_normalidle3 = spr_tv_snickanim1;
+		spr_playertv_rocket = spr_tv_snicktemp;
+		spr_playertv_golf = spr_tv_snicktemp;
+		spr_playertv_firemouth = spr_tv_snicktemp;
+		spr_playertv_scaredjump = spr_tv_snicktemp;		
 		#endregion	
 		spr_idle = spr_snick_idle
 		spr_move = spr_snick_walk
@@ -692,6 +710,12 @@ function scr_characterspr(player_character = character) {
 		spr_supertaunt4 = spr_player_supertaunt4 
 		//Murder
 		spr_murder = spr_player_revolvershoot	
+		//Rocket
+		spr_rocket = spr_player_rocket
+		spr_rocketstart = spr_player_rocketstart
+		spr_rockethitwall = spr_player_rockethitwall
+		spr_rocketup = spr_player_rocketup
+		spr_rocketupstart = spr_player_rocketupstart		
 		paletteselect = 0
 		}	
 	#endregion
@@ -711,6 +735,10 @@ function scr_characterspr(player_character = character) {
 		spr_playertv_normalidle1 = spr_tv_vigianim1;
 		spr_playertv_normalidle2 = spr_tv_vigianim2;
 		spr_playertv_normalidle3 = spr_tv_vigianim1;
+		spr_playertv_rocket = spr_tv_vigitemp;
+		spr_playertv_golf = spr_tv_vigitemp;
+		spr_playertv_firemouth = spr_tv_vigitemp;
+		spr_playertv_scaredjump = spr_tv_vigitemp;		
 		#endregion		
 	    spr_idle = spr_playerV_idle
 	    spr_move = spr_playerV_move
@@ -880,6 +908,7 @@ function scr_characterspr(player_character = character) {
 	    spr_fightball1 = spr_player_fightball1
 		spr_fightball2 = spr_player_fightball2
 	    spr_squished = spr_playerV_squished
+		spr_golfidle = spr_playerN_grab
 	    spr_palette = spr_vigipalette
 	    spr_tomatojump = spr_playerV_superjump
 		
@@ -926,6 +955,12 @@ function scr_characterspr(player_character = character) {
 		spr_supertaunt4 = spr_player_supertaunt4 	
 		//Murder
 		spr_murder = spr_playerV_revolvershoot	
+		//Rocket
+		spr_rocket = spr_player_rocket
+		spr_rocketstart = spr_player_rocketstart
+		spr_rockethitwall = spr_player_rockethitwall
+		spr_rocketup = spr_player_rocketup
+		spr_rocketupstart = spr_player_rocketupstart		
 	    paletteselect = 0
 		}	
 	#endregion
@@ -945,6 +980,10 @@ function scr_characterspr(player_character = character) {
 		spr_playertv_normalidle1 = spr_tv_peppermantemp;
 		spr_playertv_normalidle2 = spr_tv_peppermantemp;
 		spr_playertv_normalidle3 = spr_tv_peppermantemp;
+		spr_playertv_rocket = spr_tv_peppermantemp;
+		spr_playertv_golf = spr_tv_peppermantemp;
+		spr_playertv_firemouth = spr_tv_peppermantemp;
+		spr_playertv_scaredjump = spr_tv_peppermantemp;		
 		#endregion		
 	    spr_idle = spr_playerP_idle
 	    spr_move = spr_playerP_move
@@ -1115,6 +1154,7 @@ function scr_characterspr(player_character = character) {
 	    spr_fightball1 = spr_player_fightball1
 		spr_fightball2 = spr_player_fightball2
 	    spr_squished = spr_playerV_squished
+		spr_golfidle = spr_playerN_grab
 	    spr_palette = spr_pepperpalette
 	    spr_tomatojump = spr_playerV_superjump
 		//Boxxed Transfo
@@ -1159,6 +1199,12 @@ function scr_characterspr(player_character = character) {
 		spr_supertaunt4 = spr_player_supertaunt4 	
 		//Murder
 		spr_murder = spr_player_revolvershoot	
+		//Rocket
+		spr_rocket = spr_player_rocket
+		spr_rocketstart = spr_player_rocketstart
+		spr_rockethitwall = spr_player_rockethitwall
+		spr_rocketup = spr_player_rocketup
+		spr_rocketupstart = spr_player_rocketupstart		
 	    paletteselect = 0
 		}	
 	#endregion
@@ -1178,6 +1224,10 @@ function scr_characterspr(player_character = character) {
 		spr_playertv_normalidle1 = spr_tv_idleanim1;
 		spr_playertv_normalidle2 = spr_tv_idleanim2;
 		spr_playertv_normalidle3 = spr_tv_idleanim3;
+		spr_playertv_rocket = spr_tv_rocket;	
+		spr_playertv_golf = spr_tv_golf;
+		spr_playertv_firemouth = spr_tv_firemouth;
+		spr_playertv_scaredjump = spr_tv_scaredjump;		
 		#endregion		
 	    spr_idle = spr_pizzard_scared
 	    spr_move = spr_pizzard_walk
@@ -1349,6 +1399,7 @@ function scr_characterspr(player_character = character) {
 	    spr_fightball1 = spr_playerN_fightball1
 		spr_fightball2 = spr_playerN_fightball2
 	    spr_squished = spr_playerN_squished
+		spr_golfidle = spr_playerN_grab
 		spr_palette = spr_orangepalette;
 	    spr_tomatojump = spr_playerN_glide
 		//Boxxed Transfo
@@ -1392,7 +1443,13 @@ function scr_characterspr(player_character = character) {
 		spr_supertaunt3 = spr_player_supertaunt3 
 		spr_supertaunt4 = spr_player_supertaunt4 	
 		//Murder
-		spr_murder = spr_player_revolvershoot	
+		spr_murder = spr_player_revolvershoot
+		//Rocket
+		spr_rocket = spr_player_rocket
+		spr_rocketstart = spr_player_rocketstart
+		spr_rockethitwall = spr_player_rockethitwall
+		spr_rocketup = spr_player_rocketup
+		spr_rocketupstart = spr_player_rocketupstart		
 	    paletteselect = 0
 		}	
 	#endregion
@@ -1412,6 +1469,10 @@ function scr_characterspr(player_character = character) {
 		spr_playertv_normalidle1 = spr_tv_idleanim1PZ;
 		spr_playertv_normalidle2 = spr_tv_idleanim2PZ;
 		spr_playertv_normalidle3 = spr_tv_idleanim3PZ;
+		spr_playertv_rocket = spr_tv_idlePZ;	
+		spr_playertv_golf = spr_tv_idlePZ;
+		spr_playertv_firemouth = spr_tv_idlePZ;
+		spr_playertv_scaredjump = spr_tv_idlePZ;		
 		#endregion		
 		spr_idle = spr_playerPZ_idle
 		spr_move = spr_playerPZ_move
@@ -1581,6 +1642,7 @@ function scr_characterspr(player_character = character) {
 	    spr_fightball1 = spr_player_fightball1 //Missing
 		spr_fightball2 = spr_player_fightball2 //Missing
 	    spr_squished = spr_player_squished //Missing
+		spr_golfidle = spr_playerN_grab
 	    spr_palette = spr_pizzellepalette
 	    spr_tomatojump = spr_playerPZ_jump //Missing
 		//Boxxed Transfo
@@ -1626,6 +1688,12 @@ function scr_characterspr(player_character = character) {
 		spr_supertaunt4 = spr_playerN_supertaunt4 	
 		//Murder
 		spr_murder = spr_player_revolvershoot	
+		//Rocket
+		spr_rocket = spr_player_rocket
+		spr_rocketstart = spr_player_rocketstart
+		spr_rockethitwall = spr_player_rockethitwall
+		spr_rocketup = spr_player_rocketup
+		spr_rocketupstart = spr_player_rocketupstart		
 	    paletteselect = 1
 		}
 	#endregion

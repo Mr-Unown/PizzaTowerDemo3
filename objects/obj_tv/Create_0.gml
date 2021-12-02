@@ -1,4 +1,11 @@
 global.newhudmessage = ds_queue_create();
+//Show Anim
+global.newhudtvanim = ds_queue_create();
+tvanim = 0;
+tvanimtimer = 0;
+tvanimtext = false;
+tvanimsprite = noone
+
 frozenalarm = -1;
 frozen = false;
 staticframe = 0;
@@ -65,7 +72,6 @@ drawx2 = 750;
 drawy2 = -14;
 combolast = 0;
 global.combobuffer = 0;
-display_set_gui_size(960, 540)
 newtvspritestore = 0
 drawstatic = false
 drawstaticalpha = 0

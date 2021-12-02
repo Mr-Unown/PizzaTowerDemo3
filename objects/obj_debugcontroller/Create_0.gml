@@ -22,6 +22,7 @@ commands[arrayi++] = "voicefrequency [value]"
 commands[arrayi++] = "escape [minutes] [seconds]"
 commands[arrayi++] = "togglecollision (true/false)"
 commands[arrayi++] = "debugmode (true/false)"
+//
 commands[arrayi++] = "collectstyle (old/new)"
 commands[arrayi++] = "newtitlescreen (true/false)"
 commands[arrayi++] = "newsjumpcancel (true/false)"
@@ -33,8 +34,7 @@ commands[arrayi++] = "divestyle (old/new)"
 commands[arrayi++] = "destroyablecollect (pizza/topping)"
 commands[arrayi++] = "ratmode (on/off)"
 commands[arrayi++] = "attackstyle (1/2)"
-commands[arrayi++] = "vibration (on/off)"
-
+//
 if DEBUG 
 {
 	commands[arrayi++] = "changecharacter [player] [character] (true/false)"

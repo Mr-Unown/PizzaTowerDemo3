@@ -33,7 +33,7 @@
   ],
   "properties": [],
   "overriddenProperties": [
-    {"propertyId":{"name":"panic_escape","path":"objects/group_all/group_all.yy",},"objectId":{"name":"group_all","path":"objects/group_all/group_all.yy",},"value":"True","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"panic_escape","path":"objects/group_all/group_all.yy",},"objectId":{"name":"group_all","path":"objects/group_all/group_all.yy",},"value":"False","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "Misc Blocks",
