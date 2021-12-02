@@ -459,6 +459,13 @@ switch(obj_player.state)
 		scr_queue_message("What a dumbass.");
 		ds_list_add(global.saveroom, "boxxed")
 	}	
+	case states.rocket:
+	if ds_list_find_index(global.saveroom, "rocket") = -1  
+	{
+		scr_queue_message("this is placeholder");
+		scr_queue_message("rocket up yer ass xdxdxd");
+		ds_list_add(global.saveroom, "rocket")
+	}	
 }
 #endregion
 //Sprite_index

@@ -40,6 +40,7 @@ function scr_enemycreate() {
 	heatbuffer = 0;
 	alarm[4] = 10
 	dashcloudid = noone
+	invincible = 0
 
 
 }
