@@ -135,6 +135,9 @@ function scr_playercreate() {
 	frozenalarm[10] = -1;
 
 	global.pausecombotime = false
+	
+	//rocket stuff tehres literally one variab
+	rocketup = 0
 
 
 #region Followers

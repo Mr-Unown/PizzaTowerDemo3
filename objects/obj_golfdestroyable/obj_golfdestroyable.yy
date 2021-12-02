@@ -30,8 +30,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "PizzaTower_Demo3",
-    "path": "PizzaTower_Demo3.yyp",
+    "name": "Special Blocks",
+    "path": "folders/Objects/Level Structure/Blocks and Destroyables/Special Blocks.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_golfdestroyable",

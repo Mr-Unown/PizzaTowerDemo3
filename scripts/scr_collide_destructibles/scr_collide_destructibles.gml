@@ -2,7 +2,7 @@ function scr_collide_destructibles() {
 #region Players
 	with (obj_player1)
 	{
-	    if (state == 70 || state == 91 || state == states.jetpack || state == 37 || state == 18 || state == 2 || state == 10 || state == 9)
+	    if (state == 70 || state == 91 || state == states.jetpack || state == 37 || state == 18 || state == 2 || state == 10 || state == 9 || state = states.rocket)
 	    {
 	        if place_meeting((x + hsp), y, obj_destructibles)
 	        {
@@ -319,7 +319,7 @@ function scr_collide_destructibles() {
 	                image_speed = 0.35
 	        }
 	    }
-		if state  == states.Sjump
+		if state  == states.Sjump || (state == states.rocket && rocketup == 1)
 		{
 	        if place_meeting(x, (y + vsp), obj_destructibles)
 	        {
