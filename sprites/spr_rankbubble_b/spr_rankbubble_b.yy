@@ -8,8 +8,8 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 18,
-  "bbox_right": 74,
-  "bbox_top": 17,
+  "bbox_right": 75,
+  "bbox_top": 14,
   "bbox_bottom": 76,
   "HTile": false,
   "VTile": false,
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"833e77d6-ae0e-4a04-aae6-21bcb69f3932","path":"sprites/spr_rankbubble_c/spr_rankbubble_c.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"833e77d6-ae0e-4a04-aae6-21bcb69f3932","path":"sprites/spr_rankbubble_c/spr_rankbubble_c.yy",},"LayerId":{"name":"06c556fc-d7ac-4f2d-9684-50a4f1efb670","path":"sprites/spr_rankbubble_c/spr_rankbubble_c.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_rankbubble_c","path":"sprites/spr_rankbubble_c/spr_rankbubble_c.yy",},"resourceVersion":"1.0","name":"833e77d6-ae0e-4a04-aae6-21bcb69f3932","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"0dc316f5-ae69-4593-9cbc-54da8d344abd","path":"sprites/spr_rankbubble_b/spr_rankbubble_b.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"0dc316f5-ae69-4593-9cbc-54da8d344abd","path":"sprites/spr_rankbubble_b/spr_rankbubble_b.yy",},"LayerId":{"name":"d1b47a93-1cf4-410c-b6a1-44157e0c1e92","path":"sprites/spr_rankbubble_b/spr_rankbubble_b.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_rankbubble_b","path":"sprites/spr_rankbubble_b/spr_rankbubble_b.yy",},"resourceVersion":"1.0","name":"0dc316f5-ae69-4593-9cbc-54da8d344abd","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_rankbubble_c","path":"sprites/spr_rankbubble_c/spr_rankbubble_c.yy",},
+    "spriteId": {"name":"spr_rankbubble_b","path":"sprites/spr_rankbubble_b/spr_rankbubble_b.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 3.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"e4520eff-b56b-4207-83e1-d950eab2e1cc","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"833e77d6-ae0e-4a04-aae6-21bcb69f3932","path":"sprites/spr_rankbubble_c/spr_rankbubble_c.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"64a0fbf2-1400-4c03-94ab-dc698188b613","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0dc316f5-ae69-4593-9cbc-54da8d344abd","path":"sprites/spr_rankbubble_b/spr_rankbubble_b.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_rankbubble_c","path":"sprites/spr_rankbubble_c/spr_rankbubble_c.yy",},
+    "parent": {"name":"spr_rankbubble_b","path":"sprites/spr_rankbubble_b/spr_rankbubble_b.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_rankbubble_c",
+    "name": "spr_rankbubble_b",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"06c556fc-d7ac-4f2d-9684-50a4f1efb670","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d1b47a93-1cf4-410c-b6a1-44157e0c1e92","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/Hud & Menus/New Hud/Other.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_rankbubble_c",
+  "name": "spr_rankbubble_b",
   "tags": [],
   "resourceType": "GMSprite",
 }

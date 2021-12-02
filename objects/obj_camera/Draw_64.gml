@@ -282,13 +282,33 @@ if (player.state != 55)
 		draw_sprite_ext(spr_pizzascore, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
 		//Rank bubble
 		if global.collect < global.crank
+		{
 		var bubbleWidth = sprite_get_width(spr_rankbubble_dfilled);
 		var bubbleHeight = sprite_get_height(spr_rankbubble_dfilled);
-		var rankpercent = (global.collect - global.crank) / 10;
-					//draw_sprite_part(sprHealthBar, 0, 0, 0, spriteWidth*hpPercent, spriteHeight, x, y+5);
-					draw_sprite_ext(spr_rankbubble_d, -1, 215, -11, 1, 1, 0, c_white, 1)
-					draw_sprite_part_ext(spr_rankbubble_dfilled,-1,0,0,bubbleWidth,bubbleHeight*rankpercent,215,-11,1,-1,c_white,1)
-		
+		var rankpercent = (global.collect / global.crank);
+		draw_sprite_ext(spr_rankbubble_d, -1, 215, -11, 1, 1, 0, c_white, 1)
+		draw_sprite_part_ext(spr_rankbubble_dfilled,-1,0,0,bubbleWidth,bubbleHeight*rankpercent ,215,-11,1,1,c_white,1)
+		}
+		if global.collect > global.crank && global.collect < global.brank
+		{
+		var bubbleWidth = sprite_get_width(spr_rankbubble_cfilled);
+		var bubbleHeight = sprite_get_height(spr_rankbubble_cfilled);
+		var rankpercent = (global.collect / global.brank);
+		draw_sprite_ext(spr_rankbubble_c, -1, 215, -11, 1, 1, 0, c_white, 1)
+		draw_sprite_part_ext(spr_rankbubble_cfilled,-1,0,0,bubbleWidth,bubbleHeight*rankpercent ,215,-11,1,1,c_white,1)
+		}
+		if global.collect > global.brank && global.collect < global.arank
+		{
+		var bubbleWidth = sprite_get_width(spr_rankbubble_bfilled);
+		var bubbleHeight = sprite_get_height(spr_rankbubble_bfilled);
+		var rankpercent = (global.collect / global.arank);
+		draw_sprite_ext(spr_rankbubble_c, -1, 215, -11, 1, 1, 0, c_white, 1)
+		draw_sprite_part_ext(spr_rankbubble_bfilled,-1,0,0,bubbleWidth,bubbleHeight*rankpercent ,215,-11,1,1,c_white,1)
+		}
+		if global.collect > global.arank && global.collect < global.srank
+		{
+		draw_sprite_ext(spr_rankbubble_s, -1, 215, -11, 1, 1, 0, c_white, 1)
+		}
 		//Rank Topppings
 		if global.timeattack = false
 		{
