@@ -1,13 +1,17 @@
 function scr_golf_hit() {
 	grav = 0.35
-	if (vsp >= 10 && vsp < 20)
-	    vsp += grav
+	//if (vsp >= 10 && vsp < 20)
+	//   vsp += grav
 	var devvsp = (vsp / 2)
 	hsp = (image_xscale * (railspeed + movespeed))
 	if (grounded && (!scr_slope_ext(x, y + 1)))
 	{
 	    if (movespeed > 0)
-	        movespeed -= 0.2
+	        {
+                vsp = (-jspd)
+                jspd /= 2
+                movespeed /= 2
+            }
 	    if (vsp > 0.5)
 	        vsp = (-devvsp)
 	}
@@ -91,6 +95,7 @@ function scr_golf_hit() {
 			if !instance_exists(bumpid)
 	        with (instance_create(x, y, obj_bumpeffect))
 	            other.bumpid = id
+			sprite_index = spr_pizzaball_wallbounce
 	    }
 	    else if ((!scr_slope_ext(x + sign(hsp), y)) && scr_slope_ext(x, y + 1))
 	    {
@@ -116,7 +121,19 @@ function scr_golf_hit() {
 	    poweringup = 0
 	    going_up = 1
 	}
-	if (grounded && movespeed <= 5)
+	if grounded && jspd > 1
+	{
+		sprite_index = spr_pizzaball_bounce
+	    image_index = 0
+	    image_speed = 0.35
+	}	
+	if (sprite_index == spr_pizzaball_bounce && floor(image_index) == (image_number - 1))
+	{
+	    sprite_index = spr_pizzaball_flying
+	    image_index = 0
+	    image_speed = clamp(movespeed,0.35,0.8)
+	}
+	if (grounded && movespeed <= 0 && jspd < 1)
 	{
 	    if (sprite_index == spr_pizzaball_flying)
 	    {
@@ -130,10 +147,16 @@ function scr_golf_hit() {
 	    sprite_index = spr_pizzaball_stun
 	    image_index = 0
 	    image_speed = 0.35
+		jspd = 8
+	}
+	if (sprite_index == spr_pizzaball_wallbounce && floor(image_index) == (image_number - 1))
+	{
+	    sprite_index = spr_pizzaball_flying
+	    image_index = 0
+	    image_speed = clamp(movespeed,0,0.8)
 	}
 	if (stunned < 200)
 	    stunned++
-
-
-
+	if sprite_index = spr_pizzaball_flying
+	image_speed = clamp(movespeed,0.3,1.7)
 }

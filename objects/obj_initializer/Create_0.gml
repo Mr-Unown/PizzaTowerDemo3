@@ -18,16 +18,10 @@ for (var i = 0; i <= collisionheight; ++i)
 		tilemap_set(tilemapid,z,z,i)
 	}	
 }*/
-global.newsjumpcancel = false;
-global.newtitlescreen = 0;
-global.wallrunstyle = 0;
-global.collectstyle = 0;
-global.npcs = true;
-ini_open("saveData.ini")
-global.newsjumpcancel = ini_read_real("Option", "newsjumpcancel", false);
-global.newtitlescreen = ini_read_real("Option", "newtitlescreen", false);
-global.wallrunstyle = ini_read_real("Option", "wallrunstyle", 0);
-global.collectstyle = ini_read_real("Option", "collectstyle", 0);
-ini_close()
-global.roomstart[0] = Realtitlescreen;
-global.roomstart[1] = New_Realtitlescreen;
+//global.newsjumpcancel = false;
+//global.newtitlescreen = 0;
+//global.wallrunstyle = 0;
+//global.collectstyle = 0;
+//global.npcs = true;
+//scr_init();
+//looking for the initialization stuff? check scr_init()

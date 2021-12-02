@@ -170,7 +170,6 @@ function scr_enemy_throw() {
 					vsp = 0
 	                image_xscale = other.image_xscale
 					grav = 0
-					sprite_index = spr_sausageman_rolling
 	            }
 	            break
 			case obj_pickle:

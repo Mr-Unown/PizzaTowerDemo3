@@ -1,4 +1,4 @@
-visible = obj_debugcontroller.showcollisions
+visible = global.showcollisions
 tiles = "Tiles_1"
 
 // Inherit the parent event

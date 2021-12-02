@@ -165,6 +165,7 @@ if active = true
 				ini_write_real("Option", "newsjumpcancel", arg1);
 				ini_close()
 				break;
+			/* This should be an option lol
 			case "vibration": //Controller vibration
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.newhud else arg1 = ds_list_find_value(_commands, 1)	
 				switch arg1
@@ -177,7 +178,7 @@ if active = true
 				ini_open("saveData.ini")
 				ini_write_real("Option", "vibration", arg1);
 				ini_close()
-				break;
+				break;*/
 			case "collectstyle": //Switches main collect sprites
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.newhud else arg1 = ds_list_find_value(_commands, 1)	
 				switch arg1
@@ -231,17 +232,17 @@ if active = true
 				ini_write_real("Option", "wallrunstyle", arg1);
 				ini_close()
 				break;
-			case "freefallstyle": //Switches transformation pitch shift feature
+			case "groundpoundstyle": //Switches transformation pitch shift feature
 				var arg1 if ds_list_find_value(_commands, 1) == undefined arg1 = !global.newhud else arg1 = ds_list_find_value(_commands, 1)	
 				switch arg1
 				{
 					case "old": arg1 = 0
 					case "new": arg1 = 1
-					default: arg1 = !global.freefallstyle
+					default: arg1 = !global.groundpoundstyle
 				}
-				global.freefallstyle = arg1
+				global.groundpoundstyle = arg1
 				ini_open("saveData.ini")
-				ini_write_real("Option", "freefallstyle", arg1);
+				ini_write_real("Option", "groundpoundstyle", arg1);
 				ini_close()
 				break;
 			case "attackstyle": //Switches transformation pitch shift feature
