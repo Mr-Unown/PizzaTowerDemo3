@@ -102,5 +102,7 @@ if surface_exists(watersurface)
 shader_set(shd_water)
 var time_id = shader_get_uniform(shd_water, "time")
 shader_set_uniform_f(time_id, (current_time / 1000))
+var texel = shader_get_uniform(shd_water, "texel"), texel_id = surface_get_texture(watersurface)
+shader_set_uniform_f(texel, texture_get_texel_width(texel_id), texture_get_texel_height(texel_id))
 draw_surface_ext(watersurface,_cam_x,_cam_y,1,1,0,c_white,alpha);
 shader_reset()
