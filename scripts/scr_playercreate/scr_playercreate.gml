@@ -17,6 +17,7 @@ function scr_playercreate() {
 	global.storedtasecond = 0;
 	breakdancebuffer = 50
 	collectscore = 0
+	storedscore = 0
 	knightpoundbuffer = 0;
 	knightmaxy = 0;
 	knightroomy = 0;
