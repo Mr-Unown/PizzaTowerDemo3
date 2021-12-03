@@ -218,7 +218,8 @@ else
 	if textbubblesprites = spr_tv_bubble
 	{
 		//CONT. So I moved it here 
-		if floor(text_x) <= -(floor(string_width(_new_message)) + 5) //- 775)
+		var _length = -(floor(string_width(_new_message)) + 5)
+		if floor(text_x) <= _length//- 775)
 		{
 			textbubblesprites = spr_tv_bubbleclose;
 			textbubbleframes = 0;

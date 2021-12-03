@@ -78,6 +78,11 @@ if instance_exists(ID)
                 instance_destroy(other.id)
 			}
 		}
+		if (object_index == obj_pickle)
+        {
+            if (state != 97)
+                instance_destroy(other)
+        }
         if (object_index == obj_peasanto || object_index == obj_fencer || object_index == obj_ninja || object_index == obj_ancho)
         {
             if (state != 96 && state != enemystates.enemyheat) || player.state = states.breakdance

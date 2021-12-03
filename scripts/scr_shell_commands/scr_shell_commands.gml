@@ -1,3 +1,15 @@
+#region Roomnames
+var i = 0;
+while room_exists(i)
+{
+	if room != room_initializer //Skip the Initializer Room to prevent bugs
+		global.roomlist[i] = room_get_name(i)
+	i++
+}	
+#endregion		
+
+///////////////
+
 #region HUD STYLE
 function sh_hud_style(args) 
 {
@@ -310,11 +322,11 @@ if DEBUG
 		var arg1 = string(args[1]), arg2 = args[2];
 		switch arg1
 		{
-			case "obj_player1": 
+			case "player1": 
 			case "1": 
 			arg1 = obj_player1 
 			break;
-			case "obj_player2": 
+			case "player2": 
 			case "2": 
 			arg1 = obj_player2
 			break;
@@ -348,7 +360,7 @@ if DEBUG
 			description: "changes character of player",
 			arguments: ["<player>","<character>"],
 			suggestions: [
-				["obj_player1","obj_player2"],
+				["player1","player2"],
 				["Peppino","S-Noise","P-Noise","Snick","Vigi","Pizzy","Dougie","Pepperman"]
 			],
 			argumentDescriptions: [
@@ -363,32 +375,24 @@ if DEBUG
 	///commands[arrayi++] = "room_goto [roomname] [targetdoor]"
 	function sh_room_goto(args) 
 	{
-		var arg1 = args[1], arg2 = args[2]	
-		if asset_get_type(arg1) = asset_room
+		var arg1 = asset_get_index(args[1]), arg2 = args[2]	
+		if asset_get_type(args[1]) = asset_room
 		{
-			obj_player1.targetRoom = asset_get_index(arg1)
-			obj_player2.targetRoom = asset_get_index(arg1)
+			obj_player1.targetRoom = arg1
+			obj_player2.targetRoom = arg1
 			obj_player1.targetDoor = arg2
 			obj_player2.targetDoor = arg2
-			if room != asset_get_index(arg1)
-				instance_create(0, 0, obj_fadeout) 			
-			else
-			{
-				with obj_player
-				{
-					event_perform(ev_other,ev_room_start)
-				}
-			}
+			instance_create(0, 0, obj_fadeout) 			
 		}
 	}
 	function meta_room_goto() 
-	{
+	{	
 		return {
 			description: "allows you to go to another room",
 			arguments: ["<room>","<door>"],
 			suggestions: [
-				[],
-				["A","B","C","D","E","F","G","start","N/A"]
+				global.roomlist,
+				["N/A","A","B","C","D","E","F","G","start"]
 			],
 			argumentDescriptions: [
 				"sets targetRoom",

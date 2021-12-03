@@ -108,7 +108,13 @@ if (global.snickchallenge == false)
 	string_status = "Streets of Pizza"
 	string_imagekey = "default"
 	in_a_level = true;
-    }			
+    }
+	else if (string_letters(roomname) == "space" || string_letters(roomname) == "spacesecret")
+    {
+	string_status = "Galactic Field"
+	string_imagekey = "default"
+	in_a_level = true;
+    }
 	else
 	{	
 	string_status = "Pizza Tower"
