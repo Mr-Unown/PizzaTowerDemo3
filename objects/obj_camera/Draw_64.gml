@@ -302,12 +302,16 @@ if (player.state != 55)
 		var bubbleWidth = sprite_get_width(spr_rankbubble_bfilled);
 		var bubbleHeight = sprite_get_height(spr_rankbubble_bfilled);
 		var rankpercent = (global.collect / global.arank);
-		draw_sprite_ext(spr_rankbubble_c, -1, 215, -11, 1, 1, 0, c_white, 1)
+		draw_sprite_ext(spr_rankbubble_b, -1, 215, -11, 1, 1, 0, c_white, 1)
 		draw_sprite_part_ext(spr_rankbubble_bfilled,-1,0,0,bubbleWidth,bubbleHeight*rankpercent ,215,-11,1,1,c_white,1)
 		}
 		if global.collect > global.arank && global.collect < global.srank
 		{
-		draw_sprite_ext(spr_rankbubble_s, -1, 215, -11, 1, 1, 0, c_white, 1)
+		var bubbleWidth = sprite_get_width(spr_rankbubble_afilled);
+		var bubbleHeight = sprite_get_height(spr_rankbubble_afilled);
+		var rankpercent = (global.collect / global.srank);
+		draw_sprite_ext(spr_rankbubble_a, -1, 215, -11, 1, 1, 0, c_white, 1)
+		draw_sprite_part_ext(spr_rankbubble_afilled,-1,0,0,bubbleWidth,bubbleHeight*rankpercent ,215,-11 + bubbleHeight,1,1,c_white,1)
 		}
 		//Rank Topppings
 		if global.timeattack = false
