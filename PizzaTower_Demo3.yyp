@@ -3330,6 +3330,7 @@
     {"id":{"name":"obj_pizzadebris","path":"objects/obj_pizzadebris/obj_pizzadebris.yy",},"order":11,},
     {"id":{"name":"obj_debris","path":"objects/obj_debris/obj_debris.yy",},"order":12,},
     {"id":{"name":"obj_knightdebris","path":"objects/obj_knightdebris/obj_knightdebris.yy",},"order":13,},
+    {"id":{"name":"wasteyard_1","path":"rooms/wasteyard_1/wasteyard_1.yy",},"order":0,},
     {"id":{"name":"obj_boxxeddebris","path":"objects/obj_boxxeddebris/obj_boxxeddebris.yy",},"order":14,},
     {"id":{"name":"obj_glassdebris","path":"objects/obj_glassdebris/obj_glassdebris.yy",},"order":15,},
     {"id":{"name":"obj_slimedebris","path":"objects/obj_slimedebris/obj_slimedebris.yy",},"order":16,},
@@ -3883,6 +3884,7 @@
     {"roomId":{"name":"pinball_secret2","path":"rooms/pinball_secret2/pinball_secret2.yy",},},
     {"roomId":{"name":"pinball_secret3","path":"rooms/pinball_secret3/pinball_secret3.yy",},},
     {"roomId":{"name":"pinball_secret4","path":"rooms/pinball_secret4/pinball_secret4.yy",},},
+    {"roomId":{"name":"wasteyard_1","path":"rooms/wasteyard_1/wasteyard_1.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -4103,6 +4105,7 @@
     {"folderPath":"folders/Rooms/Levels/Weird West/Pinball.yy","order":1,"resourceVersion":"1.0","name":"Pinball","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Backgrounds/pinball.yy","order":172,"resourceVersion":"1.0","name":"pinball","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Tile Sets/Pinball.yy","order":21,"resourceVersion":"1.0","name":"Pinball","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Rooms/Levels/Weird West/Wasteyard.yy","order":2,"resourceVersion":"1.0","name":"Wasteyard","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
