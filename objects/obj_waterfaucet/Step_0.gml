@@ -1,9 +1,9 @@
-if (sprite_index = spr_onoffswitch_bluetored || sprite_index = spr_onoffswitch_redtoblue) && floor(image_index) >= image_number - 1
+if (sprite_index = spr_pipe_activate || sprite_index = spr_pipe_deactivate) && animation_end()
 {
-	if sprite_index = spr_onoffswitch_bluetored
-	sprite_index = spr_onoffswitch_red
+	if sprite_index = spr_pipe_activate
+		sprite_index = spr_pipe_active
 	else
-	sprite_index = spr_onoffswitch_blue
+		sprite_index = spr_pipe_deactivate
 }
 var player = instance_nearest(x,y,obj_player)
 if global.coop = false
@@ -23,10 +23,11 @@ if ((player.state = 22 || player.state = states.kingknightroll) && place_meeting
             vsp = -3
 			with other.id
 			{
-				if sprite_index = spr_onoffswitch_blue
-					sprite_index = spr_onoffswitch_bluetored
+				if sprite_index = spr_pipe_active
+					sprite_index = spr_pipe_deactivate
 				else
-					sprite_index = spr_onoffswitch_redtoblue
+					sprite_index = spr_pipe_activate	
+				instance_create(x, y, obj_bangeffect)							
 				can_switch = false
 				alarm[0] = 50
 			}
