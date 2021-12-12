@@ -37,9 +37,9 @@ if i >= sprite_get_number(spr_manual) - 1
 	if scroll != 0
 	{
 		autoscroll = false
-		alarm[0] = 30;
+		alarm[0] = 40;
 	}
-	credits_y += (3 * scroll)
+	credits_y += (5 * scroll)
 	
 	if autoscroll = true
 		credits_y -= 0.75
@@ -50,7 +50,7 @@ if i >= sprite_get_number(spr_manual) - 1
 	if credits_y > surface_height + 5
 		credits_y = height
 	*/
-	var maximum = surface_height + 5, minimum = height;
+	var maximum = surface_height + 5, minimum = -height;
 	credits_y = wrap(credits_y, minimum, maximum)
 
 }
