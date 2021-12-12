@@ -187,14 +187,6 @@ if (global.combotime == 0 && global.combo != 0)
 			scr_soundeffect(sfx_yipee,sfx_prettygood);
 		}
 	}
-	if obj_player.storedscore != 0
-	{
-	draw_text((obj_player.x + 15), (obj_player.y - 60), string(obj_player.storedscore))
-	draw_set_font(global.smallnumber)
-	obj_player.storedscore -= 1
-	obj_player.collectscore = obj_player.collectscore + storedscore
-	instance_create((obj_player.x + 15), (obj_player.y - 60), (obj_collecteffect))
-	}
     global.combo = 0
 }
 if (input_buffer_jump < 8)

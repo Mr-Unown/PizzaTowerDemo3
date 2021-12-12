@@ -41,6 +41,8 @@ function scr_playercreate() {
 	tricksperformed = 0;
 	//Slope Angle
 	draw_angle = 0;
+	//P Rank
+	comboended = false
 	//Global Time Events
 	global.timeevent = 0 //1 = Xmas 2 = April 3 = Halloween
 	//Bumbo want coin
@@ -59,8 +61,6 @@ function scr_playercreate() {
 			other.shieldindicatorid = id
 			player = other.id		
 		}
-
-
 	//Funny Murder
 	murderammo = 0;
 	combothreshold = 0;

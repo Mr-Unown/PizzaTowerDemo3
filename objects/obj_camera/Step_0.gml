@@ -347,3 +347,4 @@ else
 	global.bonusseconds = 0;
 	global.bonusminutes = 0;
 }
+alarm[4] = 1

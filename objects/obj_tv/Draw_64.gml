@@ -128,28 +128,44 @@ else
 			draw_sprite_ext(spr_tv_frame, -1, 832, 100 + newhudyoffset, 1, 1, 0, c_white, 1)
 		}
 		else
-			draw_sprite_ext(newtvsprite, -1, 832, 100 + newhudyoffset, 1, 1, 0, c_white, 1)		
+			draw_sprite_ext(newtvsprite, -1, 832, 100 + newhudyoffset, 1, 1, 0, c_white, 1)	
+		//New combo stuff
+		if global.combostyle = 1
+				{
+					combotime = approach(combotime,global.combotime * 2, 10);
+					if combobary = 0
+					signdropped = 1
+					if combobary > -169
+					{
+					draw_sprite_ext(spr_theaterguy, image_index,517 + combotime + combox,combobary + 14, 1, 1, 0, c_white, 1)
+					draw_sprite_ext(spr_comboplay, image_index,512 + combox,combobary, 1, 1, 0, c_white, 1)
+					}
+					{
+						if combobary <= -169
+						visible = 0
+						else 
+						visible = 1
+					}
+					if global.combotime <= 0 && global.combo != 0
+					{
+					combobary = approach(combobary,-200,3)
+					signdropped = 0
+					}
+					else if global.combotime > 0
+					{
+						if signdropped = 0
+						combobary = approach(combobary,-0,6)
+						if signdropped = 1
+						combobary = approach(combobary,-18,1)
+					}
+				}
 		if global.combo != 0 && global.miniboss == 0 && global.combotime != 0 && newtvsprite != spr_tv_open && newtvsprite != spr_tv_static && newtvsprite != spr_tv_noiseboss
 		{
 			//if global.combobuffer > 0
 			{
 				//Combo text
 				if global.combostyle = 0
-				draw_sprite_ext(spr_tv_combo, image_index, 832, 100 + newhudyoffset, 1, 1, 0, c_white, 1)	
-				else if global.combostyle = 1
-				{
-					combotime = approach(combotime,global.combotime * 2, 10);
-					draw_sprite_ext(spr_theaterguy, image_index, 500 + combotime , -23 + combobary, 1, 1, 0, c_white, 1)
-					draw_sprite_ext(spr_comboplay, image_index, 512, -32 + combobary, 1, 1, 0, c_white, 1)
-					if global.combotime <= 0
-					combobary = approach(combobary,-200,1)
-					else if global.combotime > 0
-					{
-						combobary = approach(combobary,0,1)
-						if combobary = 0
-						combobary = approach(combobary,-32,1)
-					}
-				}
+				draw_sprite_ext(spr_tv_combo, image_index, 832, 100 + newhudyoffset, 1, 1, 0, c_white, 1)
 				//Combo counter
 				if global.combostyle = 0
 				{
@@ -179,7 +195,7 @@ else
 					if global.combostyle = 0
 					draw_text(835 + _xx, 82 + _yy + newhudyoffset, string_char_at(_combo,i + 1));
 					else if global.combostyle = 1
-					draw_text(570 + _xx, 50 + _yy + combobary, string_char_at(_combo,i + 1));
+					draw_text(570 + _xx + combox, 55 + _yy + combobary, string_char_at(_combo,i + 1));
 				}
 			}
 			//Combobar

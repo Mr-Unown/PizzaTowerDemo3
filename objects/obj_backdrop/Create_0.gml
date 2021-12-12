@@ -1,0 +1,1 @@
+backdrop = spr_backdrop_confetti

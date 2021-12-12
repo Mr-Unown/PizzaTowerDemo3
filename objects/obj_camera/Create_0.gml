@@ -1,7 +1,7 @@
 //Panic Shake
 panicshake = 0;
 panicshakeacc = 0;
-depth = -11
+depth = -99999999999
 
 //Stinky Thing
 oldfacesprite = spr_null

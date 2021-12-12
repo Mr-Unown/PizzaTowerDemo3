@@ -63,13 +63,6 @@ if collided = true
 else
 	newhudyoffset = approach(newhudyoffset,0,16)
 }
-if global.combostyle = 1
-{
-	if combobarx > 545
-	combobarx -= 1
-	else if combobarx < 535
-	combobarx += 1
-}
 if (showtext == 1)
 {
     xi = (500 + random_range(1, -1))
@@ -570,3 +563,5 @@ if global.freezeframe = false
 	staticframe += 0.35;
 }
 textbubbleframes += 0.35;
+//Combohud new
+combox = wave(-5,20,5,5)
