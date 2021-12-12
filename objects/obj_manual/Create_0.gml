@@ -9,17 +9,18 @@ surface_x = 368;
 surface_y = 244;
 credits_surface = noone;
 credits_y = surface_height + 5;
+autoscroll = true;
 #region Credits Text
 credits_text = @"
 Original Creator:
 
-McPig (PTG)
+McPig
 
 Demo 3 Guy:
 
 Mr. Unown
 
-Demo 3 Devs:
+Devs:
 
 core
 soda
@@ -29,13 +30,13 @@ Fall Guy 1968
 Marioket
 Roley
 
-Demo 3 Contributers:
+Contributers:
 
 OrcaDiscordera
 Rodmod
 ching
 
-Special Thanks to:
+Special Thanks:
 
 MineKen713
 PinPanPaint
