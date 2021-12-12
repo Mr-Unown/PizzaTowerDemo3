@@ -3,7 +3,7 @@ if (sprite_index = spr_pipe_activate || sprite_index = spr_pipe_deactivate) && a
 	if sprite_index = spr_pipe_activate
 		sprite_index = spr_pipe_active
 	else
-		sprite_index = spr_pipe_deactivate
+		sprite_index = spr_pipe_inactive
 }
 var player = instance_nearest(x,y,obj_player)
 if global.coop = false
