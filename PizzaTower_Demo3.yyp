@@ -3613,6 +3613,7 @@
     {"id":{"name":"ancient_8","path":"rooms/ancient_8/ancient_8.yy",},"order":8,},
     {"id":{"name":"ancient_9","path":"rooms/ancient_9/ancient_9.yy",},"order":9,},
     {"id":{"name":"ancient_10","path":"rooms/ancient_10/ancient_10.yy",},"order":10,},
+    {"id":{"name":"spr_manual_steam","path":"sprites/spr_manual_steam/spr_manual_steam.yy",},"order":2,},
     {"id":{"name":"ancient_10_1","path":"rooms/ancient_10_1/ancient_10_1.yy",},"order":11,},
     {"id":{"name":"ancient_10_2","path":"rooms/ancient_10_2/ancient_10_2.yy",},"order":12,},
     {"id":{"name":"ancient_treasure","path":"rooms/ancient_treasure/ancient_treasure.yy",},"order":13,},
