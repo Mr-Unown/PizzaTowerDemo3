@@ -146,12 +146,12 @@ else
 						else 
 						visible = 1
 					}
-					if global.combotime <= 0 && global.combo != 0
+					if global.combotime <= 0
 					{
 					combobary = approach(combobary,-200,3)
 					signdropped = 0
 					}
-					else if global.combotime > 0
+					else if global.combotime > 0 && global.combo != 0
 					{
 						if signdropped = 0
 						combobary = approach(combobary,-0,6)

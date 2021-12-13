@@ -564,4 +564,4 @@ if global.freezeframe = false
 }
 textbubbleframes += 0.35;
 //Combohud new
-combox = wave(-5,20,5,5)
+combox = wave(-1,17,8,8)
