@@ -1,1 +1,1 @@
-draw_sprite_tiled(spr_backdrop_confetti,1,0,0)
+draw_sprite_tiled(backdrop,1,0,0)

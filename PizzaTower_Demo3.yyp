@@ -620,6 +620,7 @@
     {"id":{"name":"spr_minigun","path":"sprites/spr_minigun/spr_minigun.yy",},"order":164,},
     {"id":{"name":"spr_minigunfall","path":"sprites/spr_minigunfall/spr_minigunfall.yy",},"order":50,},
     {"id":{"name":"spr_minijohn_dead","path":"sprites/spr_minijohn_dead/spr_minijohn_dead.yy",},"order":0,},
+    {"id":{"name":"spr_backdrop_toppin","path":"sprites/spr_backdrop_toppin/spr_backdrop_toppin.yy",},"order":241,},
     {"id":{"name":"spr_minijohn_run","path":"sprites/spr_minijohn_run/spr_minijohn_run.yy",},"order":3,},
     {"id":{"name":"spr_minijohn_stun","path":"sprites/spr_minijohn_stun/spr_minijohn_stun.yy",},"order":4,},
     {"id":{"name":"obj_pizzaballbigcollect","path":"objects/obj_pizzaballbigcollect/obj_pizzaballbigcollect.yy",},"order":17,},
