@@ -2283,7 +2283,6 @@
     {"id":{"name":"spr_PZbigpizza1","path":"sprites/spr_PZbigpizza1/spr_PZbigpizza1.yy",},"order":199,},
     {"id":{"name":"spr_PZbigpizza2","path":"sprites/spr_PZbigpizza2/spr_PZbigpizza2.yy",},"order":200,},
     {"id":{"name":"spr_PZbigpizza3","path":"sprites/spr_PZbigpizza3/spr_PZbigpizza3.yy",},"order":201,},
-    {"id":{"name":"obj_backdrop","path":"objects/obj_backdrop/obj_backdrop.yy",},"order":30,},
     {"id":{"name":"spr_PZdestroyablepep","path":"sprites/spr_PZdestroyablepep/spr_PZdestroyablepep.yy",},"order":204,},
     {"id":{"name":"spr_PZdestroyablepepescape","path":"sprites/spr_PZdestroyablepepescape/spr_PZdestroyablepepescape.yy",},"order":205,},
     {"id":{"name":"spr_PZgiantpizza","path":"sprites/spr_PZgiantpizza/spr_PZgiantpizza.yy",},"order":206,},

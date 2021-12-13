@@ -43,7 +43,6 @@
             {"propertyId":{"name":"closeFunction","path":"objects/obj_shell/obj_shell.yy",},"objectId":{"name":"obj_shell","path":"objects/obj_shell/obj_shell.yy",},"value":"scr_shell_closeconsole","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
             {"propertyId":{"name":"openModifiers","path":"objects/obj_shell/obj_shell.yy",},"objectId":{"name":"obj_shell","path":"objects/obj_shell/obj_shell.yy",},"value":"","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"obj_shell","path":"objects/obj_shell/obj_shell.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-288.0,"y":192.0,"resourceVersion":"1.0","name":"inst_83D97AE","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"obj_backdrop","path":"objects/obj_backdrop/obj_backdrop.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-288.0,"y":256.0,"resourceVersion":"1.0","name":"inst_4262ACCA","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances_1","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_initializer","path":"objects/obj_initializer/obj_initializer.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,"resourceVersion":"1.0","name":"inst_17E5D174","tags":[],"resourceType":"GMRInstance",},
@@ -77,7 +76,6 @@
     {"name":"inst_5FF05C7A","path":"rooms/room_initializer/room_initializer.yy",},
     {"name":"inst_396A4D85","path":"rooms/room_initializer/room_initializer.yy",},
     {"name":"inst_83D97AE","path":"rooms/room_initializer/room_initializer.yy",},
-    {"name":"inst_4262ACCA","path":"rooms/room_initializer/room_initializer.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

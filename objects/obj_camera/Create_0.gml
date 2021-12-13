@@ -1,7 +1,7 @@
 //Panic Shake
 panicshake = 0;
 panicshakeacc = 0;
-depth = -99999999999
+depth = -4
 
 //Stinky Thing
 oldfacesprite = spr_null
@@ -105,5 +105,7 @@ debugfreezeframe = 0
 debugmaxfreezeframe = 0
 global.freezeframecounter = 0
 target = 3
+//Backdrop
+backdrop = spr_backdrop_confetti
 
 

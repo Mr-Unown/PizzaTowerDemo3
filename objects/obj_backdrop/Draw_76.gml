@@ -1,1 +1,0 @@
-draw_sprite_tiled(backdrop,1,0,0)
