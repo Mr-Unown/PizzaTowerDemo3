@@ -39,7 +39,7 @@ if i >= sprite_get_number(spr_manual) - 1
 		autoscroll = false
 		alarm[0] = 40;
 	}
-	credits_y += (5 * scroll)
+	credits_y += (10 * scroll)
 	
 	if autoscroll = true
 		credits_y -= 0.75
