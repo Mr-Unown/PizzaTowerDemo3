@@ -59,6 +59,42 @@ function meta_hud_style()
 }
 #endregion	
 
+#region GROUNDPOUND STYLE
+function sh_groundpound_style(args) 
+{
+	var arg1 = args[1]
+	switch arg1
+	{
+		case "new": 
+		arg1 = true 
+		break;
+		case "old": 
+		arg1 = false 
+		break;
+		default: 
+		arg1 = !global.groundpoundstyle
+		break;
+	}	
+	global.groundpoundstyle = arg1
+	ini_open("saveData.ini")
+	ini_write_real("Option", "groundpoundstyle", arg1);
+	ini_close()
+}
+function meta_groundpound_style() 
+{
+	return {
+		description: "switches Groundpound style",
+		arguments: ["<style>"],
+		suggestions: [
+			["new","old"]
+		],
+		argumentDescriptions: [
+			"the style of freefall to choose"
+		]
+	}
+}
+#endregion	
+
 #region HEAT METER
 function sh_heat_meter(args) 
 {
