@@ -376,6 +376,9 @@ if DEBUG
 	function sh_room_goto(args) 
 	{
 		var arg1 = asset_get_index(args[1]), arg2 = args[2]	
+		//Error Check 
+		if asset_get_type(args[1]) != asset_room { return "Can't find room " + string(args[1]); } //Shamelessy took this from Ethgaming
+		//Go to Room
 		if asset_get_type(args[1]) = asset_room
 		{
 			obj_player1.targetRoom = arg1
@@ -413,7 +416,7 @@ if DEBUG
 	function meta_instance_create() 
 	{
 		return {
-			description: "create a balloon",
+			description: "create an object",
 			arguments: ["<x>", "<y>","<object>"],
 			suggestions: [
 				[],

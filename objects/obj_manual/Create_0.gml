@@ -40,6 +40,7 @@ luigio
 Special Thanks:
 
 MineKen713
+EthGaming101
 PinPanPaint
 902
 Joniton

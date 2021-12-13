@@ -3,19 +3,19 @@ function scr_commonenemy() {
 	scr_enemystates()
 
 	//Heat Meter Palettes
-	if global.heatmeter >= 4 && object_index != obj_shrimp && object_index != obj_shrimpred && object_index != obj_shrimpblue && (object_index = obj_robot && obj_lighting.visible = false)
+	if global.heatmeter >= 4 && object_index != obj_shrimp && object_index != obj_shrimpred && object_index != obj_shrimpblue 
 	{
-		if object_index != obj_robot
-		paletteselect = 1
-		else 
-		paletteselect = 3
-	}
-	else if global.heatmeter < 4 && object_index != obj_shrimp && object_index != obj_shrimpred && object_index != obj_shrimpblue && (object_index = obj_robot && obj_lighting.visible = false)
-	{
-		if object_index != obj_robot
-		paletteselect = 0
+		if object_index = obj_robot
+			paletteselect = 2
 		else
-		paletteselect = 1
+			paletteselect = 1
+	}
+	else if global.heatmeter < 4 && object_index != obj_shrimp && object_index != obj_shrimpred && object_index != obj_shrimpblue
+	{
+		if object_index = obj_robot
+			paletteselect = 1
+		else
+			paletteselect = 0			
 	}
 	//Squash and Stretch
 	if squashed = true

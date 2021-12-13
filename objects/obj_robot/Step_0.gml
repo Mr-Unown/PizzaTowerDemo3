@@ -1,4 +1,10 @@
 scr_commonenemy()
+//Glowy Eyes
+if obj_lighting.can_draw = true
+	spr_palette = spr_palette_robot_hard
+else
+	spr_palette = spr_palette_robot
+
 
 if state == 110
 {
