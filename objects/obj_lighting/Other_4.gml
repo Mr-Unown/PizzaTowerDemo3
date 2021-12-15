@@ -36,13 +36,25 @@ switch room
 		break;				
 	#endregion	
 	#region Desert
+	case desert_1:
+	case desert_2:
+	case desert_3:	
+	case desert_4:
+	case desert_9:	
+	case desert_9_1:		
+	case desert_10:	
+	case desert_11:		
+		if global.desertnight = false
+		{
+			//var lay_id = layer_get_id("Backgrounds_H1"), lay_id2 = layer_get_id("Backgrounds_4");
+			//layer_script_begin(lay_id, layer_desert_start);
+			//layer_script_end(lay_id2, layer_desert_end);
+		}
+		break;	
 	case desert_5:
 	case desert_6:
 	case desert_7:	
 	case desert_8:
-	case desert_9:
-	case desert_10:
-	case desert_11:
 		can_draw = true;
 		targetdarkness = 0.35;
 		break;
@@ -52,14 +64,6 @@ switch room
 		targetdarkness = 0.60;
 		break;
 	#endregion
-	/*#region Factory
-	case factory_8:	
-	if place_meeting(x,y, obj_eventtrigger)
-		can_draw = true;
-		targetdarkness = 0.85
-		break;		
-	#endregion
-	*/
 	case hub_roomSNICK:
 		can_draw = true;
 		darkness = 0.90
