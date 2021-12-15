@@ -1,5 +1,5 @@
-function scr_roomnames() {
-	switch room
+function scr_roomnames(_room = room) {
+	switch _room
 	{
 	#region Entrance
 		case entrance_1:
@@ -500,6 +500,86 @@ function scr_roomnames() {
 			_message = "There's a Present Down There";
 			break;			
 	#endregion				
+	#region Desert
+		case desert_1:
+			_message = "Pizza Tower of the West";
+			break;
+		case desert_2:
+			_message = "Rooting and Tooting";
+			break;		
+		case desert_3:
+			_message = "Good Ol' Pizzamart!?";
+			break;	
+		case desert_4:
+			_message = "Eating Spicy Today";
+			break;	
+		case desert_5:
+			_message = "Mouth on Fire";
+			break;	
+		case desert_6:
+			_message = "Breaking Through!";
+			break;	
+		case desert_7:
+			_message = "A Miner Problem";
+			break;	
+		case desert_8:
+			_message = "Cave Tale";
+			break;	
+		case desert_9:
+			_message = "Boulders Everywhere";
+			break;
+		case desert_9_1:
+			_message = "Unstable Ground";
+			break;				
+		case desert_10:
+			_message = "Weak Stomach";
+			break;	
+		case desert_11:
+			_message = "Weirder West";
+			break;	
+		case desert_12:
+			_message = "Western Loving Aliens";
+			break;		
+		case desert_13:
+			_message = "Kentucky Kenny Course";
+			break;		
+		case desert_14:
+			_message = "Really Really Hot";
+			break;		
+		case desert_15:
+			_message = "John the Alien";
+			break;		
+		case desert_mart1:
+			_message = "Do you have Pizza?";
+			break;		
+		case desert_mart2:
+			_message = "Storage Room";
+			break;					
+		case desert_portal:
+			_message = "YOU'RE NOT SUPPOSED TO BE HERE";
+			break;					
+		case desert_treasure:
+			_message = "Deserted Treasure";
+			break;		
+		case desert_secret1:
+			_message = "Left or Right?";
+			break;	
+		case desert_secret2:
+			_message = "Bodyslamming";
+			break;	
+		case desert_secret3:
+			_message = "Dumb as a rock";
+			break;
+		case desert_secret4:
+			_message = "Congratulations on finding this";
+			break;			
+		case desert_secret5:
+			_message = "Rocky Protection";
+			break;			
+		case desert_secret6:
+			_message = "Definately a Secret";
+			break;			
+	#endregion
 		default:
 			_message = noone;
 			break;
