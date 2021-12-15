@@ -17,6 +17,8 @@ function scr_playerreset() {
 	global.bonustimer = false;
 	global.storedtaminute = 0;
 	global.storedtasecond = 0;
+	//Day Night
+	global.desertnight = false
 	//Goop Gone
 	with obj_goop 
 	{

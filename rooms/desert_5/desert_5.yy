@@ -169,6 +169,13 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_collect","path":"objects/obj_collect/obj_collect.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1728.0,"y":704.0,"resourceVersion":"1.0","name":"inst_75AFD41F","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_indiancheese","path":"objects/obj_indiancheese/obj_indiancheese.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2976.0,"y":498.0,"resourceVersion":"1.0","name":"inst_7333A999","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_baddiespawner","path":"objects/obj_baddiespawner/obj_baddiespawner.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2848.0,"y":704.0,"resourceVersion":"1.0","name":"inst_3A397297","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_exitdoorsign","path":"objects/obj_exitdoorsign/obj_exitdoorsign.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":32.0,"y":1280.0,"resourceVersion":"1.0","name":"inst_997F825","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"panic_escape","path":"objects/group_all/group_all.yy",},"objectId":{"name":"group_all","path":"objects/group_all/group_all.yy",},"value":"True","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"obj_indiancheese","path":"objects/obj_indiancheese/obj_indiancheese.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2944.0,"y":690.0,"resourceVersion":"1.0","name":"inst_441106CD","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"panic_escape","path":"objects/group_all/group_all.yy",},"objectId":{"name":"group_all","path":"objects/group_all/group_all.yy",},"value":"True","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"obj_indiancheese","path":"objects/obj_indiancheese/obj_indiancheese.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2080.0,"y":722.0,"resourceVersion":"1.0","name":"inst_3CDC16AD","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"tile_newdesert_cavern","path":"tilesets/tile_newdesert_cavern/tile_newdesert_cavern.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":130,"SerialiseHeight":50,"TileSerialiseData":[
 81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,147,148,140,141,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,164,165,173,174,114,114,114,114,153,114,114,114,114,114,114,114,114,114,114,114,
@@ -437,6 +444,9 @@
     {"name":"inst_75AFD41F","path":"rooms/desert_5/desert_5.yy",},
     {"name":"inst_7333A999","path":"rooms/desert_5/desert_5.yy",},
     {"name":"inst_3A397297","path":"rooms/desert_5/desert_5.yy",},
+    {"name":"inst_997F825","path":"rooms/desert_5/desert_5.yy",},
+    {"name":"inst_441106CD","path":"rooms/desert_5/desert_5.yy",},
+    {"name":"inst_3CDC16AD","path":"rooms/desert_5/desert_5.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
