@@ -83,6 +83,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_collect","path":"objects/obj_collect/obj_collect.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1376.0,"y":1024.0,"resourceVersion":"1.0","name":"inst_11C3BE75","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_pizzaboxunopen","path":"objects/obj_pizzaboxunopen/obj_pizzaboxunopen.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1920.0,"y":928.0,"resourceVersion":"1.0","name":"inst_76D55C00","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_platform","path":"objects/obj_platform/obj_platform.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":5.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1824.0,"y":512.0,"resourceVersion":"1.0","name":"inst_5FC9B502","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_platform","path":"objects/obj_platform/obj_platform.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":9.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":384.0,"y":1120.0,"resourceVersion":"1.0","name":"inst_6F656909","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"assets":[
         {"spriteId":{"name":"spr_tile_ufodecoration","path":"sprites/spr_tile_ufodecoration/spr_tile_ufodecoration.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1888.0,"y":1024.0,"resourceVersion":"1.0","name":"graphic_402024C6","tags":[],"resourceType":"GMRSpriteGraphic",},
@@ -249,6 +250,7 @@
     {"name":"inst_11C3BE75","path":"rooms/desert_14/desert_14.yy",},
     {"name":"inst_76D55C00","path":"rooms/desert_14/desert_14.yy",},
     {"name":"inst_5FC9B502","path":"rooms/desert_14/desert_14.yy",},
+    {"name":"inst_6F656909","path":"rooms/desert_14/desert_14.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

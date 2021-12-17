@@ -40,6 +40,9 @@ if (global.panic == 1 && layer_background_get_sprite(back_id) == bg_darkjohn)
 //Nightsky Moon
 if (global.panic == 1 && layer_background_get_sprite(back_id6) == bg_nightsky)
 layer_background_sprite(back_id6, bg_nightskyescape)	
+//Entrance bg Pizzas
+if (global.panic == 1 && layer_background_get_sprite(back_id2) == bg_entrance2)
+    layer_background_sprite(back_id2, bg_entrance2escape)
 
 
 /*

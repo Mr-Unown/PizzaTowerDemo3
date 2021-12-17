@@ -156,7 +156,7 @@ else
 						if signdropped = 0
 						combobary = approach(combobary,-0,6)
 						if signdropped = 1
-						combobary = approach(combobary,-18,1)
+						combobary = approach(combobary,-18,.5)
 					}
 				}
 		if global.combo != 0 && global.miniboss == 0 && global.combotime != 0 && newtvsprite != spr_tv_open && newtvsprite != spr_tv_static && newtvsprite != spr_tv_noiseboss

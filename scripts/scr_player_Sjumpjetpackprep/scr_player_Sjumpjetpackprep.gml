@@ -28,6 +28,7 @@ function scr_player_Sjumpjetpackprep() {
 			sprite_index = spr_player_sjumpcancel
 			image_index = 0
 			movespeed = 14
+			vsp = -12
 		}
 	}
 

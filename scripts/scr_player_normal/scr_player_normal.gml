@@ -598,6 +598,7 @@ function scr_player_normal() {
 		{
 			image_index = 0
 			sprite_index = choose(spr_supertaunt1,spr_supertaunt2,spr_supertaunt3,spr_supertaunt4)
+			image_speed = .6
 		}
 		else
 		{
@@ -657,8 +658,5 @@ function scr_player_normal() {
 			scr_soundeffect(sfx_superjumprelease)
 		}
 	}
-
-
-
 
 }

@@ -13,6 +13,7 @@ pipedirection = "none"
 tauntcooleffect = noone
 parry_id = -4
 firemouthtrail = 0
+kungfutrail = 0
 equippedhat = false;
 choosenhat = 0;
 parried_baddie = 0
@@ -183,5 +184,5 @@ superjumpprepsnd = -1
 suplexdashsnd = -1
 obj_player2.hp = 5
 blackblend = 0
-
+machtrail2 = 0
 state = 8

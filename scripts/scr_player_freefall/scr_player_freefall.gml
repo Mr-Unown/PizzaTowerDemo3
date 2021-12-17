@@ -25,8 +25,11 @@ function scr_player_freefall() {
 	        movespeed -= 0.05
 		}
 		else if global.groundpoundstyle = 1
-		movespeed = 4
+		{
+		if move != 0
+		movespeed = 13
 		hsp = (xscale * movespeed)
+		}
 	    if ((scr_solid((x + 1), y) && move == 1) || (scr_solid((x - 1), y) && move == -1))
 	        movespeed = 0
 	    if (dir != xscale)

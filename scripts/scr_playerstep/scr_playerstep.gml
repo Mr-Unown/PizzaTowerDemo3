@@ -754,6 +754,31 @@ else if actor = true
 		}
 	    firemouthtrail = 6
 	}
+	//Kungfu Trail thingy
+	if (kungfutrail > 0)
+	    kungfutrail--
+		
+	if ((kungfutrail <= 0) && state == states.tumble && sprite_index = spr_player_sjumpcancel)
+	{
+	    with instance_create(x, y, obj_firemouthafterimg)
+		{
+			playerid = other.id
+			image_blend = make_color_rgb(48,168,248)
+		}
+	    kungfutrail = 5
+	}
+	//Transparent Effect
+	if (machtrail2 > 0)
+	    machtrail2--
+		
+	if ((machtrail2 <= 0) && (state == states.tumble && (sprite_index != spr_tumbleend && sprite_index != spr_player_sjumpcancel && sprite_index != spr_player_splat)))
+	{
+	    with instance_create(x, y, obj_clearafterimg)
+		{
+			playerid = other.id
+		}
+	    machtrail2 = 4
+	}
 	//Mach 3 Effect
 	if ((state == 91 || state == states.Sjump || state == states.breakdance || (state != 51 && (sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump))  || (pogomovespeed >= 12  && state == states.pogo) ||state == states.jetpack || (state == 109 && instance_exists(obj_player2) && obj_player2.state == 91) || state == 114 || state == 70 || state == 17 || state == 9 || state == 37 || state == 10 || state == 22 || state == 71 || pogojetcharge = true) && macheffect == 0)
 	{

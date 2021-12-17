@@ -106,6 +106,6 @@ debugmaxfreezeframe = 0
 global.freezeframecounter = 0
 target = 3
 //Backdrop
-backdrop = spr_backdrop_toppin
+backdrop = spr_backdrop_pinball
 
 
