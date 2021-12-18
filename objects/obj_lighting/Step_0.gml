@@ -26,3 +26,24 @@ switch room
 }
 //Change Darkness
 darkness = approach(darkness,targetdarkness,0.015)
+
+
+//Other Effects
+switch room
+{
+	#region Desert
+	case desert_1:
+	case desert_2:
+	case desert_3:	
+	case desert_4:
+		if global.desertnight = false && global.panic = false
+			global.visual_temperature = temperature.hot;
+		else
+			global.visual_temperature = temperature.normal;
+	
+	break;	
+	#endregion
+	default:
+		global.visual_temperature = temperature.normal;
+	break;
+}

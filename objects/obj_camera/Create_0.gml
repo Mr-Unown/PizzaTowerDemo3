@@ -21,7 +21,8 @@ frozenalarm[1] = -1
 frozenalarm[2] = -1
 frozenalarm[3] = -1
 frozen = false;
-
+//Copied Surface
+d3application_surface = noone;
 //Number
 _image_index = 0;
 _image_speed = 0;

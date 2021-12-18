@@ -5,6 +5,8 @@ function scr_playerreset() {
 	{
 		alarm[0] = -1;
 	}
+	//Temperature
+	global.visual_temperature = temperature.normal;
 	//Heat Meter
 	global.oldmeter = 0;
 	global.heatmeter = 0;

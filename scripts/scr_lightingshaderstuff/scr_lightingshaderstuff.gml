@@ -1,3 +1,4 @@
+/*
 #region Desert
 global.heatwavesurface = noone
 function layer_desert_start()

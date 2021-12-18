@@ -3,7 +3,17 @@
 global.shellactivate = false;
 global.showcollisions = false;
 display_set_gui_size(960, 540);
+//Global Variable Init
+enum temperature
+{
+	normal,
+	hot,
+	cold
+}
+global.visual_temperature = temperature.normal;
 
+
+//Read Save File
 ini_open("saveData.ini")
 global.newtitlescreen = ini_read_real("Option", "newtitlescreen", false);
 global.newsjumpcancel = ini_read_real("Option", "newsjumpcancel", false);

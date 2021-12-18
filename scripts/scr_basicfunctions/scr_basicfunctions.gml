@@ -70,9 +70,28 @@ function focused_player()
 
 function point_in_camera(argument0, argument1, argument2)
 {
+	/// @description Returns True if point is in camera's bounds
+	/// @function point_in_camera	
     var cam_x = camera_get_view_x(argument2)
     var cam_y = camera_get_view_y(argument2)
     var cam_w = camera_get_view_width(argument2)
     var cam_h = camera_get_view_height(argument2)
     return point_in_rectangle(argument0, argument1, cam_x, cam_y, (cam_x + cam_w), (cam_y + cam_h));
+}
+
+
+function layer_change_background(original_sprite,new_sprite)
+{
+	/// @description Facilitates background change
+	/// @function layer_change_background
+	if original_sprite != new_sprite
+	{
+		var a = layer_get_all();
+		for (var i = 0; i < array_length(a); i++;)
+		{
+			var back_id = layer_background_get_id_fixed(a[i])
+			if layer_background_get_sprite(back_id) == original_sprite
+				layer_background_sprite(back_id, new_sprite);	
+		}
+	}
 }
