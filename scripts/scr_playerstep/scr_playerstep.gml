@@ -741,7 +741,9 @@ else if actor = true
 		}
 	    toomanytoppings = 6
 	}
-	
+	//Heat after image
+	if !instance_exists(obj_heatafterimage)
+	instance_create(x,y,obj_heatafterimage)
 	//Firemouth Trail thingy
 	if (firemouthtrail > 0)
 	    firemouthtrail--
@@ -771,7 +773,7 @@ else if actor = true
 	if (machtrail2 > 0)
 	    machtrail2--
 		
-	if ((machtrail2 <= 0) && (state == states.tumble && (sprite_index != spr_tumbleend && sprite_index != spr_player_sjumpcancel && sprite_index != spr_player_splat)))
+	if ((machtrail2 <= 0) && (state == states.tumble && (sprite_index != spr_tumbleend && sprite_index != spr_player_sjumpcancel && sprite_index != spr_player_splat) || state = states.freefall))
 	{
 	    with instance_create(x, y, obj_clearafterimg)
 		{

@@ -1,6 +1,7 @@
 var angle,ymovespeed,vdirection;
 if (!instance_exists(baddieID))
     instance_destroy()
+
 if instance_exists(baddieID)
 {
     x = baddieID.x
@@ -16,7 +17,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
         with (obj_player1) 
         {
 		#region Player1
-            if (instakillmove == 1) && !(sprite_index = spr_player_shoryumineken)
+            if (instakillmove == 1) /*&& !(sprite_index = spr_player_shoryumineken)*/ && other.baddieID.invtime <= 0
             {
                 if (state == 91 && sprite_index != spr_mach3hit)
                 {
@@ -30,6 +31,12 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                     machpunchAnim = 1
                     image_index = 0
                 }
+				if (state == states.mach3 || state == states.freefall && freefallsmash > 10 || state == states.firemouth || state == states.superslam || state == states.finishingblow && other.baddieID.hp <= 0 || state = states.tumble || state = states.knightpep)
+				{
+					other.baddieID.hp -= 99
+					other.baddieID.instakilled = 1
+				}
+				other.baddieID.invtime = 25
                 if (state != 73) 
                     other.baddieID.grabbedby = 1
                 else
@@ -39,10 +46,10 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
 				ymovespeed = 2 + abs(vsp)
 				vdirection = sign(round(hsp + xscale/2))
 				other.baddieID.initialvsp = clamp(-lengthdir_y(ymovespeed, angle) - 2,-25,(random_range(-1,-15)))
-				other.baddieID.initialhsp = (vdirection * ((random_range(1,7)) + abs(floor(hsp * 1.2))))				
+				other.baddieID.initialhsp = (vdirection * ((random_range(1,7)) + abs(floor(hsp * 1.2))))			
                 scr_soundeffect(sfx_punch)
 				//New Hitstun
-				if other.baddieID.hp <= 1 
+				if other.baddieID.hp <= 1 && grounded
 					other.baddieID.dying = true
 				other.baddieID.scarebuffer = 0
 				scr_sleep();
@@ -50,20 +57,22 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                 other.baddieID.blowintensity = 1;
 				other.baddieID.playerxscale = xscale;
 				other.baddieID.state = enemystates.enemyshake;
-				/*
+				if other.baddieID.instakilled = 1 || other.baddieID.hittinged = true && (scr_solid(x + sign(hsp),y) && !scr_slope_ext(x + sign(hsp),y))
+				{
                 instance_destroy(other.baddieID)
-                instance_destroy(other.id)			
-				*/
+                instance_destroy(other.id)	
+				}
                 global.hit = (global.hit + 1)
                 global.combotime = 60
 				global.pausecombotime = true
 				obj_tv.alarm[1] = 75
+				/*if other.baddieID.instakilled = 1
 				with (instance_create((other.x + random_range(-16, 16)), (other.y + random_range(-16, 16)), obj_balloonpop))
 				{
 					image_speed = 0.35
 					sprite_index = spr_bigpoofclouds
 					image_angle = choose(0,90,180,270)
-				}				
+				}*/			
                 if ((!grounded) && state != 74 && state != states.newbomb && key_jump2) 
                 {
                     if (state == 70 || (state == 91 && fightball == 0))
@@ -382,8 +391,8 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player2) && obj_player2
 				other.baddieID.initialvsp = clamp(-lengthdir_y(ymovespeed, angle) - 2,-25,(random_range(-1,-15)))
 				other.baddieID.initialhsp = (vdirection * ((random_range(1,7)) + abs(floor(hsp * 1.2))))				
 				//New Hitstun
-				if other.baddieID.hp <= 1
-					other.baddieID.dying = true
+				//if other.baddieID.hp <= 1
+					//other.baddieID.dying = true
 				other.baddieID.scarebuffer = 0
 				scr_sleep();
 				other.baddieID.blowdirection = 5;

@@ -58,9 +58,9 @@ function scr_player_Sjumpjetpackprep() {
 	    superjumpholdsnd = audio_play_sound(sfx_superjumphold, 1, false)
 	    audio_sound_gain(superjumpholdsnd, (1 * global.soundeffectsvolume), 0)
 	}
-	if sprite_index = spr_playerN_jetpackstart
-		image_speed = 0.3
-	else
+//	if sprite_index = spr_playerN_jetpackstart
+//		image_speed = 0.3
+//	else
 		image_speed = 0.5
 
 

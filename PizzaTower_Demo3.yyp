@@ -1859,6 +1859,7 @@
     {"id":{"name":"spr_tvsewer","path":"sprites/spr_tvsewer/spr_tvsewer.yy",},"order":27,},
     {"id":{"name":"spr_tvskull","path":"sprites/spr_tvskull/spr_tvskull.yy",},"order":28,},
     {"id":{"name":"spr_tvtalking1","path":"sprites/spr_tvtalking1/spr_tvtalking1.yy",},"order":29,},
+    {"id":{"name":"obj_heatafterimage","path":"objects/obj_heatafterimage/obj_heatafterimage.yy",},"order":53,},
     {"id":{"name":"spr_tvtalking2","path":"sprites/spr_tvtalking2/spr_tvtalking2.yy",},"order":30,},
     {"id":{"name":"spr_tvtalking3","path":"sprites/spr_tvtalking3/spr_tvtalking3.yy",},"order":31,},
     {"id":{"name":"spr_tvtalking4","path":"sprites/spr_tvtalking4/spr_tvtalking4.yy",},"order":32,},
