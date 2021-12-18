@@ -16,7 +16,7 @@ function scr_player_freefallland() {
 	hsp = 0
   
 	//TODO: IDK
-	if key_jump2 && floor(image_index) >= 2 && floor(image_index) != image_number - 1
+	if key_jump2 && floor(image_index) >= 4 && floor(image_index) != image_number - 1
 	{
 		facehurt = 0
 		jumpAnim = 1

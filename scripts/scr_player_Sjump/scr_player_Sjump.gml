@@ -128,6 +128,7 @@ function scr_player_Sjump() {
 	        flash = 1
 	        image_index = 0
 	        sprite_index = spr_player_sjumpcancelprep
+			image_speed = .5
 	        with (instance_create(x, y, obj_jumpdust))
 	            image_xscale = other.xscale
 	    }	
