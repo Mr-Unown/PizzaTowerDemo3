@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "Scripts",
-    "path": "folders/Rooms/Menus & Cutscenes/Scripts.yy",
+    "path": "folders/Scripts.yy",
   },
   "resourceVersion": "1.0",
   "name": "__view_set",

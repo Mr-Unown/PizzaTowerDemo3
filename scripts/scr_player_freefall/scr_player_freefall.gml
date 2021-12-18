@@ -129,6 +129,7 @@ function scr_player_freefall() {
 		{
 			playerid = other.id
 			image_xscale = other.xscale
+			sprite_index = spr_slamcloud
 		}	
 	    freefallstart = 0
 		combo = 0

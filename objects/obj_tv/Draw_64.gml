@@ -195,7 +195,7 @@ else
 					if global.combostyle = 0
 					draw_text(835 + _xx, 82 + _yy + newhudyoffset, string_char_at(_combo,i + 1));
 					else if global.combostyle = 1
-					draw_text(570 + _xx + combox, 55 + _yy + combobary, string_char_at(_combo,i + 1));
+					draw_text(570 + _xx + combox, 65 + _yy + combobary, string_char_at(_combo,i + 1));
 				}
 			}
 			//Combobar
