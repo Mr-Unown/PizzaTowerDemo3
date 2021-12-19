@@ -102,6 +102,8 @@ function scr_playercreate() {
 	pogoed = true
 	wallclingbuffer = 15
 	grindeffect = noone
+	initialfreefallvsp = 15
+	initialsuperjumpvsp = -12
 	//New Palette
 	surf_width = 2
 	surf_height = 10

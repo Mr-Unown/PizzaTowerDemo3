@@ -1,5 +1,5 @@
 function scr_enemy_stun() {
-	/*var vdirection = sign(hsp)
+	var vdirection = sign(hsp)
 	if (object_index == obj_ninja)
 	    attack = 1
 	stunned--
@@ -8,7 +8,7 @@ function scr_enemy_stun() {
 	image_speed = 0.35
 	if ((grounded || (grounded && (!place_meeting(x, y, obj_platform)))) && vsp > 0)
 	{
-	    if (thrown == 1 && hp <= 0) || (dying = true)
+	    if (thrown == 1 && hp <= 0 && grounded)
 		{
 			initialvsp = irandom_range(5,-20)
 			initialhsp = irandom_range(5,10) * choose(-1,1)
@@ -28,7 +28,7 @@ function scr_enemy_stun() {
 	{
 	    with (instance_create(x, y, obj_bulletimpact))
 	        image_xscale = (-other.image_xscale)
-	    if (thrown == 1 && hp <= 0 || dying = true) 
+	    if (thrown == 1 && hp <= 0 || dying = true && grounded) 
 		{
 			initialvsp = irandom_range(15,-15)
 			initialhsp = irandom_range(5,15) * -vdirection
@@ -102,11 +102,7 @@ function scr_enemy_stun() {
 	        state = 102
 	        movespeed = 1
 	    }
-	}*/
-	
-
-
-
+	}
 switch hp
     {
         case -1:
@@ -138,22 +134,37 @@ switch hp
 
     if (stuntouchbuffer > 0) && grounded
         stuntouchbuffer--
-	if grounded
+	if hittinged = false || grounded
         sprite_index = stunfallspr
 	else if hittinged = true
 		sprite_index = spr_dead
     image_speed = 0.35
+	if scr_solid(x - image_xscale,y) && !place_meeting((x - image_xscale), y, obj_destructibles)
+	{
+	    with (instance_create(x, y, obj_bulletimpact))
+	        image_xscale = (-other.image_xscale)
+	    if (thrown == 1 && hp <= 0 || dying = true) 
+		{
+			initialvsp = irandom_range(15,-15)
+			initialhsp = irandom_range(5,15) * -vdirection
+	        instance_destroy()
+		}
+	    if (thrown == 1 && hp > 0 && object_index == obj_bigcheese && sprite_index == stunfallspr)
+	        sprite_index = spr_bigcheese_fall
+	    thrown = 0
+	    grav = 0.5
+	    image_xscale *= -1
+	    hsp = ((-image_xscale) * 4)
+	}
     if ((grounded || (grounded && (!place_meeting(x, y, obj_platform)))) && vsp > 0)
     {
-        if (thrown == 1 && markedfordeath && grounded && hp < 1)
-            instance_destroy()
         thrown = 0
         grav = 0.5
         hsp = 0
     }
     if (hithsp != 0 && place_meeting((x - image_xscale), y, obj_solid) && (!place_meeting((x - image_xscale), y, obj_destructibles)))
     {
-        if (markedfordeath && grounded && hp < 1)
+        if (markedfordeath && grounded && hp < 0)
             instance_destroy()
         thrown = 0
         grav = 0.5
@@ -166,5 +177,5 @@ switch hp
         image_index = 0
         sprite_index = walkspr
         state = enemystates.enemywalk
-    }
+	}  
 }

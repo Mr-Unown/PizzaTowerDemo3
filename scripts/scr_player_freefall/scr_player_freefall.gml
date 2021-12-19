@@ -1,8 +1,10 @@
 function scr_player_freefall() {
 	landAnim = 1
-	if vsp < 15
-		vsp = 15;
-	vsp = clamp(vsp + 0.15,15,20);
+	//if vsp < 15
+		//vsp = 15;
+	//vsp = clamp(vsp + 0.15,15,20);
+	vsp = initialfreefallvsp
+    initialfreefallvsp += 0.2
 	freefallsmash += clamp(vsp/15,1,2);
 	move = (key_left + key_right)
 	if (!grounded)

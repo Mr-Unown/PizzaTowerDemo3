@@ -47,4 +47,8 @@ function scr_enemycreate() {
 	hithsp = 0
 	hitvsp = 0
 	hittinged = false
+	//finishing blow spin
+	canrotate = false
+    rotatedirection = choose(-1,1)
+    rotatevalue = irandom_range(5,20)
 }

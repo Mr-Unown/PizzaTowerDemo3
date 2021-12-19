@@ -830,5 +830,10 @@ else if actor = true
 		if (state == 88)
 		   scr_collide_player()
 	}	
+	//freefall and superjump update
+	if state != states.freefall
+	initialfreefallvsp = 15
+	if state != states.Sjump
+	initialsuperjumpvsp = -12
 }
 

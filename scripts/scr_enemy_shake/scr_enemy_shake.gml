@@ -36,8 +36,15 @@ function scr_enemy_shake() {
 	        grav = 0.5
 	        state = 106
 	        hp -= 1
-
 	        thrown = 1
+			if hp < 0
+			instance_destroy()
+			with instance_create(x,y,obj_balloonpop)
+			{
+					image_speed = 0.35
+					sprite_index = spr_bigpoofclouds
+					image_angle = choose(0,90,180,270)
+			}
 	    }
 	    else if (blowdirection == 2)
 	    {
@@ -61,9 +68,12 @@ function scr_enemy_shake() {
 	        vsp = (-6 * blowintensity)
 	        grav = 0.5
 	        state = 106
-	        hp -= 1
-
+	        hp -= 99
 	        thrown = 1
+			hittinged = true
+			canrotate = true
+			image_angle += rotatevalue * rotatedirection
+			
 	    }
 	    else if (blowdirection == "parry")
 	    {
@@ -74,11 +84,11 @@ function scr_enemy_shake() {
 	        vsp = (0 * blowintensity)
 	        grav = 0
 	        state = 106
-	        hp -= 1
+	        hp -= 999
 
 	        thrown = 1
 	    }
-		else if (blowdirection == 5) && hp > 0
+		else if (blowdirection == 5)
 		{
 			alarm[1] = 2
 	        shakebuffer = 2.5

@@ -19,7 +19,8 @@ function scr_player_Sjump() {
 		hsp = 0
 	if (superspringjump = false)
 	{
-		vsp = -15
+		vsp = initialsuperjumpvsp
+		initialsuperjumpvsp -= 0.1
 	}
 	else if (superspringjump == true)
 	{

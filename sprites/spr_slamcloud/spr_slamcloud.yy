@@ -103,7 +103,7 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 68,
-    "yorigin": 67,
+    "yorigin": 68,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_slamcloud","path":"sprites/spr_slamcloud/spr_slamcloud.yy",},
