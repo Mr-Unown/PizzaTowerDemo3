@@ -19,7 +19,8 @@ function scr_panicbg_start() {
 				layer_y(a[i], ((layer_get_y(a[i]) - _cam_y) + 64))
 			}
 		}
-		#region OLD shit
+		
+		#region OLD shit 
 		/*
 	    var bg1 = layer_get_id("Backgrounds_1")
 	    var bg2 = layer_get_id("Backgrounds_2")
@@ -73,6 +74,7 @@ function scr_panicbg_start() {
 	    layer_x(bg16, ((layer_get_x(bg16) - _cam_x) + 64))
 	    layer_y(bg16, ((layer_get_y(bg16) - _cam_y) + 64))	*/
 		#endregion
+		
 	}
 }
 //End
