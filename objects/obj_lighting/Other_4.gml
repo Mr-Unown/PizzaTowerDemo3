@@ -36,7 +36,6 @@ switch room
 		break;				
 	#endregion	
 	#region Desert
-	case desert_5:
 	case desert_6:
 	case desert_7:	
 	case desert_8:
@@ -60,3 +59,26 @@ switch room
 		can_draw = false;
 		break;
 }
+//Shader Effects
+switch room 
+{
+	#region Desert
+	case desert_1:
+	case desert_2:
+	case desert_3:	
+	case desert_4:
+	case desert_5:
+	if !global.panic && !global.desertnight
+		scr_desert_foregroundshader_init();
+	break;
+	#endregion
+}
+
+
+/*
+	//Sort Array
+	var _f = function(elm1,elm2)
+	{
+		return -(layer_get_depth(elm1) - layer_get_depth(elm2));
+	}
+	array_sort(layers,_f)

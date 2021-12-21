@@ -8,7 +8,7 @@
 	}
 	else
 		surface_copy(d3application_surface,0,0,application_surface)
-	//Heat Effect
+	/*Heat Effect
 	if global.visual_temperature = temperature.hot
 	{
 		shader_set(shd_wave);
@@ -21,7 +21,7 @@
 		draw_surface(application_surface, 0, 0);
 		surface_reset_target();
 		shader_reset();
-	}
+	}*/
 	//Screenmelt Alpha
 	var appa = 1
 	if global.screenmelt = 1 && global.panic = 1 && global.panicbg

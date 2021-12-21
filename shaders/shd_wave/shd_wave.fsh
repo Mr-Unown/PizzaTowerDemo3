@@ -16,5 +16,5 @@ const float xSize = 1.00;
 void main()
 {
     float xWave = sin(Time*xSpeed + v_vTexcoord.y*xFreq) * (xSize*Texel.x);
-    gl_FragColor = v_vColour * texture2D( gm_BaseTexture, v_vTexcoord + (vec2(xWave, 0.0));
+    gl_FragColor = v_vColour * texture2D( gm_BaseTexture, v_vTexcoord + vec2(xWave, 0.0));
 }

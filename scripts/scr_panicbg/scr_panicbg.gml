@@ -8,7 +8,6 @@ function scr_panicbg_start() {
 	    draw_clear_alpha(c_black, 0)
 	    var _cam_x = camera_get_view_x(view_camera[0])
 	    var _cam_y = camera_get_view_y(view_camera[0])
-		
 		var a = layer_get_all();	
 		for (var i = 0; i < array_length(a); ++i) 
 		{
@@ -20,7 +19,7 @@ function scr_panicbg_start() {
 			}
 		}
 		
-		#region OLD shit 
+		#region OLD shit
 		/*
 	    var bg1 = layer_get_id("Backgrounds_1")
 	    var bg2 = layer_get_id("Backgrounds_2")
@@ -74,7 +73,6 @@ function scr_panicbg_start() {
 	    layer_x(bg16, ((layer_get_x(bg16) - _cam_x) + 64))
 	    layer_y(bg16, ((layer_get_y(bg16) - _cam_y) + 64))	*/
 		#endregion
-		
 	}
 }
 //End

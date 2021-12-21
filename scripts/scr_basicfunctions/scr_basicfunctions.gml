@@ -95,3 +95,25 @@ function layer_change_background(original_sprite,new_sprite)
 		}
 	}
 }
+
+function get_all_layer_type(layer_type = layerelementtype_undefined)
+{
+	/// @description Returns an array of a certain type of layer
+	/// @function get_all_layer_type
+	var layers, layernum = 0;
+	var a = layer_get_all(), i = 0;
+	while (i < array_length(a)) 
+	{
+		var els = layer_get_all_elements(a[i]);
+		if (layer_get_element_type(els) == layer_type)
+		{
+			layers[layernum++] = a[i]
+		}
+	   i++
+	}
+	//If no layers are found get out
+	if (!layernum)
+	    return noone;
+	
+	return layers;
+}
