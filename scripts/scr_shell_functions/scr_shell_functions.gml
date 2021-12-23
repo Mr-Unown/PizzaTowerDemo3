@@ -17,6 +17,7 @@ function scr_fartcommand(fartstring = "BALLS")
 		case "fard":
 		case "shart":
 		case "shit":
+		case "brap":		
 			return true;
 		break;
 	}
