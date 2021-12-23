@@ -163,9 +163,21 @@ if (!isOpen) {
 					savedConsoleString = "";
 					cursorPos = 1;
 				} else {
-					array_push(output, ">" + consoleString);
-					array_push(output, "No such command: " + consoleString);
-					array_push(history, consoleString);
+					//Demo 3 Edit (I added fart back)
+					if scr_fartcommand(consoleString)
+					{
+						array_push(output, ">" + consoleString);
+						array_push(output, "Farted");
+						array_push(history, consoleString);		
+						audio_sound_gain(audio_play_sound(sfx_fart, 1, false), (1 * global.soundeffectsvolume), 0);
+					}
+					else
+					{
+						//Edit ends here-ish
+						array_push(output, ">" + consoleString);
+						array_push(output, "No such command: " + consoleString);
+						array_push(history, consoleString);
+					}
 					historyPos = array_length(history);
 					consoleString = "";
 					savedConsoleString = "";
