@@ -82,7 +82,7 @@ function point_in_camera(argument0, argument1, argument2)
 
 function layer_change_background(original_sprite,new_sprite)
 {
-	/// @description Facilitates background change
+	/// @description Changes Background sprite based on the original sprite
 	/// @function layer_change_background
 	if original_sprite != new_sprite
 	{

@@ -1,6 +1,7 @@
 #region Draw Screen
 	//Overwrite application surface
 	//Copied Surface
+	application_surface_draw_enable(false)
 	if !surface_exists(d3application_surface)
 	{
 		d3application_surface = surface_create(960,540)
@@ -36,17 +37,22 @@
 		shader = shd_greyscale;
 	else
 		shader = noone;
+		
+	//New Resolution Scaling
+    var winh = window_get_height() , roundh = floor(winh/9) * 9;
+    var winw = window_get_width() , roundw = floor(winw/16) * 16;
+	var apph = 540 - (winh - roundh), appw = 960 - (winw - roundw);
 	//Draw Application Surface
 	if shader != noone
 	{
 		shader_set(shader);
 		var fade = shader_get_uniform(shader, "fade")
 		shader_set_uniform_f(fade, greyscalefade)
-		draw_surface_stretched_ext(d3application_surface, 0, 0, 960, 540, c_white, appa)
+		draw_surface_stretched_ext(d3application_surface, 0, 0, appw, apph, c_white, appa)
 		shader_reset();		
 	}
 	else
-		draw_surface_stretched_ext(d3application_surface, 0, 0, 960, 540, c_white, appa)
+		draw_surface_stretched_ext(d3application_surface, 0, 0, appw, apph, c_white, appa)
 	
 #endregion
 
@@ -72,7 +78,7 @@ if (global.panic == 1 && global.panicbg)
     var appw = (apph * 1.7777777777777777)
     var appx = ((winw - appw) / 2)
     var appa = lerp(1, 0.33999999999999997, (global.wave / global.maxwave))
-    draw_surface_stretched_ext(application_surface, appx, 0, appw, apph, 16777215, appa)
+    draw_surface_stretched_ext(application_surface, appx, 0, appw, apph, c_white, appa)
 }
 else
     application_surface_draw_enable(true)

@@ -24,7 +24,7 @@ function scr_desert_foregroundshader_init(){
 	//Sort Array
 	var _f = function(elm1,elm2)
 	{
-		return -(layer_get_depth(elm1) - layer_get_depth(elm2));
+		return -(layer_get_depth(elm1[0]) - layer_get_depth(elm2[0]));
 	}
 	array_sort(layers,_f)	
 
@@ -41,11 +41,10 @@ function scr_desert_foregroundshader_init(){
 	    var _cam_x = camera_get_view_x(view_camera[0])
 	    var _cam_y = camera_get_view_y(view_camera[0])
 		
-		var a = layers;	
-		for (var i = 0; i < array_length(a); ++i) 
+		for (var i = 0; i < array_length(layers); ++i) 
 		{
-			layer_x(a[i][0], ((layers[i][1].x_pos - _cam_x) + 64))
-			layer_y(a[i][0], ((layers[i][1].y_pos - _cam_y) + 64))
+			layer_x(layers[i][0], ((layers[i][1].x_pos - _cam_x) + 64))
+			layer_y(layers[i][0], ((layers[i][1].y_pos - _cam_y) + 64))
 			
 		}
 	}
