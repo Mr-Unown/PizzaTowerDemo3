@@ -1,7 +1,7 @@
 #region Draw Screen
-	//Overwrite application surface
-	//Copied Surface
-	application_surface_draw_enable(false)
+	//Disable Default Application Surface
+	application_surface_draw_enable(false)	
+	//Copy App Surface to New Surface
 	if !surface_exists(d3application_surface)
 	{
 		d3application_surface = surface_create(960,540)
@@ -9,20 +9,13 @@
 	}
 	else
 		surface_copy(d3application_surface,0,0,application_surface)
-	/*Heat Effect
+		
+	//Heat Effect
 	if global.visual_temperature = temperature.hot
 	{
-		shader_set(shd_wave);
-		surface_set_target(d3application_surface); //Set the surface
-		var uTime = shader_get_uniform(shd_wave, "Time");
-		var uTexel = shader_get_uniform(shd_wave, "Texel");	
-		shader_set_uniform_f(uTime, current_time);
-		var tex = surface_get_texture(application_surface)
-		shader_set_uniform_f(uTexel, texture_get_texel_width(tex), texture_get_texel_height(tex));		
-		draw_surface(application_surface, 0, 0);
-		surface_reset_target();
-		shader_reset();
-	}*/
+
+	}
+	
 	//Screenmelt Alpha
 	var appa = 1
 	if global.screenmelt = 1 && global.panic = 1 && global.panicbg
@@ -38,24 +31,42 @@
 	else
 		shader = noone;
 		
-	//New Resolution Scaling
-    var winh = window_get_height() , roundh = floor(winh/9) * 9;
-    var winw = window_get_width() , roundw = floor(winw/16) * 16;
-	var apph = 540 - (winh - roundh), appw = 960 - (winw - roundw);
 	//Draw Application Surface
+	gpu_set_blendenable(false);
 	if shader != noone
 	{
 		shader_set(shader);
 		var fade = shader_get_uniform(shader, "fade")
 		shader_set_uniform_f(fade, greyscalefade)
-		draw_surface_stretched_ext(d3application_surface, 0, 0, appw, apph, c_white, appa)
+		draw_surface_stretched_ext(d3application_surface, 0, 0, 960, 540, c_white, appa)
 		shader_reset();		
 	}
 	else
-		draw_surface_stretched_ext(d3application_surface, 0, 0, appw, apph, c_white, appa)
-	
+		draw_surface_stretched_ext(d3application_surface, 0, 0, 960, 540, c_white, appa)
+	gpu_set_blendenable(true);
 #endregion
-
+	/*
+	if !surface_exists(d3application_surface)
+	{
+		d3application_surface = surface_create(960,540)
+		surface_copy(d3application_surface,0,0,application_surface)
+	}
+	else
+		surface_copy(d3application_surface,0,0,application_surface)
+	//Heat Effect
+	if global.visual_temperature = temperature.hot
+	{
+		shader_set(shd_wave);
+		surface_set_target(d3application_surface); //Set the surface
+		var uTime = shader_get_uniform(shd_wave, "Time");
+		var uTexel = shader_get_uniform(shd_wave, "Texel");	
+		shader_set_uniform_f(uTime, current_time);
+		var tex = surface_get_texture(application_surface)
+		shader_set_uniform_f(uTexel, texture_get_texel_width(tex), texture_get_texel_height(tex));		
+		draw_surface(application_surface, 0, 0);
+		surface_reset_target();
+		shader_reset();
+	}*/
 /*
 //Actually Set Shader
 shader_set(shd_wave);

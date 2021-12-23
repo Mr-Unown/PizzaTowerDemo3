@@ -3,7 +3,7 @@
 global.shellactivate = false;
 global.showcollisions = false;
 display_set_gui_size(960, 540);
-
+surface_resize(application_surface,960,540);
 //Global Variable Init
 enum temperature
 {

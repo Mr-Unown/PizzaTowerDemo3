@@ -36,11 +36,11 @@ switch room
 	case desert_2:
 	case desert_3:	
 	case desert_4:
-		if global.desertnight = false && global.panic = false
+	case desert_5:
+		if !global.panic && !global.desertnight
 			global.visual_temperature = temperature.hot;
 		else
 			global.visual_temperature = temperature.normal;
-	
 	break;	
 	#endregion
 	default:

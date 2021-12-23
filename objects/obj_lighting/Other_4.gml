@@ -59,7 +59,7 @@ switch room
 		can_draw = false;
 		break;
 }
-//Shader Effects
+/*Shader Effects
 switch room 
 {
 	#region Desert
@@ -74,7 +74,7 @@ switch room
 	#endregion
 }
 
-
+*/
 /*
 	//Sort Array
 	var _f = function(elm1,elm2)

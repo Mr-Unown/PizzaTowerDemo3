@@ -6,7 +6,7 @@
     "path": "folders/Scripts/utility.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scr_lightingshaderstuff",
+  "name": "scr_camerafunctions",
   "tags": [],
   "resourceType": "GMScript",
 }
