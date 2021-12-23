@@ -6,9 +6,9 @@ function scr_desert_shader()
 	surface_set_target(d3application_surface); //Set the surface
 	//Values
 	//Wave Effect Options
-	wave_shdSpeed = 0.05;
+	wave_shdSpeed = 0.01;
 	wave_shdFreq = 100.00;
-	wave_shdSize = 1.00;
+	wave_shdSize = 0.60;
 	#region Shader Stuff
 	var uTime = shader_get_uniform(shd_wave, "Time"), 
 	uTexel = shader_get_uniform(shd_wave, "Texel"), 

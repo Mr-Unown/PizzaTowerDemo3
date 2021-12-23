@@ -100,4 +100,3 @@ if surface_exists(watersurface)
 
 //Draw Surface
 draw_surface_ext(watersurface,_cam_x,_cam_y,1,1,0,c_white,alpha);
-

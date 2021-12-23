@@ -387,7 +387,7 @@ function scr_roomnames(_room = room) {
 			_message = "Ocean of Cheese";
 			break;	
 		case sanctum_7_1:
-			_message = "Janitor Shrine";
+			_message = "You found a Super Secret!";
 			break;
 		case sanctum_7_2:
 			_message = "Spaghetti Junction";
