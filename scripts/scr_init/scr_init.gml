@@ -3,8 +3,23 @@
 global.shellactivate = false;
 global.showcollisions = false;
 display_set_gui_size(960, 540);
+surface_resize(application_surface,960,540);
+//Fart Counter
+global.fartcounter = 0;
 
+//Global Variable Init
+enum temperature
+{
+	normal,
+	hot,
+	cold
+}
+global.visual_temperature = temperature.normal;
+
+
+//Read Save File
 ini_open("saveData.ini")
+//global.interpolation = ini_read_real("Option", "interpolation", false);
 global.newtitlescreen = ini_read_real("Option", "newtitlescreen", false);
 global.newsjumpcancel = ini_read_real("Option", "newsjumpcancel", false);
 global.wallrunstyle = ini_read_real("Option", "wallrunstyle", 0);
@@ -19,6 +34,8 @@ global.ratmode = ini_read_real("Option", "ratmode", false);
 ini_close()
 global.roomstart[0] = Realtitlescreen;
 global.roomstart[1] = New_Realtitlescreen;
+//Interpolation
+//gpu_set_tex_filter(global.interpolation);
 //Start by cleaning
 global.flushtextures = true;
 global.moppingframes = 0;

@@ -36,13 +36,9 @@ switch room
 		break;				
 	#endregion	
 	#region Desert
-	case desert_5:
 	case desert_6:
 	case desert_7:	
 	case desert_8:
-	case desert_9:
-	case desert_10:
-	case desert_11:
 		can_draw = true;
 		targetdarkness = 0.35;
 		break;
@@ -52,14 +48,6 @@ switch room
 		targetdarkness = 0.60;
 		break;
 	#endregion
-	/*#region Factory
-	case factory_8:	
-	if place_meeting(x,y, obj_eventtrigger)
-		can_draw = true;
-		targetdarkness = 0.85
-		break;		
-	#endregion
-	*/
 	case hub_roomSNICK:
 		can_draw = true;
 		darkness = 0.90
@@ -71,3 +59,26 @@ switch room
 		can_draw = false;
 		break;
 }
+/*Shader Effects
+switch room 
+{
+	#region Desert
+	case desert_1:
+	case desert_2:
+	case desert_3:	
+	case desert_4:
+	case desert_5:
+	if !global.panic && !global.desertnight
+		scr_desert_foregroundshader_init();
+	break;
+	#endregion
+}
+
+*/
+/*
+	//Sort Array
+	var _f = function(elm1,elm2)
+	{
+		return -(layer_get_depth(elm1) - layer_get_depth(elm2));
+	}
+	array_sort(layers,_f)

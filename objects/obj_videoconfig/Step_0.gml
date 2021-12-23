@@ -132,5 +132,31 @@ if (optionselected == 3)
         selecting = -1
     }
 }
+/*
+if (optionselected == 4)
+{
+    if ((key_right2 || keyboard_check_pressed(vk_right)) && optionsaved_interpolation < 1)
+        optionsaved_interpolation += 1
+    if (((-key_left2) || keyboard_check_pressed(vk_left)) && optionsaved_interpolation > 0)
+        optionsaved_interpolation -= 1		
+    if ((key_jump || keyboard_check_pressed(vk_return)) && optionsaved_interpolation == 0)
+    {
+		global.interpolation = false
+        ini_open("saveData.ini")
+			ini_write_real("Option", "interpolation", false);
+        ini_close()
+		gpu_set_tex_filter(false);
+        selecting = -1
+    }
+    if ((key_jump || keyboard_check_pressed(vk_return)) && optionsaved_interpolation == 1)
+    {
+		global.interpolation = true
+        ini_open("saveData.ini")
+			ini_write_real("Option", "interpolation", true);
+        ini_close()
+		gpu_set_tex_filter(true);
+        selecting = -1
+    }	
 
+}*/
 //global.hitstunenabled = true

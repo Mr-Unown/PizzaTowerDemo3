@@ -6,6 +6,24 @@ function scr_shell_closeconsole()
 {
 	global.shellactivate = false;
 }
+
+function scr_fartcommand(fartstring = "BALLS")
+{
+	switch fartstring
+	{
+		case "fart":
+		case "poop":
+		case "crap":
+		case "fard":
+		case "shart":
+		case "shit":
+		case "brap":		
+			return true;
+		break;
+	}
+}
+
+
 #region Tile Solid
 function scr_shell_roomstart()
 {

@@ -29,6 +29,7 @@ if (global.panic == 1 && layer_background_get_sprite(back_id6) == bg_nightsky)
 //Ancient John Room
 if (global.panic == 1 && layer_background_get_sprite(back_id) == bg_darkjohn)
     layer_background_sprite(back_id, bg_darkjohnescape)	
+
 /*
 if (global.panic == 1 && (layer_background_get_sprite(back_id2) == 1208 || layer_background_get_sprite(back_id2) == 1211))
     layer_background_sprite(back_id2, 1467)

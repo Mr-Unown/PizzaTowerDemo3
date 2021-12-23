@@ -556,7 +556,7 @@ if (player.state != 55)
 
 	#endregion
 }
-draw_set_blend_mode(0)
+draw_set_blend_mode(bm_normal)
 
 
 
