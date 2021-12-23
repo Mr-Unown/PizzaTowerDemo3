@@ -13,7 +13,7 @@
 	//Heat Effect
 	if global.visual_temperature = temperature.hot
 	{
-
+		scr_desert_shader()
 	}
 	
 	//Screenmelt Alpha

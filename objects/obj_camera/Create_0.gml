@@ -3,10 +3,7 @@ panicshake = 0;
 panicshakeacc = 0;
 depth = -9994
 
-//Wave Effect Options
-wave_shdSpeed = 0.05;
-wave_shdFreq = 100.00;
-wave_shdSize = 1.00;
+
 
 
 //Stinky Thing
