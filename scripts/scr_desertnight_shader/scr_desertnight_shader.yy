@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Shader",
-    "path": "folders/Scripts/utility/Shader.yy",
+    "name": "DesertStuff",
+    "path": "folders/Scripts/utility/Shader/DesertStuff.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scr_camerashaders",
+  "name": "scr_desertnight_shader",
   "tags": [],
   "resourceType": "GMScript",
 }
