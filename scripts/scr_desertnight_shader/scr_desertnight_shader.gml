@@ -36,7 +36,8 @@ function scr_desert_foregroundshader_init() {
 	if event_type == ev_draw && event_number == 0
 	{
 		//Draw Fog
-		gpu_set_fog(true,c_aqua,0,1000)
+		surface_set_target(desert_surface)
+		gpu_set_fog(true,c_blue,0,100000)
 	}
 }
 	//End
@@ -45,6 +46,11 @@ function scr_desert_foregroundshader_init() {
 	{	
 		//Default Values
 		gpu_set_fog(false,c_black,0,1)
+		surface_reset_target()
+		
+		gpu_set_blendenable(false);
+		draw_surface_ext(desert_surface,0,0,1,1,0,c_white,0.3)
+		gpu_set_blendenable(true);
 	}
 }
 	

@@ -69,7 +69,7 @@ switch room
 	case desert_4:
 	case desert_5:
 		if global.desertnight
-			
+			scr_desert_foregroundshader_init()
 	break;	
 	#endregion
 	default:
