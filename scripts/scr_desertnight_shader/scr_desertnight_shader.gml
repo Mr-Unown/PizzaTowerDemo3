@@ -48,9 +48,9 @@ function scr_desert_foregroundshader_init() {
 		gpu_set_fog(false,c_black,0,1)
 		surface_reset_target()
 		
-		gpu_set_blendenable(false);
-		draw_surface_ext(desert_surface,0,0,1,1,0,c_white,0.3)
-		gpu_set_blendenable(true);
+		//gpu_set_blendenable(false);
+		draw_surface_ext(desert_surface,0,0,1,1,0,c_white,0.45)
+		//gpu_set_blendenable(true);
 	}
 }
 	
