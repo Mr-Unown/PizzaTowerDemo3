@@ -50,7 +50,7 @@ if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
 		}
 	}
 	if global.newhud = false
-    obj_tv.image_index = random_range(0, 4)	
+		obj_tv.image_index = random_range(0, 4)	
 
     global.combo = (global.combo + 1)
     if (grabbedby == 1)

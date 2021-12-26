@@ -7,7 +7,8 @@ depth = -9994
 //Stinky Thing
 oldfacesprite = spr_null
 //global.startgate
-
+//Rank
+global.currentrank = "D"
 global.startgate = noone;
 startdistanced = 0;
 startdistance = 0;

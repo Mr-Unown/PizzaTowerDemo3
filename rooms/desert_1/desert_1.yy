@@ -132,7 +132,6 @@
             {"propertyId":{"name":"panic_escape","path":"objects/group_all/group_all.yy",},"objectId":{"name":"group_all","path":"objects/group_all/group_all.yy",},"value":"True","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"obj_indiancheese","path":"objects/obj_indiancheese/obj_indiancheese.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2816.0,"y":338.0,"resourceVersion":"1.0","name":"inst_786C2D49","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_cheeseslime","path":"objects/obj_cheeseslime/obj_cheeseslime.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3264.0,"y":434.0,"resourceVersion":"1.0","name":"inst_3C80C17D","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"obj_eventtrigger","path":"objects/obj_eventtrigger/obj_eventtrigger.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":2.0,"scaleY":2.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1184.0,"y":160.0,"resourceVersion":"1.0","name":"inst_3DE5A14A","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances_1","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"tile_newdesert_outside","path":"tilesets/tile_newdesert_outside/tile_newdesert_outside.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":150,"SerialiseHeight":17,"TileSerialiseData":[
 114,114,85,86,109,110,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,15,15,15,13,15,15,15,13,16,17,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,102,103,
@@ -312,7 +311,6 @@
     {"name":"inst_2CF6A387","path":"rooms/desert_1/desert_1.yy",},
     {"name":"inst_786C2D49","path":"rooms/desert_1/desert_1.yy",},
     {"name":"inst_3C80C17D","path":"rooms/desert_1/desert_1.yy",},
-    {"name":"inst_3DE5A14A","path":"rooms/desert_1/desert_1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

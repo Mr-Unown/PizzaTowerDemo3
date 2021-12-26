@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 0,
-  "volume": 1.0,
+  "volume": 0.35,
   "preload": true,
   "bitRate": 192,
   "sampleRate": 44100,
@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_taunt.wav",
-  "duration": 0.65059,
+  "duration": 0.700952,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

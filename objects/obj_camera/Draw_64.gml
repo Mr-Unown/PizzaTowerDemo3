@@ -279,39 +279,52 @@ if (player.state != 55)
 		shader_reset();
 		//Pizzascore thing
 		draw_sprite_ext(spr_pizzascore, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
-		//Rank bubble
-		if global.collect < global.crank
+		
+		#region Rank bubble
+		if global.timeattack = false
 		{
-		var bubbleWidth = sprite_get_width(spr_rankbubble_dfilled);
-		var bubbleHeight = sprite_get_height(spr_rankbubble_dfilled);
-		var rankpercent = (global.collect / global.crank);
-		draw_sprite_ext(spr_rankbubble_d, -1, 215, -11, 1, 1, 0, c_white, 1)
-		draw_sprite_part_ext(spr_rankbubble_dfilled,-1,0,0,bubbleWidth,bubbleHeight*rankpercent ,215,-11,1,1,c_white,1)
+			var bubbleempty = spr_rankbubble_d, bubblefilled = spr_rankbubble_dfilled,
+			local_rank = global.crank;
+			switch global.currentrank
+			{
+				case "S":
+				bubbleempty = spr_rankbubble_a;
+				bubblefilled = spr_rankbubble_afilled;
+				local_rank = global.srank;						
+				break;
+				case "A":
+				bubbleempty = spr_rankbubble_a;
+				bubblefilled = spr_rankbubble_afilled;
+				local_rank = global.srank;						
+				break;
+				case "B":
+				bubbleempty = spr_rankbubble_b;
+				bubblefilled = spr_rankbubble_bfilled;
+				local_rank = global.arank;						
+				break;
+				case "C":
+				bubbleempty = spr_rankbubble_c;
+				bubblefilled = spr_rankbubble_cfilled;
+				local_rank = global.brank;					
+				break;
+				default:
+				bubbleempty = spr_rankbubble_d;
+				bubblefilled = spr_rankbubble_dfilled;
+				local_rank = global.crank;				
+				break;
+			}
+			var bubbleWidth = sprite_get_width(bubblefilled);
+			var bubbleHeight = sprite_get_height(bubblefilled);
+			var rankpercent = (global.collect / local_rank);
+			if global.currentrank == "S" && rankpercent >= 1
+				draw_sprite_ext(spr_rankbubble_sfilled, -1, 215, -11, 1, 1, 0, c_white, 1)
+			else
+			{
+				draw_sprite_ext(bubbleempty, -1, 215, -11, 1, 1, 0, c_white, 1)
+				draw_sprite_part_ext(bubblefilled,-1,0,0,bubbleWidth,bubbleHeight*rankpercent ,215,-11,1,1,c_white,1)			
+			}
 		}
-		if global.collect > global.crank && global.collect < global.brank
-		{
-		var bubbleWidth = sprite_get_width(spr_rankbubble_cfilled);
-		var bubbleHeight = sprite_get_height(spr_rankbubble_cfilled);
-		var rankpercent = (global.collect / global.brank);
-		draw_sprite_ext(spr_rankbubble_c, -1, 215, -11, 1, 1, 0, c_white, 1)
-		draw_sprite_part_ext(spr_rankbubble_cfilled,-1,0,0,bubbleWidth,bubbleHeight*rankpercent ,215,-11,1,1,c_white,1)
-		}
-		if global.collect > global.brank && global.collect < global.arank
-		{
-		var bubbleWidth = sprite_get_width(spr_rankbubble_bfilled);
-		var bubbleHeight = sprite_get_height(spr_rankbubble_bfilled);
-		var rankpercent = (global.collect / global.arank);
-		draw_sprite_ext(spr_rankbubble_b, -1, 215, -11, 1, 1, 0, c_white, 1)
-		draw_sprite_part_ext(spr_rankbubble_bfilled,-1,0,0,bubbleWidth,bubbleHeight*rankpercent ,215,-11,1,1,c_white,1)
-		}
-		if global.collect > global.arank && global.collect < global.srank
-		{
-		var bubbleWidth = sprite_get_width(spr_rankbubble_afilled);
-		var bubbleHeight = sprite_get_height(spr_rankbubble_afilled);
-		var rankpercent = (global.collect / global.srank);
-		draw_sprite_ext(spr_rankbubble_a, -1, 215, -11, 1, 1, 0, c_white, 1)
-		draw_sprite_part_ext(spr_rankbubble_afilled,-1,0,0,bubbleWidth,bubbleHeight*rankpercent ,215,-11 + bubbleHeight,1,1,c_white,1)
-		}
+		#endregion
 		//Rank Topppings
 		if global.timeattack = false
 		{
