@@ -17,7 +17,6 @@ if global.hudmode == false
 	{
 		case 0:
 		#region OLD HUD
-		
 	#region Murder
 	var murdersprite = (player.character == "N" ? spr_playerN_noisebomb : spr_peppinobullethud)
 	if (player.murderammo >= 1)
@@ -280,7 +279,39 @@ if (player.state != 55)
 		shader_reset();
 		//Pizzascore thing
 		draw_sprite_ext(spr_pizzascore, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
-		
+		//Rank bubble
+		if global.collect < global.crank
+		{
+		var bubbleWidth = sprite_get_width(spr_rankbubble_dfilled);
+		var bubbleHeight = sprite_get_height(spr_rankbubble_dfilled);
+		var rankpercent = (global.collect / global.crank);
+		draw_sprite_ext(spr_rankbubble_d, -1, 215, -11, 1, 1, 0, c_white, 1)
+		draw_sprite_part_ext(spr_rankbubble_dfilled,-1,0,0,bubbleWidth,bubbleHeight*rankpercent ,215,-11,1,1,c_white,1)
+		}
+		if global.collect > global.crank && global.collect < global.brank
+		{
+		var bubbleWidth = sprite_get_width(spr_rankbubble_cfilled);
+		var bubbleHeight = sprite_get_height(spr_rankbubble_cfilled);
+		var rankpercent = (global.collect / global.brank);
+		draw_sprite_ext(spr_rankbubble_c, -1, 215, -11, 1, 1, 0, c_white, 1)
+		draw_sprite_part_ext(spr_rankbubble_cfilled,-1,0,0,bubbleWidth,bubbleHeight*rankpercent ,215,-11,1,1,c_white,1)
+		}
+		if global.collect > global.brank && global.collect < global.arank
+		{
+		var bubbleWidth = sprite_get_width(spr_rankbubble_bfilled);
+		var bubbleHeight = sprite_get_height(spr_rankbubble_bfilled);
+		var rankpercent = (global.collect / global.arank);
+		draw_sprite_ext(spr_rankbubble_b, -1, 215, -11, 1, 1, 0, c_white, 1)
+		draw_sprite_part_ext(spr_rankbubble_bfilled,-1,0,0,bubbleWidth,bubbleHeight*rankpercent ,215,-11,1,1,c_white,1)
+		}
+		if global.collect > global.arank && global.collect < global.srank
+		{
+		var bubbleWidth = sprite_get_width(spr_rankbubble_afilled);
+		var bubbleHeight = sprite_get_height(spr_rankbubble_afilled);
+		var rankpercent = (global.collect / global.srank);
+		draw_sprite_ext(spr_rankbubble_a, -1, 215, -11, 1, 1, 0, c_white, 1)
+		draw_sprite_part_ext(spr_rankbubble_afilled,-1,0,0,bubbleWidth,bubbleHeight*rankpercent ,215,-11 + bubbleHeight,1,1,c_white,1)
+		}
 		//Rank Topppings
 		if global.timeattack = false
 		{
@@ -511,7 +542,14 @@ if (player.state != 55)
 	var timery = (global.newhud == true? 450 : 65)	
 	if (global.panic == 1 || global.snickchallenge == 1 || global.miniboss == 1)
     {
-        if (global.seconds < 10)
+		var meterwidth = sprite_get_width(spr_timermeter)
+        var meterheight = sprite_get_height(spr_timermeter)
+        var b = (global.seconds + (global.minutes * 60) / 291)
+        draw_sprite_part(spr_timermeter, -1, 0, 0, (meterwidth * b), meterheight, 332,480)
+		draw_sprite(spr_pizzatimer, 0, 416, 480)
+		draw_sprite(spr_pizzafacehud_sleep, 0, 644, 480)
+		
+       /* if (global.seconds < 10)
         {
             if (global.minutes < 1)
                 draw_set_color(c_red)
@@ -527,7 +565,7 @@ if (player.state != 55)
             else
                 draw_set_color(c_white)
             draw_text((random_range(1, -1) + 480), (random_range(1, -1) + timery), string_hash_to_newline(((string(global.minutes) + ":") + string(global.seconds))))
-        }
+        }*/
     }	
 	#endregion
 	#region Speedrun Timer
@@ -553,7 +591,6 @@ if (player.state != 55)
 		draw_text(823, 512, string_hash_to_newline(((string(global.bonushour) + string(tinyish) + string(global.bonusminutes) + string(tiny)) + string(global.bonusseconds) + string(tinier) + string(global.bonusmiliseconds))))
 	}
 	#endregion
-
 	#endregion
 }
 draw_set_blend_mode(bm_normal)

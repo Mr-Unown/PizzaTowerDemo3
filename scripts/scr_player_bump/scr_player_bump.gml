@@ -12,6 +12,8 @@ function scr_player_bump() {
     if (sprite_index != spr_player_catched && sprite_index != spr_tumbleend && sprite_index != spr_hitwall && sprite_index != spr_suplexmash1 && sprite_index != spr_suplexmash2 && sprite_index != spr_suplexmash3 && sprite_index != spr_suplexmash4 && sprite_index != spr_punch && sprite_index != spr_rockethitwall)
         sprite_index = spr_bump
     image_speed = 0.35
+	if sprite_index = spr_player_sjumpcancel
+		sprite_index = spr_player_splat
 	
 	if (sprite_index == spr_suplexmash1 || sprite_index == spr_suplexmash2 || sprite_index == spr_suplexmash3 || sprite_index == spr_suplexmash4 || sprite_index == spr_punch)
 	{

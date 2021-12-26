@@ -60,7 +60,7 @@ if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
 	else
 		obj_player1.combothreshold = (obj_player1.combothreshold + 1)	
    
-        if (global.stylethreshold <= 0)
+        /*if (global.stylethreshold <= 0)
         {
 			global.style += 7
 			if global.nocombo = false
@@ -139,7 +139,19 @@ if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
                 number = "80"
 			}
            
-        }		
+        }*/
+		global.style += 2
+			if global.nocombo = false
+			{
+            if (grabbedby == 1)
+                obj_player1.storedscore = (obj_player1.storedscore + global.combo * 5)
+            else if (grabbedby == 2)
+                 obj_player2.storedscore = (obj_player2.storedscore + global.combo * 5)
+            else
+                obj_player1.storedscore = (obj_player1.storedscore + global.combo * 5)
+            with (instance_create(x, y, obj_smallnumber))
+                number = string(global.combo * 5)
+			}
  
     global.combotime = 60
 	global.pausecombotime = true

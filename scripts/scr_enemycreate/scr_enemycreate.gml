@@ -42,6 +42,15 @@ function scr_enemycreate() {
 	heatbuffer = 0;
 	alarm[4] = 10
 	dashcloudid = noone
-
-
+	//april build stuff
+	stuntouchbuffer = 0;
+	invtime = 0
+	instakilled = 0
+	hithsp = 0
+	hitvsp = 0
+	hittinged = false
+	//finishing blow spin
+	canrotate = false
+    rotatedirection = choose(-1,1)
+    rotatevalue = irandom_range(5,20)
 }

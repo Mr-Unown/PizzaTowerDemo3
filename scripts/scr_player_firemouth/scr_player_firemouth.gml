@@ -73,11 +73,12 @@ function scr_player_firemouth() {
 			sprite_index = spr_player_firemouthidle
 		}
 		//Firemouth DASH
-		if (key_slap2 && sprite_index != spr_player_firemouthdash && !grounded)
+		if (key_slap2 && sprite_index != spr_player_firemouthdash && !grounded && firedashcount = 0)
 		{
 		    image_index = 0
 		    sprite_index = spr_player_firemouthdash
 			add_to += 3
+			firedashcount = 1
 		}
 		if (sprite_index == spr_player_firemouthdash)
 		{
@@ -147,6 +148,8 @@ function scr_player_firemouth() {
 		        image_xscale = other.xscale
 	}
 }
+if sprite_index == spr_firemouth || sprite_index == spr_player_firemouthidle
+firedashcount = 0
 
 
 

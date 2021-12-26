@@ -178,6 +178,7 @@ else if (global.combotime <= 0)
 	global.combotime = 0
 if (global.combotime == 0 && global.combo != 0)
 {
+	obj_comboend.visible = 1
 	scr_soundeffect(sfx_comboend);
 	if global.combo > 3
 	{
@@ -189,6 +190,10 @@ if (global.combotime == 0 && global.combo != 0)
 	}
     global.combo = 0
 }
+if global.combo != 0 
+endcombo = global.combo
+if instance_exists(obj_comboend) && storedscore = 0
+endcombo = 0
 if (input_buffer_jump < 8)
     input_buffer_jump++
 if (input_buffer_secondjump < 8)

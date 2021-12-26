@@ -31,6 +31,9 @@ function scr_commonenemy() {
 	//Stun
 	if stuntouch > 0
 	stuntouch--
+	//invtime
+	if (invtime > 0)
+	    invtime--
 	//Bomb
 	if (bombreset > 0)
 	    bombreset -= 1 + (global.heatmeter*0.5)
