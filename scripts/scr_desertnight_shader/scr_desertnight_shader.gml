@@ -31,26 +31,48 @@ function scr_desert_foregroundshader_init() {
 	#region Start and End
 	//Start
 	scr_desert_foregroundshader_start = function() {
+
 	if !surface_exists(desert_surface)
 		desert_surface = surface_create(room_width,room_height);
+	else if surface_get_width(desert_surface) != room_width || surface_get_height(desert_surface) != room_height
+		surface_resize(desert_surface,room_width,room_height)
+		
 	if event_type == ev_draw && event_number == 0
 	{
-		//Draw Fog
 		surface_set_target(desert_surface)
-		gpu_set_fog(true,c_blue,0,100000)
+		draw_clear_alpha(c_white,0)
+
 	}
 }
 	//End
 	scr_desert_foregroundshader_end = function() {
 	if event_type == ev_draw && event_number == 0
 	{	
-		//Default Values
-		gpu_set_fog(false,c_black,0,1)
-		surface_reset_target()
-		
-		//gpu_set_blendenable(false);
-		draw_surface_ext(desert_surface,0,0,1,1,0,c_white,0.45)
-		//gpu_set_blendenable(true);
+		surface_reset_target();
+		draw_surface_ext(desert_surface,0,0,1,1,0,c_white,1)
+		draw_surface_ext(desert_surface,0,0,1,1,0,c_blue,0.17)	
+		with obj_secretwall { 
+			visible = false;
+			if !surface_exists(secretsurface)
+			{
+				secretsurface = surface_create(room_width,room_height);
+				surface_set_target(secretsurface);
+				draw_clear_alpha(c_white,0);
+				gpu_set_blendmode_ext(bm_one, bm_inv_src_alpha);
+				for (var i = 0; i < array_length(layername); i++) 
+				{
+					var tilemap = layer_tilemap_get_id_fixed(layername[i]);
+					draw_tilemap(tilemap,0,0);
+				}	
+				gpu_set_blendmode(bm_normal);	
+				surface_reset_target();	
+			}
+			else
+			{
+				draw_surface_ext(secretsurface,0,0,1,1,0,c_white,secretalpha);
+				draw_surface_ext(secretsurface,0,0,1,1,0,c_blue,0.17 * secretalpha);
+			}
+		}		
 	}
 }
 	
@@ -60,5 +82,7 @@ function scr_desert_foregroundshader_init() {
 	var top_id = layers[(layernum - 1)].u_id
 	layer_script_begin(bottom_id, scr_desert_foregroundshader_start)
 	layer_script_end(top_id, scr_desert_foregroundshader_end)
+	
+	
 }
 #endregion
