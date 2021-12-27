@@ -73,7 +73,7 @@ function scr_player_firemouth() {
 			sprite_index = spr_player_firemouthidle
 		}
 		//Firemouth DASH
-		if (key_slap2 && sprite_index != spr_player_firemouthdash && !grounded && firedashcount = 0)
+		if (key_slap2 && sprite_index != spr_player_firemouthdash && !grounded)
 		{
 		    image_index = 0
 		    sprite_index = spr_player_firemouthdash

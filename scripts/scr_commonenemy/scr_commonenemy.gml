@@ -63,9 +63,9 @@ function scr_commonenemy() {
 	}
 	else if !(state = 94 && scarebuffer > 0)
 		scarebuffer = 0
-	//An stinky attempt at preventing out of bound enemies
+	//A stinky attempt at preventing out of bound enemies
 	if (markedfordeath == 1 && markedfordeathbuffer <= 0 && thrown == 1)
-	    instance_destroy()
+		instance_destroy()
 	if (thrown == 0 || markedfordeath == 0)
 	{
 	    markedfordeath = 0
