@@ -17,8 +17,8 @@
   "width": 176,
   "height": 80,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "NEWHUD",
+    "path": "texturegroups/NEWHUD",
   },
   "swatchColours": null,
   "gridX": 0,
@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Other",
-    "path": "folders/Sprites/Hud & Menus/New Hud/Other.yy",
+    "name": "Combo Text",
+    "path": "folders/Sprites/Hud & Menus/New Hud/Other/Combo Text.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_combo_goodjob",

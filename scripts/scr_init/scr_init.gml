@@ -31,7 +31,7 @@ global.divestyle = ini_read_real("Option", "divestyle", 0);
 global.attackstyle = ini_read_real("Option", "attackstyle", 0);
 global.destroyablecollect = ini_read_real("Option", "destroyablecollect", 0);
 global.ratmode = ini_read_real("Option", "ratmode", false);
-global.combostyle = 1
+global.combostyle = false //Oh this is the the funny new combostuff
 global.backdrop = 0
 ini_close()
 global.roomstart[0] = Realtitlescreen;

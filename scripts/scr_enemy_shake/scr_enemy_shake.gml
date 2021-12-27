@@ -88,13 +88,13 @@ function scr_enemy_shake() {
 
 	        thrown = 1
 	    }
-		else if (blowdirection == 5)
+		else if (blowdirection == 5 && hp > 1) //Supertaunt and Explosions
 		{
 			alarm[1] = 2
 	        shakebuffer = 2.5
 	        flash = 1
-	        hsp = obj_player1.hsp
-            vsp = -5
+			hsp = ((playerxscale * 10) * blowintensity)
+            vsp = (-12 * blowintensity)
 			squashed = true
 	        state = 106
 	        hp -= 1
@@ -104,7 +104,7 @@ function scr_enemy_shake() {
 			stunned = 100
 			hittinged = true
 			with instance_create(x,y,obj_balloonpop)
-			sprite_index = spr_parryeffect
+				sprite_index = spr_parryeffect
 		}
 		else
 		{
