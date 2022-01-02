@@ -1,15 +1,14 @@
 //Panic Shake
 panicshake = 0;
 panicshakeacc = 0;
+
 depth = -9994
-
-
-
 
 //Stinky Thing
 oldfacesprite = spr_null
 //global.startgate
-
+//Rank
+global.currentrank = "D"
 global.startgate = noone;
 startdistanced = 0;
 startdistance = 0;
@@ -112,5 +111,7 @@ debugfreezeframe = 0
 debugmaxfreezeframe = 0
 global.freezeframecounter = 0
 target = 3
+//Backdrop
+backdrop = spr_backdrop_pinball
 
 

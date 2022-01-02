@@ -128,20 +128,61 @@ else
 			draw_sprite_ext(spr_tv_frame, -1, 832, 100 + newhudyoffset, 1, 1, 0, c_white, 1)
 		}
 		else
-			draw_sprite_ext(newtvsprite, -1, 832, 100 + newhudyoffset, 1, 1, 0, c_white, 1)		
+			draw_sprite_ext(newtvsprite, -1, 832, 100 + newhudyoffset, 1, 1, 0, c_white, 1)	
+		#region Theater combo stuff
+		/*
+		if global.combostyle = 1
+		{
+			combotime = approach(combotime,global.combotime * 2, 10);
+			if combobary = 0
+				signdropped = 1
+			if combobary > -169
+			{
+				draw_sprite_ext(spr_theaterguy, image_index,517 + combotime + combox,combobary + 14, 1, 1, 0, c_white, 1)
+				draw_sprite_ext(spr_comboplay, image_index,512 + combox,combobary, 1, 1, 0, c_white, 1)
+			}
+			{
+				if combobary <= -169
+					visible = 0
+				else 
+					visible = 1
+			}
+			if global.combotime <= 0
+			{
+				combobary = approach(combobary,-200,3)
+				signdropped = 0
+			}
+			else if global.combotime > 0 && global.combo != 0
+			{
+				if signdropped = 0
+					combobary = approach(combobary,-0,6)
+				if signdropped = 1
+					combobary = approach(combobary,-18,.5)
+			}
+		}*/
+		#endregion
 		if global.combo != 0 && global.miniboss == 0 && global.combotime != 0 && newtvsprite != spr_tv_open && newtvsprite != spr_tv_static && newtvsprite != spr_tv_noiseboss
 		{
 			if global.combobuffer > 0
 			{
 				//Combo text
-				draw_sprite_ext(spr_tv_combo, image_index, 832, 100 + newhudyoffset, 1, 1, 0, c_white, 1)		
+				if global.combostyle = 0
+				draw_sprite_ext(spr_tv_combo, image_index, 832, 100 + newhudyoffset, 1, 1, 0, c_white, 1)
 				//Combo counter
-				draw_set_font(global.combofont)
-				draw_set_halign(fa_center)
-				draw_set_color(c_white)
-
+				if global.combostyle = 0
+				{
+					draw_set_font(global.combofont)
+					draw_set_halign(fa_center)
+					draw_set_color(c_white)
+				}
+				else if global.combostyle = 1 //Theater Shit
+				{
+					draw_set_font(global.combofont2)
+					draw_set_halign(fa_center)
+					draw_set_color(c_white)
+				}
 				var _combo = string(global.combo)
-				if (global.combo < 10)
+				if (global.combo < 10 && global.combostyle = 0)
 					_combo = "0" + string(global.combo)
 				var _string_length = string_length(_combo);
 				for (var i = 0; i < _string_length; i++) 
@@ -150,10 +191,13 @@ else
 					var _yy = (i * -4)		
 					if newshake = true
 					{
-					var _xx = (-(string_width(_combo)/ 2) + ((string_width(_combo)/_string_length) * i)) + irandom_range(-2,2)
-					var _yy = (i * -4) + irandom_range(-2,2)
+						var _xx = (-(string_width(_combo)/ 2) + ((string_width(_combo)/_string_length) * i)) + irandom_range(-2,2)
+						var _yy = (i * -4) + irandom_range(-2,2)
 					}
-					draw_text(835 + _xx, 82 + _yy + newhudyoffset, string_char_at(_combo,i + 1));
+					if global.combostyle = 0
+						draw_text(835 + _xx, 82 + _yy + newhudyoffset, string_char_at(_combo,i + 1));
+					else if global.combostyle = 1
+						draw_text(570 + _xx + combox, 65 + _yy + combobary, string_char_at(_combo,i + 1));
 				}
 			}
 			//Combobar

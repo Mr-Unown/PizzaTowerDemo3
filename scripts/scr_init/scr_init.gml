@@ -15,7 +15,14 @@ enum temperature
 	cold
 }
 global.visual_temperature = temperature.normal;
-
+//Fonts
+global.smallfont = font_add_sprite_ext(spr_smallerfont, "ABCDEFGHIJKLMNOPQRSTUVWXYZ!.,'\"-:?1234567890|", 1, 0)
+global.font = font_add_sprite_ext(spr_font, "ABCDEFGHIJKLMNOPQRSTUVWXYZ!.1234567890:", 1, 0)
+global.pointsfont = font_add_sprite_ext(spr_font_collect, "0123456789", 1, 0)
+global.combofont = font_add_sprite_ext(spr_font_combo, "0123456789", 1, 0)
+global.combofont2 = font_add_sprite_ext(spr_font_combo2, "1234567890", 1, 0)
+global.smallnumber = font_add_sprite_ext(spr_smallnumber, "1234567890-", 1, 0)
+global.timerfont = font_add_sprite_ext(spr_font_timer, "1234567890:", 1, 0)
 
 //Read Save File
 ini_open("saveData.ini")
@@ -31,6 +38,12 @@ global.divestyle = ini_read_real("Option", "divestyle", 0);
 global.attackstyle = ini_read_real("Option", "attackstyle", 0);
 global.destroyablecollect = ini_read_real("Option", "destroyablecollect", 0);
 global.ratmode = ini_read_real("Option", "ratmode", false);
+global.combostyle = false //Oh this is the the funny new combostuff
+global.backdrop = 0
+//Audio
+global.mastervolume = ini_read_real("Option", "mastervolume", 1)
+global.musicvolume = ini_read_real("Option", "musicvolume", 1)
+global.soundeffectsvolume = ini_read_real("Option", "soundeffectsvolume", 1)
 ini_close()
 global.roomstart[0] = Realtitlescreen;
 global.roomstart[1] = New_Realtitlescreen;

@@ -9,7 +9,7 @@
   "swfPrecision": 2.525,
   "bbox_left": 2,
   "bbox_right": 733,
-  "bbox_top": 13,
+  "bbox_top": 12,
   "bbox_bottom": 988,
   "HTile": false,
   "VTile": false,
@@ -21,8 +21,8 @@
     "path": "texturegroups/Default",
   },
   "swatchColours": null,
-  "gridX": 0,
-  "gridY": 0,
+  "gridX": 32,
+  "gridY": 32,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"85c17833-da34-4bad-ab0c-e0f0ecaf1584","path":"sprites/spr_sanctumdecoration4/spr_sanctumdecoration4.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"85c17833-da34-4bad-ab0c-e0f0ecaf1584","path":"sprites/spr_sanctumdecoration4/spr_sanctumdecoration4.yy",},"LayerId":{"name":"3c810e98-e14e-40a0-a7ed-e08079aee646","path":"sprites/spr_sanctumdecoration4/spr_sanctumdecoration4.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},

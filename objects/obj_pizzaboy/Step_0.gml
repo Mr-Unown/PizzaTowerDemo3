@@ -17,5 +17,3 @@ if (boundbox == 0)
         other.boundbox = 1
     }
 }
-
-

@@ -59,8 +59,8 @@ switch room
 		can_draw = false;
 		break;
 }
-/*Shader Effects
-switch room 
+//Shader Effects
+switch room
 {
 	#region Desert
 	case desert_1:
@@ -68,13 +68,16 @@ switch room
 	case desert_3:	
 	case desert_4:
 	case desert_5:
-	if !global.panic && !global.desertnight
-		scr_desert_foregroundshader_init();
-	break;
+		if global.desertnight
+			scr_desert_foregroundshader_init()
+	break;	
 	#endregion
+	default:
+		global.visual_temperature = temperature.normal;
+	break;
 }
 
-*/
+
 /*
 	//Sort Array
 	var _f = function(elm1,elm2)

@@ -130,38 +130,51 @@ function scr_player_mach1() {
 	    state = 22
 	    movespeed = 0
 	}
-	if (key_down && (!grounded))
+	if (key_down && !grounded && sprite_index != spr_player_jugglebash)
 	{
-	    if (shotgunAnim == 0 && global.groundpoundstyle = 1)
+	    if (shotgunAnim == 0 || (character == "V" && character == "S"))
 	    {
 	        image_index = 0
 	        state = 92
 	        sprite_index = spr_bodyslamstart
-	        vsp = -5
+	        if (character == "P" || character == "PZ" || character == "S")
+	            vsp = -5
+	        else
+	            vsp = -7
 	    }
-	    else
+	    else if (character != "V" && character != "S")
 	    {
+	        scr_soundeffect(sfx_killingblow)
 	        image_index = 0
 	        state = 92
-	        sprite_index = spr_player_shotgunjump1
+	        sprite_index = spr_shotgunjump1
 	        vsp = -5
-	        with (instance_create((x + (xscale * 30)), (y + 60), obj_shotgunbullet))
+	        if (character == "P")
 	        {
-	            sprite_index = spr_shotgunbullet_down
-	            spdh = -10
-	            spd = 0
-	        }
-	        with (instance_create((x + (xscale * 30)), (y + 60), obj_shotgunbullet))
-	        {
-	            sprite_index = spr_shotgunbullet_down
-	            spdh = -10
-	            spd = 5
-	        }
-	        with (instance_create((x + (xscale * 30)), (y + 60), obj_shotgunbullet))
-	        {
-	            sprite_index = spr_shotgunbullet_down
-	            spdh = -10
-	            spd = -5
+	            with (instance_create((x + 30), (y + 60), obj_shotgunbullet))
+	            {
+	                playerid = other.id
+	                sprite_index = spr_shotgunbullet_down
+	                spdh = -10
+	                spd = 0
+	                created = 1
+	            }
+	            with (instance_create((x + 30), (y + 60), obj_shotgunbullet))
+	            {
+	                playerid = other.id
+	                sprite_index = spr_shotgunbullet_down
+	                spdh = -10
+	                spd = 5
+	                created = 1
+	            }
+	            with (instance_create((x + 30), (y + 60), obj_shotgunbullet))
+	            {
+	                playerid = other.id
+	                sprite_index = spr_shotgunbullet_down
+	                spdh = -10
+	                spd = -5
+	                created = 1
+	            }
 	        }
 	    }
 	}

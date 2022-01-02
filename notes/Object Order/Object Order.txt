@@ -381,3 +381,4 @@ obj_waterdraft
 obj_audioconfig
 obj_mainconfig
 obj_doorF
+obj_comboend

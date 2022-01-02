@@ -78,6 +78,7 @@ function scr_player_firemouth() {
 		    image_index = 0
 		    sprite_index = spr_player_firemouthdash
 			add_to += 3
+			firedashcount = 1
 		}
 		if (sprite_index == spr_player_firemouthdash)
 		{
@@ -147,6 +148,8 @@ function scr_player_firemouth() {
 		        image_xscale = other.xscale
 	}
 }
+if sprite_index == spr_firemouth || sprite_index == spr_player_firemouthidle
+firedashcount = 0
 
 
 

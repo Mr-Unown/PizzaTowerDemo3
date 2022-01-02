@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "utility",
-    "path": "folders/Scripts/utility.yy",
+    "name": "Shader",
+    "path": "folders/Scripts/utility/Shader.yy",
   },
   "resourceVersion": "1.0",
   "name": "scr_camerashaders",

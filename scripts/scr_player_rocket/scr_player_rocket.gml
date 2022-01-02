@@ -9,7 +9,7 @@ function scr_player_rocket(){
     hurted = 1
     if (sprite_index != spr_rocketstart && sprite_index != spr_rocketupstart)
     {
-		if (sprite_index == spr_rocket)
+		if (sprite_index == spr_rocket || sprite_index == spr_player_rocketgrounded)
 		{
 	        if (key_up/*&& fightball == 0*/)
 	            vsp = -3
@@ -70,6 +70,8 @@ function scr_player_rocket(){
 			}
         }
     }
+	if place_meeting(x,y+1, obj_solid)
+	sprite_index = spr_player_rocketgrounded
     if (movespeed < 24 && move == xscale)
     {
         movespeed += 0.1

@@ -63,6 +63,11 @@ function scr_player_tumble() {
 	    movespeed -= 0.15
 	if (sprite_index == spr_player_sjumpcancelslide && movespeed <= 0)
 	    state = 0
+	if (sprite_index == spr_player_sjumpcancelslide && key_attack)
+	{
+	    state = states.mach2
+		sprite_index = spr_rollgetup
+	}
 	if (grounded && sprite_index == spr_player_sjumpcancel)
 	{
 		sprite_index = spr_player_sjumpcancelland
@@ -99,7 +104,7 @@ function scr_player_tumble() {
 	if (sprite_index != spr_player_sjumpcancel)
 	{
 		if sprite_index != spr_tumble
-		image_speed = 0.35
+		image_speed = 0.5
 		else
 		image_speed = (movespeed/14) * 0.8
 	}

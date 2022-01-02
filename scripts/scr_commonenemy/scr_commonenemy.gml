@@ -1,7 +1,11 @@
 function scr_commonenemy() {
 	//States
 	scr_enemystates()
-
+	//Draw Angle
+	if canrotate
+		enemydraw_angle += rotatevalue * rotatedirection
+	else
+		enemydraw_angle = 0;
 	//Heat Meter Palettes
 	if global.heatmeter >= 4 && object_index != obj_shrimp && object_index != obj_shrimpred && object_index != obj_shrimpblue 
 	{
@@ -31,6 +35,9 @@ function scr_commonenemy() {
 	//Stun
 	if stuntouch > 0
 	stuntouch--
+	//invtime
+	if (invtime > 0)
+	    invtime--
 	//Bomb
 	if (bombreset > 0)
 	    bombreset -= 1 + (global.heatmeter*0.5)
@@ -60,9 +67,9 @@ function scr_commonenemy() {
 	}
 	else if !(state = 94 && scarebuffer > 0)
 		scarebuffer = 0
-	//An stinky attempt at preventing out of bound enemies
+	//A stinky attempt at preventing out of bound enemies
 	if (markedfordeath == 1 && markedfordeathbuffer <= 0 && thrown == 1)
-	    instance_destroy()
+		instance_destroy()
 	if (thrown == 0 || markedfordeath == 0)
 	{
 	    markedfordeath = 0
