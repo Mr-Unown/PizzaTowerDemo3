@@ -70,8 +70,7 @@ function scr_player_backbreaker() {
 				var _cam_h = camera_get_view_height(view_camera[0])
 	            if point_in_rectangle(x, y, (_cam_x) - 32, (_cam_y) - 32, (_cam_x + _cam_w) + 32, (_cam_y + _cam_h) + 32)
 				{
-					if hp > 0 
-						hp = 0;
+					hp = 0;
 					scarebuffer = 0;
 					blowdirection = 5;
 					blowintensity = 1;
@@ -261,8 +260,7 @@ function scr_player_backbreaker() {
 				var _cam_h = camera_get_view_height(view_camera[0])
 	            if point_in_rectangle(x, y, (_cam_x) - 32, (_cam_y) - 32, (_cam_x + _cam_w) + 32, (_cam_y + _cam_h) + 32)
 				{
-					if hp > 0 
-						hp = 0;					
+					hp = 0;			
 					scarebuffer = 0;
 					blowdirection = 5;
 					blowintensity = 1;

@@ -1,6 +1,7 @@
 function scr_enemycreate() {
 	if panic_escape == true && global.panic == false
 		instance_destroy(id,false)
+	enemydraw_angle = 0;
 	bombreset = 0
 	dropcoin = 0
 	shake = 0

@@ -4338,6 +4338,7 @@
     {"folderPath":"folders/Sprites/Characters/Followers/Toppins/Toppin Warriors/Shroom.yy","order":1,"resourceVersion":"1.0","name":"Shroom","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Rooms/Levels/World City/Sewers.yy","order":3,"resourceVersion":"1.0","name":"Sewers","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Hud & Menus/New Hud/Other/Combo Text.yy","order":32,"resourceVersion":"1.0","name":"Combo Text","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Scripts/Compat.yy","order":90,"resourceVersion":"1.0","name":"Compat","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},

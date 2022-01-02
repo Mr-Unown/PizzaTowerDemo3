@@ -1,7 +1,11 @@
 function scr_commonenemy() {
 	//States
 	scr_enemystates()
-
+	//Draw Angle
+	if canrotate
+		enemydraw_angle += rotatevalue * rotatedirection
+	else
+		enemydraw_angle = 0;
 	//Heat Meter Palettes
 	if global.heatmeter >= 4 && object_index != obj_shrimp && object_index != obj_shrimpred && object_index != obj_shrimpblue 
 	{

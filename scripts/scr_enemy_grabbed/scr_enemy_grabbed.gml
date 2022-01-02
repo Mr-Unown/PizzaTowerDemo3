@@ -156,6 +156,7 @@ function scr_enemy_grabbed() {
 	    if place_meeting(x, y, obj_swordhitbox)
 	    {
 			scr_sleep();
+			hp = 0;
 	        shakebuffer = 1
 	        shake = 1
 	        with (obj_camera)
@@ -525,6 +526,7 @@ function scr_enemy_grabbed() {
 	    if place_meeting(x, y, obj_swordhitbox)
 	    {
 			scr_sleep();
+			hp = 0;
 	        shakebuffer = 1
 	        shake = 1
 	        with (obj_camera)

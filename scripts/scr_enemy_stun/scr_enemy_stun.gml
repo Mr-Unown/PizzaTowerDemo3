@@ -65,6 +65,7 @@ function scr_enemy_stun() {
 	hp = max(-3,hp)
     if (object_index == obj_ninja)
         attack = 1
+		/*
     switch global.stylethreshold
     {
         case 0:
@@ -78,7 +79,9 @@ function scr_enemy_stun() {
             break
         case 3:
             stunned -= 1
-    }
+    }*/
+	stunned -= 0.5 + (global.stylethreshold * 0.15)
+	
 
     if (stuntouchbuffer > 0) && grounded
         stuntouchbuffer--
@@ -112,7 +115,7 @@ function scr_enemy_stun() {
     }
     if (hithsp != 0 && place_meeting((x - image_xscale), y, obj_solid) && (!place_meeting((x - image_xscale), y, obj_destructibles)))
     {
-        if (markedfordeath && grounded && hp < 0)
+        if (markedfordeath && grounded && hp <= 0)
             instance_destroy()
         thrown = 0
         grav = 0.5

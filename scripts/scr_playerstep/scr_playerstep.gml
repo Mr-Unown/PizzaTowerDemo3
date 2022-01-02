@@ -832,8 +832,8 @@ else if actor = true
 	}	
 	//freefall and superjump update
 	if state != states.freefall
-	initialfreefallvsp = 15
+		initialfreefallvsp = 15
 	if state != states.Sjump
-	initialsuperjumpvsp = -12
+		initialsuperjumpvsp = -14
 }
 
