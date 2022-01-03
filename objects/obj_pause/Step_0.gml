@@ -54,12 +54,16 @@ if ((!pause) && (!instance_exists(obj_fadeout)))
             global.combotime = 60
 			global.pausecombotime = true
 			obj_tv.alarm[1] = 75
-            global.combo += 3
+            global.combo += 10
 			global.style += 3
+			obj_player1.storedscore += global.combo * 5
+			obj_player2.storedscore += global.combo * 5
             //global.peppermode = 0
 			obj_player1.supertauntcharged = true;
 			obj_player2.supertauntcharged = true;
+			if obj_player1.murderammo <= 3
 			obj_player1.murderammo += 1;
+			if obj_player2.murderammo <= 3
 			obj_player2.murderammo += 1;			
         }
         if keyboard_check_pressed(vk_f11)

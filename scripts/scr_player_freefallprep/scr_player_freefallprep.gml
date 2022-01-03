@@ -37,20 +37,22 @@ function scr_player_freefallprep() {
 	image_speed = 0.5
 	else
 	image_speed = (movespeed/12) * 0.8
-if global.groundpoundstyle = 0
-{
-	if (floor(image_index) == (image_number - 1))
-	{
-	    vsp += 14
-	    state = 74
-	    if (shotgunAnim == 0)
-	    sprite_index = spr_bodyslamfall
-	    else
-	    sprite_index = spr_shotgunjump3
+	if global.groundpoundstyle = 0
+	{	
+		if (floor(image_index) == (image_number - 1))
+		{
+		    vsp += 14
+			state = 74
+			if (shotgunAnim == 0)
+			sprite_index = spr_bodyslamfall
+			else
+			sprite_index = spr_shotgunjump3
+		}
 	}
-}
-else if global.groundpoundstyle = 1
-vsp += 14
-state = 74
-sprite_index = spr_mach2jump
+	else if global.groundpoundstyle = 1
+	{
+		vsp += 14
+		state = 74
+		sprite_index = spr_mach2jump
+	}
 }

@@ -14,6 +14,34 @@ maximumangle =  arccos( (room_width / camsqrt) - camarctan       )
 
 maxangle = clamp(maximumangle,0,3)*/
 
+#region Rank Checker
+if global.timeattack = false
+{
+	if global.collect < global.crank
+		global.currentrank = "D"
+	else if global.collect < global.brank
+		global.currentrank = "C"
+	else if global.collect < global.arank
+		global.currentrank = "B"
+	else if global.collect < global.srank
+		global.currentrank = "A"
+	else if global.collect >= global.srank
+		global.currentrank = "S"
+}
+else
+{
+	if global.timeattackpoints <= global.stimerank
+		global.currentrank = "S"	
+	else if global.timeattackpoints <= global.atimerank
+		global.currentrank = "A"		
+	else if global.timeattackpoints <= global.btimerank
+		global.currentrank = "B"		
+	else if global.timeattackpoints <= global.ctimerank
+		global.currentrank = "C"
+	else if global.timeattackpoints <= global.dtimerank
+		global.currentrank = "D"
+}
+#endregion
 
 //Collided with Player
 if point_in_rectangle(obj_player.x,obj_player.y, _drawx - 80, _drawy - 85,_drawx + 80,_drawy + 85)

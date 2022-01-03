@@ -130,11 +130,11 @@ if (bandaged == 1)
         bandagey = drawy
         bandagex = drawx
     }
-    draw_sprite_ext(spr_enemybandaid, 0, bandagex, bandagey + (46* squashval) , xscale, yscale, image_angle, image_blend, image_alpha)
+    draw_sprite_ext(spr_enemybandaid, 0, bandagex, bandagey + (46* squashval) , xscale, yscale, enemydraw_angle, image_blend, image_alpha)
     if flash
     {
         shader_set(shd_hit)
-        draw_sprite_ext(spr_enemybandaid, 0, bandagex, bandagey + (46* squashval) , xscale, yscale, image_angle, image_blend, image_alpha)
+        draw_sprite_ext(spr_enemybandaid, 0, bandagex, bandagey + (46* squashval) , xscale, yscale, enemydraw_angle, image_blend, image_alpha)
         shader_reset()
     }
 }

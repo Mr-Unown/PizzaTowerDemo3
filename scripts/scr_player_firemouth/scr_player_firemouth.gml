@@ -78,6 +78,7 @@ function scr_player_firemouth() {
 		    image_index = 0
 		    sprite_index = spr_player_firemouthdash
 			add_to += 3
+			firedashcount = 1
 		}
 		if (sprite_index == spr_player_firemouthdash)
 		{
@@ -97,6 +98,12 @@ function scr_player_firemouth() {
 			sprite_index = spr_player_firemouthidle
 		if(!grounded && sprite_index != spr_player_firemouthdash)
 			sprite_index = spr_player_firemouthjump
+		if scr_solid(x + xscale,y) && !scr_slope_ext(x + xscale,y) && sprite_index == spr_player_firemouthdash
+		{
+			add_to = 0;
+		    sprite_index = spr_player_firemouthidle
+		    image_index = 0			
+		}
 /*		if (scr_solid((x + 1), y) && xscale == 1 && hsp != 0 && (!scr_slope_ext(x + sign(hsp), y)) && sprite_index != spr_firemouthshoot)
 		{
 		    instance_create((x + 10), (y + 10), obj_bumpeffect)
@@ -141,6 +148,8 @@ function scr_player_firemouth() {
 		        image_xscale = other.xscale
 	}
 }
+if sprite_index == spr_firemouth || sprite_index == spr_player_firemouthidle
+firedashcount = 0
 
 
 

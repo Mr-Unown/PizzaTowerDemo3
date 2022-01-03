@@ -5,6 +5,8 @@ function scr_playerreset() {
 	{
 		alarm[0] = -1;
 	}
+	//Temperature
+	global.visual_temperature = temperature.normal;
 	//Heat Meter
 	global.oldmeter = 0;
 	global.heatmeter = 0;
@@ -17,6 +19,8 @@ function scr_playerreset() {
 	global.bonustimer = false;
 	global.storedtaminute = 0;
 	global.storedtasecond = 0;
+	//Day Night
+	global.desertnight = false
 	//Goop Gone
 	with obj_goop 
 	{
