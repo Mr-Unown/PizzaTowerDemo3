@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "maroket ref room :)",
-    "path": "folders/Sprites/maroket ref room :).yy",
+    "path": "folders/ZReference Rooms Sprites/maroket ref room :).yy",
   },
   "resourceVersion": "1.0",
   "name": "space_62385",
