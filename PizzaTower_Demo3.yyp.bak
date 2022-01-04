@@ -206,6 +206,7 @@
     {"id":{"name":"spr_anchodead","path":"sprites/spr_anchodead/spr_anchodead.yy",},"order":8,},
     {"id":{"name":"spr_ancienttitle","path":"sprites/spr_ancienttitle/spr_ancienttitle.yy",},"order":6,},
     {"id":{"name":"spr_angrycloud","path":"sprites/spr_angrycloud/spr_angrycloud.yy",},"order":0,},
+    {"id":{"name":"spr_tile_pinball","path":"sprites/spr_tile_pinball/spr_tile_pinball.yy",},"order":66,},
     {"id":{"name":"spr_baddie","path":"sprites/spr_baddie/spr_baddie.yy",},"order":0,},
     {"id":{"name":"spr_baddieside","path":"sprites/spr_baddieside/spr_baddieside.yy",},"order":1,},
     {"id":{"name":"spr_baddiegibs","path":"sprites/spr_baddiegibs/spr_baddiegibs.yy",},"order":1,},
@@ -225,6 +226,7 @@
     {"id":{"name":"spr_beartrap","path":"sprites/spr_beartrap/spr_beartrap.yy",},"order":9,},
     {"id":{"name":"spr_bgpillarjohn","path":"sprites/spr_bgpillarjohn/spr_bgpillarjohn.yy",},"order":3,},
     {"id":{"name":"bg_sanctumarchitecture1","path":"sprites/bg_sanctumarchitecture1/bg_sanctumarchitecture1.yy",},"order":117,},
+    {"id":{"name":"spr_rankbubble_sfilled","path":"sprites/spr_rankbubble_sfilled/spr_rankbubble_sfilled.yy",},"order":31,},
     {"id":{"name":"spr_bgpillarjohnescape","path":"sprites/spr_bgpillarjohnescape/spr_bgpillarjohnescape.yy",},"order":4,},
     {"id":{"name":"spr_bigblock","path":"sprites/spr_bigblock/spr_bigblock.yy",},"order":10,},
     {"id":{"name":"spr_respawnbigblock","path":"sprites/spr_respawnbigblock/spr_respawnbigblock.yy",},"order":264,},
@@ -240,7 +242,7 @@
     {"id":{"name":"spr_bigcheese_walk","path":"sprites/spr_bigcheese_walk/spr_bigcheese_walk.yy",},"order":6,},
     {"id":{"name":"spr_bigdebris","path":"sprites/spr_bigdebris/spr_bigdebris.yy",},"order":6,},
     {"id":{"name":"spr_bigdebris_respawn","path":"sprites/spr_bigdebris_respawn/spr_bigdebris_respawn.yy",},"order":7,},
-    {"id":{"name":"spr_combo_goodjob","path":"sprites/spr_combo_goodjob/spr_combo_goodjob.yy",},"order":25,},
+    {"id":{"name":"spr_combo_goodjob","path":"sprites/spr_combo_goodjob/spr_combo_goodjob.yy",},"order":0,},
     {"id":{"name":"spr_bigdebrisescape","path":"sprites/spr_bigdebrisescape/spr_bigdebrisescape.yy",},"order":8,},
     {"id":{"name":"spr_bigpizzadebris","path":"sprites/spr_bigpizzadebris/spr_bigpizzadebris.yy",},"order":9,},
     {"id":{"name":"spr_bigpizzadebrisescape","path":"sprites/spr_bigpizzadebrisescape/spr_bigpizzadebrisescape.yy",},"order":10,},
@@ -307,7 +309,7 @@
     {"id":{"name":"spr_cheeseblock","path":"sprites/spr_cheeseblock/spr_cheeseblock.yy",},"order":37,},
     {"id":{"name":"spr_font_combo2","path":"sprites/spr_font_combo2/spr_font_combo2.yy",},"order":95,},
     {"id":{"name":"spr_cheeseblockdestroyed","path":"sprites/spr_cheeseblockdestroyed/spr_cheeseblockdestroyed.yy",},"order":38,},
-    {"id":{"name":"spr_combo_notbad","path":"sprites/spr_combo_notbad/spr_combo_notbad.yy",},"order":26,},
+    {"id":{"name":"spr_combo_notbad","path":"sprites/spr_combo_notbad/spr_combo_notbad.yy",},"order":1,},
     {"id":{"name":"spr_cheeseblockreform","path":"sprites/spr_cheeseblockreform/spr_cheeseblockreform.yy",},"order":39,},
     {"id":{"name":"spr_cheesecollect","path":"sprites/spr_cheesecollect/spr_cheesecollect.yy",},"order":40,},
     {"id":{"name":"spr_cheesedestroyableblock","path":"sprites/spr_cheesedestroyableblock/spr_cheesedestroyableblock.yy",},"order":41,},
@@ -346,6 +348,7 @@
     {"id":{"name":"spr_cigar_turn","path":"sprites/spr_cigar_turn/spr_cigar_turn.yy",},"order":3,},
     {"id":{"name":"spr_cigar_walk","path":"sprites/spr_cigar_walk/spr_cigar_walk.yy",},"order":4,},
     {"id":{"name":"spr_climbstairscutscene","path":"sprites/spr_climbstairscutscene/spr_climbstairscutscene.yy",},"order":2,},
+    {"id":{"name":"bg_pinball1_0_parallax1","path":"sprites/bg_pinball1_0_parallax1/bg_pinball1_0_parallax1.yy",},"order":5,},
     {"id":{"name":"spr_clockcollectible1","path":"sprites/spr_clockcollectible1/spr_clockcollectible1.yy",},"order":52,},
     {"id":{"name":"spr_clockcollectible2","path":"sprites/spr_clockcollectible2/spr_clockcollectible2.yy",},"order":53,},
     {"id":{"name":"spr_cloudeffect","path":"sprites/spr_cloudeffect/spr_cloudeffect.yy",},"order":18,},
@@ -577,12 +580,9 @@
     {"id":{"name":"spr_kentukykenny_idle","path":"sprites/spr_kentukykenny_idle/spr_kentukykenny_idle.yy",},"order":1,},
     {"id":{"name":"spr_kentukykenny_projectile","path":"sprites/spr_kentukykenny_projectile/spr_kentukykenny_projectile.yy",},"order":2,},
     {"id":{"name":"spr_kentukykenny_scared","path":"sprites/spr_kentukykenny_scared/spr_kentukykenny_scared.yy",},"order":3,},
-<<<<<<< HEAD
-=======
-    {"id":{"name":"desertopen","path":"sprites/desertopen/desertopen.yy",},"order":90,},
->>>>>>> origin/salty-chip
     {"id":{"name":"spr_kentukykenny_stun","path":"sprites/spr_kentukykenny_stun/spr_kentukykenny_stun.yy",},"order":4,},
     {"id":{"name":"spr_kentukykenny_throw","path":"sprites/spr_kentukykenny_throw/spr_kentukykenny_throw.yy",},"order":5,},
+    {"id":{"name":"bg_pinball1_0_parallax2","path":"sprites/bg_pinball1_0_parallax2/bg_pinball1_0_parallax2.yy",},"order":0,},
     {"id":{"name":"spr_kentukykenny_walk","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"order":6,},
     {"id":{"name":"spr_key","path":"sprites/spr_key/spr_key.yy",},"order":154,},
     {"id":{"name":"tileset_medievalNEW","path":"tilesets/tileset_medievalNEW/tileset_medievalNEW.yy",},"order":4,},
@@ -615,6 +615,7 @@
     {"id":{"name":"spr_medievalcomputer","path":"sprites/spr_medievalcomputer/spr_medievalcomputer.yy",},"order":158,},
     {"id":{"name":"spr_menuselection","path":"sprites/spr_menuselection/spr_menuselection.yy",},"order":12,},
     {"id":{"name":"spr_metalb","path":"sprites/spr_metalb/spr_metalb.yy",},"order":159,},
+    {"id":{"name":"bg_pinball1_0_parallax6","path":"sprites/bg_pinball1_0_parallax6/bg_pinball1_0_parallax6.yy",},"order":4,},
     {"id":{"name":"spr_metalbescape","path":"sprites/spr_metalbescape/spr_metalbescape.yy",},"order":160,},
     {"id":{"name":"spr_metalbhard","path":"sprites/spr_metalbhard/spr_metalbhard.yy",},"order":161,},
     {"id":{"name":"spr_metalbsecret","path":"sprites/spr_metalbsecret/spr_metalbsecret.yy",},"order":162,},
@@ -633,6 +634,7 @@
     {"id":{"name":"spr_minijohn_stun","path":"sprites/spr_minijohn_stun/spr_minijohn_stun.yy",},"order":4,},
     {"id":{"name":"obj_pizzaballbigcollect","path":"objects/obj_pizzaballbigcollect/obj_pizzaballbigcollect.yy",},"order":17,},
     {"id":{"name":"spr_minipillarsleep","path":"sprites/spr_minipillarsleep/spr_minipillarsleep.yy",},"order":0,},
+    {"id":{"name":"bg_pinball1_0_parallax8","path":"sprites/bg_pinball1_0_parallax8/bg_pinball1_0_parallax8.yy",},"order":7,},
     {"id":{"name":"spr_minipillarwoke","path":"sprites/spr_minipillarwoke/spr_minipillarwoke.yy",},"order":3,},
     {"id":{"name":"spr_motcycledebris","path":"sprites/spr_motcycledebris/spr_motcycledebris.yy",},"order":51,},
     {"id":{"name":"spr_motocycle","path":"sprites/spr_motocycle/spr_motocycle.yy",},"order":166,},
@@ -785,6 +787,7 @@
     {"id":{"name":"spr_shroomwarrior_move","path":"sprites/spr_shroomwarrior_move/spr_shroomwarrior_move.yy",},"order":1,},
     {"id":{"name":"bg_newdesertbg3","path":"sprites/bg_newdesertbg3/bg_newdesertbg3.yy",},"order":10,},
     {"id":{"name":"spr_pizzaball_walk","path":"sprites/spr_pizzaball_walk/spr_pizzaball_walk.yy",},"order":4,},
+    {"id":{"name":"bg_pinball1_0_parallax5","path":"sprites/bg_pinball1_0_parallax5/bg_pinball1_0_parallax5.yy",},"order":3,},
     {"id":{"name":"spr_pizzaballblock","path":"sprites/spr_pizzaballblock/spr_pizzaballblock.yy",},"order":215,},
     {"id":{"name":"spr_pizzabox","path":"sprites/spr_pizzabox/spr_pizzabox.yy",},"order":216,},
     {"id":{"name":"spr_pizzaboxopen","path":"sprites/spr_pizzaboxopen/spr_pizzaboxopen.yy",},"order":217,},
@@ -901,6 +904,7 @@
     {"id":{"name":"spr_playerN_Sjumpmoveright","path":"sprites/spr_playerN_Sjumpmoveright/spr_playerN_Sjumpmoveright.yy",},"order":158,},
     {"id":{"name":"spr_playerN_Sjumpprep","path":"sprites/spr_playerN_Sjumpprep/spr_playerN_Sjumpprep.yy",},"order":159,},
     {"id":{"name":"spr_playerN_Sjumpstart","path":"sprites/spr_playerN_Sjumpstart/spr_playerN_Sjumpstart.yy",},"order":160,},
+    {"id":{"name":"pinball_secret3","path":"rooms/pinball_secret3/pinball_secret3.yy",},"order":5,},
     {"id":{"name":"spr_playerN_airdash1","path":"sprites/spr_playerN_airdash1/spr_playerN_airdash1.yy",},"order":7,},
     {"id":{"name":"spr_playerN_airdash2","path":"sprites/spr_playerN_airdash2/spr_playerN_airdash2.yy",},"order":8,},
     {"id":{"name":"spr_playerN_angryidle","path":"sprites/spr_playerN_angryidle/spr_playerN_angryidle.yy",},"order":9,},
@@ -1169,6 +1173,7 @@
     {"id":{"name":"spr_playerV_jump","path":"sprites/spr_playerV_jump/spr_playerV_jump.yy",},"order":56,},
     {"id":{"name":"spr_playerV_keydoor","path":"sprites/spr_playerV_keydoor/spr_playerV_keydoor.yy",},"order":57,},
     {"id":{"name":"spr_playerV_keyget","path":"sprites/spr_playerV_keyget/spr_playerV_keyget.yy",},"order":58,},
+    {"id":{"name":"bg_pinball1_0_parallax7","path":"sprites/bg_pinball1_0_parallax7/bg_pinball1_0_parallax7.yy",},"order":6,},
     {"id":{"name":"spr_playerV_ladderstill","path":"sprites/spr_playerV_ladderstill/spr_playerV_ladderstill.yy",},"order":59,},
     {"id":{"name":"spr_slicemask","path":"sprites/spr_slicemask/spr_slicemask.yy",},"order":311,},
     {"id":{"name":"spr_playerV_land","path":"sprites/spr_playerV_land/spr_playerV_land.yy",},"order":60,},
@@ -1313,10 +1318,7 @@
     {"id":{"name":"spr_player_downslopes","path":"sprites/spr_player_downslopes/spr_player_downslopes.yy",},"order":107,},
     {"id":{"name":"spr_player_eatspaghetti","path":"sprites/spr_player_eatspaghetti/spr_player_eatspaghetti.yy",},"order":108,},
     {"id":{"name":"spr_player_entergate","path":"sprites/spr_player_entergate/spr_player_entergate.yy",},"order":109,},
-<<<<<<< HEAD
-=======
     {"id":{"name":"shd_wave","path":"shaders/shd_wave/shd_wave.yy",},"order":5,},
->>>>>>> origin/salty-chip
     {"id":{"name":"spr_player_facehurt","path":"sprites/spr_player_facehurt/spr_player_facehurt.yy",},"order":110,},
     {"id":{"name":"spr_player_facehurtup","path":"sprites/spr_player_facehurtup/spr_player_facehurtup.yy",},"order":111,},
     {"id":{"name":"spr_player_faceplant","path":"sprites/spr_player_faceplant/spr_player_faceplant.yy",},"order":112,},
@@ -1531,6 +1533,7 @@
     {"id":{"name":"bg_city1back","path":"sprites/bg_city1back/bg_city1back.yy",},"order":93,},
     {"id":{"name":"spr_pressup","path":"sprites/spr_pressup/spr_pressup.yy",},"order":66,},
     {"id":{"name":"spr_promotion","path":"sprites/spr_promotion/spr_promotion.yy",},"order":67,},
+    {"id":{"name":"bg_pinball1_0_parallax3","path":"sprites/bg_pinball1_0_parallax3/bg_pinball1_0_parallax3.yy",},"order":1,},
     {"id":{"name":"spr_punchdust","path":"sprites/spr_punchdust/spr_punchdust.yy",},"order":68,},
     {"id":{"name":"spr_railh","path":"sprites/spr_railh/spr_railh.yy",},"order":251,},
     {"id":{"name":"spr_railh2","path":"sprites/spr_railh2/spr_railh2.yy",},"order":252,},
@@ -1774,6 +1777,7 @@
     {"id":{"name":"spr_spitcheese_stun","path":"sprites/spr_spitcheese_stun/spr_spitcheese_stun.yy",},"order":5,},
     {"id":{"name":"spr_spring","path":"sprites/spr_spring/spr_spring.yy",},"order":7,},
     {"id":{"name":"spr_stickpresent","path":"sprites/spr_stickpresent/spr_stickpresent.yy",},"order":302,},
+    {"id":{"name":"pinball_secret4","path":"rooms/pinball_secret4/pinball_secret4.yy",},"order":6,},
     {"id":{"name":"spr_stickpresentdead","path":"sprites/spr_stickpresentdead/spr_stickpresentdead.yy",},"order":303,},
     {"id":{"name":"spr_stickpresentdown","path":"sprites/spr_stickpresentdown/spr_stickpresentdown.yy",},"order":304,},
     {"id":{"name":"spr_stickpresentup","path":"sprites/spr_stickpresentup/spr_stickpresentup.yy",},"order":305,},
@@ -1825,12 +1829,8 @@
     {"id":{"name":"spr_toppinsausage_intro","path":"sprites/spr_toppinsausage_intro/spr_toppinsausage_intro.yy",},"order":131,},
     {"id":{"name":"spr_toppinshroom_intro","path":"sprites/spr_toppinshroom_intro/spr_toppinshroom_intro.yy",},"order":132,},
     {"id":{"name":"spr_toppintomato_intro","path":"sprites/spr_toppintomato_intro/spr_toppintomato_intro.yy",},"order":133,},
-<<<<<<< HEAD
     {"id":{"name":"bg_desertfrontNight","path":"sprites/bg_desertfrontNight/bg_desertfrontNight.yy",},"order":182,},
     {"id":{"name":"spr_transitionufo","path":"sprites/spr_transitionufo/spr_transitionufo.yy",},"order":21,},
-=======
-    {"id":{"name":"spr_transitionufo","path":"sprites/spr_transitionufo/spr_transitionufo.yy",},"order":19,},
->>>>>>> origin/salty-chip
     {"id":{"name":"spr_trash","path":"sprites/spr_trash/spr_trash.yy",},"order":0,},
     {"id":{"name":"spr_trash_bump","path":"sprites/spr_trash_bump/spr_trash_bump.yy",},"order":1,},
     {"id":{"name":"spr_player_breakdance_bumstart","path":"sprites/spr_player_breakdance_bumstart/spr_player_breakdance_bumstart.yy",},"order":67,},
@@ -1901,6 +1901,18 @@
     {"id":{"name":"spr_arrowicon","path":"sprites/spr_arrowicon/spr_arrowicon.yy",},"order":0,},
     {"id":{"name":"spr_vigipalette","path":"sprites/spr_vigipalette/spr_vigipalette.yy",},"order":6,},
     {"id":{"name":"spr_pepperpalette","path":"sprites/spr_pepperpalette/spr_pepperpalette.yy",},"order":2,},
+<<<<<<< HEAD
+    {"id":{"name":"spr_volumebar_empty","path":"sprites/spr_volumebar_empty/spr_volumebar_empty.yy",},"order":150,},
+    {"id":{"name":"spr_volumebar_filled","path":"sprites/spr_volumebar_filled/spr_volumebar_filled.yy",},"order":151,},
+    {"id":{"name":"spr_volumeknob","path":"sprites/spr_volumeknob/spr_volumeknob.yy",},"order":152,},
+    {"id":{"name":"pinball_secret2","path":"rooms/pinball_secret2/pinball_secret2.yy",},"order":4,},
+    {"id":{"name":"spr_vomit1","path":"sprites/spr_vomit1/spr_vomit1.yy",},"order":153,},
+    {"id":{"name":"spr_vomit2","path":"sprites/spr_vomit2/spr_vomit2.yy",},"order":154,},
+    {"id":{"name":"spr_vsnoise","path":"sprites/spr_vsnoise/spr_vsnoise.yy",},"order":155,},
+    {"id":{"name":"spr_vsnoiseshadow","path":"sprites/spr_vsnoiseshadow/spr_vsnoiseshadow.yy",},"order":156,},
+    {"id":{"name":"spr_vspeppino","path":"sprites/spr_vspeppino/spr_vspeppino.yy",},"order":157,},
+    {"id":{"name":"spr_vspeppinoshadow","path":"sprites/spr_vspeppinoshadow/spr_vspeppinoshadow.yy",},"order":158,},
+=======
     {"id":{"name":"spr_volumebar_empty","path":"sprites/spr_volumebar_empty/spr_volumebar_empty.yy",},"order":24,},
     {"id":{"name":"spr_volumebar_filled","path":"sprites/spr_volumebar_filled/spr_volumebar_filled.yy",},"order":25,},
     {"id":{"name":"spr_volumeknob","path":"sprites/spr_volumeknob/spr_volumeknob.yy",},"order":26,},
@@ -1910,6 +1922,7 @@
     {"id":{"name":"spr_vsnoiseshadow","path":"sprites/spr_vsnoiseshadow/spr_vsnoiseshadow.yy",},"order":30,},
     {"id":{"name":"spr_vspeppino","path":"sprites/spr_vspeppino/spr_vspeppino.yy",},"order":31,},
     {"id":{"name":"spr_vspeppinoshadow","path":"sprites/spr_vspeppinoshadow/spr_vspeppinoshadow.yy",},"order":32,},
+>>>>>>> main
     {"id":{"name":"spr_bigcheesecollect","path":"sprites/spr_bigcheesecollect/spr_bigcheesecollect.yy",},"order":320,},
     {"id":{"name":"spr_vstitle","path":"sprites/spr_vstitle/spr_vstitle.yy",},"order":33,},
     {"id":{"name":"spr_solid","path":"sprites/spr_solid/spr_solid.yy",},"order":160,},
@@ -2051,6 +2064,7 @@
     {"id":{"name":"bg_kungfu3","path":"sprites/bg_kungfu3/bg_kungfu3.yy",},"order":78,},
     {"id":{"name":"spr_shrimp_idle","path":"sprites/spr_shrimp_idle/spr_shrimp_idle.yy",},"order":2,},
     {"id":{"name":"spr_shrimp_charge","path":"sprites/spr_shrimp_charge/spr_shrimp_charge.yy",},"order":0,},
+    {"id":{"name":"mu_pinball","path":"sounds/mu_pinball/mu_pinball.yy",},"order":159,},
     {"id":{"name":"spr_shrimp_jumpstart","path":"sprites/spr_shrimp_jumpstart/spr_shrimp_jumpstart.yy",},"order":4,},
     {"id":{"name":"spr_shrimp_jump","path":"sprites/spr_shrimp_jump/spr_shrimp_jump.yy",},"order":3,},
     {"id":{"name":"spr_banditochicken_stun","path":"sprites/spr_banditochicken_stun/spr_banditochicken_stun.yy",},"order":5,},
@@ -2110,6 +2124,7 @@
     {"id":{"name":"spr_playerN_jetpackslide","path":"sprites/spr_playerN_jetpackslide/spr_playerN_jetpackslide.yy",},"order":82,},
     {"id":{"name":"spr_playerN_jetpackstart","path":"sprites/spr_playerN_jetpackstart/spr_playerN_jetpackstart.yy",},"order":83,},
     {"id":{"name":"spr_playerN_doublejump","path":"sprites/spr_playerN_doublejump/spr_playerN_doublejump.yy",},"order":36,},
+    {"id":{"name":"pinball_secret1","path":"rooms/pinball_secret1/pinball_secret1.yy",},"order":3,},
     {"id":{"name":"spr_playerN_doublejumpfall","path":"sprites/spr_playerN_doublejumpfall/spr_playerN_doublejumpfall.yy",},"order":37,},
     {"id":{"name":"bg_newufobg","path":"sprites/bg_newufobg/bg_newufobg.yy",},"order":12,},
     {"id":{"name":"spr_playerN_wallcling","path":"sprites/spr_playerN_wallcling/spr_playerN_wallcling.yy",},"order":193,},
@@ -2298,7 +2313,11 @@
     {"id":{"name":"spr_playerPZ_parry2","path":"sprites/spr_playerPZ_parry2/spr_playerPZ_parry2.yy",},"order":96,},
     {"id":{"name":"spr_playerPZ_parry3","path":"sprites/spr_playerPZ_parry3/spr_playerPZ_parry3.yy",},"order":97,},
     {"id":{"name":"spr_playerPZ_angrymove","path":"sprites/spr_playerPZ_angrymove/spr_playerPZ_angrymove.yy",},"order":98,},
+<<<<<<< HEAD
+    {"id":{"name":"roomtracer","path":"sprites/roomtracer/roomtracer.yy",},"order":223,},
+=======
     {"id":{"name":"roomt","path":"sprites/roomt/roomt.yy",},"order":74,},
+>>>>>>> main
     {"id":{"name":"spr_playerPZ_angryidle","path":"sprites/spr_playerPZ_angryidle/spr_playerPZ_angryidle.yy",},"order":99,},
     {"id":{"name":"spr_playerPZ_dashpad","path":"sprites/spr_playerPZ_dashpad/spr_playerPZ_dashpad.yy",},"order":100,},
     {"id":{"name":"spr_playerPZ_faceplant","path":"sprites/spr_playerPZ_faceplant/spr_playerPZ_faceplant.yy",},"order":101,},
@@ -2360,6 +2379,7 @@
     {"id":{"name":"minigolf_3","path":"rooms/minigolf_3/minigolf_3.yy",},"order":2,},
     {"id":{"name":"spr_playerP_ladder","path":"sprites/spr_playerP_ladder/spr_playerP_ladder.yy",},"order":18,},
     {"id":{"name":"spr_playerP_ladderdown","path":"sprites/spr_playerP_ladderdown/spr_playerP_ladderdown.yy",},"order":19,},
+    {"id":{"name":"pinball_1","path":"rooms/pinball_1/pinball_1.yy",},"order":0,},
     {"id":{"name":"spr_playerP_bodyslam","path":"sprites/spr_playerP_bodyslam/spr_playerP_bodyslam.yy",},"order":1,},
     {"id":{"name":"spr_playerP_bodyslamstart","path":"sprites/spr_playerP_bodyslamstart/spr_playerP_bodyslamstart.yy",},"order":3,},
     {"id":{"name":"spr_playerP_bodyslamland","path":"sprites/spr_playerP_bodyslamland/spr_playerP_bodyslamland.yy",},"order":2,},
@@ -2417,6 +2437,7 @@
     {"id":{"name":"spr_pizzascore_shroom","path":"sprites/spr_pizzascore_shroom/spr_pizzascore_shroom.yy",},"order":11,},
     {"id":{"name":"spr_tv_bombpep","path":"sprites/spr_tv_bombpep/spr_tv_bombpep.yy",},"order":0,},
     {"id":{"name":"spr_tv_bombpepN","path":"sprites/spr_tv_bombpepN/spr_tv_bombpepN.yy",},"order":0,},
+    {"id":{"name":"bg_pinball1_0_parallax4","path":"sprites/bg_pinball1_0_parallax4/bg_pinball1_0_parallax4.yy",},"order":2,},
     {"id":{"name":"spr_tv_combo","path":"sprites/spr_tv_combo/spr_tv_combo.yy",},"order":4,},
     {"id":{"name":"spr_tv_fireass","path":"sprites/spr_tv_fireass/spr_tv_fireass.yy",},"order":1,},
     {"id":{"name":"spr_bananacollect","path":"sprites/spr_bananacollect/spr_bananacollect.yy",},"order":193,},
@@ -2435,6 +2456,7 @@
     {"id":{"name":"spr_tv_tumbleN","path":"sprites/spr_tv_tumbleN/spr_tv_tumbleN.yy",},"order":6,},
     {"id":{"name":"spr_tv_static","path":"sprites/spr_tv_static/spr_tv_static.yy",},"order":8,},
     {"id":{"name":"spr_tv_blank","path":"sprites/spr_tv_blank/spr_tv_blank.yy",},"order":0,},
+    {"id":{"name":"pinball_3","path":"rooms/pinball_3/pinball_3.yy",},"order":2,},
     {"id":{"name":"spr_tv_combobar","path":"sprites/spr_tv_combobar/spr_tv_combobar.yy",},"order":5,},
     {"id":{"name":"spr_tv_noiseboss","path":"sprites/spr_tv_noiseboss/spr_tv_noiseboss.yy",},"order":6,},
     {"id":{"name":"spr_tv_bubbleopen","path":"sprites/spr_tv_bubbleopen/spr_tv_bubbleopen.yy",},"order":3,},
@@ -2774,7 +2796,12 @@
     {"id":{"name":"__background_set_element","path":"scripts/__background_set_element/__background_set_element.yy",},"order":4,},
     {"id":{"name":"__background_set_internal","path":"scripts/__background_set_internal/__background_set_internal.yy",},"order":5,},
     {"id":{"name":"__global_object_depths","path":"scripts/__global_object_depths/__global_object_depths.yy",},"order":6,},
+<<<<<<< HEAD
+    {"id":{"name":"pinball_2","path":"rooms/pinball_2/pinball_2.yy",},"order":1,},
+    {"id":{"name":"beach_10","path":"rooms/beach_10/beach_10.yy",},"order":0,},
+=======
     {"id":{"name":"beach_10","path":"rooms/beach_10/beach_10.yy",},"order":11,},
+>>>>>>> main
     {"id":{"name":"__init_action","path":"scripts/__init_action/__init_action.yy",},"order":7,},
     {"id":{"name":"__init_background","path":"scripts/__init_background/__init_background.yy",},"order":8,},
     {"id":{"name":"__init_global","path":"scripts/__init_global/__init_global.yy",},"order":9,},
@@ -2819,15 +2846,8 @@
     {"id":{"name":"scr_initinput","path":"scripts/scr_initinput/scr_initinput.yy",},"order":44,},
     {"id":{"name":"scr_initinput2","path":"scripts/scr_initinput2/scr_initinput2.yy",},"order":45,},
     {"id":{"name":"scr_keyname","path":"scripts/scr_keyname/scr_keyname.yy",},"order":46,},
-<<<<<<< HEAD
     {"id":{"name":"scr_panicbg","path":"scripts/scr_panicbg/scr_panicbg.yy",},"order":48,},
     {"id":{"name":"spr_pillardestroyable_small","path":"sprites/spr_pillardestroyable_small/spr_pillardestroyable_small.yy",},"order":75,},
-=======
-    {"id":{"name":"scr_panicbg_end","path":"scripts/scr_panicbg_end/scr_panicbg_end.yy",},"order":47,},
-    {"id":{"name":"scr_panicbg_init","path":"scripts/scr_panicbg_init/scr_panicbg_init.yy",},"order":48,},
-    {"id":{"name":"scr_panicbg_start","path":"scripts/scr_panicbg_start/scr_panicbg_start.yy",},"order":49,},
-    {"id":{"name":"spr_pillardestroyable_small","path":"sprites/spr_pillardestroyable_small/spr_pillardestroyable_small.yy",},"order":71,},
->>>>>>> origin/salty-chip
     {"id":{"name":"scr_playerreset","path":"scripts/scr_playerreset/scr_playerreset.yy",},"order":50,},
     {"id":{"name":"scr_playersounds","path":"scripts/scr_playersounds/scr_playersounds.yy",},"order":51,},
     {"id":{"name":"scr_playerN_hookshot","path":"scripts/scr_playerN_hookshot/scr_playerN_hookshot.yy",},"order":0,},
@@ -3364,7 +3384,6 @@
     {"id":{"name":"obj_redblock","path":"objects/obj_redblock/obj_redblock.yy",},"order":9,},
     {"id":{"name":"obj_onoffswitch","path":"objects/obj_onoffswitch/obj_onoffswitch.yy",},"order":10,},
     {"id":{"name":"obj_pizzaballreward","path":"objects/obj_pizzaballreward/obj_pizzaballreward.yy",},"order":0,},
-    {"id":{"name":"shd_wave","path":"shaders/shd_wave/shd_wave.yy",},"order":5,},
     {"id":{"name":"obj_goalsign","path":"objects/obj_goalsign/obj_goalsign.yy",},"order":1,},
     {"id":{"name":"obj_pipeentrance","path":"objects/obj_pipeentrance/obj_pipeentrance.yy",},"order":0,},
     {"id":{"name":"obj_pipedirection","path":"objects/obj_pipedirection/obj_pipedirection.yy",},"order":1,},
@@ -3412,10 +3431,6 @@
     {"id":{"name":"obj_lamp","path":"objects/obj_lamp/obj_lamp.yy",},"order":4,},
     {"id":{"name":"obj_exitdoorsign","path":"objects/obj_exitdoorsign/obj_exitdoorsign.yy",},"order":5,},
     {"id":{"name":"obj_siren","path":"objects/obj_siren/obj_siren.yy",},"order":6,},
-<<<<<<< HEAD
-=======
-    {"id":{"name":"shd_water","path":"shaders/shd_water/shd_water.yy",},"order":6,},
->>>>>>> origin/salty-chip
     {"id":{"name":"obj_strongcoldfakedeco","path":"objects/obj_strongcoldfakedeco/obj_strongcoldfakedeco.yy",},"order":7,},
     {"id":{"name":"obj_tvtexttrigger","path":"objects/obj_tvtexttrigger/obj_tvtexttrigger.yy",},"order":8,},
     {"id":{"name":"obj_dresser","path":"objects/obj_dresser/obj_dresser.yy",},"order":0,},
@@ -3525,6 +3540,7 @@
     {"id":{"name":"obj_pizzadebris","path":"objects/obj_pizzadebris/obj_pizzadebris.yy",},"order":11,},
     {"id":{"name":"obj_debris","path":"objects/obj_debris/obj_debris.yy",},"order":12,},
     {"id":{"name":"obj_knightdebris","path":"objects/obj_knightdebris/obj_knightdebris.yy",},"order":13,},
+    {"id":{"name":"wasteyard_1","path":"rooms/wasteyard_1/wasteyard_1.yy",},"order":0,},
     {"id":{"name":"obj_boxxeddebris","path":"objects/obj_boxxeddebris/obj_boxxeddebris.yy",},"order":14,},
     {"id":{"name":"obj_glassdebris","path":"objects/obj_glassdebris/obj_glassdebris.yy",},"order":15,},
     {"id":{"name":"obj_slimedebris","path":"objects/obj_slimedebris/obj_slimedebris.yy",},"order":16,},
@@ -3538,14 +3554,9 @@
     {"id":{"name":"rousrDissonance","path":"objects/rousrDissonance/rousrDissonance.yy",},"order":0,},
     {"id":{"name":"spr_sanctum_decor4","path":"sprites/spr_sanctum_decor4/spr_sanctum_decor4.yy",},"order":4,},
     {"id":{"name":"New_Realtitlescreen","path":"rooms/New_Realtitlescreen/New_Realtitlescreen.yy",},"order":1,},
-<<<<<<< HEAD
     {"id":{"name":"room_initializer","path":"rooms/room_initializer/room_initializer.yy",},"order":0,},
     {"id":{"name":"spr_pipe_mask","path":"sprites/spr_pipe_mask/spr_pipe_mask.yy",},"order":5,},
     {"id":{"name":"characterselect","path":"rooms/characterselect/characterselect.yy",},"order":1,},
-=======
-    {"id":{"name":"room_initializer","path":"rooms/room_initializer/room_initializer.yy",},"order":5,},
-    {"id":{"name":"characterselect","path":"rooms/characterselect/characterselect.yy",},"order":2,},
->>>>>>> origin/salty-chip
     {"id":{"name":"tile_towerlight","path":"sprites/tile_towerlight/tile_towerlight.yy",},"order":57,},
     {"id":{"name":"Scootertransition","path":"rooms/Scootertransition/Scootertransition.yy",},"order":3,},
     {"id":{"name":"leveltransitioncutscene","path":"rooms/leveltransitioncutscene/leveltransitioncutscene.yy",},"order":4,},
@@ -3560,6 +3571,7 @@
     {"id":{"name":"hub_room3","path":"rooms/hub_room3/hub_room3.yy",},"order":4,},
     {"id":{"name":"cowboytask","path":"rooms/cowboytask/cowboytask.yy",},"order":5,},
     {"id":{"name":"hub_roomSNICK","path":"rooms/hub_roomSNICK/hub_roomSNICK.yy",},"order":6,},
+    {"id":{"name":"tile_pinball","path":"tilesets/tile_pinball/tile_pinball.yy",},"order":0,},
     {"id":{"name":"PP_room1","path":"rooms/PP_room1/PP_room1.yy",},"order":0,},
     {"id":{"name":"PP_room2","path":"rooms/PP_room2/PP_room2.yy",},"order":1,},
     {"id":{"name":"PP_room3","path":"rooms/PP_room3/PP_room3.yy",},"order":2,},
@@ -4090,6 +4102,16 @@
     {"roomId":{"name":"beach_secret3","path":"rooms/beach_secret3/beach_secret3.yy",},},
     {"roomId":{"name":"beach_secret5","path":"rooms/beach_secret5/beach_secret5.yy",},},
     {"roomId":{"name":"beach_secret6","path":"rooms/beach_secret6/beach_secret6.yy",},},
+<<<<<<< HEAD
+    {"roomId":{"name":"pinball_1","path":"rooms/pinball_1/pinball_1.yy",},},
+    {"roomId":{"name":"pinball_2","path":"rooms/pinball_2/pinball_2.yy",},},
+    {"roomId":{"name":"pinball_3","path":"rooms/pinball_3/pinball_3.yy",},},
+    {"roomId":{"name":"pinball_secret1","path":"rooms/pinball_secret1/pinball_secret1.yy",},},
+    {"roomId":{"name":"pinball_secret2","path":"rooms/pinball_secret2/pinball_secret2.yy",},},
+    {"roomId":{"name":"pinball_secret3","path":"rooms/pinball_secret3/pinball_secret3.yy",},},
+    {"roomId":{"name":"pinball_secret4","path":"rooms/pinball_secret4/pinball_secret4.yy",},},
+    {"roomId":{"name":"wasteyard_1","path":"rooms/wasteyard_1/wasteyard_1.yy",},},
+=======
     {"roomId":{"name":"farm_1","path":"rooms/farm_1/farm_1.yy",},},
     {"roomId":{"name":"desert_9_1","path":"rooms/desert_9_1/desert_9_1.yy",},},
     {"roomId":{"name":"freezer_1","path":"rooms/freezer_1/freezer_1.yy",},},
@@ -4115,6 +4137,7 @@
     {"roomId":{"name":"sewer_2","path":"rooms/sewer_2/sewer_2.yy",},},
     {"roomId":{"name":"sewer_3","path":"rooms/sewer_3/sewer_3.yy",},},
     {"roomId":{"name":"dragonlair_5","path":"rooms/dragonlair_5/dragonlair_5.yy",},},
+>>>>>>> main
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -4329,6 +4352,14 @@
     {"folderPath":"folders/Rooms/Levels/World Horror.yy","order":5,"resourceVersion":"1.0","name":"World Horror","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Characters/Baddies/Bandito Chicken.yy","order":31,"resourceVersion":"1.0","name":"Bandito Chicken","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Characters/Baddies/Treasure Chest Guy.yy","order":32,"resourceVersion":"1.0","name":"Treasure Chest Guy","tags":[],"resourceType":"GMFolder",},
+<<<<<<< HEAD
+    {"folderPath":"folders/Rooms/Levels/Weird West.yy","order":7,"resourceVersion":"1.0","name":"Weird West","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Rooms/Levels/No Vacation Cruise.yy","order":8,"resourceVersion":"1.0","name":"No Vacation Cruise","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Rooms/Levels/Weird West/Pinball.yy","order":1,"resourceVersion":"1.0","name":"Pinball","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/Backgrounds/pinball.yy","order":172,"resourceVersion":"1.0","name":"pinball","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Tile Sets/Pinball.yy","order":21,"resourceVersion":"1.0","name":"Pinball","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Rooms/Levels/Weird West/Wasteyard.yy","order":2,"resourceVersion":"1.0","name":"Wasteyard","tags":[],"resourceType":"GMFolder",},
+=======
     {"folderPath":"folders/Sprites/Characters/Misc/Nerd.yy","order":7,"resourceVersion":"1.0","name":"Nerd","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Characters/Misc/Meatball.yy","order":8,"resourceVersion":"1.0","name":"Meatball","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Rooms/Levels/World West.yy","order":9,"resourceVersion":"1.0","name":"World West","tags":[],"resourceType":"GMFolder",},
@@ -4355,19 +4386,18 @@
     {"folderPath":"folders/Sprites/maroket ref room :).yy","order":92,"resourceVersion":"1.0","name":"maroket ref room :)","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Characters/Baddies/Pickle.yy","order":36,"resourceVersion":"1.0","name":"Pickle","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Tile Sets/Space.yy","order":24,"resourceVersion":"1.0","name":"Space","tags":[],"resourceType":"GMFolder",},
-<<<<<<< HEAD
     {"folderPath":"folders/Scripts/Initialize.yy","order":89,"resourceVersion":"1.0","name":"Initialize","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Objects/PipeSwitch.yy","order":325,"resourceVersion":"1.0","name":"PipeSwitch","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Scripts/utility/Shader.yy","order":4,"resourceVersion":"1.0","name":"Shader","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Scripts/utility/Shader/DesertStuff.yy","order":0,"resourceVersion":"1.0","name":"DesertStuff","tags":[],"resourceType":"GMFolder",},
-=======
-    {"folderPath":"folders/Scripts/Initialize.yy","order":86,"resourceVersion":"1.0","name":"Initialize","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Characters/Playable Characters Sprites/Peppino/barrel.yy","order":336,"resourceVersion":"1.0","name":"barrel","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Rooms/Levels/World Castle/Dragon Lair.yy","order":4,"resourceVersion":"1.0","name":"Dragon Lair","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Characters/Followers/Toppins/Toppin Warriors.yy","order":6,"resourceVersion":"1.0","name":"Toppin Warriors","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Characters/Followers/Toppins/Toppin Warriors/Shroom.yy","order":1,"resourceVersion":"1.0","name":"Shroom","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Rooms/Levels/World City/Sewers.yy","order":3,"resourceVersion":"1.0","name":"Sewers","tags":[],"resourceType":"GMFolder",},
->>>>>>> origin/salty-chip
+    {"folderPath":"folders/Sprites/Hud & Menus/New Hud/Other/Combo Text.yy","order":32,"resourceVersion":"1.0","name":"Combo Text","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Scripts/Compat.yy","order":90,"resourceVersion":"1.0","name":"Compat","tags":[],"resourceType":"GMFolder",},
+>>>>>>> main
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
@@ -4397,7 +4427,16 @@
     {"isScaled":true,"autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,"resourceVersion":"1.3","name":"Snick_Sprites","resourceType":"GMTextureGroup",},
     {"isScaled":true,"autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,"resourceVersion":"1.3","name":"Factory","resourceType":"GMTextureGroup",},
   ],
-  "IncludedFiles": [],
+  "IncludedFiles": [
+    {"CopyToMask":-1,"filePath":"datafiles/GMLive","resourceVersion":"1.0","name":"gcmt-dll.dll","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles/GMLive","resourceVersion":"1.0","name":"gmlive.html","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles/GMLive","resourceVersion":"1.0","name":"gmlive-server.exe","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles/GMLive","resourceVersion":"1.0","name":"regexp.ndll","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles/GMLive","resourceVersion":"1.0","name":"std.ndll","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles/GMLive","resourceVersion":"1.0","name":"temp.shader","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles/GMLive","resourceVersion":"1.0","name":"neko.dll","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles/GMLive","resourceVersion":"1.0","name":"gmlive-server.n","resourceType":"GMIncludedFile",},
+  ],
   "MetaData": {
     "IDEVersion": "2.3.7.606",
   },
