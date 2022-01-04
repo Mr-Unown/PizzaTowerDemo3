@@ -56,6 +56,8 @@ if ((!pause) && (!instance_exists(obj_fadeout)))
 			obj_tv.alarm[1] = 75
             global.combo += 10
 			global.style += 3
+			obj_player1.storedscore += global.combo * 5
+			obj_player2.storedscore += global.combo * 5
             //global.peppermode = 0
 			obj_player1.supertauntcharged = true;
 			obj_player2.supertauntcharged = true;

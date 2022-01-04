@@ -63,7 +63,4 @@ function scr_player_Sjumpjetpackprep() {
 //	else
 		image_speed = 0.5
 
-
-
-
 }

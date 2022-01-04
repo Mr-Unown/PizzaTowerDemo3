@@ -1,37 +1,31 @@
 function scr_player_freefall() {
 	landAnim = 1
-	//if vsp < 15
-		//vsp = 15;
-	//vsp = clamp(vsp + 0.15,15,20);
-	vsp = initialfreefallvsp
-    initialfreefallvsp += 0.2
+	if vsp < 15
+		vsp = 15;
+	vsp = clamp(vsp + 0.15,15,20);
 	freefallsmash += clamp(vsp/15,1,2);
 	move = (key_left + key_right)
 	if (!grounded)
 	{
 	    hsp = (move * movespeed)
-		//if global.groundpoundstyle = 0
+		if global.groundpoundstyle = 0
 		{
-	    if (move != xscale && momemtum == 1 && movespeed != 0)
-	        movespeed -= 0.020
-	    if (movespeed == 0)
-	        momemtum = 0
-	    if ((move == 0 && momemtum == 0) || scr_solid((x + hsp), y))
-	    {
-	        movespeed = 0
-	        mach2 = 0
-	    }
-	    if (move != 0 && movespeed < 7)
-	        movespeed += 0.25
-	    if (movespeed > 7)
-	        movespeed -= 0.05
+			if (move != xscale && momemtum == 1 && movespeed != 0)
+				movespeed -= 0.020
+			if (movespeed == 0)
+				momemtum = 0
+			if ((move == 0 && momemtum == 0) || scr_solid((x + hsp), y))
+			{
+				movespeed = 0
+		        mach2 = 0
+			}
+			if (move != 0 && movespeed < 7)
+				movespeed += 0.25
+			if (movespeed > 7)
+				movespeed -= 0.05
 		}
-		/*else if global.groundpoundstyle = 1
-		{
-		if move != 0
-		movespeed = 13
-		hsp = (xscale * movespeed)
-		}*/
+		else if global.groundpoundstyle = 1
+			movespeed = 7
 	    if ((scr_solid((x + 1), y) && move == 1) || (scr_solid((x - 1), y) && move == -1))
 	        movespeed = 0
 	    if (dir != xscale)
@@ -131,7 +125,6 @@ function scr_player_freefall() {
 		{
 			playerid = other.id
 			image_xscale = other.xscale
-			sprite_index = spr_slamcloud
 		}	
 	    freefallstart = 0
 		combo = 0

@@ -16,12 +16,18 @@ function scr_player_tumble() {
 			with (instance_place(x, (y + 1), obj_slope))
 			{
 				var slope_acceleration = abs(image_yscale) / abs(image_xscale)
-				if other.movespeed > 0 && other.xscale == sign(image_xscale)
+				if other.xscale == sign(image_xscale)
 				{
-					other.movespeed -= (0.25 * slope_acceleration)
+					if other.movespeed > 0 
+						other.movespeed -= (0.25 * slope_acceleration)
+					if other.movespeed <= 0
+					{
+						other.xscale = -sign(image_xscale)
+					}						
 				}
 				else if other.movespeed < 20 && other.xscale == -sign(image_xscale)
 					other.movespeed += (0.25 * slope_acceleration)
+
 			}
 		}
 		if tile_meeting_precise(x,y + 1,"Tiles_Solid") == tiletype.leftslope1 || tile_meeting_precise(x,y + 1,"Tiles_Solid") == tiletype.leftslope2 || tile_meeting_precise(x,y + 1,"Tiles_Solid") == tiletype.leftsteepslope || tile_meeting_precise(x,y + 1,"Tiles_Solid") == tiletype.rightsteepslope || tile_meeting_precise(x,y + 1,"Tiles_Solid") == tiletype.rightslope1 || tile_meeting_precise(x,y + 1,"Tiles_Solid") == tiletype.rightslope2

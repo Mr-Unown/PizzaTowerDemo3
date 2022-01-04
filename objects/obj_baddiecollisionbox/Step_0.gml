@@ -53,7 +53,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
 					other.baddieID.dying = true
 				other.baddieID.scarebuffer = 0
 				scr_sleep();
-				other.baddieID.blowdirection = 5;
+				other.baddieID.blowdirection = 6;
                 other.baddieID.blowintensity = 1;
 				other.baddieID.playerxscale = xscale;
 				other.baddieID.state = enemystates.enemyshake;
@@ -395,7 +395,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player2) && obj_player2
 					//other.baddieID.dying = true
 				other.baddieID.scarebuffer = 0
 				scr_sleep();
-				other.baddieID.blowdirection = 5;
+				other.baddieID.blowdirection = 6;
                 other.baddieID.blowintensity = 1;
 				other.baddieID.playerxscale = xscale;
 				other.baddieID.state = enemystates.enemyshake;

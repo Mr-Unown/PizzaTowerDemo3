@@ -1,18 +1,22 @@
 //Panic Shake
 panicshake = 0;
 panicshakeacc = 0;
-depth = -4
+
+depth = -9994
 
 //Stinky Thing
 oldfacesprite = spr_null
 //global.startgate
-
+//Rank
+global.currentrank = "D"
 global.startgate = noone;
 startdistanced = 0;
 startdistance = 0;
 startgateoffsetx = 0;
 startgateoffsety = 0;
-
+//Test
+game_width = 960;
+game_height = 540;
 //Shaders
 greyscalefade = 0;
 //Frozenarray
@@ -22,6 +26,8 @@ frozenalarm[2] = -1
 frozenalarm[3] = -1
 frozen = false;
 
+//Copied Surface
+d3application_surface = noone;
 //Number
 _image_index = 0;
 _image_speed = 0;

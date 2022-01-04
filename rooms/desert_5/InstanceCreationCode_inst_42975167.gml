@@ -1,7 +1,7 @@
 condition = function()
 {
 	var player = nearest_player()
-	return place_meeting(x,y,player) && player.state = states.firemouth
+	return distance_to_object(player) <= 2500 && player.state = states.firemouth
 }
 output = function()
 {

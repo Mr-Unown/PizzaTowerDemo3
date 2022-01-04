@@ -205,7 +205,8 @@ if (isOpen) {
 								if (suggestionIndex == i + autocompleteScrollPosition) {
 									self.confirmCurrentSuggestion();
 									self.updateFilteredSuggestions();
-									break;
+									autocompleteScrollPosition = 0;
+									break;	
 								} else {
 									suggestionIndex = i + autocompleteScrollPosition;
 								}
@@ -217,8 +218,8 @@ if (isOpen) {
 						} else {
 							draw_set_color(fontColorSecondary);
 						}
-						
-						draw_text(x1 + autocompletePadding, y1 + (i * emHeight) + autocompletePadding, filteredSuggestions[i + autocompleteScrollPosition]);
+						var position_array = i + autocompleteScrollPosition;
+						draw_text(x1 + autocompletePadding, y1 + (i * emHeight) + autocompletePadding, filteredSuggestions[position_array]);
 					}
 				}
 			}

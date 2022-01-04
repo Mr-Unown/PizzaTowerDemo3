@@ -133,7 +133,7 @@ if (distance_to_object(player) < 50)
 		            alarm[0] = 2
 			break;				
 			case "desert": 
-		            _message = "OREGANO DESERT"
+		            _message = "OREGANO MIRAGE"
 		            showtext = 1
 		            alarm[0] = 2
 			break;	

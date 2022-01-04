@@ -6,6 +6,8 @@ function scr_playercreate() {
 	//Jump Height Trolling
 	jumpheight = -11;
 	in_water = false;
+	//End Combo
+	endcombo = false
 	//Topping Trail
 	toomanytoppings = 0;
 	//Substate
@@ -17,6 +19,7 @@ function scr_playercreate() {
 	global.storedtasecond = 0;
 	breakdancebuffer = 50
 	collectscore = 0
+	//Comboend
 	storedscore = 0
 	knightpoundbuffer = 0;
 	knightmaxy = 0;

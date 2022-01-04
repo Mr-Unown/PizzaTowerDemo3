@@ -108,10 +108,6 @@ if (obj_player1.collectscore >= obj_player2.collectscore)
 {
     if (obj_player1.character == "P")
     {
-		if (obj_player1.comboended == false)
-            sprite_index = spr_rankP
-		else
-		{
         if (global.rank == "s")
             sprite_index = spr_rankS
         if (global.rank == "a")
@@ -122,7 +118,6 @@ if (obj_player1.collectscore >= obj_player2.collectscore)
             sprite_index = spr_rankC
         if (global.rank == "d")
             sprite_index = spr_rankD
-		}
     }
     else if (obj_player1.character == "N")
     {

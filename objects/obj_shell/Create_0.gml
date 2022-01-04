@@ -101,7 +101,8 @@ function updateFilteredSuggestions() {
 	array_resize(filteredSuggestions, 0);
 	autocompleteMaxWidth = 0;
 	suggestionIndex = 0;
-	var inputString = string_lower(consoleString);
+	//Used to be String Lower
+	var inputString = string(consoleString);
 	inputArray = self.string_split(inputString, " ");
 	
 	// Return if we have nothing to parse
@@ -150,10 +151,13 @@ function findCommonPrefix() {
 	if (array_length(filteredSuggestions) == 0) {
 		return "";
 	}
-	
+	/*
 	var first = string_lower(filteredSuggestions[0]);
 	var last = string_lower(filteredSuggestions[array_length(filteredSuggestions) - 1]);
-		
+	*/	
+	var first = string(filteredSuggestions[0]);
+	var last = string(filteredSuggestions[array_length(filteredSuggestions) - 1]);	
+	
 	var result = "";
 	var spaceCount = string_count(" ", consoleString);
 	if (spaceCount > 0) {

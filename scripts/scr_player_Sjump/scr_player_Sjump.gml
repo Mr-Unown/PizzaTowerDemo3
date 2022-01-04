@@ -20,7 +20,8 @@ function scr_player_Sjump() {
 	if (superspringjump = false)
 	{
 		vsp = initialsuperjumpvsp
-		initialsuperjumpvsp -= 0.1
+		initialsuperjumpvsp -= 0.25
+		initialsuperjumpvsp = max(initialsuperjumpvsp,-20)
 	}
 	else if (superspringjump == true)
 	{
@@ -129,7 +130,7 @@ function scr_player_Sjump() {
 	        flash = 1
 	        image_index = 0
 	        sprite_index = spr_player_sjumpcancelprep
-			image_speed = .5
+			image_speed = 0.5
 	        with (instance_create(x, y, obj_jumpdust))
 	            image_xscale = other.xscale
 	    }	

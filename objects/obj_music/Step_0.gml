@@ -296,21 +296,22 @@ if audio_is_playing(mu_factory1) && audio_is_playing(mu_factory2)
 	audio_sound_gain(mu_ruinbmix, (1), 21000)					
 	}				
 }
-var pitchspd = clamp((obj_player.movespeed/9.5) * 0.8, .7, 1.5)
+var _player = focused_player()
+var pitchspd = clamp((_player.movespeed/9.5) * 0.8, .7, 1.5)
 if global.pitchshift = 1
 {
-	with (obj_player1)
+	with (_player)
 	{
 		if (state == states.knightpep)
 		audio_sound_pitch(global.music, 0.9);
 		else if (state == states.tumble or state == states.knightpepslopes)
 		{
 			if sprite_index != spr_tumblestart 
-			audio_sound_pitch(global.music, pitchspd);
+				audio_sound_pitch(global.music, pitchspd);
 			else 
-			audio_sound_pitch(global.music, 1.2);
+				audio_sound_pitch(global.music, 1.2);
 		}
 		else
-		audio_sound_pitch(global.music, 1);
+			audio_sound_pitch(global.music, 1);
 	}
 }
