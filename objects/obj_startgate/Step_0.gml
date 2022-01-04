@@ -133,7 +133,7 @@ if (distance_to_object(player) < 50)
 		            alarm[0] = 2
 			break;				
 			case "desert": 
-		            _message = "OREGANO DESERT"
+		            _message = "OREGANO MIRAGE"
 		            showtext = 1
 		            alarm[0] = 2
 			break;	
@@ -149,6 +149,11 @@ if (distance_to_object(player) < 50)
 			break;
 			case "pinball": 
 		            _message = "EXTRATERRESTRIAL PINBALL"
+					showtext = 1
+		            alarm[0] = 2
+			break;
+			case "space": 
+		            _message = "GALACTIC FIELD"
 		            showtext = 1
 		            alarm[0] = 2
 			break;

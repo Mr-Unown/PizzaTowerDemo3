@@ -1,1 +1,1 @@
-targetRoom = desert_9
+targetRoom = desert_9_1

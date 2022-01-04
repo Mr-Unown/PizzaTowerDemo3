@@ -7,7 +7,7 @@ if ((!pause) && (!instance_exists(obj_fadeout)))
         if (!instance_exists(obj_pausefadeout))
             instance_create(x, y, obj_pausefadeout)
     }
-    if ((obj_player2.key_jump || keyboard_check_pressed(vk_f5)) && global.coop == 0 && room != rank_room && room != Scootertransition && room != global.roomstart[global.newtitlescreen] && room != timesuproom) && obj_debugcontroller.active = false && !instance_exists(obj_palettechanger)
+    if global.shellactivate == false && ((obj_player2.key_jump || keyboard_check_pressed(vk_f5)) && global.coop == 0 && room != rank_room && room != Scootertransition && room != global.roomstart[global.newtitlescreen] && room != timesuproom) && !instance_exists(obj_palettechanger)
     {
         global.coop = 1
         with (obj_player2)
@@ -27,9 +27,9 @@ if ((!pause) && (!instance_exists(obj_fadeout)))
             alarm[0] = 100
         }
     }
-    if (global.debugmode == 1)
+    if (global.debugmode == 1) && global.shellactivate == false
     {
-        if (keyboard_check_pressed(vk_f5) && global.coop == 0) && obj_debugcontroller.active = false
+        if (keyboard_check_pressed(vk_f5) && global.coop == 0)
         {
             global.coop = 1
             with (obj_player2)
@@ -54,11 +54,16 @@ if ((!pause) && (!instance_exists(obj_fadeout)))
             global.combotime = 60
 			global.pausecombotime = true
 			obj_tv.alarm[1] = 75
-            global.combo += 3
+            global.combo += 10
+			global.style += 3
+			obj_player1.storedscore += global.combo * 5
+			obj_player2.storedscore += global.combo * 5
             //global.peppermode = 0
 			obj_player1.supertauntcharged = true;
 			obj_player2.supertauntcharged = true;
+			if obj_player1.murderammo <= 3
 			obj_player1.murderammo += 1;
+			if obj_player2.murderammo <= 3
 			obj_player2.murderammo += 1;			
         }
         if keyboard_check_pressed(vk_f11)
@@ -286,7 +291,7 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
                 obj_player1.targetDoor = "A";
                 if instance_exists(obj_player2)
                     obj_player2.targetDoor = "A";
-            }/*			
+            }			
             else if (string_letters(roomname) == "desert" || string_letters(roomname) == "desertsecret")
             {
                 instance_activate_all()
@@ -307,6 +312,7 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
                 if instance_exists(obj_player2)
                     obj_player2.targetDoor = "A"
             }
+			/*
             else if (string_letters(roomname) == "sewer" || string_letters(roomname) == "sewersecret")
             {
                 instance_activate_all()

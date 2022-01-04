@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
   "preload": true,
@@ -11,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_stompenemy",
-  "duration": 0.220805,
+  "duration": 0.215805,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

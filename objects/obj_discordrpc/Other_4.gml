@@ -67,18 +67,12 @@ if (global.snickchallenge == false)
 	string_imagekey = "default"
 	in_a_level = true;
     }			
-    else if ((string_letters(roomname) == "desert" || string_letters(roomname) == "desertsecret")) && global.desertnight = false
+    else if ((string_letters(roomname) == "desert" || string_letters(roomname) == "desertmart" || string_letters(roomname) == "desertsecret")) && global.desertnight = false
     {
 	string_status = "Oregano Mirage"
-	string_imagekey = "default"
+	string_imagekey = "desert"
 	in_a_level = true;
     }
-    else if ((string_letters(roomname) == "desert" || string_letters(roomname) == "desertsecret")) && global.desertnight = true
-    {
-	string_status = "Majoram Dream"
-	string_imagekey = "default"
-	in_a_level = true;
-    }	
     else if (string_letters(roomname) == "factory" || string_letters(roomname) == "factorysecret")
     {
 	string_status = "Pizzasauce Factory"
@@ -108,7 +102,13 @@ if (global.snickchallenge == false)
 	string_status = "Streets of Pizza"
 	string_imagekey = "default"
 	in_a_level = true;
-    }			
+    }
+	else if (string_letters(roomname) == "space" || string_letters(roomname) == "spacesecret")
+    {
+	string_status = "Galactic Field"
+	string_imagekey = "default"
+	in_a_level = true;
+    }
 	else
 	{	
 	string_status = "Pizza Tower"

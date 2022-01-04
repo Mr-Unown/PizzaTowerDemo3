@@ -564,7 +564,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
             }
         }
     }
-	if room = room_test1 || room = room_test5
+	if room = room_test1
 	{
 	    if (!audio_is_playing(mu_freezer2))
         {
@@ -582,6 +582,16 @@ if (global.panic == 0 && global.snickchallenge == 0)
              pausedmusic = mu_desert
         }	
 	}	
+		if room = room_test5
+	{
+	    if (!audio_is_playing(mu_freezer2))
+        {
+             scr_soundstopall()
+             scr_sound(mu_freezer2)
+             pausedmusic = mu_freezer2
+        }	
+	}
+	
 	
 	audio_sound_gain(global.music, (0.6 * global.musicvolume), 0)
 }

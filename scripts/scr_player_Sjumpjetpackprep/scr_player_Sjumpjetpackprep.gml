@@ -28,6 +28,7 @@ function scr_player_Sjumpjetpackprep() {
 			sprite_index = spr_player_sjumpcancel
 			image_index = 0
 			movespeed = 14
+			vsp = -12
 		}
 	}
 
@@ -57,12 +58,9 @@ function scr_player_Sjumpjetpackprep() {
 	    superjumpholdsnd = audio_play_sound(sfx_superjumphold, 1, false)
 	    audio_sound_gain(superjumpholdsnd, (1 * global.soundeffectsvolume), 0)
 	}
-	if sprite_index = spr_playerN_jetpackstart
+//	if sprite_index = spr_playerN_jetpackstart
+//		image_speed = 0.3
+//	else
 		image_speed = 0.5
-	else
-		image_speed = 0.35
-
-
-
 
 }

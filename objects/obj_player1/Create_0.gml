@@ -1,6 +1,7 @@
 global.toppinlist = ds_list_create();
 global.follower = ds_list_create();
-
+comboend_id = noone;
+//scr_init()
 scr_initinput()
 scr_playercreate()
 
@@ -22,6 +23,8 @@ global.savefile = "a"
 equippedhat = false;
 Talkie = 0
 firemouthtrail = 0
+machtrail2 = 0
+kungfutrail = 0
 choosenhat = 0;
 parry_id = -4
 parried_baddie = 0
@@ -215,3 +218,4 @@ suplexdashsnd = -1
 obj_player1.hp = 5
 blackblend = 0
 boxxedjump = 0
+endcombo = 0

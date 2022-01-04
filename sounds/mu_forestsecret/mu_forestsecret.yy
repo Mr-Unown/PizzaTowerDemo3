@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 2,
   "volume": 1.0,
   "preload": true,
@@ -11,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "mu_forestsecret",
-  "duration": 71.496315,
+  "duration": 71.49131,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

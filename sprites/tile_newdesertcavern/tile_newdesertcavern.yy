@@ -7,10 +7,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 96,
+  "bbox_left": 0,
   "bbox_right": 991,
   "bbox_top": 0,
-  "bbox_bottom": 461,
+  "bbox_bottom": 991,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"fae3b763-1630-4fd2-a75d-f1eef944a453","path":"sprites/tile_newdesertcavern/tile_newdesertcavern.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"fae3b763-1630-4fd2-a75d-f1eef944a453","path":"sprites/tile_newdesertcavern/tile_newdesertcavern.yy",},"LayerId":{"name":"6ce75176-bc18-497f-acf5-8f3543ee0537","path":"sprites/tile_newdesertcavern/tile_newdesertcavern.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"tile_newdesertcavern","path":"sprites/tile_newdesertcavern/tile_newdesertcavern.yy",},"resourceVersion":"1.0","name":"fae3b763-1630-4fd2-a75d-f1eef944a453","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"094c4978-aeed-485b-87e1-ad6fc78c5df0","path":"sprites/tile_newdesertcavern/tile_newdesertcavern.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"094c4978-aeed-485b-87e1-ad6fc78c5df0","path":"sprites/tile_newdesertcavern/tile_newdesertcavern.yy",},"LayerId":{"name":"7cec8be1-3945-499f-96fd-844094938423","path":"sprites/tile_newdesertcavern/tile_newdesertcavern.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"tile_newdesertcavern","path":"sprites/tile_newdesertcavern/tile_newdesertcavern.yy",},"resourceVersion":"1.0","name":"094c4978-aeed-485b-87e1-ad6fc78c5df0","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"tile_newdesertcavern","path":"sprites/tile_newdesertcavern/tile_newdesertcavern.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"f3aa5eb8-bd75-4657-bde8-68f8bf5edb66","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fae3b763-1630-4fd2-a75d-f1eef944a453","path":"sprites/tile_newdesertcavern/tile_newdesertcavern.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5372de8a-e109-4a48-83a8-780ee0821553","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"094c4978-aeed-485b-87e1-ad6fc78c5df0","path":"sprites/tile_newdesertcavern/tile_newdesertcavern.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"6ce75176-bc18-497f-acf5-8f3543ee0537","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"7cec8be1-3945-499f-96fd-844094938423","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {

@@ -1,5 +1,33 @@
 function scr_getinput2() {
 	gamepad_set_axis_deadzone(1, 0.4)
+	if global.shellactivate = true
+	{
+		#region Anti-Crash
+	key_up = false
+	key_up2 = false
+	key_right = false
+	key_right2 = false
+	key_left = false
+	key_left2 = false
+	key_down = false
+	key_down2 = false
+	key_jump = false
+	key_jump2 = false
+	key_slap = false
+	key_slap2 = false
+	key_taunt = false
+	key_taunt2 = false
+	key_attack = false
+	key_attack2 = false
+	key_shoot = false
+	key_shoot2 = false
+	key_start = false
+	key_escape = false
+		#endregion
+		return;
+	}
+	else
+	{	
 	key_up = (keyboard_check(global.key_upN) || gamepad_button_check(1, global.key_upCN) || gamepad_axis_value(1, gp_axislv) < 0)
 	key_up2 = (keyboard_check_pressed(global.key_upN) || gamepad_button_check_pressed(1, global.key_upCN) || (gamepad_axis_value(1, gp_axislv) < -0.5 && stickpressed == 0))
 	key_right = (keyboard_check(global.key_rightN) || gamepad_button_check(1, global.key_rightCN) || gamepad_axis_value(1, gp_axislh) > 0)
@@ -20,6 +48,7 @@ function scr_getinput2() {
 	key_shoot2 = (keyboard_check_pressed(global.key_shootN) || gamepad_button_check_pressed(1, global.key_shootCN))
 	key_start = (keyboard_check_pressed(global.key_startN) || gamepad_button_check_pressed(1, global.key_startCN))
 	key_escape = (keyboard_check_pressed(vk_escape) || gamepad_button_check(1, gp_select))
+	
 	if (gamepad_axis_value(1, gp_axislh) > 0.5 || gamepad_axis_value(1, gp_axislh) < -0.5 || gamepad_axis_value(1, gp_axislv) > 0.5 || gamepad_axis_value(1, gp_axislv) < -0.5)
 	    stickpressed = 1
 	else
@@ -74,6 +103,7 @@ function scr_getinput2() {
 	        showtext = 1
 	        alarm[0] = 150
 	    }
+		}
 	}
 
 	return;

@@ -1,2 +1,2 @@
-visible = obj_debugcontroller.showcollisions
+visible = global.showcollisions
 randomchance = 100

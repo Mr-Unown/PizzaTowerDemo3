@@ -15,6 +15,8 @@ function scr_enemy_throw() {
 	    global.throw_frame[obj_rancher] = 3
 		global.throw_frame[obj_shrimpblue] = 9
 		global.throw_frame[obj_cannongoblin] = 6
+		global.throw_frame[obj_noiserobot] = 0
+		global.throw_frame[obj_pickle] = 2
 	    global.throw_sprite = spr_plug
 	    global.throw_sprite[obj_pizzagoblin] = spr_pizzagoblin_throwbomb
 	    global.throw_sprite[obj_cheeserobot] = spr_cheeserobot_attack
@@ -28,7 +30,9 @@ function scr_enemy_throw() {
 	    global.throw_sprite[obj_swedishmonkey] = spr_swedishmonkey_eat
 	    global.throw_sprite[obj_rancher] = spr_ranch_shoot
 	    global.throw_sprite[obj_shrimpblue] = spr_shrimp_knife
-	    global.throw_sprite[obj_cannongoblin] = spr_pizzacannongoblin_throwbomb		
+	    global.throw_sprite[obj_cannongoblin] = spr_pizzacannongoblin_throwbomb
+		global.throw_sprite[obj_noiserobot] = spr_noiserobot_shoot
+		global.throw_sprite[obj_pickle] = spr_pickle_attack
 	    global.reset_timer = 0
 	    global.reset_timer[obj_pizzagoblin] = 200
 	    global.reset_timer[obj_cheeserobot] = 200
@@ -43,6 +47,8 @@ function scr_enemy_throw() {
 	    global.reset_timer[obj_rancher] = 100
 	    global.reset_timer[obj_shrimpblue] = 100	
 	    global.reset_timer[obj_cannongoblin] = 200	
+		global.reset_timer[obj_noiserobot] = 140
+		global.reset_timer[obj_pickle] = 200
 	}
 	hsp = 0
 	if place_meeting(x, (y + 1), obj_railh)
@@ -157,7 +163,24 @@ function scr_enemy_throw() {
 	                image_xscale = other.image_xscale
 					grav = 0
 	            }
-	            break			
+			case obj_noiserobot:
+	            with (instance_create(x, y, obj_cannongoblinbomb))
+	            {
+	                hsp = (other.image_xscale * 8)
+					vsp = 0
+	                image_xscale = other.image_xscale
+					grav = 0
+	            }
+	            break
+			case obj_pickle:
+                attacking = 0
+                with (instance_create(x, y, obj_forkhitbox))
+                {
+                    ID = other.id
+                    image_xscale = other.image_xscale
+                    sprite_index = other.sprite_index
+                }
+                break
 	    }
     
 	}

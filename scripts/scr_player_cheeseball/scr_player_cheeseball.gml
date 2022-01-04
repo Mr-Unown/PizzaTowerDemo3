@@ -3,7 +3,38 @@ function scr_player_cheeseball() {
 	hsp = (xscale * 12)
 	if ((!scr_slope()) && instance_place((x + sign(hsp)), y, obj_solid))
 	{
-	    scr_soundeffect(sfx_bumpwall)
+	    /*scr_soundeffect(sfx_bumpwall)
+	    scr_soundeffect(sfx_loseknight)
+	    grav = 0.5
+	    repeat (8)
+	    {
+	        with (instance_create((other.x + random_range(-5, 5)), (other.y + random_range(-5, 5)), obj_slimedebris))
+	        {
+	            image_xscale = size
+	            image_yscale = image_xscale
+	        }
+	    }
+	    if (x != other.x)
+	        hsp = (sign((x - other.x)) * 5)
+	    else
+	        hsp = 5
+	    vsp = -3
+	    visible = true
+	    image_index = 0
+	    image_index = 0
+	    flash = 1
+	    state = 72*/
+		vsp = -6
+		hsp = 0
+		if key_jump2
+		{
+		xscale = -xscale
+		hsp = (xscale * 12)
+		}
+	}
+	if instance_place(x, y - 1, obj_solid)
+	{
+		scr_soundeffect(sfx_bumpwall)
 	    scr_soundeffect(sfx_loseknight)
 	    grav = 0.5
 	    repeat (8)

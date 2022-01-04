@@ -1,29 +1,30 @@
-if (obj_player.state == 77 && grounded)
+if (obj_player.state == 77 && grounded) && object_index != obj_meatballman
 {
     if point_in_rectangle(x, y, __view_get(0, 0), __view_get(1, 0), (__view_get(0, 0) + __view_get(2, 0)), (__view_get(1, 0) + __view_get(3, 0)))
-    {
-        vsp = -7
-    }
+    vsp = -6;
 }
 
 if ((grounded || (grounded && (!place_meeting(x, y, obj_platform)))) && vsp > 0) && grabbed = 0 
 {
     hsp = 0
-    thrown = 0	
+    thrown = false	
 }
 if (grabbed == 1)
 {
+	alarm[1] = 5
     image_xscale = (-playerid.xscale)
     grav = 0
     depth = 0
     playerid.baddiegrabbedID = id
-    if (playerid.state == 3 || playerid.state == 28 || playerid.state == 46 || playerid.state == 41 || playerid.state == 42 || playerid.state == 10)
+	var _state = (playerid.state == states.frozen ? playerid.frozenstate : playerid.state)
+	
+    if (_state == 3 || _state == 28 || _state == 46 || _state == 41 || _state == 42 || _state == 10)
     {
         thrown = 0
         grav = 0
         grounded = 0
         x = playerid.x
-        if (playerid.sprite_index != spr_player_haulingstart && playerid.state != 3)
+        if (playerid.sprite_index != spr_player_haulingstart && _state != 3)
             y = (playerid.y - 60)
         else if (floor(playerid.image_index) == 0)
             y = (playerid.y - 20)
@@ -48,14 +49,14 @@ if (grabbed == 1)
         }
     }
     hsp = 0
-    if (playerid.state == 3)
+    if (_state == 3)
     {
         x = (playerid.x + (playerid.xscale * 50))
         y = playerid.y
         flash = 1
         hp -= 5
     }
-    if (playerid.state == 47)
+    if (_state == 47)
     {
         instance_create((x + (playerid.xscale * 30)), y, obj_bumpeffect)
         grabbed = 0
@@ -75,7 +76,7 @@ if (grabbed == 1)
             shake_mag_acc = (3 / room_speed)
         }
     }
-    if (playerid.state == 46 && playerid.sprite_index == playerid.spr_swingding)
+    if (_state == 46 && playerid.sprite_index == playerid.spr_swingding)
     {
         if (floor(playerid.image_index) == 0)
         {
@@ -126,7 +127,7 @@ if (grabbed == 1)
             y = playerid.y
         }
     }
-    if (playerid.state == 50)
+    if (_state == 50)
     {
         grav = 0.5
         instance_create(x, (y + 20), obj_bumpeffect)
@@ -156,7 +157,7 @@ if (grabbed == 1)
             shake_mag_acc = (3 / room_speed)
         }
     }
-    if (playerid.state == 41)
+    if (_state == 41)
     {
         flash = 1
         hp -= 5
@@ -168,7 +169,7 @@ if (grabbed == 1)
         hsp = ((-image_xscale) * 10)
         vsp = -10
     }
-    if (playerid.state == 49)
+    if (_state == 49)
     {
         instance_create((x + ((-playerid.xscale) * 15)), (y - 50), obj_bumpeffect)
         grav = 0.5
@@ -187,12 +188,12 @@ if (grabbed == 1)
             shake_mag_acc = (3 / room_speed)
         }
     }
-    if (playerid.state == 10)
+    if (_state == 10)
     {
         x = (playerid.x + (playerid.xscale * 15))
         y = playerid.y
     }
-    if (playerid.state == 43)
+    if (_state == 43)
     {
         if (playerid.character == "P")
         {
@@ -267,7 +268,7 @@ if (grabbed == 1)
         }
     }
 }
-if (place_meeting(x, y, obj_swordhitbox) && thrown == 0)
+if (place_meeting(x, y, obj_swordhitbox) && thrown == 0) && grabbed == true
 {
     grabbed = 0
     thrown = 1
@@ -302,3 +303,5 @@ if (place_meeting(x, y, obj_swordhitbox) && thrown == 0)
         }
     }
 }
+
+

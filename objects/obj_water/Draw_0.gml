@@ -97,5 +97,6 @@ if surface_exists(watersurface)
 	draw_sprite_ext(sprite_index,-1,x - _cam_x, y - _cam_y,image_xscale,1,0,c_white,1)
 	surface_reset_target();
 }
+
 //Draw Surface
 draw_surface_ext(watersurface,_cam_x,_cam_y,1,1,0,c_white,alpha);

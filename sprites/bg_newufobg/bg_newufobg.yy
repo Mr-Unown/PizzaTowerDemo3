@@ -17,8 +17,8 @@
   "width": 540,
   "height": 1000,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Desert",
+    "path": "texturegroups/Desert",
   },
   "swatchColours": null,
   "gridX": 0,
@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "New desert bg stuff",
-    "path": "folders/Sprites/Backgrounds/New desert bg stuff.yy",
+    "name": "Desert",
+    "path": "folders/Sprites/Backgrounds/Desert.yy",
   },
   "resourceVersion": "1.0",
   "name": "bg_newufobg",

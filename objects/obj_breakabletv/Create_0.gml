@@ -1,3 +1,5 @@
+// Inherit the parent event
+event_inherited();
 thrown = 0
 grabbed = 0
 playerid = obj_player1

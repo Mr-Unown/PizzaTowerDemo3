@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 0,
   "volume": 0.5,
   "preload": false,
@@ -11,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_hurt3",
-  "duration": 1.316927,
+  "duration": 1.311927,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

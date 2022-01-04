@@ -2,7 +2,7 @@ function scr_collide_destructibles() {
 #region Players
 	with (obj_player1)
 	{
-	    if (state == 70 || state == 91 || state == states.jetpack || state == 37 || state == 18 || state == 2 || state == 10 || state == 9)
+	    if (state == 70 || state == 91 || state == states.jetpack || state == 37 || state == 18 || state == 2 || state == 10 || state == 9 || state = states.rocket)
 	    {
 	        if place_meeting((x + hsp), y, obj_destructibles)
 	        {
@@ -126,8 +126,18 @@ function scr_collide_destructibles() {
 				}
 	        }
 		}
-		if (state = 7)
+		if (state = states.firemouth)
 		{
+			//Horizontal
+			if place_meeting(x + hsp, y, obj_destructibles)
+	        {
+	            with (instance_place(x + hsp, y, obj_destructibles))
+	            {
+					initialhsp = other.hsp
+					initialvsp = other.vsp
+	                event_user(0)
+				}
+	        }
 			if place_meeting(x + sign(hsp), y, obj_destructibles)
 	        {
 	            with (instance_place(x + sign(hsp), y, obj_destructibles))
@@ -136,7 +146,42 @@ function scr_collide_destructibles() {
 					initialvsp = other.vsp
 	                event_user(0)
 				}
+	        }	
+			//Vertical
+			if place_meeting(x, y + vsp, obj_destructibles)
+	        {
+	            with (instance_place(x, y + vsp, obj_destructibles))
+	            {
+					initialhsp = other.hsp
+					initialvsp = other.vsp
+	                event_user(0)
+				}
+				if vsp > 0
+				{
+					sprite_index = spr_player_firemouthjump
+					if key_jump2
+						vsp = -12					
+					else
+						vsp = -4
+				}
 	        }
+			if place_meeting(x, y + sign(vsp), obj_destructibles)
+	        {
+	            with (instance_place(x, y + sign(vsp), obj_destructibles))
+	            {
+					initialhsp = other.hsp
+					initialvsp = other.vsp
+	                event_user(0)
+				}	
+				if vsp > 0
+				{
+					sprite_index = spr_player_firemouthjump
+					if key_jump2
+						vsp = -12					
+					else
+						vsp = -4
+				}			
+	        }			
 		}
 		if (state = states.knightpepattack)
 		{
@@ -274,7 +319,7 @@ function scr_collide_destructibles() {
 	                image_speed = 0.35
 	        }
 	    }
-		if state  == states.Sjump
+		if state  == states.Sjump || (state == states.rocket && rocketup == 1)
 		{
 	        if place_meeting(x, (y + vsp), obj_destructibles)
 	        {
@@ -573,6 +618,63 @@ function scr_collide_destructibles() {
 				}
 	        }
 		}
+		if (state = states.firemouth)
+		{
+			//Horizontal
+			if place_meeting(x + hsp, y, obj_destructibles)
+	        {
+	            with (instance_place(x + hsp, y, obj_destructibles))
+	            {
+					initialhsp = other.hsp
+					initialvsp = other.vsp
+	                event_user(0)
+				}
+	        }
+			if place_meeting(x + sign(hsp), y, obj_destructibles)
+	        {
+	            with (instance_place(x + sign(hsp), y, obj_destructibles))
+	            {
+					initialhsp = other.hsp
+					initialvsp = other.vsp
+	                event_user(0)
+				}
+	        }	
+			//Vertical
+			if place_meeting(x, y + vsp, obj_destructibles)
+	        {
+	            with (instance_place(x, y + vsp, obj_destructibles))
+	            {
+					initialhsp = other.hsp
+					initialvsp = other.vsp
+	                event_user(0)
+				}
+				if vsp > 0
+				{
+					sprite_index = spr_player_firemouthjump
+					if key_jump2
+						vsp = -12					
+					else
+						vsp = -4
+				}
+	        }
+			if place_meeting(x, y + sign(vsp), obj_destructibles)
+	        {
+	            with (instance_place(x, y + sign(vsp), obj_destructibles))
+	            {
+					initialhsp = other.hsp
+					initialvsp = other.vsp
+	                event_user(0)
+				}	
+				if vsp > 0
+				{
+					sprite_index = spr_player_firemouthjump
+					if key_jump2
+						vsp = -12					
+					else
+						vsp = -4
+				}				
+	        }		
+		}		
 		if (state = states.knightpepattack)
 		{
 			if place_meeting(x + hsp, y + vsp, obj_destructibles)
@@ -955,6 +1057,27 @@ function scr_collide_destructibles() {
 				}		
 			}
 		}	   
+	}
+	with (obj_meatballman)
+	{
+	    if place_meeting((x + hsp), y, obj_destructibles) && state = meatballstate.rolling
+		{
+	        with instance_place(x + hsp, y, obj_destructibles)
+	        {
+				initialhsp = other.hsp
+				initialvsp = other.vsp
+	            event_user(0)
+			}		
+		}
+	    if place_meeting((x + sign(hsp)), y, obj_destructibles) && state = meatballstate.rolling
+		{
+	        with instance_place(x + sign(hsp), y, obj_destructibles)
+	        {
+				initialhsp = other.hsp
+				initialvsp = other.vsp
+	            event_user(0)
+			}		
+		}		
 	}
 	with (obj_throwableparent)
 	{

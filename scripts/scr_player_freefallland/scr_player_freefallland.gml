@@ -16,7 +16,7 @@ function scr_player_freefallland() {
 	hsp = 0
   
 	//TODO: IDK
-	if key_jump2 && floor(image_index) >= 2 && floor(image_index) != image_number - 1
+	if key_jump2 && floor(image_index) >= 4 && floor(image_index) != image_number - 1
 	{
 		facehurt = 0
 		jumpAnim = 1
@@ -28,7 +28,10 @@ function scr_player_freefallland() {
 		scr_soundeffect(sfx_jump)
 		scr_soundeffect(sfx_rollgetup)
 		with (instance_create(x, y, obj_highjumpcloud2))
+		{
 			image_xscale = other.xscale
+			sprite_index = spr_slamjumpcloud
+		}
 	}
 	else if floor(image_index) == (image_number - 1) 
 		state = 0

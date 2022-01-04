@@ -1,6 +1,6 @@
 scr_commonenemy()
 scr_scareenemy()
-if (state == 106 && stunned > 100 && birdcreated == 0)
+if (state == 106 && stunned > 60 && birdcreated == 0)
 {
     birdcreated = 1
     with (instance_create(x, y, obj_enemybird))

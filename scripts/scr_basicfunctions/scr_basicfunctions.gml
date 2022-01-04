@@ -67,3 +67,44 @@ function focused_player()
 	/// @function focused_player
 	return (global.coop = false ? obj_player1 : (obj_player1.spotlight == false ? obj_player2 : obj_player1)) ;
 }
+
+
+
+
+function layer_change_background(original_sprite,new_sprite)
+{
+	/// @description Changes Background sprite based on the original sprite
+	/// @function layer_change_background
+	if original_sprite != new_sprite
+	{
+		var a = layer_get_all();
+		for (var i = 0; i < array_length(a); i++;)
+		{
+			var back_id = layer_background_get_id_fixed(a[i])
+			if layer_background_get_sprite(back_id) == original_sprite
+				layer_background_sprite(back_id, new_sprite);	
+		}
+	}
+}
+
+function get_all_layer_type(layer_type = layerelementtype_undefined)
+{
+	/// @description Returns an array of a certain type of layer
+	/// @function get_all_layer_type
+	var layers, layernum = 0;
+	var a = layer_get_all(), i = 0;
+	while (i < array_length(a)) 
+	{
+		var els = layer_get_all_elements(a[i]);
+		if (layer_get_element_type(els) == layer_type)
+		{
+			layers[layernum++] = a[i]
+		}
+	   i++
+	}
+	//If no layers are found get out
+	if (!layernum)
+	    return noone;
+	
+	return layers;
+}

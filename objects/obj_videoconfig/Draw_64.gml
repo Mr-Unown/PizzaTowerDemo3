@@ -32,6 +32,7 @@ if (optionsaved_resolution == 2)
     draw_text_colour(680, 225 - 25, "1920X1080", c_white, c_white, c_white, c_white, 1)
 else
     draw_text_colour(680, 225 - 25, "1920X1080", c_white, c_white, c_white, c_white, 0.5)
+	
 if (optionselected == 2)
     draw_text_colour(480, 325 - 25, "MOTION BLUR", c_white, c_white, c_white, c_white, 1)
 else
@@ -61,3 +62,17 @@ if (optionsaved_hitstun == 2)
     draw_text_colour(680 + 5, 525 - 25, "DYNAMIC", c_white, c_white, c_white, c_white, 1)
 else
     draw_text_colour(680 + 5, 525 - 25, "DYNAMIC", c_white, c_white, c_white, c_white, 0.5)
+/* Interpolation
+if (optionselected == 4)
+    draw_text_colour(480, 675 - 25, "MOTION BLUR", c_white, c_white, c_white, c_white, 1)
+else
+    draw_text_colour(480, 675 - 25, "MOTION BLUR", c_white, c_white, c_white, c_white, 0.5)
+	
+if (optionsaved_interpolation == 1)
+    draw_text_colour(380, 725 - 25, "ON", c_white, c_white, c_white, c_white, 1)
+else
+    draw_text_colour(380, 725 - 25, "ON", c_white, c_white, c_white, c_white, 0.5)
+if (optionsaved_interpolation == 0)
+    draw_text_colour(580, 725 - 25, "OFF", c_white, c_white, c_white, c_white, 1)
+else
+    draw_text_colour(580, 725 - 25, "OFF", c_white, c_white, c_white, c_white, 0.5)	

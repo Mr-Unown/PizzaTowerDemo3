@@ -17,6 +17,14 @@ if instance_exists(ID)
                 instance_destroy(other.id)
             }
         }		
+        if (object_index == obj_robot)
+        {
+            if (sprite_index = stunspr || sprite_index = walkspr || sprite_index = idlespr)
+            {
+                hitboxcreate = 0
+                instance_destroy(other.id)
+            }
+        }
         if (object_index == obj_minijohn)
         {
             if (state != enemystates.enemyheat || player.instakillmove = true || player.state == states.mach3 || player.state == states.frozen || player.state == states.handstandjump || player.state == states.kingknightroll || player.state == states.breakdance)
@@ -78,6 +86,11 @@ if instance_exists(ID)
                 instance_destroy(other.id)
 			}
 		}
+		if (object_index == obj_pickle)
+        {
+            if (state != 97)
+                instance_destroy(other)
+        }
         if (object_index == obj_peasanto || object_index == obj_fencer || object_index == obj_ninja || object_index == obj_ancho)
         {
             if (state != 96 && state != enemystates.enemyheat) || player.state = states.breakdance

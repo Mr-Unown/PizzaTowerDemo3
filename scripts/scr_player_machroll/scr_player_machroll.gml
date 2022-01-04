@@ -10,12 +10,42 @@ function scr_player_machroll() {
 	if (!place_meeting(x, (y + 1), obj_railh))
 	    hsp = (xscale * movespeed)
 	else if place_meeting(x, (y + 1), obj_railh)
-	    hsp = ((xscale * movespeed) - 5)
+	{
+		if other.xscale == sign(image_xscale)
+		{
+		if movespeed > 0
+		movespeed -= .1
+		}
+		else
+		if movespeed < 24
+		movespeed += .1
+		if movespeed <= 0
+		state = states.crouch
+		hsp = (xscale * movespeed)
+	}
 	else if place_meeting(x, (y + 1), obj_railh2)
-	    hsp = ((xscale * movespeed) + 5)
+	{
+		if other.xscale == sign(image_xscale)
+		{
+		if movespeed > 0
+		movespeed -= .1
+		}
+		else
+		if movespeed < 24
+		movespeed += .1
+		if movespeed <= 0
+		hsp = (xscale * movespeed)
+		if movespeed <= 0
+		state = states.crouch
+	}
 	mach2 = 100
 	machslideAnim = 1
 	move = (key_right + key_left)
+	if movespeed <= 0
+	{
+	with state = states.normal
+	sprite_index = spr_crouch
+	}
 	//Slopes
 	if scr_slope() && vsp >= 0
 	{
@@ -28,14 +58,20 @@ function scr_player_machroll() {
 				//Roll Momentum
 				if other.xscale == sign(image_xscale)
 				{
-					if other.movespeed > 0 
+					if other.movespeed > 4
 					{
-					other.movespeed -= (0.25 * slope_acceleration)
+						other.movespeed -= (0.25 * slope_acceleration)
+						if other.movespeed <= 4
+						{
+							other.movespeed = 4
+						}
+						/*
 						if other.movespeed <= 0
 						{
 							other.xscale = -sign(image_xscale)
 							other.maxmachspeed = 24
 						}
+						*/
 					}
 					if other.maxmachspeed > 24
 						other.maxmachspeed -= (0.25 * slope_acceleration)

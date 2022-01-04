@@ -1,6 +1,6 @@
 with (other)
 {
-    if (state == 7 && sprite_index == spr_firemouth)
+    if (state == states.firemouth && sprite_index == spr_firemouth)
     {
         sprite_index = spr_firemouthend
         image_index = 0
@@ -9,5 +9,4 @@ with (other)
         other.image_index = 0
     }
 }
-if (sprite_index == spr_freemilksuprised && floor(image_index) == (image_number - 1))
-    sprite_index = spr_freemilk
+
