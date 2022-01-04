@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "PizzaTower_Demo3",
-    "path": "PizzaTower_Demo3.yyp",
+    "name": "ZReference Rooms Sprites",
+    "path": "folders/ZReference Rooms Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "Sprite2340",

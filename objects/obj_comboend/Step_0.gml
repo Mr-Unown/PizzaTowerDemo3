@@ -1,20 +1,16 @@
-if player.endcombo = true
+if activated = true
 {
-	if player.storedscore = 0
+	if storedscore <= 0
 	{
-		image_alpha -= .001
+		image_alpha -= 0.25
 		if image_alpha <= 0
-			player.endcombo = false
-	}
-	if alarm[0] <= 1 && player.storedscore > 0
-	{
-		instance_create(player.x,player.y - 60, obj_collecteffect)	
+		{
+			player.endcombo = false;
+			activated = false;
+			image_alpha = 1;
+		}
 	}
 }
+scale = approach(scale,1,1)
 //Visible
-visible = player.endcombo
-//Choose SPR
-if visible = false && player.endcombo = false
-{
-	endspr = spr_combo_notbad;
-}
+visible = activated
