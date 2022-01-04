@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "spr_combo_goodjob",
-    "path": "sprites/spr_combo_goodjob/spr_combo_goodjob.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": false,
   "spriteMaskId": null,
