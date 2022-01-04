@@ -2315,7 +2315,6 @@
     {"id":{"name":"spr_playerPZ_parry3","path":"sprites/spr_playerPZ_parry3/spr_playerPZ_parry3.yy",},"order":97,},
     {"id":{"name":"spr_playerPZ_angrymove","path":"sprites/spr_playerPZ_angrymove/spr_playerPZ_angrymove.yy",},"order":98,},
     {"id":{"name":"roomtracer","path":"sprites/roomtracer/roomtracer.yy",},"order":223,},
-    {"id":{"name":"roomt","path":"sprites/roomt/roomt.yy",},"order":74,},
     {"id":{"name":"spr_playerPZ_angryidle","path":"sprites/spr_playerPZ_angryidle/spr_playerPZ_angryidle.yy",},"order":99,},
     {"id":{"name":"spr_playerPZ_dashpad","path":"sprites/spr_playerPZ_dashpad/spr_playerPZ_dashpad.yy",},"order":100,},
     {"id":{"name":"spr_playerPZ_faceplant","path":"sprites/spr_playerPZ_faceplant/spr_playerPZ_faceplant.yy",},"order":101,},
