@@ -1,9 +1,9 @@
 {
   "isDnD": false,
-  "isCompatibility": false,
+  "isCompatibility": true,
   "parent": {
-    "name": "Compat",
-    "path": "folders/Scripts/Compat.yy",
+    "name": "draw",
+    "path": "folders/Scripts/compatibility/draw.yy",
   },
   "resourceVersion": "1.0",
   "name": "draw_set_blend_mode",

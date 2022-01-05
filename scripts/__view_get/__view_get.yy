@@ -1,9 +1,9 @@
 {
   "isDnD": false,
-  "isCompatibility": false,
+  "isCompatibility": true,
   "parent": {
-    "name": "Compat",
-    "path": "folders/Scripts/Compat.yy",
+    "name": "view",
+    "path": "folders/Scripts/compatibility/view.yy",
   },
   "resourceVersion": "1.0",
   "name": "__view_get",
