@@ -305,11 +305,15 @@ if target = player
 {
 	if (player.state == 91 || player.state == states.jetpack || player.state == 37)
 	{
-		if (chargecamera > (player.xscale * 100))
-			chargecamera -= 2
-		if (chargecamera < (player.xscale * 100))
-			chargecamera += 2
-	}
+            var _targetcharge = (player.xscale * ((player.movespeed / 4) * 50))
+            var _tspeed = 2
+            if ((_targetcharge > 0 && chargecamera < 0) || (_targetcharge < 0 && chargecamera > 0))
+                _tspeed = 8
+            if (chargecamera > _targetcharge)
+                chargecamera -= _tspeed
+            if (chargecamera < _targetcharge)
+                chargecamera += _tspeed
+    }
 	else
 	{
 	    if (chargecamera > 0)

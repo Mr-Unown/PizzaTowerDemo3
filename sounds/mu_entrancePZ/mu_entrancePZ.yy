@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 2,
-  "volume": 0.5,
+  "volume": 1.0,
   "preload": true,
   "bitRate": 192,
   "sampleRate": 44100,
@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "mu_entrancePZ.ogg",
-  "duration": 200.72728,
+  "duration": 220.363632,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
