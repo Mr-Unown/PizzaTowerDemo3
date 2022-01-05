@@ -182,10 +182,8 @@ if (global.combotime == 0 && global.combo != 0)
 	scr_soundeffect(sfx_comboend);
 	#region Combo End Spawner
 	endcombo = true
-	with obj_comboend
+	with comboend_id
 	{
-		if player = other.id
-		{
 		storedscore += other.storedscore;
 		scorespd = 5 * ceil(storedscore / 100);
 		//End Sprite Choosener
@@ -198,7 +196,6 @@ if (global.combotime == 0 && global.combo != 0)
 		visible = true;
 		activated = true;
 		alarm[0] = 2;
-		}
 	}
 	#endregion
 	if global.coop == true
@@ -206,23 +203,23 @@ if (global.combotime == 0 && global.combo != 0)
 		with obj_player2
 		{
 			#region Combo End Spawner
-	endcombo = true
-	with comboend_id
-	{
-		storedscore = other.storedscore;
-		scorespd = 5 * ceil(storedscore / 100);
-		//End Sprite Choosener
-		var combo_image_number = sprite_get_number(spr_combo_text);
-		var combo_strength = round(storedscore / 100);
-		var combo_spr = clamp(combo_strength,0,combo_image_number - 1);
-		endspr = combo_spr;
-		scale = 0.5;
-		image_alpha = 1;
-		visible = true;
-		activated = true;
-		alarm[0] = 2;
-	}
-	#endregion
+			endcombo = true
+			with comboend_id
+			{
+				storedscore += other.storedscore;
+				scorespd = 5 * ceil(storedscore / 100);
+				//End Sprite Choosener
+				var combo_image_number = sprite_get_number(spr_combo_text);
+				var combo_strength = round(storedscore / 100);
+				var combo_spr = clamp(combo_strength,0,combo_image_number - 1);
+				endspr = combo_spr;
+				scale = 0.5;
+				image_alpha = 1;
+				visible = true;
+				activated = true;
+				alarm[0] = 2;
+			}
+			#endregion
 		}
 	}
 	//Quips

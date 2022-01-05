@@ -142,15 +142,15 @@ if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
 	#endregion
 	//Style Shit
 	if global.stylethreshold <= 0
-		global.style += 5
+		global.style += 7
 	else if global.stylethreshold = 1
-		global.style += 4
+		global.style += 5
 	else if global.stylethreshold = 2
-		global.style += 3
+		global.style += 4
 	else if global.stylethreshold = 3
-		global.style += 2
+		global.style += 3
 	else if global.stylethreshold >= 4
-		global.style += 1
+		global.style += 2
 	//Combo Points
 	if global.nocombo = false
 	{
@@ -180,7 +180,6 @@ else if (ds_list_find_index(global.baddieroom, id) == -1 && important == 1)
     instance_create(x, y, obj_baddiegibs)
     with (obj_camera)
     {
-		
         shake_mag = 3
         shake_mag_acc = (3 / room_speed)
     }

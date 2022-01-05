@@ -988,6 +988,7 @@
     {"id":{"name":"spr_playerN_keyget","path":"sprites/spr_playerN_keyget/spr_playerN_keyget.yy",},"order":85,},
     {"id":{"name":"spr_playerN_knightarmor","path":"sprites/spr_playerN_knightarmor/spr_playerN_knightarmor.yy",},"order":86,},
     {"id":{"name":"spr_playerN_knightdownslope","path":"sprites/spr_playerN_knightdownslope/spr_playerN_knightdownslope.yy",},"order":87,},
+    {"id":{"name":"spr_tv_bubblefade","path":"sprites/spr_tv_bubblefade/spr_tv_bubblefade.yy",},"order":10,},
     {"id":{"name":"spr_playerN_knightfall","path":"sprites/spr_playerN_knightfall/spr_playerN_knightfall.yy",},"order":88,},
     {"id":{"name":"spr_playerN_knightidle","path":"sprites/spr_playerN_knightidle/spr_playerN_knightidle.yy",},"order":89,},
     {"id":{"name":"spr_playerN_knightjump","path":"sprites/spr_playerN_knightjump/spr_playerN_knightjump.yy",},"order":90,},

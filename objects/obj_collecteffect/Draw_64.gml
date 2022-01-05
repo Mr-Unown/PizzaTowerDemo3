@@ -1,6 +1,6 @@
 if global.hudmode == false
 {
-draw_sprite_ext(sprite_index,-1,drawx,drawy,drawxscale,drawyscale,0,c_white,image_alpha)
+	draw_sprite_ext(sprite_index,-1,drawx,drawy,drawxscale,drawyscale,0,c_white,image_alpha)
 }
 if global.newhud = false
 {
