@@ -195,7 +195,6 @@
     {"id":{"name":"spr_20","path":"sprites/spr_20/spr_20.yy",},"order":2,},
     {"id":{"name":"spr_40","path":"sprites/spr_40/spr_40.yy",},"order":3,},
     {"id":{"name":"spr_80","path":"sprites/spr_80/spr_80.yy",},"order":4,},
-    {"id":{"name":"spr_Hranksign","path":"sprites/spr_Hranksign/spr_Hranksign.yy",},"order":148,},
     {"id":{"name":"spr_Opeppino","path":"sprites/spr_Opeppino/spr_Opeppino.yy",},"order":186,},
     {"id":{"name":"spr_alien","path":"sprites/spr_alien/spr_alien.yy",},"order":5,},
     {"id":{"name":"spr_ancho","path":"sprites/spr_ancho/spr_ancho.yy",},"order":0,},

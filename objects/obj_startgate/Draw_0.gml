@@ -39,19 +39,26 @@ if drawtext = true
 	}
 	else if (level == "snickchallenge")
     {
-        draw_text(x, (y - 150), ini_read_string("Highscore", string(level), 0))
+        draw_text(x, (y - 100), ini_read_string("Highscore", string(level), 0))
+		var rescued = min(ini_read_real("Rescued", string(level), 0), 15)
+		draw_text(x, (y - 150), string(rescued) + " OF 15 TOPPINS")
+		
         if ini_read_string("Ranks", "snickchallenge", "none") != "none"
         {
+            if ini_read_string("Ranks", "snickchallenge", "none") == "p"
+                draw_text(x, (y - 200), "P RANK")			
+            if ini_read_string("Ranks", "snickchallenge", "none") == "s+"
+                draw_text(x, (y - 200), "S+ RANK")			
             if ini_read_string("Ranks", "snickchallenge", "none") == "s"
-                draw_text(x, (y - 100), "S RANK")
+                draw_text(x, (y - 200), "S RANK")
             if ini_read_string("Ranks", "snickchallenge", "none") == "a"
-                draw_text(x, (y - 100), "A RANK")
+                draw_text(x, (y - 200), "A RANK")
             if ini_read_string("Ranks", "snickchallenge", "none") == "b"
-                draw_text(x, (y - 100), "B RANK")
+                draw_text(x, (y - 200), "B RANK")
             if ini_read_string("Ranks", "snickchallenge", "none") == "c"
-                draw_text(x, (y - 100), "C RANK")
+                draw_text(x, (y - 200), "C RANK")
             if ini_read_string("Ranks", "snickchallenge", "none") == "d"
-                draw_text(x, (y - 100), "D RANK")
+                draw_text(x, (y - 200), "D RANK")
         }
         else
             draw_text(x, (y - 100), "NO RANK")
