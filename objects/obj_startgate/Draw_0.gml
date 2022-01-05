@@ -61,7 +61,7 @@ if drawtext = true
                 draw_text(x, (y - 200), "D RANK")
         }
         else
-            draw_text(x, (y - 100), "NO RANK")
+            draw_text(x, (y - 200), "NO RANK")
     }
 
 	ini_close()

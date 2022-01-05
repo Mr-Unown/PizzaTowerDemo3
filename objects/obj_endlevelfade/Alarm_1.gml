@@ -15,8 +15,8 @@ if global.timeattack = false
 		messaged = "RESCUED ALL 15 TOPPINS!!"		
 		if global.toppintotal >= 15
 			ds_queue_enqueue(_meesage_queue,messaged);
-		messaged = "HELD THE COMBO UNTIL THE END!"			
-		if global.comboended == false
+		messaged = "ESCAPED WITH NO HITS TAKEN!"			
+		if global.got_hurt == false
 			ds_queue_enqueue(_meesage_queue,messaged);
 	}
 }	

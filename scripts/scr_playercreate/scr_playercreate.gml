@@ -47,6 +47,7 @@ function scr_playercreate() {
 	//Slope Angle
 	draw_angle = 0;
 	//P Rank
+	global.got_hurt = false;
 	global.comboended = false;
 	//Global Time Events
 	global.timeevent = 0 //1 = Xmas 2 = April 3 = Halloween

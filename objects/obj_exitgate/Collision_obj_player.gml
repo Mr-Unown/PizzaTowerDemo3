@@ -62,10 +62,11 @@ with (obj_player)
 				}
 				else
 				{
+					//Snick Challenge
 					//If both Plus Conditions Ring True go P
-					if global.comboended == false && global.toppintotal >= 15
+					if global.got_hurt == false && global.toppintotal >= 15
 						global.rank = "p"
-					else if global.comboended == false || global.toppintotal >= 15
+					else if global.got_hurt == false || global.toppintotal >= 15
 						global.rank = "s+"						
 					else
 						global.rank = "s"						
