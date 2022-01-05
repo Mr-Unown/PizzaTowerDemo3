@@ -10,6 +10,8 @@ function scr_playercreate() {
 	endcombo = false
 	//Topping Trail
 	toomanytoppings = 0;
+	//Heateffect
+	heatafterimage_id = noone;
 	//Substate
 	substate = 0;
 	//Suplex
