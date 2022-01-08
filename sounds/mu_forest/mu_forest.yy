@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 2,
-  "volume": 0.9,
+  "volume": 1.0,
   "preload": true,
   "bitRate": 192,
   "sampleRate": 44100,
@@ -11,8 +11,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "mu_forest",
-  "duration": 164.971161,
+  "soundFile": "mu_forest.mp3",
+  "duration": 209.0057,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

@@ -110,7 +110,8 @@
 		trick = 125,
 		newbomb = 126,
 		startgate = 127,
-		rocket = 128
+		rocket = 128,
+		ratmount = 129
 
 	} 
 	//I made some changes to it so that we can know at a glance what number it gets converted to.
@@ -167,6 +168,9 @@ if actor = false
 	        break
 		case states.rocket:
 			scr_player_rocket()
+			break
+		case states.ratmount:
+			scr_player_ratmount()
 			break
 	    case 110:
 	        scr_player_throwdynamite()
@@ -773,7 +777,7 @@ else if actor = true
 	if (machtrail2 > 0)
 	    machtrail2--
 		
-	if ((machtrail2 <= 0) && (state == states.tumble && (sprite_index != spr_tumbleend && sprite_index != spr_player_sjumpcancel && sprite_index != spr_player_splat) || state = states.freefall))
+	if ((machtrail2 <= 0) && (state == states.tumble && (sprite_index != spr_tumbleend && sprite_index != spr_player_sjumpcancel && sprite_index != spr_player_splat) || state = states.freefall || state = states.ratmount && sprite_index == spr_gustavo_ball))
 	{
 	    with instance_create(x, y, obj_clearafterimg)
 		{

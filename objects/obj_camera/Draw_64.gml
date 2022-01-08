@@ -604,6 +604,19 @@ if (player.state != 55)
 		draw_text(823, 512, string_hash_to_newline(((string(global.bonushour) + string(tinyish) + string(global.bonusminutes) + string(tiny)) + string(global.bonusseconds) + string(tinier) + string(global.bonusmiliseconds))))
 	}
 	#endregion
+	#region Temperature Meter
+	if global.tempenabled = true
+{
+    var _width = sprite_get_width(spr_temperature_meterfill)
+    var _height = sprite_get_height(spr_temperature_meterfill)
+    global.temperature += global.temperature_spd
+    global.temperature = clamp(global.temperature, 0, (global.temp_thresholdnumber * 100))
+    var _tmp = (global.temperature / (global.temp_thresholdnumber * 100))
+    var _top = 0
+    var _height2 = (_height * _tmp)
+    draw_sprite_part_ext(spr_temperature_meterfill, 0, 0, _top, _width, _height2, 864, (192 + _height), 1, -1, c_white, 1)
+    draw_sprite(spr_temperature_meter, 0, 864, 192)
+}
 	#endregion
 }
 draw_set_blend_mode(bm_normal)
