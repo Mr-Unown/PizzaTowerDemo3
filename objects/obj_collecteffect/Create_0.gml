@@ -11,7 +11,17 @@ drawy = ystart - _cam_y
 drawxscale = 1
 drawyscale = 1
 biggening = true;
-
+//Ehy
+if global.newhud = false
+{
+	targetx = 832;
+	targety = 74;
+}
+else
+{
+	targetx = 150;
+	targety = 100 + obj_camera.newhudyoffset;
+}
 
 if choosed = false
 {

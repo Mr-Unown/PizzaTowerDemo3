@@ -10,6 +10,8 @@ function scr_playercreate() {
 	endcombo = false
 	//Topping Trail
 	toomanytoppings = 0;
+	//Heateffect
+	heatafterimage_id = noone;
 	//Substate
 	substate = 0;
 	//Suplex
@@ -45,7 +47,8 @@ function scr_playercreate() {
 	//Slope Angle
 	draw_angle = 0;
 	//P Rank
-	comboended = false
+	global.got_hurt = false;
+	global.comboended = false;
 	//Global Time Events
 	global.timeevent = 0 //1 = Xmas 2 = April 3 = Halloween
 	//Bumbo want coin

@@ -270,14 +270,17 @@ else
 		}
 		draw_text(text_x, 45, _new_message)
 	}
-
+	
 	surface_reset_target()
 	//draw_text(367, 300, string(floor(text_x)))
 	//draw_text(367, 350, string(string_width(new_message)))	
 	if surface_exists(textpromptsurface)
 		draw_surface(textpromptsurface, 367, -10 + newhudyoffset)
+	//Fade Effect
+	if textbubblesprites = spr_tv_bubble
+		draw_sprite(spr_tv_bubblefade,-1, 532, 45 + newhudyoffset)		
 	}
-	
+
 	//OLD TEXT
 	draw_set_font(global.font)
 	draw_set_halign(fa_center)
@@ -288,7 +291,7 @@ else
 	#endregion
 	break;
 }
-
+	//Golf Ball
 	if instance_exists(obj_pizzaball)
 	    draw_text(832, 300, string_hash_to_newline(((string(global.golfhit) + " ") + "STROKES")))
 }

@@ -1,4 +1,5 @@
 if (room == rank_room)
     visible = false
-x += (Vspeed + obj_player1.hsp)
-y += ((Hspeed + obj_player1.vsp) - 1)
+var _hsp = player.hsp , _vsp = player.vsp
+x += (Vspeed + _hsp)
+y += ((Hspeed + _vsp) - 1)

@@ -3,7 +3,6 @@ if other.id == playerid
 	with other.id
 	{
 		sprite_index = spr_knightpepthunder
-		if !audio_is_playing(sfx_becomeknight)
 		scr_soundeffect(sfx_becomeknight)
 		var randomchance = irandom_range(0,100);
 		if (randomchance < global.quipsfrequency) && !audio_is_playing(sfx_lightning)

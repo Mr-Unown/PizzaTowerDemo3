@@ -746,8 +746,14 @@ else if actor = true
 	    toomanytoppings = 6
 	}
 	//Heat after image
-	if !instance_exists(obj_heatafterimage)
-	instance_create(x,y,obj_heatafterimage)
+	if !instance_exists(heatafterimage_id)
+	{
+		with instance_create(x,y,obj_heatafterimage)
+		{
+			other.heatafterimage_id = id;
+			player = other.id
+		}
+	}
 	//Firemouth Trail thingy
 	if (firemouthtrail > 0)
 	    firemouthtrail--
