@@ -104,14 +104,21 @@ with (obj_player)
 				global.rank = "d"
 			#endregion
 		}
+<<<<<//Lol
 		switch global.rank
 		{
 			case "p":
 			case "s+":
 			case "s":
+        if character == "PZ"
+        scr_soundstop(mu_ranksPZ)
+        else
 				scr_soundstop(mu_ranks)
 			break;
 			case "a":
+        if character == "PZ"
+        scr_soundstop(mu_rankaPZ)
+        else
 				scr_soundstop(mu_ranka)
 			break;
 			case "b":
@@ -125,7 +132,43 @@ with (obj_player)
 			break;
 			
 		}
-
+/*
+        if (global.rank == "s")
+		{
+			if character = "PZ"
+			scr_soundstop(mu_ranksPZ)
+			else
+			scr_soundstop(mu_ranks)
+		}
+        if (global.rank == "a")
+		{
+			if character = "PZ"
+			scr_soundstop(mu_rankaPZ)
+			else
+            scr_soundstop(mu_ranka)
+		}
+        if (global.rank == "b")
+		{
+			if character = "PZ"
+			scr_soundstop(mu_rankbPZ)
+			else
+            scr_soundstop(mu_rankb)
+		}
+        if (global.rank == "c")
+		{
+			if character = "PZ"
+			scr_soundstop(mu_rankcPZ)
+			else
+            scr_soundstop(mu_rankc)
+		}
+        if (global.rank == "d")
+		{
+			if character = "PZ"
+			scr_soundstop(mu_rankdPZ)
+			else
+            scr_soundstop(mu_rankd)
+		}
+        */
 		#region Get Score
 		ini_open("playerData_"+global.savefile+".ini")
 			if (ini_read_string("Secret", string(global.levelname), 0) < global.secretfound)

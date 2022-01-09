@@ -110,6 +110,8 @@ function scr_playercreate() {
 	grindeffect = noone
 	initialfreefallvsp = 15
 	initialsuperjumpvsp = -12
+	bouncevsp = -6
+	bouncehsp = 6
 	//New Palette
 	surf_width = 2
 	surf_height = 10

@@ -113,5 +113,10 @@ global.freezeframecounter = 0
 target = 3
 //Backdrop
 backdrop = spr_backdrop_pinball
+//temperature
+global.temperature = 0
+global.temperature_spd = 0.01
+global.temp_thresholdnumber = 5
+global.tempenabled = false
 
 
