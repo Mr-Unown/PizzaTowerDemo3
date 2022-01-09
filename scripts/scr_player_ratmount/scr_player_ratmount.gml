@@ -67,7 +67,6 @@ else if sprite_index == spr_gustavo_dash
 		if audio_is_playing(sfx_ratbounce)
     audio_stop_sound(sfx_ratbounce)
 scr_soundeffect(sfx_ratbounce)
-grav = 0.5
 		if bouncevsp >= -18
 		bouncevsp = bouncevsp - 3
 		bouncehsp = bouncehsp + (2 * xscale)
@@ -95,10 +94,8 @@ grav = 0.5
 		if audio_is_playing(sfx_ratbounce)
     audio_stop_sound(sfx_ratbounce)
 scr_soundeffect(sfx_ratbounce)
-grav = 0.5
 		bouncehsp = -bouncehsp
 		xscale = -xscale
-		grav = 0
 		if bouncevsp >= -18
 		bouncevsp = bouncevsp / 2
 		sprite_index = spr_gustavo_ball
