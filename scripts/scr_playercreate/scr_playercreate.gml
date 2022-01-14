@@ -51,6 +51,8 @@ function scr_playercreate() {
 	global.comboended = false;
 	//Global Time Events
 	global.timeevent = 0 //1 = Xmas 2 = April 3 = Halloween
+	//Pistol Animation
+	global.pistolshotanim = 0
 	//Bumbo want coin
 	pizzacoin = 0;
 	pizzacoinindicatorid = noone;

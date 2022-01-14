@@ -76,12 +76,17 @@ function scr_player_mach1() {
 	}
 	if (grounded && vsp > 0)
 	    jumpstop = 0
-	if scr_solid(x + xscale,y)  && (!scr_slope_ext(x + sign(hsp), y)  )
+	if scr_solid(x + xscale,y)  && (!scr_slope_ext(x + sign(hsp), y) )
 	{
+		sprite_index = spr_player_splat
+		image_index = 0
+		grav = 0
 	    movespeed = 0
-	    state = 0
+		hsp = 0
+		vsp = 0
+	    state = states.bump
 	}
-	image_speed = 0.5
+	//image_speed = 0.5
 	if ((!instance_exists(dashcloudid)) && grounded)
 	{
 	    with (instance_create(x, y, obj_dashcloud))

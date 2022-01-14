@@ -12,5 +12,7 @@ if collectvanish = true && collectboxid.activated = true && global.panic = 1 {
 
 if (global.collectsound  < 10)
     global.collectsound  += 1
+if global.panic == 1 && image_alpha != 1
+image_alpha = 1
 
 

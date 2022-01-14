@@ -1,3 +1,4 @@
+if (live_call()) return live_result;
 var angle,ymovespeed,vdirection;
 if (!instance_exists(baddieID))
     instance_destroy()
@@ -168,7 +169,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                     alarm[3] = 3
                     global.hit = (global.hit + 1)
                     alarm[1] = 5
-                    state = 200
+                    state = enemystates.enemygrabbed
                     grav = 0
                     hsp = 0
                     vsp = 0

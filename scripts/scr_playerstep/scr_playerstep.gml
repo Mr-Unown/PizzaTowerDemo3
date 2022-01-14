@@ -111,7 +111,8 @@
 		newbomb = 126,
 		startgate = 127,
 		rocket = 128,
-		ratmount = 129
+		ratmount = 129,
+		slipbanana = 130
 
 	} 
 	//I made some changes to it so that we can know at a glance what number it gets converted to.
@@ -171,6 +172,9 @@ if actor = false
 			break
 		case states.ratmount:
 			scr_player_ratmount()
+			break
+		case states.slipbanana:
+			scr_player_slipbanana()
 			break
 	    case 110:
 	        scr_player_throwdynamite()
@@ -825,7 +829,7 @@ else if actor = true
 	//Instakill Move
 	if global.freezeframe = false
 	{
-		if state != states.frozen && (state == 68 || sprite_index = spr_swingding || sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump || state == 86 || state == states.firemouth || state == states.breakdance ||	state == states.jetpack || state == states.pogo || state == 91 || state == 60 || (state == 73 && thrown == 1) || state == 70 || state == 17 || state == states.newbomb || state == 74 || state == 2 || state == 6 || state == 9 || state == 44 || state == 35 || state == 63 || state == 37 || state == 40 || state == 10 || (state == 43 && sprite_index == spr_piledriver) || state == 24 || state == 25 || state == 18 || state == 15 || state == 13 || state == 11)
+		if state != states.frozen && (state == 68 || sprite_index = spr_swingding || sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump || state == 86 || state == states.firemouth || state == states.breakdance ||	state == states.jetpack || state == states.pogo || state == 91 || state == 60 || (state == 73 && thrown == 1) || state == 70 || state == 17 || state == states.newbomb || state == 74 || state == 2 || state == 6 || state == 9 || state == 44 || state == 35 || state == 63 || state == 37 || state == 40 || state == 10 || (state == 43 && sprite_index == spr_piledriver) || state == 24 || state == 25 || state == 18 || state == 15 || state == 13 || state == 11 || state == states.slipbanana)
 			instakillmove = 1
 		else if state != states.frozen
 			instakillmove = 0

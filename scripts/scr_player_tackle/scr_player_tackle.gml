@@ -23,7 +23,7 @@ function scr_player_substate_tackle()
 	        else if (!grounded)
 	            movespeed = 10
 	    }
-		if character = "PZ"
+		if character = "PZ" || character = "GB"
 		{
 	       movespeed = 10
 		}
