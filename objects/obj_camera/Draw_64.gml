@@ -278,7 +278,7 @@ if (player.state != 55)
 		draw_sprite_ext(spr_heatmeter, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
 		shader_reset();
 		//Pizzascore thing
-		draw_sprite_ext(spr_pizzascore, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
+		draw_sprite_ext(spr_pizzasprite, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
 		
 		#region Rank bubble
 		if global.timeattack = false
@@ -329,13 +329,13 @@ if (player.state != 55)
 		if global.timeattack = false
 		{
 		if global.collect >= global.crank
-			draw_sprite_ext(spr_pizzascore_pepper, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
+			draw_sprite_ext(spr_pizzascore_1, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
 		if global.collect >= global.brank
-			draw_sprite_ext(spr_pizzascore_pepperoni, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
+			draw_sprite_ext(spr_pizzascore_2, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
 		if global.collect >= global.arank
-			draw_sprite_ext(spr_pizzascore_olive, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
+			draw_sprite_ext(spr_pizzascore_3, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
 		if global.collect >= global.srank
-			draw_sprite_ext(spr_pizzascore_shroom, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)		
+			draw_sprite_ext(spr_pizzascore_4, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)		
 		}
 		else
 		{

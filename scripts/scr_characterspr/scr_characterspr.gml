@@ -21,6 +21,13 @@ function scr_characterspr(player_character = character) {
 		spr_playertv_firemouth = spr_tv_firemouth;
 		spr_playertv_scaredjump = spr_tv_scaredjump;
 		#endregion
+		#region Pizzascore Sprites
+		spr_pizzascore_1 = spr_pizzascore_pepper
+		spr_pizzascore_2 = spr_pizzascore_pepperoni
+		spr_pizzascore_3 = spr_pizzascore_olive
+		spr_pizzascore_4 = spr_pizzascore_shroom
+		spr_pizzasprite = spr_pizzascore
+		#endregion
 		spr_idle = spr_player_idle
 		spr_rageidle = spr_player_rageidle
 		spr_move = spr_player_move
@@ -273,7 +280,14 @@ function scr_characterspr(player_character = character) {
 		spr_playertv_golf = spr_tv_golfN;
 		spr_playertv_firemouth = spr_tv_firemouthN;
 		spr_playertv_scaredjump = spr_tv_scaredjumpN;		
-		#endregion		
+		#endregion	
+		#region Pizzascore Sprites
+		spr_pizzascore_1 = spr_pizzascore_marshmallow
+		spr_pizzascore_2 = spr_pizzascore_candycorn
+		spr_pizzascore_3 = spr_pizzascore_jellybean
+		spr_pizzascore_4 = spr_pizzascore_liquorice
+		spr_pizzasprite = spr_pizzascoreN
+		#endregion
 	    spr_idle = spr_playerN_idle
 	    spr_move = spr_playerN_move
 	    spr_crawl = spr_playerN_crawl
