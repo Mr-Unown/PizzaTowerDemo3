@@ -152,6 +152,38 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                     }
                 }
             }
+			if state == states.ratmount
+			{
+				if sprite_index = spr_gustavo_dash
+				{
+                    image_index = 0
+                    sprite_index = spr_gustavo_hauling
+                    with (other.baddieID)
+                {
+                    playerxscale = other.xscale
+                    grabbedby = 1
+                    image_xscale = (-other.xscale)
+                    if (stunned < 500)
+                        stunned = 500
+                    alarm[3] = 3
+                    global.hit = (global.hit + 1)
+                    alarm[1] = 5
+                    state = 200
+                    grav = 0
+                    hsp = 0
+                    vsp = 0
+                    global.combotime = 60
+					global.pausecombotime = true
+					obj_tv.alarm[1] = 75
+				}
+				if sprite_index = spr_gustavo_shoot
+				{
+					other.baddieID.blowdirection = 1
+                    other.baddieID.blowintensity = 0.8
+					other.baddieID.state = enemystates.enemyhit
+				}
+			}
+			}
 			if sprite_index = spr_player_shoryumineken && vsp < 0 && other.baddieID.hp > 0 && (!other.baddieID.invincible)
 			{
 				#region Shoryoken Jump

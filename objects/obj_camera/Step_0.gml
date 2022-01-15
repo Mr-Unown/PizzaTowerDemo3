@@ -305,11 +305,15 @@ if target = player
 {
 	if (player.state == 91 || player.state == states.jetpack || player.state == 37)
 	{
-		if (chargecamera > (player.xscale * 100))
-			chargecamera -= 2
-		if (chargecamera < (player.xscale * 100))
-			chargecamera += 2
-	}
+            var _targetcharge = (player.xscale * ((player.movespeed / 4) * 50))
+            var _tspeed = 2
+            if ((_targetcharge > 0 && chargecamera < 0) || (_targetcharge < 0 && chargecamera > 0))
+                _tspeed = 8
+            if (chargecamera > _targetcharge)
+                chargecamera -= _tspeed
+            if (chargecamera < _targetcharge)
+                chargecamera += _tspeed
+    }
 	else
 	{
 	    if (chargecamera > 0)
@@ -319,10 +323,10 @@ if target = player
 	}
 	
 }
-
+//TODO: Clean Up
 //Camera X
-camera_set_view_pos(view_camera[0],target_x - (targetzoom1 / 2) + (chargecamera + startgateoffsetx + golfdistancex + p2pdistancex) + (random_range(-panicshake, panicshake)/2)  + floor(irandom_range(-shake_mag, shake_mag)/2), camera_get_view_y(view_camera[0]))			
-camera_set_view_pos(view_camera[0],clamp(camera_get_view_x(view_camera[0]), 0 + floor(irandom_range(-panicshake, panicshake)/2) + floor(irandom_range(-shake_mag, shake_mag)/2), (room_width - targetzoom1) + (random_range(-panicshake, panicshake)/2) + floor(irandom_range(-shake_mag, shake_mag)/2)),camera_get_view_y(view_camera[0]))
+camera_set_view_pos(view_camera[0],target_x - (targetzoom1 / 2) + (chargecamera + startgateoffsetx + golfdistancex + p2pdistancex) + (random_range(-panicshake, panicshake))  + (irandom_range(-shake_mag, shake_mag)), camera_get_view_y(view_camera[0]))			
+camera_set_view_pos(view_camera[0],clamp(camera_get_view_x(view_camera[0]), 0 + (random_range(-panicshake, panicshake)) + (irandom_range(-shake_mag, shake_mag)), (room_width - targetzoom1) + (random_range(-panicshake, panicshake)) + (irandom_range(-shake_mag, shake_mag))),camera_get_view_y(view_camera[0]))
 //Camera Y	
 camera_set_view_pos(view_camera[0],camera_get_view_x(view_camera[0]), ((target_y - (targetzoom2 / 2)) + startgateoffsety + golfdistancey + p2pdistancey ) + (random_range(-panicshake, panicshake)) + irandom_range(-shake_mag, shake_mag))		
 camera_set_view_pos(view_camera[0],camera_get_view_x(view_camera[0]),clamp(camera_get_view_y(view_camera[0]), 0 + irandom_range(-shake_mag, shake_mag), (room_height - targetzoom2) + (random_range(-panicshake, panicshake)) + irandom_range(-shake_mag, shake_mag)))

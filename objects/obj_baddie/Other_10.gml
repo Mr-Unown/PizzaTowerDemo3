@@ -1,3 +1,2 @@
-if dying = true {
-instance_destroy()
-}
+if dying = true 
+	instance_destroy();

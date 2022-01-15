@@ -55,7 +55,7 @@ function scr_player_substate_tackle()
 	crouchslideAnim = 1
 	crouchAnim = 1		
 	#endregion
-	var slowdownspeed = 9 * (suplexdashtimer/12);
+	var slowdownspeed = 11 * (suplexdashtimer/12);
 	hsp = xscale * abs(movespeed - slowdownspeed)	
 
 	if (floor(image_index) >= (image_number - 1))
@@ -63,7 +63,7 @@ function scr_player_substate_tackle()
 	else
 		image_speed = 0.35
 	//Regular Stop
-	if suplexdashtimer >= 12 && slowdownspeed >= 9 && !key_attack 
+	if suplexdashtimer >= 12 && slowdownspeed >= 11 && !key_attack 
 	{
 		image_speed = 0.35
 	    state = 0

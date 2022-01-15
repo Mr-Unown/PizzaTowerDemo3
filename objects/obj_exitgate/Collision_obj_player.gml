@@ -50,9 +50,27 @@ with (obj_player)
 			#region Ranks
 			if ((global.collect) >= global.srank)
 			{
-				global.rank = "s"
-				if (global.snickchallenge == 1)
-					global.SAGEsnicksrank = 1
+				if (global.snickchallenge == false)
+				{
+					//If both Plus Conditions Ring True go P
+					if global.comboended == false && global.treasure == true
+						global.rank = "p"
+					else if global.comboended == false || global.treasure == true
+						global.rank = "s+"
+					else
+						global.rank = "s"				
+				}
+				else
+				{
+					//Snick Challenge
+					//If both Plus Conditions Ring True go P
+					if global.got_hurt == false && global.toppintotal >= 15
+						global.rank = "p"
+					else if global.got_hurt == false || global.toppintotal >= 15
+						global.rank = "s+"						
+					else
+						global.rank = "s"						
+				}
 			}
 			else if ((global.collect) > global.arank)
 				global.rank = "a"
@@ -68,7 +86,14 @@ with (obj_player)
 		{
 			#region Timeattack
 			if ((global.timeattackpoints) <= global.stimerank)
-				global.rank = "s"
+			{
+				if global.toppintotal >= 5 && global.deathmode == true
+					global.rank = "p"
+				else if	global.toppintotal >= 5 || global.deathmode == true
+					global.rank = "s+"
+				else
+					global.rank = "s"
+			}
 			else if ((global.timeattackpoints) <= global.atimerank)
 				global.rank = "a"
 			else if ((global.timeattackpoints) <= global.btimerank)
@@ -79,17 +104,71 @@ with (obj_player)
 				global.rank = "d"
 			#endregion
 		}
+<<<<<//Lol
+		switch global.rank
+		{
+			case "p":
+			case "s+":
+			case "s":
+        if character == "PZ"
+        scr_soundstop(mu_ranksPZ)
+        else
+				scr_soundstop(mu_ranks)
+			break;
+			case "a":
+        if character == "PZ"
+        scr_soundstop(mu_rankaPZ)
+        else
+				scr_soundstop(mu_ranka)
+			break;
+			case "b":
+				scr_soundstop(mu_rankb)
+			break;
+			case "c":
+				scr_soundstop(mu_rankc)
+			break;
+			case "d":
+				scr_soundstop(mu_rankd)
+			break;
+			
+		}
+/*
         if (global.rank == "s")
+		{
+			if character = "PZ"
+			scr_soundstop(mu_ranksPZ)
+			else
 			scr_soundstop(mu_ranks)
+		}
         if (global.rank == "a")
+		{
+			if character = "PZ"
+			scr_soundstop(mu_rankaPZ)
+			else
             scr_soundstop(mu_ranka)
+		}
         if (global.rank == "b")
+		{
+			if character = "PZ"
+			scr_soundstop(mu_rankbPZ)
+			else
             scr_soundstop(mu_rankb)
+		}
         if (global.rank == "c")
+		{
+			if character = "PZ"
+			scr_soundstop(mu_rankcPZ)
+			else
             scr_soundstop(mu_rankc)
+		}
         if (global.rank == "d")
+		{
+			if character = "PZ"
+			scr_soundstop(mu_rankdPZ)
+			else
             scr_soundstop(mu_rankd)
-        
+		}
+        */
 		#region Get Score
 		ini_open("playerData_"+global.savefile+".ini")
 			if (ini_read_string("Secret", string(global.levelname), 0) < global.secretfound)
@@ -110,19 +189,20 @@ with (obj_player)
 				ini_write_string("Toppin", (string(global.levelname) + "4"), global.sausagefollow)
 			if (ini_read_string("Toppin", (string(global.levelname) + "5"), 0) == 0)
 				ini_write_string("Toppin", (string(global.levelname) + "5"), global.pineapplefollow)
+			//Snick Challenge
+			if (global.snickchallenge == true)
+			{
+				if ini_read_real("Rescued", string(global.levelname), 0) < global.toppintotal
+					ini_write_real("Rescued", string(global.levelname), global.toppintotal)				
+			}
 			var string_rank = string(global.timeattack == false ? "Ranks" : "Time")
-			if (global.rank == "s")
-				ini_write_string(string_rank, string(global.levelname), global.rank)
-			if (global.rank == "a" && "s" != ini_read_string(string_rank, string(global.levelname), "none"))
-	            ini_write_string(string_rank, string(global.levelname), global.rank)
-			if (global.rank == "b" && "s" != ini_read_string(string_rank, string(global.levelname), "none") && "a" != ini_read_string(string_rank, string(global.levelname), "none"))
-				ini_write_string(string_rank, string(global.levelname), global.rank)
-			if (global.rank == "c" && "s" != ini_read_string(string_rank, string(global.levelname), "none") && "a" != ini_read_string(string_rank, string(global.levelname), "none") && "b" != ini_read_string(string_rank, string(global.levelname), "none"))
-				ini_write_string(string_rank, string(global.levelname), global.rank)
-			if (global.rank == "d" && "s" != ini_read_string(string_rank, string(global.levelname), "none") && "a" != ini_read_string(string_rank, string(global.levelname), "none") && "b" != ini_read_string(string_rank, string(global.levelname), "none") && "c" != ini_read_string(string_rank, string(global.levelname), "none"))
+
+			if rank_checker(global.rank) > rank_checker(ini_read_string(string_rank, string(global.levelname), "d"))
 				ini_write_string(string_rank, string(global.levelname), global.rank)
         ini_close()
 		#endregion
+		
+		
         if (!instance_exists(obj_endlevelfade))
             instance_create(x, y, obj_endlevelfade)
         if (!instance_exists(obj_gatetransition))

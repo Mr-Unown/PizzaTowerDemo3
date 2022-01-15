@@ -135,6 +135,7 @@ function scr_hurtplayer(argument0) {
 	        {
 				global.style = (global.style - 10)
 	            global.hurtcounter = (global.hurtcounter + 1)
+				global.got_hurt = true
 	            if (object_index == obj_player1)
 	            {
 	                if (obj_player1.collectscore > 100)

@@ -108,3 +108,37 @@ function get_all_layer_type(layer_type = layerelementtype_undefined)
 	
 	return layers;
 }
+
+
+//Important
+function rank_checker(rank = global.rank)
+{
+	/// @description Returns Rank Value
+	/// @function rank_checker
+	var value = 0;
+	switch (rank)
+	{
+		case "p":
+			value = 6;
+		break;
+		case "s+":
+			value = 5;
+		break;				
+		case "s":
+			value = 4;
+		break;					
+		case "a":
+			value = 3;
+		break;					
+		case "b":
+			value = 2;
+		break;					
+		case "c":
+			value = 1;
+		break;					
+		case "d":
+			value = 0;
+		break;								
+	}
+	return value;
+}
