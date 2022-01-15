@@ -570,3 +570,5 @@ if global.freezeframe = false
 	staticframe += 0.35;
 }
 textbubbleframes += 0.35;
+//Combohud new
+combox = wave(5,15,7,7)

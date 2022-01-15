@@ -116,7 +116,7 @@
     "eventStubScript": null,
     "parent": {"name":"spr_manual","path":"sprites/spr_manual/spr_manual.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "spr_manual",
     "tags": [],
     "resourceType": "GMSequence",
   },

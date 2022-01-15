@@ -6,6 +6,24 @@ function scr_shell_closeconsole()
 {
 	global.shellactivate = false;
 }
+
+function scr_fartcommand(fartstring = "BALLS")
+{
+	switch fartstring
+	{
+		case "fart":
+		case "poop":
+		case "crap":
+		case "fard":
+		case "shart":
+		case "shit":
+		case "brap":		
+			return true;
+		break;
+	}
+}
+
+
 #region Tile Solid
 function scr_shell_roomstart()
 {
@@ -22,8 +40,8 @@ function scr_shell_roomstart()
 			var _cam_x = camera_get_view_x(view_camera[0])
 			var _cam_y = camera_get_view_y(view_camera[0])	
 			var tile_id = layer_get_id("Tiles_Solid")
-			layer_x(tile_id, ((layer_get_x(tile_id) - _cam_x) + 64))
-			layer_y(tile_id, ((layer_get_y(tile_id) - _cam_y) + 64))		
+			layer_x(tile_id, (0 - _cam_x) + 64)
+			layer_y(tile_id, (0 - _cam_y) + 64)		
 		}
 	}	
 	endscript = function()

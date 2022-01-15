@@ -1,4 +1,7 @@
 function scr_enemycreate() {
+	if panic_escape == true && global.panic == false
+		instance_destroy(id,false)
+	enemydraw_angle = 0;
 	bombreset = 0
 	dropcoin = 0
 	shake = 0
@@ -43,4 +46,15 @@ function scr_enemycreate() {
 	invincible = 0
 
 
+	//april build stuff
+	stuntouchbuffer = 0;
+	invtime = 0
+	instakilled = 0
+	hithsp = 0
+	hitvsp = 0
+	hittinged = false
+	//finishing blow spin
+	canrotate = false
+    rotatedirection = choose(-1,1)
+    rotatevalue = irandom_range(5,20)
 }

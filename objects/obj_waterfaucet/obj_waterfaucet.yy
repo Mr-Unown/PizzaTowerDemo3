@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_onoffswitch_red",
-    "path": "sprites/spr_onoffswitch_red/spr_onoffswitch_red.yy",
+    "name": "spr_pipe_inactive",
+    "path": "sprites/spr_pipe_inactive/spr_pipe_inactive.yy",
   },
   "solid": false,
   "visible": true,

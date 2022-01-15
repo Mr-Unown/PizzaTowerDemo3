@@ -163,9 +163,39 @@ if (!isOpen) {
 					savedConsoleString = "";
 					cursorPos = 1;
 				} else {
-					array_push(output, ">" + consoleString);
-					array_push(output, "No such command: " + consoleString);
-					array_push(history, consoleString);
+					//Demo 3 Edit (I added fart back)
+					if scr_fartcommand(consoleString)
+					{
+						#region AI
+						var d3_shellquip = "..."
+						if global.fartcounter <= 3
+							d3_shellquip = "..."
+						else if global.fartcounter = 4
+							d3_shellquip = "...."
+						else if global.fartcounter = 5
+							d3_shellquip = "....."		
+						else if global.fartcounter = 6
+							d3_shellquip = ".."		
+						else if global.fartcounter >= 7 && global.fartcounter < 10
+							d3_shellquip = choose("...","...?","...!","...!?")							
+						else 
+						{
+							d3_shellquip = choose("....",".....","..","Don't you have anything else to do?","Please Stop.","...!","...?","...!?","Hey, that smells!","You've been saying that for "+string(global.fartcounter + 1) + " times by now, Cut it out!","Stop that!")
+						}
+						#endregion
+						array_push(output, ">" + consoleString);
+						array_push(output, d3_shellquip);
+						array_push(history, consoleString);		
+						audio_sound_gain(audio_play_sound(sfx_fart, 1, false), (1 * global.soundeffectsvolume), 0);
+						global.fartcounter += 1
+					}
+					else
+					{
+						//Edit ends here-ish
+						array_push(output, ">" + consoleString);
+						array_push(output, "No such command: " + consoleString);
+						array_push(history, consoleString);
+					}
 					historyPos = array_length(history);
 					consoleString = "";
 					savedConsoleString = "";

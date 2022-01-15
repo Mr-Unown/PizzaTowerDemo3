@@ -39,8 +39,21 @@ if (global.panic == 1 && layer_background_get_sprite(back_id) == bg_darkjohn)
     layer_background_sprite(back_id, bg_darkjohnescape)	
 //Nightsky Moon
 if (global.panic == 1 && layer_background_get_sprite(back_id6) == bg_nightsky)
-layer_background_sprite(back_id6, bg_nightskyescape)	
+	layer_background_sprite(back_id6, bg_nightskyescape)	
+//Entrance bg Pizzas
+if global.panic == 1
+    layer_change_background(bg_entrance2,bg_entrance2escape)
 
+//Desert Night
+if global.desertnight = true
+{
+	layer_change_background(bg_desert1,bg_desert1Night);
+	layer_change_background(bg_desert2,bg_desert2Night);
+	layer_change_background(bg_desert3,bg_desert3Night);
+	layer_change_background(bg_desert4,bg_desert4Night);
+	layer_change_background(bg_desertfront,bg_desertfrontNight);
+	layer_change_background(bg_cavern,bg_cavern2);
+}
 
 /*
 if (global.panic == 1 && (layer_background_get_sprite(back_id2) == 1208 || layer_background_get_sprite(back_id2) == 1211))

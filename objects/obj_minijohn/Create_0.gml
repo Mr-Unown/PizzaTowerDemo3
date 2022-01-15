@@ -27,7 +27,7 @@ recoveryspr = spr_minijohn_run
 grabbedspr = spr_minijohn_stun
 scaredspr = spr_minijohn_stun
 
-hp = 1
+hp = 4
 slapped = 0
 grounded = 1
 birdcreated = 0

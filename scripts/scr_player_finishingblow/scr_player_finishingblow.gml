@@ -45,7 +45,7 @@ function scr_player_finishingblow() {
 	        sprite_index = spr_uppercutfinishingblow
 	    image_index = 0
 	}
-	image_speed = 0.35
+	image_speed = 0.5
 	landAnim = 0
 
 
