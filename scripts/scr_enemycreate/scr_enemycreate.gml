@@ -43,6 +43,9 @@ function scr_enemycreate() {
 	heatbuffer = 0;
 	alarm[4] = 10
 	dashcloudid = noone
+	invincible = 0
+
+
 	//april build stuff
 	stuntouchbuffer = 0;
 	invtime = 0

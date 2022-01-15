@@ -17,8 +17,8 @@
   "width": 1168,
   "height": 1022,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Space",
+    "path": "texturegroups/Space",
   },
   "swatchColours": null,
   "gridX": 0,
