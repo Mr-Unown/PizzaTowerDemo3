@@ -401,6 +401,16 @@ if (global.panic == 0 && global.snickchallenge == 0)
             pausedmusic = mu_sanctum
         }		
 	}
+	 if (string_letters(roomname) == "pinball")
+    {	
+        if (!audio_is_playing(mu_pinball))
+        {
+            scr_soundstopall()
+            scr_sound(mu_pinball)
+            audio_sound_set_track_position(global.music, fadeoff)
+            pausedmusic = mu_pinball
+        }		
+	}
     if (string_letters(roomname) == "ruin")
     {
         for (i = 0; i < 20; i++)
@@ -554,6 +564,30 @@ if (global.panic == 0 && global.snickchallenge == 0)
             }
         }
     }
+	if (string_letters(roomname) == "freezer")
+    {
+        for (i = 0; i < 20; i++)
+        {
+            if (roomname == ("freezer_" + string(i)) && i <= 6)
+            {
+                if (!audio_is_playing(mu_freezer1))
+                {
+                    scr_soundstopall()
+                    scr_sound(mu_freezer1)
+                    pausedmusic = mu_freezer1
+                }
+            }
+            else if ((roomname == ("freezer_" + string(i)) && i > 6) /*|| room == freezer_11*/)
+            {
+                if (!audio_is_playing(mu_freezer2))
+                {
+                    scr_soundstopall()
+                    scr_sound(mu_freezer2)
+                    pausedmusic = mu_freezer2
+                }
+            }
+        }
+    }
 	if room = room_test1
 	{
 	    if (!audio_is_playing(mu_freezer2))
@@ -579,6 +613,15 @@ if (global.panic == 0 && global.snickchallenge == 0)
              scr_soundstopall()
              scr_sound(mu_freezer2)
              pausedmusic = mu_freezer2
+        }	
+	}
+		if room = room_test6
+	{
+	    if (!audio_is_playing(mu_forest))
+        {
+             scr_soundstopall()
+             scr_sound(mu_forest)
+             pausedmusic = mu_forest
         }	
 	}
 	

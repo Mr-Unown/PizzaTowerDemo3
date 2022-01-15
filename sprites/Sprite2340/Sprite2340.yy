@@ -8,25 +8,25 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 5299,
+  "bbox_right": 1549,
   "bbox_top": 0,
-  "bbox_bottom": 539,
+  "bbox_bottom": 1839,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 5300,
-  "height": 540,
+  "width": 1550,
+  "height": 1840,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Unused",
+    "path": "texturegroups/Unused",
   },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"cea65145-9052-4b8e-8100-2ff50dba72dc","path":"sprites/Sprite2340/Sprite2340.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"cea65145-9052-4b8e-8100-2ff50dba72dc","path":"sprites/Sprite2340/Sprite2340.yy",},"LayerId":{"name":"aced9e9a-74c0-4c41-b843-cc305529ff23","path":"sprites/Sprite2340/Sprite2340.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Sprite2340","path":"sprites/Sprite2340/Sprite2340.yy",},"resourceVersion":"1.0","name":"cea65145-9052-4b8e-8100-2ff50dba72dc","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"87ca5182-ae36-4782-bd10-fb2ba7693c76","path":"sprites/Sprite2340/Sprite2340.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"87ca5182-ae36-4782-bd10-fb2ba7693c76","path":"sprites/Sprite2340/Sprite2340.yy",},"LayerId":{"name":"7948caec-b7e9-49ed-a0ed-e2519222aa6b","path":"sprites/Sprite2340/Sprite2340.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Sprite2340","path":"sprites/Sprite2340/Sprite2340.yy",},"resourceVersion":"1.0","name":"87ca5182-ae36-4782-bd10-fb2ba7693c76","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"Sprite2340","path":"sprites/Sprite2340/Sprite2340.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"644c2971-08f7-4950-a7f2-44db23a6c1f3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cea65145-9052-4b8e-8100-2ff50dba72dc","path":"sprites/Sprite2340/Sprite2340.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"55ffd91f-e594-4d7f-bdd8-834dfab6b651","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"87ca5182-ae36-4782-bd10-fb2ba7693c76","path":"sprites/Sprite2340/Sprite2340.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -65,12 +65,12 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"aced9e9a-74c0-4c41-b843-cc305529ff23","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"7948caec-b7e9-49ed-a0ed-e2519222aa6b","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "PizzaTower_Demo3",
-    "path": "PizzaTower_Demo3.yyp",
+    "name": "ZReference Rooms Sprites",
+    "path": "folders/ZReference Rooms Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "Sprite2340",

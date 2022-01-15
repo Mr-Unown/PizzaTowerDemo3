@@ -9,7 +9,7 @@ function scr_player_rocket(){
     hurted = 1
     if (sprite_index != spr_rocketstart && sprite_index != spr_rocketupstart)
     {
-		if (sprite_index == spr_rocket)
+		if (sprite_index == spr_rocket || sprite_index == spr_player_rocketgrounded)
 		{
 	        if (key_up/*&& fightball == 0*/)
 	            vsp = -3
@@ -20,16 +20,7 @@ function scr_player_rocket(){
 		}
 		else if (sprite_index == spr_rocketup)
 		{
-			/*if key_left
-			{
-				move = -1
-				movespeed = -3
-			}
-			if key_right
-			{
-				move = 1
-				movespeed = 3
-			}*/
+			movespeed = move * -3
 			if (vsp > -14)
 	            vsp = -14
 			
@@ -70,6 +61,8 @@ function scr_player_rocket(){
 			}
         }
     }
+	if place_meeting(x,y+1, obj_solid)
+	sprite_index = spr_player_rocketgrounded
     if (movespeed < 24 && move == xscale)
     {
         movespeed += 0.1
@@ -136,8 +129,9 @@ function scr_player_rocket(){
         image_index = 0
         instance_create((x - 10), (y + 10), obj_bumpeffect)
         instance_create(x, y, obj_safeexplosion)
+		rocketup = 0
     }
-	if (scr_solid(x, (y + sign(vsp))) && ((!place_meeting(x, (y + sign(vsp)), obj_slope)) || place_meeting(x, (y + sign(vsp)), obj_solid)) && (!place_meeting(x, (y + sign(vsp)), obj_metalblock)) && character != "V" && (!place_meeting(x, (y + sign(vsp)), obj_destructibles)) && character != "V" && (!place_meeting(x, (y + sign(vsp)), obj_johnpillar)))
+	if (sprite_index == spr_rocketup) && (scr_solid(x, (y + sign(vsp))) && ((!place_meeting(x, (y + sign(vsp)), obj_slope)) || place_meeting(x, (y + sign(vsp)), obj_solid)) && (!place_meeting(x, (y + sign(vsp)), obj_metalblock)) && character != "V" && (!place_meeting(x, (y + sign(vsp)), obj_destructibles)) && character != "V" && (!place_meeting(x, (y + sign(vsp)), obj_johnpillar)))
     {
         pizzapepper = 0
         sprite_index = spr_rockethitwall
@@ -170,6 +164,7 @@ function scr_player_rocket(){
         image_index = 0
         instance_create((x - 10), (y + 10), obj_bumpeffect)
         instance_create(x, y, obj_safeexplosion)
+		rocketup = 0
     }
     if ((!instance_exists(dashcloudid)) && grounded && (!place_meeting(x, (y + 1), obj_water)))
     {
@@ -200,7 +195,7 @@ function scr_player_rocket(){
             other.chargeeffectid = id
         }
     }
-	if (sprite_index = spr_rocketup && (!instance_exists(chargeeffectid)))
+	if (sprite_index = spr_rocketup && (!instance_exists(obj_superslameffect)))
     {
         with (instance_create(x, y, obj_superslameffect))
         {

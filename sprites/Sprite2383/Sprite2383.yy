@@ -17,8 +17,8 @@
   "width": 3600,
   "height": 540,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Unused",
+    "path": "texturegroups/Unused",
   },
   "swatchColours": null,
   "gridX": 0,
@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "PizzaTower_Demo3",
-    "path": "PizzaTower_Demo3.yyp",
+    "name": "ZReference Rooms Sprites",
+    "path": "folders/ZReference Rooms Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "Sprite2383",

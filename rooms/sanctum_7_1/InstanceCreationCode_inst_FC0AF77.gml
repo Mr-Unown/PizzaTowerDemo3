@@ -1,10 +1,7 @@
-condition = function()
-{
-	return default_condition() && ds_list_find_index(flags.saveroom, id) == -1
-}
+flags.do_once_per_save = true;
 output = function()
 {
-	repeat (5)
+	repeat (6)
 	with instance_create(324, 274, obj_collectfloor)
 	{
 		vsp = random_range(-2,-8)

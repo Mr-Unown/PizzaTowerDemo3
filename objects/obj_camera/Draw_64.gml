@@ -17,7 +17,6 @@ if global.hudmode == false
 	{
 		case 0:
 		#region OLD HUD
-		
 	#region Murder
 	var murdersprite = (player.character == "N" ? spr_playerN_noisebomb : spr_peppinobullethud)
 	if (player.murderammo >= 1)
@@ -281,6 +280,51 @@ if (player.state != 55)
 		//Pizzascore thing
 		draw_sprite_ext(spr_pizzascore, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
 		
+		#region Rank bubble
+		if global.timeattack = false
+		{
+			var bubbleempty = spr_rankbubble_d, bubblefilled = spr_rankbubble_dfilled,
+			local_rank = global.crank;
+			switch global.currentrank
+			{
+				case "S":
+				bubbleempty = spr_rankbubble_a;
+				bubblefilled = spr_rankbubble_afilled;
+				local_rank = global.srank;						
+				break;
+				case "A":
+				bubbleempty = spr_rankbubble_a;
+				bubblefilled = spr_rankbubble_afilled;
+				local_rank = global.srank;						
+				break;
+				case "B":
+				bubbleempty = spr_rankbubble_b;
+				bubblefilled = spr_rankbubble_bfilled;
+				local_rank = global.arank;						
+				break;
+				case "C":
+				bubbleempty = spr_rankbubble_c;
+				bubblefilled = spr_rankbubble_cfilled;
+				local_rank = global.brank;					
+				break;
+				default:
+				bubbleempty = spr_rankbubble_d;
+				bubblefilled = spr_rankbubble_dfilled;
+				local_rank = global.crank;				
+				break;
+			}
+			var bubbleWidth = sprite_get_width(bubblefilled);
+			var bubbleHeight = sprite_get_height(bubblefilled);
+			var rankpercent = (global.collect / local_rank);
+			if global.currentrank == "S" && rankpercent >= 1
+				draw_sprite_ext(spr_rankbubble_sfilled, -1, 215, -11, 1, 1, 0, c_white, 1)
+			else
+			{
+				draw_sprite_ext(bubbleempty, -1, 215, -11, 1, 1, 0, c_white, 1)
+				draw_sprite_part_ext(bubblefilled,-1,0,0,bubbleWidth,bubbleHeight*rankpercent ,215,-11,1,1,c_white,1)			
+			}
+		}
+		#endregion
 		//Rank Topppings
 		if global.timeattack = false
 		{
@@ -511,7 +555,14 @@ if (player.state != 55)
 	var timery = (global.newhud == true? 450 : 65)	
 	if (global.panic == 1 || global.snickchallenge == 1 || global.miniboss == 1)
     {
-        if (global.seconds < 10)
+		/*var meterwidth = sprite_get_width(spr_timermeter)
+        var meterheight = sprite_get_height(spr_timermeter)
+        var b = (global.seconds + (global.minutes * 60) / 291)
+        draw_sprite_part(spr_timermeter, -1, 0, 0, (meterwidth * b), meterheight, 332,480)
+		draw_sprite(spr_pizzatimer, 0, 416, 480)
+		draw_sprite(spr_pizzafacehud_sleep, 0, 644, 480)*/
+		
+		if (global.seconds < 10)
         {
             if (global.minutes < 1)
                 draw_set_color(c_red)
@@ -553,10 +604,22 @@ if (player.state != 55)
 		draw_text(823, 512, string_hash_to_newline(((string(global.bonushour) + string(tinyish) + string(global.bonusminutes) + string(tiny)) + string(global.bonusseconds) + string(tinier) + string(global.bonusmiliseconds))))
 	}
 	#endregion
-
+	#region Temperature Meter
+	if global.tempenabled = true
+{
+    var _width = sprite_get_width(spr_temperature_meterfill)
+    var _height = sprite_get_height(spr_temperature_meterfill)
+    global.temperature += global.temperature_spd
+    global.temperature = clamp(global.temperature, 0, (global.temp_thresholdnumber * 100))
+    var _tmp = (global.temperature / (global.temp_thresholdnumber * 100))
+    var _top = 0
+    var _height2 = (_height * _tmp)
+    draw_sprite_part_ext(spr_temperature_meterfill, 0, 0, _top, _width, _height2, 864, (192 + _height), 1, -1, c_white, 1)
+    draw_sprite(spr_temperature_meter, 0, 864, 192)
+}
 	#endregion
 }
-draw_set_blend_mode(0)
+draw_set_blend_mode(bm_normal)
 
 
 

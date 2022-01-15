@@ -59,8 +59,44 @@ function meta_hud_style()
 }
 #endregion	
 
+#region GROUNDPOUND STYLE
+function sh_groundpound_style(args) 
+{
+	var arg1 = args[1]
+	switch arg1
+	{
+		case "new": 
+		arg1 = true 
+		break;
+		case "old": 
+		arg1 = false 
+		break;
+		default: 
+		arg1 = !global.groundpoundstyle
+		break;
+	}	
+	global.groundpoundstyle = arg1
+	ini_open("saveData.ini")
+	ini_write_real("Option", "groundpoundstyle", arg1);
+	ini_close()
+}
+function meta_groundpound_style() 
+{
+	return {
+		description: "switches Groundpound style",
+		arguments: ["<style>"],
+		suggestions: [
+			["new","old"]
+		],
+		argumentDescriptions: [
+			"the style of freefall to choose"
+		]
+	}
+}
+#endregion	
+
 #region HEAT METER
-function sh_heat_meter(args) 
+function sh_toggle_heatmeter(args) 
 {
 	var arg1 = args[1]	
 	switch arg1
@@ -82,7 +118,7 @@ function sh_heat_meter(args)
 		ini_write_real("Option", "heat", arg1);
 	ini_close()	
 }
-function meta_heat_meter() 
+function meta_toggle_heatmeter() 
 {
 	return {
 		description: "toggles heat meter",
@@ -309,13 +345,241 @@ function meta_toggle_debugmode()
 }
 #endregion
 
-#region
+#region Collect STYLE
+function sh_collect_style(args) 
+{
+	var arg1 = args[1]
+	switch arg1
+	{
+		case "new": 
+		arg1 = true 
+		break;
+		case "old": 
+		arg1 = false 
+		break;
+		default: 
+		arg1 = !global.collectstyle
+		break;
+	}	
+	global.collectstyle = arg1
+	ini_open("saveData.ini")
+	ini_write_real("Option", "collectstyle", arg1);
+	ini_close()	
+}
+function meta_collect_style() 
+{
+	return {
+		description: "switches Collectable style",
+		arguments: ["<style>"],
+		suggestions: [
+			["new","old"]
+		],
+		argumentDescriptions: [
+			"the style of collectables to choose"
+		]
+	}
+}
+#endregion	
 
-#endregion
+#region Titlescreen Select
+function sh_titlescreen_style(args) 
+{
+	var arg1 = args[1]
+	switch arg1
+	{
+		case "new": 
+		arg1 = true 
+		break;
+		case "old": 
+		arg1 = false 
+		break;
+		default: 
+		arg1 = !global.newtitlescreen
+		break;
+	}	
+	global.newtitlescreen = arg1
+	ini_open("saveData.ini")
+	ini_write_real("Option", "newtitlescreen", arg1);
+	ini_close()
+	if room == New_Realtitlescreen || room == Realtitlescreen
+	{
+		if room != global.roomstart[global.newtitlescreen]
+			room = global.roomstart[global.newtitlescreen];
+		with obj_player
+		{
+			state = states.titlescreen;
+		}
+	}
+}
+function meta_titlescreen_style() 
+{
+	return {
+		description: "switches Titlescreen style",
+		arguments: ["<style>"],
+		suggestions: [
+			["new","old"]
+		],
+		argumentDescriptions: [
+			"the style of Titlescreen to choose"
+		]
+	}
+}
+#endregion	
+
+#region SJUMPCancel Style
+function sh_sjumpcancel_style(args) 
+{
+	var arg1 = args[1]
+	switch arg1
+	{
+		case "new": 
+		arg1 = true 
+		break;
+		case "old": 
+		arg1 = false 
+		break;
+		default: 
+		arg1 = !global.newsjumpcancel
+		break;
+	}	
+	global.newsjumpcancel = arg1
+	ini_open("saveData.ini")
+	ini_write_real("Option", "newsjumpcancel", arg1);
+	ini_close()
+}
+function meta_sjumpcancel_style() 
+{
+	return {
+		description: "switches Super Jump Cancel style",
+		arguments: ["<style>"],
+		suggestions: [
+			["new","old"]
+		],
+		argumentDescriptions: [
+			"the style of Sjumpcancel to choose"
+		]
+	}
+}
+#endregion	
+
+#region WallClimb Style
+function sh_wallclimb_style(args) 
+{
+	var arg1 = args[1]
+	switch arg1
+	{
+		case "new": 
+		arg1 = true 
+		break;
+		case "old": 
+		arg1 = false 
+		break;
+		case "older": 
+		arg1 = 2 
+		break;		
+		default: 
+		arg1 = !global.wallrunstyle
+		break;
+	}	
+	global.wallrunstyle = arg1
+	ini_open("saveData.ini")
+	ini_write_real("Option", "wallrunstyle", arg1);
+	ini_close()
+}
+function meta_wallclimb_style() 
+{
+	return {
+		description: "switches Wall Climbing style",
+		arguments: ["<style>"],
+		suggestions: [
+			["new","old","older"]
+		],
+		argumentDescriptions: [
+			"the style of wallclimb to choose"
+		]
+	}
+}
+#endregion	
+
+#region Pitch Shift
+function sh_toggle_pitchshift(args) 
+{
+	var arg1 = args[1]	
+	switch arg1
+	{
+		case "true": 
+		case "1":
+		arg1 = true 
+		break;
+		case "false": 
+		case "0":
+		arg1 = false 
+		break;
+		default: 
+		arg1 = !global.pitchshift
+		break;		
+	}	
+	global.pitchshift = arg1
+	ini_open("saveData.ini")
+	ini_write_real("Option", "pitchshift", arg1);
+	ini_close()
+}
+function meta_toggle_pitchshift() 
+{
+	return {
+		description: "toggles pitch shifting",
+		arguments: ["<bool>"],
+		suggestions: [
+			["true","false"]
+		],
+		argumentDescriptions: [
+			"toggles pitch shifting"
+		]
+	}
+}
+#endregion	
 
 
 if DEBUG 
 {
+	#region Rat Mode //Right now it's in DEBUG since it's really unfinished + should be toggleable in the HUB
+	function sh_toggle_ratmode(args) 
+	{
+		var arg1 = args[1]	
+		switch arg1
+		{	
+			case "true": 
+			case "1":
+			arg1 = true 
+			break;
+			case "false": 
+			case "0":
+			arg1 = false 
+			break;
+			default: 
+			arg1 = !global.ratmode
+			break;		
+		}	
+		global.ratmode = arg1
+		ini_open("saveData.ini")
+		ini_write_real("Option", "ratmode", arg1);
+		ini_close()
+	}
+	function meta_toggle_ratmode() 
+	{
+		return {
+			description: "toggles ratmode W.I.P.",
+			arguments: ["<bool>"],
+			suggestions: [
+				["true","false"]
+			],
+			argumentDescriptions: [
+				"toggles ratmode"
+			]
+		}
+	}
+	#endregion	
+	
 	#region Change Character
 	function sh_change_character(args) 
 	{
@@ -376,6 +640,9 @@ if DEBUG
 	function sh_room_goto(args) 
 	{
 		var arg1 = asset_get_index(args[1]), arg2 = args[2]	
+		//Error Check 
+		if asset_get_type(args[1]) != asset_room { return "Can't find room " + string(args[1]); } //Shamelessy took this from Ethgaming
+		//Go to Room
 		if asset_get_type(args[1]) = asset_room
 		{
 			obj_player1.targetRoom = arg1
@@ -413,7 +680,7 @@ if DEBUG
 	function meta_instance_create() 
 	{
 		return {
-			description: "create an onject",
+			description: "create an object",
 			arguments: ["<x>", "<y>","<object>"],
 			suggestions: [
 				[],

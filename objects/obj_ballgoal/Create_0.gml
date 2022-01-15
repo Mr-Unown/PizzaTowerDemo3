@@ -1,4 +1,4 @@
-depth = 100
+depth = 1
 
 goaled = 0
 

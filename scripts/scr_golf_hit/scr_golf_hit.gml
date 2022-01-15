@@ -153,8 +153,10 @@ function scr_golf_hit() {
 	{
 	    sprite_index = spr_pizzaball_flying
 	    image_index = 0
-	    image_speed = clamp(movespeed,0.1,0.8)
+	    image_speed = clamp(movespeed,0,0.8)
 	}
 	if (stunned < 200)
 	    stunned++
+	if sprite_index = spr_pizzaball_flying
+	image_speed = clamp(movespeed,0.3,1.7)
 }

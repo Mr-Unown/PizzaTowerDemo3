@@ -176,18 +176,66 @@ if (global.combotime > 0) && global.pausecombotime = false && global.freezeframe
     global.combotime = (global.combotime - 0.25)
 else if (global.combotime <= 0)
 	global.combotime = 0
-if (global.combotime == 0 && global.combo != 0)
+//End of Combo
+if (global.combotime <= 0 && global.combo != 0) && global.freezeframe = false && !instance_exists(obj_endlevelfade)
 {
 	scr_soundeffect(sfx_comboend);
+	#region Combo End Spawner
+	endcombo = true
+	with comboend_id
+	{
+		storedscore += other.storedscore;
+		scorespd = 5 * ceil(storedscore / 1100);
+		//End Sprite Choosener
+		var combo_image_number = sprite_get_number(spr_combo_text);
+		var combo_strength = round(storedscore / 1100);
+		var combo_spr = clamp(combo_strength,0,combo_image_number - 1);
+		endspr = combo_spr;
+		scale = 0.5;
+		image_alpha = 1;
+		visible = true;
+		activated = true;
+		alarm[0] = 2;
+	}
+	#endregion
+	if global.coop == true
+	{
+		with obj_player2
+		{
+			#region Combo End Spawner
+			endcombo = true
+			with comboend_id
+			{
+				storedscore += other.storedscore;
+				scorespd = 5 * ceil(storedscore / 1100);
+				//End Sprite Choosener
+				var combo_image_number = sprite_get_number(spr_combo_text);
+				var combo_strength = round(storedscore / 1100);
+				var combo_spr = clamp(combo_strength,0,combo_image_number - 1);
+				endspr = combo_spr;
+				scale = 0.5;
+				image_alpha = 1;
+				visible = true;
+				activated = true;
+				alarm[0] = 2;
+			}
+			#endregion
+		}
+	}
+	//Quips
 	if global.combo > 3
 	{
-	var randomchance = irandom_range(0,100);
+		var randomchance = irandom_range(0,100);
 		if (randomchance < global.quipsfrequency)
 		{
 			scr_soundeffect(sfx_yipee,sfx_prettygood);
 		}
 	}
+	//End it all
     global.combo = 0
+	global.comboended = true;
+	obj_player1.storedscore = 0;
+	obj_player2.storedscore = 0;
 }
 if (input_buffer_jump < 8)
     input_buffer_jump++

@@ -13,6 +13,8 @@ function scr_player_superslam() {
 	{
 	    scr_soundeffect(sfx_groundpound)
 	    sprite_index = spr_piledriverland
+		with obj_baddie
+		squashed = true
 	    jumpAnim = 1
 	    image_index = 0
 	    with (obj_camera)
@@ -62,19 +64,8 @@ function scr_player_superslam() {
 				{
 					instance_create(x, y, obj_slapstar)
 					instance_create(x, y, obj_baddiegibs)
-					flash = 1
-					global.combotime = 60
-					global.pausecombotime = true
-					obj_tv.alarm[1] = 75			
-					global.hit = (global.hit + 1)
-					hp -= 1
-					alarm[1] = 5
-					thrown = 1
-					x = other.x
-					y = other.y
-					state = 106
-					hsp = ((-image_xscale) * 10)
-					vsp = -10		
+					other.baddiegrabbedID.instakilled = 1
+					instance_destroy(other.baddiegrabbedID)
 				}
 				else if object_index = obj_throwableparent
 				{

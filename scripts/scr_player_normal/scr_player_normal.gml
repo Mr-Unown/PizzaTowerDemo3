@@ -242,7 +242,7 @@ function scr_player_normal() {
 	if (scr_solid((x + sign(hsp)), y) && xscale == -1 && move == -1 && (!place_meeting((x - 1), y, obj_slope)))
 	    movespeed = 0
 	*/	
-	if scr_solid(x + sign(hsp),y) && move != 0 && !scr_slope_ext(x + sign(hsp),y)
+	if scr_solid(x + sign(hsp),y) && move != 0 && !scr_slope_ext(x + sign(hsp),y) && !place_meeting(x,y + 1,obj_bigiceblock)
 		movespeed = 0
 	jumpstop = 0
 	if ((!grounded) && (!key_jump))
@@ -310,7 +310,7 @@ function scr_player_normal() {
 	    else if (floor(movespeed) == 6)
 	        movespeed = 6
 	}
-	else
+	else if !place_meeting(x,y + 1,obj_bigiceblock)
 	    movespeed = 0
 	if (movespeed > 6)
 	    movespeed -= 0.1
@@ -657,8 +657,5 @@ function scr_player_normal() {
 			scr_soundeffect(sfx_superjumprelease)
 		}
 	}
-
-
-
 
 }

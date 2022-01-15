@@ -1,6 +1,7 @@
 function scr_playersounds() {
-	with (other.id)
+	with id
 	{
+		var pitchspd = (movespeed/9.5) * 0.8
 	    if (state == 69 && (!audio_is_playing(sfx_mach1)) && grounded)
 	    {
 	        mach1snd = audio_play_sound(sfx_mach1, 1, false)
@@ -47,12 +48,12 @@ function scr_playersounds() {
 	        audio_stop_sound(superjumpprepsnd)
 	    if (state != 65 && state != states.jetpackstart && audio_is_playing(superjumpholdsnd))
 	        audio_stop_sound(superjumpholdsnd)
-			var pitchspd = (obj_player.movespeed/9.5) * 0.8
+		
 		if (sprite_index == spr_tumblestart && (!audio_is_playing(sfx_tumble1)) && floor(image_index) < 11)
 	    {
 	        tumble1snd = audio_play_sound(sfx_tumble1, 1, false)
 	        audio_sound_gain(tumble1snd, (1 * global.soundeffectsvolume), 0)
-			audio_sound_pitch(tumble1snd, pitchspd);
+			
 	    }
 	    if (sprite_index == spr_tumblestart && floor(image_index) == 11 && (!audio_is_playing(sfx_tumble2)))
 	    {
@@ -64,7 +65,7 @@ function scr_playersounds() {
 	    {
 	        tumble3snd = audio_play_sound(sfx_tumble3, 1, false)
 	        audio_sound_gain(tumble3snd, (1 * global.soundeffectsvolume), 0)
-			audio_sound_pitch(tumble3snd, pitchspd);
+
 	    }
 	    if (state != 2 && sprite_index != spr_playerN_jetpackslide && sprite_index != spr_machroll)
 	    {
@@ -74,8 +75,10 @@ function scr_playersounds() {
 	    }
 	    if (audio_is_playing(suplexdashsnd) && sprite_index != spr_player_shoryumineken && state != 22)
 	        audio_stop_sound(suplexdashsnd)
+		//Pitch
+		audio_sound_pitch(tumble3snd, pitchspd);
+		audio_sound_pitch(tumble1snd, pitchspd);			
 	}
-
 
 
 }

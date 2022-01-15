@@ -38,7 +38,7 @@ if global.snickchallenge == false
 		break;
 		case "desert":
 			global.stimerank = 7.40;
-			global.srank = 13400
+			global.srank = 19500
 		break;
 		default:
 			global.stimerank = 10.00;
@@ -58,7 +58,7 @@ if global.snickchallenge == false
 else
 {
 	//Snick Challenge
-    global.srank = 8000
+    global.srank = 7400
     global.arank = (global.srank - (global.srank / 4))
     global.brank = (global.srank - ((global.srank / 4) * 2))
     global.crank = (global.srank - ((global.srank / 4) * 3))	

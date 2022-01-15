@@ -74,7 +74,7 @@ if relax = false && global.freezeframe = false && room != rank_room && !instance
 							sprite_index = spr_pizzakinpineapple_panic							
 						break;			
 					}
-					global.toppinlist = clamp(global.toppinlist - 1,0,global.toppinlist + 100)
+					//global.toppinlist = clamp(global.toppinlist - 1,0,global.toppinlist + 100)
 					instance_destroy();
 				}
 				#region Remove Score

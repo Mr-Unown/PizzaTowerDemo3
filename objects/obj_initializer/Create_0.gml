@@ -24,4 +24,4 @@ for (var i = 0; i <= collisionheight; ++i)
 //global.collectstyle = 0;
 //global.npcs = true;
 //scr_init();
-
+//looking for the initialization stuff? check scr_init()

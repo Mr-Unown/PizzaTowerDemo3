@@ -366,7 +366,11 @@ else if global.newhud = true && oldcharacter == player.character && (sprite_inde
 	{
 		//case states.scaredjump:
 		//newtvsprite = player.spr_playertv_scaredjump
-		//channel = 10;			
+		//channel = 11;		
+		case states.ratmount:
+		newtvsprite = gustvspr
+		channel = 9;	
+		break;
 		case states.golf:
 		newtvsprite = player.spr_playertv_golf
 		channel = 9;	
@@ -496,6 +500,13 @@ switch(obj_player.state)
 		scr_queue_message("What a dingus! He should've watched more workplace safety videos. Luckily he can just jump into some cleansing water.");
 		ds_list_add(global.saveroom, "boxxed")
 	}	
+	case states.rocket:
+	if ds_list_find_index(global.saveroom, "rocket") = -1  
+	{
+		scr_queue_message("this is placeholder");
+		scr_queue_message("rocket up yer ass xdxdxd");
+		ds_list_add(global.saveroom, "rocket")
+	}	
 }
 #endregion
 //Sprite_index
@@ -563,3 +574,5 @@ if global.freezeframe = false
 	staticframe += 0.35;
 }
 textbubbleframes += 0.35;
+//Combohud new
+combox = wave(5,15,7,7)

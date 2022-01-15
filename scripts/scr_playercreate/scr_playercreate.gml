@@ -6,8 +6,12 @@ function scr_playercreate() {
 	//Jump Height Trolling
 	jumpheight = -11;
 	in_water = false;
+	//End Combo
+	endcombo = false
 	//Topping Trail
 	toomanytoppings = 0;
+	//Heateffect
+	heatafterimage_id = noone;
 	//Substate
 	substate = 0;
 	//Suplex
@@ -17,6 +21,8 @@ function scr_playercreate() {
 	global.storedtasecond = 0;
 	breakdancebuffer = 50
 	collectscore = 0
+	//Comboend
+	storedscore = 0
 	knightpoundbuffer = 0;
 	knightmaxy = 0;
 	knightroomy = 0;
@@ -40,6 +46,9 @@ function scr_playercreate() {
 	tricksperformed = 0;
 	//Slope Angle
 	draw_angle = 0;
+	//P Rank
+	global.got_hurt = false;
+	global.comboended = false;
 	//Global Time Events
 	global.timeevent = 0 //1 = Xmas 2 = April 3 = Halloween
 	//Bumbo want coin
@@ -58,8 +67,6 @@ function scr_playercreate() {
 			other.shieldindicatorid = id
 			player = other.id		
 		}
-
-
 	//Funny Murder
 	murderammo = 0;
 	combothreshold = 0;
@@ -101,6 +108,10 @@ function scr_playercreate() {
 	pogoed = true
 	wallclingbuffer = 15
 	grindeffect = noone
+	initialfreefallvsp = 15
+	initialsuperjumpvsp = -12
+	bouncevsp = -6
+	bouncehsp = 6
 	//New Palette
 	surf_width = 2
 	surf_height = 10
