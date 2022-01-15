@@ -13,7 +13,7 @@ if (bulletbuffer > 0)
     bulletbuffer--
 if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1.cutscene == 0) && global.freezeframe = false
 {
-    if (baddieID.state != enemystates.enemygrabbed && baddieID.state != enemystates.enemyfrozen && baddieID.state != enemystates.enemyshake)
+    if (baddieID.state != enemystates.enemygrabbed && baddieID.state != enemystates.enemyfrozen && baddieID.state != enemystates.enemyshake && (!other.baddieID.invincible))
     {
         with (obj_player1) 
         {
@@ -185,7 +185,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
 				}
 			}
 			}
-			if sprite_index = spr_player_shoryumineken && vsp < 0 && other.baddieID.hp > 0
+			if sprite_index = spr_player_shoryumineken && vsp < 0 && other.baddieID.hp > 0 && (!other.baddieID.invincible)
 			{
 				#region Shoryoken Jump
 				flash = 1
@@ -271,7 +271,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                 }	
 				#endregion
 			}
-            if (instance_exists(other.baddieID) && instakillmove = 0 && other.baddieID.state != "punch" && other.baddieID.dying = false && y < other.baddieID.y && attacking == 0 && sprite_index != spr_player_mach2jump && (state == 58 || state == 69 || state == 46) && vsp > 0 && other.baddieID.vsp >= 0 && sprite_index != spr_stompprep)
+            if (instance_exists(other.baddieID) && instakillmove = 0 && other.baddieID.state != "punch" && other.baddieID.dying = false && y < other.baddieID.y && attacking == 0 && sprite_index != spr_player_mach2jump && (state == 58 || state == 69 || state == 46) && vsp > 0 && other.baddieID.vsp >= 0 && sprite_index != spr_stompprep && (!other.baddieID.invincible))
             {
                 scr_soundeffect(sfx_stompenemy)
                 if (x != other.baddieID.x)
@@ -349,7 +349,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                 other.baddieID.vsp = -4
                 other.baddieID.hsp = (xscale * 5)
             }*/
-            if (instance_exists(other.baddieID) && instakillmove = 0 && state == 22 && character != "S")
+            if (instance_exists(other.baddieID) && instakillmove = 0 && state == 22 && character != "S" && (!other.baddieID.invincible))
             {
                 if ((key_shoot || sprite_index == spr_shotgunsuplexdash) && shotgunAnim == 1)
                 {
@@ -394,7 +394,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
 }
 if (instance_exists(baddieID) && place_meeting(x, y, obj_player2) && obj_player2.cutscene == 0) && global.freezeframe = false
 {
-    if (baddieID.state != enemystates.enemygrabbed && baddieID.state != enemystates.enemyfrozen && baddieID.state != enemystates.enemyshake)
+    if (baddieID.state != enemystates.enemygrabbed && baddieID.state != enemystates.enemyfrozen && baddieID.state != enemystates.enemyshake && (!other.baddieID.invincible))
     {
         with (obj_player2)
         {
