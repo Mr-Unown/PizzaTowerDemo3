@@ -129,7 +129,7 @@ function scr_player_rocket(){
         instance_create(x, y, obj_safeexplosion)
 		rocketup = 0
     }
-	if (scr_solid(x, (y + sign(vsp))) && ((!place_meeting(x, (y + sign(vsp)), obj_slope)) || place_meeting(x, (y + sign(vsp)), obj_solid)) && (!place_meeting(x, (y + sign(vsp)), obj_metalblock)) && character != "V" && (!place_meeting(x, (y + sign(vsp)), obj_destructibles)) && character != "V" && (!place_meeting(x, (y + sign(vsp)), obj_johnpillar)))
+	if (sprite_index == spr_rocketup) && (scr_solid(x, (y + sign(vsp))) && ((!place_meeting(x, (y + sign(vsp)), obj_slope)) || place_meeting(x, (y + sign(vsp)), obj_solid)) && (!place_meeting(x, (y + sign(vsp)), obj_metalblock)) && character != "V" && (!place_meeting(x, (y + sign(vsp)), obj_destructibles)) && character != "V" && (!place_meeting(x, (y + sign(vsp)), obj_johnpillar)))
     {
         pizzapepper = 0
         sprite_index = spr_rockethitwall
