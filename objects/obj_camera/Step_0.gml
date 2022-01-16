@@ -42,17 +42,23 @@ else
 		global.currentrank = "D"
 }
 #endregion
-
+if oldranklol != global.currentrank
+{
+	oldranklol = global.currentrank;
+	bubblescale = 1.5;
+}
+bubblescale = approach(bubblescale, 0, 0.10);
 //Collided with Player
 if point_in_rectangle(obj_player.x,obj_player.y, _drawx - 80, _drawy - 85,_drawx + 80,_drawy + 85)
-collided = true
+	collided = true
 else if global.newhud = true && point_in_rectangle(obj_player.x,obj_player.y, _drawx - 100, _drawy - 1000,_drawx + 80,_drawy + 85)
-collided = true
+	collided = true
 else
-collided = false
+	collided = false
 //Alpha
 if global.newhud = false
 {
+	newhudyoffset = 0
 	if collided = true
 		alpha = 0.5
 	else
@@ -60,6 +66,7 @@ if global.newhud = false
 }
 else
 {
+	alpha = 1
 	if collided = true
 		newhudyoffset = approach(newhudyoffset,-600,16)
 	else

@@ -58,10 +58,10 @@ if global.snickchallenge = true
     }
 if global.newhud = true
 {
-if collided = true
-	newhudyoffset = approach(newhudyoffset,-600,16)
-else
-	newhudyoffset = approach(newhudyoffset,0,16)
+	if collided = true
+		newhudyoffset = approach(newhudyoffset,-600,16)
+	else
+		newhudyoffset = approach(newhudyoffset,0,16)
 }
 if (showtext == 1)
 {

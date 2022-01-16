@@ -1,7 +1,10 @@
 //Panic Shake
 panicshake = 0;
 panicshakeacc = 0;
-
+//Rank Bubble Surface
+rankbubblesurface = noone;
+oldranklol = "FUCK"
+bubblescale = 0
 depth = -9994
 
 //Stinky Thing
