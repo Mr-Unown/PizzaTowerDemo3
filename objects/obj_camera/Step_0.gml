@@ -312,7 +312,7 @@ if target = player
 {
 	if (player.state == 91 || player.state == states.jetpack || player.state == 37)
 	{
-            var _targetcharge = (player.xscale * clamp((player.movespeed / 4) * 50,0,130)) //D3G: might need some tonig down
+            var _targetcharge = (player.xscale * ((player.movespeed / 6) * 50)) //D3G: might need some tweaking
             var _tspeed = 2
             if ((_targetcharge > 0 && chargecamera < 0) || (_targetcharge < 0 && chargecamera > 0))
                 _tspeed = 8
