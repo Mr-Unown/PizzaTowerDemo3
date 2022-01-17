@@ -9,12 +9,14 @@ function scr_player_bump() {
         state = 0
 	if (grounded && sprite_index == spr_rockethitwall)
 		state = 0
-    if (sprite_index != spr_player_catched && sprite_index != spr_tumbleend && sprite_index != spr_hitwall && sprite_index != spr_suplexmash1 && sprite_index != spr_suplexmash2 && sprite_index != spr_suplexmash3 && sprite_index != spr_suplexmash4 && sprite_index != spr_punch && sprite_index != spr_rockethitwall)
+    if (sprite_index != spr_player_catched && sprite_index != spr_tumbleend && sprite_index != spr_hitwall && sprite_index != spr_suplexmash1 && sprite_index != spr_suplexmash2 && sprite_index != spr_suplexmash3 && sprite_index != spr_suplexmash4 && sprite_index != spr_punch && sprite_index != spr_rockethitwall && sprite_index != spr_player_splat)
         sprite_index = spr_bump
     image_speed = 0.35
-	if sprite_index = spr_player_sjumpcancel
-		sprite_index = spr_player_splat
-	
+	if (floor(image_index) == (image_number - 1)) && sprite_index = spr_player_splat
+	{
+		grav = 0.5
+		state = 0
+	}
 	if (sprite_index == spr_suplexmash1 || sprite_index == spr_suplexmash2 || sprite_index == spr_suplexmash3 || sprite_index == spr_suplexmash4 || sprite_index == spr_punch)
 	{
 		var slowdownspeed = 9 * (suplexdashtimer/12);    

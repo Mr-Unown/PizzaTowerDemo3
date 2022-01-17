@@ -85,8 +85,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Peppino",
-    "path": "folders/Sprites/Characters/Playable Characters Sprites/Peppino.yy",
+    "name": "boxxed",
+    "path": "folders/Sprites/Characters/Playable Characters Sprites/Peppino/boxxed.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_boxxedpep_dashstart",

@@ -145,6 +145,8 @@ function scr_player_jump() {
 	}
 	if (key_down && sprite_index != spr_player_jugglebash)
 	{
+		if character != "GB"
+		{
 	    if (shotgunAnim == 0 || (character == "V" && character == "S"))
 	    {
 	        image_index = 0
@@ -190,7 +192,24 @@ function scr_player_jump() {
 	            }
 	        }
 	    }
+		}
+		else
+		{
+		if !instance_exists(obj_brickbullet) && sprite_index != spr_gustavo_downshootfall && sprite_index != spr_gustavo_downshoot 
+	{
+		sprite_index = spr_gustavo_downshoot
+		image_index = 0
+		input_buffer_jump = 0
+		vsp = -11
+		instance_create(x,y,obj_brickbullet)
 	}
+		}
+		if sprite_index = spr_gustavo_downshootfall && grounded
+		sprite_index = spr_gustavo_land
+	}
+	//floor image index thing because it doesnt work up there oops
+	if (floor(image_index) == (image_number - 1) && sprite_index = spr_gustavo_downshoot) 
+		sprite_index = spr_gustavo_downshootfall
 	if (move != 0)
 	    xscale = move
 	image_speed = 0.35
@@ -259,7 +278,7 @@ function scr_player_jump() {
 			audio_sound_gain(suplexdashsnd, (1 * global.soundeffectsvolume), 0)
 			state = 22
 			image_index = 0
-			if character != "PZ" {
+			if character != "PZ" && character != "GB" {
 				vsp = -4
 				sprite_index = spr_suplexdashjumpstart
 			}
@@ -512,7 +531,4 @@ function scr_player_jump() {
 			scr_soundeffect(sfx_superjumprelease)
 		}
 	}
-
-
-
 }

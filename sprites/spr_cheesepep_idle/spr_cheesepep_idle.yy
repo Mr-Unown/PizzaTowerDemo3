@@ -85,8 +85,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Peppino",
-    "path": "folders/Sprites/Characters/Playable Characters Sprites/Peppino.yy",
+    "name": "cheese",
+    "path": "folders/Sprites/Characters/Playable Characters Sprites/Peppino/cheese.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_cheesepep_idle",

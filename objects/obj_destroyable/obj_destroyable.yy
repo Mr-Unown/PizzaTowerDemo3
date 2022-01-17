@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_destroyable",
-    "path": "sprites/spr_destroyable/spr_destroyable.yy",
+    "name": "spr_destroyableOLD",
+    "path": "sprites/spr_destroyableOLD/spr_destroyableOLD.yy",
   },
   "solid": false,
   "visible": true,

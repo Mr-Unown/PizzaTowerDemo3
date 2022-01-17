@@ -45,7 +45,10 @@ function scr_player_finishingblow() {
 	        sprite_index = spr_uppercutfinishingblow
 	    image_index = 0
 	}
+	if character != "GB"
 	image_speed = 0.5
+	else
+	image_speed = .35
 	landAnim = 0
 
 

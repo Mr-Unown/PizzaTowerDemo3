@@ -8,7 +8,7 @@ function scr_player_handstandjump() {
 	    move = (key_left + key_right)
 	    momemtum = 1
 	    dir = xscale
-	    if (character == "P")
+	    if (character == "P" || character == "GB")
 	    {
 	        if (movespeed < 10 && grounded)
 	            movespeed += 0.5
@@ -71,7 +71,7 @@ function scr_player_handstandjump() {
 	        grav = 0.5
 	    }
 		//Pizzelle
-	    if floor(image_index) == (image_number - 1) && sprite_index = spr_suplexdash && character = "PZ"  && !key_attack
+	    if floor(image_index) == (image_number - 1) && sprite_index = spr_suplexdash && character = "PZ"   && !key_attack
 	    {
 	        image_speed = 0.35
 	        state = 0

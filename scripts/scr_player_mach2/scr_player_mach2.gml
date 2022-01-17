@@ -124,8 +124,13 @@ function scr_player_mach2() {
 	}
 	else if (grounded && scr_solid((x + sign(hsp)), y) && (!scr_slope() && scr_solid(x + sign(hsp),y - 2)) && (!place_meeting((x + sign(hsp)), y, obj_destructibles))) 
 	{
+	    sprite_index = spr_player_splat
+		image_index = 0
+		grav = 0
 	    movespeed = 0
-	    state = 0
+		hsp = 0
+		vsp = 0
+	    state = states.bump
 	}
 
 	if ((!instance_exists(dashcloudid)) && grounded)

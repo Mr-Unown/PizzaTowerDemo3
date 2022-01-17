@@ -1,3 +1,5 @@
+if global.panic == 1
+{
 if audio_is_playing(sfx_collecttopping)
     audio_stop_sound(sfx_collecttopping)
 scr_soundeffect(sfx_collecttopping)
@@ -21,4 +23,4 @@ with instance_create(x,y, obj_collecteffect)
 	sprite_index = other.sprite_index
 	choosed = true;
 	}
-
+}
