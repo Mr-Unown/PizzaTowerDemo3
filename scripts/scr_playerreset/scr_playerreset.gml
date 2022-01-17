@@ -34,12 +34,24 @@ function scr_playerreset() {
 	}
 	scr_soundstopall();
 	audio_stop_all();
+	//Combo end
+	{
+		endspr = 0;
+		scale = 0.5
+		scorespd = 1;
+		storedscore = 0;
+		collecteffecttimer = 0;
+		activated = false;
+		visible = 0;
+		alarm[0] = -1;
+	}
 	//Shield
-	with obj_shieldbackupindicator {
-	oldshield = 0;
-	visible = false;
-	show = 0;
-	_visible = 1;
+	with obj_shieldbackupindicator 
+	{
+		oldshield = 0;
+		visible = false;
+		show = 0;
+		_visible = 1;
 	}
 	global.style = 0;
 	global.stylethreshold = 0;

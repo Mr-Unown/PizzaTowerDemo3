@@ -1,2 +1,2 @@
 targetRoom = beach_8
-visible = 0
+visible = 1

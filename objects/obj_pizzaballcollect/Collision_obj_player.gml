@@ -1,5 +1,6 @@
 with obj_tv
-message = "ONLY THE PIZZABALL CAN COLLECT THESE."
-	
+{
+	_message = "ONLY THE PIZZABALL CAN COLLECT THESE."
+}	
 
 

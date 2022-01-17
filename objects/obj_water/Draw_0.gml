@@ -99,4 +99,6 @@ if surface_exists(watersurface)
 }
 
 //Draw Surface
+gpu_set_blendenable(false);
 draw_surface_ext(watersurface,_cam_x,_cam_y,1,1,0,c_white,alpha);
+gpu_set_blendenable(true);

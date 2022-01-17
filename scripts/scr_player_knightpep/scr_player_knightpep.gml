@@ -57,7 +57,7 @@ function scr_player_knightpep() {
 	        hsp = -4
 	    sprite_index = spr_knightpepjump
 	}
-	if ((floor(image_index) == (image_number - 1) && sprite_index == spr_knightpepjump) || ((!grounded) && sprite_index != spr_knightpepjump && sprite_index != spr_knightpepthunder))
+	if ((animation_end() && sprite_index == spr_knightpepjump) || (!grounded && sprite_index != spr_knightpepjump && sprite_index != spr_knightpepthunder)) && sprite_index != spr_knightpepslidejump
 	    sprite_index = spr_knightpepfall
 	if (sprite_index == spr_knightpepfall && !place_meeting(x,y + 1,obj_destructibles) && scr_solid(x,y+1) && vsp > 0)
 	{

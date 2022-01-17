@@ -1,7 +1,10 @@
 //Panic Shake
 panicshake = 0;
 panicshakeacc = 0;
-
+//Rank Bubble Surface
+rankbubblesurface = noone;
+oldranklol = "FUCK"
+bubblescale = 0
 depth = -9994
 
 //Stinky Thing
@@ -28,6 +31,7 @@ frozen = false;
 
 //Copied Surface
 d3application_surface = noone;
+final_application_surface = noone;
 //Number
 _image_index = 0;
 _image_speed = 0;
@@ -113,5 +117,10 @@ global.freezeframecounter = 0
 target = 3
 //Backdrop
 backdrop = spr_backdrop_pinball
+//temperature
+global.temperature = 0
+global.temperature_spd = 0.01
+global.temp_thresholdnumber = 5
+global.tempenabled = false
 
 

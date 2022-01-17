@@ -1,6 +1,3 @@
-with obj_player1
-{
-	other.comboend_id = id;
-	player = other.id
-	depth = player.depth - 0.1
-}
+obj_player1.comboend_id = id;
+player = obj_player1.id;
+depth = player.depth - 0.1;

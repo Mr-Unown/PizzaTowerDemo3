@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_lightning",
-  "duration": 2.493481,
+  "duration": 2.488481,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

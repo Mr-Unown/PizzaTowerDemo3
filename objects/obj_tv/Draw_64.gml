@@ -270,14 +270,17 @@ else
 		}
 		draw_text(text_x, 45, _new_message)
 	}
-
+	
 	surface_reset_target()
 	//draw_text(367, 300, string(floor(text_x)))
 	//draw_text(367, 350, string(string_width(new_message)))	
 	if surface_exists(textpromptsurface)
 		draw_surface(textpromptsurface, 367, -10 + newhudyoffset)
+	//Fade Effect
+	if textbubblesprites = spr_tv_bubble
+		draw_sprite(spr_tv_bubblefade,-1, 532, 45 + newhudyoffset)		
 	}
-	
+
 	//OLD TEXT
 	draw_set_font(global.font)
 	draw_set_halign(fa_center)
@@ -289,6 +292,15 @@ else
 	break;
 }
 
+	//Golf Ball
 	if instance_exists(obj_pizzaball)
 	    draw_text(832, 300, string_hash_to_newline(((string(global.golfhit) + " ") + "STROKES")))
+
+	//Combo Points
+	var tr_player = focused_player()	
+	draw_set_font(global.smallnumber)
+	draw_set_halign(fa_center)
+	draw_set_color(c_white)	
+	if global.combo != 0 && global.combotime != 0
+	    draw_text(832, 190, string(tr_player.storedscore))		
 }

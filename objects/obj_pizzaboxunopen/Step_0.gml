@@ -12,10 +12,13 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
     {
 		var player = focused_player()
 		scr_queue_tvanim(player.spr_playertv_victory)		
-        with (instance_create(x, y, obj_smallnumber))
-            number = "1000"
-        with instance_place(x, y, obj_player)
-            collectscore = (collectscore + 1000)
+		if global.snickchallenge == false
+		{
+			with (instance_create(x, y, obj_smallnumber))
+				number = "1000"
+			with instance_place(x, y, obj_player)
+				collectscore = (collectscore + 1000)
+		}
         instance_create(x, y, obj_taunteffect)
 		global.combotime = 60
 		global.pausecombotime = true
@@ -39,11 +42,14 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
     if (content == obj_pizzakincheese)
     {
 		var player = focused_player()
-		scr_queue_tvanim(player.spr_playertv_victory)		
-        with (instance_create(x, y, obj_smallnumber))
-            number = "1000"
-        with instance_place(x, y, obj_player)
-            collectscore = (collectscore + 1000)
+		scr_queue_tvanim(player.spr_playertv_victory)	
+		if global.snickchallenge == false
+		{
+			with (instance_create(x, y, obj_smallnumber))
+				number = "1000"
+			with instance_place(x, y, obj_player)
+				collectscore = (collectscore + 1000)
+		}
         with (instance_create(x, (y - 25), content)) {
             sprite_index = spr_toppincheese_intro
 			//Follower DS_list
@@ -69,10 +75,13 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
     {
 		var player = focused_player()
 		scr_queue_tvanim(player.spr_playertv_victory)		
-        with (instance_create(x, y, obj_smallnumber))
-            number = "1000"
-        with instance_place(x, y, obj_player)
-            collectscore = (collectscore + 1000)
+		if global.snickchallenge == false
+		{
+			with (instance_create(x, y, obj_smallnumber))
+				number = "1000"
+			with instance_place(x, y, obj_player)
+				collectscore = (collectscore + 1000)
+		}
         with (instance_create(x, (y - 25), content)) {
             sprite_index = spr_toppintomato_intro
 			//Follower DS_list
@@ -97,10 +106,13 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
     {
 		var player = focused_player()
 		scr_queue_tvanim(player.spr_playertv_victory)		
-        with (instance_create(x, y, obj_smallnumber))
-            number = "1000"
-        with instance_place(x, y, obj_player)
-            collectscore = (collectscore + 1000)
+		if global.snickchallenge == false
+		{
+			with (instance_create(x, y, obj_smallnumber))
+				number = "1000"
+			with instance_place(x, y, obj_player)
+				collectscore = (collectscore + 1000)
+		}
         with (instance_create(x, (y - 25), content)) {
             sprite_index = spr_toppinsausage_intro
 			//Follower DS_list
@@ -125,15 +137,18 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
     {
 		var player = focused_player()
 		scr_queue_tvanim(player.spr_playertv_victory)		
-        with (instance_create(x, y, obj_smallnumber))
-            number = "1000"
-        with instance_place(x, y, obj_player)
-            collectscore = (collectscore + 1000)
+		if global.snickchallenge == false
+		{
+			with (instance_create(x, y, obj_smallnumber))
+				number = "1000"
+			with instance_place(x, y, obj_player)
+				collectscore = (collectscore + 1000)
+		}
         with (instance_create(x, (y - 25), content)) {
             sprite_index = spr_toppinpineapple_intro
 			//Follower DS_list
 			ds_list_add(global.follower, id);
-			ds_list_add(global.toppinlist,id);			
+			ds_list_add(global.toppinlist,id);		
 
 		}			
 

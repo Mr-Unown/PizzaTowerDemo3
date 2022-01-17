@@ -23,11 +23,11 @@ Mr. Unown
 Devs:
 
 core
-soda
-Rosafito
 Zetare
 Fall Guy 1968
+pitch
 Marioket
+Rosafito
 Roley
 
 Contributers:

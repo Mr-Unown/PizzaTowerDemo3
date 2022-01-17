@@ -259,7 +259,11 @@ function scr_player_mach3() {
 	            shake_mag = 20
 	            shake_mag_acc = (40 / room_speed)
 	        }
-	        hsp = 0
+			//if floor(image_index) >= 3
+	        hsp = xscale * -5
+			//else
+			//hsp = 0
+			vsp = -6
 	        image_speed = 0.35
 	        with (obj_baddie)
 	        {
