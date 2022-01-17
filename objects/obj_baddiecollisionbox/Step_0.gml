@@ -31,7 +31,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                     machpunchAnim = 1
                     image_index = 0
                 }
-				if (state == states.mach3 || state == states.freefall && freefallsmash > 10 || state == states.firemouth || state == states.superslam || state == states.finishingblow && other.baddieID.hp <= 0 || state = states.tumble || state = states.knightpep)
+				if (state == states.mach3 || state == states.freefall && freefallsmash > 10 || state == states.firemouth || state == states.superslam || state == states.finishingblow && other.baddieID.hp <= 0 || state = states.tumble || state = states.knightpepattack || state = states.knightpepslopes || state = states.knightpep)
 				{
 					other.baddieID.hp -= 99
 					other.baddieID.instakilled = 1

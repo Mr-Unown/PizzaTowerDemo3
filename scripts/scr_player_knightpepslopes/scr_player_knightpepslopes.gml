@@ -71,8 +71,8 @@ function scr_player_knightpepslopes() {
 		}	
 	}
 
-	if sprite_index = spr_knightpepslidejump && floor(image_index) >= image_number - 1
-		sprite_index = spr_knightpepfall
+	//if sprite_index = spr_knightpepslidejump && floor(image_index) >= image_number - 1
+	//		sprite_index = spr_knightpepfall
 	//Bump into wall
 	if ( ( scr_slope() && scr_solid(x+ sign(hsp),y - 2) && !scr_slope_ext(x + sign(hsp), y)) || scr_solid(x+ sign(hsp),y) && !scr_slope_ext(x + sign(hsp), y) && !scr_slope() ) && (!place_meeting((x + sign(hsp)), y, obj_metalblock) && !place_meeting((x + sign(hsp)), y, obj_metalblockhard) && (!place_meeting((x + sign(hsp)), y, obj_destructibles))) 
 	{

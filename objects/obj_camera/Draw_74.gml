@@ -1,25 +1,36 @@
 #region Draw Screen
 	//Disable Default Application Surface
-	application_surface_draw_enable(false)	
+	application_surface_draw_enable(false);
+	
+	//Screenmelt Alpha
+	//var appa = 0.15
+	
+	var appa = 1
+	if global.screenmelt = 1 && global.panic = 1 && global.panicbg
+		appa = lerp(1, 0.45, (global.wave / global.maxwave))
+	
 	//Copy App Surface to New Surface
 	if !surface_exists(d3application_surface)
 	{
-		d3application_surface = surface_create(960,540)
-		surface_copy(d3application_surface,0,0,application_surface)
+		d3application_surface = surface_create(960,540);
+		surface_copy(d3application_surface,0,0,application_surface);
 	}
 	else
-		surface_copy(d3application_surface,0,0,application_surface)
+	{
+		surface_copy(d3application_surface,0,0,application_surface);
+	}
 		
 	//Heat Effect
 	if global.visual_temperature = temperature.hot
 	{
 		scr_desert_shader()
 	}
-	
-	//Screenmelt Alpha
-	var appa = 1
-	if global.screenmelt = 1 && global.panic = 1 && global.panicbg
-		appa = lerp(1, 0.45, (global.wave / global.maxwave))
+	//Ghost Surface
+	if !surface_exists(final_application_surface)
+	{
+		final_application_surface = surface_create(960,540);
+	}
+
 	//Draw Thing
 	var shader = noone;
 	
@@ -32,18 +43,24 @@
 		shader = noone;
 		
 	//Draw Application Surface
+	surface_set_target(final_application_surface)
+	draw_surface_stretched_ext(d3application_surface, 0, 0, 960, 540, c_white, appa)
+	surface_reset_target()
+	
 	gpu_set_blendenable(false);
+	
 	if shader != noone
 	{
 		shader_set(shader);
 		var fade = shader_get_uniform(shader, "fade")
 		shader_set_uniform_f(fade, greyscalefade)
-		draw_surface_stretched_ext(d3application_surface, 0, 0, 960, 540, c_white, appa)
+		draw_surface_stretched_ext(final_application_surface, 0, 0, 960, 540, c_white, 1)
 		shader_reset();		
 	}
 	else
-		draw_surface_stretched_ext(d3application_surface, 0, 0, 960, 540, c_white, appa)
+		draw_surface_stretched_ext(final_application_surface, 0, 0, 960, 540, c_white, 1)
 	gpu_set_blendenable(true);
+	
 #endregion
 	/*
 	if !surface_exists(d3application_surface)

@@ -643,7 +643,7 @@ if (player.state != 55)
 					draw_sprite_part_ext(bubblefilled, -1, 0, bubbleHeight - (bubbleHeight * rankpercent), bubbleWidth, (bubbleHeight * rankpercent), 16, 16 + (bubbleHeight - (bubbleHeight * rankpercent)), 1, 1, c_white, 1);	
 				}
 				surface_reset_target()
-				draw_surface_ext(rankbubblesurface, 278 - surface_get_width(rankbubblesurface)/2 * bubblescale + 1, 64 - surface_get_height(rankbubblesurface)/2 * bubblescale + 1, 1 + bubblescale, 1 + bubblescale, 0, c_white, alpha);
+				draw_surface_ext(rankbubblesurface, 200 - surface_get_width(rankbubblesurface)/2 * bubblescale + 1, 5 - surface_get_height(rankbubblesurface)/2 * bubblescale + 1, 1 + bubblescale, 1 + bubblescale, 0, c_white, alpha);
 			}
 		}
 		else if global.timeattack = true

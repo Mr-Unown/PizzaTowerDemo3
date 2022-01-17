@@ -46,11 +46,12 @@ function scr_playerreset() {
 		alarm[0] = -1;
 	}
 	//Shield
-	with obj_shieldbackupindicator {
-	oldshield = 0;
-	visible = false;
-	show = 0;
-	_visible = 1;
+	with obj_shieldbackupindicator 
+	{
+		oldshield = 0;
+		visible = false;
+		show = 0;
+		_visible = 1;
 	}
 	global.style = 0;
 	global.stylethreshold = 0;
