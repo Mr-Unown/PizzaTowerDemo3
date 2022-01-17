@@ -127,9 +127,13 @@ function scr_player_freefall() {
 			playerid = other.id
 			image_xscale = other.xscale
 			if other.freefallsmash >= 10
+			{
 				sprite_index = spr_slamcloud
+			}
 			else
+			{
 				sprite_index = spr_landcloud
+			}
 		}	
 	    freefallstart = 0
 		combo = 0
