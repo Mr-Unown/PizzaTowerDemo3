@@ -14,6 +14,16 @@ maximumangle =  arccos( (room_width / camsqrt) - camarctan       )
 
 maxangle = clamp(maximumangle,0,3)*/
 
+//Pizzascore sprites
+var player = (obj_player1.spotlight = false ? obj_player2 : obj_player1)
+spr_pizzascore_1 = player.spr_pizzascore_1
+spr_pizzascore_2 = player.spr_pizzascore_2
+spr_pizzascore_3 = player.spr_pizzascore_3
+spr_pizzascore_4 = player.spr_pizzascore_4
+spr_pizzasprite = player.spr_pizzasprite
+spr_pizzascorepal = player.spr_pizzascorepal
+spr_heatpalette = player.spr_heatpalette
+spr_heatmeterfill = player.spr_heatmeterfill
 #region Rank Checker
 if global.timeattack = false
 {
@@ -42,17 +52,23 @@ else
 		global.currentrank = "D"
 }
 #endregion
-
+if oldranklol != global.currentrank
+{
+	oldranklol = global.currentrank;
+	bubblescale = 1.5;
+}
+bubblescale = approach(bubblescale, 0, 0.10);
 //Collided with Player
 if point_in_rectangle(obj_player.x,obj_player.y, _drawx - 80, _drawy - 85,_drawx + 80,_drawy + 85)
-collided = true
+	collided = true
 else if global.newhud = true && point_in_rectangle(obj_player.x,obj_player.y, _drawx - 100, _drawy - 1000,_drawx + 80,_drawy + 85)
-collided = true
+	collided = true
 else
-collided = false
+	collided = false
 //Alpha
 if global.newhud = false
 {
+	newhudyoffset = 0
 	if collided = true
 		alpha = 0.5
 	else
@@ -60,6 +76,7 @@ if global.newhud = false
 }
 else
 {
+	alpha = 1
 	if collided = true
 		newhudyoffset = approach(newhudyoffset,-600,16)
 	else
@@ -305,7 +322,7 @@ if target = player
 {
 	if (player.state == 91 || player.state == states.jetpack || player.state == 37)
 	{
-            var _targetcharge = (player.xscale * ((player.movespeed / 4) * 50))
+            var _targetcharge = (player.xscale * ((player.movespeed / 6) * 50)) //D3G: might need some tweaking
             var _tspeed = 2
             if ((_targetcharge > 0 && chargecamera < 0) || (_targetcharge < 0 && chargecamera > 0))
                 _tspeed = 8

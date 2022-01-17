@@ -180,7 +180,9 @@ else if (global.combotime <= 0)
 if (global.combotime <= 0 && global.combo != 0) && global.freezeframe = false && !instance_exists(obj_endlevelfade)
 {
 	scr_soundeffect(sfx_comboend);
-	#region Combo End Spawner
+	if global.snickchallenge == false
+	{
+		#region Combo End Spawner
 	endcombo = true
 	with comboend_id
 	{
@@ -195,14 +197,17 @@ if (global.combotime <= 0 && global.combo != 0) && global.freezeframe = false &&
 		image_alpha = 1;
 		visible = true;
 		activated = true;
-		alarm[0] = 2;
+		alarm[0] = 50;
 	}
 	#endregion
+	}
 	if global.coop == true
 	{
 		with obj_player2
 		{
-			#region Combo End Spawner
+			if global.snickchallenge == false
+			{
+				#region Combo End Spawner
 			endcombo = true
 			with comboend_id
 			{
@@ -217,9 +222,10 @@ if (global.combotime <= 0 && global.combo != 0) && global.freezeframe = false &&
 				image_alpha = 1;
 				visible = true;
 				activated = true;
-				alarm[0] = 2;
+				alarm[0] = 50;
 			}
 			#endregion
+			}
 		}
 	}
 	//Quips

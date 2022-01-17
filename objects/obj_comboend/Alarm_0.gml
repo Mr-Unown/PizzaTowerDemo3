@@ -7,7 +7,7 @@ if activated = true && storedscore > 0
 		storedscore = (storedscore - scorespd);
 	player.collectscore = player.collectscore + (initialscore - storedscore)
 	instance_create(player.x , player.y - 60, obj_collecteffect);	
-	scale = min(scale + 1,2.5)
+	scale = min(scale + 1,1.05)
 	
 }
 alarm[0] = 2;

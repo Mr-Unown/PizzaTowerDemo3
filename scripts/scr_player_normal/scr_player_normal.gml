@@ -280,7 +280,10 @@ function scr_player_normal() {
 	if (grounded && input_buffer_jump < 8 && (!key_down) && (!key_attack) && vsp > 0)
 	{
 	    scr_soundeffect(sfx_jump)
-	    sprite_index = spr_jump
+		if (global.minutes == 0 && global.seconds == 0)
+			sprite_index = spr_hurtjump
+		else
+			sprite_index = spr_jump
 	    if (shotgunAnim == 1)
 	        sprite_index = spr_shotgunjump
 	    with (instance_create(x, y, obj_highjumpcloud2))

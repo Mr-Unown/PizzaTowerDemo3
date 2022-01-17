@@ -78,13 +78,19 @@ function scr_player_mach1() {
 	    jumpstop = 0
 	if scr_solid(x + xscale,y)  && (!scr_slope_ext(x + sign(hsp), y) )
 	{
-		sprite_index = spr_player_splat
+		sprite_index = spr_splat
 		image_index = 0
 		grav = 0
 	    movespeed = 0
 		hsp = 0
 		vsp = 0
 	    state = states.bump
+		if character = "PZ"
+		with instance_create(x,y,obj_debris)
+		{
+		sprite_index = spr_PZscooter
+		image_xscale = other.xscale
+		}
 	}
 	//image_speed = 0.5
 	if ((!instance_exists(dashcloudid)) && grounded)

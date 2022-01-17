@@ -1,7 +1,7 @@
 if (global.panic == 1) || (global.snickchallenge == 1)
     sprite_index = spr_bgpillarjohnescape
 
-if obj_player.x > (x + 43) && obj_player.x < (x + 116) && global.panic != 1 && sprite_index != spr_bgpillarjohndisgruntled
+if obj_player.x > (x + 43) && obj_player.x < (x + 116) && global.panic != 1 && global.snickchallenge != 1 && sprite_index != spr_bgpillarjohndisgruntled
 {
 	sprite_index = spr_bgpillarjohndisgruntled
 	shaketime = 8

@@ -63,7 +63,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
         }
     }
 
-    if (string_letters(roomname) == "golf") || (string_letters(roomname) == "resto")
+    if (string_letters(roomname) == "minigolf") || (string_letters(roomname) == "resto")
     {
         if (!audio_is_playing(mu_golf))
         {
@@ -117,7 +117,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
         }
 		else
 		{
-            if (!audio_is_playing(mu_entrancePZ)) //Technically it's Creampuff's theme lol
+            if (!audio_is_playing(mu_entrancePZ)) //Technically it's Creampuff's theme lol//Not anymore its not
             {
                 scr_soundstopall()
                 scr_sound(mu_entrancePZ)
@@ -584,6 +584,39 @@ if (global.panic == 0 && global.snickchallenge == 0)
                     scr_soundstopall()
                     scr_sound(mu_freezer2)
                     pausedmusic = mu_freezer2
+                }
+            }
+        }
+    }
+	if (string_letters(roomname) == "forest")
+    {
+        for (i = 0; i < 20; i++)
+        {
+            if (roomname == ("forest_" + string(i)) && i <= 3)
+            {
+                if (!audio_is_playing(mu_forest1))
+                {
+                    scr_soundstopall()
+                    scr_sound(mu_forest1)
+                    pausedmusic = mu_forest1
+                }
+            }
+            else if ((roomname == ("forest_" + string(i)) && i = 4) /*|| room == freezer_11*/)
+            {
+                if (!audio_is_playing(mu_gustavo))
+                {
+                    scr_soundstopall()
+                    scr_sound(mu_gustavo)
+                    pausedmusic = mu_gustavo
+                }
+            }
+			else if ((roomname == ("forest_" + string(i)) && i >= 5) /*|| room == freezer_11*/)
+            {
+                if (!audio_is_playing(mu_forest2))
+                {
+                    scr_soundstopall()
+                    scr_sound(mu_forest2)
+                    pausedmusic = mu_forest2
                 }
             }
         }

@@ -302,11 +302,11 @@ if global.pitchshift = 1
 {
 	with (_player)
 	{
-		if (state == states.knightpep)
+		if (state == states.knightpep || state == states.frozen && tauntstoredstate = states.knightpep)
 		audio_sound_pitch(global.music, 0.9);
-		else if (state == states.tumble or state == states.knightpepslopes)
+		else if (state == states.tumble or state == states.knightpepslopes || tauntstoredstate == states.tumble or tauntstoredstate == states.knightpepslopes)
 		{
-			if sprite_index != spr_tumblestart 
+			if sprite_index != spr_tumblestart
 				audio_sound_pitch(global.music, pitchspd);
 			else 
 				audio_sound_pitch(global.music, 1.2);

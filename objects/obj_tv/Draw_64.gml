@@ -291,7 +291,16 @@ else
 	#endregion
 	break;
 }
+
 	//Golf Ball
 	if instance_exists(obj_pizzaball)
 	    draw_text(832, 300, string_hash_to_newline(((string(global.golfhit) + " ") + "STROKES")))
+
+	//Combo Points
+	var tr_player = focused_player()	
+	draw_set_font(global.smallnumber)
+	draw_set_halign(fa_center)
+	draw_set_color(c_white)	
+	if global.combo != 0 && global.combotime != 0
+	    draw_text(832, 190, string(tr_player.storedscore))		
 }
