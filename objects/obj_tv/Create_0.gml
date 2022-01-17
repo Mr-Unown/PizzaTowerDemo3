@@ -81,3 +81,4 @@ drawstatictimer = 0
 drawstaticchannel = 0
 combotime = 0
 signdropped = 0
+gustvspr = spr_tv_gustavohurt

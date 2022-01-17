@@ -16,7 +16,7 @@ stomped = 0
 shot = 0
 thrown = 0
 reset = 0
-hp = 1
+hp = 2
 hitboxcreate = 0
 grounded = 0
 idlespr = spr_ufolive
@@ -36,4 +36,5 @@ grabbedby = 0
 dropcoin = 0
 parry = 0
 bombreset = 100
-
+turntimer = 0
+spr_palette = spr_palette_ufolive

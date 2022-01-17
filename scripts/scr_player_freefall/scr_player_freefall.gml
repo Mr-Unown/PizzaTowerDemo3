@@ -75,6 +75,7 @@ function scr_player_freefall() {
 		{
 			playerid = other.id
 			image_xscale = other.xscale
+			sprite_index = spr_landcloud
 		}			
 		movespeed = clamp(abs(vsp),3,12)
 	    flash = 0
@@ -125,6 +126,10 @@ function scr_player_freefall() {
 		{
 			playerid = other.id
 			image_xscale = other.xscale
+			if other.freefallsmash >= 10
+				sprite_index = spr_slamcloud
+			else
+				sprite_index = spr_landcloud
 		}	
 	    freefallstart = 0
 		combo = 0

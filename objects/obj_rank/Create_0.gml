@@ -1,5 +1,5 @@
 image_speed = 0.5
-alarm[0] = 330
+alarm[0] = 330 //Time before sent back to hub
 depth = -8
 plusrankframes = 0;
 global.flushtextures = true

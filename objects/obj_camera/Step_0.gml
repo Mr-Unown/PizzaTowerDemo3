@@ -42,17 +42,23 @@ else
 		global.currentrank = "D"
 }
 #endregion
-
+if oldranklol != global.currentrank
+{
+	oldranklol = global.currentrank;
+	bubblescale = 1.5;
+}
+bubblescale = approach(bubblescale, 0, 0.10);
 //Collided with Player
 if point_in_rectangle(obj_player.x,obj_player.y, _drawx - 80, _drawy - 85,_drawx + 80,_drawy + 85)
-collided = true
+	collided = true
 else if global.newhud = true && point_in_rectangle(obj_player.x,obj_player.y, _drawx - 100, _drawy - 1000,_drawx + 80,_drawy + 85)
-collided = true
+	collided = true
 else
-collided = false
+	collided = false
 //Alpha
 if global.newhud = false
 {
+	newhudyoffset = 0
 	if collided = true
 		alpha = 0.5
 	else
@@ -60,6 +66,7 @@ if global.newhud = false
 }
 else
 {
+	alpha = 1
 	if collided = true
 		newhudyoffset = approach(newhudyoffset,-600,16)
 	else
@@ -305,11 +312,15 @@ if target = player
 {
 	if (player.state == 91 || player.state == states.jetpack || player.state == 37)
 	{
-		if (chargecamera > (player.xscale * 100))
-			chargecamera -= 2
-		if (chargecamera < (player.xscale * 100))
-			chargecamera += 2
-	}
+            var _targetcharge = (player.xscale * ((player.movespeed / 6) * 50)) //D3G: might need some tweaking
+            var _tspeed = 2
+            if ((_targetcharge > 0 && chargecamera < 0) || (_targetcharge < 0 && chargecamera > 0))
+                _tspeed = 8
+            if (chargecamera > _targetcharge)
+                chargecamera -= _tspeed
+            if (chargecamera < _targetcharge)
+                chargecamera += _tspeed
+    }
 	else
 	{
 	    if (chargecamera > 0)

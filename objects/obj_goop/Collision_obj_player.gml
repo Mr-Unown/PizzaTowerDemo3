@@ -5,7 +5,7 @@ if audio_is_playing(sfx_collecttopping)
 scr_soundeffect(sfx_collecttopping)
 with other.id
 {
-    collectscore = (collectscore + 10)
+    collectscore = (collectscore + (10 + (global.stylethreshold * 2)))
     if (character == "V") && vigihealth < 250
         vigihealth += 15
 }

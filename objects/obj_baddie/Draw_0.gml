@@ -13,11 +13,11 @@ else
     drawx = x
     drawy = y
 }
-draw_sprite_ext(sprite_index, image_index, drawx, drawy + (46* squashval), xscale, yscale, enemydraw_angle, image_blend, image_alpha)
+draw_sprite_ext(sprite_index, image_index, drawx, drawy + (46 * squashval), xscale, yscale, enemydraw_angle, image_blend, image_alpha)
 if flash
 {
     shader_set(shd_hit)
-    draw_sprite_ext(sprite_index, image_index, drawx, drawy+ (46* squashval) , xscale, yscale, enemydraw_angle, image_blend, image_alpha)
+    draw_sprite_ext(sprite_index, image_index, drawx, drawy + (46 * squashval) , xscale, yscale, enemydraw_angle, image_blend, image_alpha)
     shader_reset()
 }
 shader_reset()

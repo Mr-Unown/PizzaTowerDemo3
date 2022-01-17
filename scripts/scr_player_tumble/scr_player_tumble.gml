@@ -57,8 +57,8 @@ function scr_player_tumble() {
 	    sprite_index = spr_tumble
 		movespeed = 14
 	}
-	if (sprite_index == spr_player_sjumpcancel && floor(image_index) == (image_number - 1))
-	    image_speed = 0
+	if (sprite_index == spr_player_sjumpcancel /*&& floor(image_index) == (image_number - 1)*/)
+	    image_speed = .35
 	if (sprite_index == spr_player_sjumpcancelslide && movespeed >= 0)
 	    movespeed -= 0.15
 	if (sprite_index == spr_player_sjumpcancelslide && movespeed <= 0)
