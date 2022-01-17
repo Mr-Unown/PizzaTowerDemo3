@@ -154,7 +154,7 @@
     {"id":{"name":"bg_sewer1escape","path":"sprites/bg_sewer1escape/bg_sewer1escape.yy",},"order":134,},
     {"id":{"name":"bg_sewer2","path":"sprites/bg_sewer2/bg_sewer2.yy",},"order":135,},
     {"id":{"name":"bg_sewer2escape","path":"sprites/bg_sewer2escape/bg_sewer2escape.yy",},"order":136,},
-    {"id":{"name":"spr_rankbubble_d","path":"sprites/spr_rankbubble_d/spr_rankbubble_d.yy",},"order":18,},
+    {"id":{"name":"spr_rankbubble_d","path":"sprites/spr_rankbubble_d/spr_rankbubble_d.yy",},"order":6,},
     {"id":{"name":"bg_sewer3","path":"sprites/bg_sewer3/bg_sewer3.yy",},"order":137,},
     {"id":{"name":"bg_sewer3escape","path":"sprites/bg_sewer3escape/bg_sewer3escape.yy",},"order":138,},
     {"id":{"name":"bg_sewerfore","path":"sprites/bg_sewerfore/bg_sewerfore.yy",},"order":139,},
@@ -173,7 +173,7 @@
     {"id":{"name":"spr_gustavo_idleb","path":"sprites/spr_gustavo_idleb/spr_gustavo_idleb.yy",},"order":0,},
     {"id":{"name":"bg_titlecloud","path":"sprites/bg_titlecloud/bg_titlecloud.yy",},"order":150,},
     {"id":{"name":"bg_titlesky","path":"sprites/bg_titlesky/bg_titlesky.yy",},"order":151,},
-    {"id":{"name":"spr_rankbubble_afilled","path":"sprites/spr_rankbubble_afilled/spr_rankbubble_afilled.yy",},"order":23,},
+    {"id":{"name":"spr_rankbubble_afilled","path":"sprites/spr_rankbubble_afilled/spr_rankbubble_afilled.yy",},"order":1,},
     {"id":{"name":"spr_shroomcollectNEW","path":"sprites/spr_shroomcollectNEW/spr_shroomcollectNEW.yy",},"order":313,},
     {"id":{"name":"bg_tower","path":"sprites/bg_tower/bg_tower.yy",},"order":153,},
     {"id":{"name":"bg_tower2","path":"sprites/bg_tower2/bg_tower2.yy",},"order":154,},
@@ -230,7 +230,7 @@
     {"id":{"name":"spr_beartrap","path":"sprites/spr_beartrap/spr_beartrap.yy",},"order":9,},
     {"id":{"name":"spr_bgpillarjohn","path":"sprites/spr_bgpillarjohn/spr_bgpillarjohn.yy",},"order":3,},
     {"id":{"name":"bg_sanctumarchitecture1","path":"sprites/bg_sanctumarchitecture1/bg_sanctumarchitecture1.yy",},"order":117,},
-    {"id":{"name":"spr_rankbubble_sfilled","path":"sprites/spr_rankbubble_sfilled/spr_rankbubble_sfilled.yy",},"order":29,},
+    {"id":{"name":"spr_rankbubble_sfilled","path":"sprites/spr_rankbubble_sfilled/spr_rankbubble_sfilled.yy",},"order":9,},
     {"id":{"name":"spr_bgpillarjohnescape","path":"sprites/spr_bgpillarjohnescape/spr_bgpillarjohnescape.yy",},"order":4,},
     {"id":{"name":"spr_bigblockOLD","path":"sprites/spr_bigblockOLD/spr_bigblockOLD.yy",},"order":10,},
     {"id":{"name":"spr_respawnbigblock","path":"sprites/spr_respawnbigblock/spr_respawnbigblock.yy",},"order":264,},
@@ -1512,7 +1512,7 @@
     {"id":{"name":"spr_player_shootdiagonal","path":"sprites/spr_player_shootdiagonal/spr_player_shootdiagonal.yy",},"order":230,},
     {"id":{"name":"spr_player_shootslide","path":"sprites/spr_player_shootslide/spr_player_shootslide.yy",},"order":231,},
     {"id":{"name":"spr_theaterguy","path":"sprites/spr_theaterguy/spr_theaterguy.yy",},"order":97,},
-    {"id":{"name":"spr_rankbubble_b","path":"sprites/spr_rankbubble_b/spr_rankbubble_b.yy",},"order":20,},
+    {"id":{"name":"spr_rankbubble_b","path":"sprites/spr_rankbubble_b/spr_rankbubble_b.yy",},"order":2,},
     {"id":{"name":"spr_player_shootup","path":"sprites/spr_player_shootup/spr_player_shootup.yy",},"order":232,},
     {"id":{"name":"spr_tile_entrancedecorations3","path":"sprites/spr_tile_entrancedecorations3/spr_tile_entrancedecorations3.yy",},"order":61,},
     {"id":{"name":"spr_bigshroomcollect","path":"sprites/spr_bigshroomcollect/spr_bigshroomcollect.yy",},"order":321,},
@@ -1823,6 +1823,7 @@
     {"id":{"name":"spr_snick_stunned","path":"sprites/spr_snick_stunned/spr_snick_stunned.yy",},"order":43,},
     {"id":{"name":"spr_snick_superjump","path":"sprites/spr_snick_superjump/spr_snick_superjump.yy",},"order":44,},
     {"id":{"name":"spr_snick_superjumpland","path":"sprites/spr_snick_superjumpland/spr_snick_superjumpland.yy",},"order":45,},
+    {"id":{"name":"spr_rankbubble_bg","path":"sprites/spr_rankbubble_bg/spr_rankbubble_bg.yy",},"order":10,},
     {"id":{"name":"obj_gustavo","path":"objects/obj_gustavo/obj_gustavo.yy",},"order":52,},
     {"id":{"name":"spr_snick_superjumplight","path":"sprites/spr_snick_superjumplight/spr_snick_superjumplight.yy",},"order":46,},
     {"id":{"name":"spr_snick_superjumpprep","path":"sprites/spr_snick_superjumpprep/spr_snick_superjumpprep.yy",},"order":47,},
@@ -1903,7 +1904,7 @@
     {"id":{"name":"spr_taunteffect","path":"sprites/spr_taunteffect/spr_taunteffect.yy",},"order":117,},
     {"id":{"name":"spr_taxiidle","path":"sprites/spr_taxiidle/spr_taxiidle.yy",},"order":13,},
     {"id":{"name":"spr_taximove","path":"sprites/spr_taximove/spr_taximove.yy",},"order":14,},
-    {"id":{"name":"spr_rankbubble_s","path":"sprites/spr_rankbubble_s/spr_rankbubble_s.yy",},"order":24,},
+    {"id":{"name":"spr_rankbubble_s","path":"sprites/spr_rankbubble_s/spr_rankbubble_s.yy",},"order":8,},
     {"id":{"name":"spr_thunder","path":"sprites/spr_thunder/spr_thunder.yy",},"order":15,},
     {"id":{"name":"spr_tile_plains","path":"sprites/spr_tile_plains/spr_tile_plains.yy",},"order":16,},
     {"id":{"name":"spr_player_rageidle","path":"sprites/spr_player_rageidle/spr_player_rageidle.yy",},"order":340,},
@@ -2016,30 +2017,20 @@
     {"id":{"name":"spr_bigcheesecollect","path":"sprites/spr_bigcheesecollect/spr_bigcheesecollect.yy",},"order":320,},
     {"id":{"name":"spr_vstitle","path":"sprites/spr_vstitle/spr_vstitle.yy",},"order":33,},
     {"id":{"name":"spr_solid","path":"sprites/spr_solid/spr_solid.yy",},"order":160,},
-    {"id":{"name":"spr_washingmachine","path":"sprites/spr_washingmachine/spr_washingmachine.yy",},"order":38,},
-    {"id":{"name":"spr_washingmachinemount","path":"sprites/spr_washingmachinemount/spr_washingmachinemount.yy",},"order":39,},
-    {"id":{"name":"spr_water","path":"sprites/spr_water/spr_water.yy",},"order":40,},
-    {"id":{"name":"spr_water2","path":"sprites/spr_water2/spr_water2.yy",},"order":41,},
-    {"id":{"name":"spr_watercurrent","path":"sprites/spr_watercurrent/spr_watercurrent.yy",},"order":42,},
-    {"id":{"name":"spr_waterdraft","path":"sprites/spr_waterdraft/spr_waterdraft.yy",},"order":43,},
-    {"id":{"name":"spr_waterdrop","path":"sprites/spr_waterdrop/spr_waterdrop.yy",},"order":44,},
-    {"id":{"name":"spr_weaponmachine","path":"sprites/spr_weaponmachine/spr_weaponmachine.yy",},"order":45,},
-    {"id":{"name":"spr_wetfloor","path":"sprites/spr_wetfloor/spr_wetfloor.yy",},"order":46,},
-    {"id":{"name":"spr_wooddebris","path":"sprites/spr_wooddebris/spr_wooddebris.yy",},"order":47,},
     {"id":{"name":"spr_washingmachine","path":"sprites/spr_washingmachine/spr_washingmachine.yy",},"order":34,},
-    {"id":{"name":"spr_gustavo_fall","path":"sprites/spr_gustavo_fall/spr_gustavo_fall.yy",},"order":4,},
     {"id":{"name":"spr_washingmachinemount","path":"sprites/spr_washingmachinemount/spr_washingmachinemount.yy",},"order":35,},
-    {"id":{"name":"spr_player_rocketgrounded","path":"sprites/spr_player_rocketgrounded/spr_player_rocketgrounded.yy",},"order":339,},
     {"id":{"name":"spr_water","path":"sprites/spr_water/spr_water.yy",},"order":36,},
     {"id":{"name":"spr_water2","path":"sprites/spr_water2/spr_water2.yy",},"order":37,},
     {"id":{"name":"spr_watercurrent","path":"sprites/spr_watercurrent/spr_watercurrent.yy",},"order":38,},
-    {"id":{"name":"spr_ufogrounded_bullet","path":"sprites/spr_ufogrounded_bullet/spr_ufogrounded_bullet.yy",},"order":11,},
     {"id":{"name":"spr_waterdraft","path":"sprites/spr_waterdraft/spr_waterdraft.yy",},"order":39,},
     {"id":{"name":"obj_mushroom","path":"objects/obj_mushroom/obj_mushroom.yy",},"order":51,},
     {"id":{"name":"spr_waterdrop","path":"sprites/spr_waterdrop/spr_waterdrop.yy",},"order":40,},
     {"id":{"name":"spr_weaponmachine","path":"sprites/spr_weaponmachine/spr_weaponmachine.yy",},"order":41,},
     {"id":{"name":"spr_wetfloor","path":"sprites/spr_wetfloor/spr_wetfloor.yy",},"order":42,},
     {"id":{"name":"spr_wooddebris","path":"sprites/spr_wooddebris/spr_wooddebris.yy",},"order":43,},
+    {"id":{"name":"spr_gustavo_fall","path":"sprites/spr_gustavo_fall/spr_gustavo_fall.yy",},"order":4,},
+    {"id":{"name":"spr_player_rocketgrounded","path":"sprites/spr_player_rocketgrounded/spr_player_rocketgrounded.yy",},"order":339,},
+    {"id":{"name":"spr_ufogrounded_bullet","path":"sprites/spr_ufogrounded_bullet/spr_ufogrounded_bullet.yy",},"order":11,},
     {"id":{"name":"spr_snickbigblock","path":"sprites/spr_snickbigblock/spr_snickbigblock.yy",},"order":171,},
     {"id":{"name":"spr_snickbigblockescape","path":"sprites/spr_snickbigblockescape/spr_snickbigblockescape.yy",},"order":172,},
     {"id":{"name":"bg_desert4","path":"sprites/bg_desert4/bg_desert4.yy",},"order":3,},
@@ -2106,7 +2097,7 @@
     {"id":{"name":"tile_keysign","path":"sprites/tile_keysign/tile_keysign.yy",},"order":33,},
     {"id":{"name":"tile_lamp","path":"sprites/tile_lamp/tile_lamp.yy",},"order":35,},
     {"id":{"name":"obj_rocket","path":"objects/obj_rocket/obj_rocket.yy",},"order":47,},
-    {"id":{"name":"spr_rankbubble_a","path":"sprites/spr_rankbubble_a/spr_rankbubble_a.yy",},"order":22,},
+    {"id":{"name":"spr_rankbubble_a","path":"sprites/spr_rankbubble_a/spr_rankbubble_a.yy",},"order":0,},
     {"id":{"name":"tile_medieval","path":"sprites/tile_medieval/tile_medieval.yy",},"order":36,},
     {"id":{"name":"tile_medieval2","path":"sprites/tile_medieval2/tile_medieval2.yy",},"order":37,},
     {"id":{"name":"tile_medieval3","path":"sprites/tile_medieval3/tile_medieval3.yy",},"order":38,},
@@ -2284,7 +2275,7 @@
     {"id":{"name":"spr_ufolive_stunned","path":"sprites/spr_ufolive_stunned/spr_ufolive_stunned.yy",},"order":3,},
     {"id":{"name":"spr_ufolive_teleportal","path":"sprites/spr_ufolive_teleportal/spr_ufolive_teleportal.yy",},"order":4,},
     {"id":{"name":"spr_ufolive_teleportalend","path":"sprites/spr_ufolive_teleportalend/spr_ufolive_teleportalend.yy",},"order":5,},
-    {"id":{"name":"spr_rankbubble_dfilled","path":"sprites/spr_rankbubble_dfilled/spr_rankbubble_dfilled.yy",},"order":16,},
+    {"id":{"name":"spr_rankbubble_dfilled","path":"sprites/spr_rankbubble_dfilled/spr_rankbubble_dfilled.yy",},"order":7,},
     {"id":{"name":"space_11","path":"rooms/space_11/space_11.yy",},"order":2,},
     {"id":{"name":"spr_ufolive","path":"sprites/spr_ufolive/spr_ufolive.yy",},"order":0,},
     {"id":{"name":"spr_ufolive_scared","path":"sprites/spr_ufolive_scared/spr_ufolive_scared.yy",},"order":2,},
@@ -2431,10 +2422,11 @@
     {"id":{"name":"spr_playerPZ_haulingland","path":"sprites/spr_playerPZ_haulingland/spr_playerPZ_haulingland.yy",},"order":92,},
     {"id":{"name":"spr_playerPZ_freefallland","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"order":93,},
     {"id":{"name":"obj_objectteleportal","path":"objects/obj_objectteleportal/obj_objectteleportal.yy",},"order":8,},
-    {"id":{"name":"spr_playerPZ_parry1","path":"sprites/spr_playerPZ_parry1/spr_playerPZ_parry1.yy",},"order":94,},
-    {"id":{"name":"spr_playerPZ_parry2","path":"sprites/spr_playerPZ_parry2/spr_playerPZ_parry2.yy",},"order":95,},
-    {"id":{"name":"spr_playerPZ_parry3","path":"sprites/spr_playerPZ_parry3/spr_playerPZ_parry3.yy",},"order":96,},
-    {"id":{"name":"spr_playerPZ_angrymove","path":"sprites/spr_playerPZ_angrymove/spr_playerPZ_angrymove.yy",},"order":97,},
+    {"id":{"name":"blank_room322","path":"rooms/blank_room322/blank_room322.yy",},"order":8,},
+    {"id":{"name":"spr_playerPZ_parry1","path":"sprites/spr_playerPZ_parry1/spr_playerPZ_parry1.yy",},"order":95,},
+    {"id":{"name":"spr_playerPZ_parry2","path":"sprites/spr_playerPZ_parry2/spr_playerPZ_parry2.yy",},"order":96,},
+    {"id":{"name":"spr_playerPZ_parry3","path":"sprites/spr_playerPZ_parry3/spr_playerPZ_parry3.yy",},"order":97,},
+    {"id":{"name":"spr_playerPZ_angrymove","path":"sprites/spr_playerPZ_angrymove/spr_playerPZ_angrymove.yy",},"order":98,},
     {"id":{"name":"roomtracer","path":"sprites/roomtracer/roomtracer.yy",},"order":223,},
     {"id":{"name":"spr_playerPZ_angryidle","path":"sprites/spr_playerPZ_angryidle/spr_playerPZ_angryidle.yy",},"order":98,},
     {"id":{"name":"spr_playerPZ_dashpad","path":"sprites/spr_playerPZ_dashpad/spr_playerPZ_dashpad.yy",},"order":99,},
@@ -2792,7 +2784,7 @@
     {"id":{"name":"sfx_punch","path":"sounds/sfx_punch/sfx_punch.yy",},"order":34,},
     {"id":{"name":"sfx_tumble1","path":"sounds/sfx_tumble1/sfx_tumble1.yy",},"order":35,},
     {"id":{"name":"sfx_tumble2","path":"sounds/sfx_tumble2/sfx_tumble2.yy",},"order":36,},
-    {"id":{"name":"spr_rankbubble_bfilled","path":"sprites/spr_rankbubble_bfilled/spr_rankbubble_bfilled.yy",},"order":21,},
+    {"id":{"name":"spr_rankbubble_bfilled","path":"sprites/spr_rankbubble_bfilled/spr_rankbubble_bfilled.yy",},"order":3,},
     {"id":{"name":"sfx_tumble3","path":"sounds/sfx_tumble3/sfx_tumble3.yy",},"order":37,},
     {"id":{"name":"sfx_tumble4","path":"sounds/sfx_tumble4/sfx_tumble4.yy",},"order":38,},
     {"id":{"name":"sfx_shotgunblast","path":"sounds/sfx_shotgunblast/sfx_shotgunblast.yy",},"order":39,},
@@ -3865,7 +3857,7 @@
     {"id":{"name":"ancient_4","path":"rooms/ancient_4/ancient_4.yy",},"order":3,},
     {"id":{"name":"spr_sanctum_decor7","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"order":1,},
     {"id":{"name":"ancient_5","path":"rooms/ancient_5/ancient_5.yy",},"order":4,},
-    {"id":{"name":"spr_rankbubble_c","path":"sprites/spr_rankbubble_c/spr_rankbubble_c.yy",},"order":17,},
+    {"id":{"name":"spr_rankbubble_c","path":"sprites/spr_rankbubble_c/spr_rankbubble_c.yy",},"order":4,},
     {"id":{"name":"ancient_6","path":"rooms/ancient_6/ancient_6.yy",},"order":5,},
     {"id":{"name":"ancient_11","path":"rooms/ancient_11/ancient_11.yy",},"order":6,},
     {"id":{"name":"freezer_secret1","path":"rooms/freezer_secret1/freezer_secret1.yy",},"order":3,},
@@ -4333,10 +4325,7 @@
     {"roomId":{"name":"freezer_6","path":"rooms/freezer_6/freezer_6.yy",},},
     {"roomId":{"name":"room_test6","path":"rooms/room_test6/room_test6.yy",},},
     {"roomId":{"name":"freezer_7","path":"rooms/freezer_7/freezer_7.yy",},},
-<<<<<<< Updated upstream
-    {"roomId":{"name":"oldfreezer_1","path":"rooms/oldfreezer_1/oldfreezer_1.yy",},},
-=======
-<<<<<<< HEAD
+    {"roomId":{"name":"blank_room322","path":"rooms/blank_room322/blank_room322.yy",},},
     {"roomId":{"name":"forest_1","path":"rooms/forest_1/forest_1.yy",},},
     {"roomId":{"name":"forest_2","path":"rooms/forest_2/forest_2.yy",},},
     {"roomId":{"name":"forest_7","path":"rooms/forest_7/forest_7.yy",},},
@@ -4344,10 +4333,7 @@
     {"roomId":{"name":"forest_5","path":"rooms/forest_5/forest_5.yy",},},
     {"roomId":{"name":"forest_3","path":"rooms/forest_3/forest_3.yy",},},
     {"roomId":{"name":"forest_4","path":"rooms/forest_4/forest_4.yy",},},
-=======
     {"roomId":{"name":"oldfreezer_1","path":"rooms/oldfreezer_1/oldfreezer_1.yy",},},
->>>>>>> 832981a75bded5d5bdd72f0b997842d0c8a6f090
->>>>>>> Stashed changes
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -4455,15 +4441,7 @@
     {"folderPath":"folders/Sequences.yy","order":1,"resourceVersion":"1.0","name":"Sequences","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Animation Curves.yy","order":2,"resourceVersion":"1.0","name":"Animation Curves","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Tile Sets/Sanctum.yy","order":18,"resourceVersion":"1.0","name":"Sanctum","tags":[],"resourceType":"GMFolder",},
-<<<<<<< Updated upstream
     {"folderPath":"folders/Rooms/Levels/World Castle.yy","order":6,"resourceVersion":"1.0","name":"World Castle","tags":[],"resourceType":"GMFolder",},
-=======
-<<<<<<< HEAD
-    {"folderPath":"folders/Rooms/Levels/World Castle.yy","order":8,"resourceVersion":"1.0","name":"World Castle","tags":[],"resourceType":"GMFolder",},
-=======
-    {"folderPath":"folders/Rooms/Levels/World Castle.yy","order":6,"resourceVersion":"1.0","name":"World Castle","tags":[],"resourceType":"GMFolder",},
->>>>>>> 832981a75bded5d5bdd72f0b997842d0c8a6f090
->>>>>>> Stashed changes
     {"folderPath":"folders/Objects/Level Structure/Level Collision/Tile Collisions.yy","order":14,"resourceVersion":"1.0","name":"Tile Collisions","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Extensions/GMLive.yy","order":0,"resourceVersion":"1.0","name":"GMLive","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Extensions/GMLive/Internal.yy","order":0,"resourceVersion":"1.0","name":"Internal","tags":[],"resourceType":"GMFolder",},
@@ -4578,28 +4556,12 @@
     {"folderPath":"folders/Rooms/Levels/Weird West/Wasteyard.yy","order":2,"resourceVersion":"1.0","name":"Wasteyard","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Characters/Misc/Nerd.yy","order":7,"resourceVersion":"1.0","name":"Nerd","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Characters/Misc/Meatball.yy","order":8,"resourceVersion":"1.0","name":"Meatball","tags":[],"resourceType":"GMFolder",},
-<<<<<<< Updated upstream
     {"folderPath":"folders/Rooms/Levels/World West.yy","order":8,"resourceVersion":"1.0","name":"World West","tags":[],"resourceType":"GMFolder",},
-=======
-<<<<<<< HEAD
-    {"folderPath":"folders/Rooms/Levels/World West.yy","order":11,"resourceVersion":"1.0","name":"World West","tags":[],"resourceType":"GMFolder",},
-=======
-    {"folderPath":"folders/Rooms/Levels/World West.yy","order":8,"resourceVersion":"1.0","name":"World West","tags":[],"resourceType":"GMFolder",},
->>>>>>> 832981a75bded5d5bdd72f0b997842d0c8a6f090
->>>>>>> Stashed changes
     {"folderPath":"folders/Rooms/Levels/World Vacation/Beach.yy","order":0,"resourceVersion":"1.0","name":"Beach","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Characters/Playable Characters Sprites/Snick.yy","order":6,"resourceVersion":"1.0","name":"Snick","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Hud & Menus/Old Hud/Faces/Snick.yy","order":3,"resourceVersion":"1.0","name":"Snick","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Characters/Baddies/Spit Cheese.yy","order":33,"resourceVersion":"1.0","name":"Spit Cheese","tags":[],"resourceType":"GMFolder",},
-<<<<<<< Updated upstream
     {"folderPath":"folders/Rooms/Levels/World Vacation.yy","order":7,"resourceVersion":"1.0","name":"World Vacation","tags":[],"resourceType":"GMFolder",},
-=======
-<<<<<<< HEAD
-    {"folderPath":"folders/Rooms/Levels/World Vacation.yy","order":10,"resourceVersion":"1.0","name":"World Vacation","tags":[],"resourceType":"GMFolder",},
-=======
-    {"folderPath":"folders/Rooms/Levels/World Vacation.yy","order":7,"resourceVersion":"1.0","name":"World Vacation","tags":[],"resourceType":"GMFolder",},
->>>>>>> 832981a75bded5d5bdd72f0b997842d0c8a6f090
->>>>>>> Stashed changes
     {"folderPath":"folders/Rooms/Levels/World West/Farm.yy","order":1,"resourceVersion":"1.0","name":"Farm","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Tile Sets/Farm.yy","order":21,"resourceVersion":"1.0","name":"Farm","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Characters/Baddies/Trash.yy","order":34,"resourceVersion":"1.0","name":"Trash","tags":[],"resourceType":"GMFolder",},
@@ -4636,11 +4598,6 @@
     {"folderPath":"folders/Sprites/Characters/Playable Characters Sprites/Peppino/bomb.yy","order":343,"resourceVersion":"1.0","name":"bomb","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Characters/Playable Characters Sprites/Peppino/boxxed.yy","order":344,"resourceVersion":"1.0","name":"boxxed","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Characters/Playable Characters Sprites/Peppino/knight.yy","order":345,"resourceVersion":"1.0","name":"knight","tags":[],"resourceType":"GMFolder",},
-<<<<<<< Updated upstream
-    {"folderPath":"folders/Rooms/Levels/World Legacy/Freezer.yy","order":1,"resourceVersion":"1.0","name":"Freezer","tags":[],"resourceType":"GMFolder",},
-    {"folderPath":"folders/Freezer.yy","order":25,"resourceVersion":"1.0","name":"Freezer","tags":[],"resourceType":"GMFolder",},
-=======
-<<<<<<< HEAD
     {"folderPath":"folders/Rooms/Levels/World Vacation/Forest.yy","order":4,"resourceVersion":"1.0","name":"Forest","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Backgrounds/Forest.yy","order":185,"resourceVersion":"1.0","name":"Forest","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Characters/Misc/Gustavo.yy","order":9,"resourceVersion":"1.0","name":"Gustavo","tags":[],"resourceType":"GMFolder",},
@@ -4648,11 +4605,9 @@
     {"folderPath":"folders/Objects/Level Structure/Interactables/Gimmicks/Forest'.yy","order":3,"resourceVersion":"1.0","name":"Forest'","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Characters/Misc/Gnomes.yy","order":11,"resourceVersion":"1.0","name":"Gnomes","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Tile Sets/Forest.yy","order":25,"resourceVersion":"1.0","name":"Forest","tags":[],"resourceType":"GMFolder",},
-=======
     {"folderPath":"folders/Rooms/Levels/World Legacy/Freezer.yy","order":1,"resourceVersion":"1.0","name":"Freezer","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Freezer.yy","order":25,"resourceVersion":"1.0","name":"Freezer","tags":[],"resourceType":"GMFolder",},
->>>>>>> 832981a75bded5d5bdd72f0b997842d0c8a6f090
->>>>>>> Stashed changes
+    {"folderPath":"folders/Sprites/Hud & Menus/Misc/Rank Bubble.yy","order":9,"resourceVersion":"1.0","name":"Rank Bubble","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},

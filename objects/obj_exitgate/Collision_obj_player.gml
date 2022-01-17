@@ -110,33 +110,33 @@ with (obj_player)
 			case "p":
 			case "s+":
 			case "s":
-        if character == "PZ"
-        scr_soundstop(mu_ranksPZ)
-        else
+			if character == "PZ"
+				scr_soundstop(mu_ranksPZ)
+			else
 				scr_soundstop(mu_ranks)
 			break;
 			case "a":
-        if character == "PZ"
-        scr_soundstop(mu_rankaPZ)
-        else
+			 if character == "PZ"
+				scr_soundstop(mu_rankaPZ)
+			else
 				scr_soundstop(mu_ranka)
 			break;
 			case "b":
-			if character == "PZ"
-			scr_soundstop(mu_rankbPZ)
-			else
+			 if character == "PZ"
+				scr_soundstop(mu_rankbPZ)
+			else			
 				scr_soundstop(mu_rankb)
 			break;
 			case "c":
-			if character == "PZ"
-			scr_soundstop(mu_rankcPZ)
-			else
+			 if character == "PZ"
+				scr_soundstop(mu_rankcPZ)
+			else			
 				scr_soundstop(mu_rankc)
 			break;
 			case "d":
-			if character == "PZ"
-			scr_soundstop(mu_rankdPZ)
-			else
+			 if character == "PZ"
+				scr_soundstop(mu_rankdPZ)
+			else			
 				scr_soundstop(mu_rankd)
 			break;
 			

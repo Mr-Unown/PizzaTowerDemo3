@@ -11,6 +11,6 @@ if activated = true
 		}
 	}
 }
-scale = approach(scale,1,0.5)
+scale = approach(scale,1, 0.005);
 //Visible
 visible = activated

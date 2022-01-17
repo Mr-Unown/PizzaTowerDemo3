@@ -27,7 +27,8 @@ if (sprite_index == spr_pizzaportalend)
     }
     image_speed = 0
     visible = false
-    ds_list_clear(global.baddieroom)
+    ds_list_clear(global.baddieroom);
+	ds_list_clear(global.gooproom);
 }
 
 
