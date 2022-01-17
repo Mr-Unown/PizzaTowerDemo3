@@ -5,7 +5,7 @@
 	//Screenmelt Alpha
 	//var appa = 0.15
 	
-	var appa = 1
+	var appa = 1;
 	if global.screenmelt = 1 && global.panic = 1 && global.panicbg
 		appa = lerp(1, 0.45, (global.wave / global.maxwave))
 	

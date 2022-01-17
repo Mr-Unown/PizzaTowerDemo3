@@ -16,7 +16,7 @@ if timer <= 0
 {
 	if ds_queue_size(_meesage_queue) >= 1
 	{
-		_message = ds_queue_dequeue(messaged);
+		_message = ds_queue_dequeue(_meesage_queue);
 		showtext = true;
 		timer = alarm2timer/2
 	}

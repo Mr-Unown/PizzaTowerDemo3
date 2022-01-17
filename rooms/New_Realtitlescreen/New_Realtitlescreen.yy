@@ -25,6 +25,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_optionsdoor","path":"objects/obj_optionsdoor/obj_optionsdoor.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":106.0,"y":400.0,"resourceVersion":"1.0","name":"inst_58FFD29","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_newmainmenuselect","path":"objects/obj_newmainmenuselect/obj_newmainmenuselect.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-96.0,"y":-64.0,"resourceVersion":"1.0","name":"inst_34CEF3AA","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_fadeout","path":"objects/obj_fadeout/obj_fadeout.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-96.0,"y":-32.0,"resourceVersion":"1.0","name":"inst_4F5B0F4C","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_platform","path":"objects/obj_platform/obj_platform.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":12.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":true,"ignore":false,"inheritItemSettings":false,"x":288.0,"y":416.0,"resourceVersion":"1.0","name":"for_Fall_Guy_1968","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances_1","tags":[],"resourceType":"GMRInstanceLayer",},
     {"assets":[
         {"spriteId":{"name":"spr_manualicon","path":"sprites/spr_manualicon/spr_manualicon.yy",},"headPosition":-1.0,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-16.0,"y":-16.0,"resourceVersion":"1.0","name":"graphic_2E71EB32","tags":[],"resourceType":"GMRSpriteGraphic",},
@@ -49,6 +50,7 @@
     {"name":"inst_58FFD29","path":"rooms/New_Realtitlescreen/New_Realtitlescreen.yy",},
     {"name":"inst_34CEF3AA","path":"rooms/New_Realtitlescreen/New_Realtitlescreen.yy",},
     {"name":"inst_4F5B0F4C","path":"rooms/New_Realtitlescreen/New_Realtitlescreen.yy",},
+    {"name":"for_Fall_Guy_1968","path":"rooms/New_Realtitlescreen/New_Realtitlescreen.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
