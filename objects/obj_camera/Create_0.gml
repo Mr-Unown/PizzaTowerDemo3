@@ -111,6 +111,7 @@ debugfreezeframe = 0
 debugmaxfreezeframe = 0
 global.freezeframecounter = 0
 target = 3
+spr_heatpalette = spr_heatmeter_palette
 //Backdrop
 backdrop = spr_backdrop_pinball
 //temperature

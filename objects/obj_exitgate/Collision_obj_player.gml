@@ -122,12 +122,21 @@ with (obj_player)
 				scr_soundstop(mu_ranka)
 			break;
 			case "b":
+			if character == "PZ"
+			scr_soundstop(mu_rankbPZ)
+			else
 				scr_soundstop(mu_rankb)
 			break;
 			case "c":
+			if character == "PZ"
+			scr_soundstop(mu_rankcPZ)
+			else
 				scr_soundstop(mu_rankc)
 			break;
 			case "d":
+			if character == "PZ"
+			scr_soundstop(mu_rankdPZ)
+			else
 				scr_soundstop(mu_rankd)
 			break;
 			

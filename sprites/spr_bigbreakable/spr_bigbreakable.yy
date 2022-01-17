@@ -56,7 +56,7 @@
     "spriteId": {"name":"spr_bigbreakable","path":"sprites/spr_bigbreakable/spr_bigbreakable.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 1.0,
+    "playbackSpeed": 0.8,
     "playbackSpeedType": 1,
     "autoRecord": true,
     "volume": 1.0,

@@ -1,4 +1,3 @@
-if (live_call()) return live_result;
 var angle,ymovespeed,vdirection;
 if (!instance_exists(baddieID))
     instance_destroy()

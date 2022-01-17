@@ -43,7 +43,10 @@ function scr_player_jump() {
 	if (grounded && input_buffer_jump < 8 && (!key_down) && (!key_attack) && vsp > 0 && (!(sprite_index == spr_facestomp || sprite_index == spr_freefall)))
 	{
 	    scr_soundeffect(sfx_jump)
-	    sprite_index = spr_jump
+		if (global.minutes == 0 && global.seconds == 0) && character = "P"
+			sprite_index = spr_player_hurtjump
+		else
+			sprite_index = spr_jump
 	    if (shotgunAnim == 1)
 	        sprite_index = spr_shotgunjump
 	    instance_create(x, y, obj_highjumpcloud2)
@@ -136,6 +139,8 @@ function scr_player_jump() {
 	            sprite_index = spr_fall
 			if (sprite_index = spr_grabcancelair)
 				sprite_index = spr_fall
+			if (sprite_index = spr_player_hurtjump)
+				sprite_index = spr_player_hurtfall
 	    }
 	}
 	if (stompAnim == 1)

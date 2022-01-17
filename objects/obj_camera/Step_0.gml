@@ -21,6 +21,9 @@ spr_pizzascore_2 = player.spr_pizzascore_2
 spr_pizzascore_3 = player.spr_pizzascore_3
 spr_pizzascore_4 = player.spr_pizzascore_4
 spr_pizzasprite = player.spr_pizzasprite
+spr_pizzascorepal = player.spr_pizzascorepal
+spr_heatpalette = player.spr_heatpalette
+spr_heatmeterfill = player.spr_heatmeterfill
 #region Rank Checker
 if global.timeattack = false
 {

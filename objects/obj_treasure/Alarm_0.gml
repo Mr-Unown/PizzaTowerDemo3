@@ -69,18 +69,33 @@
 			case "p":
 			case "s+":
 			case "s":
+				if obj_player.character == "PZ"
+        scr_soundstop(mu_ranksPZ)
+        else
 				scr_soundstop(mu_ranks)
 			break;
 			case "a":
+        if obj_player.character == "PZ"
+        scr_soundstop(mu_rankaPZ)
+        else
 				scr_soundstop(mu_ranka)
 			break;
 			case "b":
+			if obj_player.character == "PZ"
+			scr_soundstop(mu_rankbPZ)
+			else
 				scr_soundstop(mu_rankb)
 			break;
 			case "c":
+			if obj_player.character == "PZ"
+			scr_soundstop(mu_rankcPZ)
+			else
 				scr_soundstop(mu_rankc)
 			break;
 			case "d":
+			if obj_player.character == "PZ"
+			scr_soundstop(mu_rankdPZ)
+			else
 				scr_soundstop(mu_rankd)
 			break;
 			

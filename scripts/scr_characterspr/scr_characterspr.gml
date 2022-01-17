@@ -27,6 +27,9 @@ function scr_characterspr(player_character = character) {
 		spr_pizzascore_3 = spr_pizzascore_olive
 		spr_pizzascore_4 = spr_pizzascore_shroom
 		spr_pizzasprite = spr_pizzascore
+		spr_pizzascorepal = spr_font_collect_palette
+		spr_heatpalette = spr_heatmeter_palette
+		spr_heatmeterfill = spr_heatmeter_fill
 		#endregion
 		spr_idle = spr_player_idle
 		spr_rageidle = spr_player_rageidle
@@ -35,6 +38,7 @@ function scr_characterspr(player_character = character) {
 		spr_crawl = spr_player_crawl
 		spr_hurt = spr_player_hurt
 		spr_jump = spr_player_jump
+		spr_hurtjump = spr_player_hurtjump
 		spr_jump2 = spr_player_jump2
 		spr_fall = spr_player_fall
 		spr_fall2 = spr_player_fall2
@@ -57,6 +61,7 @@ function scr_characterspr(player_character = character) {
 		spr_crouchslipfall = spr_player_crouchslipfall
 		spr_mach1 = spr_player_mach1
 		spr_mach = spr_player_mach
+		spr_splat = spr_player_splat
 		spr_secondjump1 = spr_player_secondjump1
 		spr_secondjump2 = spr_player_secondjump2
 		spr_machslidestart = spr_player_machslidestart
@@ -254,6 +259,11 @@ function scr_characterspr(player_character = character) {
 		spr_rockethitwall = spr_player_rockethitwall
 		spr_rocketup = spr_player_rocketup
 		spr_rocketupstart = spr_player_rocketupstart
+		//Cutscenes
+		spr_givepizza = spr_player_givepizza
+		spr_gnomecutscene1 = spr_player_idle
+		spr_gnomecutscene2 = spr_player_idle
+		spr_gnomepizza = spr_player_gnomepizza
 	    paletteselect = 1
 		}
 	#endregion
@@ -287,8 +297,11 @@ function scr_characterspr(player_character = character) {
 		spr_pizzascore_3 = spr_pizzascore_jellybean
 		spr_pizzascore_4 = spr_pizzascore_liquorice
 		spr_pizzasprite = spr_pizzascoreN
+		spr_pizzascorepal = spr_font_collect_paletteN
+		spr_heatmeterfill = spr_heatmeter_fillN
 		#endregion
 	    spr_idle = spr_playerN_idle
+		spr_rageidle = spr_playerN_rageidle
 	    spr_move = spr_playerN_move
 	    spr_crawl = spr_playerN_crawl
 	    spr_hurt = spr_playerN_hurt
@@ -377,6 +390,8 @@ function scr_characterspr(player_character = character) {
 		spr_superjump = spr_playerN_Sjump
 		spr_machfreefall = spr_playerN_fall
 		spr_mach3hit = spr_playerN_machpunch1
+		spr_slipbanana1 = spr_playerN_slipbanana1
+		spr_slipbanana2 = spr_playerN_slipbanana2
 		spr_knightpepwalk = spr_playerN_knightmove
 		spr_knightpepjump = spr_playerN_knightjump
 		spr_knightpepfall = spr_playerN_knightfall
@@ -685,6 +700,8 @@ function scr_characterspr(player_character = character) {
 		spr_panic = spr_snick_panic
 		spr_3hpwalk = spr_snick_angrywalk
 		spr_3hpidle = spr_snick_angryidle
+		spr_shoryumineken = spr_player_shoryumineken
+		spr_shoryukenend = spr_player_shoryukenend
 		//Boxxed Transfo
 	    spr_boxxedair = spr_boxxednoise_air;
 	    spr_boxxedwalk = spr_boxxednoise_walk;
@@ -1493,6 +1510,16 @@ function scr_characterspr(player_character = character) {
 		spr_playertv_firemouth = spr_tv_idlePZ;
 		spr_playertv_scaredjump = spr_tv_idlePZ;		
 		#endregion		
+		#region Pizzascore Sprites
+		spr_pizzascore_1 = spr_pizzascore_marshmallow
+		spr_pizzascore_2 = spr_pizzascore_candycorn
+		spr_pizzascore_3 = spr_pizzascore_jellybean
+		spr_pizzascore_4 = spr_pizzascore_liquorice
+		spr_pizzasprite = spr_pizzascorePZ
+		spr_pizzascorepal = spr_font_collect_paletteN
+		spr_heatpalette = spr_heatmeter_palettePZ
+		spr_heatmeterfill = spr_heatmeter_fillPZ
+		#endregion
 		spr_idle = spr_playerPZ_idle
 		spr_move = spr_playerPZ_move
 		spr_crawl = spr_playerPZ_crawl
@@ -1520,6 +1547,7 @@ function scr_characterspr(player_character = character) {
 		spr_crouchslipfall = spr_playerPZ_crouchslipfall
 		spr_mach1 = spr_playerPZ_mach1 
 		spr_mach = spr_playerPZ_mach 
+		spr_splat = spr_playerPZ_splat
 		spr_secondjump1 = spr_playerPZ_secondjump1
 		spr_secondjump2 = spr_playerPZ_secondjump2
 		spr_machslidestart = spr_playerPZ_machslidestart
@@ -1556,7 +1584,7 @@ function scr_characterspr(player_character = character) {
 	    spr_tackle = spr_player_tackle //Missing/Ununsed
 	    spr_airdash1 = spr_playerPZ_airdash1
 	    spr_airdash2 = spr_playerPZ_airdash2
-	    spr_keyget = spr_player_keyget //Missing
+	    spr_keyget = spr_playerPZ_keyget
 	    spr_idle1 = spr_playerPZ_idle //Missing
 	    spr_idle2 = spr_playerPZ_idle //Missing
 	    spr_idle3 = spr_playerPZ_idle //Missing
@@ -1666,6 +1694,8 @@ function scr_characterspr(player_character = character) {
 		spr_golfidle = spr_playerN_grab
 	    spr_palette = spr_pizzellepalette
 	    spr_tomatojump = spr_playerPZ_jump //Missing
+		spr_shoryumineken = spr_playerPZ_shoryumineken
+		spr_shoryukenend = spr_playerPZ_shoryukenend
 		//Boxxed Transfo
 	    spr_boxxedair = spr_playerPZ_boxxed_air;
 	    spr_boxxedwalk = spr_playerPZ_boxxed_walk;
@@ -1701,7 +1731,7 @@ function scr_characterspr(player_character = character) {
 		//Dashpad
 		spr_mach3dashpad = spr_playerPZ_dashpad	
 		//Grinding
-		spr_grinding = spr_playerN_grinding //Missing
+		spr_grinding = spr_playerPZ_grinding
 		//Supertaunt //Missing
 		spr_supertaunt1 = spr_playerN_supertaunt1 
 		spr_supertaunt2 = spr_playerN_supertaunt2
@@ -1715,6 +1745,11 @@ function scr_characterspr(player_character = character) {
 		spr_rockethitwall = spr_player_rockethitwall
 		spr_rocketup = spr_player_rocketup
 		spr_rocketupstart = spr_player_rocketupstart		
+		//Cutscenes
+		spr_givepizza = spr_player_givepizza
+		spr_gnomecutscene1 = spr_player_idle
+		spr_gnomecutscene2 = spr_player_idle
+		spr_gnomepizza = spr_playerPZ_gnomepizza
 	    paletteselect = 1
 		}
 	#endregion
@@ -1760,7 +1795,7 @@ function scr_characterspr(player_character = character) {
 		spr_Ladder = spr_playerPZ_ladder
 		spr_laddermove = spr_playerPZ_laddermove
 		spr_ladderdown = spr_playerPZ_ladderdown
-		spr_keyget = spr_player_keyget //Missing
+		spr_keyget = spr_playerPZ_keyget
 		spr_crouchslip = spr_playerPZ_crouchslip
 		spr_crouchslipjump = spr_playerPZ_crouchslipfall //Missing
 		spr_crouchslipfall = spr_playerPZ_crouchslipfall

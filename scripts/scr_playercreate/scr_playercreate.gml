@@ -151,8 +151,12 @@ function scr_playercreate() {
 	
 	//rocket stuff tehres literally one variab
 	rocketup = 0
-
-
+	//Pizza delivery
+	global.pizzasdelivered = 0
+	global.showgnomelist = 0
+    global.failcutscene = 0
+    global.pizzadelivery = 0
+    global.hp = 8
 #region Followers
 	if instance_exists(obj_pizzakinshroom) 
 		instance_destroy(obj_pizzakinshroom)
