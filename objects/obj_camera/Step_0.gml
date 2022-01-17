@@ -14,6 +14,16 @@ maximumangle =  arccos( (room_width / camsqrt) - camarctan       )
 
 maxangle = clamp(maximumangle,0,3)*/
 
+//Pizzascore sprites
+var player = (obj_player1.spotlight = false ? obj_player2 : obj_player1)
+spr_pizzascore_1 = player.spr_pizzascore_1
+spr_pizzascore_2 = player.spr_pizzascore_2
+spr_pizzascore_3 = player.spr_pizzascore_3
+spr_pizzascore_4 = player.spr_pizzascore_4
+spr_pizzasprite = player.spr_pizzasprite
+spr_pizzascorepal = player.spr_pizzascorepal
+spr_heatpalette = player.spr_heatpalette
+spr_heatmeterfill = player.spr_heatmeterfill
 #region Rank Checker
 if global.timeattack = false
 {

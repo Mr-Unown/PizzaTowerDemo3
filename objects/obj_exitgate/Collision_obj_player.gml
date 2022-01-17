@@ -104,6 +104,7 @@ with (obj_player)
 				global.rank = "d"
 			#endregion
 		}
+//Lol
 		switch global.rank
 		{
 			case "p":

@@ -51,6 +51,8 @@ function scr_playercreate() {
 	global.comboended = false;
 	//Global Time Events
 	global.timeevent = 0 //1 = Xmas 2 = April 3 = Halloween
+	//Pistol Animation
+	global.pistolshotanim = 0
 	//Bumbo want coin
 	pizzacoin = 0;
 	pizzacoinindicatorid = noone;
@@ -149,8 +151,12 @@ function scr_playercreate() {
 	
 	//rocket stuff tehres literally one variab
 	rocketup = 0
-
-
+	//Pizza delivery
+	global.pizzasdelivered = 0
+	global.showgnomelist = 0
+    global.failcutscene = 0
+    global.pizzadelivery = 0
+    global.hp = 8
 #region Followers
 	if instance_exists(obj_pizzakinshroom) 
 		instance_destroy(obj_pizzakinshroom)

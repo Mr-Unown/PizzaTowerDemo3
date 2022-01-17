@@ -1,13 +1,13 @@
 {
   "spriteId": {
-    "name": "spr_bigbreakable",
-    "path": "sprites/spr_bigbreakable/spr_bigbreakable.yy",
+    "name": "spr_bigbreakableOLD",
+    "path": "sprites/spr_bigbreakableOLD/spr_bigbreakableOLD.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": {
-    "name": "spr_bigbreakable",
-    "path": "sprites/spr_bigbreakable/spr_bigbreakable.yy",
+    "name": "spr_bigbreakableOLD",
+    "path": "sprites/spr_bigbreakableOLD/spr_bigbreakableOLD.yy",
   },
   "persistent": false,
   "parentObjectId": {
