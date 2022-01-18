@@ -17,8 +17,8 @@
   "width": 960,
   "height": 540,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Unused",
+    "path": "texturegroups/Unused",
   },
   "swatchColours": null,
   "gridX": 0,
@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Freezer",
-    "path": "folders/Freezer.yy",
+    "path": "folders/ZReference Rooms Sprites/Freezer.yy",
   },
   "resourceVersion": "1.0",
   "name": "REFfreezer_11",
