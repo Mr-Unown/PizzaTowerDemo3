@@ -193,7 +193,7 @@ if (global.combotime <= 0 && global.combo != 0) && global.freezeframe = false &&
 		var combo_strength = round(storedscore / 1100);
 		var combo_spr = clamp(combo_strength,0,combo_image_number - 1);
 		endspr = combo_spr;
-		scale = 0.5;
+		scale = 0.675;
 		image_alpha = 1;
 		visible = true;
 		activated = true;
@@ -218,7 +218,7 @@ if (global.combotime <= 0 && global.combo != 0) && global.freezeframe = false &&
 				var combo_strength = round(storedscore / 1100);
 				var combo_spr = clamp(combo_strength,0,combo_image_number - 1);
 				endspr = combo_spr;
-				scale = 0.5;
+				scale = 0.675;
 				image_alpha = 1;
 				visible = true;
 				activated = true;
