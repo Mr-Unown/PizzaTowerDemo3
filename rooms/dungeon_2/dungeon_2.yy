@@ -163,6 +163,18 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_collect","path":"objects/obj_collect/obj_collect.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":304.0,"y":2528.0,"resourceVersion":"1.0","name":"inst_6AD9DBC4","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_escapecollect","path":"objects/obj_escapecollect/obj_escapecollect.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":544.0,"y":288.0,"resourceVersion":"1.0","name":"inst_31D5B9D5","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_escapecollect","path":"objects/obj_escapecollect/obj_escapecollect.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":512.0,"y":288.0,"resourceVersion":"1.0","name":"inst_4AB5A0B0","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"panic_escape","path":"objects/group_all/group_all.yy",},"objectId":{"name":"group_all","path":"objects/group_all/group_all.yy",},"value":"True","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"obj_pepgoblin","path":"objects/obj_pepgoblin/obj_pepgoblin.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":736.0,"y":2450.0,"resourceVersion":"1.0","name":"inst_1D6144A","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"panic_escape","path":"objects/group_all/group_all.yy",},"objectId":{"name":"group_all","path":"objects/group_all/group_all.yy",},"value":"True","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"obj_pepgoblin","path":"objects/obj_pepgoblin/obj_pepgoblin.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":640.0,"y":2450.0,"resourceVersion":"1.0","name":"inst_409A3C1A","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"panic_escape","path":"objects/group_all/group_all.yy",},"objectId":{"name":"group_all","path":"objects/group_all/group_all.yy",},"value":"True","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"obj_fencer","path":"objects/obj_fencer/obj_fencer.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":608.0,"y":402.0,"resourceVersion":"1.0","name":"inst_4E7992D1","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"panic_escape","path":"objects/group_all/group_all.yy",},"objectId":{"name":"group_all","path":"objects/group_all/group_all.yy",},"value":"True","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"obj_fencer","path":"objects/obj_fencer/obj_fencer.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1120.0,"y":498.0,"resourceVersion":"1.0","name":"inst_273AD360","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances_1","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"tileset_dungeondecoration1","path":"tilesets/tileset_dungeondecoration1/tileset_dungeondecoration1.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":44,"SerialiseHeight":82,"TileSerialiseData":[
 2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,
@@ -573,6 +585,10 @@
     {"name":"inst_6AD9DBC4","path":"rooms/dungeon_2/dungeon_2.yy",},
     {"name":"inst_31D5B9D5","path":"rooms/dungeon_2/dungeon_2.yy",},
     {"name":"inst_4AB5A0B0","path":"rooms/dungeon_2/dungeon_2.yy",},
+    {"name":"inst_1D6144A","path":"rooms/dungeon_2/dungeon_2.yy",},
+    {"name":"inst_409A3C1A","path":"rooms/dungeon_2/dungeon_2.yy",},
+    {"name":"inst_4E7992D1","path":"rooms/dungeon_2/dungeon_2.yy",},
+    {"name":"inst_273AD360","path":"rooms/dungeon_2/dungeon_2.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
