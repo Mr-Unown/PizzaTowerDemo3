@@ -1,4 +1,4 @@
-if (global.pizzadelivery && ds_list_find_index(global.saveroom, id) == -1)
+if (global.pizzadelivery && /*ds_list_find_index(global.saveroom, id) == -1)*/ instance_exists(obj_gnomecustomerblock))
 {
     other.vsp = 10
     var xx = (x + (customer_x * image_xscale))
@@ -16,7 +16,7 @@ if (global.pizzadelivery && ds_list_find_index(global.saveroom, id) == -1)
         {
             var door_xscale = (-sign((door.image_xscale * 16)))
             depth = (other.depth - 1)
-            scene_info = [[cutscene_customer_start, player], [cutscene_set_sprite, player, spr_player_knock, 0.35, _xscale], [cutscene_waitfor_sprite, player], [cutscene_set_sprite, player, spr_player_knock, 0.35, _xscale], [cutscene_waitfor_sprite, player], [cutscene_move_player, player, (door.x + (door.player_standx * (-door_xscale))), 6, 16], [cutscene_set_sprite, player, spr_player_idle, 0.35, door_xscale], [cutscene_wait, 30], [cutscene_image_index, door, 1], [cutscene_customer_create, xx, yy, other.spr_idle, other.spr_happy, (-door_xscale)], [cutscene_wait, 5], [cutscene_set_sprite, player, spr_player_givepizza, 0.35, door_xscale], [cutscene_wait, 45], [cutscene_set_sprite, player, spr_player_throw, 0.35, door_xscale],  [cutscene_customer_end, player, door.gnome_id]]
+            scene_info = [[cutscene_customer_check, door.gnome_id, player, door],[cutscene_customer_start, player], [cutscene_set_sprite, player, spr_player_knock, 0.35, _xscale], [cutscene_waitfor_sprite, player], [cutscene_set_sprite, player, spr_player_knock, 0.35, _xscale], [cutscene_waitfor_sprite, player], [cutscene_move_player, player, (door.x + (door.player_standx * (-door_xscale))), 6, 16], [cutscene_set_sprite, player, player.spr_idle, 0.35, door_xscale], [cutscene_wait, 30], [cutscene_image_index, door, 1], [cutscene_customer_create, xx, yy, other.spr_idle, other.spr_happy, (-door_xscale)], [cutscene_wait, 5], [cutscene_set_sprite, player, spr_player_givepizza, 0.35, door_xscale], [cutscene_wait, 45], [cutscene_set_sprite, player, player.spr_bombpepthrow, 0.35, door_xscale],  [cutscene_customer_end, player, door.gnome_id]]
         }
     }
 }

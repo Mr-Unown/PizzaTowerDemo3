@@ -80,7 +80,7 @@ function scr_player_knightpep() {
 	    freefallstart = 0
 	    momemtum = 0
 	    scr_soundeffect(sfx_groundpound)
-		//gamepad_set_vibration(1, 1, 1, 0.9)
+		GamepadSetVibration((object_index == obj_player1 ? 0 : 1), 1, 1, 0.9)
 		with instance_create(x, y, obj_landcloud)
 		{
 			playerid = other.id

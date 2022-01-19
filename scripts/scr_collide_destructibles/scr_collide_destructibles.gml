@@ -10,6 +10,7 @@ function scr_collide_destructibles() {
 				{
 					initialhsp = other.hsp
 					initialvsp = other.vsp
+					GamepadSetVibration(0, 0.8, 0.8, 0.5)
 					event_user(0)
 				}
 	            if (state == 70)

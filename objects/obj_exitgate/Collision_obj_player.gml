@@ -5,6 +5,7 @@ if (image_index == 1 && global.panic == 0 && global.snickchallenge == 0)
         if (state == 61 && floor(image_index) == (image_number - 2))
         {
             scr_soundeffect(sfx_groundpound)
+			GamepadSetVibration(0, 1, 1, 0.9)
             with (obj_player1)
             {
                 sprite_index = spr_Timesup

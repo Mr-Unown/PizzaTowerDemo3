@@ -1,3 +1,4 @@
+stickpressed = 0 //Variable obj_startgate.stickpressed(102238, -2147483648) not set before reading it idk
 bgalpha = 1
 bgalpha2 = 1
 bgalpha3 = 1

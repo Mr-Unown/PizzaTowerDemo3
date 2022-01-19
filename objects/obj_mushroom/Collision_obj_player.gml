@@ -4,9 +4,10 @@ if (other.cutscene == 0 /*&& other.state != (84 << 0) && other.state != (95 << 0
     if other.state == states.jump || other.state == states.normal
         other.sprite_index = other.spr_machfreefall
     image_index = 0
-    other.vsp = mushroombouncevsp
-	if mushroombouncevsp >= -20
-	mushroombouncevsp -= 1
+	if other.vsp > 0
+    other.vsp = -other.vsp - .5
+	else
+	other.vsp = other.vsp - .5
     other.jumpstop = 1
 	if other.sprite_index != other.spr_machfreefall
 	mushroombouncevsp = -14

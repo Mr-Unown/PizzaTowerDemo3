@@ -23,11 +23,11 @@ var finish = 0
 with (player)
 {
     var depth_obj = other.id
-    if (sprite_index == spr_player_throw)
+    if (sprite_index == spr_bombpepthrow)
     {
         if (floor(image_index) == 1 && (!instance_exists(obj_pizzacustomer)))
         {
-            global.pizzadelivery = 0
+            //global.pizzadelivery = 0 //Makes it so you have to go back to gustavo to deliver the next pizza
             with (instance_create(x, y, obj_pizzacustomer))
             {
                 depth = depth_obj.depth

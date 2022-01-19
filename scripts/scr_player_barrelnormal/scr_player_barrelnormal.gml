@@ -20,6 +20,8 @@ function scr_player_barrelnormal() {
     }
     if (grounded && vsp > 0)
         jumpstop = 0
+	if (input_buffer_jump < 8 && grounded && hsp != 0)
+	    vsp = -9
     if (dir != xscale && (!key_attack))
     {
         dir = xscale
@@ -53,7 +55,7 @@ function scr_player_barrelnormal() {
 	}
 	else
 		sprite_index = spr_player_barrelidle
-	if (sprite_index == spr_player_barrelslipnslide && floor(image_index) == (image_number - 1))
+	if (sprite_index == spr_player_barrelslipnslide && floor(image_index) == (image_number - 1)) || (place_meeting(x,y, obj_slope) && key_down2)
 	{
 		state = states.barrelroll
 		movespeed = 11

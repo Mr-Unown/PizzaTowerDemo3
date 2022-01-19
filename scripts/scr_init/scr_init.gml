@@ -39,7 +39,7 @@ global.divestyle = ini_read_real("Option", "divestyle", 0);
 global.attackstyle = /*ini_read_real("Option", "attackstyle", 0);*/ 0
 global.destroyablecollect = ini_read_real("Option", "destroyablecollect", 0);
 global.ratmode = ini_read_real("Option", "ratmode", false);
-global.combostyle = 1 //Oh this is the the funny new combostuff
+global.combostyle = 0 //Oh this is the the funny new combostuff
 global.backdrop = 0
 //Audio
 global.mastervolume = ini_read_real("Option", "mastervolume", 1)
