@@ -32,6 +32,7 @@ function scr_enemy_shake() {
 			sprite_index = spr_bigpoofclouds	
 			image_angle = choose(0,90,180,270)	
 		}			
+		GamepadSetVibration(0, .3, .3, .3)
 	    if (blowdirection == 3) //Up Punch
 	    {
 	        alarm[1] = 2
@@ -115,7 +116,6 @@ function scr_enemy_shake() {
 			stunned = 100
 			hittinged = true
 			global.style += 1
-			GamepadSetVibration(0, .2, .2, .2)
 			with instance_create(x,y,obj_balloonpop)
 				sprite_index = spr_parryeffect	
 			with instance_create(x,y,obj_balloonpop)

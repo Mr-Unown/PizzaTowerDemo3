@@ -19,13 +19,12 @@ with (obj_player)
                 GamepadSetVibration(0, 1, 1, 0.85)
                 break
             case states.firemouth:
-                GamepadSetVibration(0, 0.8, 0.8, 0.85)
+                GamepadSetVibration(0, 0.1, 0.1, 0.1)
                 break
             case states.hurt:
                 GamepadSetVibration(0, 0.1, 0.1, 0.1)
                 break
             case states.bombpep:
-                GamepadSetVibration(0, 0.8, 0.8, 0.6)
                 if (sprite_index == spr_bombpepend)
                     GamepadSetVibration(1, 1, 1, 0.9)
                 break
@@ -61,7 +60,7 @@ with (obj_player)
                 GamepadSetVibration(0, 0.2, 0.2, 0.9)
                 break
             case states.grab:
-				if (sprite_index != spr_haulingstart)
+				if (sprite_index = spr_haulingstart)
                 GamepadSetVibration(0, 0.2, 0.2, 0.8)
                 break
             default:
@@ -75,8 +74,8 @@ with (obj_player)
 for (var p = 0; p < array_length(vibration); p++)
 {
     _dvc = player_input_device[p]
-    //vibration[p][0] *= vibration[p][2]
-    //vibration[p][1] *= vibration[p][2]
+    vibration[p][0] *= vibration[p][2]
+    vibration[p][1] *= vibration[p][2]
     if (vibration[p][0] < 0)
         vibration[p][0] = 0
     if (vibration[p][1] < 0)

@@ -35,7 +35,6 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
 				{
 					other.baddieID.hp -= 99
 					other.baddieID.instakilled = 1
-					GamepadSetVibration(0, 0.8, 0.8, 0.3)
 				}
 				other.baddieID.invtime = 25
                 if (state != 73) 

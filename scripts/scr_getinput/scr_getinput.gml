@@ -137,7 +137,7 @@ function scr_getinput() {
         stickpressed = 1
     else
         stickpressed = 0
-    if (object_index == obj_player1 && state == (states.Sjumpprep))
+   /* if (object_index == obj_player1 && state == (states.Sjumpprep))
     {
         var haxis = gamepad_axis_value(_dvc, gp_axislh)
         var vaxis = gamepad_axis_value(_dvc, gp_axislv)
@@ -150,5 +150,6 @@ function scr_getinput() {
                 key_up = 1
         }
     }
+	*/
     return;
 }
