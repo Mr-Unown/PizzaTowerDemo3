@@ -18,6 +18,10 @@ function camera_shake(shake,shake_acc)
 	    shake_mag_acc = (shake_acc / room_speed)
 	}
 }
+
+//PARALLAX
+
+
 /* To Do
 function surface_set_shader(surface,shader_index,flag)
 {

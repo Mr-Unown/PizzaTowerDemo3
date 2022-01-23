@@ -3172,7 +3172,7 @@
     {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},"order":13,},
     {"id":{"name":"bg_beachbg3para1","path":"sprites/bg_beachbg3para1/bg_beachbg3para1.yy",},"order":178,},
     {"id":{"name":"obj_stylebar","path":"objects/obj_stylebar/obj_stylebar.yy",},"order":14,},
-    {"id":{"name":"obj_parrallax","path":"objects/obj_parrallax/obj_parrallax.yy",},"order":15,},
+    {"id":{"name":"obj_parallax","path":"objects/obj_parallax/obj_parallax.yy",},"order":15,},
     {"id":{"name":"obj_pizzacoinindicator","path":"objects/obj_pizzacoinindicator/obj_pizzacoinindicator.yy",},"order":16,},
     {"id":{"name":"sanctum_secret6","path":"rooms/sanctum_secret6/sanctum_secret6.yy",},"order":19,},
     {"id":{"name":"obj_shieldbackupindicator","path":"objects/obj_shieldbackupindicator/obj_shieldbackupindicator.yy",},"order":17,},

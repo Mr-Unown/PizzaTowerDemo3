@@ -539,6 +539,81 @@ function meta_toggle_pitchshift()
 }
 #endregion	
 
+#region Attack Style lol
+function sh_toggle_attackstyle(args) 
+{
+	var arg1 = args[1]	
+	switch arg1
+	{
+		case "true": 
+		case "1":
+		arg1 = true 
+		break;
+		case "false": 
+		case "0":
+		arg1 = false 
+		break;
+		default: 
+		arg1 = !global.attackstyle
+		break;		
+	}	
+	global.attackstyle = arg1
+	ini_open("saveData.ini")
+	ini_write_real("Option", "attackstyle", arg1);
+	ini_close()
+}
+function meta_toggle_attackstyle() 
+{
+	return {
+		description: "toggles attack style",
+		arguments: ["<bool>"],
+		suggestions: [
+			["true","false"]
+		],
+		argumentDescriptions: [
+			"toggles grabbing and shoulderbash"
+		]
+	}
+}
+#endregion	
+
+#region Dive Style
+function sh_toggle_escapecollect(args) 
+{
+	var arg1 = args[1]	
+	switch arg1
+	{
+		case "true": 
+		case "1":
+		arg1 = true 
+		break;
+		case "false": 
+		case "0":
+		arg1 = false 
+		break;
+		default: 
+		arg1 = !global.escapecollect
+		break;		
+	}	
+	global.escapecollect = arg1
+	ini_open("saveData.ini")
+	ini_write_real("Option", "escapecollect", arg1);
+	ini_close()
+}
+function meta_toggle_escapecollect() 
+{
+	return {
+		description: "toggles escape collect style",
+		arguments: ["<bool>"],
+		suggestions: [
+			["true","false"]
+		],
+		argumentDescriptions: [
+			"toggles escape collectable style"
+		]
+	}
+}
+#endregion	
 
 if DEBUG 
 {
