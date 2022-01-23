@@ -241,6 +241,13 @@ function scr_characterspr(player_character = character) {
 		spr_rockethitwall = spr_player_rockethitwall
 		spr_rocketup = spr_player_rocketup
 		spr_rocketupstart = spr_player_rocketupstart
+		//Cheese Ball
+		spr_pepcheeseball = spr_player_cheeseball
+		//Cutscenes
+		spr_givepizza = spr_player_givepizza
+		spr_gnomecutscene1 = spr_player_idle
+		spr_gnomecutscene2 = spr_player_idle
+		spr_gnomepizza = spr_player_gnomepizza
 	    paletteselect = 1
 		}
 	#endregion	
@@ -504,6 +511,8 @@ function scr_characterspr(player_character = character) {
 		spr_rockethitwall = spr_player_rockethitwall
 		spr_rocketup = spr_player_rocketup
 		spr_rocketupstart = spr_player_rocketupstart
+		//Cheese Ball
+		spr_pepcheeseball = spr_player_cheeseball
 		//Cutscenes
 		spr_givepizza = spr_player_givepizza
 		spr_gnomecutscene1 = spr_player_idle
@@ -1747,7 +1756,7 @@ function scr_characterspr(player_character = character) {
 		#region TV Sprites
 		spr_playertv_bomb = spr_tv_idlePZ;
 		spr_playertv_fireass = spr_tv_idlePZ;
-		spr_playertv_knight = spr_tv_idlePZ;
+		spr_playertv_knight = spr_tv_knightPZ;
 		spr_playertv_tumble = spr_tv_idlePZ;
 		spr_playertv_victory = spr_tv_idlePZ;
 		spr_playertv_boxxed = spr_tv_idlePZ;
@@ -1995,7 +2004,9 @@ function scr_characterspr(player_character = character) {
 		spr_rocketstart = spr_player_rocketstart
 		spr_rockethitwall = spr_player_rockethitwall
 		spr_rocketup = spr_player_rocketup
-		spr_rocketupstart = spr_player_rocketupstart		
+		spr_rocketupstart = spr_player_rocketupstart	
+		//Cheese Ball
+		spr_pepcheeseball = spr_playerPZ_cheeseball
 		//Cutscenes
 		spr_givepizza = spr_player_givepizza
 		spr_gnomecutscene1 = spr_player_idle

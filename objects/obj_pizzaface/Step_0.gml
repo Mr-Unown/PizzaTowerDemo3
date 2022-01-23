@@ -116,7 +116,10 @@ if relax = false && global.freezeframe = false && room != rank_room && !instance
 			//Original Auto Parry
 			with (playerid)
 			{
+				if character != "PZ"
 				scr_soundeffect(sfx_parry)
+				else
+				scr_soundeffect(sfx_PZparry)
 				state = 114
 				sprite_index = choose(spr_parry1, spr_parry2, spr_parry3)
 				image_index = 0

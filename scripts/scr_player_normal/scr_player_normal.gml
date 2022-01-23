@@ -647,6 +647,11 @@ function scr_player_normal() {
 	        state = 51
 	        sprite_index = spr_playerV_revolverstart
 	    }
+		if (character == "PZ")
+	    {
+	        state = 51
+	        sprite_index = spr_playerPZ_genesis
+	    }
 	}
 
 	// dougies bolt and bomb

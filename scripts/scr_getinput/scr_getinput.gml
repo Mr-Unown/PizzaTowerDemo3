@@ -1,6 +1,7 @@
 function scr_getinput() {
 	// Original / Demo 3
-	/*gamepad_set_axis_deadzone(0, 0.4)
+	/*
+	gamepad_set_axis_deadzone(0, 0.4)
 	if global.shellactivate = true
 	{
 		#region Anti-Crash
@@ -111,7 +112,33 @@ function scr_getinput() {
 	//april build
 	if (instance_exists(obj_debugcontroller) && obj_debugcontroller.active) || global.shellactivate = true
         return;
-    var _dvc = obj_inputAssigner.player_input_device[0]
+		if global.shellactivate = true
+	{
+		#region Anti-Crash
+	key_up = false
+	key_up2 = false
+	key_right = false
+	key_right2 = false
+	key_left = false
+	key_left2 = false
+	key_down = false
+	key_down2 = false
+	key_jump = false
+	key_jump2 = false
+	key_slap = false
+	key_slap2 = false
+	key_taunt = false
+	key_taunt2 = false
+	key_attack = false
+	key_attack2 = false
+	key_shoot = false
+	key_shoot2 = false
+	key_start = false
+	key_escape = false
+		#endregion
+		return;
+	}
+	var _dvc = obj_inputAssigner.player_input_device[0]
     gamepad_set_axis_deadzone(_dvc, 0.4)
     key_up = (keyboard_check(global.key_up) || gamepad_button_check(_dvc, global.key_upC) || gamepad_axis_value(_dvc, gp_axislv) < 0)
     key_up2 = (keyboard_check_pressed(global.key_up) || gamepad_button_check_pressed(_dvc, global.key_upC) || (gamepad_axis_value(_dvc, gp_axislv) < -0.5 && stickpressed == 0))
@@ -130,14 +157,15 @@ function scr_getinput() {
     key_attack = (keyboard_check(global.key_attack) || gamepad_button_check(_dvc, global.key_attackC) || gamepad_button_check(_dvc, gp_shoulderrb))
     key_attack2 = (keyboard_check_pressed(global.key_attack) || gamepad_button_check_pressed(_dvc, global.key_attackC) || gamepad_button_check_pressed(_dvc, gp_shoulderrb))
     key_shoot = (keyboard_check(global.key_shoot) || gamepad_button_check(_dvc, global.key_shootC))
-    key_shoot2 = (keyboard_check_pressed(global.key_shoot) || gamepad_button_check_pressed(_dvc, global.key_shootC))
+    key_shoot2 = (keyboard_check_pressed(global.key_shoot) || gamepad_button_check_pressed(_dvc, global.key_shootC) || gamepad_button_check_pressed(_dvc, gp_shoulderl))
     key_start = (keyboard_check_pressed(global.key_start) || gamepad_button_check_pressed(_dvc, global.key_startC))
     key_escape = (keyboard_check_pressed(vk_escape) || gamepad_button_check(_dvc, gp_select))
     if (gamepad_axis_value(_dvc, gp_axislh) > 0.5 || gamepad_axis_value(_dvc, gp_axislh) < -0.5 || gamepad_axis_value(_dvc, gp_axislv) > 0.5 || gamepad_axis_value(_dvc, gp_axislv) < -0.5)
         stickpressed = 1
     else
         stickpressed = 0
-   /* if (object_index == obj_player1 && state == (states.Sjumpprep))
+    ///The hell is this
+	/*if (object_index == obj_player1 && state == (states.Sjumpprep))
     {
         var haxis = gamepad_axis_value(_dvc, gp_axislh)
         var vaxis = gamepad_axis_value(_dvc, gp_axislv)

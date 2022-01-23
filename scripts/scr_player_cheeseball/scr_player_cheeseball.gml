@@ -79,7 +79,7 @@ function scr_player_cheeseball() {
 	    flash = 1
 	    state = 72
 	}
-	sprite_index = spr_player_cheeseball
+	sprite_index = spr_pepcheeseball
 	if key_jump
 	    input_buffer_jump = 0
 	if (input_buffer_jump < 8 && grounded)

@@ -66,7 +66,6 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                 global.combotime = 60
 				global.pausecombotime = true
 				obj_tv.alarm[1] = 75
-				GamepadSetVibration(0, 0.8, 0.8, 0.5)
 				if other.baddieID.instakilled = 1
 				with (instance_create((other.x + random_range(-16, 16)), (other.y + random_range(-16, 16)), obj_balloonpop))
 				{

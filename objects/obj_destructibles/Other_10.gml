@@ -1,2 +1,2 @@
-GamepadSetVibration(0, 0.2, 0.2, 0.3)
+GamepadSetVibration(0, 0.1, 0.1, 0.1)
 instance_destroy();
