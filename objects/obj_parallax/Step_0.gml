@@ -18,7 +18,7 @@ for (var i = 0; i < array_length(layers); ++i)
 			var _speedmodifier = (global.freezeframe ? 4 : 1);
 			var x_pos = layer_xoffset + layer_xshift;
 			var y_pos = layer_yoffset + layer_yshift;
-			var parallax_value = default_function(layer_id)//script_execute(layer_parallax_value,layer_id);
+			var parallax_value = (other._cam_y * (0.25 * layer_get_depth(layer_id) / 500)) //default_function(layer_id)//script_execute(layer_parallax_value,layer_id);
 			layer_xshift += layer_xspeed /_speedmodifier;
 			layer_yshift += layer_yspeed /_speedmodifier;
 			

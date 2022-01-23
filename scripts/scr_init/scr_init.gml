@@ -39,9 +39,9 @@ global.escapecollect = ini_read_real("Option", "escapecollect", 0);
 global.groundpoundstyle = ini_read_real("Option", "groundpoundstyle", 0);
 global.divestyle = false; //This Toggle sucks. Removing it
 global.attackstyle = ini_read_real("Option", "attackstyle", 0);
-global.destroyablecollect = false; //Nope
+global.destroyablecollect = false; //move into a separate object styled like the new collectable blocks
 global.ratmode = ini_read_real("Option", "ratmode", false);
-global.combostyle = false; //Oh this is the the funny new combostuff
+global.combostyle = false; //Oh this is the the funny new combostuff hud?
 global.backdrop = 0
 //Audio
 global.mastervolume = ini_read_real("Option", "mastervolume", 1)
