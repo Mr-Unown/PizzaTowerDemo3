@@ -44,10 +44,11 @@
 		
 	//Draw Application Surface
 	surface_set_target(final_application_surface)
+	gpu_set_blendenable(false);
 	draw_surface_stretched_ext(d3application_surface, 0, 0, 960, 540, c_white, appa)
+	gpu_set_blendenable(true);
 	surface_reset_target()
 	
-	gpu_set_blendenable(false);
 	
 	if shader != noone
 	{
@@ -59,7 +60,7 @@
 	}
 	else
 		draw_surface_stretched_ext(final_application_surface, 0, 0, 960, 540, c_white, 1)
-	gpu_set_blendenable(true);
+	
 	
 #endregion
 	/*

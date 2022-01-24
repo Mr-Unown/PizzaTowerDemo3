@@ -19,8 +19,21 @@ function camera_shake(shake,shake_acc)
 	}
 }
 
-//PARALLAX
+function camera_get_position_struct(cam_id = view_camera[0])
+{
+	/// @description Returns struct of Camera Positions
+	/// @function camera_get_position_struct
+	//Variables
+	var camera_pos = undefined;
+	camera_pos = {
+	cam_x : camera_get_view_x(cam_id),
+	cam_y : camera_get_view_y(cam_id),
+	centeredcam_x : camera_get_view_x(cam_id) + camera_get_view_width(cam_id) / 2,
+	centeredcam_y : camera_get_view_y(cam_id) + camera_get_view_height(cam_id) / 2	
+	}
+	return camera_pos
 
+}
 
 /* To Do
 function surface_set_shader(surface,shader_index,flag)

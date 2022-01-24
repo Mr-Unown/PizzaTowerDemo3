@@ -6,6 +6,9 @@ display_set_gui_size(960, 540);
 surface_resize(application_surface,960,540);
 //Fart Counter
 global.fartcounter = 0;
+//Parallax
+global.parallax_array = noone;
+global.parallax_arraynumber = 0;
 
 //Global Variable Init
 enum temperature
@@ -37,11 +40,11 @@ global.collectstyle = ini_read_real("Option", "collectstyle", 0);
 global.pitchshift = ini_read_real("Option", "pitchshift", 0);
 global.escapecollect = ini_read_real("Option", "escapecollect", 0);
 global.groundpoundstyle = ini_read_real("Option", "groundpoundstyle", 0);
-global.divestyle = false; //This Toggle sucks. Removing it
+global.divestyle = false; //This sucks. Removing it.
 global.attackstyle = ini_read_real("Option", "attackstyle", 0);
 global.destroyablecollect = false; //move into a separate object styled like the new collectable blocks
 global.ratmode = ini_read_real("Option", "ratmode", false);
-global.combostyle = false; //Oh this is the the funny new combostuff hud?
+global.combostyle = false; //Oh this is the the funny new combostuff hud? merge into hudstyle
 global.backdrop = 0
 //Audio
 global.mastervolume = ini_read_real("Option", "mastervolume", 1)

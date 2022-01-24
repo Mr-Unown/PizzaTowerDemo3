@@ -24,8 +24,9 @@ function scr_desert_shader()
 	shader_set_uniform_f(uFreq, wave_shdFreq);
 	shader_set_uniform_f(uSize, wave_shdSize);
 	#endregion
-
+	gpu_set_blendenable(false);
 	draw_surface(application_surface, 0, 0);
+	gpu_set_blendenable(true);
 	surface_reset_target();
 	shader_reset();
 }

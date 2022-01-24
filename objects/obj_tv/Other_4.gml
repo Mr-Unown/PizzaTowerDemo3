@@ -5,7 +5,7 @@ if global.snickchallenge == false
 	switch(global.levelname)
 	{
 		case "entrance":
-			global.stimerank = 2.30;
+			global.stimerank = 1.00//2.30;
 			global.srank = 14500
 		break;
 		case "medieval":
@@ -50,9 +50,9 @@ if global.snickchallenge == false
     global.crank = (global.srank - ((global.srank / 4) * 3))		
 	//Time Attack
 	global.atimerank = (global.stimerank + (global.stimerank / 1.25))
-	global.btimerank = (global.stimerank + (global.stimerank / 1.25)*2)
-	global.ctimerank = (global.stimerank + (global.stimerank / 1.25)*3)
-	global.dtimerank = (global.stimerank + (global.stimerank / 1.25)*4)
+	global.btimerank = (global.stimerank + (global.stimerank / 1.25) * 2)
+	global.ctimerank = (global.stimerank + (global.stimerank / 1.25) * 3)
+	global.dtimerank = (global.stimerank + (global.stimerank / 1.25) * 4)
 	
 }
 else

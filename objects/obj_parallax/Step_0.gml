@@ -1,9 +1,3 @@
-//Variables
-_cam_x = camera_get_view_x(view_camera[0]);
-_cam_y = camera_get_view_y(view_camera[0]);
-_centeredcam_x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) / 2;
-_centeredcam_y = camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0]) / 2;
-
 //Scrolloffset for the illusion of time idk
 if (room != hub_room1 && room != hub_room3  && room != hub_room2 && room != cowboytask && obj_pause.pause == 0)
     global.scrolloffset += 1
@@ -18,13 +12,13 @@ for (var i = 0; i < array_length(layers); ++i)
 			var _speedmodifier = (global.freezeframe ? 4 : 1);
 			var x_pos = layer_xoffset + layer_xshift;
 			var y_pos = layer_yoffset + layer_yshift;
-			var parallax_value = (other._cam_y * (0.25 * layer_get_depth(layer_id) / 500)) //default_function(layer_id)//script_execute(layer_parallax_value,layer_id);
+			var parallax_value = parallax_layer(layer_id);
 			layer_xshift += layer_xspeed /_speedmodifier;
 			layer_yshift += layer_yspeed /_speedmodifier;
 			
 			//Final Layer
-			layer_x(layer_id, x_pos + parallax_value);
-			layer_y(layer_id, y_pos + parallax_value);			
+			layer_x(layer_id, x_pos + parallax_value[0]);
+			layer_y(layer_id, y_pos + parallax_value[1]);			
 			layer_background_speed(layer_id, (layer_image_speed /_speedmodifier))
 			
 		} 

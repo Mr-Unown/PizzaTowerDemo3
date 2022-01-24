@@ -44,8 +44,11 @@ else
 #endregion
 if oldranklol != global.currentrank
 {
+	if rank_checker(oldranklol) < rank_checker(global.currentrank)
+		bubblescale = 1.5;
+	else
+		bubblescale = 0.25;
 	oldranklol = global.currentrank;
-	bubblescale = 1.5;
 }
 bubblescale = approach(bubblescale, 0, 0.10);
 //Collided with Player

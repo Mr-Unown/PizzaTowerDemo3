@@ -155,14 +155,15 @@ if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
 	if global.nocombo = false
 	{
 		var _player = focused_player()
+		var points_added = (5 + ((global.combo - 1) * 5));
 		if (grabbedby == 1)
-			obj_player1.storedscore = (obj_player1.storedscore + global.combo * 5)
+			obj_player1.storedscore += points_added;
 		else if (grabbedby == 2)
-			obj_player2.storedscore = (obj_player2.storedscore + global.combo * 5)
+			obj_player2.storedscore += points_added;
 		else
-			_player.storedscore = (_player.storedscore + global.combo * 5)
+			_player.storedscore += points_added;
 		with (instance_create(x, y, obj_smallnumber))
-			number = string(global.combo * 5)
+			number = string(points_added);
 	}
 	//Pause Combotime
     global.combotime = 60

@@ -27,8 +27,7 @@ while (i < array_length(a))
 			layer_xspeed : layer_get_hspeed(a[i]),
 			layer_yspeed : layer_get_vspeed(a[i]),
 			layer_xshift : global.scrolloffset * layer_get_hspeed(a[i]),
-			layer_yshift : global.scrolloffset * layer_get_vspeed(a[i]),			
-			layer_parallax_value : default_function //If this was not the function name it would instead return only the funny thing
+			layer_yshift : global.scrolloffset * layer_get_vspeed(a[i])
 		} 
 	}
 	else
