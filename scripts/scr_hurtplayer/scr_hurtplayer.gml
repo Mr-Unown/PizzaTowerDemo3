@@ -49,6 +49,8 @@ function scr_hurtplayer(argument0) {
 	            else
 	                y = obj_player1.y
 	        }
+			var player = focused_player()
+	        scr_queue_tvanim(player.spr_playertv_hurt)
 	        scr_soundeffect(sfx_pephurt)
 			var randomchance = irandom_range(0,100);
 			if randomchance < global.quipsfrequency

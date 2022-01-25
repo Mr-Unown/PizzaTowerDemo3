@@ -18,6 +18,8 @@ function scr_characterspr(player_character = character) {
 		spr_playertv_golf = spr_tv_golf;
 		spr_playertv_firemouth = spr_tv_firemouth;
 		spr_playertv_scaredjump = spr_tv_scaredjump;
+		spr_playertv_hurt = spr_tv_hurt;
+		spr_playertv_scared = spr_tv_scared;
 		#endregion
 		spr_idle = spr_player_idle
 		spr_move = spr_player_move
