@@ -701,7 +701,7 @@ if (player.state != 55)
 			
 			
 			#endregion
-			var rankpercent = (max(local_rank - global.timeattack_points - minus_moment,0) / local_rank - minus_moment);
+			var rankpercent = ((max( (minus_moment + local_rank) - (global.timeattack_points),0) ) / (local_rank + minus_moment));
 			#endregion
 			if !surface_exists(rankbubblesurface)
 				rankbubblesurface = surface_create(96,96);
