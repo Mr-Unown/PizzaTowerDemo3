@@ -1842,6 +1842,7 @@
     {"id":{"name":"obj_bigiceslope","path":"objects/obj_bigiceslope/obj_bigiceslope.yy",},"order":12,},
     {"id":{"name":"spr_superspring","path":"sprites/spr_superspring/spr_superspring.yy",},"order":9,},
     {"id":{"name":"spr_sweat","path":"sprites/spr_sweat/spr_sweat.yy",},"order":103,},
+    {"id":{"name":"scr_endlevel","path":"scripts/scr_endlevel/scr_endlevel.yy",},"order":7,},
     {"id":{"name":"spr_swedishmonkey_dead","path":"sprites/spr_swedishmonkey_dead/spr_swedishmonkey_dead.yy",},"order":104,},
     {"id":{"name":"spr_swedishmonkey_eat","path":"sprites/spr_swedishmonkey_eat/spr_swedishmonkey_eat.yy",},"order":105,},
     {"id":{"name":"spr_swedishmonkey_idle","path":"sprites/spr_swedishmonkey_idle/spr_swedishmonkey_idle.yy",},"order":106,},

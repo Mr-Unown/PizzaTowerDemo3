@@ -295,13 +295,13 @@ if (player.state != 55)
 		}
 		else
 		{
-		if global.timeattackpoints < global.ctimerank
+		if global.timeattack_value < global.ctimerank
 			draw_sprite_ext(spr_pizzascore_pepper, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
-		if global.timeattackpoints < global.btimerank
+		if global.timeattack_value < global.btimerank
 			draw_sprite_ext(spr_pizzascore_pepperoni, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
-		if global.timeattackpoints < global.atimerank
+		if global.timeattack_value < global.atimerank
 			draw_sprite_ext(spr_pizzascore_olive, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
-		if global.timeattackpoints < global.stimerank
+		if global.timeattack_value < global.stimerank
 			draw_sprite_ext(spr_pizzascore_shroom, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)					
 		}
 			
@@ -664,7 +664,7 @@ if (player.state != 55)
 				case "C":
 				bubbleempty = spr_rankbubble_c;
 				bubblefilled = spr_rankbubble_cfilled;
-				local_rank = global.ctimerank;		
+				local_rank = global.ctimerank;	
 				minus_moment = global.btimerank;
 				bubbleframe = 1;
 				break;
@@ -678,7 +678,7 @@ if (player.state != 55)
 				case "A":
 				bubbleempty = spr_rankbubble_a;
 				bubblefilled = spr_rankbubble_afilled;
-				local_rank = global.atimerank;		
+				local_rank = global.atimerank;
 				minus_moment = global.stimerank;
 				bubbleframe = 3;
 				break;
@@ -686,14 +686,20 @@ if (player.state != 55)
 				bubbleempty = spr_rankbubble_s;
 				bubblefilled = spr_rankbubble_sfilled;
 				local_rank = global.stimerank;		
-				minus_moment = 0;	
+				minus_moment = 0;
 				bubbleframe = 4;
 				break;
 			}
 			#endregion
 			var bubbleWidth = sprite_get_width(bubblefilled);
 			var bubbleHeight = sprite_get_height(bubblefilled);
-			var rankpercent = ((global.timeattackpoints - minus_moment) / (local_rank - minus_moment));
+			#region Fail
+			var ta_mins = floor(local_rank), ta_sec = local_rank - ta_mins;
+			local_rank = ta_mins + (ta_sec / 60);
+			var ta_mins = floor(minus_moment), ta_sec = minus_moment - ta_mins;
+			minus_moment = ta_mins + (ta_sec / 60);
+			#endregion
+			var rankpercent = ((local_rank - global.timeattack_points) - minus_moment / local_rank);
 			#endregion
 			if !surface_exists(rankbubblesurface)
 				rankbubblesurface = surface_create(96,96);
@@ -702,14 +708,14 @@ if (player.state != 55)
 				surface_set_target(rankbubblesurface)
 				draw_clear_alpha(c_white,0)
 				//Background Orb
-				draw_sprite_ext(spr_rankbubble_bg,bubbleframe, surface_get_width(rankbubblesurface)/2, surface_get_height(rankbubblesurface)/2,1,1,0,c_white,1);
+				draw_sprite_ext(spr_rankbubble_bg, bubbleframe, surface_get_width(rankbubblesurface)/2, surface_get_height(rankbubblesurface)/2,1,1,0,c_white,1);
 				//Funny
 				if global.currentrank == "D"
 					draw_sprite_ext(spr_rankbubble_d, -1, 16, 16, 1, 1, 0, c_white, 1)
 				else
-				{	
-					draw_sprite_part_ext(bubbleempty, -1, 0, 0, bubbleWidth, (bubbleHeight - bubbleHeight * rankpercent), 16, 16, 1, 1, c_white, 1);
-					draw_sprite_ext(bubblefilled, -1, 16, 16, 1, 1, 0, c_white, 1);
+				{
+					draw_sprite_ext(bubbleempty, -1, 16, 16, 1, 1, 0, c_white, 1);
+					draw_sprite_part_ext(bubblefilled, -1, 0, bubbleHeight - (bubbleHeight * rankpercent), bubbleWidth, (bubbleHeight * rankpercent), 16, 16 + (bubbleHeight - (bubbleHeight * rankpercent)), 1, 1, c_white, 1);	
 				}
 				surface_reset_target()
 				draw_surface_ext(rankbubblesurface, 200 - surface_get_width(rankbubblesurface)/2 * bubblescale + 1, 5 - surface_get_height(rankbubblesurface)/2 * bubblescale + 1, 1 + bubblescale, 1 + bubblescale, 0, c_white, alpha);
