@@ -694,9 +694,9 @@ if (player.state != 55)
 			var bubbleWidth = sprite_get_width(bubblefilled);
 			var bubbleHeight = sprite_get_height(bubblefilled);
 			#region Fail
-			var ta_mins = floor(local_rank), ta_sec = local_rank - ta_mins;
+			var ta_mins = floor(local_rank), ta_sec = (local_rank - ta_mins) * 100;
 			local_rank =  ((ta_mins * 60) + ta_sec) * 60;
-			var ta_mins = floor(minus_moment), ta_sec = minus_moment - ta_mins;
+			var ta_mins = floor(minus_moment), ta_sec = (minus_moment - ta_mins) * 100;
 			minus_moment = ((ta_mins * 60) + ta_sec) * 60;
 			
 			
