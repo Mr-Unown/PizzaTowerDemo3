@@ -695,11 +695,13 @@ if (player.state != 55)
 			var bubbleHeight = sprite_get_height(bubblefilled);
 			#region Fail
 			var ta_mins = floor(local_rank), ta_sec = local_rank - ta_mins;
-			local_rank = ta_mins + (ta_sec / 60);
+			local_rank =  ((ta_mins * 60) + ta_sec) * 60;
 			var ta_mins = floor(minus_moment), ta_sec = minus_moment - ta_mins;
-			minus_moment = ta_mins + (ta_sec / 60);
+			minus_moment = ((ta_mins * 60) + ta_sec) * 60;
+			
+			
 			#endregion
-			var rankpercent = ((local_rank - global.timeattack_points) - minus_moment / local_rank);
+			var rankpercent = (max(local_rank - global.timeattack_points - minus_moment,0) / local_rank - minus_moment);
 			#endregion
 			if !surface_exists(rankbubblesurface)
 				rankbubblesurface = surface_create(96,96);

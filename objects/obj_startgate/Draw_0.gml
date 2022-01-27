@@ -23,11 +23,11 @@ if drawtext = true
 			draw_text(x, (y - 150), string(laps_) + " LAPS OF 3");
 			
 			//Toppin Draw Simplification
-			for (var i = 1; i < 6; ++i) 
+			for (var i = 0; i < 5; ++i) 
 			{
-				var x_pos = -80 + (40 * i - 1)
-				var collected = ini_read_string("Toppin", string(level) + string(i), 0)
-				draw_sprite(toppin_sprs[i - 1], collected, x + x_pos, y - 200);
+				var x_pos = -80 + (40 * i)
+				var collected = ini_read_string("Toppin", string(level) + string(i + 1), 0)
+				draw_sprite(toppin_sprs[i], collected, x + x_pos, y - 200);
 			}
 			#endregion			
 			break;
@@ -37,11 +37,11 @@ if drawtext = true
 			draw_text(x, (y - 150), ini_read_string("Secret", string(level), 0) + " OF 6 SECRET")
 			
 			//Toppin Draw Simplification
-			for (var i = 1; i < 6; ++i) 
+			for (var i = 0; i < 5; ++i) 
 			{
-				var x_pos = -80 + (40 * i - 1)
-				var collected = ini_read_string("Toppin", string(level) + string(i), 0)
-				draw_sprite(toppin_sprs[i - 1], collected, x + x_pos, y - 200);
+				var x_pos = -80 + (40 * i)
+				var collected = ini_read_string("Toppin", string(level) + string(i + 1), 0)
+				draw_sprite(toppin_sprs[i], collected, x + x_pos, y - 200);
 			}
 
 			#endregion
