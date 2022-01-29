@@ -49,8 +49,8 @@ deletebuffer = 6
 deletemax = 6
 //Edit Cursor
 cursor = "|";
-delay = 20;
-alarm[2] = delay;
+_delay = 20;
+alarm[2] = _delay;
 
 
 //Export and Import Buttons

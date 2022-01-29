@@ -5,7 +5,7 @@ grav = 0;
 grabbing = false;
 grabbed = false;
 release = false;
-//Certain Delays
+//Certain delays
 returndelay = 0;
 attackdelay = 0;
 

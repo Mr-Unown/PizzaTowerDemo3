@@ -1,2 +1,2 @@
 if (cursor=="|") cursor = ""; else cursor = "|";
-alarm[2] = delay;
+alarm[2] = _delay;

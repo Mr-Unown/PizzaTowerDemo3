@@ -14,5 +14,5 @@ keyboard_string = "0"
 input_text = false
 //Edit Cursor
 cursor = "|";
-delay = 20;
-alarm[0] = delay;
+_delay = 20;
+alarm[0] = _delay;

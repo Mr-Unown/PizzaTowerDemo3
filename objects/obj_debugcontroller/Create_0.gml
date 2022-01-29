@@ -77,8 +77,8 @@ showcollisionarray[i++] = obj_objectteleportal
 
 //Funny Cursor
 cursor = "|";
-delay = 20;
-alarm[0] = delay;
+_delay = 20;
+alarm[0] = _delay;
 
 //Command History / Help Page
 //D3G: Right now it's a help page thingy but it could be used as a Command History lolled

@@ -197,7 +197,7 @@ function keyComboPressed(modifier_array, key) {
 
 delayFrame = 0;
 delayFrames = 1;
-function keyboardCheckDelay(input) {
+function keyboardCheckdelay(input) {
 	if (keyboard_check_released(input)) {
 		delayFrame = 0;
 		delayFrames = 1;
@@ -207,11 +207,11 @@ function keyboardCheckDelay(input) {
 	}
 	delayFrame = (delayFrame + 1) % delayFrames;
 	if (delayFrame == 0) {
-		delayFrames = keyRepeatDelay;
+		delayFrames = keyRepeatdelay;
 	}
 	if (keyboard_check_pressed(input)) {
 		delayFrame = 0;
-		delayFrames = keyRepeatInitialDelay;
+		delayFrames = keyRepeatInitialdelay;
 		return true;
 	} else {
 		if (keyboard_check(input) && delayFrame == 0) {

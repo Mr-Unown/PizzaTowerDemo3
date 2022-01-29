@@ -83,21 +83,21 @@ if (!isOpen) {
 		cursorPos = nextSpaceIndex;
 		targetScrollPosition = maxScrollPosition;
 		metaMovedRight = true;
-	} else if (self.keyboardCheckDelay(vk_backspace)) {
+	} else if (self.keyboardCheckdelay(vk_backspace)) {
 		if (!metaDeleted) {
 			consoleString = string_delete(consoleString, cursorPos - 1, 1);
 			cursorPos = max(1, cursorPos - 1);
 			targetScrollPosition = maxScrollPosition;
 		}
-	} else if (self.keyboardCheckDelay(vk_delete)) {
+	} else if (self.keyboardCheckdelay(vk_delete)) {
 		consoleString = string_delete(consoleString, cursorPos, 1);
 		targetScrollPosition = maxScrollPosition;
-	} else if (self.keyboardCheckDelay(vk_left)) { 
+	} else if (self.keyboardCheckdelay(vk_left)) { 
 		if (!metaMovedLeft) {
 			cursorPos = max(1, cursorPos - 1);
 			targetScrollPosition = maxScrollPosition;
 		}
-	} else if (self.keyboardCheckDelay(vk_right)) {
+	} else if (self.keyboardCheckdelay(vk_right)) {
 		if (!metaMovedRight) {
 			if (cursorPos == string_length(consoleString) + 1 &&
 				array_length(filteredSuggestions) != 0) {
