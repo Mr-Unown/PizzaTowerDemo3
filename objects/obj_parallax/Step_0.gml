@@ -17,8 +17,8 @@ for (var i = 0; i < array_length(layers); ++i)
 			layer_yshift += layer_yspeed /_speedmodifier;
 			
 			//Final Layer
-			layer_x(layer_id, x_pos + parallax_value[0]);
-			layer_y(layer_id, y_pos + parallax_value[1]);			
+			layer_x(layer_id, parallax_value[0] + x_pos);
+			layer_y(layer_id, parallax_value[1] + y_pos);			
 			layer_background_speed(layer_id, (layer_image_speed /_speedmodifier))
 			
 		} 

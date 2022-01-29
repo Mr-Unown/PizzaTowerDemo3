@@ -9,6 +9,7 @@ global.fartcounter = 0;
 //Parallax
 global.parallax_array = noone;
 global.parallax_arraynumber = 0;
+scr_default_parallax();
 
 //Global Variable Init
 enum temperature
@@ -53,8 +54,7 @@ global.soundeffectsvolume = ini_read_real("Option", "soundeffectsvolume", 1)
 ini_close()
 global.roomstart[0] = Realtitlescreen;
 global.roomstart[1] = New_Realtitlescreen;
-//Interpolation
-//gpu_set_tex_filter(global.interpolation);
+
 //Start by cleaning
 global.flushtextures = true;
 global.moppingframes = 0;
@@ -74,4 +74,4 @@ while global.flushtextures = true
 //Uncomment to simulate YYC in VM
 //What this does is turn off loads of checks GMS2 does
 gml_release_mode(true);
-//}
+

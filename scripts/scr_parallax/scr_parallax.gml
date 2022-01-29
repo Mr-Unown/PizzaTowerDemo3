@@ -20,13 +20,28 @@ function parallax_layer(layer_id = noone)
 	return return_value;
 }
 
-function add_parallax_function(layer_name,function_id)
+function add_parallax_function(layer_name,function_id, overwrite = false)
 {
 	/// @description Adds a new parallax function
 	/// @function add_parallax_function
-	global.parallax_array[global.parallax_arraynumber++] = 
+	var array_pos = 0;
+	for (var i = 0; i < array_length(global.parallax_array); ++i) 
+	{
+		if global.parallax_array[i]._layer_name == layer_name
+		{
+			if overwrite == true
+				array_pos = i;
+			else
+				return false;
+		}
+	}
+	if overwrite == false
+		array_pos = global.parallax_arraynumber++;
+		
+	global.parallax_array[array_pos] = 
 	{
 		_layer_name : layer_name,	
 		_function_id : function_id
 	}
+	return true;
 }
