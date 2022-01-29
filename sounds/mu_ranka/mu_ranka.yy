@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "mu_ranka",
-  "duration": 15.5806007,
+  "duration": 15.5756006,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

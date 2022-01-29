@@ -210,6 +210,30 @@ bg = function()
 }
 add_parallax_function("Backgrounds_H1", bg, overwrite);
 #endregion
+#region Backgrounds_H3 
+bg = function()
+{
+	var _camera = camera_get_position_struct(view_camera[0]);
+	var back_id = layer_background_get_id_fixed(layer_get_id("Backgrounds_H3"));
+	var array = noone;
+	array[0] = (_camera.centeredcam_x * 0.05);
+	array[1] = (_camera.cam_y - clamp(_camera.cam_y * 0.05 * (540 / room_height), 0, (sprite_get_height(layer_background_get_sprite(back_id)) - 540 ) ));
+	return array;
+}
+add_parallax_function("Backgrounds_H3", bg, overwrite);
+#endregion
+#region Backgrounds_H4
+bg = function()
+{
+	var _camera = camera_get_position_struct(view_camera[0]);
+	var back_id = layer_background_get_id_fixed(layer_get_id("Backgrounds_H4"));
+	var array = noone;
+	array[0] = (_camera.centeredcam_x * 0.005);
+	array[1] = (_camera.cam_y - clamp(_camera.cam_y * 0.005 * (540 / room_height), 0, (sprite_get_height(layer_background_get_sprite(back_id)) - 540 ) ));
+	return array;
+}
+add_parallax_function("Backgrounds_H4", bg, overwrite);
+#endregion
 #region Backgrounds_V1
 bg = function()
 {

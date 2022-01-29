@@ -1,4 +1,4 @@
-depth = -9999.5
+depth = -9999
 
 active = false
 input = ""

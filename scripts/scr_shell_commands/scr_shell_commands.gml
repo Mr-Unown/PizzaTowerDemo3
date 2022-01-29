@@ -239,6 +239,42 @@ function meta_escape()
 
 #endregion
 
+#region Time Attack
+function sh_timeattack(args) 
+{
+	var arg1 = args[1]	
+	switch arg1
+	{
+		case "true": 
+		case "1":
+		arg1 = true 
+		break;
+		case "false": 
+		case "0":
+		arg1 = false 
+		break;
+		default: 
+		arg1 = !global.timeattack
+		break;		
+	}	
+	global.timeattack = arg1;
+}
+function meta_timeattack() 
+{
+	return {
+		description: "toggles timeattack",
+		arguments: ["<bool>"],
+		suggestions: [
+			["true","false"]
+		],
+		argumentDescriptions: [
+			"toggles timeattack"
+		]
+	}
+}
+
+#endregion
+
 #region Toggle Collisions
 function sh_toggle_collisions(args) 
 {

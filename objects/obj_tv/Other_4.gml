@@ -5,7 +5,7 @@ if global.snickchallenge == false
 	switch(global.levelname)
 	{
 		case "entrance":
-			global.stimerank = 0.30//2.30;
+			global.stimerank = 2.30;
 			global.srank = 14500
 		break;
 		case "medieval":
