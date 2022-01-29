@@ -14,7 +14,7 @@ obj_saveroom
 obj_panicdebris
 obj_controller
 obj_stylebar
-obj_parrallax
+obj_parallax
 obj_pizzacoinindicator
 obj_secretfound
 obj_cooppointer

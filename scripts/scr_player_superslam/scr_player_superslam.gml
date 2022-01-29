@@ -42,7 +42,7 @@ function scr_player_superslam() {
 	        }
 	    }
 	}
-	if sprite_index = spr_piledriverland && floor(image_index) >= image_number - 1 
+	if sprite_index = spr_piledriverland && animation_end()
 	{
 		/*
 	    state = 58
@@ -58,17 +58,20 @@ function scr_player_superslam() {
 	    state = 58
 	    jumpAnim = 1
 		if instance_exists(baddiegrabbedID)
+		{
 			with baddiegrabbedID
 			{
 				if object_index != obj_player 
 				{
+					/*
 					instance_create(x, y, obj_slapstar)
 					instance_create(x, y, obj_baddiegibs)
+					global.combotime = 60
+					global.pausecombotime = true
+					obj_tv.alarm[1] = 75	
+					global.hit = (global.hit + 1)
 					other.baddiegrabbedID.instakilled = 1
-					instance_destroy(other.baddiegrabbedID)
-				}
-				else if object_index = obj_throwableparent
-				{
+					instance_destroy(other.baddiegrabbedID)*/
 					instance_create(x, y, obj_slapstar)
 					instance_create(x, y, obj_baddiegibs)
 					flash = 1
@@ -76,6 +79,20 @@ function scr_player_superslam() {
 					global.pausecombotime = true
 					obj_tv.alarm[1] = 75			
 					global.hit = (global.hit + 1)
+					hp = 0
+					alarm[1] = 5
+					thrown = 1
+					x = other.x
+					y = other.y
+					state = 106
+					hsp = ((-image_xscale) * 10)
+					vsp = -10	
+				}
+				else if object_index = obj_throwableparent
+				{
+					instance_create(x, y, obj_slapstar)
+					instance_create(x, y, obj_baddiegibs)
+					flash = 1
 					hp -= 1
 					alarm[1] = 5
 					thrown = 1
@@ -101,6 +118,7 @@ function scr_player_superslam() {
 					other.alarm[7] = 120	
 				}
 			}
+		}
 	}
 	jumpAnim = 1
 	dashAnim = 1

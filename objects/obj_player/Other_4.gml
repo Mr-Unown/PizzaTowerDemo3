@@ -95,6 +95,11 @@ switch(global.levelname)
 		global.prefetcharray[1] = spr_xmasdecotree
 		global.prefetcharray[2] = bg_dungeonskeleton1
 	break;
+	case "desert":
+		global.prefetcharray[0] = bg_desertmart
+		global.prefetcharray[1] = spr_desertdestroyable
+		global.prefetcharray[2] = bg_desert4Night
+	break;
 	default:
 		global.prefetcharray[0] = bg_hubroom1
 		global.prefetcharray[1] = bg_hubroom2

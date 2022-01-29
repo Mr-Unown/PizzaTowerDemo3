@@ -149,7 +149,7 @@ else if (global.collect > global.crank && shownrankc == 0 && global.timeattack =
     tvsprite = spr_tvrankc
     shownrankc = 1
 }
-else if (global.timeattackpoints > global.stimerank && showntimeranka == 0 && global.timeattack = true)
+else if (global.timeattack_value > global.stimerank && showntimeranka == 0 && global.timeattack = true)
 {
     image_speed = 0
 	if global.coop = false
@@ -161,7 +161,7 @@ else if (global.timeattackpoints > global.stimerank && showntimeranka == 0 && gl
     tvsprite = spr_tvranka
     showntimeranka = 1
 }
-else if (global.timeattackpoints > global.atimerank && showntimerankb == 0 && global.timeattack = true)
+else if (global.timeattack_value > global.atimerank && showntimerankb == 0 && global.timeattack = true)
 {
     image_speed = 0
 	if global.coop = false
@@ -173,7 +173,7 @@ else if (global.timeattackpoints > global.atimerank && showntimerankb == 0 && gl
     tvsprite = spr_tvrankb
     showntimerankb = 1
 }
-else if (global.timeattackpoints > global.btimerank && showntimerankc == 0 && global.timeattack = true)
+else if (global.timeattack_value > global.btimerank && showntimerankc == 0 && global.timeattack = true)
 {
     image_speed = 0
 	if global.coop = false
@@ -185,7 +185,7 @@ else if (global.timeattackpoints > global.btimerank && showntimerankc == 0 && gl
     tvsprite = spr_tvrankc
     showntimerankc = 1
 }
-else if (global.timeattackpoints > global.ctimerank && showntimerankd == 0 && global.timeattack = true)
+else if (global.timeattack_value > global.ctimerank && showntimerankd == 0 && global.timeattack = true)
 {
     image_speed = 0.35
 	if global.coop = false
