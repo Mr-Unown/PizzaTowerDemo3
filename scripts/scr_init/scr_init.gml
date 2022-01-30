@@ -51,7 +51,20 @@ global.backdrop = 0
 global.mastervolume = ini_read_real("Option", "mastervolume", 1)
 global.musicvolume = ini_read_real("Option", "musicvolume", 1)
 global.soundeffectsvolume = ini_read_real("Option", "soundeffectsvolume", 1)
+//Video
+global.option_fullscreen = ini_read_real("Option", "fullscreen", 1)
+global.option_resolution = ini_read_real("Option", "resolution", 1)
 ini_close()
+if (global.option_fullscreen == 0)
+    window_set_fullscreen(true)
+if (global.option_fullscreen == 1)
+    window_set_fullscreen(false)
+if (global.option_resolution == 0)
+    window_set_size(480, 270)
+if (global.option_resolution == 1)
+    window_set_size(960, 540)
+if (global.option_resolution == 2)
+    window_set_size(1920, 1080)
 global.roomstart[0] = Realtitlescreen;
 global.roomstart[1] = New_Realtitlescreen;
 

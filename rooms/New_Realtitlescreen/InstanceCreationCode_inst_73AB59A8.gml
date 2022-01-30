@@ -1,3 +1,3 @@
-targetRoom = characterselect;
+targetRoom = login_room;
 visible = false;
 targetDoor = "A"

@@ -1,2 +1,2 @@
 global.onlinemode = true;
-room_goto(room_initializer);
+room_goto(characterselect);

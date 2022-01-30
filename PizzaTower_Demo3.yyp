@@ -3575,6 +3575,7 @@
     {"id":{"name":"obj_superdashcloud","path":"objects/obj_superdashcloud/obj_superdashcloud.yy",},"order":16,},
     {"id":{"name":"obj_highjumpcloud1","path":"objects/obj_highjumpcloud1/obj_highjumpcloud1.yy",},"order":17,},
     {"id":{"name":"obj_highjumpcloud2","path":"objects/obj_highjumpcloud2/obj_highjumpcloud2.yy",},"order":18,},
+    {"id":{"name":"login_room","path":"rooms/login_room/login_room.yy",},"order":7,},
     {"id":{"name":"obj_grindeffect","path":"objects/obj_grindeffect/obj_grindeffect.yy",},"order":19,},
     {"id":{"name":"obj_punchdust","path":"objects/obj_punchdust/obj_punchdust.yy",},"order":20,},
     {"id":{"name":"obj_fadeout","path":"objects/obj_fadeout/obj_fadeout.yy",},"order":21,},
@@ -4243,6 +4244,7 @@
     {"roomId":{"name":"room_test6","path":"rooms/room_test6/room_test6.yy",},},
     {"roomId":{"name":"oldfreezer_1","path":"rooms/oldfreezer_1/oldfreezer_1.yy",},},
     {"roomId":{"name":"blank_room322","path":"rooms/blank_room322/blank_room322.yy",},},
+    {"roomId":{"name":"login_room","path":"rooms/login_room/login_room.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

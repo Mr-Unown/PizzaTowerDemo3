@@ -363,3 +363,8 @@ if (global.magic > 200)
     global.magic = 200
 if (global.magic < 0)
     global.magic = 0
+	
+	
+	
+//Online Mode Send
+scr_player_send_sync_variables()

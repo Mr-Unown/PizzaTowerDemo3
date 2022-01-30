@@ -3,7 +3,7 @@
     "name": "spr_file2",
     "path": "sprites/spr_file2/spr_file2.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "spriteMaskId": null,
   "persistent": true,

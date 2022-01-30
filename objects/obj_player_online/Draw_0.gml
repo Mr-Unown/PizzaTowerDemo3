@@ -1,3 +1,6 @@
+//Receive Variables
+scr_player_receive_sync_variables()
+//Draw
 if !surface_exists(online_surf_pallete)
 {
 	online_surf_pallete = surface_create(surf_width,surf_height)
