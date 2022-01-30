@@ -6,7 +6,7 @@
     "path": "folders/Scripts/Online Suff.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scr_player",
+  "name": "scr_playeronline",
   "tags": [],
   "resourceType": "GMScript",
 }

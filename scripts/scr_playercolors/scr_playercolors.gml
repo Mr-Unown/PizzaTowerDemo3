@@ -51,7 +51,7 @@ function scr_playercolors() {
 
 
 	//Saved Colors
-#region Spaghetti
+	#region Spaghetti
 	ini_open("Custom/"+string(characters)+"_"+string(customsavedpalette)+"_palettes.ini")
 	if !ini_section_exists(string(characters)+"Colors"+string(colorindex[0])) 
 	{

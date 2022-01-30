@@ -1,4 +1,7 @@
 scr_playerstep()
+	
+//Online Mode Send
+scr_player_send_sync_variables()
 
 //Heat Meter
 var style = (global.heatmeteroption == true ? global.stylethreshold : 0)
@@ -365,6 +368,3 @@ if (global.magic < 0)
     global.magic = 0
 	
 	
-	
-//Online Mode Send
-scr_player_send_sync_variables()

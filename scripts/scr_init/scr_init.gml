@@ -88,3 +88,20 @@ while global.flushtextures = true
 //What this does is turn off loads of checks GMS2 does
 gml_release_mode(true);
 
+//Online Mode
+global.onlinemode = false;
+/*Dual-start
+if (parameter_count() == 3) {
+    shell_execute(parameter_string(0),
+        parameter_string(1) + " " +
+        parameter_string(2) + " " +
+        parameter_string(3) + " -secondary")
+    window_set_position(window_get_x() - window_get_width() div 2 - 8, window_get_y())
+    // <primary instance>
+    window_set_caption("Pizza Tower Demo 3 : Online - P1")
+}
+if (parameter_count() == 4) {
+    window_set_position(window_get_x() + window_get_width() div 2 + 8, window_get_y())
+    // <secondary instance>
+    window_set_caption("Pizza Tower Demo 3 : Online - P2")
+}*/

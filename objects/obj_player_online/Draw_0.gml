@@ -1,6 +1,5 @@
-//Receive Variables
-scr_player_receive_sync_variables()
 //Draw
+/*
 if !surface_exists(online_surf_pallete)
 {
 	online_surf_pallete = surface_create(surf_width,surf_height)
@@ -27,15 +26,16 @@ else
 	}
 	surface_reset_target();	
 	#endregion	
-}
+}*/
 var drawx = x
 var drawy = y
-var player_xscale = xscale * scale, player_yscale = yscale * scale;
+var player_xscale = sign(image_xscale) * scale, player_yscale = sign(image_yscale) * scale;
 
 
-if surface_exists(online_surf_pallete) && (paletteselect >= sprite_get_width(spr_palette) - 1)
+if /*surface_exists(online_surf_pallete) &&*/ (paletteselect >= sprite_get_width(spr_palette) - 1)
 {
-	pal_swap_set(online_surf_pallete, 1, true)
+	pal_swap_set(spr_palette, 1, false)
+	//pal_swap_set(online_surf_pallete, 1, true)
 }
 else if (paletteselect < sprite_get_width(spr_palette) - 1)
 	pal_swap_set(spr_palette, paletteselect, false)

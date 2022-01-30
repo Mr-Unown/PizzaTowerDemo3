@@ -207,11 +207,11 @@ function keyboardCheckdelay(input) {
 	}
 	delayFrame = (delayFrame + 1) % delayFrames;
 	if (delayFrame == 0) {
-		delayFrames = keyRepeatdelay;
+		delayFrames = keyRepeatDelay;
 	}
 	if (keyboard_check_pressed(input)) {
 		delayFrame = 0;
-		delayFrames = keyRepeatInitialdelay;
+		delayFrames = keyRepeatInitialDelay;
 		return true;
 	} else {
 		if (keyboard_check(input) && delayFrame == 0) {

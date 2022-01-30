@@ -1961,8 +1961,10 @@ function scr_characterspr(player_character = character) {
 	#endregion
 		break;
 	}
-	scr_playercolors();
-	customupdate = true;
-
+	if object_index != obj_player_online
+	{
+		scr_playercolors();
+		customupdate = true;
+	}
 	return;
 }
