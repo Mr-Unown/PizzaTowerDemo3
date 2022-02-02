@@ -44,7 +44,7 @@ global.groundpoundstyle = ini_read_real("Option", "groundpoundstyle", 0);
 global.divestyle = false; //This sucks. Removing it.
 global.attackstyle = ini_read_real("Option", "attackstyle", 0);
 global.destroyablecollect = false; //move into a separate object styled like the new collectable blocks
-global.ratmode = ini_read_real("Option", "ratmode", false);
+global.ratmode = 0; //ini_read_real("Option", "ratmode", false);
 global.combostyle = false; //Oh this is the the funny new combostuff hud? merge into hudstyle
 global.backdrop = 0
 //Audio
