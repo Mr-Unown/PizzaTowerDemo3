@@ -18,7 +18,7 @@ if (grabbed == 1)
     playerid.baddiegrabbedID = id
 	var _state = (playerid.state == states.frozen ? playerid.frozenstate : playerid.state)
 	
-    if (_state == 3 || _state == 28 || _state == 46 || _state == 41 || _state == 42 || _state == 10)
+    if (_state == 3 || _state == 28 || _state == 46 || _state == 41 || _state == 42 || _state == 10 || _state == states.ratmount)
     {
         thrown = 0
         grav = 0
@@ -40,12 +40,14 @@ if (grabbed == 1)
     {
         scr_getinput()
         move = (key_left2 + key_right2)
-        if (!(state == 46 || state == 3 || state == 28 || state == 41 || state == 42 || state == 10 || state == 47 || state == 43 || state == 48 || state == 49 || state == 50))
+        if (!(state == 46 || state == 3 || state == 28 || state == 41 || state == 42 || state == 10 || state == 47 || state == 43 || state == 48 || state == 49 || state == 50 || state == states.ratmount))
         {
             other.grav = 0.5
             other.x = x
             other.y = y
             other.grabbed = 0
+			if sprite_index == spr_gustavo_hauling
+			other.visible = false
         }
     }
     hsp = 0
@@ -252,6 +254,7 @@ if (grabbed == 1)
             x = playerid.x
             y = (playerid.y - 40)
         }
+		/*
         if (playerid.sprite_index == playerid.spr_piledriverland && floor(playerid.image_index) == (playerid.image_number - 1))
         {
             flash = 1
@@ -265,7 +268,7 @@ if (grabbed == 1)
             grav = 0.5
             hsp = ((-image_xscale) * 10)
             vsp = -10
-        }
+        }*/
     }
 }
 if (place_meeting(x, y, obj_swordhitbox) && thrown == 0) && grabbed == true

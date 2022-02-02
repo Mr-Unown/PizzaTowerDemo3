@@ -30,29 +30,35 @@ if global.timeattack = false
 }
 else
 {
-	if global.timeattackpoints <= global.stimerank
+	if global.timeattack_value <= global.stimerank
 		global.currentrank = "S"	
-	else if global.timeattackpoints <= global.atimerank
+	else if global.timeattack_value <= global.atimerank
 		global.currentrank = "A"		
-	else if global.timeattackpoints <= global.btimerank
+	else if global.timeattack_value <= global.btimerank
 		global.currentrank = "B"		
-	else if global.timeattackpoints <= global.ctimerank
+	else if global.timeattack_value <= global.ctimerank
 		global.currentrank = "C"
-	else if global.timeattackpoints <= global.dtimerank
+	else if global.timeattack_value <= global.dtimerank
 		global.currentrank = "D"
 }
 #endregion
-
+if oldranklol != global.currentrank
+{
+	bubblescale = 1.5;
+	oldranklol = global.currentrank;
+}
+bubblescale = approach(bubblescale, 0, 0.10);
 //Collided with Player
 if point_in_rectangle(obj_player.x,obj_player.y, _drawx - 80, _drawy - 85,_drawx + 80,_drawy + 85)
-collided = true
+	collided = true
 else if global.newhud = true && point_in_rectangle(obj_player.x,obj_player.y, _drawx - 100, _drawy - 1000,_drawx + 80,_drawy + 85)
-collided = true
+	collided = true
 else
-collided = false
+	collided = false
 //Alpha
 if global.newhud = false
 {
+	newhudyoffset = 0
 	if collided = true
 		alpha = 0.5
 	else
@@ -60,6 +66,7 @@ if global.newhud = false
 }
 else
 {
+	alpha = 1
 	if collided = true
 		newhudyoffset = approach(newhudyoffset,-600,16)
 	else
@@ -305,11 +312,15 @@ if target = player
 {
 	if (player.state == 91 || player.state == states.jetpack || player.state == 37)
 	{
-		if (chargecamera > (player.xscale * 100))
-			chargecamera -= 2
-		if (chargecamera < (player.xscale * 100))
-			chargecamera += 2
-	}
+            var _targetcharge = (player.xscale * ((player.movespeed / 6) * 50)) //D3G: might need some tweaking
+            var _tspeed = 2
+            if ((_targetcharge > 0 && chargecamera < 0) || (_targetcharge < 0 && chargecamera > 0))
+                _tspeed = 8
+            if (chargecamera > _targetcharge)
+                chargecamera -= _tspeed
+            if (chargecamera < _targetcharge)
+                chargecamera += _tspeed
+    }
 	else
 	{
 	    if (chargecamera > 0)
@@ -319,10 +330,10 @@ if target = player
 	}
 	
 }
-
+//TODO: Clean Up
 //Camera X
-camera_set_view_pos(view_camera[0],target_x - (targetzoom1 / 2) + (chargecamera + startgateoffsetx + golfdistancex + p2pdistancex) + (random_range(-panicshake, panicshake)/2)  + floor(irandom_range(-shake_mag, shake_mag)/2), camera_get_view_y(view_camera[0]))			
-camera_set_view_pos(view_camera[0],clamp(camera_get_view_x(view_camera[0]), 0 + floor(irandom_range(-panicshake, panicshake)/2) + floor(irandom_range(-shake_mag, shake_mag)/2), (room_width - targetzoom1) + (random_range(-panicshake, panicshake)/2) + floor(irandom_range(-shake_mag, shake_mag)/2)),camera_get_view_y(view_camera[0]))
+camera_set_view_pos(view_camera[0],target_x - (targetzoom1 / 2) + (chargecamera + startgateoffsetx + golfdistancex + p2pdistancex) + (random_range(-panicshake, panicshake))  + (irandom_range(-shake_mag, shake_mag)), camera_get_view_y(view_camera[0]))			
+camera_set_view_pos(view_camera[0],clamp(camera_get_view_x(view_camera[0]), 0 + (random_range(-panicshake, panicshake)) + (irandom_range(-shake_mag, shake_mag)), (room_width - targetzoom1) + (random_range(-panicshake, panicshake)) + (irandom_range(-shake_mag, shake_mag))),camera_get_view_y(view_camera[0]))
 //Camera Y	
 camera_set_view_pos(view_camera[0],camera_get_view_x(view_camera[0]), ((target_y - (targetzoom2 / 2)) + startgateoffsety + golfdistancey + p2pdistancey ) + (random_range(-panicshake, panicshake)) + irandom_range(-shake_mag, shake_mag))		
 camera_set_view_pos(view_camera[0],camera_get_view_x(view_camera[0]),clamp(camera_get_view_y(view_camera[0]), 0 + irandom_range(-shake_mag, shake_mag), (room_height - targetzoom2) + (random_range(-panicshake, panicshake)) + irandom_range(-shake_mag, shake_mag)))

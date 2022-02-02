@@ -1,7 +1,9 @@
 
-if (floor(image_index) == (image_number - 1))
+if animation_end()
 {
     image_speed = 0
+	//Temp Stuff
+	#region Snick
     if (obj_player.character == "S")
     {
         if (sprite_index == spr_snick_victory)
@@ -50,7 +52,10 @@ if (floor(image_index) == (image_number - 1))
             }
         }
     }
+	#endregion
+
 }
+#region VIGI
 if (obj_player.character == "V")
 {
     if (sprite_index == spr_playerV_gottreasure && floor(image_index) == (image_number - 1))
@@ -104,11 +109,111 @@ if (obj_player.character == "V")
         }
     }
 }
-if (obj_player1.collectscore >= obj_player2.collectscore)
+#endregion
+var player = obj_player
+if global.coop == true
+	player = (obj_player1.collectscore >= obj_player2.collectscore) ? obj_player1 : obj_player2
+switch (player.character)
 {
-    if (obj_player1.character == "P")
+	case "P":
+		if (global.rank == "p")
+			sprite_index = spr_rankP	
+        if (global.rank == "s+") || (global.rank == "s")
+            sprite_index = spr_rankS
+        if (global.rank == "a")
+            sprite_index = spr_rankA
+        if (global.rank == "b")
+            sprite_index = spr_rankB
+        if (global.rank == "c")
+            sprite_index = spr_rankC
+        if (global.rank == "d")
+            sprite_index = spr_rankD	
+	break;	
+	case "N":
+		if (global.rank == "p")
+			sprite_index = spr_rankP	
+        if (global.rank == "s+") || (global.rank == "s")
+            sprite_index = spr_rankNS
+        if (global.rank == "a")
+            sprite_index = spr_rankNA
+        if (global.rank == "b")
+            sprite_index = spr_rankNB
+        if (global.rank == "c")
+            sprite_index = spr_rankNC
+        if (global.rank == "d")
+            sprite_index = spr_rankND	
+	break;	
+	case "S":
+        if (global.rank == "p")
+			sprite_index = spr_snick_rankS
+        if (global.rank == "s") || (global.rank == "s+")
+            sprite_index = spr_snick_rankS
+        if (global.rank == "a")
+            sprite_index = spr_snick_rankA
+        if (global.rank == "b")
+            sprite_index = spr_snick_rankB
+        if (global.rank == "c")
+            sprite_index = spr_snick_rankC
+        if (global.rank == "d")
+            sprite_index = spr_snick_rankD	
+	break;	
+	case "PZ":
+        if (global.rank == "p")
+            sprite_index = spr_rankP	
+        if (global.rank == "s") || (global.rank == "s+")
+            sprite_index = spr_playerPZ_rankS
+        if (global.rank == "a")
+            sprite_index = spr_playerPZ_rankA
+        if (global.rank == "b")
+            sprite_index = spr_playerPZ_rankB
+        if (global.rank == "c")
+            sprite_index = spr_playerPZ_rankC
+        if (global.rank == "d")
+            sprite_index = spr_playerPZ_rankD	
+	break;	
+	case "V":
+        if (global.rank == "p")
+            sprite_index = spr_playerV_gottreasure
+        if (global.rank == "s") || (global.rank == "s+")
+            sprite_index = spr_playerV_gottreasure
+        if (global.rank == "a")
+            sprite_index = spr_playerV_idle4
+        if (global.rank == "b")
+        {
+            sprite_index = spr_playerV_idle1
+            image_index = 13
+        }
+        if (global.rank == "c")
+        {
+            sprite_index = spr_playerV_idle3
+            image_index = 13
+        }
+        if (global.rank == "d")
+            sprite_index = spr_playerV_facehurt	
+	break;
+	case "PM":
+	case "D":
+		if (global.rank == "p")
+			sprite_index = spr_rankP	
+        if (global.rank == "s+") || (global.rank == "s")
+            sprite_index = spr_rankS
+        if (global.rank == "a")
+            sprite_index = spr_rankA
+        if (global.rank == "b")
+            sprite_index = spr_rankB
+        if (global.rank == "c")
+            sprite_index = spr_rankC
+        if (global.rank == "d")
+            sprite_index = spr_rankD		
+	break;
+}
+
+/*
+    if (player.character == "P")
     {
-        if (global.rank == "s")
+        if (global.rank == "p")
+            sprite_index = spr_rankP	
+        if (global.rank == "s") || (global.rank == "s+")
             sprite_index = spr_rankS
         if (global.rank == "a")
             sprite_index = spr_rankA
@@ -119,9 +224,11 @@ if (obj_player1.collectscore >= obj_player2.collectscore)
         if (global.rank == "d")
             sprite_index = spr_rankD
     }
-    else if (obj_player1.character == "N")
+    else if (player.character == "N")
     {
-        if (global.rank == "s")
+        if (global.rank == "p")
+            sprite_index = spr_rankP	
+        if (global.rank == "s") || (global.rank == "s+")
             sprite_index = spr_rankNS
         if (global.rank == "a")
             sprite_index = spr_rankNA
@@ -132,9 +239,11 @@ if (obj_player1.collectscore >= obj_player2.collectscore)
         if (global.rank == "d")
             sprite_index = spr_rankND
     }
-    else if (obj_player1.character == "PZ")
+    else if (player.character == "PZ")
     {
-        if (global.rank == "s")
+        if (global.rank == "p")
+            sprite_index = spr_rankP	
+        if (global.rank == "s") || (global.rank == "s+")
             sprite_index = spr_playerPZ_rankS
         if (global.rank == "a")
             sprite_index = spr_playerPZ_rankA
@@ -145,9 +254,11 @@ if (obj_player1.collectscore >= obj_player2.collectscore)
         if (global.rank == "d")
             sprite_index = spr_playerPZ_rankD
     }	
-    else if (obj_player1.character == "S")
+    else if (player.character == "S")
     {
-        if (global.rank == "s")
+        if (global.rank == "p")
+            sprite_index = spr_rankP	
+        if (global.rank == "s") || (global.rank == "s+")
             sprite_index = spr_snick_rankS
         if (global.rank == "a")
             sprite_index = spr_snick_rankA
@@ -158,9 +269,11 @@ if (obj_player1.collectscore >= obj_player2.collectscore)
         if (global.rank == "d")
             sprite_index = spr_snick_rankD
     }
-    else if (obj_player1.character == "V")
+    else if (player.character == "V")
     {
-        if (global.rank == "s")
+        if (global.rank == "p")
+            sprite_index = spr_rankP	
+        if (global.rank == "s") || (global.rank == "s+")
             sprite_index = spr_playerV_gottreasure
         if (global.rank == "a")
             sprite_index = spr_playerV_idle4
@@ -177,80 +290,6 @@ if (obj_player1.collectscore >= obj_player2.collectscore)
         if (global.rank == "d")
             sprite_index = spr_playerV_facehurt
     }
-}
-if (obj_player2.collectscore > obj_player1.collectscore)
-{
-    if (obj_player2.character == "P")
-    {
-        if (global.rank == "s")
-            sprite_index = spr_rankS
-        if (global.rank == "a")
-            sprite_index = spr_rankA
-        if (global.rank == "b")
-            sprite_index = spr_rankB
-        if (global.rank == "c")
-            sprite_index = spr_rankC
-        if (global.rank == "d")
-            sprite_index = spr_rankD
-    }
-    else if (obj_player2.character == "N")
-    {
-        if (global.rank == "s")
-            sprite_index = spr_rankNS
-        if (global.rank == "a")
-            sprite_index = spr_rankNA
-        if (global.rank == "b")
-            sprite_index = spr_rankNB
-        if (global.rank == "c")
-            sprite_index = spr_rankNC
-        if (global.rank == "d")
-            sprite_index = spr_rankND
-    }
-    else if (obj_player2.character == "PZ")
-    {
-        if (global.rank == "s")
-            sprite_index = spr_playerPZ_rankS
-        if (global.rank == "a")
-            sprite_index = spr_playerPZ_rankA
-        if (global.rank == "b")
-            sprite_index = spr_playerPZ_rankB
-        if (global.rank == "c")
-            sprite_index = spr_playerPZ_rankC
-        if (global.rank == "d")
-            sprite_index = spr_playerPZ_rankD
-    }		
-    else if (obj_player2.character == "S")
-    {
-        if (global.rank == "s")
-            sprite_index = spr_snick_rankS
-        if (global.rank == "a")
-            sprite_index = spr_snick_rankA
-        if (global.rank == "b")
-            sprite_index = spr_snick_rankB
-        if (global.rank == "c")
-            sprite_index = spr_snick_rankC
-        if (global.rank == "d")
-            sprite_index = spr_snick_rankD
-    }
-    else if (obj_player2.character == "V")
-    {
-        if (global.rank == "s")
-            sprite_index = spr_playerV_gottreasure
-        if (global.rank == "a")
-            sprite_index = spr_playerV_idle4
-        if (global.rank == "b")
-        {
-            sprite_index = spr_playerV_idle1
-            image_index = 13
-        }
-        if (global.rank == "c")
-        {
-            sprite_index = spr_playerV_idle3
-            image_index = 13
-        }
-        if (global.rank == "d")
-            sprite_index = spr_playerV_facehurt
-    }
-}
+
 
 

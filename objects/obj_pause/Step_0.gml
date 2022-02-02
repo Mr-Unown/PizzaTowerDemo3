@@ -1,3 +1,4 @@
+visible = true;
 if ((!pause) && (!instance_exists(obj_fadeout)))
 {
 	

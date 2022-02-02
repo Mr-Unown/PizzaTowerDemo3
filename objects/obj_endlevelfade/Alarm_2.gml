@@ -1,1 +1,2 @@
-showtext = false
+showtext = false;
+timer = 0;

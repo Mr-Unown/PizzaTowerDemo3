@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "Compat",
-    "path": "folders/Scripts/Compat.yy",
+    "path": "folders/Scripts/compatibility/Compat.yy",
   },
   "resourceVersion": "1.0",
   "name": "__init_background",

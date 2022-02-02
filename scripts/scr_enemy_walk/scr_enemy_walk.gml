@@ -34,7 +34,7 @@ function scr_enemy_walk() {
 	else if (sprite_index == scaredspr)
 	    sprite_index = walkspr
 	image_speed = _image_speed
-	if (scr_solid(x + sign(image_xscale),y) && (!scr_slope_ext(x + sign(image_xscale),y)  ) ) || place_meeting((x + sign(image_xscale)), y, obj_hallway) 
+	if (scr_solid(x + sign(image_xscale),y) && (!scr_slope_ext(x + sign(image_xscale),y)  ) ) //|| place_meeting((x + sign(image_xscale)), y, obj_hallway) 
 	{
 	    if grounded
 	    {
@@ -58,6 +58,40 @@ function scr_enemy_walk() {
 		else if object_index = obj_ufoolive && (!scr_slope_ext(x + sign(image_xscale),y)  ) 
 			image_xscale *= -1
 	}
+	//Hallway
+	with instance_place(x + sign(image_xscale), y, obj_hallway)
+	{
+		var backtoroom = -sign(image_xscale)
+		if sign(other.image_xscale) != backtoroom
+		{
+			with other.id
+			{
+				if grounded
+				{
+					if (object_index == obj_forknight)
+					{
+						image_xscale = backtoroom
+						image_index = 0
+						sprite_index = spr_forknight_turn
+						state = 94
+					}
+					else if (object_index == obj_noisey)
+					{	
+						image_xscale = backtoroom
+						image_index = 0
+						sprite_index = spr_noisey_turn
+						state = 94
+					}
+					else
+						image_xscale = backtoroom
+				}
+				else if object_index = obj_ufoolive && (!scr_slope_ext(x + sign(image_xscale),y)  ) 
+					image_xscale = backtoroom
+			}
+		}
+	
+	}
+
 	if (object_index != obj_ancho) && object_index != obj_ufoolive
 	{
 	    if (!(scr_solid((x + (image_xscale * 15)), (y + 31)) || place_meeting((x + (image_xscale * 15)), (y + 31), obj_platform)))

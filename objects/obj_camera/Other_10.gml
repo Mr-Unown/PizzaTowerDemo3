@@ -95,11 +95,12 @@ if global.freezeframe = false
 		#endregion
 		global.freezeframe = true;
 		#region Zoom in
-		with obj_camera {
-			shake_mag = 2
-			shake_mag_acc = (3 / room_speed)
-			targetzoom1 = approach(targetzoom1,896,32)
-			targetzoom2 = approach(targetzoom2,504,18)
+		with obj_camera 
+		{
+			//shake_mag = 2
+			//shake_mag_acc = (3 / room_speed)
+			//targetzoom1 = approach(targetzoom1,896,32)
+			//targetzoom2 = approach(targetzoom2,504,18)
 			/*
 			if targetzoom1 > 896
 				targetzoom1 -= 32

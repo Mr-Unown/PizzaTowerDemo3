@@ -49,16 +49,16 @@ if global.snickchallenge == false
     global.brank = (global.srank - ((global.srank / 4) * 2))
     global.crank = (global.srank - ((global.srank / 4) * 3))		
 	//Time Attack
-	global.atimerank = (global.stimerank + (global.stimerank / 1.25))
-	global.btimerank = (global.stimerank + (global.stimerank / 1.25)*2)
-	global.ctimerank = (global.stimerank + (global.stimerank / 1.25)*3)
-	global.dtimerank = (global.stimerank + (global.stimerank / 1.25)*4)
+	global.atimerank = global.stimerank + (global.stimerank)
+	global.btimerank = global.stimerank + ((global.stimerank) * 2)
+	global.ctimerank = global.stimerank + ((global.stimerank) * 3)
+	global.dtimerank = global.stimerank + ((global.stimerank) * 4)
 	
 }
 else
 {
 	//Snick Challenge
-    global.srank = 8000
+    global.srank = 7400
     global.arank = (global.srank - (global.srank / 4))
     global.brank = (global.srank - ((global.srank / 4) * 2))
     global.crank = (global.srank - ((global.srank / 4) * 3))	

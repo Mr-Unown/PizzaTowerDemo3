@@ -1,6 +1,4 @@
-if global.treasure = true
-{
-	_message = "GOT THE SECRET TREASURE!!"
-	showtext = true
-	alarm[2] = 100
-}
+_message = ds_queue_dequeue(_meesage_queue);
+showtext = true;
+timer = alarm2timer/2
+alarm[2] = alarm2timer

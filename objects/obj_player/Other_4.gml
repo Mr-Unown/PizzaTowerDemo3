@@ -95,6 +95,11 @@ switch(global.levelname)
 		global.prefetcharray[1] = spr_xmasdecotree
 		global.prefetcharray[2] = bg_dungeonskeleton1
 	break;
+	case "desert":
+		global.prefetcharray[0] = bg_desertmart
+		global.prefetcharray[1] = spr_desertdestroyable
+		global.prefetcharray[2] = bg_desert4Night
+	break;
 	default:
 		global.prefetcharray[0] = bg_hubroom1
 		global.prefetcharray[1] = bg_hubroom2
@@ -464,10 +469,11 @@ with (obj_destroyable2_bigescape)
 				global.deathmode = true;
             scr_soundeffect(sfx_collectgiantpizza)
 			with obj_timeattack
-			{
+			{				
 			alarm[1] = 60
 			global.taminutes = (global.storedtaminute);
 			global.taseconds = (global.storedtasecond);
+			global.timeattack_points = ((global.taminutes * 60) + global.taseconds) * 60;
 			}
             with (obj_tv)
             {
@@ -708,6 +714,7 @@ if (object_index == obj_player2)
 			alarm[1] = 60
 			global.taminutes = (global.storedtaminute);
 			global.taseconds = (global.storedtasecond);
+			global.timeattack_points = ((global.taminutes * 60) + global.taseconds) * 60;
 			}
             with (obj_tv)
             {

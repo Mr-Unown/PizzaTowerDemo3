@@ -12,7 +12,7 @@ function scr_panicbg_start() {
 		for (var i = 0; i < array_length(a); ++i) 
 		{
 			var back_id = layer_background_get_id_fixed(layer_get_name(a[i]))
-			if back_id != -1 && !layer_get_depth(a[i]) <= 0
+			if back_id != -1 && !layer_get_depth(a[i]) <= 0 && layer_get_visible(a[i])
 			{
 				layer_x(a[i], ((layer_get_x(a[i]) - _cam_x) + 64))
 				layer_y(a[i], ((layer_get_y(a[i]) - _cam_y) + 64))
@@ -79,10 +79,10 @@ function scr_panicbg_start() {
 function scr_panicbg_end() {
 	if event_type == ev_draw && event_number == 0
 	{	
-	    gpu_set_blendenable(0)
+	    gpu_set_blendenable(false)
 	    gpu_set_colorwriteenable(0, 0, 0, 1)
 	    draw_rectangle(-192, -192, camera_get_view_width(view_camera[0]) + 192, camera_get_view_height(view_camera[0]) + 192, 0)
-	    gpu_set_blendenable(1)
+	    gpu_set_blendenable(true)
 	    gpu_set_colorwriteenable(1, 1, 1, 1)
 		//Actually Set Shader
 	    surface_reset_target()
@@ -103,7 +103,7 @@ function scr_panicbg_init() {
 	while (i < array_length(a)) 
 	{
 	   	var back_id = layer_background_get_id_fixed(layer_get_name(a[i]))
-		if back_id != -1 && !layer_get_depth(a[i]) <= 0
+		if back_id != -1 && !layer_get_depth(a[i]) <= 0 && layer_get_visible(a[i])
 		{
 			layers[layernum++] = a[i]
 		}

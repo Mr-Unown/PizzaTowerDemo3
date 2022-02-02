@@ -75,6 +75,7 @@ function scr_player_freefall() {
 		{
 			playerid = other.id
 			image_xscale = other.xscale
+			sprite_index = spr_landcloud
 		}			
 		movespeed = clamp(abs(vsp),3,12)
 	    flash = 0
@@ -93,6 +94,15 @@ function scr_player_freefall() {
 	{
 	#region Land
 	    scr_soundeffect(sfx_groundpound)
+		with instance_create(x, y, obj_landcloud)
+		{
+			playerid = other.id
+			image_xscale = other.xscale
+			if other.freefallsmash >= 10
+				sprite_index = spr_slamcloud
+			else
+				sprite_index = spr_landcloud
+		}			
 	    freefallsmash = 0
 	    if (shotgunAnim == 0)
 	        sprite_index = spr_bodyslamland
@@ -121,11 +131,7 @@ function scr_player_freefall() {
 	        shake_mag_acc = (30 / room_speed)
 	    }
 
-		with instance_create(x, y, obj_landcloud)
-		{
-			playerid = other.id
-			image_xscale = other.xscale
-		}	
+
 	    freefallstart = 0
 		combo = 0
 	    bounce = 0

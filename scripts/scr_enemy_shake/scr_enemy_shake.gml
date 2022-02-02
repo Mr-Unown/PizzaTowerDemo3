@@ -103,8 +103,8 @@ function scr_enemy_shake() {
 			alarm[1] = 2
 	        shakebuffer = 2.5
 	        flash = 1
-	        hsp = player.hsp
-            vsp = -5
+	        hsp = player.xscale * 7
+            vsp = -9
 			squashed = true
 	        state = 106
 	        hp -= 1

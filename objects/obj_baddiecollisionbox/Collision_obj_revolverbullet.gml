@@ -10,7 +10,7 @@ if (bulletbuffer == 0) && global.freezeframe = false
 			
 			baddieID.grabbedby = _grabbedby
             bulletbuffer = 25
-            baddieID.hp -= 1
+            baddieID.hp -= 9999999999999
             scr_soundeffect(sfx_machpunch)
             scr_soundeffect(sfx_hitenemy)
             instance_create(baddieID.x, baddieID.y, obj_slapstar)

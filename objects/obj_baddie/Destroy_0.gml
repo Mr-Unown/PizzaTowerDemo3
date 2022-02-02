@@ -142,27 +142,28 @@ if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
 	#endregion
 	//Style Shit
 	if global.stylethreshold <= 0
-		global.style += 5
+		global.style += 7
 	else if global.stylethreshold = 1
-		global.style += 4
+		global.style += 5
 	else if global.stylethreshold = 2
-		global.style += 3
+		global.style += 4
 	else if global.stylethreshold = 3
-		global.style += 2
+		global.style += 3
 	else if global.stylethreshold >= 4
-		global.style += 1
+		global.style += 2
 	//Combo Points
 	if global.nocombo = false
 	{
 		var _player = focused_player()
+		var points_added = (5 + ((global.combo - 1) * 5));
 		if (grabbedby == 1)
-			obj_player1.storedscore = (obj_player1.storedscore + global.combo * 5)
+			obj_player1.storedscore += points_added;
 		else if (grabbedby == 2)
-			obj_player2.storedscore = (obj_player2.storedscore + global.combo * 5)
+			obj_player2.storedscore += points_added;
 		else
-			_player.storedscore = (_player.storedscore + global.combo * 5)
+			_player.storedscore += points_added;
 		with (instance_create(x, y, obj_smallnumber))
-			number = string(global.combo * 5)
+			number = string(points_added);
 	}
 	//Pause Combotime
     global.combotime = 60
@@ -180,7 +181,6 @@ else if (ds_list_find_index(global.baddieroom, id) == -1 && important == 1)
     instance_create(x, y, obj_baddiegibs)
     with (obj_camera)
     {
-		
         shake_mag = 3
         shake_mag_acc = (3 / room_speed)
     }

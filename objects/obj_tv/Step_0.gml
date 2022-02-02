@@ -58,10 +58,10 @@ if global.snickchallenge = true
     }
 if global.newhud = true
 {
-if collided = true
-	newhudyoffset = approach(newhudyoffset,-600,16)
-else
-	newhudyoffset = approach(newhudyoffset,0,16)
+	if collided = true
+		newhudyoffset = approach(newhudyoffset,-600,16)
+	else
+		newhudyoffset = approach(newhudyoffset,0,16)
 }
 if (showtext == 1)
 {
@@ -80,7 +80,7 @@ if (!(obj_player.state == 24 && obj_player.state == 25 && obj_player.state == 18
 if instance_exists(obj_itspizzatime)
 {
     image_speed = 0.25
-    message = "GET TO THE EXIT!!"
+    _message = "GET TO THE EXIT!!"
     alarm[0] = 200
     showtext = 1
     tvsprite = spr_tvexit
@@ -105,9 +105,9 @@ else if (global.collect > global.srank && shownranks == 0 && global.timeattack =
 {
     image_speed = 0.125
 	if global.coop = false
-    message = "YOU GOT ENOUGH FOR RANK S"
+    _message = "YOU GOT ENOUGH FOR RANK S"
 	else
-	message = "WE GOT ENOUGH FOR RANK S"
+	_message = "WE GOT ENOUGH FOR RANK S"
     showtext = 1
     alarm[0] = 200
     tvsprite = spr_tvranks
@@ -117,9 +117,9 @@ else if (global.collect > global.arank && shownranka == 0 && global.timeattack =
 {
     image_speed = 0
 	if global.coop = false
-    message = "YOU GOT ENOUGH FOR RANK A"
+    _message = "YOU GOT ENOUGH FOR RANK A"
 	else
-	message = "WE GOT ENOUGH FOR RANK A"
+	_message = "WE GOT ENOUGH FOR RANK A"
     showtext = 1
     alarm[0] = 200
     tvsprite = spr_tvranka
@@ -129,9 +129,9 @@ else if (global.collect > global.brank && shownrankb == 0 && global.timeattack =
 {
     image_speed = 0
 	if global.coop = false
-    message = "YOU GOT ENOUGH FOR RANK B"
+    _message = "YOU GOT ENOUGH FOR RANK B"
 	else
-	message = "WE GOT ENOUGH FOR RANK B"
+	_message = "WE GOT ENOUGH FOR RANK B"
     showtext = 1
     alarm[0] = 200
     tvsprite = spr_tvrankb
@@ -141,57 +141,57 @@ else if (global.collect > global.crank && shownrankc == 0 && global.timeattack =
 {
     image_speed = 0
 	if global.coop = false
-    message = "YOU GOT ENOUGH FOR RANK C"
+    _message = "YOU GOT ENOUGH FOR RANK C"
 	else
-	message = "WE GOT ENOUGH FOR RANK C"
+	_message = "WE GOT ENOUGH FOR RANK C"
     showtext = 1
     alarm[0] = 200
     tvsprite = spr_tvrankc
     shownrankc = 1
 }
-else if (global.timeattackpoints > global.stimerank && showntimeranka == 0 && global.timeattack = true)
+else if (global.timeattack_value > global.stimerank && showntimeranka == 0 && global.timeattack = true)
 {
     image_speed = 0
 	if global.coop = false
-    message = "YOU ONLY GOT ENOUGH FOR RANK A"
+    _message = "YOU ONLY GOT ENOUGH FOR RANK A"
 	else
-	message = "WE ONLY GOT ENOUGH FOR RANK A"
+	_message = "WE ONLY GOT ENOUGH FOR RANK A"
     showtext = 1
     alarm[0] = 200
     tvsprite = spr_tvranka
     showntimeranka = 1
 }
-else if (global.timeattackpoints > global.atimerank && showntimerankb == 0 && global.timeattack = true)
+else if (global.timeattack_value > global.atimerank && showntimerankb == 0 && global.timeattack = true)
 {
     image_speed = 0
 	if global.coop = false
-    message = "YOU ONLY GOT ENOUGH FOR RANK B"
+    _message = "YOU ONLY GOT ENOUGH FOR RANK B"
 	else
-	message = "WE ONLY GOT ENOUGH FOR RANK B"
+	_message = "WE ONLY GOT ENOUGH FOR RANK B"
     showtext = 1
     alarm[0] = 200
     tvsprite = spr_tvrankb
     showntimerankb = 1
 }
-else if (global.timeattackpoints > global.btimerank && showntimerankc == 0 && global.timeattack = true)
+else if (global.timeattack_value > global.btimerank && showntimerankc == 0 && global.timeattack = true)
 {
     image_speed = 0
 	if global.coop = false
-    message = "YOU ONLY GOT ENOUGH FOR RANK C"
+    _message = "YOU ONLY GOT ENOUGH FOR RANK C"
 	else
-	message = "WE ONLY GOT ENOUGH FOR RANK C"
+	_message = "WE ONLY GOT ENOUGH FOR RANK C"
     showtext = 1
     alarm[0] = 200
     tvsprite = spr_tvrankc
     showntimerankc = 1
 }
-else if (global.timeattackpoints > global.ctimerank && showntimerankd == 0 && global.timeattack = true)
+else if (global.timeattack_value > global.ctimerank && showntimerankd == 0 && global.timeattack = true)
 {
     image_speed = 0.35
 	if global.coop = false
-    message = "YOU ONLY GOT ENOUGH FOR RANK D"
+    _message = "YOU ONLY GOT ENOUGH FOR RANK D"
 	else
-	message = "WE ONLY GOT ENOUGH FOR RANK D"
+	_message = "WE ONLY GOT ENOUGH FOR RANK D"
     showtext = 1
     alarm[0] = 200
     tvsprite = spr_tvrankd
@@ -234,7 +234,7 @@ else if (global.hurtcounter >= global.hurtmilestone)
         character = "PEPPERMAN"		
     else if (obj_player.character == "D")
         character = "DOUGIE"	
-    message = (((("YOU HAVE HURT " + string(character)) + " ") + string(global.hurtmilestone)) + " TIMES...")
+    _message = (((("YOU HAVE HURT " + string(character)) + " ") + string(global.hurtmilestone)) + " TIMES...")
 	scr_queue_message("It seems that our counters indicate that some "+ choose("idiot","moron","ignoramus","dingus","buffon") + " Pizzaman has been hurt " + string(global.hurtmilestone)+ " times...");
     if (tvsprite != spr_tvtalking1 && tvsprite != spr_tvtalking2 && tvsprite != spr_tvtalking3 && tvsprite != spr_tvtalking4)
         tvsprite = choose(spr_tvtalking1, spr_tvtalking2, spr_tvtalking3, spr_tvtalking4)
@@ -248,7 +248,7 @@ else if (global.hurtcounter >= global.hurtmilestone)
 else if (obj_player.state == 44)
 {
     showtext = 1
-    message = "SWEET DUDE!!"
+    _message = "SWEET DUDE!!"
     alarm[0] = 50
     tvsprite = spr_tvrad
     once = 1
@@ -271,7 +271,7 @@ else if (global.combotime == 0 && tvsprite == spr_tvcombo)
 else if (obj_player.state == states.keyget)
 {
     showtext = 1
-    message = "GOT THE KEY!"
+    _message = "GOT THE KEY!"
     alarm[0] = 50
 }
 else if instance_exists(obj_noise_pushbutton)
@@ -279,7 +279,7 @@ else if instance_exists(obj_noise_pushbutton)
     if (obj_noise_pushbutton.hsp != 0 && global.panic == 0)
     {
         showtext = 1
-        message = "UH OH..."
+        _message = "UH OH..."
         alarm[0] = 50
     }
 }
@@ -366,7 +366,11 @@ else if global.newhud = true && oldcharacter == player.character && (sprite_inde
 	{
 		//case states.scaredjump:
 		//newtvsprite = player.spr_playertv_scaredjump
-		//channel = 10;			
+		//channel = 11;		
+		case states.ratmount:
+		newtvsprite = gustvspr
+		channel = 9;	
+		break;
 		case states.golf:
 		newtvsprite = player.spr_playertv_golf
 		channel = 9;	
@@ -495,6 +499,13 @@ switch(obj_player.state)
 		scr_queue_message("Think about this! You were normal once, but after being crushed by that crusher now you have shrunken to a small size.");
 		scr_queue_message("What a dingus! He should've watched more workplace safety videos. Luckily he can just jump into some cleansing water.");
 		ds_list_add(global.saveroom, "boxxed")
+	}	
+	case states.rocket:
+	if ds_list_find_index(global.saveroom, "rocket") = -1  
+	{
+		scr_queue_message("this is placeholder");
+		scr_queue_message("rocket up yer ass xdxdxd");
+		ds_list_add(global.saveroom, "rocket")
 	}	
 }
 #endregion

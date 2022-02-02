@@ -10,8 +10,17 @@ if (showtext == 0)
     if (yi < 600)
         yi += 1
 }
-	
-	
+//Cycle through text
+timer--
+if timer <= 0
+{
+	if ds_queue_size(_meesage_queue) >= 1
+	{
+		_message = ds_queue_dequeue(_meesage_queue);
+		showtext = true;
+		timer = alarm2timer/2
+	}
+}
 	
 with (obj_player1)
 {
