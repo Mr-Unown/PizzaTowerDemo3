@@ -24,3 +24,7 @@ if i >= sprite_get_number(spr_manual) - 1
 
 	draw_sprite(spr_manual_steam, -1, 0, 0)
 }
+//Version Number
+draw_set_font(font_console);
+draw_set_color(c_red);
+draw_text(0,0,"Version: "+ +string(GM_version));
