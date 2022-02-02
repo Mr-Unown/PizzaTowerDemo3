@@ -29,8 +29,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Level Structure",
-    "path": "folders/Objects/Level Structure/Level Structure.yy",
+    "name": "Special Ground",
+    "path": "folders/Objects/Level Structure/Interactables/Gimmicks/Special Ground.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_bigiceslope",

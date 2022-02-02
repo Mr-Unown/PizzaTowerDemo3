@@ -189,8 +189,8 @@ function scr_player_knightpep() {
 	    steppy = 0
 	if sprite_index = spr_knightpepstart || sprite_index = spr_knightpepthunder 
 	{
-		global.pausecombotime = true		
-		obj_tv.alarm[1] = 75		
+		global.pausecombotime = true
+		obj_tv.alarm[1] = 75			
 	}
 	knightslidespeed = 0;
 

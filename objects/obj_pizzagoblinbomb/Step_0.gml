@@ -22,7 +22,7 @@ if (scr_solid(x + sign(image_xscale),y) && !scr_slope_ext(x + sign(image_xscale)
 	image_xscale *= -1;
 	vsp = round(movespeed) / -3;
 	if (movespeed >= 0.7)
-		movespeed /= 2;
+		movespeed /= 4;
 	//hsp = (image_xscale * (movespeed))		
 	if !instance_exists(bumpid)
 		with (instance_create(x, y, obj_bumpeffect))
