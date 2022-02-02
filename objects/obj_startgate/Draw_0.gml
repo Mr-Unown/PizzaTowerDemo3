@@ -13,7 +13,7 @@ if drawtext = true
 		{
 			case 1:
 			#region Time Attack
-			var time_ = ini_read_real("TimeAttack", string(level), 0), ta_mins = floor(time_), ta_sec = time_ - ta_mins;
+			var time_ = ini_read_real("TimeAttack", string(level), 0), ta_mins = floor(time_), ta_sec = round((time_ - ta_mins) * 100);
 			if ta_mins < 10
 				ta_mins = "0" + string(ta_mins);
 			if ta_sec < 10
