@@ -6,7 +6,7 @@
     "path": "folders/Scripts/utility.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scr_camerafunctions",
+  "name": "scr_basic_functions",
   "tags": [],
   "resourceType": "GMScript",
 }
