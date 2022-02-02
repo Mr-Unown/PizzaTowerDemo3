@@ -469,10 +469,11 @@ with (obj_destroyable2_bigescape)
 				global.deathmode = true;
             scr_soundeffect(sfx_collectgiantpizza)
 			with obj_timeattack
-			{
+			{				
 			alarm[1] = 60
 			global.taminutes = (global.storedtaminute);
 			global.taseconds = (global.storedtasecond);
+			global.timeattack_points = ((global.taminutes * 60) + global.taseconds) * 60;
 			}
             with (obj_tv)
             {
@@ -713,6 +714,7 @@ if (object_index == obj_player2)
 			alarm[1] = 60
 			global.taminutes = (global.storedtaminute);
 			global.taseconds = (global.storedtasecond);
+			global.timeattack_points = ((global.taminutes * 60) + global.taseconds) * 60;
 			}
             with (obj_tv)
             {

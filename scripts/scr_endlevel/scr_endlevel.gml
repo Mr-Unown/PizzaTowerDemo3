@@ -162,7 +162,7 @@ function scr_endlevel()
 		if (ini_read_string("Highscore", string(global.levelname), 0) < global.collect) && global.timeattack = false
 			ini_write_string("Highscore", string(global.levelname), global.collect);
 		//Time Attack Time
-		if (ini_read_real("TimeAttack", string(global.levelname), 0) > global.timeattack_value)
+		if (ini_read_real("TimeAttack", string(global.levelname), 0) < global.timeattack_value)
 			ini_write_real("TimeAttack", string(global.levelname), global.timeattack_value);
 		//Laps
 		if (ini_read_real("Laps", string(global.levelname), 0) < global.lapping)

@@ -181,6 +181,7 @@
             {"propertyId":{"name":"panic_escape","path":"objects/group_all/group_all.yy",},"objectId":{"name":"group_all","path":"objects/group_all/group_all.yy",},"value":"True","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"obj_pepgoblin","path":"objects/obj_pepgoblin/obj_pepgoblin.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":832.0,"y":242.0,"resourceVersion":"1.0","name":"inst_56264638","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_destroyable2_bigescape","path":"objects/obj_destroyable2_bigescape/obj_destroyable2_bigescape.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1056.0,"y":224.0,"resourceVersion":"1.0","name":"inst_5B7AEE78","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":6.0,"scaleY":2.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1248.0,"y":2368.0,"resourceVersion":"1.0","name":"inst_F3010E0","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Instances_1","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"tileset_dungeondecoration1","path":"tilesets/tileset_dungeondecoration1/tileset_dungeondecoration1.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":59,"SerialiseHeight":65,"TileSerialiseData":[
 2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,707,708,709,710,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,
@@ -686,6 +687,7 @@
     {"name":"inst_728D5A02","path":"rooms/dungeon_5/dungeon_5.yy",},
     {"name":"inst_56264638","path":"rooms/dungeon_5/dungeon_5.yy",},
     {"name":"inst_5B7AEE78","path":"rooms/dungeon_5/dungeon_5.yy",},
+    {"name":"inst_F3010E0","path":"rooms/dungeon_5/dungeon_5.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
