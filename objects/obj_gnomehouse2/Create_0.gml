@@ -1,7 +1,7 @@
 customer_x = 144
 customer_y = 144
-player_standx = 210
-content = 313
+player_standx = 240
+content = obj_pizzakincheese
 spr_idle = spr_gnome2_idle
 spr_happy = spr_gnome2_happy
 gnome_id = 1

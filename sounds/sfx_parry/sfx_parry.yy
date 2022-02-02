@@ -11,8 +11,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "sfx_parry",
-  "duration": 1.205,
+  "soundFile": "sfx_parry.wav",
+  "duration": 1.081429,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

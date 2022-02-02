@@ -224,35 +224,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
 			audio_sound_set_track_position(global.music, fadeoff)
 			pausedmusic = mu_beach
 		}	
-	}
-	/*
-    if (string_letters(roomname) == "desert" && global.desertnight == 1)
-    {
-        for (i = 0; i < 20; i++)
-        {
-            if (roomname == ("desert_" + string(i)) && i <= 14)
-            {
-                if (!audio_is_playing(mu_cowboy))
-                {
-                    scr_soundstopall()
-                    scr_sound(mu_cowboy)
-                    audio_sound_set_track_position(global.music, fadeoff)
-                    pausedmusic = mu_cowboy
-                }
-            }
-            else if (roomname == ("desert_" + string(i)) && i > 14)
-            {
-                if (!audio_is_playing(mu_cowboyufo))
-                {
-                    scr_soundstopall()
-                    scr_sound(mu_cowboyufo)
-                    audio_sound_set_track_position(global.music, fadeoff)
-                    pausedmusic = mu_cowboyufo
-                }
-            }
-        }
-    }*/
-/*    
+	}    
     if (string_letters(roomname) == "sewer")
     {
         for (i = 0; i < 20; i++)
@@ -279,26 +251,26 @@ if (global.panic == 0 && global.snickchallenge == 0)
             }
         }
     }
-    if (string_letters(roomname) == "freezer")
+    if (string_letters(roomname) == "oldfreezer")
     {
         for (i = 0; i < 20; i++)
         {
-            if (roomname == ("freezer_" + string(i)) && i <= 6)
+            if (roomname == ("oldfreezer_" + string(i)) && i <= 6)
             {
                 if (!audio_is_playing(mu_freezer1))
                 {
                     scr_soundstopall()
-                    scr_sound(114)
-                    pausedmusic = 114
+                    scr_sound(mu_freezer1)
+                    pausedmusic = mu_freezer1
                 }
             }
-            else if ((roomname == ("freezer_" + string(i)) && i > 6) || room == freezer_11)
+            else if ((roomname == ("oldfreezer_" + string(i)) && i > 6) /*|| room == oldfreezer_11*/)
             {
                 if (!audio_is_playing(mu_freezer2))
                 {
                     scr_soundstopall()
-                    scr_sound(115)
-                    pausedmusic = 115
+                    scr_sound(mu_freezer2)
+                    pausedmusic = mu_freezer2
                 }
             }
         }
@@ -328,7 +300,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
                 }
             }
         }
-    }*/
+    }
     if (string_letters(roomname) == "strongcold") || room = strongcold_miniboss
     {
         for (i = 0; i < 20; i++)

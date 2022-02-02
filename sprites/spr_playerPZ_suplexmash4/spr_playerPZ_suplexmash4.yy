@@ -76,7 +76,7 @@
     "eventStubScript": null,
     "parent": {"name":"spr_playerPZ_suplexmash4","path":"sprites/spr_playerPZ_suplexmash4/spr_playerPZ_suplexmash4.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "spr_playerPZ_suplexmash4",
     "tags": [],
     "resourceType": "GMSequence",
   },
