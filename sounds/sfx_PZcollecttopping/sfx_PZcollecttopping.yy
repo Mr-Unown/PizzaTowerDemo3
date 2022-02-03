@@ -11,8 +11,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "sfx_PZcollecttopping.mp3",
-  "duration": 0.496327,
+  "soundFile": "sfx_PZcollecttopping.wav",
+  "duration": 0.466984,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

@@ -117,7 +117,7 @@ if relax = false && global.freezeframe = false && room != rank_room && !instance
 			with (playerid)
 			{
 				if character != "PZ"
-				scr_soundeffect(sfx_parry)
+				scr_soundeffect(choose(sfx_parry1,sfx_parry2))
 				else
 				scr_soundeffect(sfx_PZparry)
 				state = 114

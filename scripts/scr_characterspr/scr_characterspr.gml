@@ -1037,7 +1037,9 @@ function scr_characterspr(player_character = character) {
 		spr_playertv_scaredjump = spr_tv_vigitemp;		
 		#endregion		
 	    spr_idle = spr_playerV_idle
+		spr_rageidle = spr_playerV_angryidle
 	    spr_move = spr_playerV_move
+		spr_ragemove = spr_playerV_angrymove
 	    spr_crawl = spr_playerV_crouchmove
 	    spr_hurt = spr_playerV_hurt
 	    spr_jump = spr_playerV_jump
@@ -1784,6 +1786,7 @@ function scr_characterspr(player_character = character) {
 		spr_heatmeterfill = spr_heatmeter_fillPZ
 		#endregion
 		spr_idle = spr_playerPZ_idle
+		spr_rageidle = spr_playerPZ_rageidle
 		spr_move = spr_playerPZ_move
 		spr_crawl = spr_playerPZ_crawl
 		spr_hurt = spr_playerPZ_hurt
