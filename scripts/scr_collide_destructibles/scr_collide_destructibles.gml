@@ -258,7 +258,7 @@ function scr_collide_destructibles() {
 				}
 	        }		
 		}
-		if sprite_index = spr_player_shoryumineken && vsp < 0 {
+		if sprite_index = spr_shoryumineken && vsp < 0 {
 	        if place_meeting((x + hsp), y + vsp, obj_destructibles)
 	        {
 	            with (instance_place((x + hsp), y + vsp, obj_destructibles))
@@ -702,7 +702,7 @@ function scr_collide_destructibles() {
 				}
 	        }		
 		}
-		if sprite_index = spr_player_shoryumineken && vsp < 0 {
+		if sprite_index = spr_shoryumineken && vsp < 0 {
 	        if place_meeting((x + hsp), y + vsp, obj_destructibles)
 	        {
 	            with (instance_place((x + hsp), y + vsp, obj_destructibles))

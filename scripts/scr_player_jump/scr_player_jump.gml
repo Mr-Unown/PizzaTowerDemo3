@@ -115,8 +115,8 @@ function scr_player_jump() {
 	    }
 	    if (jumpAnim == 0)
 	    {
-			if (sprite_index == spr_player_shoryumineken)
-				sprite_index = spr_player_shoryukenend
+			if (sprite_index == spr_shoryumineken)
+				sprite_index = spr_shoryukenend
 	        if (sprite_index == spr_playerN_doublejump)
 	            sprite_index = spr_playerN_doublejumpfall		
 	        if (sprite_index == spr_airdash1)
@@ -255,7 +255,7 @@ function scr_player_jump() {
 			momemtum = 1
 			vsp = -8
 			state = 58
-			sprite_index = spr_player_shoryumineken		
+			sprite_index = spr_shoryumineken		
 			image_index = 0
 		}
 		else if (character == "P" && global.attackstyle == 1)

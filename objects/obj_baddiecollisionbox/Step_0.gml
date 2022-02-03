@@ -184,11 +184,11 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
 				}
 			}
 			}
-			if sprite_index = spr_player_shoryumineken && vsp < 0 && other.baddieID.hp > 0 && (!other.baddieID.invincible)
+			if sprite_index = spr_shoryumineken && vsp < 0 && other.baddieID.hp > 0 && (!other.baddieID.invincible)
 			{
 				#region Shoryoken Jump
 				flash = 1
-				sprite_index = spr_player_shoryumineken
+				sprite_index = spr_shoryumineken
 				image_index = 4
 				if vsp > -20
 					vsp += -1
@@ -229,9 +229,9 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                 }	
 				#endregion
 			}
-			else if sprite_index = spr_player_shoryumineken && other.baddieID.vsp > 0 && other.baddieID.dying = true && vsp < 0 {
+			else if sprite_index = spr_shoryumineken && other.baddieID.vsp > 0 && other.baddieID.dying = true && vsp < 0 {
 				#region Shoryoken Juggle
-				sprite_index = spr_player_shoryumineken
+				sprite_index = spr_shoryumineken
 				image_index = 4
                 other.baddieID.blowdirection = 3
 				if other.baddieID.hp <= 1
@@ -398,7 +398,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player2) && obj_player2
         with (obj_player2)
         {
 		#region Player2
-            if (instakillmove == 1) && !(sprite_index = spr_player_shoryumineken)
+            if (instakillmove == 1) && !(sprite_index = spr_shoryumineken)
             {
                 if (state == 91 && sprite_index != spr_mach3hit)
                 {
@@ -521,11 +521,11 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player2) && obj_player2
                     }
                 }
             }
-			if sprite_index = spr_player_shoryumineken && vsp < 0 && other.baddieID.hp > 0
+			if sprite_index = spr_shoryumineken && vsp < 0 && other.baddieID.hp > 0
 			{
 				#region Shoryoken Jump
 				flash = 1
-				sprite_index = spr_player_shoryumineken
+				sprite_index = spr_shoryumineken
 				image_index = 4
 				if vsp > -20
 					vsp += -1
@@ -567,10 +567,10 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player2) && obj_player2
 
 				#endregion
 			}
-			else if sprite_index = spr_player_shoryumineken && other.baddieID.vsp > 0 && other.baddieID.dying = true && other.baddieID.dying = true && vsp < 0 {
+			else if sprite_index = spr_shoryumineken && other.baddieID.vsp > 0 && other.baddieID.dying = true && other.baddieID.dying = true && vsp < 0 {
 				#region Shoryoken Juggle
 				flash = 1
-				sprite_index = spr_player_shoryumineken
+				sprite_index = spr_shoryumineken
 				image_index = 4
                 other.baddieID.blowdirection = 3
 				if other.baddieID.hp <= 1

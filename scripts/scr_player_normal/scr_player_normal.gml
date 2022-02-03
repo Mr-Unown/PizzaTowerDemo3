@@ -381,7 +381,7 @@ function scr_player_normal() {
 				vsp = -12
 				state = 58
 				jumpAnim = 1
-				sprite_index = spr_player_shoryumineken		
+				sprite_index = spr_shoryumineken		
 				image_index = 0
 			}
 			else if character = "N" 

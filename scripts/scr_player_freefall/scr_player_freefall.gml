@@ -94,7 +94,6 @@ function scr_player_freefall() {
 	{
 	#region Land
 	    scr_soundeffect(sfx_groundpound)
-	    freefallsmash = 0
 	    if (shotgunAnim == 0)
 	        sprite_index = spr_bodyslamland
 	    else
@@ -138,6 +137,7 @@ function scr_player_freefall() {
 	    freefallstart = 0
 		combo = 0
 	    bounce = 0
+		freefallsmash = 0
 	#endregion
 	}
 
