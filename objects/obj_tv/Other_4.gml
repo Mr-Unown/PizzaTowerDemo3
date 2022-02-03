@@ -40,6 +40,10 @@ if global.snickchallenge == false
 			global.stimerank = 7.40;
 			global.srank = 19500
 		break;
+		case "freezer":
+			global.stimerank = 4.30;
+			global.srank = 8250
+		break;
 		default:
 			global.stimerank = 10.00;
 			global.srank = global.collect + 1005000					

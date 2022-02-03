@@ -41,6 +41,10 @@ function scr_escapetimes() {
 				global.minutes = 2
 				global.seconds = 30
 				break
+			case oldfreezer_11:
+	            global.minutes = 2
+	            global.seconds = 15
+	            break
 
 				/*
 	        case mansion_21:

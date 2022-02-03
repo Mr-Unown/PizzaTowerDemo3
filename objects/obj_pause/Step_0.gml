@@ -313,6 +313,16 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
                 if instance_exists(obj_player2)
                     obj_player2.targetDoor = "A"
             }
+			 else if (string_letters(roomname) == "oldfreezer")
+            {
+                instance_activate_all()
+                room = oldfreezer_1
+                scr_playerreset()
+                pause = 0
+                obj_player1.targetDoor = "A"
+                if instance_exists(obj_player2)
+                    obj_player2.targetDoor = "A"
+            }
 			/*
             else if (string_letters(roomname) == "sewer" || string_letters(roomname) == "sewersecret")
             {
