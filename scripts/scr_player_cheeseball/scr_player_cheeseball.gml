@@ -68,13 +68,12 @@ function scr_player_cheeseball() {
 	    state = 72*/
 		vsp = -movespeed
 		hsp = 0
-		if key_jump2
+		if key_jump
 		{
 		xscale = -xscale
-		hsp = (xscale * 12)
 		}
 	}
-	if instance_place(x, y - 1, obj_solid)
+	if instance_place(x, y - 1, obj_solid) && hsp = 0
 	{
 		scr_soundeffect(sfx_bumpwall)
 	    scr_soundeffect(sfx_loseknight)
@@ -130,7 +129,7 @@ function scr_player_cheeseball() {
 	    scr_soundeffect(sfx_jump)
 	    vsp = -5
 	}
-
+	image_speed = (movespeed/14) * 0.5
 
 
 }
