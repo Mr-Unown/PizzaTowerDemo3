@@ -8,7 +8,7 @@ function camera_shake(shake,shake_acc)
 	    shake_mag_acc = (shake_acc / room_speed);
 	}
 }
-/*
+
 function point_in_camera(_pos_x, _pos_y, _cam_id = view_camera[0])
 {
 	/// @description Returns True if point is in camera's bounds

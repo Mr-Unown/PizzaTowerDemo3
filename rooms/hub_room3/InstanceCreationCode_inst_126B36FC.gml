@@ -1,4 +1,4 @@
-flags.do_once = true;
+flags.do_once_per_save = true;
 flags.do_save = true;
 flags.saveroom = global.saveroom;
 condition = function() 
@@ -8,7 +8,8 @@ condition = function()
 
 output = function() 
 {
-	scr_queue_message("HELLO! MOST OF THE LEVELS HERE W.I.P. SO BEWARE!",spr_tv_unown);
+	scr_queue_message("HELLO! MOST OF THE LEVELS HERE ARE W.I.P. SO BEWARE!");
+	scr_queue_tvanim(spr_tv_unown,210);
 	with obj_tv 
 	{
 		_message = "BEWARE OF W.I.P. LEVELS"

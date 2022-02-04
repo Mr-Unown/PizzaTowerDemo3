@@ -528,7 +528,7 @@ if ds_queue_size(global.newhudmessage) > 1 && showingnewtext = false && newtvspr
 	//Anim Spr
 	if tvspr != noone
 	{
-		newtvsprite = tvspr
+		newtvsprite = tvspr;
 		tvanimtext = true;
 		tvanim = true
 		drawstatic = true
