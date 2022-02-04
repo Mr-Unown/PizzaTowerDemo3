@@ -1,7 +1,31 @@
-var _cam_x = camera_get_view_x(view_camera[0])// + camera_get_view_width(view_camera[0])/2
-var _cam_y = camera_get_view_y(view_camera[0])// + camera_get_view_height(view_camera[0])/2
-var _centeredcam_x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0])/2
-var _centeredcam_y = camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0])/2
+//Scrolloffset for the illusion of time idk
+if (room != hub_room1 && room != hub_room3  && room != hub_room2 && room != cowboytask && obj_pause.pause == 0)
+    global.scrolloffset += 1
+//Parallax Moment
+for (var i = 0; i < array_length(layers); ++i) 
+{
+    if layers[i] != undefined
+	{
+		with layers[i]
+		{
+			//Variable Mess
+			var _speedmodifier = (global.freezeframe ? 4 : 1);
+			var x_pos = layer_xoffset + layer_xshift;
+			var y_pos = layer_yoffset + layer_yshift;
+			var parallax_value = parallax_layer(layer_id);
+			layer_xshift += layer_xspeed /_speedmodifier;
+			layer_yshift += layer_yspeed /_speedmodifier;
+			
+			//Final Layer
+			layer_x(layer_id, parallax_value[0] + x_pos);
+			layer_y(layer_id, parallax_value[1] + y_pos);			
+			layer_background_speed(layer_id, (layer_image_speed /_speedmodifier))
+			
+		} 
+	}
+}
+
+/*
 var lay_id = layer_get_id("Backgrounds_1")
 var back_id = layer_background_get_id_fixed(lay_id)
 var lay_id2 = layer_get_id("Backgrounds_2")
@@ -37,8 +61,7 @@ var back_id15 = layer_background_get_id_fixed(lay_id15)
 var lay_id16 = layer_get_id("Backgrounds_long2")
 var back_id16 = layer_background_get_id_fixed(lay_id16)
 
-if (room != hub_room1 && room != hub_room3  && room != hub_room2 && room != cowboytask && obj_pause.pause == 0)
-    global.scrolloffset += 1
+
 	
 #region Freezeframe
 var _speedmodifier = 4
@@ -109,3 +132,4 @@ layer_x("Backgrounds_far1",(_cam_x - clamp(_cam_x * 0.25 * (960 / room_width), 0
 layer_y("Backgrounds_far1",(_cam_y - clamp(_cam_y * 0.25 * (540 / room_height), 0, (sprite_get_height(layer_background_get_sprite(back_id6)) - 540 ) )))
 layer_x("Backgrounds_far", (_cam_x - clamp(_cam_x * 0.3 * (960 / room_width), 0, (sprite_get_width(layer_background_get_sprite(back_id10))  - 960) )))
 layer_y("Backgrounds_far", (_cam_y - clamp(_cam_y * 0.3 * (540 / room_height), 0, (sprite_get_height(layer_background_get_sprite(back_id10)) - 540 ) )))
+*/

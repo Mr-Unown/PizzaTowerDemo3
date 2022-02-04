@@ -40,22 +40,22 @@ if global.timeattack = false
 }
 else
 {
-	if global.timeattackpoints <= global.stimerank
+	if global.timeattack_value <= global.stimerank
 		global.currentrank = "S"	
-	else if global.timeattackpoints <= global.atimerank
+	else if global.timeattack_value <= global.atimerank
 		global.currentrank = "A"		
-	else if global.timeattackpoints <= global.btimerank
+	else if global.timeattack_value <= global.btimerank
 		global.currentrank = "B"		
-	else if global.timeattackpoints <= global.ctimerank
+	else if global.timeattack_value <= global.ctimerank
 		global.currentrank = "C"
-	else if global.timeattackpoints <= global.dtimerank
+	else if global.timeattack_value <= global.dtimerank
 		global.currentrank = "D"
 }
 #endregion
 if oldranklol != global.currentrank
 {
-	oldranklol = global.currentrank;
 	bubblescale = 1.5;
+	oldranklol = global.currentrank;
 }
 bubblescale = approach(bubblescale, 0, 0.10);
 //Collided with Player

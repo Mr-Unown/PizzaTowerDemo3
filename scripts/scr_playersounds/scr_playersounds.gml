@@ -1,7 +1,7 @@
 function scr_playersounds() {
 	with id
 	{
-		var pitchspd = (movespeed/9.5) * 0.8
+		var pitchspd = global.pitchshift == 1 ? (movespeed/9.5) * 0.8 : 1;
 	    if (state == 69 && (!audio_is_playing(sfx_mach1)) && grounded)
 	    {
 	        mach1snd = audio_play_sound(sfx_mach1, 1, false)

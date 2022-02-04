@@ -254,6 +254,7 @@ if (grabbed == 1)
             x = playerid.x
             y = (playerid.y - 40)
         }
+		/*
         if (playerid.sprite_index == playerid.spr_piledriverland && floor(playerid.image_index) == (playerid.image_number - 1))
         {
             flash = 1
@@ -267,7 +268,7 @@ if (grabbed == 1)
             grav = 0.5
             hsp = ((-image_xscale) * 10)
             vsp = -10
-        }
+        }*/
     }
 }
 if (place_meeting(x, y, obj_swordhitbox) && thrown == 0) && grabbed == true

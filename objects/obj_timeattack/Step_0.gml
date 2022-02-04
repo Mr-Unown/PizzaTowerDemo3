@@ -1,7 +1,16 @@
 if global.timeattack = true
-	global.timeattackpoints = global.taminutes + (global.taseconds/100);
+{
+	//Used for checking ranks
+	global.timeattack_value = global.taminutes + (global.taseconds / 100);
+	//Used for Meters and Stuff
+	if global.freezeframe = false
+		global.timeattack_points += (60 / room_speed);
+}
 else
-	global.timeattackpoints = 0;
+{
+	global.timeattack_value = 0;
+	global.timeattack_points = 0;
+}
 	
 if frozen = true && global.freezeframe = false
 {

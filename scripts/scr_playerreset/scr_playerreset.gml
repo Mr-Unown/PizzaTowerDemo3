@@ -72,6 +72,8 @@ function scr_playerreset() {
 	obj_timeattack.stop = 0;
 	global.taseconds = 0;
 	global.taminutes = 0;
+	global.timeattack_value = 0;
+	global.timeattack_points = 0;
 	obj_player1.spotlight = 1;
 	obj_player2.x = -1000;
 	obj_player2.y = 500;

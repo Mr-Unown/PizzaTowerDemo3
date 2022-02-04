@@ -196,7 +196,7 @@ function scr_player_grab() {
 	    {
 	        sprite_index = spr_piledriver
 	        vsp = -6
-	        state = 43
+	        state = states.superslam
 	        image_index = 0
 	        image_speed = 0.35
 	    }

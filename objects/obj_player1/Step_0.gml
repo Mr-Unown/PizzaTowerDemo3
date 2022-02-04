@@ -183,23 +183,23 @@ if (global.combotime <= 0 && global.combo != 0) && global.freezeframe = false &&
 	if global.snickchallenge == false
 	{
 		#region Combo End Spawner
-	endcombo = true
-	with comboend_id
-	{
-		storedscore += other.storedscore;
-		scorespd = 5 * ceil(storedscore / 1100);
-		//End Sprite Choosener
-		var combo_image_number = sprite_get_number(spr_combo_text);
-		var combo_strength = round(storedscore / 1100);
-		var combo_spr = clamp(combo_strength,0,combo_image_number - 1);
-		endspr = combo_spr;
-		scale = 0.5;
-		image_alpha = 1;
-		visible = true;
-		activated = true;
-		alarm[0] = 50;
-	}
-	#endregion
+		endcombo = true
+		with comboend_id
+		{
+			storedscore += other.storedscore;
+			scorespd = 5 * ceil(storedscore / 1100);
+			//End Sprite Choosener
+			var combo_image_number = sprite_get_number(spr_combo_text);
+			var combo_strength = round(storedscore / 1100);
+			var combo_spr = clamp(combo_strength,0,combo_image_number - 1);
+			endspr = combo_spr;
+			scale = 0.675;
+			image_alpha = 1;
+			visible = true;
+			activated = true;
+			alarm[0] = 50;
+		}
+		#endregion
 	}
 	if global.coop == true
 	{
@@ -208,23 +208,23 @@ if (global.combotime <= 0 && global.combo != 0) && global.freezeframe = false &&
 			if global.snickchallenge == false
 			{
 				#region Combo End Spawner
-			endcombo = true
-			with comboend_id
-			{
-				storedscore += other.storedscore;
-				scorespd = 5 * ceil(storedscore / 1100);
-				//End Sprite Choosener
-				var combo_image_number = sprite_get_number(spr_combo_text);
-				var combo_strength = round(storedscore / 1100);
-				var combo_spr = clamp(combo_strength,0,combo_image_number - 1);
-				endspr = combo_spr;
-				scale = 0.5;
-				image_alpha = 1;
-				visible = true;
-				activated = true;
-				alarm[0] = 50;
-			}
-			#endregion
+				endcombo = true
+				with comboend_id
+				{
+					storedscore += other.storedscore;
+					scorespd = 5 * ceil(storedscore / 1100);
+					//End Sprite Choosener
+					var combo_image_number = sprite_get_number(spr_combo_text);
+					var combo_strength = round(storedscore / 1100);
+					var combo_spr = clamp(combo_strength,0,combo_image_number - 1);
+					endspr = combo_spr;
+					scale = 0.675;
+					image_alpha = 1;
+					visible = true;
+					activated = true;
+					alarm[0] = 50;
+				}
+				#endregion
 			}
 		}
 	}
