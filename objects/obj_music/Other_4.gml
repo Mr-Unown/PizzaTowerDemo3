@@ -229,24 +229,24 @@ if (global.panic == 0 && global.snickchallenge == 0)
     {
         for (i = 0; i < 20; i++)
         {
-            if ((roomname == ("sewer_" + string(i)) && i <= 6) || room == sewer_12)
+            if ((roomname == ("sewer_" + string(i)) && i <= 6) /*|| room == sewer_12*/)
             {
                 if (!audio_is_playing(mu_sewer1))
                 {
                     scr_soundstopall()
-                    scr_sound(112)
+                    scr_sound(mu_sewer1)
                     audio_sound_set_track_position(global.music, fadeoff)
-                    pausedmusic = 112
+                    pausedmusic = mu_sewer1
                 }
             }
-            else if (roomname == ("sewer_" + string(i)) && i > 6 && room != sewer_12)
+            else if (roomname == ("sewer_" + string(i)) && i > 6 /*&& room != sewer_12*/)
             {
                 if (!audio_is_playing(mu_sewer2))
                 {
                     scr_soundstopall()
-                    scr_sound(113)
+                    scr_sound(mu_sewer2)
                     audio_sound_set_track_position(global.music, fadeoff)
-                    pausedmusic = 113
+                    pausedmusic = mu_sewer2
                 }
             }
         }

@@ -1,4 +1,3 @@
-if (live_call()) return live_result;
 function scr_characterspr(player_character = character) {
 	#region Default
 	    {
@@ -20,6 +19,7 @@ function scr_characterspr(player_character = character) {
 		spr_playertv_scaredjump = spr_tv_scaredjump;
 		spr_playertv_hurt = spr_tv_hurt;
 		spr_playertv_scared = spr_tv_scared;
+		spr_playertv_cheeseball = spr_tv_cheeseball;
 		#endregion
 		spr_idle = spr_player_idle
 		spr_move = spr_player_move
@@ -1774,6 +1774,7 @@ function scr_characterspr(player_character = character) {
 		spr_playertv_golf = spr_tv_idlePZ;
 		spr_playertv_firemouth = spr_tv_idlePZ;
 		spr_playertv_scaredjump = spr_tv_idlePZ;		
+		spr_playertv_cheeseball = spr_tv_cheeseballPZ;
 		#endregion		
 		#region Pizzascore Sprites
 		spr_pizzascore_1 = spr_pizzascore_marshmallow
@@ -1807,7 +1808,7 @@ function scr_characterspr(player_character = character) {
 		spr_Ladder = spr_playerPZ_ladder
 		spr_laddermove = spr_playerPZ_laddermove
 		spr_ladderdown = spr_playerPZ_ladderdown
-		spr_keyget = spr_player_keyget //Missing
+		spr_keyget = spr_playerPZ_keyget 
 		spr_crouchslip = spr_playerPZ_crouchslip
 		spr_crouchslipjump = spr_playerPZ_crouchslipfall //Missing
 		spr_crouchslipfall = spr_playerPZ_crouchslipfall
@@ -1906,8 +1907,8 @@ function scr_characterspr(player_character = character) {
 		spr_tumbleend = spr_playerPZ_tumbleend
 		spr_tumble = spr_playerPZ_tumble
 		spr_stunned = spr_playerPZ_stunned
-		spr_downpizzabox = spr_player_downpizzabox //Missing
-		spr_uppizzabox = spr_player_uppizzabox //Missing
+		spr_downpizzabox = spr_playerPZ_downpizzabox
+		spr_uppizzabox = spr_playerPZ_uppizzabox 
 		spr_taunt = spr_playerPZ_taunt
 		spr_slipnslide =  spr_playerPZ_slipnslide
 		spr_mach3boost = spr_playerPZ_machslideboost3
@@ -1919,7 +1920,7 @@ function scr_characterspr(player_character = character) {
 		spr_suplexdashjump = spr_player_suplexgrabjump //Missing / Unused
 		spr_shotgunsuplexdash = spr_shotgun_suplexdash //Missing
 	    spr_rollgetup = spr_playerPZ_rollgetup
-		spr_swingding = spr_player_swingding //Missing
+		spr_swingding = spr_playerPZ_swingding //Missing
 		spr_swingdingend = spr_player_swingdingend //Missing
 		spr_haulingjump = spr_playerPZ_haulingjump
 		spr_haulingidle = spr_playerPZ_haulingidle

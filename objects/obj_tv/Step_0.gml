@@ -367,9 +367,9 @@ else if global.newhud = true && oldcharacter == player.character && (sprite_inde
 		//case states.scaredjump:
 		//newtvsprite = player.spr_playertv_scaredjump
 		//channel = 11;		
-		case states.ratmount:
-		newtvsprite = gustvspr
-		channel = 9;	
+		case states.cheeseball:
+		newtvsprite = player.spr_playertv_cheeseball
+		channel = 10;	
 		break;
 		case states.golf:
 		newtvsprite = player.spr_playertv_golf
