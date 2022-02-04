@@ -11,6 +11,9 @@ global.parallax_array = noone;
 global.parallax_arraynumber = 0;
 scr_default_parallax();
 
+//Load Inputs
+scr_initinput();
+
 //Global Variable Init
 enum temperature
 {
