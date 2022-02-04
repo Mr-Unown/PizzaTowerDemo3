@@ -1,4 +1,4 @@
-function scr_queue_message(argument0 = "",argument1 = noone) {
+function scr_queue_message(argument0 = "", argument1 = noone) {
 	///@param string
 	///@param insert_sprite_here_to_activate_talkingsprs
 	ds_queue_enqueue(global.newhudmessage,argument0);

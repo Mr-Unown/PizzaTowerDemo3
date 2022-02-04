@@ -6,6 +6,10 @@ display_set_gui_size(960, 540);
 surface_resize(application_surface,960,540);
 //Fart Counter
 global.fartcounter = 0;
+//Parallax
+global.parallax_array = noone;
+global.parallax_arraynumber = 0;
+scr_default_parallax();
 
 //Global Variable Init
 enum temperature
@@ -24,6 +28,9 @@ global.combofont2 = font_add_sprite_ext(spr_font_combo2, "1234567890", 1, 0)
 global.smallnumber = font_add_sprite_ext(spr_smallnumber, "1234567890-", 1, 0)
 global.timerfont = font_add_sprite_ext(spr_font_timer, "1234567890:", 1, 0)
 
+//MISC
+global.scrolloffset = 0;
+
 //Read Save File
 ini_open("saveData.ini")
 //global.interpolation = ini_read_real("Option", "interpolation", false);
@@ -34,11 +41,11 @@ global.collectstyle = ini_read_real("Option", "collectstyle", 0);
 global.pitchshift = ini_read_real("Option", "pitchshift", 0);
 global.escapecollect = ini_read_real("Option", "escapecollect", 0);
 global.groundpoundstyle = ini_read_real("Option", "groundpoundstyle", 0);
-global.divestyle = ini_read_real("Option", "divestyle", 0);
+global.divestyle = false; //This sucks. Removing it.
 global.attackstyle = ini_read_real("Option", "attackstyle", 0);
-global.destroyablecollect = ini_read_real("Option", "destroyablecollect", 0);
-global.ratmode = ini_read_real("Option", "ratmode", false);
-global.combostyle = false //Oh this is the the funny new combostuff
+global.destroyablecollect = false; //move into a separate object styled like the new collectable blocks
+global.ratmode = 0; //ini_read_real("Option", "ratmode", false);
+global.combostyle = false; //Oh this is the the funny new combostuff hud? merge into hudstyle
 global.backdrop = 0
 //Audio
 global.mastervolume = ini_read_real("Option", "mastervolume", 1)
@@ -47,8 +54,7 @@ global.soundeffectsvolume = ini_read_real("Option", "soundeffectsvolume", 1)
 ini_close()
 global.roomstart[0] = Realtitlescreen;
 global.roomstart[1] = New_Realtitlescreen;
-//Interpolation
-//gpu_set_tex_filter(global.interpolation);
+
 //Start by cleaning
 global.flushtextures = true;
 global.moppingframes = 0;
@@ -68,4 +74,4 @@ while global.flushtextures = true
 //Uncomment to simulate YYC in VM
 //What this does is turn off loads of checks GMS2 does
 gml_release_mode(true);
-//}
+

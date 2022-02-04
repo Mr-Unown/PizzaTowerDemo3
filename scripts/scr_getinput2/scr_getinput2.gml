@@ -1,8 +1,7 @@
 function scr_getinput2() {
 	gamepad_set_axis_deadzone(1, 0.4)
-	if global.shellactivate = true
-	{
-		#region Anti-Crash
+	
+	#region Anti-Crash
 	key_up = false
 	key_up2 = false
 	key_right = false
@@ -24,9 +23,8 @@ function scr_getinput2() {
 	key_start = false
 	key_escape = false
 		#endregion
-		return;
-	}
-	else
+
+	if global.shellactivate == false
 	{	
 	key_up = (keyboard_check(global.key_upN) || gamepad_button_check(1, global.key_upCN) || gamepad_axis_value(1, gp_axislv) < 0)
 	key_up2 = (keyboard_check_pressed(global.key_upN) || gamepad_button_check_pressed(1, global.key_upCN) || (gamepad_axis_value(1, gp_axislv) < -0.5 && stickpressed == 0))

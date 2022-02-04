@@ -5,7 +5,7 @@ panicshakeacc = 0;
 rankbubblesurface = noone;
 oldranklol = "FUCK"
 bubblescale = 0
-depth = -9994
+depth = -9999
 
 //Stinky Thing
 oldfacesprite = spr_null

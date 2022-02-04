@@ -2,7 +2,7 @@ if activated = true
 {
 	if storedscore <= 0
 	{
-		image_alpha -= 0.25
+		image_alpha -= 0.15
 		if image_alpha <= 0
 		{
 			player.endcombo = false;

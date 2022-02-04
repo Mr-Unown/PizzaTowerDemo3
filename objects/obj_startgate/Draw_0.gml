@@ -9,33 +9,45 @@ if drawtext = true
 	
 	if (level != "snickchallenge")
 	{
-		draw_text(x, (y - 100), ini_read_string("Highscore", string(level), 0))
-		draw_text(x, (y - 150), ini_read_string("Secret", string(level), 0) + " OF 6 SECRET")
+		switch (selection)
+		{
+			case 1:
+			#region Time Attack
+			var time_ = ini_read_real("TimeAttack", string(level), 0), ta_mins = floor(time_), ta_sec = round((time_ - ta_mins) * 100);
+			if ta_mins < 10
+				ta_mins = "0" + string(ta_mins);
+			if ta_sec < 10
+				ta_sec = "0" + string(ta_sec);
+			draw_text(x, (y - 100), "BEST TIME: " + string(ta_mins) + ":" + string(ta_sec))
+			var laps_ = ini_read_real("Laps", string(level), 0)
+			draw_text(x, (y - 150), string(laps_) + " LAPS OF 3");
+			
+			//Toppin Draw Simplification
+			for (var i = 0; i < 5; ++i) 
+			{
+				var x_pos = -80 + (40 * i)
+				var collected = ini_read_string("Toppin", string(level) + string(i + 1), 0)
+				draw_sprite(toppin_sprs[i], collected, x + x_pos, y - 200);
+			}
+			#endregion			
+			break;
+			default:
+			#region Default/Panic Attack
+			draw_text(x, (y - 100), ini_read_string("Highscore", string(level), 0))
+			draw_text(x, (y - 150), ini_read_string("Secret", string(level), 0) + " OF 6 SECRET")
+			
+			//Toppin Draw Simplification
+			for (var i = 0; i < 5; ++i) 
+			{
+				var x_pos = -80 + (40 * i)
+				var collected = ini_read_string("Toppin", string(level) + string(i + 1), 0)
+				draw_sprite(toppin_sprs[i], collected, x + x_pos, y - 200);
+			}
 
-		if ini_read_string("Toppin", string(level) + "1", 0) == 1
-				draw_sprite(spr_pizzakinshroom_pause, 1,(x - 75), (y - 200))
-			else
-	            draw_sprite(spr_pizzakinshroom_pause, 0, (x - 75), (y - 200))
-
-		if ini_read_string("Toppin", string(level) + "2", 0) == 1
-				draw_sprite(spr_pizzakincheese_pause, 1,(x - 35), (y - 200))
-			else
-	            draw_sprite(spr_pizzakincheese_pause, 0, (x - 35), (y - 200))
-
-		if ini_read_string("Toppin", string(level) + "3", 0) == 1
-				draw_sprite(spr_pizzakintomato_pause, 1,x, (y - 200))
-			else
-	            draw_sprite(spr_pizzakintomato_pause, 0, x, (y - 200))
-
-		if ini_read_string("Toppin", string(level) + "4", 0) == 1
-				draw_sprite(spr_pizzakinsausage_pause, 1,(x + 35), (y - 200))
-			else
-	            draw_sprite(spr_pizzakinsausage_pause, 0, (x + 35), (y - 200))
-	
-		if ini_read_string("Toppin", string(level) + "5", 0) == 1
-				draw_sprite(spr_pizzakinpineapple_pause, 1,(x + 75), (y - 200))
-			else
-	            draw_sprite(spr_pizzakinpineapple_pause, 0, (x + 75), (y - 200))
+			#endregion
+			break;
+			
+		}
 	}
 	else if (level == "snickchallenge")
     {

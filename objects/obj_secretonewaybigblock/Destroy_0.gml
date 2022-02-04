@@ -11,7 +11,7 @@ if (ds_list_find_index(global.saveroom, id) == -1)
 	var data4 = tilemap_get_at_pixel(map_id, (x   + offset + (sign(image_xscale) * 32)), (y + 33))
 	var player = obj_player1
 	if global.coop = true
-	player = instance_nearest(x,y,obj_player)
+		player = instance_nearest(x,y,obj_player)
 	repeat (3)
 	with (instance_create((x + 32 + random_range(-32, 32)), (y + 32 + random_range(-32, 32)), obj_balloonpop))
 	{
@@ -66,7 +66,7 @@ if (ds_list_find_index(global.saveroom, id) == -1)
     var pizzacoin = random_range(1, 100)
     if (pizzacoin >= 85)
     {
-        with (instance_create(x, y, obj_pizzacoin))
+        with (instance_create(x + (image_xscale * 32), y, obj_pizzacoin))
 		{
 			_dir = choose(1,-1)
             hsp = 2

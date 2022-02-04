@@ -59,9 +59,9 @@ function scr_enemy_walk() {
 			image_xscale *= -1
 	}
 	//Hallway
-	with instance_place(x, y, obj_hallway)
+	with instance_place(x + sign(image_xscale), y, obj_hallway)
 	{
-		var backtoroom = sign(image_xscale)
+		var backtoroom = -sign(image_xscale)
 		if sign(other.image_xscale) != backtoroom
 		{
 			with other.id
@@ -70,23 +70,23 @@ function scr_enemy_walk() {
 				{
 					if (object_index == obj_forknight)
 					{
-						image_xscale *= -1
+						image_xscale = backtoroom
 						image_index = 0
 						sprite_index = spr_forknight_turn
 						state = 94
 					}
 					else if (object_index == obj_noisey)
 					{	
-						image_xscale *= -1
+						image_xscale = backtoroom
 						image_index = 0
 						sprite_index = spr_noisey_turn
 						state = 94
 					}
 					else
-						image_xscale *= -1
+						image_xscale = backtoroom
 				}
 				else if object_index = obj_ufoolive && (!scr_slope_ext(x + sign(image_xscale),y)  ) 
-					image_xscale *= -1						
+					image_xscale = backtoroom
 			}
 		}
 	

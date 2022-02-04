@@ -30,7 +30,7 @@ if (ds_list_find_index(global.saveroom, id) == -1)
     var pizzacoin = random_range(1, 100)
     if (pizzacoin >= 85)
     {
-        with (instance_create(x, y, obj_pizzacoin))
+        with (instance_create(x + (image_xscale * 32), y, obj_pizzacoin))
 		{
 			_dir = choose(1,-1)
             hsp = 2

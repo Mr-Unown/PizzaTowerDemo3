@@ -37,8 +37,6 @@ function scr_shell_roomstart()
 		{
 			surface_set_target(global.solid_tile_surface)
 			draw_clear_alpha(c_black, 0)
-			var _cam_x = camera_get_view_x(view_camera[0])
-			var _cam_y = camera_get_view_y(view_camera[0])	
 		}
 	}	
 	endscript = function()
@@ -47,7 +45,7 @@ function scr_shell_roomstart()
 		{	
 			//Actually Set Shader
 			surface_reset_target()	
-			draw_surface_ext(global.solid_tile_surface, (camera_get_view_x(view_camera[0]) - 64), (camera_get_view_y(view_camera[0]) - 64), 1, 1, camera_get_view_angle(view_camera[0]), -1, 0.5)
+			draw_surface_ext(global.solid_tile_surface, 0,0,1,1,0,c_white,0.5);
 		}
 	}		
 	layer_script_begin(layer_get_id("Tiles_Solid"),startscript)

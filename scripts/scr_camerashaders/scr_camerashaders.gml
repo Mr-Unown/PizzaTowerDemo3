@@ -24,8 +24,7 @@ function scr_desert_shader()
 	shader_set_uniform_f(uFreq, wave_shdFreq);
 	shader_set_uniform_f(uSize, wave_shdSize);
 	#endregion
-
-	draw_surface(application_surface, 0, 0);
+	draw_surface_stretched_ext(application_surface, 0, 0, 960, 540, c_white, 1);
 	surface_reset_target();
 	shader_reset();
 }
