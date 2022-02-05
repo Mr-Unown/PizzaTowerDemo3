@@ -298,7 +298,7 @@ if audio_is_playing(mu_factory1) && audio_is_playing(mu_factory2)
 }
 var _player = focused_player()
 var pitchspd = clamp((_player.movespeed/9.5) * 0.8, .7, 1.5)
-if global.pitchshift = 1
+if global.pitchshift = 1 && global.panic = false
 {
 	with (_player)
 	{
@@ -306,8 +306,8 @@ if global.pitchshift = 1
 		audio_sound_pitch(global.music, 0.9);
 		else if (state == states.tumble or state == states.knightpepslopes || tauntstoredstate == states.tumble or tauntstoredstate == states.knightpepslopes)
 		{
-			if sprite_index != spr_tumblestart
-				audio_sound_pitch(global.music, pitchspd);
+			if sprite_index = spr_tumble || spr_tumblestart
+				audio_sound_pitch(global.music, /*pitchspd*/ 1.2);
 			else 
 				audio_sound_pitch(global.music, 1.2);
 		}

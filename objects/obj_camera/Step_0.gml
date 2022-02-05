@@ -320,7 +320,7 @@ camera_set_view_size(view_camera[0],targetzoom1,targetzoom2)
 //Charge Camera
 if target = player
 {
-	if (player.state == 91 || player.state == states.jetpack || player.state == 37)
+	if (player.state == 91 || player.state == states.jetpack || player.state == 37 || player.state == states.firemouth && sprite_index = spr_player_firemouthdash || player.state == states.tumble && player.movespeed > 9 || player.state == states.knightpepslopes)
 	{
             var _targetcharge = (player.xscale * ((player.movespeed / 6) * 50)) //D3G: might need some tweaking
             var _tspeed = 2

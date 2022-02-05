@@ -103,7 +103,7 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 50,
-    "yorigin": 45,
+    "yorigin": 55,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerPZ_downpizzabox","path":"sprites/spr_playerPZ_downpizzabox/spr_playerPZ_downpizzabox.yy",},

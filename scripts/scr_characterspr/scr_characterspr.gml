@@ -20,6 +20,7 @@ function scr_characterspr(player_character = character) {
 		spr_playertv_hurt = spr_tv_hurt;
 		spr_playertv_scared = spr_tv_scared;
 		spr_playertv_cheeseball = spr_tv_cheeseball;
+		spr_playertv_ghost = spr_tv_ghost;
 		#endregion
 		spr_idle = spr_player_idle
 		spr_move = spr_player_move
@@ -517,6 +518,11 @@ function scr_characterspr(player_character = character) {
 		spr_rocketupstart = spr_player_rocketupstart
 		//Cheese Ball
 		spr_pepcheeseball = spr_player_cheeseball
+		//Ghost
+		spr_ghostidle = spr_player_ghostidle
+		spr_ghostend = spr_player_ghostend
+		spr_ghostjump = spr_player_ghostjump
+		spr_ghostdash = spr_player_ghostdash
 		//Cutscenes
 		spr_givepizza = spr_player_givepizza
 		spr_gnomecutscene1 = spr_player_idle
@@ -548,6 +554,7 @@ function scr_characterspr(player_character = character) {
 		spr_playertv_golf = spr_tv_golfN;
 		spr_playertv_firemouth = spr_tv_firemouthN;
 		spr_playertv_scaredjump = spr_tv_scaredjumpN;		
+		spr_playertv_ghost = spr_tv_ghostN;
 		#endregion	
 		#region Pizzascore Sprites
 		spr_pizzascore_1 = spr_pizzascore_marshmallow
@@ -781,7 +788,14 @@ function scr_characterspr(player_character = character) {
 		spr_rocketstart = spr_player_rocketstart
 		spr_rockethitwall = spr_player_rockethitwall
 		spr_rocketup = spr_player_rocketup
-		spr_rocketupstart = spr_player_rocketupstart		
+		spr_rocketupstart = spr_player_rocketupstart
+		//Cheeseball
+		
+		//Ghost
+		spr_ghostidle = spr_playerN_ghostidle
+		spr_ghostend = spr_playerN_ghostend
+		spr_ghostjump = spr_playerN_ghostjump
+		spr_ghostdash = spr_playerN_ghostdash
 		//Palette
 		if pogo = false
 		{

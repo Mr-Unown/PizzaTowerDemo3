@@ -100,6 +100,7 @@ function scr_playercreate() {
 	//global.sleepAcc = 0;
 	global.collect = 0
 	global.collectN = 0
+	global.timeattackpoints = 0
 	pogojetcharge = false
 	pogojetchargebuffer = 0
 	flashing = false
