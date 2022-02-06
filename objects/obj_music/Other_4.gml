@@ -500,6 +500,15 @@ if (global.panic == 0 && global.snickchallenge == 0)
             pausedmusic = mu_kungfu
         }
     }
+	if (string_letters(roomname) == "wasteyard")
+    {
+        if (!audio_is_playing(mu_cowboy))
+        {
+            scr_soundstopall()
+            scr_sound(mu_cowboy)
+            pausedmusic = mu_cowboy
+        }
+    }
 	if (string_letters(roomname) == "factory")
     {
         for (i = 0; i < 20; i++)

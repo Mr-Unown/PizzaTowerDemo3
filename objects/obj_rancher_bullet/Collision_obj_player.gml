@@ -8,8 +8,10 @@ with (other)
 		canrotate = true
 		image_xscale = other.image_xscale
         sprite_index = other.spr_deathend
-		hsp = random_range(4,-4)
 		vsp = random_range(-2,-8)
+	    hsp = random_range(2,6)
+		paletteselect = other.paletteselect
+		spr_palette = other.spr_palette	
 	}
 }
 

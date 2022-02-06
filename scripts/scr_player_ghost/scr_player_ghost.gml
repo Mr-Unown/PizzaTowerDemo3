@@ -31,14 +31,14 @@ function scr_player_ghost()
             sprite_index = spr_ghostjump
         }
     }
-    if (place_meeting(x, y, obj_ghosttransparency) && sprite_index != spr_ghostend)
+    if (place_meeting(x, y, obj_ghostwall) && sprite_index != spr_ghostend)
         image_alpha = 0.5
     else
         image_alpha = 1
     if (scr_solid_player(x, (y + 1)) && sprite_index != spr_ghostend)
     {
         vsp = -5
-        GamepadSetVibration((object_index == obj_player1 ? 0 : 1), 0.2, 0.2, 0.4)
+        GamepadSetVibration((object_index == obj_player1 ? 0 : 1), 0.2, 0.2, 0.1)
     }
     if (sprite_index == spr_ghostjump && floor(image_index) == (image_number - 1))
         sprite_index = spr_ghostidle
@@ -86,5 +86,10 @@ function scr_player_ghost()
         movespeed = 0
     if (movespeed > 8)
         movespeed -= 0.1
+	//Possess Baddies
+	if sprite_index = spr_ghostdash && place_meeting(x,y,obj_forknight)
+	{
+		state = states.forknight
+	}
     return;
 }

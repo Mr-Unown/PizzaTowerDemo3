@@ -114,7 +114,8 @@
 		ratmount = 129,
 		slipbanana = 130,
 		cutsceneactor = 131,
-		ghost = 132
+		ghost = 132,
+		forknight = 133
 
 	} 
 	//I made some changes to it so that we can know at a glance what number it gets converted to.
@@ -183,6 +184,9 @@ if actor = false
 			break
 		case states.ghost:
 			scr_player_ghost()
+			break
+		case states.forknight:
+			scr_player_forknight()
 			break
 	    case 110:
 	        scr_player_throwdynamite()

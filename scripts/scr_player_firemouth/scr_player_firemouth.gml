@@ -127,9 +127,9 @@ function scr_player_firemouth() {
 		{
 			//image_speed = clamp((abs(vsp/3) * 0.6),0.1,0.6) * -sign(vsp)
 			if vsp <= -0.01
-			image_speed = clamp(image_speed, .2, (vsp/15))
+			image_speed = clamp((abs(vsp/3) * 0.6), .6, (vsp/15))
 			else
-			image_speed = clamp(image_speed, .2, (-vsp/15))
+			image_speed = clamp((abs(vsp/3) * 0.6), .6, (-vsp/15))
 		}
 		else if (sprite_index == spr_firemouth)
 		{

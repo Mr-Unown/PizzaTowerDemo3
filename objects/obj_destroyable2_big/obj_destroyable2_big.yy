@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_bigbreakableOLD",
-    "path": "sprites/spr_bigbreakableOLD/spr_bigbreakableOLD.yy",
+    "name": "spr_bigbreakable",
+    "path": "sprites/spr_bigbreakable/spr_bigbreakable.yy",
   },
   "solid": false,
   "visible": true,
