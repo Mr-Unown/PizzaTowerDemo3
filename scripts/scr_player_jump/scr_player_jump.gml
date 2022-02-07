@@ -169,7 +169,7 @@ function scr_player_jump() {
 	        state = 92
 	        sprite_index = spr_shotgunjump1
 	        vsp = -5
-	        if (character == "P")
+	        if (character == "P" || character == "PZ")
 	        {
 	            with (instance_create((x + 30), (y + 60), obj_shotgunbullet))
 	            {
@@ -349,7 +349,7 @@ function scr_player_jump() {
 	        image_xscale = other.image_xscale
 	    image_index = 0
 	    sprite_index = spr_shotgunshoot
-	    if (character == "P")
+	    if (character == "P" || character == "PZ")
 	    {
 	        with (instance_create((x + (image_xscale * 20)), (y + 20), obj_shotgunbullet))
 	            playerid = other.id

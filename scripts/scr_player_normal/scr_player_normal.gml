@@ -508,7 +508,7 @@ function scr_player_normal() {
 	        image_xscale = other.image_xscale
 	    image_index = 0
 	    sprite_index = spr_shotgunshoot
-	    if (character == "P")
+	    if (character == "P" || character == "PZ")
 	    {
 	        with (instance_create((x + (image_xscale * 20)), (y + 20), obj_shotgunbullet))
 	            playerid = other.id

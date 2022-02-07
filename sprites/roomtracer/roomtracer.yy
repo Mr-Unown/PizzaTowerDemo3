@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 3499,
+  "bbox_right": 3999,
   "bbox_top": 0,
-  "bbox_bottom": 1349,
+  "bbox_bottom": 1199,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 3500,
-  "height": 1350,
+  "width": 4000,
+  "height": 1200,
   "textureGroupId": {
     "name": "Unused",
     "path": "texturegroups/Unused",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"64b4e315-0748-4e0d-892f-c41dc074da6b","path":"sprites/roomtracer/roomtracer.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"64b4e315-0748-4e0d-892f-c41dc074da6b","path":"sprites/roomtracer/roomtracer.yy",},"LayerId":{"name":"0b97f0ed-d8c7-4498-baed-bb54defd0a01","path":"sprites/roomtracer/roomtracer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"roomtracer","path":"sprites/roomtracer/roomtracer.yy",},"resourceVersion":"1.0","name":"64b4e315-0748-4e0d-892f-c41dc074da6b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"e04e666f-bff9-49c0-a14c-020eda1c57f7","path":"sprites/roomtracer/roomtracer.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"e04e666f-bff9-49c0-a14c-020eda1c57f7","path":"sprites/roomtracer/roomtracer.yy",},"LayerId":{"name":"48dde7aa-db42-48e9-b14f-21b8267ff0e6","path":"sprites/roomtracer/roomtracer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"roomtracer","path":"sprites/roomtracer/roomtracer.yy",},"resourceVersion":"1.0","name":"e04e666f-bff9-49c0-a14c-020eda1c57f7","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"roomtracer","path":"sprites/roomtracer/roomtracer.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"ec987b8a-ccfe-41df-9756-c9f701242ffd","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"64b4e315-0748-4e0d-892f-c41dc074da6b","path":"sprites/roomtracer/roomtracer.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"0a812101-4803-441c-8fa8-1f03a91925ec","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e04e666f-bff9-49c0-a14c-020eda1c57f7","path":"sprites/roomtracer/roomtracer.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0b97f0ed-d8c7-4498-baed-bb54defd0a01","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"48dde7aa-db42-48e9-b14f-21b8267ff0e6","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {

@@ -404,7 +404,7 @@ function scr_collide_destructibles() {
 	                            state = 38
 	                            image_index = 0
 	                            sprite_index = spr_shotgunshoot
-	                            if (character == "P")
+	                            if (character == "P" || character == "PZ")
 	                            {
 	                                instance_create((x + (image_xscale * 20)), (y + 20), obj_shotgunbullet)
 	                                with (instance_create((x + (image_xscale * 20)), (y + 20), obj_shotgunbullet))
