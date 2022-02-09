@@ -40,6 +40,10 @@ if global.snickchallenge == false
 			global.stimerank = 7.40;
 			global.srank = 19500
 		break;
+		case "wasteyard":
+			global.stimerank = 7.40;
+			global.srank = 11855
+		break;
 		case "freezer":
 			global.stimerank = 4.30;
 			global.srank = 8250

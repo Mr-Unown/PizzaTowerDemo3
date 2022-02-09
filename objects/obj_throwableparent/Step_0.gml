@@ -1,4 +1,4 @@
-if (obj_player.state == 77 && grounded) && object_index != obj_meatballman
+if (obj_player.state == 77 && grounded) && object_index != obj_meatballman && ungrabbable = false
 {
     if point_in_rectangle(x, y, __view_get(0, 0), __view_get(1, 0), (__view_get(0, 0) + __view_get(2, 0)), (__view_get(1, 0) + __view_get(3, 0)))
     vsp = -6;

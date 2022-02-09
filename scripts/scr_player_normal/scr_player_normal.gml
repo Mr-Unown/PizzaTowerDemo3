@@ -29,7 +29,7 @@ function scr_player_normal() {
 	                idle = 0
 	                image_index = 0
 	            }
-	            if (idle >= 150 && sprite_index != spr_idle1 && sprite_index != spr_idle2 && sprite_index != spr_idle3 && sprite_index != spr_idle4 && sprite_index != spr_idle5 && sprite_index != spr_idle6)
+	            if (idle >= 150 && sprite_index != spr_idle1 && sprite_index != spr_idle2 && sprite_index != spr_idle3 && sprite_index != spr_idle4 && sprite_index != spr_idle5 && sprite_index != spr_idle6 && character != "PZ")
 	            {
 	                randomise()
 	                idleanim = random_range(0, 100)

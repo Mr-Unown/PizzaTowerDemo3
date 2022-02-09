@@ -177,7 +177,7 @@
   },
   "parent": {
     "name": "Wasteyard",
-    "path": "folders/Rooms/Levels/Weird West/Wasteyard.yy",
+    "path": "folders/Rooms/Levels/World West/Wasteyard.yy",
   },
   "resourceVersion": "1.0",
   "name": "wasteyard_8",

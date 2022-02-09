@@ -180,6 +180,7 @@ else if (global.combotime <= 0)
 if (global.combotime <= 0 && global.combo != 0) && global.freezeframe = false && !instance_exists(obj_endlevelfade)
 {
 	scr_soundeffect(sfx_comboend);
+	scr_queue_tvanim(spr_playertv_mad, random_range(100,300))
 	if global.snickchallenge == false
 	{
 		#region Combo End Spawner

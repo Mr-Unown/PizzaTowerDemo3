@@ -1,2 +1,2 @@
-if (ungrabbable == 1)
+if (ungrabbable == true)
     sprite_index = spr_tombstone2

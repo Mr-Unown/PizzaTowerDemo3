@@ -31,10 +31,8 @@ function scr_player_ghost()
             sprite_index = spr_ghostjump
         }
     }
-    if (place_meeting(x, y, obj_ghostwall) && sprite_index != spr_ghostend)
-        image_alpha = 0.5
-    else
-        image_alpha = 1
+    if (!place_meeting(x, y, obj_ghostwall) && sprite_index != spr_ghostend)
+        image_alpha = approach(image_alpha, 1, .1)
     if (scr_solid_player(x, (y + 1)) && sprite_index != spr_ghostend)
     {
         vsp = -5

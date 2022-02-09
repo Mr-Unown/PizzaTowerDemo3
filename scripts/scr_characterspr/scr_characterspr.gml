@@ -20,6 +20,8 @@ function scr_characterspr(player_character = character) {
 		spr_playertv_hurt = spr_tv_hurt;
 		spr_playertv_scared = spr_tv_scared;
 		spr_playertv_cheeseball = spr_tv_cheeseball;
+		spr_playertv_mad = spr_tv_mad;
+		spr_playertv_secret = spr_tv_secret;
 		spr_playertv_ghost = spr_tv_ghost;
 		#endregion
 		spr_idle = spr_player_idle

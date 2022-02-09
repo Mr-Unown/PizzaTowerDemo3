@@ -469,6 +469,16 @@ if (global.panic == 0 && global.snickchallenge == 0)
             audio_sound_set_track_position(global.music, fadeoff)
             pausedmusic = mu_desertsecret
         }
+    }
+	if (string_letters(roomname) == "wasteyardsecret")
+    {
+        if (!audio_is_playing(mu_cowboysecret))
+        {
+            scr_soundstopall()
+            scr_sound(mu_cowboysecret)
+            audio_sound_set_track_position(global.music, fadeoff)
+            pausedmusic = mu_cowboysecret
+        }
     }/*
     if (string_letters(roomname) == "desertsecret" && global.desertnight == 1)
     {
