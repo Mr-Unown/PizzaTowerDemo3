@@ -417,6 +417,7 @@ else if global.newhud = true && oldcharacter == player.character && (sprite_inde
 		break;
 		default:
 		#region Normal
+		if global.combo < 3
             if (idle < 400)
                 idle++
             if (idle >= 300 && floor(image_index) >= (image_number - 1)) && (newtvsprite = player.spr_playertv_normalidle1 || newtvsprite = player.spr_playertv_normalidle2 || newtvsprite = player.spr_playertv_normalidle3)

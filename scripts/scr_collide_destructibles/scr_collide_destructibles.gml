@@ -2,7 +2,7 @@ function scr_collide_destructibles() {
 #region Players
 	with (obj_player1)
 	{
-	    if (state == 70 || state == 91 || state == states.jetpack || state == 37 || state == 18 || state == 2 || state == 10 || state == 9 || state = states.rocket || state = states.ratmount)
+	    if (state == 70 || state == 91 || state == states.jetpack || state == 37 || state == 18 || state == 2 || state == 10 || state == 9 || state = states.rocket || state = states.ratmount || state = states.forknight && sprite_index = spr_forknight_heat)
 	    {
 	        if place_meeting((x + hsp), y, obj_destructibles)
 	        {

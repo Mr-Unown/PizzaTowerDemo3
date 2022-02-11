@@ -41,6 +41,8 @@ function scr_playercreate() {
 	swordhitboxid = noone;
 	//Firetrail
 	firetrailbuffer = 100;
+	//Mort
+	mortanim = 0
 	//Trick
 	show_tricks = false;
 	tricksperformed = 0;
@@ -188,6 +190,7 @@ function scr_playercreate() {
 	global.noisebombfollow = false;
 	global.geromefollowing = false;
 	global.peshinofollowing = false;
+	global.mortfollowing = false;
 	global.geromeopen = false;
 #endregion
 

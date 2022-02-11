@@ -36,7 +36,7 @@ function scr_player_ghost()
     if (scr_solid_player(x, (y + 1)) && sprite_index != spr_ghostend)
     {
         vsp = -5
-        GamepadSetVibration((object_index == obj_player1 ? 0 : 1), 0.2, 0.2, 0.1)
+        GamepadSetVibration((object_index == obj_player1 ? 0 : 1), 0.1, 0.1, 0.1)
     }
     if (sprite_index == spr_ghostjump && floor(image_index) == (image_number - 1))
         sprite_index = spr_ghostidle
@@ -87,7 +87,31 @@ function scr_player_ghost()
 	//Possess Baddies
 	if sprite_index = spr_ghostdash && place_meeting(x,y,obj_forknight)
 	{
+		var possessedID = obj_forknight.id
 		state = states.forknight
+		sprite_index = spr_forknight_idle
+		grav = 0.5;
+		instance_deactivate_object(possessedID)
+		with (instance_create((x + random_range(-5, 5)), (y + random_range(-5, 5)), obj_balloonpop))
+		{
+			image_speed = 0.35
+			sprite_index = spr_bigpoofclouds
+			image_angle = choose(0,90,180,270)
+		}			
+	}
+	if sprite_index = spr_ghostdash && place_meeting(x,y,obj_indiancheese)
+	{
+		var possessedID = obj_indiancheese.id
+		state = states.indiancheese
+		sprite_index = spr_indiancheese_walk
+		grav = 0.5;
+		instance_deactivate_object(possessedID)
+		with (instance_create((x + random_range(-5, 5)), (y + random_range(-5, 5)), obj_balloonpop))
+		{
+			image_speed = 0.35
+			sprite_index = spr_bigpoofclouds
+			image_angle = choose(0,90,180,270)
+		}			
 	}
     return;
 }

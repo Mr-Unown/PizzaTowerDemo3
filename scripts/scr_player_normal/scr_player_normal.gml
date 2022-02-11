@@ -400,6 +400,25 @@ function scr_player_normal() {
 				}
 			}
 		}
+		//Mort attack
+		else if key_slap2 && sprite_index != spr_player_mortattack && global.mortfollowing = 1
+		{
+			image_index = 0
+			sprite_index = spr_player_mortattack
+			if (floor(image_index) == 4)
+			{
+				with (instance_create(x, y, obj_morthitbox))
+				{
+					playerid = other.object_index
+					image_xscale = other.xscale
+				}
+			}
+			if (floor(image_index) == (image_number - 1) && sprite_index == spr_player_mortattack)
+			{
+				sprite_index = spr_idle
+				mort = 0
+			}
+		}
 		else if (character == "P" && global.attackstyle == 1)
 		{
 			suplexmove = 1
@@ -456,7 +475,7 @@ function scr_player_normal() {
 	    image_index = 0
 	}
 	//Breakdance
-	if (key_shoot2 && shotgunAnim == 0) && character != "V" && character != "D"
+	if (key_shoot2 && shotgunAnim == 0) && character != "V" && character != "D" && global.mortfollowing == 0
 	{
 		if murderammo >= 1
 		{
@@ -523,6 +542,13 @@ function scr_player_normal() {
 	            playerid = other.id
 	        }
 	    }
+	}
+	//Mort Attack
+	if (key_attack2 && global.mortfollowing == 1) && character != "V" && character != "D"
+	{
+		image_index = 0
+        sprite_index = spr_player_mortattack
+		mortanim = 1
 	}
 	if (key_slap2 && character == "S")
 	{

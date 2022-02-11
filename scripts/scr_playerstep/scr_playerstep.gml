@@ -115,7 +115,9 @@
 		slipbanana = 130,
 		cutsceneactor = 131,
 		ghost = 132,
-		forknight = 133
+		forknight = 133,
+		mort = 134,
+		indiancheese = 135
 
 	} 
 	//I made some changes to it so that we can know at a glance what number it gets converted to.
@@ -188,8 +190,14 @@ if actor = false
 		case states.forknight:
 			scr_player_forknight()
 			break
+		case states.indiancheese:
+			scr_player_indiancheese()
+			break
 	    case 110:
 	        scr_player_throwdynamite()
+	        break
+		case states.mort:
+	        scr_player_mort()
 	        break
 	    case 111:
 	        scr_player_kingknightroll()

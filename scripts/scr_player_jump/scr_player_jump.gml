@@ -141,6 +141,8 @@ function scr_player_jump() {
 				sprite_index = spr_fall
 			if (sprite_index = spr_player_hurtjump)
 				sprite_index = spr_player_hurtfall
+			if (sprite_index = spr_player_mortjump)
+				sprite_index = spr_player_mortfall
 	    }
 	}
 	if (stompAnim == 1)
@@ -237,6 +239,15 @@ function scr_player_jump() {
 	    image_index = 0
 	    sprite_index = spr_freefallland
 	    state = 77
+	}
+	//Mort double jump
+	if doublejump == 0 && global.mortfollowing = true && key_jump && (sprite_index == spr_jump || sprite_index = spr_fall) && !grounded && input_buffer_jump < 8
+	{
+	doublejump = 1
+	vsp = -8
+	input_buffer_jump = 0
+	image_index = 0
+	sprite_index = spr_player_mortjump
 	}
 	if (key_slap2 && suplexmove = 0 && (character = "P" || character = "PZ" || character = "N" || (character = "D" && spellselect = 2)))
 	{
