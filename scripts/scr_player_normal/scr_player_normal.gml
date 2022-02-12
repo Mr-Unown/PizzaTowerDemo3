@@ -424,7 +424,7 @@ function scr_player_normal() {
 			suplexmove = 1
 			suplexdashsnd = audio_play_sound(sfx_suplexdash, 1, false)
 			audio_sound_gain(suplexdashsnd, (1 * global.soundeffectsvolume), 0)
-			state = 111
+			state = states.kingknightroll
 			image_index = 0
 			if (shotgunshootbuffer < 50 && shotgunAnim == 1)
 		        sprite_index = spr_shotgunsuplexdash
@@ -505,6 +505,10 @@ function scr_player_normal() {
 			}
 			scr_soundeffect(sfx_killingblow)
 			murderammo -= 1
+		}
+		else if global.kungfulevel = 1
+		{
+			
 		}
 		else
 		{

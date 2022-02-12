@@ -302,9 +302,9 @@ if global.pitchshift = 1 && global.panic = false
 {
 	with (_player)
 	{
-		if (state == states.knightpep || state = states.knightpepattack || state == states.frozen && tauntstoredstate = states.knightpep)
+		if (state == states.knightpep || frozenstate == states.knightpep || state = states.knightpepattack || frozenstate = states.knightpepattack)
 		audio_sound_pitch(global.music, 0.9);
-		else if (state == states.tumble or state == states.knightpepslopes || tauntstoredstate == states.tumble or tauntstoredstate == states.knightpepslopes)
+		else if (state == states.tumble or state == states.knightpepslopes || frozenstate == states.tumble or frozenstate == states.knightpepslopes)
 		{
 			if sprite_index = spr_tumble || spr_tumblestart
 				audio_sound_pitch(global.music, /*pitchspd*/ 1.2);

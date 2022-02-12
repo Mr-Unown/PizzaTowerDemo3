@@ -104,8 +104,8 @@ function scr_enemy_shake() {
 			alarm[1] = 2
 	        shakebuffer = 2.5
 	        flash = 1
-	        hsp = player.xscale * 8
-            vsp = -8
+	        hsp = player.xscale * 9
+            vsp = -7
 			squashed = true
 	        state = 106
 	        hp -= 1
@@ -119,6 +119,11 @@ function scr_enemy_shake() {
 				sprite_index = spr_parryeffect	
 			with instance_create(x,y,obj_balloonpop)
 				sprite_index = spr_bangeffect
+			with (obj_camera)
+			{
+				shake_mag = 3
+				shake_mag_acc = (3 / room_speed)
+			}
 			GamepadSetVibration((object_index == obj_player1 ? 0 : 1), 0.8, 0.8, 0.6)
 		}
 		else

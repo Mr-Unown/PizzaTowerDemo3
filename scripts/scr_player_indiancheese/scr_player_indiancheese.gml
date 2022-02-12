@@ -1,6 +1,6 @@
 function scr_player_indiancheese()
 {
-if (sprite_index != spr_indiancheese_spotted)
+if (sprite_index != spr_indiancheese_spotted && sprite_index != spr_indiancheese_dance)
 	{
 	    move = (key_left + key_right)
 	    if ((!place_meeting(x, (y + 1), obj_railh)) && (!place_meeting(x, (y + 1), obj_railh2)))
@@ -10,7 +10,7 @@ if (sprite_index != spr_indiancheese_spotted)
 	    else if place_meeting(x, (y + 1), obj_railh2)
 	        hsp = ((move * movespeed) + 5)
 	}
-	else
+	else 
 	{
 		move = 0	
 	    if ((!place_meeting(x, (y + 1), obj_railh)) && (!place_meeting(x, (y + 1), obj_railh2)))
@@ -60,6 +60,19 @@ if (sprite_index != spr_indiancheese_spotted)
 			image_angle = choose(0,90,180,270)
 		}		
 	}
+	if (key_taunt2 && grounded && sprite_index != spr_indiancheese_dance && sprite_index != spr_indiancheese_land && sprite_index != spr_indiancheese_jump)
+		sprite_index = spr_indiancheese_dance
+	if sprite_index == spr_indiancheese_dance && floor(image_index) == (image_number - 1)
+	{
+		sprite_index = spr_indiancheese_jump
+		input_buffer_jump = 0
+		vsp = -11
+		hsp = (4 * xscale)
+		instance_create(x, y, obj_highjumpcloud2)
+	}
+		
+	
+		
 	if sprite_index != spr_indiancheese_jump
 		image_speed = .35
 }
