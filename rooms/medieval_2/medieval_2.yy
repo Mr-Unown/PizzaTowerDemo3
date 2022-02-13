@@ -492,6 +492,8 @@
   },
   "resourceVersion": "1.0",
   "name": "medieval_2",
-  "tags": [],
+  "tags": [
+    "medievalentrance",
+  ],
   "resourceType": "GMRoom",
 }

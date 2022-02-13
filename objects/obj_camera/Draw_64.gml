@@ -666,14 +666,14 @@ if (player.state != 55)
 				bubblefilled = spr_rankbubble_dfilled;
 				local_rank = global.dtimerank;			
 				minus_moment = global.ctimerank;
-				bubbleframe = 0;
+				bubbleframe = 4;
 				break;
 				case "C":
 				bubbleempty = spr_rankbubble_c;
 				bubblefilled = spr_rankbubble_cfilled;
 				local_rank = global.ctimerank;	
 				minus_moment = global.btimerank;
-				bubbleframe = 1;
+				bubbleframe = 3;
 				break;
 				case "B":
 				bubbleempty = spr_rankbubble_b;
@@ -687,14 +687,14 @@ if (player.state != 55)
 				bubblefilled = spr_rankbubble_afilled;
 				local_rank = global.atimerank;
 				minus_moment = global.stimerank;
-				bubbleframe = 3;
+				bubbleframe = 1;
 				break;
 				default:
 				bubbleempty = spr_rankbubble_s;
 				bubblefilled = spr_rankbubble_sfilled;
 				local_rank = global.stimerank;		
 				minus_moment = 0;
-				bubbleframe = 4;
+				bubbleframe = 0;
 				break;
 			}
 			#endregion

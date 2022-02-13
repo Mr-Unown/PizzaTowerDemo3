@@ -47,6 +47,8 @@
   },
   "resourceVersion": "1.0",
   "name": "hub_room4",
-  "tags": [],
+  "tags": [
+    "hub",
+  ],
   "resourceType": "GMRoom",
 }

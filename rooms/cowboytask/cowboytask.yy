@@ -114,6 +114,8 @@
   },
   "resourceVersion": "1.0",
   "name": "cowboytask",
-  "tags": [],
+  "tags": [
+    "hub",
+  ],
   "resourceType": "GMRoom",
 }

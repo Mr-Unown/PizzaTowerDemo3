@@ -873,5 +873,8 @@ else if actor = true
 		initialfreefallvsp = 15
 	if state != states.Sjump
 		initialsuperjumpvsp = -14
+	//Pitchshift tauntstored fix
+	if state != states.frozen && frozenstate != 0
+	frozenstate = 0
 }
 
