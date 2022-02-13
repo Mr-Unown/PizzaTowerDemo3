@@ -34,7 +34,6 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_hat","path":"objects/obj_hat/obj_hat.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-320.0,"y":338.0,"resourceVersion":"1.0","name":"inst_22702083","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_hat","path":"objects/obj_hat/obj_hat.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-416.0,"y":338.0,"resourceVersion":"1.0","name":"inst_473E9F6A","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_goopcontroller","path":"objects/obj_goopcontroller/obj_goopcontroller.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-256.0,"y":32.0,"resourceVersion":"1.0","name":"inst_5FF05C7A","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"obj_gmlive","path":"objects/obj_gmlive/obj_gmlive.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-288.0,"y":-128.0,"resourceVersion":"1.0","name":"inst_396A4D85","tags":[],"resourceType":"GMRInstance",},
         {"properties":[
             {"propertyId":{"name":"screenAnchorPointV","path":"objects/obj_shell/obj_shell.yy",},"objectId":{"name":"obj_shell","path":"objects/obj_shell/obj_shell.yy",},"value":"\"top\"","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
             {"propertyId":{"name":"prompt","path":"objects/obj_shell/obj_shell.yy",},"objectId":{"name":"obj_shell","path":"objects/obj_shell/obj_shell.yy",},"value":"/","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
@@ -76,7 +75,6 @@
     {"name":"inst_22702083","path":"rooms/room_initializer/room_initializer.yy",},
     {"name":"inst_473E9F6A","path":"rooms/room_initializer/room_initializer.yy",},
     {"name":"inst_5FF05C7A","path":"rooms/room_initializer/room_initializer.yy",},
-    {"name":"inst_396A4D85","path":"rooms/room_initializer/room_initializer.yy",},
     {"name":"inst_83D97AE","path":"rooms/room_initializer/room_initializer.yy",},
     {"name":"inst_533E49FF","path":"rooms/room_initializer/room_initializer.yy",},
     {"name":"inst_6CD60753","path":"rooms/room_initializer/room_initializer.yy",},

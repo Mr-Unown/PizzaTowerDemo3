@@ -111,7 +111,8 @@
 		newbomb = 126,
 		startgate = 127,
 		rocket = 128,
-		ratmount = 129
+		ratmount = 129,
+		climbing = 130
 
 	} 
 	//I made some changes to it so that we can know at a glance what number it gets converted to.
@@ -457,6 +458,9 @@ if actor = false
 	    case 89:
 	        scr_player_taxi()
 	        break
+		case states.climbing:
+			scr_player_climbing()
+			break
 	}
 
 #endregion
@@ -835,9 +839,9 @@ else if actor = true
 	scr_collide_destructibles()
 	if actor = false
 	{
-		if (state != 8 && state != 109 && state != 78 && state != 63 && state != 4 && state != 61 && state != 88 && state != 56 && state != 64 && state != 19 && state != 36 && state != 23 && state != 55)
+		if (state != 8 && state != 109 && state != 78 && state != 63 && state != 4 && state != 61 && state != 88 && state != 56 && state != 64 && state != 19 && state != 36 && state != 23 && state != 55 && state != states.climbing)
 		    scr_collide_player()
-		if (state == 88)
+		if (state == 88) 
 		   scr_collide_player()
 	}	
 	//freefall and superjump update

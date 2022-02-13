@@ -92,43 +92,13 @@ if (global.playerhealth <= 0 && state != 55)
 if state != 55 && !instance_exists(obj_fadeout) && !place_meeting(x,y,obj_hallway) && !place_meeting(x,y,obj_pitfall) && !place_meeting(x,y,obj_pitcollider) && y > (room_height * 1.3)
 {
 	{
-		
 	global.pausecombotime = true
 	obj_tv.alarm[1] = 75		
 	x = roomstartx
-	y = roomstarty
+	y = roomstarty - 540
 	visible = true
-	state = 73
-    alarm[8] = 80
-    alarm[7] = 50
-	hurted = 1
-    if (xscale == other.image_xscale)
-            sprite_index = spr_hurtjump
-    else
-            sprite_index = spr_hurt
-	with obj_tv
-	{
-		image_speed = 0.1
-		showtext = 1
-		if (chose == 0)
-			_message = choose("OW!", "OUCH!", "OH!", "WOH!")
-		alarm[0] = 50
-		chose = 1
-		tvsprite = spr_tvhurt
-		once = 1		
-	}
-    movespeed = 1
-    vsp = -5
-	timeuntilhpback = 300
-	grav = 0.5
+	state = states.climbing
 }
-repeat (3)
-{
-   with (instance_create((roomstartx + random_range(-32, 32)), (roomstarty + random_range(-32, 32) - 40), obj_balloonpop))
-      sprite_index = spr_shotgunimpact
-}
-
-instance_create(roomstartx,roomstarty - 50 ,obj_handgrabber)
 }
 
 if ((!instance_exists(baddiegrabbedID)) && (state == 46 || state == states.golf || state == 43 || state == 10))

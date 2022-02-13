@@ -179,6 +179,7 @@ if (shoving == 1 && image_index >= 3 && bang == 0)
     }
     bang = 1
 }
+
 if (shoving == 0)
     bang = 0
 if (room == timesuproom)
@@ -304,6 +305,8 @@ if targetzoom2 < 540 && global.freezeframe = false
 	targetzoom2 += 9*/
 
 }
+//Lerp
+chargecamera = lerp(chargecamera,chargecamerax,0.07)
 //Zoom and Angles 2	
 camera_set_view_angle(view_camera[0], angle)		
 camera_set_view_size(view_camera[0],targetzoom1,targetzoom2)
@@ -316,17 +319,14 @@ if target = player
             var _tspeed = 2
             if ((_targetcharge > 0 && chargecamera < 0) || (_targetcharge < 0 && chargecamera > 0))
                 _tspeed = 8
-            if (chargecamera > _targetcharge)
-                chargecamera -= _tspeed
-            if (chargecamera < _targetcharge)
-                chargecamera += _tspeed
+            if (chargecamerax > _targetcharge)
+                chargecamerax = _targetcharge
+            if (chargecamerax < _targetcharge)
+                chargecamerax = _targetcharge
     }
 	else
 	{
-	    if (chargecamera > 0)
-			chargecamera -= 2
-		if (chargecamera < 0)
-			chargecamera += 2
+		chargecamerax = 0
 	}
 	
 }
@@ -357,6 +357,7 @@ if frozen = true && global.freezeframe = false
 	}	
 	frozen = false;
 }
+
 //Speedrun Timer
 if room != hub_room1 && room != hub_room2 && room != hub_room3 && room != cowboytask && room != timesuproom && room != Scootertransition && room != Tutorialtrap  && room != Titlescreen  && room != global.roomstart[global.newtitlescreen]
 {
