@@ -570,6 +570,7 @@ function scr_characterspr(player_character = character) {
 	    spr_idle = spr_playerN_idle
 		spr_rageidle = spr_playerN_rageidle
 	    spr_move = spr_playerN_move
+		spr_ragemove = spr_playerN_ragemove
 	    spr_crawl = spr_playerN_crawl
 	    spr_hurt = spr_playerN_hurt
 	    spr_jump = spr_playerN_jump

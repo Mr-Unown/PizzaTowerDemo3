@@ -156,6 +156,8 @@
   },
   "resourceVersion": "1.0",
   "name": "sanctum_secret2",
-  "tags": [],
+  "tags": [
+    "ruinsecret",
+  ],
   "resourceType": "GMRoom",
 }

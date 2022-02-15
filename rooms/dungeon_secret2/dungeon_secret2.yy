@@ -145,6 +145,8 @@
   },
   "resourceVersion": "1.0",
   "name": "dungeon_secret2",
-  "tags": [],
+  "tags": [
+    "dungeonsecret",
+  ],
   "resourceType": "GMRoom",
 }

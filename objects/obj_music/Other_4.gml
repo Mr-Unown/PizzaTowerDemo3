@@ -45,6 +45,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
 					music = mu_entrancePZ
 					break
 			}
+			trackposition = 1
 			break
 		case "medievalentrance":
 			music = mu_medievalentrance
@@ -62,6 +63,10 @@ if (global.panic == 0 && global.snickchallenge == 0)
 			music = mu_medievalsecret
 			trackposition = 1
 			break
+		case "chateau":
+			music = mu_chateau
+			trackposition = 1
+			break
 		case "ruin":
 			music = mu_ruin
 			trackposition = 1
@@ -73,6 +78,32 @@ if (global.panic == 0 && global.snickchallenge == 0)
 		case "ruinremix":
 			music = mu_ruinremix
 			trackposition = 1
+			break
+		case "ruinsecret":
+			music = mu_ruinsecret
+			trackposition = 1
+			break
+		case "sanctum":
+			music = mu_sanctum
+			trackposition = 1
+			break
+		case "dungeon":
+			music = mu_dungeon
+			trackposition = 1
+			break
+		case "dungeonsecret":
+			music = mu_dungeonsecret
+			trackposition = 1
+			break
+		case "strongcold":
+			music = mu_strongcold
+			trackposition = 1
+			break
+		case "desert":
+			music = mu_desert
+			trackposition = 1
+		case "ufo":
+			music = mu_ufo
 			break
 		default:
 			music = noone

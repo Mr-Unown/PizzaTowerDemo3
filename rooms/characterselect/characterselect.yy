@@ -62,7 +62,7 @@
   "resourceVersion": "1.0",
   "name": "characterselect",
   "tags": [
-    "music_charactersel",
+    "characterselect",
   ],
   "resourceType": "GMRoom",
 }

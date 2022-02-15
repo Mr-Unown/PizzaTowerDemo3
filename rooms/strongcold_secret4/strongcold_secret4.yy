@@ -230,6 +230,8 @@
   },
   "resourceVersion": "1.0",
   "name": "strongcold_secret4",
-  "tags": [],
+  "tags": [
+    "dungeonsecret",
+  ],
   "resourceType": "GMRoom",
 }

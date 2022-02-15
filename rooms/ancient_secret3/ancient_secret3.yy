@@ -132,6 +132,8 @@
   },
   "resourceVersion": "1.0",
   "name": "ancient_secret3",
-  "tags": [],
+  "tags": [
+    "entrance",
+  ],
   "resourceType": "GMRoom",
 }

@@ -404,6 +404,8 @@
   },
   "resourceVersion": "1.0",
   "name": "ancient_2",
-  "tags": [],
+  "tags": [
+    "entrance",
+  ],
   "resourceType": "GMRoom",
 }

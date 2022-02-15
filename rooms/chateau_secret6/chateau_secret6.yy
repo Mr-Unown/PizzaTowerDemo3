@@ -118,6 +118,8 @@
   },
   "resourceVersion": "1.0",
   "name": "chateau_secret6",
-  "tags": [],
+  "tags": [
+    "medievalsecret",
+  ],
   "resourceType": "GMRoom",
 }

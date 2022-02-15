@@ -231,6 +231,8 @@
   },
   "resourceVersion": "1.0",
   "name": "ruin_secret3",
-  "tags": [],
+  "tags": [
+    "ruinsecret",
+  ],
   "resourceType": "GMRoom",
 }

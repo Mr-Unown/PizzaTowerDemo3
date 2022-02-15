@@ -1325,6 +1325,8 @@
   },
   "resourceVersion": "1.0",
   "name": "strongcold_4",
-  "tags": [],
+  "tags": [
+    "strongcold",
+  ],
   "resourceType": "GMRoom",
 }

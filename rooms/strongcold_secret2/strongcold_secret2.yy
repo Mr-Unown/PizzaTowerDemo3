@@ -148,6 +148,8 @@
   },
   "resourceVersion": "1.0",
   "name": "strongcold_secret2",
-  "tags": [],
+  "tags": [
+    "dungeonsecret",
+  ],
   "resourceType": "GMRoom",
 }

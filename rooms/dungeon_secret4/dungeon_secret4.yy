@@ -230,6 +230,8 @@
   },
   "resourceVersion": "1.0",
   "name": "dungeon_secret4",
-  "tags": [],
+  "tags": [
+    "dungeonsecret",
+  ],
   "resourceType": "GMRoom",
 }
