@@ -163,7 +163,7 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 67,
-    "yorigin": 46,
+    "yorigin": 58,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerN_rageidle","path":"sprites/spr_playerN_rageidle/spr_playerN_rageidle.yy",},

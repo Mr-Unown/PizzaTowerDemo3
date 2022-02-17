@@ -50,7 +50,7 @@
     "spriteId": {"name":"spr_destroyablepep","path":"sprites/spr_destroyablepep/spr_destroyablepep.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 0.5,
+    "playbackSpeed": 0.3,
     "playbackSpeedType": 1,
     "autoRecord": true,
     "volume": 1.0,

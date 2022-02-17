@@ -99,7 +99,7 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 67,
-    "yorigin": 46,
+    "yorigin": 58,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerN_ragemove","path":"sprites/spr_playerN_ragemove/spr_playerN_ragemove.yy",},
