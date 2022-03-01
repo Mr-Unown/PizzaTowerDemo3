@@ -104,6 +104,11 @@ function scr_player_handstandjump() {
 	        machhitAnim = 0
 	        state = 68
 	        movespeed = clamp(movespeed + 5,5,15)
+			if character = "GB" && brick = 1
+			{
+				brick = 0
+				instance_create(x,y, obj_brickseparated)
+			}
 	    }
 	    if ((!grounded) && (sprite_index == spr_suplexdash || sprite_index == spr_shotgunsuplexdash)) && character != "PZ"
 	    {

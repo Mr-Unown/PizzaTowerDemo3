@@ -362,7 +362,29 @@ function scr_player_normal() {
 	        playerid = other.id
 	    }
 	}
-	if (key_slap2 && (character = "P" || character == "PZ" || character = "N" || (character = "D" && spellselect = 2) || character = "GB"))
+	//Brick Kick Ball
+	if (key_shoot2 && character == "GB" && (!instance_exists(obj_brickball) && brick = 1))
+	{
+	    if (move == 0)
+	        movespeed = 0
+		else
+			movespeed = 3
+	    state = states.throwdynamite
+	    image_index = 0
+	    sprite_index = spr_playerGB_kick
+	    with (instance_create(x, y, obj_brickball))
+	    {
+			playerid = other.id
+	        image_xscale = other.xscale
+	        movespeed = 10
+			if !playerid.key_up
+	        vsp = -6
+			else
+			vsp = -12
+	    }
+		brick = 0
+	}
+	if (key_slap2 && (character = "P" || character == "PZ" || character = "N" || (character = "D" && spellselect = 2) || character = "GB" && brick = 1))
 	{
 		if key_up && (character = "P" || character == "PZ"  || character = "N")
 		{
@@ -399,6 +421,10 @@ function scr_player_normal() {
 					playerid = other.id
 				}
 			}
+		}
+		else if key_slap2 && character = "GB" && brick = 0
+		{
+			//Gustavo kung fuuu arms of buffness goes here
 		}
 		//Mort attack
 		else if key_slap2 && sprite_index != spr_player_mortattack && global.mortfollowing = 1
@@ -475,7 +501,7 @@ function scr_player_normal() {
 	    image_index = 0
 	}
 	//Breakdance
-	if (key_shoot2 && shotgunAnim == 0) && character != "V" && character != "D" && global.mortfollowing == 0
+	if (key_shoot2 && shotgunAnim == 0) && character != "V" && character != "D" && character != "GB" && global.mortfollowing == 0
 	{
 		if murderammo >= 1
 		{

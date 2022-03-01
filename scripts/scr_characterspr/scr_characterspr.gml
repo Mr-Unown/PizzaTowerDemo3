@@ -23,6 +23,8 @@ function scr_characterspr(player_character = character) {
 		spr_playertv_mad = spr_tv_mad;
 		spr_playertv_secret = spr_tv_secret;
 		spr_playertv_ghost = spr_tv_ghost;
+		spr_playertv_mach3 = spr_tv_mach3;
+		spr_playertv_mach4 = spr_tv_mach4;
 		#endregion
 		spr_idle = spr_player_idle
 		spr_move = spr_player_move
@@ -789,7 +791,7 @@ function scr_characterspr(player_character = character) {
 		//Rocket
 		spr_rocket = spr_player_rocket
 		spr_rocketstart = spr_player_rocketstart
-		spr_rockethitwall = spr_player_rockethitwall
+		spr_rockethitwall = spr_playerN_rockethitwall
 		spr_rocketup = spr_player_rocketup
 		spr_rocketupstart = spr_player_rocketupstart
 		//Cheeseball
@@ -1519,7 +1521,7 @@ function scr_characterspr(player_character = character) {
 		//Rocket
 		spr_rocket = spr_player_rocket
 		spr_rocketstart = spr_player_rocketstart
-		spr_rockethitwall = spr_player_rockethitwall
+		spr_rockethitwall = spr_playerN_rockethitwall
 		spr_rocketup = spr_player_rocketup
 		spr_rocketupstart = spr_player_rocketupstart		
 	    paletteselect = 0
@@ -1779,7 +1781,7 @@ function scr_characterspr(player_character = character) {
 		#region TV Sprites
 		spr_playertv_bomb = spr_tv_idlePZ;
 		spr_playertv_fireass = spr_tv_idlePZ;
-		spr_playertv_knight = spr_tv_knightPZ;
+		spr_playertv_knight = spr_tv_idlePZ;
 		spr_playertv_tumble = spr_tv_idlePZ;
 		spr_playertv_victory = spr_tv_idlePZ;
 		spr_playertv_boxxed = spr_tv_idlePZ;
@@ -1787,11 +1789,18 @@ function scr_characterspr(player_character = character) {
 		spr_playertv_normalidle1 = spr_tv_idleanim1PZ;
 		spr_playertv_normalidle2 = spr_tv_idleanim2PZ;
 		spr_playertv_normalidle3 = spr_tv_idleanim3PZ;
-		spr_playertv_rocket = spr_tv_idlePZ;	
-		spr_playertv_golf = spr_tv_idlePZ;
-		spr_playertv_firemouth = spr_tv_idlePZ;
-		spr_playertv_scaredjump = spr_tv_idlePZ;		
-		spr_playertv_cheeseball = spr_tv_cheeseballPZ;
+		spr_playertv_rocket = spr_tv_rocket;
+		spr_playertv_golf = spr_tv_golf;
+		spr_playertv_firemouth = spr_tv_firemouth;
+		spr_playertv_scaredjump = spr_tv_scaredjump;
+		spr_playertv_hurt = spr_tv_hurtPZ;
+		spr_playertv_scared = spr_tv_scared;
+		spr_playertv_cheeseball = spr_tv_cheeseball;
+		spr_playertv_mad = spr_tv_madPZ;
+		spr_playertv_secret = spr_tv_secret;
+		spr_playertv_ghost = spr_tv_ghost;
+		spr_playertv_mach3 = spr_tv_mach3;
+		spr_playertv_mach4 = spr_tv_mach4;
 		#endregion		
 		#region Pizzascore Sprites
 		spr_pizzascore_1 = spr_pizzascore_marshmallow
@@ -2041,8 +2050,8 @@ function scr_characterspr(player_character = character) {
 		}
 	#endregion
 	    break;	
-		case "GB": //The Confused One
-	#region Pizzelle
+		case "GB": //Man and Rat
+	#region Gustavo
 	    {
 		selectedcharacter = 8;
 		#region TV Sprites
@@ -2064,7 +2073,7 @@ function scr_characterspr(player_character = character) {
 		spr_idle = spr_gustavo_idle
 		spr_move = spr_gustavo_move
 		spr_crawl = spr_playerPZ_crawl
-		spr_hurt = spr_gustavo_hurt
+		spr_hurt = spr_gustavopresentdead
 		spr_jump = spr_gustavo_jump
 		spr_jump2 = spr_player_jump2 //Missing
 		spr_fall = spr_gustavo_fall
@@ -2111,7 +2120,7 @@ function scr_characterspr(player_character = character) {
 	    spr_deathend = spr_player_deathend //Missing
 	    spr_machpunch1 = spr_playerPZ_machpunch1 
 	    spr_machpunch2 = spr_playerPZ_machpunch2 
-	    spr_hurtjump = spr_playerPZ_stunned //Missing
+	    spr_hurtjump = spr_gustavo_hurt //Missing
 	    spr_entergate = spr_playerPZ_entergate
 	    spr_gottreasure = spr_playerPZ_treasureget
 	    spr_bossintro = spr_playerPZ_bossintro
@@ -2125,12 +2134,12 @@ function scr_characterspr(player_character = character) {
 	    spr_airdash1 = spr_playerPZ_airdash1
 	    spr_airdash2 = spr_playerPZ_airdash2
 	    spr_keyget = spr_player_keyget //Missing
-	    spr_idle1 = spr_playerPZ_idle //Missing
-	    spr_idle2 = spr_playerPZ_idle //Missing
-	    spr_idle3 = spr_playerPZ_idle //Missing
-	    spr_idle4 = spr_playerPZ_idle //Missing
-	    spr_idle5 = spr_playerPZ_idle //Missing
-	    spr_idle6 = spr_playerPZ_idle //Missing
+	    spr_idle1 = spr_playerGB_idle1 //Missing
+	    spr_idle2 = spr_playerGB_idle1 //Missing
+	    spr_idle3 = spr_playerGB_idle1 //Missing
+	    spr_idle4 = spr_playerGB_idle1 //Missing
+	    spr_idle5 = spr_playerGB_idle1 //Missing
+	    spr_idle6 = spr_playerGB_idle1 //Missing
 	    spr_piledriver = spr_playerPZ_piledriver
 	    spr_piledriverland = spr_playerPZ_piledriverland
 		spr_piledriverjump = spr_playerPZ_machfreefall;	//Missing
@@ -2179,7 +2188,7 @@ function scr_characterspr(player_character = character) {
 		spr_stunned = spr_playerPZ_stunned
 		spr_downpizzabox = spr_player_downpizzabox //Missing
 		spr_uppizzabox = spr_player_uppizzabox //Missing
-		spr_taunt = spr_playerPZ_taunt
+		spr_taunt = spr_playerGB_taunt
 		spr_slipnslide =  spr_playerPZ_slipnslide
 		spr_mach3boost = spr_playerPZ_machslideboost3
 		spr_facehurtup = spr_playerPZ_idle //Missing
@@ -2205,7 +2214,7 @@ function scr_characterspr(player_character = character) {
 		spr_finishingblow3 = spr_gustavo_shoot
 		spr_finishingblow4 = spr_gustavo_shoot
 		spr_finishingblow5 = spr_gustavo_shoot
-	    //spr_palette = spr_pizzellepalette
+	    spr_palette = spr_guspalette
 	    spr_tomatojump = spr_playerPZ_jump //Missing
 		//Boxxed Transfo
 	    spr_boxxedair = spr_playerPZ_boxxed_air;

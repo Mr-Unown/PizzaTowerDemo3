@@ -25,7 +25,8 @@ function scr_enemy_shake() {
 	    instance_create(x, y, obj_slapstar)
 	    instance_create(x, y, obj_baddiegibs)
 	    instance_create(x, y, obj_baddiegibs)
-	    instance_create(x, y, obj_baddiegibs)	
+	    instance_create(x, y, obj_baddiegibs)
+		if hp <= 0
 		with (instance_create((x + random_range(-16, 16)), (y + random_range(-16, 16)), obj_balloonpop))	
 		{	
 			image_speed = 0.35	

@@ -106,6 +106,11 @@ function scr_player_substate_tackle()
 	    machhitAnim = 0
 	    state = 68
 	    movespeed = clamp((movespeed - slowdownspeed) + 5,5,15)
+		if character = "GB" && brick = 1
+		{
+		brick = 0
+		instance_create(x,y, obj_brickseparated)
+		}
 	}
     suplexdashtimer += 0.35
 }

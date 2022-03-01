@@ -1050,6 +1050,30 @@ function scr_collide_destructibles() {
 			}
 		}	   
 	}
+	with (obj_brickball)
+	{
+	   if (place_meeting((x + hsp), y, obj_destructibles))
+		{
+	        with instance_place(x + hsp, y, obj_destructibles)
+	        {
+				initialhsp = other.hsp
+				initialvsp = other.vsp
+	            event_user(0)
+			}		
+		}
+		if (movespeed) > 0
+		{
+			if place_meeting(x + image_xscale, y, obj_destructibles)
+			{
+				with instance_place(x + image_xscale, y, obj_destructibles)
+				{
+					initialhsp = other.hsp
+					initialvsp = other.vsp
+					event_user(0)
+				}		
+			}
+		}	   
+	}
 	with (obj_meatballman)
 	{
 	    if place_meeting((x + hsp), y, obj_destructibles) && state = meatballstate.rolling

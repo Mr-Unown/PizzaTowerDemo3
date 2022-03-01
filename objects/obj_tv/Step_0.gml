@@ -366,7 +366,14 @@ else if global.newhud = true && oldcharacter == player.character && (sprite_inde
 	{
 		//case states.scaredjump:
 		//newtvsprite = player.spr_playertv_scaredjump
-		//channel = 12;		
+		//channel = 12;	
+		case states.mach3:
+		if player.movespeed < 20
+		newtvsprite = player.spr_playertv_mach3
+		else
+		newtvsprite = player.spr_playertv_mach4
+		channel = 12;	
+		break;
 		case states.ghost:
 		newtvsprite = player.spr_playertv_ghost
 		channel = 11;	

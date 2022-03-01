@@ -43,7 +43,7 @@ function scr_player_uppunch() {
 
 	if sprite_index = spr_shoryumineken && floor(image_index) = image_number - 1
 	{
-		sprite_index = spr_shoryukenend
+		sprite_index = 
 	    doublejump = 0
 	    input_buffer_secondjump = 0
 	    state = 0

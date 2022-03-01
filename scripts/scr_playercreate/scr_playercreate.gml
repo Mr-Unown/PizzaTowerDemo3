@@ -193,7 +193,8 @@ function scr_playercreate() {
 	global.mortfollowing = false;
 	global.geromeopen = false;
 #endregion
-
+	//gustavo rat check
+	brick = 1
 
 	//dougies super magic
 	floatbuffer = false

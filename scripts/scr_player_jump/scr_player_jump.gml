@@ -200,23 +200,20 @@ function scr_player_jump() {
 	        }
 	    }
 		}
-		else
-		{
-		if !instance_exists(obj_brickbullet) && sprite_index != spr_gustavo_downshootfall && sprite_index != spr_gustavo_downshoot 
+		else if !instance_exists(obj_brickbulletdown) && (sprite_index = spr_jump || sprite_index = spr_fall) && brick = 1
 	{
-		sprite_index = spr_gustavo_downshoot
+		sprite_index = spr_shoryumineken
 		image_index = 0
 		input_buffer_jump = 0
 		vsp = -11
-		instance_create(x,y,obj_brickbullet)
+		instance_create(x,y,obj_brickbulletdown)
 	}
-		}
-		if sprite_index = spr_gustavo_downshootfall && grounded
+		if sprite_index = spr_shoryukenend && grounded
 		sprite_index = spr_gustavo_land
 	}
 	//floor image index thing because it doesnt work up there oops
-	if (floor(image_index) == (image_number - 1) && sprite_index = spr_gustavo_downshoot) 
-		sprite_index = spr_gustavo_downshootfall
+	if (floor(image_index) == (image_number - 1) && sprite_index = spr_shoryumineken) 
+		sprite_index = spr_shoryukenend
 	if (move != 0)
 	    xscale = move
 	image_speed = 0.35

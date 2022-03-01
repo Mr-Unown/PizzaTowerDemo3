@@ -69,7 +69,7 @@ for (var i = 1; i <= 2; ++i)
 					global.combotime = 60
 					global.pausecombotime = true
 					obj_tv.alarm[1] = 75
-					if other.baddieID.hp <= 1
+					if other.baddieID.hp < 1
 					with (instance_create((other.x + random_range(-16, 16)), (other.y + random_range(-16, 16)), obj_balloonpop))
 					{
 						image_speed = 0.35
