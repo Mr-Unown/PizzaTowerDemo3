@@ -6,8 +6,112 @@ ini_close()
 
 if (global.panic == 0 && global.snickchallenge == 0)
 {
-    var roomname = room_get_name(room)
-    if (room == Scootertransition)
+    var roomtag = asset_get_tags(room, asset_room);
+	var muid = (is_array(roomtag) ? (array_length(roomtag) >= 1 ? roomtag[0] : "none") : "none");
+	var trackposition = 0
+	switch (muid)
+	{
+		case "title":
+			music = mu_title
+			break
+		case "characterselect":
+			music = mu_characterselect
+			break
+		case "hub":
+			music = mu_hub
+			break
+		case "tutorial":
+			music = mu_tutorial
+			break
+		case "entrance":
+			switch(obj_player1.character)
+			{
+				default:
+					music = mu_entrance
+					break
+				case "P":
+					music = mu_entrance
+					break
+				case "N":
+					music = mu_entranceN
+					break
+				case "V":
+					music = mu_entranceV
+					break
+				case "S":
+					music = mu_entranceS
+					break
+				case "PZ":
+					music = mu_entrancePZ
+					break
+			}
+			trackposition = 1
+			break
+		case "medievalentrance":
+			music = mu_medievalentrance
+			trackposition = 1
+			break
+		case "medieval":
+			music = mu_medieval
+			trackposition = 1
+			break
+		case "medievalremix":
+			music = mu_medievalremix
+			trackposition = 1
+			break
+		case "medievalsecret":
+			music = mu_medievalsecret
+			trackposition = 1
+			break
+		case "chateau":
+			music = mu_chateau
+			trackposition = 1
+			break
+		case "ruin":
+			music = mu_ruin
+			trackposition = 1
+			break
+		case "ruinbmix":
+			music = mu_ruinbmix
+			trackposition = 1
+			break
+		case "ruinremix":
+			music = mu_ruinremix
+			trackposition = 1
+			break
+		case "ruinsecret":
+			music = mu_ruinsecret
+			trackposition = 1
+			break
+		case "sanctum":
+			music = mu_sanctum
+			trackposition = 1
+			break
+		case "dungeon":
+			music = mu_dungeon
+			trackposition = 1
+			break
+		case "dungeonsecret":
+			music = mu_dungeonsecret
+			trackposition = 1
+			break
+		case "strongcold":
+			music = mu_strongcold
+			trackposition = 1
+			break
+		case "desert":
+			music = mu_desert
+			trackposition = 1
+		case "ufo":
+			music = mu_ufo
+			break
+		default:
+			music = noone
+			break
+	}
+	
+    /*if (room == Scootert
+	ransition)
     {
         if (!audio_is_playing(mu_characterselect))
         {
@@ -63,7 +167,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
         }
     }
 
-    if (string_letters(roomname) == "golf") || (string_letters(roomname) == "resto")
+    if (string_letters(roomname) == "minigolf") || (string_letters(roomname) == "resto")
     {
         if (!audio_is_playing(mu_golf))
         {
@@ -117,7 +221,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
         }
 		else
 		{
-            if (!audio_is_playing(mu_entrancePZ)) //Technically it's Creampuff's theme lol
+            if (!audio_is_playing(mu_entrancePZ)) //Technically it's Creampuff's theme lol //Not anymore its not
             {
                 scr_soundstopall()
                 scr_sound(mu_entrancePZ)
@@ -224,81 +328,53 @@ if (global.panic == 0 && global.snickchallenge == 0)
 			audio_sound_set_track_position(global.music, fadeoff)
 			pausedmusic = mu_beach
 		}	
-	}
-	/*
-    if (string_letters(roomname) == "desert" && global.desertnight == 1)
-    {
-        for (i = 0; i < 20; i++)
-        {
-            if (roomname == ("desert_" + string(i)) && i <= 14)
-            {
-                if (!audio_is_playing(mu_cowboy))
-                {
-                    scr_soundstopall()
-                    scr_sound(mu_cowboy)
-                    audio_sound_set_track_position(global.music, fadeoff)
-                    pausedmusic = mu_cowboy
-                }
-            }
-            else if (roomname == ("desert_" + string(i)) && i > 14)
-            {
-                if (!audio_is_playing(mu_cowboyufo))
-                {
-                    scr_soundstopall()
-                    scr_sound(mu_cowboyufo)
-                    audio_sound_set_track_position(global.music, fadeoff)
-                    pausedmusic = mu_cowboyufo
-                }
-            }
-        }
-    }*/
-/*    
+	}    
     if (string_letters(roomname) == "sewer")
     {
         for (i = 0; i < 20; i++)
         {
-            if ((roomname == ("sewer_" + string(i)) && i <= 6) || room == sewer_12)
+            if ((roomname == ("sewer_" + string(i)) && i <= 6) /*|| room == sewer_12)
             {
                 if (!audio_is_playing(mu_sewer1))
                 {
                     scr_soundstopall()
-                    scr_sound(112)
+                    scr_sound(mu_sewer1)
                     audio_sound_set_track_position(global.music, fadeoff)
-                    pausedmusic = 112
+                    pausedmusic = mu_sewer1
                 }
             }
-            else if (roomname == ("sewer_" + string(i)) && i > 6 && room != sewer_12)
+            else if (roomname == ("sewer_" + string(i)) && i > 6 /*&& room != sewer_12)
             {
                 if (!audio_is_playing(mu_sewer2))
                 {
                     scr_soundstopall()
-                    scr_sound(113)
+                    scr_sound(mu_sewer2)
                     audio_sound_set_track_position(global.music, fadeoff)
-                    pausedmusic = 113
+                    pausedmusic = mu_sewer2
                 }
             }
         }
     }
-    if (string_letters(roomname) == "freezer")
+    if (string_letters(roomname) == "oldfreezer")
     {
         for (i = 0; i < 20; i++)
         {
-            if (roomname == ("freezer_" + string(i)) && i <= 6)
+            if (roomname == ("oldfreezer_" + string(i)) && i <= 6)
             {
                 if (!audio_is_playing(mu_freezer1))
                 {
                     scr_soundstopall()
-                    scr_sound(114)
-                    pausedmusic = 114
+                    scr_sound(mu_freezer1)
+                    pausedmusic = mu_freezer1
                 }
             }
-            else if ((roomname == ("freezer_" + string(i)) && i > 6) || room == freezer_11)
+            else if ((roomname == ("oldfreezer_" + string(i)) && i > 6) /*|| room == oldfreezer_11)
             {
                 if (!audio_is_playing(mu_freezer2))
                 {
                     scr_soundstopall()
-                    scr_sound(115)
-                    pausedmusic = 115
+                    scr_sound(mu_freezer2)
+                    pausedmusic = mu_freezer2
                 }
             }
         }
@@ -328,7 +404,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
                 }
             }
         }
-    }*/
+    }
     if (string_letters(roomname) == "strongcold") || room = strongcold_miniboss
     {
         for (i = 0; i < 20; i++)
@@ -497,6 +573,16 @@ if (global.panic == 0 && global.snickchallenge == 0)
             audio_sound_set_track_position(global.music, fadeoff)
             pausedmusic = mu_desertsecret
         }
+    }
+	if (string_letters(roomname) == "wasteyardsecret")
+    {
+        if (!audio_is_playing(mu_cowboysecret))
+        {
+            scr_soundstopall()
+            scr_sound(mu_cowboysecret)
+            audio_sound_set_track_position(global.music, fadeoff)
+            pausedmusic = mu_cowboysecret
+        }
     }/*
     if (string_letters(roomname) == "desertsecret" && global.desertnight == 1)
     {
@@ -518,7 +604,6 @@ if (global.panic == 0 && global.snickchallenge == 0)
             pausedmusic = 124
         }
     }
-	*/
 	if (string_letters(roomname) == "kungfu")
     {
         if (!audio_is_playing(mu_kungfu))
@@ -526,6 +611,15 @@ if (global.panic == 0 && global.snickchallenge == 0)
             scr_soundstopall()
             scr_sound(mu_kungfu)
             pausedmusic = mu_kungfu
+        }
+    }
+	if (string_letters(roomname) == "wasteyard")
+    {
+        if (!audio_is_playing(mu_cowboy))
+        {
+            scr_soundstopall()
+            scr_sound(mu_cowboy)
+            pausedmusic = mu_cowboy
         }
     }
 	if (string_letters(roomname) == "factory")
@@ -577,13 +671,46 @@ if (global.panic == 0 && global.snickchallenge == 0)
                     pausedmusic = mu_freezer1
                 }
             }
-            else if ((roomname == ("freezer_" + string(i)) && i > 6) /*|| room == freezer_11*/)
+            else if ((roomname == ("freezer_" + string(i)) && i > 6) /*|| room == freezer_11)
             {
                 if (!audio_is_playing(mu_freezer2))
                 {
                     scr_soundstopall()
                     scr_sound(mu_freezer2)
                     pausedmusic = mu_freezer2
+                }
+            }
+        }
+    }
+	if (string_letters(roomname) == "forest")
+    {
+        for (i = 0; i < 20; i++)
+        {
+            if (roomname == ("forest_" + string(i)) && i <= 3)
+            {
+                if (!audio_is_playing(mu_forest1))
+                {
+                    scr_soundstopall()
+                    scr_sound(mu_forest1)
+                    pausedmusic = mu_forest1
+                }
+            }
+            else if ((roomname == ("forest_" + string(i)) && i = 4) /*|| room == freezer_11)
+            {
+                if (!audio_is_playing(mu_gustavo))
+                {
+                    scr_soundstopall()
+                    scr_sound(mu_gustavo)
+                    pausedmusic = mu_gustavo
+                }
+            }
+			else if ((roomname == ("forest_" + string(i)) && i >= 5) || room == freezer_11)
+            {
+                if (!audio_is_playing(mu_forest2))
+                {
+                    scr_soundstopall()
+                    scr_sound(mu_forest2)
+                    pausedmusic = mu_forest2
                 }
             }
         }
@@ -617,15 +744,23 @@ if (global.panic == 0 && global.snickchallenge == 0)
 	}
 		if room = room_test6
 	{
-	    if (!audio_is_playing(mu_forest))
+	    if (!audio_is_playing(mu_forest1))
         {
              scr_soundstopall()
-             scr_sound(mu_forest)
-             pausedmusic = mu_forest
+             scr_sound(mu_forest1)
+             pausedmusic = mu_forest1
         }	
 	}
+	*/
 	
-	
+	if (music != noone && !audio_is_playing(music)) 
+	{
+    audio_stop_all();
+    scr_sound(music);
+    pausedmusic = music;
+	}
+	if trackposition = 1
+	audio_sound_set_track_position(global.music, fadeoff)
 	audio_sound_gain(global.music, (0.6 * global.musicvolume), 0)
 }
 

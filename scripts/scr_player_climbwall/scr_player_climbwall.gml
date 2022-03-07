@@ -20,7 +20,7 @@ function scr_player_climbwall() {
 	{
 		if (character != "S")
 		{
-			if (wallspeed < 24 && move == xscale)
+			if (wallspeed < 90 && move == xscale)
 				wallspeed += 0.05
 		}
 		else if (wallspeed < 24)

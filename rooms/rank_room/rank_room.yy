@@ -61,6 +61,8 @@
   },
   "resourceVersion": "1.0",
   "name": "rank_room",
-  "tags": [],
+  "tags": [
+    "rank",
+  ],
   "resourceType": "GMRoom",
 }

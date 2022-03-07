@@ -30,6 +30,10 @@ function scr_playercolors() {
 		characters = "Pizzelle"
 		colorheight = 10;
 		break;
+		case "GB":
+		characters = "Gustavo"
+		colorheight = 8;
+		break;
 		default:
 		characters = "BF"
 		colorheight = 0;

@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_screamhurt",
-  "duration": 1.781327,
+  "duration": 1.776327,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

@@ -94,6 +94,8 @@
   },
   "resourceVersion": "1.0",
   "name": "medieval_pizzamart",
-  "tags": [],
+  "tags": [
+    "medieval",
+  ],
   "resourceType": "GMRoom",
 }

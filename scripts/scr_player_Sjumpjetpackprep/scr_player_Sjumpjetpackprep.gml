@@ -27,7 +27,7 @@ function scr_player_Sjumpjetpackprep() {
 			state = states.tumble
 			sprite_index = spr_player_sjumpcancel
 			image_index = 0
-			movespeed = 14
+			//movespeed = 14
 			vsp = -12
 		}
 	}

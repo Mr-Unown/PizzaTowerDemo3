@@ -35,12 +35,50 @@ function scr_solid_player(argument0 = x, argument1 = y, noslope = false) {
 	#endregion
 	
 	#region Solid
-	//Object
+	//Object	
 	if place_meeting(x, y, obj_solid)
 	{
-	    x = old_x
+	  /*
+		x = old_x
 	    y = old_y
 	    return 1;
+	  */
+	
+        var num = instance_place_list(x, y, obj_solid, global.instancelist, 0)
+        var _collided = 0
+        var i = 0
+        while (i < num)
+        {
+            var b = ds_list_find_value(global.instancelist, i)
+            switch b.object_index
+            {
+                case obj_ghostwall:
+                    if (state != states.ghost)
+                        _collided = 1
+                    break
+                /*case 13:
+                    if (state != (94 << 0) && (state != (81 << 0) || sprite_index != spr_mach3boost) && (state != (43 << 0) || tauntstoredstate != (94 << 0)))
+                        _collided = 1
+                    break*/
+                default:
+                    _collided = 1
+            }
+
+            if _collided
+                break
+            else
+            {
+                i++
+                continue
+            }
+        }
+        ds_list_clear(global.instancelist)
+        if _collided
+        {
+            x = old_x
+            y = old_y
+            return 1;
+        }
 	}
 	//Tile
 	if layer_exists("Tiles_Solid")

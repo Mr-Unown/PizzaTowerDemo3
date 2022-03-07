@@ -1,6 +1,8 @@
 var player = (global.coop ? instance_nearest(x, y, obj_player) : obj_player1)
 if (!instance_exists(ID))
     instance_destroy()
+if friendly && player.state != states.forknight
+	instance_destroy()
 if instance_exists(ID)
 {
     x = ID.x

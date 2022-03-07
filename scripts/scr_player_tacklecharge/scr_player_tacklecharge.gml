@@ -112,6 +112,11 @@ function scr_player_tacklecharge() {
 	    if (character == "P")
 	        machhitAnim = 0
 	    state = 68
+		if character = "GB" && brick = 1
+		{
+		brick = 0
+		instance_create(x,y, obj_brickseparated)
+		}
 	}
 	if ((!key_attack) && move != xscale && grounded)
 	{

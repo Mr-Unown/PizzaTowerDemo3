@@ -724,6 +724,7 @@ if DEBUG
 				case "Pizzy": character = "PZ"; break;
 				case "Dougie": character = "D"; break;
 				case "Pepperman": character = "PM"; break;
+				case "Gustavo": character = "GB"; break;
 			}		
 			paletteselect = 0
 			scr_characterspr()			

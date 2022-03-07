@@ -262,6 +262,8 @@
   },
   "resourceVersion": "1.0",
   "name": "desert_9",
-  "tags": [],
+  "tags": [
+    "desert",
+  ],
   "resourceType": "GMRoom",
 }

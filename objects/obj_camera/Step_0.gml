@@ -14,6 +14,16 @@ maximumangle =  arccos( (room_width / camsqrt) - camarctan       )
 
 maxangle = clamp(maximumangle,0,3)*/
 
+//Pizzascore sprites
+var player = (obj_player1.spotlight = false ? obj_player2 : obj_player1)
+spr_pizzascore_1 = player.spr_pizzascore_1
+spr_pizzascore_2 = player.spr_pizzascore_2
+spr_pizzascore_3 = player.spr_pizzascore_3
+spr_pizzascore_4 = player.spr_pizzascore_4
+spr_pizzasprite = player.spr_pizzasprite
+spr_pizzascorepal = player.spr_pizzascorepal
+spr_heatpalette = player.spr_heatpalette
+spr_heatmeterfill = player.spr_heatmeterfill
 #region Rank Checker
 if global.timeattack = false
 {
@@ -310,7 +320,7 @@ camera_set_view_size(view_camera[0],targetzoom1,targetzoom2)
 //Charge Camera
 if target = player
 {
-	if (player.state == 91 || player.state == states.jetpack || player.state == 37)
+	if (player.state == 91 || player.state == states.jetpack || player.state == 37 || player.state == states.firemouth && sprite_index = spr_player_firemouthdash || player.state == states.tumble && player.movespeed > 9 || player.state == states.knightpepslopes)
 	{
             var _targetcharge = (player.xscale * ((player.movespeed / 6) * 50)) //D3G: might need some tweaking
             var _tspeed = 2

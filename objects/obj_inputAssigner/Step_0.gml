@@ -2,7 +2,7 @@ if deactivated = 0
 {
     if (press_start && (!device_selected[0]))
     {
-        if (room == global.roomstart[global.newtitlescreen])
+        if (room == /*global.roomstart[global.newtitlescreen]*/ New_Realtitlescreen)
         {
             if (instance_exists(obj_pause) && obj_pause.pause == 0)
             {

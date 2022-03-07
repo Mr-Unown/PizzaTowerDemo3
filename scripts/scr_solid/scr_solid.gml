@@ -54,11 +54,23 @@ function scr_solid(argument0 = x, argument1 = y,noslope = false)
 	
 	#region Solid
 	//Object
-	if place_meeting(x, y, obj_solid)
+		if place_meeting(x, y, obj_solid)
 	{
+		if object_index != obj_ghostwall
+		{
 	    x = old_x
 	    y = old_y
-	    return true;
+	    return 1;
+		}
+		else
+		{
+			if state != states.ghost
+			{
+			x = old_x
+			y = old_y
+			return 1;
+			}
+		}
 	}
 	//Tile
 	if layer_exists("Tiles_Solid")

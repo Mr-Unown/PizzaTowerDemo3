@@ -9,6 +9,7 @@ collectdrop = 5
 flying = 0
 straightthrow = 0
 cigar = 0
+scr_enemycreate()
 cigarcreate = 0
 stomped = 0
 shot = 0
@@ -22,7 +23,6 @@ idlespr = 272
 stunfallspr = 271
 walkspr = 272
 grabbedspr = 271
-
 flash = 0
 slapped = 0
 birdcreated = 0
@@ -31,6 +31,5 @@ points = 0
 image_speed = 0.35
 grabbedby = 0
 dropcoin = 0
-scr_enemycreate()
 
 

@@ -63,7 +63,6 @@
         {"spriteId":{"name":"bg_hubroom2TILE","path":"sprites/bg_hubroom2TILE/bg_hubroom2TILE.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,"resourceVersion":"1.0","name":"graphic_1AE5DC9A","tags":[],"resourceType":"GMRSpriteGraphic",},
         {"spriteId":{"name":"spr_halloweendeco3","path":"sprites/spr_halloweendeco3/spr_halloweendeco3.yy",},"headPosition":-1.0,"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":864.0,"y":704.0,"resourceVersion":"1.0","name":"graphic_7D267906","tags":[],"resourceType":"GMRSpriteGraphic",},
         {"spriteId":{"name":"spr_entrancegate","path":"sprites/spr_entrancegate/spr_entrancegate.yy",},"headPosition":1.0,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":0.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":true,"inheritItemSettings":false,"x":224.0,"y":672.0,"resourceVersion":"1.0","name":"graphic_4551F1D1","tags":[],"resourceType":"GMRSpriteGraphic",},
-        {"spriteId":{"name":"spr_sanctum_decor1","path":"sprites/spr_sanctum_decor1/spr_sanctum_decor1.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":315.0,"y":736.0,"resourceVersion":"1.0","name":"graphic_5E5B5105","tags":[],"resourceType":"GMRSpriteGraphic",},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Assets_1","tags":[],"resourceType":"GMRAssetLayer",},
     {"spriteId":{"name":"bg_titlecloud","path":"sprites/bg_titlecloud/bg_titlecloud.yy",},"colour":4294967295,"x":0,"y":0,"htiled":true,"vtiled":false,"hspeed":1.0,"vspeed":0.0,"stretch":false,"animationFPS":1.0,"animationSpeedType":1,"userdefinedAnimFPS":false,"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Backgrounds_cloud","tags":[],"resourceType":"GMRBackgroundLayer",},
     {"spriteId":{"name":"bg_titlesky","path":"sprites/bg_titlesky/bg_titlesky.yy",},"colour":4294967295,"x":0,"y":0,"htiled":true,"vtiled":true,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":1.0,"animationSpeedType":1,"userdefinedAnimFPS":false,"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Backgrounds_far1","tags":[],"resourceType":"GMRBackgroundLayer",},
@@ -144,6 +143,8 @@
   },
   "resourceVersion": "1.0",
   "name": "hub_room2",
-  "tags": [],
+  "tags": [
+    "hub",
+  ],
   "resourceType": "GMRoom",
 }

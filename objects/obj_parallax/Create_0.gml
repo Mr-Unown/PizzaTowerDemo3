@@ -6,6 +6,7 @@ if (instance_number(obj_parallax) > 1)
 }
 //Initialize Funny Layers
 var i = 5;
+
 repeat(5)
 {
 	layers[i--] = noone;

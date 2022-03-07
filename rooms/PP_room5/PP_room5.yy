@@ -121,6 +121,8 @@
   },
   "resourceVersion": "1.0",
   "name": "PP_room5",
-  "tags": [],
+  "tags": [
+    "tutorial",
+  ],
   "resourceType": "GMRoom",
 }

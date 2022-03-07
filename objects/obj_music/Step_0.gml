@@ -298,16 +298,17 @@ if audio_is_playing(mu_factory1) && audio_is_playing(mu_factory2)
 }
 var _player = focused_player()
 var pitchspd = clamp((_player.movespeed/9.5) * 0.8, .7, 1.5)
-if global.pitchshift = 1
+var lappitchspd = (global.lapping * .005)
+if global.pitchshift = 1 && global.panic = false
 {
 	with (_player)
 	{
-		if (state == states.knightpep)
+		if (state == states.knightpep || frozenstate == states.knightpep || state = states.knightpepattack || frozenstate = states.knightpepattack)
 		audio_sound_pitch(global.music, 0.9);
-		else if (state == states.tumble or state == states.knightpepslopes)
+		else if (state == states.tumble or state == states.knightpepslopes || frozenstate == states.tumble or frozenstate == states.knightpepslopes)
 		{
-			if sprite_index != spr_tumblestart 
-				audio_sound_pitch(global.music, pitchspd);
+			if sprite_index = spr_tumble || spr_tumblestart
+				audio_sound_pitch(global.music, /*pitchspd*/ 1.2);
 			else 
 				audio_sound_pitch(global.music, 1.2);
 		}
@@ -315,3 +316,5 @@ if global.pitchshift = 1
 			audio_sound_pitch(global.music, 1);
 	}
 }
+else if global.panic = true
+audio_sound_pitch(global.music, 1 + lappitchspd);

@@ -17,6 +17,7 @@ if (ds_list_find_index(global.saveroom, id) == -1)
 		image_angle = choose(0,90,180,270)
 		vspeed = -3
 	}				
+	GamepadSetVibration(0, 1, 1, 0.8)
     scr_soundeffect(sfx_breakmetal)
     ds_list_add(global.saveroom, id)
 }

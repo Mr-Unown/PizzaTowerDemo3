@@ -77,8 +77,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Peppino",
-    "path": "folders/Sprites/Characters/Playable Characters Sprites/Peppino.yy",
+    "name": "knight",
+    "path": "folders/Sprites/Characters/Playable Characters Sprites/Peppino/knight.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_knightpep_fall",

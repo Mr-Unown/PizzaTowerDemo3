@@ -73,7 +73,7 @@ function scr_playersounds() {
 	        audio_stop_sound(tumble2snd)
 	        audio_stop_sound(tumble3snd)
 	    }
-	    if (audio_is_playing(suplexdashsnd) && sprite_index != spr_player_shoryumineken && state != 22)
+	    if (audio_is_playing(suplexdashsnd) && sprite_index != spr_shoryumineken && state != 22)
 	        audio_stop_sound(suplexdashsnd)
 		//Pitch
 		audio_sound_pitch(tumble3snd, pitchspd);
