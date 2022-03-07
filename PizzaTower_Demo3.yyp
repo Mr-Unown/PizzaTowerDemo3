@@ -2374,6 +2374,7 @@
     {"id":{"name":"factory_6","path":"rooms/factory_6/factory_6.yy",},"order":4,},
     {"id":{"name":"wasteyard_secret4","path":"rooms/wasteyard_secret4/wasteyard_secret4.yy",},"order":13,},
     {"id":{"name":"spr_player_fightball2","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"order":117,},
+    {"id":{"name":"spr_gustavo_grab","path":"sprites/spr_gustavo_grab/spr_gustavo_grab.yy",},"order":6,},
     {"id":{"name":"spr_dougieicons","path":"sprites/spr_dougieicons/spr_dougieicons.yy",},"order":90,},
     {"id":{"name":"forest_8","path":"rooms/forest_8/forest_8.yy",},"order":7,},
     {"id":{"name":"spr_peshino_idle","path":"sprites/spr_peshino_idle/spr_peshino_idle.yy",},"order":0,},

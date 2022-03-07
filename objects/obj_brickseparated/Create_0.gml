@@ -1,4 +1,4 @@
-returnbuffer = 150
+returnbuffer = 125
 isreturning = false
 vsp = 0
 hsp = 0

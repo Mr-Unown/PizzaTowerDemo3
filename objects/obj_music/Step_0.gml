@@ -298,6 +298,7 @@ if audio_is_playing(mu_factory1) && audio_is_playing(mu_factory2)
 }
 var _player = focused_player()
 var pitchspd = clamp((_player.movespeed/9.5) * 0.8, .7, 1.5)
+var lappitchspd = (global.lapping * .005)
 if global.pitchshift = 1 && global.panic = false
 {
 	with (_player)
@@ -315,3 +316,5 @@ if global.pitchshift = 1 && global.panic = false
 			audio_sound_pitch(global.music, 1);
 	}
 }
+else if global.panic = true
+audio_sound_pitch(global.music, 1 + lappitchspd);

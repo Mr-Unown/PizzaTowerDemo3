@@ -118,7 +118,8 @@
 		forknight = 133,
 		mort = 134,
 		indiancheese = 135,
-		pummel = 136
+		pummel = 136,
+		kungfu = 137
 
 	} 
 	//I made some changes to it so that we can know at a glance what number it gets converted to.
@@ -202,6 +203,9 @@ if actor = false
 	        break
 		case states.pummel:
 			scr_player_pummel()
+	        break
+		case states.kungfu:
+			scr_player_kungfu()
 	        break
 	    case 111:
 	        scr_player_kingknightroll()
@@ -798,7 +802,7 @@ else if actor = true
 	if (kungfutrail > 0)
 	    kungfutrail--
 		
-	if ((kungfutrail <= 0) && state == states.tumble && sprite_index = spr_player_sjumpcancel)
+	if ((kungfutrail <= 0) && (state == states.tumble && sprite_index = spr_player_sjumpcancel || state == states.kungfu))
 	{
 	    with instance_create(x, y, obj_firemouthafterimg)
 		{

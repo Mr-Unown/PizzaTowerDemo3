@@ -25,18 +25,10 @@ function scr_player_ratmount()
 		audio_stop_sound(sfx_ratbounce)
 		scr_soundeffect(sfx_ratbounce)
 		sprite_index = spr_gustavo_ball
-		if sprite_index != spr_gustavo_bounce
-		{
-			if !key_jump
+		if !key_jump
 			vsp = -10
 			else
 			vsp = -14
-		}
-		else
-		{
-			vsp = 0
-			hsp = 0
-		}
 	}
 	if (key_attack && scr_solid(x + hsp,y) && !scr_slope_ext(x + xscale,y) && sprite_index == spr_gustavo_ball)
 	{
