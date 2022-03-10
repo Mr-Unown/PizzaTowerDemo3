@@ -32,7 +32,7 @@ function camera_get_position_struct(_cam_id = view_camera[0])
 	/// @description Returns struct of Camera Positions
 	/// @function camera_get_position_struct
 	/// @param camera The view camera	
-	var camera_pos = noone;
+	static camera_pos = noone;
 	camera_pos = {
 		cam_x : camera_get_view_x(_cam_id),
 		cam_y : camera_get_view_y(_cam_id),

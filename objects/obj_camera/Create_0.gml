@@ -6,7 +6,9 @@ rankbubblesurface = noone;
 oldranklol = "FUCK"
 bubblescale = 0
 depth = -9999
-
+//Camera Positions
+Cam_x = 0;
+Cam_y = 0;
 //Stinky Thing
 oldfacesprite = spr_null
 //global.startgate
@@ -89,8 +91,8 @@ audio_master_gain(global.mastervolume)
 global.maxwave = 0
 global.wave = 0
 ded = 0
-player = 3
-player2 = 4
+player = obj_player1
+player2 = obj_player2
 shoving = 0
 bang = 0
 image_speed = 0.35
@@ -114,7 +116,7 @@ maxangle = 2.5
 debugfreezeframe = 0
 debugmaxfreezeframe = 0
 global.freezeframecounter = 0
-target = 3
+target = obj_player
 spr_heatpalette = spr_heatmeter_palette
 //Backdrop
 backdrop = spr_backdrop_pinball

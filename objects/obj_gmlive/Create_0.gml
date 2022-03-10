@@ -4,12 +4,15 @@ if (instance_number(obj_gmlive) > 1) {
 	var first = instance_find(obj_gmlive, 0);
 	if (id != first) { instance_destroy(); exit; }
 }
-//This is to
+//This is to destroy GMLive if Live_init is missing (it means GMLive does not exist)
 if (asset_get_index("live_init") == -1) {
 	show_debug_message("live_init is missing!\nEither GMLive is not imported in the project, or the 'GMLive' script got corrupted (try re-importing)\nIf you don't have GMLive, you can safely remove obj_gmlive and any remaining live_* function calls.\n\n");
+	instance_destroy(); 
+	exit;
 }
 // change the IP/port here if gmlive-server isn't running on the same device as the game
 // (e.g. when running on mobile platforms):
 live_init(1, "http://localhost:5100", "");
 live_blank_object = obj_gmliveblank;
 live_blank_room = room_gmliveblank;
+live_room_updated = scr_room_updated;

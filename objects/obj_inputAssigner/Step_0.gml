@@ -63,8 +63,10 @@ if deactivated = 0
                 device_selected[i] = 0
                 player_input_device[i] = -2
                 device_to_reconnect = i
-                instance_deactivate_all(true)
-                break
+                instance_deactivate_all(true);
+				instance_activate_object(obj_discordrpc);
+				instance_activate_object(rousrDissonance);
+                break;
             }
             else
             {

@@ -7,9 +7,9 @@ surface_resize(application_surface,960,540);
 //Fart Counter
 global.fartcounter = 0;
 //Parallax
-global.parallax_array = noone;
-global.parallax_arraynumber = 0;
-scr_default_parallax();
+//Parallax
+global.ParallaxMap = ds_map_create();
+scr_default_parallax(true);
 
 //Load Inputs
 scr_initinput();
