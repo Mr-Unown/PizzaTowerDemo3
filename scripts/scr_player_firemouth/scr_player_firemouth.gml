@@ -37,7 +37,7 @@ function scr_player_firemouth() {
 	if sprite_index == spr_firemouthintro 
 	{
 		if animation_end()
-			sprite_index = spr_player_firemouthidle	
+			sprite_index = spr_firemouthidle	
 		image_speed = 0.35			
 		global.pausecombotime = true
 		obj_tv.alarm[1] = 75;
@@ -70,7 +70,7 @@ function scr_player_firemouth() {
 		{
 		    hsp = rail
 		    movespeed = 0
-			sprite_index = spr_player_firemouthidle
+			sprite_index = spr_firemouthidle
 		}
 		//Firemouth DASH
 		if (key_slap2 && sprite_index != spr_player_firemouthdash && !grounded)
@@ -91,17 +91,17 @@ function scr_player_firemouth() {
 			add_to -= 0.5
 		if sprite_index == spr_player_firemouthdash && animation_end()
 		{
-		    sprite_index = spr_player_firemouthidle
+		    sprite_index = spr_firemouthidle
 		    image_index = 0
 		}
-		if(sprite_index = spr_player_firemouthjump && grounded)
-			sprite_index = spr_player_firemouthidle
+		if(sprite_index = spr_firemouthjump && grounded)
+			sprite_index = spr_firemouthidle
 		if(!grounded && sprite_index != spr_player_firemouthdash)
-			sprite_index = spr_player_firemouthjump
+			sprite_index = spr_firemouthjump
 		if scr_solid(x + xscale,y) && !scr_slope_ext(x + xscale,y) && sprite_index == spr_player_firemouthdash
 		{
 			add_to = 0;
-		    sprite_index = spr_player_firemouthidle
+		    sprite_index = spr_firemouthidle
 		    image_index = 0			
 		}
 /*		if (scr_solid((x + 1), y) && xscale == 1 && hsp != 0 && (!scr_slope_ext(x + sign(hsp), y)) && sprite_index != spr_firemouthshoot)
@@ -119,11 +119,11 @@ function scr_player_firemouth() {
 		if (input_buffer_jump < 8 && grounded)
 		{
 		    vsp = -14
-			sprite_index = spr_player_firemouthjump
+			sprite_index = spr_firemouthjump
 			with(instance_create(x, y - 23, obj_jumpdust))
 				sprite_index = spr_firemouthjumpeffect
 		}
-		if sprite_index == spr_player_firemouthjump
+		if sprite_index == spr_firemouthjump
 		{
 			//image_speed = clamp((abs(vsp/3) * 0.6),0.1,0.6) * -sign(vsp)
 			if vsp <= -0.01
@@ -152,7 +152,7 @@ function scr_player_firemouth() {
 		        image_xscale = other.xscale
 	}
 }
-if sprite_index == spr_firemouth || sprite_index == spr_player_firemouthidle
+if sprite_index == spr_firemouth || sprite_index == spr_firemouthidle
 firedashcount = 0
 
 

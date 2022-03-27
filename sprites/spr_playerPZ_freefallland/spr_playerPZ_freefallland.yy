@@ -8,13 +8,13 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 99,
-  "bbox_top": 42,
+  "bbox_right": 128,
+  "bbox_top": 0,
   "bbox_bottom": 98,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 100,
+  "width": 130,
   "height": 100,
   "textureGroupId": {
     "name": "Pizzelle_Sprites",
@@ -24,30 +24,30 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"9453ee40-befe-4710-8d4d-1b06f4d47b7d","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"9453ee40-befe-4710-8d4d-1b06f4d47b7d","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"LayerId":{"name":"d89df960-f1d6-4c63-9243-9c9f20319899","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerPZ_freefallland","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","name":"9453ee40-befe-4710-8d4d-1b06f4d47b7d","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"6c329b72-5602-43b6-90c3-f06a0fe492d8","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6c329b72-5602-43b6-90c3-f06a0fe492d8","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"LayerId":{"name":"d89df960-f1d6-4c63-9243-9c9f20319899","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerPZ_freefallland","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","name":"6c329b72-5602-43b6-90c3-f06a0fe492d8","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"46e2c110-8cd8-4fe3-8a6d-83b3003cf82f","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"46e2c110-8cd8-4fe3-8a6d-83b3003cf82f","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"LayerId":{"name":"d89df960-f1d6-4c63-9243-9c9f20319899","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerPZ_freefallland","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","name":"46e2c110-8cd8-4fe3-8a6d-83b3003cf82f","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"37cead35-26a9-4184-99bc-77b92ce516a0","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"37cead35-26a9-4184-99bc-77b92ce516a0","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"LayerId":{"name":"d89df960-f1d6-4c63-9243-9c9f20319899","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerPZ_freefallland","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","name":"37cead35-26a9-4184-99bc-77b92ce516a0","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"cbc28d64-478b-40ad-8d54-b20331a3f6f8","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"cbc28d64-478b-40ad-8d54-b20331a3f6f8","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"LayerId":{"name":"d89df960-f1d6-4c63-9243-9c9f20319899","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerPZ_freefallland","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","name":"cbc28d64-478b-40ad-8d54-b20331a3f6f8","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"9bb2ec61-39f5-4413-9bde-2866308921ca","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"9bb2ec61-39f5-4413-9bde-2866308921ca","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"LayerId":{"name":"d89df960-f1d6-4c63-9243-9c9f20319899","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerPZ_freefallland","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","name":"9bb2ec61-39f5-4413-9bde-2866308921ca","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"b8fc2a49-e123-4fbc-973d-9891bd31bdc5","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b8fc2a49-e123-4fbc-973d-9891bd31bdc5","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"LayerId":{"name":"d89df960-f1d6-4c63-9243-9c9f20319899","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerPZ_freefallland","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","name":"b8fc2a49-e123-4fbc-973d-9891bd31bdc5","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"57ef2a8d-f094-477c-806c-8e6b94ae9492","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"57ef2a8d-f094-477c-806c-8e6b94ae9492","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"LayerId":{"name":"d89df960-f1d6-4c63-9243-9c9f20319899","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerPZ_freefallland","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","name":"57ef2a8d-f094-477c-806c-8e6b94ae9492","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"fe2391ad-4216-47c5-ab92-00101de51776","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"fe2391ad-4216-47c5-ab92-00101de51776","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"LayerId":{"name":"f425d154-877e-42ce-baba-0905f8c3fde4","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_playerPZ_freefallland","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","name":"fe2391ad-4216-47c5-ab92-00101de51776","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"5583ac57-ca58-4f7e-bad6-66351dc78cb7","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"5583ac57-ca58-4f7e-bad6-66351dc78cb7","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"LayerId":{"name":"f425d154-877e-42ce-baba-0905f8c3fde4","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_playerPZ_freefallland","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","name":"5583ac57-ca58-4f7e-bad6-66351dc78cb7","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"63eb3854-dfe2-4154-b826-b2898a1f8697","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"63eb3854-dfe2-4154-b826-b2898a1f8697","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"LayerId":{"name":"f425d154-877e-42ce-baba-0905f8c3fde4","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_playerPZ_freefallland","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","name":"63eb3854-dfe2-4154-b826-b2898a1f8697","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"deb4a101-0c4f-4420-9d27-4aa0e38e1977","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"deb4a101-0c4f-4420-9d27-4aa0e38e1977","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"LayerId":{"name":"f425d154-877e-42ce-baba-0905f8c3fde4","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_playerPZ_freefallland","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","name":"deb4a101-0c4f-4420-9d27-4aa0e38e1977","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"5fb3ffdf-aa9b-4543-95a1-3996809f20ca","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"5fb3ffdf-aa9b-4543-95a1-3996809f20ca","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"LayerId":{"name":"f425d154-877e-42ce-baba-0905f8c3fde4","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_playerPZ_freefallland","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","name":"5fb3ffdf-aa9b-4543-95a1-3996809f20ca","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"7ff11ae7-695a-4b8b-b677-dc727131dffb","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"7ff11ae7-695a-4b8b-b677-dc727131dffb","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"LayerId":{"name":"f425d154-877e-42ce-baba-0905f8c3fde4","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_playerPZ_freefallland","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","name":"7ff11ae7-695a-4b8b-b677-dc727131dffb","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"5f83fa6c-8bbb-4a74-9f9b-94094a96584a","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"5f83fa6c-8bbb-4a74-9f9b-94094a96584a","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"LayerId":{"name":"f425d154-877e-42ce-baba-0905f8c3fde4","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_playerPZ_freefallland","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","name":"5f83fa6c-8bbb-4a74-9f9b-94094a96584a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"6448c17c-1bba-4c2d-845b-81b705416c1f","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"6448c17c-1bba-4c2d-845b-81b705416c1f","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"LayerId":{"name":"f425d154-877e-42ce-baba-0905f8c3fde4","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_playerPZ_freefallland","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","name":"6448c17c-1bba-4c2d-845b-81b705416c1f","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_playerPZ_freefallland","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},
@@ -62,14 +62,14 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"3cc76447-76b0-4a20-b0a0-ac4edd884b37","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9453ee40-befe-4710-8d4d-1b06f4d47b7d","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"1ec628b9-5eb9-4481-8115-d6e85b2d5900","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6c329b72-5602-43b6-90c3-f06a0fe492d8","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"9ad40df7-06f8-4d84-836a-4c7a501ed9c3","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"46e2c110-8cd8-4fe3-8a6d-83b3003cf82f","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"f1df1530-6162-4f06-9ba9-16c508f633ff","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"37cead35-26a9-4184-99bc-77b92ce516a0","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"d2f0cb60-dcd5-44d6-b99d-4ddd6ded52ba","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cbc28d64-478b-40ad-8d54-b20331a3f6f8","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"d9f064a7-2636-4415-a421-c1423c93b717","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9bb2ec61-39f5-4413-9bde-2866308921ca","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"6a5d2f23-5972-4abe-85c4-12b8eebb80c5","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b8fc2a49-e123-4fbc-973d-9891bd31bdc5","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"c6f81e6d-1d37-4dcc-aaae-b250190d7e17","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"57ef2a8d-f094-477c-806c-8e6b94ae9492","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"0e6eae52-9945-4111-977b-60b6c87b7ce0","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fe2391ad-4216-47c5-ab92-00101de51776","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"ec757636-d91b-4842-98bf-44bd41193527","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5583ac57-ca58-4f7e-bad6-66351dc78cb7","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"bc8f1019-6252-46db-a808-c9a7d1872d51","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"63eb3854-dfe2-4154-b826-b2898a1f8697","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"e2575d02-cb16-486d-b44f-cbbe321f1d3f","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"deb4a101-0c4f-4420-9d27-4aa0e38e1977","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"8a6857dc-d2b5-4106-a3fb-7d693fde30d7","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5fb3ffdf-aa9b-4543-95a1-3996809f20ca","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9e62d737-0219-469f-83d2-aa6280e62fd1","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7ff11ae7-695a-4b8b-b677-dc727131dffb","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"f380d839-5732-4a0d-ac47-f0ea6702204a","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5f83fa6c-8bbb-4a74-9f9b-94094a96584a","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c7da5646-931d-4618-8250-5e3586666c93","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6448c17c-1bba-4c2d-845b-81b705416c1f","path":"sprites/spr_playerPZ_freefallland/spr_playerPZ_freefallland.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -82,7 +82,7 @@
     "backdropHeight": 1080,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 50,
+    "xorigin": 65,
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
@@ -93,7 +93,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d89df960-f1d6-4c63-9243-9c9f20319899","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f425d154-877e-42ce-baba-0905f8c3fde4","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {

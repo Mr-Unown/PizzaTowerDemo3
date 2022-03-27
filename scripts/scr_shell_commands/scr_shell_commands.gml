@@ -807,5 +807,44 @@ if DEBUG
 		}
 	}
 
-	#endregion		
+	#endregion	
+	
+	#region Player Set State
+	function sh_player_setstate(args) 
+	{
+		var arg1 = string(args[1]), arg2 = args[2];
+		switch arg1
+		{
+			case "player1": 
+			case "1": 
+			arg1 = obj_player1 
+			break;
+			case "player2": 
+			case "2": 
+			arg1 = obj_player2
+			break;
+		}	
+		//Player
+		with arg1
+		{	
+			//state
+			state = arg2
+		}
+	}
+	function meta_player_setstate() 
+	{
+		return {
+			description: "changes state of player",
+			arguments: ["<player>","<state>"],
+			suggestions: [
+				["player1","player2"],
+				["knight"] //todo make states list or something
+			],
+			argumentDescriptions: [
+				"changes player to change character",
+				"select the character to change into"
+			]
+		}
+	}
+	#endregion	
 }

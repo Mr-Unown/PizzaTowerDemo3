@@ -1,3 +1,4 @@
+if (live_call()) return live_result;
 ini_open("saveData.ini")
 global.mastervolume = ini_read_real("Option", "mastervolume", 1)
 global.musicvolume = ini_read_real("Option", "musicvolume", 1)
@@ -104,6 +105,18 @@ if (global.panic == 0 && global.snickchallenge == 0)
 			trackposition = 1
 		case "ufo":
 			music = mu_ufo
+			break
+		case "beach":
+			music = mu_beach
+			break
+		case "forest1":
+			music = mu_forest1
+			break
+		case "gustavo":
+			music = mu_gustavo
+			break
+		case "forest2":
+			music = mu_forest2
 			break
 		default:
 			music = noone

@@ -1,3 +1,4 @@
+if (live_call()) return live_result;
 var roomname = room_get_name(room)
 
 if (room != hub_room1 && room != hub_room2 && room != hub_room3 && room != cowboytask && room != Tutorialtrap && room != Titlescreen)
@@ -298,23 +299,24 @@ if audio_is_playing(mu_factory1) && audio_is_playing(mu_factory2)
 }
 var _player = focused_player()
 var pitchspd = clamp((_player.movespeed/9.5) * 0.8, .7, 1.5)
-var lappitchspd = (global.lapping * .005)
-if global.pitchshift = 1 && global.panic = false
+var lappitchspd = (global.lapping * .05)
+var heatpitchtest = (((global.style + (25 * global.stylethreshold))) * .0005) //hi
+if global.pitchshift = 1 //&& global.panic = false
 {
 	with (_player)
 	{
 		if (state == states.knightpep || frozenstate == states.knightpep || state = states.knightpepattack || frozenstate = states.knightpepattack)
-		audio_sound_pitch(global.music, 0.9);
+		audio_sound_pitch(global.music, 0.9 + heatpitchtest);
 		else if (state == states.tumble or state == states.knightpepslopes || frozenstate == states.tumble or frozenstate == states.knightpepslopes)
 		{
 			if sprite_index = spr_tumble || spr_tumblestart
-				audio_sound_pitch(global.music, /*pitchspd*/ 1.2);
+				audio_sound_pitch(global.music, /*pitchspd*/ 1.2 + heatpitchtest);
 			else 
-				audio_sound_pitch(global.music, 1.2);
+				audio_sound_pitch(global.music, 1.2 * heatpitchtest);
 		}
 		else
-			audio_sound_pitch(global.music, 1);
+			audio_sound_pitch(global.music, 1 + heatpitchtest);
 	}
 }
-else if global.panic = true
-audio_sound_pitch(global.music, 1 + lappitchspd);
+else //if global.panic = true
+audio_sound_pitch(global.music, 1);

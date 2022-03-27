@@ -159,6 +159,8 @@
   },
   "resourceVersion": "1.0",
   "name": "forest_8",
-  "tags": [],
+  "tags": [
+    "forest2",
+  ],
   "resourceType": "GMRoom",
 }

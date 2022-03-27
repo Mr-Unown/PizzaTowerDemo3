@@ -380,6 +380,8 @@
   },
   "resourceVersion": "1.0",
   "name": "beach_6",
-  "tags": [],
+  "tags": [
+    "beach",
+  ],
   "resourceType": "GMRoom",
 }

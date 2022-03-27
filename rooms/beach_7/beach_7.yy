@@ -342,6 +342,8 @@
   },
   "resourceVersion": "1.0",
   "name": "beach_7",
-  "tags": [],
+  "tags": [
+    "beach",
+  ],
   "resourceType": "GMRoom",
 }

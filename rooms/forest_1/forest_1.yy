@@ -377,6 +377,8 @@
   },
   "resourceVersion": "1.0",
   "name": "forest_1",
-  "tags": [],
+  "tags": [
+    "forest1",
+  ],
   "resourceType": "GMRoom",
 }

@@ -1,3 +1,4 @@
+if (live_call()) return live_result;
 //Variables
 var _cam_x = camera_get_view_x(view_camera[0])
 var _cam_y = camera_get_view_y(view_camera[0])
@@ -306,8 +307,8 @@ camera_set_view_pos(view_camera[0],camera_get_view_x(view_camera[0]),clamp(camer
 
 #region Charge Camera
 if target = player && (player.state == states.mach3 || player.state == states.jetpack || player.state == states.machroll || (player.state == states.firemouth && sprite_index = spr_player_firemouthdash) || player.state == states.tumble && player.movespeed > 9 || player.state == states.knightpepslopes) {
-	var _targetcharge = (player.xscale * ((player.movespeed / 6) * 50)); //D3G: might need some tweaking
-    var _tspeed = 2;
+	var _targetcharge = (player.xscale * ((player.movespeed / 6) * 80)); //D3G: might need some tweaking
+    var _tspeed = player.movespeed / 6;
     if ((_targetcharge > 0 && chargecamera < 0) || (_targetcharge < 0 && chargecamera > 0))
 		_tspeed = 8;
     if (chargecamera > _targetcharge)
@@ -316,9 +317,9 @@ if target = player && (player.state == states.mach3 || player.state == states.je
 		chargecamera += _tspeed;
 } else {
 	if (chargecamera > 0)
-		chargecamera -= 2;
+		chargecamera -= 4;
 	if (chargecamera < 0)
-		chargecamera += 2;
+		chargecamera += 4;
 }
 _cam_x += chargecamera;	
 #endregion

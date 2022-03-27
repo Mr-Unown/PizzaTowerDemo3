@@ -50,6 +50,8 @@
   },
   "resourceVersion": "1.0",
   "name": "forest_9",
-  "tags": [],
+  "tags": [
+    "forest2",
+  ],
   "resourceType": "GMRoom",
 }

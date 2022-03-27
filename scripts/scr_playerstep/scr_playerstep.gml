@@ -815,7 +815,7 @@ else if actor = true
 	if (machtrail2 > 0)
 	    machtrail2--
 		
-	if ((machtrail2 <= 0) && (state == states.tumble && (sprite_index != spr_tumbleend && sprite_index != spr_player_sjumpcancel && sprite_index != spr_splat) || state = states.freefall || state = states.grab && sprite_index = spr_swingding ||state = states.ratmount && (sprite_index == spr_gustavo_ball || sprite_index == spr_gustavo_dash)))
+	if ((machtrail2 <= 0) && (state == states.tumble && (sprite_index != spr_tumbleend && sprite_index != spr_player_sjumpcancel && sprite_index != spr_splat) || state = states.freefall || state = states.grab && sprite_index = spr_swingding || state = states.ratmount && (sprite_index == spr_gustavo_ball || sprite_index == spr_gustavo_dash) || state = states.mach3 && sprite_index = spr_crazyrun))
 	{
 	    with instance_create(x, y, obj_clearafterimg)
 		{

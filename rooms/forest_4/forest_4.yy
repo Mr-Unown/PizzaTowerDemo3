@@ -91,6 +91,8 @@
   },
   "resourceVersion": "1.0",
   "name": "forest_4",
-  "tags": [],
+  "tags": [
+    "gustavo",
+  ],
   "resourceType": "GMRoom",
 }

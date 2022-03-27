@@ -1,4 +1,5 @@
 function scr_player_knightpep() {
+	if (live_call()) return live_result;
 	alarm[5] = 2
 	alarm[7] = 60
 	global.SAGEknighttaken = 1

@@ -1,4 +1,3 @@
-
 if (live_call()) return live_result;
 /*if (!global.option_vibration)
     return;*/
@@ -20,7 +19,8 @@ with (obj_player)
                 GamepadSetVibration(_pindex, 0.6, 0.6, 0.8)
                 break
             case states.firemouth:
-                GamepadSetVibration(_pindex, 0.8, 0.8, 0.85)
+				if (sprite_index == spr_firemouthintro)
+                    GamepadSetVibration(_pindex, 1, 1, 0.9)
                 break
             case states.hurt:
                 GamepadSetVibration(_pindex, 1, 1, 0.85)
