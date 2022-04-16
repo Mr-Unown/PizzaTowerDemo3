@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_forknight_mask","path":"sprites/spr_forknight_mask/spr_forknight_mask.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

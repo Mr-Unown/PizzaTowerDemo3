@@ -127,7 +127,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_xmassausagetoppin_intro","path":"sprites/spr_xmassausagetoppin_intro/spr_xmassausagetoppin_intro.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

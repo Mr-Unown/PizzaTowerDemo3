@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_filebutton_trash","path":"sprites/spr_filebutton_trash/spr_filebutton_trash.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

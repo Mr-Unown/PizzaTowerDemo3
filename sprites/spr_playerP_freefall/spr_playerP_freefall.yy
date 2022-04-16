@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerP_freefall","path":"sprites/spr_playerP_freefall/spr_playerP_freefall.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

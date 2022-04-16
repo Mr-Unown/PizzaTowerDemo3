@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_grabbingjump","path":"sprites/spr_player_grabbingjump/spr_player_grabbingjump.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

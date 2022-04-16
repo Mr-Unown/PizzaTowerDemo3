@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_machalleffect","path":"sprites/spr_machalleffect/spr_machalleffect.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

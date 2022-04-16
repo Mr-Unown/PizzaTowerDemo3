@@ -99,7 +99,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_cheesedash","path":"sprites/spr_cheesedash/spr_cheesedash.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_cheesedash",
     "tags": [],
     "resourceType": "GMSequence",

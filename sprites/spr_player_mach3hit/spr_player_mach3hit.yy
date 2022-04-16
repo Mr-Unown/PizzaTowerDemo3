@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_mach3hit","path":"sprites/spr_player_mach3hit/spr_player_mach3hit.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

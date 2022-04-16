@@ -203,7 +203,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_snick_keydoor","path":"sprites/spr_snick_keydoor/spr_snick_keydoor.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

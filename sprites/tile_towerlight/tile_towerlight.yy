@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"tile_towerlight","path":"sprites/tile_towerlight/tile_towerlight.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "tile_towerlight",
     "tags": [],
     "resourceType": "GMSequence",

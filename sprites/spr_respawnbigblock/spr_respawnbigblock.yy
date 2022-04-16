@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_respawnbigblock","path":"sprites/spr_respawnbigblock/spr_respawnbigblock.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_respawnbigblock",
     "tags": [],
     "resourceType": "GMSequence",

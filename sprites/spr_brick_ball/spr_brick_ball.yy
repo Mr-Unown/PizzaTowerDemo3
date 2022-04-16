@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_brick_ball","path":"sprites/spr_brick_ball/spr_brick_ball.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_brick_ball",
     "tags": [],
     "resourceType": "GMSequence",

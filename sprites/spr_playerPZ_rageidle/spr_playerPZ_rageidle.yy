@@ -143,7 +143,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerPZ_rageidle","path":"sprites/spr_playerPZ_rageidle/spr_playerPZ_rageidle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerPZ_rageidle",
     "tags": [],
     "resourceType": "GMSequence",

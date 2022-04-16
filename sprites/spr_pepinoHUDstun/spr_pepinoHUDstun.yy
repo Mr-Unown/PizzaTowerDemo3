@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_pepinoHUDstun","path":"sprites/spr_pepinoHUDstun/spr_pepinoHUDstun.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

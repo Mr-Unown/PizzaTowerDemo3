@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerN_ragemove","path":"sprites/spr_playerN_ragemove/spr_playerN_ragemove.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerN_ragemove",
     "tags": [],
     "resourceType": "GMSequence",

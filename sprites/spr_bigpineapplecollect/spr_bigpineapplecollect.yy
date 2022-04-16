@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bigpineapplecollect","path":"sprites/spr_bigpineapplecollect/spr_bigpineapplecollect.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_bigpineapplecollect",
     "tags": [],
     "resourceType": "GMSequence",

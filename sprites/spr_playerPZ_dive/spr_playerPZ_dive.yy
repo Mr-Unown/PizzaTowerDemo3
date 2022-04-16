@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerPZ_dive","path":"sprites/spr_playerPZ_dive/spr_playerPZ_dive.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

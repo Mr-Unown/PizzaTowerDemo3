@@ -91,7 +91,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_givepizza","path":"sprites/spr_player_givepizza/spr_player_givepizza.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

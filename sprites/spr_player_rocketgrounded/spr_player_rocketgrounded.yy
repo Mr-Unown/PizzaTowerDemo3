@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_rocketgrounded","path":"sprites/spr_player_rocketgrounded/spr_player_rocketgrounded.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_player_rocketgrounded",
     "tags": [],
     "resourceType": "GMSequence",

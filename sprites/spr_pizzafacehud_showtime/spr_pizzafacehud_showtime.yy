@@ -135,7 +135,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_pizzafacehud_showtime","path":"sprites/spr_pizzafacehud_showtime/spr_pizzafacehud_showtime.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_pizzafacehud_showtime",
     "tags": [],
     "resourceType": "GMSequence",

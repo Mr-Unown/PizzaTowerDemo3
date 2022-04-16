@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_noisebomb","path":"sprites/spr_noisebomb/spr_noisebomb.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

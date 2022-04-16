@@ -95,7 +95,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_font_collecPZ","path":"sprites/spr_font_collecPZ/spr_font_collecPZ.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_font_collecPZ",
     "tags": [],
     "resourceType": "GMSequence",

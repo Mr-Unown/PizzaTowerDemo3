@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_palettechanger_export","path":"sprites/spr_palettechanger_export/spr_palettechanger_export.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_palettechanger_export",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_brickdead","path":"sprites/spr_brickdead/spr_brickdead.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_brickdead",
     "tags": [],
     "resourceType": "GMSequence",

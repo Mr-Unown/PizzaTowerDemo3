@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"tile_graveyard2","path":"sprites/tile_graveyard2/tile_graveyard2.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "tile_graveyard2",
     "tags": [],
     "resourceType": "GMSequence",

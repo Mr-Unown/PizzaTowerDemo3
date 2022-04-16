@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tv_madPZ","path":"sprites/spr_tv_madPZ/spr_tv_madPZ.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_tv_madPZ",
     "tags": [],
     "resourceType": "GMSequence",

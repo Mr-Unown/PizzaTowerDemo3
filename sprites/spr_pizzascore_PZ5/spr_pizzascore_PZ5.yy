@@ -107,7 +107,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_pizzascore_PZ5","path":"sprites/spr_pizzascore_PZ5/spr_pizzascore_PZ5.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_pizzascore_PZ5",
     "tags": [],
     "resourceType": "GMSequence",

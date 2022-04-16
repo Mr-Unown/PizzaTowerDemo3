@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerPZ_superjumpprep","path":"sprites/spr_playerPZ_superjumpprep/spr_playerPZ_superjumpprep.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

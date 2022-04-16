@@ -118,6 +118,15 @@ if (global.panic == 0 && global.snickchallenge == 0)
 		case "forest2":
 			music = mu_forest2
 			break
+		case "freezer1":
+			music = mu_freezer1
+			break
+		case "freezer2":
+			music = mu_freezer2
+			break
+		case "factory1":
+			music = mu_factory1
+			break
 		default:
 			music = noone
 			break

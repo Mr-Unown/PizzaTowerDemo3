@@ -195,7 +195,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_rankP","path":"sprites/spr_rankP/spr_rankP.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_rankP",
     "tags": [],
     "resourceType": "GMSequence",

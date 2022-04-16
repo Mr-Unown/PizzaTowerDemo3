@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"tile_forest2","path":"sprites/tile_forest2/tile_forest2.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "tile_forest2",
     "tags": [],
     "resourceType": "GMSequence",

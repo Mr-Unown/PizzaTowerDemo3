@@ -147,7 +147,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerPZ_hurtidle","path":"sprites/spr_playerPZ_hurtidle/spr_playerPZ_hurtidle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerPZ_hurtidle",
     "tags": [],
     "resourceType": "GMSequence",

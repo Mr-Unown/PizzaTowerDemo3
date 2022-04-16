@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_fencer_chargestart","path":"sprites/spr_fencer_chargestart/spr_fencer_chargestart.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

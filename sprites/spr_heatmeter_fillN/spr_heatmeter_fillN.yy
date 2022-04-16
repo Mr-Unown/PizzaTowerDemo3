@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_heatmeter_fillN","path":"sprites/spr_heatmeter_fillN/spr_heatmeter_fillN.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_heatmeter_fillN",
     "tags": [],
     "resourceType": "GMSequence",

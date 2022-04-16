@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_palette_ufolive","path":"sprites/spr_palette_ufolive/spr_palette_ufolive.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_palette_ufolive",
     "tags": [],
     "resourceType": "GMSequence",

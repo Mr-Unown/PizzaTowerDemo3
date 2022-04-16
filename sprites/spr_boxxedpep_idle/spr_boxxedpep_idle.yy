@@ -115,7 +115,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_boxxedpep_idle","path":"sprites/spr_boxxedpep_idle/spr_boxxedpep_idle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

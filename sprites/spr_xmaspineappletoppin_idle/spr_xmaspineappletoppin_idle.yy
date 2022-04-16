@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_xmaspineappletoppin_idle","path":"sprites/spr_xmaspineappletoppin_idle/spr_xmaspineappletoppin_idle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

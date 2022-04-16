@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_shotgun_jump","path":"sprites/spr_shotgun_jump/spr_shotgun_jump.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

@@ -143,7 +143,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_pickle_attack","path":"sprites/spr_pickle_attack/spr_pickle_attack.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_pickle_attack",
     "tags": [],
     "resourceType": "GMSequence",

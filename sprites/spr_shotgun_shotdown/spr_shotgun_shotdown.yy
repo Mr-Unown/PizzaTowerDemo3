@@ -99,7 +99,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_shotgun_shotdown","path":"sprites/spr_shotgun_shotdown/spr_shotgun_shotdown.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

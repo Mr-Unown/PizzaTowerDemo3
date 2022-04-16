@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerN_ghostidle","path":"sprites/spr_playerN_ghostidle/spr_playerN_ghostidle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerN_ghostidle",
     "tags": [],
     "resourceType": "GMSequence",

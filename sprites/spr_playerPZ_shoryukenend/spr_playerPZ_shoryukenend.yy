@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerPZ_shoryukenend","path":"sprites/spr_playerPZ_shoryukenend/spr_playerPZ_shoryukenend.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerPZ_shoryukenend",
     "tags": [],
     "resourceType": "GMSequence",

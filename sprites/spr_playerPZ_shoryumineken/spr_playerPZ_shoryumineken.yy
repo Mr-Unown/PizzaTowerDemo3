@@ -123,7 +123,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerPZ_shoryumineken","path":"sprites/spr_playerPZ_shoryumineken/spr_playerPZ_shoryumineken.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerPZ_shoryumineken",
     "tags": [],
     "resourceType": "GMSequence",

@@ -131,7 +131,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tv_mad","path":"sprites/spr_tv_mad/spr_tv_mad.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_tv_mad",
     "tags": [],
     "resourceType": "GMSequence",

@@ -219,7 +219,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerV_normalHUD","path":"sprites/spr_playerV_normalHUD/spr_playerV_normalHUD.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

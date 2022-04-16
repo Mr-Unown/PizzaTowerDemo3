@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_pizzascore_marshmallow","path":"sprites/spr_pizzascore_marshmallow/spr_pizzascore_marshmallow.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_pizzascore_marshmallow",
     "tags": [],
     "resourceType": "GMSequence",

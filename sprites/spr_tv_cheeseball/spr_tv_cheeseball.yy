@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tv_cheeseball","path":"sprites/spr_tv_cheeseball/spr_tv_cheeseball.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_tv_cheeseball",
     "tags": [],
     "resourceType": "GMSequence",

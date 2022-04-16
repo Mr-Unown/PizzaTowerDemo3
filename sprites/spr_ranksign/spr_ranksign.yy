@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_ranksign","path":"sprites/spr_ranksign/spr_ranksign.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

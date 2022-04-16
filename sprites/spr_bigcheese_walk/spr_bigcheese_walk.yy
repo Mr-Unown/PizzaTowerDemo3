@@ -95,7 +95,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bigcheese_walk","path":"sprites/spr_bigcheese_walk/spr_bigcheese_walk.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

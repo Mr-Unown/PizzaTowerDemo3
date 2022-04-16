@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tv_snicktemp","path":"sprites/spr_tv_snicktemp/spr_tv_snicktemp.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_tv_snicktemp",
     "tags": [],
     "resourceType": "GMSequence",

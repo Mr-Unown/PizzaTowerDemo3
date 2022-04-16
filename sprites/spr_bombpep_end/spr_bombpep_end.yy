@@ -207,7 +207,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bombpep_end","path":"sprites/spr_bombpep_end/spr_bombpep_end.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerN_rockethitwall","path":"sprites/spr_playerN_rockethitwall/spr_playerN_rockethitwall.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerN_rockethitwall",
     "tags": [],
     "resourceType": "GMSequence",

@@ -111,7 +111,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_PZbigcollect6","path":"sprites/spr_PZbigcollect6/spr_PZbigcollect6.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_PZbigcollect6",
     "tags": [],
     "resourceType": "GMSequence",

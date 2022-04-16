@@ -91,7 +91,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_barrelmove","path":"sprites/spr_player_barrelmove/spr_player_barrelmove.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_player_barrelmove",
     "tags": [],
     "resourceType": "GMSequence",

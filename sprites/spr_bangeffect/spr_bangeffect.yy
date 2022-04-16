@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bangeffect","path":"sprites/spr_bangeffect/spr_bangeffect.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

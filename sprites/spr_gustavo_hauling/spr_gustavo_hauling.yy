@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_gustavo_hauling","path":"sprites/spr_gustavo_hauling/spr_gustavo_hauling.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_gustavo_hauling",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_pizzatimer","path":"sprites/spr_pizzatimer/spr_pizzatimer.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_pizzatimer",
     "tags": [],
     "resourceType": "GMSequence",

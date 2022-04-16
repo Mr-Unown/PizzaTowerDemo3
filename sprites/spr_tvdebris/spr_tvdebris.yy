@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tvdebris","path":"sprites/spr_tvdebris/spr_tvdebris.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

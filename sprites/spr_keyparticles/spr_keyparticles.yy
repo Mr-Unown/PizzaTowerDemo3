@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_keyparticles","path":"sprites/spr_keyparticles/spr_keyparticles.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

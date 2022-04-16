@@ -99,7 +99,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_forknight_heatstart","path":"sprites/spr_forknight_heatstart/spr_forknight_heatstart.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

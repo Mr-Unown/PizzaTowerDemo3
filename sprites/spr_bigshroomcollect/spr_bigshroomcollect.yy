@@ -111,7 +111,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bigshroomcollect","path":"sprites/spr_bigshroomcollect/spr_bigshroomcollect.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_bigshroomcollect",
     "tags": [],
     "resourceType": "GMSequence",

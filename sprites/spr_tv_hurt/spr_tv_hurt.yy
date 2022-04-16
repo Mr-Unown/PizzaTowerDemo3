@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tv_hurt","path":"sprites/spr_tv_hurt/spr_tv_hurt.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_tv_hurt",
     "tags": [],
     "resourceType": "GMSequence",

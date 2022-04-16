@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_boxxedpep_dash","path":"sprites/spr_boxxedpep_dash/spr_boxxedpep_dash.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_boxxedpep_dash",
     "tags": [],
     "resourceType": "GMSequence",

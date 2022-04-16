@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_hurtjump","path":"sprites/spr_player_hurtjump/spr_player_hurtjump.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_player_hurtjump",
     "tags": [],
     "resourceType": "GMSequence",

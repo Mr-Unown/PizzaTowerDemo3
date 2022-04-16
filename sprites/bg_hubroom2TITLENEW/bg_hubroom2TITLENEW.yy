@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_hubroom2TITLENEW","path":"sprites/bg_hubroom2TITLENEW/bg_hubroom2TITLENEW.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_hubroom2TITLENEW",
     "tags": [],
     "resourceType": "GMSequence",

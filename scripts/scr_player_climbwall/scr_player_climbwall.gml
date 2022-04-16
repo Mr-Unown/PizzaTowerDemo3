@@ -1,4 +1,5 @@
 function scr_player_climbwall() {
+	if (live_call()) return live_result;
 	var left = key_left
 	var right = key_right
 	if (windingAnim < 200)
@@ -95,24 +96,39 @@ function scr_player_climbwall() {
 			sprite_index = spr_fall
 		}
 	}
-	if key_jump
+	if key_jump && character != "PZ"
 	{
-		if character != "PZ"
-			movespeed = clamp(floor(wallspeed /1.5),8,11)
-		else
-			movespeed = clamp(round(wallspeed /1.25),8,15)
+		movespeed = clamp(round(wallspeed /1.25),8,15)
 	    state = 70
 	    image_index = 0
-		if character != "PZ"
-			sprite_index = spr_walljumpstart
-		else
-			sprite_index = spr_mach2jump
-	    if (character == "P" || character = "PZ")
+		sprite_index = spr_walljumpstart
+	    if (character == "P")
 	        vsp = -11
 	    else
 	        vsp = -13
 	    xscale *= -1
 	    jumpstop = 0
+	}
+	else if key_jump && character = "PZ"
+	{
+		if (mach2 >= 100)
+        {
+            mach2 = 100
+            instance_create(x, y, obj_jumpdust)
+            vsp = -9
+            sprite_index = spr_mach4
+            state = states.mach3
+            xscale *= -1
+        }
+        else
+        {
+            sprite_index = spr_mach2jump
+            mach2 = 35
+            instance_create(x, y, obj_jumpdust)
+            vsp = -9
+            state = states.mach2
+            xscale *= -1
+        }
 	}
 	if ((grounded && wallspeed <= 0) || wallspeed <= 0)
 	{

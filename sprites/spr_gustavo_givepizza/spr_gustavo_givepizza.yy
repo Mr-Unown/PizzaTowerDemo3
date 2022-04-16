@@ -155,7 +155,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_gustavo_givepizza","path":"sprites/spr_gustavo_givepizza/spr_gustavo_givepizza.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_gustavo_givepizza",
     "tags": [],
     "resourceType": "GMSequence",

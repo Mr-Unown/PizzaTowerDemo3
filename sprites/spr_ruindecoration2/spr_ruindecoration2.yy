@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_ruindecoration2","path":"sprites/spr_ruindecoration2/spr_ruindecoration2.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_ruindecoration2",
     "tags": [],
     "resourceType": "GMSequence",

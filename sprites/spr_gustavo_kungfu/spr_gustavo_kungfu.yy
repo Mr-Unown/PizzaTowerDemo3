@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_gustavo_kungfu","path":"sprites/spr_gustavo_kungfu/spr_gustavo_kungfu.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_gustavo_kungfu",
     "tags": [],
     "resourceType": "GMSequence",

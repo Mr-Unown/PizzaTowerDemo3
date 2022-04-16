@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_firemouthdash","path":"sprites/spr_player_firemouthdash/spr_player_firemouthdash.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_player_firemouthdash",
     "tags": [],
     "resourceType": "GMSequence",

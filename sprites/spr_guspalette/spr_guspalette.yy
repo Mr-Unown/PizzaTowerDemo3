@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_guspalette","path":"sprites/spr_guspalette/spr_guspalette.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_guspalette",
     "tags": [],
     "resourceType": "GMSequence",

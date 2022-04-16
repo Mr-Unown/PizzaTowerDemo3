@@ -131,7 +131,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_noiseHUD_idle","path":"sprites/spr_noiseHUD_idle/spr_noiseHUD_idle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

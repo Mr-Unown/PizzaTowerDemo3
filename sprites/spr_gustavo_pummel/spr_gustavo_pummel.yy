@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_gustavo_pummel","path":"sprites/spr_gustavo_pummel/spr_gustavo_pummel.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_gustavo_pummel",
     "tags": [],
     "resourceType": "GMSequence",

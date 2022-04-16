@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_gustavo_jumpB","path":"sprites/spr_gustavo_jumpB/spr_gustavo_jumpB.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_gustavo_jumpB",
     "tags": [],
     "resourceType": "GMSequence",

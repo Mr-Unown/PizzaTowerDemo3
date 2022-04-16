@@ -107,7 +107,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_taunteffect","path":"sprites/spr_taunteffect/spr_taunteffect.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

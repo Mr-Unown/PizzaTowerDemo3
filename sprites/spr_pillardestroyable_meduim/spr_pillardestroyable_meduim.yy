@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_pillardestroyable_meduim","path":"sprites/spr_pillardestroyable_meduim/spr_pillardestroyable_meduim.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_pillardestroyable_meduim",
     "tags": [],
     "resourceType": "GMSequence",

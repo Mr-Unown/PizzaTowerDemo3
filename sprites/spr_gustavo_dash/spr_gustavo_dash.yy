@@ -107,7 +107,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_gustavo_dash","path":"sprites/spr_gustavo_dash/spr_gustavo_dash.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_gustavo_dash",
     "tags": [],
     "resourceType": "GMSequence",

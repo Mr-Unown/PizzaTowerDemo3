@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_gustavo_land","path":"sprites/spr_gustavo_land/spr_gustavo_land.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_gustavo_land",
     "tags": [],
     "resourceType": "GMSequence",

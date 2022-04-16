@@ -111,7 +111,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerPZ_firemouthjump","path":"sprites/spr_playerPZ_firemouthjump/spr_playerPZ_firemouthjump.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerPZ_firemouthjump",
     "tags": [],
     "resourceType": "GMSequence",

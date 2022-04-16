@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_gnome2_happy","path":"sprites/spr_gnome2_happy/spr_gnome2_happy.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_gnome2_happy",
     "tags": [],
     "resourceType": "GMSequence",

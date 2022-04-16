@@ -157,6 +157,8 @@
   },
   "resourceVersion": "1.0",
   "name": "oldfreezer_10",
-  "tags": [],
+  "tags": [
+    "freezer2",
+  ],
   "resourceType": "GMRoom",
 }

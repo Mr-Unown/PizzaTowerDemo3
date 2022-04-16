@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bombpep_runabouttoexplode","path":"sprites/spr_bombpep_runabouttoexplode/spr_bombpep_runabouttoexplode.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

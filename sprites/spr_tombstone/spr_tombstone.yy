@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tombstone","path":"sprites/spr_tombstone/spr_tombstone.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_tombstone",
     "tags": [],
     "resourceType": "GMSequence",

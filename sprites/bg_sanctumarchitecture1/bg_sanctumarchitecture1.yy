@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_sanctumarchitecture1","path":"sprites/bg_sanctumarchitecture1/bg_sanctumarchitecture1.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_sanctumarchitecture1",
     "tags": [],
     "resourceType": "GMSequence",

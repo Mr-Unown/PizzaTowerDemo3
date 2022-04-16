@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_hurtfall","path":"sprites/spr_player_hurtfall/spr_player_hurtfall.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_player_hurtfall",
     "tags": [],
     "resourceType": "GMSequence",

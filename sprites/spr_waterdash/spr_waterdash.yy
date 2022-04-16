@@ -99,7 +99,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_waterdash","path":"sprites/spr_waterdash/spr_waterdash.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_waterdash",
     "tags": [],
     "resourceType": "GMSequence",

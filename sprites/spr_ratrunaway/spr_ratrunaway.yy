@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_ratrunaway","path":"sprites/spr_ratrunaway/spr_ratrunaway.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_ratrunaway",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_floatingplatform","path":"sprites/spr_floatingplatform/spr_floatingplatform.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_floatingplatform",
     "tags": [],
     "resourceType": "GMSequence",

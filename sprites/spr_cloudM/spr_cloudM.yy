@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_cloudM","path":"sprites/spr_cloudM/spr_cloudM.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_cloudM",
     "tags": [],
     "resourceType": "GMSequence",

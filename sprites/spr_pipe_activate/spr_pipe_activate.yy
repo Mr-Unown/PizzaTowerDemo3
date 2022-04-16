@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_pipe_activate","path":"sprites/spr_pipe_activate/spr_pipe_activate.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_pipe_activate",
     "tags": [],
     "resourceType": "GMSequence",

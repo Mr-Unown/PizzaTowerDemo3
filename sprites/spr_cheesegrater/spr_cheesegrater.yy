@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_cheesegrater","path":"sprites/spr_cheesegrater/spr_cheesegrater.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_cheesegrater",
     "tags": [],
     "resourceType": "GMSequence",

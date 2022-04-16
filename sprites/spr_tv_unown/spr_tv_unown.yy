@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tv_unown","path":"sprites/spr_tv_unown/spr_tv_unown.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_tv_unown",
     "tags": [],
     "resourceType": "GMSequence",

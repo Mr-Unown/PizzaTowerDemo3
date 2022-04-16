@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_entrance2escape","path":"sprites/bg_entrance2escape/bg_entrance2escape.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_entrance2escape",
     "tags": [],
     "resourceType": "GMSequence",

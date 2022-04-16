@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_gnomehouse2","path":"sprites/spr_gnomehouse2/spr_gnomehouse2.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_gnomehouse2",
     "tags": [],
     "resourceType": "GMSequence",

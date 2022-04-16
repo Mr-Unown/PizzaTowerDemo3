@@ -115,7 +115,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_xmascheesetoppin_intro","path":"sprites/spr_xmascheesetoppin_intro/spr_xmascheesetoppin_intro.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

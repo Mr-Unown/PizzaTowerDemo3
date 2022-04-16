@@ -255,7 +255,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerPZ_gnomepizza","path":"sprites/spr_playerPZ_gnomepizza/spr_playerPZ_gnomepizza.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerPZ_gnomepizza",
     "tags": [],
     "resourceType": "GMSequence",

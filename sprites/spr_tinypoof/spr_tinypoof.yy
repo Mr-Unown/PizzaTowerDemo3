@@ -107,7 +107,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tinypoof","path":"sprites/spr_tinypoof/spr_tinypoof.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_tinypoof",
     "tags": [],
     "resourceType": "GMSequence",

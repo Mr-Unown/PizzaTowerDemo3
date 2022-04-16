@@ -119,7 +119,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_pizzakinpineapple_run","path":"sprites/spr_pizzakinpineapple_run/spr_pizzakinpineapple_run.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

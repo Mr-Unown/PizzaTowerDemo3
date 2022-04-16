@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerPZ_firemouth","path":"sprites/spr_playerPZ_firemouth/spr_playerPZ_firemouth.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerPZ_firemouth",
     "tags": [],
     "resourceType": "GMSequence",

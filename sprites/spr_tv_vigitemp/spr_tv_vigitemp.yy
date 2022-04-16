@@ -175,7 +175,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tv_vigitemp","path":"sprites/spr_tv_vigitemp/spr_tv_vigitemp.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_tv_vigitemp",
     "tags": [],
     "resourceType": "GMSequence",

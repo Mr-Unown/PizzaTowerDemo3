@@ -107,7 +107,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_gustavofreezer","path":"sprites/spr_gustavofreezer/spr_gustavofreezer.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_gustavofreezer",
     "tags": [],
     "resourceType": "GMSequence",

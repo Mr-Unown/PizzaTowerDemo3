@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_baconcollect","path":"sprites/spr_baconcollect/spr_baconcollect.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_baconcollect",
     "tags": [],
     "resourceType": "GMSequence",

@@ -107,7 +107,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerPZ_downpizzabox","path":"sprites/spr_playerPZ_downpizzabox/spr_playerPZ_downpizzabox.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerPZ_downpizzabox",
     "tags": [],
     "resourceType": "GMSequence",

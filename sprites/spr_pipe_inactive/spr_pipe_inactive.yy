@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_pipe_inactive","path":"sprites/spr_pipe_inactive/spr_pipe_inactive.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_pipe_inactive",
     "tags": [],
     "resourceType": "GMSequence",

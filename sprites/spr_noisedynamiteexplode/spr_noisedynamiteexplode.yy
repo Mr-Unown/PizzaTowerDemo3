@@ -91,7 +91,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_noisedynamiteexplode","path":"sprites/spr_noisedynamiteexplode/spr_noisedynamiteexplode.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

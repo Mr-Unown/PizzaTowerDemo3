@@ -99,7 +99,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bigmushroom_bounce","path":"sprites/spr_bigmushroom_bounce/spr_bigmushroom_bounce.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_bigmushroom_bounce",
     "tags": [],
     "resourceType": "GMSequence",

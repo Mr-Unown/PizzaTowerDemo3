@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_pizzascore_candycorn","path":"sprites/spr_pizzascore_candycorn/spr_pizzascore_candycorn.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_pizzascore_candycorn",
     "tags": [],
     "resourceType": "GMSequence",

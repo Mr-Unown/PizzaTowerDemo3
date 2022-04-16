@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_pizzascore_jellybean","path":"sprites/spr_pizzascore_jellybean/spr_pizzascore_jellybean.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_pizzascore_jellybean",
     "tags": [],
     "resourceType": "GMSequence",

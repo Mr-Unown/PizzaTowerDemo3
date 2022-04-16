@@ -99,7 +99,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_PZtopping2NEW","path":"sprites/spr_PZtopping2NEW/spr_PZtopping2NEW.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_PZtopping2NEW",
     "tags": [],
     "resourceType": "GMSequence",

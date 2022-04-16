@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerPZ_splat","path":"sprites/spr_playerPZ_splat/spr_playerPZ_splat.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerPZ_splat",
     "tags": [],
     "resourceType": "GMSequence",

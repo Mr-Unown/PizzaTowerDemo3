@@ -95,7 +95,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_minipillarwaking","path":"sprites/spr_minipillarwaking/spr_minipillarwaking.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

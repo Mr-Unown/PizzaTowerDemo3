@@ -95,7 +95,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerPZ_shotgun_suplexdash","path":"sprites/spr_playerPZ_shotgun_suplexdash/spr_playerPZ_shotgun_suplexdash.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerPZ_shotgun_suplexdash",
     "tags": [],
     "resourceType": "GMSequence",

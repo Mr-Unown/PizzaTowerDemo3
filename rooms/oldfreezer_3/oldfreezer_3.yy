@@ -279,6 +279,8 @@
   },
   "resourceVersion": "1.0",
   "name": "oldfreezer_3",
-  "tags": [],
+  "tags": [
+    "freezer1",
+  ],
   "resourceType": "GMRoom",
 }

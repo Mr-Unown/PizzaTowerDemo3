@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bigbreakableOLD","path":"sprites/spr_bigbreakableOLD/spr_bigbreakableOLD.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_bigbreakableOLD",
     "tags": [],
     "resourceType": "GMSequence",

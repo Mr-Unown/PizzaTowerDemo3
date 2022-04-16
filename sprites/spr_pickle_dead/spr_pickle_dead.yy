@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_pickle_dead","path":"sprites/spr_pickle_dead/spr_pickle_dead.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_pickle_dead",
     "tags": [],
     "resourceType": "GMSequence",

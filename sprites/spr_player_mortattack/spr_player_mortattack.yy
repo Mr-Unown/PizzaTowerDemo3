@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_mortattack","path":"sprites/spr_player_mortattack/spr_player_mortattack.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_player_mortattack",
     "tags": [],
     "resourceType": "GMSequence",

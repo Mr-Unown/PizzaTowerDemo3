@@ -119,7 +119,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_factory1escape","path":"sprites/bg_factory1escape/bg_factory1escape.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

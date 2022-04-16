@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerPZ_escapeidle","path":"sprites/spr_playerPZ_escapeidle/spr_playerPZ_escapeidle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerPZ_escapeidle",
     "tags": [],
     "resourceType": "GMSequence",

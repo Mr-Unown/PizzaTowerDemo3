@@ -119,7 +119,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_gustavo_showpizza","path":"sprites/spr_gustavo_showpizza/spr_gustavo_showpizza.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_gustavo_showpizza",
     "tags": [],
     "resourceType": "GMSequence",

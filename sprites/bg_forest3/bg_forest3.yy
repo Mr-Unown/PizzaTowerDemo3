@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_forest3","path":"sprites/bg_forest3/bg_forest3.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_forest3",
     "tags": [],
     "resourceType": "GMSequence",

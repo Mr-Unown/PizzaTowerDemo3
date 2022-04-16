@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_flippie","path":"sprites/spr_player_flippie/spr_player_flippie.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_player_flippie",
     "tags": [],
     "resourceType": "GMSequence",

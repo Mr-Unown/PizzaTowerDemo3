@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"ts_pizzascapeNEW","path":"sprites/ts_pizzascapeNEW/ts_pizzascapeNEW.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "ts_pizzascapeNEW",
     "tags": [],
     "resourceType": "GMSequence",

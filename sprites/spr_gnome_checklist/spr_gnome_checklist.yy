@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_gnome_checklist","path":"sprites/spr_gnome_checklist/spr_gnome_checklist.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_gnome_checklist",
     "tags": [],
     "resourceType": "GMSequence",

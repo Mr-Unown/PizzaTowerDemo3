@@ -115,7 +115,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerGB_idle","path":"sprites/spr_playerGB_idle/spr_playerGB_idle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerGB_idle",
     "tags": [],
     "resourceType": "GMSequence",

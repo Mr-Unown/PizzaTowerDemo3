@@ -271,7 +271,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_redblock_active","path":"sprites/spr_redblock_active/spr_redblock_active.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_gustavo_point","path":"sprites/spr_gustavo_point/spr_gustavo_point.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_gustavo_point",
     "tags": [],
     "resourceType": "GMSequence",

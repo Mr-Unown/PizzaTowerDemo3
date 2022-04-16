@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tv_scared","path":"sprites/spr_tv_scared/spr_tv_scared.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_tv_scared",
     "tags": [],
     "resourceType": "GMSequence",

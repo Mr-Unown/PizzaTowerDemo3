@@ -147,7 +147,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_robot_slap","path":"sprites/spr_robot_slap/spr_robot_slap.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_robot_slap",
     "tags": [],
     "resourceType": "GMSequence",

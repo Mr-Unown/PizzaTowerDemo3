@@ -119,7 +119,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_meatball_idle","path":"sprites/spr_meatball_idle/spr_meatball_idle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_meatball_idle",
     "tags": [],
     "resourceType": "GMSequence",

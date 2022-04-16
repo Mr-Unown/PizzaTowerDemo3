@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_skateboardebris","path":"sprites/spr_skateboardebris/spr_skateboardebris.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_skateboardebris",
     "tags": [],
     "resourceType": "GMSequence",

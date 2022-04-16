@@ -23,8 +23,9 @@ enum temperature
 }
 global.visual_temperature = temperature.normal;
 //Fonts
+global.commonfont = /*ini_read_real("Option", "musicvolume", 1)*/ spr_fontSS
 global.smallfont = font_add_sprite_ext(spr_smallerfont, "ABCDEFGHIJKLMNOPQRSTUVWXYZ!.,'\"-:?1234567890|", 1, 0)
-global.font = font_add_sprite_ext(spr_font, "ABCDEFGHIJKLMNOPQRSTUVWXYZ!.1234567890:", 1, 0)
+global.font = font_add_sprite_ext(global.commonfont, "ABCDEFGHIJKLMNOPQRSTUVWXYZ!.1234567890:", 1, 0)
 global.pointsfont = font_add_sprite_ext(spr_font_collect, "0123456789", 1, 0)
 global.pointsfontpz = font_add_sprite_ext(spr_font_collecPZ, "0123456789", 1, 0)
 global.combofont = font_add_sprite_ext(spr_font_combo, "0123456789", 1, 0)

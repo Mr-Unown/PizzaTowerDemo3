@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bigdebris_respawn","path":"sprites/spr_bigdebris_respawn/spr_bigdebris_respawn.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_bigdebris_respawn",
     "tags": [],
     "resourceType": "GMSequence",

@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerGB_kick","path":"sprites/spr_playerGB_kick/spr_playerGB_kick.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerGB_kick",
     "tags": [],
     "resourceType": "GMSequence",

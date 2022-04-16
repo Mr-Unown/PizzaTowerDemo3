@@ -119,7 +119,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_robot_machstart","path":"sprites/spr_robot_machstart/spr_robot_machstart.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_robot_machstart",
     "tags": [],
     "resourceType": "GMSequence",

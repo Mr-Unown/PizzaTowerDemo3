@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_pizzaball_wallbounce","path":"sprites/spr_pizzaball_wallbounce/spr_pizzaball_wallbounce.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_pizzaball_wallbounce",
     "tags": [],
     "resourceType": "GMSequence",

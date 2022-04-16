@@ -515,6 +515,7 @@ if (player.state != 55)
     }
 	#endregion
 	#region Timer
+	draw_set_font(global.font)
 	var timery = (global.newhud == true? 450 : 65)	
 	if (global.panic == 1 || global.snickchallenge == 1 || global.miniboss == 1)
     {

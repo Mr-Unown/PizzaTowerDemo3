@@ -139,7 +139,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerGB_idle1","path":"sprites/spr_playerGB_idle1/spr_playerGB_idle1.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerGB_idle1",
     "tags": [],
     "resourceType": "GMSequence",

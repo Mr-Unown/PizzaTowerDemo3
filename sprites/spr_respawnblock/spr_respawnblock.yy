@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_respawnblock","path":"sprites/spr_respawnblock/spr_respawnblock.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_respawnblock",
     "tags": [],
     "resourceType": "GMSequence",

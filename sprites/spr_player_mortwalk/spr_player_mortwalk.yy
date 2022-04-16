@@ -151,7 +151,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_mortwalk","path":"sprites/spr_player_mortwalk/spr_player_mortwalk.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_player_mortwalk",
     "tags": [],
     "resourceType": "GMSequence",

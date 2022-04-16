@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_PZescapetopping1","path":"sprites/spr_PZescapetopping1/spr_PZescapetopping1.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_PZescapetopping1",
     "tags": [],
     "resourceType": "GMSequence",

@@ -91,7 +91,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tv_evil","path":"sprites/spr_tv_evil/spr_tv_evil.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_tv_evil",
     "tags": [],
     "resourceType": "GMSequence",

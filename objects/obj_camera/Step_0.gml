@@ -170,6 +170,7 @@ if global.freezeframe = false
 {
 	targetzoom1 = approach(targetzoom1,960,16)
 	targetzoom2 = approach(targetzoom2,540,9)	
+	if global.panic = false
 	angle = approach(angle,0,0.25)
 }
 camera_set_view_angle(view_camera[0], angle);
@@ -403,4 +404,18 @@ else
 	global.bonusmiliseconds = 0;
 	global.bonusseconds = 0;
 	global.bonusminutes = 0;
+}
+//Pizzy Screen Tilt
+if (global.panic == 1 && obj_player1.character == "PZ")
+{
+    camera_set_view_angle(view_camera[0], sugarysin((angle / (global.minutes + 2)), 5))
+    clamp(angle, -5, 5)
+    if (angle >= 5)
+        angledir = -1
+    else if (angle <= -5)
+        angledir = 1
+    if (angle < 5 && angledir == 1)
+        angle += 0.025
+    if (angle > -5 && angledir == -1)
+        angle -= 0.025
 }

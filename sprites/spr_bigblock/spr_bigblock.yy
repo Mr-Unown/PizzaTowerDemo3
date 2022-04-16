@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bigblock","path":"sprites/spr_bigblock/spr_bigblock.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_bigblock",
     "tags": [],
     "resourceType": "GMSequence",

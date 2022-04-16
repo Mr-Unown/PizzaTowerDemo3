@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_gnome4_idle","path":"sprites/spr_gnome4_idle/spr_gnome4_idle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_gnome4_idle",
     "tags": [],
     "resourceType": "GMSequence",

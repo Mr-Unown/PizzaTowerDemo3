@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerGB_taunt","path":"sprites/spr_playerGB_taunt/spr_playerGB_taunt.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerGB_taunt",
     "tags": [],
     "resourceType": "GMSequence",

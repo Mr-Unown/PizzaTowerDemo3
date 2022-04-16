@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tv_mach3","path":"sprites/spr_tv_mach3/spr_tv_mach3.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_tv_mach3",
     "tags": [],
     "resourceType": "GMSequence",

@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tv_victory","path":"sprites/spr_tv_victory/spr_tv_victory.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_tv_victory",
     "tags": [],
     "resourceType": "GMSequence",

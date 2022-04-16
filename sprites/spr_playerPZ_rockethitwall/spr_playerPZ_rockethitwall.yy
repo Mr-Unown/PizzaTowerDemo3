@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerPZ_rockethitwall","path":"sprites/spr_playerPZ_rockethitwall/spr_playerPZ_rockethitwall.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerPZ_rockethitwall",
     "tags": [],
     "resourceType": "GMSequence",

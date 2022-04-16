@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"tile_freezer2new","path":"sprites/tile_freezer2new/tile_freezer2new.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "tile_freezer2new",
     "tags": [],
     "resourceType": "GMSequence",

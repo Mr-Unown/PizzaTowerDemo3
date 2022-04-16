@@ -135,7 +135,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_indiancheese_dance","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_indiancheese_dance",
     "tags": [],
     "resourceType": "GMSequence",

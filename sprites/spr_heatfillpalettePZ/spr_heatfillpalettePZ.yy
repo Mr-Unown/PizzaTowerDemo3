@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_heatfillpalettePZ","path":"sprites/spr_heatfillpalettePZ/spr_heatfillpalettePZ.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_heatfillpalettePZ",
     "tags": [],
     "resourceType": "GMSequence",

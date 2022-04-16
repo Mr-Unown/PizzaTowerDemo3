@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_graveyardunderground","path":"sprites/bg_graveyardunderground/bg_graveyardunderground.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_graveyardunderground",
     "tags": [],
     "resourceType": "GMSequence",

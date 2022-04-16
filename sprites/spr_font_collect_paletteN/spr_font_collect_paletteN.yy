@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_font_collect_paletteN","path":"sprites/spr_font_collect_paletteN/spr_font_collect_paletteN.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_font_collect_paletteN",
     "tags": [],
     "resourceType": "GMSequence",

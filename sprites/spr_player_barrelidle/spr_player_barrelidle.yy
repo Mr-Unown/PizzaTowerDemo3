@@ -235,7 +235,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_barrelidle","path":"sprites/spr_player_barrelidle/spr_player_barrelidle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_player_barrelidle",
     "tags": [],
     "resourceType": "GMSequence",

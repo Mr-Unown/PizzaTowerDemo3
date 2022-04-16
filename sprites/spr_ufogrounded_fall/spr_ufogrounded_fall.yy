@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_ufogrounded_fall","path":"sprites/spr_ufogrounded_fall/spr_ufogrounded_fall.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_ufogrounded_fall",
     "tags": [],
     "resourceType": "GMSequence",

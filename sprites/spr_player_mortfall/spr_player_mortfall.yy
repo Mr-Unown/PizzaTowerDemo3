@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_mortfall","path":"sprites/spr_player_mortfall/spr_player_mortfall.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_player_mortfall",
     "tags": [],
     "resourceType": "GMSequence",

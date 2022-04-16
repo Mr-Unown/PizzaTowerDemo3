@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_destroyableOLD","path":"sprites/spr_destroyableOLD/spr_destroyableOLD.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_destroyableOLD",
     "tags": [],
     "resourceType": "GMSequence",

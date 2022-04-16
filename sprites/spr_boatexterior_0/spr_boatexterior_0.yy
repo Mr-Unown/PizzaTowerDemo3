@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_boatexterior_0","path":"sprites/spr_boatexterior_0/spr_boatexterior_0.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_boatexterior_0",
     "tags": [],
     "resourceType": "GMSequence",

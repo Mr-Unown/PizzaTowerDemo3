@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_boxxednoise_jumpstart","path":"sprites/spr_boxxednoise_jumpstart/spr_boxxednoise_jumpstart.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_boxxednoise_jumpstart",
     "tags": [],
     "resourceType": "GMSequence",

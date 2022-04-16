@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_heatmeter_fillPZ","path":"sprites/spr_heatmeter_fillPZ/spr_heatmeter_fillPZ.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_heatmeter_fillPZ",
     "tags": [],
     "resourceType": "GMSequence",

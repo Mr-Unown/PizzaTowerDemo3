@@ -179,7 +179,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_mortcube","path":"sprites/spr_mortcube/spr_mortcube.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_mortcube",
     "tags": [],
     "resourceType": "GMSequence",

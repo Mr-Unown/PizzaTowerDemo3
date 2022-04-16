@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_toppinwarriorbutton","path":"sprites/spr_toppinwarriorbutton/spr_toppinwarriorbutton.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_toppinwarriorbutton",
     "tags": [],
     "resourceType": "GMSequence",

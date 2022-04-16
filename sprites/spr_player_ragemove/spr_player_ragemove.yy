@@ -255,7 +255,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_ragemove","path":"sprites/spr_player_ragemove/spr_player_ragemove.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_player_ragemove",
     "tags": [],
     "resourceType": "GMSequence",

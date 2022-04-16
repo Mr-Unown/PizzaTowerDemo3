@@ -207,7 +207,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_gerome_eating","path":"sprites/spr_gerome_eating/spr_gerome_eating.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

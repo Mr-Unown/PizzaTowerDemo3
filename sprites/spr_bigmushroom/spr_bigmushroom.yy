@@ -135,7 +135,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bigmushroom","path":"sprites/spr_bigmushroom/spr_bigmushroom.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_bigmushroom",
     "tags": [],
     "resourceType": "GMSequence",

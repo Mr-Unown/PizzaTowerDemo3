@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_gustavo_makepizza","path":"sprites/spr_gustavo_makepizza/spr_gustavo_makepizza.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_gustavo_makepizza",
     "tags": [],
     "resourceType": "GMSequence",

@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_gustavo_move","path":"sprites/spr_gustavo_move/spr_gustavo_move.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_gustavo_move",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_backdrop_pinball","path":"sprites/spr_backdrop_pinball/spr_backdrop_pinball.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_backdrop_pinball",
     "tags": [],
     "resourceType": "GMSequence",

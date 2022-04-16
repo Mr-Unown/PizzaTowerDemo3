@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_hubroom3TILE","path":"sprites/bg_hubroom3TILE/bg_hubroom3TILE.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_hubroom3TILE",
     "tags": [],
     "resourceType": "GMSequence",

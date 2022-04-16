@@ -95,7 +95,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_firemouthidle","path":"sprites/spr_player_firemouthidle/spr_player_firemouthidle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_player_firemouthidle",
     "tags": [],
     "resourceType": "GMSequence",

@@ -147,3 +147,7 @@ function rank_checker(rank = global.rank)
 	}
 	return value;
 }
+function sugarysin(argument0, argument1)
+{
+    return (sin((current_time / (argument1 * 100))) * argument0);
+}

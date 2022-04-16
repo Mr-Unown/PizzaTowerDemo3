@@ -62,6 +62,7 @@ global.bonushour = 0;
 global.bonustimer = false;
 global.miniboss = 0
 angle = 0
+angledir = 1
 frame = 0
 global.pizza = 0
 global.pizzameter = 0
@@ -125,5 +126,4 @@ global.temperature = 0
 global.temperature_spd = 0.01
 global.temp_thresholdnumber = 5
 global.tempenabled = false
-
 

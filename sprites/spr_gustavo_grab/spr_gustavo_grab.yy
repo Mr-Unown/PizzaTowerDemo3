@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_gustavo_grab","path":"sprites/spr_gustavo_grab/spr_gustavo_grab.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_gustavo_grab",
     "tags": [],
     "resourceType": "GMSequence",

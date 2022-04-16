@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_portaltrigger","path":"sprites/spr_portaltrigger/spr_portaltrigger.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_portaltrigger",
     "tags": [],
     "resourceType": "GMSequence",

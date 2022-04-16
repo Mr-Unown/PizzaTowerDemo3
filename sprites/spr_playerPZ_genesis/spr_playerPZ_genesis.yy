@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerPZ_genesis","path":"sprites/spr_playerPZ_genesis/spr_playerPZ_genesis.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerPZ_genesis",
     "tags": [],
     "resourceType": "GMSequence",

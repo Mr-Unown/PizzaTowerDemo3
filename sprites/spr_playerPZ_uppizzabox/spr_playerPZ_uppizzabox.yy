@@ -115,7 +115,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerPZ_uppizzabox","path":"sprites/spr_playerPZ_uppizzabox/spr_playerPZ_uppizzabox.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerPZ_uppizzabox",
     "tags": [],
     "resourceType": "GMSequence",

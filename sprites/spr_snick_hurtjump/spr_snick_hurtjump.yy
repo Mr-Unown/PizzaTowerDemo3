@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_snick_hurtjump","path":"sprites/spr_snick_hurtjump/spr_snick_hurtjump.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_snick_hurtjump",
     "tags": [],
     "resourceType": "GMSequence",

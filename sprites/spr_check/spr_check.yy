@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_check","path":"sprites/spr_check/spr_check.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_check",
     "tags": [],
     "resourceType": "GMSequence",

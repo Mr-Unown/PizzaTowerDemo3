@@ -183,7 +183,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tv_hurtPZ","path":"sprites/spr_tv_hurtPZ/spr_tv_hurtPZ.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_tv_hurtPZ",
     "tags": [],
     "resourceType": "GMSequence",

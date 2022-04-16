@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_gustavo_bounce","path":"sprites/spr_gustavo_bounce/spr_gustavo_bounce.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_gustavo_bounce",
     "tags": [],
     "resourceType": "GMSequence",

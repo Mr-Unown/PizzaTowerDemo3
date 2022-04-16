@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_PZtopping4NEWG","path":"sprites/spr_PZtopping4NEWG/spr_PZtopping4NEWG.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_PZtopping4NEWG",
     "tags": [],
     "resourceType": "GMSequence",

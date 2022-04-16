@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_warningsign","path":"sprites/spr_warningsign/spr_warningsign.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_warningsign",
     "tags": [],
     "resourceType": "GMSequence",

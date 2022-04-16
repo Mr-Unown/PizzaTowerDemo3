@@ -119,7 +119,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerPZ_keyget","path":"sprites/spr_playerPZ_keyget/spr_playerPZ_keyget.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerPZ_keyget",
     "tags": [],
     "resourceType": "GMSequence",

@@ -123,7 +123,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_ancienttv","path":"sprites/spr_ancienttv/spr_ancienttv.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

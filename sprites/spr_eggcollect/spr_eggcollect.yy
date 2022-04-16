@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_eggcollect","path":"sprites/spr_eggcollect/spr_eggcollect.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_eggcollect",
     "tags": [],
     "resourceType": "GMSequence",

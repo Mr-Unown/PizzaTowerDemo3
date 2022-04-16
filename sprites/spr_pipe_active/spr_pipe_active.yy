@@ -131,7 +131,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_pipe_active","path":"sprites/spr_pipe_active/spr_pipe_active.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_pipe_active",
     "tags": [],
     "resourceType": "GMSequence",

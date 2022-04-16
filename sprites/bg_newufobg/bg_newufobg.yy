@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_newufobg","path":"sprites/bg_newufobg/bg_newufobg.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_newufobg",
     "tags": [],
     "resourceType": "GMSequence",

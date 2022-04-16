@@ -131,7 +131,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_sausageman_idle","path":"sprites/spr_sausageman_idle/spr_sausageman_idle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

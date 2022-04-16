@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_combo_text","path":"sprites/spr_combo_text/spr_combo_text.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_combo_text",
     "tags": [],
     "resourceType": "GMSequence",

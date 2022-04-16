@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerP_walljumpstart","path":"sprites/spr_playerP_walljumpstart/spr_playerP_walljumpstart.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerP_walljumpstart",
     "tags": [],
     "resourceType": "GMSequence",

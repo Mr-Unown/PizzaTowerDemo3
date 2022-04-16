@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_banditochicken_stun","path":"sprites/spr_banditochicken_stun/spr_banditochicken_stun.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_banditochicken_stun",
     "tags": [],
     "resourceType": "GMSequence",

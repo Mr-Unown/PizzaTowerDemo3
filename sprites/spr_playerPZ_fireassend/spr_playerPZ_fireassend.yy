@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerPZ_fireassend","path":"sprites/spr_playerPZ_fireassend/spr_playerPZ_fireassend.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerPZ_fireassend",
     "tags": [],
     "resourceType": "GMSequence",

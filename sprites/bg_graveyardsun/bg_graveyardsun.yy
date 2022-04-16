@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_graveyardsun","path":"sprites/bg_graveyardsun/bg_graveyardsun.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_graveyardsun",
     "tags": [],
     "resourceType": "GMSequence",

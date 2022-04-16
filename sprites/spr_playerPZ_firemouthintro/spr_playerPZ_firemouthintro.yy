@@ -127,7 +127,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerPZ_firemouthintro","path":"sprites/spr_playerPZ_firemouthintro/spr_playerPZ_firemouthintro.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerPZ_firemouthintro",
     "tags": [],
     "resourceType": "GMSequence",

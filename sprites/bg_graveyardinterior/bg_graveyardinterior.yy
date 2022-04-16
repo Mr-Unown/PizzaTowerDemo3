@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_graveyardinterior","path":"sprites/bg_graveyardinterior/bg_graveyardinterior.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_graveyardinterior",
     "tags": [],
     "resourceType": "GMSequence",

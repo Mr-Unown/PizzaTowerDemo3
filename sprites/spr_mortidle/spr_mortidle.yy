@@ -283,7 +283,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_mortidle","path":"sprites/spr_mortidle/spr_mortidle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_mortidle",
     "tags": [],
     "resourceType": "GMSequence",

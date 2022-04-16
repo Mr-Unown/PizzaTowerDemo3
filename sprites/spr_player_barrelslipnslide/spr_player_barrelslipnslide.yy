@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_barrelslipnslide","path":"sprites/spr_player_barrelslipnslide/spr_player_barrelslipnslide.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_player_barrelslipnslide",
     "tags": [],
     "resourceType": "GMSequence",

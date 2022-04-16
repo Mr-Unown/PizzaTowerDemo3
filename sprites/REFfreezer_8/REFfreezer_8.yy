@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"REFfreezer_8","path":"sprites/REFfreezer_8/REFfreezer_8.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "REFfreezer_8",
     "tags": [],
     "resourceType": "GMSequence",

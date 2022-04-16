@@ -111,7 +111,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_secreteye_idle","path":"sprites/spr_secreteye_idle/spr_secreteye_idle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_secreteye_idle",
     "tags": [],
     "resourceType": "GMSequence",

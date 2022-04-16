@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tv_gustavoidle","path":"sprites/spr_tv_gustavoidle/spr_tv_gustavoidle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_tv_gustavoidle",
     "tags": [],
     "resourceType": "GMSequence",

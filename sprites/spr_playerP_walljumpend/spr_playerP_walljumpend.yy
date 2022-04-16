@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerP_walljumpend","path":"sprites/spr_playerP_walljumpend/spr_playerP_walljumpend.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerP_walljumpend",
     "tags": [],
     "resourceType": "GMSequence",

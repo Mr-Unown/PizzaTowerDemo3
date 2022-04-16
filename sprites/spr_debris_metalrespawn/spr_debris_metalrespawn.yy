@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_debris_metalrespawn","path":"sprites/spr_debris_metalrespawn/spr_debris_metalrespawn.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_debris_metalrespawn",
     "tags": [],
     "resourceType": "GMSequence",

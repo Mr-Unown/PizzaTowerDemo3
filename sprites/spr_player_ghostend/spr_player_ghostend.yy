@@ -175,7 +175,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_ghostend","path":"sprites/spr_player_ghostend/spr_player_ghostend.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_player_ghostend",
     "tags": [],
     "resourceType": "GMSequence",

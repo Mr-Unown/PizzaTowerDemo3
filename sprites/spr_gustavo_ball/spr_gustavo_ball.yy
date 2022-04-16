@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_gustavo_ball","path":"sprites/spr_gustavo_ball/spr_gustavo_ball.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_gustavo_ball",
     "tags": [],
     "resourceType": "GMSequence",

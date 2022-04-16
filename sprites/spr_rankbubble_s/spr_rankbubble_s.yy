@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_rankbubble_s","path":"sprites/spr_rankbubble_s/spr_rankbubble_s.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_rankbubble_s",
     "tags": [],
     "resourceType": "GMSequence",

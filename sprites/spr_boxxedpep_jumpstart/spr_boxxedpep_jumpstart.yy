@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_boxxedpep_jumpstart","path":"sprites/spr_boxxedpep_jumpstart/spr_boxxedpep_jumpstart.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_boxxedpep_jumpstart",
     "tags": [],
     "resourceType": "GMSequence",

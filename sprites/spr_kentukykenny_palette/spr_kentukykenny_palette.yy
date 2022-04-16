@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_kentukykenny_palette","path":"sprites/spr_kentukykenny_palette/spr_kentukykenny_palette.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_kentukykenny_palette",
     "tags": [],
     "resourceType": "GMSequence",

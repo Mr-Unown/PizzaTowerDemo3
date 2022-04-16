@@ -95,7 +95,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_NEWwallclimb2","path":"sprites/spr_player_NEWwallclimb2/spr_player_NEWwallclimb2.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_player_NEWwallclimb2",
     "tags": [],
     "resourceType": "GMSequence",

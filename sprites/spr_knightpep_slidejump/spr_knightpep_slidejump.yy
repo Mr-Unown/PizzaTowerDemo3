@@ -95,7 +95,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_knightpep_slidejump","path":"sprites/spr_knightpep_slidejump/spr_knightpep_slidejump.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_knightpep_slidejump",
     "tags": [],
     "resourceType": "GMSequence",

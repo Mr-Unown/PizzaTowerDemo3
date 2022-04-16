@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_destroyablepep","path":"sprites/spr_destroyablepep/spr_destroyablepep.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_destroyablepep",
     "tags": [],
     "resourceType": "GMSequence",

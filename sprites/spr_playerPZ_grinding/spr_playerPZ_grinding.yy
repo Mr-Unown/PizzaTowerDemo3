@@ -99,7 +99,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerPZ_grinding","path":"sprites/spr_playerPZ_grinding/spr_playerPZ_grinding.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerPZ_grinding",
     "tags": [],
     "resourceType": "GMSequence",

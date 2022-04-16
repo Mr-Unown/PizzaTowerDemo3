@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_barrelmachOLD","path":"sprites/spr_player_barrelmachOLD/spr_player_barrelmachOLD.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_player_barrelmachOLD",
     "tags": [],
     "resourceType": "GMSequence",

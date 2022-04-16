@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_hat_fedora","path":"sprites/spr_hat_fedora/spr_hat_fedora.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_hat_fedora",
     "tags": [],
     "resourceType": "GMSequence",

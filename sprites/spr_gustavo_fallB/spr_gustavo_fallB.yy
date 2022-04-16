@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_gustavo_fallB","path":"sprites/spr_gustavo_fallB/spr_gustavo_fallB.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_gustavo_fallB",
     "tags": [],
     "resourceType": "GMSequence",

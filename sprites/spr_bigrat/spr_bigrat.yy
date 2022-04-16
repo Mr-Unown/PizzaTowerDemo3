@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bigrat","path":"sprites/spr_bigrat/spr_bigrat.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_bigrat",
     "tags": [],
     "resourceType": "GMSequence",

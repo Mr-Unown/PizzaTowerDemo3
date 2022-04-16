@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_palettechanger_scrollbarbutton","path":"sprites/spr_palettechanger_scrollbarbutton/spr_palettechanger_scrollbarbutton.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

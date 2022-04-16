@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"tile_secretNEW","path":"sprites/tile_secretNEW/tile_secretNEW.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "tile_secretNEW",
     "tags": [],
     "resourceType": "GMSequence",

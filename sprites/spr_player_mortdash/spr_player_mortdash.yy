@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_mortdash","path":"sprites/spr_player_mortdash/spr_player_mortdash.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_player_mortdash",
     "tags": [],
     "resourceType": "GMSequence",

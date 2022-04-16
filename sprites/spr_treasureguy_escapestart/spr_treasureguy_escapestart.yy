@@ -95,7 +95,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_treasureguy_escapestart","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_treasureguy_escapestart",
     "tags": [],
     "resourceType": "GMSequence",

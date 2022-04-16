@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_cameraregion","path":"sprites/spr_cameraregion/spr_cameraregion.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_cameraregion",
     "tags": [],
     "resourceType": "GMSequence",

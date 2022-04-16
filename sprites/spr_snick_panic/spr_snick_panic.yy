@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_snick_panic","path":"sprites/spr_snick_panic/spr_snick_panic.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_snick_panic",
     "tags": [],
     "resourceType": "GMSequence",

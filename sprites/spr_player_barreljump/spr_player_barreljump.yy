@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_barreljump","path":"sprites/spr_player_barreljump/spr_player_barreljump.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_player_barreljump",
     "tags": [],
     "resourceType": "GMSequence",

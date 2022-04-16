@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_brickread","path":"sprites/spr_brickread/spr_brickread.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_brickread",
     "tags": [],
     "resourceType": "GMSequence",

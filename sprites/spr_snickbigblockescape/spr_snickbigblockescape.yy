@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_snickbigblockescape","path":"sprites/spr_snickbigblockescape/spr_snickbigblockescape.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_snickbigblockescape",
     "tags": [],
     "resourceType": "GMSequence",
