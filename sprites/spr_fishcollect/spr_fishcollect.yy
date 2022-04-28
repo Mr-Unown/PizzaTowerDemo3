@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_fishcollect","path":"sprites/spr_fishcollect/spr_fishcollect.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_fishcollect",
     "tags": [],
     "resourceType": "GMSequence",

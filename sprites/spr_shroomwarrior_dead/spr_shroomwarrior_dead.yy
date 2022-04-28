@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_shroomwarrior_dead","path":"sprites/spr_shroomwarrior_dead/spr_shroomwarrior_dead.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_shroomwarrior_dead",
     "tags": [],
     "resourceType": "GMSequence",

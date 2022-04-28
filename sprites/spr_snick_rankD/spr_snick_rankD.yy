@@ -119,7 +119,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_snick_rankD","path":"sprites/spr_snick_rankD/spr_snick_rankD.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_snick_rankD",
     "tags": [],
     "resourceType": "GMSequence",

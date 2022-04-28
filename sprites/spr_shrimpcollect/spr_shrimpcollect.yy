@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_shrimpcollect","path":"sprites/spr_shrimpcollect/spr_shrimpcollect.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_shrimpcollect",
     "tags": [],
     "resourceType": "GMSequence",

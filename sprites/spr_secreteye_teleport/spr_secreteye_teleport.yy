@@ -119,7 +119,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_secreteye_teleport","path":"sprites/spr_secreteye_teleport/spr_secreteye_teleport.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_secreteye_teleport",
     "tags": [],
     "resourceType": "GMSequence",

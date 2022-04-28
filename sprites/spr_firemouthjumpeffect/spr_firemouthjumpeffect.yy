@@ -99,7 +99,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_firemouthjumpeffect","path":"sprites/spr_firemouthjumpeffect/spr_firemouthjumpeffect.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_firemouthjumpeffect",
     "tags": [],
     "resourceType": "GMSequence",

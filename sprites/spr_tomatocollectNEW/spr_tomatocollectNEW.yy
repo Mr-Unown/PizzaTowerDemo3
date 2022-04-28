@@ -95,7 +95,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tomatocollectNEW","path":"sprites/spr_tomatocollectNEW/spr_tomatocollectNEW.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_tomatocollectNEW",
     "tags": [],
     "resourceType": "GMSequence",

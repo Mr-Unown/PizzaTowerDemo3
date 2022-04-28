@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bgpillarjohndisgruntled","path":"sprites/spr_bgpillarjohndisgruntled/spr_bgpillarjohndisgruntled.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_bgpillarjohndisgruntled",
     "tags": [],
     "resourceType": "GMSequence",

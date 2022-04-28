@@ -43,7 +43,10 @@ function scr_player_jump() {
 	if (grounded && input_buffer_jump < 8 && (!key_down) && (!key_attack) && vsp > 0 && (!(sprite_index == spr_facestomp || sprite_index == spr_freefall)))
 	{
 	    scr_soundeffect(sfx_jump)
-	    sprite_index = spr_jump
+		if (global.minutes == 0 && global.seconds == 0) && character = "P"
+			sprite_index = spr_player_hurtjump
+		else
+			sprite_index = spr_jump
 	    if (shotgunAnim == 1)
 	        sprite_index = spr_shotgunjump
 	    instance_create(x, y, obj_highjumpcloud2)
@@ -112,8 +115,8 @@ function scr_player_jump() {
 	    }
 	    if (jumpAnim == 0)
 	    {
-			if (sprite_index == spr_player_shoryumineken)
-				sprite_index = spr_player_shoryukenend
+			if (sprite_index == spr_shoryumineken)
+				sprite_index = spr_shoryukenend
 	        if (sprite_index == spr_playerN_doublejump)
 	            sprite_index = spr_playerN_doublejumpfall		
 	        if (sprite_index == spr_airdash1)
@@ -136,6 +139,10 @@ function scr_player_jump() {
 	            sprite_index = spr_fall
 			if (sprite_index = spr_grabcancelair)
 				sprite_index = spr_fall
+			if (sprite_index = spr_player_hurtjump)
+				sprite_index = spr_player_hurtfall
+			if (sprite_index = spr_player_mortjump)
+				sprite_index = spr_player_mortfall
 	    }
 	}
 	if (stompAnim == 1)
@@ -145,6 +152,8 @@ function scr_player_jump() {
 	}
 	if (key_down && sprite_index != spr_player_jugglebash)
 	{
+		if character != "GB"
+		{
 	    if (shotgunAnim == 0 || (character == "V" && character == "S"))
 	    {
 	        image_index = 0
@@ -162,7 +171,7 @@ function scr_player_jump() {
 	        state = 92
 	        sprite_index = spr_shotgunjump1
 	        vsp = -5
-	        if (character == "P")
+	        if (character == "P" || character == "PZ")
 	        {
 	            with (instance_create((x + 30), (y + 60), obj_shotgunbullet))
 	            {
@@ -190,7 +199,21 @@ function scr_player_jump() {
 	            }
 	        }
 	    }
+		}
+		else if !instance_exists(obj_brickbulletdown) && (sprite_index = spr_jump || sprite_index = spr_fall) && brick = 1
+	{
+		sprite_index = spr_shoryumineken
+		image_index = 0
+		input_buffer_jump = 0
+		vsp = -11
+		instance_create(x,y,obj_brickbulletdown)
 	}
+		if sprite_index = spr_shoryukenend && grounded
+		sprite_index = spr_gustavo_land
+	}
+	//floor image index thing because it doesnt work up there oops
+	if (floor(image_index) == (image_number - 1) && sprite_index = spr_shoryumineken) 
+		sprite_index = spr_shoryukenend
 	if (move != 0)
 	    xscale = move
 	image_speed = 0.35
@@ -214,6 +237,15 @@ function scr_player_jump() {
 	    sprite_index = spr_freefallland
 	    state = 77
 	}
+	//Mort double jump
+	if doublejump == 0 && global.mortfollowing = true && key_jump && (sprite_index == spr_jump || sprite_index = spr_fall) && !grounded && input_buffer_jump < 8
+	{
+	doublejump = 1
+	vsp = -8
+	input_buffer_jump = 0
+	image_index = 0
+	sprite_index = spr_player_mortjump
+	}
 	if (key_slap2 && suplexmove = 0 && (character = "P" || character = "PZ" || character = "N" || (character = "D" && spellselect = 2)))
 	{
 		if key_up && (character = "P" || character = "PZ" )&& doublejump = 0
@@ -231,7 +263,7 @@ function scr_player_jump() {
 			momemtum = 1
 			vsp = -8
 			state = 58
-			sprite_index = spr_player_shoryumineken		
+			sprite_index = spr_shoryumineken		
 			image_index = 0
 		}
 		else if (character == "P" && global.attackstyle == 1)
@@ -259,7 +291,7 @@ function scr_player_jump() {
 			audio_sound_gain(suplexdashsnd, (1 * global.soundeffectsvolume), 0)
 			state = 22
 			image_index = 0
-			if character != "PZ" {
+			if character != "PZ" && character != "GB" {
 				vsp = -4
 				sprite_index = spr_suplexdashjumpstart
 			}
@@ -325,7 +357,7 @@ function scr_player_jump() {
 	        image_xscale = other.image_xscale
 	    image_index = 0
 	    sprite_index = spr_shotgunshoot
-	    if (character == "P")
+	    if (character == "P" || character == "PZ")
 	    {
 	        with (instance_create((x + (image_xscale * 20)), (y + 20), obj_shotgunbullet))
 	            playerid = other.id
@@ -512,7 +544,4 @@ function scr_player_jump() {
 			scr_soundeffect(sfx_superjumprelease)
 		}
 	}
-
-
-
 }

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_timermeter","path":"sprites/spr_timermeter/spr_timermeter.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_timermeter",
     "tags": [],
     "resourceType": "GMSequence",

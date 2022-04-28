@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_desertfront","path":"sprites/bg_desertfront/bg_desertfront.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_desertfront",
     "tags": [],
     "resourceType": "GMSequence",

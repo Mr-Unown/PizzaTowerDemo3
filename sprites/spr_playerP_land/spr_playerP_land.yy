@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerP_land","path":"sprites/spr_playerP_land/spr_playerP_land.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerP_land",
     "tags": [],
     "resourceType": "GMSequence",

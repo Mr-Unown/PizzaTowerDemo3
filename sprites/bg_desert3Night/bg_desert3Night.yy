@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_desert3Night","path":"sprites/bg_desert3Night/bg_desert3Night.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_desert3Night",
     "tags": [],
     "resourceType": "GMSequence",

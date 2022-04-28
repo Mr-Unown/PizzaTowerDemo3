@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_secreteye_spawning","path":"sprites/spr_secreteye_spawning/spr_secreteye_spawning.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_secreteye_spawning",
     "tags": [],
     "resourceType": "GMSequence",

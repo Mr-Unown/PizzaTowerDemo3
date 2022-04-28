@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_stupidratsmalldebris","path":"sprites/spr_stupidratsmalldebris/spr_stupidratsmalldebris.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_stupidratsmalldebris",
     "tags": [],
     "resourceType": "GMSequence",

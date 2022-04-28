@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_sausagecollect",
-    "path": "sprites/spr_sausagecollect/spr_sausagecollect.yy",
+    "name": "spr_sausagecollectNEW",
+    "path": "sprites/spr_sausagecollectNEW/spr_sausagecollectNEW.yy",
   },
   "solid": false,
   "visible": true,

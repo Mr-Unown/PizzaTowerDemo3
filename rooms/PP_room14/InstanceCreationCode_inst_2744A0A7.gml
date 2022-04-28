@@ -96,8 +96,10 @@ global.combotime = 0
 with obj_player1
 {
 	collectscore = 0
+	storedscore = 0
 }
 with obj_player2
 {
 	collectscore = 0
+	storedscore = 0
 }

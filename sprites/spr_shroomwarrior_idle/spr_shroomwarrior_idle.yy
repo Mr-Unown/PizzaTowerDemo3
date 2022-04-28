@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_shroomwarrior_idle","path":"sprites/spr_shroomwarrior_idle/spr_shroomwarrior_idle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_shroomwarrior_idle",
     "tags": [],
     "resourceType": "GMSequence",

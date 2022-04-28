@@ -181,7 +181,7 @@ if (key_particles == 1)
     instance_create(random_range((x + 25), (x - 25)), random_range((y + 35), (y - 25)), obj_keyeffect)
 if (inv_frames == 0 && hurted == 0)
     image_alpha = 1
-if (state == 70 || sprite_index = spr_player_shoryumineken ||  sprite_index = spr_playerN_spinjump || state == 10 || state == 44 || state == 24 || state == 15 || state == 13 || state == 18 || state == 25 || state == 27 || state == 34 || state == 40 || state == 34 || state == 37 || state == 91 || state == states.pogo || state == states.jetpack || state == 74 || state == 63)
+if (state == 70 || sprite_index = spr_shoryumineken ||  sprite_index = spr_playerN_spinjump || state == 10 || state == 44 || state == 24 || state == 15 || state == 13 || state == 18 || state == 25 || state == 27 || state == 34 || state == 40 || state == 34 || state == 37 || state == 91 || state == states.pogo || state == states.jetpack || state == 74 || state == 63)
     attacking = 1
 else
     attacking = 0

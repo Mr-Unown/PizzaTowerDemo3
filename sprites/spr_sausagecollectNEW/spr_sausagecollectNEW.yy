@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_sausagecollectNEW","path":"sprites/spr_sausagecollectNEW/spr_sausagecollectNEW.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_sausagecollectNEW",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_pillardestroyable_small","path":"sprites/spr_pillardestroyable_small/spr_pillardestroyable_small.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_pillardestroyable_small",
     "tags": [],
     "resourceType": "GMSequence",

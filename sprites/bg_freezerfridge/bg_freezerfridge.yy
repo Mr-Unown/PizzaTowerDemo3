@@ -375,7 +375,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_freezerfridge","path":"sprites/bg_freezerfridge/bg_freezerfridge.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_freezerfridge",
     "tags": [],
     "resourceType": "GMSequence",

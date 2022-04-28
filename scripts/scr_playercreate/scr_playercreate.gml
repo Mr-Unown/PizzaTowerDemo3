@@ -41,6 +41,8 @@ function scr_playercreate() {
 	swordhitboxid = noone;
 	//Firetrail
 	firetrailbuffer = 100;
+	//Mort
+	mortanim = 0
 	//Trick
 	show_tricks = false;
 	tricksperformed = 0;
@@ -51,6 +53,8 @@ function scr_playercreate() {
 	global.comboended = false;
 	//Global Time Events
 	global.timeevent = 0 //1 = Xmas 2 = April 3 = Halloween
+	//Pistol Animation
+	global.pistolshotanim = 0
 	//Bumbo want coin
 	pizzacoin = 0;
 	pizzacoinindicatorid = noone;
@@ -98,6 +102,7 @@ function scr_playercreate() {
 	//global.sleepAcc = 0;
 	global.collect = 0
 	global.collectN = 0
+	global.timeattackpoints = 0
 	pogojetcharge = false
 	pogojetchargebuffer = 0
 	flashing = false
@@ -149,8 +154,12 @@ function scr_playercreate() {
 	
 	//rocket stuff tehres literally one variab
 	rocketup = 0
-
-
+	//Pizza delivery
+	global.pizzasdelivered = 0
+	global.showgnomelist = 0
+    global.failcutscene = 0
+    global.pizzadelivery = 0
+    global.hp = 8
 #region Followers
 	if instance_exists(obj_pizzakinshroom) 
 		instance_destroy(obj_pizzakinshroom)
@@ -181,9 +190,11 @@ function scr_playercreate() {
 	global.noisebombfollow = false;
 	global.geromefollowing = false;
 	global.peshinofollowing = false;
+	global.mortfollowing = false;
 	global.geromeopen = false;
 #endregion
-
+	//gustavo rat check
+	brick = 1
 
 	//dougies super magic
 	floatbuffer = false

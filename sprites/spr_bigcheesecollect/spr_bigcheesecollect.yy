@@ -119,7 +119,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bigcheesecollect","path":"sprites/spr_bigcheesecollect/spr_bigcheesecollect.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_bigcheesecollect",
     "tags": [],
     "resourceType": "GMSequence",

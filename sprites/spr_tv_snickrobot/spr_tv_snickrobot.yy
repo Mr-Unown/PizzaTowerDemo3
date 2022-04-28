@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tv_snickrobot","path":"sprites/spr_tv_snickrobot/spr_tv_snickrobot.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_tv_snickrobot",
     "tags": [],
     "resourceType": "GMSequence",

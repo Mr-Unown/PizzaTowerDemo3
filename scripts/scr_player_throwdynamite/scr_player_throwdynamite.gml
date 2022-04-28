@@ -11,7 +11,7 @@ function scr_player_throwdynamite() {
 	        movespeed -= 0.1
 	}
 	landAnim = 0
-	if (floor(image_index) == (image_number - 1) && sprite_index == spr_playerV_dynamitethrow)
+	if (floor(image_index) == (image_number - 1) && (sprite_index == spr_playerV_dynamitethrow || sprite_index == spr_playerGB_kick))
 	{
 	    if (key_attack && hsp != 0)
 	        state = 70

@@ -72,6 +72,8 @@
   },
   "resourceVersion": "1.0",
   "name": "ancient_treasure",
-  "tags": [],
+  "tags": [
+    "entrance",
+  ],
   "resourceType": "GMRoom",
 }

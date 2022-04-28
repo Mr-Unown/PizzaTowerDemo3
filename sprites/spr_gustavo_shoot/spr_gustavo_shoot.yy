@@ -107,7 +107,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_gustavo_shoot","path":"sprites/spr_gustavo_shoot/spr_gustavo_shoot.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_gustavo_shoot",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"tile_space","path":"sprites/tile_space/tile_space.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "tile_space",
     "tags": [],
     "resourceType": "GMSequence",

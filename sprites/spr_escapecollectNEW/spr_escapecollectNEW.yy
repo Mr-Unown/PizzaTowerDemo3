@@ -91,7 +91,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_escapecollectNEW","path":"sprites/spr_escapecollectNEW/spr_escapecollectNEW.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_escapecollectNEW",
     "tags": [],
     "resourceType": "GMSequence",

@@ -155,7 +155,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_desert1Night","path":"sprites/bg_desert1Night/bg_desert1Night.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_desert1Night",
     "tags": [],
     "resourceType": "GMSequence",

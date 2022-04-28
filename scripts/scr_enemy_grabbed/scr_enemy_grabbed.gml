@@ -7,6 +7,8 @@ function scr_enemy_grabbed() {
 	    if (obj_player1.state == 28 || obj_player1.state = states.frozen || obj_player1.state == 46 || obj_player1.state == 41 || obj_player1.state == 42 || obj_player1.state == 10 || obj_player1.state == states.ratmount)
 	    {
 	        x = obj_player1.x
+			if obj_player1.character != "GB"
+			{
 	        if (obj_player1.sprite_index != obj_player1.spr_haulingstart)
 	            y = (obj_player1.y - 40)
 	        else if (floor(obj_player1.image_index) == 0)
@@ -17,6 +19,13 @@ function scr_enemy_grabbed() {
 	            y = (obj_player1.y - 20)
 	        else if (floor(obj_player1.image_index) == 3)
 	            y = (obj_player1.y - 30)
+			}
+			else
+			{
+				if obj_player1.sprite_index = spr_gustavo_hauling
+				visible = 0
+				y = (obj_player1.y + 5)
+			}
 	        image_xscale = (-obj_player1.xscale)
 			if obj_player1.sprite_index != obj_player1.spr_swingding && obj_player1.sprite_index != obj_player1.spr_piledriver
 				depth = 0

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_solidtile","path":"sprites/spr_solidtile/spr_solidtile.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_solidtile",
     "tags": [],
     "resourceType": "GMSequence",

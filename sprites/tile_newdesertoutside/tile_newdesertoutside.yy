@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"tile_newdesertoutside","path":"sprites/tile_newdesertoutside/tile_newdesertoutside.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "tile_newdesertoutside",
     "tags": [],
     "resourceType": "GMSequence",

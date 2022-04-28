@@ -199,7 +199,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_factoryproduction","path":"sprites/bg_factoryproduction/bg_factoryproduction.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_factoryproduction",
     "tags": [],
     "resourceType": "GMSequence",

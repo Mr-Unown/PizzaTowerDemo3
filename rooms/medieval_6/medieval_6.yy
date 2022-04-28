@@ -575,6 +575,8 @@
   },
   "resourceVersion": "1.0",
   "name": "medieval_6",
-  "tags": [],
+  "tags": [
+    "medieval",
+  ],
   "resourceType": "GMRoom",
 }

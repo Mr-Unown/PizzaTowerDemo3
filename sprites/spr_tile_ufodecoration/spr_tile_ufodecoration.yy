@@ -183,7 +183,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tile_ufodecoration","path":"sprites/spr_tile_ufodecoration/spr_tile_ufodecoration.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_tile_ufodecoration",
     "tags": [],
     "resourceType": "GMSequence",

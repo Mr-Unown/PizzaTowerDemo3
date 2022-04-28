@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_shroomwarrior_move","path":"sprites/spr_shroomwarrior_move/spr_shroomwarrior_move.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_shroomwarrior_move",
     "tags": [],
     "resourceType": "GMSequence",

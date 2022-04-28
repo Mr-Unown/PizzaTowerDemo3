@@ -123,7 +123,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_pizzafacehud_sleep","path":"sprites/spr_pizzafacehud_sleep/spr_pizzafacehud_sleep.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_pizzafacehud_sleep",
     "tags": [],
     "resourceType": "GMSequence",

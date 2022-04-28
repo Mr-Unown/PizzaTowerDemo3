@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_palettechanger_window","path":"sprites/spr_palettechanger_window/spr_palettechanger_window.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_palettechanger_window",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_backdrop_confetti","path":"sprites/spr_backdrop_confetti/spr_backdrop_confetti.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_backdrop_confetti",
     "tags": [],
     "resourceType": "GMSequence",

@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_snick_angrywalk","path":"sprites/spr_snick_angrywalk/spr_snick_angrywalk.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_snick_angrywalk",
     "tags": [],
     "resourceType": "GMSequence",

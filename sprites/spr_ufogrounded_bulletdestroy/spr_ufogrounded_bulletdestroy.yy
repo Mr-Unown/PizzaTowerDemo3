@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_ufogrounded_bulletdestroy","path":"sprites/spr_ufogrounded_bulletdestroy/spr_ufogrounded_bulletdestroy.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_ufogrounded_bulletdestroy",
     "tags": [],
     "resourceType": "GMSequence",

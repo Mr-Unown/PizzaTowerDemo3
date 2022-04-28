@@ -1,6 +1,15 @@
-if audio_is_playing(sfx_collecttopping)
-    audio_stop_sound(sfx_collecttopping)
-scr_soundeffect(sfx_collecttopping)
+if other.character != "PZ"
+	{
+		if audio_is_playing(sfx_collecttopping)
+		audio_stop_sound(sfx_collecttopping)
+		scr_soundeffect(sfx_collecttopping)
+	}
+	else
+	{
+		if audio_is_playing(sfx_PZcollecttopping)
+		audio_stop_sound(sfx_PZcollecttopping)
+		scr_soundeffect(sfx_PZcollecttopping)
+	}
 with other.id
 {
     collectscore = (collectscore + 10)

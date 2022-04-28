@@ -139,7 +139,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_robot_tackle","path":"sprites/spr_robot_tackle/spr_robot_tackle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_robot_tackle",
     "tags": [],
     "resourceType": "GMSequence",

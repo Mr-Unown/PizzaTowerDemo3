@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_machslide",
-  "duration": 1.610918,
+  "duration": 1.605918,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

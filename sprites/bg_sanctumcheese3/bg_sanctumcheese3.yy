@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_sanctumcheese3","path":"sprites/bg_sanctumcheese3/bg_sanctumcheese3.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_sanctumcheese3",
     "tags": [],
     "resourceType": "GMSequence",

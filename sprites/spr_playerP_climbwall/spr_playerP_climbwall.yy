@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerP_climbwall","path":"sprites/spr_playerP_climbwall/spr_playerP_climbwall.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerP_climbwall",
     "tags": [],
     "resourceType": "GMSequence",

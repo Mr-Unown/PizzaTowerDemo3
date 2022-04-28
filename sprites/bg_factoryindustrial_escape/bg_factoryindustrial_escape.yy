@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_factoryindustrial_escape","path":"sprites/bg_factoryindustrial_escape/bg_factoryindustrial_escape.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_factoryindustrial_escape",
     "tags": [],
     "resourceType": "GMSequence",

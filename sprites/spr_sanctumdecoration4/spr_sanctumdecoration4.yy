@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_sanctumdecoration4","path":"sprites/spr_sanctumdecoration4/spr_sanctumdecoration4.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_sanctumdecoration4",
     "tags": [],
     "resourceType": "GMSequence",

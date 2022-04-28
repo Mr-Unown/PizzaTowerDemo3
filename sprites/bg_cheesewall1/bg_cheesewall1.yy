@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_cheesewall1","path":"sprites/bg_cheesewall1/bg_cheesewall1.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_cheesewall1",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"tile_newdesertufo","path":"sprites/tile_newdesertufo/tile_newdesertufo.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "tile_newdesertufo",
     "tags": [],
     "resourceType": "GMSequence",

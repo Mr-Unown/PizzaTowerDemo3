@@ -99,7 +99,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bigsausagecollect","path":"sprites/spr_bigsausagecollect/spr_bigsausagecollect.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_bigsausagecollect",
     "tags": [],
     "resourceType": "GMSequence",

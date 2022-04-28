@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"space_122392","path":"sprites/space_122392/space_122392.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "space_122392",
     "tags": [],
     "resourceType": "GMSequence",

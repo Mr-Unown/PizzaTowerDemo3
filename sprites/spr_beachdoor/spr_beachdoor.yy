@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_beachdoor","path":"sprites/spr_beachdoor/spr_beachdoor.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_beachdoor",
     "tags": [],
     "resourceType": "GMSequence",

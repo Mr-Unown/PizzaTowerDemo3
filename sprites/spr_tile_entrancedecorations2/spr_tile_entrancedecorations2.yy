@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tile_entrancedecorations2","path":"sprites/spr_tile_entrancedecorations2/spr_tile_entrancedecorations2.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_tile_entrancedecorations2",
     "tags": [],
     "resourceType": "GMSequence",

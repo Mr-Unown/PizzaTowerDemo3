@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tv_rocketN","path":"sprites/spr_tv_rocketN/spr_tv_rocketN.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_tv_rocketN",
     "tags": [],
     "resourceType": "GMSequence",

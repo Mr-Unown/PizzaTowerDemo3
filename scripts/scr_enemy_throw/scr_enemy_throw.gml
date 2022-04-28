@@ -159,7 +159,7 @@ function scr_enemy_throw() {
 	            }
 	            break
 	        case obj_rancher:
-	            with (instance_create(x, y, obj_rancher_bullet))
+	            with (instance_create(x, y + 5, obj_rancher_bullet))
 	                image_xscale = other.image_xscale
 	            break
 	        case obj_cannongoblin:

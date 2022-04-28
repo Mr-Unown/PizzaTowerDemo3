@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tv_idleN","path":"sprites/spr_tv_idleN/spr_tv_idleN.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_tv_idleN",
     "tags": [],
     "resourceType": "GMSequence",

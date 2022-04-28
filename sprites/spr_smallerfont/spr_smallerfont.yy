@@ -235,7 +235,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_smallerfont","path":"sprites/spr_smallerfont/spr_smallerfont.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

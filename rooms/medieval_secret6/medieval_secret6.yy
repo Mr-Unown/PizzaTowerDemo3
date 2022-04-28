@@ -117,6 +117,8 @@
   },
   "resourceVersion": "1.0",
   "name": "medieval_secret6",
-  "tags": [],
+  "tags": [
+    "medievalsecret",
+  ],
   "resourceType": "GMRoom",
 }

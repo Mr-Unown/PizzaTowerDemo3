@@ -95,7 +95,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_rocketstart","path":"sprites/spr_player_rocketstart/spr_player_rocketstart.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_player_rocketstart",
     "tags": [],
     "resourceType": "GMSequence",

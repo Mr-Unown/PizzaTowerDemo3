@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_desertmart","path":"sprites/bg_desertmart/bg_desertmart.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_desertmart",
     "tags": [],
     "resourceType": "GMSequence",

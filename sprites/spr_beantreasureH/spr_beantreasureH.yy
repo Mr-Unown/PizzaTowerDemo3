@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_beantreasureH","path":"sprites/spr_beantreasureH/spr_beantreasureH.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_beantreasureH",
     "tags": [],
     "resourceType": "GMSequence",

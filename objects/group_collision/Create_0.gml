@@ -15,3 +15,5 @@ for (var i = 0; i < array_length(showcollisionarray); ++i)
 		break;
 	}
 }
+//April build placeholder thing cus im a dummy
+global.instancelist = 0

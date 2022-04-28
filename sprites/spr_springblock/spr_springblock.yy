@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_springblock","path":"sprites/spr_springblock/spr_springblock.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_springblock",
     "tags": [],
     "resourceType": "GMSequence",

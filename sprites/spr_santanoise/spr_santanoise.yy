@@ -319,7 +319,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_santanoise","path":"sprites/spr_santanoise/spr_santanoise.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

@@ -131,7 +131,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_rocketnerd","path":"sprites/spr_rocketnerd/spr_rocketnerd.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_rocketnerd",
     "tags": [],
     "resourceType": "GMSequence",

@@ -79,6 +79,8 @@
   },
   "resourceVersion": "1.0",
   "name": "Realtitlescreen",
-  "tags": [],
+  "tags": [
+    "title",
+  ],
   "resourceType": "GMRoom",
 }

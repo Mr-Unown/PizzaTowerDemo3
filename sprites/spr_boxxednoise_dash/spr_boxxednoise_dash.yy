@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_boxxednoise_dash","path":"sprites/spr_boxxednoise_dash/spr_boxxednoise_dash.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_boxxednoise_dash",
     "tags": [],
     "resourceType": "GMSequence",

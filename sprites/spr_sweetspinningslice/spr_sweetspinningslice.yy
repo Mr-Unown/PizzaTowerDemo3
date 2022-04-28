@@ -127,7 +127,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_sweetspinningslice","path":"sprites/spr_sweetspinningslice/spr_sweetspinningslice.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_sweetspinningslice",
     "tags": [],
     "resourceType": "GMSequence",

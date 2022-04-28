@@ -99,7 +99,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_sjumpcancelprep","path":"sprites/spr_player_sjumpcancelprep/spr_player_sjumpcancelprep.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_player_sjumpcancelprep",
     "tags": [],
     "resourceType": "GMSequence",

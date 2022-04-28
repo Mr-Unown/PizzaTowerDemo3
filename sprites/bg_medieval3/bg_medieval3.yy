@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_medieval3","path":"sprites/bg_medieval3/bg_medieval3.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_medieval3",
     "tags": [],
     "resourceType": "GMSequence",

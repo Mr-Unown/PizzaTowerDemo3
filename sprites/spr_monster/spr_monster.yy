@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_monster","path":"sprites/spr_monster/spr_monster.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_monster",
     "tags": [],
     "resourceType": "GMSequence",

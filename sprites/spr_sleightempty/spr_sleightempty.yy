@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_sleightempty","path":"sprites/spr_sleightempty/spr_sleightempty.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_sleightempty",
     "tags": [],
     "resourceType": "GMSequence",

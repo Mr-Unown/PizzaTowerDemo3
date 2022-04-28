@@ -149,6 +149,8 @@
   },
   "resourceVersion": "1.0",
   "name": "hub_roomSNICK",
-  "tags": [],
+  "tags": [
+    "hub",
+  ],
   "resourceType": "GMRoom",
 }

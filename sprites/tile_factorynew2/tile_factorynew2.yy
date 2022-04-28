@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"tile_factorynew2","path":"sprites/tile_factorynew2/tile_factorynew2.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "tile_factorynew2",
     "tags": [],
     "resourceType": "GMSequence",

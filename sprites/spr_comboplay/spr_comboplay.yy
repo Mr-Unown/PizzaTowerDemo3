@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_comboplay","path":"sprites/spr_comboplay/spr_comboplay.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_comboplay",
     "tags": [],
     "resourceType": "GMSequence",

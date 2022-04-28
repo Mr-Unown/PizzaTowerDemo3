@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_cloudR","path":"sprites/spr_cloudR/spr_cloudR.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_cloudR",
     "tags": [],
     "resourceType": "GMSequence",

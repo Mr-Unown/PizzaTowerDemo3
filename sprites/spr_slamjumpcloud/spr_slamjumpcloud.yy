@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_slamjumpcloud","path":"sprites/spr_slamjumpcloud/spr_slamjumpcloud.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_slamjumpcloud",
     "tags": [],
     "resourceType": "GMSequence",
