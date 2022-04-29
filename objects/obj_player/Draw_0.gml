@@ -46,9 +46,9 @@ else if (paletteselect < sprite_get_width(spr_palette) - 1)
 if global.draw_peter = true && (character == "P" || character == "N")
 {
 	if character == "P"
-		draw_sprite_ext(spr_peter, -1, drawx, drawy, player_xscale, player_yscale, draw_angle, image_blend, image_alpha)
+	draw_sprite_ext(spr_peter, -1, drawx, drawy, player_xscale, player_yscale, draw_angle, image_blend, image_alpha)
 	else
-		draw_sprite_ext(spr_chungus, -1, drawx, drawy, player_xscale, player_yscale, draw_angle, image_blend, image_alpha)
+	draw_sprite_ext(spr_chungus, -1, drawx, drawy, player_xscale, player_yscale, draw_angle, image_blend, image_alpha)
 }
 else
 draw_sprite_ext(sprite_index, image_index, drawx, drawy, player_xscale, player_yscale, draw_angle, image_blend, image_alpha)

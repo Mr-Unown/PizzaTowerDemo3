@@ -1,5 +1,4 @@
-if global.shroomfollow = true 
-{
+if global.shroomfollow = true {
 x = obj_player1.x
 y = obj_player1.y
 targetx = obj_player1.x

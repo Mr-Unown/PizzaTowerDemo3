@@ -72,8 +72,6 @@
   },
   "resourceVersion": "1.0",
   "name": "entrance_treasure",
-  "tags": [
-    "entrance",
-  ],
+  "tags": [],
   "resourceType": "GMRoom",
 }

@@ -1,27 +1,19 @@
-if (live_call()) return live_result;
 //Variables
 var _cam_x = camera_get_view_x(view_camera[0])
 var _cam_y = camera_get_view_y(view_camera[0])
+zoom = 0
 var _drawx = 125 + _cam_x
 var _drawy = 100 + _cam_y
-//Focused Player
-player = focused_player();
-player2 = focused_player(true);
+//Maxangle
 
-zoom = 0
+maxangle = clamp(floor(arctan((room_height/room_width)/_cam_y)), 0, 3)
+/*var cam_width = camera_get_view_width(view_camera[0]) , cam_height = camera_get_view_height(view_camera[0]) 
+, camsqr = sqr(cam_width) + sqr(cam_height) ,
+camsqrt = sqrt(camsqr), camarctan = arctan(cam_height/cam_width),
+maximumangle =  arccos( (room_width / camsqrt) - camarctan       )
 
-maxangle = clamp(floor(arctan((room_height/room_width)/_cam_y)), 0, 3);
+maxangle = clamp(maximumangle,0,3)*/
 
-//Pizzascore sprites
-var _player = focused_player();
-spr_pizzascore_1 = _player.spr_pizzascore_1
-spr_pizzascore_2 = _player.spr_pizzascore_2
-spr_pizzascore_3 = _player.spr_pizzascore_3
-spr_pizzascore_4 = _player.spr_pizzascore_4
-spr_pizzasprite = _player.spr_pizzasprite
-spr_pizzascorepal = _player.spr_pizzascorepal
-spr_heatpalette = _player.spr_heatpalette
-spr_heatmeterfill = _player.spr_heatmeterfill
 #region Rank Checker
 if global.timeattack = false
 {
@@ -96,10 +88,59 @@ if (room == strongcold_endscreen || room == rank_room || room == timesuproom || 
     visible = false
 else
     visible = true
-
-if (floor(image_index) >= 10)
+if (obj_player1.spotlight == 1)
+{
+    player = obj_player1
+    player2 = obj_player2
+}
+else if (obj_player1.spotlight == 0)
+{
+    player = obj_player2
+    player2 = obj_player1
+}
+x = player.x
+y = player.y
+if (global.coop == 1)
+{
+    if (player2.state != 109)
+    {
+        if (obj_player1.spotlight == 1)
+        {
+            p2pdistanced = point_distance(obj_player1.y, 0, obj_player2.y, 0)
+            p2pdistance = point_distance(obj_player1.x, 0, obj_player2.x, 0)
+            if (obj_player1.x >= obj_player2.x)
+                p2pdistancex = ((-p2pdistance) / 2)
+            else
+                p2pdistancex = (p2pdistance / 2)
+            if (obj_player1.y >= obj_player2.y)
+                p2pdistancey = ((-p2pdistanced) / 8)
+            else
+                p2pdistancey = (p2pdistanced / 8)
+        }
+        else
+        {
+            p2pdistanced = point_distance(obj_player2.y, 0, obj_player1.y, 0)
+            p2pdistance = point_distance(obj_player2.x, 0, obj_player1.x, 0)
+            if (obj_player2.x >= obj_player1.x)
+                p2pdistancex = ((-p2pdistance) / 2)
+            else
+                p2pdistancex = (p2pdistance / 2)
+            if (obj_player2.y >= obj_player1.y)
+                p2pdistancey = ((-p2pdistanced) / 8)
+            else
+                p2pdistancey = (p2pdistanced / 8)
+        }
+    }
+    else if (player2.state == 109)
+    {
+        p2pdistancex = 0
+        p2pdistance = 0
+    }
+}
+else
+    p2pdistancex = 0
+if (floor(image_index) == 10)
     shoving = 0
-/*
 if (global.combo >= 10)
 {
     global.SAGEcombo10 = 1
@@ -107,7 +148,6 @@ if (global.combo >= 10)
     ini_write_string("SAGE2019", "combo10", 1)
     ini_close()
 }
-*/
 if (shoving == 1 && image_index >= 3 && bang == 0)
 {
     with (instance_create(x, y, obj_fallingHUDface))
@@ -163,76 +203,34 @@ if (global.seconds > 59)
     global.minutes = (global.minutes + 1)
     global.seconds = (global.seconds - 59)
 }
-
-#region Camera
-//Camera Zoom and Angles
-if global.freezeframe = false
+if (global.panic == 1)
 {
-	targetzoom1 = approach(targetzoom1,960,16)
-	targetzoom2 = approach(targetzoom2,540,9)	
-	if global.panic = false
-	angle = approach(angle,0,0.25)
+    panicshake = clamp(lerp(1, 2.15,(global.wave / global.maxwave)),1,2.15)
+    panicshakeacc = (3 / room_speed)
 }
-camera_set_view_angle(view_camera[0], angle);
-camera_set_view_size(view_camera[0], targetzoom1, targetzoom2);
-
-//Setup Variables
-var target = player;
-var _cam_x = target.x - camera_get_view_width(view_camera[0]) / 2;
-var _cam_y = target.y - camera_get_view_height(view_camera[0]) / 2;
-var _shake_x = 0;
-var _shake_y = 0;
-var _panic_shake_x = 0;
-var _panic_shake_y = 0;
-
-//Teleport to Player
-x = player.x;
-y = player.y;
-
-
-
-//Set target to Player
-if (instance_exists(player) && player.state != states.timesup && player.state != states.gameover) {
-    target = player;
-}
-#region COOP CAMERA
-if (global.coop == true) && (player2.state != states.grabbed)
+else
 {
-	p2pdistance = point_distance(player.x, 0, player2.x, 0);
-	p2pdistanced = point_distance(player.y, 0, player2.y, 0);	
-
-	if (player.x >= player2.x)
-		p2pdistancex = ((-p2pdistance) / 2);
+	panicshake = 0;
+	panicshakeacc = 0;
+}
+panicshake = approach(panicshake,0,panicshakeacc)
+shake_mag = approach(shake_mag,0,shake_mag_acc)
+if (instance_exists(player) && player.state != 36 && player.state != 55)
+    target = player
+//Special Cam Stuff
+//GATE THING
+var _player = obj_player1
+if global.coop = true
+_player = (obj_player1.spotlight = false ? obj_player2 : obj_player1)
+with instance_nearest(_player.x,_player.y,obj_startgate)
+{
+	if (distance_to_object(_player) < 100)
+		global.startgate = id
 	else
-		p2pdistancex = (p2pdistance / 2);
-	if (player.y >= player2.y)
-		p2pdistancey = ((-p2pdistanced) / 8);
-	else
-		p2pdistancey = (p2pdistanced / 8);	
-} else {
-	p2pdistancex = 0;
-    p2pdistancey = 0;
-    p2pdistance = 0;
-    p2pdistanced = 0;
+		global.startgate = noone
 }
-_cam_x += p2pdistancex;
-_cam_y += p2pdistancey;
-#endregion
-
-#region STARTGATE CAMERA
-
-//Find Nearest Startgate
-with instance_nearest(player.x, player.y ,obj_startgate)
-{
-	if (distance_to_object(player) < 100) {
-		global.startgate = id;
-	}
-	else {
-		global.startgate = noone;
-	}
-}
-//If found do some math
-if instance_exists(global.startgate)
+//global.startgate
+if global.startgate != noone && instance_exists(global.startgate)
 {
 	var factor = 5;
 	startdistanced = point_distance(0, target.y, 0, global.startgate.y - 125)
@@ -255,12 +253,7 @@ else
 	startgateoffsetx = approach(startgateoffsetx,0,1)
 	startgateoffsety = approach(startgateoffsety,0,1)
 }
-_cam_x += startgateoffsetx;
-_cam_y += startgateoffsety;
-#endregion
-
-#region GOLF CAMERA and Old Code
-/*
+//GOLF
 if (golf == 1 && instance_exists(obj_pizzaball)) 
 {
 	var factor = 1.5;
@@ -293,8 +286,50 @@ else
 	if golfdistancey != 0 
 		golfdistancey  -= min(abs(golfdistancey), 9) * sign(golfdistancey);
 }
-*/
-/*
+target_x +=  target.x - target_xold
+target_y +=  target.y - target_yold
+#region Camera
+//Zooming and Angles
+if global.freezeframe = false
+{
+	targetzoom1 = approach(targetzoom1,960,16)
+	targetzoom2 = approach(targetzoom2,540,9)	
+	angle = approach(angle,0,0.25)
+	/*
+if targetzoom1 < 960 && global.freezeframe = false
+	targetzoom1 += 16
+else if global.freezeframe = false
+	targetzoom1 = 960
+if targetzoom2 < 540 && global.freezeframe = false
+	targetzoom2 += 9*/
+
+}
+//Zoom and Angles 2	
+camera_set_view_angle(view_camera[0], angle)		
+camera_set_view_size(view_camera[0],targetzoom1,targetzoom2)
+//Charge Camera
+if target = player
+{
+	if (player.state == 91 || player.state == states.jetpack || player.state == 37)
+	{
+            var _targetcharge = (player.xscale * ((player.movespeed / 6) * 50)) //D3G: might need some tweaking
+            var _tspeed = 2
+            if ((_targetcharge > 0 && chargecamera < 0) || (_targetcharge < 0 && chargecamera > 0))
+                _tspeed = 8
+            if (chargecamera > _targetcharge)
+                chargecamera -= _tspeed
+            if (chargecamera < _targetcharge)
+                chargecamera += _tspeed
+    }
+	else
+	{
+	    if (chargecamera > 0)
+			chargecamera -= 2
+		if (chargecamera < 0)
+			chargecamera += 2
+	}
+	
+}
 //TODO: Clean Up
 //Camera X
 camera_set_view_pos(view_camera[0],target_x - (targetzoom1 / 2) + (chargecamera + startgateoffsetx + golfdistancex + p2pdistancex) + (random_range(-panicshake, panicshake))  + (irandom_range(-shake_mag, shake_mag)), camera_get_view_y(view_camera[0]))			
@@ -302,63 +337,9 @@ camera_set_view_pos(view_camera[0],clamp(camera_get_view_x(view_camera[0]), 0 + 
 //Camera Y	
 camera_set_view_pos(view_camera[0],camera_get_view_x(view_camera[0]), ((target_y - (targetzoom2 / 2)) + startgateoffsety + golfdistancey + p2pdistancey ) + (random_range(-panicshake, panicshake)) + irandom_range(-shake_mag, shake_mag))		
 camera_set_view_pos(view_camera[0],camera_get_view_x(view_camera[0]),clamp(camera_get_view_y(view_camera[0]), 0 + irandom_range(-shake_mag, shake_mag), (room_height - targetzoom2) + (random_range(-panicshake, panicshake)) + irandom_range(-shake_mag, shake_mag)))
-*/
-
 #endregion
-
-#region Charge Camera
-if target = player && (player.state == states.mach3 || player.state == states.jetpack || player.state == states.machroll || (player.state == states.firemouth && sprite_index = spr_player_firemouthdash) || player.state == states.tumble && player.movespeed > 9 || player.state == states.knightpepslopes) {
-	var _targetcharge = (player.xscale * ((player.movespeed / 6) * 80)); //D3G: might need some tweaking
-    var _tspeed = player.movespeed / 6;
-    if ((_targetcharge > 0 && chargecamera < 0) || (_targetcharge < 0 && chargecamera > 0))
-		_tspeed = 8;
-    if (chargecamera > _targetcharge)
-		chargecamera -= _tspeed;
-    if (chargecamera < _targetcharge)
-		chargecamera += _tspeed;
-} else {
-	if (chargecamera > 0)
-		chargecamera -= 4;
-	if (chargecamera < 0)
-		chargecamera += 4;
-}
-_cam_x += chargecamera;	
-#endregion
-
-//Clamp the Position to within the room
-_cam_x = clamp(_cam_x, 0, room_width - camera_get_view_width(view_camera[0]));
-_cam_y = clamp(_cam_y, 0, room_height - camera_get_view_height(view_camera[0]));
-
-#region Camera Shake
-if (global.panic == 1) {
-    panicshake = clamp(lerp(1, 2.15,(global.wave / global.maxwave)),1,2.15)
-    panicshakeacc = (3 / room_speed)
-} else {
-	panicshake = 0;
-	panicshakeacc = 0;
-}
-panicshake = approach(panicshake, 0, panicshakeacc);
-shake_mag = approach(shake_mag, 0, shake_mag_acc);
-if (shake_mag != 0) {
-	_shake_x += irandom_range((-shake_mag), shake_mag)
-	_shake_y += irandom_range((-shake_mag), shake_mag)
-}
-if (panicshake != 0) {
-	_panic_shake_x += irandom_range((-panicshake), panicshake)
-	_panic_shake_y += irandom_range((-panicshake), panicshake)
-}
-#endregion
-
-Cam_x = _cam_x + _shake_x + _panic_shake_x;
-Cam_y = _cam_y + _shake_y + _panic_shake_y;
-
-
-//Set Camera Position
-camera_set_view_pos(view_camera[0], Cam_x, Cam_y);
-
-
-#endregion
-
+target_xold = target_x
+target_yold = target_y
 
 global.hitstunalarm = approach(global.hitstunalarm,-1,1)
 //New Hitstun
@@ -404,18 +385,4 @@ else
 	global.bonusmiliseconds = 0;
 	global.bonusseconds = 0;
 	global.bonusminutes = 0;
-}
-//Pizzy Screen Tilt
-if (global.panic == 1 && obj_player1.character == "PZ")
-{
-    camera_set_view_angle(view_camera[0], sugarysin((angle / (global.minutes + 2)), 5))
-    clamp(angle, -5, 5)
-    if (angle >= 5)
-        angledir = -1
-    else if (angle <= -5)
-        angledir = 1
-    if (angle < 5 && angledir == 1)
-        angle += 0.025
-    if (angle > -5 && angledir == -1)
-        angle -= 0.025
 }

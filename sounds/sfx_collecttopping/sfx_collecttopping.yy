@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_collecttopping",
-  "duration": 1.616077,
+  "duration": 1.62107706,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

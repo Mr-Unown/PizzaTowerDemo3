@@ -21,8 +21,6 @@ function scr_playerreset() {
 	global.storedtasecond = 0;
 	//Day Night
 	global.desertnight = false
-	//Pummel 
-	global.kungfulevel = false
 	//Goop Gone
 	with obj_goop 
 	{

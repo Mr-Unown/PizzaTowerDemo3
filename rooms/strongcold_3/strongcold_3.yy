@@ -878,8 +878,6 @@
   },
   "resourceVersion": "1.0",
   "name": "strongcold_3",
-  "tags": [
-    "strongcold",
-  ],
+  "tags": [],
   "resourceType": "GMRoom",
 }

@@ -2,6 +2,7 @@ global.toppinlist = ds_list_create();
 global.follower = ds_list_create();
 comboend_id = noone;
 //scr_init()
+scr_initinput()
 scr_playercreate()
 
 //CustomPaletteChoosyFILE

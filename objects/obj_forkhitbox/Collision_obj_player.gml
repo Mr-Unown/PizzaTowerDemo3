@@ -1,2 +1,2 @@
-if friendly = 0 && other.state != states.breakdance && other.state != states.ghost
+if other.state != states.breakdance
 	scr_hurtplayer(other.id)

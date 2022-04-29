@@ -6,8 +6,8 @@
   "solid": false,
   "visible": true,
   "spriteMaskId": {
-    "name": "spr_destroyableOLD",
-    "path": "sprites/spr_destroyableOLD/spr_destroyableOLD.yy",
+    "name": "spr_destroyable",
+    "path": "sprites/spr_destroyable/spr_destroyable.yy",
   },
   "persistent": false,
   "parentObjectId": {

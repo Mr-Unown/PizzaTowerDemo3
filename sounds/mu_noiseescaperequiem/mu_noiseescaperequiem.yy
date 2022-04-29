@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "mu_noiseescaperequiem",
-  "duration": 159.73732,
+  "duration": 159.742325,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

@@ -9,4 +9,5 @@ hp = 1
 grounded = 1
 state = 0
 heavy = false
-ungrabbable = false
+
+

@@ -2,7 +2,7 @@
 depth = 99
 alpha = 255
 cursori = noone
-stickpressed = 0
+
 global.savefile_fileselected = false;
 global.savefile_optionselected = false;
 global.savefilechoosen = false;

@@ -59,8 +59,6 @@
   },
   "resourceVersion": "1.0",
   "name": "Scootertransition",
-  "tags": [
-    "music_charactersel",
-  ],
+  "tags": [],
   "resourceType": "GMRoom",
 }

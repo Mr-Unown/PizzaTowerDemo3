@@ -437,36 +437,7 @@ function scr_player_backbreaker() {
 	        }
 	    }
 	}
-	if (character == "PZ" && sprite_index == spr_playerPZ_genesis)
-	{
-	    image_index = (gamepad_button_value(0, gp_shoulderlb) * 7)
-	    if (gamepad_button_value(0, gp_shoulderlb) == 0)
-	        state = 0
-	    if (global.combo >= 3 && (!instance_exists(obj_tauntaftereffectspawner)))
-	    {
-			if global.combotime > 0
-			global.combotime -= 20
-			else
-			global.combotime = 0
-			global.pausecombotime = false		
-	        scr_soundeffect(sfx_taunt)
-	        instance_create(x, y, obj_taunteffect)
-	        instance_create(x, y, obj_tauntaftereffectspawner)
-	        with (obj_baddie)
-	        {
-	            if point_in_rectangle(x, y, __view_get(0, 0), __view_get(1, 0), (__view_get(0, 0) + __view_get(2, 0)), (__view_get(1, 0) + __view_get(3, 0)))
-	            {
-	                dropcoin = 1
-	                instance_destroy()
-	            }
-	        }
-	        with (obj_camera)
-	        {
-	            shake_mag = 10
-	            shake_mag_acc = (30 / room_speed)
-	        }
-	    }
-	}
+
 
 
 }

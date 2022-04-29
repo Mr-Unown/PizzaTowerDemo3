@@ -8,22 +8,40 @@ function parallax_layer(layer_id = noone)
 	return_value[1] = 0;
 	if layer_id != noone
 	{
-		var _layer = global.ParallaxMap[? layer_get_name(layer_id)]
-		if !is_undefined(_layer)
+		for (var i = 0; i < array_length(global.parallax_array); ++i) 
 		{
-			var _function = global.ParallaxMap[? layer_get_name(layer_id)]
-			return _function();
+		    if global.parallax_array[i]._layer_name == layer_get_name(layer_id)
+			{
+				var _function = global.parallax_array[i]._function_id
+				return _function();
+			}
 		}
 	}
 	return return_value;
 }
 
-function add_parallax_function(layer_name, function_id, overwrite = false)
+function add_parallax_function(layer_name,function_id, overwrite = false)
 {
 	/// @description Adds a new parallax function
 	/// @function add_parallax_function
-	if overwrite == true || (overwrite == false && is_undefined(global.ParallaxMap[? layer_get_name(layer_name)])) {
-		global.ParallaxMap[? layer_name] = function_id;
+	var array_pos = 0;
+	for (var i = 0; i < array_length(global.parallax_array); ++i) 
+	{
+		if global.parallax_array[i]._layer_name == layer_name
+		{
+			if overwrite == true
+				array_pos = i;
+			else
+				return false;
+		}
+	}
+	if overwrite == false
+		array_pos = global.parallax_arraynumber++;
+		
+	global.parallax_array[array_pos] = 
+	{
+		_layer_name : layer_name,	
+		_function_id : function_id
 	}
 	return true;
 }

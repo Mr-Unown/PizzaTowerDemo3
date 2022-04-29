@@ -127,8 +127,6 @@
   },
   "resourceVersion": "1.0",
   "name": "Tutorialtrap",
-  "tags": [
-    "hub",
-  ],
+  "tags": [],
   "resourceType": "GMRoom",
 }

@@ -35,10 +35,6 @@ if (fadealpha > 1 && fadein == 0)
         instance_activate_object(obj_pause)
 		instance_activate_object(obj_discordrpc)
 		instance_activate_object(rousrDissonance)
-		if live_enabled {
-		instance_activate_object(obj_gmlive)		
-		}
-		instance_activate_object(obj_inputAssigner)
     }
     fadein = 1
 }

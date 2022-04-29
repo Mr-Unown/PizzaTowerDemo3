@@ -2,7 +2,7 @@ function scr_collide_destructibles() {
 #region Players
 	with (obj_player1)
 	{
-	    if (state == 70 || state == 91 || state == states.jetpack || state == 37 || state == 18 || state == 2 || state == 10 || state == 9 || state = states.rocket || state = states.ratmount || state = states.forknight && sprite_index = spr_forknight_heat)
+	    if (state == 70 || state == 91 || state == states.jetpack || state == 37 || state == 18 || state == 2 || state == 10 || state == 9 || state = states.rocket || state = states.ratmount)
 	    {
 	        if place_meeting((x + hsp), y, obj_destructibles)
 	        {
@@ -10,7 +10,6 @@ function scr_collide_destructibles() {
 				{
 					initialhsp = other.hsp
 					initialvsp = other.vsp
-					GamepadSetVibration(0, 0.8, 0.8, 0.5)
 					event_user(0)
 				}
 	            if (state == 70)
@@ -20,6 +19,15 @@ function scr_collide_destructibles() {
 		if state == states.newbomb
 		{
 			#region Metalblock
+	        if place_meeting((x + hsp), y + (vsp), obj_metalblock)
+	        {
+	            with (instance_place((x + hsp), y + (vsp), obj_metalblock))
+	            {
+					initialhsp = other.hsp
+					initialvsp = other.vsp
+	                event_user(0)
+				}
+	        }
 	        if place_meeting((x + hsp), y + (vsp), obj_metalblockhard)
 	        {
 	            with (instance_place((x + hsp), y + (vsp), obj_metalblockhard))
@@ -258,7 +266,7 @@ function scr_collide_destructibles() {
 				}
 	        }		
 		}
-		if sprite_index = spr_shoryumineken && vsp < 0 {
+		if sprite_index = spr_player_shoryumineken && vsp < 0 {
 	        if place_meeting((x + hsp), y + vsp, obj_destructibles)
 	        {
 	            with (instance_place((x + hsp), y + vsp, obj_destructibles))
@@ -404,7 +412,7 @@ function scr_collide_destructibles() {
 	                            state = 38
 	                            image_index = 0
 	                            sprite_index = spr_shotgunshoot
-	                            if (character == "P" || character == "PZ")
+	                            if (character == "P")
 	                            {
 	                                instance_create((x + (image_xscale * 20)), (y + 20), obj_shotgunbullet)
 	                                with (instance_create((x + (image_xscale * 20)), (y + 20), obj_shotgunbullet))
@@ -702,7 +710,7 @@ function scr_collide_destructibles() {
 				}
 	        }		
 		}
-		if sprite_index = spr_shoryumineken && vsp < 0 {
+		if sprite_index = spr_player_shoryumineken && vsp < 0 {
 	        if place_meeting((x + hsp), y + vsp, obj_destructibles)
 	        {
 	            with (instance_place((x + hsp), y + vsp, obj_destructibles))
@@ -1027,30 +1035,6 @@ function scr_collide_destructibles() {
 		}
 	}
 	with (obj_noisekickbomb)
-	{
-	   if (place_meeting((x + hsp), y, obj_destructibles))
-		{
-	        with instance_place(x + hsp, y, obj_destructibles)
-	        {
-				initialhsp = other.hsp
-				initialvsp = other.vsp
-	            event_user(0)
-			}		
-		}
-		if (movespeed) > 0
-		{
-			if place_meeting(x + image_xscale, y, obj_destructibles)
-			{
-				with instance_place(x + image_xscale, y, obj_destructibles)
-				{
-					initialhsp = other.hsp
-					initialvsp = other.vsp
-					event_user(0)
-				}		
-			}
-		}	   
-	}
-	with (obj_brickball)
 	{
 	   if (place_meeting((x + hsp), y, obj_destructibles))
 		{

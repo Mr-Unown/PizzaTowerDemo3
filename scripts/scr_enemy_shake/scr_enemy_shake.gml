@@ -25,8 +25,7 @@ function scr_enemy_shake() {
 	    instance_create(x, y, obj_slapstar)
 	    instance_create(x, y, obj_baddiegibs)
 	    instance_create(x, y, obj_baddiegibs)
-	    instance_create(x, y, obj_baddiegibs)
-		if hp <= 0
+	    instance_create(x, y, obj_baddiegibs)	
 		with (instance_create((x + random_range(-16, 16)), (y + random_range(-16, 16)), obj_balloonpop))	
 		{	
 			image_speed = 0.35	
@@ -68,7 +67,6 @@ function scr_enemy_shake() {
 	        state = 106
 	        //hp = 0
 	        thrown = 1
-			visible = 1
 	    }
 	    else if (blowdirection == "parry") //Parry
 	    {
@@ -105,8 +103,8 @@ function scr_enemy_shake() {
 			alarm[1] = 2
 	        shakebuffer = 2.5
 	        flash = 1
-	        hsp = player.xscale * 9
-            vsp = -7
+	        hsp = player.xscale * 7
+            vsp = -9
 			squashed = true
 	        state = 106
 	        hp -= 1
@@ -115,17 +113,8 @@ function scr_enemy_shake() {
 			invtime = 20
 			stunned = 100
 			hittinged = true
-			global.style += 1
 			with instance_create(x,y,obj_balloonpop)
-				sprite_index = spr_parryeffect	
-			with instance_create(x,y,obj_balloonpop)
-				sprite_index = spr_bangeffect
-			with (obj_camera)
-			{
-				shake_mag = 3
-				shake_mag_acc = (3 / room_speed)
-			}
-			GamepadSetVibration((object_index == obj_player1 ? 0 : 1), 0.8, 0.8, 0.6)
+				sprite_index = spr_parryeffect				
 		}
 		else
 		{
@@ -138,10 +127,8 @@ function scr_enemy_shake() {
 			enemydraw_angle += rotatevalue * rotatedirection
 		}	
 	}
-	if hittinged = false
+
 	sprite_index = stunfallspr
-	else 
-	sprite_index = spr_dead
 
 
 

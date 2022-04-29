@@ -504,8 +504,6 @@
   },
   "resourceVersion": "1.0",
   "name": "chateau_3_1",
-  "tags": [
-    "chateau",
-  ],
+  "tags": [],
   "resourceType": "GMRoom",
 }

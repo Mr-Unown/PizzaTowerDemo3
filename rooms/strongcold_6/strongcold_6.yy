@@ -1091,8 +1091,6 @@
   },
   "resourceVersion": "1.0",
   "name": "strongcold_6",
-  "tags": [
-    "strongcold",
-  ],
+  "tags": [],
   "resourceType": "GMRoom",
 }

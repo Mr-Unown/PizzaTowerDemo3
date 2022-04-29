@@ -471,8 +471,6 @@
   },
   "resourceVersion": "1.0",
   "name": "medieval_9_1",
-  "tags": [
-    "medieval",
-  ],
+  "tags": [],
   "resourceType": "GMRoom",
 }

@@ -77,8 +77,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "bomb",
-    "path": "folders/Sprites/Characters/Playable Characters Sprites/Peppino/bomb.yy",
+    "name": "Peppino",
+    "path": "folders/Sprites/Characters/Playable Characters Sprites/Peppino.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_bombpep_runabouttoexplode",

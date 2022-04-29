@@ -22,7 +22,7 @@ if (state != 106)
     thrown = 0
 
     
-if (x != player.x && state != 97 && bombreset == 0 && grounded && player.state != states.ghost)
+if (x != player.x && state != 97 && bombreset == 0 && grounded)
 {
     if (player.x > (x - 400) && player.x < (x + 400) && y <= (player.y + 20) && y >= (player.y - 20))
     {

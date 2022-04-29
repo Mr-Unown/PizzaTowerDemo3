@@ -142,8 +142,6 @@
   },
   "resourceVersion": "1.0",
   "name": "hub_room1",
-  "tags": [
-    "hub",
-  ],
+  "tags": [],
   "resourceType": "GMRoom",
 }

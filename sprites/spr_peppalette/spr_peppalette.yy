@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"spr_peppalette","path":"sprites/spr_peppalette/spr_peppalette.yy",},
     "resourceVersion": "1.4",
-    "name": "spr_peppalette",
+    "name": "",
     "tags": [],
     "resourceType": "GMSequence",
   },

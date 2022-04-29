@@ -111,15 +111,7 @@
 		newbomb = 126,
 		startgate = 127,
 		rocket = 128,
-		ratmount = 129,
-		slipbanana = 130,
-		cutsceneactor = 131,
-		ghost = 132,
-		forknight = 133,
-		mort = 134,
-		indiancheese = 135,
-		pummel = 136,
-		kungfu = 137
+		ratmount = 129
 
 	} 
 	//I made some changes to it so that we can know at a glance what number it gets converted to.
@@ -180,32 +172,8 @@ if actor = false
 		case states.ratmount:
 			scr_player_ratmount()
 			break
-		case states.slipbanana:
-			scr_player_slipbanana()
-			break
-		case states.cutsceneactor:
-			scr_player_cutsceneactor()
-			break
-		case states.ghost:
-			scr_player_ghost()
-			break
-		case states.forknight:
-			scr_player_forknight()
-			break
-		case states.indiancheese:
-			scr_player_indiancheese()
-			break
 	    case 110:
 	        scr_player_throwdynamite()
-	        break
-		case states.mort:
-	        scr_player_mort()
-	        break
-		case states.pummel:
-			scr_player_pummel()
-	        break
-		case states.kungfu:
-			scr_player_kungfu()
 	        break
 	    case 111:
 	        scr_player_kingknightroll()
@@ -802,7 +770,7 @@ else if actor = true
 	if (kungfutrail > 0)
 	    kungfutrail--
 		
-	if ((kungfutrail <= 0) && (state == states.tumble && sprite_index = spr_player_sjumpcancel || state == states.kungfu))
+	if ((kungfutrail <= 0) && state == states.tumble && sprite_index = spr_player_sjumpcancel)
 	{
 	    with instance_create(x, y, obj_firemouthafterimg)
 		{
@@ -815,7 +783,7 @@ else if actor = true
 	if (machtrail2 > 0)
 	    machtrail2--
 		
-	if ((machtrail2 <= 0) && (state == states.tumble && (sprite_index != spr_tumbleend && sprite_index != spr_player_sjumpcancel && sprite_index != spr_splat) || state = states.freefall || state = states.grab && sprite_index = spr_swingding || state = states.ratmount && (sprite_index == spr_gustavo_ball || sprite_index == spr_gustavo_dash) || state = states.mach3 && sprite_index = spr_crazyrun))
+	if ((machtrail2 <= 0) && (state == states.tumble && (sprite_index != spr_tumbleend && sprite_index != spr_player_sjumpcancel && sprite_index != spr_player_splat) || state = states.freefall || state = states.ratmount && (sprite_index == spr_gustavo_ball || sprite_index == spr_gustavo_dash)))
 	{
 	    with instance_create(x, y, obj_clearafterimg)
 		{
@@ -824,7 +792,7 @@ else if actor = true
 	    machtrail2 = 4
 	}
 	//Mach 3 Effect
-	if ((state == 91 || state == states.Sjump || state == states.breakdance || (state != 51 && (sprite_index = spr_shoryumineken || sprite_index = spr_playerN_spinjump))  || (pogomovespeed >= 12  && state == states.pogo) ||state == states.jetpack || (state == 109 && instance_exists(obj_player2) && obj_player2.state == 91) || state == 114 || state == 70 || state == 17 || state == 9 || state == 37 || state == 10 || state == 22 || state == 71 || pogojetcharge = true) && macheffect == 0)
+	if ((state == 91 || state == states.Sjump || state == states.breakdance || (state != 51 && (sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump))  || (pogomovespeed >= 12  && state == states.pogo) ||state == states.jetpack || (state == 109 && instance_exists(obj_player2) && obj_player2.state == 91) || state == 114 || state == 70 || state == 17 || state == 9 || state == 37 || state == 10 || state == 22 || state == 71 || pogojetcharge = true) && macheffect == 0)
 	{
 	    macheffect = 1
 	    toomuchalarm1 = 6
@@ -836,12 +804,12 @@ else if actor = true
 	        sprite_index = other.sprite_index
 	    }
 	}
-	if (!(state == 91 || (state != 51 && (sprite_index = spr_shoryumineken || sprite_index = spr_playerN_spinjump)) || state == states.breakdance || (pogomovespeed >= 12  && state == states.pogo) || state == states.Sjump || state == states.jetpack || (state == 109 && instance_exists(obj_player2) && obj_player2.state == 91) || state == 114 || state == 70 || state == 17 || state == 9 || state == 37 || state == 10 || state == 22 || state == 71 || pogojetcharge = true))
+	if (!(state == 91 || (state != 51 && (sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump)) || state == states.breakdance || (pogomovespeed >= 12  && state == states.pogo) || state == states.Sjump || state == states.jetpack || (state == 109 && instance_exists(obj_player2) && obj_player2.state == 91) || state == 114 || state == 70 || state == 17 || state == 9 || state == 37 || state == 10 || state == 22 || state == 71 || pogojetcharge = true))
 	    macheffect = 0
 	if (toomuchalarm1 > 0)
 	{
 	    toomuchalarm1 -= 1
-	    if (toomuchalarm1 <= 0 && (state == 91  || state == states.Sjump || state == states.breakdance ||(state != 51 && (sprite_index = spr_shoryumineken || sprite_index = spr_playerN_spinjump)) || (pogomovespeed >= 12  && state == states.pogo) || state == states.jetpack || state == 111 || state == 114 || (state == 109 && instance_exists(obj_player2) && obj_player2.state == 91) || state == 17 || state == 9 || state == 70 || state == 10 || state == 71 || pogojetcharge = true || state == 37 || state == 22 || (state == 33 && mach2 >= 100)))
+	    if (toomuchalarm1 <= 0 && (state == 91  || state == states.Sjump || state == states.breakdance ||(state != 51 && (sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump)) || (pogomovespeed >= 12  && state == states.pogo) || state == states.jetpack || state == 111 || state == 114 || (state == 109 && instance_exists(obj_player2) && obj_player2.state == 91) || state == 17 || state == 9 || state == 70 || state == 10 || state == 71 || pogojetcharge = true || state == 37 || state == 22 || (state == 33 && mach2 >= 100)))
 	    {
 	        with (instance_create(x, y, obj_mach3effect))
 	        {
@@ -857,7 +825,7 @@ else if actor = true
 	//Instakill Move
 	if global.freezeframe = false
 	{
-		if state != states.frozen && (state == 68 || sprite_index = spr_swingding || sprite_index = spr_shoryumineken || sprite_index = spr_playerN_spinjump || state == 86 || state == states.firemouth || state == states.breakdance ||	state == states.jetpack || state == states.pogo || state == 91 || state == 60 || (state == 73 && thrown == 1) || state == 70 || state == 17 || state == states.newbomb || state == 74 || state == 2 || state == 6 || state == 9 || state == 44 || state == 35 || state == 63 || state == 37 || state == 40 || state == 10 || (state == 43 && sprite_index == spr_piledriver) || state == 24 || state == 25 || state == 18 || state == 15 || state == 13 || state == 11 || state == states.slipbanana || state == states.ratmount)
+		if state != states.frozen && (state == 68 || sprite_index = spr_swingding || sprite_index = spr_player_shoryumineken || sprite_index = spr_playerN_spinjump || state == 86 || state == states.firemouth || state == states.breakdance ||	state == states.jetpack || state == states.pogo || state == 91 || state == 60 || (state == 73 && thrown == 1) || state == 70 || state == 17 || state == states.newbomb || state == 74 || state == 2 || state == 6 || state == 9 || state == 44 || state == 35 || state == 63 || state == 37 || state == 40 || state == 10 || (state == 43 && sprite_index == spr_piledriver) || state == 24 || state == 25 || state == 18 || state == 15 || state == 13 || state == 11)
 			instakillmove = 1
 		else if state != states.frozen
 			instakillmove = 0
@@ -877,8 +845,5 @@ else if actor = true
 		initialfreefallvsp = 15
 	if state != states.Sjump
 		initialsuperjumpvsp = -14
-	//Pitchshift tauntstored fix
-	if state != states.frozen && frozenstate != 0
-	frozenstate = 0
 }
 

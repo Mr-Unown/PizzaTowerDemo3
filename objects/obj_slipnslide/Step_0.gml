@@ -19,9 +19,7 @@ if (obj_player.state == 77 && grounded && drop == 0)
     }
 }
 //Remove Objects once Baddie died
-/*
 if drop = 0 && !instance_exists(baddieID) && droppedbybaddie = true
 {
 	instance_destroy()
 }
-*/

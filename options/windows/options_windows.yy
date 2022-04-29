@@ -1,7 +1,7 @@
 {
   "option_windows_display_name": "Pizza Tower: Demo 3",
   "option_windows_executable_name": "${project_name}",
-  "option_windows_version": "3.1.0.0",
+  "option_windows_version": "3.0.0.0",
   "option_windows_company_info": "Mr. Unown INC.",
   "option_windows_product_info": "Demo 3 Mod",
   "option_windows_copyright_info": "Pizza Tower Guy",

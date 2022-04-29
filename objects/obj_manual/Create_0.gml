@@ -24,7 +24,7 @@ Devs:
 
 core
 Zetare
-lerp
+Fall Guy 1968
 pitch
 Marioket
 Rosafito
@@ -45,7 +45,6 @@ PinPanPaint
 902
 Joniton
 Red
-DorinX
 
 Contest Winners:
 

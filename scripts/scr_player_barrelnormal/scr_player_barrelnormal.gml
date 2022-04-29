@@ -1,5 +1,4 @@
-function scr_player_barrelnormal(){
-	if (live_call()) return live_result;
+function scr_player_barrelnormal() {
 	mask_index = spr_player_mask
     image_speed = 0.35
 	move = (key_left + key_right)
@@ -21,11 +20,6 @@ function scr_player_barrelnormal(){
     }
     if (grounded && vsp > 0)
         jumpstop = 0
-	if (input_buffer_jump < 8 && grounded)
-	{
-		sprite_index = spr_player_barreljump
-	    vsp = -9
-	}
     if (dir != xscale && (!key_attack))
     {
         dir = xscale
@@ -38,7 +32,7 @@ function scr_player_barrelnormal(){
 	if (move != 0)
         {
             if (movespeed < 11)
-                movespeed += 0.1
+                movespeed += 0.2
             else if (floor(movespeed) == 6)
                 movespeed = 6
         }
@@ -59,15 +53,10 @@ function scr_player_barrelnormal(){
 	}
 	else
 		sprite_index = spr_player_barrelidle
-	if (sprite_index == spr_player_barrelslipnslide && floor(image_index) == (image_number - 1)) || (place_meeting(x,y, obj_slope) && key_down2)
+	if (sprite_index == spr_player_barrelslipnslide && floor(image_index) == (image_number - 1))
 	{
 		state = states.barrelroll
 		movespeed = 11
-		sprite_index = spr_player_barrelroll
-	}
-	if key_down && movespeed != 0
-	{
-		state = states.barrelroll
 		sprite_index = spr_player_barrelroll
 	}
 }

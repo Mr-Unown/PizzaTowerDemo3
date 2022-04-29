@@ -124,19 +124,8 @@ function scr_player_mach2() {
 	}
 	else if (grounded && scr_solid((x + sign(hsp)), y) && (!scr_slope() && scr_solid(x + sign(hsp),y - 2)) && (!place_meeting((x + sign(hsp)), y, obj_destructibles))) 
 	{
-	    sprite_index = spr_splat
-		image_index = 0
-		grav = 0
 	    movespeed = 0
-		hsp = 0
-		vsp = 0
-	    state = states.bump
-		if character = "PZ"
-		with instance_create(x,y,obj_debris)
-		{
-		sprite_index = spr_PZscooter
-		image_xscale = other.xscale
-		}
+	    state = 0
 	}
 
 	if ((!instance_exists(dashcloudid)) && grounded)

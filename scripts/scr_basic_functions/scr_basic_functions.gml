@@ -61,16 +61,11 @@ function nearest_player(argument0 = x, argument1 = y)
 	return (global.coop = false ? obj_player1 : instance_nearest(argument0,argument1,obj_player));
 }
 
-function focused_player(inverse = false)
+function focused_player()
 {
 	/// @description Returns Focused Player
 	/// @function focused_player
-	/// @param inverse Returns unfocused Player instead
-	var player1 = (global.coop == false ? obj_player1 : (obj_player1.spotlight == false ? obj_player2 : obj_player1));
-	var player2 = (global.coop == false ? noone : (obj_player1.spotlight == false ? obj_player1 : obj_player2));
-	
-	
-	return (inverse == false ? player1 : player2);
+	return (global.coop = false ? obj_player1 : (obj_player1.spotlight == false ? obj_player2 : obj_player1)) ;
 }
 
 
@@ -146,8 +141,4 @@ function rank_checker(rank = global.rank)
 		break;								
 	}
 	return value;
-}
-function sugarysin(argument0, argument1)
-{
-    return (sin((current_time / (argument1 * 100))) * argument0);
 }

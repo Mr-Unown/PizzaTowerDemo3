@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "mu_ranksPZ.mp3",
-  "duration": 13.3224487,
+  "duration": 17.2146931,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

@@ -7,12 +7,9 @@ surface_resize(application_surface,960,540);
 //Fart Counter
 global.fartcounter = 0;
 //Parallax
-//Parallax
-global.ParallaxMap = ds_map_create();
-scr_default_parallax(true);
-
-//Load Inputs
-scr_initinput();
+global.parallax_array = noone;
+global.parallax_arraynumber = 0;
+scr_default_parallax();
 
 //Global Variable Init
 enum temperature
@@ -23,11 +20,9 @@ enum temperature
 }
 global.visual_temperature = temperature.normal;
 //Fonts
-global.commonfont = /*ini_read_real("Option", "musicvolume", 1)*/ spr_fontSS
 global.smallfont = font_add_sprite_ext(spr_smallerfont, "ABCDEFGHIJKLMNOPQRSTUVWXYZ!.,'\"-:?1234567890|", 1, 0)
-global.font = font_add_sprite_ext(global.commonfont, "ABCDEFGHIJKLMNOPQRSTUVWXYZ!.1234567890:", 1, 0)
+global.font = font_add_sprite_ext(spr_font, "ABCDEFGHIJKLMNOPQRSTUVWXYZ!.1234567890:", 1, 0)
 global.pointsfont = font_add_sprite_ext(spr_font_collect, "0123456789", 1, 0)
-global.pointsfontpz = font_add_sprite_ext(spr_font_collecPZ, "0123456789", 1, 0)
 global.combofont = font_add_sprite_ext(spr_font_combo, "0123456789", 1, 0)
 global.combofont2 = font_add_sprite_ext(spr_font_combo2, "1234567890", 1, 0)
 global.smallnumber = font_add_sprite_ext(spr_smallnumber, "1234567890-", 1, 0)
@@ -78,5 +73,5 @@ while global.flushtextures = true
 
 //Uncomment to simulate YYC in VM
 //What this does is turn off loads of checks GMS2 does
-gml_release_mode(false);
+gml_release_mode(true);
 

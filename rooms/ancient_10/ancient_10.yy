@@ -1178,8 +1178,6 @@
   },
   "resourceVersion": "1.0",
   "name": "ancient_10",
-  "tags": [
-    "entrance",
-  ],
+  "tags": [],
   "resourceType": "GMRoom",
 }

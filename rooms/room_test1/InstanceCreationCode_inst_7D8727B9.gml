@@ -13,5 +13,4 @@ output = function()
 		visible = true;		
 	}
 	instance_create(x,y,obj_safeexplosion)
-	scr_queue_tvanim(spr_playertv_secret, 150)
 }

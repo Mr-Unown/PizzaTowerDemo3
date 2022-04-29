@@ -303,30 +303,10 @@ if (pause == 1 && (!instance_exists(obj_mainconfig)))
                 if instance_exists(obj_player2)
                     obj_player2.targetDoor = "A"
             }
-			 else if (string_letters(roomname) == "wasteyard" || string_letters(roomname) == "wasteyardsecret")
-            {
-                instance_activate_all()
-                room = wasteyard_1
-                scr_playerreset()
-                pause = 0
-                obj_player1.targetDoor = "A"
-                if instance_exists(obj_player2)
-                    obj_player2.targetDoor = "A"
-            }
             else if (string_letters(roomname) == "factory" || string_letters(roomname) == "factorysecret")
             {
                 instance_activate_all()
                 room = factory_1
-                scr_playerreset()
-                pause = 0
-                obj_player1.targetDoor = "A"
-                if instance_exists(obj_player2)
-                    obj_player2.targetDoor = "A"
-            }
-			 else if (string_letters(roomname) == "oldfreezer")
-            {
-                instance_activate_all()
-                room = oldfreezer_1
                 scr_playerreset()
                 pause = 0
                 obj_player1.targetDoor = "A"

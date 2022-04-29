@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_noisewoah",
-  "duration": 1.449796,
+  "duration": 1.454796,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

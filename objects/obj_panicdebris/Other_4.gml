@@ -43,10 +43,7 @@ if (global.panic == 1 && layer_background_get_sprite(back_id6) == bg_nightsky)
 //Entrance bg Pizzas
 if global.panic == 1
     layer_change_background(bg_entrance2,bg_entrance2escape)
-//Freezer bg escape
-//Entrance bg Pizzas
-if global.panic == 1
-    layer_change_background(bg_freezer1,bg_freezer1escape)
+
 //Desert Night
 if global.desertnight = true
 {

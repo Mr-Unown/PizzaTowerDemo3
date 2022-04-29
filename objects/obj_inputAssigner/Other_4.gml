@@ -3,7 +3,7 @@ if (room == characterselect)
     if (player_input_device[1] < -1)
         player_input_device[1] = -2
 }
-if (room == /*global.roomstart[global.newtitlescreen]*/ New_Realtitlescreen)
+if (room == global.roomstart[global.newtitlescreen])
 {
     player_input_device[0] = -2
     player_input_device[1] = -2

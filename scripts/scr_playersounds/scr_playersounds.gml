@@ -1,7 +1,7 @@
 function scr_playersounds() {
 	with id
 	{
-		var pitchspd = global.pitchshift == 1 ? (movespeed/9.5) * 0.8 : 1;
+		var pitchspd = (movespeed/9.5) * 0.8
 	    if (state == 69 && (!audio_is_playing(sfx_mach1)) && grounded)
 	    {
 	        mach1snd = audio_play_sound(sfx_mach1, 1, false)
@@ -73,7 +73,7 @@ function scr_playersounds() {
 	        audio_stop_sound(tumble2snd)
 	        audio_stop_sound(tumble3snd)
 	    }
-	    if (audio_is_playing(suplexdashsnd) && sprite_index != spr_shoryumineken && state != 22)
+	    if (audio_is_playing(suplexdashsnd) && sprite_index != spr_player_shoryumineken && state != 22)
 	        audio_stop_sound(suplexdashsnd)
 		//Pitch
 		audio_sound_pitch(tumble3snd, pitchspd);

@@ -11,11 +11,6 @@ if place_meeting(x, (y - 1), obj_player1)
             y = floor(y)
             if ((y % 2) == 1)
                 y -= 1
-			if character = "GB" && brick = 1
-			{
-				brick = 0
-				instance_create(x,y, obj_brickseparated)
-			}
         }
     }
 }
@@ -34,11 +29,6 @@ if instance_exists(obj_player2)
                 y = floor(y)
                 if ((y % 2) == 1)
                     y -= 1
-				if character = "GB" && brick = 1
-			{
-				brick = 0
-				instance_create(x,y, obj_brickseparated)
-			}
             }
         }
     }

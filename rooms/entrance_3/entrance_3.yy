@@ -204,8 +204,6 @@
   },
   "resourceVersion": "1.0",
   "name": "entrance_3",
-  "tags": [
-    "entrance",
-  ],
+  "tags": [],
   "resourceType": "GMRoom",
 }

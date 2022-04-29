@@ -1,4 +1,5 @@
 comboend_id = noone;
+scr_initinput2()
 scr_playercreate()
 //CustomPaletteChoosyFILE
 customsavedpalette = 1;

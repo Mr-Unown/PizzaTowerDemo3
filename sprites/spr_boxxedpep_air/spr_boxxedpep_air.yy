@@ -77,8 +77,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "boxxed",
-    "path": "folders/Sprites/Characters/Playable Characters Sprites/Peppino/boxxed.yy",
+    "name": "Peppino",
+    "path": "folders/Sprites/Characters/Playable Characters Sprites/Peppino.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_boxxedpep_air",

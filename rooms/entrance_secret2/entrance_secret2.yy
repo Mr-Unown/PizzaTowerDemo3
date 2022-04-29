@@ -152,8 +152,6 @@
   },
   "resourceVersion": "1.0",
   "name": "entrance_secret2",
-  "tags": [
-    "entrance",
-  ],
+  "tags": [],
   "resourceType": "GMRoom",
 }

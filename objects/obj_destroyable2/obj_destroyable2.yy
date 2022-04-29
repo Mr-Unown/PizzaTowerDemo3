@@ -6,8 +6,8 @@
   "solid": false,
   "visible": true,
   "spriteMaskId": {
-    "name": "spr_destroyablepepOLD",
-    "path": "sprites/spr_destroyablepepOLD/spr_destroyablepepOLD.yy",
+    "name": "spr_destroyablepep",
+    "path": "sprites/spr_destroyablepep/spr_destroyablepep.yy",
   },
   "persistent": false,
   "parentObjectId": {

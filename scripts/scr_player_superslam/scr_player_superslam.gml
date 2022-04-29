@@ -61,7 +61,7 @@ function scr_player_superslam() {
 		{
 			with baddiegrabbedID
 			{
-				if object_index != obj_player1 || object_index != obj_player2
+				if object_index != obj_player 
 				{
 					/*
 					instance_create(x, y, obj_slapstar)

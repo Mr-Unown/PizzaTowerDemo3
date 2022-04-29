@@ -666,8 +666,6 @@
   },
   "resourceVersion": "1.0",
   "name": "ancient_9",
-  "tags": [
-    "entrance",
-  ],
+  "tags": [],
   "resourceType": "GMRoom",
 }

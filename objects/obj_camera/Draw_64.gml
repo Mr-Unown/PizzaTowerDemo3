@@ -268,45 +268,41 @@ if (player.state != 55)
 		else
 			_image_index = 0	
 		//Style bar Fill thing
-		var heatw = sprite_get_width(spr_heatmeterfill)
-		var heath = sprite_get_height(spr_heatmeterfill)		
+		var heatw = sprite_get_width(spr_heatmeter_fill)
+		var heath = sprite_get_height(spr_heatmeter_fill)		
 		var meter = global.style / 25;
-		if player.character = "PZ"
-		pal_swap_set(spr_heatfillpalettePZ,clamp(global.stylethreshold,0,10),false)
-		draw_sprite_part_ext(spr_heatmeterfill, _image_index, 0, 0, heatw * meter, heath, newhudx - sprite_get_xoffset(spr_heatmeter_fill), newhudy - sprite_get_yoffset(spr_heatmeter_fill), 1, 1, c_white, alpha)
+		draw_sprite_part_ext(spr_heatmeter_fill, _image_index, 0, 0, heatw * meter, heath, newhudx - sprite_get_xoffset(spr_heatmeter_fill), newhudy - sprite_get_yoffset(spr_heatmeter_fill), 1, 1, c_white, alpha)
+		
 		//Style/Heat Meter
-		if player.character != "PZ"
-		pal_swap_set(spr_heatpalette,clamp(global.stylethreshold - 1,0,10),false)
-		else
-		pal_swap_set(spr_heatpalette,clamp(global.stylethreshold /*- 1*/,0,10),false)
+		pal_swap_set(spr_heatmeter_palette,clamp(global.stylethreshold - 1,0,10),false)
 		draw_sprite_ext(spr_heatmeter, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
 		shader_reset();
 		//Pizzascore thing
-		draw_sprite_ext(spr_pizzasprite, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
+		draw_sprite_ext(spr_pizzascore, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
 		
 
 		//Rank Topppings
 		if global.timeattack = false
 		{
-			if global.collect >= global.crank
-				draw_sprite_ext(spr_pizzascore_1, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
-			if global.collect >= global.brank
-				draw_sprite_ext(spr_pizzascore_2, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
-			if global.collect >= global.arank
-				draw_sprite_ext(spr_pizzascore_3, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
-			if global.collect >= global.srank
-				draw_sprite_ext(spr_pizzascore_4, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)		
+		if global.collect >= global.crank
+			draw_sprite_ext(spr_pizzascore_pepper, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
+		if global.collect >= global.brank
+			draw_sprite_ext(spr_pizzascore_pepperoni, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
+		if global.collect >= global.arank
+			draw_sprite_ext(spr_pizzascore_olive, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
+		if global.collect >= global.srank
+			draw_sprite_ext(spr_pizzascore_shroom, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)		
 		}
 		else
 		{
-			if global.timeattackpoints < global.ctimerank
-				draw_sprite_ext(spr_pizzascore_1, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
-			if global.timeattackpoints < global.btimerank
-				draw_sprite_ext(spr_pizzascore_2, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
-			if global.timeattackpoints < global.atimerank
-				draw_sprite_ext(spr_pizzascore_3, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
-			if global.timeattackpoints < global.stimerank
-				draw_sprite_ext(spr_pizzascore_4, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)					
+		if global.timeattack_value < global.ctimerank
+			draw_sprite_ext(spr_pizzascore_pepper, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
+		if global.timeattack_value < global.btimerank
+			draw_sprite_ext(spr_pizzascore_pepperoni, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
+		if global.timeattack_value < global.atimerank
+			draw_sprite_ext(spr_pizzascore_olive, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)
+		if global.timeattack_value < global.stimerank
+			draw_sprite_ext(spr_pizzascore_shroom, _image_index, newhudx, newhudy, 1, 1, 0, c_white, alpha)					
 		}
 			
 		switch global.timeattack
@@ -315,10 +311,7 @@ if (player.state != 55)
 			#region Point
 		draw_set_halign(fa_center);
 		draw_set_color(c_white);
-		if player.character != "PZ"
 		draw_set_font(global.pointsfont);	
-		else
-		draw_set_font(global.pointsfontpz);
 		var _string = string(global.collect), _string_length = string_length(_string); //D3G: Holy shit I'm an idiot I've been using string width lmao no wonder it keeps crashing
 		if collected != _string
 		{
@@ -371,7 +364,7 @@ if (player.state != 55)
 		{
 			var _xx = (newhudx + 15) + (-(string_width(_string)/ 2) + ((string_width(_string)/_string_length) * i)), _yy = newhudy - 55, pal = colors[i];
 			var _yyoffset = (i % 2 == 0 ? -4 : 0)
-			pal_swap_set(spr_pizzascorepal,pal,false);
+			pal_swap_set(spr_font_collect_palette,pal,false);
 			draw_text(_xx, _yy + _yyoffset + textyoffset, string_char_at(_string,i + 1));
 			shader_reset();
 		} #endregion
@@ -515,7 +508,6 @@ if (player.state != 55)
     }
 	#endregion
 	#region Timer
-	draw_set_font(global.font)
 	var timery = (global.newhud == true? 450 : 65)	
 	if (global.panic == 1 || global.snickchallenge == 1 || global.miniboss == 1)
     {
@@ -667,14 +659,14 @@ if (player.state != 55)
 				bubblefilled = spr_rankbubble_dfilled;
 				local_rank = global.dtimerank;			
 				minus_moment = global.ctimerank;
-				bubbleframe = 4;
+				bubbleframe = 0;
 				break;
 				case "C":
 				bubbleempty = spr_rankbubble_c;
 				bubblefilled = spr_rankbubble_cfilled;
 				local_rank = global.ctimerank;	
 				minus_moment = global.btimerank;
-				bubbleframe = 3;
+				bubbleframe = 1;
 				break;
 				case "B":
 				bubbleempty = spr_rankbubble_b;
@@ -688,14 +680,14 @@ if (player.state != 55)
 				bubblefilled = spr_rankbubble_afilled;
 				local_rank = global.atimerank;
 				minus_moment = global.stimerank;
-				bubbleframe = 1;
+				bubbleframe = 3;
 				break;
 				default:
 				bubbleempty = spr_rankbubble_s;
 				bubblefilled = spr_rankbubble_sfilled;
 				local_rank = global.stimerank;		
 				minus_moment = 0;
-				bubbleframe = 0;
+				bubbleframe = 4;
 				break;
 			}
 			#endregion

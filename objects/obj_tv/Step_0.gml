@@ -366,21 +366,10 @@ else if global.newhud = true && oldcharacter == player.character && (sprite_inde
 	{
 		//case states.scaredjump:
 		//newtvsprite = player.spr_playertv_scaredjump
-		//channel = 12;	
-		case states.mach3:
-		if player.movespeed < 20
-		newtvsprite = player.spr_playertv_mach3
-		else
-		newtvsprite = player.spr_playertv_mach4
-		channel = 12;	
-		break;
-		case states.ghost:
-		newtvsprite = player.spr_playertv_ghost
-		channel = 11;	
-		break;
-		case states.cheeseball:
-		newtvsprite = player.spr_playertv_cheeseball
-		channel = 10;	
+		//channel = 11;		
+		case states.ratmount:
+		newtvsprite = gustvspr
+		channel = 9;	
 		break;
 		case states.golf:
 		newtvsprite = player.spr_playertv_golf
@@ -424,7 +413,6 @@ else if global.newhud = true && oldcharacter == player.character && (sprite_inde
 		break;
 		default:
 		#region Normal
-		if global.combo < 3
             if (idle < 400)
                 idle++
             if (idle >= 300 && floor(image_index) >= (image_number - 1)) && (newtvsprite = player.spr_playertv_normalidle1 || newtvsprite = player.spr_playertv_normalidle2 || newtvsprite = player.spr_playertv_normalidle3)
@@ -540,7 +528,7 @@ if ds_queue_size(global.newhudmessage) > 1 && showingnewtext = false && newtvspr
 	//Anim Spr
 	if tvspr != noone
 	{
-		newtvsprite = tvspr;
+		newtvsprite = tvspr
 		tvanimtext = true;
 		tvanim = true
 		drawstatic = true

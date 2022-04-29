@@ -2,9 +2,6 @@ countdown -= 0.5
 var devvsp = (vsp / 2)
 hsp = (image_xscale * (movespeed))
 #region Bounce
-var roomname = room_get_name(room)
-if string_letters(roomname) == "sanctum"
-{
 if (grounded && (!scr_slope_ext(x, y + 1)))
 {
     if (movespeed > 0)
@@ -18,13 +15,6 @@ else
 	drop = false
 if vsp < 12 && vsp > 10
     vsp += grav
-}
-else
-if (grounded && (!scr_slope_ext(x, y + 1)))
-{
-    if (movespeed > 0)
-        movespeed = 0
-}
 #endregion
 #region Bump into walls
 if (scr_solid(x + sign(image_xscale),y) && !scr_slope_ext(x + sign(image_xscale),y)) && movespeed > 0

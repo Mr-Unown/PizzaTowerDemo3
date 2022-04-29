@@ -436,8 +436,6 @@
   },
   "resourceVersion": "1.0",
   "name": "beach_secret5",
-  "tags": [
-    "beach",
-  ],
+  "tags": [],
   "resourceType": "GMRoom",
 }

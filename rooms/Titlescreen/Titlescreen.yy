@@ -72,8 +72,6 @@
   },
   "resourceVersion": "1.0",
   "name": "Titlescreen",
-  "tags": [
-    "hub",
-  ],
+  "tags": [],
   "resourceType": "GMRoom",
 }

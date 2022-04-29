@@ -802,8 +802,6 @@
   },
   "resourceVersion": "1.0",
   "name": "dungeon_6",
-  "tags": [
-    "dungeon",
-  ],
+  "tags": [],
   "resourceType": "GMRoom",
 }

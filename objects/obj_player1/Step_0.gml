@@ -164,7 +164,7 @@ if (sprite_index == spr_player_idlevomitblood && image_index > 28 && image_index
 }
 if (global.playerhealth == 1 && (!instance_exists(obj_sweat)) && obj_player.state == 0)
     instance_create(x, y, obj_sweat)
-if ((angry == 1 || global.stylethreshold >= 2) && (!instance_exists(angryeffectid)) && state == 0)
+if (angry == 1 && (!instance_exists(angryeffectid)) && state == 0)
 {
     with (instance_create(x, y, obj_angrycloud))
     {
@@ -180,7 +180,6 @@ else if (global.combotime <= 0)
 if (global.combotime <= 0 && global.combo != 0) && global.freezeframe = false && !instance_exists(obj_endlevelfade)
 {
 	scr_soundeffect(sfx_comboend);
-	scr_queue_tvanim(spr_playertv_mad, random_range(100,300))
 	if global.snickchallenge == false
 	{
 		#region Combo End Spawner

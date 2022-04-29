@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_pephurt",
-  "duration": 0.985397,
+  "duration": 0.990397,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

@@ -184,8 +184,6 @@
   },
   "resourceVersion": "1.0",
   "name": "strongcold_1",
-  "tags": [
-    "chateau",
-  ],
+  "tags": [],
   "resourceType": "GMRoom",
 }

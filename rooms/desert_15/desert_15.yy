@@ -187,8 +187,6 @@
   },
   "resourceVersion": "1.0",
   "name": "desert_15",
-  "tags": [
-    "ufo",
-  ],
+  "tags": [],
   "resourceType": "GMRoom",
 }

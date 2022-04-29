@@ -182,8 +182,6 @@
   },
   "resourceVersion": "1.0",
   "name": "beach_secret2",
-  "tags": [
-    "beach",
-  ],
+  "tags": [],
   "resourceType": "GMRoom",
 }

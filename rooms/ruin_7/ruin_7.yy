@@ -471,8 +471,6 @@
   },
   "resourceVersion": "1.0",
   "name": "ruin_7",
-  "tags": [
-    "ruinremix",
-  ],
+  "tags": [],
   "resourceType": "GMRoom",
 }

@@ -61,8 +61,6 @@
   },
   "resourceVersion": "1.0",
   "name": "characterselect",
-  "tags": [
-    "characterselect",
-  ],
+  "tags": [],
   "resourceType": "GMRoom",
 }

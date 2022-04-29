@@ -137,11 +137,6 @@ if (distance_to_object(player) < 50)
 		            showtext = 1
 		            alarm[0] = 2
 			break;	
-			case "wasteyard": 
-		            _message = "THE WASTEYARD"
-		            showtext = 1
-		            alarm[0] = 2
-			break;	
 			case "factory": 
 		            _message = "WIP FACTORY"
 		            showtext = 1
@@ -159,11 +154,6 @@ if (distance_to_object(player) < 50)
 			break;
 			case "space": 
 		            _message = "GALACTIC FIELD"
-		            showtext = 1
-		            alarm[0] = 2
-			break;
-			case "freezer": 
-		            _message = "FREEZER"
 		            showtext = 1
 		            alarm[0] = 2
 			break;

@@ -18,7 +18,6 @@ with (other)
         xscale = other.image_xscale
         hsp = other.hsp
         vsp = other.vsp
-		movespeed = 8
         x = other.x
         y = other.y
         state = 11

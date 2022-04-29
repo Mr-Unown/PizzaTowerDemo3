@@ -15,7 +15,7 @@ function scr_player_normal() {
 	    hsp = ((move * movespeed) - 5)
 	else if place_meeting(x, (y + 1), obj_railh2)
 	    hsp = ((move * movespeed) + 5)
-	if (character == "P" || character == "N" || character == "PZ" || character == "PM" || character == "V" || character = "D" || character = "GB")
+	if (character == "P" || character == "N" || character == "PZ" || character == "PM" || character == "V" || character = "D")
 	{
 	    if (machslideAnim == 0 && landAnim == 0 && shotgunAnim == 0)
 	    {
@@ -29,7 +29,7 @@ function scr_player_normal() {
 	                idle = 0
 	                image_index = 0
 	            }
-	            if (idle >= 150 && sprite_index != spr_idle1 && sprite_index != spr_idle2 && sprite_index != spr_idle3 && sprite_index != spr_idle4 && sprite_index != spr_idle5 && sprite_index != spr_idle6 && character != "PZ")
+	            if (idle >= 150 && sprite_index != spr_idle1 && sprite_index != spr_idle2 && sprite_index != spr_idle3 && sprite_index != spr_idle4 && sprite_index != spr_idle5 && sprite_index != spr_idle6)
 	            {
 	                randomise()
 	                idleanim = random_range(0, 100)
@@ -58,14 +58,12 @@ function scr_player_normal() {
 	                        if (sprite_index == spr_playerV_revolverend)
 	                        {
 	                        }
-	                        if (global.minutes == 0 && global.seconds == 0)
+	                        else if (global.minutes == 0 && global.seconds == 0)
 	                            sprite_index = spr_hurtidle
 	                        else if (global.panic == 1 || global.snickchallenge == 1)
 	                            sprite_index = spr_panic
-	                        else if (angry == 1 || global.stylethreshold == 2)
+	                        else if (angry == 1)
 	                            sprite_index = spr_3hpidle
-	                        else if (global.stylethreshold >= 3)
-	                            sprite_index = spr_rageidle
 	                        else
 	                            sprite_index = spr_idle
 	                    }
@@ -125,10 +123,8 @@ function scr_player_normal() {
 	            facehurt = 0
 	            if (global.minutes == 0 && global.seconds == 0)
 	                sprite_index = spr_hurtwalk
-	            else if (angry == 1 || global.stylethreshold == 2)
+	            else if (angry == 1)
 	                sprite_index = spr_3hpwalk
-	            else if (global.stylethreshold >= 3)
-	                sprite_index = spr_ragemove
 	            else
 	                sprite_index = spr_move
 	        }
@@ -280,10 +276,7 @@ function scr_player_normal() {
 	if (grounded && input_buffer_jump < 8 && (!key_down) && (!key_attack) && vsp > 0)
 	{
 	    scr_soundeffect(sfx_jump)
-		if (global.minutes == 0 && global.seconds == 0)
-			sprite_index = spr_hurtjump
-		else
-			sprite_index = spr_jump
+	    sprite_index = spr_jump
 	    if (shotgunAnim == 1)
 	        sprite_index = spr_shotgunjump
 	    with (instance_create(x, y, obj_highjumpcloud2))
@@ -362,33 +355,11 @@ function scr_player_normal() {
 	        playerid = other.id
 	    }
 	}
-	//Brick Kick Ball
-	if (key_shoot2 && character == "GB" && (!instance_exists(obj_brickball) && brick = 1))
-	{
-	    if (move == 0)
-	        movespeed = 0
-		else
-			movespeed = 3
-	    state = states.throwdynamite
-	    image_index = 0
-	    sprite_index = spr_playerGB_kick
-	    with (instance_create(x, y, obj_brickball))
-	    {
-			playerid = other.id
-	        image_xscale = other.xscale
-	        movespeed = 10
-			if !playerid.key_up
-	        vsp = -6
-			else
-			vsp = -12
-	    }
-		brick = 0
-	}
-	if (key_slap2 && (character = "P" || character == "PZ" || character = "N" || (character = "D" && spellselect = 2) || character = "GB" && brick = 1))
+	if (key_slap2 && (character = "P" || character == "PZ" || character = "N" || (character = "D" && spellselect = 2)))
 	{
 		if key_up && (character = "P" || character == "PZ"  || character = "N")
 		{
-			if character = "P" || character == "PZ"
+			if character = "P" || character == "PZ" 
 			{
 				suplexmove = 1		
 				suplexdashsnd = audio_play_sound(sfx_suplexdash, 1, false)
@@ -403,7 +374,7 @@ function scr_player_normal() {
 				vsp = -12
 				state = 58
 				jumpAnim = 1
-				sprite_index = spr_shoryumineken		
+				sprite_index = spr_player_shoryumineken		
 				image_index = 0
 			}
 			else if character = "N" 
@@ -422,35 +393,12 @@ function scr_player_normal() {
 				}
 			}
 		}
-		else if key_slap2 && character = "GB" && brick = 0
-		{
-			//Gustavo kung fuuu arms of buffness goes here
-		}
-		//Mort attack
-		else if key_slap2 && sprite_index != spr_player_mortattack && global.mortfollowing = 1
-		{
-			image_index = 0
-			sprite_index = spr_player_mortattack
-			if (floor(image_index) == 4)
-			{
-				with (instance_create(x, y, obj_morthitbox))
-				{
-					playerid = other.object_index
-					image_xscale = other.xscale
-				}
-			}
-			if (floor(image_index) == (image_number - 1) && sprite_index == spr_player_mortattack)
-			{
-				sprite_index = spr_idle
-				mort = 0
-			}
-		}
 		else if (character == "P" && global.attackstyle == 1)
 		{
 			suplexmove = 1
 			suplexdashsnd = audio_play_sound(sfx_suplexdash, 1, false)
 			audio_sound_gain(suplexdashsnd, (1 * global.soundeffectsvolume), 0)
-			state = states.kingknightroll
+			state = 111
 			image_index = 0
 			if (shotgunshootbuffer < 50 && shotgunAnim == 1)
 		        sprite_index = spr_shotgunsuplexdash
@@ -477,7 +425,7 @@ function scr_player_normal() {
 		        sprite_index = spr_shotgunsuplexdash
 		    else
 				sprite_index = spr_suplexdash
-			if (character == "P" || character == "PZ" || character = "D" || character == "GB")
+			if (character == "P" || character == "PZ" || character = "D")
 		        movespeed = 6
 		    else
 				movespeed = 4
@@ -501,7 +449,7 @@ function scr_player_normal() {
 	    image_index = 0
 	}
 	//Breakdance
-	if (key_shoot2 && shotgunAnim == 0) && character != "V" && character != "D" && character != "GB" && global.mortfollowing == 0
+	if (key_shoot2 && shotgunAnim == 0) && character != "V" && character != "D"
 	{
 		if murderammo >= 1
 		{
@@ -532,10 +480,6 @@ function scr_player_normal() {
 			scr_soundeffect(sfx_killingblow)
 			murderammo -= 1
 		}
-		else if global.kungfulevel = 1
-		{
-			
-		}
 		else
 		{
 			breakdancebuffer = 50
@@ -557,7 +501,7 @@ function scr_player_normal() {
 	        image_xscale = other.image_xscale
 	    image_index = 0
 	    sprite_index = spr_shotgunshoot
-	    if (character == "P" || character == "PZ")
+	    if (character == "P")
 	    {
 	        with (instance_create((x + (image_xscale * 20)), (y + 20), obj_shotgunbullet))
 	            playerid = other.id
@@ -572,13 +516,6 @@ function scr_player_normal() {
 	            playerid = other.id
 	        }
 	    }
-	}
-	//Mort Attack
-	if (key_attack2 && global.mortfollowing == 1) && character != "V" && character != "D"
-	{
-		image_index = 0
-        sprite_index = spr_player_mortattack
-		mortanim = 1
 	}
 	if (key_slap2 && character == "S")
 	{
@@ -604,12 +541,6 @@ function scr_player_normal() {
 	    jumpAnim = 1
 	    state = 69
 	    image_index = 0
-	}
-	if (key_attack && character == "GB" && grounded)
-	{
-		state = states.ratmount
-		sprite_index = spr_gustavo_bounce
-		image_index = 0
 	}
 	if key_attack && (character == "N" && pogo = true) && !key_slap2 && pogojetcharge = false
 	{
@@ -702,11 +633,6 @@ function scr_player_normal() {
 	    {
 	        state = 51
 	        sprite_index = spr_playerV_revolverstart
-	    }
-		if (character == "PZ")
-	    {
-	        state = 51
-	        sprite_index = spr_playerPZ_genesis
 	    }
 	}
 

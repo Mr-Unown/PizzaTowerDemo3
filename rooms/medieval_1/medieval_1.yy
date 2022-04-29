@@ -343,8 +343,6 @@
   },
   "resourceVersion": "1.0",
   "name": "medieval_1",
-  "tags": [
-    "medievalentrance",
-  ],
+  "tags": [],
   "resourceType": "GMRoom",
 }

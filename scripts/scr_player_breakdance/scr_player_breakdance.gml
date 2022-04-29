@@ -66,10 +66,10 @@ function scr_player_breakdance() {
 		else
 		vsp = -8
 		state = 58
-		sprite_index = spr_shoryumineken		
+		sprite_index = spr_player_shoryumineken		
 		image_index = 0
 	}
-	if grounded && doublejump = 1 && vsp >= 0  && sprite_index != spr_shoryumineken	
+	if grounded && doublejump = 1 && vsp >= 0  && sprite_index != spr_player_shoryumineken	
 	doublejump = 0
 
 	//Hitwall

@@ -1,5 +1,4 @@
 function scr_player_knightpep() {
-	if (live_call()) return live_result;
 	alarm[5] = 2
 	alarm[7] = 60
 	global.SAGEknighttaken = 1
@@ -81,7 +80,7 @@ function scr_player_knightpep() {
 	    freefallstart = 0
 	    momemtum = 0
 	    scr_soundeffect(sfx_groundpound)
-		GamepadSetVibration((object_index == obj_player1 ? 0 : 1), .5, .5, 0.8)
+		//gamepad_set_vibration(1, 1, 1, 0.9)
 		with instance_create(x, y, obj_landcloud)
 		{
 			playerid = other.id

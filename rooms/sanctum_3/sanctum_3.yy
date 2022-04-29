@@ -631,8 +631,6 @@
   },
   "resourceVersion": "1.0",
   "name": "sanctum_3",
-  "tags": [
-    "sanctum",
-  ],
+  "tags": [],
   "resourceType": "GMRoom",
 }

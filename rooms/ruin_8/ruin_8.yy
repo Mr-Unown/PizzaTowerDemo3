@@ -463,8 +463,6 @@
   },
   "resourceVersion": "1.0",
   "name": "ruin_8",
-  "tags": [
-    "ruinremix",
-  ],
+  "tags": [],
   "resourceType": "GMRoom",
 }

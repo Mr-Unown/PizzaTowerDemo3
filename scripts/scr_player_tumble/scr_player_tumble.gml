@@ -1,16 +1,11 @@
 function scr_player_tumble() {
-	if (live_call()) return live_result;
-	if sprite_index != spr_player_sjumpcancel
 	hsp = (xscale * movespeed)
-	else
-	{
-	hsp = (xscale * movespeed)
-	move = (key_left + key_right)
-	}
 	if (sprite_index == spr_tumblestart)
 	{
 	    movespeed = 6
 	}
+	if (sprite_index == spr_player_sjumpcancel)
+	    movespeed = 12
 	if (key_down2 && (!key_jump2))
 	    vsp = 10
 	//Slopes
@@ -93,21 +88,10 @@ function scr_player_tumble() {
 		    state = 72
 		}
 		else if (sprite_index == spr_player_sjumpcancelslide || sprite_index == spr_player_sjumpcancelland || sprite_index == spr_player_sjumpcancel)
-		if scr_solid((x + xscale), y) && key_down
-		{
-			state = states.freefall
-			vsp = 0
-			sprite_index = spr_bodyslamfall
-		}
-		else
 		    state = 0
 	}
 	if key_jump && sprite_index != spr_player_sjumpcancelland && sprite_index != spr_player_sjumpcancelslide
 	    input_buffer_jump = 0
-	if (move == (-xscale)) && sprite_index = spr_player_sjumpcancel
-	movespeed -= .5
-	else if (move == (xscale)) && sprite_index = spr_player_sjumpcancel
-	movespeed += .5
 	if ((!key_jump2) && jumpstop == 0 && vsp < 0.5 && stompAnim == 0)
 	{
 	    vsp /= 2
