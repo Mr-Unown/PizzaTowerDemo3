@@ -157,6 +157,11 @@ if (distance_to_object(player) < 50)
 		            showtext = 1
 		            alarm[0] = 2
 			break;
+			case "carnival": 
+		            _message = "TOMATOPASTE CARNIVAL"
+		            showtext = 1
+		            alarm[0] = 2
+			break;
 			default: 
 					_message = "NONE"
 					showtext = 1

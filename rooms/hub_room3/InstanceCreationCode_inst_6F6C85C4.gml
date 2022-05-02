@@ -1,2 +1,2 @@
-level = "golf"
-targetRoom = minigolf_1
+level = "carnival"
+targetRoom = carnival_1
