@@ -1,7 +1,7 @@
 //Player 1
 with (obj_player1)
 {
-    if ((place_meeting((x + hsp), y, other.id) || place_meeting((x + xscale), y, other.id)) && (state == states.knightpepslopes || state == states.newbomb || state == states.rocket))
+    if ((place_meeting((x + hsp), y, other.id) || place_meeting((x + xscale), y, other.id)) && (state == states.knightpepslopes || state == states.newbomb || state == states.rocket || state == states.slipbanana))
 		with other 	{ initialhsp = 8 * sign(other.image_xscale); initialvsp = random_range(-4, -1);	event_user(0); 	}
 	if (state = states.knightpepattack || state == states.newbomb || state == states.rocket)
 	{
