@@ -17,8 +17,8 @@
   "width": 540,
   "height": 1000,
   "textureGroupId": {
-    "name": "Desert",
-    "path": "texturegroups/Desert",
+    "name": "Default",
+    "path": "texturegroups/Default",
   },
   "swatchColours": null,
   "gridX": 0,

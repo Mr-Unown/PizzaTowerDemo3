@@ -17,8 +17,8 @@
   "width": 63,
   "height": 40,
   "textureGroupId": {
-    "name": "Sanctum",
-    "path": "texturegroups/Sanctum",
+    "name": "Default",
+    "path": "texturegroups/Default",
   },
   "swatchColours": null,
   "gridX": 0,

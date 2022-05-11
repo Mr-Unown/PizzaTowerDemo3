@@ -17,8 +17,8 @@
   "width": 141,
   "height": 100,
   "textureGroupId": {
-    "name": "Vigi_Sprites",
-    "path": "texturegroups/Vigi_Sprites",
+    "name": "Default",
+    "path": "texturegroups/Default",
   },
   "swatchColours": null,
   "gridX": 0,

@@ -17,8 +17,8 @@
   "width": 960,
   "height": 540,
   "textureGroupId": {
-    "name": "Menus",
-    "path": "texturegroups/Menus",
+    "name": "Default",
+    "path": "texturegroups/Default",
   },
   "swatchColours": [
     4278190335,

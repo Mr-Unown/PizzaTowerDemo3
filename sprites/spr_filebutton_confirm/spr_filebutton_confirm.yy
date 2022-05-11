@@ -17,8 +17,8 @@
   "width": 40,
   "height": 40,
   "textureGroupId": {
-    "name": "Menus",
-    "path": "texturegroups/Menus",
+    "name": "Default",
+    "path": "texturegroups/Default",
   },
   "swatchColours": null,
   "gridX": 0,

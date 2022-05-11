@@ -1,6 +1,6 @@
 {
   "conversionMode": 0,
-  "compression": 0,
+  "compression": 1,
   "volume": 1.0,
   "preload": true,
   "bitRate": 192,
@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_mach2",
-  "duration": 1.154388,
+  "duration": 1.149388,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

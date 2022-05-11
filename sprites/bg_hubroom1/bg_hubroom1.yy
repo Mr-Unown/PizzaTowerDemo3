@@ -17,8 +17,8 @@
   "width": 1004,
   "height": 1004,
   "textureGroupId": {
-    "name": "HUB",
-    "path": "texturegroups/HUB",
+    "name": "Default",
+    "path": "texturegroups/Default",
   },
   "swatchColours": null,
   "gridX": 0,

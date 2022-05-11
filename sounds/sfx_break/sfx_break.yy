@@ -1,6 +1,6 @@
 {
   "conversionMode": 0,
-  "compression": 0,
+  "compression": 1,
   "volume": 0.16,
   "preload": true,
   "bitRate": 192,
@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_break",
-  "duration": 1.311122,
+  "duration": 1.306122,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

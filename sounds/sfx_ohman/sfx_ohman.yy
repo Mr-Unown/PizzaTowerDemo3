@@ -1,6 +1,6 @@
 {
   "conversionMode": 0,
-  "compression": 0,
+  "compression": 1,
   "volume": 0.5,
   "preload": false,
   "bitRate": 192,
@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_ohman",
-  "duration": 1.119558,
+  "duration": 1.114558,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

@@ -17,8 +17,8 @@
   "width": 120,
   "height": 100,
   "textureGroupId": {
-    "name": "Snick_Sprites",
-    "path": "texturegroups/Snick_Sprites",
+    "name": "Default",
+    "path": "texturegroups/Default",
   },
   "swatchColours": null,
   "gridX": 0,

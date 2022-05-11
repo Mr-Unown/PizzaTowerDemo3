@@ -1,4 +1,4 @@
-if (live_call()) return live_result;
+//if (live_call()) return live_result;
 //Variables
 var _cam_x = camera_get_view_x(view_camera[0])
 var _cam_y = camera_get_view_y(view_camera[0])

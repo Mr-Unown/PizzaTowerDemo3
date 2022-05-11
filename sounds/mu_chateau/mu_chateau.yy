@@ -1,18 +1,18 @@
 {
   "conversionMode": 0,
-  "compression": 2,
+  "compression": 1,
   "volume": 0.52,
   "preload": true,
   "bitRate": 192,
   "sampleRate": 44100,
-  "type": 0,
+  "type": 1,
   "bitDepth": 1,
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "mu_chateau",
-  "duration": 181.6605,
+  "duration": 181.655518,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

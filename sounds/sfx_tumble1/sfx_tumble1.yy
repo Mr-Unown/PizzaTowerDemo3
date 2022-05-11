@@ -1,6 +1,6 @@
 {
   "conversionMode": 0,
-  "compression": 0,
+  "compression": 1,
   "volume": 0.63,
   "preload": true,
   "bitRate": 192,
@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_tumble1",
-  "duration": 0.849626,
+  "duration": 0.844626,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

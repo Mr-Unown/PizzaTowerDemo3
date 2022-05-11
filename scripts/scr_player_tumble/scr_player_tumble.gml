@@ -1,5 +1,5 @@
 function scr_player_tumble() {
-	if (live_call()) return live_result;
+	//if (live_call()) return live_result;
 	if sprite_index != spr_player_sjumpcancel
 	hsp = (xscale * movespeed)
 	else

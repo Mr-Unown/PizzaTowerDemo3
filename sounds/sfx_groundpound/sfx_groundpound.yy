@@ -1,6 +1,6 @@
 {
   "conversionMode": 0,
-  "compression": 0,
+  "compression": 1,
   "volume": 1.0,
   "preload": true,
   "bitRate": 192,
@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_groundpound",
-  "duration": 1.037789,
+  "duration": 1.032789,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

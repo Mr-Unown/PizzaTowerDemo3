@@ -1,6 +1,6 @@
 {
   "conversionMode": 0,
-  "compression": 0,
+  "compression": 1,
   "volume": 0.76,
   "preload": true,
   "bitRate": 192,
@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_collectpizza",
-  "duration": 3.882732,
+  "duration": 3.877732,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

@@ -17,8 +17,8 @@
   "width": 1200,
   "height": 800,
   "textureGroupId": {
-    "name": "Factory",
-    "path": "texturegroups/Factory",
+    "name": "Default",
+    "path": "texturegroups/Default",
   },
   "swatchColours": null,
   "gridX": 0,

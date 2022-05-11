@@ -17,8 +17,8 @@
   "width": 50,
   "height": 50,
   "textureGroupId": {
-    "name": "Ruin",
-    "path": "texturegroups/Ruin",
+    "name": "Default",
+    "path": "texturegroups/Default",
   },
   "swatchColours": null,
   "gridX": 0,

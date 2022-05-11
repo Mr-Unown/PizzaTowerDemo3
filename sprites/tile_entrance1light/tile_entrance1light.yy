@@ -17,8 +17,8 @@
   "width": 320,
   "height": 640,
   "textureGroupId": {
-    "name": "Ancient",
-    "path": "texturegroups/Ancient",
+    "name": "Default",
+    "path": "texturegroups/Default",
   },
   "swatchColours": null,
   "gridX": 0,

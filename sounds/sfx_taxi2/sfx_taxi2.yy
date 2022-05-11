@@ -1,6 +1,6 @@
 {
   "conversionMode": 0,
-  "compression": 0,
+  "compression": 1,
   "volume": 0.52,
   "preload": true,
   "bitRate": 192,
@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_taxi2",
-  "duration": 3.429943,
+  "duration": 3.424943,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

@@ -1,6 +1,6 @@
 {
   "conversionMode": 0,
-  "compression": 0,
+  "compression": 1,
   "volume": 0.83,
   "preload": true,
   "bitRate": 192,
@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_buyweapon",
-  "duration": 0.824955,
+  "duration": 0.819955,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

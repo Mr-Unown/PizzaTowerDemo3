@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "tile_pinball",
-    "path": "sprites/tile_pinball/tile_pinball.yy",
+    "name": "tile_pinball_s",
+    "path": "sprites/tile_pinball_s/tile_pinball_s.yy",
   },
   "tileWidth": 32,
   "tileHeight": 32,

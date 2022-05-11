@@ -17,8 +17,8 @@
   "width": 1500,
   "height": 1000,
   "textureGroupId": {
-    "name": "Medieval",
-    "path": "texturegroups/Medieval",
+    "name": "Default",
+    "path": "texturegroups/Default",
   },
   "swatchColours": null,
   "gridX": 0,

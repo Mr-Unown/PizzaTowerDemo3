@@ -11,8 +11,8 @@
   "tilevsep": 0,
   "spriteNoExport": true,
   "textureGroupId": {
-    "name": "Ancient",
-    "path": "texturegroups/Ancient",
+    "name": "Default",
+    "path": "texturegroups/Default",
   },
   "out_tilehborder": 2,
   "out_tilevborder": 2,

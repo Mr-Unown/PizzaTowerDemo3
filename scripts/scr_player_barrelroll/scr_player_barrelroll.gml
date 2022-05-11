@@ -1,5 +1,5 @@
 function scr_player_barrelroll() {
-	if (live_call()) return live_result;
+	//if (live_call()) return live_result;
 	move = (key_left + key_right)
 	hsp = (xscale * movespeed)
 	mask_index = spr_crouchmask

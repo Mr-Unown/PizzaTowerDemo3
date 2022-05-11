@@ -1,18 +1,18 @@
 {
   "conversionMode": 0,
-  "compression": 2,
+  "compression": 1,
   "volume": 0.8,
   "preload": true,
   "bitRate": 192,
   "sampleRate": 44100,
-  "type": 0,
+  "type": 1,
   "bitDepth": 1,
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "mu_mansion",
-  "duration": 118.702141,
+  "duration": 118.697144,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

@@ -1,5 +1,5 @@
 function scr_player_barrelnormal(){
-	if (live_call()) return live_result;
+	//if (live_call()) return live_result;
 	mask_index = spr_player_mask
     image_speed = 0.35
 	move = (key_left + key_right)

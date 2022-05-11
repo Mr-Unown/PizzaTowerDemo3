@@ -1,6 +1,6 @@
 {
   "conversionMode": 0,
-  "compression": 0,
+  "compression": 1,
   "volume": 0.8,
   "preload": true,
   "bitRate": 192,
@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_pizzaface",
-  "duration": 2.779694,
+  "duration": 2.774694,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

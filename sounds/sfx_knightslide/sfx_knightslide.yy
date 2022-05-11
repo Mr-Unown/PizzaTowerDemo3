@@ -1,6 +1,6 @@
 {
   "conversionMode": 0,
-  "compression": 0,
+  "compression": 1,
   "volume": 0.74,
   "preload": true,
   "bitRate": 192,
@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_knightslide",
-  "duration": 1.637653,
+  "duration": 1.632653,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

@@ -17,8 +17,8 @@
   "width": 320,
   "height": 600,
   "textureGroupId": {
-    "name": "Dungeon",
-    "path": "texturegroups/Dungeon",
+    "name": "Default",
+    "path": "texturegroups/Default",
   },
   "swatchColours": null,
   "gridX": 32,

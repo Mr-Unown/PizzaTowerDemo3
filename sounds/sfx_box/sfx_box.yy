@@ -1,6 +1,6 @@
 {
   "conversionMode": 0,
-  "compression": 0,
+  "compression": 1,
   "volume": 0.4,
   "preload": true,
   "bitRate": 192,
@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_box",
-  "duration": 1.206633,
+  "duration": 1.201633,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

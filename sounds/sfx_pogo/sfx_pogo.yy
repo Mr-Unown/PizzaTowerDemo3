@@ -1,6 +1,6 @@
 {
   "conversionMode": 0,
-  "compression": 0,
+  "compression": 1,
   "volume": 0.6,
   "preload": false,
   "bitRate": 128,
@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_pogo",
-  "duration": 0.862143,
+  "duration": 0.857143,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

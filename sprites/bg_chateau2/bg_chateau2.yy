@@ -17,8 +17,8 @@
   "width": 609,
   "height": 500,
   "textureGroupId": {
-    "name": "Chateau",
-    "path": "texturegroups/Chateau",
+    "name": "Default",
+    "path": "texturegroups/Default",
   },
   "swatchColours": null,
   "gridX": 0,

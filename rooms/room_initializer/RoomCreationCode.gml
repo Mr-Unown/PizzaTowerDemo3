@@ -20,4 +20,3 @@ global.factorymusic = 0
 global.fakepeppino = 0
 global.peppermode = 0
 global.savefile = "a"
-

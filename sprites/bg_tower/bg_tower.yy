@@ -17,8 +17,8 @@
   "width": 600,
   "height": 539,
   "textureGroupId": {
-    "name": "Entrance",
-    "path": "texturegroups/Entrance",
+    "name": "Default",
+    "path": "texturegroups/Default",
   },
   "swatchColours": null,
   "gridX": 0,

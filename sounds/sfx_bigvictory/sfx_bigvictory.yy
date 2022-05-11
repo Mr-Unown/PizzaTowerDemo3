@@ -1,6 +1,6 @@
 {
   "conversionMode": 0,
-  "compression": 0,
+  "compression": 1,
   "volume": 0.5,
   "preload": true,
   "bitRate": 192,
@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_bigvictory",
-  "duration": 47.285,
+  "duration": 47.28,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

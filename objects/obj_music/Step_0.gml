@@ -1,4 +1,4 @@
-if (live_call()) return live_result;
+//if (live_call()) return live_result;
 var roomname = room_get_name(room)
 
 if (room != hub_room1 && room != hub_room2 && room != hub_room3 && room != cowboytask && room != Tutorialtrap && room != Titlescreen)

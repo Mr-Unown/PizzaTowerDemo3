@@ -1,5 +1,5 @@
 function scr_player_climbwall() {
-	if (live_call()) return live_result;
+	//if (live_call()) return live_result;
 	var left = key_left
 	var right = key_right
 	if (windingAnim < 200)

@@ -1,6 +1,6 @@
 {
   "conversionMode": 0,
-  "compression": 0,
+  "compression": 1,
   "volume": 1.0,
   "preload": true,
   "bitRate": 192,
@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_shotgunblast",
-  "duration": 1.463503,
+  "duration": 1.458503,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

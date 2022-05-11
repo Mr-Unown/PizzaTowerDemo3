@@ -1,6 +1,6 @@
 {
   "conversionMode": 0,
-  "compression": 0,
+  "compression": 1,
   "volume": 0.86,
   "preload": true,
   "bitRate": 192,
@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_bombpep1",
-  "duration": 3.101644,
+  "duration": 3.096644,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

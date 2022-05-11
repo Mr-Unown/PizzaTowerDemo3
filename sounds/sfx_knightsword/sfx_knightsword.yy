@@ -1,6 +1,6 @@
 {
   "conversionMode": 0,
-  "compression": 0,
+  "compression": 1,
   "volume": 0.77,
   "preload": true,
   "bitRate": 192,
@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_knightsword",
-  "duration": 3.433571,
+  "duration": 3.428571,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

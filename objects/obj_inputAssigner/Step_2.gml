@@ -1,4 +1,4 @@
-if (live_call()) return live_result;
+//if (live_call()) return live_result;
 /*if (!global.option_vibration)
     return;*/
 with (obj_player)
