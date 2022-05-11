@@ -25,7 +25,7 @@
   "option_windowsuap_allow_fullscreen_switching": false,
   "option_windowsuap_use_synchronization": false,
   "option_windowsuap_scale": 0,
-  "option_windowsuap_texture_page": "1024x1024",
+  "option_windowsuap_texture_page": "2048x2048",
   "option_windowsuap_certificate_location": "${base_options_dir}\\windowsuap\\keys\\WinUWPRunner_TemporaryKey.pfx",
   "option_windowsuap_certificate_publishername": "CN=Sandbox",
   "option_windowsuap_native_cpu": 0,
