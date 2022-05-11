@@ -16,7 +16,7 @@ else
     global.fakepeppino = 0
 	while global.flushtextures = true
 	{
-		draw_texture_flush();
+		//draw_texture_flush();
 		sprite_prefetch_multi(global.prefetcharray);
 		global.flushtextures = false
 		show_debug_message("Flushed Textures");
