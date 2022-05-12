@@ -42,7 +42,7 @@ function scr_getinput() {
 	    }
 	}
 	
-	var _dvc = obj_inputAssigner.player_input_device[0]
+	var _dvc = 0 //obj_inputAssigner.player_input_device[0]
     gamepad_set_axis_deadzone(_dvc, 0.4)
 	
     key_up = (keyboard_check(global.key_up) || gamepad_button_check(_dvc, global.key_upC) || gamepad_axis_value(_dvc, gp_axislv) < 0)
@@ -132,7 +132,7 @@ function scr_getinput2() {
 	    }
 	}	
 	
-	var _dvc = obj_inputAssigner.player_input_device[1]
+	var _dvc = 1 //obj_inputAssigner.player_input_device[1]
     gamepad_set_axis_deadzone(_dvc, 0.4)
 
     key_up = (keyboard_check(global.key_upN) || gamepad_button_check(_dvc, global.key_upCN) || gamepad_axis_value(_dvc, gp_axislv) < 0)

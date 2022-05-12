@@ -21,4 +21,6 @@ global.fakepeppino = 0
 global.peppermode = 0
 global.savefile = "a"
 
-//gml_pragma("PNGCrush")
+gml_pragma("PNGCrush")
+
+show_debug_overlay(1)

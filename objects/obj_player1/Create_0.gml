@@ -153,7 +153,7 @@ taunttimer = 20
 global.golfhit = 0
 ini_open("saveData.ini")
 global.option_fullscreen = ini_read_real("Option", "fullscreen", 1)
-global.option_resolution = ini_read_real("Option", "resolution", 1)
+global.option_resolution = 0//ini_read_real("Option", "resolution", 1)
 ini_close()
 if (global.option_fullscreen == 0)
     window_set_fullscreen(true)

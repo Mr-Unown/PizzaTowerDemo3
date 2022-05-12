@@ -4107,8 +4107,8 @@
     ],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"room_initializer","path":"rooms/room_initializer/room_initializer.yy",},},
     {"roomId":{"name":"load","path":"rooms/load/load.yy",},},
+    {"roomId":{"name":"room_initializer","path":"rooms/room_initializer/room_initializer.yy",},},
     {"roomId":{"name":"New_Realtitlescreen","path":"rooms/New_Realtitlescreen/New_Realtitlescreen.yy",},},
     {"roomId":{"name":"Realtitlescreen","path":"rooms/Realtitlescreen/Realtitlescreen.yy",},},
     {"roomId":{"name":"characterselect","path":"rooms/characterselect/characterselect.yy",},},
@@ -4762,7 +4762,7 @@
     {"targets":-1,"resourceVersion":"1.3","name":"tempaudiogroup","resourceType":"GMAudioGroup",},
   ],
   "TextureGroups": [
-    {"isScaled":true,"compressFormat":"qoi","autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,"resourceVersion":"1.3","name":"Default","resourceType":"GMTextureGroup",},
+    {"isScaled":true,"compressFormat":"png","autocrop":true,"border":8,"mipsToGenerate":-1,"groupParent":null,"targets":-1,"resourceVersion":"1.3","name":"Default","resourceType":"GMTextureGroup",},
   ],
   "IncludedFiles": [],
   "MetaData": {

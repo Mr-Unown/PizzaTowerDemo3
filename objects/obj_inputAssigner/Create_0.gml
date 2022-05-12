@@ -1,5 +1,5 @@
-player_input_device[0] = -2
-player_input_device[1] = -2
+player_input_device[0] = 0
+player_input_device[1] = 1
 device_selected[0] = 0
 device_selected[1] = 0
 press_start = 0
