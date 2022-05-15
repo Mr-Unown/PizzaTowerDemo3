@@ -133,7 +133,7 @@ if (distance_to_object(player) < 50)
 		            alarm[0] = 2
 			break;				
 			case "desert": 
-		            _message = "OREGANO MIRAGE"
+		            _message = "OREGANO BADLANDS"
 		            showtext = 1
 		            alarm[0] = 2
 			break;	
@@ -164,6 +164,11 @@ if (distance_to_object(player) < 50)
 			break;
 			case "freezer": 
 		            _message = "FREEZER"
+		            showtext = 1
+		            alarm[0] = 2
+			break;
+			case "carnival": 
+		            _message = "TOMATOPASTE CARNIVAL"
 		            showtext = 1
 		            alarm[0] = 2
 			break;

@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_pizzaface",
-  "duration": 2.779694,
+  "duration": 2.774694,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

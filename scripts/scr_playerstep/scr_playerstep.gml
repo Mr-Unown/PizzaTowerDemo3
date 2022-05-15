@@ -119,7 +119,9 @@
 		mort = 134,
 		indiancheese = 135,
 		pummel = 136,
-		kungfu = 137
+		kungfu = 137,
+		cannonprep = 138,
+		cannonshoot = 139
 
 	} 
 	//I made some changes to it so that we can know at a glance what number it gets converted to.
@@ -219,6 +221,12 @@ if actor = false
 	    case 114:
 	        scr_player_parry()
 	        break
+		case states.cannonprep:
+	        scr_player_cannonprep()
+			break
+		case states.cannonshoot:
+	        scr_player_cannonshoot()
+			break
 	    case 3:
 	        scr_player_finishingblow()
 	        break
@@ -625,7 +633,7 @@ else if actor = true
 #endregion	
 
 	//Speedboost
-	if grounded && (state != states.mach2 && state != states.frozen && state != states.backbreaker && state != states.trick && state != states.mach3 && state != states.jetpack && state != states.machroll)
+	if grounded && (state != states.mach2 && state != states.frozen && state != states.backbreaker && state != states.trick && state != states.cannonshoot  && state != states.mach3 && state != states.jetpack && state != states.machroll)
 		maxmachspeed = approach(maxmachspeed,24,1)
 		
 	//Firetrail
@@ -633,7 +641,7 @@ else if actor = true
 	firetrailbuffer -= movespeed/24 * 26
 	if firetrailbuffer <= 0
 	{
-		if movespeed >= 12 && (state == states.mach2 || state == states.mach3 || state == states.jetpack || state == states.trick || state == states.machroll)
+		if movespeed >= 12 && (state == states.mach2 || state == states.mach3 || state == states.jetpack || state == states.trick || state == states.cannonshoot || state == states.machroll)
 		{
 			with (instance_create(x, y, obj_superdashcloud))
 			{
