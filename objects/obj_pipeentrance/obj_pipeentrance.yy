@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_tntblock",
-    "path": "sprites/spr_tntblock/spr_tntblock.yy",
+    "name": "spr_pipeentrance",
+    "path": "sprites/spr_pipeentrance/spr_pipeentrance.yy",
   },
   "solid": false,
   "visible": true,

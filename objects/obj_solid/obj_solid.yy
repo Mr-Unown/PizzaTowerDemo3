@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_solid",
-    "path": "sprites/spr_solid/spr_solid.yy",
+    "name": "spr_newsolid",
+    "path": "sprites/spr_newsolid/spr_newsolid.yy",
   },
   "solid": false,
   "visible": false,

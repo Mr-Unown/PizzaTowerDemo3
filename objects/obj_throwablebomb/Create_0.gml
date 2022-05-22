@@ -1,0 +1,14 @@
+hsp = 0
+vsp = 0
+grav = 0.5
+grounded = 1
+sprite_index = spr_throwablebomb
+image_speed = 0.35
+depth = -1
+thrown = 0
+grabbed = 0
+playerid = obj_player1
+hp = 1
+heavy = 0
+state = 0
+alarm[4] = 300

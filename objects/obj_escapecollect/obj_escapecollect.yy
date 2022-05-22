@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_halloweencollectibles3",
-    "path": "sprites/spr_halloweencollectibles3/spr_halloweencollectibles3.yy",
+    "name": "spr_escapecollectNEW",
+    "path": "sprites/spr_escapecollectNEW/spr_escapecollectNEW.yy",
   },
   "solid": false,
   "visible": true,

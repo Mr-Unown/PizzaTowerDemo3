@@ -2,6 +2,7 @@ scr_enemycreate()
 grav = 0.5
 hsp = 0
 vsp = 0
+snotty = 0
 movespeed = 1
 state = 102
 stunned = 0

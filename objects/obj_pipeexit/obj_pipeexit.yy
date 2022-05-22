@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_targetblock",
-    "path": "sprites/spr_targetblock/spr_targetblock.yy",
+    "name": "spr_pipeexit",
+    "path": "sprites/spr_pipeexit/spr_pipeexit.yy",
   },
   "solid": false,
   "visible": true,

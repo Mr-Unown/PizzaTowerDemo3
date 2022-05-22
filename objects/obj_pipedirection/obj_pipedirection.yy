@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_bigsecretblock",
-    "path": "sprites/spr_bigsecretblock/spr_bigsecretblock.yy",
+    "name": "spr_pipedirection",
+    "path": "sprites/spr_pipedirection/spr_pipedirection.yy",
   },
   "solid": false,
   "visible": true,
