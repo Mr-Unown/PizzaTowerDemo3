@@ -171,7 +171,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_swedishmonkey_eat","path":"sprites/spr_swedishmonkey_eat/spr_swedishmonkey_eat.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

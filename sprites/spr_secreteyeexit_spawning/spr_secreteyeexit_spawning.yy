@@ -107,7 +107,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_secreteyeexit_spawning","path":"sprites/spr_secreteyeexit_spawning/spr_secreteyeexit_spawning.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_secreteyeexit_spawning",
     "tags": [],
     "resourceType": "GMSequence",

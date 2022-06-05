@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tile_pinball","path":"sprites/spr_tile_pinball/spr_tile_pinball.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_tile_pinball",
     "tags": [],
     "resourceType": "GMSequence",

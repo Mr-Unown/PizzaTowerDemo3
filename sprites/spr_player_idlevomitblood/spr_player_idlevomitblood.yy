@@ -263,7 +263,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_idlevomitblood","path":"sprites/spr_player_idlevomitblood/spr_player_idlevomitblood.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

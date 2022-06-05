@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"tile_entrance1light","path":"sprites/tile_entrance1light/tile_entrance1light.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "tile_entrance1light",
     "tags": [],
     "resourceType": "GMSequence",

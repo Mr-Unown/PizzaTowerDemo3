@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_pinball1_0_parallax4","path":"sprites/bg_pinball1_0_parallax4/bg_pinball1_0_parallax4.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_pinball1_0_parallax4",
     "tags": [],
     "resourceType": "GMSequence",

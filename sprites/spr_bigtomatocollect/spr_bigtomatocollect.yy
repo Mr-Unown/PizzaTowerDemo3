@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bigtomatocollect","path":"sprites/spr_bigtomatocollect/spr_bigtomatocollect.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_bigtomatocollect",
     "tags": [],
     "resourceType": "GMSequence",

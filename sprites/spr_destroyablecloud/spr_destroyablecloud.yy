@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_destroyablecloud","path":"sprites/spr_destroyablecloud/spr_destroyablecloud.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_destroyablecloud",
     "tags": [],
     "resourceType": "GMSequence",

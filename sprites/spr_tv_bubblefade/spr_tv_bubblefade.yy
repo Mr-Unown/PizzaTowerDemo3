@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tv_bubblefade","path":"sprites/spr_tv_bubblefade/spr_tv_bubblefade.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_tv_bubblefade",
     "tags": [],
     "resourceType": "GMSequence",

@@ -115,7 +115,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_pineapplecollectNEW","path":"sprites/spr_pineapplecollectNEW/spr_pineapplecollectNEW.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_pineapplecollectNEW",
     "tags": [],
     "resourceType": "GMSequence",

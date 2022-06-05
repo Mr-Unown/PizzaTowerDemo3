@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_rankbubble_bfilled","path":"sprites/spr_rankbubble_bfilled/spr_rankbubble_bfilled.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_rankbubble_bfilled",
     "tags": [],
     "resourceType": "GMSequence",

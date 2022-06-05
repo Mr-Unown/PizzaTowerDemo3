@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tv_boxxedN","path":"sprites/spr_tv_boxxedN/spr_tv_boxxedN.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_tv_boxxedN",
     "tags": [],
     "resourceType": "GMSequence",

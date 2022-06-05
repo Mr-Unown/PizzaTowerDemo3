@@ -127,7 +127,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerP_machslideboost","path":"sprites/spr_playerP_machslideboost/spr_playerP_machslideboost.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerP_machslideboost",
     "tags": [],
     "resourceType": "GMSequence",

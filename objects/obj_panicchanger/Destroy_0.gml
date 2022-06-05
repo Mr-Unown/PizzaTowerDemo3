@@ -33,7 +33,9 @@ if (global.panic == 1 && layer_background_get_sprite(back_id) == bg_darkjohn)
 //Entrance bg Pizzas
 if (global.panic == 1 && layer_background_get_sprite(back_id2) == bg_entrance2)
     layer_background_sprite(back_id2, bg_entrance2escape)
-
+//Factory 
+if (global.panic == 1 && layer_background_get_sprite(back_id) == bg_factory1)
+    layer_background_sprite(back_id, bg_factory1escape)
 /*
 if (global.panic == 1 && (layer_background_get_sprite(back_id2) == 1208 || layer_background_get_sprite(back_id2) == 1211))
     layer_background_sprite(back_id2, 1467)

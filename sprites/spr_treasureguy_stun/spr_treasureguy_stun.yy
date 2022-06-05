@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_treasureguy_stun","path":"sprites/spr_treasureguy_stun/spr_treasureguy_stun.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_treasureguy_stun",
     "tags": [],
     "resourceType": "GMSequence",

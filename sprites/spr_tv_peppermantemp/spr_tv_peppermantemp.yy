@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tv_peppermantemp","path":"sprites/spr_tv_peppermantemp/spr_tv_peppermantemp.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_tv_peppermantemp",
     "tags": [],
     "resourceType": "GMSequence",

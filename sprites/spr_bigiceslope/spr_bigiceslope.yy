@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bigiceslope","path":"sprites/spr_bigiceslope/spr_bigiceslope.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_bigiceslope",
     "tags": [],
     "resourceType": "GMSequence",

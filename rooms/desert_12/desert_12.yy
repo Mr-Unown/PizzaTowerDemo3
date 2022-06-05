@@ -424,6 +424,8 @@
   },
   "resourceVersion": "1.0",
   "name": "desert_12",
-  "tags": [],
+  "tags": [
+    "ufo",
+  ],
   "resourceType": "GMRoom",
 }

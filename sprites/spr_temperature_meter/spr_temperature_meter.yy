@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_temperature_meter","path":"sprites/spr_temperature_meter/spr_temperature_meter.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_temperature_meter",
     "tags": [],
     "resourceType": "GMSequence",

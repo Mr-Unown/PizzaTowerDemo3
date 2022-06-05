@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"tile_newdesertcavern","path":"sprites/tile_newdesertcavern/tile_newdesertcavern.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "tile_newdesertcavern",
     "tags": [],
     "resourceType": "GMSequence",

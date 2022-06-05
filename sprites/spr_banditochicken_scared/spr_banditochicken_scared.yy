@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_banditochicken_scared","path":"sprites/spr_banditochicken_scared/spr_banditochicken_scared.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_banditochicken_scared",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_objectteleportal","path":"sprites/spr_objectteleportal/spr_objectteleportal.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_objectteleportal",
     "tags": [],
     "resourceType": "GMSequence",

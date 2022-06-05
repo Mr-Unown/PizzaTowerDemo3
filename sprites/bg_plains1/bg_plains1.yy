@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_plains1","path":"sprites/bg_plains1/bg_plains1.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_plains1",
     "tags": [],
     "resourceType": "GMSequence",

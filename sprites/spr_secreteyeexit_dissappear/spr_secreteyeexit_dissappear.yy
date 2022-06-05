@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_secreteyeexit_dissappear","path":"sprites/spr_secreteyeexit_dissappear/spr_secreteyeexit_dissappear.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_secreteyeexit_dissappear",
     "tags": [],
     "resourceType": "GMSequence",

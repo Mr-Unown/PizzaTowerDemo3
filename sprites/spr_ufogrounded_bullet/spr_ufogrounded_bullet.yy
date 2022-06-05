@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_ufogrounded_bullet","path":"sprites/spr_ufogrounded_bullet/spr_ufogrounded_bullet.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_ufogrounded_bullet",
     "tags": [],
     "resourceType": "GMSequence",

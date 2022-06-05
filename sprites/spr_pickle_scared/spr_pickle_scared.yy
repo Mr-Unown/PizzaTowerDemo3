@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_pickle_scared","path":"sprites/spr_pickle_scared/spr_pickle_scared.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_pickle_scared",
     "tags": [],
     "resourceType": "GMSequence",

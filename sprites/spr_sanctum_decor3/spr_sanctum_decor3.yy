@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_sanctum_decor3","path":"sprites/spr_sanctum_decor3/spr_sanctum_decor3.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_sanctum_decor3",
     "tags": [],
     "resourceType": "GMSequence",

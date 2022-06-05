@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 2,
-  "volume": 0.45,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 192,
   "sampleRate": 44100,
@@ -11,8 +11,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "mu_pizzelleescaperequiem",
-  "duration": 121.475906,
+  "soundFile": "mu_pizzelleescaperequiem.ogg",
+  "duration": 225.947647,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

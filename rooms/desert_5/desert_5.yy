@@ -465,6 +465,8 @@
   },
   "resourceVersion": "1.0",
   "name": "desert_5",
-  "tags": [],
+  "tags": [
+    "desert",
+  ],
   "resourceType": "GMRoom",
 }

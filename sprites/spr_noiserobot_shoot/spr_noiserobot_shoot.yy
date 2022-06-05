@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_noiserobot_shoot","path":"sprites/spr_noiserobot_shoot/spr_noiserobot_shoot.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_noiserobot_shoot",
     "tags": [],
     "resourceType": "GMSequence",

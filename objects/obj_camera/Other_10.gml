@@ -110,7 +110,7 @@ if global.freezeframe = false
 				targetzoom2 -= 18
 			else
 				targetzoom2 = 504*/
-			angle = random_range((-maxangle), maxangle)
+			//angle = random_range((-maxangle), maxangle)
 		}
 		#endregion
 		}

@@ -95,7 +95,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_font_combo2","path":"sprites/spr_font_combo2/spr_font_combo2.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_font_combo2",
     "tags": [],
     "resourceType": "GMSequence",

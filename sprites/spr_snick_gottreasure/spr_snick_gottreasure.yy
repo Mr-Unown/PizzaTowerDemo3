@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_snick_gottreasure","path":"sprites/spr_snick_gottreasure/spr_snick_gottreasure.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_snick_gottreasure",
     "tags": [],
     "resourceType": "GMSequence",

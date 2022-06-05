@@ -31,10 +31,19 @@ function scr_player_machslide() {
 	}
 	if (place_meeting((x + xscale), y, obj_solid) && (sprite_index == spr_machslide || sprite_index == spr_machslidestart))
 	{
-	    hsp = ((-xscale) * 2.5)
-	    vsp = -4
-	    state = 72
-	    image_index = 4
+	    sprite_index = spr_splat
+		image_index = 0
+		grav = 0
+	    movespeed = 0
+		hsp = 0
+		vsp = 0
+	    state = states.bump
+		if character = "PZ"
+		with instance_create(x,y,obj_debris)
+		{
+		sprite_index = spr_PZscooter
+		image_xscale = other.xscale
+		}
 	}
 
 	if (floor(image_index) == (image_number - 1) && sprite_index == spr_machslideboost && character != "S")

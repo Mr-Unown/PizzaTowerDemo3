@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tv_snickvictory","path":"sprites/spr_tv_snickvictory/spr_tv_snickvictory.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_tv_snickvictory",
     "tags": [],
     "resourceType": "GMSequence",

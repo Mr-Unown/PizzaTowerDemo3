@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_snickbigblock","path":"sprites/spr_snickbigblock/spr_snickbigblock.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_snickbigblock",
     "tags": [],
     "resourceType": "GMSequence",

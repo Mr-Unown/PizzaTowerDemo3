@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_pickle_stun","path":"sprites/spr_pickle_stun/spr_pickle_stun.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_pickle_stun",
     "tags": [],
     "resourceType": "GMSequence",

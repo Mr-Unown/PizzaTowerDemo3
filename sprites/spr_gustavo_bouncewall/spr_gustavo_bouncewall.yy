@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_gustavo_bouncewall","path":"sprites/spr_gustavo_bouncewall/spr_gustavo_bouncewall.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_gustavo_bouncewall",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"tile_sanctum_joniton","path":"sprites/tile_sanctum_joniton/tile_sanctum_joniton.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "tile_sanctum_joniton",
     "tags": [],
     "resourceType": "GMSequence",

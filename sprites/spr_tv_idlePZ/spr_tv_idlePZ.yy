@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tv_idlePZ","path":"sprites/spr_tv_idlePZ/spr_tv_idlePZ.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_tv_idlePZ",
     "tags": [],
     "resourceType": "GMSequence",

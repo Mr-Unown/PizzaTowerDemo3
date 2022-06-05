@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_rocket","path":"sprites/spr_player_rocket/spr_player_rocket.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_player_rocket",
     "tags": [],
     "resourceType": "GMSequence",

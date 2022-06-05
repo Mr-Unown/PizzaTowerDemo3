@@ -1,10 +1,27 @@
-/*bgalpha = 1
+bgalpha = 1
 bgalpha2 = 1
 bgalpha3 = 1
 bgalpha4 = 1
 player = 3
 player2 = 4
+cplayerx = x
+cplayer1x = x
+cplayer2x = x
 level = "none"
+drawtext = false
+selected = false;
+selection = 0;
+has_selectedoption = false;
+can_gotolevel = false;
+image_speed = 0
+image_index = 0
+
+//Pause Toppin Sprites
+toppin_sprs[0] = spr_pizzakinshroom_pause;
+toppin_sprs[1] = spr_pizzakincheese_pause;
+toppin_sprs[2] = spr_pizzakintomato_pause;
+toppin_sprs[3] = spr_pizzakinsausage_pause;
+toppin_sprs[4] = spr_pizzakinpineapple_pause;
 ini_open("playerData_"+global.savefile+".ini")
 global.deserthighscore = ini_read_string("Highscore", "desert", 0)
 global.deserttoppin1 = ini_read_string("Toppin", "desert1", 0)

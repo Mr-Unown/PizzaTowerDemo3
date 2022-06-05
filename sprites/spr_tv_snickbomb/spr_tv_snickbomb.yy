@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tv_snickbomb","path":"sprites/spr_tv_snickbomb/spr_tv_snickbomb.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_tv_snickbomb",
     "tags": [],
     "resourceType": "GMSequence",

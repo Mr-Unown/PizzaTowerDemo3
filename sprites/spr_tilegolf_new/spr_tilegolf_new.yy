@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tilegolf_new","path":"sprites/spr_tilegolf_new/spr_tilegolf_new.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_tilegolf_new",
     "tags": [],
     "resourceType": "GMSequence",

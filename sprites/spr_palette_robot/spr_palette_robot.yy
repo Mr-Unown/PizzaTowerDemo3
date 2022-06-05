@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_palette_robot","path":"sprites/spr_palette_robot/spr_palette_robot.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_palette_robot",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_barrelidleOLD","path":"sprites/spr_player_barrelidleOLD/spr_player_barrelidleOLD.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_player_barrelidleOLD",
     "tags": [],
     "resourceType": "GMSequence",

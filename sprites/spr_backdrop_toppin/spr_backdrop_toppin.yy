@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_backdrop_toppin","path":"sprites/spr_backdrop_toppin/spr_backdrop_toppin.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_backdrop_toppin",
     "tags": [],
     "resourceType": "GMSequence",

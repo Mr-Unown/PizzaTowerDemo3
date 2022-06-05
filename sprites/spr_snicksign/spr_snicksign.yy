@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_snicksign","path":"sprites/spr_snicksign/spr_snicksign.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_snicksign",
     "tags": [],
     "resourceType": "GMSequence",

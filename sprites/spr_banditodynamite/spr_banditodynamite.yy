@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_banditodynamite","path":"sprites/spr_banditodynamite/spr_banditodynamite.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_banditodynamite",
     "tags": [],
     "resourceType": "GMSequence",

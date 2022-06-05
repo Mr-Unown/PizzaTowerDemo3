@@ -1,2 +1,2 @@
-level = "resto"
-targetRoom = resto_1
+level = "freezer"
+targetRoom = oldfreezer_1

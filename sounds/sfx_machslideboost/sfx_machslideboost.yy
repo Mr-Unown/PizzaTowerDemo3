@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_machslideboost",
-  "duration": 1.414161,
+  "duration": 1.409161,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

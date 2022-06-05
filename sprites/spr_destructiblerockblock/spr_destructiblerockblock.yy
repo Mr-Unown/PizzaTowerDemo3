@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_destructiblerockblock","path":"sprites/spr_destructiblerockblock/spr_destructiblerockblock.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_destructiblerockblock",
     "tags": [],
     "resourceType": "GMSequence",

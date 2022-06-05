@@ -247,7 +247,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_sanctumocean1","path":"sprites/bg_sanctumocean1/bg_sanctumocean1.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_sanctumocean1",
     "tags": [],
     "resourceType": "GMSequence",

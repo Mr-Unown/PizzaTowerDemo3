@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_beachcurrent","path":"sprites/spr_beachcurrent/spr_beachcurrent.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_beachcurrent",
     "tags": [],
     "resourceType": "GMSequence",

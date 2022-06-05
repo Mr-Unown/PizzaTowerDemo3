@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tv_frame","path":"sprites/spr_tv_frame/spr_tv_frame.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_tv_frame",
     "tags": [],
     "resourceType": "GMSequence",

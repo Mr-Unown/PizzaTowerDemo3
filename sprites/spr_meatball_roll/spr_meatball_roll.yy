@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_meatball_roll","path":"sprites/spr_meatball_roll/spr_meatball_roll.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_meatball_roll",
     "tags": [],
     "resourceType": "GMSequence",

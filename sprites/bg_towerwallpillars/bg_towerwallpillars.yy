@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_towerwallpillars","path":"sprites/bg_towerwallpillars/bg_towerwallpillars.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_towerwallpillars",
     "tags": [],
     "resourceType": "GMSequence",

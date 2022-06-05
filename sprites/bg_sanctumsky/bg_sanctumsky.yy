@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_sanctumsky","path":"sprites/bg_sanctumsky/bg_sanctumsky.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_sanctumsky",
     "tags": [],
     "resourceType": "GMSequence",

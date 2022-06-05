@@ -7,6 +7,7 @@ function scr_player_finishingblow() {
 	    state = 0
 	if (floor(image_index) >= 6 && (!instance_exists(swordhitboxid))) && onceonly = false
 	{
+		GamepadSetVibration((object_index == obj_player1 ? 0 : 1), 1, 1, 1)
 	    scr_soundeffect(sfx_punch)
 	    scr_soundeffect(sfx_killingblow)
 	    with (instance_create(x, y, obj_swordhitbox))
@@ -17,14 +18,16 @@ function scr_player_finishingblow() {
 		onceonly = true;
 		movespeed = 7;
 	}
-	/*
+	
 	if (floor(image_index) == (image_number - 4))
 	{
 	    with (obj_camera)
 	        zoom = 0
-	}*/
+	}
+
 	if (sprite_index == spr_swingdingend && floor(image_index) >= 0 && (!instance_exists(swordhitboxid))) && onceonly = false
 	{
+		GamepadSetVibration(0, 0.8, 0.8, 0.65)
 	    scr_soundeffect(sfx_killingblow)
 	    with (instance_create(x, y, obj_swordhitbox))
 		{
@@ -45,7 +48,10 @@ function scr_player_finishingblow() {
 	        sprite_index = spr_uppercutfinishingblow
 	    image_index = 0
 	}
+	if character != "GB"
 	image_speed = 0.5
+	else
+	image_speed = .35
 	landAnim = 0
 
 

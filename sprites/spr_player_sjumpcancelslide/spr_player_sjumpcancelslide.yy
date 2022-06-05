@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_sjumpcancelslide","path":"sprites/spr_player_sjumpcancelslide/spr_player_sjumpcancelslide.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_player_sjumpcancelslide",
     "tags": [],
     "resourceType": "GMSequence",

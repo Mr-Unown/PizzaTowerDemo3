@@ -6,6 +6,7 @@ global.verticalh = 0
 global.hx = 0
 global.hy = 0
 global.desertnight = 0
+global.kungfulevel = 0
 global.lapping = 0
 global.laptouched = 0
 global.lap = 0

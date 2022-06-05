@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tv_golf","path":"sprites/spr_tv_golf/spr_tv_golf.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_tv_golf",
     "tags": [],
     "resourceType": "GMSequence",

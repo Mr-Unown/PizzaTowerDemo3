@@ -131,7 +131,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_ufogrounded_shoot","path":"sprites/spr_ufogrounded_shoot/spr_ufogrounded_shoot.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_ufogrounded_shoot",
     "tags": [],
     "resourceType": "GMSequence",

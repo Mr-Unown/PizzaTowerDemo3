@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_mainmenu2","path":"sprites/bg_mainmenu2/bg_mainmenu2.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_mainmenu2",
     "tags": [],
     "resourceType": "GMSequence",

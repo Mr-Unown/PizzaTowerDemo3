@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_robot_mach","path":"sprites/spr_robot_mach/spr_robot_mach.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_robot_mach",
     "tags": [],
     "resourceType": "GMSequence",

@@ -107,7 +107,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_slamcloud","path":"sprites/spr_slamcloud/spr_slamcloud.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_slamcloud",
     "tags": [],
     "resourceType": "GMSequence",

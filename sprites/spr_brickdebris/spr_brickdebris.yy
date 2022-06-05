@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_brickdebris","path":"sprites/spr_brickdebris/spr_brickdebris.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_brickdebris",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_crouchmask","path":"sprites/spr_crouchmask/spr_crouchmask.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_crouchmask",
     "tags": [],
     "resourceType": "GMSequence",

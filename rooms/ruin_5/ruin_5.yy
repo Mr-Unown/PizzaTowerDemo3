@@ -361,6 +361,8 @@
   },
   "resourceVersion": "1.0",
   "name": "ruin_5",
-  "tags": [],
+  "tags": [
+    "ruin",
+  ],
   "resourceType": "GMRoom",
 }

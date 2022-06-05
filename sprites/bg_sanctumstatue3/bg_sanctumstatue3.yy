@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_sanctumstatue3","path":"sprites/bg_sanctumstatue3/bg_sanctumstatue3.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_sanctumstatue3",
     "tags": [],
     "resourceType": "GMSequence",

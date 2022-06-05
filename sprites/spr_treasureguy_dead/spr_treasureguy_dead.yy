@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_treasureguy_dead","path":"sprites/spr_treasureguy_dead/spr_treasureguy_dead.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_treasureguy_dead",
     "tags": [],
     "resourceType": "GMSequence",

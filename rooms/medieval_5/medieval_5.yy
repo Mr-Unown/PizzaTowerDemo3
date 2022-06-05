@@ -279,6 +279,8 @@
   },
   "resourceVersion": "1.0",
   "name": "medieval_5",
-  "tags": [],
+  "tags": [
+    "medievalremix",
+  ],
   "resourceType": "GMRoom",
 }

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_queen_talisman","path":"sprites/spr_queen_talisman/spr_queen_talisman.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_queen_talisman",
     "tags": [],
     "resourceType": "GMSequence",

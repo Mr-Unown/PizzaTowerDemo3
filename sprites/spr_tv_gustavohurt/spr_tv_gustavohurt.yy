@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tv_gustavohurt","path":"sprites/spr_tv_gustavohurt/spr_tv_gustavohurt.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_tv_gustavohurt",
     "tags": [],
     "resourceType": "GMSequence",

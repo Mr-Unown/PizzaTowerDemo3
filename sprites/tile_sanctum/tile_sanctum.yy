@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"tile_sanctum","path":"sprites/tile_sanctum/tile_sanctum.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "tile_sanctum",
     "tags": [],
     "resourceType": "GMSequence",

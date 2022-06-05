@@ -151,7 +151,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bigescapecollect","path":"sprites/spr_bigescapecollect/spr_bigescapecollect.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_bigescapecollect",
     "tags": [],
     "resourceType": "GMSequence",

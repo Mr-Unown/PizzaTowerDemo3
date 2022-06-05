@@ -1,4 +1,4 @@
-if (golf == 0)
+if (golf == 0) && obj_player1.state != states.forknight && obj_player1.state != states.indiancheese
 {
     if (!instance_exists(baddieid))
         refresh--

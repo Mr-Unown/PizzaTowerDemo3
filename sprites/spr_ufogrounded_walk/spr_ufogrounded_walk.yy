@@ -91,7 +91,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_ufogrounded_walk","path":"sprites/spr_ufogrounded_walk/spr_ufogrounded_walk.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_ufogrounded_walk",
     "tags": [],
     "resourceType": "GMSequence",

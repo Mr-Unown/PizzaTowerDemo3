@@ -715,7 +715,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tv_vigianim1","path":"sprites/spr_tv_vigianim1/spr_tv_vigianim1.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_tv_vigianim1",
     "tags": [],
     "resourceType": "GMSequence",

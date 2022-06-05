@@ -1,7 +1,7 @@
 //Default Parallax
 function scr_default_parallax(overwrite = false)
 {
-bg = undefined;	
+bg = undefined;
 #region Backgrounds_1
 bg = function()
 {
@@ -164,6 +164,17 @@ bg = function()
 }
 add_parallax_function("Backgrounds_scroll", bg, overwrite);
 #endregion
+#region Backgrounds_sky1
+bg = function()
+{
+	var _camera = camera_get_position_struct(view_camera[0]);
+	var array = noone;
+	array[0] = (_camera.centeredcam_x * 0.25);
+	array[1] = (_camera.centeredcam_y * 0.25);
+	return array;
+}
+add_parallax_function("Backgrounds_sky1", bg, overwrite);
+#endregion
 #region Backgrounds_sky //(sky2)
 bg = function()
 {
@@ -305,6 +316,6 @@ bg = function()
 	return array;
 }
 add_parallax_function("Backgrounds_far3", bg, overwrite);
-#endregion
-bg = undefined;	
+#endregion	
+bg = undefined;
 }

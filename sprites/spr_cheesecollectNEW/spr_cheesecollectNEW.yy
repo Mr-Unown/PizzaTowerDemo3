@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_cheesecollectNEW","path":"sprites/spr_cheesecollectNEW/spr_cheesecollectNEW.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_cheesecollectNEW",
     "tags": [],
     "resourceType": "GMSequence",

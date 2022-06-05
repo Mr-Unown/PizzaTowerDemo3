@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_watersplashsmall","path":"sprites/spr_watersplashsmall/spr_watersplashsmall.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_watersplashsmall",
     "tags": [],
     "resourceType": "GMSequence",

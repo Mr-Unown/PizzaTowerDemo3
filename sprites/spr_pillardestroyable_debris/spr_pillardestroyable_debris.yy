@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_pillardestroyable_debris","path":"sprites/spr_pillardestroyable_debris/spr_pillardestroyable_debris.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_pillardestroyable_debris",
     "tags": [],
     "resourceType": "GMSequence",

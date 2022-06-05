@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_respawnmetalblock","path":"sprites/spr_respawnmetalblock/spr_respawnmetalblock.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_respawnmetalblock",
     "tags": [],
     "resourceType": "GMSequence",

@@ -111,7 +111,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_treasureguy_popout","path":"sprites/spr_treasureguy_popout/spr_treasureguy_popout.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_treasureguy_popout",
     "tags": [],
     "resourceType": "GMSequence",

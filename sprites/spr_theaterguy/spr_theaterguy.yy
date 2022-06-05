@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_theaterguy","path":"sprites/spr_theaterguy/spr_theaterguy.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_theaterguy",
     "tags": [],
     "resourceType": "GMSequence",

@@ -115,7 +115,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_ufogrounded_land","path":"sprites/spr_ufogrounded_land/spr_ufogrounded_land.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_ufogrounded_land",
     "tags": [],
     "resourceType": "GMSequence",

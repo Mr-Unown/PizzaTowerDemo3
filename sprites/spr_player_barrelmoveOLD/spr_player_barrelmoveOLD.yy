@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_barrelmoveOLD","path":"sprites/spr_player_barrelmoveOLD/spr_player_barrelmoveOLD.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_player_barrelmoveOLD",
     "tags": [],
     "resourceType": "GMSequence",

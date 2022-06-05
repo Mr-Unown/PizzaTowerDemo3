@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_city1front","path":"sprites/bg_city1front/bg_city1front.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_city1front",
     "tags": [],
     "resourceType": "GMSequence",

@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_ratbounce.wav",
-  "duration": 1.000544,
+  "duration": 0.68,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

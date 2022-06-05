@@ -95,7 +95,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_banditochicken_wake","path":"sprites/spr_banditochicken_wake/spr_banditochicken_wake.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_banditochicken_wake",
     "tags": [],
     "resourceType": "GMSequence",

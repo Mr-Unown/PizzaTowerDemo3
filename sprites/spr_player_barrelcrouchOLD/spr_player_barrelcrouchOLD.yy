@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_barrelcrouchOLD","path":"sprites/spr_player_barrelcrouchOLD/spr_player_barrelcrouchOLD.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_player_barrelcrouchOLD",
     "tags": [],
     "resourceType": "GMSequence",
