@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "mu_mansion",
-  "duration": 118.702141,
+  "duration": 118.69714,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

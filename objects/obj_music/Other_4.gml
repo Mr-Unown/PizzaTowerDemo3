@@ -361,32 +361,32 @@ if (global.panic == 0 && global.snickchallenge == 0)
         {
             if (roomname == ("medieval_" + string(i)) && i <= 2)
             {
-                if (!audio_is_playing(mu_medievalentrance))
+                if (!audio_is_playing(mu_mansion))
                 {
                     scr_soundstopall()
-                    scr_sound(mu_medievalentrance)
+                    scr_sound(mu_mansion)
                     audio_sound_set_track_position(global.music, fadeoff)
-                    pausedmusic = mu_medievalentrance
+                    pausedmusic = mu_mansion
                 }
             }
             else if (roomname == ("medieval_" + string(i)) && i > 2 && i <= 5) || room == medieval_3_1
             {
-                if (!audio_is_playing(mu_medievalremix))
+                if (!audio_is_playing(mu_mansion))
                 {
                     scr_soundstopall()
-                    scr_sound(mu_medievalremix)
+                    scr_sound(mu_mansion)
                     audio_sound_set_track_position(global.music, fadeoff)
-                    pausedmusic = mu_medievalremix
+                    pausedmusic = mu_mansion
                 }
             }
             else if (roomname == ("medieval_" + string(i)) && i > 5)
             {
-                if (!audio_is_playing(mu_medieval))
+                if (!audio_is_playing(mu_mansion))
                 {
                     scr_soundstopall()
-                    scr_sound(mu_medieval)
+                    scr_sound(mu_mansion)
                     audio_sound_set_track_position(global.music, fadeoff)
-                    pausedmusic = mu_medieval
+                    pausedmusic = mu_mansion
                 }
             }
         }
