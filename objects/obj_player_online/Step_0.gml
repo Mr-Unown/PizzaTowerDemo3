@@ -42,4 +42,9 @@ if character != old_character
 	}
 #endregion
 }
-xscale = sign(image_xscale);
+
+if instance_exists(obj_gms)
+{
+	xscale = gms_other_get(player_id,"xscale")
+	pal = gms_other_get(player_id,"pal")
+}

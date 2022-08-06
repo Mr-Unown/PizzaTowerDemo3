@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_smallvictory",
-  "duration": 4.445612,
+  "duration": 4.440612,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

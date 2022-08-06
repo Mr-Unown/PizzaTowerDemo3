@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_tumble4",
-  "duration": 0.972982,
+  "duration": 0.967982,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

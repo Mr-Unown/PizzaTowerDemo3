@@ -14,6 +14,7 @@ spr_taunt = spr_player_taunt;
 //New Palette
 surf_width = 2
 surf_height = 10
+pal = 0
 for (var i = 0; i < colorheight; ++i) 
 {
 	color[i] = 0;

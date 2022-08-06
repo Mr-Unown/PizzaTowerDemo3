@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_superjumphold",
-  "duration": 1.386202,
+  "duration": 1.381202,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

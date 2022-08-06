@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_spin",
-  "duration": 0.406791,
+  "duration": 0.401791,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

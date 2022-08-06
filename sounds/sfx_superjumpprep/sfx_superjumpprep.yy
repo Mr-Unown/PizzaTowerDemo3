@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_superjumpprep",
-  "duration": 0.462166,
+  "duration": 0.457166,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

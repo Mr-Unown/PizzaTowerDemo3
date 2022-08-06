@@ -367,4 +367,8 @@ if (global.magic > 200)
 if (global.magic < 0)
     global.magic = 0
 	
-	
+if instance_exists(obj_gms)
+{
+	gms_self_set("xscale",xscale)
+	gms_self_set("pal",paletteselect)
+}
