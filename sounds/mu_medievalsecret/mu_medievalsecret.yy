@@ -11,8 +11,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "mu_medievalsecret",
-  "duration": 71.5073,
+  "soundFile": "mu_medievalsecret.ogg",
+  "duration": 20.425533,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

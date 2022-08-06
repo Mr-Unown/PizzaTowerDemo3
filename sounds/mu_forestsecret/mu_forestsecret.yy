@@ -11,8 +11,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "mu_forestsecret",
-  "duration": 71.49131,
+  "soundFile": "mu_forestsecret.ogg",
+  "duration": 20.425533,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
