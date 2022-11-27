@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "bg_pinball1_0_parallax7",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 960,
   "height": 540,
   "textureGroupId": {
@@ -24,12 +28,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"14b14606-6411-4812-be36-db6296110e55","path":"sprites/bg_pinball1_0_parallax7/bg_pinball1_0_parallax7.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"14b14606-6411-4812-be36-db6296110e55","path":"sprites/bg_pinball1_0_parallax7/bg_pinball1_0_parallax7.yy",},"LayerId":{"name":"0226f2f3-7e5e-457a-a560-d1f5e78d3dcd","path":"sprites/bg_pinball1_0_parallax7/bg_pinball1_0_parallax7.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"bg_pinball1_0_parallax7","path":"sprites/bg_pinball1_0_parallax7/bg_pinball1_0_parallax7.yy",},"resourceVersion":"1.0","name":"14b14606-6411-4812-be36-db6296110e55","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"14b14606-6411-4812-be36-db6296110e55",},
   ],
   "sequence": {
-    "spriteId": {"name":"bg_pinball1_0_parallax7","path":"sprites/bg_pinball1_0_parallax7/bg_pinball1_0_parallax7.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "bg_pinball1_0_parallax7",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +44,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"f7e9ed5f-b087-4cc0-849b-59745eb780c1","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"14b14606-6411-4812-be36-db6296110e55","path":"sprites/bg_pinball1_0_parallax7/bg_pinball1_0_parallax7.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +62,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"bg_pinball1_0_parallax7","path":"sprites/bg_pinball1_0_parallax7/bg_pinball1_0_parallax7.yy",},
-    "resourceVersion": "1.4",
-    "name": "bg_pinball1_0_parallax7",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0226f2f3-7e5e-457a-a560-d1f5e78d3dcd","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0226f2f3-7e5e-457a-a560-d1f5e78d3dcd","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "pinball",
     "path": "folders/Sprites/Backgrounds/pinball.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "bg_pinball1_0_parallax7",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

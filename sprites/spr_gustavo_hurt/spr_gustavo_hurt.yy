@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_gustavo_hurt",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 144,
   "height": 120,
   "textureGroupId": {
@@ -24,18 +28,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"80d7d1b6-5330-454e-842e-f287c0474499","path":"sprites/spr_gustavo_hurt/spr_gustavo_hurt.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"80d7d1b6-5330-454e-842e-f287c0474499","path":"sprites/spr_gustavo_hurt/spr_gustavo_hurt.yy",},"LayerId":{"name":"e5d34488-1b92-43f5-b50d-188257261262","path":"sprites/spr_gustavo_hurt/spr_gustavo_hurt.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gustavo_hurt","path":"sprites/spr_gustavo_hurt/spr_gustavo_hurt.yy",},"resourceVersion":"1.0","name":"80d7d1b6-5330-454e-842e-f287c0474499","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"3bff9436-c362-4497-8db4-284e1b794f5f","path":"sprites/spr_gustavo_hurt/spr_gustavo_hurt.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3bff9436-c362-4497-8db4-284e1b794f5f","path":"sprites/spr_gustavo_hurt/spr_gustavo_hurt.yy",},"LayerId":{"name":"e5d34488-1b92-43f5-b50d-188257261262","path":"sprites/spr_gustavo_hurt/spr_gustavo_hurt.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gustavo_hurt","path":"sprites/spr_gustavo_hurt/spr_gustavo_hurt.yy",},"resourceVersion":"1.0","name":"3bff9436-c362-4497-8db4-284e1b794f5f","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"20435065-6d62-48be-af67-dd15fc46cf20","path":"sprites/spr_gustavo_hurt/spr_gustavo_hurt.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"20435065-6d62-48be-af67-dd15fc46cf20","path":"sprites/spr_gustavo_hurt/spr_gustavo_hurt.yy",},"LayerId":{"name":"e5d34488-1b92-43f5-b50d-188257261262","path":"sprites/spr_gustavo_hurt/spr_gustavo_hurt.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gustavo_hurt","path":"sprites/spr_gustavo_hurt/spr_gustavo_hurt.yy",},"resourceVersion":"1.0","name":"20435065-6d62-48be-af67-dd15fc46cf20","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"80d7d1b6-5330-454e-842e-f287c0474499",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3bff9436-c362-4497-8db4-284e1b794f5f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"20435065-6d62-48be-af67-dd15fc46cf20",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_gustavo_hurt","path":"sprites/spr_gustavo_hurt/spr_gustavo_hurt.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_gustavo_hurt",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -46,11 +46,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"0fe6d132-bd9b-4088-8d88-232780103dd9","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"80d7d1b6-5330-454e-842e-f287c0474499","path":"sprites/spr_gustavo_hurt/spr_gustavo_hurt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"ec803022-23c0-48c4-b269-1fe3a8f9e572","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3bff9436-c362-4497-8db4-284e1b794f5f","path":"sprites/spr_gustavo_hurt/spr_gustavo_hurt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"0248b5e3-bb09-49fb-ae2c-be36ad2f7ee1","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"20435065-6d62-48be-af67-dd15fc46cf20","path":"sprites/spr_gustavo_hurt/spr_gustavo_hurt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,22 +66,13 @@
     "yorigin": 60,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_gustavo_hurt","path":"sprites/spr_gustavo_hurt/spr_gustavo_hurt.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_gustavo_hurt",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e5d34488-1b92-43f5-b50d-188257261262","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e5d34488-1b92-43f5-b50d-188257261262","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Gustavo And Brick",
     "path": "folders/Sprites/Characters/Playable Characters Sprites/Gustavo And Brick.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_gustavo_hurt",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_gamepadbuttons",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 64,
   "height": 64,
   "textureGroupId": {
@@ -24,75 +28,33 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"e5a95edb-8131-4496-95af-68971db4bc3b","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e5a95edb-8131-4496-95af-68971db4bc3b","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"e5a95edb-8131-4496-95af-68971db4bc3b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"141d78d6-9fe6-4369-8f56-19655ff26435","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"141d78d6-9fe6-4369-8f56-19655ff26435","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"141d78d6-9fe6-4369-8f56-19655ff26435","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"1ef10242-75e0-4c2e-bd46-8c2d48375794","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1ef10242-75e0-4c2e-bd46-8c2d48375794","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"1ef10242-75e0-4c2e-bd46-8c2d48375794","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c365a3d8-96ad-4d24-aefd-f76bd4cce01f","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c365a3d8-96ad-4d24-aefd-f76bd4cce01f","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"c365a3d8-96ad-4d24-aefd-f76bd4cce01f","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"b522d7cc-3a3e-44a1-b714-0059cc7d9b68","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b522d7cc-3a3e-44a1-b714-0059cc7d9b68","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"b522d7cc-3a3e-44a1-b714-0059cc7d9b68","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"2807eef7-3aa0-43e5-83d0-ec67ecc785ee","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2807eef7-3aa0-43e5-83d0-ec67ecc785ee","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"2807eef7-3aa0-43e5-83d0-ec67ecc785ee","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"3035165e-c7bd-441b-8cbd-25a1d48eae22","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3035165e-c7bd-441b-8cbd-25a1d48eae22","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"3035165e-c7bd-441b-8cbd-25a1d48eae22","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"58e2595b-5479-4fc6-929b-a3726ea77738","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"58e2595b-5479-4fc6-929b-a3726ea77738","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"58e2595b-5479-4fc6-929b-a3726ea77738","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"94bfc269-73ac-4d15-ae2a-bbe4f52ce095","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"94bfc269-73ac-4d15-ae2a-bbe4f52ce095","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"94bfc269-73ac-4d15-ae2a-bbe4f52ce095","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"078461af-26cb-49c3-be22-8e398ebe138e","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"078461af-26cb-49c3-be22-8e398ebe138e","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"078461af-26cb-49c3-be22-8e398ebe138e","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"79505f5d-5d11-4061-b23e-bd2b412b1282","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"79505f5d-5d11-4061-b23e-bd2b412b1282","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"79505f5d-5d11-4061-b23e-bd2b412b1282","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"1346ec35-f3e6-44ef-9e28-a6077fcfeb97","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1346ec35-f3e6-44ef-9e28-a6077fcfeb97","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"1346ec35-f3e6-44ef-9e28-a6077fcfeb97","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"eb40d77f-60c3-47cf-a342-6a1f059f7094","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"eb40d77f-60c3-47cf-a342-6a1f059f7094","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"eb40d77f-60c3-47cf-a342-6a1f059f7094","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"2b4cc22d-912f-4a53-b8d4-b880b47d5962","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2b4cc22d-912f-4a53-b8d4-b880b47d5962","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"2b4cc22d-912f-4a53-b8d4-b880b47d5962","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c7bf6f17-2ff6-4368-bd46-17d4e5a0a468","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c7bf6f17-2ff6-4368-bd46-17d4e5a0a468","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"c7bf6f17-2ff6-4368-bd46-17d4e5a0a468","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"e1e9a356-cd3e-41bd-b051-d9a6557183c5","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e1e9a356-cd3e-41bd-b051-d9a6557183c5","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"e1e9a356-cd3e-41bd-b051-d9a6557183c5","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c21d7f7f-4210-4e3d-aff2-0966821fce57","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c21d7f7f-4210-4e3d-aff2-0966821fce57","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"c21d7f7f-4210-4e3d-aff2-0966821fce57","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"f7c6aeb1-7d9e-451f-876a-c2caa177000b","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f7c6aeb1-7d9e-451f-876a-c2caa177000b","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"f7c6aeb1-7d9e-451f-876a-c2caa177000b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c6c13f20-7b7e-4645-baab-fbcfb82d9d89","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c6c13f20-7b7e-4645-baab-fbcfb82d9d89","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"c6c13f20-7b7e-4645-baab-fbcfb82d9d89","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ff9851a9-465a-4b60-96b2-43e8b51b6a47","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ff9851a9-465a-4b60-96b2-43e8b51b6a47","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"ff9851a9-465a-4b60-96b2-43e8b51b6a47","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"8e15f939-20a0-4b8a-9ca9-e8c4b9593858","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8e15f939-20a0-4b8a-9ca9-e8c4b9593858","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"8e15f939-20a0-4b8a-9ca9-e8c4b9593858","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"afd299d7-3731-4e0b-9317-8e7d07fc6d69","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"afd299d7-3731-4e0b-9317-8e7d07fc6d69","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"LayerId":{"name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","name":"afd299d7-3731-4e0b-9317-8e7d07fc6d69","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e5a95edb-8131-4496-95af-68971db4bc3b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"141d78d6-9fe6-4369-8f56-19655ff26435",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1ef10242-75e0-4c2e-bd46-8c2d48375794",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c365a3d8-96ad-4d24-aefd-f76bd4cce01f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b522d7cc-3a3e-44a1-b714-0059cc7d9b68",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2807eef7-3aa0-43e5-83d0-ec67ecc785ee",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3035165e-c7bd-441b-8cbd-25a1d48eae22",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"58e2595b-5479-4fc6-929b-a3726ea77738",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"94bfc269-73ac-4d15-ae2a-bbe4f52ce095",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"078461af-26cb-49c3-be22-8e398ebe138e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"79505f5d-5d11-4061-b23e-bd2b412b1282",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1346ec35-f3e6-44ef-9e28-a6077fcfeb97",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"eb40d77f-60c3-47cf-a342-6a1f059f7094",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2b4cc22d-912f-4a53-b8d4-b880b47d5962",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c7bf6f17-2ff6-4368-bd46-17d4e5a0a468",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e1e9a356-cd3e-41bd-b051-d9a6557183c5",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c21d7f7f-4210-4e3d-aff2-0966821fce57",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f7c6aeb1-7d9e-451f-876a-c2caa177000b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c6c13f20-7b7e-4645-baab-fbcfb82d9d89",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ff9851a9-465a-4b60-96b2-43e8b51b6a47",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8e15f939-20a0-4b8a-9ca9-e8c4b9593858",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"afd299d7-3731-4e0b-9317-8e7d07fc6d69",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -103,7 +65,7 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"af4240e9-d2a9-4056-9d83-af19f480d4b0","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e5a95edb-8131-4496-95af-68971db4bc3b","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"da0cdd28-5433-401a-b6c1-b1ebb9260422","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"141d78d6-9fe6-4369-8f56-19655ff26435","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"4cbb90d3-2e3e-40da-a466-e431e714689c","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1ef10242-75e0-4c2e-bd46-8c2d48375794","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
@@ -126,7 +88,7 @@
             {"id":"4b278bbd-0b28-4898-a016-a59a0a3a87bf","Key":19.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ff9851a9-465a-4b60-96b2-43e8b51b6a47","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"b8ea7e14-fadc-408c-8785-fb12f2ba67b2","Key":20.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8e15f939-20a0-4b8a-9ca9-e8c4b9593858","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"5ae6e554-bcba-440d-853e-4d0affdfe629","Key":21.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"afd299d7-3731-4e0b-9317-8e7d07fc6d69","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -142,22 +104,13 @@
     "yorigin": 15,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_gamepadbuttons","path":"sprites/spr_gamepadbuttons/spr_gamepadbuttons.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9da74c28-ab2a-427e-ba89-81d07cfabcb9","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Objects",
     "path": "folders/Sprites/Objects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_gamepadbuttons",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

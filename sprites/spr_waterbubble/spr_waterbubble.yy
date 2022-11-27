@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_waterbubble",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 32,
   "height": 32,
   "textureGroupId": {
@@ -24,18 +28,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"3ae36ac4-dd44-437d-ab06-e0b3d684e2f7","path":"sprites/spr_waterbubble/spr_waterbubble.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3ae36ac4-dd44-437d-ab06-e0b3d684e2f7","path":"sprites/spr_waterbubble/spr_waterbubble.yy",},"LayerId":{"name":"f1970d96-ef1d-44f2-9da7-7175a053ac43","path":"sprites/spr_waterbubble/spr_waterbubble.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_waterbubble","path":"sprites/spr_waterbubble/spr_waterbubble.yy",},"resourceVersion":"1.0","name":"3ae36ac4-dd44-437d-ab06-e0b3d684e2f7","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"2bd23aea-5ae7-4b98-a039-d9df40f2d76c","path":"sprites/spr_waterbubble/spr_waterbubble.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2bd23aea-5ae7-4b98-a039-d9df40f2d76c","path":"sprites/spr_waterbubble/spr_waterbubble.yy",},"LayerId":{"name":"f1970d96-ef1d-44f2-9da7-7175a053ac43","path":"sprites/spr_waterbubble/spr_waterbubble.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_waterbubble","path":"sprites/spr_waterbubble/spr_waterbubble.yy",},"resourceVersion":"1.0","name":"2bd23aea-5ae7-4b98-a039-d9df40f2d76c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"2b9b55e1-b6a7-4eef-9c8e-27da4a305fd0","path":"sprites/spr_waterbubble/spr_waterbubble.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2b9b55e1-b6a7-4eef-9c8e-27da4a305fd0","path":"sprites/spr_waterbubble/spr_waterbubble.yy",},"LayerId":{"name":"f1970d96-ef1d-44f2-9da7-7175a053ac43","path":"sprites/spr_waterbubble/spr_waterbubble.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_waterbubble","path":"sprites/spr_waterbubble/spr_waterbubble.yy",},"resourceVersion":"1.0","name":"2b9b55e1-b6a7-4eef-9c8e-27da4a305fd0","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3ae36ac4-dd44-437d-ab06-e0b3d684e2f7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2bd23aea-5ae7-4b98-a039-d9df40f2d76c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2b9b55e1-b6a7-4eef-9c8e-27da4a305fd0",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_waterbubble","path":"sprites/spr_waterbubble/spr_waterbubble.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -46,11 +46,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"9e47cc98-c93f-4b0a-bd93-3576305212ba","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3ae36ac4-dd44-437d-ab06-e0b3d684e2f7","path":"sprites/spr_waterbubble/spr_waterbubble.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"f5187117-fa2a-49ce-939f-6ae2caa99aba","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2bd23aea-5ae7-4b98-a039-d9df40f2d76c","path":"sprites/spr_waterbubble/spr_waterbubble.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"9fa4f8c2-262c-49fc-993f-cc72a3b42a27","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2b9b55e1-b6a7-4eef-9c8e-27da4a305fd0","path":"sprites/spr_waterbubble/spr_waterbubble.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,22 +66,13 @@
     "yorigin": 16,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_waterbubble","path":"sprites/spr_waterbubble/spr_waterbubble.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f1970d96-ef1d-44f2-9da7-7175a053ac43","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"f1970d96-ef1d-44f2-9da7-7175a053ac43","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Particles and Effects",
     "path": "folders/Sprites/Misc Sprites/Particles and Effects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_waterbubble",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

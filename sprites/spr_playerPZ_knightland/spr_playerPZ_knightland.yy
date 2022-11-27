@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_playerPZ_knightland",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 126,
   "height": 100,
   "textureGroupId": {
@@ -24,24 +28,16 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"a619d649-51fd-4b9e-a7df-05ea1ac81796","path":"sprites/spr_playerPZ_knightland/spr_playerPZ_knightland.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a619d649-51fd-4b9e-a7df-05ea1ac81796","path":"sprites/spr_playerPZ_knightland/spr_playerPZ_knightland.yy",},"LayerId":{"name":"e37be1a2-1070-4d35-9ff1-99368fa3ec5f","path":"sprites/spr_playerPZ_knightland/spr_playerPZ_knightland.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerPZ_knightland","path":"sprites/spr_playerPZ_knightland/spr_playerPZ_knightland.yy",},"resourceVersion":"1.0","name":"a619d649-51fd-4b9e-a7df-05ea1ac81796","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"4b411449-706a-4267-ad18-2096b8ae38c5","path":"sprites/spr_playerPZ_knightland/spr_playerPZ_knightland.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4b411449-706a-4267-ad18-2096b8ae38c5","path":"sprites/spr_playerPZ_knightland/spr_playerPZ_knightland.yy",},"LayerId":{"name":"e37be1a2-1070-4d35-9ff1-99368fa3ec5f","path":"sprites/spr_playerPZ_knightland/spr_playerPZ_knightland.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerPZ_knightland","path":"sprites/spr_playerPZ_knightland/spr_playerPZ_knightland.yy",},"resourceVersion":"1.0","name":"4b411449-706a-4267-ad18-2096b8ae38c5","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"949ff375-0789-48a8-b2f3-230c9e693be9","path":"sprites/spr_playerPZ_knightland/spr_playerPZ_knightland.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"949ff375-0789-48a8-b2f3-230c9e693be9","path":"sprites/spr_playerPZ_knightland/spr_playerPZ_knightland.yy",},"LayerId":{"name":"e37be1a2-1070-4d35-9ff1-99368fa3ec5f","path":"sprites/spr_playerPZ_knightland/spr_playerPZ_knightland.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerPZ_knightland","path":"sprites/spr_playerPZ_knightland/spr_playerPZ_knightland.yy",},"resourceVersion":"1.0","name":"949ff375-0789-48a8-b2f3-230c9e693be9","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c9f43379-15b6-49ce-a879-0e8bedd1210c","path":"sprites/spr_playerPZ_knightland/spr_playerPZ_knightland.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c9f43379-15b6-49ce-a879-0e8bedd1210c","path":"sprites/spr_playerPZ_knightland/spr_playerPZ_knightland.yy",},"LayerId":{"name":"e37be1a2-1070-4d35-9ff1-99368fa3ec5f","path":"sprites/spr_playerPZ_knightland/spr_playerPZ_knightland.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerPZ_knightland","path":"sprites/spr_playerPZ_knightland/spr_playerPZ_knightland.yy",},"resourceVersion":"1.0","name":"c9f43379-15b6-49ce-a879-0e8bedd1210c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"11f6e23a-7653-41c0-88a2-2eb4a45062e8","path":"sprites/spr_playerPZ_knightland/spr_playerPZ_knightland.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"11f6e23a-7653-41c0-88a2-2eb4a45062e8","path":"sprites/spr_playerPZ_knightland/spr_playerPZ_knightland.yy",},"LayerId":{"name":"e37be1a2-1070-4d35-9ff1-99368fa3ec5f","path":"sprites/spr_playerPZ_knightland/spr_playerPZ_knightland.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerPZ_knightland","path":"sprites/spr_playerPZ_knightland/spr_playerPZ_knightland.yy",},"resourceVersion":"1.0","name":"11f6e23a-7653-41c0-88a2-2eb4a45062e8","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a619d649-51fd-4b9e-a7df-05ea1ac81796",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4b411449-706a-4267-ad18-2096b8ae38c5",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"949ff375-0789-48a8-b2f3-230c9e693be9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c9f43379-15b6-49ce-a879-0e8bedd1210c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"11f6e23a-7653-41c0-88a2-2eb4a45062e8",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_playerPZ_knightland","path":"sprites/spr_playerPZ_knightland/spr_playerPZ_knightland.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -52,13 +48,13 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"c982a943-8f86-4f2c-b8b0-27f23f165ab1","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a619d649-51fd-4b9e-a7df-05ea1ac81796","path":"sprites/spr_playerPZ_knightland/spr_playerPZ_knightland.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"58be7013-5dcc-44f7-9ecd-0c5fdd623f8d","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4b411449-706a-4267-ad18-2096b8ae38c5","path":"sprites/spr_playerPZ_knightland/spr_playerPZ_knightland.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"22288640-19fc-42f3-ac47-1966bb3a2d3c","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"949ff375-0789-48a8-b2f3-230c9e693be9","path":"sprites/spr_playerPZ_knightland/spr_playerPZ_knightland.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"ab2debda-2e5d-4851-a385-84ce9ee1bae0","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c9f43379-15b6-49ce-a879-0e8bedd1210c","path":"sprites/spr_playerPZ_knightland/spr_playerPZ_knightland.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"1fc697f1-c3db-481c-9865-cbb2ff5e5178","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"11f6e23a-7653-41c0-88a2-2eb4a45062e8","path":"sprites/spr_playerPZ_knightland/spr_playerPZ_knightland.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -74,22 +70,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_playerPZ_knightland","path":"sprites/spr_playerPZ_knightland/spr_playerPZ_knightland.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e37be1a2-1070-4d35-9ff1-99368fa3ec5f","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e37be1a2-1070-4d35-9ff1-99368fa3ec5f","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Pizzelle",
     "path": "folders/Sprites/Characters/Playable Characters Sprites/Pizzelle.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_playerPZ_knightland",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

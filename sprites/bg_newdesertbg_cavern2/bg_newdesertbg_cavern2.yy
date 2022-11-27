@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "bg_newdesertbg_cavern2",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 960,
   "height": 540,
   "textureGroupId": {
@@ -24,12 +28,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"b3f9ed41-0c6b-4edc-9e58-1a4d87ec0b40","path":"sprites/bg_newdesertbg_cavern2/bg_newdesertbg_cavern2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b3f9ed41-0c6b-4edc-9e58-1a4d87ec0b40","path":"sprites/bg_newdesertbg_cavern2/bg_newdesertbg_cavern2.yy",},"LayerId":{"name":"43395471-de39-4450-a789-dd85433c29df","path":"sprites/bg_newdesertbg_cavern2/bg_newdesertbg_cavern2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"bg_newdesertbg_cavern2","path":"sprites/bg_newdesertbg_cavern2/bg_newdesertbg_cavern2.yy",},"resourceVersion":"1.0","name":"b3f9ed41-0c6b-4edc-9e58-1a4d87ec0b40","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b3f9ed41-0c6b-4edc-9e58-1a4d87ec0b40",},
   ],
   "sequence": {
-    "spriteId": {"name":"bg_newdesertbg_cavern2","path":"sprites/bg_newdesertbg_cavern2/bg_newdesertbg_cavern2.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "bg_newdesertbg_cavern2",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +44,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"ee62bd1c-5ee0-41d6-8c85-5645608cc08d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b3f9ed41-0c6b-4edc-9e58-1a4d87ec0b40","path":"sprites/bg_newdesertbg_cavern2/bg_newdesertbg_cavern2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +62,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"bg_newdesertbg_cavern2","path":"sprites/bg_newdesertbg_cavern2/bg_newdesertbg_cavern2.yy",},
-    "resourceVersion": "1.4",
-    "name": "bg_newdesertbg_cavern2",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"43395471-de39-4450-a789-dd85433c29df","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"43395471-de39-4450-a789-dd85433c29df","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Desert",
     "path": "folders/Sprites/Backgrounds/Desert.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "bg_newdesertbg_cavern2",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_playerN_climbwall",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 100,
   "height": 100,
   "textureGroupId": {
@@ -24,18 +28,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"3e689e9d-691e-4385-8ceb-9cc6b86c0126","path":"sprites/spr_playerN_climbwall/spr_playerN_climbwall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3e689e9d-691e-4385-8ceb-9cc6b86c0126","path":"sprites/spr_playerN_climbwall/spr_playerN_climbwall.yy",},"LayerId":{"name":"bd758628-14ba-4ee4-a0de-06a769c7dcbf","path":"sprites/spr_playerN_climbwall/spr_playerN_climbwall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerN_climbwall","path":"sprites/spr_playerN_climbwall/spr_playerN_climbwall.yy",},"resourceVersion":"1.0","name":"3e689e9d-691e-4385-8ceb-9cc6b86c0126","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"6b8e3861-2371-4b1c-9403-b81cd406683d","path":"sprites/spr_playerN_climbwall/spr_playerN_climbwall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6b8e3861-2371-4b1c-9403-b81cd406683d","path":"sprites/spr_playerN_climbwall/spr_playerN_climbwall.yy",},"LayerId":{"name":"bd758628-14ba-4ee4-a0de-06a769c7dcbf","path":"sprites/spr_playerN_climbwall/spr_playerN_climbwall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerN_climbwall","path":"sprites/spr_playerN_climbwall/spr_playerN_climbwall.yy",},"resourceVersion":"1.0","name":"6b8e3861-2371-4b1c-9403-b81cd406683d","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"db840c60-6584-4950-a604-25a0c9cefca9","path":"sprites/spr_playerN_climbwall/spr_playerN_climbwall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"db840c60-6584-4950-a604-25a0c9cefca9","path":"sprites/spr_playerN_climbwall/spr_playerN_climbwall.yy",},"LayerId":{"name":"bd758628-14ba-4ee4-a0de-06a769c7dcbf","path":"sprites/spr_playerN_climbwall/spr_playerN_climbwall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerN_climbwall","path":"sprites/spr_playerN_climbwall/spr_playerN_climbwall.yy",},"resourceVersion":"1.0","name":"db840c60-6584-4950-a604-25a0c9cefca9","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3e689e9d-691e-4385-8ceb-9cc6b86c0126",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6b8e3861-2371-4b1c-9403-b81cd406683d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"db840c60-6584-4950-a604-25a0c9cefca9",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_playerN_climbwall","path":"sprites/spr_playerN_climbwall/spr_playerN_climbwall.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -46,11 +46,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"df43d5e8-e8eb-40d4-9d95-2c04d03c2f42","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3e689e9d-691e-4385-8ceb-9cc6b86c0126","path":"sprites/spr_playerN_climbwall/spr_playerN_climbwall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"8541bf83-2c0d-49b2-a6fa-38af82848cd2","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6b8e3861-2371-4b1c-9403-b81cd406683d","path":"sprites/spr_playerN_climbwall/spr_playerN_climbwall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"849d8154-fe44-42df-b0fa-8e1a4f49cc78","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"db840c60-6584-4950-a604-25a0c9cefca9","path":"sprites/spr_playerN_climbwall/spr_playerN_climbwall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,22 +66,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_playerN_climbwall","path":"sprites/spr_playerN_climbwall/spr_playerN_climbwall.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"bd758628-14ba-4ee4-a0de-06a769c7dcbf","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"bd758628-14ba-4ee4-a0de-06a769c7dcbf","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Noise",
     "path": "folders/Sprites/Characters/Playable Characters Sprites/Noise.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_playerN_climbwall",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_player_hurtfall",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 100,
   "height": 100,
   "textureGroupId": {
@@ -24,15 +28,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"afbd718d-fbe9-4916-8738-72b729ee2c2b","path":"sprites/spr_player_hurtfall/spr_player_hurtfall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"afbd718d-fbe9-4916-8738-72b729ee2c2b","path":"sprites/spr_player_hurtfall/spr_player_hurtfall.yy",},"LayerId":{"name":"a91a5e9c-f0c3-4999-853f-d91605379630","path":"sprites/spr_player_hurtfall/spr_player_hurtfall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_hurtfall","path":"sprites/spr_player_hurtfall/spr_player_hurtfall.yy",},"resourceVersion":"1.0","name":"afbd718d-fbe9-4916-8738-72b729ee2c2b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"574b615b-aef2-45a1-bf7e-8c13404e4117","path":"sprites/spr_player_hurtfall/spr_player_hurtfall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"574b615b-aef2-45a1-bf7e-8c13404e4117","path":"sprites/spr_player_hurtfall/spr_player_hurtfall.yy",},"LayerId":{"name":"a91a5e9c-f0c3-4999-853f-d91605379630","path":"sprites/spr_player_hurtfall/spr_player_hurtfall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_hurtfall","path":"sprites/spr_player_hurtfall/spr_player_hurtfall.yy",},"resourceVersion":"1.0","name":"574b615b-aef2-45a1-bf7e-8c13404e4117","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"afbd718d-fbe9-4916-8738-72b729ee2c2b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"574b615b-aef2-45a1-bf7e-8c13404e4117",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_player_hurtfall","path":"sprites/spr_player_hurtfall/spr_player_hurtfall.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_player_hurtfall",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -43,10 +45,10 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"508b6b67-a3c0-48b6-bab1-5f04c3431d24","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"afbd718d-fbe9-4916-8738-72b729ee2c2b","path":"sprites/spr_player_hurtfall/spr_player_hurtfall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"a1adb28f-b332-4de5-994d-535b5435a8d2","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"574b615b-aef2-45a1-bf7e-8c13404e4117","path":"sprites/spr_player_hurtfall/spr_player_hurtfall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +64,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_player_hurtfall","path":"sprites/spr_player_hurtfall/spr_player_hurtfall.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_player_hurtfall",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a91a5e9c-f0c3-4999-853f-d91605379630","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a91a5e9c-f0c3-4999-853f-d91605379630","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Peppino",
     "path": "folders/Sprites/Characters/Playable Characters Sprites/Peppino.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_player_hurtfall",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

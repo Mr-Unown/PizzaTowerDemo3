@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_pizzaball_wallbounce",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 100,
   "height": 100,
   "textureGroupId": {
@@ -24,15 +28,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"70980a6f-4aa9-479b-aafa-071759056ef2","path":"sprites/spr_pizzaball_wallbounce/spr_pizzaball_wallbounce.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"70980a6f-4aa9-479b-aafa-071759056ef2","path":"sprites/spr_pizzaball_wallbounce/spr_pizzaball_wallbounce.yy",},"LayerId":{"name":"6da90e3e-5307-44e8-beda-5bac346b9550","path":"sprites/spr_pizzaball_wallbounce/spr_pizzaball_wallbounce.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pizzaball_wallbounce","path":"sprites/spr_pizzaball_wallbounce/spr_pizzaball_wallbounce.yy",},"resourceVersion":"1.0","name":"70980a6f-4aa9-479b-aafa-071759056ef2","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"a8bca4aa-d397-42a6-b8cc-f445c2bb2dde","path":"sprites/spr_pizzaball_wallbounce/spr_pizzaball_wallbounce.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a8bca4aa-d397-42a6-b8cc-f445c2bb2dde","path":"sprites/spr_pizzaball_wallbounce/spr_pizzaball_wallbounce.yy",},"LayerId":{"name":"6da90e3e-5307-44e8-beda-5bac346b9550","path":"sprites/spr_pizzaball_wallbounce/spr_pizzaball_wallbounce.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pizzaball_wallbounce","path":"sprites/spr_pizzaball_wallbounce/spr_pizzaball_wallbounce.yy",},"resourceVersion":"1.0","name":"a8bca4aa-d397-42a6-b8cc-f445c2bb2dde","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"70980a6f-4aa9-479b-aafa-071759056ef2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a8bca4aa-d397-42a6-b8cc-f445c2bb2dde",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_pizzaball_wallbounce","path":"sprites/spr_pizzaball_wallbounce/spr_pizzaball_wallbounce.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_pizzaball_wallbounce",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -43,10 +45,10 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"7c945ecd-f209-4806-af0c-83ea03e836b0","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"70980a6f-4aa9-479b-aafa-071759056ef2","path":"sprites/spr_pizzaball_wallbounce/spr_pizzaball_wallbounce.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"18acd01e-28ab-4794-9c8c-c8c7adcf91cf","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a8bca4aa-d397-42a6-b8cc-f445c2bb2dde","path":"sprites/spr_pizzaball_wallbounce/spr_pizzaball_wallbounce.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +64,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_pizzaball_wallbounce","path":"sprites/spr_pizzaball_wallbounce/spr_pizzaball_wallbounce.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_pizzaball_wallbounce",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"6da90e3e-5307-44e8-beda-5bac346b9550","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6da90e3e-5307-44e8-beda-5bac346b9550","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Nerd",
     "path": "folders/Sprites/Characters/Misc/Nerd.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_pizzaball_wallbounce",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

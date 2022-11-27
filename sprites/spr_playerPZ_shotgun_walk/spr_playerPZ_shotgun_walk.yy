@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_playerPZ_shotgun_walk",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 100,
   "height": 100,
   "textureGroupId": {
@@ -24,30 +28,18 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"e72d3576-0fac-4463-86e1-18cd6aee2f93","path":"sprites/spr_playerPZ_shotgun_walk/spr_playerPZ_shotgun_walk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e72d3576-0fac-4463-86e1-18cd6aee2f93","path":"sprites/spr_playerPZ_shotgun_walk/spr_playerPZ_shotgun_walk.yy",},"LayerId":{"name":"4a949aaa-b645-40e2-9e04-ae754a7bffe7","path":"sprites/spr_playerPZ_shotgun_walk/spr_playerPZ_shotgun_walk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerPZ_shotgun_walk","path":"sprites/spr_playerPZ_shotgun_walk/spr_playerPZ_shotgun_walk.yy",},"resourceVersion":"1.0","name":"e72d3576-0fac-4463-86e1-18cd6aee2f93","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"8c2957aa-f913-4daa-8850-91a120fb0657","path":"sprites/spr_playerPZ_shotgun_walk/spr_playerPZ_shotgun_walk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8c2957aa-f913-4daa-8850-91a120fb0657","path":"sprites/spr_playerPZ_shotgun_walk/spr_playerPZ_shotgun_walk.yy",},"LayerId":{"name":"4a949aaa-b645-40e2-9e04-ae754a7bffe7","path":"sprites/spr_playerPZ_shotgun_walk/spr_playerPZ_shotgun_walk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerPZ_shotgun_walk","path":"sprites/spr_playerPZ_shotgun_walk/spr_playerPZ_shotgun_walk.yy",},"resourceVersion":"1.0","name":"8c2957aa-f913-4daa-8850-91a120fb0657","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"fc6d731e-8dfb-4a0c-97d2-b1fbc24dcd0c","path":"sprites/spr_playerPZ_shotgun_walk/spr_playerPZ_shotgun_walk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"fc6d731e-8dfb-4a0c-97d2-b1fbc24dcd0c","path":"sprites/spr_playerPZ_shotgun_walk/spr_playerPZ_shotgun_walk.yy",},"LayerId":{"name":"4a949aaa-b645-40e2-9e04-ae754a7bffe7","path":"sprites/spr_playerPZ_shotgun_walk/spr_playerPZ_shotgun_walk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerPZ_shotgun_walk","path":"sprites/spr_playerPZ_shotgun_walk/spr_playerPZ_shotgun_walk.yy",},"resourceVersion":"1.0","name":"fc6d731e-8dfb-4a0c-97d2-b1fbc24dcd0c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"9d97f375-e863-4aca-8681-a92666e0dccf","path":"sprites/spr_playerPZ_shotgun_walk/spr_playerPZ_shotgun_walk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"9d97f375-e863-4aca-8681-a92666e0dccf","path":"sprites/spr_playerPZ_shotgun_walk/spr_playerPZ_shotgun_walk.yy",},"LayerId":{"name":"4a949aaa-b645-40e2-9e04-ae754a7bffe7","path":"sprites/spr_playerPZ_shotgun_walk/spr_playerPZ_shotgun_walk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerPZ_shotgun_walk","path":"sprites/spr_playerPZ_shotgun_walk/spr_playerPZ_shotgun_walk.yy",},"resourceVersion":"1.0","name":"9d97f375-e863-4aca-8681-a92666e0dccf","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"8294f055-873d-47cc-95bf-c2b63abdd27d","path":"sprites/spr_playerPZ_shotgun_walk/spr_playerPZ_shotgun_walk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8294f055-873d-47cc-95bf-c2b63abdd27d","path":"sprites/spr_playerPZ_shotgun_walk/spr_playerPZ_shotgun_walk.yy",},"LayerId":{"name":"4a949aaa-b645-40e2-9e04-ae754a7bffe7","path":"sprites/spr_playerPZ_shotgun_walk/spr_playerPZ_shotgun_walk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerPZ_shotgun_walk","path":"sprites/spr_playerPZ_shotgun_walk/spr_playerPZ_shotgun_walk.yy",},"resourceVersion":"1.0","name":"8294f055-873d-47cc-95bf-c2b63abdd27d","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"b1bafb3f-e0d5-4ae3-aaa8-bfdb7866d2f7","path":"sprites/spr_playerPZ_shotgun_walk/spr_playerPZ_shotgun_walk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b1bafb3f-e0d5-4ae3-aaa8-bfdb7866d2f7","path":"sprites/spr_playerPZ_shotgun_walk/spr_playerPZ_shotgun_walk.yy",},"LayerId":{"name":"4a949aaa-b645-40e2-9e04-ae754a7bffe7","path":"sprites/spr_playerPZ_shotgun_walk/spr_playerPZ_shotgun_walk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerPZ_shotgun_walk","path":"sprites/spr_playerPZ_shotgun_walk/spr_playerPZ_shotgun_walk.yy",},"resourceVersion":"1.0","name":"b1bafb3f-e0d5-4ae3-aaa8-bfdb7866d2f7","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"112ba4ea-364e-402a-bdf3-ef84b6ad4233","path":"sprites/spr_playerPZ_shotgun_walk/spr_playerPZ_shotgun_walk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"112ba4ea-364e-402a-bdf3-ef84b6ad4233","path":"sprites/spr_playerPZ_shotgun_walk/spr_playerPZ_shotgun_walk.yy",},"LayerId":{"name":"4a949aaa-b645-40e2-9e04-ae754a7bffe7","path":"sprites/spr_playerPZ_shotgun_walk/spr_playerPZ_shotgun_walk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerPZ_shotgun_walk","path":"sprites/spr_playerPZ_shotgun_walk/spr_playerPZ_shotgun_walk.yy",},"resourceVersion":"1.0","name":"112ba4ea-364e-402a-bdf3-ef84b6ad4233","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e72d3576-0fac-4463-86e1-18cd6aee2f93",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8c2957aa-f913-4daa-8850-91a120fb0657",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fc6d731e-8dfb-4a0c-97d2-b1fbc24dcd0c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9d97f375-e863-4aca-8681-a92666e0dccf",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8294f055-873d-47cc-95bf-c2b63abdd27d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b1bafb3f-e0d5-4ae3-aaa8-bfdb7866d2f7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"112ba4ea-364e-402a-bdf3-ef84b6ad4233",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_playerPZ_shotgun_walk","path":"sprites/spr_playerPZ_shotgun_walk/spr_playerPZ_shotgun_walk.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_playerPZ_shotgun_walk",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 0.75,
@@ -58,7 +50,7 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"d6baaaf1-8940-4e49-a8a7-4176d6fb267b","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e72d3576-0fac-4463-86e1-18cd6aee2f93","path":"sprites/spr_playerPZ_shotgun_walk/spr_playerPZ_shotgun_walk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"8c468060-6cc2-4993-8447-f5772cbafb91","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8c2957aa-f913-4daa-8850-91a120fb0657","path":"sprites/spr_playerPZ_shotgun_walk/spr_playerPZ_shotgun_walk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"26909871-97cf-4f8c-8801-83f3f573c795","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fc6d731e-8dfb-4a0c-97d2-b1fbc24dcd0c","path":"sprites/spr_playerPZ_shotgun_walk/spr_playerPZ_shotgun_walk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
@@ -66,7 +58,7 @@
             {"id":"b9b55e8e-eae7-4388-983f-e1d16f136b4e","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8294f055-873d-47cc-95bf-c2b63abdd27d","path":"sprites/spr_playerPZ_shotgun_walk/spr_playerPZ_shotgun_walk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"3d9d7cc2-31a4-464e-afa1-afbdbfab5b28","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b1bafb3f-e0d5-4ae3-aaa8-bfdb7866d2f7","path":"sprites/spr_playerPZ_shotgun_walk/spr_playerPZ_shotgun_walk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"dd6866ef-5f8c-47c8-940b-53c67a27d21f","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"112ba4ea-364e-402a-bdf3-ef84b6ad4233","path":"sprites/spr_playerPZ_shotgun_walk/spr_playerPZ_shotgun_walk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -82,22 +74,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_playerPZ_shotgun_walk","path":"sprites/spr_playerPZ_shotgun_walk/spr_playerPZ_shotgun_walk.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_playerPZ_shotgun_walk",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"4a949aaa-b645-40e2-9e04-ae754a7bffe7","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"4a949aaa-b645-40e2-9e04-ae754a7bffe7","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Pizzelle",
     "path": "folders/Sprites/Characters/Playable Characters Sprites/Pizzelle.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_playerPZ_shotgun_walk",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "bg_graveyardunderground",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 960,
   "height": 540,
   "textureGroupId": {
@@ -24,12 +28,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"467f97d2-e2ce-48f4-b5fe-007d72672aa8","path":"sprites/bg_graveyardunderground/bg_graveyardunderground.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"467f97d2-e2ce-48f4-b5fe-007d72672aa8","path":"sprites/bg_graveyardunderground/bg_graveyardunderground.yy",},"LayerId":{"name":"2e1fa659-82f9-4383-9c9e-1a5b9a040eab","path":"sprites/bg_graveyardunderground/bg_graveyardunderground.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"bg_graveyardunderground","path":"sprites/bg_graveyardunderground/bg_graveyardunderground.yy",},"resourceVersion":"1.0","name":"467f97d2-e2ce-48f4-b5fe-007d72672aa8","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"467f97d2-e2ce-48f4-b5fe-007d72672aa8",},
   ],
   "sequence": {
-    "spriteId": {"name":"bg_graveyardunderground","path":"sprites/bg_graveyardunderground/bg_graveyardunderground.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "bg_graveyardunderground",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -40,9 +44,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"874f67d4-9da6-47eb-a308-dc46a26281d9","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"467f97d2-e2ce-48f4-b5fe-007d72672aa8","path":"sprites/bg_graveyardunderground/bg_graveyardunderground.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +62,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"bg_graveyardunderground","path":"sprites/bg_graveyardunderground/bg_graveyardunderground.yy",},
-    "resourceVersion": "1.4",
-    "name": "bg_graveyardunderground",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"2e1fa659-82f9-4383-9c9e-1a5b9a040eab","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"2e1fa659-82f9-4383-9c9e-1a5b9a040eab","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Graveyard",
     "path": "folders/Sprites/Backgrounds/Graveyard.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "bg_graveyardunderground",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

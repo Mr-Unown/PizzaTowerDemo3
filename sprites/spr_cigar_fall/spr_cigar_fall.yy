@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_cigar_fall",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 100,
   "height": 100,
   "textureGroupId": {
@@ -24,18 +28,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"05098a25-8f10-4c10-a0f4-6ae46cfa6465","path":"sprites/spr_cigar_fall/spr_cigar_fall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"05098a25-8f10-4c10-a0f4-6ae46cfa6465","path":"sprites/spr_cigar_fall/spr_cigar_fall.yy",},"LayerId":{"name":"888e6a79-5810-4ea6-99c1-1bd1a93e9ec2","path":"sprites/spr_cigar_fall/spr_cigar_fall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cigar_fall","path":"sprites/spr_cigar_fall/spr_cigar_fall.yy",},"resourceVersion":"1.0","name":"05098a25-8f10-4c10-a0f4-6ae46cfa6465","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"385884b0-0215-4869-8ef8-b9828fca0d5a","path":"sprites/spr_cigar_fall/spr_cigar_fall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"385884b0-0215-4869-8ef8-b9828fca0d5a","path":"sprites/spr_cigar_fall/spr_cigar_fall.yy",},"LayerId":{"name":"888e6a79-5810-4ea6-99c1-1bd1a93e9ec2","path":"sprites/spr_cigar_fall/spr_cigar_fall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cigar_fall","path":"sprites/spr_cigar_fall/spr_cigar_fall.yy",},"resourceVersion":"1.0","name":"385884b0-0215-4869-8ef8-b9828fca0d5a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"02e4006f-3d7d-4a14-9db8-be5d16988550","path":"sprites/spr_cigar_fall/spr_cigar_fall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"02e4006f-3d7d-4a14-9db8-be5d16988550","path":"sprites/spr_cigar_fall/spr_cigar_fall.yy",},"LayerId":{"name":"888e6a79-5810-4ea6-99c1-1bd1a93e9ec2","path":"sprites/spr_cigar_fall/spr_cigar_fall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cigar_fall","path":"sprites/spr_cigar_fall/spr_cigar_fall.yy",},"resourceVersion":"1.0","name":"02e4006f-3d7d-4a14-9db8-be5d16988550","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"05098a25-8f10-4c10-a0f4-6ae46cfa6465",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"385884b0-0215-4869-8ef8-b9828fca0d5a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"02e4006f-3d7d-4a14-9db8-be5d16988550",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_cigar_fall","path":"sprites/spr_cigar_fall/spr_cigar_fall.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -46,11 +46,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"5e0ac488-d19b-4fd0-a37f-b86cc362427d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"05098a25-8f10-4c10-a0f4-6ae46cfa6465","path":"sprites/spr_cigar_fall/spr_cigar_fall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"b0df4ef9-0be3-4b87-9151-a6c1a30e3b33","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"385884b0-0215-4869-8ef8-b9828fca0d5a","path":"sprites/spr_cigar_fall/spr_cigar_fall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"73676d28-eb27-4b0d-a97c-76841c92e6b7","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"02e4006f-3d7d-4a14-9db8-be5d16988550","path":"sprites/spr_cigar_fall/spr_cigar_fall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -66,22 +66,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_cigar_fall","path":"sprites/spr_cigar_fall/spr_cigar_fall.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"888e6a79-5810-4ea6-99c1-1bd1a93e9ec2","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"888e6a79-5810-4ea6-99c1-1bd1a93e9ec2","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Smokey",
     "path": "folders/Sprites/Characters/Baddies/Weenie/Smokey.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_cigar_fall",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_pizzacutterfallinghitbox",
   "bboxMode": 2,
   "collisionKind": 2,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 59,
   "height": 58,
   "textureGroupId": {
@@ -24,12 +28,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"ff47a0c6-5112-41e3-95b0-a34737f652fc","path":"sprites/spr_pizzacutterfallinghitbox/spr_pizzacutterfallinghitbox.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ff47a0c6-5112-41e3-95b0-a34737f652fc","path":"sprites/spr_pizzacutterfallinghitbox/spr_pizzacutterfallinghitbox.yy",},"LayerId":{"name":"6a5c7bf4-c3b7-4192-bb67-53a2c47709cc","path":"sprites/spr_pizzacutterfallinghitbox/spr_pizzacutterfallinghitbox.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pizzacutterfallinghitbox","path":"sprites/spr_pizzacutterfallinghitbox/spr_pizzacutterfallinghitbox.yy",},"resourceVersion":"1.0","name":"ff47a0c6-5112-41e3-95b0-a34737f652fc","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ff47a0c6-5112-41e3-95b0-a34737f652fc",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_pizzacutterfallinghitbox","path":"sprites/spr_pizzacutterfallinghitbox/spr_pizzacutterfallinghitbox.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -40,9 +44,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"dbdc1bba-45c0-45e6-a8c8-a172d33f5a57","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ff47a0c6-5112-41e3-95b0-a34737f652fc","path":"sprites/spr_pizzacutterfallinghitbox/spr_pizzacutterfallinghitbox.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +62,13 @@
     "yorigin": 31,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_pizzacutterfallinghitbox","path":"sprites/spr_pizzacutterfallinghitbox/spr_pizzacutterfallinghitbox.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"6a5c7bf4-c3b7-4192-bb67-53a2c47709cc","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6a5c7bf4-c3b7-4192-bb67-53a2c47709cc","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Collision Masks",
     "path": "folders/Sprites/Collision Masks.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_pizzacutterfallinghitbox",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

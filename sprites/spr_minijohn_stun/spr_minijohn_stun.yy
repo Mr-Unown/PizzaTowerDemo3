@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_minijohn_stun",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 100,
   "height": 100,
   "textureGroupId": {
@@ -24,18 +28,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"a8483a83-0c77-443c-be64-896822ccafce","path":"sprites/spr_minijohn_stun/spr_minijohn_stun.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a8483a83-0c77-443c-be64-896822ccafce","path":"sprites/spr_minijohn_stun/spr_minijohn_stun.yy",},"LayerId":{"name":"4501a24b-cdfa-477d-98dd-6975dc857e77","path":"sprites/spr_minijohn_stun/spr_minijohn_stun.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_minijohn_stun","path":"sprites/spr_minijohn_stun/spr_minijohn_stun.yy",},"resourceVersion":"1.0","name":"a8483a83-0c77-443c-be64-896822ccafce","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"fc6ccbc3-0297-44f8-a6a8-3a4faab1ad63","path":"sprites/spr_minijohn_stun/spr_minijohn_stun.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"fc6ccbc3-0297-44f8-a6a8-3a4faab1ad63","path":"sprites/spr_minijohn_stun/spr_minijohn_stun.yy",},"LayerId":{"name":"4501a24b-cdfa-477d-98dd-6975dc857e77","path":"sprites/spr_minijohn_stun/spr_minijohn_stun.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_minijohn_stun","path":"sprites/spr_minijohn_stun/spr_minijohn_stun.yy",},"resourceVersion":"1.0","name":"fc6ccbc3-0297-44f8-a6a8-3a4faab1ad63","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"22a0f1d5-f545-4430-b1e5-0c745cdd0fdb","path":"sprites/spr_minijohn_stun/spr_minijohn_stun.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"22a0f1d5-f545-4430-b1e5-0c745cdd0fdb","path":"sprites/spr_minijohn_stun/spr_minijohn_stun.yy",},"LayerId":{"name":"4501a24b-cdfa-477d-98dd-6975dc857e77","path":"sprites/spr_minijohn_stun/spr_minijohn_stun.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_minijohn_stun","path":"sprites/spr_minijohn_stun/spr_minijohn_stun.yy",},"resourceVersion":"1.0","name":"22a0f1d5-f545-4430-b1e5-0c745cdd0fdb","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a8483a83-0c77-443c-be64-896822ccafce",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fc6ccbc3-0297-44f8-a6a8-3a4faab1ad63",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"22a0f1d5-f545-4430-b1e5-0c745cdd0fdb",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_minijohn_stun","path":"sprites/spr_minijohn_stun/spr_minijohn_stun.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -46,11 +46,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"b242b935-e6e9-475a-b5e3-4b28d61bc2ae","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a8483a83-0c77-443c-be64-896822ccafce","path":"sprites/spr_minijohn_stun/spr_minijohn_stun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"d5e03f7d-a93c-4e5c-ac5c-6cbd2f13f32b","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fc6ccbc3-0297-44f8-a6a8-3a4faab1ad63","path":"sprites/spr_minijohn_stun/spr_minijohn_stun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"d19a5cc7-32fc-4fb5-8900-d49a13e1eac5","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"22a0f1d5-f545-4430-b1e5-0c745cdd0fdb","path":"sprites/spr_minijohn_stun/spr_minijohn_stun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -66,22 +66,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_minijohn_stun","path":"sprites/spr_minijohn_stun/spr_minijohn_stun.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"4501a24b-cdfa-477d-98dd-6975dc857e77","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"4501a24b-cdfa-477d-98dd-6975dc857e77","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Minijohn",
     "path": "folders/Sprites/Characters/Baddies/Minijohn.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_minijohn_stun",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

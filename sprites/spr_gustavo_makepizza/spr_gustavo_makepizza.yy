@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_gustavo_makepizza",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 120,
   "height": 100,
   "textureGroupId": {
@@ -24,33 +28,19 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"358958f4-32e6-416f-acf4-6d88f256029e","path":"sprites/spr_gustavo_makepizza/spr_gustavo_makepizza.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"358958f4-32e6-416f-acf4-6d88f256029e","path":"sprites/spr_gustavo_makepizza/spr_gustavo_makepizza.yy",},"LayerId":{"name":"3ca1457f-1e24-425a-98f5-2673a98aac96","path":"sprites/spr_gustavo_makepizza/spr_gustavo_makepizza.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gustavo_makepizza","path":"sprites/spr_gustavo_makepizza/spr_gustavo_makepizza.yy",},"resourceVersion":"1.0","name":"358958f4-32e6-416f-acf4-6d88f256029e","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"1d896912-dafb-49cf-bc7a-451380006182","path":"sprites/spr_gustavo_makepizza/spr_gustavo_makepizza.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1d896912-dafb-49cf-bc7a-451380006182","path":"sprites/spr_gustavo_makepizza/spr_gustavo_makepizza.yy",},"LayerId":{"name":"3ca1457f-1e24-425a-98f5-2673a98aac96","path":"sprites/spr_gustavo_makepizza/spr_gustavo_makepizza.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gustavo_makepizza","path":"sprites/spr_gustavo_makepizza/spr_gustavo_makepizza.yy",},"resourceVersion":"1.0","name":"1d896912-dafb-49cf-bc7a-451380006182","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"fec11c3a-25a5-4a40-a1fd-f203b872a8c2","path":"sprites/spr_gustavo_makepizza/spr_gustavo_makepizza.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"fec11c3a-25a5-4a40-a1fd-f203b872a8c2","path":"sprites/spr_gustavo_makepizza/spr_gustavo_makepizza.yy",},"LayerId":{"name":"3ca1457f-1e24-425a-98f5-2673a98aac96","path":"sprites/spr_gustavo_makepizza/spr_gustavo_makepizza.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gustavo_makepizza","path":"sprites/spr_gustavo_makepizza/spr_gustavo_makepizza.yy",},"resourceVersion":"1.0","name":"fec11c3a-25a5-4a40-a1fd-f203b872a8c2","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"6144a892-b8b9-4926-aa4b-c3267d58fbce","path":"sprites/spr_gustavo_makepizza/spr_gustavo_makepizza.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6144a892-b8b9-4926-aa4b-c3267d58fbce","path":"sprites/spr_gustavo_makepizza/spr_gustavo_makepizza.yy",},"LayerId":{"name":"3ca1457f-1e24-425a-98f5-2673a98aac96","path":"sprites/spr_gustavo_makepizza/spr_gustavo_makepizza.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gustavo_makepizza","path":"sprites/spr_gustavo_makepizza/spr_gustavo_makepizza.yy",},"resourceVersion":"1.0","name":"6144a892-b8b9-4926-aa4b-c3267d58fbce","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c37ae3a9-ed34-4393-9d52-e18cb2ee66bb","path":"sprites/spr_gustavo_makepizza/spr_gustavo_makepizza.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c37ae3a9-ed34-4393-9d52-e18cb2ee66bb","path":"sprites/spr_gustavo_makepizza/spr_gustavo_makepizza.yy",},"LayerId":{"name":"3ca1457f-1e24-425a-98f5-2673a98aac96","path":"sprites/spr_gustavo_makepizza/spr_gustavo_makepizza.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gustavo_makepizza","path":"sprites/spr_gustavo_makepizza/spr_gustavo_makepizza.yy",},"resourceVersion":"1.0","name":"c37ae3a9-ed34-4393-9d52-e18cb2ee66bb","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ca019979-a714-496d-81f0-8e2c9564c5de","path":"sprites/spr_gustavo_makepizza/spr_gustavo_makepizza.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ca019979-a714-496d-81f0-8e2c9564c5de","path":"sprites/spr_gustavo_makepizza/spr_gustavo_makepizza.yy",},"LayerId":{"name":"3ca1457f-1e24-425a-98f5-2673a98aac96","path":"sprites/spr_gustavo_makepizza/spr_gustavo_makepizza.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gustavo_makepizza","path":"sprites/spr_gustavo_makepizza/spr_gustavo_makepizza.yy",},"resourceVersion":"1.0","name":"ca019979-a714-496d-81f0-8e2c9564c5de","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"81fe0f00-bd2b-4e2e-b282-7baf00432c06","path":"sprites/spr_gustavo_makepizza/spr_gustavo_makepizza.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"81fe0f00-bd2b-4e2e-b282-7baf00432c06","path":"sprites/spr_gustavo_makepizza/spr_gustavo_makepizza.yy",},"LayerId":{"name":"3ca1457f-1e24-425a-98f5-2673a98aac96","path":"sprites/spr_gustavo_makepizza/spr_gustavo_makepizza.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gustavo_makepizza","path":"sprites/spr_gustavo_makepizza/spr_gustavo_makepizza.yy",},"resourceVersion":"1.0","name":"81fe0f00-bd2b-4e2e-b282-7baf00432c06","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"392c6827-6181-4be4-b6fc-aa4b04b63794","path":"sprites/spr_gustavo_makepizza/spr_gustavo_makepizza.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"392c6827-6181-4be4-b6fc-aa4b04b63794","path":"sprites/spr_gustavo_makepizza/spr_gustavo_makepizza.yy",},"LayerId":{"name":"3ca1457f-1e24-425a-98f5-2673a98aac96","path":"sprites/spr_gustavo_makepizza/spr_gustavo_makepizza.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gustavo_makepizza","path":"sprites/spr_gustavo_makepizza/spr_gustavo_makepizza.yy",},"resourceVersion":"1.0","name":"392c6827-6181-4be4-b6fc-aa4b04b63794","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"358958f4-32e6-416f-acf4-6d88f256029e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1d896912-dafb-49cf-bc7a-451380006182",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fec11c3a-25a5-4a40-a1fd-f203b872a8c2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6144a892-b8b9-4926-aa4b-c3267d58fbce",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c37ae3a9-ed34-4393-9d52-e18cb2ee66bb",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ca019979-a714-496d-81f0-8e2c9564c5de",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"81fe0f00-bd2b-4e2e-b282-7baf00432c06",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"392c6827-6181-4be4-b6fc-aa4b04b63794",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_gustavo_makepizza","path":"sprites/spr_gustavo_makepizza/spr_gustavo_makepizza.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_gustavo_makepizza",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -61,7 +51,7 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"d07aebd7-783b-428e-b6d7-944a6f7ec398","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"358958f4-32e6-416f-acf4-6d88f256029e","path":"sprites/spr_gustavo_makepizza/spr_gustavo_makepizza.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"6c524537-da88-4f10-a439-118c087a4370","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1d896912-dafb-49cf-bc7a-451380006182","path":"sprites/spr_gustavo_makepizza/spr_gustavo_makepizza.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"1e22f182-d9e0-48a6-9284-9af24af0fe71","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fec11c3a-25a5-4a40-a1fd-f203b872a8c2","path":"sprites/spr_gustavo_makepizza/spr_gustavo_makepizza.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
@@ -70,7 +60,7 @@
             {"id":"510bed2f-f581-4753-b182-564cc0427e76","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ca019979-a714-496d-81f0-8e2c9564c5de","path":"sprites/spr_gustavo_makepizza/spr_gustavo_makepizza.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"aec4debb-04b5-4708-8842-de782b339773","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"81fe0f00-bd2b-4e2e-b282-7baf00432c06","path":"sprites/spr_gustavo_makepizza/spr_gustavo_makepizza.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"b0132f65-c853-445d-9f1b-020a2e026976","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"392c6827-6181-4be4-b6fc-aa4b04b63794","path":"sprites/spr_gustavo_makepizza/spr_gustavo_makepizza.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -86,22 +76,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_gustavo_makepizza","path":"sprites/spr_gustavo_makepizza/spr_gustavo_makepizza.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_gustavo_makepizza",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3ca1457f-1e24-425a-98f5-2673a98aac96","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3ca1457f-1e24-425a-98f5-2673a98aac96","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Gustavo",
     "path": "folders/Sprites/Characters/Misc/Gustavo.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_gustavo_makepizza",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

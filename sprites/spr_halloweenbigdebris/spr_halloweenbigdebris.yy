@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_halloweenbigdebris",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 64,
   "height": 64,
   "textureGroupId": {
@@ -24,27 +28,17 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"ec377020-1168-44a6-96d6-09b2e1a93eac","path":"sprites/spr_halloweenbigdebris/spr_halloweenbigdebris.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ec377020-1168-44a6-96d6-09b2e1a93eac","path":"sprites/spr_halloweenbigdebris/spr_halloweenbigdebris.yy",},"LayerId":{"name":"fe8e77ef-b12c-4383-b21f-40b79f5e835f","path":"sprites/spr_halloweenbigdebris/spr_halloweenbigdebris.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_halloweenbigdebris","path":"sprites/spr_halloweenbigdebris/spr_halloweenbigdebris.yy",},"resourceVersion":"1.0","name":"ec377020-1168-44a6-96d6-09b2e1a93eac","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"62cce95c-7d05-44cc-9b64-3bbbe7a56e52","path":"sprites/spr_halloweenbigdebris/spr_halloweenbigdebris.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"62cce95c-7d05-44cc-9b64-3bbbe7a56e52","path":"sprites/spr_halloweenbigdebris/spr_halloweenbigdebris.yy",},"LayerId":{"name":"fe8e77ef-b12c-4383-b21f-40b79f5e835f","path":"sprites/spr_halloweenbigdebris/spr_halloweenbigdebris.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_halloweenbigdebris","path":"sprites/spr_halloweenbigdebris/spr_halloweenbigdebris.yy",},"resourceVersion":"1.0","name":"62cce95c-7d05-44cc-9b64-3bbbe7a56e52","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"99c1d99f-6f30-4f8b-af98-740125a9a54f","path":"sprites/spr_halloweenbigdebris/spr_halloweenbigdebris.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"99c1d99f-6f30-4f8b-af98-740125a9a54f","path":"sprites/spr_halloweenbigdebris/spr_halloweenbigdebris.yy",},"LayerId":{"name":"fe8e77ef-b12c-4383-b21f-40b79f5e835f","path":"sprites/spr_halloweenbigdebris/spr_halloweenbigdebris.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_halloweenbigdebris","path":"sprites/spr_halloweenbigdebris/spr_halloweenbigdebris.yy",},"resourceVersion":"1.0","name":"99c1d99f-6f30-4f8b-af98-740125a9a54f","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"381aafc9-14a0-4c63-9d66-31a4e2ec6557","path":"sprites/spr_halloweenbigdebris/spr_halloweenbigdebris.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"381aafc9-14a0-4c63-9d66-31a4e2ec6557","path":"sprites/spr_halloweenbigdebris/spr_halloweenbigdebris.yy",},"LayerId":{"name":"fe8e77ef-b12c-4383-b21f-40b79f5e835f","path":"sprites/spr_halloweenbigdebris/spr_halloweenbigdebris.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_halloweenbigdebris","path":"sprites/spr_halloweenbigdebris/spr_halloweenbigdebris.yy",},"resourceVersion":"1.0","name":"381aafc9-14a0-4c63-9d66-31a4e2ec6557","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"626eb845-b533-49d4-be8c-876c85e61cca","path":"sprites/spr_halloweenbigdebris/spr_halloweenbigdebris.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"626eb845-b533-49d4-be8c-876c85e61cca","path":"sprites/spr_halloweenbigdebris/spr_halloweenbigdebris.yy",},"LayerId":{"name":"fe8e77ef-b12c-4383-b21f-40b79f5e835f","path":"sprites/spr_halloweenbigdebris/spr_halloweenbigdebris.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_halloweenbigdebris","path":"sprites/spr_halloweenbigdebris/spr_halloweenbigdebris.yy",},"resourceVersion":"1.0","name":"626eb845-b533-49d4-be8c-876c85e61cca","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"a099f281-6bc1-407f-bc9c-3fa3a2eda3bc","path":"sprites/spr_halloweenbigdebris/spr_halloweenbigdebris.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a099f281-6bc1-407f-bc9c-3fa3a2eda3bc","path":"sprites/spr_halloweenbigdebris/spr_halloweenbigdebris.yy",},"LayerId":{"name":"fe8e77ef-b12c-4383-b21f-40b79f5e835f","path":"sprites/spr_halloweenbigdebris/spr_halloweenbigdebris.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_halloweenbigdebris","path":"sprites/spr_halloweenbigdebris/spr_halloweenbigdebris.yy",},"resourceVersion":"1.0","name":"a099f281-6bc1-407f-bc9c-3fa3a2eda3bc","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ec377020-1168-44a6-96d6-09b2e1a93eac",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"62cce95c-7d05-44cc-9b64-3bbbe7a56e52",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"99c1d99f-6f30-4f8b-af98-740125a9a54f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"381aafc9-14a0-4c63-9d66-31a4e2ec6557",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"626eb845-b533-49d4-be8c-876c85e61cca",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a099f281-6bc1-407f-bc9c-3fa3a2eda3bc",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_halloweenbigdebris","path":"sprites/spr_halloweenbigdebris/spr_halloweenbigdebris.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -55,14 +49,14 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"3c1a7ee0-757c-45c2-905d-1fb9db244168","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ec377020-1168-44a6-96d6-09b2e1a93eac","path":"sprites/spr_halloweenbigdebris/spr_halloweenbigdebris.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"054e3e35-0e9c-4cd0-93f2-7aeaeab885da","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"62cce95c-7d05-44cc-9b64-3bbbe7a56e52","path":"sprites/spr_halloweenbigdebris/spr_halloweenbigdebris.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"6555695a-10a5-4181-84f4-ae8fec5c7347","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"99c1d99f-6f30-4f8b-af98-740125a9a54f","path":"sprites/spr_halloweenbigdebris/spr_halloweenbigdebris.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"acee7ef8-3cbf-4be5-84d5-df14b12ecbb2","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"381aafc9-14a0-4c63-9d66-31a4e2ec6557","path":"sprites/spr_halloweenbigdebris/spr_halloweenbigdebris.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"e8552f01-8f33-444d-a692-5036c55c7f4a","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"626eb845-b533-49d4-be8c-876c85e61cca","path":"sprites/spr_halloweenbigdebris/spr_halloweenbigdebris.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"fe1bbec0-fae7-45f9-8eff-149ee701ec2e","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a099f281-6bc1-407f-bc9c-3fa3a2eda3bc","path":"sprites/spr_halloweenbigdebris/spr_halloweenbigdebris.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -78,22 +72,13 @@
     "yorigin": 32,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_halloweenbigdebris","path":"sprites/spr_halloweenbigdebris/spr_halloweenbigdebris.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"fe8e77ef-b12c-4383-b21f-40b79f5e835f","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"fe8e77ef-b12c-4383-b21f-40b79f5e835f","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Particles and Effects",
     "path": "folders/Sprites/Misc Sprites/Particles and Effects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_halloweenbigdebris",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_slimefall",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 200,
   "height": 200,
   "textureGroupId": {
@@ -24,18 +28,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"fed7d3c2-8ba0-4837-8923-e1950d60cf78","path":"sprites/spr_slimefall/spr_slimefall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"fed7d3c2-8ba0-4837-8923-e1950d60cf78","path":"sprites/spr_slimefall/spr_slimefall.yy",},"LayerId":{"name":"501e1c11-767e-434f-b5ae-107b79e70f20","path":"sprites/spr_slimefall/spr_slimefall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_slimefall","path":"sprites/spr_slimefall/spr_slimefall.yy",},"resourceVersion":"1.0","name":"fed7d3c2-8ba0-4837-8923-e1950d60cf78","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"2d3e60ac-28fe-46b0-93b8-a29918abd4af","path":"sprites/spr_slimefall/spr_slimefall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2d3e60ac-28fe-46b0-93b8-a29918abd4af","path":"sprites/spr_slimefall/spr_slimefall.yy",},"LayerId":{"name":"501e1c11-767e-434f-b5ae-107b79e70f20","path":"sprites/spr_slimefall/spr_slimefall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_slimefall","path":"sprites/spr_slimefall/spr_slimefall.yy",},"resourceVersion":"1.0","name":"2d3e60ac-28fe-46b0-93b8-a29918abd4af","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"28e68dc5-4dce-4f08-8529-fe7b4a4eb9f2","path":"sprites/spr_slimefall/spr_slimefall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"28e68dc5-4dce-4f08-8529-fe7b4a4eb9f2","path":"sprites/spr_slimefall/spr_slimefall.yy",},"LayerId":{"name":"501e1c11-767e-434f-b5ae-107b79e70f20","path":"sprites/spr_slimefall/spr_slimefall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_slimefall","path":"sprites/spr_slimefall/spr_slimefall.yy",},"resourceVersion":"1.0","name":"28e68dc5-4dce-4f08-8529-fe7b4a4eb9f2","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fed7d3c2-8ba0-4837-8923-e1950d60cf78",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2d3e60ac-28fe-46b0-93b8-a29918abd4af",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"28e68dc5-4dce-4f08-8529-fe7b4a4eb9f2",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_slimefall","path":"sprites/spr_slimefall/spr_slimefall.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -46,11 +46,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"08a04d7e-a41a-4b8b-a6ed-00d6667a09bb","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fed7d3c2-8ba0-4837-8923-e1950d60cf78","path":"sprites/spr_slimefall/spr_slimefall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"2a6b3680-1b77-4d56-aff0-f8f15015d330","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2d3e60ac-28fe-46b0-93b8-a29918abd4af","path":"sprites/spr_slimefall/spr_slimefall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"c7bd0ceb-c4fe-419e-8d4a-53f4ed4a2270","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"28e68dc5-4dce-4f08-8529-fe7b4a4eb9f2","path":"sprites/spr_slimefall/spr_slimefall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -66,22 +66,13 @@
     "yorigin": 100,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_slimefall","path":"sprites/spr_slimefall/spr_slimefall.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"501e1c11-767e-434f-b5ae-107b79e70f20","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"501e1c11-767e-434f-b5ae-107b79e70f20","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Cheeseslime",
     "path": "folders/Sprites/Characters/Baddies/Cheeseslime.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_slimefall",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

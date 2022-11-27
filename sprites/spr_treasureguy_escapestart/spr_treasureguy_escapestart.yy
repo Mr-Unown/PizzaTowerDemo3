@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_treasureguy_escapestart",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 114,
   "height": 100,
   "textureGroupId": {
@@ -24,39 +28,21 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"19fc5814-ed42-4118-aea1-b4c57ded82b7","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"19fc5814-ed42-4118-aea1-b4c57ded82b7","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"LayerId":{"name":"ac27efe5-fcc4-4007-89b3-10b430b710aa","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_treasureguy_escapestart","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"resourceVersion":"1.0","name":"19fc5814-ed42-4118-aea1-b4c57ded82b7","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"6c591c0b-9e50-4fb9-81ad-59ed1e01d1d4","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6c591c0b-9e50-4fb9-81ad-59ed1e01d1d4","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"LayerId":{"name":"ac27efe5-fcc4-4007-89b3-10b430b710aa","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_treasureguy_escapestart","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"resourceVersion":"1.0","name":"6c591c0b-9e50-4fb9-81ad-59ed1e01d1d4","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"85f1632d-3e3b-4ed4-8cbc-21838daa4884","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"85f1632d-3e3b-4ed4-8cbc-21838daa4884","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"LayerId":{"name":"ac27efe5-fcc4-4007-89b3-10b430b710aa","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_treasureguy_escapestart","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"resourceVersion":"1.0","name":"85f1632d-3e3b-4ed4-8cbc-21838daa4884","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"bd6e954f-4953-4032-a5a6-21755a65be23","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"bd6e954f-4953-4032-a5a6-21755a65be23","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"LayerId":{"name":"ac27efe5-fcc4-4007-89b3-10b430b710aa","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_treasureguy_escapestart","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"resourceVersion":"1.0","name":"bd6e954f-4953-4032-a5a6-21755a65be23","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"6e33c637-2a56-4d39-ad35-1aa5f7adb33b","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6e33c637-2a56-4d39-ad35-1aa5f7adb33b","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"LayerId":{"name":"ac27efe5-fcc4-4007-89b3-10b430b710aa","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_treasureguy_escapestart","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"resourceVersion":"1.0","name":"6e33c637-2a56-4d39-ad35-1aa5f7adb33b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"f7172fff-01d4-463f-a5a2-ede1a20eed25","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f7172fff-01d4-463f-a5a2-ede1a20eed25","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"LayerId":{"name":"ac27efe5-fcc4-4007-89b3-10b430b710aa","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_treasureguy_escapestart","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"resourceVersion":"1.0","name":"f7172fff-01d4-463f-a5a2-ede1a20eed25","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"4104820c-f09c-4038-aac0-b8a2141ffc32","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4104820c-f09c-4038-aac0-b8a2141ffc32","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"LayerId":{"name":"ac27efe5-fcc4-4007-89b3-10b430b710aa","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_treasureguy_escapestart","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"resourceVersion":"1.0","name":"4104820c-f09c-4038-aac0-b8a2141ffc32","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"9f131802-6525-4c73-ae76-16d01c698f67","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"9f131802-6525-4c73-ae76-16d01c698f67","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"LayerId":{"name":"ac27efe5-fcc4-4007-89b3-10b430b710aa","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_treasureguy_escapestart","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"resourceVersion":"1.0","name":"9f131802-6525-4c73-ae76-16d01c698f67","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"1af51829-da51-4813-af23-80c4e14ed3b5","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1af51829-da51-4813-af23-80c4e14ed3b5","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"LayerId":{"name":"ac27efe5-fcc4-4007-89b3-10b430b710aa","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_treasureguy_escapestart","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"resourceVersion":"1.0","name":"1af51829-da51-4813-af23-80c4e14ed3b5","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"45e6e1b6-1ee6-494d-996b-88160a530aa8","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"45e6e1b6-1ee6-494d-996b-88160a530aa8","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"LayerId":{"name":"ac27efe5-fcc4-4007-89b3-10b430b710aa","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_treasureguy_escapestart","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"resourceVersion":"1.0","name":"45e6e1b6-1ee6-494d-996b-88160a530aa8","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"19fc5814-ed42-4118-aea1-b4c57ded82b7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6c591c0b-9e50-4fb9-81ad-59ed1e01d1d4",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"85f1632d-3e3b-4ed4-8cbc-21838daa4884",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"bd6e954f-4953-4032-a5a6-21755a65be23",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6e33c637-2a56-4d39-ad35-1aa5f7adb33b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f7172fff-01d4-463f-a5a2-ede1a20eed25",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4104820c-f09c-4038-aac0-b8a2141ffc32",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9f131802-6525-4c73-ae76-16d01c698f67",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1af51829-da51-4813-af23-80c4e14ed3b5",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"45e6e1b6-1ee6-494d-996b-88160a530aa8",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_treasureguy_escapestart","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_treasureguy_escapestart",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -67,7 +53,7 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"ebc3398c-0609-419b-b72c-531eda45440a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"19fc5814-ed42-4118-aea1-b4c57ded82b7","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"5bd346b3-4b01-4226-9f59-8c958e58507a","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6c591c0b-9e50-4fb9-81ad-59ed1e01d1d4","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"b9384512-4437-43ae-9620-424095860c98","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"85f1632d-3e3b-4ed4-8cbc-21838daa4884","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
@@ -78,7 +64,7 @@
             {"id":"c17926df-2453-4bed-b429-6a544db10686","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9f131802-6525-4c73-ae76-16d01c698f67","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"e88654b3-ae30-46eb-85cf-c0897edfeb65","Key":8.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1af51829-da51-4813-af23-80c4e14ed3b5","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"be015ee7-5687-4e5c-969c-edfeb809ba67","Key":9.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"45e6e1b6-1ee6-494d-996b-88160a530aa8","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -94,22 +80,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_treasureguy_escapestart","path":"sprites/spr_treasureguy_escapestart/spr_treasureguy_escapestart.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_treasureguy_escapestart",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ac27efe5-fcc4-4007-89b3-10b430b710aa","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ac27efe5-fcc4-4007-89b3-10b430b710aa","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Treasure Chest Guy",
     "path": "folders/Sprites/Characters/Baddies/Treasure Chest Guy.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_treasureguy_escapestart",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

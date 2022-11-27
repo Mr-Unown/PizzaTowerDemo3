@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_respawnmetalblock",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 64,
   "height": 64,
   "textureGroupId": {
@@ -24,24 +28,16 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"e1b9b591-ab4e-4a65-a542-925b001bfbce","path":"sprites/spr_respawnmetalblock/spr_respawnmetalblock.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e1b9b591-ab4e-4a65-a542-925b001bfbce","path":"sprites/spr_respawnmetalblock/spr_respawnmetalblock.yy",},"LayerId":{"name":"e0b83046-67c4-4409-905f-d0e6b1ef2199","path":"sprites/spr_respawnmetalblock/spr_respawnmetalblock.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_respawnmetalblock","path":"sprites/spr_respawnmetalblock/spr_respawnmetalblock.yy",},"resourceVersion":"1.0","name":"e1b9b591-ab4e-4a65-a542-925b001bfbce","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"a59db556-6a0f-4aa0-9f67-b9510954e14a","path":"sprites/spr_respawnmetalblock/spr_respawnmetalblock.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a59db556-6a0f-4aa0-9f67-b9510954e14a","path":"sprites/spr_respawnmetalblock/spr_respawnmetalblock.yy",},"LayerId":{"name":"e0b83046-67c4-4409-905f-d0e6b1ef2199","path":"sprites/spr_respawnmetalblock/spr_respawnmetalblock.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_respawnmetalblock","path":"sprites/spr_respawnmetalblock/spr_respawnmetalblock.yy",},"resourceVersion":"1.0","name":"a59db556-6a0f-4aa0-9f67-b9510954e14a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"82b2b037-6a6b-405b-8c48-dc304b9a6fcc","path":"sprites/spr_respawnmetalblock/spr_respawnmetalblock.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"82b2b037-6a6b-405b-8c48-dc304b9a6fcc","path":"sprites/spr_respawnmetalblock/spr_respawnmetalblock.yy",},"LayerId":{"name":"e0b83046-67c4-4409-905f-d0e6b1ef2199","path":"sprites/spr_respawnmetalblock/spr_respawnmetalblock.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_respawnmetalblock","path":"sprites/spr_respawnmetalblock/spr_respawnmetalblock.yy",},"resourceVersion":"1.0","name":"82b2b037-6a6b-405b-8c48-dc304b9a6fcc","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"a483eabe-54a8-4e0a-84fd-da97c07b78c1","path":"sprites/spr_respawnmetalblock/spr_respawnmetalblock.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a483eabe-54a8-4e0a-84fd-da97c07b78c1","path":"sprites/spr_respawnmetalblock/spr_respawnmetalblock.yy",},"LayerId":{"name":"e0b83046-67c4-4409-905f-d0e6b1ef2199","path":"sprites/spr_respawnmetalblock/spr_respawnmetalblock.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_respawnmetalblock","path":"sprites/spr_respawnmetalblock/spr_respawnmetalblock.yy",},"resourceVersion":"1.0","name":"a483eabe-54a8-4e0a-84fd-da97c07b78c1","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"5df09df1-24bc-4e3d-aa55-66967d2ed5df","path":"sprites/spr_respawnmetalblock/spr_respawnmetalblock.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5df09df1-24bc-4e3d-aa55-66967d2ed5df","path":"sprites/spr_respawnmetalblock/spr_respawnmetalblock.yy",},"LayerId":{"name":"e0b83046-67c4-4409-905f-d0e6b1ef2199","path":"sprites/spr_respawnmetalblock/spr_respawnmetalblock.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_respawnmetalblock","path":"sprites/spr_respawnmetalblock/spr_respawnmetalblock.yy",},"resourceVersion":"1.0","name":"5df09df1-24bc-4e3d-aa55-66967d2ed5df","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e1b9b591-ab4e-4a65-a542-925b001bfbce",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a59db556-6a0f-4aa0-9f67-b9510954e14a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"82b2b037-6a6b-405b-8c48-dc304b9a6fcc",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a483eabe-54a8-4e0a-84fd-da97c07b78c1",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5df09df1-24bc-4e3d-aa55-66967d2ed5df",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_respawnmetalblock","path":"sprites/spr_respawnmetalblock/spr_respawnmetalblock.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_respawnmetalblock",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -52,13 +48,13 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"72257557-9dce-4e0e-895e-dcf668daa46d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e1b9b591-ab4e-4a65-a542-925b001bfbce","path":"sprites/spr_respawnmetalblock/spr_respawnmetalblock.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"038dbc6d-e753-4793-b66e-0245730a32f4","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a59db556-6a0f-4aa0-9f67-b9510954e14a","path":"sprites/spr_respawnmetalblock/spr_respawnmetalblock.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"970a5ee1-f10a-4a2b-ad31-fa59d25db09f","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"82b2b037-6a6b-405b-8c48-dc304b9a6fcc","path":"sprites/spr_respawnmetalblock/spr_respawnmetalblock.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"71decf1a-4364-40d3-92a9-05aa613cf5b9","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a483eabe-54a8-4e0a-84fd-da97c07b78c1","path":"sprites/spr_respawnmetalblock/spr_respawnmetalblock.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"daafdde9-6f8c-441e-a20f-d96d4005d512","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5df09df1-24bc-4e3d-aa55-66967d2ed5df","path":"sprites/spr_respawnmetalblock/spr_respawnmetalblock.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -74,22 +70,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_respawnmetalblock","path":"sprites/spr_respawnmetalblock/spr_respawnmetalblock.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_respawnmetalblock",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e0b83046-67c4-4409-905f-d0e6b1ef2199","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e0b83046-67c4-4409-905f-d0e6b1ef2199","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Objects",
     "path": "folders/Sprites/Objects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_respawnmetalblock",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

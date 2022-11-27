@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_foodtreasure",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 100,
   "height": 100,
   "textureGroupId": {
@@ -24,48 +28,24 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"fb0fb238-e264-4955-be8a-25e4071dda38","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"fb0fb238-e264-4955-be8a-25e4071dda38","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"LayerId":{"name":"7ae9ac8a-8952-4f48-b18a-773f6f25001d","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_foodtreasure","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"resourceVersion":"1.0","name":"fb0fb238-e264-4955-be8a-25e4071dda38","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"17e64078-b95c-4f22-baa4-6dd28d27e46c","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"17e64078-b95c-4f22-baa4-6dd28d27e46c","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"LayerId":{"name":"7ae9ac8a-8952-4f48-b18a-773f6f25001d","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_foodtreasure","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"resourceVersion":"1.0","name":"17e64078-b95c-4f22-baa4-6dd28d27e46c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"a10011da-ff44-4bb7-8e67-67e92ec438a6","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a10011da-ff44-4bb7-8e67-67e92ec438a6","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"LayerId":{"name":"7ae9ac8a-8952-4f48-b18a-773f6f25001d","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_foodtreasure","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"resourceVersion":"1.0","name":"a10011da-ff44-4bb7-8e67-67e92ec438a6","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"b2ffa30f-d83d-40a1-a944-b1a179d55cd0","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b2ffa30f-d83d-40a1-a944-b1a179d55cd0","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"LayerId":{"name":"7ae9ac8a-8952-4f48-b18a-773f6f25001d","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_foodtreasure","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"resourceVersion":"1.0","name":"b2ffa30f-d83d-40a1-a944-b1a179d55cd0","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"8e3c7007-5ac7-4631-b45a-557341abdb15","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8e3c7007-5ac7-4631-b45a-557341abdb15","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"LayerId":{"name":"7ae9ac8a-8952-4f48-b18a-773f6f25001d","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_foodtreasure","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"resourceVersion":"1.0","name":"8e3c7007-5ac7-4631-b45a-557341abdb15","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"038cad55-cbad-41f5-925e-4bb7eb3613d0","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"038cad55-cbad-41f5-925e-4bb7eb3613d0","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"LayerId":{"name":"7ae9ac8a-8952-4f48-b18a-773f6f25001d","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_foodtreasure","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"resourceVersion":"1.0","name":"038cad55-cbad-41f5-925e-4bb7eb3613d0","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"1434a5e0-bdd9-4f88-a251-cfdbdb924ac9","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1434a5e0-bdd9-4f88-a251-cfdbdb924ac9","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"LayerId":{"name":"7ae9ac8a-8952-4f48-b18a-773f6f25001d","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_foodtreasure","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"resourceVersion":"1.0","name":"1434a5e0-bdd9-4f88-a251-cfdbdb924ac9","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"42934fbe-4a83-4f06-ac4f-64a1a1f8872c","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"42934fbe-4a83-4f06-ac4f-64a1a1f8872c","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"LayerId":{"name":"7ae9ac8a-8952-4f48-b18a-773f6f25001d","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_foodtreasure","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"resourceVersion":"1.0","name":"42934fbe-4a83-4f06-ac4f-64a1a1f8872c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"7311cac3-bc3d-4709-bf03-c8974c206220","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7311cac3-bc3d-4709-bf03-c8974c206220","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"LayerId":{"name":"7ae9ac8a-8952-4f48-b18a-773f6f25001d","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_foodtreasure","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"resourceVersion":"1.0","name":"7311cac3-bc3d-4709-bf03-c8974c206220","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"1ad1f129-38d2-4b57-adee-c783556feb7f","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1ad1f129-38d2-4b57-adee-c783556feb7f","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"LayerId":{"name":"7ae9ac8a-8952-4f48-b18a-773f6f25001d","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_foodtreasure","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"resourceVersion":"1.0","name":"1ad1f129-38d2-4b57-adee-c783556feb7f","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"e7ac6103-1131-4f9c-8d06-2ef5cd3ccb20","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e7ac6103-1131-4f9c-8d06-2ef5cd3ccb20","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"LayerId":{"name":"7ae9ac8a-8952-4f48-b18a-773f6f25001d","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_foodtreasure","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"resourceVersion":"1.0","name":"e7ac6103-1131-4f9c-8d06-2ef5cd3ccb20","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"08da253e-420c-4668-881d-0edc4d1ac499","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"08da253e-420c-4668-881d-0edc4d1ac499","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"LayerId":{"name":"7ae9ac8a-8952-4f48-b18a-773f6f25001d","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_foodtreasure","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"resourceVersion":"1.0","name":"08da253e-420c-4668-881d-0edc4d1ac499","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"12eaff17-117a-42e9-8d29-b28bbdfcef96","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"12eaff17-117a-42e9-8d29-b28bbdfcef96","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"LayerId":{"name":"7ae9ac8a-8952-4f48-b18a-773f6f25001d","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_foodtreasure","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"resourceVersion":"1.0","name":"12eaff17-117a-42e9-8d29-b28bbdfcef96","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fb0fb238-e264-4955-be8a-25e4071dda38",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"17e64078-b95c-4f22-baa4-6dd28d27e46c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a10011da-ff44-4bb7-8e67-67e92ec438a6",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b2ffa30f-d83d-40a1-a944-b1a179d55cd0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8e3c7007-5ac7-4631-b45a-557341abdb15",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"038cad55-cbad-41f5-925e-4bb7eb3613d0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1434a5e0-bdd9-4f88-a251-cfdbdb924ac9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"42934fbe-4a83-4f06-ac4f-64a1a1f8872c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7311cac3-bc3d-4709-bf03-c8974c206220",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1ad1f129-38d2-4b57-adee-c783556feb7f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e7ac6103-1131-4f9c-8d06-2ef5cd3ccb20",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"08da253e-420c-4668-881d-0edc4d1ac499",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"12eaff17-117a-42e9-8d29-b28bbdfcef96",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_foodtreasure","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -76,7 +56,7 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"d5c6ec40-2bdb-49fc-b47a-36a564c33b0e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fb0fb238-e264-4955-be8a-25e4071dda38","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"5ec0a1b9-687c-439c-9f80-64ec88ad20a2","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"17e64078-b95c-4f22-baa4-6dd28d27e46c","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"93b3ca2e-d151-4c40-9885-5360ba979d47","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a10011da-ff44-4bb7-8e67-67e92ec438a6","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
@@ -90,7 +70,7 @@
             {"id":"f1de7fde-4d9f-478f-90f3-9f7016698bef","Key":10.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e7ac6103-1131-4f9c-8d06-2ef5cd3ccb20","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"c80dfa6c-7be4-4a43-b520-15ed6f6c747d","Key":11.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"08da253e-420c-4668-881d-0edc4d1ac499","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"86a61483-bbe4-4843-b3ed-169499f9507a","Key":12.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"12eaff17-117a-42e9-8d29-b28bbdfcef96","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -106,22 +86,13 @@
     "yorigin": 52,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_foodtreasure","path":"sprites/spr_foodtreasure/spr_foodtreasure.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"7ae9ac8a-8952-4f48-b18a-773f6f25001d","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"7ae9ac8a-8952-4f48-b18a-773f6f25001d","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Objects",
     "path": "folders/Sprites/Objects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_foodtreasure",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

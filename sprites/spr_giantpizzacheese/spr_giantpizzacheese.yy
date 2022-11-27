@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_giantpizzacheese",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 160,
   "height": 160,
   "textureGroupId": {
@@ -24,18 +28,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"3e61c46e-6afc-4a75-9f5c-4564cb02f066","path":"sprites/spr_giantpizzacheese/spr_giantpizzacheese.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3e61c46e-6afc-4a75-9f5c-4564cb02f066","path":"sprites/spr_giantpizzacheese/spr_giantpizzacheese.yy",},"LayerId":{"name":"95973093-a1a2-4a34-8820-6bfb0493584c","path":"sprites/spr_giantpizzacheese/spr_giantpizzacheese.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_giantpizzacheese","path":"sprites/spr_giantpizzacheese/spr_giantpizzacheese.yy",},"resourceVersion":"1.0","name":"3e61c46e-6afc-4a75-9f5c-4564cb02f066","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"9a1368a6-fc65-451a-840f-b45b2da0b80b","path":"sprites/spr_giantpizzacheese/spr_giantpizzacheese.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"9a1368a6-fc65-451a-840f-b45b2da0b80b","path":"sprites/spr_giantpizzacheese/spr_giantpizzacheese.yy",},"LayerId":{"name":"95973093-a1a2-4a34-8820-6bfb0493584c","path":"sprites/spr_giantpizzacheese/spr_giantpizzacheese.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_giantpizzacheese","path":"sprites/spr_giantpizzacheese/spr_giantpizzacheese.yy",},"resourceVersion":"1.0","name":"9a1368a6-fc65-451a-840f-b45b2da0b80b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"037bb889-bf74-478d-9eb2-f3fdda44aab9","path":"sprites/spr_giantpizzacheese/spr_giantpizzacheese.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"037bb889-bf74-478d-9eb2-f3fdda44aab9","path":"sprites/spr_giantpizzacheese/spr_giantpizzacheese.yy",},"LayerId":{"name":"95973093-a1a2-4a34-8820-6bfb0493584c","path":"sprites/spr_giantpizzacheese/spr_giantpizzacheese.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_giantpizzacheese","path":"sprites/spr_giantpizzacheese/spr_giantpizzacheese.yy",},"resourceVersion":"1.0","name":"037bb889-bf74-478d-9eb2-f3fdda44aab9","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3e61c46e-6afc-4a75-9f5c-4564cb02f066",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9a1368a6-fc65-451a-840f-b45b2da0b80b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"037bb889-bf74-478d-9eb2-f3fdda44aab9",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_giantpizzacheese","path":"sprites/spr_giantpizzacheese/spr_giantpizzacheese.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -46,11 +46,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"dfbad9f3-3fa1-44e8-ae45-431acdcf8966","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3e61c46e-6afc-4a75-9f5c-4564cb02f066","path":"sprites/spr_giantpizzacheese/spr_giantpizzacheese.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"768f7cfe-82ea-4f31-a60a-45b6c743b20e","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9a1368a6-fc65-451a-840f-b45b2da0b80b","path":"sprites/spr_giantpizzacheese/spr_giantpizzacheese.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"0698fb54-4c90-4992-8157-c1c14106de09","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"037bb889-bf74-478d-9eb2-f3fdda44aab9","path":"sprites/spr_giantpizzacheese/spr_giantpizzacheese.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,22 +66,13 @@
     "yorigin": 80,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_giantpizzacheese","path":"sprites/spr_giantpizzacheese/spr_giantpizzacheese.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"95973093-a1a2-4a34-8820-6bfb0493584c","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"95973093-a1a2-4a34-8820-6bfb0493584c","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Objects",
     "path": "folders/Sprites/Objects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_giantpizzacheese",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_snick_climbwall",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 100,
   "height": 100,
   "textureGroupId": {
@@ -24,33 +28,19 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"8b8ed95d-eb10-4f54-bca9-dd1397cf8a4b","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8b8ed95d-eb10-4f54-bca9-dd1397cf8a4b","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"LayerId":{"name":"5187eae6-c42a-4ea2-b5b5-f40a47abf75e","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_snick_climbwall","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"resourceVersion":"1.0","name":"8b8ed95d-eb10-4f54-bca9-dd1397cf8a4b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"dba84d85-3ff8-4e92-b7a2-277fb67c1a06","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"dba84d85-3ff8-4e92-b7a2-277fb67c1a06","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"LayerId":{"name":"5187eae6-c42a-4ea2-b5b5-f40a47abf75e","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_snick_climbwall","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"resourceVersion":"1.0","name":"dba84d85-3ff8-4e92-b7a2-277fb67c1a06","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"2075df9d-8636-43c5-be6e-ddb659c538af","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2075df9d-8636-43c5-be6e-ddb659c538af","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"LayerId":{"name":"5187eae6-c42a-4ea2-b5b5-f40a47abf75e","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_snick_climbwall","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"resourceVersion":"1.0","name":"2075df9d-8636-43c5-be6e-ddb659c538af","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"cbe7d8cb-abcc-4480-ba5d-c1c18538bc9b","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"cbe7d8cb-abcc-4480-ba5d-c1c18538bc9b","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"LayerId":{"name":"5187eae6-c42a-4ea2-b5b5-f40a47abf75e","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_snick_climbwall","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"resourceVersion":"1.0","name":"cbe7d8cb-abcc-4480-ba5d-c1c18538bc9b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"a73b9671-1f8b-4e70-addb-4a833ab1edd4","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a73b9671-1f8b-4e70-addb-4a833ab1edd4","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"LayerId":{"name":"5187eae6-c42a-4ea2-b5b5-f40a47abf75e","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_snick_climbwall","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"resourceVersion":"1.0","name":"a73b9671-1f8b-4e70-addb-4a833ab1edd4","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ec37a79f-213b-4691-9894-1ccb82761efd","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ec37a79f-213b-4691-9894-1ccb82761efd","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"LayerId":{"name":"5187eae6-c42a-4ea2-b5b5-f40a47abf75e","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_snick_climbwall","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"resourceVersion":"1.0","name":"ec37a79f-213b-4691-9894-1ccb82761efd","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"5a97c026-d766-4e84-bd97-79990dbf9037","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5a97c026-d766-4e84-bd97-79990dbf9037","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"LayerId":{"name":"5187eae6-c42a-4ea2-b5b5-f40a47abf75e","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_snick_climbwall","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"resourceVersion":"1.0","name":"5a97c026-d766-4e84-bd97-79990dbf9037","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"14d21a15-02d2-4703-ba54-c68cc74fe095","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"14d21a15-02d2-4703-ba54-c68cc74fe095","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"LayerId":{"name":"5187eae6-c42a-4ea2-b5b5-f40a47abf75e","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_snick_climbwall","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"resourceVersion":"1.0","name":"14d21a15-02d2-4703-ba54-c68cc74fe095","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8b8ed95d-eb10-4f54-bca9-dd1397cf8a4b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"dba84d85-3ff8-4e92-b7a2-277fb67c1a06",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2075df9d-8636-43c5-be6e-ddb659c538af",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cbe7d8cb-abcc-4480-ba5d-c1c18538bc9b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a73b9671-1f8b-4e70-addb-4a833ab1edd4",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ec37a79f-213b-4691-9894-1ccb82761efd",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5a97c026-d766-4e84-bd97-79990dbf9037",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"14d21a15-02d2-4703-ba54-c68cc74fe095",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_snick_climbwall","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -61,7 +51,7 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"ab3695d2-f740-4414-8412-19caa31624a5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8b8ed95d-eb10-4f54-bca9-dd1397cf8a4b","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"c652bf88-947e-4977-bb28-9b9554ddb805","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"dba84d85-3ff8-4e92-b7a2-277fb67c1a06","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"60dd70ab-7ad8-46cf-afc3-478a6649c1de","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2075df9d-8636-43c5-be6e-ddb659c538af","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
@@ -70,7 +60,7 @@
             {"id":"38bb8251-4383-41b4-b8b1-747185c9d16e","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ec37a79f-213b-4691-9894-1ccb82761efd","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"281d2700-772e-4417-b3a0-ce7f2caf24b2","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5a97c026-d766-4e84-bd97-79990dbf9037","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"e3ecbda9-b072-4dc2-ba64-5c1d9476735c","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"14d21a15-02d2-4703-ba54-c68cc74fe095","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -86,22 +76,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_snick_climbwall","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5187eae6-c42a-4ea2-b5b5-f40a47abf75e","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"5187eae6-c42a-4ea2-b5b5-f40a47abf75e","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Snick",
     "path": "folders/Sprites/Characters/Playable Characters Sprites/Snick.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_snick_climbwall",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

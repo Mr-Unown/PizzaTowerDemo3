@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_robot_knife",
   "bboxMode": 2,
   "collisionKind": 2,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 100,
   "height": 100,
   "textureGroupId": {
@@ -24,18 +28,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"06f27aea-fe24-49ca-8172-603973a245dd","path":"sprites/spr_robot_knife/spr_robot_knife.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"06f27aea-fe24-49ca-8172-603973a245dd","path":"sprites/spr_robot_knife/spr_robot_knife.yy",},"LayerId":{"name":"ccbbcb58-7e29-47dd-8b3f-67b4eb2f950a","path":"sprites/spr_robot_knife/spr_robot_knife.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_robot_knife","path":"sprites/spr_robot_knife/spr_robot_knife.yy",},"resourceVersion":"1.0","name":"06f27aea-fe24-49ca-8172-603973a245dd","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"9d9d7c1c-7bbb-4141-97e7-f336011bb38e","path":"sprites/spr_robot_knife/spr_robot_knife.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"9d9d7c1c-7bbb-4141-97e7-f336011bb38e","path":"sprites/spr_robot_knife/spr_robot_knife.yy",},"LayerId":{"name":"ccbbcb58-7e29-47dd-8b3f-67b4eb2f950a","path":"sprites/spr_robot_knife/spr_robot_knife.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_robot_knife","path":"sprites/spr_robot_knife/spr_robot_knife.yy",},"resourceVersion":"1.0","name":"9d9d7c1c-7bbb-4141-97e7-f336011bb38e","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"1fca2699-dd18-402e-a934-9fde881c05d0","path":"sprites/spr_robot_knife/spr_robot_knife.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1fca2699-dd18-402e-a934-9fde881c05d0","path":"sprites/spr_robot_knife/spr_robot_knife.yy",},"LayerId":{"name":"ccbbcb58-7e29-47dd-8b3f-67b4eb2f950a","path":"sprites/spr_robot_knife/spr_robot_knife.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_robot_knife","path":"sprites/spr_robot_knife/spr_robot_knife.yy",},"resourceVersion":"1.0","name":"1fca2699-dd18-402e-a934-9fde881c05d0","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"06f27aea-fe24-49ca-8172-603973a245dd",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9d9d7c1c-7bbb-4141-97e7-f336011bb38e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1fca2699-dd18-402e-a934-9fde881c05d0",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_robot_knife","path":"sprites/spr_robot_knife/spr_robot_knife.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -46,11 +46,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"985e1ec0-5194-4be9-abd3-1f75e236a550","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"06f27aea-fe24-49ca-8172-603973a245dd","path":"sprites/spr_robot_knife/spr_robot_knife.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"861a65da-ef3e-464b-82b4-8697f85048ef","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9d9d7c1c-7bbb-4141-97e7-f336011bb38e","path":"sprites/spr_robot_knife/spr_robot_knife.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"a32abca4-e703-4b0c-a7f1-11b23e9ef586","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1fca2699-dd18-402e-a934-9fde881c05d0","path":"sprites/spr_robot_knife/spr_robot_knife.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,22 +66,13 @@
     "yorigin": 45,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_robot_knife","path":"sprites/spr_robot_knife/spr_robot_knife.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ccbbcb58-7e29-47dd-8b3f-67b4eb2f950a","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ccbbcb58-7e29-47dd-8b3f-67b4eb2f950a","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Robot",
     "path": "folders/Sprites/Characters/Baddies/Robot.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_robot_knife",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

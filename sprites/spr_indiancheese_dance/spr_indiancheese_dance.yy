@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_indiancheese_dance",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 100,
   "height": 100,
   "textureGroupId": {
@@ -24,69 +28,31 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"55864d66-8699-4e7e-b5ca-388e5c8fae92","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"55864d66-8699-4e7e-b5ca-388e5c8fae92","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"LayerId":{"name":"3cd6e05b-4351-471c-be7b-15fe5647dbfa","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_indiancheese_dance","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","name":"55864d66-8699-4e7e-b5ca-388e5c8fae92","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"1e50c886-0da2-4ed5-ae19-65a5e7d0c448","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1e50c886-0da2-4ed5-ae19-65a5e7d0c448","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"LayerId":{"name":"3cd6e05b-4351-471c-be7b-15fe5647dbfa","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_indiancheese_dance","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","name":"1e50c886-0da2-4ed5-ae19-65a5e7d0c448","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"38d2952a-3be6-43ac-ad35-ad24870ca8cf","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"38d2952a-3be6-43ac-ad35-ad24870ca8cf","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"LayerId":{"name":"3cd6e05b-4351-471c-be7b-15fe5647dbfa","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_indiancheese_dance","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","name":"38d2952a-3be6-43ac-ad35-ad24870ca8cf","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"0a64eec1-78cb-4a7c-98b2-f95f1fad185f","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0a64eec1-78cb-4a7c-98b2-f95f1fad185f","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"LayerId":{"name":"3cd6e05b-4351-471c-be7b-15fe5647dbfa","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_indiancheese_dance","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","name":"0a64eec1-78cb-4a7c-98b2-f95f1fad185f","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"a27811c3-c367-4356-999f-ec506a8e67cd","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a27811c3-c367-4356-999f-ec506a8e67cd","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"LayerId":{"name":"3cd6e05b-4351-471c-be7b-15fe5647dbfa","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_indiancheese_dance","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","name":"a27811c3-c367-4356-999f-ec506a8e67cd","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"5267c5cb-cf64-4f64-a433-c21b6bcf1ab3","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5267c5cb-cf64-4f64-a433-c21b6bcf1ab3","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"LayerId":{"name":"3cd6e05b-4351-471c-be7b-15fe5647dbfa","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_indiancheese_dance","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","name":"5267c5cb-cf64-4f64-a433-c21b6bcf1ab3","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"01a4d5a3-6c24-4cd6-b397-3cb79519151b","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"01a4d5a3-6c24-4cd6-b397-3cb79519151b","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"LayerId":{"name":"3cd6e05b-4351-471c-be7b-15fe5647dbfa","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_indiancheese_dance","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","name":"01a4d5a3-6c24-4cd6-b397-3cb79519151b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"7a9bbc1c-91b1-4424-a4b4-447e9cdf7b8a","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7a9bbc1c-91b1-4424-a4b4-447e9cdf7b8a","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"LayerId":{"name":"3cd6e05b-4351-471c-be7b-15fe5647dbfa","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_indiancheese_dance","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","name":"7a9bbc1c-91b1-4424-a4b4-447e9cdf7b8a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c9f8670e-9ac2-4968-b398-c2ad0b3f8890","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c9f8670e-9ac2-4968-b398-c2ad0b3f8890","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"LayerId":{"name":"3cd6e05b-4351-471c-be7b-15fe5647dbfa","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_indiancheese_dance","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","name":"c9f8670e-9ac2-4968-b398-c2ad0b3f8890","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"8b9d2ff3-9ce8-4eb0-baef-196b067e7f0e","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8b9d2ff3-9ce8-4eb0-baef-196b067e7f0e","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"LayerId":{"name":"3cd6e05b-4351-471c-be7b-15fe5647dbfa","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_indiancheese_dance","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","name":"8b9d2ff3-9ce8-4eb0-baef-196b067e7f0e","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"8b375751-9fe1-4c41-aed1-ef2e12895ad7","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8b375751-9fe1-4c41-aed1-ef2e12895ad7","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"LayerId":{"name":"3cd6e05b-4351-471c-be7b-15fe5647dbfa","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_indiancheese_dance","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","name":"8b375751-9fe1-4c41-aed1-ef2e12895ad7","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"8c87a3e9-2961-4560-9688-6ab6af06d7a9","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8c87a3e9-2961-4560-9688-6ab6af06d7a9","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"LayerId":{"name":"3cd6e05b-4351-471c-be7b-15fe5647dbfa","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_indiancheese_dance","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","name":"8c87a3e9-2961-4560-9688-6ab6af06d7a9","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"16272e71-2080-49fe-aaf4-141f969c56d8","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"16272e71-2080-49fe-aaf4-141f969c56d8","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"LayerId":{"name":"3cd6e05b-4351-471c-be7b-15fe5647dbfa","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_indiancheese_dance","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","name":"16272e71-2080-49fe-aaf4-141f969c56d8","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"9eabaeed-c864-4dee-91bc-a4d3a2b4afe1","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"9eabaeed-c864-4dee-91bc-a4d3a2b4afe1","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"LayerId":{"name":"3cd6e05b-4351-471c-be7b-15fe5647dbfa","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_indiancheese_dance","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","name":"9eabaeed-c864-4dee-91bc-a4d3a2b4afe1","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"27b07ada-2487-4323-b07a-14168328d791","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"27b07ada-2487-4323-b07a-14168328d791","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"LayerId":{"name":"3cd6e05b-4351-471c-be7b-15fe5647dbfa","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_indiancheese_dance","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","name":"27b07ada-2487-4323-b07a-14168328d791","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"d05341f0-447a-442f-9443-a2095b74e56b","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d05341f0-447a-442f-9443-a2095b74e56b","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"LayerId":{"name":"3cd6e05b-4351-471c-be7b-15fe5647dbfa","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_indiancheese_dance","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","name":"d05341f0-447a-442f-9443-a2095b74e56b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"f976cf86-65b6-482d-8932-dad58ac4a0ca","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f976cf86-65b6-482d-8932-dad58ac4a0ca","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"LayerId":{"name":"3cd6e05b-4351-471c-be7b-15fe5647dbfa","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_indiancheese_dance","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","name":"f976cf86-65b6-482d-8932-dad58ac4a0ca","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"9dc2b269-94db-4c6a-a8ee-e6a6d1c53142","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"9dc2b269-94db-4c6a-a8ee-e6a6d1c53142","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"LayerId":{"name":"3cd6e05b-4351-471c-be7b-15fe5647dbfa","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_indiancheese_dance","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","name":"9dc2b269-94db-4c6a-a8ee-e6a6d1c53142","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"28a5297e-5466-47cf-ae15-5ea1e3c5a2d0","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"28a5297e-5466-47cf-ae15-5ea1e3c5a2d0","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"LayerId":{"name":"3cd6e05b-4351-471c-be7b-15fe5647dbfa","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_indiancheese_dance","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","name":"28a5297e-5466-47cf-ae15-5ea1e3c5a2d0","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"aabe11d5-9984-452e-8826-b6b6e3c1e8e4","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"aabe11d5-9984-452e-8826-b6b6e3c1e8e4","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"LayerId":{"name":"3cd6e05b-4351-471c-be7b-15fe5647dbfa","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_indiancheese_dance","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","name":"aabe11d5-9984-452e-8826-b6b6e3c1e8e4","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"55864d66-8699-4e7e-b5ca-388e5c8fae92",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1e50c886-0da2-4ed5-ae19-65a5e7d0c448",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"38d2952a-3be6-43ac-ad35-ad24870ca8cf",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0a64eec1-78cb-4a7c-98b2-f95f1fad185f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a27811c3-c367-4356-999f-ec506a8e67cd",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5267c5cb-cf64-4f64-a433-c21b6bcf1ab3",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"01a4d5a3-6c24-4cd6-b397-3cb79519151b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7a9bbc1c-91b1-4424-a4b4-447e9cdf7b8a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c9f8670e-9ac2-4968-b398-c2ad0b3f8890",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8b9d2ff3-9ce8-4eb0-baef-196b067e7f0e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8b375751-9fe1-4c41-aed1-ef2e12895ad7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8c87a3e9-2961-4560-9688-6ab6af06d7a9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"16272e71-2080-49fe-aaf4-141f969c56d8",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9eabaeed-c864-4dee-91bc-a4d3a2b4afe1",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"27b07ada-2487-4323-b07a-14168328d791",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d05341f0-447a-442f-9443-a2095b74e56b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f976cf86-65b6-482d-8932-dad58ac4a0ca",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9dc2b269-94db-4c6a-a8ee-e6a6d1c53142",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"28a5297e-5466-47cf-ae15-5ea1e3c5a2d0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"aabe11d5-9984-452e-8826-b6b6e3c1e8e4",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_indiancheese_dance","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_indiancheese_dance",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -97,7 +63,7 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"096ad299-f730-4921-baf5-036d59f63f10","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"55864d66-8699-4e7e-b5ca-388e5c8fae92","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"e0dd58be-cfc5-464a-a263-ae7b3721d2fd","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1e50c886-0da2-4ed5-ae19-65a5e7d0c448","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"8d1abe3c-4e6d-4b0d-9d13-7759e020900b","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"38d2952a-3be6-43ac-ad35-ad24870ca8cf","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
@@ -118,7 +84,7 @@
             {"id":"27e360ce-3df2-4b4a-bc2e-de9734099815","Key":17.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9dc2b269-94db-4c6a-a8ee-e6a6d1c53142","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"10feedbd-481e-4cd4-80fa-8f346c62457f","Key":18.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"28a5297e-5466-47cf-ae15-5ea1e3c5a2d0","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"90df6c13-0ee5-43e2-9c99-2a28d70527b8","Key":19.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"aabe11d5-9984-452e-8826-b6b6e3c1e8e4","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -134,22 +100,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_indiancheese_dance","path":"sprites/spr_indiancheese_dance/spr_indiancheese_dance.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_indiancheese_dance",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3cd6e05b-4351-471c-be7b-15fe5647dbfa","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3cd6e05b-4351-471c-be7b-15fe5647dbfa","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Tribal Cheese",
     "path": "folders/Sprites/Characters/Baddies/Tribal Cheese.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_indiancheese_dance",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

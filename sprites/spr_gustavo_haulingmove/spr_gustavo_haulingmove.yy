@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_gustavo_haulingmove",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 144,
   "height": 120,
   "textureGroupId": {
@@ -24,36 +28,20 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"a9b2e2d1-f7a3-4958-b3a1-845b504c9c5b","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a9b2e2d1-f7a3-4958-b3a1-845b504c9c5b","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},"LayerId":{"name":"b88805f7-af34-4cd4-bfd6-36eb10700bac","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gustavo_haulingmove","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},"resourceVersion":"1.0","name":"a9b2e2d1-f7a3-4958-b3a1-845b504c9c5b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"559df987-0568-40f3-9be6-2fe8fee4c556","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"559df987-0568-40f3-9be6-2fe8fee4c556","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},"LayerId":{"name":"b88805f7-af34-4cd4-bfd6-36eb10700bac","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gustavo_haulingmove","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},"resourceVersion":"1.0","name":"559df987-0568-40f3-9be6-2fe8fee4c556","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"4f28388b-2dff-4760-b355-0cc2d7346457","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4f28388b-2dff-4760-b355-0cc2d7346457","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},"LayerId":{"name":"b88805f7-af34-4cd4-bfd6-36eb10700bac","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gustavo_haulingmove","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},"resourceVersion":"1.0","name":"4f28388b-2dff-4760-b355-0cc2d7346457","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"037b2d9b-6731-4a23-b718-f35c88339b0e","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"037b2d9b-6731-4a23-b718-f35c88339b0e","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},"LayerId":{"name":"b88805f7-af34-4cd4-bfd6-36eb10700bac","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gustavo_haulingmove","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},"resourceVersion":"1.0","name":"037b2d9b-6731-4a23-b718-f35c88339b0e","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"339a90fd-cf14-43c6-accc-35773c097469","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"339a90fd-cf14-43c6-accc-35773c097469","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},"LayerId":{"name":"b88805f7-af34-4cd4-bfd6-36eb10700bac","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gustavo_haulingmove","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},"resourceVersion":"1.0","name":"339a90fd-cf14-43c6-accc-35773c097469","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"1ecb5396-3da3-4f7e-b016-150d748db274","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1ecb5396-3da3-4f7e-b016-150d748db274","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},"LayerId":{"name":"b88805f7-af34-4cd4-bfd6-36eb10700bac","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gustavo_haulingmove","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},"resourceVersion":"1.0","name":"1ecb5396-3da3-4f7e-b016-150d748db274","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"1461a6d6-a50d-4de3-97a8-6bacd80eea9b","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1461a6d6-a50d-4de3-97a8-6bacd80eea9b","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},"LayerId":{"name":"b88805f7-af34-4cd4-bfd6-36eb10700bac","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gustavo_haulingmove","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},"resourceVersion":"1.0","name":"1461a6d6-a50d-4de3-97a8-6bacd80eea9b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"b65a7d19-827f-4f0c-8b09-53960abd22f5","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b65a7d19-827f-4f0c-8b09-53960abd22f5","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},"LayerId":{"name":"b88805f7-af34-4cd4-bfd6-36eb10700bac","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gustavo_haulingmove","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},"resourceVersion":"1.0","name":"b65a7d19-827f-4f0c-8b09-53960abd22f5","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"38c61834-37ce-4609-9211-c2175f53c068","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"38c61834-37ce-4609-9211-c2175f53c068","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},"LayerId":{"name":"b88805f7-af34-4cd4-bfd6-36eb10700bac","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gustavo_haulingmove","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},"resourceVersion":"1.0","name":"38c61834-37ce-4609-9211-c2175f53c068","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a9b2e2d1-f7a3-4958-b3a1-845b504c9c5b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"559df987-0568-40f3-9be6-2fe8fee4c556",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4f28388b-2dff-4760-b355-0cc2d7346457",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"037b2d9b-6731-4a23-b718-f35c88339b0e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"339a90fd-cf14-43c6-accc-35773c097469",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1ecb5396-3da3-4f7e-b016-150d748db274",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1461a6d6-a50d-4de3-97a8-6bacd80eea9b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b65a7d19-827f-4f0c-8b09-53960abd22f5",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"38c61834-37ce-4609-9211-c2175f53c068",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_gustavo_haulingmove","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_gustavo_haulingmove",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -64,7 +52,7 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"09ee9629-693b-44b7-9842-3c03693aec94","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a9b2e2d1-f7a3-4958-b3a1-845b504c9c5b","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"22ac492c-5200-46c9-8669-f6c376eb0598","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"559df987-0568-40f3-9be6-2fe8fee4c556","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"7a4a57a8-03aa-4272-af2e-6d4c6e04c896","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4f28388b-2dff-4760-b355-0cc2d7346457","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
@@ -74,7 +62,7 @@
             {"id":"13163034-e959-4b6b-a9ed-a4bcf9ed2aa2","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1461a6d6-a50d-4de3-97a8-6bacd80eea9b","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"678f4ca5-b1d6-4dcb-b429-6643f46c84ac","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b65a7d19-827f-4f0c-8b09-53960abd22f5","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"5624fca6-cb0f-4e54-802e-939663097611","Key":8.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"38c61834-37ce-4609-9211-c2175f53c068","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -90,22 +78,13 @@
     "yorigin": 60,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_gustavo_haulingmove","path":"sprites/spr_gustavo_haulingmove/spr_gustavo_haulingmove.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_gustavo_haulingmove",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b88805f7-af34-4cd4-bfd6-36eb10700bac","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b88805f7-af34-4cd4-bfd6-36eb10700bac","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Gustavo And Brick",
     "path": "folders/Sprites/Characters/Playable Characters Sprites/Gustavo And Brick.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_gustavo_haulingmove",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

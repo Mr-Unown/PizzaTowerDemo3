@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_gnome2_idle",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 120,
   "height": 100,
   "textureGroupId": {
@@ -24,18 +28,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"092a9095-405c-470a-aa26-b26a0d92252d","path":"sprites/spr_gnome2_idle/spr_gnome2_idle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"092a9095-405c-470a-aa26-b26a0d92252d","path":"sprites/spr_gnome2_idle/spr_gnome2_idle.yy",},"LayerId":{"name":"3f6ba392-7426-47ee-ad2c-734d24006c8c","path":"sprites/spr_gnome2_idle/spr_gnome2_idle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gnome2_idle","path":"sprites/spr_gnome2_idle/spr_gnome2_idle.yy",},"resourceVersion":"1.0","name":"092a9095-405c-470a-aa26-b26a0d92252d","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ce7a1436-373f-432f-b207-b2b922cbd67f","path":"sprites/spr_gnome2_idle/spr_gnome2_idle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ce7a1436-373f-432f-b207-b2b922cbd67f","path":"sprites/spr_gnome2_idle/spr_gnome2_idle.yy",},"LayerId":{"name":"3f6ba392-7426-47ee-ad2c-734d24006c8c","path":"sprites/spr_gnome2_idle/spr_gnome2_idle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gnome2_idle","path":"sprites/spr_gnome2_idle/spr_gnome2_idle.yy",},"resourceVersion":"1.0","name":"ce7a1436-373f-432f-b207-b2b922cbd67f","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"fb2eae73-dd98-47f5-b46e-3d19f1bbd48d","path":"sprites/spr_gnome2_idle/spr_gnome2_idle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"fb2eae73-dd98-47f5-b46e-3d19f1bbd48d","path":"sprites/spr_gnome2_idle/spr_gnome2_idle.yy",},"LayerId":{"name":"3f6ba392-7426-47ee-ad2c-734d24006c8c","path":"sprites/spr_gnome2_idle/spr_gnome2_idle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gnome2_idle","path":"sprites/spr_gnome2_idle/spr_gnome2_idle.yy",},"resourceVersion":"1.0","name":"fb2eae73-dd98-47f5-b46e-3d19f1bbd48d","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"092a9095-405c-470a-aa26-b26a0d92252d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ce7a1436-373f-432f-b207-b2b922cbd67f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fb2eae73-dd98-47f5-b46e-3d19f1bbd48d",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_gnome2_idle","path":"sprites/spr_gnome2_idle/spr_gnome2_idle.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_gnome2_idle",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -46,11 +46,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"124e74d6-6a4c-4f0c-b58e-ec0dff956423","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"092a9095-405c-470a-aa26-b26a0d92252d","path":"sprites/spr_gnome2_idle/spr_gnome2_idle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"1944fbea-c8c0-494a-8c87-ffdd86214165","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ce7a1436-373f-432f-b207-b2b922cbd67f","path":"sprites/spr_gnome2_idle/spr_gnome2_idle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"027301d8-01f9-467f-a22f-23e48259b1a2","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fb2eae73-dd98-47f5-b46e-3d19f1bbd48d","path":"sprites/spr_gnome2_idle/spr_gnome2_idle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,22 +66,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_gnome2_idle","path":"sprites/spr_gnome2_idle/spr_gnome2_idle.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_gnome2_idle",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3f6ba392-7426-47ee-ad2c-734d24006c8c","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3f6ba392-7426-47ee-ad2c-734d24006c8c","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Gnomes",
     "path": "folders/Sprites/Characters/Misc/Gnomes.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_gnome2_idle",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

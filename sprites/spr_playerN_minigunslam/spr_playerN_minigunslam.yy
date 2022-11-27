@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_playerN_minigunslam",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 300,
   "height": 100,
   "textureGroupId": {
@@ -24,18 +28,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"8abdcfbd-e0d4-4625-8fa6-0019bb335087","path":"sprites/spr_playerN_minigunslam/spr_playerN_minigunslam.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8abdcfbd-e0d4-4625-8fa6-0019bb335087","path":"sprites/spr_playerN_minigunslam/spr_playerN_minigunslam.yy",},"LayerId":{"name":"ef83d878-bd74-484f-ad83-547e2317a8d7","path":"sprites/spr_playerN_minigunslam/spr_playerN_minigunslam.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerN_minigunslam","path":"sprites/spr_playerN_minigunslam/spr_playerN_minigunslam.yy",},"resourceVersion":"1.0","name":"8abdcfbd-e0d4-4625-8fa6-0019bb335087","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"b484db06-b8b8-4906-b75f-dadda1044f5f","path":"sprites/spr_playerN_minigunslam/spr_playerN_minigunslam.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b484db06-b8b8-4906-b75f-dadda1044f5f","path":"sprites/spr_playerN_minigunslam/spr_playerN_minigunslam.yy",},"LayerId":{"name":"ef83d878-bd74-484f-ad83-547e2317a8d7","path":"sprites/spr_playerN_minigunslam/spr_playerN_minigunslam.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerN_minigunslam","path":"sprites/spr_playerN_minigunslam/spr_playerN_minigunslam.yy",},"resourceVersion":"1.0","name":"b484db06-b8b8-4906-b75f-dadda1044f5f","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"d9383f3d-738d-413f-9e36-48e03e13b0fc","path":"sprites/spr_playerN_minigunslam/spr_playerN_minigunslam.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d9383f3d-738d-413f-9e36-48e03e13b0fc","path":"sprites/spr_playerN_minigunslam/spr_playerN_minigunslam.yy",},"LayerId":{"name":"ef83d878-bd74-484f-ad83-547e2317a8d7","path":"sprites/spr_playerN_minigunslam/spr_playerN_minigunslam.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerN_minigunslam","path":"sprites/spr_playerN_minigunslam/spr_playerN_minigunslam.yy",},"resourceVersion":"1.0","name":"d9383f3d-738d-413f-9e36-48e03e13b0fc","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8abdcfbd-e0d4-4625-8fa6-0019bb335087",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b484db06-b8b8-4906-b75f-dadda1044f5f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d9383f3d-738d-413f-9e36-48e03e13b0fc",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_playerN_minigunslam","path":"sprites/spr_playerN_minigunslam/spr_playerN_minigunslam.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -46,11 +46,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"e006e29d-974f-47b5-a853-11304c17c8e0","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8abdcfbd-e0d4-4625-8fa6-0019bb335087","path":"sprites/spr_playerN_minigunslam/spr_playerN_minigunslam.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"4cad9539-e05f-4273-be94-7d0c8aac2910","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b484db06-b8b8-4906-b75f-dadda1044f5f","path":"sprites/spr_playerN_minigunslam/spr_playerN_minigunslam.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"f9592652-4da4-467f-8bf0-6991aaf5c3c3","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d9383f3d-738d-413f-9e36-48e03e13b0fc","path":"sprites/spr_playerN_minigunslam/spr_playerN_minigunslam.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -66,22 +66,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_playerN_minigunslam","path":"sprites/spr_playerN_minigunslam/spr_playerN_minigunslam.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ef83d878-bd74-484f-ad83-547e2317a8d7","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ef83d878-bd74-484f-ad83-547e2317a8d7","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Noise",
     "path": "folders/Sprites/Characters/Playable Characters Sprites/Noise.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_playerN_minigunslam",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

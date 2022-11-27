@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_geromedoor_opening",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 100,
   "height": 100,
   "textureGroupId": {
@@ -24,18 +28,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"90371b86-e357-4f23-837f-401fe6d71488","path":"sprites/spr_geromedoor_opening/spr_geromedoor_opening.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"90371b86-e357-4f23-837f-401fe6d71488","path":"sprites/spr_geromedoor_opening/spr_geromedoor_opening.yy",},"LayerId":{"name":"c8a58bfe-3f10-4ea3-a746-d8f334dd74b4","path":"sprites/spr_geromedoor_opening/spr_geromedoor_opening.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_geromedoor_opening","path":"sprites/spr_geromedoor_opening/spr_geromedoor_opening.yy",},"resourceVersion":"1.0","name":"90371b86-e357-4f23-837f-401fe6d71488","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"27d5456b-68a7-454e-84fa-943db4ffebe8","path":"sprites/spr_geromedoor_opening/spr_geromedoor_opening.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"27d5456b-68a7-454e-84fa-943db4ffebe8","path":"sprites/spr_geromedoor_opening/spr_geromedoor_opening.yy",},"LayerId":{"name":"c8a58bfe-3f10-4ea3-a746-d8f334dd74b4","path":"sprites/spr_geromedoor_opening/spr_geromedoor_opening.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_geromedoor_opening","path":"sprites/spr_geromedoor_opening/spr_geromedoor_opening.yy",},"resourceVersion":"1.0","name":"27d5456b-68a7-454e-84fa-943db4ffebe8","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"19af507d-f63a-4534-856b-ff2c575a0da6","path":"sprites/spr_geromedoor_opening/spr_geromedoor_opening.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"19af507d-f63a-4534-856b-ff2c575a0da6","path":"sprites/spr_geromedoor_opening/spr_geromedoor_opening.yy",},"LayerId":{"name":"c8a58bfe-3f10-4ea3-a746-d8f334dd74b4","path":"sprites/spr_geromedoor_opening/spr_geromedoor_opening.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_geromedoor_opening","path":"sprites/spr_geromedoor_opening/spr_geromedoor_opening.yy",},"resourceVersion":"1.0","name":"19af507d-f63a-4534-856b-ff2c575a0da6","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"90371b86-e357-4f23-837f-401fe6d71488",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"27d5456b-68a7-454e-84fa-943db4ffebe8",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"19af507d-f63a-4534-856b-ff2c575a0da6",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_geromedoor_opening","path":"sprites/spr_geromedoor_opening/spr_geromedoor_opening.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -46,11 +46,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"b96d89c8-557a-4832-926b-e09f301c6bc3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"90371b86-e357-4f23-837f-401fe6d71488","path":"sprites/spr_geromedoor_opening/spr_geromedoor_opening.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"937a02df-f24e-4205-969a-b50313db5f76","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"27d5456b-68a7-454e-84fa-943db4ffebe8","path":"sprites/spr_geromedoor_opening/spr_geromedoor_opening.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"c0126797-d80b-4acc-beac-3b8d7af66838","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"19af507d-f63a-4534-856b-ff2c575a0da6","path":"sprites/spr_geromedoor_opening/spr_geromedoor_opening.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,22 +66,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_geromedoor_opening","path":"sprites/spr_geromedoor_opening/spr_geromedoor_opening.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c8a58bfe-3f10-4ea3-a746-d8f334dd74b4","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c8a58bfe-3f10-4ea3-a746-d8f334dd74b4","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Objects",
     "path": "folders/Sprites/Objects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_geromedoor_opening",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

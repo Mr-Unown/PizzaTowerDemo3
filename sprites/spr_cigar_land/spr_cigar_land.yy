@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_cigar_land",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 100,
   "height": 100,
   "textureGroupId": {
@@ -24,27 +28,17 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"05de0749-f3ba-4ee2-ab21-2098b9af45b2","path":"sprites/spr_cigar_land/spr_cigar_land.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"05de0749-f3ba-4ee2-ab21-2098b9af45b2","path":"sprites/spr_cigar_land/spr_cigar_land.yy",},"LayerId":{"name":"1208c100-3a67-4f27-9a20-49d68acec150","path":"sprites/spr_cigar_land/spr_cigar_land.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cigar_land","path":"sprites/spr_cigar_land/spr_cigar_land.yy",},"resourceVersion":"1.0","name":"05de0749-f3ba-4ee2-ab21-2098b9af45b2","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"8a0d2039-30c2-47f0-a769-9fa9dbf392ad","path":"sprites/spr_cigar_land/spr_cigar_land.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8a0d2039-30c2-47f0-a769-9fa9dbf392ad","path":"sprites/spr_cigar_land/spr_cigar_land.yy",},"LayerId":{"name":"1208c100-3a67-4f27-9a20-49d68acec150","path":"sprites/spr_cigar_land/spr_cigar_land.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cigar_land","path":"sprites/spr_cigar_land/spr_cigar_land.yy",},"resourceVersion":"1.0","name":"8a0d2039-30c2-47f0-a769-9fa9dbf392ad","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ec0acb19-415f-4777-bf06-a39df73e88ea","path":"sprites/spr_cigar_land/spr_cigar_land.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ec0acb19-415f-4777-bf06-a39df73e88ea","path":"sprites/spr_cigar_land/spr_cigar_land.yy",},"LayerId":{"name":"1208c100-3a67-4f27-9a20-49d68acec150","path":"sprites/spr_cigar_land/spr_cigar_land.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cigar_land","path":"sprites/spr_cigar_land/spr_cigar_land.yy",},"resourceVersion":"1.0","name":"ec0acb19-415f-4777-bf06-a39df73e88ea","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"8e3bdfee-a1b6-4a8d-b938-7b56f0940662","path":"sprites/spr_cigar_land/spr_cigar_land.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8e3bdfee-a1b6-4a8d-b938-7b56f0940662","path":"sprites/spr_cigar_land/spr_cigar_land.yy",},"LayerId":{"name":"1208c100-3a67-4f27-9a20-49d68acec150","path":"sprites/spr_cigar_land/spr_cigar_land.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cigar_land","path":"sprites/spr_cigar_land/spr_cigar_land.yy",},"resourceVersion":"1.0","name":"8e3bdfee-a1b6-4a8d-b938-7b56f0940662","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"79c19eba-3fe0-41de-a6df-aaacb02a2251","path":"sprites/spr_cigar_land/spr_cigar_land.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"79c19eba-3fe0-41de-a6df-aaacb02a2251","path":"sprites/spr_cigar_land/spr_cigar_land.yy",},"LayerId":{"name":"1208c100-3a67-4f27-9a20-49d68acec150","path":"sprites/spr_cigar_land/spr_cigar_land.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cigar_land","path":"sprites/spr_cigar_land/spr_cigar_land.yy",},"resourceVersion":"1.0","name":"79c19eba-3fe0-41de-a6df-aaacb02a2251","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c0fd5b72-3648-4f5e-8dff-c0b31da2fbc4","path":"sprites/spr_cigar_land/spr_cigar_land.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c0fd5b72-3648-4f5e-8dff-c0b31da2fbc4","path":"sprites/spr_cigar_land/spr_cigar_land.yy",},"LayerId":{"name":"1208c100-3a67-4f27-9a20-49d68acec150","path":"sprites/spr_cigar_land/spr_cigar_land.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cigar_land","path":"sprites/spr_cigar_land/spr_cigar_land.yy",},"resourceVersion":"1.0","name":"c0fd5b72-3648-4f5e-8dff-c0b31da2fbc4","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"05de0749-f3ba-4ee2-ab21-2098b9af45b2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8a0d2039-30c2-47f0-a769-9fa9dbf392ad",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ec0acb19-415f-4777-bf06-a39df73e88ea",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8e3bdfee-a1b6-4a8d-b938-7b56f0940662",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"79c19eba-3fe0-41de-a6df-aaacb02a2251",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c0fd5b72-3648-4f5e-8dff-c0b31da2fbc4",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_cigar_land","path":"sprites/spr_cigar_land/spr_cigar_land.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -55,14 +49,14 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"f66b962d-92cf-4cdb-ae67-841396275b51","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"05de0749-f3ba-4ee2-ab21-2098b9af45b2","path":"sprites/spr_cigar_land/spr_cigar_land.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"20b1b5f1-4775-47c3-ae23-8829dda98fef","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8a0d2039-30c2-47f0-a769-9fa9dbf392ad","path":"sprites/spr_cigar_land/spr_cigar_land.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"e55ec940-d62b-4bf8-9fcb-ad4f8e83ea9a","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ec0acb19-415f-4777-bf06-a39df73e88ea","path":"sprites/spr_cigar_land/spr_cigar_land.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"9ee67932-4897-4352-8f96-62a371486f12","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8e3bdfee-a1b6-4a8d-b938-7b56f0940662","path":"sprites/spr_cigar_land/spr_cigar_land.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"d08939b9-3f27-42ae-af6f-c99e2591d1c0","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"79c19eba-3fe0-41de-a6df-aaacb02a2251","path":"sprites/spr_cigar_land/spr_cigar_land.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"8676aaa9-3290-45b1-bab2-c3df5bf89393","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c0fd5b72-3648-4f5e-8dff-c0b31da2fbc4","path":"sprites/spr_cigar_land/spr_cigar_land.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -78,22 +72,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_cigar_land","path":"sprites/spr_cigar_land/spr_cigar_land.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"1208c100-3a67-4f27-9a20-49d68acec150","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"1208c100-3a67-4f27-9a20-49d68acec150","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Smokey",
     "path": "folders/Sprites/Characters/Baddies/Weenie/Smokey.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_cigar_land",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

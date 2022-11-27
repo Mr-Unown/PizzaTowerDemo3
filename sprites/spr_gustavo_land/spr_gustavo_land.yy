@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_gustavo_land",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 144,
   "height": 120,
   "textureGroupId": {
@@ -24,18 +28,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"02cdfc38-172c-4d8d-8b96-550bc94ebb4c","path":"sprites/spr_gustavo_land/spr_gustavo_land.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"02cdfc38-172c-4d8d-8b96-550bc94ebb4c","path":"sprites/spr_gustavo_land/spr_gustavo_land.yy",},"LayerId":{"name":"b0ef294a-7d0e-4659-bed7-019c4df2ec35","path":"sprites/spr_gustavo_land/spr_gustavo_land.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gustavo_land","path":"sprites/spr_gustavo_land/spr_gustavo_land.yy",},"resourceVersion":"1.0","name":"02cdfc38-172c-4d8d-8b96-550bc94ebb4c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"875fe674-d385-47ab-931e-eb4dc51b0eae","path":"sprites/spr_gustavo_land/spr_gustavo_land.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"875fe674-d385-47ab-931e-eb4dc51b0eae","path":"sprites/spr_gustavo_land/spr_gustavo_land.yy",},"LayerId":{"name":"b0ef294a-7d0e-4659-bed7-019c4df2ec35","path":"sprites/spr_gustavo_land/spr_gustavo_land.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gustavo_land","path":"sprites/spr_gustavo_land/spr_gustavo_land.yy",},"resourceVersion":"1.0","name":"875fe674-d385-47ab-931e-eb4dc51b0eae","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"5ae2257e-a338-40f0-8502-af3ee1c2f1c6","path":"sprites/spr_gustavo_land/spr_gustavo_land.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5ae2257e-a338-40f0-8502-af3ee1c2f1c6","path":"sprites/spr_gustavo_land/spr_gustavo_land.yy",},"LayerId":{"name":"b0ef294a-7d0e-4659-bed7-019c4df2ec35","path":"sprites/spr_gustavo_land/spr_gustavo_land.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gustavo_land","path":"sprites/spr_gustavo_land/spr_gustavo_land.yy",},"resourceVersion":"1.0","name":"5ae2257e-a338-40f0-8502-af3ee1c2f1c6","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"02cdfc38-172c-4d8d-8b96-550bc94ebb4c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"875fe674-d385-47ab-931e-eb4dc51b0eae",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5ae2257e-a338-40f0-8502-af3ee1c2f1c6",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_gustavo_land","path":"sprites/spr_gustavo_land/spr_gustavo_land.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_gustavo_land",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -46,11 +46,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"aa01782e-8a83-489e-ab7b-5de455a12ef7","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"02cdfc38-172c-4d8d-8b96-550bc94ebb4c","path":"sprites/spr_gustavo_land/spr_gustavo_land.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"551322a2-35e9-4751-b18b-98c69817742a","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"875fe674-d385-47ab-931e-eb4dc51b0eae","path":"sprites/spr_gustavo_land/spr_gustavo_land.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"4f8ffdff-1ffa-4350-b382-b8ecf74ea18c","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5ae2257e-a338-40f0-8502-af3ee1c2f1c6","path":"sprites/spr_gustavo_land/spr_gustavo_land.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,22 +66,13 @@
     "yorigin": 60,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_gustavo_land","path":"sprites/spr_gustavo_land/spr_gustavo_land.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_gustavo_land",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b0ef294a-7d0e-4659-bed7-019c4df2ec35","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b0ef294a-7d0e-4659-bed7-019c4df2ec35","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Gustavo And Brick",
     "path": "folders/Sprites/Characters/Playable Characters Sprites/Gustavo And Brick.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_gustavo_land",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

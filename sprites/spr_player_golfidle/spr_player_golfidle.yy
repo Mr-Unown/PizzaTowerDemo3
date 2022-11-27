@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_player_golfidle",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 155,
   "height": 100,
   "textureGroupId": {
@@ -24,171 +28,65 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"887de5db-89a1-4863-8179-9caa8020e861","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"887de5db-89a1-4863-8179-9caa8020e861","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"887de5db-89a1-4863-8179-9caa8020e861","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"58dad33d-dd4c-4234-9d72-97d737c376ae","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"58dad33d-dd4c-4234-9d72-97d737c376ae","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"58dad33d-dd4c-4234-9d72-97d737c376ae","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"3fa49565-474e-4071-b31a-f7d8cf2285bd","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3fa49565-474e-4071-b31a-f7d8cf2285bd","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"3fa49565-474e-4071-b31a-f7d8cf2285bd","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"8f37b83c-27e7-43c0-b30f-1c3c5c14a7de","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8f37b83c-27e7-43c0-b30f-1c3c5c14a7de","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"8f37b83c-27e7-43c0-b30f-1c3c5c14a7de","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"eb64ac6a-6a18-494f-b1c6-9a065a92b13d","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"eb64ac6a-6a18-494f-b1c6-9a065a92b13d","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"eb64ac6a-6a18-494f-b1c6-9a065a92b13d","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"8591fcc1-d871-441a-9367-79f7d2a7e0d5","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8591fcc1-d871-441a-9367-79f7d2a7e0d5","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"8591fcc1-d871-441a-9367-79f7d2a7e0d5","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"b0dd9b3b-e01e-4fdf-9c1b-167d5c841892","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b0dd9b3b-e01e-4fdf-9c1b-167d5c841892","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"b0dd9b3b-e01e-4fdf-9c1b-167d5c841892","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"0283f600-9f8b-4cd0-9be5-b4f2dc5bf7b1","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0283f600-9f8b-4cd0-9be5-b4f2dc5bf7b1","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"0283f600-9f8b-4cd0-9be5-b4f2dc5bf7b1","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"034d5fd4-2fc1-4950-8608-6124695332c4","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"034d5fd4-2fc1-4950-8608-6124695332c4","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"034d5fd4-2fc1-4950-8608-6124695332c4","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"4f3fdbab-52cc-40d3-b495-82470ba384ef","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4f3fdbab-52cc-40d3-b495-82470ba384ef","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"4f3fdbab-52cc-40d3-b495-82470ba384ef","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"f6403fae-292f-4bea-abbf-d67e4753efa0","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f6403fae-292f-4bea-abbf-d67e4753efa0","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"f6403fae-292f-4bea-abbf-d67e4753efa0","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"e814261f-e20f-4144-9873-e355dd88b730","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e814261f-e20f-4144-9873-e355dd88b730","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"e814261f-e20f-4144-9873-e355dd88b730","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"f8eece6b-66de-42f3-9caf-2ce764c45b78","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f8eece6b-66de-42f3-9caf-2ce764c45b78","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"f8eece6b-66de-42f3-9caf-2ce764c45b78","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"704948f5-6c0c-408f-a6c7-bc053ec79f08","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"704948f5-6c0c-408f-a6c7-bc053ec79f08","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"704948f5-6c0c-408f-a6c7-bc053ec79f08","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"e5a2a210-e453-4e3f-8694-bb19f33c13ab","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e5a2a210-e453-4e3f-8694-bb19f33c13ab","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"e5a2a210-e453-4e3f-8694-bb19f33c13ab","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"d62c9937-be1b-4b1b-a949-25bc219a5977","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d62c9937-be1b-4b1b-a949-25bc219a5977","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"d62c9937-be1b-4b1b-a949-25bc219a5977","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"03afabec-d63b-46f8-9e71-9459f4698ee2","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"03afabec-d63b-46f8-9e71-9459f4698ee2","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"03afabec-d63b-46f8-9e71-9459f4698ee2","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"9f4ba482-3653-4deb-bdf7-f03ba07b68b4","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"9f4ba482-3653-4deb-bdf7-f03ba07b68b4","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"9f4ba482-3653-4deb-bdf7-f03ba07b68b4","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c5684bb6-4d9c-4300-b039-a69ddf40f679","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c5684bb6-4d9c-4300-b039-a69ddf40f679","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"c5684bb6-4d9c-4300-b039-a69ddf40f679","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"60159b2d-d01c-416b-a775-e30de36a02ed","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"60159b2d-d01c-416b-a775-e30de36a02ed","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"60159b2d-d01c-416b-a775-e30de36a02ed","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"807718bb-7a71-4cff-8f77-812d300b41e9","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"807718bb-7a71-4cff-8f77-812d300b41e9","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"807718bb-7a71-4cff-8f77-812d300b41e9","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"f4dda932-6656-4df3-9151-21c0547c8f52","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f4dda932-6656-4df3-9151-21c0547c8f52","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"f4dda932-6656-4df3-9151-21c0547c8f52","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"7cda5ad6-332d-4adf-a05c-99a1704218ab","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7cda5ad6-332d-4adf-a05c-99a1704218ab","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"7cda5ad6-332d-4adf-a05c-99a1704218ab","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"9f996e76-4c35-4cb5-bc39-9f3991012fa9","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"9f996e76-4c35-4cb5-bc39-9f3991012fa9","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"9f996e76-4c35-4cb5-bc39-9f3991012fa9","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"af8cf46d-93de-47c7-b2fe-b6a759c1c32b","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"af8cf46d-93de-47c7-b2fe-b6a759c1c32b","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"af8cf46d-93de-47c7-b2fe-b6a759c1c32b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"228fe7f9-ad83-468a-aa99-0bbf93c97f8e","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"228fe7f9-ad83-468a-aa99-0bbf93c97f8e","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"228fe7f9-ad83-468a-aa99-0bbf93c97f8e","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"3539c27b-da86-454f-b95d-76a25d9741a6","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3539c27b-da86-454f-b95d-76a25d9741a6","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"3539c27b-da86-454f-b95d-76a25d9741a6","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"793148d5-7a6b-4e00-9c96-bca660b18745","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"793148d5-7a6b-4e00-9c96-bca660b18745","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"793148d5-7a6b-4e00-9c96-bca660b18745","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"b3ab77c5-a84d-403b-b8bd-3f76105608ca","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b3ab77c5-a84d-403b-b8bd-3f76105608ca","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"b3ab77c5-a84d-403b-b8bd-3f76105608ca","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c2581463-e561-47d3-9d39-670bf86c7696","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c2581463-e561-47d3-9d39-670bf86c7696","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"c2581463-e561-47d3-9d39-670bf86c7696","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"6cbe83f5-2c49-4893-9207-fbc95b99418d","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6cbe83f5-2c49-4893-9207-fbc95b99418d","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"6cbe83f5-2c49-4893-9207-fbc95b99418d","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"bdcc17dc-0898-496c-bf45-eee275421a6c","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"bdcc17dc-0898-496c-bf45-eee275421a6c","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"bdcc17dc-0898-496c-bf45-eee275421a6c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"9e1c3a0a-9907-4546-acf3-f27a3af4fa3c","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"9e1c3a0a-9907-4546-acf3-f27a3af4fa3c","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"9e1c3a0a-9907-4546-acf3-f27a3af4fa3c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"fb4e78a2-b430-4ae7-bf72-c18932776da8","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"fb4e78a2-b430-4ae7-bf72-c18932776da8","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"fb4e78a2-b430-4ae7-bf72-c18932776da8","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"d568e8ee-fa1b-41e8-b80a-754430aa5a9d","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d568e8ee-fa1b-41e8-b80a-754430aa5a9d","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"d568e8ee-fa1b-41e8-b80a-754430aa5a9d","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"37c96bd8-c0eb-4aa5-b47a-269cebc7d67b","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"37c96bd8-c0eb-4aa5-b47a-269cebc7d67b","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"37c96bd8-c0eb-4aa5-b47a-269cebc7d67b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"47238540-3b12-4ff8-af22-7fcb65c1fc0d","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"47238540-3b12-4ff8-af22-7fcb65c1fc0d","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"47238540-3b12-4ff8-af22-7fcb65c1fc0d","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"f5e32c27-1f84-4bcc-bd45-629c5087e84a","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f5e32c27-1f84-4bcc-bd45-629c5087e84a","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"f5e32c27-1f84-4bcc-bd45-629c5087e84a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"6302cef5-bf5f-4496-a303-d4b1860440da","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6302cef5-bf5f-4496-a303-d4b1860440da","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"6302cef5-bf5f-4496-a303-d4b1860440da","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"4a903782-60e2-497a-9ef7-6dd8091a2ec6","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4a903782-60e2-497a-9ef7-6dd8091a2ec6","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"4a903782-60e2-497a-9ef7-6dd8091a2ec6","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"69e02c57-cd66-43ce-a776-75d72781c5a5","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"69e02c57-cd66-43ce-a776-75d72781c5a5","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"69e02c57-cd66-43ce-a776-75d72781c5a5","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"6ba9ad43-f7ce-4d28-90ba-0334734543db","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6ba9ad43-f7ce-4d28-90ba-0334734543db","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"6ba9ad43-f7ce-4d28-90ba-0334734543db","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"3c6ccbe5-bab9-4492-8d1f-5ebba0cb3292","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3c6ccbe5-bab9-4492-8d1f-5ebba0cb3292","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"3c6ccbe5-bab9-4492-8d1f-5ebba0cb3292","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c6d7b348-300f-485d-8a5d-7a9a07b1b95f","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c6d7b348-300f-485d-8a5d-7a9a07b1b95f","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"c6d7b348-300f-485d-8a5d-7a9a07b1b95f","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"b7f102bd-d247-42e8-ac81-2493bb6dbcad","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b7f102bd-d247-42e8-ac81-2493bb6dbcad","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"b7f102bd-d247-42e8-ac81-2493bb6dbcad","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c3b5fa23-e8d6-4f88-83c2-1f21782c7eba","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c3b5fa23-e8d6-4f88-83c2-1f21782c7eba","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"c3b5fa23-e8d6-4f88-83c2-1f21782c7eba","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"743bd63d-babb-4f88-8a79-df10061aa283","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"743bd63d-babb-4f88-8a79-df10061aa283","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"743bd63d-babb-4f88-8a79-df10061aa283","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"82b492b9-c141-4422-bedc-c8b5dbea9c70","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"82b492b9-c141-4422-bedc-c8b5dbea9c70","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"82b492b9-c141-4422-bedc-c8b5dbea9c70","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"8ccce272-1407-4337-a741-2689bc736c87","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8ccce272-1407-4337-a741-2689bc736c87","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"8ccce272-1407-4337-a741-2689bc736c87","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"1de78abc-c197-4eaf-84b0-9eca4896ffad","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1de78abc-c197-4eaf-84b0-9eca4896ffad","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"1de78abc-c197-4eaf-84b0-9eca4896ffad","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"caa69284-0447-404e-be24-c5a99a57f56e","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"caa69284-0447-404e-be24-c5a99a57f56e","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"caa69284-0447-404e-be24-c5a99a57f56e","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"aee8ce9c-b9f6-407d-a7a7-a92fe421c5f2","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"aee8ce9c-b9f6-407d-a7a7-a92fe421c5f2","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"aee8ce9c-b9f6-407d-a7a7-a92fe421c5f2","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"e6bfc7c4-2001-4383-b181-b96e567aff6f","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e6bfc7c4-2001-4383-b181-b96e567aff6f","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"e6bfc7c4-2001-4383-b181-b96e567aff6f","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"303bef27-4e03-4645-bfa2-da2008a0ca5f","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"303bef27-4e03-4645-bfa2-da2008a0ca5f","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"LayerId":{"name":"3152833b-4aea-49bd-8197-c1dc98c7c287","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","name":"303bef27-4e03-4645-bfa2-da2008a0ca5f","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"887de5db-89a1-4863-8179-9caa8020e861",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"58dad33d-dd4c-4234-9d72-97d737c376ae",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3fa49565-474e-4071-b31a-f7d8cf2285bd",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8f37b83c-27e7-43c0-b30f-1c3c5c14a7de",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"eb64ac6a-6a18-494f-b1c6-9a065a92b13d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8591fcc1-d871-441a-9367-79f7d2a7e0d5",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b0dd9b3b-e01e-4fdf-9c1b-167d5c841892",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0283f600-9f8b-4cd0-9be5-b4f2dc5bf7b1",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"034d5fd4-2fc1-4950-8608-6124695332c4",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4f3fdbab-52cc-40d3-b495-82470ba384ef",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f6403fae-292f-4bea-abbf-d67e4753efa0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e814261f-e20f-4144-9873-e355dd88b730",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f8eece6b-66de-42f3-9caf-2ce764c45b78",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"704948f5-6c0c-408f-a6c7-bc053ec79f08",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e5a2a210-e453-4e3f-8694-bb19f33c13ab",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d62c9937-be1b-4b1b-a949-25bc219a5977",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"03afabec-d63b-46f8-9e71-9459f4698ee2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9f4ba482-3653-4deb-bdf7-f03ba07b68b4",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c5684bb6-4d9c-4300-b039-a69ddf40f679",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"60159b2d-d01c-416b-a775-e30de36a02ed",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"807718bb-7a71-4cff-8f77-812d300b41e9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f4dda932-6656-4df3-9151-21c0547c8f52",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7cda5ad6-332d-4adf-a05c-99a1704218ab",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9f996e76-4c35-4cb5-bc39-9f3991012fa9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"af8cf46d-93de-47c7-b2fe-b6a759c1c32b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"228fe7f9-ad83-468a-aa99-0bbf93c97f8e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3539c27b-da86-454f-b95d-76a25d9741a6",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"793148d5-7a6b-4e00-9c96-bca660b18745",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b3ab77c5-a84d-403b-b8bd-3f76105608ca",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c2581463-e561-47d3-9d39-670bf86c7696",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6cbe83f5-2c49-4893-9207-fbc95b99418d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"bdcc17dc-0898-496c-bf45-eee275421a6c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9e1c3a0a-9907-4546-acf3-f27a3af4fa3c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fb4e78a2-b430-4ae7-bf72-c18932776da8",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d568e8ee-fa1b-41e8-b80a-754430aa5a9d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"37c96bd8-c0eb-4aa5-b47a-269cebc7d67b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"47238540-3b12-4ff8-af22-7fcb65c1fc0d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f5e32c27-1f84-4bcc-bd45-629c5087e84a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6302cef5-bf5f-4496-a303-d4b1860440da",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4a903782-60e2-497a-9ef7-6dd8091a2ec6",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"69e02c57-cd66-43ce-a776-75d72781c5a5",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6ba9ad43-f7ce-4d28-90ba-0334734543db",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3c6ccbe5-bab9-4492-8d1f-5ebba0cb3292",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c6d7b348-300f-485d-8a5d-7a9a07b1b95f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b7f102bd-d247-42e8-ac81-2493bb6dbcad",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c3b5fa23-e8d6-4f88-83c2-1f21782c7eba",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"743bd63d-babb-4f88-8a79-df10061aa283",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"82b492b9-c141-4422-bedc-c8b5dbea9c70",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8ccce272-1407-4337-a741-2689bc736c87",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1de78abc-c197-4eaf-84b0-9eca4896ffad",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"caa69284-0447-404e-be24-c5a99a57f56e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"aee8ce9c-b9f6-407d-a7a7-a92fe421c5f2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e6bfc7c4-2001-4383-b181-b96e567aff6f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"303bef27-4e03-4645-bfa2-da2008a0ca5f",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_player_golfidle",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -199,7 +97,7 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"1562b5af-4f49-47a0-8bab-d13bc4d7e556","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"887de5db-89a1-4863-8179-9caa8020e861","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"1311b2ea-e26f-4d8f-9e6b-91463fc62de5","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"58dad33d-dd4c-4234-9d72-97d737c376ae","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"2e02fce1-815c-4cc1-bf17-6c73dce3653e","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3fa49565-474e-4071-b31a-f7d8cf2285bd","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
@@ -254,7 +152,7 @@
             {"id":"03c4fbab-ab64-4373-adcd-9b27cb35926e","Key":51.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"aee8ce9c-b9f6-407d-a7a7-a92fe421c5f2","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"96f2ddc8-a37f-46f0-a140-d98c13b3d0b1","Key":52.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e6bfc7c4-2001-4383-b181-b96e567aff6f","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"a5e912b8-f44a-4758-99d5-08ebdcc04065","Key":53.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"303bef27-4e03-4645-bfa2-da2008a0ca5f","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -270,22 +168,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_player_golfidle","path":"sprites/spr_player_golfidle/spr_player_golfidle.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_player_golfidle",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3152833b-4aea-49bd-8197-c1dc98c7c287","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3152833b-4aea-49bd-8197-c1dc98c7c287","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Peppino",
     "path": "folders/Sprites/Characters/Playable Characters Sprites/Peppino.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_player_golfidle",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

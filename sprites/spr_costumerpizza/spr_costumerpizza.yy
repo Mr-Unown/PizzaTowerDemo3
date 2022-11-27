@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_costumerpizza",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 200,
   "height": 100,
   "textureGroupId": {
@@ -24,27 +28,17 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"9c89bae7-733c-43b7-bf80-677aa158b254","path":"sprites/spr_costumerpizza/spr_costumerpizza.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"9c89bae7-733c-43b7-bf80-677aa158b254","path":"sprites/spr_costumerpizza/spr_costumerpizza.yy",},"LayerId":{"name":"9b72f859-381a-46a6-a2bb-24c97cf865b1","path":"sprites/spr_costumerpizza/spr_costumerpizza.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_costumerpizza","path":"sprites/spr_costumerpizza/spr_costumerpizza.yy",},"resourceVersion":"1.0","name":"9c89bae7-733c-43b7-bf80-677aa158b254","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"f4e7b2ba-347f-4e4b-9725-5303f42e784c","path":"sprites/spr_costumerpizza/spr_costumerpizza.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f4e7b2ba-347f-4e4b-9725-5303f42e784c","path":"sprites/spr_costumerpizza/spr_costumerpizza.yy",},"LayerId":{"name":"9b72f859-381a-46a6-a2bb-24c97cf865b1","path":"sprites/spr_costumerpizza/spr_costumerpizza.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_costumerpizza","path":"sprites/spr_costumerpizza/spr_costumerpizza.yy",},"resourceVersion":"1.0","name":"f4e7b2ba-347f-4e4b-9725-5303f42e784c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ae28fd42-7d95-4036-a9d5-ac06eaf53470","path":"sprites/spr_costumerpizza/spr_costumerpizza.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ae28fd42-7d95-4036-a9d5-ac06eaf53470","path":"sprites/spr_costumerpizza/spr_costumerpizza.yy",},"LayerId":{"name":"9b72f859-381a-46a6-a2bb-24c97cf865b1","path":"sprites/spr_costumerpizza/spr_costumerpizza.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_costumerpizza","path":"sprites/spr_costumerpizza/spr_costumerpizza.yy",},"resourceVersion":"1.0","name":"ae28fd42-7d95-4036-a9d5-ac06eaf53470","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"0d0ea505-2acf-4b66-99e9-264096de36e7","path":"sprites/spr_costumerpizza/spr_costumerpizza.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0d0ea505-2acf-4b66-99e9-264096de36e7","path":"sprites/spr_costumerpizza/spr_costumerpizza.yy",},"LayerId":{"name":"9b72f859-381a-46a6-a2bb-24c97cf865b1","path":"sprites/spr_costumerpizza/spr_costumerpizza.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_costumerpizza","path":"sprites/spr_costumerpizza/spr_costumerpizza.yy",},"resourceVersion":"1.0","name":"0d0ea505-2acf-4b66-99e9-264096de36e7","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"8b4395dd-cfe6-4102-b336-7f8c5cb12911","path":"sprites/spr_costumerpizza/spr_costumerpizza.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8b4395dd-cfe6-4102-b336-7f8c5cb12911","path":"sprites/spr_costumerpizza/spr_costumerpizza.yy",},"LayerId":{"name":"9b72f859-381a-46a6-a2bb-24c97cf865b1","path":"sprites/spr_costumerpizza/spr_costumerpizza.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_costumerpizza","path":"sprites/spr_costumerpizza/spr_costumerpizza.yy",},"resourceVersion":"1.0","name":"8b4395dd-cfe6-4102-b336-7f8c5cb12911","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"149ec220-6c0d-4ec3-ac4f-d4b8275a98dd","path":"sprites/spr_costumerpizza/spr_costumerpizza.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"149ec220-6c0d-4ec3-ac4f-d4b8275a98dd","path":"sprites/spr_costumerpizza/spr_costumerpizza.yy",},"LayerId":{"name":"9b72f859-381a-46a6-a2bb-24c97cf865b1","path":"sprites/spr_costumerpizza/spr_costumerpizza.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_costumerpizza","path":"sprites/spr_costumerpizza/spr_costumerpizza.yy",},"resourceVersion":"1.0","name":"149ec220-6c0d-4ec3-ac4f-d4b8275a98dd","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9c89bae7-733c-43b7-bf80-677aa158b254",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f4e7b2ba-347f-4e4b-9725-5303f42e784c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ae28fd42-7d95-4036-a9d5-ac06eaf53470",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0d0ea505-2acf-4b66-99e9-264096de36e7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8b4395dd-cfe6-4102-b336-7f8c5cb12911",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"149ec220-6c0d-4ec3-ac4f-d4b8275a98dd",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_costumerpizza","path":"sprites/spr_costumerpizza/spr_costumerpizza.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -55,14 +49,14 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"25816ee5-7a14-4078-8634-042c6bb9a696","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9c89bae7-733c-43b7-bf80-677aa158b254","path":"sprites/spr_costumerpizza/spr_costumerpizza.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"0d47ea24-53ec-4b44-a0a8-9b933e319da4","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f4e7b2ba-347f-4e4b-9725-5303f42e784c","path":"sprites/spr_costumerpizza/spr_costumerpizza.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"1dcbac32-d207-4249-9ae3-c61e5492c09d","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ae28fd42-7d95-4036-a9d5-ac06eaf53470","path":"sprites/spr_costumerpizza/spr_costumerpizza.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"b2922cdc-fed8-4731-aadf-88b48e6ee9bd","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0d0ea505-2acf-4b66-99e9-264096de36e7","path":"sprites/spr_costumerpizza/spr_costumerpizza.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"f32a14e2-f32a-417a-becd-230b3d278ac9","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8b4395dd-cfe6-4102-b336-7f8c5cb12911","path":"sprites/spr_costumerpizza/spr_costumerpizza.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"51155b01-c0db-44a7-868e-f3239a6ca89c","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"149ec220-6c0d-4ec3-ac4f-d4b8275a98dd","path":"sprites/spr_costumerpizza/spr_costumerpizza.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -78,22 +72,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_costumerpizza","path":"sprites/spr_costumerpizza/spr_costumerpizza.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"9b72f859-381a-46a6-a2bb-24c97cf865b1","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9b72f859-381a-46a6-a2bb-24c97cf865b1","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Objects",
     "path": "folders/Sprites/Objects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_costumerpizza",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

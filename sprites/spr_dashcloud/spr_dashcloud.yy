@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_dashcloud",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 100,
   "height": 100,
   "textureGroupId": {
@@ -24,24 +28,16 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"31a07955-6ad7-48a8-9eeb-d30a942d13f3","path":"sprites/spr_dashcloud/spr_dashcloud.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"31a07955-6ad7-48a8-9eeb-d30a942d13f3","path":"sprites/spr_dashcloud/spr_dashcloud.yy",},"LayerId":{"name":"5be56897-0ab0-4c5a-bcbe-f12d766d9cc4","path":"sprites/spr_dashcloud/spr_dashcloud.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_dashcloud","path":"sprites/spr_dashcloud/spr_dashcloud.yy",},"resourceVersion":"1.0","name":"31a07955-6ad7-48a8-9eeb-d30a942d13f3","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ce330173-a706-4f90-a835-0ae2870a8d01","path":"sprites/spr_dashcloud/spr_dashcloud.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ce330173-a706-4f90-a835-0ae2870a8d01","path":"sprites/spr_dashcloud/spr_dashcloud.yy",},"LayerId":{"name":"5be56897-0ab0-4c5a-bcbe-f12d766d9cc4","path":"sprites/spr_dashcloud/spr_dashcloud.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_dashcloud","path":"sprites/spr_dashcloud/spr_dashcloud.yy",},"resourceVersion":"1.0","name":"ce330173-a706-4f90-a835-0ae2870a8d01","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"f5db6c7e-7262-4d52-ba20-c615190ba562","path":"sprites/spr_dashcloud/spr_dashcloud.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f5db6c7e-7262-4d52-ba20-c615190ba562","path":"sprites/spr_dashcloud/spr_dashcloud.yy",},"LayerId":{"name":"5be56897-0ab0-4c5a-bcbe-f12d766d9cc4","path":"sprites/spr_dashcloud/spr_dashcloud.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_dashcloud","path":"sprites/spr_dashcloud/spr_dashcloud.yy",},"resourceVersion":"1.0","name":"f5db6c7e-7262-4d52-ba20-c615190ba562","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"b5c44beb-feaa-41b2-869c-abf3d2e489a9","path":"sprites/spr_dashcloud/spr_dashcloud.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b5c44beb-feaa-41b2-869c-abf3d2e489a9","path":"sprites/spr_dashcloud/spr_dashcloud.yy",},"LayerId":{"name":"5be56897-0ab0-4c5a-bcbe-f12d766d9cc4","path":"sprites/spr_dashcloud/spr_dashcloud.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_dashcloud","path":"sprites/spr_dashcloud/spr_dashcloud.yy",},"resourceVersion":"1.0","name":"b5c44beb-feaa-41b2-869c-abf3d2e489a9","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"b31b8478-406f-426b-ac8f-5cb029d9b8c0","path":"sprites/spr_dashcloud/spr_dashcloud.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b31b8478-406f-426b-ac8f-5cb029d9b8c0","path":"sprites/spr_dashcloud/spr_dashcloud.yy",},"LayerId":{"name":"5be56897-0ab0-4c5a-bcbe-f12d766d9cc4","path":"sprites/spr_dashcloud/spr_dashcloud.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_dashcloud","path":"sprites/spr_dashcloud/spr_dashcloud.yy",},"resourceVersion":"1.0","name":"b31b8478-406f-426b-ac8f-5cb029d9b8c0","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"31a07955-6ad7-48a8-9eeb-d30a942d13f3",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ce330173-a706-4f90-a835-0ae2870a8d01",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f5db6c7e-7262-4d52-ba20-c615190ba562",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b5c44beb-feaa-41b2-869c-abf3d2e489a9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b31b8478-406f-426b-ac8f-5cb029d9b8c0",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_dashcloud","path":"sprites/spr_dashcloud/spr_dashcloud.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -52,13 +48,13 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"cb29d8c7-be28-4594-89dc-eae129a13706","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"31a07955-6ad7-48a8-9eeb-d30a942d13f3","path":"sprites/spr_dashcloud/spr_dashcloud.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"d6b53b99-d084-4f0e-8a70-41abb6aad7a1","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ce330173-a706-4f90-a835-0ae2870a8d01","path":"sprites/spr_dashcloud/spr_dashcloud.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"44dd9bff-44f1-43c3-8d45-e9f59976cb2b","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f5db6c7e-7262-4d52-ba20-c615190ba562","path":"sprites/spr_dashcloud/spr_dashcloud.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"501ae2ee-2911-44a2-afef-651878096a8a","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b5c44beb-feaa-41b2-869c-abf3d2e489a9","path":"sprites/spr_dashcloud/spr_dashcloud.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"01066c39-0400-4d11-aa80-ae7fc5b9a783","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b31b8478-406f-426b-ac8f-5cb029d9b8c0","path":"sprites/spr_dashcloud/spr_dashcloud.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -74,22 +70,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_dashcloud","path":"sprites/spr_dashcloud/spr_dashcloud.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5be56897-0ab0-4c5a-bcbe-f12d766d9cc4","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"5be56897-0ab0-4c5a-bcbe-f12d766d9cc4","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Particles and Effects",
     "path": "folders/Sprites/Misc Sprites/Particles and Effects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_dashcloud",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

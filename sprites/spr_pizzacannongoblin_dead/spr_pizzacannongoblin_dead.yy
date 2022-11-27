@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_pizzacannongoblin_dead",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 100,
   "height": 100,
   "textureGroupId": {
@@ -24,12 +28,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"788787c9-b2b0-42dc-b747-1deede332ca3","path":"sprites/spr_pizzacannongoblin_dead/spr_pizzacannongoblin_dead.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"788787c9-b2b0-42dc-b747-1deede332ca3","path":"sprites/spr_pizzacannongoblin_dead/spr_pizzacannongoblin_dead.yy",},"LayerId":{"name":"a899fe48-55c4-4bf7-8bdc-30d3deb5f02c","path":"sprites/spr_pizzacannongoblin_dead/spr_pizzacannongoblin_dead.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pizzacannongoblin_dead","path":"sprites/spr_pizzacannongoblin_dead/spr_pizzacannongoblin_dead.yy",},"resourceVersion":"1.0","name":"788787c9-b2b0-42dc-b747-1deede332ca3","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"788787c9-b2b0-42dc-b747-1deede332ca3",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_pizzacannongoblin_dead","path":"sprites/spr_pizzacannongoblin_dead/spr_pizzacannongoblin_dead.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -40,9 +44,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"308e8ded-5f41-47ed-9d63-ce9ae8ea1133","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"788787c9-b2b0-42dc-b747-1deede332ca3","path":"sprites/spr_pizzacannongoblin_dead/spr_pizzacannongoblin_dead.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -58,22 +62,13 @@
     "yorigin": 65,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_pizzacannongoblin_dead","path":"sprites/spr_pizzacannongoblin_dead/spr_pizzacannongoblin_dead.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a899fe48-55c4-4bf7-8bdc-30d3deb5f02c","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a899fe48-55c4-4bf7-8bdc-30d3deb5f02c","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Pizzacannon Goblin",
     "path": "folders/Sprites/Characters/Baddies/Pizzacannon Goblin.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_pizzacannongoblin_dead",
-  "tags": [],
-  "resourceType": "GMSprite",
 }
