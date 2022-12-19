@@ -1,1 +1,1 @@
-//raw_sprite_ext(spr_null,-1,x,y,0,0,0,c_white,0)
+//draw_sprite_ext(sprite_index, image_index, x, y, 1, 1, image_angle, image_blend, 0)

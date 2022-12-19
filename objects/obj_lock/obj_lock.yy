@@ -29,8 +29,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Particles",
-    "path": "folders/Objects/Effects and Particles/Particles.yy",
+    "name": "effect",
+    "path": "folders/Objects/effect.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_lock",

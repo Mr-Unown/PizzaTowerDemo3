@@ -1,36 +1,40 @@
 function scr_player_jump() {
+	move = (key_left + key_right)
 	if (momemtum == 0)
 	    hsp = (move * movespeed)
 	else
 	    hsp = (xscale * movespeed)
-	if (dir != xscale)
-	{
-	    dir = xscale
-	    movespeed = 2
-	    facehurt = 0
-	}
-	if (move != xscale)
-	    movespeed = 2
-	move = (key_left + key_right)
+	if (move != xscale && momemtum == 1 && movespeed != 0)
+	    movespeed -= 0.05
 	if (movespeed == 0)
 	    momemtum = 0
-	if scr_solid((x + hsp), y)
+	if ((move == 0 && momemtum == 0) || scr_solid((x + hsp), y))
 	{
 	    movespeed = 0
 	    mach2 = 0
 	}
-	if (move != 0 && movespeed < 6)
-	    movespeed += 0.5
-	if (movespeed > 6)
-	    movespeed -= 0.1
+	if (move != 0 && movespeed < 7)
+	    movespeed += 0.25
+	if (movespeed > 7)
+	    movespeed -= 0.05
 	if ((scr_solid((x + 1), y) && move == 1) || (scr_solid((x - 1), y) && move == -1))
 	    movespeed = 0
 	if (dir != xscale)
+	{
+	    mach2 = 0
 	    dir = xscale
+	    movespeed = 0
+	}
+	if (move == (-xscale))
+	{
+	    mach2 = 0
+	    movespeed = 0
+	    momemtum = 0
+	}
 	landAnim = 1
 	if ((!key_jump2) && jumpstop == 0 && vsp < 0.5 && stompAnim == 0)
 	{
-	    vsp /= 10
+	    vsp /= 5
 	    jumpstop = 1
 	}
 	if (ladderbuffer > 0)
@@ -40,36 +44,42 @@ function scr_player_jump() {
 	    vsp = grav
 	    jumpstop = 1
 	}
-	if (grounded && input_buffer_jump < 8 && (!key_down) && (!key_attack) && vsp > 0 && (!(sprite_index == spr_facestomp || sprite_index == spr_freefall)))
+	if (grounded && input_buffer_jump < 8 && (!key_down) && (!key_attack) && vsp > 0 && (!(sprite_index == spr_player_facestomp || sprite_index == spr_player_freefall)))
 	{
-	    scr_soundeffect(sfx_jump)
-		if (global.minutes == 0 && global.seconds == 0) && character = "P"
-			sprite_index = spr_player_hurtjump
-		else
-			sprite_index = spr_jump
+	    scr_sound(sound_jump)
+	    sprite_index = spr_jump
 	    if (shotgunAnim == 1)
-	        sprite_index = spr_shotgunjump
-	    instance_create(x, y, obj_highjumpcloud2)
+	        sprite_index = spr_shotgun_jump
+	    instance_create_depth(x, y, -6, obj_highjumpcloud2)
 	    stompAnim = 0
-	    if (character == "P")
-	        vsp = -11
-		else if (character == "N" && pogo = true)
-			vsp = -9			
-	    else
-	        vsp = -13
-	    state = 58
+	    vsp = -11
+	    state = 51
 	    jumpAnim = 1
 	    jumpstop = 0
 	    image_index = 0
-	    movespeed = 2
 	    freefallstart = 0
-	    doublejump = 0
+	}
+	if (key_attack && grounded && fallinganimation < 40 && character == "P")
+	{
+	    mach2 = 0
+	    movespeed = 0
+	    sprite_index = spr_mach1
+	    jumpAnim = 1
+	    state = 62
+	    image_index = 0
+	}
+	if key_attack && grounded && fallinganimation < 40 && character == "DEEZNUTS"
+	{
+		mach2 = 0
+		movespeed = 0
+		sprite_index = spr_null
+		jumpAnim = 1
+		state = 999
+		image_index = 0
+
 	}
 	if (grounded && vsp > 0 && (!key_attack))
 	{
-	    doublejump = 0
-		if sprite_index != spr_grabbump
-			scr_soundeffect(sfx_step)
 	    if key_attack
 	        landAnim = 0
 	    input_buffer_secondjump = 0
@@ -78,150 +88,13 @@ function scr_player_jump() {
 	    jumpstop = 0
 	    image_index = 0
 	    freefallstart = 0
-	    movespeed = 2
 	}
-
-	//dougie floating
-	if character = "D"
+	if (grounded && (sprite_index == spr_player_facestomp || sprite_index == spr_player_freefall))
 	{
-		if vsp > -1 && !grounded
-			floatbuffer = true
-		if floatbuffer = true && key_jump2 && floattimer > 0
-		{
-			vsp = 0
-			floattimer--
-		}
-	}
-
-
-
-	if key_jump
-	    input_buffer_jump = 0
-	if (character != "S")
-	{
-	    if (vsp > 5)
-	        fallinganimation++
-	    if (fallinganimation >= 40 && fallinganimation < 80) && sprite_index != spr_playerN_spinjump
-	        sprite_index = spr_facestomp
-	    if (fallinganimation >= 80) && sprite_index != spr_playerN_spinjump
-	        sprite_index = spr_freefall
-	}
-	if (stompAnim == 0)
-	{
-	    if (jumpAnim == 1)
-	    {
-	        if (floor(image_index) == (image_number - 1))
-	            jumpAnim = 0
-	    }
-	    if (jumpAnim == 0)
-	    {
-			if (sprite_index == spr_shoryumineken)
-				sprite_index = spr_shoryukenend
-	        if (sprite_index == spr_playerN_doublejump)
-	            sprite_index = spr_playerN_doublejumpfall		
-	        if (sprite_index == spr_airdash1)
-	            sprite_index = spr_airdash2
-	        if (sprite_index == spr_shotgunjump)
-	            sprite_index = spr_shotgunfall
-	        if (sprite_index == spr_groundpoundjump)
-	            sprite_index = spr_fall
-	        if (sprite_index == spr_jump)
-	            sprite_index = spr_fall
-	        if (sprite_index == spr_player_Sjumpstart)
-	            sprite_index = spr_player_Sjump
-	        if (sprite_index == spr_player_shotgunjump1)
-	            sprite_index = spr_player_shotgunjump2
-	        if (sprite_index == spr_shotgun_shootair)
-	            sprite_index = spr_shotgun_fall
-	        if (sprite_index == spr_playerV_superjump)
-	            sprite_index = spr_fall
-	        if (sprite_index == spr_player_jugglebash)
-	            sprite_index = spr_fall
-			if (sprite_index = spr_grabcancelair)
-				sprite_index = spr_fall
-			if (sprite_index = spr_player_hurtjump)
-				sprite_index = spr_player_hurtfall
-			if (sprite_index = spr_player_mortjump)
-				sprite_index = spr_player_mortfall
-	    }
-	}
-	if (stompAnim == 1)
-	{
-	    if (sprite_index == spr_stompprep && floor(image_index) == (image_number - 1))
-	        sprite_index = spr_stomp
-	}
-	if (key_down && sprite_index != spr_player_jugglebash)
-	{
-		if character != "GB"
-		{
-	    if (shotgunAnim == 0 || (character == "V" && character == "S"))
-	    {
-	        image_index = 0
-	        state = 92
-	        sprite_index = spr_bodyslamstart
-	        if (character == "P" || character == "PZ" || character == "S")
-	            vsp = -5
-	        else
-	            vsp = -7
-	    }
-	    else if (character != "V" && character != "S")
-	    {
-	        scr_soundeffect(sfx_killingblow)
-	        image_index = 0
-	        state = 92
-	        sprite_index = spr_shotgunjump1
-	        vsp = -5
-	        if (character == "P" || character == "PZ")
-	        {
-	            with (instance_create((x + 30), (y + 60), obj_shotgunbullet))
-	            {
-	                playerid = other.id
-	                sprite_index = spr_shotgunbullet_down
-	                spdh = -10
-	                spd = 0
-	                created = 1
-	            }
-	            with (instance_create((x + 30), (y + 60), obj_shotgunbullet))
-	            {
-	                playerid = other.id
-	                sprite_index = spr_shotgunbullet_down
-	                spdh = -10
-	                spd = 5
-	                created = 1
-	            }
-	            with (instance_create((x + 30), (y + 60), obj_shotgunbullet))
-	            {
-	                playerid = other.id
-	                sprite_index = spr_shotgunbullet_down
-	                spdh = -10
-	                spd = -5
-	                created = 1
-	            }
-	        }
-	    }
-		}
-		else if !instance_exists(obj_brickbulletdown) && (sprite_index = spr_jump || sprite_index = spr_fall) && brick = 1
-	{
-		sprite_index = spr_shoryumineken
-		image_index = 0
-		input_buffer_jump = 0
-		vsp = -11
-		instance_create(x,y,obj_brickbulletdown)
-	}
-		if sprite_index = spr_shoryukenend && grounded
-		sprite_index = spr_gustavo_land
-	}
-	//floor image index thing because it doesnt work up there oops
-	if (floor(image_index) == (image_number - 1) && sprite_index = spr_shoryumineken) 
-		sprite_index = spr_shoryukenend
-	if (move != 0)
-	    xscale = move
-	image_speed = 0.35
-	if (grounded && (sprite_index == spr_facestomp || sprite_index == spr_freefall))
-	{
+	    scr_sound(sound_maximumspeedland)
 	    with (obj_baddie)
 	    {
-	        if point_in_rectangle(x, y, __view_get(0, 0), __view_get(1, 0), (__view_get(0, 0) + __view_get(2, 0)), (__view_get(1, 0) + __view_get(3, 0))) && grounded
+	        if point_in_rectangle(x, y, __view_get(0, 0), __view_get(1, 0), (__view_get(0, 0) + __view_get(2, 0)), (__view_get(1, 0) + __view_get(3, 0)))
 	        {
 	            vsp = -7
 	            hsp = 0
@@ -232,316 +105,149 @@ function scr_player_jump() {
 	        shake_mag = 10
 	        shake_mag_acc = (30 / room_speed)
 	    }
-	    scr_soundeffect(sfx_groundpound)
 	    image_index = 0
-	    sprite_index = spr_freefallland
-	    state = 77
+	    state = 70
 	}
-	//Mort double jump
-	if doublejump == 0 && global.mortfollowing = true && key_jump && (sprite_index == spr_jump || sprite_index = spr_fall) && !grounded && input_buffer_jump < 8
+	if key_jump
+	    input_buffer_jump = 0
+	if (character == "P")
 	{
-	doublejump = 1
-	vsp = -8
-	input_buffer_jump = 0
-	image_index = 0
-	sprite_index = spr_player_mortjump
+	    if (vsp > 5)
+	        fallinganimation++
+	    if (fallinganimation >= 40 && fallinganimation < 80)
+	        sprite_index = spr_player_facestomp
+	    if (fallinganimation >= 80)
+	        sprite_index = spr_player_freefall
 	}
-	if (key_slap2 && suplexmove = 0 && (character = "P" || character = "PZ" || character = "N" || (character = "D" && spellselect = 2)))
+	if (stompAnim == 0)
 	{
-		if key_up && (character = "P" || character = "PZ" )&& doublejump = 0
-		{
-			suplexmove = 1		
-			suplexdashsnd = audio_play_sound(sfx_suplexdash, 1, false)
-			audio_sound_gain(suplexdashsnd, (1 * global.soundeffectsvolume), 0)		
-			doublejump = 1
-			scr_soundeffect(sfx_jump)
-			scr_soundeffect(sfx_rollgetup)
-			jumpstop = 1
-			jumpAnim = 1
-			if movespeed < 3
-			movespeed = 3
-			momemtum = 1
-			vsp = -8
-			state = 58
-			sprite_index = spr_shoryumineken		
-			image_index = 0
-		}
-		else if (character == "P" && global.attackstyle == 1)
-		{
-			suplexmove = 1
-			suplexdashsnd = audio_play_sound(sfx_suplexdash, 1, false)
-			audio_sound_gain(suplexdashsnd, (1 * global.soundeffectsvolume), 0)
-			state = 111
-			image_index = 0
-			sprite_index = spr_player_airbashstart
-		    movespeed = 6
-	        if (!instance_exists(crazyruneffectid))
-	        {
-				with (instance_create(x, y, obj_crazyrunothereffect))
-				{
-					playerid = other.object_index
-					other.crazyruneffectid = id
-				}
-			}
-		}
-		else
-		{
-			suplexmove = 1
-			suplexdashsnd = audio_play_sound(sfx_suplexdash, 1, false)
-			audio_sound_gain(suplexdashsnd, (1 * global.soundeffectsvolume), 0)
-			state = 22
-			image_index = 0
-			if character != "PZ" && character != "GB" {
-				vsp = -4
-				sprite_index = spr_suplexdashjumpstart
-			}
-			else
-				sprite_index = spr_suplexdash
-			if (character == "P"|| character = "D" || character = "PZ")
-		        movespeed = 6
-		    else
-				movespeed = 4
-		}
-	}
-	//Breakdance
-	if (key_shoot2 && shotgunAnim == 0) && (!key_down)  && character != "V" && character != "D"
-	{
-		if murderammo >= 1
-		{
-			image_index = 0
-			sprite_index = spr_murder
-			state = states.murder
-			switch character
-			{
-				case "N":
-			
-				with (instance_create((x), (y), obj_noisekickbomb))
-				{
-					playerid = other.id
-					image_xscale = other.xscale
-				}
-			
-				break;
-				default:
-			
-				with (instance_create((x + 10*xscale), (y + 16), obj_revolverbullet))
-				{
-					playerid = other.id
-					image_xscale = other.xscale
-				}	
-			
-				break;
-			}
-			scr_soundeffect(sfx_killingblow)
-			murderammo -= 1
-		}
-		else
-		{
-			breakdancebuffer = 50
-			scr_soundeffect(sfx_breakdance)
-			movespeed = 10
-			state = states.breakdance
-			with instance_create(x, y, obj_dashcloud2)
-				image_xscale = other.xscale
-			image_index = 0
-			sprite_index = spr_breakdancestart
-		}
-	}
-
-	//Shotgun
-	if (key_shoot2 && shotgunAnim == 1 && character != "V" && character != "S" && (!key_down))
-	{
-	    scr_soundeffect(sfx_killingblow)
-	    state = 38
-	    with (instance_create(x, y, obj_pistoleffect))
-	        image_xscale = other.image_xscale
-	    image_index = 0
-	    sprite_index = spr_shotgunshoot
-	    if (character == "P" || character == "PZ")
+	    if (jumpAnim == 1)
 	    {
-	        with (instance_create((x + (image_xscale * 20)), (y + 20), obj_shotgunbullet))
-	            playerid = other.id
-	        with (instance_create((x + (image_xscale * 20)), (y + 20), obj_shotgunbullet))
-	        {
-	            spdh = 4
-	            playerid = other.id
-	        }
-	        with (instance_create((x + (image_xscale * 20)), (y + 20), obj_shotgunbullet))
-	        {
-	            spdh = -4
-	            playerid = other.id
-	        }
+	        if (floor(image_index) == (image_number - 1))
+	            jumpAnim = 0
+	    }
+	    if (jumpAnim == 0)
+	    {
+	        //if (sprite_index == spr_airdash1)
+	            //sprite_index = spr_airdash2
+	        //if (sprite_index == spr_shotgun_jump)
+	            //sprite_index = spr_shotgun_fall
+	        if (sprite_index == spr_jump)
+	            sprite_index = spr_fall
+	        //if (sprite_index == spr_player_Sjumpstart)
+	            //sprite_index = spr_player_Sjump
+	        //if (sprite_index == spr_player_shotgunjump1)
+	           // sprite_index = spr_player_shotgunjump2
+	        //if (sprite_index == spr_shotgun_shootair)
+	           // image_index = 7
 	    }
 	}
-	if (key_slap2 && character == "V")
+	if (stompAnim == 1)
 	{
-	    vsp = -5
-	    state = 39
+	    if (sprite_index == spr_stompprep && floor(image_index) == (image_number - 1))
+	        sprite_index = spr_stomp
+	}
+	if (key_attack && sprite_index != spr_airdash2 && sprite_index != spr_airdash1 && fallinganimation < 40 && sprite_index != spr_playerN_glide)
+	{
+	    stompAnim = 0
+	    sprite_index = spr_airdash1
 	    image_index = 0
-	    sprite_index = spr_playerV_airrevolver
+	}
+	/*if key_shoot2
+	{
+	    vsp = -4
+	    sprite_index = spr_player_pistolair
+	    state = 32
 	    image_index = 0
-	    with (instance_create((x + (xscale * 25)), (y + 20), obj_shotgunbullet))
-	        playerid = other.id
-	    scr_soundeffect(sfx_killingblow)
-	}
-
-	if (character == "N" && pogo = true)  {
-		if (scr_solid(x + xscale,y) && !scr_slope_ext(x+ xscale,y)) && key_jump && wallclingbuffer <= 0
-		{
-		scr_soundeffect(sfx_step)
-		state = states.wallcling
-		sprite_index = spr_playerN_wallcling
-		image_index = 0
-		xscale *= -1
-		vsp = 0
-		doublejump = 0
-		}
-		else if key_jump && doublejump == 0 && sprite_index != spr_freefall && sprite_index != spr_facestomp
-		{
-			scr_soundeffect(sfx_rollgetup)
-			image_index = 0		
-			sprite_index = spr_playerN_doublejump
-			jumpAnim = 1
-			jumpstop = 0
-			vsp = -9
-			doublejump = 1
-			with instance_create(x, y, obj_highjumpcloud2)
-				image_xscale = other.xscale		
-		}
-	}
-	if (key_shoot2 && character == "V" && (!instance_exists(obj_vigidynamite)))
+	    shoot = 1
+	}*/
+	if (key_slap2 && shotgunAnim == 1 && global.ammo > 0)
 	{
-	    if (key_up && doublejump == 0 && sprite_index != spr_freefall && sprite_index != spr_facestomp)
-	    {
-	        if (move == 0)
-	            movespeed = 0
-	        state = 110
-	        jumpAnim = 1
-	        scr_soundeffect(sfx_jump)
-	        image_index = 0
-	        vsp = -7
-	        sprite_index = spr_playerV_dynamitethrow
-	        with (instance_create(x, y, obj_vigidynamite))
-	        {
-	            image_xscale = other.xscale
-	            movespeed = 0
-	            vsp = -8
-	            countdown = 10
-	        }
-	        doublejump = 1
-	        with (instance_create(x, y, obj_highjumpcloud2))
-	            image_xscale = other.xscale
-	    }
-	    else
-	    {
-	        if (move == 0)
-	            movespeed = 0
-	        state = 110
-	        image_index = 0
-	        sprite_index = spr_playerV_dynamitethrow
-	        with (instance_create(x, y, obj_vigidynamite))
-	        {
-	            image_xscale = other.xscale
-	            movespeed = 6
-	            vsp = -6
-	        }
-	    }
+	    global.ammo -= 1
+	    instance_create(x, (y + 80), obj_shotgunbulletdown)
+	    vsp -= 11
+	    sprite_index = spr_player_shotgunjump1
+	    state = 31
+	    image_index = 0
 	}
-	if (key_slap2 && character == "S" && suplexmove == 0)
+	if (move != 0)
+	    xscale = move
+	image_speed = 0.35
+	if (key_slap2 && shotgunAnim == 1 && (!instance_exists(obj_cutscene_upstairs)))
 	{
-	    if (move != 0)
-	        movespeed = 10
+	    global.ammo -= 1
+	    instance_create(x, y, obj_shotgunbullet)
+	    sprite_index = spr_shotgun_shootair
+	    state = 31
+	    image_index = 0
+	}
+	if ((!key_down) && key_slap2 && suplexmove == 0 && shotgunAnim == 0 && global.cane == 0)
+	{
+		scr_sound(sound_suplex1)
+	    instance_create(x, y, obj_slaphitbox)
 	    suplexmove = 1
-	    scr_soundeffect(sfx_spin)
-	    scr_soundeffect(sfx_suplexdash)
-	    sprite_index = spr_snick_jump
-	    state = 12
+	    vsp = 0
+	    instance_create(x, y, obj_jumpdust)
 	    image_index = 0
+	    sprite_index = spr_suplexdash
+	    state = 15
+	    if (character == "DEEZNUTS")
+	        vsp = -5
 	}
-	if (floor(image_index) == (image_number - 1) && sprite_index == spr_playerV_superjump)
+	else if (key_shoot2)
 	{
-	    with (instance_create(x, (y + 25), obj_balloonpop))
-	        sprite_index = spr_shotgunimpact
-	}
-	if ((!key_attack) || move != xscale)
-	    mach2 = 0
-	if (key_attack && grounded && fallinganimation < 40)  && !(character == "N" && pogo = true)
-	{
-	    movespeed = 6
-	    sprite_index = spr_mach1
-	    jumpAnim = 1
-	    state = 69
-	    image_index = 0
-	}
-	if key_attack && (character == "N" && pogo = true) && !key_slap2 && pogojetcharge = false
-	{
-	    sprite_index = spr_playerN_pogostart
-	    state = states.pogo
-	    image_index = 0
-		pogomovespeed = 6	
-	}
-	if key_attack2 && (character == "N" && pogo = true) && pogojetcharge = true
-	{
-		scr_soundeffect(sfx_noisewoah)	
-	    if !key_up
-		sprite_index = spr_playerN_jetpackstart
-		else
-		sprite_index = spr_superjumpprep
-	    state = states.jetpackstart
-		if move != 0
-			xscale = move
-	    hsp = 0
-		vsp = 0
-	    image_index = 0
-	    superjumpprepsnd = audio_play_sound(sfx_superjumpprep, 1, false)
-	    audio_sound_gain(superjumpprepsnd, (1 * global.soundeffectsvolume), 0)
-	}
-	if key_taunt2
-	{
-	    scr_soundeffect(sfx_taunt)
 	    taunttimer = 20
 	    tauntstoredmovespeed = movespeed
 	    tauntstoredsprite = sprite_index
 	    tauntstoredstate = state
-		tauntstoredimage = image_index
-	    state = 51
-		if supertauntcharged = true && (character == "P" || character == "N")
-		{
-			image_index = 0
-			sprite_index = choose(spr_supertaunt1,spr_supertaunt2,spr_supertaunt3,spr_supertaunt4)
-		}
-		else
-		{
-			image_index = irandom_range(0, sprite_get_number(spr_taunt))
-			sprite_index = spr_taunt
-		}
-	    with (instance_create(x, y, obj_taunteffect))
-	    {
-	        playerid = other.id
-	        baddie = 0
-	    }
-		scr_baddietauntfakeout();	
+	    state = 44
+	    image_index = random_range(0, 7)
+	    sprite_index = spr_player_taunt
+	    instance_create(x, y, obj_taunteffect)
 	}
 
-	// dougies bolt and bomb
-	if character = "D"
+
+	if key_down && global.cane == 0
 	{
-		if key_slap && spellselect != 2 && spellselect != 4
-		{
-				spellcastedonce = false;
-				sprite_index = spr_pizzard_shoot
-				state = states.toss //i hope this works
-				image_index = 0
+	        image_index = 0
+	        state = 84
+	        sprite_index = spr_player_bodyslamstart
+	        vsp = -5
+	}
+
+	if global.cane == 1
+	{
+		if !grounded
+		{	
+		canrebound = 0
 		}
-		// superjump too lol
-		if key_slap2 && key_up && spellselect = 4 && floatbuffer = false
+		if key_down2
 		{
-			floatbuffer = true
-			sprite_index = spr_superjump
-			state = states.jump
-			vsp = -10
-			jumpstop = true
-			scr_soundeffect(sfx_superjumprelease)
+			image_index = 0
+	        state = 67
+	        sprite_index = spr_caneslam
+	        vsp = -18
+		}
+		if ((!key_down) && key_slap2 && suplexmove == 0 && shotgunAnim == 0)
+		{
+			scr_sound(sound_suplex1)
+		    instance_create(x, y, obj_slaphitbox)
+		    suplexmove = 1
+		    vsp = 0
+		    instance_create(x, y, obj_jumpdust)
+		    image_index = 0
+		    sprite_index = spr_canesuplex
+		    state = 15
 		}
 	}
+
+	if sprite_index == spr_caneslam
+	{
+		vsp = 17
+		if !instance_exists(obj_mach3effect)
+			instance_create(x, y - 32, obj_mach3effect)
+		//if !instance_exists(x, y, obj_slaphitbox)	
+	}
+
+
 }

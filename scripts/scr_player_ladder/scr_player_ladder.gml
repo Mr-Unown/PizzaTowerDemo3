@@ -14,7 +14,7 @@ function scr_player_ladder() {
 	if key_up
 	{
 	    sprite_index = spr_laddermove
-	    vsp = -4 
+	    vsp = -6
 	    image_speed = 0.35
 	}
 	else if key_down
@@ -47,15 +47,15 @@ function scr_player_ladder() {
 	}
 	if key_jump
 	{
+	    scr_sound(sound_jump)
 	    sprite_index = spr_jump
 	    ladderbuffer = 20
 	    jumpAnim = 1
-	    state = 58
+	    state = 51
 	    vsp = -9
 	    image_index = 0
 	}
-	var solidcheck = ( place_meeting(x, y + 1, obj_platform) || (layer_exists("Tiles_Solid") && tile_meeting_precise(x, y + 1, "Tiles_Solid") == tiletype.upplatform) )
-	if (key_down && scr_solid(x, y + 1) && !solidcheck)
+	if (key_down && grounded && (!place_meeting(x, y, obj_platform)))
 	{
 	    state = 0
 	    image_index = 0

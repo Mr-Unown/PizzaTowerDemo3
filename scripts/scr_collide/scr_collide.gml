@@ -1,13 +1,8 @@
-function scr_collide() {	
-	if global.freezeframe = true
-		return false;
-	//Variables
+function scr_collide() {
 	grounded = false
-	in_water = (instance_exists(obj_water) && obj_water.bbox_top < y);
-		
+
 	// Vertical
-	repeat(abs(vsp)) 
-	{
+	repeat(abs(vsp)) {
 	    if !scr_solid(x, y + sign(vsp))
 	        y += sign(vsp); 
 	    else {
@@ -17,11 +12,10 @@ function scr_collide() {
 	}
 
 	// Horizontal
-	repeat(abs(hsp)) 
-	{
+	repeat(abs(hsp)) {
 	    // Move up slope
 	    if scr_solid(x + sign(hsp), y) && !scr_solid(x + sign(hsp), y - 1)
-	        y--;
+	        y--
     
 	    // Move down slope
 	    if !scr_solid(x + sign(hsp), y) && !scr_solid(x + sign(hsp), y + 1) && scr_solid(x + sign(hsp), y + 2)
@@ -35,14 +29,11 @@ function scr_collide() {
 	    }
 	}
 
-
-	var _grav = (in_water == true ? 6: 10);
-	if (vsp < _grav)
+	if (vsp < 10)
 	  vsp += grav;
 
 	grounded |= scr_solid(x, y + 1)
-	//grounded |= !place_meeting(x, y, obj_platform) && place_meeting(x, y + 1, obj_platform)
-	//grounded |= (!place_meeting(x, y, obj_grindrail) && place_meeting(x, y + 1, obj_grindrail)) || (place_meeting(x, y + 1, obj_grindrailslope)) 
+	grounded |= !place_meeting(x, y, obj_platform) && place_meeting(x, y + 1, obj_platform) && !place_meeting(x, y, obj_cottonplatform) && place_meeting(x, y + 1, obj_cottonplatform)
 
 
 }

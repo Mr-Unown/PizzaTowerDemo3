@@ -1,5 +1,5 @@
 function scr_player_secondjump() {
-	/*move = (key_left + key_right)
+	move = (key_left + key_right)
 	if (momemtum == 0)
 	    hsp = (move * movespeed)
 	else
@@ -32,12 +32,12 @@ function scr_player_secondjump() {
 	{
 	    instance_create(x, y, obj_highjumpcloud1)
 	    vsp = -14
-	    state = 32
+	    state = 25
 	    jumpAnim = 1
 	    jumpstop = 0
 	    image_index = 0
-	    if (!place_meeting(x, y, obj_water))
-		instance_create(x, y, obj_landcloud)
+	    if (!place_meeting(x, y, obj_water2))
+	        instance_create(x, y, obj_landcloud)
 	    freefallstart = 0
 	    audio_sound_gain(sfx_jump, 0.7, 0)
 	    if (!audio_is_playing(sfx_jump))
@@ -52,8 +52,8 @@ function scr_player_secondjump() {
 	    jumpAnim = 1
 	    jumpstop = 0
 	    image_index = 0
-	    if (!place_meeting(x, y, obj_water))
-		instance_create(x, y, obj_landcloud)
+	    if (!place_meeting(x, y, obj_water2))
+	        instance_create(x, y, obj_landcloud)
 	    freefallstart = 0
 	    audio_sound_gain(sfx_land, 0.7, 0)
 	    if (!audio_is_playing(sfx_land))
@@ -78,9 +78,9 @@ function scr_player_secondjump() {
 	    mach2 = 0
 	    image_index = 0
 	    vsp = -7
-	    state = 92
+	    state = 84
 	}
 
 
-/* end scr_player_secondjump */
+
 }

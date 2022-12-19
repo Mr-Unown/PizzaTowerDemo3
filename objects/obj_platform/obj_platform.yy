@@ -1,16 +1,13 @@
 {
   "spriteId": {
-    "name": "spr_baddie",
-    "path": "sprites/spr_baddie/spr_baddie.yy",
+    "name": "spr_platform",
+    "path": "sprites/spr_platform/spr_platform.yy",
   },
   "solid": false,
-  "visible": false,
+  "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "group_collision",
-    "path": "objects/group_collision/group_collision.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -27,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Level Structure",
-    "path": "folders/Objects/Level Structure/Level Structure.yy",
+    "name": "level",
+    "path": "folders/Objects/level.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_platform",

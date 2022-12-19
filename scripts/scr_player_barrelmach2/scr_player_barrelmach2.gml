@@ -1,23 +1,23 @@
 function scr_player_barrelmach2() {
-	/*hsp = (image_xscale * movespeed)
+	hsp = (image_xscale * movespeed)
 	movespeed = 10
 	if (vsp < 12)
 	    vsp += grav
 	if (!grounded)
 	{
-	    state = 83
+	    state = 76
 	    image_index = 0
 	}
 	if ((!key_attack) && grounded)
 	{
-	    state = 84
+	    state = 77
 	    image_index = 0
 	    mach2 = 0
 	}
 	if (scr_solid((x + 1), y) && image_xscale == 1)
 	{
 	    barrel = 0
-	    state = 72
+	    state = 65
 	    hsp = -2
 	    vsp = -2
 	    mach2 = 0
@@ -37,7 +37,7 @@ function scr_player_barrelmach2() {
 	if (scr_solid((x - 1), y) && image_xscale == -1)
 	{
 	    barrel = 0
-	    state = 72
+	    state = 65
 	    hsp = 2
 	    vsp = -2
 	    mach2 = 0
@@ -61,5 +61,5 @@ function scr_player_barrelmach2() {
 	    instance_create(x, y, obj_dashcloud)
 
 
-/* end scr_player_barrelmach2 */
+
 }

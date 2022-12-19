@@ -1,34 +1,12 @@
-if other.character != "PZ"
-	{
-		if audio_is_playing(sfx_collecttopping)
-		audio_stop_sound(sfx_collecttopping)
-		scr_soundeffect(sfx_collecttopping)
-	}
-	else
-	{
-		if audio_is_playing(sfx_PZcollecttopping)
-		audio_stop_sound(sfx_PZcollecttopping)
-		scr_soundeffect(sfx_PZcollecttopping)
-	}
-with other.id
+if (global.collectsound == 10)
+    scr_sound(sound_points)
+global.collectsound = 0
+global.collect += 10
+global.pizzameter += 1
+instance_create(x, y, obj_10)
+if global.combomode = 1 && global.combo >= 1
 {
-    collectscore = (collectscore + (10 + (global.stylethreshold * 2)))
-    if (character == "V") && vigihealth < 250
-        vigihealth += 5
+global.combotime += 2	
+global.combofreeze += 2
 }
-if global.combotime < 60
-	global.combotime += 1
-else
-	global.combotime = 60
-//Freeze
-global.pausecombotime = true
-obj_tv.alarm[1] = 75
-with (instance_create((x + 16), y, obj_smallnumber))
-    number = string( 10 + (global.stylethreshold * 2))
-with instance_create(x,y, obj_collecteffect)
-{
-	sprite_index = other.sprite_index
-	choosed = true;
-}
-
 instance_destroy()

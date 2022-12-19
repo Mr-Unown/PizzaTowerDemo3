@@ -1,5 +1,3 @@
-playerid = obj_player1
-image_xscale = playerid.xscale
+image_xscale = obj_player.xscale
 bumpeffect = 0
 alarm[0] = 2
-

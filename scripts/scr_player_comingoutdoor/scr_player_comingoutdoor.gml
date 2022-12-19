@@ -9,22 +9,14 @@ function scr_player_comingoutdoor() {
 	crouchAnim = 1
 	machhitAnim = 0
 	hsp = 0
-	if (blackblend < 255)
-	    blackblend += 5
-	image_blend = make_colour_hsv(0, 0,blackblend)
-	if (floor(image_index) == (image_number - 1))
+	if (floor(image_index) == (image_number - 1) || ((!place_meeting(x, y, obj_door)) && (!place_meeting(x, y, obj_keydoor)) && (!place_meeting(x, y, obj_exitgate))))
 	{
 	    start_running = 1
 	    movespeed = 0
 	    state = 0
 	    image_alpha = 1
-	    blackblend = 0
-	    image_blend = make_colour_hsv(0, 0, 255)
 	}
-	if (sprite_index != spr_Timesup)
-	    sprite_index = spr_walkfront
-	global.pausecombotime = true
-	obj_tv.alarm[1] = 75	
+	sprite_index = spr_walkfront
 	image_speed = 0.35
 
 

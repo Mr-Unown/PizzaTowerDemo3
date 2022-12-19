@@ -7,10 +7,7 @@
   "visible": false,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "group_doortriggers",
-    "path": "objects/group_doortriggers/group_doortriggers.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -27,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Doors and Hallways",
-    "path": "folders/Objects/Level Structure/Doors and Hallways.yy",
+    "name": "transport",
+    "path": "folders/Objects/level/transport.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_doorC",

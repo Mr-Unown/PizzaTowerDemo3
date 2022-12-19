@@ -1,5 +1,5 @@
 function scr_player_grabbing() {
-	/*if (!place_meeting(x, y, obj_baddie))
+	if (!place_meeting(x, y, obj_baddie))
 	    state = 0
 	move = (key_left + key_right)
 	hsp = (move * movespeed)
@@ -20,19 +20,19 @@ function scr_player_grabbing() {
 	{
 	    movespeed = 0
 	    image_index = 0
-	    state = 46
+	    state = 39
 	}
 	if (key_attack && (!grounded))
 	{
 	    movespeed = 0
 	    image_index = 0
-	    state = 41
+	    state = 34
 	}
 	if (key_jump && (!grounded))
 	{
 	    movespeed = 0
 	    vsp = -11
-	    state = 42
+	    state = 35
 	    image_index = 0
 	    image_speed = 0.35
 	}
@@ -80,12 +80,8 @@ function scr_player_grabbing() {
 	if ((!instance_exists(obj_cloudeffect)) && (!place_meeting(x, y, obj_water2)) && grounded && move != 0 && (floor(image_index) == 4 || floor(image_index) == 10))
 	    instance_create(x, (y + 43), obj_cloudeffect)
 	if (grounded && vsp > 1)
-		with instance_create(x, y, obj_landcloud)
-		{
-			playerid = other.id
-			image_xscale = other.xscale
-		}	
+	    instance_create(x, y, obj_landcloud)
 
 
-/* end scr_player_grabbing */
+
 }

@@ -1,19 +1,15 @@
-image_speed = 0.35;
-hsp = 0;
-vsp = 0;
-grav = 0;
-grabbing = false;
-grabbed = false;
-release = false;
-//Certain Delays
-returndelay = 0;
-attackdelay = 0;
-
-
-
-targetpos = 
-{
-	xx : 0,
-	yy : 0
-}
- 
+image_speed = 0.35
+vsp = 0
+hsp = 0
+grav = 0
+dropspotx = 0
+dropspoty = 0
+released = 0
+grabbing = 0
+thumbingup = 0
+xstarte = x
+ystarte = y
+delay = 5
+grounded = 0
+movingupwards = 0
+grabid = 0

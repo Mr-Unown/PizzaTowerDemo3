@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_cheesecollect",
-    "path": "sprites/spr_cheesecollect/spr_cheesecollect.yy",
+    "name": "spr_collect1",
+    "path": "sprites/spr_collect1/spr_collect1.yy",
   },
   "solid": false,
   "visible": true,
@@ -29,8 +29,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Particles",
-    "path": "folders/Objects/Effects and Particles/Particles.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_pizzaloss",

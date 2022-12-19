@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "enemy",
-    "path": "folders/Scripts/enemy.yy",
+    "name": "enem",
+    "path": "folders/Scripts/enem.yy",
   },
   "resourceVersion": "1.0",
   "name": "scr_enemy_turn",

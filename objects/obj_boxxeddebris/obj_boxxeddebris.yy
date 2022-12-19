@@ -1,16 +1,10 @@
 {
-  "spriteId": {
-    "name": "spr_boxxeddebris",
-    "path": "sprites/spr_boxxeddebris/spr_boxxeddebris.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "obj_debrisgroup",
-    "path": "objects/obj_debrisgroup/obj_debrisgroup.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -23,14 +17,12 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Particles",
-    "path": "folders/Objects/Effects and Particles/Particles.yy",
+    "name": "effect",
+    "path": "folders/Objects/effect.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_boxxeddebris",

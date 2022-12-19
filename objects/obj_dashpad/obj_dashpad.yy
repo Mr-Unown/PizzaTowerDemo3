@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_dashpad",
-    "path": "sprites/spr_dashpad/spr_dashpad.yy",
+    "name": "Sprite409",
+    "path": "sprites/Sprite409/Sprite409.yy",
   },
   "solid": false,
   "visible": true,
@@ -21,16 +21,13 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":4,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "General",
-    "path": "folders/Objects/Level Structure/Interactables/General.yy",
+    "name": "level",
+    "path": "folders/Objects/level.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_dashpad",

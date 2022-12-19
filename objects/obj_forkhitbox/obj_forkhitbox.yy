@@ -1,10 +1,10 @@
 {
   "spriteId": {
-    "name": "spr_forkhitbox",
-    "path": "sprites/spr_forkhitbox/spr_forkhitbox.yy",
+    "name": "spr_swordhitbox",
+    "path": "sprites/spr_swordhitbox/spr_swordhitbox.yy",
   },
   "solid": false,
-  "visible": false,
+  "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
@@ -13,7 +13,7 @@
   },
   "physicsObject": false,
   "physicsSensor": false,
-  "physicsShape": 0,
+  "physicsShape": 1,
   "physicsGroup": 0,
   "physicsDensity": 0.5,
   "physicsRestitution": 0.1,
@@ -26,14 +26,12 @@
   "eventList": [
     {"isDnD":false,"eventNum":1,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Enemy Hitbox",
-    "path": "folders/Objects/Hitbox and Hurtboxes/Enemy Hitbox.yy",
+    "name": "enemy",
+    "path": "folders/Objects/enemy.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_forkhitbox",

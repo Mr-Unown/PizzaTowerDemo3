@@ -1,7 +1,5 @@
-image_xscale = playerid.xscale
-x = playerid.x
-y = playerid.y
-if ((playerid.image_index > 3 || playerid.state != 12) && playerid.state != 22 && playerid.state != 9)
+image_xscale = obj_player.xscale
+x = obj_player.x
+y = obj_player.y
+if ((obj_player.image_index > 3 || obj_player.state != 5) && obj_player.state != 15 && obj_player.state != 2)
     instance_destroy()
-
-

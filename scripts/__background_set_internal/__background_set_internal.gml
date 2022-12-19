@@ -77,7 +77,7 @@ function __background_set_internal(argument0, argument1, argument2, argument3) {
 	        default:
 	            break
 	    }
-    
+
 	}
 	return -1;
 

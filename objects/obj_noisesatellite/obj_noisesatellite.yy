@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "spr_noisesatellite",
-    "path": "sprites/spr_noisesatellite/spr_noisesatellite.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -24,8 +21,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Level Start and End",
-    "path": "folders/Objects/Level Structure/Level Start and End.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_noisesatellite",

@@ -8,7 +8,7 @@ function scr_player_barrelslipnslide() {
 	sprite_index = spr_player_barrelslipnslide
 	if (floor(image_index) == 6)
 	{
-	    state = 86
+	    state = 79
 	    flash = 1
 	}
 	else

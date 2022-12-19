@@ -1,9 +1,8 @@
 {
-  "conversionMode": 0,
-  "compression": 2,
+  "compression": 0,
   "volume": 1.0,
-  "preload": true,
-  "bitRate": 192,
+  "preload": false,
+  "bitRate": 128,
   "sampleRate": 44100,
   "type": 0,
   "bitDepth": 1,
@@ -14,8 +13,8 @@
   "soundFile": "mu_hub",
   "duration": 157.94133,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "music",
+    "path": "folders/Sounds/music.yy",
   },
   "resourceVersion": "1.0",
   "name": "mu_hub",

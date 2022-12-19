@@ -1,7 +1,7 @@
 function scr_player_gameover() {
 	image_speed = 0.35
 	cutscene = 1
-	if (sprite_index == spr_deathstart) && room != timesuproom
+	if (sprite_index == spr_deathstart)
 	{
 	    vsp = 0
 	    hsp = 0
@@ -16,7 +16,7 @@ function scr_player_gameover() {
 	alarm[7] = -1
 	alarm[8] = -1
 	alarm[9] = -1
-	if (floor(image_index) == (image_number - 1) && sprite_index == spr_deathstart) && room != timesuproom
+	if (floor(image_index) == (image_number - 1) && sprite_index == spr_deathstart)
 	{
 	    alarm[10] = 5
 	    vsp = -10

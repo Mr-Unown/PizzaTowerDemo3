@@ -1,25 +1,7 @@
-event_inherited();
-image_speed = 0.35
-depth = 4
-if global.collectstyle = 0
-{
-        if ((obj_player1.character == "P" && obj_player1.spotlight == 1) || (obj_player2.character == "P" && obj_player1.spotlight == 0))
-            sprite_index = choose(spr_pizzacollect1, spr_pizzacollect2, spr_pizzacollect3)
-        else if ((obj_player1.character == "N" && obj_player1.spotlight == 1) || (obj_player2.character == "N" && obj_player1.spotlight == 0))
-            sprite_index = choose(spr_pizzacollect1halloween, spr_pizzacollect2halloween, spr_pizzacollect3halloween)
-        else if ((obj_player1.character == "S" && obj_player1.spotlight == 1) || (obj_player2.character == "S" && obj_player1.spotlight == 0))
-            sprite_index = spr_snickcollectible2
-        else if ((obj_player1.character == "V" && obj_player1.spotlight == 1) || (obj_player2.character == "V" && obj_player1.spotlight == 0))
-            sprite_index = choose(spr_pizzacollect1cheese, spr_pizzacollect2cheese, spr_pizzacollect3cheese)
-		else if ((obj_player1.character == "PZ" && obj_player1.spotlight == 1) || (obj_player2.character == "PZ" && obj_player1.spotlight == 0))
-			sprite_index = choose(spr_PZbigpizza1, spr_PZbigpizza2, spr_PZbigpizza3)
-}
-else if global.collectstyle = 1
-{
-	if ((obj_player1.character == "P" && obj_player1.spotlight == 1) || (obj_player2.character == "P" && obj_player1.spotlight == 0))
-		sprite_index = choose(spr_bigsausagecollect, spr_bigcheesecollect, spr_bigpineapplecollect, spr_bigtomatocollect, spr_bigshroomcollect)
-	if ((obj_player1.character == "PZ" && obj_player1.spotlight == 1) || (obj_player2.character == "PZ" && obj_player1.spotlight == 0))
-		sprite_index = choose(spr_PZbigcollect1, spr_PZbigcollect2, spr_PZbigcollect3, spr_PZbigcollect4, spr_PZbigcollect5, spr_PZbigcollect6)
-}
-
-
+//with (other.id)
+//{
+//    sprite_index = choose(spr_collect1, spr_collect2, spr_collect3, spr_collect4, spr_collect5)
+//    image_speed = 0.35
+//    global.collected = 0
+//    global.collectsound = 0
+//}

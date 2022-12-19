@@ -1,5 +1,5 @@
 function scr_player_chainsawpogo() {
-	/*hsp = (xscale * movespeed)
+	hsp = (xscale * movespeed)
 	if ((scr_solid((x + 1), y) && xscale == 1) || (scr_solid((x - 1), y) && xscale == -1))
 	    movespeed = 0
 	landAnim = 1
@@ -13,7 +13,7 @@ function scr_player_chainsawpogo() {
 	if (scr_solid((x + 1), y) && xscale == 1 && (!place_meeting((x + sign(hsp)), y, obj_slope)))
 	{
 	    machhitAnim = 0
-	    state = 21
+	    state = 14
 	    hsp = -2.5
 	    vsp = -3
 	    mach2 = 0
@@ -26,7 +26,7 @@ function scr_player_chainsawpogo() {
 	else if (scr_solid((x - 1), y) && xscale == -1 && (!place_meeting((x + sign(hsp)), y, obj_slope)))
 	{
 	    machhitAnim = 0
-	    state = 21
+	    state = 14
 	    hsp = 2.5
 	    vsp = -3
 	    mach2 = 0
@@ -40,7 +40,7 @@ function scr_player_chainsawpogo() {
 	{
 	    instance_create(x, y, obj_chainsawhitbox)
 	    sprite_index = spr_player_chainsawair
-	    state = 33
+	    state = 26
 	}
 	if (sprite_index != spr_player_chainsawpogobounce)
 	{
@@ -55,5 +55,5 @@ function scr_player_chainsawpogo() {
 	image_speed = 0.35
 
 
-/* end scr_player_chainsawpogo */
+
 }

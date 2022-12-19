@@ -10,10 +10,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 59,
-  "bbox_right": 147,
-  "bbox_top": 51,
-  "bbox_bottom": 137,
+  "bbox_left": 86,
+  "bbox_right": 139,
+  "bbox_top": 71,
+  "bbox_bottom": 108,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -28,7 +28,7 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f673c00a-9e00-450c-954c-ddf205e2dff0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d8f79945-c985-4b87-9cdc-2034cbe27b3d",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -45,7 +45,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"a38e0822-d43f-4047-9f9b-a4c24d99ca05","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f673c00a-9e00-450c-954c-ddf205e2dff0","path":"sprites/spr_swordhitbox/spr_swordhitbox.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"ac260083-1dd0-4f22-ba5b-c3dc1b546510","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d8f79945-c985-4b87-9cdc-2034cbe27b3d","path":"sprites/spr_swordhitbox/spr_swordhitbox.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
@@ -64,11 +64,11 @@
     "eventStubScript": null,
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"efb11893-f541-48e0-8327-3c60d1f17eee","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"1e47e003-3ff7-4a61-9c48-68bbec44d371","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Collision Masks",
-    "path": "folders/Sprites/Collision Masks.yy",
+    "name": "please organize all of this",
+    "path": "folders/Sprites/please organize all of this.yy",
   },
 }

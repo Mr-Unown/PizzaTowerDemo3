@@ -1,0 +1,17 @@
+var _cam_x = camera_get_view_x(view_camera[0])
+var _cam_y = camera_get_view_y(view_camera[0])
+layer_x("Backgrounds_1", (_cam_x * 0.25))
+layer_y("Backgrounds_1", (_cam_y * 0.25))
+layer_x("Backgrounds_2", (_cam_x * 0.15))
+layer_y("Backgrounds_2", (_cam_y * 0.15))
+layer_x("Backgrounds_3", (_cam_x * 0.05))
+layer_y("Backgrounds_3", (_cam_y * 0.05))
+layer_x("Backgrounds_Ground1", (_cam_x * 0.25))
+layer_x("Backgrounds_Ground2", (_cam_x * 0.25))
+layer_x("Backgrounds_still", (_cam_x))
+layer_x("Backgrounds_still", (_cam_y))
+
+var bgs1 = layer_background_get_sprite(layer_background_get_id(layer_get_id("Backgrounds_still1")))
+
+layer_x("Backgrounds_still1", (_cam_x - clamp((_cam_x * (0.15 * (960 / room_width))), 0, (sprite_get_width(bgs1) - 960/* - (960 / (room_width / 100))*/))))
+layer_y("Backgrounds_still1", (_cam_y - clamp((_cam_y * (0.15 * (540 / room_height))), 0, (sprite_get_height(bgs1) - 540/* - (540 / (room_height / 100))*/))))

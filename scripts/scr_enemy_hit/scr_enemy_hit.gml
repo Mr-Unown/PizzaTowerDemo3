@@ -2,7 +2,7 @@ function scr_enemy_hit() {
 	if (scr_solid(x, (y - 1)) && (sprite_index == flyingspr || sprite_index == hitspr))
 	{
 	    image_index = 0
-	    state = 99
+	    state = 91
 	}
 	if (straightthrow == 1)
 	    vsp = 0
@@ -16,12 +16,8 @@ function scr_enemy_hit() {
 	    sprite_index = stunfallspr
 	if (grounded && floor(vsp) > 0)
 	{
-		with instance_create(x, y, obj_landcloud)
-		{
-			playerid = other.id
-			image_xscale = other.image_xscale
-		}		
-	    state = 106
+	    instance_create(x, y, obj_landcloud)
+	    state = 98
 	    image_index = 0
 	}
 	image_speed = 0.35
@@ -29,7 +25,7 @@ function scr_enemy_hit() {
 	{
 	    image_index = 0
 	    sprite_index = hitwallspr
-	    state = 100
+	    state = 92
 	}
 
 

@@ -1,5 +1,5 @@
 function pal_swap_set() {
-	shader_set(global.Pal_Shader)
+	shader_set(shd_pal_swapper)
 	var _pal_sprite = argument[0]
 	var _pal_index = argument[1]
 	if (!argument[2])

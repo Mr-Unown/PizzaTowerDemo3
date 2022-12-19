@@ -2,10 +2,9 @@ if (sprite_index == spr_grabbiehand_fall)
 {
     with (obj_player)
     {
-        if state == states.boxxedpep
+        if (state == 14)
         {
-            scr_soundeffect(sfx_bumpwall)
-            scr_soundeffect(sfx_loseknight)
+            scr_sound(sound_losetransformation)
             with (instance_create(x, y, obj_boxxeddebris))
                 image_index = 0
             with (instance_create(x, y, obj_boxxeddebris))
@@ -17,19 +16,17 @@ if (sprite_index == spr_grabbiehand_fall)
             with (instance_create(x, y, obj_boxxeddebris))
                 image_index = 4
         }
-        if state == states.cheesepepstick || state == states.cheesepep
+        if ((state == 12) || (state == 13))
         {
-			var size = random_range(0.6, 1.2)
-            scr_soundeffect(sfx_bumpwall)
-            scr_soundeffect(sfx_loseknight)
-            repeat (8)
-            {
-                with (instance_create((other.x + random_range(-5, 5)), (other.y + random_range(-5, 5)), obj_slimedebris))
-                {
-                    image_xscale = size
-                    image_yscale = image_xscale
-                }
-            }
+            scr_sound(sound_losetransformation)
+            instance_create(x, y, obj_slimedebris)
+            instance_create(x, y, obj_slimedebris)
+            instance_create(x, y, obj_slimedebris)
+            instance_create(x, y, obj_slimedebris)
+            instance_create(x, y, obj_slimedebris)
+            instance_create(x, y, obj_slimedebris)
+            instance_create(x, y, obj_slimedebris)
+            instance_create(x, y, obj_slimedebris)
         }
     }
     grav = 0
@@ -38,11 +35,33 @@ if (sprite_index == spr_grabbiehand_fall)
     sprite_index = spr_grabbiehand_catch
     other.image_index = 0
     obj_player.sprite_index = spr_player_catched
-    other.state = states.bump
+    other.state = 71
     other.x = x
     other.y = y
     other.vsp = 0
     other.hsp = 0
-    scr_soundeffect(sfx_enemyprojectile)
-	grabbed = true;
+    scr_sound(sound_destroyblock1)
+}
+if (sprite_index == spr_grabbiehand_catch)
+{
+    other.vsp = 0
+    other.hsp = 0
+    other.state = 71
+    obj_player.sprite_index = spr_player_catched
+    other.x = x
+    other.y = y
+}
+if obj_player.state = 21
+{
+if ((thumbingup == 0) && (((x <= (xstarte + 5)) && (x >= (xstarte - 5))) && (((y <= (ystarte + 5)) && (y >= (ystarte - 5))) && (grabbing == 0))))
+{
+    scr_sound(sound_destroyblock1)
+    delay = 5
+    image_xscale = (-obj_player.xscale)
+    thumbingup = 1
+    instance_create(x, y, obj_bangeffect)
+    sprite_index = spr_grabbiehand_hifive
+    image_index = 0
+}
+
 }

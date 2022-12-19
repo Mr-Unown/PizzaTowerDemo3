@@ -1,11 +1,8 @@
 image_speed = 0
-baddieid = noone
-important = true;
-content = noone
+baddieid = 128
+content = 0
 refresh = 20
 depth = 1
-golf = 0
-vsp = 0
 hsp = 0
-grav = 0.35
-
+vsp = 0
+grav = 0

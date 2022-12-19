@@ -98,7 +98,7 @@ function scr_enemy_bounce() {
 	        with (instance_create(x, y, obj_crushershockwave))
 	        {
 	            movespeed = -3
-            
+	            image_xscale = -1
 	        }
 	        if (!instance_exists(obj_noisey))
 	            instance_create((room_width - (room_width / 4)), 60, obj_noisey)
@@ -109,7 +109,7 @@ function scr_enemy_bounce() {
 	        with (instance_create(x, y, obj_crushershockwave))
 	        {
 	            movespeed = -3
-            
+	            image_xscale = -1
 	        }
 	        if (!instance_exists(obj_noisey))
 	        {
@@ -123,7 +123,7 @@ function scr_enemy_bounce() {
 	        with (instance_create(x, y, obj_crushershockwave))
 	        {
 	            movespeed = -3
-            
+	            image_xscale = -1
 	        }
 	        if (!instance_exists(obj_noisey))
 	        {
@@ -132,7 +132,7 @@ function scr_enemy_bounce() {
 	        }
 	    }
 	    image_index = 0
-	    state = 94
+	    state = 86
 	    sprite_index = idlespr
 	}
 	image_speed = 0.35

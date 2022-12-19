@@ -1,15 +1,15 @@
 {
   "spriteId": {
-    "name": "spr_metalblockdebris",
-    "path": "sprites/spr_metalblockdebris/spr_metalblockdebris.yy",
+    "name": "spr_metaldebris",
+    "path": "sprites/spr_metaldebris/spr_metaldebris.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_debrisgroup",
-    "path": "objects/obj_debrisgroup/obj_debrisgroup.yy",
+    "name": "obj_parentparticle",
+    "path": "objects/obj_parentparticle/obj_parentparticle.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -25,12 +25,13 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Particles",
-    "path": "folders/Objects/Effects and Particles/Particles.yy",
+    "name": "level",
+    "path": "folders/Objects/level.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_metaldebris",

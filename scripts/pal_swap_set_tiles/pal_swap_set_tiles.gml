@@ -9,7 +9,7 @@ function pal_swap_set_tiles() {
 	    _low = (argument[3] - 1)
 	    _high = (argument[2] + 1)
 	}
-	/*var _start_exists = 0
+	var _start_exists = 0
 	with (obj_tile_swapper_start)
 	{
 	    if (depth == _low)
@@ -51,5 +51,5 @@ function pal_swap_set_tiles() {
 	}
 
 
-/* end pal_swap_set_tiles */
+
 }

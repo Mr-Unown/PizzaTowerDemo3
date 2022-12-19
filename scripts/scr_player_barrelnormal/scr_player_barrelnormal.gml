@@ -1,73 +1,38 @@
-function scr_player_barrelnormal(){
-	if (live_call()) return live_result;
+function scr_player_barrelnormal() {
 	mask_index = spr_player_mask
-    image_speed = 0.35
 	move = (key_left + key_right)
-	    if ((!place_meeting(x, (y + 1), obj_railh)) && (!place_meeting(x, (y + 1), obj_railh2)))
-	        hsp = (move * movespeed)
-	    else if place_meeting(x, (y + 1), obj_railh)
-	        hsp = ((move * movespeed) - 5)
-	    else if place_meeting(x, (y + 1), obj_railh2)
-	        hsp = ((move * movespeed) + 5)
-    if key_jump
+	hsp = (move * movespeed)
+	if (vsp < 12)
+	    vsp += grav
+	if ((!grounded) && (!key_jump))
 	{
-        input_buffer_jump = 0
-		sprite_index = spr_player_barreljump
+	    state = 76
+	    image_index = 0
+	    hsp = 0
 	}
-    if ((!key_jump2) && jumpstop == 0 && vsp < 0.5 && stompAnim == 0)
-    {
-        vsp /= 2
-        jumpstop = 1
-    }
-    if (grounded && vsp > 0)
-        jumpstop = 0
-	if (input_buffer_jump < 8 && grounded)
+	if ((key_down && grounded) || scr_solid(x, (y - 3)))
 	{
-		sprite_index = spr_player_barreljump
-	    vsp = -9
+	    state = 72
+	    image_index = 0
 	}
-    if (dir != xscale && (!key_attack))
-    {
-        dir = xscale
-        movespeed = 0
-    }
-	if (scr_solid((x + sign(hsp)), y) && xscale == 1 && move == 1 && (!scr_slope_ext(x + 1, y)))
+	if (key_attack && grounded)
+	{
 	    movespeed = 0
-	if (scr_solid((x + sign(hsp)), y) && xscale == -1 && move == -1 && (!scr_slope_ext(x - 1, y)))
-	    movespeed = 0
-	if (move != 0)
-        {
-            if (movespeed < 11)
-                movespeed += 0.1
-            else if (floor(movespeed) == 6)
-                movespeed = 6
-        }
-        else
-            movespeed = 0
-        if (movespeed > 11)
-            movespeed -= 0.1
+	    state = 75
+	    landAnim = 0
+	}
+	if place_meeting(x, y, obj_water2)
+	    vsp -= 1
+	movespeed = 2.5
+	if (move == 0)
+	    sprite_index = spr_player_barrelidle
 	if (move != 0)
 	{
-		xscale = move
-		if movespeed <= 10
-		{
-		sprite_index = spr_player_barrelmove
-		image_speed = ((movespeed/12) * 0.6) + 0.1
-		}
-		else
-		sprite_index = spr_player_barrelslipnslide
+	    sprite_index = spr_player_barrelmove
+	    xscale = move
 	}
-	else
-		sprite_index = spr_player_barrelidle
-	if (sprite_index == spr_player_barrelslipnslide && floor(image_index) == (image_number - 1)) || (place_meeting(x,y, obj_slope) && key_down2)
-	{
-		state = states.barrelroll
-		movespeed = 11
-		sprite_index = spr_player_barrelroll
-	}
-	if key_down && movespeed != 0
-	{
-		state = states.barrelroll
-		sprite_index = spr_player_barrelroll
-	}
+	image_speed = 0.35
+
+
+
 }

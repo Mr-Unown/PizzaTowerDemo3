@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "background",
-    "path": "folders/Scripts/compatibility/background.yy",
+    "name": "compat",
+    "path": "folders/compat.yy",
   },
   "resourceVersion": "1.0",
   "name": "__background_get_element",

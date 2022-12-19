@@ -3,4 +3,4 @@ if (vsp < 12)
 image_speed = 0
 x += hsp
 y += floor(vsp)
-
+depth = -999

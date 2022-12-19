@@ -1,107 +1,78 @@
-var player = nearest_player();
-if grabbed = false {
-#region Attacking
-//Go towards player
-if grabbing = true
+if ((floor(image_index) == (image_number - 1)) && (sprite_index == spr_grabbiehand_hifive))
 {
-	var dir = point_direction(xstart,ystart,targetpos.xx,targetpos.yy);
-	hsp = lengthdir_x(10,dir)
-	vsp = lengthdir_y(10,dir)
-	//Bump into wall
-	if scr_solid(x + hsp, y + vsp) || point_distance(x,y,xstart,ystart) >= 300
-	{
-		returndelay = 50;
-		grabbing = false;
-		sprite_index = spr_grabbiehand_idle;
-	}
-	attackdelay = 50;
+    sprite_index = spr_grabbiehand_idle
+    thumbingup = 0
+    image_xscale = 1
 }
-else if (x != xstart && y != ystart) && release == false && returndelay <= 0 //Return to old spot
+if (((x <= (xstarte + 6)) && (x >= (xstarte - 6))) && (((y <= (ystarte + 6)) && (y >= (ystarte - 6))) && (((obj_player.x > (x - 50)) && (obj_player.x < (x + 50))) && (((obj_player.y > y) && (obj_player.y < (y + 400))) && (thumbingup == 0)))))
 {
-	var old = point_direction(x,y,xstart,ystart);
-	if point_distance(x,y,xstart,ystart) > 16
-	{
-		hsp = lengthdir_x(5,old)
-		vsp = lengthdir_y(5,old)	
-	}
-	else
-	{
-		hsp = 0;
-		vsp = 0;
-		x = approach(x,xstart,5)
-		y = approach(y,ystart,5)
-	}
-	sprite_index = spr_grabbiehand_idle;
-	attackdelay = 50;
+    delay--
+    if (delay <= 0)
+    {
+        grav = 0.35
+        vsp = 10
+        sprite_index = spr_grabbiehand_fall
+        delay = 5
+    }
 }
-else
+if grabbing = 1 && grounded
 {
-	//If player is within Range
-	if distance_to_object(player) <= 300 && (x == xstart && y == ystart)  && attackdelay <= 0 && sprite_index == spr_grabbiehand_idle
-	{
-		sprite_index = spr_grabbiehand_hifive;
-		image_index = 0;
-		targetpos.xx = lerp(player.x,player.x + hsp,0.5);
-		targetpos.yy = lerp(player.y,player.y + vsp,0.5);
-	}
-	//Target Spotted
-	if animation_end() && sprite_index == spr_grabbiehand_hifive
-	{
-		sprite_index = spr_grabbiehand_fall;
-		grabbing = true;
-		scr_soundeffect(sfx_enemyprojectile);
-	}
+grounded = 0	
 }
-#endregion
-}
-else {
-#region Taking
-//Go towards Target
-var target = point_direction(x,y,dropspotx,dropspoty);
-if point_distance(x,y,dropspotx,dropspoty) > 16
+if (grounded && ((sprite_index == spr_grabbiehand_fall) && (grabbing == 0)))
 {
-	x += floor( lengthdir_x(5,target) )
-	y += floor( lengthdir_y(5,target) )	
+    grav = 0
+    sprite_index = spr_grabbiehand_idle
+    vsp = -5
 }
-else
+if (((y <= (ystarte + 6)) && (y >= (ystarte - 6))) && ((vsp == -3) && (grabbing == 0)))
+    vsp = 0
+if ((sprite_index == spr_grabbiehand_catch) && ((released == 0) && (grabbing == 1)))
 {
-	x = approach(x,dropspotx,5)
-	y = approach(y,dropspoty,5)	
+    if (dropspotx > x)
+        x += 4
+    if (dropspotx < x)
+        x -= 4
+    if (dropspoty > y)
+        y += 4
+    if (dropspoty < y)
+        y -= 4
 }
-sprite_index = spr_grabbiehand_catch
-
-with obj_player
+if (((x <= (dropspotx + 5)) && (x >= (dropspotx - 5))) && (((y <= (dropspoty + 5)) && (y >= (dropspoty - 5))) && ((released == 0) && (grabbing == 1))))
 {
-	if object_index == obj_player1 || (object_index == obj_player2 && global.coop == true)
-	{
-		vsp = 0
-		hsp = 0
-		state = states.bump
-		sprite_index = spr_player_catched
-		x = other.x
-		y = other.y
-	}
-}
-//Drop Players
-if x == dropspotx && y == dropspoty
-{
-	obj_player1.state = 74
-	if global.coop == true
-		obj_player2.state = 74
+    obj_player.state = 0
     image_index = 0
     sprite_index = spr_grabbiehand_release
-	grabbing = false;
-	grabbed = false;
-	release = true;
+    released = 1
 }
-
-#endregion
-}
-//Timers
-returndelay = approach(returndelay,0,1)
-attackdelay = approach(attackdelay,0,1)
-//Animation
-if animation_end() && sprite_index = spr_grabbiehand_release
+if ((sprite_index == spr_grabbiehand_release) && ((floor(image_index) == (image_number - 1)) && ((released == 1) && (grabbing == 1))))
+    sprite_index = spr_grabbiehand_idle
+if ((sprite_index == spr_grabbiehand_idle) && ((released == 1) && (grabbing == 1)))
 {
-	release = false;
+    if (xstarte > x)
+        x += 4
+    if (xstarte < x)
+        x -= 4
+    if (ystarte > y)
+        y += 4
+    if (ystarte < y)
+        y -= 4
+}
+if (((x <= (xstarte + 6)) && (x >= (xstarte - 6))) && (((y <= (ystarte + 6)) && (y >= (ystarte - 6))) && ((grabbing == 1) && (sprite_index == spr_grabbiehand_idle))))
+{
+    grabbing = 0
+    released = 0
+}
+if grabbing = 0
+{
+scr_collide()
+}
+if movingupwards = 1
+{
+y -= 2
+}
+if movingupwards = 1 && y < ystart
+{
+y = ystart	
+movingupwards = 0
 }

@@ -1,7 +1,2 @@
-if (state == 73)
-{
-    state = 0
-    movespeed = 0
-}
-
-
+state = 0
+movespeed = 0

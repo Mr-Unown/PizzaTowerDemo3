@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_bigblock",
-    "path": "sprites/spr_bigblock/spr_bigblock.yy",
+    "name": "spr_bigbreak",
+    "path": "sprites/spr_bigbreak/spr_bigbreak.yy",
   },
   "solid": false,
   "visible": true,
@@ -13,7 +13,7 @@
   },
   "physicsObject": false,
   "physicsSensor": false,
-  "physicsShape": 0,
+  "physicsShape": 1,
   "physicsGroup": 0,
   "physicsDensity": 0.5,
   "physicsRestitution": 0.1,
@@ -26,13 +26,14 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_swordhitbox","path":"objects/obj_swordhitbox/obj_swordhitbox.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":4,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Common Blocks",
-    "path": "folders/Objects/Level Structure/Blocks and Destroyables/Common Blocks.yy",
+    "name": "level",
+    "path": "folders/Objects/level.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_destroyable3",

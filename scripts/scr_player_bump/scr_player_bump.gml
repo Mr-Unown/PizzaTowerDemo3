@@ -1,37 +1,42 @@
 function scr_player_bump() {
-    movespeed = 0
-    mach2 = 0
-    start_running = 1
-    alarm[4] = 14
-    if (grounded && vsp > 0)
-        hsp = 0
-    if (floor(image_index) == (image_number - 1) && sprite_index != spr_rockethitwall)
-        state = 0
-	if (grounded && sprite_index == spr_rockethitwall)
-		state = 0
-    if (sprite_index != spr_player_catched && sprite_index != spr_tumbleend && sprite_index != spr_hitwall && sprite_index != spr_suplexmash1 && sprite_index != spr_suplexmash2 && sprite_index != spr_suplexmash3 && sprite_index != spr_suplexmash4 && sprite_index != spr_punch && sprite_index != spr_rockethitwall && sprite_index != spr_splat)
-        sprite_index = spr_bump
-    image_speed = 0.35
-	if (floor(image_index) == (image_number - 1)) && sprite_index = spr_splat
+	sprite_index = spr_bump
+	   /*if (dir != xscale)
 	{
-		grav = 0.5
-		state = 0
+	    dir = xscale
+	    movespeed = 0
 	}
-	if (sprite_index == spr_suplexmash1 || sprite_index == spr_suplexmash2 || sprite_index == spr_suplexmash3 || sprite_index == spr_suplexmash4 || sprite_index == spr_punch)
-	{
-		var slowdownspeed = 9 * (suplexdashtimer/12);    
-	    if (floor(image_index) >= (image_number - 1))
-	        image_speed = 0
-	    else
-	        image_speed = 0.35
-	    if suplexdashtimer >= 12 && slowdownspeed >= 9 && !key_attack 
+	 move = (key_left + key_right)
+	    if (move != 0)
+	        xscale = move
+	    hsp = (move * movespeed)
 	    {
-	        image_speed = 0.35
-	        state = 0
+	if move != 0
+	  movespeed = 4
+	else
+	  movespeed = 0
 	    }
-	}
-	if sprite_index != spr_splat
-	grav = 0.5
+	    movespeed = 4*/
+	     if (scr_solid((x + sign(hsp)), y) && ((xscale == 1) && ((move == 1) && (!place_meeting((x + 1), y, obj_slope)))))
+	    movespeed = 0
+	if (scr_solid((x + sign(hsp)), y) && ((xscale == -1) && ((move == -1) && (!place_meeting((x - 1), y, obj_slope)))))
+	    movespeed = 0
+	mach2 = 0
+	start_running = 1
+
+	if (grounded && vsp > 0)
+	    hsp = 0
+	if (floor(image_index) == 6)
+	    state = 0
+	if (sprite_index != spr_player_catched) && (sprite_index != spr_player_mach3hitwall) && sprite_index != spr_tumbleend
+	    sprite_index = spr_bump
+	image_speed = 0.35
+	if audio_is_playing(sound_tumble)
+		audio_stop_sound(sound_tumble)
+		if grounded 
+		{
+			state = 0	
+		}
+
 
 
 }

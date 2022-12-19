@@ -1,5 +1,5 @@
 function scr_player_barrelfloat() {
-	/*mask_index = spr_player_mask
+	mask_index = spr_player_mask
 	move = (key_left + key_right)
 	hsp = (move * movespeed)
 	vsp = 0
@@ -7,7 +7,7 @@ function scr_player_barrelfloat() {
 	{
 	    jumpstop = 1
 	    jumpAnim = 1
-	    state = 58
+	    state = 51
 	    landAnim = 0
 	    vsp = -7
 	    with (instance_create(x, y, obj_barrelfloat))
@@ -24,5 +24,5 @@ function scr_player_barrelfloat() {
 	    vsp -= 1
 
 
-/* end scr_player_barrelfloat */
+
 }

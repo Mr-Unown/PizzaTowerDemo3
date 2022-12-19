@@ -1,2 +1,1 @@
-start_running = false
-
+start_running = 0

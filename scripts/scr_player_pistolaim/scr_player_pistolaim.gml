@@ -23,27 +23,27 @@ function scr_player_pistolaim() {
 	{
 	    sprite_index = spr_player_pistol
 	    image_index = 0
-	    state = 39
+	    state = 32
 	    shoot = 1
 	}
 	if (key_shoot2 && sprite_index == spr_player_aimup)
 	{
 	    sprite_index = spr_player_shootup
 	    image_index = 0
-	    state = 39
+	    state = 32
 	    shoot = 1
 	}
 	if (key_shoot2 && sprite_index == spr_player_aimdiagonal)
 	{
 	    sprite_index = spr_player_shootdiagonal
 	    image_index = 0
-	    state = 39
+	    state = 32
 	    shoot = 1
 	}
 	if (!grounded)
 	{
 	    sprite_index = spr_player_fall
-	    state = 58
+	    state = 51
 	}
 	if (move != 0)
 	    xscale = move

@@ -1,5 +1,5 @@
 function scr_player_runonball() {
-	/*move = (key_left + key_right)
+	move = (key_left + key_right)
 	if (!key_attack)
 	    hsp = (move * movespeed)
 	else
@@ -16,7 +16,7 @@ function scr_player_runonball() {
 	if (key_jump && grounded && (!key_down) && (!key_attack))
 	{
 	    vsp = -7
-	    state = 58
+	    state = 51
 	    image_index = 0
 	    machslideAnim = 1
 	    jumpAnim = 1
@@ -41,5 +41,5 @@ function scr_player_runonball() {
 	image_speed = 0.35
 
 
-/* end scr_player_runonball */
+
 }

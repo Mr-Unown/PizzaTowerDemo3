@@ -1,5 +1,5 @@
 function scr_player_machfreefall() {
-	/*if (mach2 == 0)
+	if (mach2 == 0)
 	{
 	    hsp = (move * movespeed)
 	    movespeed = 4
@@ -17,7 +17,7 @@ function scr_player_machfreefall() {
 	if (scr_solid((x + 1), y) && image_xscale == 1)
 	{
 	    machhitAnim = 0
-	    state = 72
+	    state = 65
 	    hsp = -2.5
 	    vsp = -2.5
 	    mach2 = 0
@@ -30,7 +30,7 @@ function scr_player_machfreefall() {
 	else if (scr_solid((x - 1), y) && image_xscale == -1)
 	{
 	    machhitAnim = 0
-	    state = 72
+	    state = 65
 	    hsp = 2.5
 	    vsp = -2.5
 	    mach2 = 0
@@ -48,16 +48,12 @@ function scr_player_machfreefall() {
 	        shake_mag_acc = (40 / room_speed)
 	    }
 	    bounce = 0
-	    state = 77
+	    state = 70
 	    jumpstop = 0
 	    image_index = 0
 	    with (instance_create(x, (y + 35), obj_bangeffect))
 	        image_xscale = obj_player.image_xscale
-		with instance_create(x, y, obj_landcloud)
-		{
-			playerid = other.id
-			image_xscale = other.xscale
-		}	
+	    instance_create(x, y, obj_landcloud)
 	    freefallstart = 0
 	    audio_sound_gain(sfx_land, 0.7, 0)
 	    if (!audio_is_playing(sfx_land))
@@ -67,7 +63,7 @@ function scr_player_machfreefall() {
 	        if point_in_rectangle(x, y, __view_get(0, 0), __view_get(1, 0), (__view_get(0, 0) + __view_get(2, 0)), (__view_get(1, 0) + __view_get(3, 0)))
 	        {
 	            image_index = 0
-	            state = 105
+	            state = 97
 	            vsp = -7
 	            hsp = 0
 	            stunned = 200
@@ -82,12 +78,12 @@ function scr_player_machfreefall() {
 	    sprite_index = spr_player_hanstandjump
 	    stompAnim = 0
 	    hsp = 0
-	    state = 22
+	    state = 15
 	    jumpAnim = 1
 	    jumpstop = 0
 	    image_index = 0
-	    if (!place_meeting(x, y, obj_water))
-		instance_create(x, y, obj_landcloud)
+	    if (!place_meeting(x, y, obj_water2))
+	        instance_create(x, y, obj_landcloud)
 	    freefallstart = 0
 	}
 	if key_jump
@@ -95,5 +91,5 @@ function scr_player_machfreefall() {
 	image_speed = 0.5
 
 
-/* end scr_player_machfreefall */
+
 }

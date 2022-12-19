@@ -1,5 +1,5 @@
 function scr_playerN_hookshot() {
-	/*move = (key_left + key_right)
+	move = (key_left + key_right)
 	hsp = (movespeed * move)
 	if (move != 0)
 	    xscale = move
@@ -7,10 +7,10 @@ function scr_playerN_hookshot() {
 	{
 	    vsp = -6
 	    instance_create(x, y, obj_washingmachine)
-	    scr_soundeffect(sfx_jump)
+	    scr_sound(44)
 	    sprite_index = spr_jump
 	    stompAnim = 0
-	    state = 58
+	    state = 51
 	    jumpAnim = 1
 	    jumpstop = 0
 	    image_index = 0
@@ -37,7 +37,7 @@ function scr_playerN_hookshot() {
 	        if (grounded && point_in_rectangle(x, y, __view_get(0, 0), __view_get(1, 0), (__view_get(0, 0) + __view_get(2, 0)), (__view_get(1, 0) + __view_get(3, 0))))
 	        {
 	            image_index = 0
-	            state = 94
+	            state = 86
 	            vsp = -7
 	            hsp = 0
 	        }
@@ -57,5 +57,5 @@ function scr_playerN_hookshot() {
 	image_speed = 0.35
 
 
-/* end scr_playerN_hookshot */
+
 }

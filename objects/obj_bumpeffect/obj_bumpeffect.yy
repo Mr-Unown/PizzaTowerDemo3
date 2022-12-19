@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_hurteffect",
-    "path": "sprites/spr_hurteffect/spr_hurteffect.yy",
+    "name": "spr_bumpeffect",
+    "path": "sprites/spr_bumpeffect/spr_bumpeffect.yy",
   },
   "solid": false,
   "visible": true,
@@ -10,7 +10,7 @@
   "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
-  "physicsShape": 0,
+  "physicsShape": 1,
   "physicsGroup": 0,
   "physicsDensity": 0.5,
   "physicsRestitution": 0.1,
@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Visual Effects",
-    "path": "folders/Objects/Effects and Particles/Visual Effects.yy",
+    "name": "effect",
+    "path": "folders/Objects/effect.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_bumpeffect",

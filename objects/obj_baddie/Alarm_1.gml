@@ -1,5 +1,4 @@
 var a = random_range(-20, 20)
-if (state == 106 && thrown == 1 && (hsp != 0 || vsp != 0))
+if (state == 98 && hsp != 0 && thrown == 1)
     alarm[1] = 5
 instance_create((x + a), (y + a), obj_machalleffect)
-

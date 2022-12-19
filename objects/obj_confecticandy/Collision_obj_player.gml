@@ -1,0 +1,1 @@
+global.candyfollow = 1

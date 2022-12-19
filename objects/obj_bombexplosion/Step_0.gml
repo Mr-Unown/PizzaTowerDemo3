@@ -1,3 +1,3 @@
 if (image_index > 9)
-    mask_index = spr_masknull
+    mask_index = spr_null
 

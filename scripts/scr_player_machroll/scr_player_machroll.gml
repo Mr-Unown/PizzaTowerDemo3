@@ -1,305 +1,110 @@
 function scr_player_machroll() {
-	switch jetpacking
-	{
-	case false:
-#region Roll
-
-
-	image_speed = (movespeed/12) * 0.8
-
 	if (!place_meeting(x, (y + 1), obj_railh))
 	    hsp = (xscale * movespeed)
 	else if place_meeting(x, (y + 1), obj_railh)
-	{
-		if other.xscale == sign(image_xscale)
-		{
-		if movespeed > 0
-		movespeed -= .1
-		}
-		else
-		if movespeed < 24
-		movespeed += .1
-		if movespeed <= 0
-		state = states.crouch
-		hsp = (xscale * movespeed)
-	}
+	    hsp = ((xscale * movespeed) - 5)
 	else if place_meeting(x, (y + 1), obj_railh2)
-	{
-		if other.xscale == sign(image_xscale)
-		{
-		if movespeed > 0
-		movespeed -= .1
-		}
-		else
-		if movespeed < 24
-		movespeed += .1
-		if movespeed <= 0
-		hsp = (xscale * movespeed)
-		if movespeed <= 0
-		state = states.crouch
-	}
+	    hsp = ((xscale * movespeed) + 5)
 	mach2 = 100
 	machslideAnim = 1
 	move = (key_right + key_left)
-	if movespeed <= 0
-	{
-	with state = states.normal
-	sprite_index = spr_crouch
-	}
-	//Slopes
-	if scr_slope() && vsp >= 0
-	{
-		if place_meeting(x, y + 1,obj_slope)
-		{		
-			#region Object
-			with (instance_place(x, (y + 1), obj_slope))
-			{
-				var slope_acceleration = abs(image_yscale) / abs(image_xscale)
-				//Roll Momentum
-				if other.xscale == sign(image_xscale)
-				{
-					if other.movespeed > 4
-					{
-						other.movespeed -= (0.25 * slope_acceleration)
-						if other.movespeed <= 4
-						{
-							other.movespeed = 4
-						}
-						/*
-						if other.movespeed <= 0
-						{
-							other.xscale = -sign(image_xscale)
-							other.maxmachspeed = 24
-						}
-						*/
-					}
-					if other.maxmachspeed > 24
-						other.maxmachspeed -= (0.25 * slope_acceleration)
-				}
-				else if other.xscale == -sign(image_xscale)
-				{
-					if other.movespeed < other.maxmachspeed
-						other.movespeed += (0.25 * slope_acceleration)
-					if other.maxmachspeed < 28
-						other.maxmachspeed += (0.125 * slope_acceleration)
-				
-				}
-			}
-			#endregion
-		}
-		if tile_meeting_precise(x,y + 1,"Tiles_Solid") == tiletype.leftslope1 || tile_meeting_precise(x,y + 1,"Tiles_Solid") == tiletype.leftslope2 || tile_meeting_precise(x,y + 1,"Tiles_Solid") == tiletype.leftsteepslope || tile_meeting_precise(x,y + 1,"Tiles_Solid") == tiletype.rightsteepslope || tile_meeting_precise(x,y + 1,"Tiles_Solid") == tiletype.rightslope1 || tile_meeting_precise(x,y + 1,"Tiles_Solid") == tiletype.rightslope2
-		{
-			#region Tile
-			var _slope = scr_tileslope(x, y + 1)
-			if _slope[0] != noone
-			{
-				var _xscale = _slope[1]
-				var _yscale = _slope[2]
-				var slope_acceleration = abs(_yscale) / abs(_xscale)
-				//Roll Momentum
-				if other.xscale == sign(_xscale)
-				{
-					if other.movespeed > 0 
-					{
-					other.movespeed -= (0.25 * slope_acceleration)
-						if other.movespeed <= 0
-						{
-							other.xscale = -sign(_xscale)
-							other.maxmachspeed = 24
-						}
-					}
-					if other.maxmachspeed > 24
-						other.maxmachspeed -= (0.25 * slope_acceleration)
-				}
-				else if other.xscale == -sign(_xscale)
-				{
-					if other.movespeed < other.maxmachspeed
-						other.movespeed += (0.25 * slope_acceleration)
-					if other.maxmachspeed < 28
-						other.maxmachspeed += (0.125 * slope_acceleration)
-				
-				}			
-			}
-			#endregion
-		}		
-	}
-	if (machhitAnim == 1 || rollmove == 1)
-	{
-	    if (character != "P")
-	        machhitAnim = 0
-	    else
-	    {
-	        if (machhitAnimtimer > 0)
-	            machhitAnimtimer -= 5
-	        if (machhitAnimtimer <= 0)
-	        {
-	            machhitAnimtimer = 500
-	            machhitAnim = 0
-	            rollmove = 0
-	        }
-	    }
-	}
-	if (!grounded)
-	{
-	    machhitAnimtimer = 500
-	    machhitAnim = 0
-	}
-	if (machhitAnim == 0)
-	    rollmove = 0
-	//Collide with Wall
-	if (scr_solid((x + xscale), y) && !scr_slope_ext(x + sign(hsp),y) && (!place_meeting((x + sign(hsp)), y, obj_destructibles)))
-	{
-	    scr_soundeffect(sfx_bumpwall)
-	    hsp = 0
-	    image_speed = 0.35
-	    flash = 0
-	    combo = 0
-	    state = 72
-	    hsp = -2.5 * xscale
-	    vsp = -3
-	    mach2 = 0
-	    image_index = 0
-	    instance_create((x + (10 * xscale)), (y + 10), obj_bumpeffect)
-	}
-	if ((!instance_exists(dashcloudid)) && grounded)
-		with instance_create(x,y + 43,obj_cloudeffect)
-		{
-			image_xscale = other.xscale
-			other.dashcloudid = id
-		}
 	if grounded
+	    sprite_index = spr_player_machroll
+	if (((!key_down) && (!scr_solid((x + 27), (y - 32))) && (!scr_solid((x - 27), (y - 32))) && (!scr_solid(x, (y - 32))) && (!scr_solid(x, (y - 16)))) || (!grounded))
 	{
-	    sprite_index = spr_machroll
+	    sprite_index = spr_player_mach4
+	    state = 83
 	}
-	else 
+	if (scr_solid((x + 1), y) && xscale == 1 && (!place_meeting((x + sign(hsp)), y, obj_slope)) && (!place_meeting((x + sign(hsp)), y, obj_destructibles)))
 	{
-	if global.divestyle = 0 && sprite_index != spr_dive
-	{
-	    sprite_index = spr_dive
-	    vsp = 10
-	}
-	else if global.divestyle = 1 && sprite_index != spr_mach2jump
-	{
-	    sprite_index = spr_mach2jump
-	    vsp = 13
-	}
-	}
-
-	//Breakdance Roll
-	if (key_shoot2) && character != "V"
-	{
-		breakdancebuffer = 50
-	    scr_soundeffect(sfx_rollgetup)
-		scr_soundeffect(sfx_breakdance)
-		movespeed = 13
-		sprite_index = spr_breakdanceattack1
-	    state = states.breakdance
-		with instance_create(x, y, obj_dashcloud2)
-	       image_xscale = other.xscale
-	    image_index = 0
-	
-	}
-	if ((!key_down) && (!scr_solid((x + 27), (y - 32))) && (!scr_solid((x - 27), (y - 32))) && (!scr_solid(x, (y - 32))) && (!scr_solid(x, (y - 16))))
-	{
-	    image_index = 0
-	    scr_soundeffect(sfx_rollgetup)
-	
-		if (movespeed >= 12)
+	    scr_sound(19)
+	    with (obj_camera)
 	    {
-	        state = 91
-			movespeed = clamp(movespeed,12,20)
+	        shake_mag = 20
+	        shake_mag_acc = (40 / room_speed)
 	    }
-	    else if movespeed >= 8
-		{
-	        state = 70
-			movespeed = clamp(movespeed,8,12)
-		}
-		else
-		{
-			state = states.mach1
-			movespeed = 6
-		}
-	    if (character != "S")
-	        sprite_index = spr_rollgetup
-	}
-#endregion
-	break;
-	case true:
-#region Jetpack
-	//Movespeed
-	if (movespeed < 24 && move == xscale)
-	{
-	    movespeed += 0.1
-	    if (!instance_exists(crazyruneffectid))
-	    {
-	        with (instance_create(x, y, obj_crazyruneffect))
-	        {
-	            playerid = other.object_index
-	            other.crazyruneffectid = id
-	        }
-	    }
-	}
-	else if (movespeed > 12 && move != xscale)
-	    movespeed -= 0.1
-	hsp = (xscale * movespeed)
-	mach2 = 100
-	move = (key_right + key_left)
-	//Sprite
-	if movespeed > 20 && image_speed != 0.8
-	{
-		flash = 1
-		image_speed = 0.8	
-	}
-	else if movespeed <= 20 
-	{
-		image_speed = 0.5
-	}
-	if (scr_solid((x + 1), y) && xscale == 1 && !scr_slope_ext(x + sign(hsp),y) && (!place_meeting((x + sign(hsp)), y, obj_destructibles)))
-	{
-		jetpacking = false
-	    scr_soundeffect(sfx_bumpwall)
 	    hsp = 0
 	    image_speed = 0.35
-	    flash = 0
+	    with (obj_baddie)
+	    {
+	        if point_in_rectangle(x, y, __view_get(0, 0), __view_get(1, 0), (__view_get(0, 0) + __view_get(2, 0)), (__view_get(1, 0) + __view_get(3, 0)))
+	        {
+	            stun = 1
+	            alarm[0] = 200
+	            ministun = 0
+	            vsp = -5
+	            hsp = 0
+	            image_xscale *= -1
+	        }
+	    }
+	    //flash = 0
 	    combo = 0
-	    state = 72
+	    state = 65
 	    hsp = -2.5
 	    vsp = -3
 	    mach2 = 0
 	    image_index = 0
 	    instance_create((x + 10), (y + 10), obj_bumpeffect)
 	}
-	if (scr_solid((x - 1), y) && xscale == -1 && !scr_slope_ext(x + sign(hsp),y) && (!place_meeting((x + sign(hsp)), y, obj_destructibles)))
+	if (scr_solid((x - 1), y) && xscale == -1 && (!place_meeting((x + sign(hsp)), y, obj_slope)) && (!place_meeting((x + sign(hsp)), y, obj_destructibles)))
 	{
-		jetpacking = false	
-	    scr_soundeffect(sfx_bumpwall)
+	    scr_sound(19)
+	    with (obj_camera)
+	    {
+	        shake_mag = 20
+	        shake_mag_acc = (40 / room_speed)
+	    }
 	    hsp = 0
 	    image_speed = 0.35
-	    flash = 0
+	    //flash = 0
 	    combo = 0
-	    state = 72
+	    state = 65
 	    hsp = 2.5
 	    vsp = -3
 	    mach2 = 0
 	    image_index = 0
 	    instance_create((x - 10), (y + 10), obj_bumpeffect)
 	}
-	if ((!key_down || !grounded) && (!scr_solid((x + 27), (y - 32))) && (!scr_solid((x - 27), (y - 32))) && (!scr_solid(x, (y - 32))) && (!scr_solid(x, (y - 16))))
-	{
-		image_index = 0
-		scr_soundeffect(sfx_rollgetup)
-	    state = states.jetpack
-		sprite_index = spr_jetpack
-	}
-	if ((!instance_exists(dashcloudid)) && grounded)
-		with instance_create(x,y + 43,obj_cloudeffect)
+		if key_down && place_meeting(x, y, obj_slope) && xscale == 1
 		{
-			image_xscale = other.xscale
-			other.dashcloudid = id
+			x -= 2
 		}
-#endregion
-	break;
+			if key_down && place_meeting(x, y, obj_slope) && xscale == -1
+			{
+				x += 2
+			}
+	//if (floor(image_index) == 0)
+	    //flash = 1
+	//else
+	    //flash = 0
+	if ((!instance_exists(obj_cloudeffect)) && grounded)
+	    instance_create(x, (y + 43), obj_cloudeffect)
+	image_speed = 0.8
+	if ((!key_down) && ((!scr_solid((x + 27), (y - 32))) && ((!scr_solid((x - 27), (y - 32))) && ((!scr_solid(x, (y - 32))) && (!scr_solid(x, (y - 16)))))))
+	{
+	    image_index = 0
+	    scr_sound(sound_losetransformation)
+	    state = 63
+	    if (character == "P")
+	        sprite_index = spr_player_rollgetup
 	}
+	if ((!key_down) && ((!scr_solid((x + 27), (y - 32))) && ((!scr_solid((x - 27), (y - 32))) && ((!scr_solid(x, (y - 32))) && (!scr_solid(x, (y - 16))))))) && !key_attack
+	{
+	    image_index = 0
+	    scr_sound(sound_losetransformation)
+	    state = 0
+	    if (character == "P")
+	        sprite_index = spr_player_rollgetup
+	}
+	if grounded
+	    sprite_index = spr_machroll
+	else if (sprite_index != spr_dive)
+	{
+	    sprite_index = spr_dive
+	    vsp = 10
+	}
+
+
 
 
 }

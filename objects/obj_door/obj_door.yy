@@ -1,22 +1,16 @@
 {
   "spriteId": {
-    "name": "spr_doorvisited",
-    "path": "sprites/spr_doorvisited/spr_doorvisited.yy",
+    "name": "spr_door",
+    "path": "sprites/spr_door/spr_door.yy",
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": {
-    "name": "spr_doorvisited",
-    "path": "sprites/spr_doorvisited/spr_doorvisited.yy",
-  },
+  "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "group_door",
-    "path": "objects/group_door/group_door.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
-  "physicsShape": 0,
+  "physicsShape": 1,
   "physicsGroup": 0,
   "physicsDensity": 0.5,
   "physicsRestitution": 0.1,
@@ -35,8 +29,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Doors and Hallways",
-    "path": "folders/Objects/Level Structure/Doors and Hallways.yy",
+    "name": "transport",
+    "path": "folders/Objects/level/transport.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_door",

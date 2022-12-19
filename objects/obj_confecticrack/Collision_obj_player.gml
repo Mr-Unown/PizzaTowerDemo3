@@ -1,0 +1,1 @@
+global.crackfollow = 1

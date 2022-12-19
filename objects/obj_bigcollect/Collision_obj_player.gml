@@ -1,18 +1,13 @@
-with (instance_create(x, y, obj_smallnumber))
-    number = "100"
-with other.id
+if (global.collectsound == 10)
+    scr_sound(sound_points)
+global.collectsound = 0
+global.collect += 100
+global.pizzameter += 5
+with instance_create(x, y, obj_10)
+	sprite_index = spr_100
+if global.combomode = 1 && global.combo >= 1
 {
-    collectscore = (collectscore + 100)
-    if (character == "V") && vigihealth < 250
-        vigihealth += 25
+global.combotime += 10	
+global.combofreeze += 10
 }
-if global.combotime < 60
-global.combotime += 10
-else
-global.combotime = 60
-global.pausecombotime = true
-obj_tv.alarm[1] = 75
-scr_soundeffect(sfx_collectpizza)
 instance_destroy()
-with instance_create(x + random_range(-5,5),y + random_range(-5,5), obj_collecteffect)
-sprite_index = other.sprite_index

@@ -5,7 +5,6 @@ function scr_player_hurt() {
 	    hsp = ((-xscale) * movespeed)
 	if (movespeed > 0)
 	    movespeed -= 0.1
-	freefallsmash = 0
 	combo = 0
 	mach2 = 0
 	bounce = 0
@@ -23,7 +22,8 @@ function scr_player_hurt() {
 	machhitAnim = 0
 	hurted = 1
 	turning = 0
-
+	//if instance_exists(obj_hook)
+	    //obj_hook.hooked = 0
 	alarm[5] = 2
 	alarm[7] = 60
 	if grounded

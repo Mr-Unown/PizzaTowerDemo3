@@ -1,20 +1,10 @@
-if (!grounded)
-    image_speed = 0
-else if (floor(image_index) != 8)
+if floor(image_index) == (image_number - 1)
 {
-    image_speed = 0.35
-	if shaken = false
+obj_player.targetRoom = hub_public
+obj_player.targetDoor = "A"
+	if !instance_exists(obj_fadeout)
 	{
-	with (obj_camera)
-	{
-		shake_mag = 10
-	    shake_mag_acc = (30 / room_speed)
-	}
-	shaken = true
+		instance_create(x, y, obj_fadeout)
+		obj_player.state = 0
 	}
 }
-else
-    image_speed = 0
-scr_collide()
-
-

@@ -1,4 +1,18 @@
 function scr_player_freefallprep() {
+	hsp = 0
+	if (((scr_solid((x + 1), y) && move == 1) || (scr_solid((x - 1), y) && move == -1)) && (!place_meeting((x + sign(hsp)), y, obj_slope)))
+	    movespeed = 0
+	start_running = 1
+	alarm[4] = 14
+	jumpAnim = 1
+	dashAnim = 1
+	landAnim = 0
+	machslideAnim = 1
+	moveAnim = 1
+	stopAnim = 1
+	crouchslideAnim = 1
+	crouchAnim = 1
+	sprite_index = spr_player_bodyslamstart
 	move = (key_left + key_right)
 	if (!grounded)
 	{
@@ -33,26 +47,13 @@ function scr_player_freefallprep() {
 	    if (move != 0)
 	        xscale = move
 	}
-	if sprite_index != spr_mach2jump 
 	image_speed = 0.5
-	else
-	image_speed = (movespeed/12) * 0.8
-	if global.groundpoundstyle = 0
-	{	
-		if (floor(image_index) == (image_number - 1))
-		{
-		    vsp += 14
-			state = 74
-			if (shotgunAnim == 0)
-			sprite_index = spr_bodyslamfall
-			else
-			sprite_index = spr_shotgunjump3
-		}
-	}
-	else if global.groundpoundstyle = 1
+	if (floor(image_index) == (image_number - 1))
 	{
-		vsp += 14
-		state = 74
-		sprite_index = spr_mach2jump
+	    vsp += 14
+	    state = 67
 	}
+
+
+
 }

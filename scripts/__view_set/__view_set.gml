@@ -1,7 +1,3 @@
-/// @description Legacy Script for Views
-/// @param mode The mode of the operation being used
-/// @param cam The view port id to be used
-/// @param val The Value to be changed.
 function __view_set(argument0, argument1, argument2) {
 	var __prop = argument0
 	var __index = argument1

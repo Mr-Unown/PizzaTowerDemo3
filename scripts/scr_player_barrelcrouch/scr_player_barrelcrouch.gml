@@ -5,7 +5,7 @@ function scr_player_barrelcrouch() {
 	    vsp += grav
 	if (grounded && (!key_down) && image_speed == 0)
 	{
-	    state = 84
+	    state = 77
 	    movespeed = 2
 	    image_index = 0
 	}

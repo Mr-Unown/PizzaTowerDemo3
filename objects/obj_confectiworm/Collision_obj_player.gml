@@ -1,0 +1,1 @@
+global.wormfollow = 1

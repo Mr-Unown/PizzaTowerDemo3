@@ -1,10 +1,10 @@
 function scr_player_skateboard() {
-	/*machhitAnim = 0
+	machhitAnim = 0
 	crouchslideAnim = 1
 	hsp = (xscale * movespeed)
 	if key_jump
 	{
-	    state = 70
+	    state = 63
 	    vsp = -6
 	    with (instance_create((x + (xscale * movespeed)), y, obj_skateboard))
 	    {
@@ -16,7 +16,7 @@ function scr_player_skateboard() {
 	if (scr_solid((x + 1), y) && xscale == 1)
 	{
 	    machhitAnim = 0
-	    state = 72
+	    state = 65
 	    hsp = -2.5
 	    vsp = -3
 	    mach2 = 0
@@ -28,7 +28,7 @@ function scr_player_skateboard() {
 	else if (scr_solid((x - 1), y) && xscale == -1)
 	{
 	    machhitAnim = 0
-	    state = 72
+	    state = 65
 	    hsp = 2.5
 	    vsp = -3
 	    mach2 = 0
@@ -43,5 +43,5 @@ function scr_player_skateboard() {
 	    instance_create(x, y, obj_slidecloud)
 
 
-/* end scr_player_skateboard */
+
 }

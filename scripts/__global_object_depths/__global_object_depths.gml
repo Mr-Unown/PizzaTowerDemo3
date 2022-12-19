@@ -1,5 +1,4 @@
 function __global_object_depths() {
-	/*
 	global.__objectDepths[0] = 98
 	global.__objectDepths[1] = -6
 	global.__objectDepths[2] = -9998
@@ -263,7 +262,7 @@ function __global_object_depths() {
 	global.__objectNames[21] = "obj_keyconfig"
 	global.__objectNames[22] = "obj_pizzastand"
 	global.__objectNames[23] = "obj_mouthhitbox"
-	global.__objectNames[24] = "obj_johnpillar"
+	global.__objectNames[24] = "obj_hungrypillar"
 	global.__objectNames[25] = "obj_cutscene_upstairs"
 	global.__objectNames[26] = "obj_rank"
 	global.__objectNames[27] = "obj_timesup"
@@ -281,10 +280,10 @@ function __global_object_depths() {
 	global.__objectNames[39] = "obj_baddiedead"
 	global.__objectNames[40] = "obj_robotknife"
 	global.__objectNames[41] = "obj_spitcheesespike"
-	global.__objectNames[42] = "obj_parryhitbox"
+	global.__objectNames[42] = "obj_pineahitbox"
 	global.__objectNames[43] = "obj_sausagemancigar"
 	global.__objectNames[44] = "obj_forkhitbox"
-	global.__objectNames[45] = " obj_baddie_dead"
+	global.__objectNames[45] = "obj_sausageman_dead"
 	global.__objectNames[46] = "obj_enemybird"
 	global.__objectNames[47] = "obj_slimedead"
 	global.__objectNames[48] = "obj_pizzaboy"
@@ -334,11 +333,11 @@ function __global_object_depths() {
 	global.__objectNames[92] = "obj_pizzaboxunopen"
 	global.__objectNames[93] = "obj_treasure"
 	global.__objectNames[94] = "obj_collect"
-	global.__objectNames[95] = "obj_pizzakinsausage"
-	global.__objectNames[96] = "obj_pizzakinshroom"
-	global.__objectNames[97] = "obj_pizzakincheese"
-	global.__objectNames[98] = "obj_pizzakintomato"
-	global.__objectNames[99] = "obj_pizzakinpineapple"
+	global.__objectNames[95] = "obj_confectisausage"
+	global.__objectNames[96] = "obj_confectishroom"
+	global.__objectNames[97] = "obj_confecticheese"
+	global.__objectNames[98] = "obj_confectitomato"
+	global.__objectNames[99] = "obj_confectipineapple"
 	global.__objectNames[100] = "obj_pizzacoin"
 	global.__objectNames[101] = "obj_bigcollect"
 	global.__objectNames[102] = "obj_clockcollectibles"
@@ -391,7 +390,7 @@ function __global_object_depths() {
 	global.__objectNames[149] = "obj_barrel"
 	global.__objectNames[150] = "obj_barrelfloat"
 	global.__objectNames[151] = "obj_tomatoblock"
-	global.__objectNames[152] = "obj_cheeseblock"
+	global.__objectNames[152] = "obj_destructibleplatform"
 	global.__objectNames[153] = "obj_baddiegibs"
 	global.__objectNames[154] = "obj_wooddebris"
 	global.__objectNames[155] = "obj_slapstar"
@@ -436,7 +435,7 @@ function __global_object_depths() {
 	global.__objectNames[194] = "obj_tutorialtrap"
 	global.__objectNames[195] = "obj_crashingplane"
 	global.__objectNames[196] = "obj_crashplaneblock"
-	global.__objectNames[197] = "obj_parallax"
+	global.__objectNames[197] = "obj_parrallax"
 	global.__objectNames[198] = "obj_lamp"
 	global.__objectNames[199] = "obj_lightlamp"
 	global.__objectNames[200] = "obj_speedlines"
@@ -468,7 +467,7 @@ function __global_object_depths() {
 	global.__objectNames[226] = "obj_blackbars"
 	global.__objectNames[227] = "obj_bumpeffect"
 	global.__objectNames[228] = "obj_keyeffect"
-	global.__objectNames[229] = "obj_gatetransition"
+	global.__objectNames[229] = "obj_doortransition"
 	global.__objectNames[230] = "obj_doortransitionend"
 	global.__objectNames[231] = "obj_doortransition2"
 	global.__objectNames[232] = "obj_slidecloud"
@@ -488,5 +487,5 @@ function __global_object_depths() {
 	}
 
 
-/* end __global_object_depths */
+
 }
