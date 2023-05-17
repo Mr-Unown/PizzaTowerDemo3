@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_player_barrelidleOLD",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 100,
   "height": 100,
   "textureGroupId": {
@@ -24,12 +28,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"dcca78ec-c316-4500-825e-ba91b62a5c98","path":"sprites/spr_player_barrelidleOLD/spr_player_barrelidleOLD.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"dcca78ec-c316-4500-825e-ba91b62a5c98","path":"sprites/spr_player_barrelidleOLD/spr_player_barrelidleOLD.yy",},"LayerId":{"name":"327dd109-16ec-4acd-96f8-6f12b4c88f54","path":"sprites/spr_player_barrelidleOLD/spr_player_barrelidleOLD.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_barrelidleOLD","path":"sprites/spr_player_barrelidleOLD/spr_player_barrelidleOLD.yy",},"resourceVersion":"1.0","name":"dcca78ec-c316-4500-825e-ba91b62a5c98","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"dcca78ec-c316-4500-825e-ba91b62a5c98",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_player_barrelidleOLD","path":"sprites/spr_player_barrelidleOLD/spr_player_barrelidleOLD.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_player_barrelidleOLD",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -40,9 +44,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"584f3825-3247-489a-a495-11e1b58b9784","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"dcca78ec-c316-4500-825e-ba91b62a5c98","path":"sprites/spr_player_barrelidleOLD/spr_player_barrelidleOLD.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +62,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_player_barrelidleOLD","path":"sprites/spr_player_barrelidleOLD/spr_player_barrelidleOLD.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_player_barrelidleOLD",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"327dd109-16ec-4acd-96f8-6f12b4c88f54","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"327dd109-16ec-4acd-96f8-6f12b4c88f54","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "barrel",
     "path": "folders/Sprites/Characters/Playable Characters Sprites/Peppino/barrel.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_player_barrelidleOLD",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

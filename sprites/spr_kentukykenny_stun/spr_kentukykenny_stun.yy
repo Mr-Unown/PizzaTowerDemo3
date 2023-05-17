@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_kentukykenny_stun",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 100,
   "height": 100,
   "textureGroupId": {
@@ -24,18 +28,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"3be4bc1a-ad89-43b2-ac2d-ea3765c75b55","path":"sprites/spr_kentukykenny_stun/spr_kentukykenny_stun.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3be4bc1a-ad89-43b2-ac2d-ea3765c75b55","path":"sprites/spr_kentukykenny_stun/spr_kentukykenny_stun.yy",},"LayerId":{"name":"7a7536a7-d134-4216-9d49-5ab2bd7947fa","path":"sprites/spr_kentukykenny_stun/spr_kentukykenny_stun.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_kentukykenny_stun","path":"sprites/spr_kentukykenny_stun/spr_kentukykenny_stun.yy",},"resourceVersion":"1.0","name":"3be4bc1a-ad89-43b2-ac2d-ea3765c75b55","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"1907bb92-ab20-41a0-822b-a21a59343277","path":"sprites/spr_kentukykenny_stun/spr_kentukykenny_stun.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1907bb92-ab20-41a0-822b-a21a59343277","path":"sprites/spr_kentukykenny_stun/spr_kentukykenny_stun.yy",},"LayerId":{"name":"7a7536a7-d134-4216-9d49-5ab2bd7947fa","path":"sprites/spr_kentukykenny_stun/spr_kentukykenny_stun.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_kentukykenny_stun","path":"sprites/spr_kentukykenny_stun/spr_kentukykenny_stun.yy",},"resourceVersion":"1.0","name":"1907bb92-ab20-41a0-822b-a21a59343277","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"3feabe33-afb5-424e-bdbe-7355ad7731a6","path":"sprites/spr_kentukykenny_stun/spr_kentukykenny_stun.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3feabe33-afb5-424e-bdbe-7355ad7731a6","path":"sprites/spr_kentukykenny_stun/spr_kentukykenny_stun.yy",},"LayerId":{"name":"7a7536a7-d134-4216-9d49-5ab2bd7947fa","path":"sprites/spr_kentukykenny_stun/spr_kentukykenny_stun.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_kentukykenny_stun","path":"sprites/spr_kentukykenny_stun/spr_kentukykenny_stun.yy",},"resourceVersion":"1.0","name":"3feabe33-afb5-424e-bdbe-7355ad7731a6","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3be4bc1a-ad89-43b2-ac2d-ea3765c75b55",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1907bb92-ab20-41a0-822b-a21a59343277",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3feabe33-afb5-424e-bdbe-7355ad7731a6",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_kentukykenny_stun","path":"sprites/spr_kentukykenny_stun/spr_kentukykenny_stun.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -46,11 +46,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"b991f357-b0a0-41fb-bdd3-032de0ad81f3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3be4bc1a-ad89-43b2-ac2d-ea3765c75b55","path":"sprites/spr_kentukykenny_stun/spr_kentukykenny_stun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"c1971e38-2ac6-402f-a1b2-018d90f41a7b","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1907bb92-ab20-41a0-822b-a21a59343277","path":"sprites/spr_kentukykenny_stun/spr_kentukykenny_stun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"bd40e848-e2c5-43a6-9edf-65cea72db1d6","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3feabe33-afb5-424e-bdbe-7355ad7731a6","path":"sprites/spr_kentukykenny_stun/spr_kentukykenny_stun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -66,22 +66,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_kentukykenny_stun","path":"sprites/spr_kentukykenny_stun/spr_kentukykenny_stun.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"7a7536a7-d134-4216-9d49-5ab2bd7947fa","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"7a7536a7-d134-4216-9d49-5ab2bd7947fa","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Kentuky Kenny",
     "path": "folders/Sprites/Characters/Baddies/Kentuky Kenny.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_kentukykenny_stun",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

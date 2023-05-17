@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_hat_fedora",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 100,
   "height": 100,
   "textureGroupId": {
@@ -24,30 +28,18 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"524a3242-dbed-4ebd-b534-26bd0c354537","path":"sprites/spr_hat_fedora/spr_hat_fedora.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"524a3242-dbed-4ebd-b534-26bd0c354537","path":"sprites/spr_hat_fedora/spr_hat_fedora.yy",},"LayerId":{"name":"583eb2bb-9e25-4087-ac8f-34b91eea7f81","path":"sprites/spr_hat_fedora/spr_hat_fedora.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_hat_fedora","path":"sprites/spr_hat_fedora/spr_hat_fedora.yy",},"resourceVersion":"1.0","name":"524a3242-dbed-4ebd-b534-26bd0c354537","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"6a2487f1-2e16-44e4-b97a-822350772d98","path":"sprites/spr_hat_fedora/spr_hat_fedora.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6a2487f1-2e16-44e4-b97a-822350772d98","path":"sprites/spr_hat_fedora/spr_hat_fedora.yy",},"LayerId":{"name":"583eb2bb-9e25-4087-ac8f-34b91eea7f81","path":"sprites/spr_hat_fedora/spr_hat_fedora.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_hat_fedora","path":"sprites/spr_hat_fedora/spr_hat_fedora.yy",},"resourceVersion":"1.0","name":"6a2487f1-2e16-44e4-b97a-822350772d98","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"1c99773b-841b-44af-a01f-e06d972495ce","path":"sprites/spr_hat_fedora/spr_hat_fedora.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1c99773b-841b-44af-a01f-e06d972495ce","path":"sprites/spr_hat_fedora/spr_hat_fedora.yy",},"LayerId":{"name":"583eb2bb-9e25-4087-ac8f-34b91eea7f81","path":"sprites/spr_hat_fedora/spr_hat_fedora.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_hat_fedora","path":"sprites/spr_hat_fedora/spr_hat_fedora.yy",},"resourceVersion":"1.0","name":"1c99773b-841b-44af-a01f-e06d972495ce","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"de9cc5d4-c08f-42ac-99b9-793618a38deb","path":"sprites/spr_hat_fedora/spr_hat_fedora.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"de9cc5d4-c08f-42ac-99b9-793618a38deb","path":"sprites/spr_hat_fedora/spr_hat_fedora.yy",},"LayerId":{"name":"583eb2bb-9e25-4087-ac8f-34b91eea7f81","path":"sprites/spr_hat_fedora/spr_hat_fedora.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_hat_fedora","path":"sprites/spr_hat_fedora/spr_hat_fedora.yy",},"resourceVersion":"1.0","name":"de9cc5d4-c08f-42ac-99b9-793618a38deb","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"aa61c739-ddcf-43f5-b5c5-ecc2ce67c55f","path":"sprites/spr_hat_fedora/spr_hat_fedora.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"aa61c739-ddcf-43f5-b5c5-ecc2ce67c55f","path":"sprites/spr_hat_fedora/spr_hat_fedora.yy",},"LayerId":{"name":"583eb2bb-9e25-4087-ac8f-34b91eea7f81","path":"sprites/spr_hat_fedora/spr_hat_fedora.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_hat_fedora","path":"sprites/spr_hat_fedora/spr_hat_fedora.yy",},"resourceVersion":"1.0","name":"aa61c739-ddcf-43f5-b5c5-ecc2ce67c55f","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"421c3367-e91e-4601-b6e3-147a7f62645e","path":"sprites/spr_hat_fedora/spr_hat_fedora.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"421c3367-e91e-4601-b6e3-147a7f62645e","path":"sprites/spr_hat_fedora/spr_hat_fedora.yy",},"LayerId":{"name":"583eb2bb-9e25-4087-ac8f-34b91eea7f81","path":"sprites/spr_hat_fedora/spr_hat_fedora.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_hat_fedora","path":"sprites/spr_hat_fedora/spr_hat_fedora.yy",},"resourceVersion":"1.0","name":"421c3367-e91e-4601-b6e3-147a7f62645e","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"8eba22af-032f-48ab-a267-13a7a07ce5ea","path":"sprites/spr_hat_fedora/spr_hat_fedora.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8eba22af-032f-48ab-a267-13a7a07ce5ea","path":"sprites/spr_hat_fedora/spr_hat_fedora.yy",},"LayerId":{"name":"583eb2bb-9e25-4087-ac8f-34b91eea7f81","path":"sprites/spr_hat_fedora/spr_hat_fedora.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_hat_fedora","path":"sprites/spr_hat_fedora/spr_hat_fedora.yy",},"resourceVersion":"1.0","name":"8eba22af-032f-48ab-a267-13a7a07ce5ea","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"524a3242-dbed-4ebd-b534-26bd0c354537",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6a2487f1-2e16-44e4-b97a-822350772d98",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1c99773b-841b-44af-a01f-e06d972495ce",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"de9cc5d4-c08f-42ac-99b9-793618a38deb",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"aa61c739-ddcf-43f5-b5c5-ecc2ce67c55f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"421c3367-e91e-4601-b6e3-147a7f62645e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8eba22af-032f-48ab-a267-13a7a07ce5ea",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_hat_fedora","path":"sprites/spr_hat_fedora/spr_hat_fedora.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_hat_fedora",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -58,7 +50,7 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"f50cb986-6bb2-46cb-a3e2-0534aa7d588e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"524a3242-dbed-4ebd-b534-26bd0c354537","path":"sprites/spr_hat_fedora/spr_hat_fedora.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"6d1d42ad-5073-4aae-a4a3-76e99717ed16","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6a2487f1-2e16-44e4-b97a-822350772d98","path":"sprites/spr_hat_fedora/spr_hat_fedora.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"44644eef-45c6-48c7-ace9-78415586355b","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1c99773b-841b-44af-a01f-e06d972495ce","path":"sprites/spr_hat_fedora/spr_hat_fedora.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
@@ -66,7 +58,7 @@
             {"id":"549ef3d7-5951-4ea4-b464-a725a5b24dc5","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"aa61c739-ddcf-43f5-b5c5-ecc2ce67c55f","path":"sprites/spr_hat_fedora/spr_hat_fedora.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"4d551203-57cd-4008-a11f-8890fbcc6d0e","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"421c3367-e91e-4601-b6e3-147a7f62645e","path":"sprites/spr_hat_fedora/spr_hat_fedora.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"885cf7ba-3b5c-421d-8bfc-98a3010461eb","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8eba22af-032f-48ab-a267-13a7a07ce5ea","path":"sprites/spr_hat_fedora/spr_hat_fedora.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -82,22 +74,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_hat_fedora","path":"sprites/spr_hat_fedora/spr_hat_fedora.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_hat_fedora",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"583eb2bb-9e25-4087-ac8f-34b91eea7f81","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"583eb2bb-9e25-4087-ac8f-34b91eea7f81","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Hats",
     "path": "folders/Sprites/Characters/Hats.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_hat_fedora",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

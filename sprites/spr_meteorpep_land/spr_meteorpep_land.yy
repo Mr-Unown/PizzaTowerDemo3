@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_meteorpep_land",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 100,
   "height": 100,
   "textureGroupId": {
@@ -24,45 +28,23 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"a9fe37a5-16b6-4fdd-9bd6-4583373272a3","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a9fe37a5-16b6-4fdd-9bd6-4583373272a3","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"LayerId":{"name":"5c8e30f6-7065-425a-8147-9c5cc786c040","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_meteorpep_land","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"resourceVersion":"1.0","name":"a9fe37a5-16b6-4fdd-9bd6-4583373272a3","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"bed52ebc-c7d8-4a23-83cb-d2f784ba5f62","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"bed52ebc-c7d8-4a23-83cb-d2f784ba5f62","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"LayerId":{"name":"5c8e30f6-7065-425a-8147-9c5cc786c040","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_meteorpep_land","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"resourceVersion":"1.0","name":"bed52ebc-c7d8-4a23-83cb-d2f784ba5f62","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"22e31ad1-290a-4adb-8a35-71a4d11b79ea","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"22e31ad1-290a-4adb-8a35-71a4d11b79ea","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"LayerId":{"name":"5c8e30f6-7065-425a-8147-9c5cc786c040","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_meteorpep_land","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"resourceVersion":"1.0","name":"22e31ad1-290a-4adb-8a35-71a4d11b79ea","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"0801c2a0-ee81-4fe6-8d1d-b4447e53bb7f","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0801c2a0-ee81-4fe6-8d1d-b4447e53bb7f","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"LayerId":{"name":"5c8e30f6-7065-425a-8147-9c5cc786c040","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_meteorpep_land","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"resourceVersion":"1.0","name":"0801c2a0-ee81-4fe6-8d1d-b4447e53bb7f","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"6226eaaf-9827-4f17-8b9b-0e72ff6ae502","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6226eaaf-9827-4f17-8b9b-0e72ff6ae502","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"LayerId":{"name":"5c8e30f6-7065-425a-8147-9c5cc786c040","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_meteorpep_land","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"resourceVersion":"1.0","name":"6226eaaf-9827-4f17-8b9b-0e72ff6ae502","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"02952f69-f732-4138-bace-981c321f86f7","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"02952f69-f732-4138-bace-981c321f86f7","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"LayerId":{"name":"5c8e30f6-7065-425a-8147-9c5cc786c040","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_meteorpep_land","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"resourceVersion":"1.0","name":"02952f69-f732-4138-bace-981c321f86f7","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"aecd383d-ea48-4723-8ad2-6bc4c9382977","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"aecd383d-ea48-4723-8ad2-6bc4c9382977","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"LayerId":{"name":"5c8e30f6-7065-425a-8147-9c5cc786c040","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_meteorpep_land","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"resourceVersion":"1.0","name":"aecd383d-ea48-4723-8ad2-6bc4c9382977","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"5c32483a-de1d-43a0-ac03-ab5021d9db5b","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5c32483a-de1d-43a0-ac03-ab5021d9db5b","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"LayerId":{"name":"5c8e30f6-7065-425a-8147-9c5cc786c040","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_meteorpep_land","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"resourceVersion":"1.0","name":"5c32483a-de1d-43a0-ac03-ab5021d9db5b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"56608190-de3f-4385-91cf-74f8d57e9995","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"56608190-de3f-4385-91cf-74f8d57e9995","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"LayerId":{"name":"5c8e30f6-7065-425a-8147-9c5cc786c040","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_meteorpep_land","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"resourceVersion":"1.0","name":"56608190-de3f-4385-91cf-74f8d57e9995","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"d51a3be8-84af-40c2-b0e7-8277c6ed5eb2","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d51a3be8-84af-40c2-b0e7-8277c6ed5eb2","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"LayerId":{"name":"5c8e30f6-7065-425a-8147-9c5cc786c040","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_meteorpep_land","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"resourceVersion":"1.0","name":"d51a3be8-84af-40c2-b0e7-8277c6ed5eb2","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"66e0cfa2-92af-4df9-a265-89fcc4691849","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"66e0cfa2-92af-4df9-a265-89fcc4691849","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"LayerId":{"name":"5c8e30f6-7065-425a-8147-9c5cc786c040","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_meteorpep_land","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"resourceVersion":"1.0","name":"66e0cfa2-92af-4df9-a265-89fcc4691849","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"083abcfb-5ea9-4700-a611-d4142dc4893a","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"083abcfb-5ea9-4700-a611-d4142dc4893a","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"LayerId":{"name":"5c8e30f6-7065-425a-8147-9c5cc786c040","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_meteorpep_land","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"resourceVersion":"1.0","name":"083abcfb-5ea9-4700-a611-d4142dc4893a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a9fe37a5-16b6-4fdd-9bd6-4583373272a3",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"bed52ebc-c7d8-4a23-83cb-d2f784ba5f62",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"22e31ad1-290a-4adb-8a35-71a4d11b79ea",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0801c2a0-ee81-4fe6-8d1d-b4447e53bb7f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6226eaaf-9827-4f17-8b9b-0e72ff6ae502",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"02952f69-f732-4138-bace-981c321f86f7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"aecd383d-ea48-4723-8ad2-6bc4c9382977",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5c32483a-de1d-43a0-ac03-ab5021d9db5b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"56608190-de3f-4385-91cf-74f8d57e9995",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d51a3be8-84af-40c2-b0e7-8277c6ed5eb2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"66e0cfa2-92af-4df9-a265-89fcc4691849",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"083abcfb-5ea9-4700-a611-d4142dc4893a",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_meteorpep_land","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -73,7 +55,7 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"9a6cbe01-950e-42e9-a8d8-8b5ba45a3df5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a9fe37a5-16b6-4fdd-9bd6-4583373272a3","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"653a9833-1ca9-491f-bae6-32badb19e3f2","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bed52ebc-c7d8-4a23-83cb-d2f784ba5f62","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"6d063334-b0c0-4ce9-a110-4da5224bd097","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"22e31ad1-290a-4adb-8a35-71a4d11b79ea","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
@@ -86,7 +68,7 @@
             {"id":"0ddaf5f2-2cd5-4e3b-b725-5f7eb09f44a6","Key":9.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d51a3be8-84af-40c2-b0e7-8277c6ed5eb2","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"202c1f2f-61ec-4d12-b28c-8147c9408b5a","Key":10.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"66e0cfa2-92af-4df9-a265-89fcc4691849","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"d6d44d03-5055-4d7d-8042-4bf0804daa1e","Key":11.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"083abcfb-5ea9-4700-a611-d4142dc4893a","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -102,22 +84,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_meteorpep_land","path":"sprites/spr_meteorpep_land/spr_meteorpep_land.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5c8e30f6-7065-425a-8147-9c5cc786c040","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"5c8e30f6-7065-425a-8147-9c5cc786c040","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Peppino",
     "path": "folders/Sprites/Characters/Playable Characters Sprites/Peppino.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_meteorpep_land",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_sanctum_decor7",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 126,
   "height": 162,
   "textureGroupId": {
@@ -24,45 +28,23 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"f2ee1bb1-6a94-4f31-9b64-ae26c7516f6f","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f2ee1bb1-6a94-4f31-9b64-ae26c7516f6f","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"LayerId":{"name":"0f75bce5-5f99-426f-8ee9-d64922ee635e","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_sanctum_decor7","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"resourceVersion":"1.0","name":"f2ee1bb1-6a94-4f31-9b64-ae26c7516f6f","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"65084c6a-34ef-4cc4-9d4e-94b7478648d1","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"65084c6a-34ef-4cc4-9d4e-94b7478648d1","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"LayerId":{"name":"0f75bce5-5f99-426f-8ee9-d64922ee635e","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_sanctum_decor7","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"resourceVersion":"1.0","name":"65084c6a-34ef-4cc4-9d4e-94b7478648d1","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"5fceff61-9cf0-43ed-8cbc-73a077e11990","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5fceff61-9cf0-43ed-8cbc-73a077e11990","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"LayerId":{"name":"0f75bce5-5f99-426f-8ee9-d64922ee635e","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_sanctum_decor7","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"resourceVersion":"1.0","name":"5fceff61-9cf0-43ed-8cbc-73a077e11990","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"4b182fd4-ce53-4bf4-948c-dd0920c4ff70","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4b182fd4-ce53-4bf4-948c-dd0920c4ff70","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"LayerId":{"name":"0f75bce5-5f99-426f-8ee9-d64922ee635e","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_sanctum_decor7","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"resourceVersion":"1.0","name":"4b182fd4-ce53-4bf4-948c-dd0920c4ff70","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"8ebcec35-a30a-42cf-b699-da66ac068858","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8ebcec35-a30a-42cf-b699-da66ac068858","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"LayerId":{"name":"0f75bce5-5f99-426f-8ee9-d64922ee635e","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_sanctum_decor7","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"resourceVersion":"1.0","name":"8ebcec35-a30a-42cf-b699-da66ac068858","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"4dbbb297-d7a7-418b-91b8-606cdda4cffd","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4dbbb297-d7a7-418b-91b8-606cdda4cffd","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"LayerId":{"name":"0f75bce5-5f99-426f-8ee9-d64922ee635e","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_sanctum_decor7","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"resourceVersion":"1.0","name":"4dbbb297-d7a7-418b-91b8-606cdda4cffd","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ad94a286-607f-4542-b137-125856ad56c6","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ad94a286-607f-4542-b137-125856ad56c6","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"LayerId":{"name":"0f75bce5-5f99-426f-8ee9-d64922ee635e","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_sanctum_decor7","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"resourceVersion":"1.0","name":"ad94a286-607f-4542-b137-125856ad56c6","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"0d4e437c-a141-406a-86c4-80e1ade739be","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0d4e437c-a141-406a-86c4-80e1ade739be","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"LayerId":{"name":"0f75bce5-5f99-426f-8ee9-d64922ee635e","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_sanctum_decor7","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"resourceVersion":"1.0","name":"0d4e437c-a141-406a-86c4-80e1ade739be","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"273a47da-f672-43d0-92ff-c49f9841c4fa","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"273a47da-f672-43d0-92ff-c49f9841c4fa","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"LayerId":{"name":"0f75bce5-5f99-426f-8ee9-d64922ee635e","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_sanctum_decor7","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"resourceVersion":"1.0","name":"273a47da-f672-43d0-92ff-c49f9841c4fa","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ace2f32a-72bd-4b45-b366-fd74355182bc","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ace2f32a-72bd-4b45-b366-fd74355182bc","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"LayerId":{"name":"0f75bce5-5f99-426f-8ee9-d64922ee635e","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_sanctum_decor7","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"resourceVersion":"1.0","name":"ace2f32a-72bd-4b45-b366-fd74355182bc","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"f550fdd7-34ba-4bbf-8a61-06ae3729177f","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f550fdd7-34ba-4bbf-8a61-06ae3729177f","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"LayerId":{"name":"0f75bce5-5f99-426f-8ee9-d64922ee635e","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_sanctum_decor7","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"resourceVersion":"1.0","name":"f550fdd7-34ba-4bbf-8a61-06ae3729177f","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c167bdaa-bd58-43ea-b883-c326eb6a0c03","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c167bdaa-bd58-43ea-b883-c326eb6a0c03","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"LayerId":{"name":"0f75bce5-5f99-426f-8ee9-d64922ee635e","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_sanctum_decor7","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"resourceVersion":"1.0","name":"c167bdaa-bd58-43ea-b883-c326eb6a0c03","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f2ee1bb1-6a94-4f31-9b64-ae26c7516f6f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"65084c6a-34ef-4cc4-9d4e-94b7478648d1",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5fceff61-9cf0-43ed-8cbc-73a077e11990",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4b182fd4-ce53-4bf4-948c-dd0920c4ff70",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8ebcec35-a30a-42cf-b699-da66ac068858",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4dbbb297-d7a7-418b-91b8-606cdda4cffd",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ad94a286-607f-4542-b137-125856ad56c6",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0d4e437c-a141-406a-86c4-80e1ade739be",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"273a47da-f672-43d0-92ff-c49f9841c4fa",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ace2f32a-72bd-4b45-b366-fd74355182bc",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f550fdd7-34ba-4bbf-8a61-06ae3729177f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c167bdaa-bd58-43ea-b883-c326eb6a0c03",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_sanctum_decor7","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_sanctum_decor7",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 0.35,
@@ -73,7 +55,7 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"3c57fd97-b22a-4799-93b0-74e1c68671a7","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f2ee1bb1-6a94-4f31-9b64-ae26c7516f6f","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"7e82d0d6-e7a8-49cb-bf9e-5b3057e40d25","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"65084c6a-34ef-4cc4-9d4e-94b7478648d1","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"c0557aa6-a1a7-408d-8ec2-a59bac024298","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5fceff61-9cf0-43ed-8cbc-73a077e11990","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
@@ -86,7 +68,7 @@
             {"id":"4c2c70c7-ef9a-4551-8db2-4ad9f2667b62","Key":9.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ace2f32a-72bd-4b45-b366-fd74355182bc","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"02979bc5-ea7c-46d4-89bd-d00f2a922e61","Key":10.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f550fdd7-34ba-4bbf-8a61-06ae3729177f","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"63168f3d-72bf-4054-aee8-799ca0c08aac","Key":11.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c167bdaa-bd58-43ea-b883-c326eb6a0c03","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -102,22 +84,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_sanctum_decor7","path":"sprites/spr_sanctum_decor7/spr_sanctum_decor7.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_sanctum_decor7",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0f75bce5-5f99-426f-8ee9-d64922ee635e","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0f75bce5-5f99-426f-8ee9-d64922ee635e","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Sanctum",
     "path": "folders/Sprites/Asset Layer Sprites/Sanctum.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_sanctum_decor7",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

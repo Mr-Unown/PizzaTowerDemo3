@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_shroomwarrior_move",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 100,
   "height": 100,
   "textureGroupId": {
@@ -24,21 +28,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"36d456b7-96f9-4686-b95d-6e326aeebc34","path":"sprites/spr_shroomwarrior_move/spr_shroomwarrior_move.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"36d456b7-96f9-4686-b95d-6e326aeebc34","path":"sprites/spr_shroomwarrior_move/spr_shroomwarrior_move.yy",},"LayerId":{"name":"fe2c9cfe-dfd3-4ae1-8bd1-cf8aa4d5fec0","path":"sprites/spr_shroomwarrior_move/spr_shroomwarrior_move.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_shroomwarrior_move","path":"sprites/spr_shroomwarrior_move/spr_shroomwarrior_move.yy",},"resourceVersion":"1.0","name":"36d456b7-96f9-4686-b95d-6e326aeebc34","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c8247f54-49ca-4a02-a9fa-d054cb7dcd8a","path":"sprites/spr_shroomwarrior_move/spr_shroomwarrior_move.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c8247f54-49ca-4a02-a9fa-d054cb7dcd8a","path":"sprites/spr_shroomwarrior_move/spr_shroomwarrior_move.yy",},"LayerId":{"name":"fe2c9cfe-dfd3-4ae1-8bd1-cf8aa4d5fec0","path":"sprites/spr_shroomwarrior_move/spr_shroomwarrior_move.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_shroomwarrior_move","path":"sprites/spr_shroomwarrior_move/spr_shroomwarrior_move.yy",},"resourceVersion":"1.0","name":"c8247f54-49ca-4a02-a9fa-d054cb7dcd8a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"0621a8e0-1630-491e-b2ef-f51570e8b402","path":"sprites/spr_shroomwarrior_move/spr_shroomwarrior_move.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0621a8e0-1630-491e-b2ef-f51570e8b402","path":"sprites/spr_shroomwarrior_move/spr_shroomwarrior_move.yy",},"LayerId":{"name":"fe2c9cfe-dfd3-4ae1-8bd1-cf8aa4d5fec0","path":"sprites/spr_shroomwarrior_move/spr_shroomwarrior_move.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_shroomwarrior_move","path":"sprites/spr_shroomwarrior_move/spr_shroomwarrior_move.yy",},"resourceVersion":"1.0","name":"0621a8e0-1630-491e-b2ef-f51570e8b402","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"70f1da92-c27d-4d85-9a4b-9882b107190d","path":"sprites/spr_shroomwarrior_move/spr_shroomwarrior_move.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"70f1da92-c27d-4d85-9a4b-9882b107190d","path":"sprites/spr_shroomwarrior_move/spr_shroomwarrior_move.yy",},"LayerId":{"name":"fe2c9cfe-dfd3-4ae1-8bd1-cf8aa4d5fec0","path":"sprites/spr_shroomwarrior_move/spr_shroomwarrior_move.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_shroomwarrior_move","path":"sprites/spr_shroomwarrior_move/spr_shroomwarrior_move.yy",},"resourceVersion":"1.0","name":"70f1da92-c27d-4d85-9a4b-9882b107190d","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"36d456b7-96f9-4686-b95d-6e326aeebc34",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c8247f54-49ca-4a02-a9fa-d054cb7dcd8a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0621a8e0-1630-491e-b2ef-f51570e8b402",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"70f1da92-c27d-4d85-9a4b-9882b107190d",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_shroomwarrior_move","path":"sprites/spr_shroomwarrior_move/spr_shroomwarrior_move.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_shroomwarrior_move",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -49,12 +47,12 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"7950d27d-88ea-45db-825b-30d7667b4dc8","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"36d456b7-96f9-4686-b95d-6e326aeebc34","path":"sprites/spr_shroomwarrior_move/spr_shroomwarrior_move.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"efd6a2b8-2d1e-499e-93e2-13236e5310ff","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c8247f54-49ca-4a02-a9fa-d054cb7dcd8a","path":"sprites/spr_shroomwarrior_move/spr_shroomwarrior_move.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"9257149c-2a9a-47c7-ad2c-58c0cbb8464a","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0621a8e0-1630-491e-b2ef-f51570e8b402","path":"sprites/spr_shroomwarrior_move/spr_shroomwarrior_move.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"df79dfb3-5cea-42a9-92d3-976d382ba9ae","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"70f1da92-c27d-4d85-9a4b-9882b107190d","path":"sprites/spr_shroomwarrior_move/spr_shroomwarrior_move.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -70,22 +68,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_shroomwarrior_move","path":"sprites/spr_shroomwarrior_move/spr_shroomwarrior_move.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_shroomwarrior_move",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"fe2c9cfe-dfd3-4ae1-8bd1-cf8aa4d5fec0","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"fe2c9cfe-dfd3-4ae1-8bd1-cf8aa4d5fec0","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Shroom",
     "path": "folders/Sprites/Characters/Followers/Toppins/Toppin Warriors/Shroom.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_shroomwarrior_move",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

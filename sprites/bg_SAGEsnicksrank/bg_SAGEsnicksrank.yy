@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "bg_SAGEsnicksrank",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 100,
   "height": 100,
   "textureGroupId": {
@@ -24,15 +28,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"1ac08b71-6c94-4ba5-be33-f3c01e1ce279","path":"sprites/bg_SAGEsnicksrank/bg_SAGEsnicksrank.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1ac08b71-6c94-4ba5-be33-f3c01e1ce279","path":"sprites/bg_SAGEsnicksrank/bg_SAGEsnicksrank.yy",},"LayerId":{"name":"731a3813-6152-4f5b-b255-3027bfc651fe","path":"sprites/bg_SAGEsnicksrank/bg_SAGEsnicksrank.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"bg_SAGEsnicksrank","path":"sprites/bg_SAGEsnicksrank/bg_SAGEsnicksrank.yy",},"resourceVersion":"1.0","name":"1ac08b71-6c94-4ba5-be33-f3c01e1ce279","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"1260a5c9-63fd-45ed-bce3-ff8ae7f891e5","path":"sprites/bg_SAGEsnicksrank/bg_SAGEsnicksrank.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1260a5c9-63fd-45ed-bce3-ff8ae7f891e5","path":"sprites/bg_SAGEsnicksrank/bg_SAGEsnicksrank.yy",},"LayerId":{"name":"731a3813-6152-4f5b-b255-3027bfc651fe","path":"sprites/bg_SAGEsnicksrank/bg_SAGEsnicksrank.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"bg_SAGEsnicksrank","path":"sprites/bg_SAGEsnicksrank/bg_SAGEsnicksrank.yy",},"resourceVersion":"1.0","name":"1260a5c9-63fd-45ed-bce3-ff8ae7f891e5","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1ac08b71-6c94-4ba5-be33-f3c01e1ce279",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1260a5c9-63fd-45ed-bce3-ff8ae7f891e5",},
   ],
   "sequence": {
-    "spriteId": {"name":"bg_SAGEsnicksrank","path":"sprites/bg_SAGEsnicksrank/bg_SAGEsnicksrank.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -43,10 +45,10 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"b68beb80-770d-4fa2-b6e2-1380251c9f7f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1ac08b71-6c94-4ba5-be33-f3c01e1ce279","path":"sprites/bg_SAGEsnicksrank/bg_SAGEsnicksrank.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"d4242686-055e-470b-a289-3b0fbceedc5d","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1260a5c9-63fd-45ed-bce3-ff8ae7f891e5","path":"sprites/bg_SAGEsnicksrank/bg_SAGEsnicksrank.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -62,22 +64,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"bg_SAGEsnicksrank","path":"sprites/bg_SAGEsnicksrank/bg_SAGEsnicksrank.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"731a3813-6152-4f5b-b255-3027bfc651fe","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"731a3813-6152-4f5b-b255-3027bfc651fe","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Achievements",
     "path": "folders/Sprites/Hud & Menus/Achievements.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "bg_SAGEsnicksrank",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

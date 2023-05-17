@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_gustavo_kungfu",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 144,
   "height": 120,
   "textureGroupId": {
@@ -24,18 +28,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"59ee65c0-3e5a-4f67-ac14-5eb8e93b7167","path":"sprites/spr_gustavo_kungfu/spr_gustavo_kungfu.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"59ee65c0-3e5a-4f67-ac14-5eb8e93b7167","path":"sprites/spr_gustavo_kungfu/spr_gustavo_kungfu.yy",},"LayerId":{"name":"e63d0e2c-fa6f-4d6f-baf4-f5c47cf52abd","path":"sprites/spr_gustavo_kungfu/spr_gustavo_kungfu.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gustavo_kungfu","path":"sprites/spr_gustavo_kungfu/spr_gustavo_kungfu.yy",},"resourceVersion":"1.0","name":"59ee65c0-3e5a-4f67-ac14-5eb8e93b7167","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"fd419dcd-c676-4c42-b01b-a6adb194993c","path":"sprites/spr_gustavo_kungfu/spr_gustavo_kungfu.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"fd419dcd-c676-4c42-b01b-a6adb194993c","path":"sprites/spr_gustavo_kungfu/spr_gustavo_kungfu.yy",},"LayerId":{"name":"e63d0e2c-fa6f-4d6f-baf4-f5c47cf52abd","path":"sprites/spr_gustavo_kungfu/spr_gustavo_kungfu.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gustavo_kungfu","path":"sprites/spr_gustavo_kungfu/spr_gustavo_kungfu.yy",},"resourceVersion":"1.0","name":"fd419dcd-c676-4c42-b01b-a6adb194993c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"af865a0f-ec38-43fb-b101-f2134937e867","path":"sprites/spr_gustavo_kungfu/spr_gustavo_kungfu.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"af865a0f-ec38-43fb-b101-f2134937e867","path":"sprites/spr_gustavo_kungfu/spr_gustavo_kungfu.yy",},"LayerId":{"name":"e63d0e2c-fa6f-4d6f-baf4-f5c47cf52abd","path":"sprites/spr_gustavo_kungfu/spr_gustavo_kungfu.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gustavo_kungfu","path":"sprites/spr_gustavo_kungfu/spr_gustavo_kungfu.yy",},"resourceVersion":"1.0","name":"af865a0f-ec38-43fb-b101-f2134937e867","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"59ee65c0-3e5a-4f67-ac14-5eb8e93b7167",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fd419dcd-c676-4c42-b01b-a6adb194993c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"af865a0f-ec38-43fb-b101-f2134937e867",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_gustavo_kungfu","path":"sprites/spr_gustavo_kungfu/spr_gustavo_kungfu.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_gustavo_kungfu",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -46,11 +46,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"9864adf7-f823-4837-8949-7507375e7885","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"59ee65c0-3e5a-4f67-ac14-5eb8e93b7167","path":"sprites/spr_gustavo_kungfu/spr_gustavo_kungfu.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"b0ba11a6-97e3-4c10-9a68-42fea6ba3de9","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fd419dcd-c676-4c42-b01b-a6adb194993c","path":"sprites/spr_gustavo_kungfu/spr_gustavo_kungfu.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"5513fc34-eb8b-45bd-baea-448e323e0994","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"af865a0f-ec38-43fb-b101-f2134937e867","path":"sprites/spr_gustavo_kungfu/spr_gustavo_kungfu.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,22 +66,13 @@
     "yorigin": 60,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_gustavo_kungfu","path":"sprites/spr_gustavo_kungfu/spr_gustavo_kungfu.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_gustavo_kungfu",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e63d0e2c-fa6f-4d6f-baf4-f5c47cf52abd","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e63d0e2c-fa6f-4d6f-baf4-f5c47cf52abd","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Gustavo And Brick",
     "path": "folders/Sprites/Characters/Playable Characters Sprites/Gustavo And Brick.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_gustavo_kungfu",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

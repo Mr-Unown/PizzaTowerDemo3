@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_playerN_minigunfall",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 300,
   "height": 100,
   "textureGroupId": {
@@ -24,18 +28,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"318d0990-9f44-4eaa-a571-043f1c7243fc","path":"sprites/spr_playerN_minigunfall/spr_playerN_minigunfall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"318d0990-9f44-4eaa-a571-043f1c7243fc","path":"sprites/spr_playerN_minigunfall/spr_playerN_minigunfall.yy",},"LayerId":{"name":"34801976-c114-420c-bdfc-7874c5c4961b","path":"sprites/spr_playerN_minigunfall/spr_playerN_minigunfall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerN_minigunfall","path":"sprites/spr_playerN_minigunfall/spr_playerN_minigunfall.yy",},"resourceVersion":"1.0","name":"318d0990-9f44-4eaa-a571-043f1c7243fc","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ff4006a8-5fcb-4219-af05-dd2e75a10aae","path":"sprites/spr_playerN_minigunfall/spr_playerN_minigunfall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ff4006a8-5fcb-4219-af05-dd2e75a10aae","path":"sprites/spr_playerN_minigunfall/spr_playerN_minigunfall.yy",},"LayerId":{"name":"34801976-c114-420c-bdfc-7874c5c4961b","path":"sprites/spr_playerN_minigunfall/spr_playerN_minigunfall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerN_minigunfall","path":"sprites/spr_playerN_minigunfall/spr_playerN_minigunfall.yy",},"resourceVersion":"1.0","name":"ff4006a8-5fcb-4219-af05-dd2e75a10aae","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"0b9d6b14-4d7f-4024-b99f-f74f3cd4c0ae","path":"sprites/spr_playerN_minigunfall/spr_playerN_minigunfall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0b9d6b14-4d7f-4024-b99f-f74f3cd4c0ae","path":"sprites/spr_playerN_minigunfall/spr_playerN_minigunfall.yy",},"LayerId":{"name":"34801976-c114-420c-bdfc-7874c5c4961b","path":"sprites/spr_playerN_minigunfall/spr_playerN_minigunfall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerN_minigunfall","path":"sprites/spr_playerN_minigunfall/spr_playerN_minigunfall.yy",},"resourceVersion":"1.0","name":"0b9d6b14-4d7f-4024-b99f-f74f3cd4c0ae","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"318d0990-9f44-4eaa-a571-043f1c7243fc",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ff4006a8-5fcb-4219-af05-dd2e75a10aae",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0b9d6b14-4d7f-4024-b99f-f74f3cd4c0ae",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_playerN_minigunfall","path":"sprites/spr_playerN_minigunfall/spr_playerN_minigunfall.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -46,11 +46,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"0d2c2401-13ce-45d7-9dae-02cb11a5e6b1","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"318d0990-9f44-4eaa-a571-043f1c7243fc","path":"sprites/spr_playerN_minigunfall/spr_playerN_minigunfall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"0030201b-1798-480a-bf87-1180e125c6d9","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ff4006a8-5fcb-4219-af05-dd2e75a10aae","path":"sprites/spr_playerN_minigunfall/spr_playerN_minigunfall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"ac27cc77-54ba-400c-a8b6-d8044ea734c3","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0b9d6b14-4d7f-4024-b99f-f74f3cd4c0ae","path":"sprites/spr_playerN_minigunfall/spr_playerN_minigunfall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -66,22 +66,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_playerN_minigunfall","path":"sprites/spr_playerN_minigunfall/spr_playerN_minigunfall.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"34801976-c114-420c-bdfc-7874c5c4961b","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"34801976-c114-420c-bdfc-7874c5c4961b","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Noise",
     "path": "folders/Sprites/Characters/Playable Characters Sprites/Noise.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_playerN_minigunfall",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

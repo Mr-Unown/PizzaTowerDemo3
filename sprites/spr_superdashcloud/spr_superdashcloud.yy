@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_superdashcloud",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 250,
   "height": 100,
   "textureGroupId": {
@@ -24,33 +28,19 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"a44d4537-b414-4e97-9893-8bbd40df88cd","path":"sprites/spr_superdashcloud/spr_superdashcloud.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a44d4537-b414-4e97-9893-8bbd40df88cd","path":"sprites/spr_superdashcloud/spr_superdashcloud.yy",},"LayerId":{"name":"68826ba3-d95b-49b7-a335-d45134bdfa4c","path":"sprites/spr_superdashcloud/spr_superdashcloud.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_superdashcloud","path":"sprites/spr_superdashcloud/spr_superdashcloud.yy",},"resourceVersion":"1.0","name":"a44d4537-b414-4e97-9893-8bbd40df88cd","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"8f38cb93-df1e-491f-9b1e-295b8f2093fc","path":"sprites/spr_superdashcloud/spr_superdashcloud.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8f38cb93-df1e-491f-9b1e-295b8f2093fc","path":"sprites/spr_superdashcloud/spr_superdashcloud.yy",},"LayerId":{"name":"68826ba3-d95b-49b7-a335-d45134bdfa4c","path":"sprites/spr_superdashcloud/spr_superdashcloud.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_superdashcloud","path":"sprites/spr_superdashcloud/spr_superdashcloud.yy",},"resourceVersion":"1.0","name":"8f38cb93-df1e-491f-9b1e-295b8f2093fc","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"7715b876-88c1-4720-9121-331e0bb79b24","path":"sprites/spr_superdashcloud/spr_superdashcloud.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7715b876-88c1-4720-9121-331e0bb79b24","path":"sprites/spr_superdashcloud/spr_superdashcloud.yy",},"LayerId":{"name":"68826ba3-d95b-49b7-a335-d45134bdfa4c","path":"sprites/spr_superdashcloud/spr_superdashcloud.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_superdashcloud","path":"sprites/spr_superdashcloud/spr_superdashcloud.yy",},"resourceVersion":"1.0","name":"7715b876-88c1-4720-9121-331e0bb79b24","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"81b29218-5340-4dca-b2df-8d6e0466da12","path":"sprites/spr_superdashcloud/spr_superdashcloud.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"81b29218-5340-4dca-b2df-8d6e0466da12","path":"sprites/spr_superdashcloud/spr_superdashcloud.yy",},"LayerId":{"name":"68826ba3-d95b-49b7-a335-d45134bdfa4c","path":"sprites/spr_superdashcloud/spr_superdashcloud.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_superdashcloud","path":"sprites/spr_superdashcloud/spr_superdashcloud.yy",},"resourceVersion":"1.0","name":"81b29218-5340-4dca-b2df-8d6e0466da12","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"6b8702ed-c0c2-4830-9e87-d7cab42701f1","path":"sprites/spr_superdashcloud/spr_superdashcloud.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6b8702ed-c0c2-4830-9e87-d7cab42701f1","path":"sprites/spr_superdashcloud/spr_superdashcloud.yy",},"LayerId":{"name":"68826ba3-d95b-49b7-a335-d45134bdfa4c","path":"sprites/spr_superdashcloud/spr_superdashcloud.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_superdashcloud","path":"sprites/spr_superdashcloud/spr_superdashcloud.yy",},"resourceVersion":"1.0","name":"6b8702ed-c0c2-4830-9e87-d7cab42701f1","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"19ad8604-8df5-40a8-9b46-4ef1750440cb","path":"sprites/spr_superdashcloud/spr_superdashcloud.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"19ad8604-8df5-40a8-9b46-4ef1750440cb","path":"sprites/spr_superdashcloud/spr_superdashcloud.yy",},"LayerId":{"name":"68826ba3-d95b-49b7-a335-d45134bdfa4c","path":"sprites/spr_superdashcloud/spr_superdashcloud.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_superdashcloud","path":"sprites/spr_superdashcloud/spr_superdashcloud.yy",},"resourceVersion":"1.0","name":"19ad8604-8df5-40a8-9b46-4ef1750440cb","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"d94eb431-f17e-45a8-8d71-0f6e326094e4","path":"sprites/spr_superdashcloud/spr_superdashcloud.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d94eb431-f17e-45a8-8d71-0f6e326094e4","path":"sprites/spr_superdashcloud/spr_superdashcloud.yy",},"LayerId":{"name":"68826ba3-d95b-49b7-a335-d45134bdfa4c","path":"sprites/spr_superdashcloud/spr_superdashcloud.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_superdashcloud","path":"sprites/spr_superdashcloud/spr_superdashcloud.yy",},"resourceVersion":"1.0","name":"d94eb431-f17e-45a8-8d71-0f6e326094e4","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"8d42c45e-df45-4550-84c3-f6607fe110fa","path":"sprites/spr_superdashcloud/spr_superdashcloud.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8d42c45e-df45-4550-84c3-f6607fe110fa","path":"sprites/spr_superdashcloud/spr_superdashcloud.yy",},"LayerId":{"name":"68826ba3-d95b-49b7-a335-d45134bdfa4c","path":"sprites/spr_superdashcloud/spr_superdashcloud.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_superdashcloud","path":"sprites/spr_superdashcloud/spr_superdashcloud.yy",},"resourceVersion":"1.0","name":"8d42c45e-df45-4550-84c3-f6607fe110fa","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a44d4537-b414-4e97-9893-8bbd40df88cd",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8f38cb93-df1e-491f-9b1e-295b8f2093fc",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7715b876-88c1-4720-9121-331e0bb79b24",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"81b29218-5340-4dca-b2df-8d6e0466da12",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6b8702ed-c0c2-4830-9e87-d7cab42701f1",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"19ad8604-8df5-40a8-9b46-4ef1750440cb",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d94eb431-f17e-45a8-8d71-0f6e326094e4",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8d42c45e-df45-4550-84c3-f6607fe110fa",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_superdashcloud","path":"sprites/spr_superdashcloud/spr_superdashcloud.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -61,7 +51,7 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"15ceb998-f224-465f-8d61-34e3403fa40b","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a44d4537-b414-4e97-9893-8bbd40df88cd","path":"sprites/spr_superdashcloud/spr_superdashcloud.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"6fc5c5a1-8b34-46a0-a9b8-39df534e278e","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8f38cb93-df1e-491f-9b1e-295b8f2093fc","path":"sprites/spr_superdashcloud/spr_superdashcloud.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"daa55094-0d7e-4e0a-b3fb-c07b7f74230e","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7715b876-88c1-4720-9121-331e0bb79b24","path":"sprites/spr_superdashcloud/spr_superdashcloud.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
@@ -70,7 +60,7 @@
             {"id":"fd221b72-b384-4002-b315-3ad87832055e","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"19ad8604-8df5-40a8-9b46-4ef1750440cb","path":"sprites/spr_superdashcloud/spr_superdashcloud.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"336e79fc-172e-4237-85b1-b0f6ff48c076","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d94eb431-f17e-45a8-8d71-0f6e326094e4","path":"sprites/spr_superdashcloud/spr_superdashcloud.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"a5966d1f-79a4-44f5-a961-8008ea54336b","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8d42c45e-df45-4550-84c3-f6607fe110fa","path":"sprites/spr_superdashcloud/spr_superdashcloud.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -86,22 +76,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_superdashcloud","path":"sprites/spr_superdashcloud/spr_superdashcloud.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"68826ba3-d95b-49b7-a335-d45134bdfa4c","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"68826ba3-d95b-49b7-a335-d45134bdfa4c","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Particles and Effects",
     "path": "folders/Sprites/Misc Sprites/Particles and Effects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_superdashcloud",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

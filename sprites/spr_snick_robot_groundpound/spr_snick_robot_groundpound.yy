@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_snick_robot_groundpound",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 100,
   "height": 100,
   "textureGroupId": {
@@ -24,18 +28,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"5bc988c7-b720-4a1a-a3eb-1163a7efed4f","path":"sprites/spr_snick_robot_groundpound/spr_snick_robot_groundpound.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5bc988c7-b720-4a1a-a3eb-1163a7efed4f","path":"sprites/spr_snick_robot_groundpound/spr_snick_robot_groundpound.yy",},"LayerId":{"name":"cf1e7d0d-5046-4db5-86c8-9fc402b4e8fb","path":"sprites/spr_snick_robot_groundpound/spr_snick_robot_groundpound.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_snick_robot_groundpound","path":"sprites/spr_snick_robot_groundpound/spr_snick_robot_groundpound.yy",},"resourceVersion":"1.0","name":"5bc988c7-b720-4a1a-a3eb-1163a7efed4f","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"25f64b70-200b-46d1-a4b8-89993554c406","path":"sprites/spr_snick_robot_groundpound/spr_snick_robot_groundpound.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"25f64b70-200b-46d1-a4b8-89993554c406","path":"sprites/spr_snick_robot_groundpound/spr_snick_robot_groundpound.yy",},"LayerId":{"name":"cf1e7d0d-5046-4db5-86c8-9fc402b4e8fb","path":"sprites/spr_snick_robot_groundpound/spr_snick_robot_groundpound.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_snick_robot_groundpound","path":"sprites/spr_snick_robot_groundpound/spr_snick_robot_groundpound.yy",},"resourceVersion":"1.0","name":"25f64b70-200b-46d1-a4b8-89993554c406","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"44678289-b6d7-4d59-a9d0-32c86031acd5","path":"sprites/spr_snick_robot_groundpound/spr_snick_robot_groundpound.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"44678289-b6d7-4d59-a9d0-32c86031acd5","path":"sprites/spr_snick_robot_groundpound/spr_snick_robot_groundpound.yy",},"LayerId":{"name":"cf1e7d0d-5046-4db5-86c8-9fc402b4e8fb","path":"sprites/spr_snick_robot_groundpound/spr_snick_robot_groundpound.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_snick_robot_groundpound","path":"sprites/spr_snick_robot_groundpound/spr_snick_robot_groundpound.yy",},"resourceVersion":"1.0","name":"44678289-b6d7-4d59-a9d0-32c86031acd5","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5bc988c7-b720-4a1a-a3eb-1163a7efed4f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"25f64b70-200b-46d1-a4b8-89993554c406",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"44678289-b6d7-4d59-a9d0-32c86031acd5",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_snick_robot_groundpound","path":"sprites/spr_snick_robot_groundpound/spr_snick_robot_groundpound.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -46,11 +46,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"5216f24b-2104-4bb9-928b-43a36f07e60f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5bc988c7-b720-4a1a-a3eb-1163a7efed4f","path":"sprites/spr_snick_robot_groundpound/spr_snick_robot_groundpound.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"3de3a6a7-600f-4320-8b28-db2a2a35c11b","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"25f64b70-200b-46d1-a4b8-89993554c406","path":"sprites/spr_snick_robot_groundpound/spr_snick_robot_groundpound.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"8cb23c96-151b-4cd0-95c1-2c16df17d733","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"44678289-b6d7-4d59-a9d0-32c86031acd5","path":"sprites/spr_snick_robot_groundpound/spr_snick_robot_groundpound.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,22 +66,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_snick_robot_groundpound","path":"sprites/spr_snick_robot_groundpound/spr_snick_robot_groundpound.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"cf1e7d0d-5046-4db5-86c8-9fc402b4e8fb","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"cf1e7d0d-5046-4db5-86c8-9fc402b4e8fb","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Snick",
     "path": "folders/Sprites/Characters/Playable Characters Sprites/Snick.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_snick_robot_groundpound",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

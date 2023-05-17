@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "bg_graveyardsun",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 1200,
   "height": 600,
   "textureGroupId": {
@@ -24,18 +28,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"80e8fc56-50ed-4f77-b612-7147be492047","path":"sprites/bg_graveyardsun/bg_graveyardsun.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"80e8fc56-50ed-4f77-b612-7147be492047","path":"sprites/bg_graveyardsun/bg_graveyardsun.yy",},"LayerId":{"name":"c23f000c-0004-45b1-86d4-fb326f32868d","path":"sprites/bg_graveyardsun/bg_graveyardsun.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"bg_graveyardsun","path":"sprites/bg_graveyardsun/bg_graveyardsun.yy",},"resourceVersion":"1.0","name":"80e8fc56-50ed-4f77-b612-7147be492047","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"4b7b273a-d392-477b-b579-ca2e180b76fc","path":"sprites/bg_graveyardsun/bg_graveyardsun.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4b7b273a-d392-477b-b579-ca2e180b76fc","path":"sprites/bg_graveyardsun/bg_graveyardsun.yy",},"LayerId":{"name":"c23f000c-0004-45b1-86d4-fb326f32868d","path":"sprites/bg_graveyardsun/bg_graveyardsun.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"bg_graveyardsun","path":"sprites/bg_graveyardsun/bg_graveyardsun.yy",},"resourceVersion":"1.0","name":"4b7b273a-d392-477b-b579-ca2e180b76fc","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ffbcf8db-16ea-4132-a73e-874bd11a1269","path":"sprites/bg_graveyardsun/bg_graveyardsun.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ffbcf8db-16ea-4132-a73e-874bd11a1269","path":"sprites/bg_graveyardsun/bg_graveyardsun.yy",},"LayerId":{"name":"c23f000c-0004-45b1-86d4-fb326f32868d","path":"sprites/bg_graveyardsun/bg_graveyardsun.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"bg_graveyardsun","path":"sprites/bg_graveyardsun/bg_graveyardsun.yy",},"resourceVersion":"1.0","name":"ffbcf8db-16ea-4132-a73e-874bd11a1269","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"80e8fc56-50ed-4f77-b612-7147be492047",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4b7b273a-d392-477b-b579-ca2e180b76fc",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ffbcf8db-16ea-4132-a73e-874bd11a1269",},
   ],
   "sequence": {
-    "spriteId": {"name":"bg_graveyardsun","path":"sprites/bg_graveyardsun/bg_graveyardsun.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "bg_graveyardsun",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 0.35,
@@ -46,11 +46,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"b251ff3b-fa4a-4838-a93a-9166ba3d3545","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"80e8fc56-50ed-4f77-b612-7147be492047","path":"sprites/bg_graveyardsun/bg_graveyardsun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"8ee3344b-6eeb-4443-859a-e4313fb4e9da","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4b7b273a-d392-477b-b579-ca2e180b76fc","path":"sprites/bg_graveyardsun/bg_graveyardsun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"567ed729-6778-4d13-a7b5-8026e66f688a","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ffbcf8db-16ea-4132-a73e-874bd11a1269","path":"sprites/bg_graveyardsun/bg_graveyardsun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,22 +66,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"bg_graveyardsun","path":"sprites/bg_graveyardsun/bg_graveyardsun.yy",},
-    "resourceVersion": "1.4",
-    "name": "bg_graveyardsun",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c23f000c-0004-45b1-86d4-fb326f32868d","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c23f000c-0004-45b1-86d4-fb326f32868d","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Graveyard",
     "path": "folders/Sprites/Backgrounds/Graveyard.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "bg_graveyardsun",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

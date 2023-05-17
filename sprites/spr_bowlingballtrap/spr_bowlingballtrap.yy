@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_bowlingballtrap",
   "bboxMode": 2,
   "collisionKind": 2,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 64,
   "height": 64,
   "textureGroupId": {
@@ -24,39 +28,21 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"32fb0d20-53fd-4740-9e9d-9ab8be2af877","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"32fb0d20-53fd-4740-9e9d-9ab8be2af877","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"LayerId":{"name":"864f8396-b398-4652-b0f4-68014dee3959","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bowlingballtrap","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"resourceVersion":"1.0","name":"32fb0d20-53fd-4740-9e9d-9ab8be2af877","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"7fea4605-c8d5-404c-9798-dca24f859294","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7fea4605-c8d5-404c-9798-dca24f859294","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"LayerId":{"name":"864f8396-b398-4652-b0f4-68014dee3959","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bowlingballtrap","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"resourceVersion":"1.0","name":"7fea4605-c8d5-404c-9798-dca24f859294","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"0415007b-2192-4873-9e69-95cdc4caada6","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0415007b-2192-4873-9e69-95cdc4caada6","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"LayerId":{"name":"864f8396-b398-4652-b0f4-68014dee3959","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bowlingballtrap","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"resourceVersion":"1.0","name":"0415007b-2192-4873-9e69-95cdc4caada6","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"4a99290c-addd-4952-a198-3379d00c7fd8","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4a99290c-addd-4952-a198-3379d00c7fd8","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"LayerId":{"name":"864f8396-b398-4652-b0f4-68014dee3959","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bowlingballtrap","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"resourceVersion":"1.0","name":"4a99290c-addd-4952-a198-3379d00c7fd8","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"9d093ad2-68a4-4a5a-aa0b-85602ba96483","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"9d093ad2-68a4-4a5a-aa0b-85602ba96483","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"LayerId":{"name":"864f8396-b398-4652-b0f4-68014dee3959","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bowlingballtrap","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"resourceVersion":"1.0","name":"9d093ad2-68a4-4a5a-aa0b-85602ba96483","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"6f577c6a-5e9a-47f2-b0a9-fdc864e7a587","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6f577c6a-5e9a-47f2-b0a9-fdc864e7a587","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"LayerId":{"name":"864f8396-b398-4652-b0f4-68014dee3959","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bowlingballtrap","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"resourceVersion":"1.0","name":"6f577c6a-5e9a-47f2-b0a9-fdc864e7a587","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c81c846f-01e5-4a6b-991b-1c86944f3ba5","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c81c846f-01e5-4a6b-991b-1c86944f3ba5","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"LayerId":{"name":"864f8396-b398-4652-b0f4-68014dee3959","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bowlingballtrap","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"resourceVersion":"1.0","name":"c81c846f-01e5-4a6b-991b-1c86944f3ba5","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"3b1629a3-ed36-41e8-84fe-bdca23abc245","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3b1629a3-ed36-41e8-84fe-bdca23abc245","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"LayerId":{"name":"864f8396-b398-4652-b0f4-68014dee3959","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bowlingballtrap","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"resourceVersion":"1.0","name":"3b1629a3-ed36-41e8-84fe-bdca23abc245","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"b9fe1d79-9bca-4ff9-b5ce-013a4a3e2b37","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b9fe1d79-9bca-4ff9-b5ce-013a4a3e2b37","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"LayerId":{"name":"864f8396-b398-4652-b0f4-68014dee3959","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bowlingballtrap","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"resourceVersion":"1.0","name":"b9fe1d79-9bca-4ff9-b5ce-013a4a3e2b37","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"d110ec3c-e358-4b5c-bce2-3e155a3ce1f9","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d110ec3c-e358-4b5c-bce2-3e155a3ce1f9","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"LayerId":{"name":"864f8396-b398-4652-b0f4-68014dee3959","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bowlingballtrap","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"resourceVersion":"1.0","name":"d110ec3c-e358-4b5c-bce2-3e155a3ce1f9","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"32fb0d20-53fd-4740-9e9d-9ab8be2af877",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7fea4605-c8d5-404c-9798-dca24f859294",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0415007b-2192-4873-9e69-95cdc4caada6",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4a99290c-addd-4952-a198-3379d00c7fd8",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9d093ad2-68a4-4a5a-aa0b-85602ba96483",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6f577c6a-5e9a-47f2-b0a9-fdc864e7a587",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c81c846f-01e5-4a6b-991b-1c86944f3ba5",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3b1629a3-ed36-41e8-84fe-bdca23abc245",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b9fe1d79-9bca-4ff9-b5ce-013a4a3e2b37",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d110ec3c-e358-4b5c-bce2-3e155a3ce1f9",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_bowlingballtrap","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -67,7 +53,7 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"d56f9eb4-8b10-4c04-80ff-222c5e19b733","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"32fb0d20-53fd-4740-9e9d-9ab8be2af877","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"07ab9197-786c-4463-93bc-d276ac119564","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7fea4605-c8d5-404c-9798-dca24f859294","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"ddb29bfa-e555-4b7b-aea9-8306232abcf0","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0415007b-2192-4873-9e69-95cdc4caada6","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
@@ -78,7 +64,7 @@
             {"id":"c578f646-6950-4b16-8b86-4a1d71afd827","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3b1629a3-ed36-41e8-84fe-bdca23abc245","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"caf9ec4d-ed59-4b76-b542-a7eb9f6360f2","Key":8.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b9fe1d79-9bca-4ff9-b5ce-013a4a3e2b37","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"758e70f0-8c51-4b8d-9942-63710a57eb2c","Key":9.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d110ec3c-e358-4b5c-bce2-3e155a3ce1f9","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -94,22 +80,13 @@
     "yorigin": 32,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_bowlingballtrap","path":"sprites/spr_bowlingballtrap/spr_bowlingballtrap.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"864f8396-b398-4652-b0f4-68014dee3959","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"864f8396-b398-4652-b0f4-68014dee3959","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Objects",
     "path": "folders/Sprites/Objects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_bowlingballtrap",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

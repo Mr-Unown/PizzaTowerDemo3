@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_palettechanger_scrollbarbutton",
   "bboxMode": 1,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 40,
   "height": 28,
   "textureGroupId": {
@@ -24,12 +28,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"b962b793-b52c-4345-b6a8-1f51f6a533fd","path":"sprites/spr_palettechanger_scrollbarbutton/spr_palettechanger_scrollbarbutton.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b962b793-b52c-4345-b6a8-1f51f6a533fd","path":"sprites/spr_palettechanger_scrollbarbutton/spr_palettechanger_scrollbarbutton.yy",},"LayerId":{"name":"b5d06dbe-3847-49eb-a8b5-6f9ff679f7d1","path":"sprites/spr_palettechanger_scrollbarbutton/spr_palettechanger_scrollbarbutton.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_palettechanger_scrollbarbutton","path":"sprites/spr_palettechanger_scrollbarbutton/spr_palettechanger_scrollbarbutton.yy",},"resourceVersion":"1.0","name":"b962b793-b52c-4345-b6a8-1f51f6a533fd","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b962b793-b52c-4345-b6a8-1f51f6a533fd",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_palettechanger_scrollbarbutton","path":"sprites/spr_palettechanger_scrollbarbutton/spr_palettechanger_scrollbarbutton.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -40,9 +44,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"d32d9829-18c3-4d4a-9e15-80b1703a579a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b962b793-b52c-4345-b6a8-1f51f6a533fd","path":"sprites/spr_palettechanger_scrollbarbutton/spr_palettechanger_scrollbarbutton.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -58,22 +62,13 @@
     "yorigin": 14,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_palettechanger_scrollbarbutton","path":"sprites/spr_palettechanger_scrollbarbutton/spr_palettechanger_scrollbarbutton.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b5d06dbe-3847-49eb-a8b5-6f9ff679f7d1","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b5d06dbe-3847-49eb-a8b5-6f9ff679f7d1","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Palettechanger",
     "path": "folders/Sprites/Hud & Menus/Palettechanger.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_palettechanger_scrollbarbutton",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

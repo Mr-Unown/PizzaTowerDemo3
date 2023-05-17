@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_shroomwarrior_dead",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 73,
   "height": 82,
   "textureGroupId": {
@@ -24,12 +28,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"bc0c04f9-2d33-451a-b765-b1acaf3979a1","path":"sprites/spr_shroomwarrior_dead/spr_shroomwarrior_dead.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"bc0c04f9-2d33-451a-b765-b1acaf3979a1","path":"sprites/spr_shroomwarrior_dead/spr_shroomwarrior_dead.yy",},"LayerId":{"name":"0007432c-5780-4911-8a0b-cbaa0565fef5","path":"sprites/spr_shroomwarrior_dead/spr_shroomwarrior_dead.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_shroomwarrior_dead","path":"sprites/spr_shroomwarrior_dead/spr_shroomwarrior_dead.yy",},"resourceVersion":"1.0","name":"bc0c04f9-2d33-451a-b765-b1acaf3979a1","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"bc0c04f9-2d33-451a-b765-b1acaf3979a1",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_shroomwarrior_dead","path":"sprites/spr_shroomwarrior_dead/spr_shroomwarrior_dead.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_shroomwarrior_dead",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -40,9 +44,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"0f918c27-6efa-4f00-80d1-83b576318c9c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bc0c04f9-2d33-451a-b765-b1acaf3979a1","path":"sprites/spr_shroomwarrior_dead/spr_shroomwarrior_dead.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +62,13 @@
     "yorigin": 41,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_shroomwarrior_dead","path":"sprites/spr_shroomwarrior_dead/spr_shroomwarrior_dead.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_shroomwarrior_dead",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0007432c-5780-4911-8a0b-cbaa0565fef5","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0007432c-5780-4911-8a0b-cbaa0565fef5","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Shroom",
     "path": "folders/Sprites/Characters/Followers/Toppins/Toppin Warriors/Shroom.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_shroomwarrior_dead",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

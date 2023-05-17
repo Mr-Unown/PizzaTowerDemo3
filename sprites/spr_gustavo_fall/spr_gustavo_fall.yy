@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_gustavo_fall",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 144,
   "height": 115,
   "textureGroupId": {
@@ -24,18 +28,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"35eb3b75-a52f-4843-901e-ca437d9abe62","path":"sprites/spr_gustavo_fall/spr_gustavo_fall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"35eb3b75-a52f-4843-901e-ca437d9abe62","path":"sprites/spr_gustavo_fall/spr_gustavo_fall.yy",},"LayerId":{"name":"3355a5b8-4876-4118-8e3a-8b730a466be7","path":"sprites/spr_gustavo_fall/spr_gustavo_fall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gustavo_fall","path":"sprites/spr_gustavo_fall/spr_gustavo_fall.yy",},"resourceVersion":"1.0","name":"35eb3b75-a52f-4843-901e-ca437d9abe62","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"1d83a6d5-a314-4d76-afa9-b431972c2ef6","path":"sprites/spr_gustavo_fall/spr_gustavo_fall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1d83a6d5-a314-4d76-afa9-b431972c2ef6","path":"sprites/spr_gustavo_fall/spr_gustavo_fall.yy",},"LayerId":{"name":"3355a5b8-4876-4118-8e3a-8b730a466be7","path":"sprites/spr_gustavo_fall/spr_gustavo_fall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gustavo_fall","path":"sprites/spr_gustavo_fall/spr_gustavo_fall.yy",},"resourceVersion":"1.0","name":"1d83a6d5-a314-4d76-afa9-b431972c2ef6","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ddc12a76-d330-4bf8-b1b8-d2e2b63f9d9f","path":"sprites/spr_gustavo_fall/spr_gustavo_fall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ddc12a76-d330-4bf8-b1b8-d2e2b63f9d9f","path":"sprites/spr_gustavo_fall/spr_gustavo_fall.yy",},"LayerId":{"name":"3355a5b8-4876-4118-8e3a-8b730a466be7","path":"sprites/spr_gustavo_fall/spr_gustavo_fall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gustavo_fall","path":"sprites/spr_gustavo_fall/spr_gustavo_fall.yy",},"resourceVersion":"1.0","name":"ddc12a76-d330-4bf8-b1b8-d2e2b63f9d9f","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"35eb3b75-a52f-4843-901e-ca437d9abe62",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1d83a6d5-a314-4d76-afa9-b431972c2ef6",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ddc12a76-d330-4bf8-b1b8-d2e2b63f9d9f",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_gustavo_fall","path":"sprites/spr_gustavo_fall/spr_gustavo_fall.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_gustavo_fall",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -46,11 +46,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"30d1d4c8-0689-470e-b6c6-8652f471b3df","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"35eb3b75-a52f-4843-901e-ca437d9abe62","path":"sprites/spr_gustavo_fall/spr_gustavo_fall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"c1740350-85c4-45de-9af3-b565e0b486bf","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1d83a6d5-a314-4d76-afa9-b431972c2ef6","path":"sprites/spr_gustavo_fall/spr_gustavo_fall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"664e610f-a5d7-443c-a3f2-4a119a565a0a","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ddc12a76-d330-4bf8-b1b8-d2e2b63f9d9f","path":"sprites/spr_gustavo_fall/spr_gustavo_fall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,22 +66,13 @@
     "yorigin": 57,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_gustavo_fall","path":"sprites/spr_gustavo_fall/spr_gustavo_fall.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_gustavo_fall",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3355a5b8-4876-4118-8e3a-8b730a466be7","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3355a5b8-4876-4118-8e3a-8b730a466be7","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Gustavo And Brick",
     "path": "folders/Sprites/Characters/Playable Characters Sprites/Gustavo And Brick.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_gustavo_fall",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

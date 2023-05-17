@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_ufolive_teleportal",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 100,
   "height": 100,
   "textureGroupId": {
@@ -24,18 +28,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"5147ab09-bfd6-40d6-b83a-127d0f48c058","path":"sprites/spr_ufolive_teleportal/spr_ufolive_teleportal.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5147ab09-bfd6-40d6-b83a-127d0f48c058","path":"sprites/spr_ufolive_teleportal/spr_ufolive_teleportal.yy",},"LayerId":{"name":"f2782d57-5aa4-4c65-9529-b54f3a887878","path":"sprites/spr_ufolive_teleportal/spr_ufolive_teleportal.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_ufolive_teleportal","path":"sprites/spr_ufolive_teleportal/spr_ufolive_teleportal.yy",},"resourceVersion":"1.0","name":"5147ab09-bfd6-40d6-b83a-127d0f48c058","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"dece2b3d-06f3-4cca-ad4f-0becfa621295","path":"sprites/spr_ufolive_teleportal/spr_ufolive_teleportal.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"dece2b3d-06f3-4cca-ad4f-0becfa621295","path":"sprites/spr_ufolive_teleportal/spr_ufolive_teleportal.yy",},"LayerId":{"name":"f2782d57-5aa4-4c65-9529-b54f3a887878","path":"sprites/spr_ufolive_teleportal/spr_ufolive_teleportal.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_ufolive_teleportal","path":"sprites/spr_ufolive_teleportal/spr_ufolive_teleportal.yy",},"resourceVersion":"1.0","name":"dece2b3d-06f3-4cca-ad4f-0becfa621295","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"6d6bbd91-bcb8-4056-b4e8-5afa89fde49a","path":"sprites/spr_ufolive_teleportal/spr_ufolive_teleportal.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6d6bbd91-bcb8-4056-b4e8-5afa89fde49a","path":"sprites/spr_ufolive_teleportal/spr_ufolive_teleportal.yy",},"LayerId":{"name":"f2782d57-5aa4-4c65-9529-b54f3a887878","path":"sprites/spr_ufolive_teleportal/spr_ufolive_teleportal.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_ufolive_teleportal","path":"sprites/spr_ufolive_teleportal/spr_ufolive_teleportal.yy",},"resourceVersion":"1.0","name":"6d6bbd91-bcb8-4056-b4e8-5afa89fde49a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5147ab09-bfd6-40d6-b83a-127d0f48c058",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"dece2b3d-06f3-4cca-ad4f-0becfa621295",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6d6bbd91-bcb8-4056-b4e8-5afa89fde49a",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_ufolive_teleportal","path":"sprites/spr_ufolive_teleportal/spr_ufolive_teleportal.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -46,11 +46,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"506ed772-df04-49a8-a3a3-d37218f63198","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5147ab09-bfd6-40d6-b83a-127d0f48c058","path":"sprites/spr_ufolive_teleportal/spr_ufolive_teleportal.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"c5bc6fb5-bb6b-4b7a-bee7-4dfa2b1b1b2b","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"dece2b3d-06f3-4cca-ad4f-0becfa621295","path":"sprites/spr_ufolive_teleportal/spr_ufolive_teleportal.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"5ed68551-506c-4c5c-ad42-6a80a480c282","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6d6bbd91-bcb8-4056-b4e8-5afa89fde49a","path":"sprites/spr_ufolive_teleportal/spr_ufolive_teleportal.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,22 +66,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_ufolive_teleportal","path":"sprites/spr_ufolive_teleportal/spr_ufolive_teleportal.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f2782d57-5aa4-4c65-9529-b54f3a887878","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"f2782d57-5aa4-4c65-9529-b54f3a887878","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "UFOlive",
     "path": "folders/Sprites/Characters/Baddies/UFOlive.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_ufolive_teleportal",
-  "tags": [],
-  "resourceType": "GMSprite",
 }
