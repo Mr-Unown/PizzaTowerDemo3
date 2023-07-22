@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_credittransformation",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 100,
   "height": 100,
   "textureGroupId": {
@@ -24,54 +28,26 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"5a92e21b-dc49-4ab1-87b5-001028498774","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5a92e21b-dc49-4ab1-87b5-001028498774","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"LayerId":{"name":"54cb7d25-5056-4c42-bd8a-44b35d61f672","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_credittransformation","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"resourceVersion":"1.0","name":"5a92e21b-dc49-4ab1-87b5-001028498774","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"4a2060cc-0688-40c6-b9aa-dc249ce2f735","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4a2060cc-0688-40c6-b9aa-dc249ce2f735","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"LayerId":{"name":"54cb7d25-5056-4c42-bd8a-44b35d61f672","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_credittransformation","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"resourceVersion":"1.0","name":"4a2060cc-0688-40c6-b9aa-dc249ce2f735","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"f6fbc325-2e00-4912-ae2b-c67c0e7d6fee","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f6fbc325-2e00-4912-ae2b-c67c0e7d6fee","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"LayerId":{"name":"54cb7d25-5056-4c42-bd8a-44b35d61f672","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_credittransformation","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"resourceVersion":"1.0","name":"f6fbc325-2e00-4912-ae2b-c67c0e7d6fee","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ab318a77-fb36-45f8-bd97-8e1231692c6c","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ab318a77-fb36-45f8-bd97-8e1231692c6c","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"LayerId":{"name":"54cb7d25-5056-4c42-bd8a-44b35d61f672","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_credittransformation","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"resourceVersion":"1.0","name":"ab318a77-fb36-45f8-bd97-8e1231692c6c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"2f659c97-c240-4f03-8dcd-69c68f7c5e74","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2f659c97-c240-4f03-8dcd-69c68f7c5e74","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"LayerId":{"name":"54cb7d25-5056-4c42-bd8a-44b35d61f672","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_credittransformation","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"resourceVersion":"1.0","name":"2f659c97-c240-4f03-8dcd-69c68f7c5e74","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"a1d71665-98e9-44be-89e5-9cfca19b3b0f","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a1d71665-98e9-44be-89e5-9cfca19b3b0f","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"LayerId":{"name":"54cb7d25-5056-4c42-bd8a-44b35d61f672","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_credittransformation","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"resourceVersion":"1.0","name":"a1d71665-98e9-44be-89e5-9cfca19b3b0f","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"199a33e7-4f3e-436d-a087-d1898a06ae23","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"199a33e7-4f3e-436d-a087-d1898a06ae23","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"LayerId":{"name":"54cb7d25-5056-4c42-bd8a-44b35d61f672","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_credittransformation","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"resourceVersion":"1.0","name":"199a33e7-4f3e-436d-a087-d1898a06ae23","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ea938ae9-9259-4cc5-9a4b-bf3cc5f60fb5","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ea938ae9-9259-4cc5-9a4b-bf3cc5f60fb5","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"LayerId":{"name":"54cb7d25-5056-4c42-bd8a-44b35d61f672","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_credittransformation","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"resourceVersion":"1.0","name":"ea938ae9-9259-4cc5-9a4b-bf3cc5f60fb5","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"8d00042c-eb50-4e01-a377-147cc90a5523","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8d00042c-eb50-4e01-a377-147cc90a5523","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"LayerId":{"name":"54cb7d25-5056-4c42-bd8a-44b35d61f672","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_credittransformation","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"resourceVersion":"1.0","name":"8d00042c-eb50-4e01-a377-147cc90a5523","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"e0743d36-ff4b-4cba-9dfc-8d5253aa5e5d","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e0743d36-ff4b-4cba-9dfc-8d5253aa5e5d","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"LayerId":{"name":"54cb7d25-5056-4c42-bd8a-44b35d61f672","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_credittransformation","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"resourceVersion":"1.0","name":"e0743d36-ff4b-4cba-9dfc-8d5253aa5e5d","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"3f9f7d69-3a03-41db-b2fd-8bd59477460d","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3f9f7d69-3a03-41db-b2fd-8bd59477460d","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"LayerId":{"name":"54cb7d25-5056-4c42-bd8a-44b35d61f672","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_credittransformation","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"resourceVersion":"1.0","name":"3f9f7d69-3a03-41db-b2fd-8bd59477460d","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"178efd6e-a7f2-4bcb-873e-6ac201a3e1c2","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"178efd6e-a7f2-4bcb-873e-6ac201a3e1c2","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"LayerId":{"name":"54cb7d25-5056-4c42-bd8a-44b35d61f672","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_credittransformation","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"resourceVersion":"1.0","name":"178efd6e-a7f2-4bcb-873e-6ac201a3e1c2","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"48b7db4c-6f70-4ce4-affe-c597ac95f291","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"48b7db4c-6f70-4ce4-affe-c597ac95f291","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"LayerId":{"name":"54cb7d25-5056-4c42-bd8a-44b35d61f672","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_credittransformation","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"resourceVersion":"1.0","name":"48b7db4c-6f70-4ce4-affe-c597ac95f291","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"5e75e25d-bf13-4d13-9999-084516136468","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5e75e25d-bf13-4d13-9999-084516136468","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"LayerId":{"name":"54cb7d25-5056-4c42-bd8a-44b35d61f672","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_credittransformation","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"resourceVersion":"1.0","name":"5e75e25d-bf13-4d13-9999-084516136468","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"1fd74b0b-c7ad-4d80-ad2d-00906da52e9d","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1fd74b0b-c7ad-4d80-ad2d-00906da52e9d","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"LayerId":{"name":"54cb7d25-5056-4c42-bd8a-44b35d61f672","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_credittransformation","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"resourceVersion":"1.0","name":"1fd74b0b-c7ad-4d80-ad2d-00906da52e9d","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5a92e21b-dc49-4ab1-87b5-001028498774",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4a2060cc-0688-40c6-b9aa-dc249ce2f735",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f6fbc325-2e00-4912-ae2b-c67c0e7d6fee",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ab318a77-fb36-45f8-bd97-8e1231692c6c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2f659c97-c240-4f03-8dcd-69c68f7c5e74",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a1d71665-98e9-44be-89e5-9cfca19b3b0f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"199a33e7-4f3e-436d-a087-d1898a06ae23",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ea938ae9-9259-4cc5-9a4b-bf3cc5f60fb5",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8d00042c-eb50-4e01-a377-147cc90a5523",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e0743d36-ff4b-4cba-9dfc-8d5253aa5e5d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3f9f7d69-3a03-41db-b2fd-8bd59477460d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"178efd6e-a7f2-4bcb-873e-6ac201a3e1c2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"48b7db4c-6f70-4ce4-affe-c597ac95f291",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5e75e25d-bf13-4d13-9999-084516136468",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1fd74b0b-c7ad-4d80-ad2d-00906da52e9d",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_credittransformation","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -82,7 +58,7 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"8d1abfc5-cbf3-411b-8da6-6effcbd5be16","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5a92e21b-dc49-4ab1-87b5-001028498774","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"cf99ed05-f488-45a0-96e7-5643763b6a27","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4a2060cc-0688-40c6-b9aa-dc249ce2f735","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"78f57c12-1372-4b7b-9286-19c33001a764","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f6fbc325-2e00-4912-ae2b-c67c0e7d6fee","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
@@ -98,7 +74,7 @@
             {"id":"1404a4f9-220e-4761-9d5c-6caed64cbdf1","Key":12.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"48b7db4c-6f70-4ce4-affe-c597ac95f291","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"055b1f6a-5268-4199-b877-55e978742ef3","Key":13.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5e75e25d-bf13-4d13-9999-084516136468","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"81277f20-baec-4472-808e-84fb08cf213d","Key":14.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1fd74b0b-c7ad-4d80-ad2d-00906da52e9d","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -114,22 +90,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_credittransformation","path":"sprites/spr_credittransformation/spr_credittransformation.yy",},
-    "resourceVersion": "1.3",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"54cb7d25-5056-4c42-bd8a-44b35d61f672","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"54cb7d25-5056-4c42-bd8a-44b35d61f672","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Asset Layer Sprites",
     "path": "folders/Sprites/Asset Layer Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_credittransformation",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

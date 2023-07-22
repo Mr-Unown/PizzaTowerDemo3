@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_doorkeyopen",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 100,
   "height": 100,
   "textureGroupId": {
@@ -24,18 +28,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"b9698fde-6b6f-4be3-913f-4d722332f35a","path":"sprites/spr_doorkeyopen/spr_doorkeyopen.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b9698fde-6b6f-4be3-913f-4d722332f35a","path":"sprites/spr_doorkeyopen/spr_doorkeyopen.yy",},"LayerId":{"name":"ceb31fec-6a78-4f21-a548-eabec4e88dcb","path":"sprites/spr_doorkeyopen/spr_doorkeyopen.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_doorkeyopen","path":"sprites/spr_doorkeyopen/spr_doorkeyopen.yy",},"resourceVersion":"1.0","name":"b9698fde-6b6f-4be3-913f-4d722332f35a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"e141d741-6ba6-4458-8951-5f7761481bda","path":"sprites/spr_doorkeyopen/spr_doorkeyopen.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e141d741-6ba6-4458-8951-5f7761481bda","path":"sprites/spr_doorkeyopen/spr_doorkeyopen.yy",},"LayerId":{"name":"ceb31fec-6a78-4f21-a548-eabec4e88dcb","path":"sprites/spr_doorkeyopen/spr_doorkeyopen.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_doorkeyopen","path":"sprites/spr_doorkeyopen/spr_doorkeyopen.yy",},"resourceVersion":"1.0","name":"e141d741-6ba6-4458-8951-5f7761481bda","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"85dbd4fb-1efb-4c50-bb1c-51dd886bc0ef","path":"sprites/spr_doorkeyopen/spr_doorkeyopen.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"85dbd4fb-1efb-4c50-bb1c-51dd886bc0ef","path":"sprites/spr_doorkeyopen/spr_doorkeyopen.yy",},"LayerId":{"name":"ceb31fec-6a78-4f21-a548-eabec4e88dcb","path":"sprites/spr_doorkeyopen/spr_doorkeyopen.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_doorkeyopen","path":"sprites/spr_doorkeyopen/spr_doorkeyopen.yy",},"resourceVersion":"1.0","name":"85dbd4fb-1efb-4c50-bb1c-51dd886bc0ef","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b9698fde-6b6f-4be3-913f-4d722332f35a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e141d741-6ba6-4458-8951-5f7761481bda",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"85dbd4fb-1efb-4c50-bb1c-51dd886bc0ef",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_doorkeyopen","path":"sprites/spr_doorkeyopen/spr_doorkeyopen.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -46,11 +46,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"f4d3e287-f3d8-4efd-b433-d43e217f7313","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b9698fde-6b6f-4be3-913f-4d722332f35a","path":"sprites/spr_doorkeyopen/spr_doorkeyopen.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"3c46955e-f3c7-486f-a85a-bf635a795f28","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e141d741-6ba6-4458-8951-5f7761481bda","path":"sprites/spr_doorkeyopen/spr_doorkeyopen.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"4d3c6184-4c3d-432c-906e-364276d0f752","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"85dbd4fb-1efb-4c50-bb1c-51dd886bc0ef","path":"sprites/spr_doorkeyopen/spr_doorkeyopen.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -66,22 +66,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_doorkeyopen","path":"sprites/spr_doorkeyopen/spr_doorkeyopen.yy",},
-    "resourceVersion": "1.3",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ceb31fec-6a78-4f21-a548-eabec4e88dcb","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ceb31fec-6a78-4f21-a548-eabec4e88dcb","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Objects",
     "path": "folders/Sprites/Objects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_doorkeyopen",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

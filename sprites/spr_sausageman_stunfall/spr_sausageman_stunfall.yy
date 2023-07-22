@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_sausageman_stunfall",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 100,
   "height": 100,
   "textureGroupId": {
@@ -24,18 +28,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"71b89728-966d-41f4-9d7b-523efdce4565","path":"sprites/spr_sausageman_stunfall/spr_sausageman_stunfall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"71b89728-966d-41f4-9d7b-523efdce4565","path":"sprites/spr_sausageman_stunfall/spr_sausageman_stunfall.yy",},"LayerId":{"name":"c8d21b38-c8ce-4784-b624-829c3518c33d","path":"sprites/spr_sausageman_stunfall/spr_sausageman_stunfall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_sausageman_stunfall","path":"sprites/spr_sausageman_stunfall/spr_sausageman_stunfall.yy",},"resourceVersion":"1.0","name":"71b89728-966d-41f4-9d7b-523efdce4565","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"6df89fa0-5700-4e50-adce-8872050c37ad","path":"sprites/spr_sausageman_stunfall/spr_sausageman_stunfall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6df89fa0-5700-4e50-adce-8872050c37ad","path":"sprites/spr_sausageman_stunfall/spr_sausageman_stunfall.yy",},"LayerId":{"name":"c8d21b38-c8ce-4784-b624-829c3518c33d","path":"sprites/spr_sausageman_stunfall/spr_sausageman_stunfall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_sausageman_stunfall","path":"sprites/spr_sausageman_stunfall/spr_sausageman_stunfall.yy",},"resourceVersion":"1.0","name":"6df89fa0-5700-4e50-adce-8872050c37ad","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"2dbdc4dd-13f6-4bd0-a300-e501acf95467","path":"sprites/spr_sausageman_stunfall/spr_sausageman_stunfall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2dbdc4dd-13f6-4bd0-a300-e501acf95467","path":"sprites/spr_sausageman_stunfall/spr_sausageman_stunfall.yy",},"LayerId":{"name":"c8d21b38-c8ce-4784-b624-829c3518c33d","path":"sprites/spr_sausageman_stunfall/spr_sausageman_stunfall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_sausageman_stunfall","path":"sprites/spr_sausageman_stunfall/spr_sausageman_stunfall.yy",},"resourceVersion":"1.0","name":"2dbdc4dd-13f6-4bd0-a300-e501acf95467","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"71b89728-966d-41f4-9d7b-523efdce4565",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6df89fa0-5700-4e50-adce-8872050c37ad",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2dbdc4dd-13f6-4bd0-a300-e501acf95467",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_sausageman_stunfall","path":"sprites/spr_sausageman_stunfall/spr_sausageman_stunfall.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -46,11 +46,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"c3decd12-2538-4d76-bcfe-303ab1175720","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"71b89728-966d-41f4-9d7b-523efdce4565","path":"sprites/spr_sausageman_stunfall/spr_sausageman_stunfall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"a4075804-f30b-47fc-8468-60855ef97c0d","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6df89fa0-5700-4e50-adce-8872050c37ad","path":"sprites/spr_sausageman_stunfall/spr_sausageman_stunfall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"2d69a67e-04c3-4da2-b5bb-93521b0372a6","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2dbdc4dd-13f6-4bd0-a300-e501acf95467","path":"sprites/spr_sausageman_stunfall/spr_sausageman_stunfall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -66,22 +66,13 @@
     "yorigin": 45,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_sausageman_stunfall","path":"sprites/spr_sausageman_stunfall/spr_sausageman_stunfall.yy",},
-    "resourceVersion": "1.3",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c8d21b38-c8ce-4784-b624-829c3518c33d","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c8d21b38-c8ce-4784-b624-829c3518c33d","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Weenie",
     "path": "folders/Sprites/Characters/Baddies/Weenie.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_sausageman_stunfall",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_font_combo",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 45,
   "height": 73,
   "textureGroupId": {
@@ -24,39 +28,21 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"56478c1e-f7cd-4aae-a6fe-7a8a51b4101c","path":"sprites/spr_font_combo/spr_font_combo.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"56478c1e-f7cd-4aae-a6fe-7a8a51b4101c","path":"sprites/spr_font_combo/spr_font_combo.yy",},"LayerId":{"name":"e52a2d86-e888-4644-893a-5ac6a11d81e4","path":"sprites/spr_font_combo/spr_font_combo.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_font_combo","path":"sprites/spr_font_combo/spr_font_combo.yy",},"resourceVersion":"1.0","name":"56478c1e-f7cd-4aae-a6fe-7a8a51b4101c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"26586e29-ff9c-4d2a-b788-83aa0807d923","path":"sprites/spr_font_combo/spr_font_combo.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"26586e29-ff9c-4d2a-b788-83aa0807d923","path":"sprites/spr_font_combo/spr_font_combo.yy",},"LayerId":{"name":"e52a2d86-e888-4644-893a-5ac6a11d81e4","path":"sprites/spr_font_combo/spr_font_combo.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_font_combo","path":"sprites/spr_font_combo/spr_font_combo.yy",},"resourceVersion":"1.0","name":"26586e29-ff9c-4d2a-b788-83aa0807d923","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"58b8c350-5179-4c14-bf0a-1cd37794b6b6","path":"sprites/spr_font_combo/spr_font_combo.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"58b8c350-5179-4c14-bf0a-1cd37794b6b6","path":"sprites/spr_font_combo/spr_font_combo.yy",},"LayerId":{"name":"e52a2d86-e888-4644-893a-5ac6a11d81e4","path":"sprites/spr_font_combo/spr_font_combo.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_font_combo","path":"sprites/spr_font_combo/spr_font_combo.yy",},"resourceVersion":"1.0","name":"58b8c350-5179-4c14-bf0a-1cd37794b6b6","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"b40cef15-994b-485e-b19e-a02dc4bb1df7","path":"sprites/spr_font_combo/spr_font_combo.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b40cef15-994b-485e-b19e-a02dc4bb1df7","path":"sprites/spr_font_combo/spr_font_combo.yy",},"LayerId":{"name":"e52a2d86-e888-4644-893a-5ac6a11d81e4","path":"sprites/spr_font_combo/spr_font_combo.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_font_combo","path":"sprites/spr_font_combo/spr_font_combo.yy",},"resourceVersion":"1.0","name":"b40cef15-994b-485e-b19e-a02dc4bb1df7","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"a1e085ad-2128-486c-85b1-14c4ee8fb9f7","path":"sprites/spr_font_combo/spr_font_combo.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a1e085ad-2128-486c-85b1-14c4ee8fb9f7","path":"sprites/spr_font_combo/spr_font_combo.yy",},"LayerId":{"name":"e52a2d86-e888-4644-893a-5ac6a11d81e4","path":"sprites/spr_font_combo/spr_font_combo.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_font_combo","path":"sprites/spr_font_combo/spr_font_combo.yy",},"resourceVersion":"1.0","name":"a1e085ad-2128-486c-85b1-14c4ee8fb9f7","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"1b84e2c0-456c-48ed-9dc7-3cb44a9fa009","path":"sprites/spr_font_combo/spr_font_combo.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1b84e2c0-456c-48ed-9dc7-3cb44a9fa009","path":"sprites/spr_font_combo/spr_font_combo.yy",},"LayerId":{"name":"e52a2d86-e888-4644-893a-5ac6a11d81e4","path":"sprites/spr_font_combo/spr_font_combo.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_font_combo","path":"sprites/spr_font_combo/spr_font_combo.yy",},"resourceVersion":"1.0","name":"1b84e2c0-456c-48ed-9dc7-3cb44a9fa009","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"91c34662-2fc0-4459-951b-b64c33a58254","path":"sprites/spr_font_combo/spr_font_combo.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"91c34662-2fc0-4459-951b-b64c33a58254","path":"sprites/spr_font_combo/spr_font_combo.yy",},"LayerId":{"name":"e52a2d86-e888-4644-893a-5ac6a11d81e4","path":"sprites/spr_font_combo/spr_font_combo.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_font_combo","path":"sprites/spr_font_combo/spr_font_combo.yy",},"resourceVersion":"1.0","name":"91c34662-2fc0-4459-951b-b64c33a58254","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"7de346ec-4722-4d66-9bf8-583f8a511a4f","path":"sprites/spr_font_combo/spr_font_combo.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7de346ec-4722-4d66-9bf8-583f8a511a4f","path":"sprites/spr_font_combo/spr_font_combo.yy",},"LayerId":{"name":"e52a2d86-e888-4644-893a-5ac6a11d81e4","path":"sprites/spr_font_combo/spr_font_combo.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_font_combo","path":"sprites/spr_font_combo/spr_font_combo.yy",},"resourceVersion":"1.0","name":"7de346ec-4722-4d66-9bf8-583f8a511a4f","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"416d4f4d-97a6-43fb-b60a-d155c64b243c","path":"sprites/spr_font_combo/spr_font_combo.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"416d4f4d-97a6-43fb-b60a-d155c64b243c","path":"sprites/spr_font_combo/spr_font_combo.yy",},"LayerId":{"name":"e52a2d86-e888-4644-893a-5ac6a11d81e4","path":"sprites/spr_font_combo/spr_font_combo.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_font_combo","path":"sprites/spr_font_combo/spr_font_combo.yy",},"resourceVersion":"1.0","name":"416d4f4d-97a6-43fb-b60a-d155c64b243c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"151d3cc3-dace-43a1-87b9-26d5ff76283c","path":"sprites/spr_font_combo/spr_font_combo.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"151d3cc3-dace-43a1-87b9-26d5ff76283c","path":"sprites/spr_font_combo/spr_font_combo.yy",},"LayerId":{"name":"e52a2d86-e888-4644-893a-5ac6a11d81e4","path":"sprites/spr_font_combo/spr_font_combo.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_font_combo","path":"sprites/spr_font_combo/spr_font_combo.yy",},"resourceVersion":"1.0","name":"151d3cc3-dace-43a1-87b9-26d5ff76283c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"56478c1e-f7cd-4aae-a6fe-7a8a51b4101c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"26586e29-ff9c-4d2a-b788-83aa0807d923",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"58b8c350-5179-4c14-bf0a-1cd37794b6b6",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b40cef15-994b-485e-b19e-a02dc4bb1df7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a1e085ad-2128-486c-85b1-14c4ee8fb9f7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1b84e2c0-456c-48ed-9dc7-3cb44a9fa009",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"91c34662-2fc0-4459-951b-b64c33a58254",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7de346ec-4722-4d66-9bf8-583f8a511a4f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"416d4f4d-97a6-43fb-b60a-d155c64b243c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"151d3cc3-dace-43a1-87b9-26d5ff76283c",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_font_combo","path":"sprites/spr_font_combo/spr_font_combo.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 0.0,
@@ -67,7 +53,7 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"0c9a3a0d-5578-4e55-bccf-976f2eca438c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"56478c1e-f7cd-4aae-a6fe-7a8a51b4101c","path":"sprites/spr_font_combo/spr_font_combo.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"f6187d94-9475-4c08-8bd4-e9758032ed5b","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"26586e29-ff9c-4d2a-b788-83aa0807d923","path":"sprites/spr_font_combo/spr_font_combo.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"efcea7d4-0ec2-4814-9a1e-cd5aaa4130fe","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"58b8c350-5179-4c14-bf0a-1cd37794b6b6","path":"sprites/spr_font_combo/spr_font_combo.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
@@ -78,7 +64,7 @@
             {"id":"b748aed3-c68b-432e-88a9-c4204d345b23","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7de346ec-4722-4d66-9bf8-583f8a511a4f","path":"sprites/spr_font_combo/spr_font_combo.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"79f6f24e-c8e6-4524-a8f4-08d7f8cda59a","Key":8.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"416d4f4d-97a6-43fb-b60a-d155c64b243c","path":"sprites/spr_font_combo/spr_font_combo.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"35f775dc-9e6b-4758-a73f-5c7d68022bd1","Key":9.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"151d3cc3-dace-43a1-87b9-26d5ff76283c","path":"sprites/spr_font_combo/spr_font_combo.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -94,22 +80,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_font_combo","path":"sprites/spr_font_combo/spr_font_combo.yy",},
-    "resourceVersion": "1.3",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e52a2d86-e888-4644-893a-5ac6a11d81e4","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e52a2d86-e888-4644-893a-5ac6a11d81e4","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "New Hud",
     "path": "folders/Sprites/Hud & Menus/New Hud.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_font_combo",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

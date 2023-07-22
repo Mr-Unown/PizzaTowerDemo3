@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_scooterrock",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 100,
   "height": 100,
   "textureGroupId": {
@@ -24,15 +28,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"4c0de9b6-1ba8-45a3-94f9-4f8967b6e4ba","path":"sprites/spr_scooterrock/spr_scooterrock.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4c0de9b6-1ba8-45a3-94f9-4f8967b6e4ba","path":"sprites/spr_scooterrock/spr_scooterrock.yy",},"LayerId":{"name":"b8cf1c18-0641-4fc3-9c06-dc1d7e592549","path":"sprites/spr_scooterrock/spr_scooterrock.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_scooterrock","path":"sprites/spr_scooterrock/spr_scooterrock.yy",},"resourceVersion":"1.0","name":"4c0de9b6-1ba8-45a3-94f9-4f8967b6e4ba","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"87509622-791f-469e-97e8-78ab03587a56","path":"sprites/spr_scooterrock/spr_scooterrock.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"87509622-791f-469e-97e8-78ab03587a56","path":"sprites/spr_scooterrock/spr_scooterrock.yy",},"LayerId":{"name":"b8cf1c18-0641-4fc3-9c06-dc1d7e592549","path":"sprites/spr_scooterrock/spr_scooterrock.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_scooterrock","path":"sprites/spr_scooterrock/spr_scooterrock.yy",},"resourceVersion":"1.0","name":"87509622-791f-469e-97e8-78ab03587a56","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4c0de9b6-1ba8-45a3-94f9-4f8967b6e4ba",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"87509622-791f-469e-97e8-78ab03587a56",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_scooterrock","path":"sprites/spr_scooterrock/spr_scooterrock.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -43,10 +45,10 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"7c9a9767-d462-4da9-b00f-19f73c479e2b","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4c0de9b6-1ba8-45a3-94f9-4f8967b6e4ba","path":"sprites/spr_scooterrock/spr_scooterrock.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"41d14aaa-b6fc-41d2-bc51-3c54c117e90f","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"87509622-791f-469e-97e8-78ab03587a56","path":"sprites/spr_scooterrock/spr_scooterrock.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -62,22 +64,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_scooterrock","path":"sprites/spr_scooterrock/spr_scooterrock.yy",},
-    "resourceVersion": "1.3",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b8cf1c18-0641-4fc3-9c06-dc1d7e592549","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b8cf1c18-0641-4fc3-9c06-dc1d7e592549","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Objects",
     "path": "folders/Sprites/Objects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_scooterrock",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

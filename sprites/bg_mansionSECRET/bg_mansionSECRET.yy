@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "bg_mansionSECRET",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 960,
   "height": 540,
   "textureGroupId": {
@@ -24,24 +28,16 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"06d0940b-07fb-4841-81b0-0b2b234b478f","path":"sprites/bg_mansionSECRET/bg_mansionSECRET.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"06d0940b-07fb-4841-81b0-0b2b234b478f","path":"sprites/bg_mansionSECRET/bg_mansionSECRET.yy",},"LayerId":{"name":"a7a16a69-23a3-4d9e-8312-4f157080d6a3","path":"sprites/bg_mansionSECRET/bg_mansionSECRET.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"bg_mansionSECRET","path":"sprites/bg_mansionSECRET/bg_mansionSECRET.yy",},"resourceVersion":"1.0","name":"06d0940b-07fb-4841-81b0-0b2b234b478f","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"92d3827c-dc62-4c03-a35d-955d5384732e","path":"sprites/bg_mansionSECRET/bg_mansionSECRET.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"92d3827c-dc62-4c03-a35d-955d5384732e","path":"sprites/bg_mansionSECRET/bg_mansionSECRET.yy",},"LayerId":{"name":"a7a16a69-23a3-4d9e-8312-4f157080d6a3","path":"sprites/bg_mansionSECRET/bg_mansionSECRET.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"bg_mansionSECRET","path":"sprites/bg_mansionSECRET/bg_mansionSECRET.yy",},"resourceVersion":"1.0","name":"92d3827c-dc62-4c03-a35d-955d5384732e","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"04f2b5c9-23d4-4d04-9daa-9e88a8ad5f62","path":"sprites/bg_mansionSECRET/bg_mansionSECRET.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"04f2b5c9-23d4-4d04-9daa-9e88a8ad5f62","path":"sprites/bg_mansionSECRET/bg_mansionSECRET.yy",},"LayerId":{"name":"a7a16a69-23a3-4d9e-8312-4f157080d6a3","path":"sprites/bg_mansionSECRET/bg_mansionSECRET.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"bg_mansionSECRET","path":"sprites/bg_mansionSECRET/bg_mansionSECRET.yy",},"resourceVersion":"1.0","name":"04f2b5c9-23d4-4d04-9daa-9e88a8ad5f62","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"f50dc1da-36ec-4672-b37f-58d582a30002","path":"sprites/bg_mansionSECRET/bg_mansionSECRET.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f50dc1da-36ec-4672-b37f-58d582a30002","path":"sprites/bg_mansionSECRET/bg_mansionSECRET.yy",},"LayerId":{"name":"a7a16a69-23a3-4d9e-8312-4f157080d6a3","path":"sprites/bg_mansionSECRET/bg_mansionSECRET.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"bg_mansionSECRET","path":"sprites/bg_mansionSECRET/bg_mansionSECRET.yy",},"resourceVersion":"1.0","name":"f50dc1da-36ec-4672-b37f-58d582a30002","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"dd1fb3a0-b77f-4e99-b033-52171a55b23c","path":"sprites/bg_mansionSECRET/bg_mansionSECRET.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"dd1fb3a0-b77f-4e99-b033-52171a55b23c","path":"sprites/bg_mansionSECRET/bg_mansionSECRET.yy",},"LayerId":{"name":"a7a16a69-23a3-4d9e-8312-4f157080d6a3","path":"sprites/bg_mansionSECRET/bg_mansionSECRET.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"bg_mansionSECRET","path":"sprites/bg_mansionSECRET/bg_mansionSECRET.yy",},"resourceVersion":"1.0","name":"dd1fb3a0-b77f-4e99-b033-52171a55b23c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"06d0940b-07fb-4841-81b0-0b2b234b478f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"92d3827c-dc62-4c03-a35d-955d5384732e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"04f2b5c9-23d4-4d04-9daa-9e88a8ad5f62",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f50dc1da-36ec-4672-b37f-58d582a30002",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"dd1fb3a0-b77f-4e99-b033-52171a55b23c",},
   ],
   "sequence": {
-    "spriteId": {"name":"bg_mansionSECRET","path":"sprites/bg_mansionSECRET/bg_mansionSECRET.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -52,13 +48,13 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"8de421dc-4b86-451e-8215-e6264807a901","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"06d0940b-07fb-4841-81b0-0b2b234b478f","path":"sprites/bg_mansionSECRET/bg_mansionSECRET.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"048c77c6-dc4f-4569-820e-496b1cec99c7","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"92d3827c-dc62-4c03-a35d-955d5384732e","path":"sprites/bg_mansionSECRET/bg_mansionSECRET.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"bfb29fc7-aefd-43fa-8089-cecff9bba087","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"04f2b5c9-23d4-4d04-9daa-9e88a8ad5f62","path":"sprites/bg_mansionSECRET/bg_mansionSECRET.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"8b4dc9aa-8aad-4239-9585-14610c6001fc","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f50dc1da-36ec-4672-b37f-58d582a30002","path":"sprites/bg_mansionSECRET/bg_mansionSECRET.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"6c214858-6b40-4923-af77-10b40740bfac","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"dd1fb3a0-b77f-4e99-b033-52171a55b23c","path":"sprites/bg_mansionSECRET/bg_mansionSECRET.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -74,22 +70,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"bg_mansionSECRET","path":"sprites/bg_mansionSECRET/bg_mansionSECRET.yy",},
-    "resourceVersion": "1.3",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a7a16a69-23a3-4d9e-8312-4f157080d6a3","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a7a16a69-23a3-4d9e-8312-4f157080d6a3","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Backgrounds",
     "path": "folders/Sprites/Backgrounds.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "bg_mansionSECRET",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

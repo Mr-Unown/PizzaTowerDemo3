@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_kentukykenny_walk",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 100,
   "height": 100,
   "textureGroupId": {
@@ -24,54 +28,26 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"58fb0dc8-4e80-4e8b-aa05-17cad01cb373","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"58fb0dc8-4e80-4e8b-aa05-17cad01cb373","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"LayerId":{"name":"4b155a3a-d7ca-4446-b82e-b30f3cd951df","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_kentukykenny_walk","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"resourceVersion":"1.0","name":"58fb0dc8-4e80-4e8b-aa05-17cad01cb373","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"d3f90275-4b46-4a61-9eae-60fccb11e4d8","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d3f90275-4b46-4a61-9eae-60fccb11e4d8","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"LayerId":{"name":"4b155a3a-d7ca-4446-b82e-b30f3cd951df","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_kentukykenny_walk","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"resourceVersion":"1.0","name":"d3f90275-4b46-4a61-9eae-60fccb11e4d8","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"359a03a2-286e-4bcc-a5e7-d319ac94062c","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"359a03a2-286e-4bcc-a5e7-d319ac94062c","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"LayerId":{"name":"4b155a3a-d7ca-4446-b82e-b30f3cd951df","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_kentukykenny_walk","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"resourceVersion":"1.0","name":"359a03a2-286e-4bcc-a5e7-d319ac94062c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"5a8bfbf8-c3d0-4a97-bb15-38607e19c12b","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5a8bfbf8-c3d0-4a97-bb15-38607e19c12b","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"LayerId":{"name":"4b155a3a-d7ca-4446-b82e-b30f3cd951df","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_kentukykenny_walk","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"resourceVersion":"1.0","name":"5a8bfbf8-c3d0-4a97-bb15-38607e19c12b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"40016eba-d9d6-4124-bbf4-b6f5466e49a3","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"40016eba-d9d6-4124-bbf4-b6f5466e49a3","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"LayerId":{"name":"4b155a3a-d7ca-4446-b82e-b30f3cd951df","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_kentukykenny_walk","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"resourceVersion":"1.0","name":"40016eba-d9d6-4124-bbf4-b6f5466e49a3","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"9c69454d-3fb4-497c-adc3-092f7de2d5fe","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"9c69454d-3fb4-497c-adc3-092f7de2d5fe","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"LayerId":{"name":"4b155a3a-d7ca-4446-b82e-b30f3cd951df","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_kentukykenny_walk","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"resourceVersion":"1.0","name":"9c69454d-3fb4-497c-adc3-092f7de2d5fe","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"42c1c58d-ea9a-41ec-ae48-16a3ed19cfdf","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"42c1c58d-ea9a-41ec-ae48-16a3ed19cfdf","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"LayerId":{"name":"4b155a3a-d7ca-4446-b82e-b30f3cd951df","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_kentukykenny_walk","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"resourceVersion":"1.0","name":"42c1c58d-ea9a-41ec-ae48-16a3ed19cfdf","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ef1b53ec-c745-4a94-8cfd-80fa24566033","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ef1b53ec-c745-4a94-8cfd-80fa24566033","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"LayerId":{"name":"4b155a3a-d7ca-4446-b82e-b30f3cd951df","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_kentukykenny_walk","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"resourceVersion":"1.0","name":"ef1b53ec-c745-4a94-8cfd-80fa24566033","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ff6a5616-e9fe-48c4-8b51-04752468d44e","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ff6a5616-e9fe-48c4-8b51-04752468d44e","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"LayerId":{"name":"4b155a3a-d7ca-4446-b82e-b30f3cd951df","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_kentukykenny_walk","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"resourceVersion":"1.0","name":"ff6a5616-e9fe-48c4-8b51-04752468d44e","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"aea5d95d-58d6-4176-bae7-06b7c3442289","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"aea5d95d-58d6-4176-bae7-06b7c3442289","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"LayerId":{"name":"4b155a3a-d7ca-4446-b82e-b30f3cd951df","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_kentukykenny_walk","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"resourceVersion":"1.0","name":"aea5d95d-58d6-4176-bae7-06b7c3442289","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"281d303a-59e6-4e0a-9038-9cee276cc66e","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"281d303a-59e6-4e0a-9038-9cee276cc66e","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"LayerId":{"name":"4b155a3a-d7ca-4446-b82e-b30f3cd951df","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_kentukykenny_walk","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"resourceVersion":"1.0","name":"281d303a-59e6-4e0a-9038-9cee276cc66e","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"9183d0ec-0baa-4760-bcc0-cc05df3bd105","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"9183d0ec-0baa-4760-bcc0-cc05df3bd105","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"LayerId":{"name":"4b155a3a-d7ca-4446-b82e-b30f3cd951df","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_kentukykenny_walk","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"resourceVersion":"1.0","name":"9183d0ec-0baa-4760-bcc0-cc05df3bd105","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"7776db55-b81a-45ae-8303-6c86cac41312","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7776db55-b81a-45ae-8303-6c86cac41312","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"LayerId":{"name":"4b155a3a-d7ca-4446-b82e-b30f3cd951df","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_kentukykenny_walk","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"resourceVersion":"1.0","name":"7776db55-b81a-45ae-8303-6c86cac41312","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"f523c795-a2de-4d57-867e-25b3fcbfcfbf","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f523c795-a2de-4d57-867e-25b3fcbfcfbf","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"LayerId":{"name":"4b155a3a-d7ca-4446-b82e-b30f3cd951df","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_kentukykenny_walk","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"resourceVersion":"1.0","name":"f523c795-a2de-4d57-867e-25b3fcbfcfbf","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"7d627285-f888-4e47-b864-5394b9fead06","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7d627285-f888-4e47-b864-5394b9fead06","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"LayerId":{"name":"4b155a3a-d7ca-4446-b82e-b30f3cd951df","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_kentukykenny_walk","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"resourceVersion":"1.0","name":"7d627285-f888-4e47-b864-5394b9fead06","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"58fb0dc8-4e80-4e8b-aa05-17cad01cb373",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d3f90275-4b46-4a61-9eae-60fccb11e4d8",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"359a03a2-286e-4bcc-a5e7-d319ac94062c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5a8bfbf8-c3d0-4a97-bb15-38607e19c12b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"40016eba-d9d6-4124-bbf4-b6f5466e49a3",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9c69454d-3fb4-497c-adc3-092f7de2d5fe",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"42c1c58d-ea9a-41ec-ae48-16a3ed19cfdf",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ef1b53ec-c745-4a94-8cfd-80fa24566033",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ff6a5616-e9fe-48c4-8b51-04752468d44e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"aea5d95d-58d6-4176-bae7-06b7c3442289",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"281d303a-59e6-4e0a-9038-9cee276cc66e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9183d0ec-0baa-4760-bcc0-cc05df3bd105",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7776db55-b81a-45ae-8303-6c86cac41312",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f523c795-a2de-4d57-867e-25b3fcbfcfbf",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7d627285-f888-4e47-b864-5394b9fead06",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_kentukykenny_walk","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -82,7 +58,7 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"65bb1086-c821-4cdc-bebd-36838fcf4951","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"58fb0dc8-4e80-4e8b-aa05-17cad01cb373","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"f0e8836b-d603-44d3-bb97-17c9f7377d27","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d3f90275-4b46-4a61-9eae-60fccb11e4d8","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"f1570b8c-889d-45bc-bdb9-13fd6d18851f","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"359a03a2-286e-4bcc-a5e7-d319ac94062c","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
@@ -98,7 +74,7 @@
             {"id":"13842195-98dd-4cef-af37-7db1c8edb9e0","Key":12.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7776db55-b81a-45ae-8303-6c86cac41312","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"4c977653-4698-413f-8d86-7c300c3d42ea","Key":13.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f523c795-a2de-4d57-867e-25b3fcbfcfbf","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"d28993cc-08eb-4f0d-8ad2-7c16e60027cc","Key":14.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7d627285-f888-4e47-b864-5394b9fead06","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -114,22 +90,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_kentukykenny_walk","path":"sprites/spr_kentukykenny_walk/spr_kentukykenny_walk.yy",},
-    "resourceVersion": "1.3",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"4b155a3a-d7ca-4446-b82e-b30f3cd951df","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"4b155a3a-d7ca-4446-b82e-b30f3cd951df","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Kentuky Kenny",
     "path": "folders/Sprites/Characters/Baddies/Kentuky Kenny.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_kentukykenny_walk",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

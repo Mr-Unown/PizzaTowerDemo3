@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_clockcollectible1",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 40,
   "height": 40,
   "textureGroupId": {
@@ -24,18 +28,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"937e0de9-db68-4548-90b3-71a5bf3927be","path":"sprites/spr_clockcollectible1/spr_clockcollectible1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"937e0de9-db68-4548-90b3-71a5bf3927be","path":"sprites/spr_clockcollectible1/spr_clockcollectible1.yy",},"LayerId":{"name":"c17ef68b-6785-41b5-9a47-268c10d3aee7","path":"sprites/spr_clockcollectible1/spr_clockcollectible1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_clockcollectible1","path":"sprites/spr_clockcollectible1/spr_clockcollectible1.yy",},"resourceVersion":"1.0","name":"937e0de9-db68-4548-90b3-71a5bf3927be","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"9a1c016e-20ca-40f9-8597-d2ad0dd74411","path":"sprites/spr_clockcollectible1/spr_clockcollectible1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"9a1c016e-20ca-40f9-8597-d2ad0dd74411","path":"sprites/spr_clockcollectible1/spr_clockcollectible1.yy",},"LayerId":{"name":"c17ef68b-6785-41b5-9a47-268c10d3aee7","path":"sprites/spr_clockcollectible1/spr_clockcollectible1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_clockcollectible1","path":"sprites/spr_clockcollectible1/spr_clockcollectible1.yy",},"resourceVersion":"1.0","name":"9a1c016e-20ca-40f9-8597-d2ad0dd74411","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"e8e02a6c-88df-4f9d-8533-8c9e85267e61","path":"sprites/spr_clockcollectible1/spr_clockcollectible1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e8e02a6c-88df-4f9d-8533-8c9e85267e61","path":"sprites/spr_clockcollectible1/spr_clockcollectible1.yy",},"LayerId":{"name":"c17ef68b-6785-41b5-9a47-268c10d3aee7","path":"sprites/spr_clockcollectible1/spr_clockcollectible1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_clockcollectible1","path":"sprites/spr_clockcollectible1/spr_clockcollectible1.yy",},"resourceVersion":"1.0","name":"e8e02a6c-88df-4f9d-8533-8c9e85267e61","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"937e0de9-db68-4548-90b3-71a5bf3927be",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9a1c016e-20ca-40f9-8597-d2ad0dd74411",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e8e02a6c-88df-4f9d-8533-8c9e85267e61",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_clockcollectible1","path":"sprites/spr_clockcollectible1/spr_clockcollectible1.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -46,11 +46,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"23fdfe1f-45b4-43ce-9fa6-1f7950ae6e78","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"937e0de9-db68-4548-90b3-71a5bf3927be","path":"sprites/spr_clockcollectible1/spr_clockcollectible1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"984ec876-f278-4502-bf99-701a23cd145e","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9a1c016e-20ca-40f9-8597-d2ad0dd74411","path":"sprites/spr_clockcollectible1/spr_clockcollectible1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"827df09c-c5ec-4599-b4c9-9333942d086a","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e8e02a6c-88df-4f9d-8533-8c9e85267e61","path":"sprites/spr_clockcollectible1/spr_clockcollectible1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -66,22 +66,13 @@
     "yorigin": 20,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_clockcollectible1","path":"sprites/spr_clockcollectible1/spr_clockcollectible1.yy",},
-    "resourceVersion": "1.3",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c17ef68b-6785-41b5-9a47-268c10d3aee7","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c17ef68b-6785-41b5-9a47-268c10d3aee7","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Objects",
     "path": "folders/Sprites/Objects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_clockcollectible1",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

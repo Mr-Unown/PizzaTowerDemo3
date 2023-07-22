@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_knightpep_fall",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 150,
   "height": 150,
   "textureGroupId": {
@@ -24,18 +28,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"250fb4b8-cfde-4ba6-b447-f864e3ffc03f","path":"sprites/spr_knightpep_fall/spr_knightpep_fall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"250fb4b8-cfde-4ba6-b447-f864e3ffc03f","path":"sprites/spr_knightpep_fall/spr_knightpep_fall.yy",},"LayerId":{"name":"6c702f48-17cd-404b-89bd-df562875abfb","path":"sprites/spr_knightpep_fall/spr_knightpep_fall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_knightpep_fall","path":"sprites/spr_knightpep_fall/spr_knightpep_fall.yy",},"resourceVersion":"1.0","name":"250fb4b8-cfde-4ba6-b447-f864e3ffc03f","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"5a3f039e-e48f-47e0-adbf-b2260e7d5908","path":"sprites/spr_knightpep_fall/spr_knightpep_fall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5a3f039e-e48f-47e0-adbf-b2260e7d5908","path":"sprites/spr_knightpep_fall/spr_knightpep_fall.yy",},"LayerId":{"name":"6c702f48-17cd-404b-89bd-df562875abfb","path":"sprites/spr_knightpep_fall/spr_knightpep_fall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_knightpep_fall","path":"sprites/spr_knightpep_fall/spr_knightpep_fall.yy",},"resourceVersion":"1.0","name":"5a3f039e-e48f-47e0-adbf-b2260e7d5908","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"3886053d-6fb2-4776-a992-41dac86bdd6f","path":"sprites/spr_knightpep_fall/spr_knightpep_fall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3886053d-6fb2-4776-a992-41dac86bdd6f","path":"sprites/spr_knightpep_fall/spr_knightpep_fall.yy",},"LayerId":{"name":"6c702f48-17cd-404b-89bd-df562875abfb","path":"sprites/spr_knightpep_fall/spr_knightpep_fall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_knightpep_fall","path":"sprites/spr_knightpep_fall/spr_knightpep_fall.yy",},"resourceVersion":"1.0","name":"3886053d-6fb2-4776-a992-41dac86bdd6f","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"250fb4b8-cfde-4ba6-b447-f864e3ffc03f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5a3f039e-e48f-47e0-adbf-b2260e7d5908",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3886053d-6fb2-4776-a992-41dac86bdd6f",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_knightpep_fall","path":"sprites/spr_knightpep_fall/spr_knightpep_fall.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -46,11 +46,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"51bf87a9-9a09-4d1c-a8e8-5a5b43766d3f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"250fb4b8-cfde-4ba6-b447-f864e3ffc03f","path":"sprites/spr_knightpep_fall/spr_knightpep_fall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"b032c21f-8a75-4391-b6d9-1c404dbd71a4","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5a3f039e-e48f-47e0-adbf-b2260e7d5908","path":"sprites/spr_knightpep_fall/spr_knightpep_fall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"8a115781-bd49-4878-bb25-5d80b21957bf","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3886053d-6fb2-4776-a992-41dac86bdd6f","path":"sprites/spr_knightpep_fall/spr_knightpep_fall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -66,22 +66,13 @@
     "yorigin": 75,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_knightpep_fall","path":"sprites/spr_knightpep_fall/spr_knightpep_fall.yy",},
-    "resourceVersion": "1.3",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"6c702f48-17cd-404b-89bd-df562875abfb","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6c702f48-17cd-404b-89bd-df562875abfb","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Peppino",
     "path": "folders/Sprites/Characters/Playable Characters Sprites/Peppino.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_knightpep_fall",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

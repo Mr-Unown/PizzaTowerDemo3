@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_playerN_machfreefall1",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 100,
   "height": 100,
   "textureGroupId": {
@@ -24,18 +28,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"8b05081b-a65f-4282-92cb-16126c6c92cf","path":"sprites/spr_playerN_machfreefall1/spr_playerN_machfreefall1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8b05081b-a65f-4282-92cb-16126c6c92cf","path":"sprites/spr_playerN_machfreefall1/spr_playerN_machfreefall1.yy",},"LayerId":{"name":"c789d5e4-5b54-4b48-a538-e0132849348b","path":"sprites/spr_playerN_machfreefall1/spr_playerN_machfreefall1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerN_machfreefall1","path":"sprites/spr_playerN_machfreefall1/spr_playerN_machfreefall1.yy",},"resourceVersion":"1.0","name":"8b05081b-a65f-4282-92cb-16126c6c92cf","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"2a1a92a5-e153-4863-a382-0d70a59ef8d7","path":"sprites/spr_playerN_machfreefall1/spr_playerN_machfreefall1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2a1a92a5-e153-4863-a382-0d70a59ef8d7","path":"sprites/spr_playerN_machfreefall1/spr_playerN_machfreefall1.yy",},"LayerId":{"name":"c789d5e4-5b54-4b48-a538-e0132849348b","path":"sprites/spr_playerN_machfreefall1/spr_playerN_machfreefall1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerN_machfreefall1","path":"sprites/spr_playerN_machfreefall1/spr_playerN_machfreefall1.yy",},"resourceVersion":"1.0","name":"2a1a92a5-e153-4863-a382-0d70a59ef8d7","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"53b1d2e3-17e2-4ec0-85c6-115a3cb4fe31","path":"sprites/spr_playerN_machfreefall1/spr_playerN_machfreefall1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"53b1d2e3-17e2-4ec0-85c6-115a3cb4fe31","path":"sprites/spr_playerN_machfreefall1/spr_playerN_machfreefall1.yy",},"LayerId":{"name":"c789d5e4-5b54-4b48-a538-e0132849348b","path":"sprites/spr_playerN_machfreefall1/spr_playerN_machfreefall1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerN_machfreefall1","path":"sprites/spr_playerN_machfreefall1/spr_playerN_machfreefall1.yy",},"resourceVersion":"1.0","name":"53b1d2e3-17e2-4ec0-85c6-115a3cb4fe31","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8b05081b-a65f-4282-92cb-16126c6c92cf",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2a1a92a5-e153-4863-a382-0d70a59ef8d7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"53b1d2e3-17e2-4ec0-85c6-115a3cb4fe31",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_playerN_machfreefall1","path":"sprites/spr_playerN_machfreefall1/spr_playerN_machfreefall1.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -46,11 +46,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"a8c17269-733e-415d-aeed-2f9c825f3788","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8b05081b-a65f-4282-92cb-16126c6c92cf","path":"sprites/spr_playerN_machfreefall1/spr_playerN_machfreefall1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"1da9ea91-2b7a-4b52-9837-6e5ab17edc5b","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2a1a92a5-e153-4863-a382-0d70a59ef8d7","path":"sprites/spr_playerN_machfreefall1/spr_playerN_machfreefall1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"22cfa32c-301e-40b6-9a4c-58f13eb8aae2","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"53b1d2e3-17e2-4ec0-85c6-115a3cb4fe31","path":"sprites/spr_playerN_machfreefall1/spr_playerN_machfreefall1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -66,22 +66,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_playerN_machfreefall1","path":"sprites/spr_playerN_machfreefall1/spr_playerN_machfreefall1.yy",},
-    "resourceVersion": "1.3",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c789d5e4-5b54-4b48-a538-e0132849348b","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c789d5e4-5b54-4b48-a538-e0132849348b","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Noise",
     "path": "folders/Sprites/Characters/Playable Characters Sprites/Noise.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_playerN_machfreefall1",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

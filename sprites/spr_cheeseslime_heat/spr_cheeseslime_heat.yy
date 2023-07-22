@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_cheeseslime_heat",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 150,
   "height": 80,
   "textureGroupId": {
@@ -24,39 +28,21 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"948f1d91-673b-4bf6-b67d-05f7d9570ef9","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"948f1d91-673b-4bf6-b67d-05f7d9570ef9","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"LayerId":{"name":"44f8779f-2343-44ee-b6a1-4c782f9a0cd3","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cheeseslime_heat","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"resourceVersion":"1.0","name":"948f1d91-673b-4bf6-b67d-05f7d9570ef9","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"cde00008-83e9-420d-a527-17f4e6e234a9","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"cde00008-83e9-420d-a527-17f4e6e234a9","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"LayerId":{"name":"44f8779f-2343-44ee-b6a1-4c782f9a0cd3","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cheeseslime_heat","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"resourceVersion":"1.0","name":"cde00008-83e9-420d-a527-17f4e6e234a9","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"85618ebd-7a60-41ff-a098-511430d4972a","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"85618ebd-7a60-41ff-a098-511430d4972a","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"LayerId":{"name":"44f8779f-2343-44ee-b6a1-4c782f9a0cd3","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cheeseslime_heat","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"resourceVersion":"1.0","name":"85618ebd-7a60-41ff-a098-511430d4972a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c73fa5aa-691d-4535-9e47-57ffbd74fe48","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c73fa5aa-691d-4535-9e47-57ffbd74fe48","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"LayerId":{"name":"44f8779f-2343-44ee-b6a1-4c782f9a0cd3","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cheeseslime_heat","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"resourceVersion":"1.0","name":"c73fa5aa-691d-4535-9e47-57ffbd74fe48","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"d094f424-4b47-4cb7-8076-fa08f3a5156a","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d094f424-4b47-4cb7-8076-fa08f3a5156a","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"LayerId":{"name":"44f8779f-2343-44ee-b6a1-4c782f9a0cd3","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cheeseslime_heat","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"resourceVersion":"1.0","name":"d094f424-4b47-4cb7-8076-fa08f3a5156a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"6b2bb213-3cc5-47f4-8ef3-75ffe2fd5f1c","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6b2bb213-3cc5-47f4-8ef3-75ffe2fd5f1c","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"LayerId":{"name":"44f8779f-2343-44ee-b6a1-4c782f9a0cd3","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cheeseslime_heat","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"resourceVersion":"1.0","name":"6b2bb213-3cc5-47f4-8ef3-75ffe2fd5f1c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"0a9bcf88-b05e-4099-95b8-9e2e4c20ec2e","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0a9bcf88-b05e-4099-95b8-9e2e4c20ec2e","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"LayerId":{"name":"44f8779f-2343-44ee-b6a1-4c782f9a0cd3","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cheeseslime_heat","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"resourceVersion":"1.0","name":"0a9bcf88-b05e-4099-95b8-9e2e4c20ec2e","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"b38bbc3c-df81-41df-80ee-a98d73b25474","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b38bbc3c-df81-41df-80ee-a98d73b25474","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"LayerId":{"name":"44f8779f-2343-44ee-b6a1-4c782f9a0cd3","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cheeseslime_heat","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"resourceVersion":"1.0","name":"b38bbc3c-df81-41df-80ee-a98d73b25474","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"4ba948d6-5fc6-4c43-9881-378297ecf5c8","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4ba948d6-5fc6-4c43-9881-378297ecf5c8","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"LayerId":{"name":"44f8779f-2343-44ee-b6a1-4c782f9a0cd3","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cheeseslime_heat","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"resourceVersion":"1.0","name":"4ba948d6-5fc6-4c43-9881-378297ecf5c8","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"cd2de504-d602-4241-b537-ea07859ff098","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"cd2de504-d602-4241-b537-ea07859ff098","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"LayerId":{"name":"44f8779f-2343-44ee-b6a1-4c782f9a0cd3","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cheeseslime_heat","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"resourceVersion":"1.0","name":"cd2de504-d602-4241-b537-ea07859ff098","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"948f1d91-673b-4bf6-b67d-05f7d9570ef9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cde00008-83e9-420d-a527-17f4e6e234a9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"85618ebd-7a60-41ff-a098-511430d4972a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c73fa5aa-691d-4535-9e47-57ffbd74fe48",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d094f424-4b47-4cb7-8076-fa08f3a5156a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6b2bb213-3cc5-47f4-8ef3-75ffe2fd5f1c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0a9bcf88-b05e-4099-95b8-9e2e4c20ec2e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b38bbc3c-df81-41df-80ee-a98d73b25474",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4ba948d6-5fc6-4c43-9881-378297ecf5c8",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cd2de504-d602-4241-b537-ea07859ff098",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_cheeseslime_heat","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -67,7 +53,7 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"bdb8511c-13c3-4f29-8d0d-3bd9b16e41ad","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"948f1d91-673b-4bf6-b67d-05f7d9570ef9","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"df3354ea-46e0-45fa-b988-43239c74f0d5","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cde00008-83e9-420d-a527-17f4e6e234a9","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"23b7d30a-6fc2-4165-8c1d-345c324afbb2","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"85618ebd-7a60-41ff-a098-511430d4972a","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
@@ -78,7 +64,7 @@
             {"id":"c3c91f72-c5f7-4dc4-a944-29391e2d8952","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b38bbc3c-df81-41df-80ee-a98d73b25474","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"22add983-b17b-4b70-8688-37e5c02a3f1c","Key":8.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4ba948d6-5fc6-4c43-9881-378297ecf5c8","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"f9b6572c-321a-4f06-ae81-29c1b25a6ee6","Key":9.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cd2de504-d602-4241-b537-ea07859ff098","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -94,22 +80,13 @@
     "yorigin": 30,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_cheeseslime_heat","path":"sprites/spr_cheeseslime_heat/spr_cheeseslime_heat.yy",},
-    "resourceVersion": "1.3",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"44f8779f-2343-44ee-b6a1-4c782f9a0cd3","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"44f8779f-2343-44ee-b6a1-4c782f9a0cd3","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Cheeseslime",
     "path": "folders/Sprites/Characters/Baddies/Cheeseslime.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_cheeseslime_heat",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

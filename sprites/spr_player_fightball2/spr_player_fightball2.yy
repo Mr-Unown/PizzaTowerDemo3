@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_player_fightball2",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 100,
   "height": 100,
   "textureGroupId": {
@@ -24,39 +28,21 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"2fe2d5b4-de6c-4389-9c39-37c1abb0eaf3","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2fe2d5b4-de6c-4389-9c39-37c1abb0eaf3","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"LayerId":{"name":"a3178b54-436a-40ed-b57f-83fecea238de","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_fightball2","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"resourceVersion":"1.0","name":"2fe2d5b4-de6c-4389-9c39-37c1abb0eaf3","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"b6a4ec8f-ae10-4d72-a984-6d7d27423ddd","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b6a4ec8f-ae10-4d72-a984-6d7d27423ddd","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"LayerId":{"name":"a3178b54-436a-40ed-b57f-83fecea238de","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_fightball2","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"resourceVersion":"1.0","name":"b6a4ec8f-ae10-4d72-a984-6d7d27423ddd","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ab493389-7c38-445e-9086-46e9dc51624d","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ab493389-7c38-445e-9086-46e9dc51624d","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"LayerId":{"name":"a3178b54-436a-40ed-b57f-83fecea238de","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_fightball2","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"resourceVersion":"1.0","name":"ab493389-7c38-445e-9086-46e9dc51624d","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"13f5e2cf-0138-4d82-a13d-bb4a80d7f443","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"13f5e2cf-0138-4d82-a13d-bb4a80d7f443","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"LayerId":{"name":"a3178b54-436a-40ed-b57f-83fecea238de","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_fightball2","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"resourceVersion":"1.0","name":"13f5e2cf-0138-4d82-a13d-bb4a80d7f443","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"2b8d2666-7be5-48ad-b26b-19996cbc50e1","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2b8d2666-7be5-48ad-b26b-19996cbc50e1","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"LayerId":{"name":"a3178b54-436a-40ed-b57f-83fecea238de","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_fightball2","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"resourceVersion":"1.0","name":"2b8d2666-7be5-48ad-b26b-19996cbc50e1","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"271afd6f-b146-4fd4-8405-6cbbddb714a4","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"271afd6f-b146-4fd4-8405-6cbbddb714a4","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"LayerId":{"name":"a3178b54-436a-40ed-b57f-83fecea238de","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_fightball2","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"resourceVersion":"1.0","name":"271afd6f-b146-4fd4-8405-6cbbddb714a4","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"26de9277-e04e-4e95-a49b-17f0ae859beb","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"26de9277-e04e-4e95-a49b-17f0ae859beb","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"LayerId":{"name":"a3178b54-436a-40ed-b57f-83fecea238de","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_fightball2","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"resourceVersion":"1.0","name":"26de9277-e04e-4e95-a49b-17f0ae859beb","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"d862e143-e3e0-444d-8f12-69e8be7ccad9","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d862e143-e3e0-444d-8f12-69e8be7ccad9","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"LayerId":{"name":"a3178b54-436a-40ed-b57f-83fecea238de","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_fightball2","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"resourceVersion":"1.0","name":"d862e143-e3e0-444d-8f12-69e8be7ccad9","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"d8957f15-9ede-4dc5-afc9-35847da872cf","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d8957f15-9ede-4dc5-afc9-35847da872cf","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"LayerId":{"name":"a3178b54-436a-40ed-b57f-83fecea238de","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_fightball2","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"resourceVersion":"1.0","name":"d8957f15-9ede-4dc5-afc9-35847da872cf","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"52da0795-ebfb-4731-b4e1-c7fbd1a46a13","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"52da0795-ebfb-4731-b4e1-c7fbd1a46a13","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"LayerId":{"name":"a3178b54-436a-40ed-b57f-83fecea238de","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_fightball2","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"resourceVersion":"1.0","name":"52da0795-ebfb-4731-b4e1-c7fbd1a46a13","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2fe2d5b4-de6c-4389-9c39-37c1abb0eaf3",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b6a4ec8f-ae10-4d72-a984-6d7d27423ddd",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ab493389-7c38-445e-9086-46e9dc51624d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"13f5e2cf-0138-4d82-a13d-bb4a80d7f443",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2b8d2666-7be5-48ad-b26b-19996cbc50e1",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"271afd6f-b146-4fd4-8405-6cbbddb714a4",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"26de9277-e04e-4e95-a49b-17f0ae859beb",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d862e143-e3e0-444d-8f12-69e8be7ccad9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d8957f15-9ede-4dc5-afc9-35847da872cf",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"52da0795-ebfb-4731-b4e1-c7fbd1a46a13",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_player_fightball2","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -67,7 +53,7 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"11d888fc-e5af-4f95-8773-c29197c05e6f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2fe2d5b4-de6c-4389-9c39-37c1abb0eaf3","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"9f4768be-d94b-481c-addd-e8d2dcd950c5","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b6a4ec8f-ae10-4d72-a984-6d7d27423ddd","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"92317372-b39e-4787-93e3-63a84687b15f","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ab493389-7c38-445e-9086-46e9dc51624d","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
@@ -78,7 +64,7 @@
             {"id":"bd419686-00c1-416a-91ae-81b370cc74bc","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d862e143-e3e0-444d-8f12-69e8be7ccad9","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"9ce4a9d8-37de-404b-9cb2-f5880ef5c012","Key":8.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d8957f15-9ede-4dc5-afc9-35847da872cf","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"c17f29f4-5b1d-4d62-91b5-c12c8c4b2434","Key":9.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"52da0795-ebfb-4731-b4e1-c7fbd1a46a13","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -94,22 +80,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_player_fightball2","path":"sprites/spr_player_fightball2/spr_player_fightball2.yy",},
-    "resourceVersion": "1.3",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a3178b54-436a-40ed-b57f-83fecea238de","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a3178b54-436a-40ed-b57f-83fecea238de","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Peppino",
     "path": "folders/Sprites/Characters/Playable Characters Sprites/Peppino.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_player_fightball2",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_pizzagoblin_throwbomb",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 100,
   "height": 100,
   "textureGroupId": {
@@ -24,63 +28,29 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"29b54570-6e9b-4eda-b6da-35c4010a0809","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"29b54570-6e9b-4eda-b6da-35c4010a0809","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"LayerId":{"name":"cd4dcd56-a51a-480d-999c-7db021683f34","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pizzagoblin_throwbomb","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"resourceVersion":"1.0","name":"29b54570-6e9b-4eda-b6da-35c4010a0809","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"7f8e0187-e727-492e-a47c-f05c88aa04d5","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7f8e0187-e727-492e-a47c-f05c88aa04d5","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"LayerId":{"name":"cd4dcd56-a51a-480d-999c-7db021683f34","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pizzagoblin_throwbomb","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"resourceVersion":"1.0","name":"7f8e0187-e727-492e-a47c-f05c88aa04d5","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"b729f90c-bc76-4077-865a-1882c916d06b","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b729f90c-bc76-4077-865a-1882c916d06b","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"LayerId":{"name":"cd4dcd56-a51a-480d-999c-7db021683f34","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pizzagoblin_throwbomb","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"resourceVersion":"1.0","name":"b729f90c-bc76-4077-865a-1882c916d06b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ea81d1eb-d635-4054-827c-ab91627ed920","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ea81d1eb-d635-4054-827c-ab91627ed920","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"LayerId":{"name":"cd4dcd56-a51a-480d-999c-7db021683f34","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pizzagoblin_throwbomb","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"resourceVersion":"1.0","name":"ea81d1eb-d635-4054-827c-ab91627ed920","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"8e8d8fb9-51b9-4405-82f9-c6b6436947b5","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8e8d8fb9-51b9-4405-82f9-c6b6436947b5","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"LayerId":{"name":"cd4dcd56-a51a-480d-999c-7db021683f34","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pizzagoblin_throwbomb","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"resourceVersion":"1.0","name":"8e8d8fb9-51b9-4405-82f9-c6b6436947b5","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"27c2c294-93c3-44f5-9b23-a24a2ae33870","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"27c2c294-93c3-44f5-9b23-a24a2ae33870","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"LayerId":{"name":"cd4dcd56-a51a-480d-999c-7db021683f34","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pizzagoblin_throwbomb","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"resourceVersion":"1.0","name":"27c2c294-93c3-44f5-9b23-a24a2ae33870","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ef14c0dd-f995-4e80-b9eb-1c9764649f28","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ef14c0dd-f995-4e80-b9eb-1c9764649f28","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"LayerId":{"name":"cd4dcd56-a51a-480d-999c-7db021683f34","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pizzagoblin_throwbomb","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"resourceVersion":"1.0","name":"ef14c0dd-f995-4e80-b9eb-1c9764649f28","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"f7db3da9-9922-47ee-ad1f-6105911a4fc1","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f7db3da9-9922-47ee-ad1f-6105911a4fc1","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"LayerId":{"name":"cd4dcd56-a51a-480d-999c-7db021683f34","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pizzagoblin_throwbomb","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"resourceVersion":"1.0","name":"f7db3da9-9922-47ee-ad1f-6105911a4fc1","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"7f97f405-5b47-45ae-95e1-28435ec09b80","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7f97f405-5b47-45ae-95e1-28435ec09b80","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"LayerId":{"name":"cd4dcd56-a51a-480d-999c-7db021683f34","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pizzagoblin_throwbomb","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"resourceVersion":"1.0","name":"7f97f405-5b47-45ae-95e1-28435ec09b80","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"e3544e4f-6861-4b2f-bf2b-8ffbcefa2cc5","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e3544e4f-6861-4b2f-bf2b-8ffbcefa2cc5","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"LayerId":{"name":"cd4dcd56-a51a-480d-999c-7db021683f34","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pizzagoblin_throwbomb","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"resourceVersion":"1.0","name":"e3544e4f-6861-4b2f-bf2b-8ffbcefa2cc5","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"e9dddb51-0f1e-47b4-bcd3-7f96db520f7d","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e9dddb51-0f1e-47b4-bcd3-7f96db520f7d","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"LayerId":{"name":"cd4dcd56-a51a-480d-999c-7db021683f34","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pizzagoblin_throwbomb","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"resourceVersion":"1.0","name":"e9dddb51-0f1e-47b4-bcd3-7f96db520f7d","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ea751a3e-f21c-4d01-a040-1b3cde8b9581","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ea751a3e-f21c-4d01-a040-1b3cde8b9581","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"LayerId":{"name":"cd4dcd56-a51a-480d-999c-7db021683f34","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pizzagoblin_throwbomb","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"resourceVersion":"1.0","name":"ea751a3e-f21c-4d01-a040-1b3cde8b9581","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"e7a2a50a-7da4-44b3-bfe2-fb91ca3b4c65","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e7a2a50a-7da4-44b3-bfe2-fb91ca3b4c65","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"LayerId":{"name":"cd4dcd56-a51a-480d-999c-7db021683f34","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pizzagoblin_throwbomb","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"resourceVersion":"1.0","name":"e7a2a50a-7da4-44b3-bfe2-fb91ca3b4c65","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"3f9178d2-1ff9-45e9-930b-b957db4cc069","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3f9178d2-1ff9-45e9-930b-b957db4cc069","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"LayerId":{"name":"cd4dcd56-a51a-480d-999c-7db021683f34","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pizzagoblin_throwbomb","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"resourceVersion":"1.0","name":"3f9178d2-1ff9-45e9-930b-b957db4cc069","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c287a695-6d2c-4cbe-b001-44151ab3ead4","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c287a695-6d2c-4cbe-b001-44151ab3ead4","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"LayerId":{"name":"cd4dcd56-a51a-480d-999c-7db021683f34","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pizzagoblin_throwbomb","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"resourceVersion":"1.0","name":"c287a695-6d2c-4cbe-b001-44151ab3ead4","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"d02094d5-3e35-4389-8726-508b3ba30e06","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d02094d5-3e35-4389-8726-508b3ba30e06","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"LayerId":{"name":"cd4dcd56-a51a-480d-999c-7db021683f34","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pizzagoblin_throwbomb","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"resourceVersion":"1.0","name":"d02094d5-3e35-4389-8726-508b3ba30e06","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"becfeef6-d0b5-4ca0-8f4a-8b85660aebda","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"becfeef6-d0b5-4ca0-8f4a-8b85660aebda","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"LayerId":{"name":"cd4dcd56-a51a-480d-999c-7db021683f34","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pizzagoblin_throwbomb","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"resourceVersion":"1.0","name":"becfeef6-d0b5-4ca0-8f4a-8b85660aebda","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"685f39dd-39dd-46f1-b099-038884669585","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"685f39dd-39dd-46f1-b099-038884669585","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"LayerId":{"name":"cd4dcd56-a51a-480d-999c-7db021683f34","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pizzagoblin_throwbomb","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"resourceVersion":"1.0","name":"685f39dd-39dd-46f1-b099-038884669585","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"29b54570-6e9b-4eda-b6da-35c4010a0809",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7f8e0187-e727-492e-a47c-f05c88aa04d5",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b729f90c-bc76-4077-865a-1882c916d06b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ea81d1eb-d635-4054-827c-ab91627ed920",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8e8d8fb9-51b9-4405-82f9-c6b6436947b5",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"27c2c294-93c3-44f5-9b23-a24a2ae33870",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ef14c0dd-f995-4e80-b9eb-1c9764649f28",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f7db3da9-9922-47ee-ad1f-6105911a4fc1",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7f97f405-5b47-45ae-95e1-28435ec09b80",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e3544e4f-6861-4b2f-bf2b-8ffbcefa2cc5",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e9dddb51-0f1e-47b4-bcd3-7f96db520f7d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ea751a3e-f21c-4d01-a040-1b3cde8b9581",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e7a2a50a-7da4-44b3-bfe2-fb91ca3b4c65",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3f9178d2-1ff9-45e9-930b-b957db4cc069",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c287a695-6d2c-4cbe-b001-44151ab3ead4",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d02094d5-3e35-4389-8726-508b3ba30e06",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"becfeef6-d0b5-4ca0-8f4a-8b85660aebda",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"685f39dd-39dd-46f1-b099-038884669585",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_pizzagoblin_throwbomb","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -91,7 +61,7 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"4f055d92-1cfe-49c8-bdff-2521555e63a9","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"29b54570-6e9b-4eda-b6da-35c4010a0809","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"ee75a4ab-ee89-4cac-96e0-ec1437cbbe6e","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7f8e0187-e727-492e-a47c-f05c88aa04d5","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"08bfe355-be0f-4549-aabf-8967053d853e","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b729f90c-bc76-4077-865a-1882c916d06b","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
@@ -110,7 +80,7 @@
             {"id":"3cb5fd60-7e79-43e6-bb8e-00b12e59d42b","Key":15.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d02094d5-3e35-4389-8726-508b3ba30e06","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"1dc2046a-fc87-42c3-814b-851aff3642da","Key":16.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"becfeef6-d0b5-4ca0-8f4a-8b85660aebda","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"193bfba7-f845-4c8a-99a2-505d4fb34962","Key":17.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"685f39dd-39dd-46f1-b099-038884669585","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -126,22 +96,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_pizzagoblin_throwbomb","path":"sprites/spr_pizzagoblin_throwbomb/spr_pizzagoblin_throwbomb.yy",},
-    "resourceVersion": "1.3",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"cd4dcd56-a51a-480d-999c-7db021683f34","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"cd4dcd56-a51a-480d-999c-7db021683f34","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Pizzabox Goblin",
     "path": "folders/Sprites/Characters/Baddies/Pizzabox Goblin.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_pizzagoblin_throwbomb",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

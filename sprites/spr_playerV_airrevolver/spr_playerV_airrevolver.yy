@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_playerV_airrevolver",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 141,
   "height": 100,
   "textureGroupId": {
@@ -24,33 +28,19 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"da0afa04-944e-4df7-b595-bd97ee8fb49a","path":"sprites/spr_playerV_airrevolver/spr_playerV_airrevolver.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"da0afa04-944e-4df7-b595-bd97ee8fb49a","path":"sprites/spr_playerV_airrevolver/spr_playerV_airrevolver.yy",},"LayerId":{"name":"66962172-1ba4-458b-a155-90414653768e","path":"sprites/spr_playerV_airrevolver/spr_playerV_airrevolver.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerV_airrevolver","path":"sprites/spr_playerV_airrevolver/spr_playerV_airrevolver.yy",},"resourceVersion":"1.0","name":"da0afa04-944e-4df7-b595-bd97ee8fb49a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"51ce01b0-7150-4c63-9be1-8cf791ffe8c9","path":"sprites/spr_playerV_airrevolver/spr_playerV_airrevolver.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"51ce01b0-7150-4c63-9be1-8cf791ffe8c9","path":"sprites/spr_playerV_airrevolver/spr_playerV_airrevolver.yy",},"LayerId":{"name":"66962172-1ba4-458b-a155-90414653768e","path":"sprites/spr_playerV_airrevolver/spr_playerV_airrevolver.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerV_airrevolver","path":"sprites/spr_playerV_airrevolver/spr_playerV_airrevolver.yy",},"resourceVersion":"1.0","name":"51ce01b0-7150-4c63-9be1-8cf791ffe8c9","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"621b4dd5-a349-44f9-af42-28d79ae93c14","path":"sprites/spr_playerV_airrevolver/spr_playerV_airrevolver.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"621b4dd5-a349-44f9-af42-28d79ae93c14","path":"sprites/spr_playerV_airrevolver/spr_playerV_airrevolver.yy",},"LayerId":{"name":"66962172-1ba4-458b-a155-90414653768e","path":"sprites/spr_playerV_airrevolver/spr_playerV_airrevolver.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerV_airrevolver","path":"sprites/spr_playerV_airrevolver/spr_playerV_airrevolver.yy",},"resourceVersion":"1.0","name":"621b4dd5-a349-44f9-af42-28d79ae93c14","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"f2e2bdef-b24c-4cf4-bcb6-5862d1a6beff","path":"sprites/spr_playerV_airrevolver/spr_playerV_airrevolver.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f2e2bdef-b24c-4cf4-bcb6-5862d1a6beff","path":"sprites/spr_playerV_airrevolver/spr_playerV_airrevolver.yy",},"LayerId":{"name":"66962172-1ba4-458b-a155-90414653768e","path":"sprites/spr_playerV_airrevolver/spr_playerV_airrevolver.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerV_airrevolver","path":"sprites/spr_playerV_airrevolver/spr_playerV_airrevolver.yy",},"resourceVersion":"1.0","name":"f2e2bdef-b24c-4cf4-bcb6-5862d1a6beff","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"368c3597-d059-4e75-a1dd-91f843ff262a","path":"sprites/spr_playerV_airrevolver/spr_playerV_airrevolver.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"368c3597-d059-4e75-a1dd-91f843ff262a","path":"sprites/spr_playerV_airrevolver/spr_playerV_airrevolver.yy",},"LayerId":{"name":"66962172-1ba4-458b-a155-90414653768e","path":"sprites/spr_playerV_airrevolver/spr_playerV_airrevolver.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerV_airrevolver","path":"sprites/spr_playerV_airrevolver/spr_playerV_airrevolver.yy",},"resourceVersion":"1.0","name":"368c3597-d059-4e75-a1dd-91f843ff262a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"0b817223-a768-47f8-99c0-c9192de4e656","path":"sprites/spr_playerV_airrevolver/spr_playerV_airrevolver.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0b817223-a768-47f8-99c0-c9192de4e656","path":"sprites/spr_playerV_airrevolver/spr_playerV_airrevolver.yy",},"LayerId":{"name":"66962172-1ba4-458b-a155-90414653768e","path":"sprites/spr_playerV_airrevolver/spr_playerV_airrevolver.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerV_airrevolver","path":"sprites/spr_playerV_airrevolver/spr_playerV_airrevolver.yy",},"resourceVersion":"1.0","name":"0b817223-a768-47f8-99c0-c9192de4e656","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"99a34d2a-e871-4798-9c0b-c365f1e40477","path":"sprites/spr_playerV_airrevolver/spr_playerV_airrevolver.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"99a34d2a-e871-4798-9c0b-c365f1e40477","path":"sprites/spr_playerV_airrevolver/spr_playerV_airrevolver.yy",},"LayerId":{"name":"66962172-1ba4-458b-a155-90414653768e","path":"sprites/spr_playerV_airrevolver/spr_playerV_airrevolver.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerV_airrevolver","path":"sprites/spr_playerV_airrevolver/spr_playerV_airrevolver.yy",},"resourceVersion":"1.0","name":"99a34d2a-e871-4798-9c0b-c365f1e40477","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"083a254d-d339-4774-899f-d8787672105d","path":"sprites/spr_playerV_airrevolver/spr_playerV_airrevolver.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"083a254d-d339-4774-899f-d8787672105d","path":"sprites/spr_playerV_airrevolver/spr_playerV_airrevolver.yy",},"LayerId":{"name":"66962172-1ba4-458b-a155-90414653768e","path":"sprites/spr_playerV_airrevolver/spr_playerV_airrevolver.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerV_airrevolver","path":"sprites/spr_playerV_airrevolver/spr_playerV_airrevolver.yy",},"resourceVersion":"1.0","name":"083a254d-d339-4774-899f-d8787672105d","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"da0afa04-944e-4df7-b595-bd97ee8fb49a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"51ce01b0-7150-4c63-9be1-8cf791ffe8c9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"621b4dd5-a349-44f9-af42-28d79ae93c14",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f2e2bdef-b24c-4cf4-bcb6-5862d1a6beff",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"368c3597-d059-4e75-a1dd-91f843ff262a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0b817223-a768-47f8-99c0-c9192de4e656",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"99a34d2a-e871-4798-9c0b-c365f1e40477",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"083a254d-d339-4774-899f-d8787672105d",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_playerV_airrevolver","path":"sprites/spr_playerV_airrevolver/spr_playerV_airrevolver.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -61,7 +51,7 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"e97afb76-bca0-4b65-aec4-8a54bf0a141f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"da0afa04-944e-4df7-b595-bd97ee8fb49a","path":"sprites/spr_playerV_airrevolver/spr_playerV_airrevolver.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"d1e20a47-3a22-4525-8b1d-434b3d6c0fbc","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"51ce01b0-7150-4c63-9be1-8cf791ffe8c9","path":"sprites/spr_playerV_airrevolver/spr_playerV_airrevolver.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"79c94f3c-6125-44ed-b105-a7e9ac53aeb2","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"621b4dd5-a349-44f9-af42-28d79ae93c14","path":"sprites/spr_playerV_airrevolver/spr_playerV_airrevolver.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
@@ -70,7 +60,7 @@
             {"id":"ee1b38e3-a9f7-4a4c-8e3d-edd08c5762ae","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0b817223-a768-47f8-99c0-c9192de4e656","path":"sprites/spr_playerV_airrevolver/spr_playerV_airrevolver.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"5b490545-ab0e-46ae-8a59-4476d16aad2f","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"99a34d2a-e871-4798-9c0b-c365f1e40477","path":"sprites/spr_playerV_airrevolver/spr_playerV_airrevolver.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"143cccee-1ceb-41d6-987c-6885cee50bc8","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"083a254d-d339-4774-899f-d8787672105d","path":"sprites/spr_playerV_airrevolver/spr_playerV_airrevolver.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -86,22 +76,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_playerV_airrevolver","path":"sprites/spr_playerV_airrevolver/spr_playerV_airrevolver.yy",},
-    "resourceVersion": "1.3",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"66962172-1ba4-458b-a155-90414653768e","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"66962172-1ba4-458b-a155-90414653768e","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Vigi",
     "path": "folders/Sprites/Characters/Playable Characters Sprites/Vigi.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_playerV_airrevolver",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

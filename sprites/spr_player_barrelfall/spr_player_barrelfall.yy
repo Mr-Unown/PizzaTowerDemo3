@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_player_barrelfall",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 100,
   "height": 100,
   "textureGroupId": {
@@ -24,18 +28,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"30898b4e-84ea-4b53-8857-e2cd21eb559d","path":"sprites/spr_player_barrelfall/spr_player_barrelfall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"30898b4e-84ea-4b53-8857-e2cd21eb559d","path":"sprites/spr_player_barrelfall/spr_player_barrelfall.yy",},"LayerId":{"name":"85b3576c-a1e4-4db7-af28-0b38d7a7478a","path":"sprites/spr_player_barrelfall/spr_player_barrelfall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_barrelfall","path":"sprites/spr_player_barrelfall/spr_player_barrelfall.yy",},"resourceVersion":"1.0","name":"30898b4e-84ea-4b53-8857-e2cd21eb559d","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"079e9686-91be-4374-baf0-19bb896965fa","path":"sprites/spr_player_barrelfall/spr_player_barrelfall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"079e9686-91be-4374-baf0-19bb896965fa","path":"sprites/spr_player_barrelfall/spr_player_barrelfall.yy",},"LayerId":{"name":"85b3576c-a1e4-4db7-af28-0b38d7a7478a","path":"sprites/spr_player_barrelfall/spr_player_barrelfall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_barrelfall","path":"sprites/spr_player_barrelfall/spr_player_barrelfall.yy",},"resourceVersion":"1.0","name":"079e9686-91be-4374-baf0-19bb896965fa","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"d2958b42-40b5-4531-8de7-c69423010d64","path":"sprites/spr_player_barrelfall/spr_player_barrelfall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d2958b42-40b5-4531-8de7-c69423010d64","path":"sprites/spr_player_barrelfall/spr_player_barrelfall.yy",},"LayerId":{"name":"85b3576c-a1e4-4db7-af28-0b38d7a7478a","path":"sprites/spr_player_barrelfall/spr_player_barrelfall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_barrelfall","path":"sprites/spr_player_barrelfall/spr_player_barrelfall.yy",},"resourceVersion":"1.0","name":"d2958b42-40b5-4531-8de7-c69423010d64","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"30898b4e-84ea-4b53-8857-e2cd21eb559d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"079e9686-91be-4374-baf0-19bb896965fa",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d2958b42-40b5-4531-8de7-c69423010d64",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_player_barrelfall","path":"sprites/spr_player_barrelfall/spr_player_barrelfall.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -46,11 +46,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"241ad767-9e25-47b7-94f4-956a8d897ae4","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"30898b4e-84ea-4b53-8857-e2cd21eb559d","path":"sprites/spr_player_barrelfall/spr_player_barrelfall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"74fe2979-a2d0-4bcf-8f87-313783300b1e","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"079e9686-91be-4374-baf0-19bb896965fa","path":"sprites/spr_player_barrelfall/spr_player_barrelfall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"1b1a016e-233e-44eb-aa1a-eb1bbe55dae0","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d2958b42-40b5-4531-8de7-c69423010d64","path":"sprites/spr_player_barrelfall/spr_player_barrelfall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -66,22 +66,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_player_barrelfall","path":"sprites/spr_player_barrelfall/spr_player_barrelfall.yy",},
-    "resourceVersion": "1.3",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"85b3576c-a1e4-4db7-af28-0b38d7a7478a","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"85b3576c-a1e4-4db7-af28-0b38d7a7478a","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Peppino",
     "path": "folders/Sprites/Characters/Playable Characters Sprites/Peppino.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_player_barrelfall",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

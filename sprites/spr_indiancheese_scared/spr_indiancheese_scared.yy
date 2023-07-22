@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_indiancheese_scared",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 100,
   "height": 100,
   "textureGroupId": {
@@ -24,33 +28,19 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"5b942ca8-0707-4a51-8f94-ede09abbf3b0","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5b942ca8-0707-4a51-8f94-ede09abbf3b0","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"LayerId":{"name":"d80c28ce-9da7-40fb-8759-019c679af26b","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_indiancheese_scared","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","name":"5b942ca8-0707-4a51-8f94-ede09abbf3b0","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"9ae3456f-1d46-4832-af0d-a5e65e77e4f3","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"9ae3456f-1d46-4832-af0d-a5e65e77e4f3","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"LayerId":{"name":"d80c28ce-9da7-40fb-8759-019c679af26b","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_indiancheese_scared","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","name":"9ae3456f-1d46-4832-af0d-a5e65e77e4f3","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"b5401ad0-323b-4806-b31b-b1bd6eb277ad","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b5401ad0-323b-4806-b31b-b1bd6eb277ad","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"LayerId":{"name":"d80c28ce-9da7-40fb-8759-019c679af26b","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_indiancheese_scared","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","name":"b5401ad0-323b-4806-b31b-b1bd6eb277ad","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"df6464c3-fc7f-44af-95a1-be49e4e77079","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"df6464c3-fc7f-44af-95a1-be49e4e77079","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"LayerId":{"name":"d80c28ce-9da7-40fb-8759-019c679af26b","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_indiancheese_scared","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","name":"df6464c3-fc7f-44af-95a1-be49e4e77079","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"a22ee8e5-ca2d-4888-b786-42e23dba175c","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a22ee8e5-ca2d-4888-b786-42e23dba175c","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"LayerId":{"name":"d80c28ce-9da7-40fb-8759-019c679af26b","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_indiancheese_scared","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","name":"a22ee8e5-ca2d-4888-b786-42e23dba175c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"6257d576-1d0c-457b-bf45-887c44cd98f8","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6257d576-1d0c-457b-bf45-887c44cd98f8","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"LayerId":{"name":"d80c28ce-9da7-40fb-8759-019c679af26b","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_indiancheese_scared","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","name":"6257d576-1d0c-457b-bf45-887c44cd98f8","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"6f2d77db-7029-40ba-86ba-80a5046777db","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6f2d77db-7029-40ba-86ba-80a5046777db","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"LayerId":{"name":"d80c28ce-9da7-40fb-8759-019c679af26b","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_indiancheese_scared","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","name":"6f2d77db-7029-40ba-86ba-80a5046777db","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"63c3cbb8-c54c-4971-b289-a5ca000945e5","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"63c3cbb8-c54c-4971-b289-a5ca000945e5","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"LayerId":{"name":"d80c28ce-9da7-40fb-8759-019c679af26b","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_indiancheese_scared","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","name":"63c3cbb8-c54c-4971-b289-a5ca000945e5","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5b942ca8-0707-4a51-8f94-ede09abbf3b0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9ae3456f-1d46-4832-af0d-a5e65e77e4f3",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b5401ad0-323b-4806-b31b-b1bd6eb277ad",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"df6464c3-fc7f-44af-95a1-be49e4e77079",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a22ee8e5-ca2d-4888-b786-42e23dba175c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6257d576-1d0c-457b-bf45-887c44cd98f8",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6f2d77db-7029-40ba-86ba-80a5046777db",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"63c3cbb8-c54c-4971-b289-a5ca000945e5",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_indiancheese_scared","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -61,7 +51,7 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"e533309b-d2c5-4c32-b671-f2332e26b7d4","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5b942ca8-0707-4a51-8f94-ede09abbf3b0","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"e61330f5-bc2a-415a-bbf5-fbace98d3ff2","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9ae3456f-1d46-4832-af0d-a5e65e77e4f3","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"00f50487-d70f-4d5f-81ad-48eb21160160","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b5401ad0-323b-4806-b31b-b1bd6eb277ad","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
@@ -70,7 +60,7 @@
             {"id":"a5e9f7e3-11d4-4ccc-8512-134d56802bc6","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6257d576-1d0c-457b-bf45-887c44cd98f8","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"1f03f13e-0c84-4bfd-bd18-c62c60d3327c","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6f2d77db-7029-40ba-86ba-80a5046777db","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"1774c2cd-2ead-49b6-b9c3-f981a273fa5e","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"63c3cbb8-c54c-4971-b289-a5ca000945e5","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -86,22 +76,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_indiancheese_scared","path":"sprites/spr_indiancheese_scared/spr_indiancheese_scared.yy",},
-    "resourceVersion": "1.3",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d80c28ce-9da7-40fb-8759-019c679af26b","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d80c28ce-9da7-40fb-8759-019c679af26b","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Tribal Cheese",
     "path": "folders/Sprites/Characters/Baddies/Tribal Cheese.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_indiancheese_scared",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

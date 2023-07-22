@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_cheeseballblockdebris",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 64,
   "height": 64,
   "textureGroupId": {
@@ -24,21 +28,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"1fabb667-7504-4cfd-bf73-26dc8f5cacdc","path":"sprites/spr_cheeseballblockdebris/spr_cheeseballblockdebris.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1fabb667-7504-4cfd-bf73-26dc8f5cacdc","path":"sprites/spr_cheeseballblockdebris/spr_cheeseballblockdebris.yy",},"LayerId":{"name":"dfcb1e09-06c8-4874-9f99-f7249b04be5c","path":"sprites/spr_cheeseballblockdebris/spr_cheeseballblockdebris.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cheeseballblockdebris","path":"sprites/spr_cheeseballblockdebris/spr_cheeseballblockdebris.yy",},"resourceVersion":"1.0","name":"1fabb667-7504-4cfd-bf73-26dc8f5cacdc","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"b34f7272-12bf-4aee-86e9-57de4387d1d2","path":"sprites/spr_cheeseballblockdebris/spr_cheeseballblockdebris.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b34f7272-12bf-4aee-86e9-57de4387d1d2","path":"sprites/spr_cheeseballblockdebris/spr_cheeseballblockdebris.yy",},"LayerId":{"name":"dfcb1e09-06c8-4874-9f99-f7249b04be5c","path":"sprites/spr_cheeseballblockdebris/spr_cheeseballblockdebris.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cheeseballblockdebris","path":"sprites/spr_cheeseballblockdebris/spr_cheeseballblockdebris.yy",},"resourceVersion":"1.0","name":"b34f7272-12bf-4aee-86e9-57de4387d1d2","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"5a54353f-92cb-425f-8ab5-6806f197d941","path":"sprites/spr_cheeseballblockdebris/spr_cheeseballblockdebris.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5a54353f-92cb-425f-8ab5-6806f197d941","path":"sprites/spr_cheeseballblockdebris/spr_cheeseballblockdebris.yy",},"LayerId":{"name":"dfcb1e09-06c8-4874-9f99-f7249b04be5c","path":"sprites/spr_cheeseballblockdebris/spr_cheeseballblockdebris.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cheeseballblockdebris","path":"sprites/spr_cheeseballblockdebris/spr_cheeseballblockdebris.yy",},"resourceVersion":"1.0","name":"5a54353f-92cb-425f-8ab5-6806f197d941","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"8f3d9eec-06cc-4ea9-98e8-402b1c38aafa","path":"sprites/spr_cheeseballblockdebris/spr_cheeseballblockdebris.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8f3d9eec-06cc-4ea9-98e8-402b1c38aafa","path":"sprites/spr_cheeseballblockdebris/spr_cheeseballblockdebris.yy",},"LayerId":{"name":"dfcb1e09-06c8-4874-9f99-f7249b04be5c","path":"sprites/spr_cheeseballblockdebris/spr_cheeseballblockdebris.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cheeseballblockdebris","path":"sprites/spr_cheeseballblockdebris/spr_cheeseballblockdebris.yy",},"resourceVersion":"1.0","name":"8f3d9eec-06cc-4ea9-98e8-402b1c38aafa","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1fabb667-7504-4cfd-bf73-26dc8f5cacdc",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b34f7272-12bf-4aee-86e9-57de4387d1d2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5a54353f-92cb-425f-8ab5-6806f197d941",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8f3d9eec-06cc-4ea9-98e8-402b1c38aafa",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_cheeseballblockdebris","path":"sprites/spr_cheeseballblockdebris/spr_cheeseballblockdebris.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -49,12 +47,12 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"a1008863-320a-47f0-ba78-736a65062153","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1fabb667-7504-4cfd-bf73-26dc8f5cacdc","path":"sprites/spr_cheeseballblockdebris/spr_cheeseballblockdebris.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"94a9c409-6cb9-40a6-a912-ad56d1784796","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b34f7272-12bf-4aee-86e9-57de4387d1d2","path":"sprites/spr_cheeseballblockdebris/spr_cheeseballblockdebris.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"b4c59164-de47-42fe-9e3c-5a6192bf0ce2","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5a54353f-92cb-425f-8ab5-6806f197d941","path":"sprites/spr_cheeseballblockdebris/spr_cheeseballblockdebris.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"3c6e3dbb-7a5f-4242-b638-d0db1bc636e8","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8f3d9eec-06cc-4ea9-98e8-402b1c38aafa","path":"sprites/spr_cheeseballblockdebris/spr_cheeseballblockdebris.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -70,22 +68,13 @@
     "yorigin": 32,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_cheeseballblockdebris","path":"sprites/spr_cheeseballblockdebris/spr_cheeseballblockdebris.yy",},
-    "resourceVersion": "1.3",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"dfcb1e09-06c8-4874-9f99-f7249b04be5c","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"dfcb1e09-06c8-4874-9f99-f7249b04be5c","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Particles and Effects",
     "path": "folders/Sprites/Misc Sprites/Particles and Effects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_cheeseballblockdebris",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

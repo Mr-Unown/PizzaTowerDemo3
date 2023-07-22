@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_computersewer",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 100,
   "height": 100,
   "textureGroupId": {
@@ -24,15 +28,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"6d39a78b-9792-4ab7-9e26-6447b4be2135","path":"sprites/spr_computersewer/spr_computersewer.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6d39a78b-9792-4ab7-9e26-6447b4be2135","path":"sprites/spr_computersewer/spr_computersewer.yy",},"LayerId":{"name":"6f5d4dbf-0325-4e2d-a386-f347fdd7a671","path":"sprites/spr_computersewer/spr_computersewer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_computersewer","path":"sprites/spr_computersewer/spr_computersewer.yy",},"resourceVersion":"1.0","name":"6d39a78b-9792-4ab7-9e26-6447b4be2135","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c3641555-3fc0-4c23-94b8-f3a2aaa70d51","path":"sprites/spr_computersewer/spr_computersewer.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c3641555-3fc0-4c23-94b8-f3a2aaa70d51","path":"sprites/spr_computersewer/spr_computersewer.yy",},"LayerId":{"name":"6f5d4dbf-0325-4e2d-a386-f347fdd7a671","path":"sprites/spr_computersewer/spr_computersewer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_computersewer","path":"sprites/spr_computersewer/spr_computersewer.yy",},"resourceVersion":"1.0","name":"c3641555-3fc0-4c23-94b8-f3a2aaa70d51","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6d39a78b-9792-4ab7-9e26-6447b4be2135",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c3641555-3fc0-4c23-94b8-f3a2aaa70d51",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_computersewer","path":"sprites/spr_computersewer/spr_computersewer.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -43,10 +45,10 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"e4e35cd2-2272-4f00-9614-d835b4efbbdc","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6d39a78b-9792-4ab7-9e26-6447b4be2135","path":"sprites/spr_computersewer/spr_computersewer.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"4071bdc1-b4d5-454a-b03e-6e6d9f10e776","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c3641555-3fc0-4c23-94b8-f3a2aaa70d51","path":"sprites/spr_computersewer/spr_computersewer.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -62,22 +64,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_computersewer","path":"sprites/spr_computersewer/spr_computersewer.yy",},
-    "resourceVersion": "1.3",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"6f5d4dbf-0325-4e2d-a386-f347fdd7a671","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6f5d4dbf-0325-4e2d-a386-f347fdd7a671","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Objects",
     "path": "folders/Sprites/Objects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_computersewer",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_playerV_revolvershoot",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 141,
   "height": 100,
   "textureGroupId": {
@@ -24,33 +28,19 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"a2133c8d-8f7f-49eb-8716-fbba4979dbd0","path":"sprites/spr_playerV_revolvershoot/spr_playerV_revolvershoot.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a2133c8d-8f7f-49eb-8716-fbba4979dbd0","path":"sprites/spr_playerV_revolvershoot/spr_playerV_revolvershoot.yy",},"LayerId":{"name":"24510f36-855b-4832-aee7-cd573ff5ceaa","path":"sprites/spr_playerV_revolvershoot/spr_playerV_revolvershoot.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerV_revolvershoot","path":"sprites/spr_playerV_revolvershoot/spr_playerV_revolvershoot.yy",},"resourceVersion":"1.0","name":"a2133c8d-8f7f-49eb-8716-fbba4979dbd0","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"38881939-34ce-4fcb-9309-4dff78521a28","path":"sprites/spr_playerV_revolvershoot/spr_playerV_revolvershoot.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"38881939-34ce-4fcb-9309-4dff78521a28","path":"sprites/spr_playerV_revolvershoot/spr_playerV_revolvershoot.yy",},"LayerId":{"name":"24510f36-855b-4832-aee7-cd573ff5ceaa","path":"sprites/spr_playerV_revolvershoot/spr_playerV_revolvershoot.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerV_revolvershoot","path":"sprites/spr_playerV_revolvershoot/spr_playerV_revolvershoot.yy",},"resourceVersion":"1.0","name":"38881939-34ce-4fcb-9309-4dff78521a28","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"d7ee56af-1960-4bc3-aa36-d8857b444e47","path":"sprites/spr_playerV_revolvershoot/spr_playerV_revolvershoot.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d7ee56af-1960-4bc3-aa36-d8857b444e47","path":"sprites/spr_playerV_revolvershoot/spr_playerV_revolvershoot.yy",},"LayerId":{"name":"24510f36-855b-4832-aee7-cd573ff5ceaa","path":"sprites/spr_playerV_revolvershoot/spr_playerV_revolvershoot.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerV_revolvershoot","path":"sprites/spr_playerV_revolvershoot/spr_playerV_revolvershoot.yy",},"resourceVersion":"1.0","name":"d7ee56af-1960-4bc3-aa36-d8857b444e47","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ab7b8b9c-f79a-4651-a477-779d268d29c4","path":"sprites/spr_playerV_revolvershoot/spr_playerV_revolvershoot.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ab7b8b9c-f79a-4651-a477-779d268d29c4","path":"sprites/spr_playerV_revolvershoot/spr_playerV_revolvershoot.yy",},"LayerId":{"name":"24510f36-855b-4832-aee7-cd573ff5ceaa","path":"sprites/spr_playerV_revolvershoot/spr_playerV_revolvershoot.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerV_revolvershoot","path":"sprites/spr_playerV_revolvershoot/spr_playerV_revolvershoot.yy",},"resourceVersion":"1.0","name":"ab7b8b9c-f79a-4651-a477-779d268d29c4","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"7829f98e-1f53-4989-b6b6-43847b39a93c","path":"sprites/spr_playerV_revolvershoot/spr_playerV_revolvershoot.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7829f98e-1f53-4989-b6b6-43847b39a93c","path":"sprites/spr_playerV_revolvershoot/spr_playerV_revolvershoot.yy",},"LayerId":{"name":"24510f36-855b-4832-aee7-cd573ff5ceaa","path":"sprites/spr_playerV_revolvershoot/spr_playerV_revolvershoot.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerV_revolvershoot","path":"sprites/spr_playerV_revolvershoot/spr_playerV_revolvershoot.yy",},"resourceVersion":"1.0","name":"7829f98e-1f53-4989-b6b6-43847b39a93c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"6a491758-2320-4698-8be9-3114cf9d329b","path":"sprites/spr_playerV_revolvershoot/spr_playerV_revolvershoot.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6a491758-2320-4698-8be9-3114cf9d329b","path":"sprites/spr_playerV_revolvershoot/spr_playerV_revolvershoot.yy",},"LayerId":{"name":"24510f36-855b-4832-aee7-cd573ff5ceaa","path":"sprites/spr_playerV_revolvershoot/spr_playerV_revolvershoot.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerV_revolvershoot","path":"sprites/spr_playerV_revolvershoot/spr_playerV_revolvershoot.yy",},"resourceVersion":"1.0","name":"6a491758-2320-4698-8be9-3114cf9d329b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"a71efbf0-9f61-4e75-84b8-acfcec50d552","path":"sprites/spr_playerV_revolvershoot/spr_playerV_revolvershoot.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a71efbf0-9f61-4e75-84b8-acfcec50d552","path":"sprites/spr_playerV_revolvershoot/spr_playerV_revolvershoot.yy",},"LayerId":{"name":"24510f36-855b-4832-aee7-cd573ff5ceaa","path":"sprites/spr_playerV_revolvershoot/spr_playerV_revolvershoot.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerV_revolvershoot","path":"sprites/spr_playerV_revolvershoot/spr_playerV_revolvershoot.yy",},"resourceVersion":"1.0","name":"a71efbf0-9f61-4e75-84b8-acfcec50d552","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"0140fd24-be50-40ea-bc74-fa9c886de9a2","path":"sprites/spr_playerV_revolvershoot/spr_playerV_revolvershoot.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0140fd24-be50-40ea-bc74-fa9c886de9a2","path":"sprites/spr_playerV_revolvershoot/spr_playerV_revolvershoot.yy",},"LayerId":{"name":"24510f36-855b-4832-aee7-cd573ff5ceaa","path":"sprites/spr_playerV_revolvershoot/spr_playerV_revolvershoot.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerV_revolvershoot","path":"sprites/spr_playerV_revolvershoot/spr_playerV_revolvershoot.yy",},"resourceVersion":"1.0","name":"0140fd24-be50-40ea-bc74-fa9c886de9a2","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a2133c8d-8f7f-49eb-8716-fbba4979dbd0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"38881939-34ce-4fcb-9309-4dff78521a28",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d7ee56af-1960-4bc3-aa36-d8857b444e47",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ab7b8b9c-f79a-4651-a477-779d268d29c4",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7829f98e-1f53-4989-b6b6-43847b39a93c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6a491758-2320-4698-8be9-3114cf9d329b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a71efbf0-9f61-4e75-84b8-acfcec50d552",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0140fd24-be50-40ea-bc74-fa9c886de9a2",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_playerV_revolvershoot","path":"sprites/spr_playerV_revolvershoot/spr_playerV_revolvershoot.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -61,7 +51,7 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"08516c34-e658-461d-9ce6-b6089915eec8","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a2133c8d-8f7f-49eb-8716-fbba4979dbd0","path":"sprites/spr_playerV_revolvershoot/spr_playerV_revolvershoot.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"beea98d9-7739-44db-a356-2b89ad4f95b9","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"38881939-34ce-4fcb-9309-4dff78521a28","path":"sprites/spr_playerV_revolvershoot/spr_playerV_revolvershoot.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"7c7d15b7-ce1d-453f-8b45-8e39e4fcdbcf","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d7ee56af-1960-4bc3-aa36-d8857b444e47","path":"sprites/spr_playerV_revolvershoot/spr_playerV_revolvershoot.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
@@ -70,7 +60,7 @@
             {"id":"1a765526-8031-4bd0-a9cc-dade761b9c25","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6a491758-2320-4698-8be9-3114cf9d329b","path":"sprites/spr_playerV_revolvershoot/spr_playerV_revolvershoot.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"cb459812-bfc6-4a24-ae20-ab60d8d1ace0","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a71efbf0-9f61-4e75-84b8-acfcec50d552","path":"sprites/spr_playerV_revolvershoot/spr_playerV_revolvershoot.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"d4a4572f-06a9-47c3-a1c5-81379f5bc937","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0140fd24-be50-40ea-bc74-fa9c886de9a2","path":"sprites/spr_playerV_revolvershoot/spr_playerV_revolvershoot.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -86,22 +76,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_playerV_revolvershoot","path":"sprites/spr_playerV_revolvershoot/spr_playerV_revolvershoot.yy",},
-    "resourceVersion": "1.3",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"24510f36-855b-4832-aee7-cd573ff5ceaa","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"24510f36-855b-4832-aee7-cd573ff5ceaa","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Vigi",
     "path": "folders/Sprites/Characters/Playable Characters Sprites/Vigi.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_playerV_revolvershoot",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

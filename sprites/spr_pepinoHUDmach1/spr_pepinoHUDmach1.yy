@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_pepinoHUDmach1",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 164,
   "height": 177,
   "textureGroupId": {
@@ -24,18 +28,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"6018a0a4-5cf5-47f6-9834-900ee674107a","path":"sprites/spr_pepinoHUDmach1/spr_pepinoHUDmach1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6018a0a4-5cf5-47f6-9834-900ee674107a","path":"sprites/spr_pepinoHUDmach1/spr_pepinoHUDmach1.yy",},"LayerId":{"name":"82fa66c2-d426-45e3-853f-be2b6197f3b4","path":"sprites/spr_pepinoHUDmach1/spr_pepinoHUDmach1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pepinoHUDmach1","path":"sprites/spr_pepinoHUDmach1/spr_pepinoHUDmach1.yy",},"resourceVersion":"1.0","name":"6018a0a4-5cf5-47f6-9834-900ee674107a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"0866077b-084e-4fe3-b567-2046e445ced0","path":"sprites/spr_pepinoHUDmach1/spr_pepinoHUDmach1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0866077b-084e-4fe3-b567-2046e445ced0","path":"sprites/spr_pepinoHUDmach1/spr_pepinoHUDmach1.yy",},"LayerId":{"name":"82fa66c2-d426-45e3-853f-be2b6197f3b4","path":"sprites/spr_pepinoHUDmach1/spr_pepinoHUDmach1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pepinoHUDmach1","path":"sprites/spr_pepinoHUDmach1/spr_pepinoHUDmach1.yy",},"resourceVersion":"1.0","name":"0866077b-084e-4fe3-b567-2046e445ced0","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"a7c7a6e7-f0f5-49e1-b7c5-5cad6ff0b5f2","path":"sprites/spr_pepinoHUDmach1/spr_pepinoHUDmach1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a7c7a6e7-f0f5-49e1-b7c5-5cad6ff0b5f2","path":"sprites/spr_pepinoHUDmach1/spr_pepinoHUDmach1.yy",},"LayerId":{"name":"82fa66c2-d426-45e3-853f-be2b6197f3b4","path":"sprites/spr_pepinoHUDmach1/spr_pepinoHUDmach1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pepinoHUDmach1","path":"sprites/spr_pepinoHUDmach1/spr_pepinoHUDmach1.yy",},"resourceVersion":"1.0","name":"a7c7a6e7-f0f5-49e1-b7c5-5cad6ff0b5f2","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6018a0a4-5cf5-47f6-9834-900ee674107a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0866077b-084e-4fe3-b567-2046e445ced0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a7c7a6e7-f0f5-49e1-b7c5-5cad6ff0b5f2",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_pepinoHUDmach1","path":"sprites/spr_pepinoHUDmach1/spr_pepinoHUDmach1.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -46,11 +46,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"cfb8727a-52cb-4ea4-962e-1ef28a40a285","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6018a0a4-5cf5-47f6-9834-900ee674107a","path":"sprites/spr_pepinoHUDmach1/spr_pepinoHUDmach1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"19808d3f-edbf-486d-9ccc-8a3f0c51abd4","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0866077b-084e-4fe3-b567-2046e445ced0","path":"sprites/spr_pepinoHUDmach1/spr_pepinoHUDmach1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"da20c764-7179-45f4-af95-7e0cffcb0f81","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a7c7a6e7-f0f5-49e1-b7c5-5cad6ff0b5f2","path":"sprites/spr_pepinoHUDmach1/spr_pepinoHUDmach1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -66,22 +66,13 @@
     "yorigin": 88,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_pepinoHUDmach1","path":"sprites/spr_pepinoHUDmach1/spr_pepinoHUDmach1.yy",},
-    "resourceVersion": "1.3",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"82fa66c2-d426-45e3-853f-be2b6197f3b4","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"82fa66c2-d426-45e3-853f-be2b6197f3b4","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Peppino",
     "path": "folders/Sprites/Hud & Menus/Old Hud/Faces/Peppino.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_pepinoHUDmach1",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

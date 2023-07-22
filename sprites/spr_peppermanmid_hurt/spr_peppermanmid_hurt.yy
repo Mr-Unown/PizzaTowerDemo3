@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_peppermanmid_hurt",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 200,
   "height": 200,
   "textureGroupId": {
@@ -24,21 +28,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"b0b30119-ecd0-40e1-9f06-6729e3b1ba02","path":"sprites/spr_peppermanmid_hurt/spr_peppermanmid_hurt.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b0b30119-ecd0-40e1-9f06-6729e3b1ba02","path":"sprites/spr_peppermanmid_hurt/spr_peppermanmid_hurt.yy",},"LayerId":{"name":"f1dc099c-90cf-4459-97de-f563097888ae","path":"sprites/spr_peppermanmid_hurt/spr_peppermanmid_hurt.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_peppermanmid_hurt","path":"sprites/spr_peppermanmid_hurt/spr_peppermanmid_hurt.yy",},"resourceVersion":"1.0","name":"b0b30119-ecd0-40e1-9f06-6729e3b1ba02","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"4293aeaa-445b-4807-9a24-ada7aa149474","path":"sprites/spr_peppermanmid_hurt/spr_peppermanmid_hurt.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4293aeaa-445b-4807-9a24-ada7aa149474","path":"sprites/spr_peppermanmid_hurt/spr_peppermanmid_hurt.yy",},"LayerId":{"name":"f1dc099c-90cf-4459-97de-f563097888ae","path":"sprites/spr_peppermanmid_hurt/spr_peppermanmid_hurt.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_peppermanmid_hurt","path":"sprites/spr_peppermanmid_hurt/spr_peppermanmid_hurt.yy",},"resourceVersion":"1.0","name":"4293aeaa-445b-4807-9a24-ada7aa149474","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"594904a1-0bc4-46ed-a2a4-681ef0d866b7","path":"sprites/spr_peppermanmid_hurt/spr_peppermanmid_hurt.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"594904a1-0bc4-46ed-a2a4-681ef0d866b7","path":"sprites/spr_peppermanmid_hurt/spr_peppermanmid_hurt.yy",},"LayerId":{"name":"f1dc099c-90cf-4459-97de-f563097888ae","path":"sprites/spr_peppermanmid_hurt/spr_peppermanmid_hurt.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_peppermanmid_hurt","path":"sprites/spr_peppermanmid_hurt/spr_peppermanmid_hurt.yy",},"resourceVersion":"1.0","name":"594904a1-0bc4-46ed-a2a4-681ef0d866b7","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"4585cb31-d978-43f2-ac65-e45e107d3e06","path":"sprites/spr_peppermanmid_hurt/spr_peppermanmid_hurt.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4585cb31-d978-43f2-ac65-e45e107d3e06","path":"sprites/spr_peppermanmid_hurt/spr_peppermanmid_hurt.yy",},"LayerId":{"name":"f1dc099c-90cf-4459-97de-f563097888ae","path":"sprites/spr_peppermanmid_hurt/spr_peppermanmid_hurt.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_peppermanmid_hurt","path":"sprites/spr_peppermanmid_hurt/spr_peppermanmid_hurt.yy",},"resourceVersion":"1.0","name":"4585cb31-d978-43f2-ac65-e45e107d3e06","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b0b30119-ecd0-40e1-9f06-6729e3b1ba02",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4293aeaa-445b-4807-9a24-ada7aa149474",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"594904a1-0bc4-46ed-a2a4-681ef0d866b7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4585cb31-d978-43f2-ac65-e45e107d3e06",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_peppermanmid_hurt","path":"sprites/spr_peppermanmid_hurt/spr_peppermanmid_hurt.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -49,12 +47,12 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"8de18253-b429-403f-af75-8f2f91fb772a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b0b30119-ecd0-40e1-9f06-6729e3b1ba02","path":"sprites/spr_peppermanmid_hurt/spr_peppermanmid_hurt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"0866f516-e730-4a62-aa35-3c0149223bcf","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4293aeaa-445b-4807-9a24-ada7aa149474","path":"sprites/spr_peppermanmid_hurt/spr_peppermanmid_hurt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"5b772cec-7fdb-403c-b6de-11ac9df963ca","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"594904a1-0bc4-46ed-a2a4-681ef0d866b7","path":"sprites/spr_peppermanmid_hurt/spr_peppermanmid_hurt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"0817b092-9bbd-40b5-a997-f92db7b6471e","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4585cb31-d978-43f2-ac65-e45e107d3e06","path":"sprites/spr_peppermanmid_hurt/spr_peppermanmid_hurt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -70,22 +68,13 @@
     "yorigin": 100,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_peppermanmid_hurt","path":"sprites/spr_peppermanmid_hurt/spr_peppermanmid_hurt.yy",},
-    "resourceVersion": "1.3",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f1dc099c-90cf-4459-97de-f563097888ae","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"f1dc099c-90cf-4459-97de-f563097888ae","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Pepperman Boss",
     "path": "folders/Sprites/Characters/Baddies/Pepperman Boss.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_peppermanmid_hurt",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_santasleight",
   "bboxMode": 2,
   "collisionKind": 2,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 400,
   "height": 191,
   "textureGroupId": {
@@ -24,27 +28,17 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"c4742a37-201d-4419-8392-603e8c76ed61","path":"sprites/spr_santasleight/spr_santasleight.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c4742a37-201d-4419-8392-603e8c76ed61","path":"sprites/spr_santasleight/spr_santasleight.yy",},"LayerId":{"name":"13a770b2-b2db-424d-9ea4-79a745439f57","path":"sprites/spr_santasleight/spr_santasleight.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_santasleight","path":"sprites/spr_santasleight/spr_santasleight.yy",},"resourceVersion":"1.0","name":"c4742a37-201d-4419-8392-603e8c76ed61","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"fb56a0db-753c-4be6-8ad0-cb6f5bd59623","path":"sprites/spr_santasleight/spr_santasleight.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"fb56a0db-753c-4be6-8ad0-cb6f5bd59623","path":"sprites/spr_santasleight/spr_santasleight.yy",},"LayerId":{"name":"13a770b2-b2db-424d-9ea4-79a745439f57","path":"sprites/spr_santasleight/spr_santasleight.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_santasleight","path":"sprites/spr_santasleight/spr_santasleight.yy",},"resourceVersion":"1.0","name":"fb56a0db-753c-4be6-8ad0-cb6f5bd59623","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"4ecd547b-e34a-47ed-9057-5603d173cc53","path":"sprites/spr_santasleight/spr_santasleight.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4ecd547b-e34a-47ed-9057-5603d173cc53","path":"sprites/spr_santasleight/spr_santasleight.yy",},"LayerId":{"name":"13a770b2-b2db-424d-9ea4-79a745439f57","path":"sprites/spr_santasleight/spr_santasleight.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_santasleight","path":"sprites/spr_santasleight/spr_santasleight.yy",},"resourceVersion":"1.0","name":"4ecd547b-e34a-47ed-9057-5603d173cc53","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"2aced767-8956-4cbb-86b7-1434b3c2906c","path":"sprites/spr_santasleight/spr_santasleight.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2aced767-8956-4cbb-86b7-1434b3c2906c","path":"sprites/spr_santasleight/spr_santasleight.yy",},"LayerId":{"name":"13a770b2-b2db-424d-9ea4-79a745439f57","path":"sprites/spr_santasleight/spr_santasleight.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_santasleight","path":"sprites/spr_santasleight/spr_santasleight.yy",},"resourceVersion":"1.0","name":"2aced767-8956-4cbb-86b7-1434b3c2906c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"601c10e1-20bb-4a15-b94f-59aedb89dad7","path":"sprites/spr_santasleight/spr_santasleight.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"601c10e1-20bb-4a15-b94f-59aedb89dad7","path":"sprites/spr_santasleight/spr_santasleight.yy",},"LayerId":{"name":"13a770b2-b2db-424d-9ea4-79a745439f57","path":"sprites/spr_santasleight/spr_santasleight.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_santasleight","path":"sprites/spr_santasleight/spr_santasleight.yy",},"resourceVersion":"1.0","name":"601c10e1-20bb-4a15-b94f-59aedb89dad7","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"5a103985-7730-4ee5-b026-7907ccc936ce","path":"sprites/spr_santasleight/spr_santasleight.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5a103985-7730-4ee5-b026-7907ccc936ce","path":"sprites/spr_santasleight/spr_santasleight.yy",},"LayerId":{"name":"13a770b2-b2db-424d-9ea4-79a745439f57","path":"sprites/spr_santasleight/spr_santasleight.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_santasleight","path":"sprites/spr_santasleight/spr_santasleight.yy",},"resourceVersion":"1.0","name":"5a103985-7730-4ee5-b026-7907ccc936ce","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c4742a37-201d-4419-8392-603e8c76ed61",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fb56a0db-753c-4be6-8ad0-cb6f5bd59623",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4ecd547b-e34a-47ed-9057-5603d173cc53",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2aced767-8956-4cbb-86b7-1434b3c2906c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"601c10e1-20bb-4a15-b94f-59aedb89dad7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5a103985-7730-4ee5-b026-7907ccc936ce",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_santasleight","path":"sprites/spr_santasleight/spr_santasleight.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -55,14 +49,14 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"9866f3a2-cb24-4cc3-8491-992fed675fdb","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c4742a37-201d-4419-8392-603e8c76ed61","path":"sprites/spr_santasleight/spr_santasleight.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"9023e068-b152-4784-943d-55841418a856","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fb56a0db-753c-4be6-8ad0-cb6f5bd59623","path":"sprites/spr_santasleight/spr_santasleight.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"4810fced-f398-4001-b4d4-dcf7582c624a","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4ecd547b-e34a-47ed-9057-5603d173cc53","path":"sprites/spr_santasleight/spr_santasleight.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"fed2b0ca-733e-427b-85c3-573d70ae081e","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2aced767-8956-4cbb-86b7-1434b3c2906c","path":"sprites/spr_santasleight/spr_santasleight.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"05ce7acd-1265-4496-ba91-7f2ab510082b","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"601c10e1-20bb-4a15-b94f-59aedb89dad7","path":"sprites/spr_santasleight/spr_santasleight.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"b94eded2-d406-4a1c-89f1-f2d4d181c0b5","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5a103985-7730-4ee5-b026-7907ccc936ce","path":"sprites/spr_santasleight/spr_santasleight.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -78,22 +72,13 @@
     "yorigin": 95,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_santasleight","path":"sprites/spr_santasleight/spr_santasleight.yy",},
-    "resourceVersion": "1.3",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"13a770b2-b2db-424d-9ea4-79a745439f57","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"13a770b2-b2db-424d-9ea4-79a745439f57","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Objects",
     "path": "folders/Sprites/Objects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_santasleight",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

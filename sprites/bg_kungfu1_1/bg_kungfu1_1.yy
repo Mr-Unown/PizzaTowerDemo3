@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "bg_kungfu1_1",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 1100,
   "height": 540,
   "textureGroupId": {
@@ -24,18 +28,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"b6a8a771-e74a-40c9-b997-85a1dc426816","path":"sprites/bg_kungfu1_1/bg_kungfu1_1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b6a8a771-e74a-40c9-b997-85a1dc426816","path":"sprites/bg_kungfu1_1/bg_kungfu1_1.yy",},"LayerId":{"name":"abf76798-fdd6-4cc6-b996-1eb90e002e88","path":"sprites/bg_kungfu1_1/bg_kungfu1_1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"bg_kungfu1_1","path":"sprites/bg_kungfu1_1/bg_kungfu1_1.yy",},"resourceVersion":"1.0","name":"b6a8a771-e74a-40c9-b997-85a1dc426816","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"d9ac2f63-3bc9-4398-9638-7465546b57fb","path":"sprites/bg_kungfu1_1/bg_kungfu1_1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d9ac2f63-3bc9-4398-9638-7465546b57fb","path":"sprites/bg_kungfu1_1/bg_kungfu1_1.yy",},"LayerId":{"name":"abf76798-fdd6-4cc6-b996-1eb90e002e88","path":"sprites/bg_kungfu1_1/bg_kungfu1_1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"bg_kungfu1_1","path":"sprites/bg_kungfu1_1/bg_kungfu1_1.yy",},"resourceVersion":"1.0","name":"d9ac2f63-3bc9-4398-9638-7465546b57fb","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"d0081c18-3c7b-44d4-a6bb-479b0e8d37c3","path":"sprites/bg_kungfu1_1/bg_kungfu1_1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d0081c18-3c7b-44d4-a6bb-479b0e8d37c3","path":"sprites/bg_kungfu1_1/bg_kungfu1_1.yy",},"LayerId":{"name":"abf76798-fdd6-4cc6-b996-1eb90e002e88","path":"sprites/bg_kungfu1_1/bg_kungfu1_1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"bg_kungfu1_1","path":"sprites/bg_kungfu1_1/bg_kungfu1_1.yy",},"resourceVersion":"1.0","name":"d0081c18-3c7b-44d4-a6bb-479b0e8d37c3","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b6a8a771-e74a-40c9-b997-85a1dc426816",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d9ac2f63-3bc9-4398-9638-7465546b57fb",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d0081c18-3c7b-44d4-a6bb-479b0e8d37c3",},
   ],
   "sequence": {
-    "spriteId": {"name":"bg_kungfu1_1","path":"sprites/bg_kungfu1_1/bg_kungfu1_1.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 0.25,
@@ -46,11 +46,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"7c65425a-8133-4cd1-97c1-21ad2dc13886","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b6a8a771-e74a-40c9-b997-85a1dc426816","path":"sprites/bg_kungfu1_1/bg_kungfu1_1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"d94cca00-a862-446b-9293-4205070abd0c","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d9ac2f63-3bc9-4398-9638-7465546b57fb","path":"sprites/bg_kungfu1_1/bg_kungfu1_1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"2a73b0f2-9abc-422d-9f7b-b06f64012126","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d0081c18-3c7b-44d4-a6bb-479b0e8d37c3","path":"sprites/bg_kungfu1_1/bg_kungfu1_1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -66,22 +66,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"bg_kungfu1_1","path":"sprites/bg_kungfu1_1/bg_kungfu1_1.yy",},
-    "resourceVersion": "1.3",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"abf76798-fdd6-4cc6-b996-1eb90e002e88","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"abf76798-fdd6-4cc6-b996-1eb90e002e88","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Backgrounds",
     "path": "folders/Sprites/Backgrounds.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "bg_kungfu1_1",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

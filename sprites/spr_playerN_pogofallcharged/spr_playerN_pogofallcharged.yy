@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_playerN_pogofallcharged",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 100,
   "height": 100,
   "textureGroupId": {
@@ -24,18 +28,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"866b4b17-04d8-4f1c-8557-7cf34a2d722e","path":"sprites/spr_playerN_pogofallcharged/spr_playerN_pogofallcharged.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"866b4b17-04d8-4f1c-8557-7cf34a2d722e","path":"sprites/spr_playerN_pogofallcharged/spr_playerN_pogofallcharged.yy",},"LayerId":{"name":"6ad1bffc-4152-4490-8037-2c6d1ba6b573","path":"sprites/spr_playerN_pogofallcharged/spr_playerN_pogofallcharged.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerN_pogofallcharged","path":"sprites/spr_playerN_pogofallcharged/spr_playerN_pogofallcharged.yy",},"resourceVersion":"1.0","name":"866b4b17-04d8-4f1c-8557-7cf34a2d722e","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"20ea932d-f4b3-4d2b-8b16-cc8c7d50daa6","path":"sprites/spr_playerN_pogofallcharged/spr_playerN_pogofallcharged.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"20ea932d-f4b3-4d2b-8b16-cc8c7d50daa6","path":"sprites/spr_playerN_pogofallcharged/spr_playerN_pogofallcharged.yy",},"LayerId":{"name":"6ad1bffc-4152-4490-8037-2c6d1ba6b573","path":"sprites/spr_playerN_pogofallcharged/spr_playerN_pogofallcharged.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerN_pogofallcharged","path":"sprites/spr_playerN_pogofallcharged/spr_playerN_pogofallcharged.yy",},"resourceVersion":"1.0","name":"20ea932d-f4b3-4d2b-8b16-cc8c7d50daa6","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"4c1b7cd0-b466-4752-aa86-edb18ff12d9e","path":"sprites/spr_playerN_pogofallcharged/spr_playerN_pogofallcharged.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4c1b7cd0-b466-4752-aa86-edb18ff12d9e","path":"sprites/spr_playerN_pogofallcharged/spr_playerN_pogofallcharged.yy",},"LayerId":{"name":"6ad1bffc-4152-4490-8037-2c6d1ba6b573","path":"sprites/spr_playerN_pogofallcharged/spr_playerN_pogofallcharged.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerN_pogofallcharged","path":"sprites/spr_playerN_pogofallcharged/spr_playerN_pogofallcharged.yy",},"resourceVersion":"1.0","name":"4c1b7cd0-b466-4752-aa86-edb18ff12d9e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"866b4b17-04d8-4f1c-8557-7cf34a2d722e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"20ea932d-f4b3-4d2b-8b16-cc8c7d50daa6",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4c1b7cd0-b466-4752-aa86-edb18ff12d9e",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_playerN_pogofallcharged","path":"sprites/spr_playerN_pogofallcharged/spr_playerN_pogofallcharged.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -46,11 +46,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"ce607b26-a9af-4081-85d2-9822a3a24b6e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"866b4b17-04d8-4f1c-8557-7cf34a2d722e","path":"sprites/spr_playerN_pogofallcharged/spr_playerN_pogofallcharged.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"c159d939-1e84-4601-94aa-a77e91bbc1f1","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"20ea932d-f4b3-4d2b-8b16-cc8c7d50daa6","path":"sprites/spr_playerN_pogofallcharged/spr_playerN_pogofallcharged.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"dea6cc74-c3c2-46fa-b133-75fdf1240e46","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4c1b7cd0-b466-4752-aa86-edb18ff12d9e","path":"sprites/spr_playerN_pogofallcharged/spr_playerN_pogofallcharged.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -66,22 +66,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_playerN_pogofallcharged","path":"sprites/spr_playerN_pogofallcharged/spr_playerN_pogofallcharged.yy",},
-    "resourceVersion": "1.3",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"6ad1bffc-4152-4490-8037-2c6d1ba6b573","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6ad1bffc-4152-4490-8037-2c6d1ba6b573","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Noise",
     "path": "folders/Sprites/Characters/Playable Characters Sprites/Noise.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_playerN_pogofallcharged",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

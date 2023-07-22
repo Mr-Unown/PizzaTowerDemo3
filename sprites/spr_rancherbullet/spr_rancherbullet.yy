@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_rancherbullet",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 100,
   "height": 100,
   "textureGroupId": {
@@ -24,27 +28,17 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"0ab4241e-91c0-4600-bdd3-29e1f769cbda","path":"sprites/spr_rancherbullet/spr_rancherbullet.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0ab4241e-91c0-4600-bdd3-29e1f769cbda","path":"sprites/spr_rancherbullet/spr_rancherbullet.yy",},"LayerId":{"name":"23b24351-7575-44ed-adee-d33254791430","path":"sprites/spr_rancherbullet/spr_rancherbullet.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_rancherbullet","path":"sprites/spr_rancherbullet/spr_rancherbullet.yy",},"resourceVersion":"1.0","name":"0ab4241e-91c0-4600-bdd3-29e1f769cbda","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"e0603eb4-2969-4c75-8796-61db52151fb4","path":"sprites/spr_rancherbullet/spr_rancherbullet.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e0603eb4-2969-4c75-8796-61db52151fb4","path":"sprites/spr_rancherbullet/spr_rancherbullet.yy",},"LayerId":{"name":"23b24351-7575-44ed-adee-d33254791430","path":"sprites/spr_rancherbullet/spr_rancherbullet.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_rancherbullet","path":"sprites/spr_rancherbullet/spr_rancherbullet.yy",},"resourceVersion":"1.0","name":"e0603eb4-2969-4c75-8796-61db52151fb4","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"7a9faff7-97ce-4dc7-83e0-3a9c38bb3716","path":"sprites/spr_rancherbullet/spr_rancherbullet.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7a9faff7-97ce-4dc7-83e0-3a9c38bb3716","path":"sprites/spr_rancherbullet/spr_rancherbullet.yy",},"LayerId":{"name":"23b24351-7575-44ed-adee-d33254791430","path":"sprites/spr_rancherbullet/spr_rancherbullet.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_rancherbullet","path":"sprites/spr_rancherbullet/spr_rancherbullet.yy",},"resourceVersion":"1.0","name":"7a9faff7-97ce-4dc7-83e0-3a9c38bb3716","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"be2d85f0-84e9-4bde-9133-3262a4b8a970","path":"sprites/spr_rancherbullet/spr_rancherbullet.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"be2d85f0-84e9-4bde-9133-3262a4b8a970","path":"sprites/spr_rancherbullet/spr_rancherbullet.yy",},"LayerId":{"name":"23b24351-7575-44ed-adee-d33254791430","path":"sprites/spr_rancherbullet/spr_rancherbullet.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_rancherbullet","path":"sprites/spr_rancherbullet/spr_rancherbullet.yy",},"resourceVersion":"1.0","name":"be2d85f0-84e9-4bde-9133-3262a4b8a970","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"997ed946-c75e-4be3-858b-51a8e3cfc11c","path":"sprites/spr_rancherbullet/spr_rancherbullet.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"997ed946-c75e-4be3-858b-51a8e3cfc11c","path":"sprites/spr_rancherbullet/spr_rancherbullet.yy",},"LayerId":{"name":"23b24351-7575-44ed-adee-d33254791430","path":"sprites/spr_rancherbullet/spr_rancherbullet.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_rancherbullet","path":"sprites/spr_rancherbullet/spr_rancherbullet.yy",},"resourceVersion":"1.0","name":"997ed946-c75e-4be3-858b-51a8e3cfc11c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"2fa5f050-eeba-482b-b9ea-eb6f0b0e1c36","path":"sprites/spr_rancherbullet/spr_rancherbullet.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2fa5f050-eeba-482b-b9ea-eb6f0b0e1c36","path":"sprites/spr_rancherbullet/spr_rancherbullet.yy",},"LayerId":{"name":"23b24351-7575-44ed-adee-d33254791430","path":"sprites/spr_rancherbullet/spr_rancherbullet.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_rancherbullet","path":"sprites/spr_rancherbullet/spr_rancherbullet.yy",},"resourceVersion":"1.0","name":"2fa5f050-eeba-482b-b9ea-eb6f0b0e1c36","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0ab4241e-91c0-4600-bdd3-29e1f769cbda",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e0603eb4-2969-4c75-8796-61db52151fb4",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7a9faff7-97ce-4dc7-83e0-3a9c38bb3716",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"be2d85f0-84e9-4bde-9133-3262a4b8a970",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"997ed946-c75e-4be3-858b-51a8e3cfc11c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2fa5f050-eeba-482b-b9ea-eb6f0b0e1c36",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_rancherbullet","path":"sprites/spr_rancherbullet/spr_rancherbullet.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -55,14 +49,14 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"6ea5eb5d-9d8a-42cd-b0b4-a242da17f942","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0ab4241e-91c0-4600-bdd3-29e1f769cbda","path":"sprites/spr_rancherbullet/spr_rancherbullet.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"51b33014-f95f-423e-91f9-baa23bb88b0d","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e0603eb4-2969-4c75-8796-61db52151fb4","path":"sprites/spr_rancherbullet/spr_rancherbullet.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"63be33df-d2b6-4cec-bb4c-43f78a69c643","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7a9faff7-97ce-4dc7-83e0-3a9c38bb3716","path":"sprites/spr_rancherbullet/spr_rancherbullet.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"ca894416-85e7-4713-8555-30960901eeaf","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"be2d85f0-84e9-4bde-9133-3262a4b8a970","path":"sprites/spr_rancherbullet/spr_rancherbullet.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"4764fa47-9cb8-4763-a332-f016252580d8","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"997ed946-c75e-4be3-858b-51a8e3cfc11c","path":"sprites/spr_rancherbullet/spr_rancherbullet.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"c3655e75-05c6-458a-98c3-8fb9e65d4091","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2fa5f050-eeba-482b-b9ea-eb6f0b0e1c36","path":"sprites/spr_rancherbullet/spr_rancherbullet.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -78,22 +72,13 @@
     "yorigin": 67,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_rancherbullet","path":"sprites/spr_rancherbullet/spr_rancherbullet.yy",},
-    "resourceVersion": "1.3",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"23b24351-7575-44ed-adee-d33254791430","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"23b24351-7575-44ed-adee-d33254791430","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Rancher",
     "path": "folders/Sprites/Characters/Baddies/Rancher.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_rancherbullet",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

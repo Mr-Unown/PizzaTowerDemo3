@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_playerPZ_freefallHUD",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 228,
   "height": 241,
   "textureGroupId": {
@@ -24,18 +28,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"383b9494-3aee-4ca1-8ad8-850ce932f8b6","path":"sprites/spr_playerPZ_freefallHUD/spr_playerPZ_freefallHUD.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"383b9494-3aee-4ca1-8ad8-850ce932f8b6","path":"sprites/spr_playerPZ_freefallHUD/spr_playerPZ_freefallHUD.yy",},"LayerId":{"name":"8c19e865-f0e5-4f0f-95d3-860a6ef6d1d3","path":"sprites/spr_playerPZ_freefallHUD/spr_playerPZ_freefallHUD.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerPZ_freefallHUD","path":"sprites/spr_playerPZ_freefallHUD/spr_playerPZ_freefallHUD.yy",},"resourceVersion":"1.0","name":"383b9494-3aee-4ca1-8ad8-850ce932f8b6","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"f53f304e-4e71-4cd4-9a93-6affc8dbee2e","path":"sprites/spr_playerPZ_freefallHUD/spr_playerPZ_freefallHUD.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f53f304e-4e71-4cd4-9a93-6affc8dbee2e","path":"sprites/spr_playerPZ_freefallHUD/spr_playerPZ_freefallHUD.yy",},"LayerId":{"name":"8c19e865-f0e5-4f0f-95d3-860a6ef6d1d3","path":"sprites/spr_playerPZ_freefallHUD/spr_playerPZ_freefallHUD.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerPZ_freefallHUD","path":"sprites/spr_playerPZ_freefallHUD/spr_playerPZ_freefallHUD.yy",},"resourceVersion":"1.0","name":"f53f304e-4e71-4cd4-9a93-6affc8dbee2e","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"7b36ec1f-fa13-4fa2-b6c3-7c1e2ed56249","path":"sprites/spr_playerPZ_freefallHUD/spr_playerPZ_freefallHUD.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7b36ec1f-fa13-4fa2-b6c3-7c1e2ed56249","path":"sprites/spr_playerPZ_freefallHUD/spr_playerPZ_freefallHUD.yy",},"LayerId":{"name":"8c19e865-f0e5-4f0f-95d3-860a6ef6d1d3","path":"sprites/spr_playerPZ_freefallHUD/spr_playerPZ_freefallHUD.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerPZ_freefallHUD","path":"sprites/spr_playerPZ_freefallHUD/spr_playerPZ_freefallHUD.yy",},"resourceVersion":"1.0","name":"7b36ec1f-fa13-4fa2-b6c3-7c1e2ed56249","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"383b9494-3aee-4ca1-8ad8-850ce932f8b6",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f53f304e-4e71-4cd4-9a93-6affc8dbee2e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7b36ec1f-fa13-4fa2-b6c3-7c1e2ed56249",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_playerPZ_freefallHUD","path":"sprites/spr_playerPZ_freefallHUD/spr_playerPZ_freefallHUD.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -46,11 +46,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"bce85c1b-eab8-498c-a5f3-e833c8c00889","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"383b9494-3aee-4ca1-8ad8-850ce932f8b6","path":"sprites/spr_playerPZ_freefallHUD/spr_playerPZ_freefallHUD.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"c47a7aa2-44f5-4068-acd7-60d4fba7b47e","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f53f304e-4e71-4cd4-9a93-6affc8dbee2e","path":"sprites/spr_playerPZ_freefallHUD/spr_playerPZ_freefallHUD.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"9c29ea41-9468-4510-919a-59fd0616545b","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7b36ec1f-fa13-4fa2-b6c3-7c1e2ed56249","path":"sprites/spr_playerPZ_freefallHUD/spr_playerPZ_freefallHUD.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -66,22 +66,13 @@
     "yorigin": 120,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_playerPZ_freefallHUD","path":"sprites/spr_playerPZ_freefallHUD/spr_playerPZ_freefallHUD.yy",},
-    "resourceVersion": "1.3",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"8c19e865-f0e5-4f0f-95d3-860a6ef6d1d3","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8c19e865-f0e5-4f0f-95d3-860a6ef6d1d3","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Pizzelle",
     "path": "folders/Sprites/Hud & Menus/Old Hud/Faces/Pizzelle.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_playerPZ_freefallHUD",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_player_ufotransition",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 100,
   "height": 100,
   "textureGroupId": {
@@ -24,18 +28,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"3f0b4494-3198-496e-92cf-67b125851eec","path":"sprites/spr_player_ufotransition/spr_player_ufotransition.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3f0b4494-3198-496e-92cf-67b125851eec","path":"sprites/spr_player_ufotransition/spr_player_ufotransition.yy",},"LayerId":{"name":"dd41125c-d047-41ac-a2cb-d4d343d87e34","path":"sprites/spr_player_ufotransition/spr_player_ufotransition.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_ufotransition","path":"sprites/spr_player_ufotransition/spr_player_ufotransition.yy",},"resourceVersion":"1.0","name":"3f0b4494-3198-496e-92cf-67b125851eec","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"4291e1b9-0212-425c-b725-db82e6616883","path":"sprites/spr_player_ufotransition/spr_player_ufotransition.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4291e1b9-0212-425c-b725-db82e6616883","path":"sprites/spr_player_ufotransition/spr_player_ufotransition.yy",},"LayerId":{"name":"dd41125c-d047-41ac-a2cb-d4d343d87e34","path":"sprites/spr_player_ufotransition/spr_player_ufotransition.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_ufotransition","path":"sprites/spr_player_ufotransition/spr_player_ufotransition.yy",},"resourceVersion":"1.0","name":"4291e1b9-0212-425c-b725-db82e6616883","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"d2358b97-4507-43a7-85cc-674b7f5ca0b8","path":"sprites/spr_player_ufotransition/spr_player_ufotransition.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d2358b97-4507-43a7-85cc-674b7f5ca0b8","path":"sprites/spr_player_ufotransition/spr_player_ufotransition.yy",},"LayerId":{"name":"dd41125c-d047-41ac-a2cb-d4d343d87e34","path":"sprites/spr_player_ufotransition/spr_player_ufotransition.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_player_ufotransition","path":"sprites/spr_player_ufotransition/spr_player_ufotransition.yy",},"resourceVersion":"1.0","name":"d2358b97-4507-43a7-85cc-674b7f5ca0b8","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3f0b4494-3198-496e-92cf-67b125851eec",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4291e1b9-0212-425c-b725-db82e6616883",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d2358b97-4507-43a7-85cc-674b7f5ca0b8",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_player_ufotransition","path":"sprites/spr_player_ufotransition/spr_player_ufotransition.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -46,11 +46,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"72e574f2-9b44-4fdd-80ab-252a1da77687","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3f0b4494-3198-496e-92cf-67b125851eec","path":"sprites/spr_player_ufotransition/spr_player_ufotransition.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"ff775198-1616-411f-89b6-d7174903c919","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4291e1b9-0212-425c-b725-db82e6616883","path":"sprites/spr_player_ufotransition/spr_player_ufotransition.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"06079e0b-3844-4356-9e7d-5e14fa946c74","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d2358b97-4507-43a7-85cc-674b7f5ca0b8","path":"sprites/spr_player_ufotransition/spr_player_ufotransition.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -66,22 +66,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_player_ufotransition","path":"sprites/spr_player_ufotransition/spr_player_ufotransition.yy",},
-    "resourceVersion": "1.3",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"dd41125c-d047-41ac-a2cb-d4d343d87e34","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"dd41125c-d047-41ac-a2cb-d4d343d87e34","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Peppino",
     "path": "folders/Sprites/Characters/Playable Characters Sprites/Peppino.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_player_ufotransition",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

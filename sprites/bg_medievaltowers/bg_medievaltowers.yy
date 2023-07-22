@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "bg_medievaltowers",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 960,
   "height": 540,
   "textureGroupId": {
@@ -24,33 +28,19 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"a512cc41-d4cd-4452-8de6-0916607aa559","path":"sprites/bg_medievaltowers/bg_medievaltowers.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a512cc41-d4cd-4452-8de6-0916607aa559","path":"sprites/bg_medievaltowers/bg_medievaltowers.yy",},"LayerId":{"name":"d8db90aa-e87e-46bd-9ffc-79de796624d1","path":"sprites/bg_medievaltowers/bg_medievaltowers.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"bg_medievaltowers","path":"sprites/bg_medievaltowers/bg_medievaltowers.yy",},"resourceVersion":"1.0","name":"a512cc41-d4cd-4452-8de6-0916607aa559","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"a432c908-826a-4525-8fb7-abde436f213a","path":"sprites/bg_medievaltowers/bg_medievaltowers.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a432c908-826a-4525-8fb7-abde436f213a","path":"sprites/bg_medievaltowers/bg_medievaltowers.yy",},"LayerId":{"name":"d8db90aa-e87e-46bd-9ffc-79de796624d1","path":"sprites/bg_medievaltowers/bg_medievaltowers.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"bg_medievaltowers","path":"sprites/bg_medievaltowers/bg_medievaltowers.yy",},"resourceVersion":"1.0","name":"a432c908-826a-4525-8fb7-abde436f213a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"a4a825f4-be83-4be2-8b31-15b94c55c7be","path":"sprites/bg_medievaltowers/bg_medievaltowers.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a4a825f4-be83-4be2-8b31-15b94c55c7be","path":"sprites/bg_medievaltowers/bg_medievaltowers.yy",},"LayerId":{"name":"d8db90aa-e87e-46bd-9ffc-79de796624d1","path":"sprites/bg_medievaltowers/bg_medievaltowers.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"bg_medievaltowers","path":"sprites/bg_medievaltowers/bg_medievaltowers.yy",},"resourceVersion":"1.0","name":"a4a825f4-be83-4be2-8b31-15b94c55c7be","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"a1189c15-bae6-420c-b5b1-5e4a5ee1bd0f","path":"sprites/bg_medievaltowers/bg_medievaltowers.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a1189c15-bae6-420c-b5b1-5e4a5ee1bd0f","path":"sprites/bg_medievaltowers/bg_medievaltowers.yy",},"LayerId":{"name":"d8db90aa-e87e-46bd-9ffc-79de796624d1","path":"sprites/bg_medievaltowers/bg_medievaltowers.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"bg_medievaltowers","path":"sprites/bg_medievaltowers/bg_medievaltowers.yy",},"resourceVersion":"1.0","name":"a1189c15-bae6-420c-b5b1-5e4a5ee1bd0f","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"83cc02ac-9d7f-49d8-8d11-449f9da15396","path":"sprites/bg_medievaltowers/bg_medievaltowers.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"83cc02ac-9d7f-49d8-8d11-449f9da15396","path":"sprites/bg_medievaltowers/bg_medievaltowers.yy",},"LayerId":{"name":"d8db90aa-e87e-46bd-9ffc-79de796624d1","path":"sprites/bg_medievaltowers/bg_medievaltowers.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"bg_medievaltowers","path":"sprites/bg_medievaltowers/bg_medievaltowers.yy",},"resourceVersion":"1.0","name":"83cc02ac-9d7f-49d8-8d11-449f9da15396","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"f2dade3f-1850-4273-9945-647426aaa58e","path":"sprites/bg_medievaltowers/bg_medievaltowers.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f2dade3f-1850-4273-9945-647426aaa58e","path":"sprites/bg_medievaltowers/bg_medievaltowers.yy",},"LayerId":{"name":"d8db90aa-e87e-46bd-9ffc-79de796624d1","path":"sprites/bg_medievaltowers/bg_medievaltowers.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"bg_medievaltowers","path":"sprites/bg_medievaltowers/bg_medievaltowers.yy",},"resourceVersion":"1.0","name":"f2dade3f-1850-4273-9945-647426aaa58e","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"2cb6ad94-8caf-4dc9-b6f9-a987f7d3f93d","path":"sprites/bg_medievaltowers/bg_medievaltowers.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2cb6ad94-8caf-4dc9-b6f9-a987f7d3f93d","path":"sprites/bg_medievaltowers/bg_medievaltowers.yy",},"LayerId":{"name":"d8db90aa-e87e-46bd-9ffc-79de796624d1","path":"sprites/bg_medievaltowers/bg_medievaltowers.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"bg_medievaltowers","path":"sprites/bg_medievaltowers/bg_medievaltowers.yy",},"resourceVersion":"1.0","name":"2cb6ad94-8caf-4dc9-b6f9-a987f7d3f93d","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"23da4852-ef74-4efd-a5ce-62c75cf63a47","path":"sprites/bg_medievaltowers/bg_medievaltowers.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"23da4852-ef74-4efd-a5ce-62c75cf63a47","path":"sprites/bg_medievaltowers/bg_medievaltowers.yy",},"LayerId":{"name":"d8db90aa-e87e-46bd-9ffc-79de796624d1","path":"sprites/bg_medievaltowers/bg_medievaltowers.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"bg_medievaltowers","path":"sprites/bg_medievaltowers/bg_medievaltowers.yy",},"resourceVersion":"1.0","name":"23da4852-ef74-4efd-a5ce-62c75cf63a47","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a512cc41-d4cd-4452-8de6-0916607aa559",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a432c908-826a-4525-8fb7-abde436f213a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a4a825f4-be83-4be2-8b31-15b94c55c7be",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a1189c15-bae6-420c-b5b1-5e4a5ee1bd0f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"83cc02ac-9d7f-49d8-8d11-449f9da15396",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f2dade3f-1850-4273-9945-647426aaa58e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2cb6ad94-8caf-4dc9-b6f9-a987f7d3f93d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"23da4852-ef74-4efd-a5ce-62c75cf63a47",},
   ],
   "sequence": {
-    "spriteId": {"name":"bg_medievaltowers","path":"sprites/bg_medievaltowers/bg_medievaltowers.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 0.35,
@@ -61,7 +51,7 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"819a885e-4d70-4973-a189-0826f14fd34a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a512cc41-d4cd-4452-8de6-0916607aa559","path":"sprites/bg_medievaltowers/bg_medievaltowers.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"96941c4f-76a4-4230-b066-d4bfdd8fbff2","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a432c908-826a-4525-8fb7-abde436f213a","path":"sprites/bg_medievaltowers/bg_medievaltowers.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"4adec280-6c32-4cda-878f-44c8bfcbcb99","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a4a825f4-be83-4be2-8b31-15b94c55c7be","path":"sprites/bg_medievaltowers/bg_medievaltowers.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
@@ -70,7 +60,7 @@
             {"id":"1a4951f6-9f88-42e4-8166-f7a4ada6577b","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f2dade3f-1850-4273-9945-647426aaa58e","path":"sprites/bg_medievaltowers/bg_medievaltowers.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"f610e9e8-424d-46db-8731-337620d57bfb","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2cb6ad94-8caf-4dc9-b6f9-a987f7d3f93d","path":"sprites/bg_medievaltowers/bg_medievaltowers.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"4ec790ce-56c6-4282-a80d-2d1aa5a2ed66","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"23da4852-ef74-4efd-a5ce-62c75cf63a47","path":"sprites/bg_medievaltowers/bg_medievaltowers.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -86,22 +76,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"bg_medievaltowers","path":"sprites/bg_medievaltowers/bg_medievaltowers.yy",},
-    "resourceVersion": "1.3",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d8db90aa-e87e-46bd-9ffc-79de796624d1","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d8db90aa-e87e-46bd-9ffc-79de796624d1","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Backgrounds",
     "path": "folders/Sprites/Backgrounds.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "bg_medievaltowers",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

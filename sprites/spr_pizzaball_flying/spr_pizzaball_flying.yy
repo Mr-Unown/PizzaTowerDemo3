@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_pizzaball_flying",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 100,
   "height": 100,
   "textureGroupId": {
@@ -24,45 +28,23 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"a47e7951-4651-465a-9e6b-5a9a551dd8d3","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a47e7951-4651-465a-9e6b-5a9a551dd8d3","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"LayerId":{"name":"9c4d8f36-1199-44c0-9c0d-b1e3f82ca9a8","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pizzaball_flying","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"resourceVersion":"1.0","name":"a47e7951-4651-465a-9e6b-5a9a551dd8d3","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"87dc110e-8dea-4b59-add7-a94304a49e66","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"87dc110e-8dea-4b59-add7-a94304a49e66","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"LayerId":{"name":"9c4d8f36-1199-44c0-9c0d-b1e3f82ca9a8","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pizzaball_flying","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"resourceVersion":"1.0","name":"87dc110e-8dea-4b59-add7-a94304a49e66","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"3777d326-1f63-4785-9a86-db39e69d8b01","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3777d326-1f63-4785-9a86-db39e69d8b01","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"LayerId":{"name":"9c4d8f36-1199-44c0-9c0d-b1e3f82ca9a8","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pizzaball_flying","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"resourceVersion":"1.0","name":"3777d326-1f63-4785-9a86-db39e69d8b01","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"6eaf55a2-97ad-437a-bc8f-8d6fef67e5a2","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6eaf55a2-97ad-437a-bc8f-8d6fef67e5a2","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"LayerId":{"name":"9c4d8f36-1199-44c0-9c0d-b1e3f82ca9a8","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pizzaball_flying","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"resourceVersion":"1.0","name":"6eaf55a2-97ad-437a-bc8f-8d6fef67e5a2","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"f285dcb8-db46-435d-af86-b6c89b1061f4","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f285dcb8-db46-435d-af86-b6c89b1061f4","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"LayerId":{"name":"9c4d8f36-1199-44c0-9c0d-b1e3f82ca9a8","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pizzaball_flying","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"resourceVersion":"1.0","name":"f285dcb8-db46-435d-af86-b6c89b1061f4","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"78ce175c-a952-49a7-83d0-f1a6a7197b2d","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"78ce175c-a952-49a7-83d0-f1a6a7197b2d","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"LayerId":{"name":"9c4d8f36-1199-44c0-9c0d-b1e3f82ca9a8","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pizzaball_flying","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"resourceVersion":"1.0","name":"78ce175c-a952-49a7-83d0-f1a6a7197b2d","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"816ffd09-cf41-41d8-961d-24584df99dad","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"816ffd09-cf41-41d8-961d-24584df99dad","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"LayerId":{"name":"9c4d8f36-1199-44c0-9c0d-b1e3f82ca9a8","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pizzaball_flying","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"resourceVersion":"1.0","name":"816ffd09-cf41-41d8-961d-24584df99dad","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c1e7d0e6-8d4a-4494-9502-c2e66b2b44b7","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c1e7d0e6-8d4a-4494-9502-c2e66b2b44b7","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"LayerId":{"name":"9c4d8f36-1199-44c0-9c0d-b1e3f82ca9a8","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pizzaball_flying","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"resourceVersion":"1.0","name":"c1e7d0e6-8d4a-4494-9502-c2e66b2b44b7","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"d2ab3c81-8432-4bf8-950f-4b1cba0fe0ed","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d2ab3c81-8432-4bf8-950f-4b1cba0fe0ed","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"LayerId":{"name":"9c4d8f36-1199-44c0-9c0d-b1e3f82ca9a8","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pizzaball_flying","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"resourceVersion":"1.0","name":"d2ab3c81-8432-4bf8-950f-4b1cba0fe0ed","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"99893dd2-3eba-4caa-babf-eff174ceadeb","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"99893dd2-3eba-4caa-babf-eff174ceadeb","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"LayerId":{"name":"9c4d8f36-1199-44c0-9c0d-b1e3f82ca9a8","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pizzaball_flying","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"resourceVersion":"1.0","name":"99893dd2-3eba-4caa-babf-eff174ceadeb","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"0d78034d-e805-4e01-a1ea-e56ec8c15d0d","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0d78034d-e805-4e01-a1ea-e56ec8c15d0d","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"LayerId":{"name":"9c4d8f36-1199-44c0-9c0d-b1e3f82ca9a8","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pizzaball_flying","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"resourceVersion":"1.0","name":"0d78034d-e805-4e01-a1ea-e56ec8c15d0d","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"8ff8818e-eb67-4f7a-9631-a4f5983c05b2","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8ff8818e-eb67-4f7a-9631-a4f5983c05b2","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"LayerId":{"name":"9c4d8f36-1199-44c0-9c0d-b1e3f82ca9a8","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pizzaball_flying","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"resourceVersion":"1.0","name":"8ff8818e-eb67-4f7a-9631-a4f5983c05b2","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a47e7951-4651-465a-9e6b-5a9a551dd8d3",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"87dc110e-8dea-4b59-add7-a94304a49e66",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3777d326-1f63-4785-9a86-db39e69d8b01",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6eaf55a2-97ad-437a-bc8f-8d6fef67e5a2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f285dcb8-db46-435d-af86-b6c89b1061f4",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"78ce175c-a952-49a7-83d0-f1a6a7197b2d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"816ffd09-cf41-41d8-961d-24584df99dad",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c1e7d0e6-8d4a-4494-9502-c2e66b2b44b7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d2ab3c81-8432-4bf8-950f-4b1cba0fe0ed",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"99893dd2-3eba-4caa-babf-eff174ceadeb",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0d78034d-e805-4e01-a1ea-e56ec8c15d0d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8ff8818e-eb67-4f7a-9631-a4f5983c05b2",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_pizzaball_flying","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -73,7 +55,7 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"769b6af5-ec58-47fa-9a9a-4837218f2197","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a47e7951-4651-465a-9e6b-5a9a551dd8d3","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"18f2c292-80ff-42ae-91e1-d180b7e1b59f","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"87dc110e-8dea-4b59-add7-a94304a49e66","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"61e9cb39-426a-4b90-9c48-e5748958a096","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3777d326-1f63-4785-9a86-db39e69d8b01","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
@@ -86,7 +68,7 @@
             {"id":"e38f1421-a3ed-4728-85f0-4ea9615ec333","Key":9.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"99893dd2-3eba-4caa-babf-eff174ceadeb","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"c2a74283-578c-4094-8623-6bd3cbaf5eb6","Key":10.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0d78034d-e805-4e01-a1ea-e56ec8c15d0d","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"a44a4423-8ccf-4c68-a0e8-d6179573518b","Key":11.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8ff8818e-eb67-4f7a-9631-a4f5983c05b2","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -102,22 +84,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_pizzaball_flying","path":"sprites/spr_pizzaball_flying/spr_pizzaball_flying.yy",},
-    "resourceVersion": "1.3",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"9c4d8f36-1199-44c0-9c0d-b1e3f82ca9a8","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9c4d8f36-1199-44c0-9c0d-b1e3f82ca9a8","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Greaseball Nerd",
     "path": "folders/Sprites/Characters/Greaseball Nerd.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_pizzaball_flying",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

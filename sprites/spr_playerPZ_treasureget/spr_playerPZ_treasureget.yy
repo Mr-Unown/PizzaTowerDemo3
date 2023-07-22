@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_playerPZ_treasureget",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 100,
   "height": 100,
   "textureGroupId": {
@@ -24,33 +28,19 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"f372c55f-33a0-4523-a066-8f25e57007dc","path":"sprites/spr_playerPZ_treasureget/spr_playerPZ_treasureget.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f372c55f-33a0-4523-a066-8f25e57007dc","path":"sprites/spr_playerPZ_treasureget/spr_playerPZ_treasureget.yy",},"LayerId":{"name":"cf85a277-b764-4fab-a61f-e77df8b63a21","path":"sprites/spr_playerPZ_treasureget/spr_playerPZ_treasureget.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerPZ_treasureget","path":"sprites/spr_playerPZ_treasureget/spr_playerPZ_treasureget.yy",},"resourceVersion":"1.0","name":"f372c55f-33a0-4523-a066-8f25e57007dc","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"0f4a69d4-e2c5-4bc9-ba50-a928803f7f5e","path":"sprites/spr_playerPZ_treasureget/spr_playerPZ_treasureget.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0f4a69d4-e2c5-4bc9-ba50-a928803f7f5e","path":"sprites/spr_playerPZ_treasureget/spr_playerPZ_treasureget.yy",},"LayerId":{"name":"cf85a277-b764-4fab-a61f-e77df8b63a21","path":"sprites/spr_playerPZ_treasureget/spr_playerPZ_treasureget.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerPZ_treasureget","path":"sprites/spr_playerPZ_treasureget/spr_playerPZ_treasureget.yy",},"resourceVersion":"1.0","name":"0f4a69d4-e2c5-4bc9-ba50-a928803f7f5e","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"9793920a-3515-4bcc-98c6-226f783a6e32","path":"sprites/spr_playerPZ_treasureget/spr_playerPZ_treasureget.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"9793920a-3515-4bcc-98c6-226f783a6e32","path":"sprites/spr_playerPZ_treasureget/spr_playerPZ_treasureget.yy",},"LayerId":{"name":"cf85a277-b764-4fab-a61f-e77df8b63a21","path":"sprites/spr_playerPZ_treasureget/spr_playerPZ_treasureget.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerPZ_treasureget","path":"sprites/spr_playerPZ_treasureget/spr_playerPZ_treasureget.yy",},"resourceVersion":"1.0","name":"9793920a-3515-4bcc-98c6-226f783a6e32","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"b1bee9ae-d471-4784-bac7-e297828f7758","path":"sprites/spr_playerPZ_treasureget/spr_playerPZ_treasureget.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b1bee9ae-d471-4784-bac7-e297828f7758","path":"sprites/spr_playerPZ_treasureget/spr_playerPZ_treasureget.yy",},"LayerId":{"name":"cf85a277-b764-4fab-a61f-e77df8b63a21","path":"sprites/spr_playerPZ_treasureget/spr_playerPZ_treasureget.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerPZ_treasureget","path":"sprites/spr_playerPZ_treasureget/spr_playerPZ_treasureget.yy",},"resourceVersion":"1.0","name":"b1bee9ae-d471-4784-bac7-e297828f7758","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"3b5ed65a-0659-4808-83ff-1e8234357946","path":"sprites/spr_playerPZ_treasureget/spr_playerPZ_treasureget.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3b5ed65a-0659-4808-83ff-1e8234357946","path":"sprites/spr_playerPZ_treasureget/spr_playerPZ_treasureget.yy",},"LayerId":{"name":"cf85a277-b764-4fab-a61f-e77df8b63a21","path":"sprites/spr_playerPZ_treasureget/spr_playerPZ_treasureget.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerPZ_treasureget","path":"sprites/spr_playerPZ_treasureget/spr_playerPZ_treasureget.yy",},"resourceVersion":"1.0","name":"3b5ed65a-0659-4808-83ff-1e8234357946","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"34b77fdc-6094-4b50-a766-8dc2a53086c4","path":"sprites/spr_playerPZ_treasureget/spr_playerPZ_treasureget.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"34b77fdc-6094-4b50-a766-8dc2a53086c4","path":"sprites/spr_playerPZ_treasureget/spr_playerPZ_treasureget.yy",},"LayerId":{"name":"cf85a277-b764-4fab-a61f-e77df8b63a21","path":"sprites/spr_playerPZ_treasureget/spr_playerPZ_treasureget.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerPZ_treasureget","path":"sprites/spr_playerPZ_treasureget/spr_playerPZ_treasureget.yy",},"resourceVersion":"1.0","name":"34b77fdc-6094-4b50-a766-8dc2a53086c4","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"90d95a1c-7c55-4e90-9240-a7831de00381","path":"sprites/spr_playerPZ_treasureget/spr_playerPZ_treasureget.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"90d95a1c-7c55-4e90-9240-a7831de00381","path":"sprites/spr_playerPZ_treasureget/spr_playerPZ_treasureget.yy",},"LayerId":{"name":"cf85a277-b764-4fab-a61f-e77df8b63a21","path":"sprites/spr_playerPZ_treasureget/spr_playerPZ_treasureget.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerPZ_treasureget","path":"sprites/spr_playerPZ_treasureget/spr_playerPZ_treasureget.yy",},"resourceVersion":"1.0","name":"90d95a1c-7c55-4e90-9240-a7831de00381","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"95952a51-99d8-4671-93ac-2b3af8063848","path":"sprites/spr_playerPZ_treasureget/spr_playerPZ_treasureget.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"95952a51-99d8-4671-93ac-2b3af8063848","path":"sprites/spr_playerPZ_treasureget/spr_playerPZ_treasureget.yy",},"LayerId":{"name":"cf85a277-b764-4fab-a61f-e77df8b63a21","path":"sprites/spr_playerPZ_treasureget/spr_playerPZ_treasureget.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerPZ_treasureget","path":"sprites/spr_playerPZ_treasureget/spr_playerPZ_treasureget.yy",},"resourceVersion":"1.0","name":"95952a51-99d8-4671-93ac-2b3af8063848","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f372c55f-33a0-4523-a066-8f25e57007dc",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0f4a69d4-e2c5-4bc9-ba50-a928803f7f5e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9793920a-3515-4bcc-98c6-226f783a6e32",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b1bee9ae-d471-4784-bac7-e297828f7758",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3b5ed65a-0659-4808-83ff-1e8234357946",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"34b77fdc-6094-4b50-a766-8dc2a53086c4",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"90d95a1c-7c55-4e90-9240-a7831de00381",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"95952a51-99d8-4671-93ac-2b3af8063848",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_playerPZ_treasureget","path":"sprites/spr_playerPZ_treasureget/spr_playerPZ_treasureget.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -61,7 +51,7 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"fc9ff2f1-96c9-4aed-955c-add6e80156f2","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f372c55f-33a0-4523-a066-8f25e57007dc","path":"sprites/spr_playerPZ_treasureget/spr_playerPZ_treasureget.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"f2502191-0280-46cb-a451-82acfd5ef104","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0f4a69d4-e2c5-4bc9-ba50-a928803f7f5e","path":"sprites/spr_playerPZ_treasureget/spr_playerPZ_treasureget.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"b2f8f979-2313-4d58-aee1-3d8b4a8d6226","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9793920a-3515-4bcc-98c6-226f783a6e32","path":"sprites/spr_playerPZ_treasureget/spr_playerPZ_treasureget.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
@@ -70,7 +60,7 @@
             {"id":"841a57fd-042c-4008-b0a4-faa4d1d4e0b5","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"34b77fdc-6094-4b50-a766-8dc2a53086c4","path":"sprites/spr_playerPZ_treasureget/spr_playerPZ_treasureget.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"e146433d-b856-4e71-a212-c2f2d9779cf7","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"90d95a1c-7c55-4e90-9240-a7831de00381","path":"sprites/spr_playerPZ_treasureget/spr_playerPZ_treasureget.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"35e92f06-ca65-40c8-a55d-04ff4ed4c8a1","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"95952a51-99d8-4671-93ac-2b3af8063848","path":"sprites/spr_playerPZ_treasureget/spr_playerPZ_treasureget.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -86,22 +76,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_playerPZ_treasureget","path":"sprites/spr_playerPZ_treasureget/spr_playerPZ_treasureget.yy",},
-    "resourceVersion": "1.3",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"cf85a277-b764-4fab-a61f-e77df8b63a21","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"cf85a277-b764-4fab-a61f-e77df8b63a21","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Pizzelle",
     "path": "folders/Sprites/Characters/Playable Characters Sprites/Pizzelle.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_playerPZ_treasureget",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

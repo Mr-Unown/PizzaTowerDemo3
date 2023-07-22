@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_Opeppino",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 235,
   "height": 240,
   "textureGroupId": {
@@ -24,18 +28,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"6e4b94a5-9fc3-48fc-98ce-57f90ab5e707","path":"sprites/spr_Opeppino/spr_Opeppino.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6e4b94a5-9fc3-48fc-98ce-57f90ab5e707","path":"sprites/spr_Opeppino/spr_Opeppino.yy",},"LayerId":{"name":"2e695742-8df1-4f15-9d12-9e748711914c","path":"sprites/spr_Opeppino/spr_Opeppino.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_Opeppino","path":"sprites/spr_Opeppino/spr_Opeppino.yy",},"resourceVersion":"1.0","name":"6e4b94a5-9fc3-48fc-98ce-57f90ab5e707","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c13a2747-dbb7-4e65-ac41-2cafb814f041","path":"sprites/spr_Opeppino/spr_Opeppino.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c13a2747-dbb7-4e65-ac41-2cafb814f041","path":"sprites/spr_Opeppino/spr_Opeppino.yy",},"LayerId":{"name":"2e695742-8df1-4f15-9d12-9e748711914c","path":"sprites/spr_Opeppino/spr_Opeppino.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_Opeppino","path":"sprites/spr_Opeppino/spr_Opeppino.yy",},"resourceVersion":"1.0","name":"c13a2747-dbb7-4e65-ac41-2cafb814f041","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"35a43bd1-d1bc-4025-ab97-4527b0c86623","path":"sprites/spr_Opeppino/spr_Opeppino.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"35a43bd1-d1bc-4025-ab97-4527b0c86623","path":"sprites/spr_Opeppino/spr_Opeppino.yy",},"LayerId":{"name":"2e695742-8df1-4f15-9d12-9e748711914c","path":"sprites/spr_Opeppino/spr_Opeppino.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_Opeppino","path":"sprites/spr_Opeppino/spr_Opeppino.yy",},"resourceVersion":"1.0","name":"35a43bd1-d1bc-4025-ab97-4527b0c86623","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6e4b94a5-9fc3-48fc-98ce-57f90ab5e707",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c13a2747-dbb7-4e65-ac41-2cafb814f041",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"35a43bd1-d1bc-4025-ab97-4527b0c86623",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_Opeppino","path":"sprites/spr_Opeppino/spr_Opeppino.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -46,11 +46,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"7bab6b33-bcca-47ec-aa12-8a536125fb2a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6e4b94a5-9fc3-48fc-98ce-57f90ab5e707","path":"sprites/spr_Opeppino/spr_Opeppino.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"3ca0d571-1de5-4728-9d87-a433f67af6bd","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c13a2747-dbb7-4e65-ac41-2cafb814f041","path":"sprites/spr_Opeppino/spr_Opeppino.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"64b02b75-c2e4-4f16-8159-bb44721ea205","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"35a43bd1-d1bc-4025-ab97-4527b0c86623","path":"sprites/spr_Opeppino/spr_Opeppino.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -66,22 +66,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_Opeppino","path":"sprites/spr_Opeppino/spr_Opeppino.yy",},
-    "resourceVersion": "1.3",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"2e695742-8df1-4f15-9d12-9e748711914c","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"2e695742-8df1-4f15-9d12-9e748711914c","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Objects",
     "path": "folders/Sprites/Objects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_Opeppino",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

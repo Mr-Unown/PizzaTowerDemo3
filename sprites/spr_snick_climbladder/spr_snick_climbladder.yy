@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_snick_climbladder",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 100,
   "height": 100,
   "textureGroupId": {
@@ -24,39 +28,21 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"6597282f-73cc-4065-bf9b-1efd8227cad7","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6597282f-73cc-4065-bf9b-1efd8227cad7","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"LayerId":{"name":"31a5e7aa-25c7-445d-bcb5-efc0d3be6e71","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_snick_climbladder","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"resourceVersion":"1.0","name":"6597282f-73cc-4065-bf9b-1efd8227cad7","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"011745e3-6f54-48c8-9220-6b6244315e77","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"011745e3-6f54-48c8-9220-6b6244315e77","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"LayerId":{"name":"31a5e7aa-25c7-445d-bcb5-efc0d3be6e71","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_snick_climbladder","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"resourceVersion":"1.0","name":"011745e3-6f54-48c8-9220-6b6244315e77","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"fed6166c-f239-4af9-a9c1-b003c5dcd71e","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"fed6166c-f239-4af9-a9c1-b003c5dcd71e","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"LayerId":{"name":"31a5e7aa-25c7-445d-bcb5-efc0d3be6e71","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_snick_climbladder","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"resourceVersion":"1.0","name":"fed6166c-f239-4af9-a9c1-b003c5dcd71e","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"247bceae-e9b0-4119-b776-50240fcc1e7a","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"247bceae-e9b0-4119-b776-50240fcc1e7a","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"LayerId":{"name":"31a5e7aa-25c7-445d-bcb5-efc0d3be6e71","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_snick_climbladder","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"resourceVersion":"1.0","name":"247bceae-e9b0-4119-b776-50240fcc1e7a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"1d3e6885-2fc1-4cd1-af8d-88cc5dd390f8","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1d3e6885-2fc1-4cd1-af8d-88cc5dd390f8","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"LayerId":{"name":"31a5e7aa-25c7-445d-bcb5-efc0d3be6e71","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_snick_climbladder","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"resourceVersion":"1.0","name":"1d3e6885-2fc1-4cd1-af8d-88cc5dd390f8","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"3d85311d-b7f5-454c-ab15-3688e166d7f0","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3d85311d-b7f5-454c-ab15-3688e166d7f0","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"LayerId":{"name":"31a5e7aa-25c7-445d-bcb5-efc0d3be6e71","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_snick_climbladder","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"resourceVersion":"1.0","name":"3d85311d-b7f5-454c-ab15-3688e166d7f0","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"adaada31-f7b6-4058-852b-91c9ecbdadaf","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"adaada31-f7b6-4058-852b-91c9ecbdadaf","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"LayerId":{"name":"31a5e7aa-25c7-445d-bcb5-efc0d3be6e71","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_snick_climbladder","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"resourceVersion":"1.0","name":"adaada31-f7b6-4058-852b-91c9ecbdadaf","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c38033d6-5f4a-41db-b74b-aea6ac282512","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c38033d6-5f4a-41db-b74b-aea6ac282512","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"LayerId":{"name":"31a5e7aa-25c7-445d-bcb5-efc0d3be6e71","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_snick_climbladder","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"resourceVersion":"1.0","name":"c38033d6-5f4a-41db-b74b-aea6ac282512","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"887d631d-28b7-49ff-9187-879429f161b6","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"887d631d-28b7-49ff-9187-879429f161b6","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"LayerId":{"name":"31a5e7aa-25c7-445d-bcb5-efc0d3be6e71","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_snick_climbladder","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"resourceVersion":"1.0","name":"887d631d-28b7-49ff-9187-879429f161b6","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"0636f78f-84c9-49f5-b9b8-229e977d806f","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0636f78f-84c9-49f5-b9b8-229e977d806f","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"LayerId":{"name":"31a5e7aa-25c7-445d-bcb5-efc0d3be6e71","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_snick_climbladder","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"resourceVersion":"1.0","name":"0636f78f-84c9-49f5-b9b8-229e977d806f","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6597282f-73cc-4065-bf9b-1efd8227cad7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"011745e3-6f54-48c8-9220-6b6244315e77",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fed6166c-f239-4af9-a9c1-b003c5dcd71e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"247bceae-e9b0-4119-b776-50240fcc1e7a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1d3e6885-2fc1-4cd1-af8d-88cc5dd390f8",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3d85311d-b7f5-454c-ab15-3688e166d7f0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"adaada31-f7b6-4058-852b-91c9ecbdadaf",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c38033d6-5f4a-41db-b74b-aea6ac282512",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"887d631d-28b7-49ff-9187-879429f161b6",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0636f78f-84c9-49f5-b9b8-229e977d806f",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_snick_climbladder","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -67,7 +53,7 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"06429976-57b5-47ae-a4a1-90048745d775","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6597282f-73cc-4065-bf9b-1efd8227cad7","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"27c84942-d01b-4853-ae14-8b8b6f33464a","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"011745e3-6f54-48c8-9220-6b6244315e77","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"51630957-6d40-4123-8067-578e8ffcf873","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fed6166c-f239-4af9-a9c1-b003c5dcd71e","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
@@ -78,7 +64,7 @@
             {"id":"66ece27b-42f3-4458-9118-be6f238bcf9f","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c38033d6-5f4a-41db-b74b-aea6ac282512","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"02e662db-cfd3-42db-80e9-1bf5b1dbe7c2","Key":8.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"887d631d-28b7-49ff-9187-879429f161b6","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"3c6fde28-51d0-4a28-8d8a-d7c78ca43eda","Key":9.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0636f78f-84c9-49f5-b9b8-229e977d806f","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -94,22 +80,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_snick_climbladder","path":"sprites/spr_snick_climbladder/spr_snick_climbladder.yy",},
-    "resourceVersion": "1.3",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"31a5e7aa-25c7-445d-bcb5-efc0d3be6e71","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"31a5e7aa-25c7-445d-bcb5-efc0d3be6e71","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Sprites",
     "path": "folders/Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_snick_climbladder",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

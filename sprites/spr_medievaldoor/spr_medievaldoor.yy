@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_medievaldoor",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 100,
   "height": 100,
   "textureGroupId": {
@@ -24,18 +28,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"dc60c322-e2e2-4c17-9953-8587846d9138","path":"sprites/spr_medievaldoor/spr_medievaldoor.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"dc60c322-e2e2-4c17-9953-8587846d9138","path":"sprites/spr_medievaldoor/spr_medievaldoor.yy",},"LayerId":{"name":"c6728057-3297-4272-a958-1c00518e5528","path":"sprites/spr_medievaldoor/spr_medievaldoor.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_medievaldoor","path":"sprites/spr_medievaldoor/spr_medievaldoor.yy",},"resourceVersion":"1.0","name":"dc60c322-e2e2-4c17-9953-8587846d9138","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"687abdb9-8885-49e9-a744-b3c76cd11537","path":"sprites/spr_medievaldoor/spr_medievaldoor.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"687abdb9-8885-49e9-a744-b3c76cd11537","path":"sprites/spr_medievaldoor/spr_medievaldoor.yy",},"LayerId":{"name":"c6728057-3297-4272-a958-1c00518e5528","path":"sprites/spr_medievaldoor/spr_medievaldoor.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_medievaldoor","path":"sprites/spr_medievaldoor/spr_medievaldoor.yy",},"resourceVersion":"1.0","name":"687abdb9-8885-49e9-a744-b3c76cd11537","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"797380be-86fc-4ab0-bc13-b0e705e16f8b","path":"sprites/spr_medievaldoor/spr_medievaldoor.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"797380be-86fc-4ab0-bc13-b0e705e16f8b","path":"sprites/spr_medievaldoor/spr_medievaldoor.yy",},"LayerId":{"name":"c6728057-3297-4272-a958-1c00518e5528","path":"sprites/spr_medievaldoor/spr_medievaldoor.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_medievaldoor","path":"sprites/spr_medievaldoor/spr_medievaldoor.yy",},"resourceVersion":"1.0","name":"797380be-86fc-4ab0-bc13-b0e705e16f8b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"dc60c322-e2e2-4c17-9953-8587846d9138",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"687abdb9-8885-49e9-a744-b3c76cd11537",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"797380be-86fc-4ab0-bc13-b0e705e16f8b",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_medievaldoor","path":"sprites/spr_medievaldoor/spr_medievaldoor.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 0.0,
@@ -46,11 +46,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"4d0cdd27-07fd-4677-a66c-d82812966f10","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"dc60c322-e2e2-4c17-9953-8587846d9138","path":"sprites/spr_medievaldoor/spr_medievaldoor.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"600aae9b-190b-45f6-83d8-4c3b71f0e11e","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"687abdb9-8885-49e9-a744-b3c76cd11537","path":"sprites/spr_medievaldoor/spr_medievaldoor.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"8cce929c-3fad-4ab1-84d9-5cced95e2c5d","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"797380be-86fc-4ab0-bc13-b0e705e16f8b","path":"sprites/spr_medievaldoor/spr_medievaldoor.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -66,22 +66,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_medievaldoor","path":"sprites/spr_medievaldoor/spr_medievaldoor.yy",},
-    "resourceVersion": "1.3",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c6728057-3297-4272-a958-1c00518e5528","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c6728057-3297-4272-a958-1c00518e5528","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Asset Layer Sprites",
     "path": "folders/Sprites/Asset Layer Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_medievaldoor",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_playerV_bootsland",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 100,
   "height": 100,
   "textureGroupId": {
@@ -24,18 +28,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"ead51d12-a828-4eb3-bfab-8b3bf90a7d7e","path":"sprites/spr_playerV_bootsland/spr_playerV_bootsland.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ead51d12-a828-4eb3-bfab-8b3bf90a7d7e","path":"sprites/spr_playerV_bootsland/spr_playerV_bootsland.yy",},"LayerId":{"name":"6e835c12-b7be-43f8-a011-8b35cede595e","path":"sprites/spr_playerV_bootsland/spr_playerV_bootsland.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerV_bootsland","path":"sprites/spr_playerV_bootsland/spr_playerV_bootsland.yy",},"resourceVersion":"1.0","name":"ead51d12-a828-4eb3-bfab-8b3bf90a7d7e","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"b7e4830e-07c8-454f-a3a0-d560ed3ff055","path":"sprites/spr_playerV_bootsland/spr_playerV_bootsland.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b7e4830e-07c8-454f-a3a0-d560ed3ff055","path":"sprites/spr_playerV_bootsland/spr_playerV_bootsland.yy",},"LayerId":{"name":"6e835c12-b7be-43f8-a011-8b35cede595e","path":"sprites/spr_playerV_bootsland/spr_playerV_bootsland.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerV_bootsland","path":"sprites/spr_playerV_bootsland/spr_playerV_bootsland.yy",},"resourceVersion":"1.0","name":"b7e4830e-07c8-454f-a3a0-d560ed3ff055","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"32d4cea2-a4bb-4e23-a984-046bd2c47893","path":"sprites/spr_playerV_bootsland/spr_playerV_bootsland.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"32d4cea2-a4bb-4e23-a984-046bd2c47893","path":"sprites/spr_playerV_bootsland/spr_playerV_bootsland.yy",},"LayerId":{"name":"6e835c12-b7be-43f8-a011-8b35cede595e","path":"sprites/spr_playerV_bootsland/spr_playerV_bootsland.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_playerV_bootsland","path":"sprites/spr_playerV_bootsland/spr_playerV_bootsland.yy",},"resourceVersion":"1.0","name":"32d4cea2-a4bb-4e23-a984-046bd2c47893","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ead51d12-a828-4eb3-bfab-8b3bf90a7d7e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b7e4830e-07c8-454f-a3a0-d560ed3ff055",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"32d4cea2-a4bb-4e23-a984-046bd2c47893",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_playerV_bootsland","path":"sprites/spr_playerV_bootsland/spr_playerV_bootsland.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -46,11 +46,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"5f49cae4-92ed-4fc5-aa67-6f8b44c66205","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ead51d12-a828-4eb3-bfab-8b3bf90a7d7e","path":"sprites/spr_playerV_bootsland/spr_playerV_bootsland.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"08a061a9-5bb1-40ab-91b1-b389f8d46496","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b7e4830e-07c8-454f-a3a0-d560ed3ff055","path":"sprites/spr_playerV_bootsland/spr_playerV_bootsland.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"9ee0574d-695c-45fa-b9dd-0caf52724a70","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"32d4cea2-a4bb-4e23-a984-046bd2c47893","path":"sprites/spr_playerV_bootsland/spr_playerV_bootsland.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -66,22 +66,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_playerV_bootsland","path":"sprites/spr_playerV_bootsland/spr_playerV_bootsland.yy",},
-    "resourceVersion": "1.3",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"6e835c12-b7be-43f8-a011-8b35cede595e","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6e835c12-b7be-43f8-a011-8b35cede595e","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Vigi",
     "path": "folders/Sprites/Characters/Playable Characters Sprites/Vigi.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_playerV_bootsland",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

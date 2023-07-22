@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_coolpineastun",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 100,
   "height": 100,
   "textureGroupId": {
@@ -24,18 +28,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"718f6411-1c15-4fdd-a5f7-a79fff5d9dfd","path":"sprites/spr_coolpineastun/spr_coolpineastun.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"718f6411-1c15-4fdd-a5f7-a79fff5d9dfd","path":"sprites/spr_coolpineastun/spr_coolpineastun.yy",},"LayerId":{"name":"da0f25da-9772-49a0-8113-b54937933948","path":"sprites/spr_coolpineastun/spr_coolpineastun.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_coolpineastun","path":"sprites/spr_coolpineastun/spr_coolpineastun.yy",},"resourceVersion":"1.0","name":"718f6411-1c15-4fdd-a5f7-a79fff5d9dfd","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"6e853867-dd72-44f5-9590-5d9aa76dd0fc","path":"sprites/spr_coolpineastun/spr_coolpineastun.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6e853867-dd72-44f5-9590-5d9aa76dd0fc","path":"sprites/spr_coolpineastun/spr_coolpineastun.yy",},"LayerId":{"name":"da0f25da-9772-49a0-8113-b54937933948","path":"sprites/spr_coolpineastun/spr_coolpineastun.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_coolpineastun","path":"sprites/spr_coolpineastun/spr_coolpineastun.yy",},"resourceVersion":"1.0","name":"6e853867-dd72-44f5-9590-5d9aa76dd0fc","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"6522abda-b372-45b5-bd8d-70e4ff44e250","path":"sprites/spr_coolpineastun/spr_coolpineastun.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6522abda-b372-45b5-bd8d-70e4ff44e250","path":"sprites/spr_coolpineastun/spr_coolpineastun.yy",},"LayerId":{"name":"da0f25da-9772-49a0-8113-b54937933948","path":"sprites/spr_coolpineastun/spr_coolpineastun.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_coolpineastun","path":"sprites/spr_coolpineastun/spr_coolpineastun.yy",},"resourceVersion":"1.0","name":"6522abda-b372-45b5-bd8d-70e4ff44e250","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"718f6411-1c15-4fdd-a5f7-a79fff5d9dfd",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6e853867-dd72-44f5-9590-5d9aa76dd0fc",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6522abda-b372-45b5-bd8d-70e4ff44e250",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_coolpineastun","path":"sprites/spr_coolpineastun/spr_coolpineastun.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -46,11 +46,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"a4b17dd5-ee4b-47dc-b6f0-dd25e1c19dd1","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"718f6411-1c15-4fdd-a5f7-a79fff5d9dfd","path":"sprites/spr_coolpineastun/spr_coolpineastun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"e83f1ca1-80b6-4a51-82a8-8123029d1536","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6e853867-dd72-44f5-9590-5d9aa76dd0fc","path":"sprites/spr_coolpineastun/spr_coolpineastun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"1a705907-99d2-401f-ac8a-18062c0f0214","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6522abda-b372-45b5-bd8d-70e4ff44e250","path":"sprites/spr_coolpineastun/spr_coolpineastun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -66,22 +66,13 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_coolpineastun","path":"sprites/spr_coolpineastun/spr_coolpineastun.yy",},
-    "resourceVersion": "1.3",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"da0f25da-9772-49a0-8113-b54937933948","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"da0f25da-9772-49a0-8113-b54937933948","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Cool Pineapple",
     "path": "folders/Sprites/Characters/Baddies/Cool Pineapple.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_coolpineastun",
-  "tags": [],
-  "resourceType": "GMSprite",
 }
