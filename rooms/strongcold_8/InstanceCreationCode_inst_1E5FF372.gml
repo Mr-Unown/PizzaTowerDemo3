@@ -1,2 +1,0 @@
-
-portalid = 2

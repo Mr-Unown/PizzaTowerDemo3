@@ -1,2 +1,0 @@
-panicmode = true
-unid = "panic"

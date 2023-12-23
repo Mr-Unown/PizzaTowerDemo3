@@ -1,1 +1,0 @@
-targetRoom = sanctum_1

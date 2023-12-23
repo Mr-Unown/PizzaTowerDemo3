@@ -1,2 +1,0 @@
-targetRoom = chateau_2
-

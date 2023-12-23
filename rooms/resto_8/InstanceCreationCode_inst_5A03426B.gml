@@ -1,1 +1,0 @@
-targetRoom = resto_7

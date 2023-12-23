@@ -1,2 +1,0 @@
-pipedirection = "right"
-shoot = true
