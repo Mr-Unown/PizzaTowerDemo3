@@ -1,25 +1,9 @@
 {
-  "spriteId": {
-    "name": "tile_desert",
-    "path": "sprites/tile_desert/tile_desert.yy",
-  },
-  "tileWidth": 32,
-  "tileHeight": 32,
-  "tilexoff": 0,
-  "tileyoff": 0,
-  "tilehsep": 0,
-  "tilevsep": 0,
-  "spriteNoExport": false,
-  "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
-  },
-  "out_tilehborder": 2,
-  "out_tilevborder": 2,
-  "out_columns": 14,
-  "tile_count": 210,
+  "resourceType": "GMTileSet",
+  "resourceVersion": "1.0",
+  "name": "tile_desert_tileset",
   "autoTileSets": [
-    {"tiles":[
+    {"resourceType":"GMAutoTileSet","resourceVersion":"1.0","name":"autotile_2","closed_edge":false,"tiles":[
         49,
         162,
         160,
@@ -36,8 +20,8 @@
         64,
         67,
         0,
-      ],"closed_edge":false,"resourceVersion":"1.0","name":"autotile_2","tags":[],"resourceType":"GMAutoTileSet",},
-    {"tiles":[
+      ],},
+    {"resourceType":"GMAutoTileSet","resourceVersion":"1.0","name":"autotile_3","closed_edge":false,"tiles":[
         87,
         165,
         163,
@@ -54,10 +38,30 @@
         96,
         98,
         49,
-      ],"closed_edge":false,"resourceVersion":"1.0","name":"autotile_3","tags":[],"resourceType":"GMAutoTileSet",},
+      ],},
   ],
-  "tileAnimationFrames": [],
-  "tileAnimationSpeed": 15.0,
+  "macroPageTiles": {
+    "SerialiseHeight": 0,
+    "SerialiseWidth": 0,
+    "TileSerialiseData": [],
+  },
+  "out_columns": 14,
+  "out_tilehborder": 2,
+  "out_tilevborder": 2,
+  "parent": {
+    "name": "Desert",
+    "path": "folders/Tile Sets/Desert.yy",
+  },
+  "spriteId": {
+    "name": "tile_desert",
+    "path": "sprites/tile_desert/tile_desert.yy",
+  },
+  "spriteNoExport": false,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
+  "tile_count": 210,
   "tileAnimation": {
     "FrameData": [
       0,
@@ -273,17 +277,12 @@
     ],
     "SerialiseFrameCount": 1,
   },
-  "macroPageTiles": {
-    "SerialiseWidth": 0,
-    "SerialiseHeight": 0,
-    "TileSerialiseData": [],
-  },
-  "parent": {
-    "name": "Desert",
-    "path": "folders/Tile Sets/Desert.yy",
-  },
-  "resourceVersion": "1.0",
-  "name": "tile_desert_tileset",
-  "tags": [],
-  "resourceType": "GMTileSet",
+  "tileAnimationFrames": [],
+  "tileAnimationSpeed": 15.0,
+  "tileHeight": 32,
+  "tilehsep": 0,
+  "tilevsep": 0,
+  "tileWidth": 32,
+  "tilexoff": 0,
+  "tileyoff": 0,
 }

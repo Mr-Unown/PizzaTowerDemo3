@@ -1,5 +1,5 @@
 if other.state = 100 {
-if character != "PZ"
+if character != "not in the game"
 	{
 		if audio_is_playing(sfx_collecttopping)
 		audio_stop_sound(sfx_collecttopping)
@@ -7,9 +7,9 @@ if character != "PZ"
 	}
 	else
 	{
-		if audio_is_playing(sfx_PZcollecttopping)
-		audio_stop_sound(sfx_PZcollecttopping)
-		scr_soundeffect(sfx_PZcollecttopping)
+		if audio_is_playing(sfx_not in the gamecollecttopping)
+		audio_stop_sound(sfx_not in the gamecollecttopping)
+		scr_soundeffect(sfx_not in the gamecollecttopping)
 	}
 with other.id
 {

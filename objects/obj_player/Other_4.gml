@@ -124,8 +124,8 @@ with (obj_collect)
             sprite_index = spr_snickcollectible1
         else if ((obj_player1.character == "V" && obj_player1.spotlight == 1) || (obj_player2.character == "V" && obj_player1.spotlight == 0))
             sprite_index = choose(spr_cheesetopping1, spr_cheesetopping2, spr_cheesetopping3, spr_cheesetopping4, spr_cheesetopping5)
-		else if ((obj_player1.character == "PZ" && obj_player1.spotlight == 1) || (obj_player2.character == "PZ" && obj_player1.spotlight == 0))
-			sprite_index = choose(spr_PZtopping1, spr_PZtopping2, spr_PZtopping3, spr_PZtopping4, spr_PZtopping5)			
+		else if ((obj_player1.character == "not in the game" && obj_player1.spotlight == 1) || (obj_player2.character == "not in the game" && obj_player1.spotlight == 0))
+			sprite_index = choose(spr_not in the gametopping1, spr_not in the gametopping2, spr_not in the gametopping3, spr_not in the gametopping4, spr_not in the gametopping5)			
     }
 }
 with (obj_escapecollect)
@@ -140,8 +140,8 @@ with (obj_escapecollect)
             sprite_index = spr_snickcollectible1
         else if ((obj_player1.character == "V" && obj_player1.spotlight == 1) || (obj_player2.character == "V" && obj_player1.spotlight == 0))
             sprite_index = choose(spr_cheesetopping1, spr_cheesetopping2, spr_cheesetopping3, spr_cheesetopping4, spr_cheesetopping5)
-		else if ((obj_player1.character == "PZ" && obj_player1.spotlight == 1) || (obj_player2.character == "PZ" && obj_player1.spotlight == 0))
-			sprite_index = choose(spr_PZtopping1, spr_PZtopping2, spr_PZtopping3, spr_PZtopping4, spr_PZtopping5)			
+		else if ((obj_player1.character == "not in the game" && obj_player1.spotlight == 1) || (obj_player2.character == "not in the game" && obj_player1.spotlight == 0))
+			sprite_index = choose(spr_not in the gametopping1, spr_not in the gametopping2, spr_not in the gametopping3, spr_not in the gametopping4, spr_not in the gametopping5)			
     }
 }
 with (obj_bigcollect)
@@ -156,8 +156,8 @@ with (obj_bigcollect)
             sprite_index = spr_snickcollectible2
         else if ((obj_player1.character == "V" && obj_player1.spotlight == 1) || (obj_player2.character == "V" && obj_player1.spotlight == 0))
             sprite_index = choose(spr_pizzacollect1cheese, spr_pizzacollect2cheese, spr_pizzacollect3cheese)
-		else if ((obj_player1.character == "PZ" && obj_player1.spotlight == 1) || (obj_player2.character == "PZ" && obj_player1.spotlight == 0))
-			sprite_index = choose(spr_PZbigpizza1, spr_PZbigpizza2, spr_PZbigpizza3)			
+		else if ((obj_player1.character == "not in the game" && obj_player1.spotlight == 1) || (obj_player2.character == "not in the game" && obj_player1.spotlight == 0))
+			sprite_index = choose(spr_not in the gamebigpizza1, spr_not in the gamebigpizza2, spr_not in the gamebigpizza3)			
     }
 }
 with (obj_giantcollect)
@@ -172,8 +172,8 @@ with (obj_giantcollect)
             sprite_index = spr_snickcollectible3
         else if ((obj_player1.character == "V" && obj_player1.spotlight == 1) || (obj_player2.character == "V" && obj_player1.spotlight == 0))
             sprite_index = spr_giantpizzacheese
-		else if ((obj_player1.character == "PZ" && obj_player1.spotlight == 1) || (obj_player2.character == "PZ" && obj_player1.spotlight == 0))
-			sprite_index = spr_PZgiantpizza			
+		else if ((obj_player1.character == "not in the game" && obj_player1.spotlight == 1) || (obj_player2.character == "not in the game" && obj_player1.spotlight == 0))
+			sprite_index = spr_not in the gamegiantpizza			
     }
 }
 with (obj_pizzaslice)
@@ -188,7 +188,7 @@ with (obj_pizzaslice)
             sprite_index = spr_snickcollectible4
         else if ((obj_player1.character == "V" && obj_player1.spotlight == 1) || (obj_player2.character == "V" && obj_player1.spotlight == 0))
             sprite_index = spr_cheesespinningslice
-		else if ((obj_player1.character == "PZ" && obj_player1.spotlight == 1) || (obj_player2.character == "PZ" && obj_player1.spotlight == 0))
+		else if ((obj_player1.character == "not in the game" && obj_player1.spotlight == 1) || (obj_player2.character == "not in the game" && obj_player1.spotlight == 0))
 			sprite_index = spr_sweetspinningslice				
     }
 }
@@ -204,8 +204,8 @@ with (obj_destroyable2)
             sprite_index = spr_snickblock
         else if ((obj_player1.character == "V" && obj_player1.spotlight == 1) || (obj_player2.character == "V" && obj_player1.spotlight == 0))
             sprite_index = spr_cheesedestroyableblock
-		else if ((obj_player1.character == "PZ" && obj_player1.spotlight == 1) || (obj_player2.character == "PZ" && obj_player1.spotlight == 0))
-			sprite_index = spr_PZdestroyablepep				
+		else if ((obj_player1.character == "not in the game" && obj_player1.spotlight == 1) || (obj_player2.character == "not in the game" && obj_player1.spotlight == 0))
+			sprite_index = spr_not in the gamedestroyablepep				
     }
 }
 with (obj_destroyable2escape)
@@ -220,8 +220,8 @@ with (obj_destroyable2escape)
             sprite_index = spr_snickblockescape
         else if ((obj_player1.character == "V" && obj_player1.spotlight == 1) || (obj_player2.character == "V" && obj_player1.spotlight == 0))
             sprite_index = spr_cheesedestroyableblockescape
-		else if ((obj_player1.character == "PZ" && obj_player1.spotlight == 1) || (obj_player2.character == "PZ" && obj_player1.spotlight == 0))
-			sprite_index = spr_PZdestroyablepepescape			
+		else if ((obj_player1.character == "not in the game" && obj_player1.spotlight == 1) || (obj_player2.character == "not in the game" && obj_player1.spotlight == 0))
+			sprite_index = spr_not in the gamedestroyablepepescape			
     }
 }
 with (obj_destroyable2_big)
@@ -236,8 +236,8 @@ with (obj_destroyable2_big)
             sprite_index = spr_snickbigblock
         else if ((obj_player1.character == "V" && obj_player1.spotlight == 1) || (obj_player2.character == "V" && obj_player1.spotlight == 0))
             sprite_index = spr_cheesebigblock
-		else if ((obj_player1.character == "PZ" && obj_player1.spotlight == 1) || (obj_player2.character == "PZ" && obj_player1.spotlight == 0))
-			sprite_index = spr_PZbigbreakable				
+		else if ((obj_player1.character == "not in the game" && obj_player1.spotlight == 1) || (obj_player2.character == "not in the game" && obj_player1.spotlight == 0))
+			sprite_index = spr_not in the gamebigbreakable				
     }
 }
 with (obj_destroyable2_bigescape)
@@ -252,8 +252,8 @@ with (obj_destroyable2_bigescape)
             sprite_index = spr_snickbigblockescape
         else if ((obj_player1.character == "V" && obj_player1.spotlight == 1) || (obj_player2.character == "V" && obj_player1.spotlight == 0))
             sprite_index = spr_cheesebigblockescape
-		else if ((obj_player1.character == "PZ" && obj_player1.spotlight == 1) || (obj_player2.character == "PZ" && obj_player1.spotlight == 0))
-			sprite_index = spr_PZbigbreakableescape				
+		else if ((obj_player1.character == "not in the game" && obj_player1.spotlight == 1) || (obj_player2.character == "not in the game" && obj_player1.spotlight == 0))
+			sprite_index = spr_not in the gamebigbreakableescape				
     }
 }
 

@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "scr_enemy_throw",
   "isCompatibility": false,
+  "isDnD": false,
   "parent": {
     "name": "enemy",
     "path": "folders/Scripts/enemy.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "scr_enemy_throw",
-  "tags": [],
-  "resourceType": "GMScript",
 }

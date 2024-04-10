@@ -99,7 +99,7 @@ function scr_player_backbreaker() {
 	    {
 			if key_down2
 			{
-				if character = "P" || character = "PZ" || (character = "N" && pogo = true)
+				if character = "P" || character = "not in the game" || (character = "N" && pogo = true)
 				{
 					if (paletteselect < sprite_get_width(spr_palette) - 1)
 						paletteselect += 1
@@ -169,13 +169,13 @@ function scr_player_backbreaker() {
 	            }
 				else if (character == "V")
 	            {
-	                character = "PZ"
+	                character = "not in the game"
 	                paletteselect = 0
 					scr_characterspr();
 	                tauntstoredsprite = spr_idle;
 					tauntstoredimage = 0;
 	            }
-				else if (character == "PZ")
+				else if (character == "not in the game")
 	            {
 					//dougie probably wont be done by then, so do this
 					if DOUGIE
@@ -437,7 +437,7 @@ function scr_player_backbreaker() {
 	        }
 	    }
 	}
-	if (character == "PZ" && sprite_index == spr_playerPZ_genesis)
+	if (character == "not in the game" && sprite_index == spr_playernot in the game_genesis)
 	{
 	    image_index = (gamepad_button_value(0, gp_shoulderlb) * 7)
 	    if (gamepad_button_value(0, gp_shoulderlb) == 0)

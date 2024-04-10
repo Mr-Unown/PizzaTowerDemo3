@@ -23,7 +23,7 @@ function scr_player_substate_tackle()
 	        else if (!grounded)
 	            movespeed = 10
 	    }
-		if character = "PZ" || character = "GB"
+		if character = "not in the game" || character = "GB"
 		{
 	       movespeed = 10
 		}
@@ -81,7 +81,7 @@ function scr_player_substate_tackle()
 		vsp = -11
 	}
 	//Mach Stop
-	if (grounded || character = "PZ") && key_attack
+	if (grounded || character = "not in the game") && key_attack
 	{
 		image_speed = 0.35
 		if (character == "N" && pogo = true) && !key_slap2 

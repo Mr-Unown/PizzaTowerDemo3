@@ -15,7 +15,7 @@ function scr_player_normal() {
 	    hsp = ((move * movespeed) - 5)
 	else if place_meeting(x, (y + 1), obj_railh2)
 	    hsp = ((move * movespeed) + 5)
-	if (character == "P" || character == "N" || character == "PZ" || character == "PM" || character == "V" || character = "D" || character = "GB")
+	if (character == "P" || character == "N" || character == "not in the game" || character == "PM" || character == "V" || character = "D" || character = "GB")
 	{
 	    if (machslideAnim == 0 && landAnim == 0 && shotgunAnim == 0)
 	    {
@@ -29,7 +29,7 @@ function scr_player_normal() {
 	                idle = 0
 	                image_index = 0
 	            }
-	            if (idle >= 150 && sprite_index != spr_idle1 && sprite_index != spr_idle2 && sprite_index != spr_idle3 && sprite_index != spr_idle4 && sprite_index != spr_idle5 && sprite_index != spr_idle6 && character != "PZ")
+	            if (idle >= 150 && sprite_index != spr_idle1 && sprite_index != spr_idle2 && sprite_index != spr_idle3 && sprite_index != spr_idle4 && sprite_index != spr_idle5 && sprite_index != spr_idle6 && character != "not in the game")
 	            {
 	                randomise()
 	                idleanim = random_range(0, 100)
@@ -102,7 +102,7 @@ function scr_player_normal() {
 	                        firebutt = 0
 	                    }
 	                }
-	                else if (firebutt != 0 && (character == "PM" || character == "PZ" || character == "V" || character == "D"))
+	                else if (firebutt != 0 && (character == "PM" || character == "not in the game" || character == "V" || character == "D"))
 	                {
 	                    buttanim = 100
 	                    firebutt = 0
@@ -384,11 +384,11 @@ function scr_player_normal() {
 	    }
 		brick = 0
 	}
-	if (key_slap2 && (character = "P" || character == "PZ" || character = "N" || (character = "D" && spellselect = 2) || character = "GB" && brick = 1))
+	if (key_slap2 && (character = "P" || character == "not in the game" || character = "N" || (character = "D" && spellselect = 2) || character = "GB" && brick = 1))
 	{
-		if key_up && (character = "P" || character == "PZ"  || character = "N")
+		if key_up && (character = "P" || character == "not in the game"  || character = "N")
 		{
-			if character = "P" || character == "PZ"
+			if character = "P" || character == "not in the game"
 			{
 				suplexmove = 1		
 				suplexdashsnd = audio_play_sound(sfx_suplexdash, 1, false)
@@ -477,7 +477,7 @@ function scr_player_normal() {
 		        sprite_index = spr_shotgunsuplexdash
 		    else
 				sprite_index = spr_suplexdash
-			if (character == "P" || character == "PZ" || character = "D" || character == "GB")
+			if (character == "P" || character == "not in the game" || character = "D" || character == "GB")
 		        movespeed = 6
 		    else
 				movespeed = 4
@@ -557,7 +557,7 @@ function scr_player_normal() {
 	        image_xscale = other.image_xscale
 	    image_index = 0
 	    sprite_index = spr_shotgunshoot
-	    if (character == "P" || character == "PZ")
+	    if (character == "P" || character == "not in the game")
 	    {
 	        with (instance_create((x + (image_xscale * 20)), (y + 20), obj_shotgunbullet))
 	            playerid = other.id
@@ -596,7 +596,7 @@ function scr_player_normal() {
 	    state = 12
 	    image_index = 0
 	}
-	if (key_attack && (character == "P" || (character == "N" && pogo != true) || character == "PZ"  || (character = "D" && spellselect = 2) || character == "V")) && (!scr_solid(x + xscale,y) || scr_slope_ext(x + xscale,y))
+	if (key_attack && (character == "P" || (character == "N" && pogo != true) || character == "not in the game"  || (character = "D" && spellselect = 2) || character == "V")) && (!scr_solid(x + xscale,y) || scr_slope_ext(x + xscale,y))
 	{
 		hsp = 0;
 	    movespeed = 6
@@ -703,10 +703,10 @@ function scr_player_normal() {
 	        state = 51
 	        sprite_index = spr_playerV_revolverstart
 	    }
-		if (character == "PZ")
+		if (character == "not in the game")
 	    {
 	        state = 51
-	        sprite_index = spr_playerPZ_genesis
+	        sprite_index = spr_playernot in the game_genesis
 	    }
 	}
 

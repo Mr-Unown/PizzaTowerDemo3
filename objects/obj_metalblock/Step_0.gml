@@ -19,7 +19,7 @@ if (place_meeting(x, (y + 1), obj_player1) || place_meeting(x, (y - 1), obj_play
     if (place_meeting(x, (y - 1), obj_player1) && (obj_player1.state == states.knightpep || obj_player1.state == 9))
 		{ initialhsp = 8 * sign(player.image_xscale); initialvsp = random_range(-4, -1);	event_user(0); 	}
 }
-if place_meeting(x, (y + 40), obj_player1) && (obj_player1.state == states.Sjump && (obj_player1.superspringjump == 1 || obj_player1.character = "PZ")) && object_index != obj_metalblockhard
+if place_meeting(x, (y + 40), obj_player1) && (obj_player1.state == states.Sjump && (obj_player1.superspringjump == 1 || obj_player1.character = "not in the game")) && object_index != obj_metalblockhard
 	{ initialhsp = 8 * sign(player.image_xscale); initialvsp = random_range(-4, -1);	event_user(0); 	}
 //Player 2
 with (obj_player2)
@@ -43,7 +43,7 @@ if (place_meeting(x, (y + 1), obj_player2) || place_meeting(x, (y - 1), obj_play
         { initialhsp = 8 * sign(player.image_xscale); initialvsp = random_range(-4, -1);	event_user(0); 	}
     }
 }
-if place_meeting(x, (y + 40), obj_player2) && (obj_player2.state == states.Sjump && (obj_player2.superspringjump == 1 || obj_player2.character = "PZ")) && object_index != obj_metalblockhard
+if place_meeting(x, (y + 40), obj_player2) && (obj_player2.state == states.Sjump && (obj_player2.superspringjump == 1 || obj_player2.character = "not in the game")) && object_index != obj_metalblockhard
     { initialhsp = 8 * sign(player.image_xscale); initialvsp = random_range(-4, -1);	event_user(0); 	}
 
 

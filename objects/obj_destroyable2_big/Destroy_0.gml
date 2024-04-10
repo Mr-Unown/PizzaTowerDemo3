@@ -25,8 +25,8 @@ if (ds_list_find_index(global.saveroom, id) == -1 && global.snickchallenge == 0)
                 sprite_index = spr_bigdebris
             else if (other.sprite_index == spr_cheesebigblock)
                 sprite_index = spr_bigpizzadebris
-			else if (other.sprite_index == spr_PZbigbreakable)
-				sprite_index = spr_PZbigpizzadebris		
+			else if (other.sprite_index == spr_not in the gamebigbreakable)
+				sprite_index = spr_not in the gamebigpizzadebris		
         }
     }
 	if global.destroyablecollect = 0

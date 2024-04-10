@@ -21,7 +21,7 @@ if (place_meeting(x, (y + 1), player) || place_meeting(x, (y - 1), player) || pl
         event_user(0)
     }
 }
-if place_meeting(x, (y + 40), player) && (player.state == states.Sjump && (player.superspringjump == 1 || player.character = "PZ")) && object_index != obj_metalblockhard
+if place_meeting(x, (y + 40), player) && (player.state == states.Sjump && (player.superspringjump == 1 || player.character = "not in the game")) && object_index != obj_metalblockhard
     event_user(0)
 #endregion
 

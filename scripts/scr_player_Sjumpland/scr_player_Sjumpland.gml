@@ -14,13 +14,13 @@ function scr_player_Sjumpland() {
 	alarm[4] = 14
 	vsp = 0
 	hsp = 0
-	if (floor(image_index) == 6) && character != "PZ"
+	if (floor(image_index) == 6) && character != "not in the game"
 	{
 	    sprite_index = spr_machfreefall
 	    state = 58
 	    jumpAnim = 0
 	}
-	else if (floor(image_index) == image_number - 1) && character = "PZ"
+	else if (floor(image_index) == image_number - 1) && character = "not in the game"
 	{
 	    sprite_index = spr_machfreefall
 	    state = 58

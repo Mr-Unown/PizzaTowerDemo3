@@ -116,10 +116,10 @@ if relax = false && global.freezeframe = false && room != rank_room && !instance
 			//Original Auto Parry
 			with (playerid)
 			{
-				if character != "PZ"
+				if character != "not in the game"
 				scr_soundeffect(choose(sfx_parry1,sfx_parry2))
 				else
-				scr_soundeffect(sfx_PZparry)
+				scr_soundeffect(sfx_not in the gameparry)
 				state = 114
 				sprite_index = choose(spr_parry1, spr_parry2, spr_parry3)
 				image_index = 0

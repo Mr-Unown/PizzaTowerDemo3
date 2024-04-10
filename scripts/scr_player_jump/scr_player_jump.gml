@@ -159,7 +159,7 @@ function scr_player_jump() {
 	        image_index = 0
 	        state = 92
 	        sprite_index = spr_bodyslamstart
-	        if (character == "P" || character == "PZ" || character == "S")
+	        if (character == "P" || character == "not in the game" || character == "S")
 	            vsp = -5
 	        else
 	            vsp = -7
@@ -171,7 +171,7 @@ function scr_player_jump() {
 	        state = 92
 	        sprite_index = spr_shotgunjump1
 	        vsp = -5
-	        if (character == "P" || character == "PZ")
+	        if (character == "P" || character == "not in the game")
 	        {
 	            with (instance_create((x + 30), (y + 60), obj_shotgunbullet))
 	            {
@@ -246,9 +246,9 @@ function scr_player_jump() {
 	image_index = 0
 	sprite_index = spr_player_mortjump
 	}
-	if (key_slap2 && suplexmove = 0 && (character = "P" || character = "PZ" || character = "N" || (character = "D" && spellselect = 2)))
+	if (key_slap2 && suplexmove = 0 && (character = "P" || character = "not in the game" || character = "N" || (character = "D" && spellselect = 2)))
 	{
-		if key_up && (character = "P" || character = "PZ" )&& doublejump = 0
+		if key_up && (character = "P" || character = "not in the game" )&& doublejump = 0
 		{
 			suplexmove = 1		
 			suplexdashsnd = audio_play_sound(sfx_suplexdash, 1, false)
@@ -291,13 +291,13 @@ function scr_player_jump() {
 			audio_sound_gain(suplexdashsnd, (1 * global.soundeffectsvolume), 0)
 			state = 22
 			image_index = 0
-			if character != "PZ" && character != "GB" {
+			if character != "not in the game" && character != "GB" {
 				vsp = -4
 				sprite_index = spr_suplexdashjumpstart
 			}
 			else
 				sprite_index = spr_suplexdash
-			if (character == "P"|| character = "D" || character = "PZ")
+			if (character == "P"|| character = "D" || character = "not in the game")
 		        movespeed = 6
 		    else
 				movespeed = 4
@@ -357,7 +357,7 @@ function scr_player_jump() {
 	        image_xscale = other.image_xscale
 	    image_index = 0
 	    sprite_index = spr_shotgunshoot
-	    if (character == "P" || character == "PZ")
+	    if (character == "P" || character == "not in the game")
 	    {
 	        with (instance_create((x + (image_xscale * 20)), (y + 20), obj_shotgunbullet))
 	            playerid = other.id

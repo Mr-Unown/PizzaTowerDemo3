@@ -20,7 +20,7 @@ else if (player.character == "S")
     image_index = 3
 else if (player.character == "V")
 	image_index = 4
-else if (player.character == "PZ")
+else if (player.character == "not in the game")
 	image_index = 5
 else if (player.character == "PM")
 {
@@ -127,7 +127,7 @@ if (place_meeting(x, (y + 1), obj_player) && activated == 0)
         else if (character == "V" && other.activated == 0)
         {
             y += 50
-            character = "PZ"
+            character = "not in the game"
             paletteselect = 1
             other.activated = 1
             vsp = 1
@@ -143,7 +143,7 @@ if (place_meeting(x, (y + 1), obj_player) && activated == 0)
             sprite_index = spr_taunt
             instance_create(x, y, obj_safeexplosion)
         }
-        else if (character == "PZ" && other.activated == 0)
+        else if (character == "not in the game" && other.activated == 0)
         {
             y += 50
             character = "PM"

@@ -15,7 +15,7 @@ function scr_player_mach3() {
 	    }
 		else
 		{
-			sprite_index = spr_playerPZ_faceplant
+			sprite_index = spr_playernot in the game_faceplant
 		}
 	
 	    state = 111

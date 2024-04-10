@@ -406,7 +406,7 @@ else
 	global.bonusminutes = 0;
 }
 //Pizzy Screen Tilt
-if (global.panic == 1 && obj_player1.character == "PZ")
+if (global.panic == 1 && obj_player1.character == "not in the game")
 {
     camera_set_view_angle(view_camera[0], sugarysin((angle / (global.minutes + 2)), 5))
     clamp(angle, -5, 5)

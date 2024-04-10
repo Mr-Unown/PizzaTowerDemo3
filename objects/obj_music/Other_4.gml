@@ -42,8 +42,8 @@ if (global.panic == 0 && global.snickchallenge == 0)
 				case "S":
 					music = mu_entranceS
 					break
-				case "PZ":
-					music = mu_entrancePZ
+				case "not in the game":
+					music = mu_entrancenot in the game
 					break
 			}
 			trackposition = 1
@@ -243,12 +243,12 @@ if (global.panic == 0 && global.snickchallenge == 0)
         }
 		else
 		{
-            if (!audio_is_playing(mu_entrancePZ)) //Technically it's Creampuff's theme lol //Not anymore its not
+            if (!audio_is_playing(mu_entrancenot in the game)) //Technically it's Creampuff's theme lol //Not anymore its not
             {
                 scr_soundstopall()
-                scr_sound(mu_entrancePZ)
+                scr_sound(mu_entrancenot in the game)
                 audio_sound_set_track_position(global.music, fadeoff)
-                pausedmusic = mu_entrancePZ
+                pausedmusic = mu_entrancenot in the game
             }			
 		}
     }

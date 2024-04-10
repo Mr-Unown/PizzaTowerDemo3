@@ -193,45 +193,45 @@ if (player.state != 55)
         else
             draw_sprite_ext_camera(spr_snickHUD_normal, -1, 125, 60, 1, 1, 0, c_white, alpha)
     }
-    if (player.character == "PZ")
+    if (player.character == "not in the game")
     {
 		//Add more face huds
         if (shoving == 1)
             draw_sprite_ext_camera(spr_pepinoHUD_shove, image_index, 125, 100, 1, 1, 0, c_white, alpha)
-        else if (player.sprite_index == spr_playerPZ_knightthunder)
-            draw_sprite_ext_camera(spr_playerPZ_thunderHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
-        else if (player.sprite_index != spr_playerPZ_knightstart && (player.state == 24  || player.state == states.knightpepattack || player.state == 18))
-            draw_sprite_ext_camera(spr_playerPZ_knightHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)			
+        else if (player.sprite_index == spr_playernot in the game_knightthunder)
+            draw_sprite_ext_camera(spr_playernot in the game_thunderHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
+        else if (player.sprite_index != spr_playernot in the game_knightstart && (player.state == 24  || player.state == states.knightpepattack || player.state == 18))
+            draw_sprite_ext_camera(spr_playernot in the game_knightHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)			
 		else if player.sprite_index == player.spr_hurt || player.sprite_index == player.spr_hurtjump
-			draw_sprite_ext_camera(spr_playerPZ_hurtHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)			
+			draw_sprite_ext_camera(spr_playernot in the game_hurtHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)			
 		else if player.sprite_index == player.spr_bombpepend
-			draw_sprite_ext_camera(spr_playerPZ_explodedHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
+			draw_sprite_ext_camera(spr_playernot in the game_explodedHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
 		else if player.state == states.Sjump
-			draw_sprite_ext_camera(spr_playerPZ_superjumpHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
+			draw_sprite_ext_camera(spr_playernot in the game_superjumpHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
 		else if player.state == states.jetpackstart || player.state == states.Sjumpprep
-			draw_sprite_ext_camera(spr_playerPZ_superjumpprepHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)			
+			draw_sprite_ext_camera(spr_playernot in the game_superjumpprepHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)			
         else if (player.state == 69 || (player.state == states.pogo && player.pogomovespeed <= 7) || player.state == 33 || player.state == 92 || player.state == 74 || player.state == 57 || player.state == 63 || player.state == 42 || player.state == 65 || player.state == 46 || player.state == 47 || player.state == 51 || player.state == 48 || player.state == 49 || player.state == 50)
-            draw_sprite_ext_camera(spr_playerPZ_mach1HUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_playernot in the game_mach1HUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.state == 70 || (player.state == states.pogo && player.pogomovespeed > 7 && player.pogomovespeed < 12) || player.sprite_index == player.spr_dive || player.sprite_index == player.spr_machslideboost || player.state == 17 || player.state == 111 || player.state == 22 || player.state == 43)
-            draw_sprite_ext_camera(spr_playerPZ_mach2HUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_playernot in the game_mach2HUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.state == 91 && player.sprite_index == player.spr_crazyrun)
-            draw_sprite_ext_camera(spr_playerPZ_mach4HUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_playernot in the game_mach4HUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
         else if (player.state == states.jetpack && player.sprite_index == player.spr_jetpackcrazy)
-            draw_sprite_ext_camera(spr_playerPZ_mach4HUD, -1, 125, 100, 1, 1, 0, c_white, alpha)		
+            draw_sprite_ext_camera(spr_playernot in the game_mach4HUD, -1, 125, 100, 1, 1, 0, c_white, alpha)		
         else if (player.state == 91 || (player.state == states.pogo && player.pogomovespeed >= 12) || player.state == states.jetpack || player.sprite_index == player.spr_mach3boost)
-            draw_sprite_ext_camera(spr_playerPZ_mach3HUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_playernot in the game_mach3HUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
 		else if player.sprite_index == player.spr_freefallland || player.sprite_index == player.spr_bodyslamland || player.state == states.freefallland || player.sprite_index == player.spr_Timesup || player.sprite_index = player.spr_superjumpland || player.sprite_index = player.spr_hitwall
-			draw_sprite_ext_camera(spr_playerPZ_slamHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)	
+			draw_sprite_ext_camera(spr_playernot in the game_slamHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)	
 		else if player.state == states.freefall || player.state == states.freefallprep
-			draw_sprite_ext_camera(spr_playerPZ_freefallHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
+			draw_sprite_ext_camera(spr_playernot in the game_freefallHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
 		else if player.sprite_index == player.spr_bump || player.sprite_index == player.spr_slipnslide || player.sprite_index == player.spr_stunned
-			draw_sprite_ext_camera(spr_playerPZ_bumpHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)		
+			draw_sprite_ext_camera(spr_playernot in the game_bumpHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)		
         else if (player.angry == 1)
-            draw_sprite_ext_camera(spr_playerPZ_angryHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)			
+            draw_sprite_ext_camera(spr_playernot in the game_angryHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)			
         else if (global.combo >= 3) && global.combobuffer > 0
-            draw_sprite_ext_camera(spr_playerPZ_menacingHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)				
+            draw_sprite_ext_camera(spr_playernot in the game_menacingHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)				
         else
-            draw_sprite_ext_camera(spr_playerPZ_normalHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
+            draw_sprite_ext_camera(spr_playernot in the game_normalHUD, -1, 125, 100, 1, 1, 0, c_white, alpha)
     }	
     shader_reset()
 
@@ -271,11 +271,11 @@ if (player.state != 55)
 		var heatw = sprite_get_width(spr_heatmeterfill)
 		var heath = sprite_get_height(spr_heatmeterfill)		
 		var meter = global.style / 25;
-		if player.character = "PZ"
-		pal_swap_set(spr_heatfillpalettePZ,clamp(global.stylethreshold,0,10),false)
+		if player.character = "not in the game"
+		pal_swap_set(spr_heatfillpalettenot in the game,clamp(global.stylethreshold,0,10),false)
 		draw_sprite_part_ext(spr_heatmeterfill, _image_index, 0, 0, heatw * meter, heath, newhudx - sprite_get_xoffset(spr_heatmeter_fill), newhudy - sprite_get_yoffset(spr_heatmeter_fill), 1, 1, c_white, alpha)
 		//Style/Heat Meter
-		if player.character != "PZ"
+		if player.character != "not in the game"
 		pal_swap_set(spr_heatpalette,clamp(global.stylethreshold - 1,0,10),false)
 		else
 		pal_swap_set(spr_heatpalette,clamp(global.stylethreshold /*- 1*/,0,10),false)
@@ -315,10 +315,10 @@ if (player.state != 55)
 			#region Point
 		draw_set_halign(fa_center);
 		draw_set_color(c_white);
-		if player.character != "PZ"
+		if player.character != "not in the game"
 		draw_set_font(global.pointsfont);	
 		else
-		draw_set_font(global.pointsfontpz);
+		draw_set_font(global.pointsfontnot in the game);
 		var _string = string(global.collect), _string_length = string_length(_string); //D3G: Holy shit I'm an idiot I've been using string width lmao no wonder it keeps crashing
 		if collected != _string
 		{

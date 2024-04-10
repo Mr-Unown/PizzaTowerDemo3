@@ -1,25 +1,9 @@
 {
-  "spriteId": {
-    "name": "tile_kungfu",
-    "path": "sprites/tile_kungfu/tile_kungfu.yy",
-  },
-  "tileWidth": 32,
-  "tileHeight": 32,
-  "tilexoff": 0,
-  "tileyoff": 0,
-  "tilehsep": 0,
-  "tilevsep": 0,
-  "spriteNoExport": false,
-  "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
-  },
-  "out_tilehborder": 2,
-  "out_tilevborder": 2,
-  "out_columns": 19,
-  "tile_count": 368,
+  "resourceType": "GMTileSet",
+  "resourceVersion": "1.0",
+  "name": "tile_kungfutiles",
   "autoTileSets": [
-    {"tiles":[
+    {"resourceType":"GMAutoTileSet","resourceVersion":"1.0","name":"Act1_Plus","closed_edge":false,"tiles":[
         25,
         53,
         52,
@@ -67,8 +51,8 @@
         50,
         72,
         73,
-      ],"closed_edge":false,"resourceVersion":"1.0","name":"Act1_Plus","tags":[],"resourceType":"GMAutoTileSet",},
-    {"tiles":[
+      ],},
+    {"resourceType":"GMAutoTileSet","resourceVersion":"1.0","name":"Platform","closed_edge":false,"tiles":[
         25,
         0,
         0,
@@ -116,8 +100,8 @@
         195,
         145,
         73,
-      ],"closed_edge":false,"resourceVersion":"1.0","name":"Platform","tags":[],"resourceType":"GMAutoTileSet",},
-    {"tiles":[
+      ],},
+    {"resourceType":"GMAutoTileSet","resourceVersion":"1.0","name":"Platform Rail","closed_edge":false,"tiles":[
         25,
         0,
         0,
@@ -165,10 +149,30 @@
         0,
         122,
         73,
-      ],"closed_edge":false,"resourceVersion":"1.0","name":"Platform Rail","tags":[],"resourceType":"GMAutoTileSet",},
+      ],},
   ],
-  "tileAnimationFrames": [],
-  "tileAnimationSpeed": 15.0,
+  "macroPageTiles": {
+    "SerialiseHeight": 0,
+    "SerialiseWidth": 0,
+    "TileSerialiseData": [],
+  },
+  "out_columns": 19,
+  "out_tilehborder": 2,
+  "out_tilevborder": 2,
+  "parent": {
+    "name": "Kung Fu",
+    "path": "folders/Tile Sets/Kung Fu.yy",
+  },
+  "spriteId": {
+    "name": "tile_kungfu",
+    "path": "sprites/tile_kungfu/tile_kungfu.yy",
+  },
+  "spriteNoExport": false,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
+  "tile_count": 368,
   "tileAnimation": {
     "FrameData": [
       0,
@@ -542,17 +546,12 @@
     ],
     "SerialiseFrameCount": 1,
   },
-  "macroPageTiles": {
-    "SerialiseWidth": 0,
-    "SerialiseHeight": 0,
-    "TileSerialiseData": [],
-  },
-  "parent": {
-    "name": "Kung Fu",
-    "path": "folders/Tile Sets/Kung Fu.yy",
-  },
-  "resourceVersion": "1.0",
-  "name": "tile_kungfutiles",
-  "tags": [],
-  "resourceType": "GMTileSet",
+  "tileAnimationFrames": [],
+  "tileAnimationSpeed": 15.0,
+  "tileHeight": 32,
+  "tilehsep": 0,
+  "tilevsep": 0,
+  "tileWidth": 32,
+  "tilexoff": 0,
+  "tileyoff": 0,
 }

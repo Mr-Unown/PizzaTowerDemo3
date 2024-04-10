@@ -721,7 +721,7 @@ if DEBUG
 				break;
 				case "Snick": character = "S"; break;
 				case "Vigi": character = "V"; break;				
-				case "Pizzy": character = "PZ"; break;
+				case "Pizzy": character = "not in the game"; break;
 				case "Dougie": character = "D"; break;
 				case "Pepperman": character = "PM"; break;
 				case "Gustavo": character = "GB"; break;

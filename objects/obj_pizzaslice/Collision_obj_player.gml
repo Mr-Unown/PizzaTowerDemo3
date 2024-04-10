@@ -6,7 +6,7 @@ with other.id
 }
 with (instance_create(x, y, obj_smallnumber))
     number = "25"
-if other.character != "PZ"
+if other.character != "not in the game"
 	{
 		if audio_is_playing(sfx_collecttopping)
 		audio_stop_sound(sfx_collecttopping)
@@ -14,9 +14,9 @@ if other.character != "PZ"
 	}
 	else
 	{
-		if audio_is_playing(sfx_PZcollecttopping)
-		audio_stop_sound(sfx_PZcollecttopping)
-		scr_soundeffect(sfx_PZcollecttopping)
+		if audio_is_playing(sfx_not in the gamecollecttopping)
+		audio_stop_sound(sfx_not in the gamecollecttopping)
+		scr_soundeffect(sfx_not in the gamecollecttopping)
 	}
 	if global.combotime < 60
 	global.combotime += 5

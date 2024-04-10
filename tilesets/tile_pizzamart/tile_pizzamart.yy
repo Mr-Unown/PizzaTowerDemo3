@@ -1,25 +1,9 @@
 {
-  "spriteId": {
-    "name": "spr_pizzamarttile",
-    "path": "sprites/spr_pizzamarttile/spr_pizzamarttile.yy",
-  },
-  "tileWidth": 32,
-  "tileHeight": 32,
-  "tilexoff": 0,
-  "tileyoff": 0,
-  "tilehsep": 0,
-  "tilevsep": 0,
-  "spriteNoExport": true,
-  "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
-  },
-  "out_tilehborder": 2,
-  "out_tilevborder": 2,
-  "out_columns": 6,
-  "tile_count": 40,
+  "resourceType": "GMTileSet",
+  "resourceVersion": "1.0",
+  "name": "tile_pizzamart",
   "autoTileSets": [
-    {"tiles":[
+    {"resourceType":"GMAutoTileSet","resourceVersion":"1.0","name":"Floor","closed_edge":false,"tiles":[
         22,
         39,
         37,
@@ -36,8 +20,8 @@
         31,
         33,
         0,
-      ],"closed_edge":false,"resourceVersion":"1.0","name":"Floor","tags":[],"resourceType":"GMAutoTileSet",},
-    {"tiles":[
+      ],},
+    {"resourceType":"GMAutoTileSet","resourceVersion":"1.0","name":"Brick","closed_edge":false,"tiles":[
         25,
         0,
         0,
@@ -54,10 +38,30 @@
         34,
         36,
         0,
-      ],"closed_edge":false,"resourceVersion":"1.0","name":"Brick","tags":[],"resourceType":"GMAutoTileSet",},
+      ],},
   ],
-  "tileAnimationFrames": [],
-  "tileAnimationSpeed": 15.0,
+  "macroPageTiles": {
+    "SerialiseHeight": 0,
+    "SerialiseWidth": 0,
+    "TileSerialiseData": [],
+  },
+  "out_columns": 6,
+  "out_tilehborder": 2,
+  "out_tilevborder": 2,
+  "parent": {
+    "name": "Desert",
+    "path": "folders/Tile Sets/Desert.yy",
+  },
+  "spriteId": {
+    "name": "spr_pizzamarttile",
+    "path": "sprites/spr_pizzamarttile/spr_pizzamarttile.yy",
+  },
+  "spriteNoExport": true,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
+  "tile_count": 40,
   "tileAnimation": {
     "FrameData": [
       0,
@@ -103,17 +107,12 @@
     ],
     "SerialiseFrameCount": 1,
   },
-  "macroPageTiles": {
-    "SerialiseWidth": 0,
-    "SerialiseHeight": 0,
-    "TileSerialiseData": [],
-  },
-  "parent": {
-    "name": "Desert",
-    "path": "folders/Tile Sets/Desert.yy",
-  },
-  "resourceVersion": "1.0",
-  "name": "tile_pizzamart",
-  "tags": [],
-  "resourceType": "GMTileSet",
+  "tileAnimationFrames": [],
+  "tileAnimationSpeed": 15.0,
+  "tileHeight": 32,
+  "tilehsep": 0,
+  "tilevsep": 0,
+  "tileWidth": 32,
+  "tilexoff": 0,
+  "tileyoff": 0,
 }

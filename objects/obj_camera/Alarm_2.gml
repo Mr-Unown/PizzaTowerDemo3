@@ -26,14 +26,14 @@ if (obj_player1.collectscore > 0)
 	case "V":
 		sprite_index = choose(spr_cheesetopping1, spr_cheesetopping2, spr_cheesetopping3, spr_cheesetopping4, spr_cheesetopping5)
 	break;
-	case "PZ":
+	case "not in the game":
 		if global.collectstyle = 0
-		sprite_index = choose(spr_PZtopping1, spr_PZtopping2, spr_PZtopping3, spr_PZtopping4, spr_PZtopping5)
+		sprite_index = choose(spr_not in the gametopping1, spr_not in the gametopping2, spr_not in the gametopping3, spr_not in the gametopping4, spr_not in the gametopping5)
 		else if global.collectstyle = 1
-		sprite_index = choose(spr_PZtopping2NEW, spr_PZtopping3NEW, spr_PZtopping4NEWG, spr_PZtopping6NEW , spr_PZtopping7NEW)
+		sprite_index = choose(spr_not in the gametopping2NEW, spr_not in the gametopping3NEW, spr_not in the gametopping4NEWG, spr_not in the gametopping6NEW , spr_not in the gametopping7NEW)
 	break;
 	default:
-		sprite_index = choose(spr_sausagecollect, spr_cheesetopping3, spr_halloweencollectibles1, spr_snickcollectible1, spr_PZtopping1)
+		sprite_index = choose(spr_sausagecollect, spr_cheesetopping3, spr_halloweencollectibles1, spr_snickcollectible1, spr_not in the gametopping1)
 	break;
 		}
     }
@@ -60,14 +60,14 @@ if instance_exists(obj_player2) && global.coop = true
 	case "V":
 		sprite_index = choose(spr_cheesetopping1, spr_cheesetopping2, spr_cheesetopping3, spr_cheesetopping4, spr_cheesetopping5)
 	break;
-	case "PZ":
+	case "not in the game":
 		if global.collectstyle = 0
-		sprite_index = choose(spr_PZtopping1, spr_PZtopping2, spr_PZtopping3, spr_PZtopping4, spr_PZtopping5)
+		sprite_index = choose(spr_not in the gametopping1, spr_not in the gametopping2, spr_not in the gametopping3, spr_not in the gametopping4, spr_not in the gametopping5)
 		else if global.collectstyle = 1
-		sprite_index = choose(spr_PZtopping2NEW, spr_PZtopping3NEW, spr_PZtopping4NEWG, spr_PZtopping6NEW , spr_PZtopping7NEW)
+		sprite_index = choose(spr_not in the gametopping2NEW, spr_not in the gametopping3NEW, spr_not in the gametopping4NEWG, spr_not in the gametopping6NEW , spr_not in the gametopping7NEW)
 	break;
 	default:
-		sprite_index = choose(spr_sausagecollect, spr_cheesetopping3, spr_halloweencollectibles1, spr_snickcollectible1, spr_PZtopping1)
+		sprite_index = choose(spr_sausagecollect, spr_cheesetopping3, spr_halloweencollectibles1, spr_snickcollectible1, spr_not in the gametopping1)
 	break;
 		}
     }

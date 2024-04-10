@@ -10,7 +10,7 @@ if (global.panic == 1 && obj_pause.pause == 0)
 {
     if (global.lapping == 0)
     {
-        if ((!audio_is_playing(mu_pizzatime)) && (!audio_is_playing(mu_noiseescape)) && (!audio_is_playing(mu_snickescape)) && !audio_is_playing(mu_pizzelleescape) && (!audio_is_playing(mu_vigiescape)
+        if ((!audio_is_playing(mu_pizzatime)) && (!audio_is_playing(mu_noiseescape)) && (!audio_is_playing(mu_snickescape)) && !audio_is_playing(mu_ dead pizzelleescape) && (!audio_is_playing(mu_vigiescape)
 		&& (!audio_is_playing(mu_mansionescape))))
         {
             scr_soundstopall()
@@ -41,14 +41,14 @@ if (global.panic == 1 && obj_pause.pause == 0)
 			}
 			else 
 			{
-                scr_sound(mu_pizzelleescape)
-                pausedmusic = mu_pizzelleescape				
+                scr_sound(mu_ dead pizzelleescape)
+                pausedmusic = mu_ dead pizzelleescape				
 			}
         }
     }
     else if (global.lapping == 1)
     {
-        if ((!audio_is_playing(mu_pizzatimeremix)) && (!audio_is_playing(mu_noiseescaperequiem)) && (!audio_is_playing(mu_snickescaperequiem)) && (!audio_is_playing(mu_vigiescaperequiem)) && (!audio_is_playing(mu_desertescape)) && (!audio_is_playing(mu_mansionescape)) && (!audio_is_playing(mu_factoryescape)) && (!audio_is_playing(mu_sewerescape)) && !audio_is_playing(mu_pizzelleescaperequiem) && (!audio_is_playing(mu_freezerescape)))
+        if ((!audio_is_playing(mu_pizzatimeremix)) && (!audio_is_playing(mu_noiseescaperequiem)) && (!audio_is_playing(mu_snickescaperequiem)) && (!audio_is_playing(mu_vigiescaperequiem)) && (!audio_is_playing(mu_desertescape)) && (!audio_is_playing(mu_mansionescape)) && (!audio_is_playing(mu_factoryescape)) && (!audio_is_playing(mu_sewerescape)) && !audio_is_playing(mu_ dead pizzelleescaperequiem) && (!audio_is_playing(mu_freezerescape)))
         {
             scr_soundstopall()
             if (string_letters(roomname) == "desert") && global.extraescapemusic = 1
@@ -98,14 +98,14 @@ if (global.panic == 1 && obj_pause.pause == 0)
             }
 			else
 			{
-                scr_sound(mu_pizzelleescaperequiem)
-                pausedmusic = mu_pizzelleescaperequiem			
+                scr_sound(mu_ dead pizzelleescaperequiem)
+                pausedmusic = mu_ dead pizzelleescaperequiem			
 			}
         }
     }
     else if (global.lapping == 2)
     {
-        if ((!audio_is_playing(mu_pizzatimeremix)) && !audio_is_playing(mu_pizzelleescaperequiem) && (!audio_is_playing(mu_noiseescaperequiem)) && (!audio_is_playing(mu_snickescaperequiem)) && (!audio_is_playing(mu_vigiescaperequiem)))
+        if ((!audio_is_playing(mu_pizzatimeremix)) && !audio_is_playing(mu_ dead pizzelleescaperequiem) && (!audio_is_playing(mu_noiseescaperequiem)) && (!audio_is_playing(mu_snickescaperequiem)) && (!audio_is_playing(mu_vigiescaperequiem)))
         {
             scr_soundstopall()
             if (obj_player1.character == "P")
@@ -130,8 +130,8 @@ if (global.panic == 1 && obj_pause.pause == 0)
             }
 			else
 			{
-                scr_sound(mu_pizzelleescaperequiem)
-                pausedmusic = mu_pizzelleescaperequiem			
+                scr_sound(mu_ dead pizzelleescaperequiem)
+                pausedmusic = mu_ dead pizzelleescaperequiem			
 			}
         }
     }

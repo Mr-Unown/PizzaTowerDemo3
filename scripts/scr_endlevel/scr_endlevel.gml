@@ -117,32 +117,32 @@ function scr_endlevel()
 		case "p":
 		case "s+":
 		case "s":
-		if player.character == "PZ"
-			scr_soundstop(mu_ranksPZ)
+		if player.character == "not in the game"
+			scr_soundstop(mu_ranksnot in the game)
 		else
 			scr_soundstop(mu_ranks)
 		break;
 		case "a":
-		 if player.character == "PZ"
-			scr_soundstop(mu_rankaPZ)
+		 if player.character == "not in the game"
+			scr_soundstop(mu_rankanot in the game)
 		else
 			scr_soundstop(mu_ranka)
 		break;
 		case "b":
-		 if player.character == "PZ"
-			scr_soundstop(mu_rankbPZ)
+		 if player.character == "not in the game"
+			scr_soundstop(mu_rankbnot in the game)
 		else			
 			scr_soundstop(mu_rankb)
 		break;
 		case "c":
-		 if player.character == "PZ"
-			scr_soundstop(mu_rankcPZ)
+		 if player.character == "not in the game"
+			scr_soundstop(mu_rankcnot in the game)
 		else			
 			scr_soundstop(mu_rankc)
 		break;
 		case "d":
-		 if player.character == "PZ"
-			scr_soundstop(mu_rankdPZ)
+		 if player.character == "not in the game"
+			scr_soundstop(mu_rankdnot in the game)
 		else			
 			scr_soundstop(mu_rankd)
 		break;

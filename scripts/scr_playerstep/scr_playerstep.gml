@@ -523,7 +523,7 @@ else if actor = true
 		case "D":
 			_jumpheight = -13;
 		break;	
-		case "PZ":
+		case "not in the game":
 			_jumpheight = -12;
 		break;
 		default:

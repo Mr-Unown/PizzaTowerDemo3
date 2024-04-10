@@ -228,8 +228,8 @@ else if (global.hurtcounter >= global.hurtmilestone)
         character = "SNICK"
     else if (obj_player.character == "V")
         character = "THE VIGILANTE"
-    else if (obj_player.character == "PZ")
-        character = "PIZZELLE"
+    else if (obj_player.character == "not in the game")
+        character = " dead pizzelle"
     else if (obj_player.character == "PM")
         character = "PEPPERMAN"		
     else if (obj_player.character == "D")

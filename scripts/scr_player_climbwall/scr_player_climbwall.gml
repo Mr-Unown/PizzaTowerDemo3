@@ -17,7 +17,7 @@ function scr_player_climbwall() {
 	}
 	suplexmove = 0
 	vsp = (-wallspeed)
-	if !place_meeting(x + xscale, y, obj_unclimbablewall) && character != "PZ"
+	if !place_meeting(x + xscale, y, obj_unclimbablewall) && character != "not in the game"
 	{
 		if (character != "S")
 		{
@@ -27,7 +27,7 @@ function scr_player_climbwall() {
 		else if (wallspeed < 24)
 			wallspeed += 0.08
 	}
-	else if character = "PZ" && !place_meeting(x + xscale, y, obj_unclimbablewall) {
+	else if character = "not in the game" && !place_meeting(x + xscale, y, obj_unclimbablewall) {
 		if wallspeed > 0
 			wallspeed -= 0.125
 		else
@@ -96,7 +96,7 @@ function scr_player_climbwall() {
 			sprite_index = spr_fall
 		}
 	}
-	if key_jump && character != "PZ"
+	if key_jump && character != "not in the game"
 	{
 		movespeed = clamp(round(wallspeed /1.25),8,15)
 	    state = 70
@@ -109,7 +109,7 @@ function scr_player_climbwall() {
 	    xscale *= -1
 	    jumpstop = 0
 	}
-	else if key_jump && character = "PZ"
+	else if key_jump && character = "not in the game"
 	{
 		if (mach2 >= 100)
         {

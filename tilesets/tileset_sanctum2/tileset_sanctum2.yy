@@ -1,25 +1,9 @@
 {
-  "spriteId": {
-    "name": "tile_sanctum2",
-    "path": "sprites/tile_sanctum2/tile_sanctum2.yy",
-  },
-  "tileWidth": 32,
-  "tileHeight": 32,
-  "tilexoff": 0,
-  "tileyoff": 0,
-  "tilehsep": 0,
-  "tilevsep": 0,
-  "spriteNoExport": true,
-  "textureGroupId": {
-    "name": "Sanctum",
-    "path": "texturegroups/Sanctum",
-  },
-  "out_tilehborder": 2,
-  "out_tilevborder": 2,
-  "out_columns": 13,
-  "tile_count": 180,
+  "resourceType": "GMTileSet",
+  "resourceVersion": "1.0",
+  "name": "tileset_sanctum2",
   "autoTileSets": [
-    {"tiles":[
+    {"resourceType":"GMAutoTileSet","resourceVersion":"1.0","name":"autotile_1","closed_edge":false,"tiles":[
         12,
         53,
         51,
@@ -36,8 +20,8 @@
         21,
         23,
         0,
-      ],"closed_edge":false,"resourceVersion":"1.0","name":"autotile_1","tags":[],"resourceType":"GMAutoTileSet",},
-    {"tiles":[
+      ],},
+    {"resourceType":"GMAutoTileSet","resourceVersion":"1.0","name":"autotile_2","closed_edge":false,"tiles":[
         65,
         0,
         0,
@@ -85,10 +69,30 @@
         0,
         26,
         78,
-      ],"closed_edge":false,"resourceVersion":"1.0","name":"autotile_2","tags":[],"resourceType":"GMAutoTileSet",},
+      ],},
   ],
-  "tileAnimationFrames": [],
-  "tileAnimationSpeed": 15.0,
+  "macroPageTiles": {
+    "SerialiseHeight": 0,
+    "SerialiseWidth": 0,
+    "TileSerialiseData": [],
+  },
+  "out_columns": 13,
+  "out_tilehborder": 2,
+  "out_tilevborder": 2,
+  "parent": {
+    "name": "Sanctum",
+    "path": "folders/Tile Sets/Sanctum.yy",
+  },
+  "spriteId": {
+    "name": "tile_sanctum2",
+    "path": "sprites/tile_sanctum2/tile_sanctum2.yy",
+  },
+  "spriteNoExport": true,
+  "textureGroupId": {
+    "name": "Sanctum",
+    "path": "texturegroups/Sanctum",
+  },
+  "tile_count": 180,
   "tileAnimation": {
     "FrameData": [
       0,
@@ -274,17 +278,12 @@
     ],
     "SerialiseFrameCount": 1,
   },
-  "macroPageTiles": {
-    "SerialiseWidth": 0,
-    "SerialiseHeight": 0,
-    "TileSerialiseData": [],
-  },
-  "parent": {
-    "name": "Sanctum",
-    "path": "folders/Tile Sets/Sanctum.yy",
-  },
-  "resourceVersion": "1.0",
-  "name": "tileset_sanctum2",
-  "tags": [],
-  "resourceType": "GMTileSet",
+  "tileAnimationFrames": [],
+  "tileAnimationSpeed": 15.0,
+  "tileHeight": 32,
+  "tilehsep": 0,
+  "tilevsep": 0,
+  "tileWidth": 32,
+  "tilexoff": 0,
+  "tileyoff": 0,
 }

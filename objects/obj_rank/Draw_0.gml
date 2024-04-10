@@ -17,7 +17,7 @@ draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, ima
 shader_reset()
 var plusx = 916
 var plusy = 296
-if (obj_player1.character == "PZ" && obj_player1.collectscore >= obj_player2.collectscore) || (obj_player2.character == "PZ" && obj_player2.collectscore > obj_player1.collectscore)
+if (obj_player1.character == "not in the game" && obj_player1.collectscore >= obj_player2.collectscore) || (obj_player2.character == "not in the game" && obj_player2.collectscore > obj_player1.collectscore)
 {
 	plusx = 852
 	plusy = 78

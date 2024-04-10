@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "scr_player_slam",
   "isCompatibility": false,
+  "isDnD": false,
   "parent": {
     "name": "player",
     "path": "folders/Scripts/player.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "scr_player_slam",
-  "tags": [],
-  "resourceType": "GMScript",
 }

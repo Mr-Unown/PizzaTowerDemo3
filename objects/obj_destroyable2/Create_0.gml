@@ -9,7 +9,7 @@ depth = 1
             sprite_index = spr_snickblock
         else if ((obj_player1.character == "V" && obj_player1.spotlight == 1) || (obj_player2.character == "V" && obj_player1.spotlight == 0))
             sprite_index = spr_cheesedestroyableblock
-		else if ((obj_player1.character == "PZ" && obj_player1.spotlight == 1) || (obj_player2.character == "PZ" && obj_player1.spotlight == 0))
-			sprite_index = spr_PZdestroyablepep		
+		else if ((obj_player1.character == "not in the game" && obj_player1.spotlight == 1) || (obj_player2.character == "not in the game" && obj_player1.spotlight == 0))
+			sprite_index = spr_not in the gamedestroyablepep		
 
 

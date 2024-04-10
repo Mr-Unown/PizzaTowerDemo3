@@ -131,10 +131,10 @@ function scr_player_mach2() {
 		hsp = 0
 		vsp = 0
 	    state = states.bump
-		if character = "PZ"
+		if character = "not in the game"
 		with instance_create(x,y,obj_debris)
 		{
-		sprite_index = spr_PZscooter
+		sprite_index = spr_not in the gamescooter
 		image_xscale = other.xscale
 		}
 	}

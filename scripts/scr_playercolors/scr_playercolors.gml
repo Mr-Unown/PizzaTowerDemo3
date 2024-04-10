@@ -26,8 +26,8 @@ function scr_playercolors() {
 		characters = "Dougie"
 		colorheight = 0;
 		break;	
-		case "PZ":
-		characters = "Pizzelle"
+		case "not in the game":
+		characters = " dead pizzelle"
 		colorheight = 10;
 		break;
 		case "GB":

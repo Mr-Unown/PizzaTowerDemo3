@@ -9,7 +9,7 @@ function scr_player_machslide() {
 	maxmachspeed = 24;
 	if (movespeed >= 0)
 	{
-	    if (character == "P" || character = "S" || character = "PZ" || character = "V")
+	    if (character == "P" || character = "S" || character = "not in the game" || character = "V")
 	        movespeed -= 0.4
 	    else if pogo = false
 	        movespeed -= 0.185
@@ -38,10 +38,10 @@ function scr_player_machslide() {
 		hsp = 0
 		vsp = 0
 	    state = states.bump
-		if character = "PZ"
+		if character = "not in the game"
 		with instance_create(x,y,obj_debris)
 		{
-		sprite_index = spr_PZscooter
+		sprite_index = spr_not in the gamescooter
 		image_xscale = other.xscale
 		}
 	}

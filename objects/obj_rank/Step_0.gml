@@ -157,19 +157,19 @@ switch (player.character)
         if (global.rank == "d")
             sprite_index = spr_snick_rankD	
 	break;	
-	case "PZ":
+	case "not in the game":
         if (global.rank == "p")
             sprite_index = spr_rankP	
         if (global.rank == "s") || (global.rank == "s+")
-            sprite_index = spr_playerPZ_rankS
+            sprite_index = spr_playernot in the game_rankS
         if (global.rank == "a")
-            sprite_index = spr_playerPZ_rankA
+            sprite_index = spr_playernot in the game_rankA
         if (global.rank == "b")
-            sprite_index = spr_playerPZ_rankB
+            sprite_index = spr_playernot in the game_rankB
         if (global.rank == "c")
-            sprite_index = spr_playerPZ_rankC
+            sprite_index = spr_playernot in the game_rankC
         if (global.rank == "d")
-            sprite_index = spr_playerPZ_rankD	
+            sprite_index = spr_playernot in the game_rankD	
 	break;	
 	case "V":
         if (global.rank == "p")
@@ -239,20 +239,20 @@ switch (player.character)
         if (global.rank == "d")
             sprite_index = spr_rankND
     }
-    else if (player.character == "PZ")
+    else if (player.character == "not in the game")
     {
         if (global.rank == "p")
             sprite_index = spr_rankP	
         if (global.rank == "s") || (global.rank == "s+")
-            sprite_index = spr_playerPZ_rankS
+            sprite_index = spr_playernot in the game_rankS
         if (global.rank == "a")
-            sprite_index = spr_playerPZ_rankA
+            sprite_index = spr_playernot in the game_rankA
         if (global.rank == "b")
-            sprite_index = spr_playerPZ_rankB
+            sprite_index = spr_playernot in the game_rankB
         if (global.rank == "c")
-            sprite_index = spr_playerPZ_rankC
+            sprite_index = spr_playernot in the game_rankC
         if (global.rank == "d")
-            sprite_index = spr_playerPZ_rankD
+            sprite_index = spr_playernot in the game_rankD
     }	
     else if (player.character == "S")
     {

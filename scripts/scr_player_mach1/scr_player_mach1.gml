@@ -85,10 +85,10 @@ function scr_player_mach1() {
 		hsp = 0
 		vsp = 0
 	    state = states.bump
-		if character = "PZ"
+		if character = "not in the game"
 		with instance_create(x,y,obj_debris)
 		{
-		sprite_index = spr_PZscooter
+		sprite_index = spr_not in the gamescooter
 		image_xscale = other.xscale
 		}
 	}
@@ -148,7 +148,7 @@ function scr_player_mach1() {
 	        image_index = 0
 	        state = 92
 	        sprite_index = spr_bodyslamstart
-	        if (character == "P" || character == "PZ" || character == "S")
+	        if (character == "P" || character == "not in the game" || character == "S")
 	            vsp = -5
 	        else
 	            vsp = -7

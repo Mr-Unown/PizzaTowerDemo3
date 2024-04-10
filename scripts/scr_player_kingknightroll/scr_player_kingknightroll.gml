@@ -101,7 +101,7 @@ function scr_player_kingknightroll() {
 	    }
 		else
 		{
-			sprite_index = spr_playerPZ_faceplant
+			sprite_index = spr_playernot in the game_faceplant
 		}
 	    state = 111
 	    image_speed = 0.5

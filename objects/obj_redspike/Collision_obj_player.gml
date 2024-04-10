@@ -66,15 +66,15 @@ with (other)
                 }
 				#endregion
             }
-            else if (character == "PZ")
+            else if (character == "not in the game")
             {
-				#region Pizzelle
-				for (var i = 0; i < sprite_get_number(spr_playerPZ_knightdebris) - 1; ++i) 
+				#region  dead pizzelle
+				for (var i = 0; i < sprite_get_number(spr_playernot in the game_knightdebris) - 1; ++i) 
 				{
 					with (instance_create(x, y, obj_knightdebris))
 					{
 						image_index = i
-						sprite_index = spr_playerPZ_knightdebris
+						sprite_index = spr_playernot in the game_knightdebris
 					}
 				}
 				#endregion

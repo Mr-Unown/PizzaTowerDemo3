@@ -1,7 +1,7 @@
 function scr_player_handstandjump() {
 	if (character != "S")
 	{
-		if character == "PZ" 
+		if character == "not in the game" 
 			vsp = 0.5
 	    landAnim = 0
 	    hsp = (xscale * movespeed)
@@ -15,7 +15,7 @@ function scr_player_handstandjump() {
 	        else if (!grounded)
 	            movespeed = 10
 	    }
-		if character = "PZ"
+		if character = "not in the game"
 		{
 	       movespeed = 10
 		}
@@ -64,21 +64,21 @@ function scr_player_handstandjump() {
 				state = 0
 			}
 		}
-	    if ((floor(image_index) == (image_number - 1) || sprite_index == spr_suplexdashjump || sprite_index == spr_suplexdashjumpstart) && grounded && (!key_attack) && vsp > 0) && character != "PZ"
+	    if ((floor(image_index) == (image_number - 1) || sprite_index == spr_suplexdashjump || sprite_index == spr_suplexdashjumpstart) && grounded && (!key_attack) && vsp > 0) && character != "not in the game"
 	    {
 	        image_speed = 0.35
 	        state = 0
 	        grav = 0.5
 	    }
-		//Pizzelle
-	    if floor(image_index) == (image_number - 1) && sprite_index = spr_suplexdash && character = "PZ"   && !key_attack
+		// dead pizzelle
+	    if floor(image_index) == (image_number - 1) && sprite_index = spr_suplexdash && character = "not in the game"   && !key_attack
 	    {
 	        image_speed = 0.35
 	        state = 0
 	        grav = 0.5
 	    }
 
-	    if ((floor(image_index) == (image_number - 1) || sprite_index == spr_suplexdashjump || sprite_index == spr_suplexdashjumpstart) && (grounded || character = "PZ") && key_attack)
+	    if ((floor(image_index) == (image_number - 1) || sprite_index == spr_suplexdashjump || sprite_index == spr_suplexdashjumpstart) && (grounded || character = "not in the game") && key_attack)
 	    {
 	        image_speed = 0.35
 			if (character == "N" && pogo = true) && !key_slap2 
@@ -110,7 +110,7 @@ function scr_player_handstandjump() {
 				instance_create(x,y, obj_brickseparated)
 			}
 	    }
-	    if ((!grounded) && (sprite_index == spr_suplexdash || sprite_index == spr_shotgunsuplexdash)) && character != "PZ"
+	    if ((!grounded) && (sprite_index == spr_suplexdash || sprite_index == spr_shotgunsuplexdash)) && character != "not in the game"
 	    {
 	        image_index = 0
 	        sprite_index = spr_suplexdashjumpstart
@@ -202,7 +202,7 @@ function scr_player_handstandjump() {
 				}
 				else
 				{
-					sprite_index = spr_playerPZ_faceplant
+					sprite_index = spr_playernot in the game_faceplant
 				}
 	            state = 111
 	            image_speed = 0.5
@@ -221,7 +221,7 @@ function scr_player_handstandjump() {
 	        machhitAnimtimer = 500
 	        rollmove = 0
 	    }
-		if (key_jump && grounded && character = "PZ") 
+		if (key_jump && grounded && character = "not in the game") 
 		{
 			sprite_index = spr_mach2jump
 			state = 70

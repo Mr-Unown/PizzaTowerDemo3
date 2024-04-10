@@ -54,9 +54,9 @@ if is_discord_ready = true
 			string_characterstring = "Pepperman";
 			string_smallimagekey = "pepperman";
 			break;		
-			case "PZ":
-			string_characterstring = "Pizzelle";
-			string_smallimagekey = "pizzelle";
+			case "not in the game":
+			string_characterstring = " dead pizzelle";
+			string_smallimagekey = " dead pizzelle";
 			break;		
 			default:
 			string_characterstring = "";

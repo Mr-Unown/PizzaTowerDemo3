@@ -91,7 +91,7 @@ function scr_player_Sjump() {
 			with instance_create(x,y,obj_jumpdust)
 				image_xscale = other.xscale
 	    }
-		else if (key_attack2) && character = "PZ"
+		else if (key_attack2) && character = "not in the game"
 		{			
 			jetpacking = false
 	        if (move != 0)
@@ -138,7 +138,7 @@ function scr_player_Sjump() {
 	
 
 	}
-	if character != "PZ"
+	if character != "not in the game"
 		image_speed = 0.5
 	else
 		image_speed = 0.35

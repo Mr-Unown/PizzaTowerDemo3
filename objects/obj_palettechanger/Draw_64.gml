@@ -81,8 +81,8 @@ else
 		case "V":
 			_sprite = spr_playerV_normalHUD;
 		break;
-		case "PZ":
-			_sprite = spr_playerPZ_normalHUD;
+		case "not in the game":
+			_sprite = spr_playernot in the game_normalHUD;
 		break;
 		default:
 			_sprite = spr_pepinoHUD;
