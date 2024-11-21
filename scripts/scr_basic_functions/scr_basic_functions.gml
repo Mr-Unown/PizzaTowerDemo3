@@ -5,8 +5,6 @@ function approach(argument0, argument1, argument2) {
 	/// @param target The value targetted.
 	/// @param amount The amount to change.
 	return argument0 + clamp(argument1 - argument0, -argument2, argument2);
-
-
 }
 function chance(argument0) {
 	/// @description Returns true or false depending on RNG
@@ -149,5 +147,5 @@ function rank_checker(rank = global.rank)
 }
 function sugarysin(argument0, argument1)
 {
-    return (sin((current_time / (argument1 * 100))) * argument0);
+    return (sin((current_time / (argument1 * 100))) * argument0); 
 }
